@@ -122,6 +122,10 @@ export class HistoryMap extends EventTarget {
     m.addLayer({ id: 'col-fill', type: 'fill', source: 'col', filter: NONE,
       paint: { 'fill-color': ['get', 'c'], 'fill-opacity': 0.85, 'fill-outline-color': this.dark ? 'rgba(0,0,0,0.3)' : 'rgba(60,50,40,0.22)' } });
 
+    // selected territory (or every member of the selected empire), under the sea layer
+    m.addLayer({ id: 'sel', type: 'line', source: 'tA', filter: ['==', ['get', 'k'], -99], layout: { 'line-join': 'round' },
+      paint: { 'line-color': c.sel, 'line-width': 2.8 } });
+
     // occupied territories: hatched in the occupier's colour
     m.addSource('occ', { type: 'geojson', data: EMPTY });
     m.addLayer({ id: 'occ', type: 'fill', source: 'occ', paint: { 'fill-pattern': ['get', 'pat'], 'fill-opacity': 0.9 } });
@@ -142,9 +146,6 @@ export class HistoryMap extends EventTarget {
     m.addLayer({ id: 'modern', type: 'line', source: 'modern', layout: { visibility: 'none' },
       paint: { 'line-color': c.modern, 'line-width': 1, 'line-dasharray': [3, 2], 'line-opacity': 0.8 } });
 
-    // selected territory (or every member of the selected empire)
-    m.addLayer({ id: 'sel', type: 'line', source: 'tA', filter: ['==', ['get', 'k'], -99], layout: { 'line-join': 'round' },
-      paint: { 'line-color': c.sel, 'line-width': 2.4 } });
 
     m.addLayer({ id: 'us-line', type: 'line', source: 'us', filter: NONE,
       paint: { 'line-color': c.us, 'line-opacity': 0.6, 'line-width': zoomIn(2, 6, 0.5, 1.2), 'line-dasharray': [2, 1.5] } });
@@ -166,8 +167,8 @@ export class HistoryMap extends EventTarget {
       paint: { 'text-halo-blur': 0.6, ...paint } });
     const under = { 'text-color': c.textUnder, 'text-halo-color': c.haloUnder, 'text-halo-width': 1 };
     // peoples: one by one when zoomed in ...
-    sym('lbl-people-s', ['all', kind('u'), ['<', ['get', 'a'], 150000]], { 'text-font': SERIF_IT, 'text-size': 11, 'text-padding': 5 }, under, { minzoom: 4.6 });
-    sym('lbl-people', ['all', kind('u'), ['>=', ['get', 'a'], 150000]], { 'text-font': SERIF_IT, 'text-size': zoomIn(3, 6, 11, 13), 'text-padding': 5 }, under, { minzoom: Z_PEOPLES });
+    sym('lbl-people-s', ['all', kind('u'), ['<', ['get', 'a'], 60000]], { 'text-font': SERIF_IT, 'text-size': 11, 'text-padding': 4 }, under, { minzoom: 3.8 });
+    sym('lbl-people', ['all', kind('u'), ['>=', ['get', 'a'], 60000]], { 'text-font': SERIF_IT, 'text-size': zoomIn(3, 6, 11, 13), 'text-padding': 5 }, under, { minzoom: Z_PEOPLES });
     // ... and one name per region at world zoom
     sym('lbl-region', kind('r'), { 'text-font': SERIF_IT, 'text-size': zoomIn(1, 3.4, 11, 13.5), 'text-letter-spacing': 0.08, 'text-padding': 8 }, under, { maxzoom: Z_PEOPLES });
     const st = { 'text-color': c.textPart, 'text-halo-color': c.halo, 'text-halo-width': 1.2 };
@@ -250,7 +251,7 @@ export class HistoryMap extends EventTarget {
       if (!st.busy) return;
       clearTimeout(timer);
       st.busy = false;
-      if (st.next) { const d = st.next; st.next = null; this._setData(id, d); }
+      if (st.next) { const d = st.next; st.next = null; this._setData(id, d); } else this.map.triggerRepaint();
     };
     const timer = setTimeout(finish, 6000);
     // the next update may follow once the worker has taken this one and its tiles are in
@@ -366,7 +367,7 @@ export class HistoryMap extends EventTarget {
     m.removeLayer('sel');
     m.addLayer({ id: 'sel', type: 'line', source: 't' + this.active, layout: { 'line-join': 'round' },
       filter: this.selG != null ? ['==', ['get', 'g'], this.selG] : ['==', ['get', 'k'], this.selK == null ? -99 : this.selK],
-      paint: { 'line-color': this.c.sel, 'line-width': this.selG != null ? 1.6 : 2.4 } }, 'us-line');
+      paint: { 'line-color': this.c.sel, 'line-width': this.selG != null ? 2 : 2.8 } }, 'occ');   // below the sea: the coast stays the coastline
   }
 
   /** Occupied territories: features with {by, c (occupier colour)}; drawn hatched. */

@@ -81,7 +81,7 @@ export function tones(hex, name, dark) {
   const [L, C, H] = hexToLch(hex);
   const t = hash(name);
   const fl = dark ? 0.2 + (L - 0.6) * 0.75 : L;
-  const fc = dark ? C * 0.8 : C;
+  const fc = dark ? C * 0.8 : C * 0.9;      // a little under the stored colour: calm on paper
   const out = {
     fill: lchToHex([fl, fc, H]),
     part: lchToHex([fl + (t - 0.5) * (dark ? 0.08 : 0.07), fc * (0.8 + 0.5 * hash(name + 'c')), H + (hash(name + 'h') - 0.5) * 16]),

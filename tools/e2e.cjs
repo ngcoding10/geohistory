@@ -260,7 +260,7 @@ async function waitEvents(page) {
     ok(zan && /United Kingdom/.test(zan.s) && tan && /United Kingdom/.test(tan.s), `1930: Zanzibar and Tanganyika are British ("${zan?.s}", "${tan?.s}")`);
     const p1942 = await polAt(1942);
     await page.waitForFunction(() => /see note/.test(document.querySelector('#badge').textContent), null, { timeout: 20000 }).catch(() => {});
-    ok(/see note/.test(await page.locator('#badge').innerText()) && /does not show wartime occupation/.test(await page.locator('#panelBody').innerText()), '1942: the badge and the year panel say that occupation is not shown');
+    ok(/see note/.test(await page.locator('#badge').innerText()) && /Occupied countries are hatched/.test(await page.locator('#panelBody').innerText()) && /Manchukuo/.test(await page.locator('#panelBody').innerText()), '1942: the badge and the year panel say that the borders are the recognised ones, that occupied countries are hatched, and what is not shown');
     ok(p1942.length > 100, '1942 map loaded');
     const p1848 = await polAt(1848);
     const bna = p1848.find((p) => p.n === 'British North America');

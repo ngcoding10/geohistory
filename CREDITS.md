@@ -119,13 +119,16 @@ Written from general knowledge, conservatively, and checked by `tools/build_cura
   date on Wikidata; 445 match Wikidata by year (approximate entries within 50 years). `decades.json`: one
   summary per decade from 1500 (53; 50 fully verified). `polities.json`: 264 short descriptions of
   historical states (259 with every year verified; 227 have a name that is on the maps).
-- `rulers.json`: 189 ruler terms in 29 lists for major states whose rulers Wikidata does not file under the
+- `rulers.json`: 321 ruler terms in 41 lists for major states whose rulers Wikidata does not file under the
   state on the map (Qin, Han, Sui, Tang, Song, Yuan, Ming and Qing emperors, Rashidun and Umayyad caliphs,
-  Tokugawa shoguns, Qajar shahs, Achaemenid kings, Mongol great khans, the first Capetian kings and others). `tools/build_rulers.py`
-  compares both years of each term with the offices and the year of death on the Wikidata item of the linked
-  article: 184 are confirmed and tagged "curated", 5 are tagged "curated, unverified".
+  Tokugawa shoguns, Qajar shahs, Achaemenid kings, Mongol great khans, the first Capetian kings, the kings and
+  emperors of the Holy Roman Empire, the Ilkhans, the khans of the Golden Horde, the Durrani shahs, the main
+  Parthian kings, the Maratha Chhatrapatis, and the party leaders of the Soviet Union, Poland and East
+  Germany, labelled as such). `tools/build_rulers.py` compares both years of each term with the offices and
+  the year of death on the Wikidata item of the linked article: 291 are confirmed and tagged "curated", 30 are
+  tagged "curated, unverified".
   `ruler_map.json`: which Wikidata jurisdictions and offices belong to which territories on the map (content
-  comes from Wikidata). `names.json`: display names and aliases of territories. `map_notes.json`: 7 notes on
+  comes from Wikidata). `names.json`: display names and aliases of territories. `map_notes.json`: 30 notes on
   known errors of the border sources, shown in the territory panel. `headlines.json`: the defining event of
   24 famous years, used only for ranking.
 - `famous_include.json`: titles of well-known Wikidata items that the class filters miss (content comes
