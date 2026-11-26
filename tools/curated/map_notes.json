@@ -36,11 +36,13 @@
     "Poland",
     "France",
     "Japan",
-    "China"
+    "China",
+    "Soviet Union",
+    "Russia (Soviet Union)"
    ],
    "from": 1939,
    "to": 1945,
-   "note": "The borders are the ones internationally recognised on 1 July of each year (CShapes). Occupied countries are hatched in the occupier's colour, from a dated list written for GeoHistory: whole countries only, even where only a part was occupied. Not shown, for want of an outline: Manchukuo (Japanese from 1932), the occupied parts of China (from 1937) and of the Soviet Union (1941 to 1944), and the countries annexed outright, which CShapes draws inside their annexer.",
+   "note": "The borders are the ones internationally recognised on 1 July of each year (CShapes). Occupied countries keep their own colour, made faint, under diagonal lines in the occupier's colour; the year panel says which colour is which occupier. The list of occupations is written for GeoHistory. Where only a part of a country was occupied (the Soviet Union, China, France until 1942) the part is Cliopatria's outline of what Germany or Japan held in that calendar year, cut to the country; Cliopatria has one outline per year and does not say which day it stands for, so the front line is approximate. Manchukuo is OpenHistoricalMap's outline. Countries annexed outright are drawn inside their annexer, as CShapes has them.",
    "source": "https://en.wikipedia.org/wiki/German-occupied_Europe"
   },
   {
@@ -52,7 +54,7 @@
    ],
    "from": 1914,
    "to": 1918,
-   "note": "The borders are the recognised ones on 1 July. Occupied countries are hatched in the occupier's colour (Belgium and Luxembourg from 1914, Serbia from late 1915, Montenegro from 1916, most of Romania from late 1916): whole countries only. Occupied northern France and Russian Poland have no outline of their own and are not shown.",
+   "note": "The borders are the recognised ones on 1 July. Occupied countries keep their own colour, made faint, under diagonal lines in the occupier's colour (Belgium and Luxembourg from 1914, Serbia from late 1915, Montenegro from 1916, most of Romania from late 1916). Occupied northern France and the occupied west of Russia are Cliopatria's outline of what Germany held in that calendar year (none for 1914), cut to the country: one outline per year, so the front is approximate.",
    "source": "https://en.wikipedia.org/wiki/World_War_I"
   },
   {
@@ -61,7 +63,7 @@
    ],
    "from": 1932,
    "to": 1938,
-   "note": "CShapes draws Manchuria as part of China. From March 1932 to August 1945 it was Manchukuo, a state set up and controlled by Japan that most countries did not recognise.",
+   "note": "CShapes draws Manchuria as part of China. From 1 March 1932 to August 1945 it was Manchukuo, a state set up and controlled by Japan that most countries did not recognise: it is shown by lines in Japan's colour over China's, from OpenHistoricalMap's outline.",
    "source": "https://en.wikipedia.org/wiki/Manchukuo"
   },
   {

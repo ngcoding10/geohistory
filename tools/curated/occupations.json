@@ -1,5 +1,5 @@
 {
- "about": "Dated occupations and wartime annexations that the border sources do not draw (CShapes shows recognised borders only). No dataset of occupation areas is used (none of the border sources has one, and no systematic search for another was made), so each row re-tints an existing outline: the territory called 'names' on the map of that year, or, when that territory is not on the map (the Baltic states after 1940), the CShapes outline named in 'shape' as it stood on the given date. Whole countries only; where only a part was occupied the note says so. Dates are the commonly cited ones from the Wikipedia article in 'source'. 'verified' is set by tools/build_occupations.py when the Wikidata item of that article has the same start and end years.",
+ "about": "Dated occupations and wartime annexations that the recognised borders of CShapes do not show. 'rows' re-tint an existing outline: the territory called 'names' on the map of that year, or, when that territory is not on the map (the Baltic states after 1940), the CShapes outline named in 'shape' as it stood on the given date; these are whole countries, and where only a part was occupied the note says so. A row with 'ohm' is drawn from the outline of that boundary relation in OpenHistoricalMap (public domain, CC0): Manchukuo inside China ('within'). 'areas' draw the occupied part of a country from Cliopatria (CC BY 4.0), which has one outline per calendar year of everything a power held: tools/build_occupations.py cuts the outline of 'clio' to each country in 'over' as CShapes draws it that year (and takes away the OpenHistoricalMap outline in 'minus_ohm'), between the dates given; 'covers' names rows whose own outline that part replaces. Cliopatria does not say which day of the year an outline stands for, and fronts moved within a year. Dates are the commonly cited ones from the Wikipedia article in 'source'. 'verified' is set by tools/build_occupations.py when the Wikidata item of that article has the same start and end years.",
  "rows": [
   {
    "label": "Poland",
@@ -431,6 +431,22 @@
    "verified": false
   },
   {
+   "label": "Manchukuo (north-east China)",
+   "names": [],
+   "within": [
+    "China"
+   ],
+   "ohm": 2885965,
+   "by": "Japan",
+   "key": "japan",
+   "from": 19320301,
+   "to": 19450818,
+   "kind": "Controlled",
+   "note": "Japan seized Manchuria after the Mukden Incident of September 1931 and proclaimed the state of Manchukuo on 1 March 1932, with the last Qing emperor Puyi at its head; Jehol was added in 1933. It was run by the Japanese Kwantung Army, most countries did not recognise it, and it ended with the Soviet invasion of August 1945. The outline is OpenHistoricalMap's.",
+   "source": "https://en.wikipedia.org/wiki/Manchukuo",
+   "verified": true
+  },
+  {
    "label": "Japan",
    "names": [
     "Japan"
@@ -583,6 +599,85 @@
    "note": "Baghdad fell on 9 April 2003; the Coalition Provisional Authority handed power to an Iraqi government on 28 June 2004.",
    "source": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority",
    "verified": true
+  }
+ ],
+ "areas": [
+  {
+   "clio": "Nazi Germany",
+   "by": "Germany",
+   "key": "germany",
+   "kind": "Occupied",
+   "source": "https://en.wikipedia.org/wiki/German-occupied_Europe",
+   "over": [
+    {
+     "name": "Soviet Union",
+     "label": "the occupied west of the Soviet Union",
+     "from": 19410622,
+     "to": 19441231,
+     "covers": [
+      "Estonia",
+      "Latvia",
+      "Lithuania"
+     ],
+     "note": "Germany invaded the Soviet Union on 22 June 1941. The hatched area is everything Cliopatria gives to Germany inside the Soviet Union in this calendar year (one outline per year; the front moved within each year, to Stalingrad and the Caucasus in late 1942 and back to the 1941 border by the end of 1944)."
+    },
+    {
+     "name": "France",
+     "label": "the occupied zone of France",
+     "from": 19400622,
+     "to": 19440825,
+     "covers": [
+      "France"
+     ],
+     "note": "Under the armistice of 22 June 1940 Germany occupied the north and the Atlantic coast, and the government at Vichy kept the south until German and Italian troops moved in on 11 November 1942. The hatched area is what Cliopatria gives to Germany inside France in this calendar year; Alsace-Lorraine, annexed in practice, is part of it."
+    }
+   ]
+  },
+  {
+   "clio": "Empire of Japan",
+   "by": "Japan",
+   "key": "japan",
+   "kind": "Occupied",
+   "source": "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+   "minus_ohm": 2885965,
+   "over": [
+    {
+     "name": "China",
+     "label": "the occupied parts of China",
+     "from": 19380101,
+     "to": 19450902,
+     "note": "Japan invaded China proper in July 1937 and by late 1938 held the north China plain, the lower Yangtze and the main ports; its 1944 offensive (Ichi-Go) opened a corridor to Indochina. The hatched area is what Cliopatria gives to Japan inside China in this calendar year, without Manchukuo, which is listed separately; Japanese control outside the cities and railways was often thin."
+    }
+   ]
+  },
+  {
+   "clio": "German Empire",
+   "by": "Germany",
+   "key": "germany",
+   "kind": "Occupied",
+   "source": "https://en.wikipedia.org/wiki/Western_Front_(World_War_I)",
+   "over": [
+    {
+     "name": "France",
+     "label": "occupied northern France",
+     "from": 19140901,
+     "to": 19181111,
+     "note": "After the battles of 1914 the front ran from the Channel to Switzerland, and Germany held most of ten departments of northern and eastern France until 1918. The hatched area is what Cliopatria gives to Germany inside France in this calendar year (it has none for 1914)."
+    },
+    {
+     "name": "Russia",
+     "alt": [
+      "Russian Empire",
+      "Russia (Soviet Union)",
+      "Soviet Russia"
+     ],
+     "label": "the occupied west of Russia",
+     "from": 19150801,
+     "to": 19181111,
+     "source": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)",
+     "note": "In the Great Retreat of 1915 Russia lost Poland, Lithuania and Courland to Germany and Austria-Hungary; after the treaty of Brest-Litovsk (3 March 1918) German troops also occupied Ukraine, Belarus and the Baltic provinces until November 1918. The hatched area is what Cliopatria gives to Germany inside Russia, as CShapes draws it, in this calendar year."
+    }
+   ]
   }
  ]
 }

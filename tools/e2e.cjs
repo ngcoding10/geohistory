@@ -260,7 +260,7 @@ async function waitEvents(page) {
     ok(zan && /United Kingdom/.test(zan.s) && tan && /United Kingdom/.test(tan.s), `1930: Zanzibar and Tanganyika are British ("${zan?.s}", "${tan?.s}")`);
     const p1942 = await polAt(1942);
     await page.waitForFunction(() => /see note/.test(document.querySelector('#badge').textContent), null, { timeout: 20000 }).catch(() => {});
-    ok(/see note/.test(await page.locator('#badge').innerText()) && /Occupied countries are hatched/.test(await page.locator('#panelBody').innerText()) && /Manchukuo/.test(await page.locator('#panelBody').innerText()), '1942: the badge and the year panel say that the borders are the recognised ones, that occupied countries are hatched, and what is not shown');
+    ok(/see note/.test(await page.locator('#badge').innerText()) && /lines in the occupier's colour/.test(await page.locator('#panelBody').innerText()) && /Manchukuo/.test(await page.locator('#panelBody').innerText()), '1942: the badge and the year panel say that the borders are the recognised ones, that occupied countries are hatched, and what is not shown');
     ok(p1942.length > 100, '1942 map loaded');
     const p1848 = await polAt(1848);
     const bna = p1848.find((p) => p.n === 'British North America');
@@ -378,6 +378,9 @@ async function waitEvents(page) {
     await waitH1(page, 'The world in 1942');
     await page.waitForFunction(() => window.__geo?.map?.map.getSource('occ') && window.__geo.map.map.querySourceFeatures('occ').length > 0, null, { timeout: 60000 }).catch(() => {});
     const occ42 = await page.evaluate(() => ({ n: new Set(window.__geo.map.map.querySourceFeatures('occ').map((f) => f.properties.by)).size, t: document.querySelector('#panelBody').innerText }));
+    const leg42 = await page.evaluate(() => ({ sw: document.querySelectorAll('#panelBody .hatchsw').length, wash: !!window.__geo.map.map.getLayer('occ-wash'),
+      ukr: window.__geo.map.map.querySourceFeatures('occ').length, by: [...document.querySelectorAll('#panelBody .hatchsw')].map((e) => e.nextSibling.textContent).join('|') }));
+    ok(leg42.sw >= 3 && leg42.wash && /by Germany/.test(leg42.by) && /by Japan/.test(leg42.by) && /occupied west of the Soviet Union/.test(occ42.t), `1942: the year panel has a hatch legend (${leg42.sw} occupiers with a swatch), the own fill is washed out under the hatch, and the occupied part of the Soviet Union is listed`);
     ok(occ42.n >= 2 && /occupied/i.test(occ42.t) && /Poland/.test(occ42.t) && /France/.test(occ42.t), `1942: occupied countries are hatched on the map (${occ42.n} occupiers) and listed in the year panel`);
     await page.goto(BASE + '?y=1942&v=flat&c=Poland');
     await waitH1(page, 'Poland');

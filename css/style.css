@@ -296,3 +296,6 @@ p.lead.century { font: 400 17px/1.45 var(--serif); color: var(--ink); }
 .today { font-size: 14px; color: var(--ink-2); }
 .today:empty { display: none; }
 .occ { border-left: 3px solid var(--accent); padding-left: 10px; }
+
+/* legend swatch of the occupation hatching: lines in the occupier's colour */
+.hatchsw { display: inline-block; width: 1.5em; height: .85em; vertical-align: -1px; margin-right: .35em; border: 1px solid var(--hc); border-radius: 2px; background: repeating-linear-gradient(135deg, var(--hc) 0 2px, transparent 2px 5px); }

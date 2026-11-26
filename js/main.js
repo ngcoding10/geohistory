@@ -1,5 +1,5 @@
 // GeoHistory: choose a year, see the world's borders, powers and events at that time.
-import { HistoryMap, isDark, Z_SPLIT } from './map.js';
+import { HistoryMap, isDark, Z_SPLIT, hatchColor } from './map.js';
 import { prepareDoc } from './prepare.js';
 import { membershipOf, empireName, listedParts, tones } from './groups.js';
 import {
@@ -423,12 +423,16 @@ async function renderYear() {
   }
   const occ = occupiedNow();
   if (occ.length) {
+    // one group per occupier, each led by a swatch of its hatch colour: this is the legend of the hatching
     const by = new Map();
-    for (const o of occ) { if (!by.has(o.by)) by.set(o.by, []); by.get(o.by).push(o); }
+    for (const o of occ) { if (o.quiet) continue; if (!by.has(o.by)) by.set(o.by, []); by.get(o.by).push(o); }
+    const onMap = (o) => state.snapDoc?.polities.find((p) => o.n.includes(p.n) || (o.in || []).includes(p.n));
     nodes.push(h('div.note.worldnote', null, h('span.unver', { title: 'From GeoHistory\'s dated list of occupations; drawn hatched on the map' }, 'occupied'), ' ',
-      [...by.entries()].map(([who, lst], i) => [i ? '; ' : '', h('b', null, `by ${who}: `), lst.map((o, j) => [j ? ', ' : '',
-        state.snapDoc?.polities.some((p) => o.n.includes(p.n)) ? h('button.link', { type: 'button', onclick: () => selectPolityByName(state.snapDoc.polities.find((p) => o.n.includes(p.n)).n, { fly: true }) }, o.label) : o.label])]),
-      '. Hatched on the map; the borders are still the recognised ones.'));
+      [...by.entries()].map(([who, lst], i) => [i ? '; ' : '',
+        h('span.hatchsw', { style: `--hc:${hatchColor(powers[lst[0].key]?.color || '#888888', isDark())}`, title: `Lines of this colour on the map: ${lst[0].kind === 'Annexed' ? 'annexed' : 'occupied or controlled'} by ${who}` }),
+        h('b', null, `by ${who}: `), lst.map((o, j) => [j ? ', ' : '',
+          onMap(o) ? h('button.link', { type: 'button', onclick: () => selectPolityByName(onMap(o).n, { fly: true }) }, o.label) : o.label])]),
+      '. On the map each keeps its own colour, made faint, under lines in the occupier\'s colour; the borders are still the recognised ones.'));
   }
   const strip = await changeStrip(y);
   if (token !== state.token || state.view !== 'year' || state.sel) return;
@@ -1011,28 +1015,36 @@ function thenBlock(s) {
 const occDate = () => state.year * 10000 + (state.month || 7) * 100 + (state.day || 1);
 function occupiedNow(name) {
   const d = occDate();
-  return (occupations.rows || []).filter((o) => o.from <= d && d <= o.to && (!name || o.n.includes(name)));
+  return (occupations.rows || []).filter((o) => o.from <= d && d <= o.to && (!name || o.n.includes(name) || (o.in || []).includes(name)));
 }
 function occupationNote(o) {
   const f = (d) => formatDate(Math.floor(d / 10000), Math.floor(d / 100) % 100, d % 100);
-  return h('p.note.occ', null, h('span.unver', { title: 'From GeoHistory\'s dated list of occupations' }, o.v ? 'occupation' : 'occupation, unverified'), ' ',
-    h('b', null, `${o.kind || 'Occupied'} by ${o.by}`), ` from ${f(o.from)} to ${f(o.to)}. `, o.note || '', ' ',
+  return h('p.note.occ', null, h('span.unver', { title: o.ds ? 'The outline is Cliopatria\'s for this calendar year, cut to the country; the dates are from GeoHistory\'s list' : 'From GeoHistory\'s dated list of occupations' }, o.ds ? 'occupied part, ' + o.ds : o.v ? 'occupation' : 'occupation, unverified'), ' ',
+    h('b', null, o.ds ? `${o.label[0].toUpperCase()}${o.label.slice(1)}: held by ${o.by}` : `${o.kind || 'Occupied'} by ${o.by}`), o.ds ? `, outline of ${Math.floor(o.from / 10000)}. ` : ` from ${f(o.from)} to ${f(o.to)}. `, o.note || '', ' ',
     h('a', { href: o.src, target: '_blank', rel: 'noopener' }, 'Source'));
 }
 let occToken = 0;
+let occShapesP = null;
 async function updateOccupied() {
   if (!mapOk) return;
   const token = ++occToken;
   const doc = state.snapDoc;
   const feats = [];
-  for (const o of occupiedNow()) {
+  const now = occupiedNow();
+  const covered = new Set(now.flatMap((o) => o.covers || []));   // drawn by a wider row's own outline instead
+  for (const o of now) {
+    if (covered.has(o.label)) continue;
     const c = powers[o.key]?.color || '#888888';
     const ks = new Set((doc?.polities || []).map((p, k) => (o.n.includes(p.n) ? k : -1)).filter((k) => k >= 0));
     let geoms = ks.size ? doc.features.filter((f) => ks.has(f.properties.k)).map((f) => f.geometry) : [];
     if (!geoms.length && o.shape) {
-      try { geoms = [(await loadShape('cshapes', o.shape.f, o.shape.id)).g]; } catch { geoms = []; }
+      try {
+        geoms = o.shape.src === 'ohm' ? [(await (occShapesP ||= getJSON('occupation_shapes.json')))[o.shape.id].g]
+          : o.shape.src === 'area' ? [(await getJSON(`occupations/${o.shape.id}.json`)).g]
+            : [(await loadShape('cshapes', o.shape.f, o.shape.id)).g];
+      } catch { geoms = []; }
     }
-    for (const g of geoms) feats.push({ type: 'Feature', geometry: g, properties: { by: o.by, c } });
+    for (const g of geoms) feats.push({ type: 'Feature', geometry: g, properties: { by: o.by, c, a: o.shape?.src === 'area' ? 1 : 0 } });
   }
   if (token === occToken) map.setOccupied(feats);
 }
@@ -1370,7 +1382,7 @@ function sourcesContent(meta, audit) {
     h('p', null, 'Every state is cut to one coastline (Natural Earth, 1:10 million), drawn above the borders, so coasts are sharper than the border sources themselves; inland borders are as detailed as the sources, which generalise them to a few kilometres.'),
     h('h3', null, 'Empires, occupations, before and after'),
     h('p', null, `At world zoom an empire is drawn as one power and splits into its parts when you zoom in. A part belongs to an empire only in the years a source says so: the border sources themselves (Cliopatria's member-of field, CShapes dependencies) and a dated list written for GeoHistory${meta?.empires ? ` (${n(meta.empires.memberships)} memberships, ${n(meta.empires.verified)} confirmed by Wikidata)` : ''}. Parts that the sources do not draw (New Spain, the Soviet republics) are listed in the empire's panel, never drawn.`),
-    h('p', null, 'Wartime occupations are not in the border sources. They are shown as hatching over the existing outline of the occupied country, from a dated list written for GeoHistory; whole countries only, and each entry says so where only a part was occupied.'),
+    h('p', null, 'Wartime occupations are not in the border sources. An occupied country keeps its own colour, made faint, under diagonal lines in the occupier\'s colour (the year panel shows which colour is which occupier). The list of occupations is written for GeoHistory; most entries are whole countries, and each says so where only a part was occupied. Where only a part of a country was occupied (the Soviet Union, China, France in both world wars, Russia in 1915 to 1918) the part is Cliopatria\'s outline of what the occupier held in that calendar year, cut to the country; Manchukuo is OpenHistoricalMap\'s outline. Cliopatria has one outline per year and does not say which day it stands for, so a front line is approximate.'),
     h('p', null, '"Before" and "After" in a territory panel go one step only: what Wikidata lists as replaced and replacing, and who held the same land on the map just before and just after. "Today this is" is measured by overlap with today\'s borders and is approximate.'),
     h('h3', null, 'Events come from Wikidata'),
     h('p', null, `${n(c.events)} events, most of them from Wikidata's free database, ranked by how many Wikipedia language editions cover them. Entries made from a city, a state or a person rather than from an event of their own ("X founded", "X becomes king") count for less, periods that run for decades count for less in their first year, and the curated landmark events of each period and the defining event of ${n(c.headlines || 0)} famous years are listed first. Dates, places and descriptions can be wrong or missing, and coverage is much thinner for Africa, Asia and the distant past than for Europe and North America. ${n(c.placedInModernCountry || 0)} of them could be placed in one of today's countries.`),

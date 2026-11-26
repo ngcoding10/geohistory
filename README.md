@@ -52,7 +52,7 @@ without coordinates is placed). The border, ruler and year-article steps give id
 second state: after the run from scratch `fetch_extra.py` was refreshed from Wikidata, which added 240 births
 that an old failed query had left out.
 
-Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (99 checks; uses the globally installed Playwright; starts its
+Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (100 checks; uses the globally installed Playwright; starts its
 own `python3 -m http.server`).
 
 ## How it fits with the other apps
@@ -123,14 +123,20 @@ browser by overlap at sample points, and are approximate.
   that Cliopatria files under a wrong name are renamed (`tools/curated/names.json`: "Assyrian Egypt" for the
   whole Assyrian Empire of 650 to 616 BC, "Ptolemaic Kingdom" for Alexander's conquests of 331 to 324 BC,
   "Western Jin" for the Eastern Jin after 317).
-- 1886 to 2019 shows recognised borders. Wartime occupation is an overlay. No dataset of occupation areas is
-  used (none of the border sources has one, and no systematic search for another was made in this round), so `tools/curated/occupations.json` lists 38 dated occupations (16 with both
-  years confirmed by Wikidata) and the map hatches the existing outline of the occupied country in the
-  occupier's colour (Poland, France, Norway, Denmark, the Low Countries, Greece, Yugoslavia, the Baltic states,
-  the Philippines, the Dutch East Indies, Malaya, Burma and others in 1939 to 1945; Belgium, Serbia, Romania in
-  1914 to 1918). Whole countries only: where only a part was occupied (France before November 1942, Romania)
-  the entry says so. Not shown at all, for want of an outline: Manchukuo, the occupied parts of China and of
-  the Soviet Union, northern France in 1914 to 1918.
+- 1886 to 2019 shows recognised borders. Wartime occupation is an overlay (`tools/curated/occupations.json`,
+  `tools/build_occupations.py`): the occupied country keeps its own colour, made faint, under diagonal lines in
+  the occupier's colour, and the year panel lists the occupiers, each with a swatch of its lines. 39 dated rows
+  are whole countries (17 with both years confirmed by Wikidata): Poland, Norway, Denmark, the Low Countries,
+  Greece, Yugoslavia, the Baltic states, the Philippines, the Dutch East Indies, Malaya, Burma and others in
+  1939 to 1945; Belgium, Serbia, Romania in 1914 to 1918. Where only a part was occupied, the part is cut from
+  Cliopatria, which has one outline per calendar year of everything Germany or Japan held: the occupied zone of
+  France (1940 to 1942; all of France after), the occupied west of the Soviet Union (1942 to 1944), the occupied
+  parts of China (1938 to 1945), northern France and western Russia in 1915 to 1918 (24 parts). Manchukuo is
+  OpenHistoricalMap's outline. Limits: Cliopatria does not say which day of a year an outline stands for, and a
+  front moved within a year (the 1942 outline is the front before the summer offensive towards Stalingrad; the
+  1941 outline predates the invasion of the Soviet Union, so 1941 shows only the Baltic states); its outlines are
+  coarse (tens of kilometres); Romania in 1916 to 1918 and Italy in 1943 to 1945 are not cut to the occupied
+  part; no source found has the front lines themselves.
 - Colonies carry the name they had at the time (`tools/curated/cshapes_names.json`) and their ruler comes
   from a curated table of 176 dated rules (`tools/curated/dependency_owners.json`), written from general
   knowledge and not checked against a dataset.

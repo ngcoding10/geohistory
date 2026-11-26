@@ -126,10 +126,11 @@ export class HistoryMap extends EventTarget {
     m.addLayer({ id: 'sel', type: 'line', source: 'tA', filter: ['==', ['get', 'k'], -99], layout: { 'line-join': 'round' },
       paint: { 'line-color': c.sel, 'line-width': 2.8 } });
 
-    // occupied territories: hatched in the occupier's colour
+    // occupied territories: the own fill made faint by a wash of the land colour, then lines in the occupier's colour
     m.addSource('occ', { type: 'geojson', data: EMPTY });
-    m.addLayer({ id: 'occ', type: 'fill', source: 'occ', paint: { 'fill-pattern': ['get', 'pat'], 'fill-opacity': 0.9 } });
-    m.addLayer({ id: 'occ-line', type: 'line', source: 'occ', paint: { 'line-color': ['get', 'ce'], 'line-width': 1.1, 'line-dasharray': [2, 1.5], 'line-opacity': 0.8 } });
+    m.addLayer({ id: 'occ-wash', type: 'fill', source: 'occ', paint: { 'fill-color': c.land, 'fill-opacity': 0.6, 'fill-antialias': false } });
+    m.addLayer({ id: 'occ', type: 'fill', source: 'occ', paint: { 'fill-pattern': ['get', 'pat'] } });
+    m.addLayer({ id: 'occ-line', type: 'line', source: 'occ', filter: ['!=', ['get', 'a'], 1], paint: { 'line-color': ['get', 'ce'], 'line-width': 1.1, 'line-dasharray': [2, 1.5], 'line-opacity': 0.8 } });
 
     // the sea, above everything that is filled: one coastline for all sources
     m.addSource('sea', { type: 'geojson', data: EMPTY, tolerance: 0.02 });   // nearly unsimplified: the cells the sea is stored in must meet without gaps
@@ -377,7 +378,7 @@ export class HistoryMap extends EventTarget {
       const id = 'hatch-' + f.properties.c;
       if (!m.hasImage(id)) m.addImage(id, hatch(f.properties.c, this.dark), { pixelRatio: 2 });
       f.properties.pat = id;
-      f.properties.ce = lchToHex([this.dark ? 0.8 : 0.3, 0.05, hexToLch(f.properties.c)[2]]);
+      f.properties.ce = hatchColor(f.properties.c, this.dark);
     }
     this._setData('occ', { type: 'FeatureCollection', features });
   }
@@ -471,16 +472,21 @@ export class HistoryMap extends EventTarget {
   }
 }
 
+/** The colour of the hatch lines for an occupier: its map colour, darker (lighter on the dark theme) and stronger,
+ * so that the lines read as that power's colour on any fill. The year panel's legend uses the same colour. */
+export function hatchColor(hex, dark) {
+  const [, C, H] = hexToLch(hex);
+  return lchToHex([dark ? 0.8 : 0.47, C < 0.01 ? 0 : Math.min(0.16, Math.max(0.11, C * 1.5)), H]);
+}
+
 /** A diagonal hatch tile in one colour (for occupied territories). */
 function hatch(hex, dark) {
   const n = 16;
   const cv = document.createElement('canvas');
   cv.width = cv.height = n;
   const g = cv.getContext('2d');
-  const [, , H] = hexToLch(hex);
-  g.strokeStyle = lchToHex(dark ? [0.82, 0.07, H] : [0.36, 0.09, H]);
-  g.globalAlpha = dark ? 0.75 : 0.8;
-  g.lineWidth = 2.4;
+  g.strokeStyle = hatchColor(hex, dark);
+  g.lineWidth = 3.4;
   g.lineCap = 'square';
   for (const o of [-n, 0, n]) { g.beginPath(); g.moveTo(o, n); g.lineTo(o + n, 0); g.stroke(); }
   const d = g.getImageData(0, 0, n, n);

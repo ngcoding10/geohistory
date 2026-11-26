@@ -1050,6 +1050,14 @@ O|Czechoslovakia;Czech|1941|German
 O|France|1946|!German
 O|Poland|1938|!German
 O|Japan|1947|United States;Allied
+# round 6: parts of a country, from OpenHistoricalMap and Cliopatria outlines
+O|Manchukuo|1935|Japan
+O|Manchukuo|1946|!Japan
+O|occupied west of the Soviet Union|1942|German
+O|occupied west of the Soviet Union|1940|!German
+O|occupied parts of China|1940|Japan
+O|occupied northern France|1916|German
+O|occupied zone of France|1941|German
 # -- in office (de facto leaders, emperors, khans)
 H|Soviet Union|1935|Stalin
 H|Soviet Union|1960|Khrushchev

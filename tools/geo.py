@@ -133,6 +133,118 @@ def simplify_geom(geom, tol=0.03, decimals=2, min_area_km2=30.0):
     return {'type': 'MultiPolygon', 'coordinates': kept}
 
 
+
+# ---- clipping one outline to another, by scanlines (no geometry library is used anywhere in the build)
+
+def _spans(edges, y):
+    """x-intervals of a polygon set on the horizontal line y (even-odd rule), from its bucketed edges."""
+    xs = []
+    for xa, ya, xb, yb in edges:
+        if (ya > y) != (yb > y):
+            xs.append(xa + (y - ya) * (xb - xa) / (yb - ya))
+    xs.sort()
+    return [(xs[i], xs[i + 1]) for i in range(0, len(xs) - 1, 2)]
+
+
+def _and(a, b):
+    out, i, j = [], 0, 0
+    while i < len(a) and j < len(b):
+        lo, hi = max(a[i][0], b[j][0]), min(a[i][1], b[j][1])
+        if hi > lo:
+            out.append((lo, hi))
+        if a[i][1] < b[j][1]:
+            i += 1
+        else:
+            j += 1
+    return out
+
+
+def _minus(a, b):
+    out = []
+    for lo, hi in a:
+        for blo, bhi in b:
+            if bhi <= lo or blo >= hi:
+                continue
+            if blo > lo:
+                out.append((lo, blo))
+            lo = max(lo, bhi)
+            if lo >= hi:
+                break
+        if lo < hi:
+            out.append((lo, hi))
+    return out
+
+
+def clip_geom(a, b, minus=None, step=0.04, decimals=2):
+    """The part of geometry a that lies inside geometry b (and outside 'minus'), as a MultiPolygon.
+
+    Both are cut along horizontal lines every 'step' degrees; on each line the x-intervals of a and b are
+    intersected, and intervals that continue from one line to the next are joined into one polygon whose
+    sides run through the interval ends. The result follows the source outlines to within 'step' (about
+    4 km), which is finer than the generalisation of the wartime outlines it is used for."""
+    def edges(g):
+        out = []
+        for poly in polys_of(g):
+            for r in poly:
+                for i in range(len(r) - 1):
+                    if r[i][1] != r[i + 1][1]:
+                        out.append((r[i][0], r[i][1], r[i + 1][0], r[i + 1][1]))
+        return out
+    ea, eb, em = edges(a), edges(b), edges(minus) if minus else []
+    if not ea or not eb:
+        return None
+    y0 = max(min(min(e[1], e[3]) for e in ea), min(min(e[1], e[3]) for e in eb))
+    y1 = min(max(max(e[1], e[3]) for e in ea), max(max(e[1], e[3]) for e in eb))
+    if y1 <= y0:
+        return None
+
+    def buckets(es):
+        bk = {}
+        for e in es:
+            for k in range(int(min(e[1], e[3]) // 1), int(max(e[1], e[3]) // 1) + 1):
+                bk.setdefault(k, []).append(e)
+        return bk
+    ba, bb, bm = buckets(ea), buckets(eb), buckets(em)
+    polys = []
+    open_ = []   # chains being built: [left points, right points]
+    n = int((y1 - y0) / step)
+    for i in range(n + 1):
+        y = y0 + step * (i + 0.5) + 1e-7
+        k = int(y // 1)
+        cur = _and(_spans(ba.get(k, []), y), _spans(bb.get(k, []), y))
+        if em:
+            cur = _minus(cur, _spans(bm.get(k, []), y))
+        cur = [(lo, hi) for lo, hi in cur if hi - lo > step / 4]
+        nxt, used = [], set()
+        for lo, hi in cur:
+            # continue the one open chain whose last interval overlaps this one (and only this one)
+            cands = [c for c in open_ if id(c) not in used and c[0][-1][0] < hi and c[1][-1][0] > lo]
+            others = [1 for lo2, hi2 in cur if (lo2, hi2) != (lo, hi) and cands and cands[0][0][-1][0] < hi2 and cands[0][1][-1][0] > lo2]
+            if len(cands) == 1 and not others:
+                c = cands[0]
+                used.add(id(c))
+                c[0].append((lo, y))
+                c[1].append((hi, y))
+            else:
+                c = [[(lo, y)], [(hi, y)]]
+            nxt.append(c)
+        for c in open_:
+            if id(c) not in used:
+                polys.append(c)
+        open_ = nxt
+    polys += open_
+    out = []
+    for left, right in polys:
+        h = step / 2
+        # each chain covers half a step above and below its first and last line
+        ring = [(left[0][0], left[0][1] - h)] + left + [(left[-1][0], left[-1][1] + h), (right[-1][0], right[-1][1] + h)] + right[::-1] + [(right[0][0], right[0][1] - h)]
+        ring.append(ring[0])
+        out.append([[list(pt) for pt in ring]])
+    if not out:
+        return None
+    return simplify_geom({'type': 'MultiPolygon', 'coordinates': out}, step / 3, decimals, min_area_km2=60.0)
+
+
 def bbox_of(geom):
     xs, ys = [], []
     for poly in polys_of(geom):

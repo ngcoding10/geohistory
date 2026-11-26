@@ -78,6 +78,26 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
 - **Source:** https://www.naturalearthdata.com/ (via https://github.com/nvkelso/natural-earth-vector)
 - **Licence:** public domain. "Made with Natural Earth."
 
+### Outlines of occupied areas: Cliopatria's yearly outlines and OpenHistoricalMap
+- **Cliopatria** (see above, CC BY 4.0) also has, for the years of the two world wars, one outline per
+  calendar year of everything a power held (German Empire 1915 to 1918, Nazi Germany 1940 to 1944, Empire of
+  Japan 1938 to 1945). `tools/build_occupations.py` cuts that outline to the country concerned as CShapes
+  draws it on 1 July (France, the Soviet Union, Russia, China) and stores the part in `data/occupations/`
+  (24 parts). **Changes we made:** the cut is done along horizontal lines 0.04 degrees apart, so the part
+  follows both sources to about 4 km; parts under 15,000 km² (slivers where the two sources' borders differ)
+  are dropped. Cliopatria does not say which day of the year an outline stands for.
+- **OpenHistoricalMap**: one dated boundary relation, Manchukuo (relation 2885965, 1932 to 1945), from
+  https://www.openhistoricalmap.org/ through its Overpass API (fetched 26 November 2026). Public domain
+  (CC0 1.0), the project's default for its data; the relation carries no other licence tag. Member ways are
+  joined into a ring, simplified (0.015 degrees) and rounded to 0.01 degrees (`data/occupation_shapes.json`).
+- **Also searched** (26 November 2026, about 20 minutes) for a dataset of front lines or occupation zones:
+  OpenHistoricalMap has the German civil administrations of 1941 to 1944 (Reichskommissariat Ostland and
+  Ukraine, the Generalgouvernement, the military administration in Belgium and northern France), which
+  Cliopatria's outlines make unnecessary, but no front line, no demarcation line in France (its "État
+  français" relations cover all of France) and nothing for occupied China or for 1914 to 1918 in France.
+  Zenodo and GitHub repository search gave no dataset; Wikimedia Commons map data did not answer
+  (rate-limited); data.gouv.fr was not reachable from the build machine.
+
 ### Events, descriptions and links: Wikidata
 - **What:** wars, battles, sieges, revolts, treaties, declarations of independence, states founded and
   dissolved, rulers taking office, documents, spaceflights, organisations, archaeological cultures, disasters, epidemics, discoveries and other notable events, with
@@ -145,10 +165,11 @@ Written from general knowledge, conservatively, and checked by `tools/build_cura
   are read from Cliopatria's member-of field and from the CShapes dependencies. `tools/build_empires.py` marks a
   membership verified when the Wikidata item of the part names an item of the empire as its country (P17), as
   what it is part of (P361), as its administrative parent (P131), owner (P127) or jurisdiction (P1001).
-- `tools/curated/occupations.json`: 40 dated occupations and wartime annexations. **No dataset of occupation areas is used**: none of the
-  sources above has one, and no systematic search for another was made, so each row re-tints an existing CShapes outline; the dates are the commonly cited ones from
-  the Wikipedia article in each row, and a row is verified when the Wikidata item of that article has the same
-  start and end years.
+- `tools/curated/occupations.json`: 39 dated occupations and wartime annexations of whole countries (17 with
+  both years confirmed by Wikidata; 38 re-tint an existing CShapes outline, Manchukuo is OpenHistoricalMap's),
+  and three "areas" that give 24 occupied parts of countries from Cliopatria (see above). The dates are the
+  commonly cited ones from the Wikipedia article in each row, and a row is verified when the Wikidata item of
+  that article has the same start and end years.
 - `data/succession.json` ("Before" and "After"): Wikidata's replaces / replaced by and follows / followed by
   statements (CC0), and a comparison of the yearly maps (`tools/build_succession.py`).
 - `tools/curated/underlay.json` now also lists regions borrowed from one sketch map for the years another lacks
