@@ -1,0 +1,4024 @@
+{
+ "_about": "Curated short descriptions of major historical states, written for GeoHistory from general knowledge. \"names\" are the spellings the maps use; \"from\"/\"to\" limit the years in which the description is shown (they are display limits, not claims). Every year written in the text is checked by tools/build_curated.py against the Wikidata item of the entry's article; an entry is verified only when all of them match.",
+ "polities": [
+  {
+   "id": "pol-roman-republic",
+   "names": [
+    "Roman Republic",
+    "Rome"
+   ],
+   "from": -509,
+   "to": -27,
+   "wiki": "Roman Republic",
+   "text": "The Roman state after the expulsion of its kings, traditionally from 509 BC, governed by annually elected magistrates and the Senate. It grew from a city-state in Latium into the ruler of the whole Mediterranean, and ended in civil wars from which Augustus emerged as sole ruler.",
+   "source": "https://en.wikipedia.org/wiki/Roman_Republic",
+   "verified": true,
+   "claims": [
+    [
+     "Roman Republic",
+     -509
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-roman-empire",
+   "names": [
+    "Roman Empire"
+   ],
+   "from": -27,
+   "to": 476,
+   "wiki": "Roman Empire",
+   "text": "The Roman state under emperors, from Augustus onward. At its height in the 2nd century it ruled from Britain to Egypt and Mesopotamia. It was divided for good into western and eastern halves in 395; the western half collapsed in the 5th century.",
+   "source": "https://en.wikipedia.org/wiki/Roman_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Roman Empire",
+     395
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-western-roman-empire",
+   "names": [
+    "Western Roman Empire"
+   ],
+   "from": 395,
+   "to": 476,
+   "wiki": "Western Roman Empire",
+   "text": "The western half of the Roman Empire after the division of 395, ruled from Milan and then Ravenna. It lost its provinces to Goths, Vandals, Franks and others, and its last emperor was deposed in 476.",
+   "source": "https://en.wikipedia.org/wiki/Western_Roman_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Western Roman Empire",
+     395
+    ],
+    [
+     "Western Roman Empire",
+     476
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-byzantine-empire",
+   "names": [
+    "Byzantine Empire",
+    "Eastern Roman Empire"
+   ],
+   "from": 395,
+   "to": 1453,
+   "wiki": "Byzantine Empire",
+   "text": "The continuation of the Roman Empire in the east, with its capital at Constantinople, Greek in language and Orthodox Christian in religion. It recovered much of the west under Justinian, lost Syria and Egypt to the Arabs, and fell to the Ottomans in 1453.",
+   "source": "https://en.wikipedia.org/wiki/Byzantine_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Byzantine Empire",
+     1453
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-holy-roman-empire",
+   "names": [
+    "Holy Roman Empire",
+    "Holy Roman Empire Minor States"
+   ],
+   "from": 962,
+   "to": 1806,
+   "wiki": "Holy Roman Empire",
+   "text": "A loose empire of hundreds of principalities, bishoprics and free cities in central Europe, centred on Germany, whose emperor was chosen by prince-electors. It is usually dated from the coronation of Otto I in 962 and was dissolved in 1806 under pressure from Napoleon.",
+   "source": "https://en.wikipedia.org/wiki/Holy_Roman_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Holy Roman Empire",
+     962
+    ],
+    [
+     "Holy Roman Empire",
+     1806
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-francia",
+   "names": [
+    "Frankish Kingdom",
+    "Francia",
+    "Franks",
+    "Kingdom of the Franks",
+    "Frankish Empire"
+   ],
+   "from": 481,
+   "to": 843,
+   "wiki": "Francia",
+   "text": "The kingdom of the Franks, built by Clovis and his Merovingian successors in Gaul and expanded by the Carolingians. Under Charlemagne it covered most of western Europe; his grandsons divided it at Verdun in 843.",
+   "source": "https://en.wikipedia.org/wiki/Francia",
+   "verified": true,
+   "claims": [
+    [
+     "Francia",
+     843
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-carolingian-empire",
+   "names": [
+    "Carolingian Empire"
+   ],
+   "from": 800,
+   "to": 888,
+   "wiki": "Carolingian Empire",
+   "text": "The Frankish realm at its greatest extent, after Charlemagne was crowned emperor in Rome in 800. It was partitioned among his grandsons and the parts became the cores of France and Germany.",
+   "source": "https://en.wikipedia.org/wiki/Carolingian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Carolingian Empire",
+     800
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-france",
+   "names": [
+    "Kingdom of France"
+   ],
+   "from": 987,
+   "to": 1792,
+   "wiki": "Kingdom of France",
+   "text": "The French monarchy, which grew from the lands of the Capetian kings around Paris into the most populous state in Europe. The monarchy was overthrown in 1792 during the French Revolution.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_France",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of France",
+     1792
+    ],
+    [
+     "Insurrection of 10 August 1792",
+     1792
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Insurrection of 10 August 1792",
+     1792
+    ]
+   ]
+  },
+  {
+   "id": "pol-kingdom-of-england",
+   "names": [
+    "Kingdom of England",
+    "England"
+   ],
+   "from": 927,
+   "to": 1707,
+   "wiki": "Kingdom of England",
+   "text": "The kingdom created when the rulers of Wessex united the Anglo-Saxon kingdoms in the 10th century, conquered by the Normans in 1066. It united with Scotland in 1707 to form Great Britain.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_England",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of England",
+     1066
+    ],
+    [
+     "Kingdom of England",
+     1707
+    ],
+    [
+     "Norman Conquest",
+     1066
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Norman Conquest",
+     1066
+    ]
+   ]
+  },
+  {
+   "id": "pol-kingdom-of-scotland",
+   "names": [
+    "Kingdom of Scotland",
+    "Scotland"
+   ],
+   "from": 843,
+   "to": 1707,
+   "wiki": "Kingdom of Scotland",
+   "text": "The kingdom in the north of Britain, which kept its independence from England in the wars of the 13th and 14th centuries. It shared a monarch with England from 1603 and united with it in 1707.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Scotland",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Scotland",
+     1603
+    ],
+    [
+     "Kingdom of Scotland",
+     1707
+    ],
+    [
+     "Union of the Crowns",
+     1603
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Union of the Crowns",
+     1603
+    ]
+   ]
+  },
+  {
+   "id": "pol-kingdom-of-great-britain",
+   "names": [
+    "Kingdom of Great Britain"
+   ],
+   "from": 1707,
+   "to": 1800,
+   "wiki": "Kingdom of Great Britain",
+   "text": "The state formed by the union of England and Scotland in 1707. In this period it became the leading naval and colonial power and the first industrial country, and lost thirteen of its American colonies.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Great_Britain",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Great Britain",
+     1707
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-united-kingdom-of-great-britain-and-ireland",
+   "names": [
+    "United Kingdom of Great Britain and Ireland",
+    "United Kingdom"
+   ],
+   "from": 1801,
+   "to": 1922,
+   "wiki": "United Kingdom of Great Britain and Ireland",
+   "text": "Great Britain and Ireland under one parliament from 1801. It was the centre of the largest empire in history and the leading industrial and financial power of the 19th century.",
+   "source": "https://en.wikipedia.org/wiki/United_Kingdom_of_Great_Britain_and_Ireland",
+   "verified": true,
+   "claims": [
+    [
+     "United Kingdom of Great Britain and Ireland",
+     1801
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-british-empire",
+   "names": [
+    "British Empire",
+    "British Colonial Empire"
+   ],
+   "from": 1583,
+   "to": 1997,
+   "wiki": "British Empire",
+   "text": "The colonies, dominions, protectorates and other territories ruled from Britain. At its greatest extent, after the First World War, it covered about a quarter of the world's land and people; most of it became independent in the two decades after the Second World War.",
+   "source": "https://en.wikipedia.org/wiki/British_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-spanish-empire",
+   "names": [
+    "Spanish Empire"
+   ],
+   "from": 1492,
+   "to": 1976,
+   "wiki": "Spanish Empire",
+   "text": "The overseas possessions of the Spanish crown, begun with Columbus's voyages. In the 16th and 17th centuries it covered most of the Americas, the Philippines and parts of Europe; most of its American territories became independent in the 1810s and 1820s.",
+   "source": "https://en.wikipedia.org/wiki/Spanish_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-portuguese-empire",
+   "names": [
+    "Portuguese Empire",
+    "Portuguese Colonies"
+   ],
+   "from": 1415,
+   "to": 1999,
+   "wiki": "Portuguese Empire",
+   "text": "The first and longest-lived of the European overseas empires, built on forts and trading posts along the coasts of Africa, India and East Asia, and on Brazil. It began with the capture of Ceuta in 1415 and ended with the handover of Macau in 1999.",
+   "source": "https://en.wikipedia.org/wiki/Portuguese_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Portuguese Empire",
+     1415
+    ],
+    [
+     "Portuguese Empire",
+     1999
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-portugal",
+   "names": [
+    "Kingdom of Portugal"
+   ],
+   "from": 1139,
+   "to": 1910,
+   "wiki": "Kingdom of Portugal",
+   "text": "The Portuguese monarchy, independent of León from the 12th century. It led the European voyages of exploration in the 15th century and was replaced by a republic in 1910.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Portugal",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Portugal",
+     1910
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-dutch-republic",
+   "names": [
+    "Dutch Republic",
+    "United Provinces",
+    "Republic of the Seven United Netherlands"
+   ],
+   "from": 1581,
+   "to": 1795,
+   "wiki": "Dutch Republic",
+   "text": "A federal republic of seven provinces that broke away from Spanish rule. In the 17th century it was Europe's leading trading and shipping nation, with a commercial empire in Asia and the Atlantic; it fell to French revolutionary armies in 1795.",
+   "source": "https://en.wikipedia.org/wiki/Dutch_Republic",
+   "verified": true,
+   "claims": [
+    [
+     "Dutch Republic",
+     1795
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-dutch-east-india-company",
+   "names": [
+    "Dutch East India Company"
+   ],
+   "from": 1602,
+   "to": 1799,
+   "wiki": "Dutch East India Company",
+   "text": "A chartered trading company, founded in 1602, with the right to wage war, make treaties and govern territory in Asia. It ruled parts of Java, Ceylon, the Spice Islands and the Cape, and was dissolved in 1799.",
+   "source": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+   "verified": true,
+   "claims": [
+    [
+     "Dutch East India Company",
+     1602
+    ],
+    [
+     "Dutch East India Company",
+     1799
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-east-india-company",
+   "names": [
+    "British East India Company",
+    "East India Company"
+   ],
+   "from": 1600,
+   "to": 1874,
+   "wiki": "East India Company",
+   "text": "An English trading company chartered in 1600 that came to rule most of India after its victory at Plassey. The British crown took over its territories after the rebellion of 1857.",
+   "source": "https://en.wikipedia.org/wiki/East_India_Company",
+   "verified": true,
+   "claims": [
+    [
+     "East India Company",
+     1600
+    ],
+    [
+     "East India Company",
+     1857
+    ],
+    [
+     "Indian Rebellion of 1857",
+     1857
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Indian Rebellion of 1857",
+     1857
+    ]
+   ]
+  },
+  {
+   "id": "pol-habsburg-monarchy",
+   "names": [
+    "Habsburg Monarchy",
+    "Habsburg monarchy"
+   ],
+   "from": 1526,
+   "to": 1804,
+   "wiki": "Habsburg monarchy",
+   "text": "The lands ruled by the Austrian branch of the House of Habsburg: Austria, Bohemia, Hungary and, at times, the southern Netherlands and parts of Italy. It was reorganised as the Austrian Empire in 1804.",
+   "source": "https://en.wikipedia.org/wiki/Habsburg_monarchy",
+   "verified": true,
+   "claims": [
+    [
+     "Habsburg monarchy",
+     1804
+    ],
+    [
+     "Austrian Empire",
+     1804
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Austrian Empire",
+     1804
+    ]
+   ]
+  },
+  {
+   "id": "pol-austrian-empire",
+   "names": [
+    "Austrian Empire"
+   ],
+   "from": 1804,
+   "to": 1867,
+   "wiki": "Austrian Empire",
+   "text": "The empire proclaimed by the Habsburg ruler Francis in 1804, a multinational state in central Europe. After defeat by Prussia it was reorganised as the Dual Monarchy of Austria-Hungary in 1867.",
+   "source": "https://en.wikipedia.org/wiki/Austrian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Austrian Empire",
+     1804
+    ],
+    [
+     "Austrian Empire",
+     1867
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-austria-hungary",
+   "names": [
+    "Austria-Hungary",
+    "Austro-Hungarian Empire"
+   ],
+   "from": 1867,
+   "to": 1918,
+   "wiki": "Austria-Hungary",
+   "text": "The Dual Monarchy created in 1867, in which the Austrian and Hungarian halves shared a ruler, an army and a foreign policy. It broke up along national lines at the end of the First World War in 1918.",
+   "source": "https://en.wikipedia.org/wiki/Austria-Hungary",
+   "verified": true,
+   "claims": [
+    [
+     "Austria-Hungary",
+     1867
+    ],
+    [
+     "Austria-Hungary",
+     1918
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-prussia",
+   "names": [
+    "Prussia",
+    "Kingdom of Prussia"
+   ],
+   "from": 1701,
+   "to": 1918,
+   "wiki": "Kingdom of Prussia",
+   "text": "The kingdom of the Hohenzollern rulers of Brandenburg, crowned kings in 1701. It became a great power under Frederick the Great and united Germany under its leadership in 1871.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Prussia",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Prussia",
+     1701
+    ],
+    [
+     "Kingdom of Prussia",
+     1871
+    ],
+    [
+     "Proclamation of the German Empire",
+     1871
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Proclamation of the German Empire",
+     1871
+    ]
+   ]
+  },
+  {
+   "id": "pol-german-empire",
+   "names": [
+    "German Empire"
+   ],
+   "from": 1871,
+   "to": 1918,
+   "wiki": "German Empire",
+   "text": "The German nation-state founded in 1871 under the Prussian king as emperor, with Bismarck as its first chancellor. It became the strongest industrial and military power on the continent and collapsed in defeat and revolution in 1918.",
+   "source": "https://en.wikipedia.org/wiki/German_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "German Empire",
+     1871
+    ],
+    [
+     "German Empire",
+     1918
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-german-confederation",
+   "names": [
+    "German Confederation"
+   ],
+   "from": 1815,
+   "to": 1866,
+   "wiki": "German Confederation",
+   "text": "A league of German states set up by the Congress of Vienna in 1815 to replace the Holy Roman Empire, presided over by Austria. It ended with the Austro-Prussian War of 1866.",
+   "source": "https://en.wikipedia.org/wiki/German_Confederation",
+   "verified": true,
+   "claims": [
+    [
+     "German Confederation",
+     1815
+    ],
+    [
+     "German Confederation",
+     1866
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-polish-lithuanian-commonwealth",
+   "names": [
+    "Polish–Lithuanian Commonwealth",
+    "Polish-Lithuanian Commonwealth",
+    "Poland-Lithuania"
+   ],
+   "from": 1569,
+   "to": 1795,
+   "wiki": "Polish–Lithuanian Commonwealth",
+   "text": "A union of the Kingdom of Poland and the Grand Duchy of Lithuania with an elected king and a powerful noble parliament, formed at Lublin in 1569. One of the largest states in Europe, it was partitioned by Russia, Prussia and Austria and disappeared in 1795.",
+   "source": "https://en.wikipedia.org/wiki/Polish–Lithuanian_Commonwealth",
+   "verified": true,
+   "claims": [
+    [
+     "Polish–Lithuanian Commonwealth",
+     1569
+    ],
+    [
+     "Polish–Lithuanian Commonwealth",
+     1795
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-grand-duchy-of-lithuania",
+   "names": [
+    "Grand Duchy of Lithuania"
+   ],
+   "from": 1236,
+   "to": 1795,
+   "wiki": "Grand Duchy of Lithuania",
+   "text": "A state that grew from the last pagan realm in Europe into a power ruling much of present-day Belarus and Ukraine. It was joined to Poland by a dynastic union and then by the Union of Lublin.",
+   "source": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Lithuania",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-hungary",
+   "names": [
+    "Kingdom of Hungary"
+   ],
+   "from": 1000,
+   "to": 1946,
+   "wiki": "Kingdom of Hungary",
+   "text": "The Hungarian kingdom, founded with the coronation of Stephen I. Most of it was conquered by the Ottomans after 1526 and the rest passed to the Habsburgs, who ruled all of it from the end of the 17th century.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Hungary",
+     1526
+    ],
+    [
+     "Battle of Mohács",
+     1526
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Battle of Mohács",
+     1526
+    ]
+   ]
+  },
+  {
+   "id": "pol-kievan-rus",
+   "names": [
+    "Kievan Rus",
+    "Kyivan Rus",
+    "Kievan Rus'"
+   ],
+   "from": 882,
+   "to": 1240,
+   "wiki": "Kievan Rus'",
+   "text": "A federation of East Slavic principalities under the Rurikid dynasty, centred on Kiev, which adopted Orthodox Christianity from Byzantium. It broke into rival principalities and was conquered by the Mongols, who sacked Kiev in 1240.",
+   "source": "https://en.wikipedia.org/wiki/Kievan_Rus'",
+   "verified": true,
+   "claims": [
+    [
+     "Kievan Rus'",
+     1240
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-grand-duchy-of-moscow",
+   "names": [
+    "Grand Duchy of Moscow",
+    "Muscovy",
+    "Grand Principality of Moscow"
+   ],
+   "from": 1263,
+   "to": 1547,
+   "wiki": "Principality of Moscow",
+   "text": "The principality around Moscow that grew under Mongol overlordship, threw it off under Ivan III and gathered the other Russian lands. Ivan IV was crowned tsar in 1547.",
+   "source": "https://en.wikipedia.org/wiki/Principality_of_Moscow",
+   "verified": true,
+   "claims": [
+    [
+     "Principality of Moscow",
+     1547
+    ],
+    [
+     "Tsardom of Russia",
+     1547
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Tsardom of Russia",
+     1547
+    ]
+   ]
+  },
+  {
+   "id": "pol-tsardom-of-russia",
+   "names": [
+    "Tsardom of Russia",
+    "Tsardom of Muscovy"
+   ],
+   "from": 1547,
+   "to": 1721,
+   "wiki": "Tsardom of Russia",
+   "text": "The Russian state from the coronation of Ivan IV as tsar in 1547. It expanded across Siberia to the Pacific and, under Peter the Great, to the Baltic; Peter proclaimed it an empire in 1721.",
+   "source": "https://en.wikipedia.org/wiki/Tsardom_of_Russia",
+   "verified": true,
+   "claims": [
+    [
+     "Tsardom of Russia",
+     1547
+    ],
+    [
+     "Tsardom of Russia",
+     1721
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-russian-empire",
+   "names": [
+    "Russian Empire"
+   ],
+   "from": 1721,
+   "to": 1917,
+   "wiki": "Russian Empire",
+   "text": "The empire proclaimed by Peter the Great in 1721, stretching from Poland to the Pacific and, for a time, Alaska. It was overthrown in the revolutions of 1917.",
+   "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Russian Empire",
+     1721
+    ],
+    [
+     "Russian Empire",
+     1917
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-soviet-union",
+   "names": [
+    "Soviet Union",
+    "USSR"
+   ],
+   "from": 1922,
+   "to": 1991,
+   "wiki": "Soviet Union",
+   "text": "A federation of socialist republics under Communist Party rule, formed in 1922 from the former Russian Empire. It was one of the two superpowers of the Cold War and dissolved into fifteen states in 1991.",
+   "source": "https://en.wikipedia.org/wiki/Soviet_Union",
+   "verified": true,
+   "claims": [
+    [
+     "Soviet Union",
+     1922
+    ],
+    [
+     "Soviet Union",
+     1991
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-novgorod-republic",
+   "names": [
+    "Novgorod Republic",
+    "Novgorod"
+   ],
+   "from": 1136,
+   "to": 1478,
+   "wiki": "Novgorod Republic",
+   "text": "A merchant republic in northern Rus' governed by an assembly and elected officials, trading furs with the Hanseatic towns. Moscow annexed it in 1478.",
+   "source": "https://en.wikipedia.org/wiki/Novgorod_Republic",
+   "verified": true,
+   "claims": [
+    [
+     "Novgorod Republic",
+     1478
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-golden-horde",
+   "names": [
+    "Golden Horde",
+    "Khanate of the Golden Horde"
+   ],
+   "from": 1242,
+   "to": 1502,
+   "wiki": "Golden Horde",
+   "text": "The western part of the Mongol Empire, founded by Batu Khan, which ruled the steppe from the Danube to the Aral Sea and took tribute from the Russian principalities. It broke up into the khanates of Kazan, Astrakhan, Crimea and others.",
+   "source": "https://en.wikipedia.org/wiki/Golden_Horde",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-crimean-khanate",
+   "names": [
+    "Crimean Khanate"
+   ],
+   "from": 1441,
+   "to": 1783,
+   "wiki": "Crimean Khanate",
+   "text": "A Tatar khanate on the Crimean peninsula and the steppe to its north, a successor of the Golden Horde and from the 1470s a vassal of the Ottoman Empire. Russia annexed it in 1783.",
+   "source": "https://en.wikipedia.org/wiki/Crimean_Khanate",
+   "verified": true,
+   "claims": [
+    [
+     "Crimean Khanate",
+     1783
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-state-of-the-teutonic-order",
+   "names": [
+    "Teutonic Knights",
+    "Teutonic Order",
+    "State of the Teutonic Order"
+   ],
+   "from": 1230,
+   "to": 1525,
+   "wiki": "State of the Teutonic Order",
+   "text": "A state on the Baltic coast created by a German crusading order that conquered and converted the pagan Prussians. It was defeated by Poland and Lithuania at Grunwald and secularised as the Duchy of Prussia in 1525.",
+   "source": "https://en.wikipedia.org/wiki/State_of_the_Teutonic_Order",
+   "verified": true,
+   "claims": [
+    [
+     "State of the Teutonic Order",
+     1525
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-republic-of-venice",
+   "names": [
+    "Republic of Venice",
+    "Venice"
+   ],
+   "from": 697,
+   "to": 1797,
+   "wiki": "Republic of Venice",
+   "text": "A maritime republic ruled by an elected doge and a closed merchant aristocracy. It dominated trade between Europe and the eastern Mediterranean, held Crete, Cyprus and the Dalmatian coast, and was ended by Napoleon in 1797.",
+   "source": "https://en.wikipedia.org/wiki/Republic_of_Venice",
+   "verified": true,
+   "claims": [
+    [
+     "Republic of Venice",
+     1797
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-republic-of-genoa",
+   "names": [
+    "Republic of Genoa",
+    "Genoa"
+   ],
+   "from": 1099,
+   "to": 1797,
+   "wiki": "Republic of Genoa",
+   "text": "A maritime republic and rival of Venice, with colonies and trading posts around the Mediterranean and the Black Sea, later a banker to the Spanish crown.",
+   "source": "https://en.wikipedia.org/wiki/Republic_of_Genoa",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-papal-states",
+   "names": [
+    "Papal States"
+   ],
+   "from": 756,
+   "to": 1870,
+   "wiki": "Papal States",
+   "text": "The territories in central Italy ruled directly by the pope. They were annexed by the Kingdom of Italy, the last of them, Rome itself, in 1870.",
+   "source": "https://en.wikipedia.org/wiki/Papal_States",
+   "verified": true,
+   "claims": [
+    [
+     "Papal States",
+     1870
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-sicily",
+   "names": [
+    "Kingdom of Sicily"
+   ],
+   "from": 1130,
+   "to": 1816,
+   "wiki": "Kingdom of Sicily",
+   "text": "A kingdom founded by the Norman Roger II in 1130, covering Sicily and southern Italy, where Latin, Greek and Arab cultures met. It was later ruled by German, French and Spanish dynasties.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Sicily",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Sicily",
+     1130
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-naples",
+   "names": [
+    "Kingdom of Naples"
+   ],
+   "from": 1282,
+   "to": 1816,
+   "wiki": "Kingdom of Naples",
+   "text": "The mainland half of the old Kingdom of Sicily, separate from the island after the Sicilian Vespers. It was ruled in turn by Angevin, Aragonese, Spanish and Bourbon kings.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Naples",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-the-two-sicilies",
+   "names": [
+    "Kingdom of the Two Sicilies"
+   ],
+   "from": 1816,
+   "to": 1861,
+   "wiki": "Kingdom of the Two Sicilies",
+   "text": "The Bourbon kingdom formed by uniting Naples and Sicily after the Napoleonic Wars, the largest state in Italy before unification. Garibaldi conquered it and it joined the Kingdom of Italy in 1861.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_the_Two_Sicilies",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of the Two Sicilies",
+     1861
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-sardinia",
+   "names": [
+    "Kingdom of Sardinia",
+    "Sardinia-Piedmont"
+   ],
+   "from": 1720,
+   "to": 1861,
+   "wiki": "Kingdom of Sardinia",
+   "text": "The state of the House of Savoy, ruled from Turin, with Piedmont as its core. It led the unification of Italy, and its king became King of Italy in 1861.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Sardinia",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Sardinia",
+     1861
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-italy",
+   "names": [
+    "Kingdom of Italy"
+   ],
+   "from": 1861,
+   "to": 1946,
+   "wiki": "Kingdom of Italy",
+   "text": "The Italian state created by unification in 1861 under the House of Savoy. It was ruled by Mussolini's Fascists from 1922 and became a republic by referendum in 1946.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Italy",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Italy",
+     1861
+    ],
+    [
+     "Kingdom of Italy",
+     1922
+    ],
+    [
+     "Kingdom of Italy",
+     1946
+    ],
+    [
+     "March on Rome",
+     1922
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "March on Rome",
+     1922
+    ]
+   ]
+  },
+  {
+   "id": "pol-crown-of-aragon",
+   "names": [
+    "Crown of Aragon",
+    "Aragon",
+    "Kingdom of Aragon"
+   ],
+   "from": 1162,
+   "to": 1716,
+   "wiki": "Crown of Aragon",
+   "text": "A union of Aragon, Catalonia, Valencia and the Balearic Islands that built a Mediterranean empire including Sicily, Sardinia and Naples. The marriage of Ferdinand of Aragon and Isabella of Castile joined it to Castile.",
+   "source": "https://en.wikipedia.org/wiki/Crown_of_Aragon",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-crown-of-castile",
+   "names": [
+    "Crown of Castile",
+    "Castile",
+    "Kingdom of Castile"
+   ],
+   "from": 1230,
+   "to": 1715,
+   "wiki": "Crown of Castile",
+   "text": "The largest of the Christian kingdoms of medieval Spain, which took most of the south from the Muslims and financed Columbus. With Aragon it formed the Spanish monarchy.",
+   "source": "https://en.wikipedia.org/wiki/Crown_of_Castile",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-caliphate-of-c-rdoba",
+   "names": [
+    "Caliphate of Córdoba",
+    "Caliphate of Cordoba",
+    "Umayyad Caliphate of Córdoba"
+   ],
+   "from": 929,
+   "to": 1031,
+   "wiki": "Caliphate of Córdoba",
+   "text": "The Umayyad state in Muslim Spain after its ruler took the title of caliph in 929. Córdoba was then one of the largest cities in Europe; the caliphate broke into small taifa kingdoms in 1031.",
+   "source": "https://en.wikipedia.org/wiki/Caliphate_of_Córdoba",
+   "verified": true,
+   "claims": [
+    [
+     "Caliphate of Córdoba",
+     929
+    ],
+    [
+     "Caliphate of Córdoba",
+     1031
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-emirate-of-granada",
+   "names": [
+    "Emirate of Granada",
+    "Granada",
+    "Nasrid Kingdom of Granada"
+   ],
+   "from": 1232,
+   "to": 1492,
+   "wiki": "Emirate of Granada",
+   "text": "The last Muslim state in Spain, ruled by the Nasrid dynasty from the Alhambra. Castile and Aragon conquered it in 1492.",
+   "source": "https://en.wikipedia.org/wiki/Emirate_of_Granada",
+   "verified": true,
+   "claims": [
+    [
+     "Emirate of Granada",
+     1492
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-almohad-caliphate",
+   "names": [
+    "Almohad Caliphate",
+    "Almohads",
+    "Almohad Empire"
+   ],
+   "from": 1121,
+   "to": 1269,
+   "wiki": "Almohad Caliphate",
+   "text": "A Berber religious movement from the Atlas mountains that overthrew the Almoravids and ruled the Maghreb and Muslim Spain. Its defeat at Las Navas de Tolosa opened southern Spain to the Christian kingdoms.",
+   "source": "https://en.wikipedia.org/wiki/Almohad_Caliphate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-almoravid-dynasty",
+   "names": [
+    "Almoravid dynasty",
+    "Almoravids",
+    "Almoravid Empire"
+   ],
+   "from": 1040,
+   "to": 1147,
+   "wiki": "Almoravid dynasty",
+   "text": "A Berber dynasty from the western Sahara that founded Marrakesh and ruled Morocco and Muslim Spain. It was overthrown by the Almohads.",
+   "source": "https://en.wikipedia.org/wiki/Almoravid_dynasty",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-visigothic-kingdom",
+   "names": [
+    "Visigothic Kingdom",
+    "Visigoths",
+    "Kingdom of the Visigoths"
+   ],
+   "from": 418,
+   "to": 720,
+   "wiki": "Visigothic Kingdom",
+   "text": "A kingdom founded by the Visigoths in south-western Gaul and then Spain, with its capital at Toledo. It was destroyed by the Muslim conquest that began in 711.",
+   "source": "https://en.wikipedia.org/wiki/Visigothic_Kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Visigothic Kingdom",
+     711
+    ],
+    [
+     "Muslim conquest of the Iberian Peninsula",
+     711
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Muslim conquest of the Iberian Peninsula",
+     711
+    ]
+   ]
+  },
+  {
+   "id": "pol-ostrogothic-kingdom",
+   "names": [
+    "Ostrogothic Kingdom",
+    "Ostrogoths"
+   ],
+   "from": 493,
+   "to": 553,
+   "wiki": "Ostrogothic Kingdom",
+   "text": "The kingdom of Theodoric the Great and his successors in Italy, which kept much of Roman administration. It was destroyed by the armies of Justinian.",
+   "source": "https://en.wikipedia.org/wiki/Ostrogothic_Kingdom",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-the-lombards",
+   "names": [
+    "Kingdom of the Lombards",
+    "Lombards",
+    "Lombard Kingdom"
+   ],
+   "from": 568,
+   "to": 774,
+   "wiki": "Kingdom of the Lombards",
+   "text": "The kingdom set up by the Lombards who invaded Italy in 568, with its capital at Pavia. Charlemagne conquered it in 774.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_the_Lombards",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of the Lombards",
+     568
+    ],
+    [
+     "Kingdom of the Lombards",
+     774
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-vandal-kingdom",
+   "names": [
+    "Vandal Kingdom",
+    "Vandals"
+   ],
+   "from": 435,
+   "to": 534,
+   "wiki": "Vandal Kingdom",
+   "text": "A kingdom in Roman North Africa founded by the Vandals, who took Carthage and sacked Rome in 455. Justinian's general Belisarius destroyed it.",
+   "source": "https://en.wikipedia.org/wiki/Vandal_Kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Vandal Kingdom",
+     455
+    ],
+    [
+     "Sack of Rome (455)",
+     455
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Sack of Rome (455)",
+     455
+    ]
+   ]
+  },
+  {
+   "id": "pol-kalmar-union",
+   "names": [
+    "Kalmar Union"
+   ],
+   "from": 1397,
+   "to": 1523,
+   "wiki": "Kalmar Union",
+   "text": "A union of the crowns of Denmark, Norway and Sweden under one monarch, formed in 1397. It ended when Sweden broke away under Gustav Vasa in 1523.",
+   "source": "https://en.wikipedia.org/wiki/Kalmar_Union",
+   "verified": true,
+   "claims": [
+    [
+     "Kalmar Union",
+     1397
+    ],
+    [
+     "Kalmar Union",
+     1523
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-denmark-norway",
+   "names": [
+    "Denmark-Norway",
+    "Denmark–Norway"
+   ],
+   "from": 1537,
+   "to": 1814,
+   "wiki": "Denmark–Norway",
+   "text": "The union of the Danish and Norwegian crowns, with Iceland, Greenland and the Faroe Islands, ruled from Copenhagen. Denmark ceded Norway to Sweden in 1814.",
+   "source": "https://en.wikipedia.org/wiki/Denmark–Norway",
+   "verified": true,
+   "claims": [
+    [
+     "Denmark–Norway",
+     1814
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-swedish-empire",
+   "names": [
+    "Swedish Empire",
+    "Sweden"
+   ],
+   "from": 1611,
+   "to": 1721,
+   "wiki": "Swedish Empire",
+   "text": "Sweden in its age as a great power, when it ruled Finland, Estonia, Livonia and parts of northern Germany and intervened in the Thirty Years' War. It lost its Baltic provinces to Russia in the Great Northern War, which ended in 1721.",
+   "source": "https://en.wikipedia.org/wiki/Swedish_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Swedish Empire",
+     1721
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-old-swiss-confederacy",
+   "names": [
+    "Old Swiss Confederacy",
+    "Swiss Confederation",
+    "Swiss Confederacy"
+   ],
+   "from": 1291,
+   "to": 1798,
+   "wiki": "Old Swiss Confederacy",
+   "text": "A league of Alpine valley communities and towns, traditionally dated from 1291, that won its independence from the Habsburgs. It was replaced by the French-backed Helvetic Republic in 1798.",
+   "source": "https://en.wikipedia.org/wiki/Old_Swiss_Confederacy",
+   "verified": true,
+   "claims": [
+    [
+     "Old Swiss Confederacy",
+     1291
+    ],
+    [
+     "Old Swiss Confederacy",
+     1798
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-first-french-empire",
+   "names": [
+    "First French Empire",
+    "French Empire"
+   ],
+   "from": 1804,
+   "to": 1815,
+   "wiki": "First French Empire",
+   "text": "The empire of Napoleon I, proclaimed in 1804. At its height it ruled or dominated most of continental Europe; it fell after the invasion of Russia and ended for good after Waterloo in 1815.",
+   "source": "https://en.wikipedia.org/wiki/First_French_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "First French Empire",
+     1804
+    ],
+    [
+     "First French Empire",
+     1815
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-french-colonial-empire",
+   "names": [
+    "French colonial empire",
+    "French Colonial Empire"
+   ],
+   "from": 1534,
+   "to": 1980,
+   "wiki": "French colonial empire",
+   "text": "The overseas territories of France. A first empire in North America and India was mostly lost to Britain in the 18th century; a second, built from 1830, covered much of North and West Africa, Indochina and the Pacific.",
+   "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+   "verified": true,
+   "claims": [
+    [
+     "French colonial empire",
+     1830
+    ],
+    [
+     "French conquest of Algeria",
+     1830
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "French conquest of Algeria",
+     1830
+    ]
+   ]
+  },
+  {
+   "id": "pol-ottoman-empire",
+   "names": [
+    "Ottoman Empire"
+   ],
+   "from": 1299,
+   "to": 1922,
+   "wiki": "Ottoman Empire",
+   "text": "A Turkish dynasty's state that grew from a small principality in Anatolia into an empire over south-eastern Europe, the Middle East and North Africa. It took Constantinople in 1453, reached its height in the 16th century, and was abolished in 1922.",
+   "source": "https://en.wikipedia.org/wiki/Ottoman_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Ottoman Empire",
+     1453
+    ],
+    [
+     "Ottoman Empire",
+     1922
+    ],
+    [
+     "Fall of Constantinople",
+     1453
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Fall of Constantinople",
+     1453
+    ]
+   ]
+  },
+  {
+   "id": "pol-sultanate-of-rum",
+   "names": [
+    "Sultanate of Rum",
+    "Rum",
+    "Seljuk Sultanate of Rum"
+   ],
+   "from": 1077,
+   "to": 1308,
+   "wiki": "Sultanate of Rum",
+   "text": "The Seljuk Turkish state in Anatolia, founded after the Byzantine defeat at Manzikert, with its capital at Konya. It became a Mongol vassal and broke into small principalities, one of which was the Ottoman.",
+   "source": "https://en.wikipedia.org/wiki/Sultanate_of_Rum",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-seljuk-empire",
+   "names": [
+    "Seljuk Empire",
+    "Great Seljuk Empire",
+    "Seljuks",
+    "Seljuk Turks"
+   ],
+   "from": 1037,
+   "to": 1194,
+   "wiki": "Seljuk Empire",
+   "text": "A Turkish dynasty that conquered Iran and Iraq, took Baghdad and ruled as sultans in the name of the Abbasid caliph. Its victory over Byzantium at Manzikert opened Anatolia to Turkish settlement.",
+   "source": "https://en.wikipedia.org/wiki/Seljuk_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-mamluk-sultanate",
+   "names": [
+    "Mamluk Sultanate",
+    "Mamluks",
+    "Mamluke Sultanate"
+   ],
+   "from": 1250,
+   "to": 1517,
+   "wiki": "Mamluk Sultanate",
+   "text": "A state ruled from Cairo by sultans drawn from a caste of slave soldiers. It stopped the Mongols at Ain Jalut, expelled the last crusaders, and was conquered by the Ottomans in 1517.",
+   "source": "https://en.wikipedia.org/wiki/Mamluk_Sultanate",
+   "verified": true,
+   "claims": [
+    [
+     "Mamluk Sultanate",
+     1517
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ayyubid-dynasty",
+   "names": [
+    "Ayyubid dynasty",
+    "Ayyubid Sultanate",
+    "Ayyubids",
+    "Ayyubid Caliphate"
+   ],
+   "from": 1171,
+   "to": 1260,
+   "wiki": "Ayyubid dynasty",
+   "text": "The dynasty of Saladin, who ended the Fatimid caliphate in 1171, united Egypt and Syria and took Jerusalem from the crusaders. It was replaced in Egypt by its own Mamluk soldiers.",
+   "source": "https://en.wikipedia.org/wiki/Ayyubid_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Ayyubid dynasty",
+     1171
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-fatimid-caliphate",
+   "names": [
+    "Fatimid Caliphate",
+    "Fatimids"
+   ],
+   "from": 909,
+   "to": 1171,
+   "wiki": "Fatimid Caliphate",
+   "text": "An Ismaili Shia caliphate that arose in North Africa in 909, conquered Egypt and founded Cairo as its capital. Saladin abolished it in 1171.",
+   "source": "https://en.wikipedia.org/wiki/Fatimid_Caliphate",
+   "verified": true,
+   "claims": [
+    [
+     "Fatimid Caliphate",
+     909
+    ],
+    [
+     "Fatimid Caliphate",
+     1171
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-abbasid-caliphate",
+   "names": [
+    "Abbasid Caliphate",
+    "Abbasids"
+   ],
+   "from": 750,
+   "to": 1258,
+   "wiki": "Abbasid Caliphate",
+   "text": "The dynasty that overthrew the Umayyads in 750 and ruled the Islamic world from Baghdad, a centre of learning and trade. Its political power faded from the 9th century, and the Mongols destroyed Baghdad in 1258.",
+   "source": "https://en.wikipedia.org/wiki/Abbasid_Caliphate",
+   "verified": true,
+   "claims": [
+    [
+     "Abbasid Caliphate",
+     750
+    ],
+    [
+     "Abbasid Caliphate",
+     1258
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-umayyad-caliphate",
+   "names": [
+    "Umayyad Caliphate",
+    "Umayyads"
+   ],
+   "from": 661,
+   "to": 750,
+   "wiki": "Umayyad Caliphate",
+   "text": "The first hereditary dynasty of caliphs, ruling from Damascus. Under it the Arab empire reached from Spain to the Indus; the Abbasids overthrew it in 750.",
+   "source": "https://en.wikipedia.org/wiki/Umayyad_Caliphate",
+   "verified": true,
+   "claims": [
+    [
+     "Umayyad Caliphate",
+     750
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-rashidun-caliphate",
+   "names": [
+    "Rashidun Caliphate",
+    "Rashidun"
+   ],
+   "from": 632,
+   "to": 661,
+   "wiki": "Rashidun Caliphate",
+   "text": "The caliphate of the first four successors of Muhammad. In three decades its armies conquered Arabia, Syria, Egypt, Iraq and Iran from the Byzantine and Sasanian empires.",
+   "source": "https://en.wikipedia.org/wiki/Rashidun_Caliphate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-sasanian-empire",
+   "names": [
+    "Sasanian Empire",
+    "Sassanid Empire",
+    "Sasanian Persia"
+   ],
+   "from": 224,
+   "to": 651,
+   "wiki": "Sasanian Empire",
+   "text": "The last Persian empire before Islam, founded by Ardashir I in 224, with Zoroastrianism as its state religion. It was the great rival of Rome and Byzantium and fell to the Arab conquest in 651.",
+   "source": "https://en.wikipedia.org/wiki/Sasanian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Sasanian Empire",
+     224
+    ],
+    [
+     "Sasanian Empire",
+     651
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-parthian-empire",
+   "names": [
+    "Parthian Empire",
+    "Parthia"
+   ],
+   "from": -247,
+   "to": 224,
+   "wiki": "Parthian Empire",
+   "text": "An Iranian empire founded by the Arsacid dynasty, which took Iran and Mesopotamia from the Seleucids. It defeated Rome at Carrhae and was overthrown by the Sasanians in 224.",
+   "source": "https://en.wikipedia.org/wiki/Parthian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Parthian Empire",
+     224
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-achaemenid-empire",
+   "names": [
+    "Achaemenid Empire",
+    "Persian Empire"
+   ],
+   "from": -550,
+   "to": -330,
+   "wiki": "Achaemenid Empire",
+   "text": "The first Persian empire, founded by Cyrus the Great, which ruled from the Aegean and Egypt to the Indus. Alexander the Great conquered it.",
+   "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-seleucid-empire",
+   "names": [
+    "Seleucid Empire",
+    "Seleucid Kingdom"
+   ],
+   "from": -312,
+   "to": -63,
+   "wiki": "Seleucid Empire",
+   "text": "The largest of the kingdoms founded by Alexander's generals, stretching at first from Anatolia to Central Asia. It shrank under Parthian and Roman pressure to Syria, which Rome annexed.",
+   "source": "https://en.wikipedia.org/wiki/Seleucid_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ptolemaic-kingdom",
+   "names": [
+    "Ptolemaic Kingdom",
+    "Ptolemaic Egypt"
+   ],
+   "from": -305,
+   "to": -30,
+   "wiki": "Ptolemaic Kingdom",
+   "text": "The kingdom of Egypt under the Macedonian dynasty founded by Alexander's general Ptolemy, with its capital at Alexandria. It ended with the death of Cleopatra VII and Roman annexation.",
+   "source": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-macedonia-ancient-kingdom",
+   "names": [
+    "Macedonian Empire",
+    "Macedon",
+    "Macedonia",
+    "Kingdom of Macedon"
+   ],
+   "from": -808,
+   "to": -168,
+   "wiki": "Macedonia (ancient kingdom)",
+   "text": "A kingdom on the northern edge of the Greek world that Philip II made master of Greece. His son Alexander the Great conquered the Persian Empire; Rome ended the kingdom after the battle of Pydna.",
+   "source": "https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ancient-carthage",
+   "names": [
+    "Carthage",
+    "Carthaginian Empire"
+   ],
+   "from": -814,
+   "to": -146,
+   "wiki": "Ancient Carthage",
+   "text": "A Phoenician colony in present-day Tunisia that became the leading trading and naval power of the western Mediterranean. It fought three wars with Rome, which destroyed the city in 146 BC.",
+   "source": "https://en.wikipedia.org/wiki/Ancient_Carthage",
+   "verified": true,
+   "claims": [
+    [
+     "Ancient Carthage",
+     -146
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-safavid-iran",
+   "names": [
+    "Safavid Empire",
+    "Safavid Iran",
+    "Safavid Dynasty",
+    "Safavid dynasty"
+   ],
+   "from": 1501,
+   "to": 1736,
+   "wiki": "Safavid Iran",
+   "text": "The dynasty that reunited Iran in 1501 and made Twelver Shia Islam its state religion. Its capital Isfahan flourished under Abbas the Great; the state collapsed after an Afghan invasion and was replaced by Nader Shah in 1736.",
+   "source": "https://en.wikipedia.org/wiki/Safavid_Iran",
+   "verified": true,
+   "claims": [
+    [
+     "Safavid Iran",
+     1501
+    ],
+    [
+     "Safavid Iran",
+     1736
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-qajar-iran",
+   "names": [
+    "Qajar Iran",
+    "Qajar Dynasty",
+    "Qajar dynasty",
+    "Qajar Empire"
+   ],
+   "from": 1789,
+   "to": 1925,
+   "wiki": "Qajar Iran",
+   "text": "The Turkic dynasty that ruled Iran from Tehran, losing the Caucasus to Russia and falling under British and Russian influence. Reza Shah replaced it in 1925.",
+   "source": "https://en.wikipedia.org/wiki/Qajar_Iran",
+   "verified": true,
+   "claims": [
+    [
+     "Qajar Iran",
+     1925
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-timurid-empire",
+   "names": [
+    "Timurid Empire",
+    "Timurids",
+    "Timurid Emirates"
+   ],
+   "from": 1370,
+   "to": 1507,
+   "wiki": "Timurid Empire",
+   "text": "The empire of Timur (Tamerlane), who from 1370 conquered Central Asia, Iran and Iraq and sacked Delhi. Under his successors Samarkand and Herat were centres of art and science.",
+   "source": "https://en.wikipedia.org/wiki/Timurid_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Timurid Empire",
+     1370
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-mongol-empire",
+   "names": [
+    "Mongol Empire",
+    "Mongols"
+   ],
+   "from": 1206,
+   "to": 1368,
+   "wiki": "Mongol Empire",
+   "text": "The largest land empire in history, founded by Genghis Khan in 1206. His successors conquered China, Central Asia, Iran and Russia; by the late 13th century it had divided into four khanates.",
+   "source": "https://en.wikipedia.org/wiki/Mongol_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Mongol Empire",
+     1206
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ilkhanate",
+   "names": [
+    "Ilkhanate",
+    "Il-Khanate",
+    "Ilkhanate of Persia"
+   ],
+   "from": 1256,
+   "to": 1335,
+   "wiki": "Ilkhanate",
+   "text": "The Mongol khanate in Iran and Iraq, founded by Hulagu, who destroyed Baghdad. Its rulers converted to Islam, and it broke up after 1335.",
+   "source": "https://en.wikipedia.org/wiki/Ilkhanate",
+   "verified": true,
+   "claims": [
+    [
+     "Ilkhanate",
+     1335
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-chagatai-khanate",
+   "names": [
+    "Chagatai Khanate"
+   ],
+   "from": 1225,
+   "to": 1687,
+   "wiki": "Chagatai Khanate",
+   "text": "The Mongol khanate in Central Asia, named after Genghis Khan's second son. Timur rose to power in its western half.",
+   "source": "https://en.wikipedia.org/wiki/Chagatai_Khanate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-yuan-dynasty",
+   "names": [
+    "Yuan dynasty",
+    "Yuan Empire",
+    "Great Yuan",
+    "Yuan Dynasty"
+   ],
+   "from": 1271,
+   "to": 1368,
+   "wiki": "Yuan dynasty",
+   "text": "The Mongol dynasty in China, proclaimed by Kublai Khan in 1271, which completed the conquest of the Song. It was driven back to the steppe by the Ming in 1368.",
+   "source": "https://en.wikipedia.org/wiki/Yuan_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Yuan dynasty",
+     1271
+    ],
+    [
+     "Yuan dynasty",
+     1368
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-han-dynasty",
+   "names": [
+    "Han Empire",
+    "Han dynasty",
+    "Han",
+    "Han Dynasty"
+   ],
+   "from": -206,
+   "to": 220,
+   "wiki": "Han dynasty",
+   "text": "The dynasty that ruled China for four centuries after the short-lived Qin, with a break in the early 1st century. It extended Chinese rule into Central Asia, Korea and Vietnam, and gave its name to the Han Chinese; it ended in 220.",
+   "source": "https://en.wikipedia.org/wiki/Han_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Han dynasty",
+     220
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-qin-dynasty",
+   "names": [
+    "Qin",
+    "Qin dynasty",
+    "Qin Empire",
+    "Qin Dynasty"
+   ],
+   "from": -221,
+   "to": -206,
+   "wiki": "Qin dynasty",
+   "text": "The first imperial dynasty of China, founded when the king of Qin conquered the other warring states and took the title of First Emperor. It standardised writing, weights and measures, and lasted only fifteen years.",
+   "source": "https://en.wikipedia.org/wiki/Qin_dynasty",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-tang-dynasty",
+   "names": [
+    "Tang Empire",
+    "Tang dynasty",
+    "Tang Dynasty"
+   ],
+   "from": 618,
+   "to": 907,
+   "wiki": "Tang dynasty",
+   "text": "A Chinese dynasty founded in 618, often seen as a high point of Chinese civilisation, with its capital at Chang'an. It was weakened by the An Lushan Rebellion and ended in 907.",
+   "source": "https://en.wikipedia.org/wiki/Tang_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Tang dynasty",
+     618
+    ],
+    [
+     "Tang dynasty",
+     907
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-song-dynasty",
+   "names": [
+    "Song Empire",
+    "Song dynasty",
+    "Song Dynasty",
+    "Northern Song",
+    "Southern Song"
+   ],
+   "from": 960,
+   "to": 1279,
+   "wiki": "Song dynasty",
+   "text": "A Chinese dynasty founded in 960, marked by commercial growth, printing, paper money and gunpowder weapons. It lost the north to the Jurchen Jin and was conquered by the Mongols in 1279.",
+   "source": "https://en.wikipedia.org/wiki/Song_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Song dynasty",
+     960
+    ],
+    [
+     "Song dynasty",
+     1279
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ming-dynasty",
+   "names": [
+    "Ming Empire",
+    "Ming dynasty",
+    "Ming Chinese Empire",
+    "Ming Dynasty"
+   ],
+   "from": 1368,
+   "to": 1644,
+   "wiki": "Ming dynasty",
+   "text": "The Chinese dynasty founded in 1368 after the expulsion of the Mongols. It rebuilt the Great Wall, sent Zheng He's fleets across the Indian Ocean, and fell to rebels and then the Manchus in 1644.",
+   "source": "https://en.wikipedia.org/wiki/Ming_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Ming dynasty",
+     1368
+    ],
+    [
+     "Ming dynasty",
+     1644
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-qing-dynasty",
+   "names": [
+    "Qing Empire",
+    "Qing dynasty",
+    "Qing Dynasty",
+    "Manchu Empire"
+   ],
+   "from": 1636,
+   "to": 1912,
+   "wiki": "Qing dynasty",
+   "text": "The last imperial dynasty of China, founded by the Manchus, who took Beijing in 1644. In the 18th century it ruled Mongolia, Tibet and Xinjiang as well as China; it was overthrown by the revolution that began in 1911 and ended in 1912.",
+   "source": "https://en.wikipedia.org/wiki/Qing_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Qing dynasty",
+     1644
+    ],
+    [
+     "Qing dynasty",
+     1911
+    ],
+    [
+     "Qing dynasty",
+     1912
+    ],
+    [
+     "Battle of Shanhai Pass",
+     1644
+    ],
+    [
+     "1911 Revolution",
+     1911
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Battle of Shanhai Pass",
+     1644
+    ],
+    [
+     "1911 Revolution",
+     1911
+    ]
+   ]
+  },
+  {
+   "id": "pol-liao-dynasty",
+   "names": [
+    "Liao",
+    "Liao dynasty",
+    "Liao Empire",
+    "Khitan Empire"
+   ],
+   "from": 916,
+   "to": 1125,
+   "wiki": "Liao dynasty",
+   "text": "An empire founded by the Khitan people of the steppe, ruling Mongolia, Manchuria and part of northern China. It was destroyed by the Jurchens.",
+   "source": "https://en.wikipedia.org/wiki/Liao_dynasty",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-jin-dynasty-1115-1234",
+   "names": [
+    "Jin",
+    "Jin dynasty",
+    "Jin Empire",
+    "Jurchen Jin"
+   ],
+   "from": 1115,
+   "to": 1234,
+   "wiki": "Jin dynasty (1115–1234)",
+   "text": "A dynasty founded by the Jurchens of Manchuria in 1115, which destroyed the Liao and took northern China from the Song. The Mongols conquered it in 1234.",
+   "source": "https://en.wikipedia.org/wiki/Jin_dynasty_(1115–1234)",
+   "verified": true,
+   "claims": [
+    [
+     "Jin dynasty (1115–1234)",
+     1115
+    ],
+    [
+     "Jin dynasty (1115–1234)",
+     1234
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-western-xia",
+   "names": [
+    "Western Xia",
+    "Xi Xia",
+    "Tangut Empire"
+   ],
+   "from": 1038,
+   "to": 1227,
+   "wiki": "Western Xia",
+   "text": "A state of the Tangut people in north-western China, founded in 1038. It was destroyed by the Mongols in 1227.",
+   "source": "https://en.wikipedia.org/wiki/Western_Xia",
+   "verified": true,
+   "claims": [
+    [
+     "Western Xia",
+     1038
+    ],
+    [
+     "Western Xia",
+     1227
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-xiongnu",
+   "names": [
+    "Xiongnu"
+   ],
+   "from": -209,
+   "to": 93,
+   "wiki": "Xiongnu",
+   "text": "A confederation of nomadic peoples on the Mongolian steppe that raided and fought Han China for centuries. The Han broke its power in the 1st century.",
+   "source": "https://en.wikipedia.org/wiki/Xiongnu",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-goguryeo",
+   "names": [
+    "Goguryeo",
+    "Koguryo",
+    "Koguryŏ"
+   ],
+   "from": -37,
+   "to": 668,
+   "wiki": "Goguryeo",
+   "text": "The northernmost of the Three Kingdoms of Korea, which ruled northern Korea and much of Manchuria. It fell to an alliance of Silla and Tang China in 668.",
+   "source": "https://en.wikipedia.org/wiki/Goguryeo",
+   "verified": true,
+   "claims": [
+    [
+     "Goguryeo",
+     668
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-silla",
+   "names": [
+    "Silla",
+    "Unified Silla"
+   ],
+   "from": -57,
+   "to": 935,
+   "wiki": "Silla",
+   "text": "One of the Three Kingdoms of Korea, in the south-east, which with Tang help conquered Baekje and Goguryeo and unified most of the peninsula. It gave way to Goryeo in the 10th century.",
+   "source": "https://en.wikipedia.org/wiki/Silla",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-baekje",
+   "names": [
+    "Paekche",
+    "Baekje"
+   ],
+   "from": -18,
+   "to": 660,
+   "wiki": "Baekje",
+   "text": "One of the Three Kingdoms of Korea, in the south-west, which passed Buddhism and continental culture on to Japan. Silla and Tang China conquered it in 660.",
+   "source": "https://en.wikipedia.org/wiki/Baekje",
+   "verified": false,
+   "claims": [
+    [
+     "Baekje",
+     660
+    ]
+   ],
+   "check": "years in the text without a matching Wikidata date: 660"
+  },
+  {
+   "id": "pol-goryeo",
+   "names": [
+    "Goryeo",
+    "Koryo",
+    "Koryŏ",
+    "Korea"
+   ],
+   "from": 918,
+   "to": 1392,
+   "wiki": "Goryeo",
+   "text": "The dynasty that reunified Korea, founded in 918, from whose name the word Korea comes. It was a Mongol vassal for a century and was replaced by Joseon in 1392.",
+   "source": "https://en.wikipedia.org/wiki/Goryeo",
+   "verified": true,
+   "claims": [
+    [
+     "Goryeo",
+     918
+    ],
+    [
+     "Goryeo",
+     1392
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-joseon",
+   "names": [
+    "Joseon",
+    "Korea",
+    "Kingdom of Joseon"
+   ],
+   "from": 1392,
+   "to": 1897,
+   "wiki": "Joseon",
+   "text": "The Korean dynasty founded by Yi Seong-gye in 1392, with Confucianism as its state creed and Seoul as its capital. The Korean alphabet was created under King Sejong.",
+   "source": "https://en.wikipedia.org/wiki/Joseon",
+   "verified": true,
+   "claims": [
+    [
+     "Joseon",
+     1392
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-tokugawa-shogunate",
+   "names": [
+    "Tokugawa shogunate",
+    "Tokugawa Shogunate",
+    "Japan"
+   ],
+   "from": 1603,
+   "to": 1868,
+   "wiki": "Tokugawa shogunate",
+   "text": "The military government of Japan under the Tokugawa family, based at Edo, founded in 1603. It kept the peace for two and a half centuries and closed the country to most foreign contact.",
+   "source": "https://en.wikipedia.org/wiki/Tokugawa_shogunate",
+   "verified": true,
+   "claims": [
+    [
+     "Tokugawa shogunate",
+     1603
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-empire-of-japan",
+   "names": [
+    "Empire of Japan",
+    "Japanese Empire",
+    "Imperial Japan"
+   ],
+   "from": 1868,
+   "to": 1947,
+   "wiki": "Empire of Japan",
+   "text": "Japan from the Meiji Restoration of 1868, which industrialised rapidly and took Taiwan, Korea and Manchuria. Its war in China and the Pacific ended in defeat in 1945, and a new constitution took effect in 1947.",
+   "source": "https://en.wikipedia.org/wiki/Empire_of_Japan",
+   "verified": true,
+   "claims": [
+    [
+     "Empire of Japan",
+     1868
+    ],
+    [
+     "Empire of Japan",
+     1945
+    ],
+    [
+     "Empire of Japan",
+     1947
+    ],
+    [
+     "Surrender of Japan",
+     1945
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Surrender of Japan",
+     1945
+    ]
+   ]
+  },
+  {
+   "id": "pol-ashikaga-shogunate",
+   "names": [
+    "Ashikaga shogunate",
+    "Ashikaga Shogunate",
+    "Muromachi shogunate"
+   ],
+   "from": 1336,
+   "to": 1573,
+   "wiki": "Ashikaga shogunate",
+   "text": "The second of Japan's three military governments, based in Kyoto. Its authority collapsed in the Ōnin War, which opened a century of fighting between regional lords.",
+   "source": "https://en.wikipedia.org/wiki/Ashikaga_shogunate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kamakura-shogunate",
+   "names": [
+    "Kamakura shogunate",
+    "Kamakura Shogunate"
+   ],
+   "from": 1185,
+   "to": 1333,
+   "wiki": "Kamakura shogunate",
+   "text": "Japan's first military government, founded by Minamoto no Yoritomo at Kamakura. It beat off two Mongol invasions and fell in 1333.",
+   "source": "https://en.wikipedia.org/wiki/Kamakura_shogunate",
+   "verified": true,
+   "claims": [
+    [
+     "Kamakura shogunate",
+     1333
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-khmer-empire",
+   "names": [
+    "Khmer Empire",
+    "Khmer",
+    "Angkor"
+   ],
+   "from": 802,
+   "to": 1431,
+   "wiki": "Khmer Empire",
+   "text": "A Hindu and Buddhist empire in mainland Southeast Asia, centred on Angkor, whose kings built Angkor Wat and a vast system of reservoirs. It is dated from 802 and declined after Thai attacks, the capital being abandoned in 1431.",
+   "source": "https://en.wikipedia.org/wiki/Khmer_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Khmer Empire",
+     802
+    ],
+    [
+     "Khmer Empire",
+     1431
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-srivijaya",
+   "names": [
+    "Srivijaya",
+    "Sri Vijaya",
+    "Srivijaya Empire"
+   ],
+   "from": 650,
+   "to": 1377,
+   "wiki": "Srivijaya",
+   "text": "A Malay maritime kingdom based at Palembang on Sumatra, which controlled trade through the Strait of Malacca and was a centre of Buddhist learning.",
+   "source": "https://en.wikipedia.org/wiki/Srivijaya",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-majapahit",
+   "names": [
+    "Majapahit",
+    "Majapahit Empire"
+   ],
+   "from": 1293,
+   "to": 1527,
+   "wiki": "Majapahit",
+   "text": "A Hindu-Buddhist empire based in eastern Java, founded in 1293, which claimed overlordship over much of the Indonesian archipelago in the 14th century.",
+   "source": "https://en.wikipedia.org/wiki/Majapahit",
+   "verified": true,
+   "claims": [
+    [
+     "Majapahit",
+     1293
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ayutthaya-kingdom",
+   "names": [
+    "Ayutthaya",
+    "Ayutthaya Kingdom",
+    "Kingdom of Ayutthaya",
+    "Siam"
+   ],
+   "from": 1351,
+   "to": 1767,
+   "wiki": "Ayutthaya Kingdom",
+   "text": "A Thai kingdom founded in the mid-14th century, whose capital on the Chao Phraya river was one of the great trading cities of Asia. A Burmese army destroyed the capital in 1767.",
+   "source": "https://en.wikipedia.org/wiki/Ayutthaya_Kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Ayutthaya Kingdom",
+     1767
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-rattanakosin-kingdom",
+   "names": [
+    "Rattanakosin Kingdom",
+    "Siam"
+   ],
+   "from": 1782,
+   "to": 1932,
+   "wiki": "Rattanakosin Kingdom (1782–1932)",
+   "text": "The Thai kingdom ruled from Bangkok by the Chakri dynasty since 1782. It was the only state in Southeast Asia to escape colonial rule; absolute monarchy ended in 1932.",
+   "source": "https://en.wikipedia.org/wiki/Rattanakosin_Kingdom_(1782–1932)",
+   "verified": true,
+   "claims": [
+    [
+     "Rattanakosin Kingdom (1782–1932)",
+     1782
+    ],
+    [
+     "Rattanakosin Kingdom (1782–1932)",
+     1932
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-i-vi-t",
+   "names": [
+    "Đại Việt",
+    "Dai Viet",
+    "Annam"
+   ],
+   "from": 968,
+   "to": 1804,
+   "wiki": "Đại Việt",
+   "text": "The Vietnamese kingdom in the Red River region, independent of China from the 10th century. It defeated Mongol and Ming invasions and expanded south at the expense of Champa.",
+   "source": "https://en.wikipedia.org/wiki/Đại_Việt",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-champa",
+   "names": [
+    "Champa",
+    "Kingdom of Champa"
+   ],
+   "from": 192,
+   "to": 1832,
+   "wiki": "Champa",
+   "text": "A group of Hindu and later Muslim Cham kingdoms on the coast of central and southern Vietnam, gradually absorbed by Đại Việt.",
+   "source": "https://en.wikipedia.org/wiki/Champa",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-pagan-kingdom",
+   "names": [
+    "Pagan Kingdom",
+    "Pagan",
+    "Bagan",
+    "Pagan Empire"
+   ],
+   "from": 849,
+   "to": 1297,
+   "wiki": "Pagan Kingdom",
+   "text": "The first kingdom to unite the Irrawaddy valley, the base of Burmese language and culture. Thousands of Buddhist temples were built at its capital before it broke up after Mongol invasions.",
+   "source": "https://en.wikipedia.org/wiki/Pagan_Kingdom",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-toungoo-dynasty",
+   "names": [
+    "Toungoo Dynasty",
+    "Taungoo Dynasty",
+    "Toungoo Empire",
+    "Taungoo dynasty"
+   ],
+   "from": 1510,
+   "to": 1752,
+   "wiki": "Toungoo dynasty",
+   "text": "A Burmese dynasty that under Bayinnaung in the 16th century briefly ruled the largest empire in the history of Southeast Asia.",
+   "source": "https://en.wikipedia.org/wiki/Toungoo_dynasty",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-konbaung-dynasty",
+   "names": [
+    "Konbaung Dynasty",
+    "Konbaung dynasty",
+    "Burma"
+   ],
+   "from": 1752,
+   "to": 1885,
+   "wiki": "Konbaung dynasty",
+   "text": "The last Burmese dynasty, founded in 1752, which destroyed Ayutthaya and fought off Qing invasions. Britain conquered it in three wars, the last in 1885.",
+   "source": "https://en.wikipedia.org/wiki/Konbaung_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Konbaung dynasty",
+     1752
+    ],
+    [
+     "Konbaung dynasty",
+     1885
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-malacca-sultanate",
+   "names": [
+    "Sultanate of Malacca",
+    "Malacca Sultanate",
+    "Malacca"
+   ],
+   "from": 1400,
+   "to": 1511,
+   "wiki": "Malacca Sultanate",
+   "text": "A Malay sultanate that controlled the Strait of Malacca and became the main trading port of Southeast Asia and a centre for the spread of Islam. The Portuguese captured the city in 1511.",
+   "source": "https://en.wikipedia.org/wiki/Malacca_Sultanate",
+   "verified": true,
+   "claims": [
+    [
+     "Malacca Sultanate",
+     1511
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-maurya-empire",
+   "names": [
+    "Mauryan Empire",
+    "Maurya Empire",
+    "Mauryan",
+    "Maurya"
+   ],
+   "from": -322,
+   "to": -185,
+   "wiki": "Maurya Empire",
+   "text": "The first empire to rule most of the Indian subcontinent, founded by Chandragupta Maurya. Its third ruler Ashoka turned to Buddhism after the Kalinga war and had edicts carved on rocks and pillars.",
+   "source": "https://en.wikipedia.org/wiki/Maurya_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-gupta-empire",
+   "names": [
+    "Gupta Empire",
+    "Guptas"
+   ],
+   "from": 320,
+   "to": 550,
+   "wiki": "Gupta Empire",
+   "text": "An empire in northern India whose age is remembered as a classical period of Sanskrit literature, mathematics and art.",
+   "source": "https://en.wikipedia.org/wiki/Gupta_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kushan-empire",
+   "names": [
+    "Kushan Empire",
+    "Kushans"
+   ],
+   "from": 30,
+   "to": 375,
+   "wiki": "Kushan Empire",
+   "text": "An empire founded by a Central Asian people in Bactria and northern India, which linked the Silk Road with the Indian Ocean and patronised Buddhism.",
+   "source": "https://en.wikipedia.org/wiki/Kushan_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-chola-dynasty",
+   "names": [
+    "Chola dynasty",
+    "Chola Empire",
+    "Cholas",
+    "Chola"
+   ],
+   "from": -300,
+   "to": 1279,
+   "wiki": "Chola dynasty",
+   "text": "A Tamil dynasty of southern India which at its height in the 11th century ruled Sri Lanka and sent a naval expedition against Srivijaya. It ended in 1279.",
+   "source": "https://en.wikipedia.org/wiki/Chola_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Chola dynasty",
+     1279
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-vijayanagara-empire",
+   "names": [
+    "Vijayanagara Empire",
+    "Vijayanagara",
+    "Vijayanagar"
+   ],
+   "from": 1336,
+   "to": 1646,
+   "wiki": "Vijayanagara Empire",
+   "text": "A Hindu empire in southern India, founded in 1336, whose ruined capital is at Hampi. It was broken by the Deccan sultanates at Talikota.",
+   "source": "https://en.wikipedia.org/wiki/Vijayanagara_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Vijayanagara Empire",
+     1336
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-delhi-sultanate",
+   "names": [
+    "Sultanate of Delhi",
+    "Delhi Sultanate"
+   ],
+   "from": 1206,
+   "to": 1526,
+   "wiki": "Delhi Sultanate",
+   "text": "A series of five Muslim dynasties ruling northern India from Delhi from 1206. Timur sacked Delhi at the end of the 14th century, and Babur ended the sultanate at Panipat in 1526.",
+   "source": "https://en.wikipedia.org/wiki/Delhi_Sultanate",
+   "verified": true,
+   "claims": [
+    [
+     "Delhi Sultanate",
+     1206
+    ],
+    [
+     "Delhi Sultanate",
+     1526
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-mughal-empire",
+   "names": [
+    "Mughal Empire",
+    "Mughals"
+   ],
+   "from": 1526,
+   "to": 1857,
+   "wiki": "Mughal Empire",
+   "text": "A Muslim dynasty of Central Asian origin, founded by Babur in 1526, that ruled most of India under Akbar and his successors and built the Taj Mahal. It declined in the 18th century; the British deposed the last emperor in 1857.",
+   "source": "https://en.wikipedia.org/wiki/Mughal_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Mughal Empire",
+     1526
+    ],
+    [
+     "Mughal Empire",
+     1857
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-maratha-confederacy",
+   "names": [
+    "Maratha Empire",
+    "Maratha Confederacy",
+    "Marathas"
+   ],
+   "from": 1674,
+   "to": 1818,
+   "wiki": "Maratha Empire",
+   "text": "A Hindu power from western India, founded by Shivaji in 1674, that took over much of the Mughal Empire in the 18th century. The British defeated it for the last time in 1818.",
+   "source": "https://en.wikipedia.org/wiki/Maratha_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Maratha Empire",
+     1674
+    ],
+    [
+     "Maratha Empire",
+     1818
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-sikh-empire",
+   "names": [
+    "Sikh Empire",
+    "Sikh Kingdom"
+   ],
+   "from": 1799,
+   "to": 1849,
+   "wiki": "Sikh Empire",
+   "text": "A state in the Punjab created by Ranjit Singh in 1799. The British annexed it in 1849 after two wars.",
+   "source": "https://en.wikipedia.org/wiki/Sikh_Empire",
+   "verified": false,
+   "claims": [
+    [
+     "Sikh Empire",
+     1799
+    ],
+    [
+     "Sikh Empire",
+     1849
+    ]
+   ],
+   "check": "years in the text without a matching Wikidata date: 1799"
+  },
+  {
+   "id": "pol-british-raj",
+   "names": [
+    "British Raj",
+    "British India",
+    "India"
+   ],
+   "from": 1858,
+   "to": 1947,
+   "wiki": "British Raj",
+   "text": "British crown rule in India, which replaced the East India Company in 1858. It ended in 1947 with independence and the partition into India and Pakistan.",
+   "source": "https://en.wikipedia.org/wiki/British_Raj",
+   "verified": true,
+   "claims": [
+    [
+     "British Raj",
+     1858
+    ],
+    [
+     "British Raj",
+     1947
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-durrani-empire",
+   "names": [
+    "Durrani Empire",
+    "Afghanistan"
+   ],
+   "from": 1747,
+   "to": 1823,
+   "wiki": "Durrani Empire",
+   "text": "An Afghan empire founded by Ahmad Shah Durrani in 1747, at first reaching from eastern Iran to northern India. It is regarded as the origin of the modern Afghan state.",
+   "source": "https://en.wikipedia.org/wiki/Durrani_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Durrani Empire",
+     1747
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ghaznavids",
+   "names": [
+    "Ghaznavid Empire",
+    "Ghaznavids",
+    "Ghaznavid dynasty"
+   ],
+   "from": 977,
+   "to": 1186,
+   "wiki": "Ghaznavids",
+   "text": "A Turkic dynasty ruling from Ghazni in present-day Afghanistan. Mahmud of Ghazni raided deep into India in the early 11th century.",
+   "source": "https://en.wikipedia.org/wiki/Ghaznavids",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-khwarazmian-empire",
+   "names": [
+    "Khwarazmian Empire",
+    "Khwarezmian Empire",
+    "Khwarezm",
+    "Khwarazm",
+    "Khwarazmian dynasty"
+   ],
+   "from": 1077,
+   "to": 1231,
+   "wiki": "Khwarazmian Empire",
+   "text": "A Turkic dynasty that ruled Central Asia and Iran in the early 13th century. Genghis Khan destroyed it after its governor killed a Mongol caravan.",
+   "source": "https://en.wikipedia.org/wiki/Khwarazmian_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-khanate-of-bukhara",
+   "names": [
+    "Khanate of Bukhara",
+    "Bukhara",
+    "Bukhara Khanate",
+    "Bokhara Khanate"
+   ],
+   "from": 1500,
+   "to": 1785,
+   "wiki": "Khanate of Bukhara",
+   "text": "An Uzbek state in Transoxiana, a centre of Islamic learning, later ruled as an emirate. Russia made its successor a protectorate.",
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Bukhara",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-khanate-of-khiva",
+   "names": [
+    "Khanate of Khiva",
+    "Khiva",
+    "Khiva Khanate"
+   ],
+   "from": 1511,
+   "to": 1920,
+   "wiki": "Khanate of Khiva",
+   "text": "An Uzbek khanate in Khwarazm, south of the Aral Sea. It became a Russian protectorate in the 1870s and was abolished in 1920.",
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Khiva",
+   "verified": true,
+   "claims": [
+    [
+     "Khanate of Khiva",
+     1920
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-khanate-of-kokand",
+   "names": [
+    "Khanate of Kokand",
+    "Kokand",
+    "Kokand Khanate"
+   ],
+   "from": 1709,
+   "to": 1876,
+   "wiki": "Khanate of Kokand",
+   "text": "A khanate in the Fergana valley, founded in 1709. Russia annexed it in 1876.",
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Kokand",
+   "verified": true,
+   "claims": [
+    [
+     "Khanate of Kokand",
+     1709
+    ],
+    [
+     "Khanate of Kokand",
+     1876
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kazakh-khanate",
+   "names": [
+    "Kazakh Khanate",
+    "Quazaq Khanate"
+   ],
+   "from": 1465,
+   "to": 1847,
+   "wiki": "Kazakh Khanate",
+   "text": "A state of the Kazakh nomads of the steppe, founded in 1465 and divided into three hordes. Russia absorbed it in the 18th and 19th centuries.",
+   "source": "https://en.wikipedia.org/wiki/Kazakh_Khanate",
+   "verified": true,
+   "claims": [
+    [
+     "Kazakh Khanate",
+     1465
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-dzungar-khanate",
+   "names": [
+    "Dzungar Khanate",
+    "Dzungars"
+   ],
+   "from": 1634,
+   "to": 1758,
+   "wiki": "Dzungar Khanate",
+   "text": "The last great nomadic empire of the steppe, ruled by western Mongols. The Qing destroyed it in the 1750s.",
+   "source": "https://en.wikipedia.org/wiki/Dzungar_Khanate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-first-turkic-khaganate",
+   "names": [
+    "Göktürks",
+    "First Turkic Khaganate",
+    "Turkic Khaganate",
+    "Gokturks"
+   ],
+   "from": 552,
+   "to": 603,
+   "wiki": "First Turkic Khaganate",
+   "text": "The first steppe empire to use the name Turk, founded in the mid-6th century, which stretched from Manchuria to the Black Sea before dividing into eastern and western halves.",
+   "source": "https://en.wikipedia.org/wiki/First_Turkic_Khaganate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-khazars",
+   "names": [
+    "Khazars",
+    "Khazar Khaganate",
+    "Khazaria"
+   ],
+   "from": 650,
+   "to": 969,
+   "wiki": "Khazars",
+   "text": "A Turkic people whose state controlled the steppe north of the Caucasus and the trade between the Baltic and the Islamic world. Part of its elite adopted Judaism.",
+   "source": "https://en.wikipedia.org/wiki/Khazars",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-neo-assyrian-empire",
+   "names": [
+    "Assyria",
+    "Assyrian Empire",
+    "Neo-Assyrian Empire"
+   ],
+   "from": -911,
+   "to": -609,
+   "wiki": "Neo-Assyrian Empire",
+   "text": "The empire of the Assyrian kings in the early first millennium BC, which conquered the Near East from Egypt to Iran with a standing army and mass deportations. It fell to the Babylonians and Medes, who took Nineveh.",
+   "source": "https://en.wikipedia.org/wiki/Neo-Assyrian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Battle of Nineveh (612 BC)",
+     -612
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Battle of Nineveh (612 BC)",
+     -612
+    ]
+   ]
+  },
+  {
+   "id": "pol-neo-babylonian-empire",
+   "names": [
+    "Babylonia",
+    "Neo-Babylonian Empire",
+    "Babylon"
+   ],
+   "from": -626,
+   "to": -539,
+   "wiki": "Neo-Babylonian Empire",
+   "text": "The last native Mesopotamian empire, founded in 626 BC. Nebuchadnezzar II rebuilt Babylon and destroyed Jerusalem; Cyrus of Persia took the city in 539 BC.",
+   "source": "https://en.wikipedia.org/wiki/Neo-Babylonian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Neo-Babylonian Empire",
+     -626
+    ],
+    [
+     "Neo-Babylonian Empire",
+     -539
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-hittites",
+   "names": [
+    "Hittites",
+    "Hittite Empire",
+    "Hatti"
+   ],
+   "from": -1650,
+   "to": -1178,
+   "wiki": "Hittites",
+   "text": "An Anatolian people whose empire, ruled from Hattusa, fought Egypt at Kadesh and concluded with it one of the earliest surviving peace treaties. It collapsed around the end of the Bronze Age.",
+   "source": "https://en.wikipedia.org/wiki/Hittites",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-elam",
+   "names": [
+    "Elam"
+   ],
+   "from": -2700,
+   "to": -539,
+   "wiki": "Elam",
+   "text": "An ancient civilisation in south-western Iran with its capital at Susa, a neighbour and frequent enemy of the Mesopotamian states.",
+   "source": "https://en.wikipedia.org/wiki/Elam",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-urartu",
+   "names": [
+    "Urartu"
+   ],
+   "from": -860,
+   "to": -590,
+   "wiki": "Urartu",
+   "text": "An Iron Age kingdom around Lake Van in the Armenian highlands, a rival of Assyria.",
+   "source": "https://en.wikipedia.org/wiki/Urartu",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-new-kingdom-of-egypt",
+   "names": [
+    "Egypt",
+    "New Kingdom of Egypt",
+    "Ancient Egypt"
+   ],
+   "from": -1550,
+   "to": -1070,
+   "wiki": "New Kingdom of Egypt",
+   "text": "Egypt at the height of its power, under the 18th to 20th dynasties, when it ruled Nubia and much of the Levant. Its pharaohs included Hatshepsut, Akhenaten and Ramesses II.",
+   "source": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-kush",
+   "names": [
+    "Kush",
+    "Kingdom of Kush",
+    "Nubia"
+   ],
+   "from": -1070,
+   "to": 350,
+   "wiki": "Kingdom of Kush",
+   "text": "A Nubian kingdom on the middle Nile, whose kings ruled Egypt as its 25th dynasty. From its later capital Meroë it traded with the Roman world.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Kush",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-aksum",
+   "names": [
+    "Axum",
+    "Aksum",
+    "Kingdom of Aksum",
+    "Aksumite Empire"
+   ],
+   "from": 100,
+   "to": 940,
+   "wiki": "Kingdom of Aksum",
+   "text": "A trading kingdom in the highlands of present-day Ethiopia and Eritrea, which controlled Red Sea trade and adopted Christianity in the 4th century.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ethiopian-empire",
+   "names": [
+    "Ethiopian Empire",
+    "Abyssinia",
+    "Ethiopia"
+   ],
+   "from": 1270,
+   "to": 1974,
+   "wiki": "Ethiopian Empire",
+   "text": "The Christian empire of the Ethiopian highlands under the Solomonic dynasty, restored in 1270. It defeated Italy at Adwa, was occupied by Italy from 1936 to 1941, and ended after the overthrow of Haile Selassie in 1974.",
+   "source": "https://en.wikipedia.org/wiki/Ethiopian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Ethiopian Empire",
+     1270
+    ],
+    [
+     "Ethiopian Empire",
+     1936
+    ],
+    [
+     "Ethiopian Empire",
+     1941
+    ],
+    [
+     "Ethiopian Empire",
+     1974
+    ],
+    [
+     "Italian East Africa",
+     1936
+    ],
+    [
+     "Italian East Africa",
+     1941
+    ],
+    [
+     "Ethiopian Revolution",
+     1974
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Italian East Africa",
+     1936
+    ],
+    [
+     "Italian East Africa",
+     1941
+    ],
+    [
+     "Ethiopian Revolution",
+     1974
+    ]
+   ]
+  },
+  {
+   "id": "pol-ghana-empire",
+   "names": [
+    "Ghana Empire",
+    "Ghana",
+    "Wagadou"
+   ],
+   "from": 300,
+   "to": 1240,
+   "wiki": "Ghana Empire",
+   "text": "The earliest known empire of the western Sahel, in present-day Mauritania and Mali, grown rich on the trade in gold and salt across the Sahara. It has no connection with the modern state that took its name.",
+   "source": "https://en.wikipedia.org/wiki/Ghana_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-mali-empire",
+   "names": [
+    "Mali Empire",
+    "Mali"
+   ],
+   "from": 1235,
+   "to": 1670,
+   "wiki": "Mali Empire",
+   "text": "A Mandinka empire founded by Sundiata Keita, which controlled the gold trade of West Africa. Its ruler Mansa Musa became famous for his pilgrimage to Mecca, and Timbuktu grew into a centre of learning.",
+   "source": "https://en.wikipedia.org/wiki/Mali_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-songhai-empire",
+   "names": [
+    "Songhai Empire",
+    "Songhai",
+    "Songhay"
+   ],
+   "from": 1464,
+   "to": 1591,
+   "wiki": "Songhai Empire",
+   "text": "The largest of the West African empires, centred on Gao on the Niger. A Moroccan army with firearms destroyed it at Tondibi in 1591.",
+   "source": "https://en.wikipedia.org/wiki/Songhai_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Songhai Empire",
+     1591
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kanem-bornu-empire",
+   "names": [
+    "Kanem-Bornu",
+    "Kanem–Bornu Empire",
+    "Bornu Empire",
+    "Bornu",
+    "Kanem"
+   ],
+   "from": 700,
+   "to": 1900,
+   "wiki": "Kanem–Bornu Empire",
+   "text": "A state around Lake Chad that lasted for about a thousand years, Muslim from the 11th century, and a terminus of trans-Saharan trade.",
+   "source": "https://en.wikipedia.org/wiki/Kanem–Bornu_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-sokoto-caliphate",
+   "names": [
+    "Sokoto Caliphate",
+    "Fulani Empire",
+    "Sokoto"
+   ],
+   "from": 1804,
+   "to": 1903,
+   "wiki": "Sokoto Caliphate",
+   "text": "An Islamic state in northern Nigeria created by the jihad of Usman dan Fodio that began in 1804. Britain conquered it in 1903.",
+   "source": "https://en.wikipedia.org/wiki/Sokoto_Caliphate",
+   "verified": true,
+   "claims": [
+    [
+     "Sokoto Caliphate",
+     1804
+    ],
+    [
+     "Sokoto Caliphate",
+     1903
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-benin",
+   "names": [
+    "Kingdom of Benin",
+    "Benin",
+    "Benin Empire"
+   ],
+   "from": 1180,
+   "to": 1897,
+   "wiki": "Kingdom of Benin",
+   "text": "A kingdom of the Edo people in southern Nigeria, known for its bronze and ivory sculpture. A British expedition sacked Benin City in 1897. It is not the modern Republic of Benin.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Benin",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Benin",
+     1897
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-oyo-empire",
+   "names": [
+    "Oyo Empire",
+    "Oyo"
+   ],
+   "from": 1300,
+   "to": 1896,
+   "wiki": "Oyo Empire",
+   "text": "A Yoruba empire in present-day south-western Nigeria, a major power of the 17th and 18th centuries with a strong cavalry.",
+   "source": "https://en.wikipedia.org/wiki/Oyo_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ashanti-empire",
+   "names": [
+    "Ashanti Empire",
+    "Asante",
+    "Ashanti",
+    "Asante Empire"
+   ],
+   "from": 1701,
+   "to": 1901,
+   "wiki": "Asante Empire",
+   "text": "An Akan empire in present-day Ghana, founded in 1701, rich in gold. It fought several wars with Britain and was annexed to the Gold Coast.",
+   "source": "https://en.wikipedia.org/wiki/Asante_Empire",
+   "verified": false,
+   "claims": [
+    [
+     "Asante Empire",
+     1701
+    ]
+   ],
+   "check": "years in the text without a matching Wikidata date: 1701"
+  },
+  {
+   "id": "pol-dahomey",
+   "names": [
+    "Kingdom of Dahomey",
+    "Dahomey"
+   ],
+   "from": 1600,
+   "to": 1904,
+   "wiki": "Dahomey",
+   "text": "A kingdom in present-day Benin, a major supplier of captives to the Atlantic slave trade. France conquered it in the 1890s.",
+   "source": "https://en.wikipedia.org/wiki/Dahomey",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-kongo",
+   "names": [
+    "Kingdom of Kongo",
+    "Kongo"
+   ],
+   "from": 1390,
+   "to": 1914,
+   "wiki": "Kingdom of Kongo",
+   "text": "A kingdom south of the Congo river whose kings became Christian after contact with Portugal in the 1480s. It was weakened by civil war and the slave trade.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Kongo",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-zimbabwe",
+   "names": [
+    "Great Zimbabwe",
+    "Kingdom of Zimbabwe"
+   ],
+   "from": 1220,
+   "to": 1450,
+   "wiki": "Kingdom of Zimbabwe",
+   "text": "A Shona kingdom whose capital, Great Zimbabwe, has the largest ancient stone buildings in southern Africa. It traded gold to the Swahili coast.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Zimbabwe",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-mutapa",
+   "names": [
+    "Mutapa",
+    "Kingdom of Mutapa",
+    "Monomotapa",
+    "Mwenemutapa"
+   ],
+   "from": 1430,
+   "to": 1760,
+   "wiki": "Kingdom of Mutapa",
+   "text": "A Shona kingdom between the Zambezi and Limpopo rivers that succeeded Great Zimbabwe and traded gold with the Portuguese.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Mutapa",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-zulu-kingdom",
+   "names": [
+    "Zulu Kingdom",
+    "Zulu",
+    "Zululand"
+   ],
+   "from": 1816,
+   "to": 1897,
+   "wiki": "Zulu Kingdom",
+   "text": "A kingdom in south-eastern Africa built by Shaka into the strongest military power of the region. It defeated a British army at Isandlwana in 1879 but lost the war.",
+   "source": "https://en.wikipedia.org/wiki/Zulu_Kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Zulu Kingdom",
+     1879
+    ],
+    [
+     "Battle of Isandlwana",
+     1879
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Battle of Isandlwana",
+     1879
+    ]
+   ]
+  },
+  {
+   "id": "pol-merina-kingdom",
+   "names": [
+    "Merina Kingdom",
+    "Imerina",
+    "Kingdom of Madagascar"
+   ],
+   "from": 1540,
+   "to": 1897,
+   "wiki": "Merina Kingdom",
+   "text": "The kingdom of the central highlands of Madagascar, which in the 19th century ruled most of the island. France annexed it in 1897.",
+   "source": "https://en.wikipedia.org/wiki/Merina_Kingdom",
+   "verified": false,
+   "claims": [
+    [
+     "Merina Kingdom",
+     1897
+    ]
+   ],
+   "check": "years in the text without a matching Wikidata date: 1897"
+  },
+  {
+   "id": "pol-sultanate-of-zanzibar",
+   "names": [
+    "Sultanate of Zanzibar",
+    "Zanzibar"
+   ],
+   "from": 1856,
+   "to": 1964,
+   "wiki": "Sultanate of Zanzibar",
+   "text": "An Omani Arab sultanate on the East African coast, separated from Oman in 1856, a centre of the clove and slave trades. It became a British protectorate and ended with the revolution of 1964.",
+   "source": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar",
+   "verified": true,
+   "claims": [
+    [
+     "Sultanate of Zanzibar",
+     1856
+    ],
+    [
+     "Sultanate of Zanzibar",
+     1964
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kilwa-sultanate",
+   "names": [
+    "Kilwa Sultanate",
+    "Kilwa"
+   ],
+   "from": 957,
+   "to": 1513,
+   "wiki": "Kilwa Sultanate",
+   "text": "A Swahili city-state on an island off present-day Tanzania that dominated the gold trade of the East African coast.",
+   "source": "https://en.wikipedia.org/wiki/Kilwa_Sultanate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-funj-sultanate",
+   "names": [
+    "Funj Sultanate",
+    "Funj",
+    "Sennar"
+   ],
+   "from": 1504,
+   "to": 1821,
+   "wiki": "Funj Sultanate",
+   "text": "A Muslim sultanate on the Blue Nile, founded in the early 16th century, with its capital at Sennar. Egypt conquered it in 1821.",
+   "source": "https://en.wikipedia.org/wiki/Funj_Sultanate",
+   "verified": true,
+   "claims": [
+    [
+     "Funj Sultanate",
+     1821
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-aztec-empire",
+   "names": [
+    "Aztec Empire",
+    "Aztecs",
+    "Triple Alliance",
+    "Mexica"
+   ],
+   "from": 1428,
+   "to": 1521,
+   "wiki": "Aztec Empire",
+   "text": "An alliance of three city-states in the Valley of Mexico, led by Tenochtitlan, that took tribute from much of central Mexico. Cortés and his Indigenous allies destroyed it in 1521.",
+   "source": "https://en.wikipedia.org/wiki/Aztec_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Aztec Empire",
+     1521
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-inca-empire",
+   "names": [
+    "Inca Empire",
+    "Inca",
+    "Incas",
+    "Tawantinsuyu"
+   ],
+   "from": 1438,
+   "to": 1533,
+   "wiki": "Inca Empire",
+   "text": "The largest state of the pre-Columbian Americas, expanding from Cusco after 1438 along the Andes from Ecuador to Chile, held together by roads and labour service. Pizarro captured its ruler in 1532 and took Cusco in 1533.",
+   "source": "https://en.wikipedia.org/wiki/Inca_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Inca Empire",
+     1438
+    ],
+    [
+     "Inca Empire",
+     1532
+    ],
+    [
+     "Inca Empire",
+     1533
+    ],
+    [
+     "Battle of Cajamarca",
+     1532
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Battle of Cajamarca",
+     1532
+    ]
+   ]
+  },
+  {
+   "id": "pol-maya-civilization",
+   "names": [
+    "Maya",
+    "Maya civilization",
+    "Mayas",
+    "Maya states",
+    "Maya city-states"
+   ],
+   "from": -2000,
+   "to": 1697,
+   "wiki": "Maya civilization",
+   "text": "A civilisation of city-states in the Yucatán, Guatemala and Belize, with a writing system, a complex calendar and monumental temples. Its classic cities declined in the 9th century; the last independent Maya kingdom fell to Spain in 1697.",
+   "source": "https://en.wikipedia.org/wiki/Maya_civilization",
+   "verified": true,
+   "claims": [
+    [
+     "Maya civilization",
+     1697
+    ],
+    [
+     "Spanish conquest of Petén",
+     1697
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Spanish conquest of Petén",
+     1697
+    ]
+   ]
+  },
+  {
+   "id": "pol-new-spain",
+   "names": [
+    "Viceroyalty of New Spain",
+    "New Spain"
+   ],
+   "from": 1521,
+   "to": 1821,
+   "wiki": "New Spain",
+   "text": "Spain's viceroyalty in North and Central America, ruled from Mexico City after the conquest of 1521, which also governed the Philippines. It ended with Mexican independence in 1821.",
+   "source": "https://en.wikipedia.org/wiki/New_Spain",
+   "verified": true,
+   "claims": [
+    [
+     "New Spain",
+     1521
+    ],
+    [
+     "New Spain",
+     1821
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-viceroyalty-of-peru",
+   "names": [
+    "Viceroyalty of Peru",
+    "Peru"
+   ],
+   "from": 1542,
+   "to": 1824,
+   "wiki": "Viceroyalty of Peru",
+   "text": "Spain's viceroyalty in South America, created in 1542 and ruled from Lima; the silver of Potosí made it the richest part of the empire. Spanish rule ended after the battle of Ayacucho in 1824.",
+   "source": "https://en.wikipedia.org/wiki/Viceroyalty_of_Peru",
+   "verified": true,
+   "claims": [
+    [
+     "Viceroyalty of Peru",
+     1542
+    ],
+    [
+     "Viceroyalty of Peru",
+     1824
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-viceroyalty-of-the-r-o-de-la-plata",
+   "names": [
+    "Viceroyalty of the Río de la Plata",
+    "Viceroyalty of Rio de la Plata"
+   ],
+   "from": 1776,
+   "to": 1814,
+   "wiki": "Viceroyalty of the Río de la Plata",
+   "text": "The last Spanish viceroyalty, created in 1776 with its capital at Buenos Aires. Argentina, Bolivia, Paraguay and Uruguay grew out of it.",
+   "source": "https://en.wikipedia.org/wiki/Viceroyalty_of_the_Río_de_la_Plata",
+   "verified": true,
+   "claims": [
+    [
+     "Viceroyalty of the Río de la Plata",
+     1776
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-viceroyalty-of-new-granada",
+   "names": [
+    "Viceroyalty of New Granada",
+    "New Granada"
+   ],
+   "from": 1717,
+   "to": 1822,
+   "wiki": "Viceroyalty of New Granada",
+   "text": "A Spanish viceroyalty in northern South America, ruled from Bogotá. Colombia, Venezuela, Ecuador and Panama grew out of it.",
+   "source": "https://en.wikipedia.org/wiki/Viceroyalty_of_New_Granada",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-gran-colombia",
+   "names": [
+    "Gran Colombia",
+    "Colombia"
+   ],
+   "from": 1819,
+   "to": 1831,
+   "wiki": "Gran Colombia",
+   "text": "The republic created by Bolívar in 1819, uniting present-day Colombia, Venezuela, Ecuador and Panama. It broke into three states in 1831.",
+   "source": "https://en.wikipedia.org/wiki/Gran_Colombia",
+   "verified": true,
+   "claims": [
+    [
+     "Gran Colombia",
+     1819
+    ],
+    [
+     "Gran Colombia",
+     1831
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-empire-of-brazil",
+   "names": [
+    "Empire of Brazil",
+    "Brazil",
+    "Kingdom of Brazil"
+   ],
+   "from": 1822,
+   "to": 1889,
+   "wiki": "Empire of Brazil",
+   "text": "Independent Brazil under the emperors Pedro I and Pedro II, from 1822. Slavery was abolished in 1888 and a military coup made the country a republic in 1889.",
+   "source": "https://en.wikipedia.org/wiki/Empire_of_Brazil",
+   "verified": true,
+   "claims": [
+    [
+     "Empire of Brazil",
+     1822
+    ],
+    [
+     "Empire of Brazil",
+     1888
+    ],
+    [
+     "Empire of Brazil",
+     1889
+    ],
+    [
+     "Lei Áurea",
+     1888
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Lei Áurea",
+     1888
+    ]
+   ]
+  },
+  {
+   "id": "pol-confederate-states-of-america",
+   "names": [
+    "Confederate States of America",
+    "Confederate States"
+   ],
+   "from": 1861,
+   "to": 1865,
+   "wiki": "Confederate States of America",
+   "text": "The government formed in 1861 by eleven southern slave states that seceded from the United States. It was defeated in the Civil War and ceased to exist in 1865.",
+   "source": "https://en.wikipedia.org/wiki/Confederate_States_of_America",
+   "verified": true,
+   "claims": [
+    [
+     "Confederate States of America",
+     1861
+    ],
+    [
+     "Confederate States of America",
+     1865
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-hawaiian-kingdom",
+   "names": [
+    "Kingdom of Hawaii",
+    "Hawaii",
+    "Hawaiian Kingdom",
+    "Kingdom of Hawaiʻi"
+   ],
+   "from": 1795,
+   "to": 1893,
+   "wiki": "Hawaiian Kingdom",
+   "text": "The kingdom founded by Kamehameha I, who began uniting the islands in 1795. Its last monarch, Queen Liliʻuokalani, was overthrown in 1893, and the United States annexed the islands five years later.",
+   "source": "https://en.wikipedia.org/wiki/Hawaiian_Kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Hawaiian Kingdom",
+     1795
+    ],
+    [
+     "Hawaiian Kingdom",
+     1893
+    ],
+    [
+     "Overthrow of the Hawaiian Kingdom",
+     1893
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Overthrow of the Hawaiian Kingdom",
+     1893
+    ]
+   ]
+  },
+  {
+   "id": "pol-tu-i-tonga-empire",
+   "names": [
+    "Tuʻi Tonga Empire",
+    "Tonga"
+   ],
+   "from": 950,
+   "to": 1865,
+   "wiki": "Tuʻi Tonga Empire",
+   "text": "A maritime chiefdom centred on Tonga whose influence reached across much of western Polynesia at its height around the 13th century.",
+   "source": "https://en.wikipedia.org/wiki/Tuʻi_Tonga_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-iroquois",
+   "names": [
+    "Iroquois",
+    "Iroquois Confederacy",
+    "Haudenosaunee",
+    "Iroquois Confederation"
+   ],
+   "from": 1450,
+   "to": 1794,
+   "wiki": "Iroquois",
+   "text": "A confederacy of five, later six, nations in what is now New York State, bound by the Great Law of Peace. It was a major power in the wars between the French and British in North America.",
+   "source": "https://en.wikipedia.org/wiki/Iroquois",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-yugoslavia",
+   "names": [
+    "Yugoslavia",
+    "Kingdom of Yugoslavia",
+    "Socialist Federal Republic of Yugoslavia"
+   ],
+   "from": 1918,
+   "to": 1992,
+   "wiki": "Yugoslavia",
+   "text": "The state of the South Slavs, created in 1918. It was a kingdom until the Second World War and a socialist federation under Tito afterwards; it broke up in war in 1991 and 1992.",
+   "source": "https://en.wikipedia.org/wiki/Yugoslavia",
+   "verified": true,
+   "claims": [
+    [
+     "Yugoslavia",
+     1918
+    ],
+    [
+     "Yugoslavia",
+     1991
+    ],
+    [
+     "Yugoslavia",
+     1992
+    ],
+    [
+     "Breakup of Yugoslavia",
+     1991
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Breakup of Yugoslavia",
+     1991
+    ]
+   ]
+  },
+  {
+   "id": "pol-czechoslovakia",
+   "names": [
+    "Czechoslovakia"
+   ],
+   "from": 1918,
+   "to": 1992,
+   "wiki": "Czechoslovakia",
+   "text": "A state created in 1918 from the Czech lands and Slovakia, formerly in Austria-Hungary. It was dismembered by Germany after the Munich Agreement of 1938, restored after the war, ruled by Communists from 1948, and divided peacefully at the end of 1992.",
+   "source": "https://en.wikipedia.org/wiki/Czechoslovakia",
+   "verified": true,
+   "claims": [
+    [
+     "Czechoslovakia",
+     1918
+    ],
+    [
+     "Czechoslovakia",
+     1938
+    ],
+    [
+     "Czechoslovakia",
+     1948
+    ],
+    [
+     "Czechoslovakia",
+     1992
+    ],
+    [
+     "Munich Agreement",
+     1938
+    ],
+    [
+     "German occupation of Czechoslovakia",
+     1939
+    ],
+    [
+     "1948 Czechoslovak coup d'état",
+     1948
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Munich Agreement",
+     1938
+    ],
+    [
+     "German occupation of Czechoslovakia",
+     1939
+    ],
+    [
+     "1948 Czechoslovak coup d'état",
+     1948
+    ]
+   ]
+  },
+  {
+   "id": "pol-weimar-republic",
+   "names": [
+    "Weimar Republic",
+    "Germany"
+   ],
+   "from": 1918,
+   "to": 1933,
+   "wiki": "Weimar Republic",
+   "text": "Germany's first democracy, founded after the revolution of 1918. It survived hyperinflation but not the Great Depression, and ended when Hitler took power in 1933.",
+   "source": "https://en.wikipedia.org/wiki/Weimar_Republic",
+   "verified": true,
+   "claims": [
+    [
+     "Weimar Republic",
+     1918
+    ],
+    [
+     "Weimar Republic",
+     1933
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-nazi-germany",
+   "names": [
+    "Nazi Germany",
+    "German Reich",
+    "Germany"
+   ],
+   "from": 1933,
+   "to": 1945,
+   "wiki": "Nazi Germany",
+   "text": "Germany under the dictatorship of Adolf Hitler and the Nazi Party, from 1933. It started the Second World War in Europe, murdered six million Jews and millions of others, and was defeated and occupied in 1945.",
+   "source": "https://en.wikipedia.org/wiki/Nazi_Germany",
+   "verified": true,
+   "claims": [
+    [
+     "Nazi Germany",
+     1933
+    ],
+    [
+     "Nazi Germany",
+     1945
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-east-germany",
+   "names": [
+    "East Germany",
+    "German Democratic Republic"
+   ],
+   "from": 1949,
+   "to": 1990,
+   "wiki": "East Germany",
+   "text": "The Communist state set up in the Soviet occupation zone of Germany in 1949. It built the Berlin Wall to stop emigration and joined the Federal Republic in 1990.",
+   "source": "https://en.wikipedia.org/wiki/East_Germany",
+   "verified": true,
+   "claims": [
+    [
+     "East Germany",
+     1949
+    ],
+    [
+     "East Germany",
+     1990
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-republic-of-china-1912-1949",
+   "names": [
+    "Republic of China",
+    "China"
+   ],
+   "from": 1912,
+   "to": 1949,
+   "wiki": "Republic of China (1912–1949)",
+   "text": "The republic that replaced the Qing dynasty in 1912. It was divided among warlords, partly reunited by the Nationalists, invaded by Japan, and defeated on the mainland by the Communists in 1949, after which its government moved to Taiwan.",
+   "source": "https://en.wikipedia.org/wiki/Republic_of_China_(1912–1949)",
+   "verified": true,
+   "claims": [
+    [
+     "Republic of China (1912–1949)",
+     1912
+    ],
+    [
+     "Republic of China (1912–1949)",
+     1949
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-manchukuo",
+   "names": [
+    "Manchukuo"
+   ],
+   "from": 1932,
+   "to": 1945,
+   "wiki": "Manchukuo",
+   "text": "A state set up by Japan in Manchuria in 1932, with the last Qing emperor as its nominal ruler. It was overrun by the Soviet army in 1945.",
+   "source": "https://en.wikipedia.org/wiki/Manchukuo",
+   "verified": true,
+   "claims": [
+    [
+     "Manchukuo",
+     1932
+    ],
+    [
+     "Manchukuo",
+     1945
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ottoman-egypt",
+   "names": [
+    "Ottoman Egypt",
+    "Egypt Eyalet",
+    "Khedivate of Egypt",
+    "Egypt"
+   ],
+   "from": 1517,
+   "to": 1914,
+   "wiki": "Ottoman Egypt",
+   "text": "Egypt under Ottoman sovereignty, from the conquest of 1517. In the 19th century Muhammad Ali and his heirs ruled it as a nearly independent state, and Britain occupied it from 1882.",
+   "source": "https://en.wikipedia.org/wiki/Ottoman_Egypt",
+   "verified": true,
+   "claims": [
+    [
+     "Ottoman Egypt",
+     1517
+    ],
+    [
+     "Ottoman Egypt",
+     1882
+    ],
+    [
+     "Anglo-Egyptian War",
+     1882
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Anglo-Egyptian War",
+     1882
+    ]
+   ]
+  }
+ ]
+}

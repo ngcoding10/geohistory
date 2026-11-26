@@ -1,7 +1,7 @@
 // GeoHistory: choose a year, see the world's borders, powers and events at that time.
 import { HistoryMap } from './map.js';
 import {
-  loadBordersIndex, snapshotFor, nextSnapshotAfter, datedRange, loadSnapshot, loadEventsIndex, eventsBetween, nearestYearsWithEvents,
+  loadBordersIndex, snapshotFor, nextSnapshotAfter, datedRange, clioRange, loadSnapshot, loadEventsIndex, eventsBetween, nearestYearsWithEvents,
   loadPowers, loadEntities, getJSON, loadUS, loadModern, loadLand, loadMeta, countFor, findEvent,
 } from './data.js';
 import { parseYear, formatYear, formatDate, addYears, yearToFrac, fracToYear, ERAS, MIN_YEAR, MAX_YEAR } from './year.js';
@@ -266,7 +266,7 @@ function updateBadge() {
     return;
   }
   const exact = s.y === state.year;
-  els.badge.textContent = s.cs ? `Borders on 1 July ${s.y}` : `Borders as of ${formatYear(s.y)}`;
+  els.badge.textContent = s.src === 'clio' ? `Borders in ${s.y} (approximate)` : s.cs ? `Borders on 1 July ${s.y}` : `Borders as of ${formatYear(s.y)}`;
   els.badge.classList.toggle('exact', exact);
 }
 
@@ -275,6 +275,12 @@ function badgeText() {
   if (!s) return [h('p', null, `The border maps start in ${formatYear(MIN_YEAR)}.`)];
   const next = nextSnapshotAfter(s.y);
   const out = [];
+  if (s.src === 'clio') {
+    out.push(h('p', null, `From ${clioRange()[0]} to ${clioRange()[1]} the map uses Cliopatria (Seshat Global History Databank), which gives each state a shape for a range of years. You see the shapes it lists for ${s.y}. They are approximate: the source redraws a state only every few years, and border dates can be a year or two off.`));
+    out.push(h('p', null, 'Cliopatria only draws states. Peoples and regions without a state are filled in from the nearest earlier world sketch map (historical-basemaps); click one to see which map it comes from.'));
+    out.push(h('p', null, h('button.more', { type: 'button', onclick: openSources }, 'Sources and accuracy')));
+    return out;
+  }
   if (s.cs) {
     out.push(h('p', null, `From ${datedRange()[0]} to ${datedRange()[1]} the map uses CShapes 2.0, which dates every change of state borders. You see the borders as they stood on 1 July ${s.y}.`));
     out.push(h('p', null, 'Rulers of colonies come from the older world maps or from a short curated list, so they can lag a change by a few years.'));
@@ -349,10 +355,14 @@ async function renderYear() {
   const nodes = [h('p.kicker', null, 'Year'), h('h1', null, `The world in ${formatYear(y)}`)];
   if (state.month) nodes.push(h('p.lead', null, `Highlighting ${dayLabel(state.month, state.day)}.`));
   nodes.push(h('p.note', null, `${all.length} ${all.length === 1 ? 'event' : 'events'} recorded · `,
-    state.snap ? (state.snap.cs ? `map borders on 1 July ${state.snap.y}` : `map borders as of ${formatYear(state.snap.y)}`) : 'no border map this early'));
+    state.snap ? (state.snap.src === 'clio' ? `map borders in ${state.snap.y}, approximate` : state.snap.cs ? `map borders on 1 July ${state.snap.y}` : `map borders as of ${formatYear(state.snap.y)}`) : 'no border map this early'));
 
   const cen = await getJSON('centuries.json').then((d) => d.centuries.find((c) => c.from <= y && c.to >= y)).catch(() => null);
-  if (cen) nodes.push(h('p.lead.century', null, cen.text, h('span.unver', { title: 'Curated summary, not checked against a dataset' }, 'curated')));
+  const dec = y >= 1500 ? await getJSON('decades.json').then((d) => d.decades.find((c) => c.from <= y && c.to >= y)).catch(() => null) : null;
+  if (dec) nodes.push(h('p.lead.century', null, h('b', null, `The ${dec.from}s. `), dec.text, h('span.unver', { title: dec.verified
+    ? 'Written for GeoHistory; every event it names is dated to this decade by Wikidata' : 'Written for GeoHistory; not every statement could be confirmed in Wikidata' },
+  dec.verified ? 'curated' : 'curated, unverified')));
+  else if (cen) nodes.push(h('p.lead.century', null, cen.text, h('span.unver', { title: 'Curated summary, not checked against a dataset' }, 'curated')));
   const strip = await changeStrip(y);
   if (token !== state.token || state.view !== 'year' || state.sel) return;
   if (strip) nodes.push(strip);
@@ -606,8 +616,18 @@ async function selectionHeader(s) {
     if (p.dated) {
       const f = (d) => formatDate(Math.floor(d / 10000), Math.floor(d / 100) % 100, d % 100);
       facts.append(h('dt', null, 'Map'), h('dd', null, `These borders held from ${f(p.dated[0])} to ${p.dated[1] >= 20191231 ? '2019 or later' : f(p.dated[1])} (CShapes)`));
-    } else facts.append(h('dt', null, 'Map'), h('dd', null, `Borders as of ${formatYear(state.snap.y)}${p.pr === 1 ? ', approximate' : ''}`));
+    } else if (p.clio) facts.append(h('dt', null, 'Map'), h('dd', null, `Cliopatria gives this shape for ${p.clio[0]} to ${p.clio[1]} (approximate)`));
+    else if (p.under) facts.append(h('dt', null, 'Map'), h('dd', null, `Not a state in Cliopatria: outline from the ${formatYear(p.under)} world sketch map (approximate, may be out of date)`));
+    else facts.append(h('dt', null, 'Map'), h('dd', null, `Borders as of ${formatYear(state.snap.y)}${p.pr === 1 ? ', approximate' : ''}`));
     box.append(facts);
+    try {
+      const pd = await getJSON('polities.json').then((d) => d.polities.find((x) => x.names.includes(s.name))).catch(() => null);
+      if (pd && (pd.from == null || pd.from - 25 <= state.year) && (pd.to == null || pd.to + 25 >= state.year)) {
+        box.insertBefore(h('p.about', null, pd.text, h('span.unver', { title: pd.verified
+          ? 'Written for GeoHistory; the years in it match Wikidata' : 'Written for GeoHistory; not every year in it could be confirmed in Wikidata' },
+        pd.verified ? 'curated' : 'curated, unverified')), facts);
+      }
+    } catch { /* optional */ }
     try {
       entities = entities || await loadEntities();
       const info = entities[s.name];
@@ -615,15 +635,26 @@ async function selectionHeader(s) {
         // the same name can mean a different state in another era ("France" in 1000 is not the modern
         // republic): only show the description when Wikidata's dates fit the year on screen
         const y = state.year;
-        const fits = (info.from == null || info.from - 25 <= y) && (info.to == null || info.to + 25 >= y);
+        // "mod": Wikidata dates today's state of this name from that year (independence, a new constitution);
+        // "eras": the earlier states it replaced. Before "mod" show the era that fits, or say so plainly.
+        const before = info.mod != null && y < info.mod - 25;
+        const era = before ? (info.eras || []).find((c) => c.from - 25 <= y && (c.to ?? info.mod) + 25 >= y) : null;
+        const shown = era || info;
+        const fits = era ? true : before ? false
+          : (info.mod != null || info.from == null || info.from - 25 <= y) && (info.to == null || info.to + 25 >= y);
         if (fits) {
-          if (info.d) box.insertBefore(h('p.lead', null, cap(info.d)), facts);
-          if (info.from != null || info.to != null) facts.append(h('dt', null, 'Existed'), h('dd', null, `${info.from != null ? formatYear(info.from) : '?'} to ${info.to != null ? formatYear(info.to) : 'today'}`));
-          if (info.cap?.length) facts.append(h('dt', null, 'Capital'), h('dd', null, info.cap.join(', ')));
+          if (era) box.insertBefore(h('p.lead', null, `${era.n}${era.d ? ': ' + era.d : ''}`), facts);
+          else if (info.d) box.insertBefore(h('p.lead', null, cap(info.d)), facts);
+          const from = era ? era.from : (info.mod ?? info.from);
+          const to = era ? era.to : info.to;
+          if (from != null || to != null) facts.append(h('dt', null, 'Existed'), h('dd', null, `${from != null ? formatYear(from) : '?'} to ${to != null ? formatYear(to) : 'today'}`));
+          if (!era && info.cap?.length) facts.append(h('dt', null, 'Capital'), h('dd', null, info.cap.join(', ')));
+        } else if (before) {
+          box.insertBefore(h('p.note', null, `Today's state of this name dates from ${formatYear(info.mod)}. On this map the name marks the land or an earlier realm.`), facts);
         }
         const links = h('p.note');
-        if (info.w) links.append(h('a.ext', { href: wikiUrl(info.w), target: '_blank', rel: 'noopener' }, 'Wikipedia'), '  ');
-        links.append(h('a.ext', { href: wikidataUrl(info.q), target: '_blank', rel: 'noopener' }, 'Wikidata'));
+        if (shown.w) links.append(h('a.ext', { href: wikiUrl(shown.w), target: '_blank', rel: 'noopener' }, 'Wikipedia'), '  ');
+        links.append(h('a.ext', { href: wikidataUrl(shown.q), target: '_blank', rel: 'noopener' }, 'Wikidata'));
         box.append(links);
       }
       const rulerInfo = p.s && p.s !== p.n ? entities[p.s] : null;
@@ -750,7 +781,10 @@ async function renderEvent() {
   if (place) facts.append(h('dt', null, 'Where'), h('dd', null, place));
   if (e.pa?.length) facts.append(h('dt', null, 'Who'), h('dd', null, e.pa.join(', ')));
   if (e.po) facts.append(h('dt', null, 'Part of'), h('dd', null, e.po));
-  if (e.lo == null) facts.append(h('dt', null, 'On the map'), h('dd', null, 'No location recorded'));
+  if (e.al?.length) facts.append(h('dt', null, 'Also called'), h('dd', null, e.al.join(', ')));
+  if (e.dn) facts.append(h('dt', null, 'Dated'), h('dd', null, `${e.dn} (approximate)`));
+  if (e.lo == null) facts.append(h('dt', null, 'On the map'), h('dd', null, e.mi ? 'No location recorded; listed under the country of the event it belongs to' : 'No location recorded'));
+  else if (e.mi) facts.append(h('dt', null, 'On the map'), h('dd', null, 'Placed at the centre or capital of the state it is filed under'));
   else if (e.ap) facts.append(h('dt', null, 'On the map'), h('dd', null, 'Placed at the nearest known location'));
   nodes.push(facts);
   const links = h('p.note');
@@ -759,7 +793,12 @@ async function renderEvent() {
   nodes.push(links);
   if (e.src) nodes.push(h('p.note', null, 'Listed in ', h('a', { href: e.src, target: '_blank', rel: 'noopener' }, "Wikipedia's article for this year"),
     e.uv ? '. Its date could not be confirmed in Wikidata (unverified).' : ', and its date matches Wikidata.'));
-  if (e.cur) nodes.push(h('p.note', null, 'From GeoHistory\'s hand-checked list of American Revolution events. Day and place are checked against the linked article.'));
+  if (e.on) nodes.push(h('p.note', null, h('span.unver', null, 'corrected by hand'), ' ', e.on));
+  if (e.dq) nodes.push(h('p.note', null, h('span.unver', null, 'doubtful date'), ' Wikidata dates this outside the war it is filed under. One of the two is wrong, so treat the date as unverified.'));
+  if (e.cur === 1) nodes.push(h('p.note', null, 'From GeoHistory\'s hand-checked list of American Revolution events. Day and place are checked against the linked article.'));
+  if (e.cur === 2) nodes.push(h('p.note', null, h('span.unver', null, e.uv ? 'curated, unverified' : 'curated'), e.uv
+    ? ' Written for GeoHistory from general knowledge. Its date could not be confirmed in Wikidata.'
+    : ' Written for GeoHistory; its year matches the Wikidata item of the linked article.'));
   if (e.lo != null) nodes.push(h('p', null, h('button.more', { type: 'button', onclick: () => mapOk && map.flyTo(e.lo, e.la, 6) }, 'Show on map')));
   setBody(nodes);
   els.body.scrollTop = 0;
@@ -973,17 +1012,20 @@ function sourcesContent(meta, audit) {
   const c = meta?.counts || {};
   return [
     h('p', null, 'GeoHistory is a way to explore the past, not an authority on it. Please check anything important against a good history book or the linked articles.'),
-    h('h3', null, 'Borders are snapshots'),
-    h('p', null, `The map has ${n(c.snapshots)} border maps, from ${formatYear(meta?.borders?.first ?? MIN_YEAR)} to ${formatYear(meta?.borders?.last ?? 2010)}. For any other year you see the nearest earlier map, and the badge on the map says which. Borders before about 1500 are rough sketches; many places had no fixed borders.`),
+    h('h3', null, 'Borders'),
+    h('p', null, `From 1886 to 2019 the map uses CShapes 2.0, which dates every change of state borders. From 1700 to 1885 it uses Cliopatria, which gives each state a shape for a range of years: there is a map for every year, but it is approximate, and peoples without a state are filled in from an older sketch map. Before 1700 there are only ${n(c.snapshots)} world snapshots, from ${formatYear(meta?.borders?.first ?? MIN_YEAR)} on: for any other year you see the nearest earlier one, and the badge on the map says which. Borders before about 1500 are rough sketches; many places had no fixed borders.`),
     h('h3', null, 'Events come from Wikidata'),
-    h('p', null, `${n(c.events)} events, from Wikidata's free database, ranked by how many Wikipedia language editions cover them. Dates, places and descriptions can be wrong or missing, and coverage is much thinner for Africa, Asia and the distant past than for Europe and North America.`),
-    h('p', null, `For the American Revolution (1763 to 1789) a short hand-checked list adds days, places and colonies where Wikidata lacks them (${n(c.curated)} entries).`),
+    h('p', null, `${n(c.events)} events, from Wikidata's free database, ranked by how many Wikipedia language editions cover them. Dates, places and descriptions can be wrong or missing, and coverage is much thinner for Africa, Asia and the distant past than for Europe and North America. ${n(c.placedInModernCountry || 0)} of them could be placed in one of today's countries.`),
+    h('p', null, `English Wikipedia's year articles add ${n(c.yearArticleEvents || 0)} more (only entries whose linked article Wikidata dates to the same year). Archaeological cultures and periods are listed with approximate dates.`),
+    h('h3', null, 'Curated text'),
+    h('p', null, `Decade summaries from 1500, short descriptions of major states and ${n(c.curated)} events for major periods were written for GeoHistory. Each is checked against Wikidata by its year and tagged "curated", or "curated, unverified" when Wikidata has no matching date.`),
     h('h3', null, 'Accuracy check'),
     h('p', null, audit ? `On ${audit.date} the data was checked against ${audit.facts} well-known facts (dates of events, reigns, who held a city in a given year): ${audit.passed} passed (${Math.round(audit.rate * 100)}%). Entries marked "unverified" or "curated" were written by hand or could not be confirmed in Wikidata.` : 'The accuracy check has not been run for this build.'),
     h('h3', null, 'Sources'),
     h('ul', null,
       h('li', null, h('a', { href: 'https://github.com/aourednik/historical-basemaps', target: '_blank', rel: 'noopener' }, 'historical-basemaps'), ' by André Ourednik and contributors: world borders by year (GPL-3.0).'),
       h('li', null, h('a', { href: 'https://publications.newberry.org/ahcb/', target: '_blank', rel: 'noopener' }, 'Atlas of Historical County Boundaries'), ', Newberry Library: US state and territory borders since 1783.'),
+      h('li', null, h('a', { href: 'https://github.com/Seshat-Global-History-Databank/cliopatria', target: '_blank', rel: 'noopener' }, 'Cliopatria'), ' (Seshat Global History Databank): state shapes for every year from 1700 to 1885 (CC BY 4.0).'),
       h('li', null, h('a', { href: 'https://icr.ethz.ch/data/cshapes/', target: '_blank', rel: 'noopener' }, 'CShapes 2.0'), ': dated state borders 1886 to 2019 (CC BY-NC-SA, non-commercial).'),
       h('li', null, h('a', { href: 'https://www.naturalearthdata.com/', target: '_blank', rel: 'noopener' }, 'Natural Earth'), ': coastlines and today\'s countries (public domain).'),
       h('li', null, h('a', { href: 'https://www.wikidata.org/', target: '_blank', rel: 'noopener' }, 'Wikidata'), ': events and descriptions (CC0). Links go to Wikipedia.'),

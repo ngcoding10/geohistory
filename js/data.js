@@ -24,60 +24,75 @@ export function getJSON(path) {
 // ---- borders ----
 let bordersIndex = null;
 let csIndex = null;
+let clioIndex = null;
 export async function loadBordersIndex() {
   if (!bordersIndex) {
-    const [b, cs] = await Promise.all([getJSON('borders/index.json'), getJSON('cshapes/index.json')]);
+    const [b, cs, clio] = await Promise.all([getJSON('borders/index.json'), getJSON('cshapes/index.json'),
+      getJSON('clio/index.json').catch(() => null)]);
     bordersIndex = b.snapshots;
     csIndex = cs;
+    clioIndex = clio;
   }
   return bordersIndex;
 }
 
-/** Is this year covered by the dated CShapes borders (one map per year, as on 1 July)? */
-export const isDatedYear = (y) => !!csIndex && y >= csIndex.from && y <= csIndex.to;
+/** Yearly border sources: 'cshapes' (dated, as on 1 July) or 'clio' (Cliopatria, one map per year), else null. */
+export function yearlySource(y) {
+  if (csIndex && y >= csIndex.from && y <= csIndex.to) return 'cshapes';
+  if (clioIndex && y >= clioIndex.from && y <= clioIndex.to) return 'clio';
+  return null;
+}
+export const isDatedYear = (y) => !!yearlySource(y);
 export const datedRange = () => csIndex && [csIndex.from, csIndex.to];
+export const clioRange = () => clioIndex && [clioIndex.from, clioIndex.to];
 
-/** The border map for a year: a dated CShapes year, else the latest snapshot at or before it. */
+/** The border map for a year: a yearly map (CShapes or Cliopatria), else the latest snapshot at or before it. */
 export function snapshotFor(year) {
-  if (isDatedYear(year)) return { y: year, cs: true };
+  const src = yearlySource(year);
+  if (src) return { y: year, cs: true, src };
   let best = null;
   for (const s of bordersIndex || []) if (s.y <= year) best = s;
   return best;
 }
 
 export function nextSnapshotAfter(y) {
-  if (csIndex && y < csIndex.from) {
-    const n = (bordersIndex || []).find((s) => s.y > y);
-    return n && n.y < csIndex.from ? n : { y: csIndex.from, cs: true };
-  }
-  if (isDatedYear(y)) return y < csIndex.to ? { y: y + 1, cs: true } : (bordersIndex || []).find((s) => s.y > y) || null;
-  return (bordersIndex || []).find((s) => s.y > y) || null;
+  if (yearlySource(y + 1)) return { y: y + 1, cs: true, src: yearlySource(y + 1) };
+  const n = (bordersIndex || []).find((s) => s.y > y);
+  const firstYearly = [clioIndex, csIndex].filter(Boolean).map((i) => i.from).filter((f) => f > y).sort((a, b) => a - b)[0];
+  if (firstYearly && (!n || firstYearly <= n.y)) return { y: firstYearly, cs: true, src: yearlySource(firstYearly) };
+  return n || null;
 }
 
 const shapeStore = new Map();
-async function loadCsYear(y) {
-  const yr = await getJSON(`cshapes/years/${y}.json`);
+async function loadCsYear(y, src) {
+  const yr = await getJSON(`${src}/years/${y}.json`);
   await Promise.all(yr.need.map(async (f) => {
-    if (shapeStore.has(f)) return;
-    const d = await getJSON('cshapes/' + f);
-    for (const [id, sh] of Object.entries(d)) shapeStore.set(+id, sh);
-    shapeStore.set(f, true);
+    if (shapeStore.has(src + '/' + f)) return;
+    const d = await getJSON(src + '/' + f);
+    for (const [id, sh] of Object.entries(d)) shapeStore.set(src + ':' + id, sh);
+    shapeStore.set(src + '/' + f, true);
   }));
   const features = [];
-  const polities = yr.rows.map(([id, n, p, s, cur], k) => {
-    const sh = shapeStore.get(id);
+  const clio = src === 'clio';
+  const polities = yr.rows.map(([id, n, p, s, extra], k) => {
+    const sh = shapeStore.get(src + ':' + id);
     features.push({ type: 'Feature', geometry: sh.g, properties: { k, c: null, p } });
-    const pol = { n, p, a: sh.a, l: sh.l, bb: sh.bb, pr: 3, dated: [sh.s, sh.e] };
+    const pol = { n, p, a: sh.a, l: sh.l, bb: sh.bb, pr: 3 };
+    if (clio) {
+      if (extra) pol.under = extra; else pol.clio = [sh.s, sh.e];
+    } else {
+      pol.dated = [sh.s, sh.e];
+      if (extra) pol.cur = 1;
+    }
     if (s) pol.s = s;
-    if (cur) pol.cur = 1;
     return pol;
   });
-  return { type: 'FeatureCollection', year: y, cs: true, date: yr.date, features, polities, largest: yr.largest, changes: yr.changes };
+  return { type: 'FeatureCollection', year: y, cs: true, src, date: yr.date, features, polities, largest: yr.largest, changes: yr.changes };
 }
 
 export async function loadSnapshot(s) {
   if (s.cs) {
-    const [doc, powers] = await Promise.all([loadCsYear(s.y), getJSON('powers.json')]);
+    const [doc, powers] = await Promise.all([loadCsYear(s.y, s.src || 'cshapes'), getJSON('powers.json')]);
     for (const f of doc.features) f.properties.c = powers[f.properties.p]?.color || '#ccc';
     return doc;
   }

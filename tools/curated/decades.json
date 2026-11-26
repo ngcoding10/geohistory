@@ -1,0 +1,1573 @@
+{
+ "_about": "Curated summary of each decade from 1500 to the 2020s, written for GeoHistory from general knowledge. Each summary lists the claims it rests on as [English Wikipedia article, year]; tools/build_curated.py marks a summary verified only when every claim matches the Wikidata item of its article and every year written in the text is one of those claims.",
+ "decades": [
+  {
+   "id": "dec-1500",
+   "from": 1500,
+   "to": 1509,
+   "text": "Portugal builds a sea empire in the Indian Ocean and defeats a Mamluk and Gujarati fleet at Diu; Spain settles the Caribbean. Ismail I founds Safavid Iran, and Michelangelo and Leonardo work in Italy.",
+   "claims": [
+    [
+     "Safavid Iran",
+     1501
+    ],
+    [
+     "Battle of Diu",
+     1509
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1510",
+   "from": 1510,
+   "to": 1519,
+   "text": "Luther's Ninety-five Theses open the Reformation. Portugal takes Goa and Malacca, the Ottomans under Selim I conquer Syria and Egypt, and Cortés lands in Mexico.",
+   "claims": [
+    [
+     "Ninety-five Theses",
+     1517
+    ],
+    [
+     "Portuguese conquest of Goa",
+     1510
+    ],
+    [
+     "Capture of Malacca (1511)",
+     1511
+    ],
+    [
+     "Battle of Marj Dabiq",
+     1516
+    ],
+    [
+     "Battle of Chaldiran",
+     1514
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1520",
+   "from": 1520,
+   "to": 1529,
+   "text": "Cortés takes Tenochtitlan and Magellan's expedition completes the first voyage around the world. Babur founds the Mughal Empire at Panipat, Suleiman the Magnificent wins at Mohács and besieges Vienna, and imperial troops sack Rome.",
+   "claims": [
+    [
+     "Fall of Tenochtitlan",
+     1521
+    ],
+    [
+     "First Battle of Panipat",
+     1526
+    ],
+    [
+     "Battle of Mohács",
+     1526
+    ],
+    [
+     "Siege of Vienna (1529)",
+     1529
+    ],
+    [
+     "Sack of Rome (1527)",
+     1527
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1530",
+   "from": 1530,
+   "to": 1539,
+   "text": "Pizarro captures the Inca emperor at Cajamarca. Henry VIII breaks with Rome, Calvin publishes the Institutes, and the Augsburg Confession sets out Lutheran belief.",
+   "claims": [
+    [
+     "Battle of Cajamarca",
+     1532
+    ],
+    [
+     "Augsburg Confession",
+     1530
+    ],
+    [
+     "Institutes of the Christian Religion",
+     1536
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1540",
+   "from": 1540,
+   "to": 1549,
+   "text": "The Council of Trent opens and the Jesuits are approved. Copernicus publishes his sun-centred astronomy, Portuguese traders reach Japan, and silver is found at Potosí.",
+   "claims": [
+    [
+     "Council of Trent",
+     1545
+    ],
+    [
+     "De revolutionibus orbium coelestium",
+     1543
+    ],
+    [
+     "Battle of Mühlberg",
+     1547
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1550",
+   "from": 1550,
+   "to": 1559,
+   "text": "The Peace of Augsburg divides the Holy Roman Empire between Catholic and Lutheran princes. Charles V abdicates, Akbar wins the Second Battle of Panipat, and Elizabeth I becomes Queen of England.",
+   "claims": [
+    [
+     "Peace of Augsburg",
+     1555
+    ],
+    [
+     "Second Battle of Panipat",
+     1556
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1560",
+   "from": 1560,
+   "to": 1569,
+   "text": "The French Wars of Religion begin and the Dutch Revolt starts. The Ottomans fail to take Malta, the Deccan sultanates defeat Vijayanagara at Talikota, and Spain settles the Philippines.",
+   "claims": [
+    [
+     "French Wars of Religion",
+     1562
+    ],
+    [
+     "Great Siege of Malta",
+     1565
+    ],
+    [
+     "Battle of Talikota",
+     1565
+    ],
+    [
+     "Eighty Years' War",
+     1568
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1570",
+   "from": 1570,
+   "to": 1579,
+   "text": "A Holy League fleet defeats the Ottomans at Lepanto. Huguenots are massacred on St. Bartholomew's Day, Oda Nobunaga wins at Nagashino, and the Union of Utrecht joins the northern Dutch provinces.",
+   "claims": [
+    [
+     "Battle of Lepanto",
+     1571
+    ],
+    [
+     "St. Bartholomew's Day massacre",
+     1572
+    ],
+    [
+     "Battle of Nagashino",
+     1575
+    ],
+    [
+     "Union of Utrecht",
+     1579
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1580",
+   "from": 1580,
+   "to": 1589,
+   "text": "The Spanish Armada fails against England. Philip II unites the crowns of Spain and Portugal, the Gregorian calendar is introduced, and the Dutch provinces renounce Philip's rule.",
+   "claims": [
+    [
+     "Spanish Armada",
+     1588
+    ],
+    [
+     "Iberian Union",
+     1580
+    ],
+    [
+     "Gregorian calendar",
+     1582
+    ],
+    [
+     "Act of Abjuration",
+     1581
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1590",
+   "from": 1590,
+   "to": 1599,
+   "text": "Japan under Hideyoshi invades Korea. Henry IV ends the French Wars of Religion with the Edict of Nantes, and Morocco destroys the Songhai army at Tondibi.",
+   "claims": [
+    [
+     "Imjin War",
+     1592
+    ],
+    [
+     "Edict of Nantes",
+     1598
+    ],
+    [
+     "Battle of Tondibi",
+     1591
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1600",
+   "from": 1600,
+   "to": 1609,
+   "text": "Tokugawa Ieyasu wins at Sekigahara and founds the Tokugawa shogunate. The English and Dutch East India companies are chartered, England settles Jamestown, and France founds Quebec.",
+   "claims": [
+    [
+     "Battle of Sekigahara",
+     1600
+    ],
+    [
+     "Dutch East India Company",
+     1602
+    ],
+    [
+     "East India Company",
+     1600
+    ],
+    [
+     "Jamestown",
+     1607
+    ],
+    [
+     "Quebec City",
+     1608
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1610",
+   "from": 1610,
+   "to": 1619,
+   "text": "The Thirty Years' War begins in Bohemia. The Romanov dynasty takes the Russian throne, Galileo turns the telescope to the sky, and the first enslaved Africans are landed in Virginia.",
+   "claims": [
+    [
+     "Thirty Years' War",
+     1618
+    ],
+    [
+     "Sidereus Nuncius",
+     1610
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1620",
+   "from": 1620,
+   "to": 1629,
+   "text": "The Mayflower colonists settle at Plymouth. The Bohemian revolt is crushed at White Mountain, the Dutch found New Amsterdam, and Denmark enters and leaves the Thirty Years' War.",
+   "claims": [
+    [
+     "Battle of White Mountain",
+     1620
+    ],
+    [
+     "Mayflower Compact",
+     1620
+    ],
+    [
+     "Treaty of Lübeck",
+     1629
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1630",
+   "from": 1630,
+   "to": 1639,
+   "text": "Sweden under Gustavus Adolphus enters the Thirty Years' War and France joins against the Habsburgs. Japan closes itself to most foreign trade, and the Taj Mahal is begun.",
+   "claims": [
+    [
+     "Battle of Breitenfeld (1631)",
+     1631
+    ],
+    [
+     "Battle of Lützen (1632)",
+     1632
+    ],
+    [
+     "Peace of Prague (1635)",
+     1635
+    ],
+    [
+     "Shimabara Rebellion",
+     1637
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1640",
+   "from": 1640,
+   "to": 1649,
+   "text": "The Peace of Westphalia ends the Thirty Years' War. Civil war in England ends with the execution of Charles I, the Manchu take Beijing and found Qing rule in China, and Portugal regains its independence from Spain.",
+   "claims": [
+    [
+     "Peace of Westphalia",
+     1648
+    ],
+    [
+     "Execution of Charles I of England",
+     1649
+    ],
+    [
+     "Battle of Shanhai Pass",
+     1644
+    ],
+    [
+     "Portuguese Restoration War",
+     1640
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1650",
+   "from": 1650,
+   "to": 1659,
+   "text": "England is a republic under Cromwell. The Dutch found a station at the Cape of Good Hope, Sweden invades Poland in the Deluge, and the Peace of the Pyrenees ends the long Franco-Spanish war.",
+   "claims": [
+    [
+     "Dutch Cape Colony",
+     1652
+    ],
+    [
+     "Deluge (history)",
+     1655
+    ],
+    [
+     "Treaty of the Pyrenees",
+     1659
+    ],
+    [
+     "First Anglo-Dutch War",
+     1652
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1660",
+   "from": 1660,
+   "to": 1669,
+   "text": "The English monarchy is restored and London suffers plague and fire. Louis XIV begins his personal rule, England takes New Amsterdam, and the Royal Society is founded.",
+   "claims": [
+    [
+     "Stuart Restoration",
+     1660
+    ],
+    [
+     "Great Fire of London",
+     1666
+    ],
+    [
+     "Great Plague of London",
+     1665
+    ],
+    [
+     "Royal Society",
+     1660
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1670",
+   "from": 1670,
+   "to": 1679,
+   "text": "Louis XIV invades the Dutch Republic. Shivaji is crowned ruler of the Marathas, King Philip's War is fought in New England, and Pueblo and other peoples resist Spanish rule in the north of New Spain.",
+   "claims": [
+    [
+     "Franco-Dutch War",
+     1672
+    ],
+    [
+     "King Philip's War",
+     1675
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1680",
+   "from": 1680,
+   "to": 1689,
+   "text": "An Ottoman army is defeated outside Vienna. Louis XIV revokes the Edict of Nantes, Newton publishes the Principia, and the Glorious Revolution replaces James II with William and Mary.",
+   "claims": [
+    [
+     "Battle of Vienna",
+     1683
+    ],
+    [
+     "Edict of Fontainebleau",
+     1685
+    ],
+    [
+     "Philosophiæ Naturalis Principia Mathematica",
+     1687
+    ],
+    [
+     "Glorious Revolution",
+     1688
+    ],
+    [
+     "Pueblo Revolt",
+     1680
+    ],
+    [
+     "Treaty of Nerchinsk",
+     1689
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1690",
+   "from": 1690,
+   "to": 1699,
+   "text": "The Ottomans cede Hungary to the Habsburgs at Karlowitz. Peter the Great travels in western Europe, the Nine Years' War ends at Ryswick, and witch trials are held at Salem.",
+   "claims": [
+    [
+     "Treaty of Karlowitz",
+     1699
+    ],
+    [
+     "Peace of Ryswick",
+     1697
+    ],
+    [
+     "Salem witch trials",
+     1692
+    ],
+    [
+     "Battle of Zenta",
+     1697
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1700",
+   "from": 1700,
+   "to": 1709,
+   "text": "The War of the Spanish Succession and the Great Northern War divide Europe. England and Scotland unite as Great Britain, Peter the Great founds Saint Petersburg and defeats Sweden at Poltava, and the Mughal emperor Aurangzeb dies.",
+   "claims": [
+    [
+     "War of the Spanish Succession",
+     1701
+    ],
+    [
+     "Great Northern War",
+     1700
+    ],
+    [
+     "Acts of Union 1707",
+     1707
+    ],
+    [
+     "Saint Petersburg",
+     1703
+    ],
+    [
+     "Battle of Poltava",
+     1709
+    ],
+    [
+     "Battle of Blenheim",
+     1704
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1710",
+   "from": 1710,
+   "to": 1719,
+   "text": "The treaties of Utrecht and Rastatt end the War of the Spanish Succession: a Bourbon keeps the Spanish throne and Britain gains Gibraltar. Louis XIV dies and the House of Hanover takes the British throne.",
+   "claims": [
+    [
+     "Peace of Utrecht",
+     1713
+    ],
+    [
+     "Treaty of Rastatt",
+     1714
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1720",
+   "from": 1720,
+   "to": 1729,
+   "text": "The Great Northern War ends with Russia as the leading Baltic power. The Safavid state collapses under Afghan attack, and Qing China fixes its border with Russia at Kyakhta.",
+   "claims": [
+    [
+     "Treaty of Nystad",
+     1721
+    ],
+    [
+     "Treaty of Kyakhta (1727)",
+     1727
+    ],
+    [
+     "Battle of Gulnabad",
+     1722
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1730",
+   "from": 1730,
+   "to": 1739,
+   "text": "Nader Shah takes power in Iran and sacks Delhi. The War of the Polish Succession is fought, and Georgia becomes the last of the thirteen British colonies.",
+   "claims": [
+    [
+     "Battle of Karnal",
+     1739
+    ],
+    [
+     "War of the Polish Succession",
+     1733
+    ],
+    [
+     "Province of Georgia",
+     1732
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1740",
+   "from": 1740,
+   "to": 1749,
+   "text": "Frederick II of Prussia seizes Silesia and the War of the Austrian Succession follows. The Jacobite rising is crushed at Culloden, and Ahmad Shah Durrani founds an Afghan empire.",
+   "claims": [
+    [
+     "War of the Austrian Succession",
+     1740
+    ],
+    [
+     "Battle of Culloden",
+     1746
+    ],
+    [
+     "Treaty of Aix-la-Chapelle (1748)",
+     1748
+    ],
+    [
+     "Durrani Empire",
+     1747
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1750",
+   "from": 1750,
+   "to": 1759,
+   "text": "The Seven Years' War begins, fought in Europe, North America and India. The East India Company wins at Plassey, an earthquake destroys Lisbon, and the Qing destroy the Dzungar Khanate.",
+   "claims": [
+    [
+     "Seven Years' War",
+     1756
+    ],
+    [
+     "Battle of Plassey",
+     1757
+    ],
+    [
+     "1755 Lisbon earthquake",
+     1755
+    ],
+    [
+     "Battle of the Plains of Abraham",
+     1759
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1760",
+   "from": 1760,
+   "to": 1769,
+   "text": "The Treaty of Paris ends the Seven Years' War and France loses most of its American empire. The Marathas are defeated at Panipat, Catherine II takes the Russian throne, and Britain's Stamp Act provokes its American colonies.",
+   "claims": [
+    [
+     "Treaty of Paris (1763)",
+     1763
+    ],
+    [
+     "Third Battle of Panipat",
+     1761
+    ],
+    [
+     "Stamp Act 1765",
+     1765
+    ],
+    [
+     "Battle of Buxar",
+     1764
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1770",
+   "from": 1770,
+   "to": 1779,
+   "text": "Thirteen British colonies declare independence as the United States. Poland is partitioned for the first time, Russia defeats the Ottomans, James Cook charts the Pacific, and Watt's steam engine goes into use.",
+   "claims": [
+    [
+     "United States Declaration of Independence",
+     1776
+    ],
+    [
+     "First Partition of Poland",
+     1772
+    ],
+    [
+     "Treaty of Küçük Kaynarca",
+     1774
+    ],
+    [
+     "Boston Tea Party",
+     1773
+    ],
+    [
+     "Battles of Saratoga",
+     1777
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1780",
+   "from": 1780,
+   "to": 1789,
+   "text": "Britain recognises American independence and the United States adopts its constitution. The French Revolution begins with the storming of the Bastille, Britain founds a penal colony in New South Wales, and Túpac Amaru II leads a great Andean revolt.",
+   "claims": [
+    [
+     "Treaty of Paris (1783)",
+     1783
+    ],
+    [
+     "Storming of the Bastille",
+     1789
+    ],
+    [
+     "Siege of Yorktown",
+     1781
+    ],
+    [
+     "Rebellion of Túpac Amaru II",
+     1780
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1790",
+   "from": 1790,
+   "to": 1799,
+   "text": "France becomes a republic, executes its king and goes to war with most of Europe. Poland is partitioned out of existence, enslaved people in Saint-Domingue begin the Haitian Revolution, and Bonaparte seizes power.",
+   "claims": [
+    [
+     "French First Republic",
+     1792
+    ],
+    [
+     "Execution of Louis XVI",
+     1793
+    ],
+    [
+     "Third Partition of Poland",
+     1795
+    ],
+    [
+     "Haitian Revolution",
+     1791
+    ],
+    [
+     "Coup of 18 Brumaire",
+     1799
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1800",
+   "from": 1800,
+   "to": 1809,
+   "text": "Napoleon crowns himself emperor and defeats Austria, Russia and Prussia. Haiti becomes independent, the United States buys Louisiana, the Holy Roman Empire is dissolved, and Britain abolishes its slave trade.",
+   "claims": [
+    [
+     "Coronation of Napoleon",
+     1804
+    ],
+    [
+     "Battle of Austerlitz",
+     1805
+    ],
+    [
+     "Battle of Trafalgar",
+     1805
+    ],
+    [
+     "Louisiana Purchase",
+     1803
+    ],
+    [
+     "Dissolution of the Holy Roman Empire",
+     1806
+    ],
+    [
+     "Slave Trade Act 1807",
+     1807
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1810",
+   "from": 1810,
+   "to": 1819,
+   "text": "Napoleon's invasion of Russia fails and he is finally defeated at Waterloo. The Congress of Vienna redraws Europe, Spanish America fights for independence, and Britain and the United States fight the War of 1812.",
+   "claims": [
+    [
+     "French invasion of Russia",
+     1812
+    ],
+    [
+     "Battle of Waterloo",
+     1815
+    ],
+    [
+     "Congress of Vienna",
+     1814
+    ],
+    [
+     "War of 1812",
+     1812
+    ],
+    [
+     "Battle of Boyacá",
+     1819
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1820",
+   "from": 1820,
+   "to": 1829,
+   "text": "Most of Spanish America and Brazil become independent. Greece fights for independence from the Ottomans, the Monroe Doctrine is declared, and the first public steam railway opens in England.",
+   "claims": [
+    [
+     "Battle of Ayacucho",
+     1824
+    ],
+    [
+     "Independence of Brazil",
+     1822
+    ],
+    [
+     "Greek War of Independence",
+     1821
+    ],
+    [
+     "Monroe Doctrine",
+     1823
+    ],
+    [
+     "Stockton and Darlington Railway",
+     1825
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1830",
+   "from": 1830,
+   "to": 1839,
+   "text": "Revolutions in France and Belgium; Belgium becomes independent. France invades Algeria, Britain abolishes slavery in most of its empire, and the Great Trek and the Trail of Tears uproot peoples in southern Africa and North America.",
+   "claims": [
+    [
+     "July Revolution",
+     1830
+    ],
+    [
+     "Belgian Revolution",
+     1830
+    ],
+    [
+     "French conquest of Algeria",
+     1830
+    ],
+    [
+     "Slavery Abolition Act 1833",
+     1833
+    ],
+    [
+     "Battle of the Alamo",
+     1836
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1840",
+   "from": 1840,
+   "to": 1849,
+   "text": "Revolutions sweep Europe in 1848. Britain defeats China in the First Opium War and takes Hong Kong, the United States takes the northern half of Mexico, and famine devastates Ireland.",
+   "claims": [
+    [
+     "Revolutions of 1848",
+     1848
+    ],
+    [
+     "Treaty of Nanking",
+     1842
+    ],
+    [
+     "Treaty of Guadalupe Hidalgo",
+     1848
+    ],
+    [
+     "Great Famine (Ireland)",
+     1845
+    ],
+    [
+     "Treaty of Waitangi",
+     1840
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1850",
+   "from": 1850,
+   "to": 1859,
+   "text": "The Taiping Rebellion convulses China and the Crimean War is fought. An American squadron opens Japan, a great rebellion shakes British rule in India, and Darwin publishes On the Origin of Species.",
+   "claims": [
+    [
+     "Taiping Rebellion",
+     1850
+    ],
+    [
+     "Crimean War",
+     1853
+    ],
+    [
+     "Perry Expedition",
+     1853
+    ],
+    [
+     "Indian Rebellion of 1857",
+     1857
+    ],
+    [
+     "On the Origin of Species",
+     1859
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": false,
+   "check": "1853 Perry Expedition: Wikidata item has no date"
+  },
+  {
+   "id": "dec-1860",
+   "from": 1860,
+   "to": 1869,
+   "text": "The United States fights a civil war and abolishes slavery. Italy is unified, Russia frees its serfs, the Meiji Restoration begins in Japan, Canada becomes a dominion, and the Suez Canal opens.",
+   "claims": [
+    [
+     "American Civil War",
+     1861
+    ],
+    [
+     "Kingdom of Italy",
+     1861
+    ],
+    [
+     "Emancipation reform of 1861",
+     1861
+    ],
+    [
+     "Meiji Restoration",
+     1868
+    ],
+    [
+     "Canadian Confederation",
+     1867
+    ],
+    [
+     "Battle of Königgrätz",
+     1866
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1870",
+   "from": 1870,
+   "to": 1879,
+   "text": "Prussia defeats France and a German Empire is proclaimed. Rome becomes the capital of Italy, the Congress of Berlin redraws the Balkans, and Britain fights the Zulu kingdom.",
+   "claims": [
+    [
+     "Franco-Prussian War",
+     1870
+    ],
+    [
+     "Proclamation of the German Empire",
+     1871
+    ],
+    [
+     "Capture of Rome",
+     1870
+    ],
+    [
+     "Congress of Berlin",
+     1878
+    ],
+    [
+     "Anglo-Zulu War",
+     1879
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1880",
+   "from": 1880,
+   "to": 1889,
+   "text": "The Berlin Conference sets rules for the partition of Africa. Britain occupies Egypt, the Mahdists take Khartoum, France extends its rule over Vietnam, and Brazil abolishes slavery and becomes a republic.",
+   "claims": [
+    [
+     "Berlin Conference",
+     1884
+    ],
+    [
+     "Anglo-Egyptian War",
+     1882
+    ],
+    [
+     "Siege of Khartoum",
+     1884
+    ],
+    [
+     "Lei Áurea",
+     1888
+    ],
+    [
+     "Proclamation of the Republic (Brazil)",
+     1889
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1890",
+   "from": 1890,
+   "to": 1899,
+   "text": "Japan defeats China and Ethiopia defeats Italy at Adwa. The United States takes the Philippines, Puerto Rico and Guam from Spain, and the Second Boer War begins.",
+   "claims": [
+    [
+     "First Sino-Japanese War",
+     1894
+    ],
+    [
+     "Battle of Adwa",
+     1896
+    ],
+    [
+     "Spanish–American War",
+     1898
+    ],
+    [
+     "Second Boer War",
+     1899
+    ],
+    [
+     "Battle of Omdurman",
+     1898
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1900",
+   "from": 1900,
+   "to": 1909,
+   "text": "Japan defeats Russia, and revolution shakes the Russian Empire. The Boxer Rebellion is put down in China, Australia federates, the Wright brothers fly, and Einstein publishes special relativity.",
+   "claims": [
+    [
+     "Russo-Japanese War",
+     1904
+    ],
+    [
+     "Russian Revolution of 1905",
+     1905
+    ],
+    [
+     "Boxer Protocol",
+     1901
+    ],
+    [
+     "Australia",
+     1901
+    ],
+    [
+     "Wright Flyer",
+     1903
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1910",
+   "from": 1910,
+   "to": 1919,
+   "text": "The First World War kills millions and destroys the Russian, German, Austro-Hungarian and Ottoman empires. Revolutions break out in Mexico, China and Russia, where the Bolsheviks take power.",
+   "claims": [
+    [
+     "World War I",
+     1914
+    ],
+    [
+     "October Revolution",
+     1917
+    ],
+    [
+     "1911 Revolution",
+     1911
+    ],
+    [
+     "Mexican Revolution",
+     1910
+    ],
+    [
+     "Treaty of Versailles",
+     1919
+    ],
+    [
+     "Armistice of 11 November 1918",
+     1918
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1920",
+   "from": 1920,
+   "to": 1929,
+   "text": "The League of Nations is founded and the Soviet Union is formed. Mussolini takes power in Italy, Turkey becomes a republic, Ireland is partitioned, and the Wall Street crash begins the Great Depression.",
+   "claims": [
+    [
+     "March on Rome",
+     1922
+    ],
+    [
+     "Treaty of Lausanne",
+     1923
+    ],
+    [
+     "Anglo-Irish Treaty",
+     1921
+    ],
+    [
+     "Wall Street crash of 1929",
+     1929
+    ],
+    [
+     "Treaty on the Creation of the Union of Soviet Socialist Republics",
+     1922
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1930",
+   "from": 1930,
+   "to": 1939,
+   "text": "The Great Depression spreads and Hitler takes power in Germany. Japan seizes Manchuria and invades China, Italy conquers Ethiopia, Spain fights a civil war, and the Second World War begins with the invasion of Poland.",
+   "claims": [
+    [
+     "Mukden incident",
+     1931
+    ],
+    [
+     "Second Sino-Japanese War",
+     1937
+    ],
+    [
+     "Spanish Civil War",
+     1936
+    ],
+    [
+     "Invasion of Poland",
+     1939
+    ],
+    [
+     "Second Italo-Ethiopian War",
+     1935
+    ],
+    [
+     "Munich Agreement",
+     1938
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1940",
+   "from": 1940,
+   "to": 1949,
+   "text": "The Second World War and the Holocaust; the war ends with atomic bombs on Japan. The United Nations is founded, India and Pakistan become independent, Israel is created, the Cold War begins and the Communists win in China.",
+   "claims": [
+    [
+     "Attack on Pearl Harbor",
+     1941
+    ],
+    [
+     "Normandy landings",
+     1944
+    ],
+    [
+     "Atomic bombings of Hiroshima and Nagasaki",
+     1945
+    ],
+    [
+     "Partition of India",
+     1947
+    ],
+    [
+     "Israeli Declaration of Independence",
+     1948
+    ],
+    [
+     "Proclamation of the People's Republic of China",
+     1949
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1950",
+   "from": 1950,
+   "to": 1959,
+   "text": "The Korean War ends in stalemate. France loses Indochina and fights in Algeria, Ghana leads sub-Saharan Africa to independence, the Suez Crisis and the Hungarian Revolution fall in the same weeks, and Sputnik opens the space age.",
+   "claims": [
+    [
+     "Korean War",
+     1950
+    ],
+    [
+     "Battle of Dien Bien Phu",
+     1954
+    ],
+    [
+     "Suez Crisis",
+     1956
+    ],
+    [
+     "Hungarian Revolution of 1956",
+     1956
+    ],
+    [
+     "Sputnik 1",
+     1957
+    ],
+    [
+     "Treaty of Rome",
+     1957
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1960",
+   "from": 1960,
+   "to": 1969,
+   "text": "Most of Africa becomes independent. The Cuban Missile Crisis brings the superpowers close to war, the United States fights in Vietnam, China begins the Cultural Revolution, and astronauts land on the Moon.",
+   "claims": [
+    [
+     "Cuban Missile Crisis",
+     1962
+    ],
+    [
+     "Berlin Wall",
+     1961
+    ],
+    [
+     "Cultural Revolution",
+     1966
+    ],
+    [
+     "Six-Day War",
+     1967
+    ],
+    [
+     "Apollo 11",
+     1969
+    ],
+    [
+     "Warsaw Pact invasion of Czechoslovakia",
+     1968
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1970",
+   "from": 1970,
+   "to": 1979,
+   "text": "The United States leaves Vietnam, and Saigon falls. Bangladesh becomes independent, an oil crisis follows the Yom Kippur War, Portugal's empire ends, and revolution in Iran overthrows the Shah.",
+   "claims": [
+    [
+     "Fall of Saigon",
+     1975
+    ],
+    [
+     "Bangladesh Liberation War",
+     1971
+    ],
+    [
+     "Yom Kippur War",
+     1973
+    ],
+    [
+     "Carnation Revolution",
+     1974
+    ],
+    [
+     "Iranian Revolution",
+     1978
+    ],
+    [
+     "Soviet–Afghan War",
+     1979
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1980",
+   "from": 1980,
+   "to": 1989,
+   "text": "Iran and Iraq fight an eight-year war. Gorbachev begins reforms in the Soviet Union, a reactor explodes at Chernobyl, and in 1989 Communist rule collapses across eastern Europe and the Berlin Wall opens.",
+   "claims": [
+    [
+     "Iran–Iraq War",
+     1980
+    ],
+    [
+     "Chernobyl disaster",
+     1986
+    ],
+    [
+     "Fall of the Berlin Wall",
+     1989
+    ],
+    [
+     "Falklands War",
+     1982
+    ],
+    [
+     "1989 Tiananmen Square protests and massacre",
+     1989
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-1990",
+   "from": 1990,
+   "to": 1999,
+   "text": "Germany is reunified and the Soviet Union and Yugoslavia break up. Apartheid ends in South Africa, genocide is committed in Rwanda, the European Union is founded, and the World Wide Web spreads.",
+   "claims": [
+    [
+     "German reunification",
+     1990
+    ],
+    [
+     "Dissolution of the Soviet Union",
+     1991
+    ],
+    [
+     "Rwandan genocide",
+     1994
+    ],
+    [
+     "Maastricht Treaty",
+     1992
+    ],
+    [
+     "Gulf War",
+     1990
+    ],
+    [
+     "Dayton Agreement",
+     1995
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-2000",
+   "from": 2000,
+   "to": 2009,
+   "text": "The September 11 attacks lead to wars in Afghanistan and Iraq. The euro enters circulation, a tsunami kills more than 200,000 people around the Indian Ocean, and a financial crisis spreads from the United States.",
+   "claims": [
+    [
+     "September 11 attacks",
+     2001
+    ],
+    [
+     "Iraq War",
+     2003
+    ],
+    [
+     "2004 Indian Ocean earthquake and tsunami",
+     2004
+    ],
+    [
+     "Bankruptcy of Lehman Brothers",
+     2008
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": true,
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "dec-2010",
+   "from": 2010,
+   "to": 2019,
+   "text": "Uprisings spread across the Arab world and civil war begins in Syria. Russia annexes Crimea, Britain votes to leave the European Union, South Sudan becomes independent, and the Paris Agreement on climate is adopted.",
+   "claims": [
+    [
+     "Arab Spring",
+     2010
+    ],
+    [
+     "Syrian civil war",
+     2011
+    ],
+    [
+     "Russian annexation of Crimea",
+     2014
+    ],
+    [
+     "2016 United Kingdom European Union membership referendum",
+     2016
+    ],
+    [
+     "Paris Agreement",
+     2015
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": false,
+   "check": "2014 Russian annexation of Crimea: Wikidata item has no date"
+  },
+  {
+   "id": "dec-2020",
+   "from": 2020,
+   "to": 2029,
+   "text": "The COVID-19 pandemic kills millions and disrupts life worldwide. Russia launches a full-scale invasion of Ukraine.",
+   "claims": [
+    [
+     "COVID-19 pandemic",
+     2019
+    ],
+    [
+     "Russian invasion of Ukraine",
+     2022
+    ]
+   ],
+   "span": [],
+   "source": "curated",
+   "verified": false,
+   "check": "2022 Russian invasion of Ukraine: no Wikidata item for the linked article; 2019 COVID-19 pandemic: outside the decade"
+  }
+ ]
+}

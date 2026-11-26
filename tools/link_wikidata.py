@@ -11,6 +11,7 @@ Writes data/entities.json: { name: {q, d, from, to, cap, w} } (description, year
 """
 import json
 import os
+import re
 
 from common import sparql, qid, log, CACHE, DATA, write_json, read_json
 
@@ -34,6 +35,105 @@ def year_of(v):
 
 def esc(s):
     return s.replace('\\', '\\\\').replace('"', '\\"')
+
+
+def fix_early(out, names):
+    """Names shown on maps more than 50 years before the linked item's inception: decide which side is wrong.
+
+    1. the item replaced an earlier state that covers those years (Ethiopia <- Ethiopian Empire): record the
+       earlier states as "eras" and count the name from the first of them;
+    2. the item is one of today's countries and Wikidata's inception is its independence or current
+       constitution (Madagascar 1960): the name on older maps is the land or an earlier realm, so the date is
+       kept as "mod" (shown as a note) instead of "from";
+    3. the item is something else that starts later (Oldenburg the 1933 district, Tibet 1912-1951) and most
+       of the maps are earlier: the link was wrong, drop it;
+    4. anything else stays linked and flagged (the audit counts it).
+    """
+    early = {}
+    for name, e in out.items():
+        ys = [y for y in names.get(name, []) if e.get('from') is not None and y < e['from'] - 50]
+        if ys:
+            early[name] = ys
+    if not early:
+        return
+    qs = sorted({out[n]['q'] for n in early})
+    iso = set()
+    for i in range(0, len(qs), 200):
+        vals = ' '.join('wd:' + q for q in qs[i:i + 200])
+        for r in sparql(f'SELECT ?x WHERE {{ VALUES ?x {{ {vals} }} ?x wdt:P297 [] . }}'):
+            iso.add(qid(r['x']))
+    # predecessors, up to five steps back
+    pred = {}
+    info = {}
+    frontier = set(qs)
+    seen = set(qs)
+    for depth in range(5):
+        nxt = set()
+        fl = sorted(frontier)
+        for i in range(0, len(fl), 150):
+            vals = ' '.join('wd:' + q for q in fl[i:i + 150])
+            try:
+                rows = sparql(f'''SELECT ?x ?p ?start ?end ?l ?d ?w WHERE {{ VALUES ?x {{ {vals} }}
+  {{ ?x wdt:P1365 ?p }} UNION {{ ?x wdt:P155 ?p }} UNION {{ ?p wdt:P1366 ?x }} UNION {{ ?p wdt:P156 ?x }}
+  ?p wdt:P571 ?start . OPTIONAL {{ ?p wdt:P576 ?end }} ?p rdfs:label ?l FILTER(LANG(?l) = "en")
+  OPTIONAL {{ ?p schema:description ?d FILTER(LANG(?d) = "en") }}
+  OPTIONAL {{ ?a schema:about ?p; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?w }}
+  FILTER NOT EXISTS {{ ?p wdt:P31 wd:Q5 }} }}''')
+            except Exception as ex:
+                log(f'  predecessor batch failed: {ex}')
+                continue
+            for r in rows:
+                p = qid(r['p'])
+                pred.setdefault(qid(r['x']), set()).add(p)
+                e = info.setdefault(p, {'q': p, 'n': r['l']})
+                a, b = year_of(r.get('start')), year_of(r.get('end'))
+                if a is not None:
+                    e['from'] = min(e.get('from', a), a)
+                if b is not None:
+                    e['to'] = max(e.get('to', b), b)
+                if r.get('d'):
+                    e['d'] = r['d']
+                if r.get('w'):
+                    e['w'] = r['w']
+                if p not in seen:
+                    seen.add(p)
+                    nxt.add(p)
+        frontier = nxt
+        if not frontier:
+            break
+    stats = {'eras': 0, 'modern': 0, 'dropped': 0, 'flagged': 0}
+    for name, ys in early.items():
+        e = out[name]
+        chain, todo, done = [], [e['q']], set()
+        while todo:
+            x = todo.pop()
+            for p in pred.get(x, ()):
+                if p not in done:
+                    done.add(p)
+                    chain.append(info[p])
+                    todo.append(p)
+        chain = [c for c in chain if c.get('from') is not None and c['from'] < e['from']]
+        covered = [y for y in ys if any(c['from'] - 50 <= y <= c.get('to', e['from']) + 50 for c in chain)]
+        if chain and len(covered) >= max(1, len(ys) // 2):
+            e['eras'] = sorted(chain, key=lambda c: c['from'])[:8]
+            e['mod'] = e['from']
+            e['from'] = min(c['from'] for c in chain)
+            if any(y < e['from'] - 50 for y in ys):
+                stats['flagged'] += 1
+            else:
+                stats['eras'] += 1
+        elif e['q'] in iso:
+            e['mod'] = e.pop('from')
+            stats['modern'] += 1
+        else:
+            fit = [y for y in names.get(name, []) if y >= e['from'] - 50 and (e.get('to') is None or y <= e['to'] + 50)]
+            if len(ys) > len(fit):
+                del out[name]
+                stats['dropped'] += 1
+            else:
+                stats['flagged'] += 1
+    write_json(os.path.join(CACHE, 'early_fix.json'), stats)
+    log(f'names shown before their linked item begins: {len(early)} -> {stats}')
 
 
 def main():
@@ -125,6 +225,15 @@ def main():
             continue
         chosen[name] = q
     log(f'linked {len(chosen)} of {len(todo)} names')
+    # Cliopatria supplies a Wikidata id for each of its polities: use it where the name search found nothing
+    cl_path = os.path.join(CACHE, 'clio_links.json')
+    n_clio = 0
+    if os.path.exists(cl_path):
+        for name, v in read_json(cl_path).items():
+            if name not in chosen and name in names and re.match(r'^Q\d+$', v.get('q') or ''):
+                chosen[name] = v['q']
+                n_clio += 1
+    log(f'{n_clio} more names linked by the ids Cliopatria gives')
 
     qs = sorted(set(chosen.values()))
     info = {}
@@ -153,7 +262,8 @@ def main():
                 if r['capL'] not in caps and len(caps) < 3:
                     caps.append(r['capL'])
         log(f'  info {min(i + 150, len(qs))}/{len(qs)}')
-    out = {name: info.get(q, {'q': q}) for name, q in sorted(chosen.items())}
+    out = {name: dict(info.get(q, {'q': q})) for name, q in sorted(chosen.items())}
+    fix_early(out, names)
     size = write_json(os.path.join(DATA, 'entities.json'), out)
     log(f'wrote entities.json ({len(out)} names, {size // 1024} KB)')
 

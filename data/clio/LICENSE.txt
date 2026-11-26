@@ -1,0 +1,4 @@
+Polity shapes in this folder are simplified from Cliopatria (Seshat Global History Databank),
+https://github.com/Seshat-Global-History-Databank/cliopatria, DOI 10.1038/s41597-025-04516-9,
+licensed CC BY 4.0. Rows marked with a snapshot year come from aourednik/historical-basemaps (GPL-3.0),
+see ../borders/LICENSE.txt.

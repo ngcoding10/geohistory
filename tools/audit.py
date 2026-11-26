@@ -24,13 +24,15 @@ def main():
         by_name[norm(e['l'])].append(e)
         if e.get('w'):
             by_name[norm(e['w'])].append(e)
+        for al in e.get('al', []):   # English "also known as" names from Wikidata
+            by_name[norm(al)].append(e)
     bindex = read_json(os.path.join(DATA, 'borders', 'index.json'))['snapshots']
     cs = read_json(os.path.join(DATA, 'cshapes', 'index.json'))
-    import build_cshapes
+    import yearly
 
     def territory(lon, lat, y):
-        if cs['from'] <= y <= cs['to']:
-            pols = build_cshapes.year_doc(y)
+        if yearly.source(y):
+            pols = yearly.year_doc(y)
             k = PolyIndex([(i, p['g']) for i, p in enumerate(pols)]).lookup(lon, lat)
             return None if k is None else f"{pols[k]['n']} | {pols[k]['s'] or ''}"
         snap = max(s['y'] for s in bindex if s['y'] <= y)

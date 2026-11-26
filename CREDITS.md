@@ -33,6 +33,23 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
   the file does not cover, the app reuses each state's first (1783) outline for the thirteen colonies
   and marks those outlines as approximate.
 
+### State borders for every year, 1700 to 1885: Cliopatria
+- **What:** polygons of about 1,600 political entities from 3400 BC to 2024, each valid for a range of years,
+  with the empire a polity belongs to and its Wikipedia and Wikidata ids. GeoHistory uses the rows that
+  overlap 1700 to 1885 (2,356 shapes).
+- **Source:** Seshat Global History Databank, *Cliopatria: a geospatial database of world-wide political
+  entities from 3400BCE to 2024CE*, https://github.com/Seshat-Global-History-Databank/cliopatria,
+  Scientific Data (2025), https://doi.org/10.1038/s41597-025-04516-9 ; releases on Zenodo,
+  https://zenodo.org/records/13363121
+- **Licence:** Creative Commons Attribution 4.0 (CC BY 4.0), as stated on the Zenodo record (checked
+  26 November 2026). Commercial use is allowed with attribution.
+- **Changes we made:** geometry simplified and rounded; one map per year from the rows valid in that year;
+  the aggregate rows in brackets, such as "(Spanish Empire)", are used only to name the ruling power of
+  their members; territories without a state are filled in from the nearest earlier historical-basemaps
+  snapshot and labelled as such (`tools/build_clio.py`). The derived files are in `data/clio/`.
+- **Caveat from the source:** "these maps reflect only one version of the territory held by past polities";
+  a polity is redrawn only every few years, so a border change can show a year or two late or early.
+
 ### State borders by date, 1886 to 2019: CShapes 2.0 (non-commercial licence)
 - **What:** borders of states and dependent territories with exact start and end dates.
 - **Source:** Schvitz, Rüegger, Girardin, Cederman, Weidmann and Gleditsch, *Mapping the International
@@ -70,17 +87,25 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
   Wikidata lacks them. Same licence as the app code.
 
 ### Wikipedia year articles (CC BY-SA 4.0)
-- The "Events" sections of English Wikipedia's year articles ("1776", "44 BC", "AD 5") are read by
-  `tools/fetch_yearpages.py` (slow, resumable). Only dated links to other articles are kept: an event is
-  named by the article it links to and credited to the year article; no sentence text is copied. Each is
-  checked against the Wikidata item of the linked article and shown as unverified when the year differs.
-  Text from Wikipedia is © Wikipedia contributors, CC BY-SA 4.0.
+- The "Events" sections of English Wikipedia's year articles ("1776", "44 BC") are read by
+  `tools/fetch_yearpages.py` (the plain wikitext endpoint, one page every 1.5 seconds, resumable). No
+  sentence text is copied. For each bullet the first three linked articles are looked up on Wikidata, and
+  the bullet becomes an event only when one of them is dated to that year (within one); the event is named
+  by that article and credited to the year article. Text from Wikipedia is © Wikipedia contributors,
+  CC BY-SA 4.0.
 
 ### Curated files (written for GeoHistory, `tools/curated/`)
-- `territory_changes.json`: 81 dated border changes before 1886, each with a source article, checked
-  against Wikidata (70 match). `dependency_owners.json`: rulers of 1886-2019 dependencies (unverified).
-  `cshapes_names.json`: era names of renamed states. `centuries.json`: a short "state of the world" per
-  century (narrative, unverified). Plus `tools/supplement_events.json` (American Revolution).
+Written from general knowledge, conservatively, and checked by `tools/build_curated.py` and
+`tools/build_changes.py` against the Wikidata item of the article each entry names. The app tags them
+"curated", or "curated, unverified" when Wikidata has no matching date.
+- `events/*.json`: 380 events in 17 periods (fall of the Roman Republic to the fall of the USSR); 366
+  match Wikidata by year. `decades.json`: one summary per decade from 1500 (53; 49 fully verified).
+  `polities.json`: 181 short descriptions of major historical states (177 with every year verified).
+- `territory_changes.json`: 81 dated border changes before 1886 (70 match). `event_overrides.json`: hand
+  corrections to single Wikidata dates, each with a source and a note shown in the app.
+  `dependency_owners.json`: rulers of 1886-2019 dependencies (unverified). `cshapes_names.json`: era names
+  of renamed states. `centuries.json`: a short "state of the world" per century (narrative, unverified).
+  Plus `tools/supplement_events.json` (American Revolution, hand-checked against the linked articles).
 
 ## Software and fonts
 - **MapLibre GL JS** 5.23.0, BSD 3-Clause licence, `vendor/maplibre/LICENSE.txt`. https://maplibre.org/

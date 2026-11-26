@@ -5,6 +5,7 @@
   - CShapes 2.0 (ETH Zurich): state borders with exact dates, 1886-2019 (CC BY-NC-SA 4.0)
   - Newberry Library Atlas of Historical County Boundaries: US state and territory boundaries over
     time, generalised at 0.01 degree (free for any lawful use)
+  - Cliopatria (Seshat Global History Databank): polity shapes with year ranges, 3400 BC-2024 (CC BY 4.0)
 """
 import json
 from common import fetch, log
@@ -12,6 +13,7 @@ from common import fetch, log
 HB = 'https://raw.githubusercontent.com/aourednik/historical-basemaps/master/'
 NE = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/'
 CSHAPES = 'https://icr.ethz.ch/data/cshapes/CShapes-2.0.geojson'
+CLIO = 'https://raw.githubusercontent.com/Seshat-Global-History-Databank/cliopatria/main/cliopatria.geojson.zip'
 AHCB = 'https://publications.newberry.org/ahcb/downloads/gis/US_AtlasHCB_StateTerr_Gen01.zip'
 
 
@@ -32,6 +34,8 @@ def main():
     fetch(AHCB, ext='.zip', timeout=300)
     log('cshapes 2.0')
     fetch(CSHAPES, ext='.geojson', timeout=600)
+    log('cliopatria')
+    fetch(CLIO, ext='.zip', timeout=900)
     log('done')
 
 

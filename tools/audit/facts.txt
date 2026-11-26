@@ -356,3 +356,346 @@ C|16.37|48.2|1900|Austria
 C|21.0|52.2|1900|Russian
 C|21.0|52.2|1930|Poland
 C|-74.4|40.9|1700|British
+# ---- round 2: written before looking at the rebuilt data, spread over regions and eras ----
+# East Asia
+E|Battle of Yamen|1279
+E|Ōnin War|1467
+E|Battle of Nagashino|1575
+E|Second Opium War|1856
+E|Treaty of Shimonoseki|1895
+E|Treaty of Portsmouth|1905
+E|March 1st Movement|1919
+E|May Fourth Movement|1919
+E|1923 Great Kantō earthquake|1923
+E|Second Sino-Japanese War|1937
+E|Handover of Hong Kong|1997
+# South Asia
+E|Battle of the Hydaspes|-326
+E|First Battle of Panipat|1526
+E|Second Battle of Panipat|1556
+E|Battle of Haldighati|1576
+E|Jallianwala Bagh massacre|1919
+E|Indo-Pakistani War of 1965|1965
+E|Sri Lankan Civil War|1983
+E|Bhopal disaster|1984
+E|First Anglo-Afghan War|1839
+R|Babur|1526
+R|Shah Jahan|1628
+R|Aurangzeb|1658
+R|Indira Gandhi|1966
+# Southeast Asia
+E|Battle of Bạch Đằng (938)|938
+E|Battle of Mactan|1521
+E|Java War|1825
+E|Aceh War|1873
+E|Philippine Revolution|1896
+E|Battle of Manila Bay|1898
+E|Philippine–American War|1899
+E|Battle of Singapore|1942
+E|Bandung Conference|1955
+E|Indonesia–Malaysia confrontation|1963
+E|Cambodian–Vietnamese War|1978
+E|People Power Revolution|1986
+E|8888 Uprising|1988
+# Central Asia
+E|Siege of Samarkand (1220)|1220
+E|Battle of Parwan|1221
+E|Battle of the Kalka River|1223
+E|Battle of Geok Tepe|1881
+E|Central Asian revolt of 1916|1916
+E|Basmachi movement|1920
+E|Jeltoqsan|1986
+E|Tajikistani Civil War|1992
+E|Tulip Revolution|2005
+E|Andijan massacre|2005
+R|Timur|1370
+# Middle East
+E|Battle of Qarqar|-853
+E|Fall of Babylon|-539
+E|Battle of Issus|-333
+E|Battle of Carrhae|-53
+E|Battle of Nineveh (627)|627
+E|Siege of Constantinople (717–718)|717
+E|Battle of the Zab|750
+E|Siege of Acre (1291)|1291
+E|Treaty of Sèvres|1920
+E|1953 Iranian coup d'état|1953
+E|Camp David Accords|1978
+E|Oslo I Accord|1993
+R|Harun al-Rashid|786
+R|Abbas the Great|1588
+R|Reza Shah|1925
+R|Ruhollah Khomeini|1979
+# North Africa
+E|Battle of Alcácer Quibir|1578
+E|Battle of the Pyramids|1798
+E|French conquest of Algeria|1830
+E|Battle of Tel el-Kebir|1882
+E|Siege of Khartoum|1884
+E|Battle of Annual|1921
+E|Rif War|1923
+E|Egyptian revolution of 1952|1952
+E|Tunisian revolution|2011
+E|2011 Egyptian revolution|2011
+E|Libyan civil war (2011)|2011
+R|Cleopatra|-51
+R|Muhammad Ali of Egypt|1805
+R|Gamal Abdel Nasser|1956
+R|Muammar Gaddafi|1969
+# Sub-Saharan Africa
+E|Battle of Tondibi|1591
+E|First Boer War|1880
+E|Jameson Raid|1895
+E|Fashoda Incident|1898
+E|Second Boer War|1899
+E|Chilembwe uprising|1915
+E|Second Italo-Ethiopian War|1935
+E|Sharpeville massacre|1960
+E|Congo Crisis|1960
+E|Eritrean War of Independence|1961
+E|Mozambican War of Independence|1964
+E|Rhodesian Bush War|1964
+E|Ethiopian Civil War|1974
+E|Angolan Civil War|1975
+E|First Liberian Civil War|1989
+E|Sierra Leone Civil War|1991
+E|Somali Civil War|1991
+E|First Congo War|1996
+E|Second Congo War|1998
+E|War in Darfur|2003
+R|Menelik II|1889
+R|Kwame Nkrumah|1957
+R|Julius Nyerere|1961
+R|Jomo Kenyatta|1963
+R|Mobutu Sese Seko|1965
+R|Idi Amin|1971
+R|Robert Mugabe|1980
+# Latin America
+E|Rebellion of Túpac Amaru II|1780
+E|Haitian Revolution|1791
+E|Cry of Dolores|1810
+E|Mexican War of Independence|1810
+E|Independence of Brazil|1822
+E|Mexican–American War|1846
+E|Lei Áurea|1888
+E|War of Canudos|1896
+E|Spanish–American War|1898
+E|Thousand Days' War|1899
+E|Tlatelolco massacre|1968
+E|Football War|1969
+E|United States invasion of Panama|1989
+E|Zapatista uprising|1994
+R|Moctezuma II|1502
+R|Atahualpa|1532
+R|Simón Bolívar|1819
+R|Pedro II of Brazil|1831
+R|Benito Juárez|1858
+R|Porfirio Díaz|1876
+R|Getúlio Vargas|1930
+R|Juan Perón|1946
+R|Fidel Castro|1959
+R|Salvador Allende|1970
+R|Hugo Chávez|1999
+# North America
+E|Pequot War|1636
+E|King Philip's War|1675
+E|Salem witch trials|1692
+E|French and Indian War|1754
+E|Pontiac's War|1763
+E|Battle of Quebec (1775)|1775
+E|Battle of Tippecanoe|1811
+E|War of 1812|1812
+E|Battle of New Orleans|1815
+E|Trail of Tears|1838
+E|California Gold Rush|1848
+E|Seneca Falls Convention|1848
+E|Battle of Fort Sumter|1861
+E|Assassination of Abraham Lincoln|1865
+E|Alaska Purchase|1867
+E|Canadian Confederation|1867
+E|Red River Rebellion|1869
+E|Battle of the Little Bighorn|1876
+E|North-West Rebellion|1885
+E|Wounded Knee Massacre|1890
+E|Klondike Gold Rush|1896
+E|Halifax Explosion|1917
+E|Wall Street crash of 1929|1929
+E|Watergate scandal|1972
+E|Hurricane Katrina|2005
+R|Thomas Jefferson|1801
+R|John A. Macdonald|1867
+R|Theodore Roosevelt|1901
+R|Pierre Trudeau|1968
+R|Barack Obama|2009
+# Oceania
+E|Rum Rebellion|1808
+E|Musket Wars|1820
+E|Black War|1828
+E|Myall Creek massacre|1838
+E|New Zealand Wars|1845
+E|Eureka Rebellion|1854
+E|Battle of Gate Pā|1864
+E|Overthrow of the Hawaiian Kingdom|1893
+E|Federation of Australia|1901
+E|1931 Hawke's Bay earthquake|1931
+E|Bombing of Darwin|1942
+E|Battle of the Coral Sea|1942
+E|Guadalcanal campaign|1942
+E|Kokoda Track campaign|1942
+E|Castle Bravo|1954
+E|Cyclone Tracy|1974
+E|Sinking of the Rainbow Warrior|1985
+E|1987 Fijian coups d'état|1987
+E|Bougainville conflict|1990
+E|Port Arthur massacre (Australia)|1996
+E|2011 Christchurch earthquake|2011
+R|Richard Seddon|1893
+R|Edmund Barton|1901
+R|Robert Menzies|1939
+R|Gough Whitlam|1972
+# Europe, other eras
+E|Peloponnesian War|-431
+E|Battle of Chaeronea (338 BC)|-338
+E|Battle of Alesia|-52
+E|Assassination of Julius Caesar|-44
+E|Battle of Philippi|-42
+E|Battle of the Milvian Bridge|312
+E|Battle of Lechfeld|955
+E|Battle of Bouvines|1214
+E|Great Famine of 1315–1317|1315
+E|Battle of Kulikovo|1380
+E|Siege of Vienna (1529)|1529
+E|Union of Lublin|1569
+E|St. Bartholomew's Day massacre|1572
+E|Edict of Nantes|1598
+E|Greek War of Independence|1821
+E|Decembrist revolt|1825
+E|Revolutions of 1848|1848
+E|Crimean War|1853
+E|Emancipation reform of 1861|1861
+E|Franco-Prussian War|1870
+E|Molotov–Ribbentrop Pact|1939
+E|Treaty of Rome|1957
+E|Maastricht Treaty|1992
+R|Alexander the Great|-336
+R|Gustavus Adolphus|1611
+R|Vladimir Lenin|1917
+R|Joseph Stalin|1922
+R|Adolf Hitler|1933
+R|Angela Merkel|2005
+# who held where: ancient and medieval snapshots
+C|12.5|41.9|100|Rom
+C|12.5|41.9|-200|Rom
+C|-0.12|51.5|100|Rom
+C|10.2|36.85|-300|Carthag
+C|85.1|25.6|-300|Maurya
+C|108.9|34.3|100|Han
+C|108.9|34.3|700|Tang
+C|36.3|33.5|700|Umayyad
+C|77.2|28.6|1300|Delhi
+C|31.2|30.05|1300|Mamluk
+C|2.35|48.85|1300|France
+C|116.4|39.9|1500|Ming
+C|28.98|41.01|1500|Ottoman
+C|-72.0|-13.5|1500|Inca
+C|51.7|32.65|1600|Safavid
+# who held where: 1700 to 1885 (yearly maps)
+C|77.2|28.6|1700|Mughal
+C|31.2|30.05|1700|Ottoman
+C|13.4|52.5|1750|Prussia
+C|4.9|52.4|1750|Dutch
+C|4.35|50.85|1750|Habsburg
+C|18.4|-33.9|1750|Dutch
+C|21.0|52.2|1770|Polish
+C|-74.0|40.7|1770|Brit
+C|-0.12|51.5|1776|Brit
+C|69.2|34.5|1780|Durrani
+C|2.35|48.85|1789|Fr
+C|-74.0|40.7|1790|United States
+C|-90.07|29.95|1790|Spa
+C|16.37|48.2|1790|Habsburg
+C|76.65|12.3|1790|Mysore
+C|21.0|52.2|1800|Prussia
+C|-99.1|19.4|1800|Spa
+C|-43.2|-22.9|1800|Portug
+C|-58.4|-34.6|1800|Spa
+C|-77.0|-12.05|1800|Spa
+C|23.7|37.98|1800|Ottoman
+C|37.6|55.75|1800|Russia
+C|30.5|50.45|1800|Russia
+C|24.9|60.2|1800|Swed
+C|88.35|22.57|1800|Brit
+C|72.8|18.95|1800|Brit
+C|116.4|39.9|1800|Qing
+C|139.7|35.7|1800|Tokugawa
+C|28.98|41.01|1800|Ottoman
+C|44.4|33.3|1800|Ottoman
+C|51.4|35.7|1800|Qajar
+C|-9.14|38.72|1800|Portug
+C|10.75|59.9|1800|Denmark
+C|126.98|37.57|1800|Joseon
+C|96.1|21.97|1800|Konbaung
+C|37.47|12.6|1800|Ethiopia
+C|13.5|12.9|1800|Born
+C|-1.62|6.69|1800|Ashanti
+C|-90.07|29.95|1810|United States
+C|4.35|50.85|1820|Netherlands
+C|24.9|60.2|1820|Russia
+C|10.75|59.9|1820|Swed
+C|-66.9|10.5|1825|Colombia
+C|21.0|52.2|1830|Russia
+C|-99.1|19.4|1830|Mexic
+C|-43.2|-22.9|1830|Brazil
+C|-77.0|-12.05|1830|Peru
+C|-70.65|-33.45|1830|Chile
+C|4.35|50.85|1840|Belgi
+C|23.7|37.98|1840|Gree
+C|-122.4|37.8|1840|Mexic
+C|9.19|45.46|1840|Austria
+C|-122.4|37.8|1850|United States
+C|12.5|41.9|1850|Papal
+C|18.4|-33.9|1850|Brit
+C|151.2|-33.87|1850|Brit
+C|-82.4|23.1|1850|Spa
+C|121.0|14.6|1850|Spa
+C|106.8|-6.2|1850|Dutch
+C|35.2|31.8|1850|Ottoman
+C|-157.86|21.3|1850|Hawai
+C|47.5|-18.9|1850|Merina
+C|105.85|21.03|1850|Nguy
+C|77.2|28.6|1860|Brit
+C|9.19|45.46|1865|Ital
+C|-75.7|45.4|1870|Canad
+C|19.05|47.5|1870|Austria
+C|12.5|41.9|1875|Ital
+C|13.4|52.5|1875|German
+# who held where: 1886 to 2019 (dated maps)
+C|3.4|6.45|1930|United Kingdom
+C|77.2|28.6|1930|United Kingdom
+C|-17.45|14.7|1930|France
+C|105.85|21.03|1930|France
+C|15.3|-4.3|1930|Belgi
+C|106.8|-6.2|1930|Netherlands
+C|32.58|-25.97|1930|Portug
+C|121.0|14.6|1930|United States
+C|13.4|52.5|1938|German
+C|139.7|35.7|1938|Japan
+C|126.98|37.57|1938|Japan
+C|30.5|50.45|1950|Soviet
+C|69.2|41.3|1950|Soviet
+C|14.4|50.1|1950|Czechoslovakia
+C|20.5|44.8|1950|Yugoslavia
+C|90.4|23.7|1960|Pakistan
+C|126.98|37.57|1960|Korea
+C|13.4|52.52|1970|German
+C|90.4|23.7|1980|Bangladesh
+C|38.9|15.3|1980|Ethiopia
+C|38.9|15.3|2000|Eritrea
+C|30.5|50.45|2000|Ukraine
+C|14.4|50.1|2000|Czech
+C|69.2|41.3|2000|Uzbekistan
+C|71.4|51.2|2000|Kazakhstan
+C|44.8|41.7|2000|Georgia
+C|20.5|44.8|2010|Serbia
+C|32.58|15.6|2015|Sudan
+C|31.6|4.85|2015|South Sudan

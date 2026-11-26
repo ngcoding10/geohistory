@@ -14,6 +14,7 @@ export const TYPES = {
   discovery: { label: 'Discovery and exploration', one: 'Discovery', color: '#3b57a0' },
   religion: { label: 'Religion', one: 'Religion', color: '#6a4c92' },
   founding: { label: 'Cities and institutions founded', one: 'Founding', color: '#7a6a3a' },
+  culture: { label: 'Cultures and periods', one: 'Culture or period', color: '#7d5a3c' },
   birth: { label: 'Births', one: 'Birth', color: '#8a7f99' },
   death: { label: 'Deaths', one: 'Death', color: '#5d5d5d' },
   other: { label: 'Other events', one: 'Event', color: '#6b6359' },

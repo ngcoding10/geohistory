@@ -3,13 +3,13 @@ caliphs...) as terms with start and end, from Wikidata "position held" statement
 
 1. positions whose "applies to jurisdiction" is a country, state, kingdom or empire;
 2. keep those that are a subclass (at any depth) of head of state, head of government or monarch;
-3. every "position held" statement for them with a start date, for people with 8+ Wikipedia editions.
+3. every "position held" statement for them with a start date, for people with 3+ Wikipedia editions.
 """
 import json
 import os
 from common import sparql, qid, log, CACHE
 
-ROOTS = ['Q48352', 'Q2285706', 'Q116', 'Q19546', 'Q1806453']  # head of state, head of govt, monarch, pope, caliph
+ROOTS = ['Q48352', 'Q2285706', 'Q116', 'Q19546', 'Q65997']  # head of state, head of govt, monarch, pope, caliph
 JC = ['Q6256', 'Q3624078', 'Q3024240', 'Q417175', 'Q48349', 'Q7275', 'Q1250464', 'Q12759805', 'Q28171280']
 
 
@@ -38,7 +38,7 @@ def main():
   ?st ps:P39 ?pos . ?person p:P39 ?st . ?person wdt:P31 wd:Q5 .
   ?st pqv:P580 [ wikibase:timeValue ?s; wikibase:timePrecision ?sp; wikibase:timeCalendarModel ?sc ] .
   OPTIONAL {{ ?st pq:P582 ?e }}
-  ?person wikibase:sitelinks ?sl . FILTER(?sl >= 8) }}'''
+  ?person wikibase:sitelinks ?sl . FILTER(?sl >= 3) }}'''
         try:
             rs = sparql(q)
         except Exception as ex:

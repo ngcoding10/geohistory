@@ -49,7 +49,7 @@ export class HistoryMap extends EventTarget {
     this.map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
     this.map.addControl(new maplibregl.AttributionControl({
       compact: true,
-      customAttribution: 'Borders: <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a> (GPL-3.0), <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>, <a href="https://publications.newberry.org/ahcb/" target="_blank" rel="noopener">Newberry AHCB</a>, <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes 2.0</a> (CC BY-NC-SA) · Events: <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>',
+      customAttribution: 'Borders: <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a> (GPL-3.0), <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>, <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a> (CC BY 4.0), <a href="https://publications.newberry.org/ahcb/" target="_blank" rel="noopener">Newberry AHCB</a>, <a href="https://icr.ethz.ch/data/cshapes/" target="_blank" rel="noopener">CShapes 2.0</a> (CC BY-NC-SA) · Events: <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>',
     }), 'bottom-left');
     return new Promise((resolve, reject) => {
       this.map.on('error', (e) => { if (!this.ready) reject(e.error || e); else console.warn(e.error || e); });

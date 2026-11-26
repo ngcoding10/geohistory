@@ -1,0 +1,19 @@
+{
+ "_about": "Hand corrections to single Wikidata events, applied by tools/build_events.py. Only for cases where the Wikidata date is plainly a slip or leaves out a well-known second date. Each has a source and a note that the app shows with the event.",
+ "overrides": [
+  {
+   "q": "Q771451",
+   "set": {"y": 1854, "m": 3, "dd": 31},
+   "note": "Wikidata dates this 31 March 1864; the convention was signed on 31 March 1854.",
+   "source": "https://en.wikipedia.org/wiki/Convention_of_Kanagawa",
+   "verified": false
+  },
+  {
+   "q": "Q391358",
+   "set": {"y2": 1863},
+   "note": "Issued in preliminary form on 22 September 1862 (the Wikidata date); the final proclamation took effect on 1 January 1863.",
+   "source": "https://en.wikipedia.org/wiki/Emancipation_Proclamation",
+   "verified": false
+  }
+ ]
+}

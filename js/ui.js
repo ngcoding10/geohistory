@@ -33,8 +33,8 @@ export function fmtArea(km2) {
 }
 
 export function eventDate(e) {
-  const base = formatDate(e.y, e.m, e.dd);
-  return e.y2 && e.y2 !== e.y ? `${base} to ${formatYear(e.y2)}` : base;
+  const base = (e.ya ? 'c. ' : '') + formatDate(e.y, e.m, e.dd);
+  return e.y2 && e.y2 !== e.y ? `${base} to ${e.ya ? 'c. ' : ''}${formatYear(e.y2)}` : base;
 }
 
 export function placeLine(e, modernNames) {

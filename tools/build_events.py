@@ -20,10 +20,11 @@ from collections import defaultdict, Counter
 from common import CACHE, DATA, TOOLS, fetch, sparql, qid, log, write_json, read_json
 from fetch_sources import NE
 from geo import PolyIndex
+import yearly
 
 JULIAN = 'Q1985786'
 TYPE_ORDER = ['war', 'battle', 'revolt', 'violence', 'treaty', 'state', 'ruler', 'politics', 'economy', 'epidemic',
-              'disaster', 'discovery', 'religion', 'founding', 'birth', 'death', 'other']
+              'disaster', 'discovery', 'religion', 'founding', 'culture', 'birth', 'death', 'other']
 
 
 def hist_year(astro):
@@ -78,6 +79,68 @@ def to_date(v, prec, cal):
     return None
 
 
+def century_note(astro, prec):
+    """Wikidata century/millennium precision -> (representative historical year, label)."""
+    size = 100 if prec == 7 else 1000
+    word = 'century' if prec == 7 else 'millennium'
+    n = (abs(astro) + size - 1) // size if astro > 0 else (abs(astro)) // size + 1
+    def ordinal(k):
+        return f"{k}{'th' if 10 <= k % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(k % 10, 'th')}"
+    if astro > 0:
+        return (n - 1) * size + size // 2, f'{ordinal(n)} {word}'
+    return -((n - 1) * size + size // 2), f'{ordinal(n)} {word} BC'
+
+
+def to_date_coarse(v, prec, cal):
+    """Like to_date, but keeps decade, century and millennium precision as an approximate year with a note
+    ("9th century"), for archaeological cultures and sites. -> (year, month, day, approx, note) or None."""
+    d = to_date(v, prec, cal)
+    prec = int(prec)
+    if d and prec >= 9:
+        return d + (None,)
+    t = parse_time(v)
+    if not t:
+        return None
+    if prec == 8:
+        return hist_year(t[0]), 0, 0, 1, None
+    if prec in (6, 7):
+        y, note = century_note(t[0], prec)
+        return y, 0, 0, 1, note
+    return None
+
+
+def pick_main(dates):
+    """Main date of an event. A start time wins over a "point in time" when the item also has an end time
+    or the point is later than the start (Wikidata often stores the end or a midpoint as the point:
+    Vietnam War 1975, Chinese Civil War 1946, Congress of Vienna 1815). -> (date, extra end years)"""
+    key = lambda x: (-x[0], x[1][0])
+    st = sorted(dates['P580'], key=key)
+    pt = sorted(dates['P585'], key=key)
+    if st and pt:
+        if dates['P582'] or st[0][1][0] < pt[0][1][0]:
+            return st[0][1], [d[0] for _, d in dates['P585']]
+        return pt[0][1], []
+    if pt:
+        return pt[0][1], []
+    if st:
+        return st[0][1], []
+    return None, []
+
+
+JUNK = re.compile(r'^(January|February|March|April|May|June|July|August|September|October|November|December) \d{4}$'
+                  r'|Wiki Loves|Wikimedia|Wikipedia|^\d{4}s? in |^Timeline of ', re.I)
+# kinds of event that happen inside the state they are filed under (so a former state's capital places them)
+DOMESTIC = {'politics', 'revolt', 'state', 'ruler', 'economy', 'religion', 'epidemic', 'disaster', 'violence', 'other', 'founding'}
+
+
+def person_name(label, enwiki):
+    """Rulers are shown under their English Wikipedia title ("Catherine the Great", "Franklin D. Roosevelt")
+    when it is a plain name; Wikidata's label otherwise."""
+    if enwiki and ',' not in enwiki:
+        return re.sub(r'\s*\([^)]*\)$', '', enwiki)
+    return label
+
+
 def parse_point(s):
     m = re.match(r'Point\(([-\d.eE]+) ([-\d.eE]+)\)', s or '')
     if not m:
@@ -116,11 +179,10 @@ def main():
     cs_index = read_json(os.path.join(DATA, 'cshapes', 'index.json'))
 
     def snap_index(y):
-        if cs_index['from'] <= y <= cs_index['to']:
+        if yearly.source(y):
             key = ('cs', y)
             if key not in snap_cache:
-                import build_cshapes
-                pols = build_cshapes.year_doc(y)
+                pols = yearly.year_doc(y)
                 snap_cache[key] = (PolyIndex([(k, p['g']) for k, p in enumerate(pols)]), pols)
             return key, snap_cache[key]
         best = None
@@ -222,6 +284,62 @@ def main():
                 iso_of[qid(b['c'])] = b['iso']
     write_json(os.path.join(CACHE, 'iso_q.json'), {iso: q for q, iso in sorted(iso_of.items(), key=lambda x: x[0], reverse=True)})
 
+    def load_raw(name, default):
+        p = os.path.join(CACHE, name)
+        return read_json(p) if os.path.exists(p) else default
+    fam = load_raw('famous_raw.json', {'items': {}, 'details': {}, 'dates': {}, 'terms': [], 'labels': {}, 'aliases': {}})
+    regs = load_raw('regions_raw.json', {'kept': {}, 'cultures': {}, 'polity_changes': [], 'settle': {}, 'details': {}, 'dates': {}})
+    places = load_raw('places_raw.json', {'points': {}, 'locations': {}, 'pos_j': {}})
+    stats = Counter()
+
+    def mc_at(lon, lat):
+        return mod_index.nearest(lon, lat, 0.8)
+
+    def place_entity(ev, q, mark='ap'):
+        """Put an event at a state's own coordinates, else its capital. True when that gave a country."""
+        pt = places['points'].get(q) or {}
+        if pt.get('iso') in mod_names and ev.get('lo') is None and not (pt.get('pt') or pt.get('cap')):
+            ev['mc'] = pt['iso']
+            return True
+        xy = parse_point(pt.get('pt')) or parse_point(pt.get('cap'))
+        if not xy:
+            return False
+        if ev.get('lo') is None:
+            ev['lo'], ev['la'] = xy
+            ev[mark] = 1
+            keep = (ev.get('p'), ev.get('pw'))
+            place(ev, [])
+            if keep[0]:
+                ev['p'], ev['pw'] = keep
+        elif not ev.get('mc'):
+            mc = mc_at(*xy)
+            if mc:
+                ev['mc'] = mc
+        return bool(ev.get('mc'))
+
+    def place_more(ev, q):
+        """Fallbacks for events still without a modern country (see fetch_places.py)."""
+        if ev.get('mc'):
+            return
+        for kind, lq, iso, lc in places['locations'].get(q, []):
+            if kind != 'loc':
+                continue
+            xy = parse_point(lc)
+            if xy and ev.get('lo') is None:
+                ev['lo'], ev['la'] = xy
+                ev['ap'] = 1
+                place(ev, [])
+            if not ev.get('mc') and iso in mod_names:
+                ev['mc'] = iso
+            if ev.get('mc'):
+                stats['placedByLocation'] += 1
+                return
+        if ev['t'] in DOMESTIC:
+            for kind, lq, iso, lc in places['locations'].get(q, []):
+                if kind == 'country' and not iso and place_entity(ev, lq, 'mi'):
+                    stats['placedByFormerState'] += 1
+                    return
+
     events = {}
 
     def place(ev, countries):
@@ -267,20 +385,21 @@ def main():
     kept = dict(kept)
     for k, v in extra['deep'].items():
         kept.setdefault(k, {'type': {'famine': 'disaster'}.get(v['t'], v['t']), 'sl': v['sl'], 'deep': 1})
+    det.update(fam['details'])
+    det.update(regs['details'])
+    for k, v in regs['kept'].items():
+        kept.setdefault(k, v)
+    parent_q = {}
     for k, v in kept.items():
         r = det.get(k)
-        if not r or not good_label(r.get('label')):
+        if not r or not good_label(r.get('label')) or JUNK.search(r['label']):
             continue
         dates = defaultdict(list)
         for prop, val, prec, cal in split_pairs(r.get('dates'), 4):
             dt = to_date(val, prec, cal)
             if dt:
                 dates[prop].append((int(prec), dt))
-        main = None
-        for prop in ('P585', 'P580'):
-            if dates[prop]:
-                main = sorted(dates[prop], key=lambda x: (-x[0], x[1][0]))[0][1]
-                break
+        main, more_ends = pick_main(dates)
         if not main:
             continue
         y, m, d, approx = main
@@ -291,7 +410,7 @@ def main():
             ev['dd'] = d
         if approx:
             ev['ya'] = 1
-        ends = [dt[0] for _, dt in dates['P582']]
+        ends = [dt[0] for _, dt in dates['P582']] + more_ends
         if ends and max(ends) > y:
             ev['y2'] = max(ends)
         if r.get('desc'):
@@ -319,6 +438,10 @@ def main():
         pof = split_pairs(r.get('partof'))
         if pof:
             ev['po'] = pof[0][1]
+            parent_q[k] = pof[0][0]
+        al = [a for a in fam['aliases'].get(k, []) if 3 < len(a) <= 60 and a.lower() != ev['l'].lower() and re.match(r"^[\w .,'()\u2013-]+$", a)]
+        if al and v['sl'] >= 15:
+            ev['al'] = sorted(set(al), key=lambda a: (len(a), a))[:4]
         # fix obvious type slips from Wikidata classes (a riot classed under "armed conflict" is not a war)
         low = ev['l'].lower()
         if ev['t'] in ('war', 'battle') and any(w in low for w in ('riot', 'uprising', 'revolt', 'rebellion', 'insurrection', 'mutiny', 'protest', 'strike')):
@@ -326,13 +449,127 @@ def main():
         if ev['t'] in ('war', 'battle', 'revolt') and any(w in low for w in ('massacre', 'genocide', 'pogrom')):
             ev['t'] = 'violence'
         place(ev, countries)
+        place_more(ev, k)
         events[k] = ev
+
+    # ---------- famous items dated by inception, publication, launch... (fetch_famous.py) ----------
+    ORDER = ['P585', 'P580', 'P619', 'P571', 'P577', 'P575', 'P606', 'P1619', 'P1191', 'P620']
+    n_fam = 0
+    for k, v in fam['items'].items():
+        r = det.get(k)
+        if k in events or not r or not good_label(r.get('label')) or JUNK.search(r['label']):
+            continue
+        dates = defaultdict(list)
+        for prop, val, prec, cal in split_pairs(r.get('dates'), 4) + [d4 for d4 in fam['dates'].get(k, [])]:
+            dt = to_date(val, prec, cal)
+            if dt:
+                dates[prop].append((int(prec), dt))
+        prop = next((p for p in ORDER if dates[p]), None)
+        if not prop:
+            continue
+        if prop in ('P585', 'P580'):
+            main, more_ends = pick_main(dates)
+        else:
+            main, more_ends = sorted(dates[prop], key=lambda x: (x[1][0], -x[0]))[0][1], []
+        y, m, d, approx = main
+        pat = v['pat']
+        if prop in ('P585', 'P580', 'P577') and pat.endswith((' founded', ' built', ' launched', ' invented', ' proposed')):
+            pat = '{}'
+        if prop == 'P619':
+            pat = '{} launched' if not r['label'].lower().startswith(('apollo', 'soyuz', 'vostok', 'gemini', 'mercury', 'sts', 'shenzhou', 'voskhod')) else '{}'
+        ev = {'i': k, 'l': pat.format(r['label']), 'y': y, 't': v['type'], 's': max(1, int(v['sl'] * (0.5 if pat != '{}' else 1)))}
+        if m:
+            ev['m'] = m
+        if d:
+            ev['dd'] = d
+        if approx:
+            ev['ya'] = 1
+        ends = [dt[0] for _, dt in dates['P582']] + more_ends
+        if prop in ('P585', 'P580') and ends and max(ends) > y:
+            ev['y2'] = max(ends)
+        if r.get('desc'):
+            ev['d'] = r['desc'][:160]
+        if r.get('enwiki'):
+            ev['w'] = r['enwiki']
+        pt = parse_point(r.get('coord'))
+        locs = split_pairs(r.get('locs'), 2)
+        if locs:
+            ev['loc'] = locs[0][1]
+        if not pt:
+            for bits in locs:
+                if len(bits) >= 3 and parse_point(bits[2]):
+                    pt = parse_point(bits[2])
+                    ev['ap'] = 1
+                    break
+        if pt:
+            ev['lo'], ev['la'] = pt
+        countries = split_pairs(r.get('countries'))
+        if countries:
+            ev['cn'] = [c[1] for c in countries[:3]]
+        pof = split_pairs(r.get('partof'))
+        if pof:
+            ev['po'] = pof[0][1]
+            parent_q[k] = pof[0][0]
+        al = [a for a in fam['aliases'].get(k, []) if 3 < len(a) <= 60 and a.lower() != ev['l'].lower() and re.match(r"^[\w .,'()\u2013-]+$", a)]
+        if al:
+            ev['al'] = sorted(set(al), key=lambda a: (len(a), a))[:4]
+        place(ev, countries)
+        place_more(ev, k)
+        events[k] = ev
+        n_fam += 1
+    log(f'{n_fam} famous items added (inception, publication, launch, periods)')
+
+    # ---------- archaeological cultures and periods (fetch_regions.py): coarse dates kept as "c." ----------
+    n_cult = 0
+    for k, sl in regs['cultures'].items():
+        r = det.get(k)
+        if k in events or not r or not good_label(r.get('label')):
+            continue
+        st, en = [], []
+        for prop, val, prec, cal in split_pairs(r.get('dates'), 4) + regs['dates'].get(k, []):
+            dt = to_date_coarse(val, prec, cal)
+            if dt:
+                (st if prop in ('P580', 'P571') else en if prop in ('P582', 'P576') else []).append(dt)
+        if not st and not en:
+            continue
+        a = min(st) if st else None
+        b = max(en) if en else None
+        if a is None:
+            continue   # an end without a beginning cannot be put on the timeline honestly
+        ev = {'i': k, 'l': r['label'], 'y': a[0], 't': 'culture', 's': max(2, sl), 'ya': 1}
+        if b and b[0] > a[0]:
+            ev['y2'] = b[0]
+        note = ' to '.join(x for x in (a[4] or (f'c. {abs(a[0])}' + (' BC' if a[0] < 0 else '')),
+                                       (b[4] or (f'c. {abs(b[0])}' + (' BC' if b[0] < 0 else ''))) if b else None) if x)
+        ev['dn'] = note
+        if r.get('desc'):
+            ev['d'] = r['desc'][:160]
+        if r.get('enwiki'):
+            ev['w'] = r['enwiki']
+        pt = parse_point(r.get('coord'))
+        locs = split_pairs(r.get('locs'), 2)
+        if not pt:
+            for bits in locs:
+                if len(bits) >= 3 and parse_point(bits[2]):
+                    pt = parse_point(bits[2])
+                    ev['ap'] = 1
+                    break
+        if pt:
+            ev['lo'], ev['la'] = pt
+        countries = split_pairs(r.get('countries'))
+        if countries:
+            ev['cn'] = [c[1] for c in countries[:3]]
+        place(ev, countries)
+        place_more(ev, k)
+        events[k] = ev
+        n_cult += 1
+    log(f'{n_cult} archaeological cultures and periods')
     n_wd = len(events)
     log(f'{n_wd} Wikidata events with label and year')
 
     # ---------- states founded and dissolved ----------
     pol = defaultdict(lambda: {'start': [], 'end': [], 'sl': 0})
-    for r in raw['polity_changes']:
+    for r in raw['polity_changes'] + regs['polity_changes']:
         q = qid(r['item'])
         pol[q]['sl'] = int(r['sl'])
         for f in ('start', 'end'):
@@ -360,6 +597,8 @@ def main():
             place(ev, [(q, name)])
             if 'p' not in ev and q in q_to_names:
                 ev['p'] = q_to_names[q][0]
+            if not ev.get('mc') and place_entity(ev, q):
+                stats['statesPlacedByCapital'] += 1
             events[ev['i']] = ev
             n_states += 1
     log(f'{n_states} state founded/ended events')
@@ -382,7 +621,7 @@ def main():
         seen.add(key)
         title = po['label']
         title = title[0].upper() + title[1:]
-        ev = {'i': f'r{person}-{y}', 'l': f'{pr["label"]} becomes {title}', 'y': y, 't': 'ruler',
+        ev = {'i': f'r{person}-{y}', 'l': f'{person_name(pr["label"], pr.get("enwiki"))} becomes {title}', 'y': y, 't': 'ruler',
               's': max(1, int(int(r['sl']) * 0.5))}
         if m:
             ev['m'] = m
@@ -393,6 +632,9 @@ def main():
         if pr.get('enwiki'):
             ev['w'] = pr['enwiki']
         place(ev, [])
+        j = places['pos_j'].get(pos)
+        if not ev.get('mc') and j and place_entity(ev, j):
+            stats['rulersPlacedByState'] += 1
         events[ev['i']] = ev
         n_rulers += 1
     log(f'{n_rulers} ruler events')
@@ -425,7 +667,7 @@ def main():
             if key in seen:
                 continue
             seen.add(key)
-            ev = {'i': f'r{t["p"]}-{y}', 'l': f'{pl[0]} becomes {title}', 'y': y, 't': 'ruler', 's': max(1, int(t['sl'] * 0.5))}
+            ev = {'i': f'r{t["p"]}-{y}', 'l': f'{person_name(pl[0], pl[1])} becomes {title}', 'y': y, 't': 'ruler', 's': max(1, int(t['sl'] * 0.5))}
             if m:
                 ev['m'] = m
             if d:
@@ -435,8 +677,53 @@ def main():
             if pl[1]:
                 ev['w'] = pl[1]
             place(ev, [(j, lab.get(j, [''])[0])] if j else [])
+            if not ev.get('mc') and j and place_entity(ev, j):
+                stats['rulersPlacedByState'] += 1
             events[ev['i']] = ev
             n_rulers += 1
+        # well-known people whose office Wikidata does not file under a ruling class or a country
+        # (fetch_famous.py): Charlemagne as "king of Franks", shoguns, party general secretaries
+        flab = fam['labels']
+        n_fr = 0
+        for t in sorted(fam['terms'], key=lambda t: (-t['sl'], t['k'] != 'P39')):
+            pl, posl = flab.get(t['p']), flab.get(t['pos'])
+            if not pl or not posl or not good_label(pl[0]):
+                continue
+            dt = to_date(t['s'], t['sp'], t['sc'])
+            if not dt:
+                continue
+            y, m, d, _ = dt
+            end = None
+            if t.get('e') and parse_time(t['e']):
+                end = hist_year(parse_time(t['e'])[0])
+            if end is not None and end < y:
+                end = None
+            j = posl[2] if len(posl) > 2 else None
+            title = posl[0][0].upper() + posl[0][1:]
+            if j and t['k'] == 'P39':
+                terms_out[j].append([pl[0], y, end, title, t['p']])
+                lab.setdefault(j, [flab.get(j, [j])[0] if flab.get(j) else (det.get(j) or {}).get('label', j), None])
+            key = (t['p'], y)
+            if key in seen:
+                continue
+            seen.add(key)
+            ev = {'i': f'r{t["p"]}-{y}', 'l': f'{person_name(pl[0], pl[1])} becomes {title}', 'y': y, 't': 'ruler', 's': max(1, int(t['sl'] * 0.5))}
+            if m:
+                ev['m'] = m
+            if d:
+                ev['dd'] = d
+            if end and end > y:
+                ev['y2'] = end
+            if pl[1]:
+                ev['w'] = pl[1]
+            place(ev, [])
+            jj = j or places['pos_j'].get(t['pos'])
+            if not ev.get('mc') and jj and place_entity(ev, jj):
+                stats['rulersPlacedByState'] += 1
+            events[ev['i']] = ev
+            n_rulers += 1
+            n_fr += 1
+        log(f'{n_fr} more ruler events from well-known people')
         rdir = os.path.join(DATA, 'rulers')
         os.makedirs(rdir, exist_ok=True)
         rulers_doc = {}
@@ -508,6 +795,35 @@ def main():
         place(ev, split_pairs(r.get('countries')))
         events[ev['i']] = ev
         n_found += 1
+    for q, v in regs['settle'].items():
+        r = det.get(q)
+        if f'n{q}' in events or not r or not good_label(r.get('label')):
+            continue
+        ds = [to_date_coarse(val, prec, cal) for prop, val, prec, cal in regs['dates'].get(q, []) if prop == 'P571']
+        ds = [d for d in ds if d]
+        if not ds:
+            continue
+        y, m, d, approx, note = min(ds)
+        ev = {'i': f'n{q}', 'l': f'{r["label"]} founded' if v['kind'] == 'city' else f'{r["label"]} (archaeological site) first occupied',
+              'y': y, 't': 'founding', 's': max(1, int(v['sl'] * 0.4))}
+        if m:
+            ev['m'] = m
+        if d:
+            ev['dd'] = d
+        if approx:
+            ev['ya'] = 1
+        if note:
+            ev['dn'] = note
+        if r.get('desc'):
+            ev['d'] = r['desc'][:160]
+        if r.get('enwiki'):
+            ev['w'] = r['enwiki']
+        pt = parse_point(r.get('coord'))
+        if pt:
+            ev['lo'], ev['la'] = pt
+        place(ev, split_pairs(r.get('countries')))
+        events[ev['i']] = ev
+        n_found += 1
     log(f'{n_people} births and deaths, {n_found} foundings')
 
     # ---------- Wikipedia year articles (dated links; only what Wikidata does not already have) ----------
@@ -519,15 +835,24 @@ def main():
         yp_pages = yp['pages']
         have_w = {e.get('w') for e in events.values()}
         for i, f in enumerate(yp['events']):
-            if f.get('q') in events or f['link'] in have_w:
+            q = f.get('q')
+            if not f.get('verified') or q in events or f'f{q}' in events or f'x{q}' in events or f'n{q}' in events \
+                    or f['link'] in have_w or JUNK.search(f['link']):
                 continue
-            ev = {'i': f"wp{f['y']}-{i}", 'l': f['link'], 'y': f['y'], 't': 'other', 's': 2, 'w': f['link'], 'src': f['source']}
-            if f['m']:
+            ev = {'i': q or f"wp{f['y']}-{i}", 'l': re.sub(r'\s*\([^)]*\)$', '', f['link']), 'y': f['y'], 't': 'other', 's': 3,
+                  'w': f['link'], 'src': f['source']}
+            # the day in the bullet belongs to the bullet's own event: only trust it for the bullet's first link
+            if f.get('first') and f['m']:
                 ev['m'] = f['m']
-            if f['d']:
-                ev['dd'] = f['d']
-            if not f['verified']:
-                ev['uv'] = 1
+                if f['d']:
+                    ev['dd'] = f['d']
+            r = det.get(q)
+            if r:
+                if r.get('desc'):
+                    ev['d'] = r['desc'][:160]
+                pt = parse_point(r.get('coord'))
+                if pt:
+                    ev['lo'], ev['la'] = pt
             place(ev, [])
             events[ev['i']] = ev
             have_w.add(f['link'])
@@ -536,29 +861,61 @@ def main():
 
     # ---------- curated supplement ----------
     sup = read_json(os.path.join(TOOLS, 'supplement_events.json'))['events']
+    for s0 in sup:
+        s0['_rev'] = 1
+    # curated period supplements (tools/curated/events/*.json), each entry cross-checked against Wikidata
+    # by tools/build_curated.py, which writes the checked list to the cache
+    cur_path = os.path.join(CACHE, 'curated_events.json')
+    if os.path.exists(cur_path):
+        sup = sup + read_json(cur_path)['events']
     by_wiki = defaultdict(list)
     for e in events.values():
         if e.get('w'):
             by_wiki[e['w']].append(e)
     n_merged = n_added = 0
     for s in sup:
-        match = [e for e in by_wiki.get(s['wiki'], []) if e['y'] == s['y'] and e['t'] != 'ruler']
-        if match:
+        match = [e for e in by_wiki.get(s['wiki'], []) if e['y'] == s['y'] and e['t'] not in ('ruler', 'birth', 'death', 'founding', 'state')]
+        if match and (s.get('_rev') or s.get('own')):
             e = match[0]
             n_merged += 1
-            e['m'], e['dd'] = s['m'], s['d']
-            if e.get('lo') is None or e.get('ap'):
+            if s.get('m'):
+                e['m'] = s['m']
+                if s.get('d'):
+                    e['dd'] = s['d']
+            if s.get('lon') is not None and (e.get('lo') is None or e.get('ap') or e.get('mi')):
                 e['lo'], e['la'] = s['lon'], s['lat']
                 e.pop('ap', None)
+                e.pop('mi', None)
+                e.pop('p', None)
+                place(e, [])
             if s.get('colony'):
                 e['c'] = s['colony']
                 e['ci'] = us_by_name.get(s['colony'])
             e['s'] = max(e['s'], 25)
-            e.pop('p', None)
-            place(e, [])
             continue
-        ev = {'i': s['id'], 'l': s['label'], 'y': s['y'], 'm': s['m'], 'dd': s['d'], 't': s['type'],
-              's': 25, 'd': s['desc'], 'w': s['wiki'], 'lo': s['lon'], 'la': s['lat'], 'cur': 1}
+        if match:
+            # the event is already there under its Wikidata item: only lift its rank and fill gaps
+            e = match[0]
+            n_merged += 1
+            e['s'] = max(e['s'], 25)
+            if s.get('m') and not e.get('m'):
+                e['m'] = s['m']
+                if s.get('d'):
+                    e['dd'] = s['d']
+            if s.get('lon') is not None and e.get('lo') is None:
+                e['lo'], e['la'] = s['lon'], s['lat']
+                place(e, [])
+            continue
+        ev = {'i': s['id'], 'l': s['label'], 'y': s['y'], 't': s['type'],
+              's': 25, 'd': s['desc'], 'w': s['wiki'], 'cur': 1 if s.get('_rev') else 2}
+        if s.get('m'):
+            ev['m'] = s['m']
+            if s.get('d'):
+                ev['dd'] = s['d']
+        if s.get('lon') is not None:
+            ev['lo'], ev['la'] = s['lon'], s['lat']
+        if s.get('_rev') is None and not s.get('verified'):
+            ev['uv'] = 1
         if s.get('colony'):
             ev['c'] = s['colony']
             ev['ci'] = us_by_name.get(s['colony'])
@@ -584,6 +941,80 @@ def main():
     n_dup = len(events) - len(best)
     events = {e['i']: e for e in best.values()}
     log(f'{n_dup} duplicate events merged')
+
+    # ---------- hand corrections (tools/curated/event_overrides.json) ----------
+    for o in read_json(os.path.join(TOOLS, 'curated', 'event_overrides.json'))['overrides']:
+        e = events.get(o['q'])
+        if e:
+            e.update(o['set'])
+            e['on'] = o['note']
+            stats['handCorrections'] += 1
+
+    # ---------- parents by Wikidata id, not by name ----------
+    # Several wars share a name ("Nine Years' War" 1593 and 1688, "Anglo-Spanish War" six times), and the
+    # "part of" text used to be matched by name. Wars with a shared name get their first year in the name.
+    by_label = defaultdict(list)
+    for e in events.values():
+        if e['t'] == 'war':
+            by_label[e['l']].append(e)
+    for lst in by_label.values():
+        if len(lst) > 1:
+            for e in lst:
+                e['l'] = f"{e['l']} ({e['y'] if e['y'] > 0 else str(-e['y']) + ' BC'})"
+                stats['warsRenamedWithYear'] += 1
+    war_labels = {e['l'] for e in events.values() if e['t'] == 'war'}
+    for k, pq in parent_q.items():
+        e = events.get(k)
+        if not e or 'po' not in e:
+            continue
+        par = events.get(pq)
+        if par:
+            e['po'] = par['l']
+            e['pq'] = pq
+        elif e['po'] in by_label and len(by_label[e['po']]) > 1:
+            pass   # parent not in our data and its name is shared by several wars: the text stays, unlinked
+    # Events dated outside the war they are filed under: decide which side is wrong.
+    for k, e in events.items():
+        par = events.get(e.get('pq'))
+        if not par or par['t'] != 'war' or not par.get('y2'):
+            continue
+        if par['y'] - 1 <= e['y'] <= par['y2'] + 1:
+            continue
+        stats['outsideWar'] += 1
+        years_in_name = set(re.findall(r'(?<!\d)(\d{3,4})(?!\d)', e['l'] + ' ' + e.get('w', '')))
+        gap = min(abs(e['y'] - par['y']), abs(e['y'] - par['y2']))
+        e2 = e.get('y2') or e['y']
+        if str(abs(e['y'])) in years_in_name:
+            # the event's own name carries its year, so the parent link is the wrong side
+            del e['po'], e['pq']
+            stats['outsideWar:detached (the event name carries its year)'] += 1
+        elif e['y'] < par['y'] and e2 > par['y2']:
+            # the "part" is longer than the whole: the relation is the wrong way round on Wikidata
+            del e['po'], e['pq']
+            stats['outsideWar:detached (longer than its parent)'] += 1
+        elif e['y'] < par['y'] <= e2:
+            stats['outsideWar:kept (started earlier, overlaps the war)'] += 1
+        elif gap > 20:
+            del e['po'], e['pq']
+            e['dq'] = 1
+            stats['outsideWar:detached and date marked doubtful (more than 20 years off)'] += 1
+        else:
+            e['dq'] = 1
+            stats['outsideWar:kept, date marked doubtful (within 20 years)'] += 1
+    # last fallback for placement: the country of the parent event
+    for k, e in events.items():
+        if e.get('mc') or e['t'] in ('birth', 'death'):
+            continue
+        par = events.get(e.get('pq'))
+        hops = 0
+        while par is not None and not par.get('mc') and hops < 3:
+            par = events.get(par.get('pq'))
+            hops += 1
+        if par is not None and par.get('mc'):
+            e['mc'] = par['mc']
+            e['mi'] = 1
+            stats['placedByParent'] += 1
+    log('placement and consistency: ' + json.dumps(dict(sorted(stats.items()))))
 
     # ---------- shards ----------
     # nothing before the first border map (Wikidata has a few geological "events" millions of years ago)
@@ -636,7 +1067,7 @@ def main():
         doc = read_json(os.path.join(DATA, 'borders', f'{s["y"]}.json'))
         for p in doc['polities']:
             pol_area[p['n']] = max(pol_area[p['n']], p['a'])
-    for y in range(cs_index['from'], cs_index['to'] + 1):
+    for y in range(min(a for a, b in yearly.ranges().values()), cs_index['to'] + 1):
         for p in snap_index(y)[1][1]:
             pol_area[p['n']] = max(pol_area[p['n']], p['a'])
     polities = []
@@ -645,7 +1076,7 @@ def main():
             # consecutive CShapes years collapse into [first, last] ranges to keep the file small
             rng = []
             for y in ys:
-                if rng and y == rng[-1][1] + 1 and y > 1886:
+                if rng and y == rng[-1][1] + 1 and yearly.source(y) and yearly.source(y - 1):
                     rng[-1][1] = y
                 else:
                     rng.append([y, y])
@@ -667,7 +1098,7 @@ def main():
         else:
             usl[k] = [p['n'], p['id'], y0, y1]
     top = sorted(evs, key=lambda e: -e['s'])
-    sev = [[e['l'], e['i'], e['y'], '', e['s']] for e in top if e['s'] >= 8 or e.get('cur')][:9000]
+    sev = [[e['l'], e['i'], e['y'], '', e['s']] + ([e['al']] if e.get('al') else []) for e in top if e['s'] >= 8 or e.get('cur')][:12000]
     places = []
     for n, e in ents.items():
         for c in e.get('cap', []):
@@ -720,18 +1151,23 @@ def main():
             'withCoordinates': sum(1 for e in evs if e.get('lo') is not None),
             'coordinatesFromLocation': sum(1 for e in evs if e.get('ap')),
             'usStateVersions': len(us),
+            'famousItems': n_fam, 'cultures': n_cult,
+            'placedInModernCountry': sum(1 for e in evs if e.get('mc')),
+            'yearlyMaps': sum(b - a + 1 for a, b in yearly.ranges().values()),
         },
+        'consistency': dict(sorted(stats.items())),
         'eventsByType': {t: by_type.get(t, 0) for t in TYPE_ORDER},
         'eventsByEra': by_era,
         'eventsByRegionEra': {rg: dict(c) for rg, c in sorted(grid.items())},
         'yearRange': {'events': [evs[0]['y'], evs[-1]['y']], 'borders': [snap_years[0], snap_years[-1]]},
         'gaps': [
-            'Borders are snapshots: there are only %d maps, so most years show the nearest earlier map.' % len(snap_years),
+            'Before 1700 borders are snapshots: there are only %d maps, so most years show the nearest earlier map.' % len(snap_years),
+            'From 1700 to 1885 borders come from Cliopatria and are approximate; from 1886 to 2019 from CShapes (dated).',
             'No border map between 2010 and today.',
             'US colony outlines for 1763-1783 reuse the 1783 state borders; the Newberry data starts in 1783.',
             'Event coverage follows Wikipedia: thin for Africa, Asia, the Americas before 1500 and the distant past.',
             'Events are ranked by the number of Wikipedia language editions, which favours Europe and recent times.',
-            'Rulers are monarchs whose Wikidata entry has a start date; presidents and prime ministers are not included.',
+            'Rulers need a start date on Wikidata; many early and minor rulers have none and are missing.',
         ],
     }
     write_json(os.path.join(DATA, 'meta.json'), meta, pretty=True)

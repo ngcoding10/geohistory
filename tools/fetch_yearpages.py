@@ -1,7 +1,6 @@
 """Step 1f: Wikipedia year articles ("1776", "44 BC", "AD 5") as a yearly backbone. Slow and resumable.
 
-Wikipedia throttles this machine to a few requests a minute, so this fetches one page every 20 seconds,
-honours Retry-After, caches every raw page in tools/cache/ and can be re-run to continue. Years with the
+Fetches one page every 1.5 seconds from the raw-wikitext endpoint, honours Retry-After, caches every raw page in tools/cache/ and can be re-run to continue. Years with the
 fewest events in our data come first. Usage: python3 fetch_yearpages.py [max_pages]
 Only the Events section is used later (build_yearpages.py), and only as dated links to articles.
 """
@@ -13,6 +12,23 @@ import urllib.parse
 from common import fetch, cache_path, read_json, DATA, log
 
 API = 'https://en.wikipedia.org/w/api.php?action=parse&prop=wikitext&format=json&formatversion=2&redirects=1&page='
+# The plain "raw wikitext" endpoint is throttled far less than the action API or the REST API (both
+# answered HTTP 429 from the build machine), so it is tried first; pages cached from the old API stay valid.
+RAW = 'https://en.wikipedia.org/w/index.php?action=raw&title='
+
+
+def page_text(y):
+    """Cached wikitext of a year article, or None."""
+    p = cache_path(RAW + urllib.parse.quote(title(y).replace(' ', '_')))
+    if os.path.exists(p):
+        return open(p, encoding='utf-8').read()
+    p = cache_path(API + urllib.parse.quote(title(y)))
+    if os.path.exists(p):
+        try:
+            return json.load(open(p))['parse']['wikitext']
+        except Exception:
+            return None
+    return None
 
 
 def title(y):
@@ -28,11 +44,11 @@ def main():
     years.sort(key=lambda y: (counts.get(y, 0), -y))
     done = 0
     for y in years:
-        url = API + urllib.parse.quote(title(y))
-        if os.path.exists(cache_path(url)):
+        url = RAW + urllib.parse.quote(title(y).replace(' ', '_'))
+        if os.path.exists(cache_path(url)) or os.path.exists(cache_path(API + urllib.parse.quote(title(y)))):
             continue
         try:
-            fetch(url, min_gap=20, timeout=60, tries=4)
+            fetch(url, min_gap=1.5, timeout=60, tries=6)
         except Exception as e:
             log(f'{title(y)}: {e}')
             continue
