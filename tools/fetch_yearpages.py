@@ -39,7 +39,8 @@ def title(y):
 
 def main():
     limit = int(sys.argv[1]) if len(sys.argv) > 1 else 50
-    counts = {int(k): v for k, v in read_json(os.path.join(DATA, 'events', 'index.json'))['counts'].items()}
+    idx = os.path.join(DATA, 'events', 'index.json')     # absent on a rebuild from scratch: then plain year order
+    counts = {int(k): v for k, v in read_json(idx)['counts'].items()} if os.path.exists(idx) else {}
     years = [y for y in range(-500, 2025) if y != 0]
     years.sort(key=lambda y: (counts.get(y, 0), -y))
     done = 0

@@ -196,6 +196,54 @@ async function waitEvents(page) {
     await waitH1(page, before.h);
     ok((await page.inputValue('#year')) === before.y, `reload keeps the view (${before.h}, ${before.y})`);
 
+    // ---- round 3: ranking, year-article text, rulers, map notes, aliases, US fills ----
+    await page.goto(BASE + '?y=1453');
+    await waitH1(page, 'The world in 1453');
+    await waitEvents(page);
+    const first1453 = await page.locator('#panelBody ul.events li .t').first().innerText();
+    ok(/^Fall of Constantinople/.test(first1453), `the 1453 list starts with the fall of Constantinople ("${first1453}")`);
+    const top5 = async (y) => { await page.goto(BASE + '?y=' + y); await waitH1(page, 'The world in ' + (y < 0 ? -y + ' BC' : y)); await waitEvents(page); return (await page.locator('#panelBody ul.events li .t').allInnerTexts()).slice(0, 5).join(' | '); };
+    for (const [y, re] of [[1066, /Battle of Hastings/], [1688, /Glorious Revolution/], [1861, /American Civil War/], [1911, /Xinhai Revolution/], [1941, /Pearl Harbor/],
+      [1054, /Schism/], [1096, /First Crusade/], [1337, /Hundred Years/], [1521, /Tenochtitlan/], [1618, /Thirty Years/], [1865, /Abraham Lincoln/], [1929, /Wall Street/]]) {
+      const t5 = await top5(y);
+      ok(re.test(t5), `top five of ${y} include ${re.source} (${t5.slice(0, 110)})`);
+    }
+    // a year-article event: the title, with Wikipedia's sentence under it and the licence in its panel
+    await page.goto(BASE + '?y=-44');
+    await waitH1(page, 'The world in 44 BC');
+    await waitEvents(page);
+    const unv = page.locator('#panelBody ul.events li', { hasText: 'unverified' }).first();
+    ok(await unv.count() > 0, '44 BC lists unverified sentences from the year article');
+    await unv.locator('button').click();
+    await page.waitForFunction(() => /CC BY-SA 4\.0/.test(document.querySelector('#panelBody')?.innerText || ''), null, { timeout: 30000 }).catch(() => {});
+    const evText = await page.locator('#panelBody').innerText();
+    ok(/Text from Wikipedia's article for this year/.test(evText) && /CC BY-SA 4\.0/.test(evText) && /unverified/.test(evText), 'its panel credits Wikipedia (CC BY-SA 4.0) and says the date is unverified');
+    // rulers attached from Wikidata and from the curated lists
+    await page.goto(BASE + '?y=100&c=' + encodeURIComponent('Roman Empire'));
+    await waitH1(page, 'Roman Empire');
+    await page.waitForFunction(() => /In office in 100/.test(document.querySelector('#panelBody')?.innerText || ''), null, { timeout: 30000 }).catch(() => {});
+    ok(/Trajan/.test(await page.locator('#panelBody').innerText()), 'the Roman Empire panel in 100 names Trajan');
+    await page.goto(BASE + '?y=1700&c=' + encodeURIComponent('Qing Dynasty'));
+    await waitH1(page, 'Qing Dynasty');
+    await page.waitForFunction(() => /In office in 1700/.test(document.querySelector('#panelBody')?.innerText || ''), null, { timeout: 30000 }).catch(() => {});
+    const qing = await page.locator('#panelBody').innerText();
+    ok(/Kangxi Emperor/.test(qing) && /curated/i.test(qing), 'the Qing panel in 1700 names the Kangxi Emperor, tagged curated');
+    ok(/Also called/.test(qing) && /Manchu Empire/.test(qing), 'the Qing panel lists its aliases (Manchu Empire)');
+    await page.goto(BASE + '?y=1800&c=' + encodeURIComponent('Danish India'));
+    await waitH1(page, 'Danish India');
+    await page.waitForFunction(() => /map note/.test(document.querySelector('#panelBody')?.innerText || ''), null, { timeout: 30000 }).catch(() => {});
+    ok(/Serampore/.test(await page.locator('#panelBody').innerText()), 'the Danish India panel in 1800 carries the map note about Serampore and Calcutta');
+    await page.click('#q');
+    await page.fill('#q', 'Manchu Empire');
+    await page.waitForSelector('#results li[data-i]', { timeout: 30000 });
+    ok(/Qing Dynasty/.test(await page.locator('#results').innerText()), 'searching "Manchu Empire" finds the Qing Dynasty through the alias table');
+    await page.keyboard.press('Escape');
+    // US states and territories are filled from 1783 to 1912
+    const usFill = async (y) => { await page.goto(BASE + '?y=' + y); await waitH1(page, 'The world in ' + y); await page.waitForFunction(() => window.__geo?.map?.usDate != null, null, { timeout: 60000 }); await page.waitForTimeout(800); return page.evaluate(() => { const m = window.__geo.map.map; return { fill: JSON.stringify(m.getPaintProperty('us-fill', 'fill-color')), n: m.querySourceFeatures('us').length }; }); };
+    const us1850 = await usFill(1850);
+    const us1950 = await usFill(1950);
+    ok(/Unorganized Territory/.test(us1850.fill) && !/Unorganized Territory/.test(us1950.fill), 'US states and territories are filled by status in 1850 and are outlines only in 1950');
+
     await page.goto(BASE + '?y=1750&col=VA');
     await waitH1(page, 'Colony of Virginia');
     ok(true, 'colony panel opens from the URL (Colony of Virginia, 1750)');

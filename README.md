@@ -29,7 +29,7 @@ Steps (see `tools/build_all.sh`): download the border sources; simplify borders;
 counties, the CShapes years and the Cliopatria years; query Wikidata (events, rulers, the deep pass, the
 famous-items pass, the per-region passes, places for events without coordinates: a few thousand queries,
 one at a time, all cached); read Wikipedia's year articles; link territories to Wikidata; check the curated
-files against Wikidata; place every event and write the event files, search index and `data/meta.json`;
+files and ruler lists against Wikidata; place every event and write the event files, search index and `data/meta.json`;
 build timelines; run the audit; write `js/data-version.js` (a hash of `data/`, used to version data URLs).
 
 Curated text lives in `tools/curated/`: period supplements (`events/*.json`), decade summaries, state
@@ -38,7 +38,7 @@ is about and carries a `verified` flag set by `tools/build_curated.py` when Wiki
 `tools/supplement_events.json` is a small hand-checked list of American Revolution events (1763 to 1789),
 each with a source link. Sources and licences: [CREDITS.md](CREDITS.md).
 
-Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (uses the globally installed Playwright; starts its
+Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (59 checks; uses the globally installed Playwright; starts its
 own `python3 -m http.server`).
 
 ## How it fits with the other apps
@@ -84,6 +84,10 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
 - The flat map is the default because borders are easier to read; the globe is one tap away. Both were
   checked only in headless Chromium with software rendering, not yet on real phones.
 - Births and deaths (the 12 most notable per year) are off by default; turn them on under "Event types".
-- `tools/audit.py` checks 682 hand-written well-known facts spread over every region and era; 665 pass.
-  The 17 failures are listed in `data/audit.json` (source-map errors, coastal points that fall outside
-  simplified polygons, naming differences, and a few real gaps on Wikidata).
+- `tools/audit.py` checks 849 hand-written well-known facts spread over every region and era (who held a
+  city in a given year, 302 points of which 150 are before 1700; dates of events and reigns; twelve "top five
+  of the year must include" checks); 842 pass. The 7 failures are listed in `data/audit.json`: all are map
+  points where the border source is wrong or coarser than the fact (Calcutta inside a misplaced Danish
+  outline in 1800, Warsaw outside Russia in 1830, Athens blank in 440 BC, New Spain and Canada not drawn
+  apart from the Spanish and British empires, Brazil drawn as Spanish in 1600, Kilwa under a generic
+  sketch-map label). Each has a map note in the app; no check was removed or loosened.
