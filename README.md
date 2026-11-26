@@ -38,6 +38,12 @@ is about and carries a `verified` flag set by `tools/build_curated.py` when Wiki
 `tools/supplement_events.json` is a small hand-checked list of American Revolution events (1763 to 1789),
 each with a source link. Sources and licences: [CREDITS.md](CREDITS.md).
 
+A full run from an empty `data/` folder with the caches in place takes about 13 minutes and needs no network.
+The intermediate files `tools/cache/*_raw.json` are kept between runs, and `fetch_extra.py` and
+`fetch_famous.py` leave out items that later steps found on the previous run, so a second run in a row sends
+new Wikidata queries and can differ in a few hundred events (which births and deaths are listed, how an event
+without coordinates is placed). The border, ruler and year-article steps give identical output on every run.
+
 Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (59 checks; uses the globally installed Playwright; starts its
 own `python3 -m http.server`).
 
@@ -85,7 +91,7 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
   checked only in headless Chromium with software rendering, not yet on real phones.
 - Births and deaths (the 12 most notable per year) are off by default; turn them on under "Event types".
 - `tools/audit.py` checks 849 hand-written well-known facts spread over every region and era (who held a
-  city in a given year, 302 points of which 150 are before 1700; dates of events and reigns; twelve "top five
+  city in a given year, 303 points of which 150 are before 1700; dates of events and reigns; twelve "top five
   of the year must include" checks); 842 pass. The 7 failures are listed in `data/audit.json`: all are map
   points where the border source is wrong or coarser than the fact (Calcutta inside a misplaced Danish
   outline in 1800, Warsaw outside Russia in 1830, Athens blank in 440 BC, New Spain and Canada not drawn
