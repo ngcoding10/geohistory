@@ -1,0 +1,837 @@
+// GeoHistory: choose a year, see the world's borders, powers and events at that time.
+import { HistoryMap } from './map.js';
+import {
+  loadBordersIndex, snapshotFor, nextSnapshotAfter, loadSnapshot, loadEventsIndex, eventsBetween, nearestYearsWithEvents,
+  loadPowers, loadEntities, loadUS, loadModern, loadLand, loadMeta, countFor, findEvent,
+} from './data.js';
+import { parseYear, formatYear, formatDate, addYears, yearToFrac, fracToYear, ERAS, MIN_YEAR, MAX_YEAR } from './year.js';
+import { TYPES, TYPE_KEYS } from './types.js';
+import { getPref, setPref } from './store.js';
+import { makeAreaTest, bboxOf } from './geo.js';
+import { Search } from './search.js';
+import { h, eventList, filterChips, skeleton, fmtArea, wikiUrl, wikidataUrl, eventDate, placeLine, dayLabel } from './ui.js';
+
+const $ = (s) => document.querySelector(s);
+const els = {
+  year: $('#year'), form: $('#yearForm'), hint: $('#yearHint'), slider: $('#slider'), ticks: $('#ticks'), eras: $('#eras'),
+  play: $('#playBtn'), panel: $('#panel'), body: $('#panelBody'), handle: $('#sheetHandle'), status: $('#mapStatus'),
+  badge: $('#badge'), badgeInfo: $('#badgeInfo'), proj: $('#projBtn'), modernBtn: $('#modernBtn'), sourcesBtn: $('#sourcesBtn'),
+  sources: $('#sources'), sourcesBody: $('#sourcesBody'),
+};
+
+const state = {
+  year: 1776, month: 0, day: 0,
+  snap: null, snapDoc: null,
+  sel: null,            // {kind: 'polity'|'us'|'modern', ...}
+  eventId: null,
+  view: 'year',         // 'year' | 'sel' | 'event'
+  disabled: new Set(getPref('hiddenTypes', [])),
+  projection: getPref('projection', 'mercator'),
+  modern: false,
+  token: 0,
+};
+let map = null;
+let mapOk = false;
+let powers = {};
+let entities = null;
+let modernNames = {};
+let modernFC = null;
+let usFC = null;
+
+// ---------------------------------------------------------------- start
+init().catch((err) => {
+  console.error(err);
+  showStatus('Something went wrong while loading. Reload the page to try again.', true);
+});
+
+async function init() {
+  const p = new URLSearchParams(location.search);
+  const parsed = parseYear(p.get('y') || '1776');
+  if (!parsed.error) state.year = parsed.year;
+  const d = (p.get('d') || '').match(/^(\d{1,2})(?:-(\d{1,2}))?$/);
+  if (d) { state.month = +d[1]; state.day = +(d[2] || 0); }
+  if (p.get('v') === 'flat') state.projection = 'mercator';
+  if (p.get('v') === 'globe') state.projection = 'globe';
+  state.modern = p.get('mb') === '1';
+  const want = { c: p.get('c'), s: p.get('s'), mc: p.get('mc'), e: p.get('e') };
+
+  setupTimebar();
+  setupPanel();
+  setupTools();
+  new Search($('#q'), $('#results'), chooseSearch);
+  document.addEventListener('keydown', globalKeys);
+  showYearInput();
+  updateSlider();
+
+  map = new HistoryMap($('#map'));
+  if (window.innerWidth < 600) $('#q').placeholder = 'Search';
+  const mapReady = map.init({ projection: state.projection, zoom: startZoom() }).then(() => {
+    mapOk = true;
+    showStatus('');
+    map.addEventListener('polity', (e) => selectPolityByIndex(e.detail, { fly: false }));
+    map.addEventListener('usstate', (e) => selectUS(e.detail.id, { fly: false }));
+    map.addEventListener('event', (e) => openEvent(e.detail, { fly: false }));
+    map.addEventListener('empty', () => { if (state.view !== 'year') { clearSelection(); } });
+    loadLand().then((fc) => map.setLand(fc)).catch(() => {});
+    applyPadding();
+  }).catch((err) => {
+    console.warn('map failed', err);
+    showStatus('The map could not start here (it needs WebGL). The year panel still works.', true);
+  });
+
+  const [, , pw] = await Promise.all([loadBordersIndex(), loadEventsIndex(), loadPowers()]);
+  powers = pw;
+  drawTicks();
+  await mapReady;
+  await goToYear(state.year, { month: state.month, day: state.day, keepSel: false });
+  if (state.modern) toggleModern(true);
+  if (want.c) await selectPolityByName(want.c, { fly: true });
+  else if (want.s) await selectUS(want.s, { fly: true });
+  else if (want.mc) await selectModern(want.mc, { fly: true });
+  if (want.e) await openEvent(want.e, { fly: !want.c });
+}
+
+function startZoom() {
+  const w = window.innerWidth;
+  const avail = w >= 900 ? w - 420 : w;
+  if (state.projection === 'globe') return w < 600 ? 0.9 : 1.4;
+  return Math.max(0, Math.log2(avail / 512) + 0.1);
+}
+
+function showStatus(text, isError = false) {
+  els.status.textContent = text;
+  els.status.classList.toggle('error', !!isError);
+}
+
+// ---------------------------------------------------------------- year changes
+async function goToYear(year, { month = 0, day = 0, keepSel = true, fromSlider = false, keepEvent = false } = {}) {
+  year = Math.max(MIN_YEAR, Math.min(MAX_YEAR, year));
+  state.year = year;
+  state.month = month;
+  state.day = day;
+  const token = ++state.token;
+  showYearInput();
+  if (!fromSlider) updateSlider();
+  setHint('');
+  writeUrl();
+
+  // borders
+  const snap = snapshotFor(year);
+  if (snap?.y !== state.snap?.y) {
+    state.snap = snap;
+    if (snap) {
+      try {
+        const doc = await loadSnapshot(snap);
+        if (token !== state.token && state.snap?.y !== snap.y) return;
+        state.snapDoc = doc;
+        if (mapOk) map.setSnapshot(doc);
+      } catch (e) {
+        console.warn(e);
+        showStatus('Could not load the borders for this year. Check your connection and try again.', true);
+      }
+    } else {
+      state.snapDoc = null;
+      if (mapOk) map.setSnapshot(null);
+    }
+  }
+  updateBadge();
+  await updateUS();
+  if (token !== state.token) return;
+
+  // keep a selected territory across years (matched by name); close an open event that belongs to another year
+  if (keepSel && state.sel?.kind === 'polity') remapPolity();
+  if (keepSel && state.sel?.kind === 'us') remapUS();
+  if (state.view === 'event' && !keepEvent) {
+    state.view = state.sel ? 'sel' : 'year';
+    state.eventId = null;
+    if (mapOk) map.selectEvent(null);
+    writeUrl();
+  }
+  await render();
+}
+
+function remapPolity() {
+  const sel = state.sel;
+  const doc = state.snapDoc;
+  const k = doc ? doc.polities.findIndex((p) => p.n === sel.name) : -1;
+  if (k >= 0) {
+    sel.k = k;
+    sel.p = doc.polities[k];
+    sel.test = makeAreaTest(doc.features.filter((f) => f.properties.k === k).map((f) => f.geometry));
+    sel.missing = false;
+  } else {
+    sel.missing = true;
+    sel.k = null;
+  }
+  if (mapOk) map.selectPolity(sel.k);
+}
+
+function remapUS() {
+  const s = state.sel;
+  if (!usFC) return;
+  const d = usDateInt();
+  const f = usFC.features.find((x) => x.properties.id === s.id && x.properties.s <= d && x.properties.e >= d);
+  if (f) { s.props = f.properties; s.name = f.properties.n; s.test = makeAreaTest([f.geometry]); s.missing = false; }
+  else s.missing = true;
+}
+
+async function updateUS() {
+  const y = state.year;
+  if (y < 1763 || y > 2000) { if (mapOk && map.usDate != null) map.setUSDate(null); return; }
+  try {
+    if (!usFC) { usFC = await loadUS(); if (mapOk) map.setUS(usFC); }
+    if (mapOk) map.setUSDate(usDateInt(), state.sel?.kind === 'us' ? state.sel.id : null);
+  } catch (e) { console.warn(e); }
+}
+
+function usDateInt() {
+  // whole year: show the situation at its end; with a typed date, on that day
+  const m = state.month || 12, d = state.day || (state.month ? 28 : 31);
+  return state.year * 10000 + m * 100 + d;
+}
+
+function updateBadge() {
+  const s = state.snap;
+  els.badge.hidden = false;
+  els.badgeInfo.hidden = true;
+  els.badge.setAttribute('aria-expanded', 'false');
+  if (!s) {
+    els.badge.textContent = 'No border map this early';
+    els.badge.classList.remove('exact');
+    return;
+  }
+  const exact = s.y === state.year;
+  els.badge.textContent = `Borders as of ${formatYear(s.y)}`;
+  els.badge.classList.toggle('exact', exact);
+}
+
+function badgeText() {
+  const s = state.snap;
+  if (!s) return [h('p', null, `The border maps start in ${formatYear(MIN_YEAR)}.`)];
+  const next = nextSnapshotAfter(s.y);
+  const out = [];
+  if (s.y === state.year) out.push(h('p', null, `This is one of the years with its own border map.`));
+  else out.push(h('p', null, `There is no border map for ${formatYear(state.year)}. You are seeing the nearest earlier one, from ${formatYear(s.y)}.`));
+  out.push(h('p', null, next ? `The next border map is ${formatYear(next.y)}.` : 'This is the latest border map.'));
+  out.push(h('p', null, s.y < 1500
+    ? 'Borders this early are rough sketches. Many regions had no fixed borders at all.'
+    : 'Borders are simplified for speed and may be off by a few kilometres or more.'));
+  if (state.year >= 1763 && state.year <= 2000) {
+    out.push(h('p', null, state.year < 1783
+      ? 'Dashed lines in North America show the thirteen colonies, drawn from their 1783 state borders, so they are approximate.'
+      : 'Dashed lines in the United States show state and territory borders on this date.'));
+  }
+  out.push(h('p', null, h('button.more', { type: 'button', onclick: openSources }, 'Sources and accuracy')));
+  return out;
+}
+
+// ---------------------------------------------------------------- rendering the panel
+async function render() {
+  if (state.view === 'event' && state.eventId) return renderEvent();
+  if (state.sel) return renderSelection();
+  return renderYear();
+}
+
+function setBody(...nodes) {
+  els.body.replaceChildren(...nodes.flat());
+}
+
+function filtered(events) {
+  return events.filter((e) => !state.disabled.has(e.t));
+}
+
+function isToday(e) {
+  return state.month && e.y === state.year && e.m === state.month && (!state.day || e.dd === state.day);
+}
+
+function rank(events) {
+  return [...events].sort((a, b) => (isToday(b) - isToday(a)) || (b.s - a.s) || ((a.m || 13) - (b.m || 13)));
+}
+
+function counts(events) {
+  const c = {};
+  for (const e of events) c[e.t] = (c[e.t] || 0) + 1;
+  return c;
+}
+
+const listOpts = () => ({ onOpen: (e) => openEvent(e.i, { fly: true }), isToday, modernNames });
+
+async function renderYear() {
+  const token = state.token;
+  const y = state.year;
+  setBody(h('p.kicker', null, 'Year'), h('h1', null, `The world in ${formatYear(y)}`), skeleton());
+  let data;
+  try {
+    data = await eventsBetween(y, y);
+  } catch (e) {
+    console.warn(e);
+    if (token !== state.token) return;
+    setBody(h('h1', null, `The world in ${formatYear(y)}`),
+      h('p.empty', null, 'The events for this year could not load.'),
+      h('button.more', { type: 'button', onclick: () => render() }, 'Try again'));
+    return;
+  }
+  if (token !== state.token || state.view !== 'year' || state.sel) return;
+  const all = data.events;
+  const shown = rank(filtered(all));
+  if (mapOk) map.setEvents(shown);
+  const nodes = [h('p.kicker', null, 'Year'), h('h1', null, `The world in ${formatYear(y)}`)];
+  if (state.month) nodes.push(h('p.lead', null, `Highlighting ${dayLabel(state.month, state.day)}.`));
+  nodes.push(h('p.note', null, `${all.length} ${all.length === 1 ? 'event' : 'events'} recorded · `,
+    state.snap ? `map borders as of ${formatYear(state.snap.y)}` : 'no border map this early'));
+
+  nodes.push(h('h2', null, 'Events'));
+  if (all.length) {
+    const hidden = TYPE_KEYS.filter((k) => state.disabled.has(k) && counts(all)[k]).length;
+    const box = h('details.filter-box', { open: state.filtersOpen ? '' : null, ontoggle: (ev) => { state.filtersOpen = ev.target.open; } },
+      h('summary', null, hidden ? `Event types (${hidden} hidden)` : 'Event types'),
+      filterChips(counts(all), state.disabled, toggleType));
+    nodes.push(box);
+    if (shown.length) nodes.push(eventList(shown, listOpts(), 12));
+    else nodes.push(h('p.empty', null, 'All event types are hidden. Turn some back on above.'));
+  } else {
+    const near = nearestYearsWithEvents(y, 4).filter((x) => x !== y);
+    nodes.push(h('p.empty', null, `No events recorded for ${formatYear(y)} yet.`));
+    if (near.length) nodes.push(h('p.note', null, 'Nearby years with events: '),
+      h('ul.pill-list', null, near.map((ny) => h('li', null, h('button', { type: 'button', onclick: () => goToYear(ny) }, formatYear(ny))))));
+  }
+  const ongoing = rank(filtered(data.ongoing)).slice(0, 8);
+  if (ongoing.length) {
+    nodes.push(h('h2', null, 'Still going'));
+    nodes.push(eventList(ongoing, { ...listOpts(), isToday: () => false }, 6));
+  }
+
+  const doc = state.snapDoc;
+  if (doc) {
+    nodes.push(h('h2', null, `Largest territories on the ${formatYear(doc.year)} map`));
+    const ul = h('ul.legend');
+    for (const p of doc.largest.slice(0, 10)) {
+      const col = powers[p.p]?.color || '#ccc';
+      const name = p.name;
+      ul.append(h('li', null, h('button', { type: 'button', onclick: () => selectPower(p.p) },
+        h('span.sw', { style: `background:${col}`, 'aria-hidden': 'true' }),
+        h('span', null, name, p.n > 1 ? h('span.muted', null, ` (${p.n} areas)`) : null),
+        h('span.a', null, fmtArea(p.a)))));
+    }
+    nodes.push(ul, h('p.note', null, 'Areas are rough, measured from the simplified map. Some entries are peoples or cultures rather than states.'));
+    if (doc.changes) {
+      const ch = doc.changes;
+      nodes.push(h('h2', null, `Changes since the ${formatYear(ch.since)} map`));
+      nodes.push(h('p.changes', null, h('b', null, `${ch.nAppeared}`), ' names appear and ', h('b', null, `${ch.nGone}`), ' disappear. Largest:'));
+      if (ch.appeared.length) nodes.push(h('h3', null, 'New on the map'), pills(ch.appeared, (n) => selectPolityByName(n, { fly: true })));
+      if (ch.gone.length) nodes.push(h('h3', null, 'Gone from the map'), pills(ch.gone, (n) => selectGone(n, ch.since)));
+    }
+  }
+  setBody(nodes);
+}
+
+function pills(names, onClick) {
+  return h('ul.pill-list', null, names.map((n) => h('li', null, h('button', { type: 'button', onclick: () => onClick(n) }, n))));
+}
+
+function toggleType(k) {
+  if (state.disabled.has(k)) state.disabled.delete(k); else state.disabled.add(k);
+  setPref('hiddenTypes', [...state.disabled]);
+  render();
+}
+
+// ---------------------------------------------------------------- selections
+async function selectPolityByIndex(k, { fly }) {
+  const doc = state.snapDoc;
+  if (!doc || k == null || k < 0) return;
+  const p = doc.polities[k];
+  state.sel = { kind: 'polity', name: p.n };
+  state.view = 'sel';
+  state.eventId = null;
+  remapPolity();
+  if (fly && mapOk) map.fitBBox(p.bb);
+  expandSheet();
+  writeUrl();
+  await render();
+}
+
+async function selectPolityByName(name, { fly }) {
+  const doc = state.snapDoc;
+  const k = doc ? doc.polities.findIndex((p) => p.n === name) : -1;
+  if (k >= 0) return selectPolityByIndex(k, { fly });
+  // not on this map: jump to the nearest map that has it
+  const ys = await yearsOf(name);
+  if (ys.length) {
+    const best = ys.reduce((a, b) => (Math.abs(b - state.year) < Math.abs(a - state.year) ? b : a));
+    await goToYear(best, { keepSel: false });
+    return selectPolityByName(name, { fly });
+  }
+}
+
+async function selectGone(name, since) {
+  await goToYear(since, { keepSel: false });
+  return selectPolityByName(name, { fly: true });
+}
+
+async function selectPower(key) {
+  const doc = state.snapDoc;
+  if (!doc) return;
+  const k = doc.polities.findIndex((p) => p.p === key);
+  if (k >= 0) return selectPolityByIndex(k, { fly: true });
+}
+
+let searchIndex = null;
+async function yearsOf(name) {
+  if (!searchIndex) {
+    const { loadSearch } = await import('./data.js');
+    searchIndex = await loadSearch();
+  }
+  const p = searchIndex.polities.find((x) => x[0] === name);
+  return p ? p[1] : [];
+}
+
+async function selectUS(id, { fly }) {
+  if (!usFC) usFC = await loadUS();
+  const d = usDateInt();
+  let f = usFC.features.find((x) => x.properties.id === id && x.properties.s <= d && x.properties.e >= d);
+  if (!f) {
+    // outside its years: go to the first year it exists
+    const all = usFC.features.filter((x) => x.properties.id === id).sort((a, b) => a.properties.s - b.properties.s);
+    if (!all.length) return;
+    await goToYear(Math.floor(all[0].properties.s / 10000), { keepSel: false });
+    f = all[0];
+  }
+  state.sel = { kind: 'us', id, name: f.properties.n, test: makeAreaTest([f.geometry]), props: f.properties };
+  state.view = 'sel';
+  state.eventId = null;
+  if (mapOk) { map.selectPolity(null); map.setUSDate(usDateInt(), id); if (fly) map.fitBBox(bboxOf([f.geometry]), 6.5); }
+  expandSheet();
+  writeUrl();
+  await render();
+}
+
+async function selectModern(iso, { fly }) {
+  if (!modernFC) modernFC = await loadModern();
+  const f = modernFC.features.find((x) => x.properties.iso === iso);
+  if (!f) return;
+  state.sel = { kind: 'modern', iso, name: f.properties.n, test: makeAreaTest([f.geometry]) };
+  state.view = 'sel';
+  state.eventId = null;
+  toggleModern(true);
+  if (mapOk) { map.selectPolity(null); if (fly) map.fitBBox(f.properties.bb, 5); }
+  expandSheet();
+  writeUrl();
+  await render();
+}
+
+function clearSelection() {
+  state.sel = null;
+  state.view = 'year';
+  state.eventId = null;
+  if (mapOk) { map.selectPolity(null); map.selectEvent(null); if (state.year >= 1763 && state.year <= 2000) map.setUSDate(usDateInt()); }
+  writeUrl();
+  render();
+}
+
+/** Is this event in the selected area? */
+function inSelection(e) {
+  const s = state.sel;
+  if (!s) return false;
+  if (s.kind === 'modern') return e.mc === s.iso || (e.lo != null && !e.mc && s.test(e.lo, e.la));
+  if (s.kind === 'us') return e.ci === s.id || (e.lo != null && s.test(e.lo, e.la));
+  if (e.p === s.name) return true;
+  return !!(s.test && e.lo != null && s.test(e.lo, e.la));
+}
+
+async function renderSelection() {
+  const token = state.token;
+  const s = state.sel;
+  const y = state.year;
+  const head = await selectionHeader(s);
+  if (token !== state.token || state.sel !== s) return;
+  setBody(head, skeleton(3));
+  let data;
+  const y0 = addYears(y, -5), y1 = addYears(y, 5);
+  try {
+    data = await eventsBetween(y0, y1);
+  } catch (e) {
+    console.warn(e);
+    if (token !== state.token) return;
+    setBody(head, h('p.empty', null, 'The events could not load.'), h('button.more', { type: 'button', onclick: () => render() }, 'Try again'));
+    return;
+  }
+  if (token !== state.token || state.sel !== s || state.view !== 'sel') return;
+  const mine = filtered(data.events.filter(inSelection));
+  const thisYear = rank(mine.filter((e) => e.y === y));
+  const near = mine.filter((e) => e.y !== y);
+  if (mapOk) map.setEvents([...thisYear, ...near], { near: new Set(near.map((e) => e.i)) });
+
+  const nodes = [head, h('h2', null, `In ${formatYear(y)}`)];
+  if (thisYear.length) nodes.push(eventList(thisYear, listOpts(), 15));
+  else nodes.push(h('p.empty', null, `No events recorded here for ${formatYear(y)}.`));
+  nodes.push(h('h2', null, 'Nearby years'));
+  const byYear = new Map();
+  for (const e of near) { if (!byYear.has(e.y)) byYear.set(e.y, []); byYear.get(e.y).push(e); }
+  const years = [...byYear.keys()].sort((a, b) => a - b);
+  if (!years.length) nodes.push(h('p.empty', null, `Nothing recorded here between ${formatYear(y0)} and ${formatYear(y1)}.`));
+  for (const yy of years) {
+    nodes.push(h('div.year-group', null, h('span', null, formatYear(yy)),
+      h('button', { type: 'button', onclick: () => goToYear(yy) }, `Go to ${formatYear(yy)}`)));
+    nodes.push(eventList(rank(byYear.get(yy)), { ...listOpts(), isToday: () => false }, 4));
+  }
+  const ongoing = filtered(data.ongoing.filter(inSelection)).slice(0, 5);
+  if (ongoing.length) nodes.push(h('h2', null, 'Still going'), eventList(ongoing, { ...listOpts(), isToday: () => false }, 5));
+  setBody(nodes);
+}
+
+async function selectionHeader(s) {
+  const box = h('div');
+  box.append(h('button.back', { type: 'button', onclick: clearSelection }, `← The world in ${formatYear(state.year)}`));
+  if (s.kind === 'polity') {
+    const p = s.p;
+    box.append(h('p.kicker', null, 'Territory'), h('h1', null, s.name));
+    if (s.missing) {
+      box.append(h('p.lead', null, `${s.name} is not on the ${state.snap ? formatYear(state.snap.y) : ''} map. Events below are inside its last outline.`));
+      return box;
+    }
+    const facts = h('dl.facts');
+    if (p.s && p.s !== p.n) facts.append(h('dt', null, 'Ruled by'), h('dd', null, p.s));
+    else facts.append(h('dt', null, 'Status'), h('dd', null, 'Independent or self-ruling on this map'));
+    facts.append(h('dt', null, 'Area'), h('dd', null, `about ${fmtArea(p.a)}`));
+    facts.append(h('dt', null, 'Map'), h('dd', null, `Borders as of ${formatYear(state.snap.y)}${p.pr === 1 ? ', approximate' : ''}`));
+    box.append(facts);
+    try {
+      entities = entities || await loadEntities();
+      const info = entities[s.name];
+      if (info) {
+        // the same name can mean a different state in another era ("France" in 1000 is not the modern
+        // republic): only show the description when Wikidata's dates fit the year on screen
+        const y = state.year;
+        const fits = (info.from == null || info.from - 100 <= y) && (info.to == null || info.to + 100 >= y);
+        if (fits) {
+          if (info.d) box.insertBefore(h('p.lead', null, cap(info.d)), facts);
+          if (info.from != null || info.to != null) facts.append(h('dt', null, 'Existed'), h('dd', null, `${info.from != null ? formatYear(info.from) : '?'} to ${info.to != null ? formatYear(info.to) : 'today'}`));
+          if (info.cap?.length) facts.append(h('dt', null, 'Capital'), h('dd', null, info.cap.join(', ')));
+        }
+        const links = h('p.note');
+        if (info.w) links.append(h('a.ext', { href: wikiUrl(info.w), target: '_blank', rel: 'noopener' }, 'Wikipedia'), '  ');
+        links.append(h('a.ext', { href: wikidataUrl(info.q), target: '_blank', rel: 'noopener' }, 'Wikidata'));
+        box.append(links);
+      }
+      const rulerInfo = p.s && p.s !== p.n ? entities[p.s] : null;
+      if (rulerInfo?.d) box.append(h('p.note', null, `${p.s}: ${rulerInfo.d}.`));
+    } catch { /* descriptions are optional */ }
+    return box;
+  }
+  if (s.kind === 'us') {
+    const pr = s.props;
+    if (s.missing) {
+      box.append(h('p.kicker', null, 'US state or colony'), h('h1', null, s.name),
+        h('p.lead', null, `No borders for ${s.name} on this date. Events below are inside its last outline.`));
+      return box;
+    }
+    const t = pr.t === 'Colony' ? 'British colony' : pr.t === 'Other' ? 'Self-declared republic' : pr.t;
+    box.append(h('p.kicker', null, t), h('h1', null, s.name));
+    const from = String(pr.s), to = String(pr.e);
+    const f = (x) => formatDate(+x.slice(0, 4), +x.slice(4, 6), +x.slice(6, 8));
+    box.append(h('dl.facts', null, h('dt', null, 'These borders'), h('dd', null, `${f(from)} to ${to.startsWith('2000') ? 'today' : f(to)}`)));
+    if (pr.approx) box.append(h('p.note', null, 'Approximate: drawn from the 1783 state borders. Colonial borders and western land claims were different and often disputed.'));
+    if (pr.ch) box.append(h('p.lead', null, pr.ch), h('p.note', null, 'Text: Newberry Library, Atlas of Historical County Boundaries.'));
+    return box;
+  }
+  box.append(h('p.kicker', null, "Today's country"), h('h1', null, s.name),
+    h('p.lead', null, `Events that happened on the land that is ${s.name} today, whoever ruled it at the time.`));
+  return box;
+}
+
+const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+
+// ---------------------------------------------------------------- events
+async function openEvent(id, { fly }) {
+  let e = await findEvent(id);
+  if (!e) {
+    // maybe the panel for its year is not loaded yet
+    await eventsBetween(addYears(state.year, -5), addYears(state.year, 5)).catch(() => {});
+    e = await findEvent(id);
+  }
+  if (!e) return;
+  if (e.y !== state.year && state.view !== 'sel') {
+    await goToYear(e.y, { month: e.m || 0, day: e.dd || 0, keepEvent: true });
+  }
+  state.prevView = state.view === 'event' ? state.prevView : state.view;
+  state.view = 'event';
+  state.eventId = id;
+  if (mapOk) {
+    map.selectEvent(id);
+    if (fly && e.lo != null) map.flyTo(e.lo, e.la, 5);
+  }
+  expandSheet();
+  writeUrl();
+  renderEvent();
+}
+
+async function renderEvent() {
+  const e = await findEvent(state.eventId);
+  if (!e) { state.view = state.sel ? 'sel' : 'year'; return render(); }
+  const t = TYPES[e.t] || TYPES.other;
+  const back = state.sel ? `← ${state.sel.name}` : `← The world in ${formatYear(state.year)}`;
+  const nodes = [h('button.back', { type: 'button', onclick: closeEvent }, back),
+    h('p.kicker', null, t.one), h('h1', null, e.l), h('p.lead', null, eventDate(e))];
+  if (e.d) nodes.push(h('p', null, cap(e.d)));
+  const facts = h('dl.facts');
+  const place = placeLine(e, modernNames);
+  if (place) facts.append(h('dt', null, 'Where'), h('dd', null, place));
+  if (e.pa?.length) facts.append(h('dt', null, 'Who'), h('dd', null, e.pa.join(', ')));
+  if (e.po) facts.append(h('dt', null, 'Part of'), h('dd', null, e.po));
+  if (e.lo == null) facts.append(h('dt', null, 'On the map'), h('dd', null, 'No location recorded'));
+  else if (e.ap) facts.append(h('dt', null, 'On the map'), h('dd', null, 'Placed at the nearest known location'));
+  nodes.push(facts);
+  const links = h('p.note');
+  if (e.w) links.append(h('a.ext', { href: wikiUrl(e.w), target: '_blank', rel: 'noopener' }, 'Read on Wikipedia'), '  ');
+  if (/^Q\d+$/.test(e.i)) links.append(h('a.ext', { href: wikidataUrl(e.i), target: '_blank', rel: 'noopener' }, 'Wikidata'));
+  nodes.push(links);
+  if (e.cur) nodes.push(h('p.note', null, 'From GeoHistory\'s hand-checked list of American Revolution events. Day and place are checked against the linked article.'));
+  if (e.lo != null) nodes.push(h('p', null, h('button.more', { type: 'button', onclick: () => mapOk && map.flyTo(e.lo, e.la, 6) }, 'Show on map')));
+  setBody(nodes);
+  els.body.scrollTop = 0;
+}
+
+function closeEvent() {
+  state.view = state.sel ? 'sel' : 'year';
+  state.eventId = null;
+  if (mapOk) map.selectEvent(null);
+  writeUrl();
+  render();
+}
+
+// ---------------------------------------------------------------- search choices
+async function chooseSearch(it) {
+  if (it.k === 'p') return selectPolityByName(it.n, { fly: true });
+  if (it.k === 'c') return selectPolityByName(it.alt[0], { fly: true });
+  if (it.k === 'm') return selectModern(it.iso, { fly: true });
+  if (it.k === 'u') return selectUS(it.id, { fly: true });
+  if (it.k === 'e') {
+    state.sel = null;
+    state.view = 'year';
+    if (mapOk) map.selectPolity(null);
+    await goToYear(it.y, { keepSel: false });
+    return openEvent(it.i, { fly: true });
+  }
+}
+
+// ---------------------------------------------------------------- time bar
+function showYearInput() {
+  if (document.activeElement === els.year) return;
+  els.year.value = state.month ? formatDate(state.year, state.month, state.day) : formatYear(state.year);
+  els.year.removeAttribute('aria-invalid');
+}
+
+function setHint(text, err = false) {
+  els.hint.textContent = text;
+  els.hint.classList.toggle('err', err);
+}
+
+function updateSlider() {
+  els.slider.value = Math.round(yearToFrac(state.year) * 1000);
+  els.slider.setAttribute('aria-valuetext', formatYear(state.year));
+}
+
+function drawTicks() {
+  els.ticks.replaceChildren();
+  // one tick per border map: you can see where the borders change
+  import('./data.js').then(({ loadBordersIndex: li }) => li()).then((snaps) => {
+    for (const s of snaps) els.ticks.append(h('i', { style: `left:${(yearToFrac(s.y) * 100).toFixed(2)}%`, title: `Border map ${formatYear(s.y)}` }));
+  });
+  els.eras.replaceChildren(...ERAS.map((e) => h('span', { style: `left:${(yearToFrac(e.y) * 100).toFixed(2)}%` },
+    h('span.lg', null, e.label), e.short ? h('span.sm', null, e.short) : null)));
+}
+
+let playTimer = null;
+function setupTimebar() {
+  els.form.addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    stopPlay();
+    const r = parseYear(els.year.value);
+    if (r.error) {
+      els.year.setAttribute('aria-invalid', 'true');
+      setHint(r.error, true);
+      return;
+    }
+    els.year.blur();
+    goToYear(r.year, { month: r.month || 0, day: r.day || 0 });
+  });
+  els.year.addEventListener('input', () => { els.year.removeAttribute('aria-invalid'); setHint(''); });
+  for (const b of document.querySelectorAll('[data-step]')) {
+    b.addEventListener('click', () => { stopPlay(); step(+b.dataset.step); });
+  }
+  let pending = null;
+  els.slider.addEventListener('input', () => {
+    stopPlay();
+    const y = fracToYear(els.slider.value / 1000);
+    els.year.value = formatYear(y);
+    els.slider.setAttribute('aria-valuetext', formatYear(y));
+    clearTimeout(pending);
+    pending = setTimeout(() => goToYear(y, { fromSlider: true }), 140);
+  });
+  els.slider.addEventListener('keydown', (e) => {
+    const map_ = { ArrowLeft: -1, ArrowDown: -1, ArrowRight: 1, ArrowUp: 1, PageDown: -10, PageUp: 10 };
+    if (e.key in map_) {
+      e.preventDefault();
+      stopPlay();
+      step(map_[e.key] * (e.shiftKey ? 100 : 1));
+    }
+  });
+  els.play.addEventListener('click', () => (playTimer ? stopPlay() : startPlay()));
+}
+
+function step(n) {
+  goToYear(addYears(state.year, n), { month: 0, day: 0 });
+}
+
+function startPlay() {
+  els.play.setAttribute('aria-pressed', 'true');
+  els.play.setAttribute('aria-label', 'Pause');
+  const tick = () => {
+    if (state.year >= MAX_YEAR) return stopPlay();
+    step(1);
+  };
+  playTimer = setInterval(tick, 1600);
+}
+
+function stopPlay() {
+  if (!playTimer) return;
+  clearInterval(playTimer);
+  playTimer = null;
+  els.play.setAttribute('aria-pressed', 'false');
+  els.play.setAttribute('aria-label', 'Play, one year at a time');
+}
+
+function globalKeys(e) {
+  const t = e.target;
+  const typing = t.closest?.('input, textarea, select, [contenteditable]');
+  if (e.key === '/' && !typing) { e.preventDefault(); $('#q').focus(); return; }
+  if (typing || t.closest?.('.maplibregl-canvas-container, dialog') || e.altKey || e.ctrlKey || e.metaKey) return;
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+    e.preventDefault();
+    stopPlay();
+    step((e.key === 'ArrowLeft' ? -1 : 1) * (e.shiftKey ? 10 : 1));
+  } else if (e.key === 'Escape' && state.view !== 'year') {
+    if (state.view === 'event') closeEvent(); else clearSelection();
+  }
+}
+
+// ---------------------------------------------------------------- panel, tools, url
+function setupPanel() {
+  els.handle.addEventListener('click', () => {
+    const order = ['peek', 'half', 'full'];
+    const next = order[(order.indexOf(els.panel.dataset.size) + 1) % order.length];
+    setSheet(next);
+  });
+  new ResizeObserver(() => applyPadding()).observe(els.panel);
+  window.addEventListener('resize', applyPadding);
+}
+
+function setSheet(size) {
+  els.panel.dataset.size = size;
+  els.handle.setAttribute('aria-expanded', size === 'peek' ? 'false' : 'true');
+  els.handle.setAttribute('aria-label', size === 'full' ? 'Shrink panel' : 'Expand panel');
+}
+
+function expandSheet() {
+  if (window.innerWidth < 900 && els.panel.dataset.size === 'peek') setSheet('half');
+}
+
+function applyPadding() {
+  if (!mapOk || window.NOPAD) return;
+  const w = window.innerWidth;
+  if (w >= 900) map.setPadding({ top: 40, bottom: 20, left: 20, right: els.panel.offsetWidth + 24 });
+  else map.setPadding({ top: 40, bottom: Math.min(els.panel.offsetHeight, window.innerHeight * 0.5), left: 0, right: 0 });
+}
+
+function setupTools() {
+  const setProjLabel = () => {
+    els.proj.textContent = state.projection === 'globe' ? 'Globe' : 'Flat';
+    els.proj.setAttribute('aria-label', state.projection === 'globe' ? 'Globe view. Switch to flat map' : 'Flat map. Switch to globe');
+  };
+  setProjLabel();
+  els.proj.addEventListener('click', () => {
+    state.projection = state.projection === 'globe' ? 'mercator' : 'globe';
+    setPref('projection', state.projection);
+    setProjLabel();
+    if (mapOk) map.setProjection(state.projection);
+    writeUrl();
+  });
+  els.modernBtn.addEventListener('click', () => toggleModern(!state.modern));
+  els.sourcesBtn.addEventListener('click', openSources);
+  els.sources.addEventListener('click', (e) => { if (e.target === els.sources || e.target.closest('[data-close]')) els.sources.close(); });
+  els.badge.addEventListener('click', () => {
+    const open = els.badgeInfo.hidden;
+    if (open) els.badgeInfo.replaceChildren(...badgeText());
+    els.badgeInfo.hidden = !open;
+    els.badge.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  // modern country names for event place lines (small, from the search file)
+  import('./data.js').then(({ loadSearch }) => loadSearch()).then((d) => {
+    for (const m of d.modern) modernNames[m[1]] = m[0];
+  }).catch(() => {});
+}
+
+async function toggleModern(on) {
+  state.modern = on;
+  els.modernBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+  if (on && !modernFC) {
+    try { modernFC = await loadModern(); } catch { return; }
+  }
+  if (mapOk) map.setModern(modernFC, on);
+  writeUrl();
+}
+
+async function openSources() {
+  const body = els.sourcesBody;
+  if (!body.dataset.filled) {
+    body.replaceChildren(h('p', null, 'Loading…'));
+    let meta = null;
+    try { meta = await loadMeta(); } catch { /* still show the text */ }
+    body.replaceChildren(...sourcesContent(meta));
+    body.dataset.filled = '1';
+  }
+  els.sources.showModal();
+}
+
+function sourcesContent(meta) {
+  const n = (x) => (x == null ? '?' : Number(x).toLocaleString('en-GB'));
+  const c = meta?.counts || {};
+  return [
+    h('p', null, 'GeoHistory is a way to explore the past, not an authority on it. Please check anything important against a good history book or the linked articles.'),
+    h('h3', null, 'Borders are snapshots'),
+    h('p', null, `The map has ${n(c.snapshots)} border maps, from ${formatYear(meta?.borders?.first ?? MIN_YEAR)} to ${formatYear(meta?.borders?.last ?? 2010)}. For any other year you see the nearest earlier map, and the badge on the map says which. Borders before about 1500 are rough sketches; many places had no fixed borders.`),
+    h('h3', null, 'Events come from Wikidata'),
+    h('p', null, `${n(c.events)} events, from Wikidata's free database, ranked by how many Wikipedia language editions cover them. Dates, places and descriptions can be wrong or missing, and coverage is much thinner for Africa, Asia and the distant past than for Europe and North America.`),
+    h('p', null, `For the American Revolution (1763 to 1789) a short hand-checked list adds days, places and colonies where Wikidata lacks them (${n(c.curated)} entries).`),
+    h('h3', null, 'Sources'),
+    h('ul', null,
+      h('li', null, h('a', { href: 'https://github.com/aourednik/historical-basemaps', target: '_blank', rel: 'noopener' }, 'historical-basemaps'), ' by André Ourednik and contributors: world borders by year (GPL-3.0).'),
+      h('li', null, h('a', { href: 'https://publications.newberry.org/ahcb/', target: '_blank', rel: 'noopener' }, 'Atlas of Historical County Boundaries'), ', Newberry Library: US state and territory borders since 1783.'),
+      h('li', null, h('a', { href: 'https://www.naturalearthdata.com/', target: '_blank', rel: 'noopener' }, 'Natural Earth'), ': coastlines and today\'s countries (public domain).'),
+      h('li', null, h('a', { href: 'https://www.wikidata.org/', target: '_blank', rel: 'noopener' }, 'Wikidata'), ': events and descriptions (CC0). Links go to Wikipedia.'),
+      h('li', null, h('a', { href: 'https://maplibre.org/', target: '_blank', rel: 'noopener' }, 'MapLibre GL JS'), ' (BSD licence) draws the map; labels use Noto Sans (SIL Open Font License).')),
+    h('p', null, 'Full credits and licences: ', h('a', { href: 'https://github.com/ngcoding10/geohistory/blob/main/CREDITS.md', target: '_blank', rel: 'noopener' }, 'CREDITS.md'),
+      '. Data built on ', meta?.built || '?', '.'),
+    h('p', null, h('a', { href: 'privacy.html' }, 'Privacy'), ' · ', h('a', { href: 'terms.html' }, 'Terms'), ' · ',
+      h('a', { href: 'https://github.com/ngcoding10/geohistory/issues', target: '_blank', rel: 'noopener' }, 'Report a mistake')),
+  ];
+}
+
+function writeUrl() {
+  const p = new URLSearchParams();
+  p.set('y', String(state.year));
+  if (state.month) p.set('d', state.day ? `${state.month}-${state.day}` : String(state.month));
+  const s = state.sel;
+  if (s?.kind === 'polity') p.set('c', s.name);
+  if (s?.kind === 'us') p.set('s', s.id);
+  if (s?.kind === 'modern') p.set('mc', s.iso);
+  if (state.view === 'event' && state.eventId) p.set('e', state.eventId);
+  if (state.projection === 'mercator') p.set('v', 'flat');
+  if (state.modern) p.set('mb', '1');
+  const url = '?' + p.toString();
+  if (url !== location.search) history.replaceState(null, '', url);
+  document.title = `${formatYear(state.year)}${s ? ' · ' + s.name : ''} · GeoHistory`;
+}
+
+// exposed for the end-to-end test only
+window.__geo = { state, goToYear: (y) => goToYear(y), get map() { return map; } };
