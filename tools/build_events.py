@@ -382,7 +382,24 @@ def main():
         if e.get('ci') is None:
             e.pop('ci', None)
 
+    # ---------- duplicates: same name in the same year (two Wikidata items, or Wikidata + curated) ----------
+    best = {}
+    for e in sorted(events.values(), key=lambda e: (-e.get('cur', 0), -e['s'])):
+        key = (e['l'].lower(), e['y'])
+        if key in best:
+            keep = best[key]
+            for f in ('lo', 'la', 'c', 'ci', 'm', 'dd', 'w', 'd'):
+                if f not in keep and f in e:
+                    keep[f] = e[f]
+            continue
+        best[key] = e
+    n_dup = len(events) - len(best)
+    events = {e['i']: e for e in best.values()}
+    log(f'{n_dup} duplicate events merged')
+
     # ---------- shards ----------
+    # nothing before the first border map (Wikidata has a few geological "events" millions of years ago)
+    events = {k: e for k, e in events.items() if e['y'] >= -130000}
     evs = sorted(events.values(), key=lambda e: (e['y'], e.get('m', 0), e.get('dd', 0), -e['s']))
     per_year = Counter(e['y'] for e in evs)
     blocks = []
@@ -452,7 +469,7 @@ def main():
         else:
             usl[k] = [p['n'], p['id'], y0, y1]
     top = sorted(evs, key=lambda e: -e['s'])
-    sev = [[e['l'], e['i'], e['y'], '', e['s']] for e in top if e['s'] >= 6 or e.get('cur')][:16000]
+    sev = [[e['l'], e['i'], e['y'], '', e['s']] for e in top if e['s'] >= 8 or e.get('cur')][:9000]
     places = []
     for n, e in ents.items():
         for c in e.get('cap', []):
@@ -476,7 +493,7 @@ def main():
             'polityNames': len(polities),
             'linkedToWikidata': len(ents),
             'events': len(evs),
-            'eventsFromWikidata': n_wd + n_states + n_rulers,
+            'eventsFromWikidata': len(evs) - n_added,
             'stateChanges': n_states, 'rulers': n_rulers,
             'curated': n_added + n_merged, 'curatedAdded': n_added, 'curatedMerged': n_merged,
             'withCoordinates': sum(1 for e in evs if e.get('lo') is not None),

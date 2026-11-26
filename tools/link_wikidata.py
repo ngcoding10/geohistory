@@ -15,7 +15,9 @@ import os
 from common import sparql, qid, log, CACHE, DATA, write_json, read_json
 
 ROOTS = ['Q1048835', 'Q3024240', 'Q7275', 'Q41710', 'Q465299', 'Q8432', 'Q2472587', 'Q133311',
-         'Q170156', 'Q56061', 'Q15642541', 'Q11514315', 'Q164950', 'Q28171280', 'Q133442']
+         'Q170156', 'Q11514315', 'Q164950', 'Q28171280', 'Q133442', 'Q133156']
+# never a territory on these maps, even when the name matches (villages, towns, modern districts)
+NOT_ROOTS = ['Q486972', 'Q515', 'Q3957', 'Q532', 'Q15284']
 
 
 def year_of(v):
@@ -41,30 +43,63 @@ def main():
         names.setdefault(p['name'], list(range(p['years'][0], p['years'][1] + 1, 100)) + [p['years'][1]])
     todo = sorted(n for n in names if 2 < len(n) < 90)
     log(f'{len(todo)} names to link')
-    roots = ' '.join('wd:' + r for r in ROOTS)
     cands = {}
-    for i in range(0, len(todo), 50):
-        batch = todo[i:i + 50]
+    item_cls = {}
+    for i in range(0, len(todo), 60):
+        batch = todo[i:i + 60]
         vals = ' '.join(f'"{esc(n)}"@en' for n in batch)
-        q = f'''SELECT ?name ?item ?sl ?alias ?start ?end WHERE {{
-  VALUES ?name {{ {vals} }}
-  {{ ?item rdfs:label ?name . BIND(0 AS ?alias) }} UNION {{ ?item skos:altLabel ?name . BIND(1 AS ?alias) }}
-  ?item wikibase:sitelinks ?sl .
-  FILTER EXISTS {{ VALUES ?root {{ {roots} }} ?item wdt:P31/wdt:P279* ?root . }}
-  OPTIONAL {{ ?item wdt:P571 ?start }} OPTIONAL {{ ?item wdt:P576 ?end }}
-}}'''
-        try:
-            rows = sparql(q)
-        except Exception as e:
-            log(f'  batch {i} failed: {e}')
-            continue
-        for r in rows:
-            cands.setdefault(r['name'], {}).setdefault(qid(r['item']), {
-                'sl': int(r['sl']), 'alias': int(r['alias']), 'start': year_of(r.get('start')),
-                'end': year_of(r.get('end'))})
-            c = cands[r['name']][qid(r['item'])]
-            c['alias'] = min(c['alias'], int(r['alias']))
+        # labels and aliases as two simple queries: one combined query times out
+        for alias, pred in ((0, 'rdfs:label'), (1, 'skos:altLabel')):
+            q = f'''SELECT ?name ?item ?sl WHERE {{ VALUES ?name {{ {vals} }} ?item {pred} ?name .
+  ?item wikibase:sitelinks ?sl . FILTER(?sl >= 2) }}'''
+            try:
+                rows = sparql(q)
+            except Exception as e:
+                log(f'  batch {i} ({pred}) failed: {e}')
+                continue
+            for r in rows:
+                c = cands.setdefault(r['name'], {}).setdefault(qid(r['item']), {'sl': int(r['sl']), 'alias': alias})
+                c['alias'] = min(c['alias'], alias)
         log(f'  names {i + len(batch)}/{len(todo)}: {len(cands)} with candidates')
+    items = sorted({k for cs in cands.values() for k in cs}, key=lambda q: int(q[1:]))
+    spans = {}
+    for i in range(0, len(items), 200):
+        vals = ' '.join('wd:' + q for q in items[i:i + 200])
+        q = f'''SELECT ?item (GROUP_CONCAT(DISTINCT STRAFTER(STR(?c), "entity/")) AS ?cls) (MIN(?s) AS ?start) (MAX(?e) AS ?end) WHERE {{
+  VALUES ?item {{ {vals} }} OPTIONAL {{ ?item wdt:P31 ?c }} OPTIONAL {{ ?item wdt:P571 ?s }} OPTIONAL {{ ?item wdt:P576 ?e }} }} GROUP BY ?item'''
+        for r in sparql(q):
+            k = qid(r['item'])
+            item_cls[k] = set(r.get('cls', '').split())
+            spans[k] = (year_of(r.get('start')), year_of(r.get('end')))
+        log(f'  items {min(i + 200, len(items))}/{len(items)}')
+    for cs in cands.values():
+        for k, c in cs.items():
+            c['start'], c['end'] = spans.get(k, (None, None))
+
+    # keep only polities, peoples, cultures and territories (instance of a subclass of a root)
+    classes = sorted({c for cs in item_cls.values() for c in cs})
+    ok_cls = set()
+    rootvals = ' '.join('wd:' + r for r in ROOTS)
+    for i in range(0, len(classes), 150):
+        vals = ' '.join('wd:' + c for c in classes[i:i + 150])
+        try:
+            for b in sparql(f'SELECT DISTINCT ?c WHERE {{ VALUES ?c {{ {vals} }} VALUES ?r {{ {rootvals} }} ?c wdt:P279* ?r . }}'):
+                ok_cls.add(qid(b['c']))
+        except Exception as e:
+            log(f'  class batch failed: {e}')
+    bad_cls = set()
+    badvals = ' '.join('wd:' + r for r in NOT_ROOTS)
+    for i in range(0, len(classes), 150):
+        vals = ' '.join('wd:' + c for c in classes[i:i + 150])
+        try:
+            for b in sparql(f'SELECT DISTINCT ?c WHERE {{ VALUES ?c {{ {vals} }} VALUES ?r {{ {badvals} }} ?c wdt:P279* ?r . }}'):
+                bad_cls.add(qid(b['c']))
+        except Exception as e:
+            log(f'  class batch failed: {e}')
+    for name in list(cands):
+        cands[name] = {k: v for k, v in cands[name].items()
+                       if item_cls.get(k, set()) & ok_cls and not item_cls.get(k, set()) & bad_cls}
+    log(f'{len(ok_cls)} of {len(classes)} classes are polity-like')
 
     chosen = {}
     for name, cs in cands.items():
@@ -83,7 +118,10 @@ def main():
         alias, nsl, q, c = ok[0]
         if alias and (c['sl'] < 5 or sum(1 for o in ok if o[0] == 1) > 1):
             continue
-        if c['sl'] < 2:
+        if c['sl'] < 3:
+            continue
+        # short names ("Han", "Wei") are ambiguous: only trust them when the dates confirm the match
+        if len(name) <= 4 and (c['start'] is None or c['start'] > hi or (c['end'] is not None and c['end'] < lo)):
             continue
         chosen[name] = q
     log(f'linked {len(chosen)} of {len(todo)} names')
