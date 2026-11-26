@@ -123,8 +123,8 @@ browser by overlap at sample points, and are approximate.
   that Cliopatria files under a wrong name are renamed (`tools/curated/names.json`: "Assyrian Egypt" for the
   whole Assyrian Empire of 650 to 616 BC, "Ptolemaic Kingdom" for Alexander's conquests of 331 to 324 BC,
   "Western Jin" for the Eastern Jin after 317).
-- 1886 to 2019 shows recognised borders. Wartime occupation is an overlay: no openly available dataset of
-  occupation areas was found, so `tools/curated/occupations.json` lists 38 dated occupations (16 with both
+- 1886 to 2019 shows recognised borders. Wartime occupation is an overlay. No dataset of occupation areas is
+  used (none of the border sources has one, and no systematic search for another was made in this round), so `tools/curated/occupations.json` lists 38 dated occupations (16 with both
   years confirmed by Wikidata) and the map hatches the existing outline of the occupied country in the
   occupier's colour (Poland, France, Norway, Denmark, the Low Countries, Greece, Yugoslavia, the Baltic states,
   the Philippines, the Dutch East Indies, Malaya, Burma and others in 1939 to 1945; Belgium, Serbia, Romania in
@@ -169,7 +169,7 @@ browser by overlap at sample points, and are approximate.
   "curated"; entries whose year Wikidata does not confirm are tagged "curated, unverified".
 - The flat map is the default because borders are easier to read; the globe is one tap away. Both were
   checked only in headless Chromium with software rendering, not yet on real phones. No relief or paper
-  texture is drawn: no openly licensed hillshade small enough to ship was found.
+  texture is drawn (no hillshade source was evaluated); the map has a faint vignette only.
 - Births and deaths (the 12 most notable per year) are off by default; turn them on under "Event types".
 - `tools/audit.py` checks 1,202 hand-written well-known facts (who held a city in a given year; dates of
   events and reigns; successions; empire memberships; occupations; who was in office; "top five of the year

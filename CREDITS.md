@@ -145,9 +145,8 @@ Written from general knowledge, conservatively, and checked by `tools/build_cura
   are read from Cliopatria's member-of field and from the CShapes dependencies. `tools/build_empires.py` marks a
   membership verified when the Wikidata item of the part names an item of the empire as its country (P17), as
   what it is part of (P361), as its administrative parent (P131), owner (P127) or jurisdiction (P1001).
-- `tools/curated/occupations.json`: 40 dated occupations and wartime annexations. **No openly available dataset
-  of occupation areas was found** (none of the sources above has one, and no other could be located from the
-  build machine), so each row re-tints an existing CShapes outline; the dates are the commonly cited ones from
+- `tools/curated/occupations.json`: 40 dated occupations and wartime annexations. **No dataset of occupation areas is used**: none of the
+  sources above has one, and no systematic search for another was made, so each row re-tints an existing CShapes outline; the dates are the commonly cited ones from
   the Wikipedia article in each row, and a row is verified when the Wikidata item of that article has the same
   start and end years.
 - `data/succession.json` ("Before" and "After"): Wikidata's replaces / replaced by and follows / followed by
