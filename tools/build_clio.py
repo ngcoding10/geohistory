@@ -145,6 +145,17 @@ def build():
             shapes[-1]['from'], shapes[-1]['to'] = sg['from'], sg['to']
     for k in set(CLIO_DATES) - used_fixes:
         log('  curated/clio_dates.json: no source shape', k)
+    # states the sources leave blank or merge into a larger shape, from OpenHistoricalMap (curated/ohm_patches.json)
+    from ohm import ohm_shape
+    for r in read_json(os.path.join(TOOLS, 'curated', 'ohm_patches.json'))['rows']:
+        try:
+            g, info = ohm_shape(r['ohm'])
+        except Exception as ex:   # no network and nothing cached: the map stays as the sources draw it
+            log(f"  ohm patch {r['name']} ({r['ohm']}) skipped: {ex}")
+            continue
+        shapes.append({'g': g, 'a': info['km2'], 'l': label_point(g), 'bb': [round(v, 1) for v in bbox_of(g)],
+                       'n': r['name'], 'm': display(r['ruler']) if r.get('ruler') else '', 'q': '', 'w': r['source'].rsplit('/', 1)[-1].replace('_', ' '),
+                       'from': r['from'], 'to': r['to'], 'o': 1 if r['mode'] == 'over' else -1, 'ohm': r['ohm']})
     shapes.sort(key=lambda s: (s['from'], s['n']))
     for i, s in enumerate(shapes):
         s['id'] = i
@@ -243,6 +254,19 @@ def build():
             if o is None or (s['from'], s['a']) > (o['from'], o['a']):   # the latest start; of two, the larger
                 byname[s['n']] = s
         live = list(byname.values())
+        # a patch is not needed where the source itself draws that power at the patch's label point (a gap
+        # patch: any state there)
+        normal = [s for s in live if 'o' not in s]
+        nidx = PolyIndex([(i, s['g']) for i, s in enumerate(normal)])
+
+        def needed(pt):
+            hits = [normal[i] for i in nidx.lookup_all(*pt.get('l'))] if pt.get('l') else []
+            if pt['o'] < 0:
+                return not hits
+            # a part drawn over a larger shape: not needed where the source draws that state itself
+            return not any(key_of(h['n']) == key_of(pt['n']) for h in hits)
+        # gap patches first (drawn under the states), parts that go over a larger shape last
+        live = sorted((s for s in live if 'o' not in s or needed(s)), key=lambda s: s.get('o', 0))
         idx = PolyIndex([(s['id'], s['g']) for s in live])
         names = {power_key(s['n']) for s in live}
         snap = max(b['y'] for b in bindex if b['y'] <= y)
@@ -373,7 +397,9 @@ def year_doc(y):
     listed first: a point lookup prefers them to the underlay."""
     shapes, years, ys = _cache()
     rows = years[stored_year(y, ys)]
-    out = [{'n': r[1], 'p': r[2], 's': r[3], 'a': shapes[r[0]]['a'], 'g': shapes[r[0]]['g']} for r in rows if len(r) < 5]
+    out = [{'n': r[1], 'p': r[2], 's': r[3], 'a': shapes[r[0]]['a'], 'g': shapes[r[0]]['g'], 'o': shapes[r[0]].get('o', 0)} for r in rows if len(r) < 5]
+    # a point lookup takes the first hit: parts drawn over a larger shape first, gap patches after the states
+    out.sort(key=lambda p: -p['o'] if p['o'] > 0 else p['o'] < 0)
     for r in rows:
         if len(r) >= 5:
             g, a = under_geom(r[4], r[0])
@@ -408,7 +434,10 @@ def main():
     byid = {s['id']: s for s in shapes}
 
     def rec(s):
-        return {'g': encode_geom(s['g']), 'a': s['a'], 'l': s['l'], 'bb': s['bb'], 's': s['from'], 'e': s['to']}
+        r = {'g': encode_geom(s['g']), 'a': s['a'], 'l': s['l'], 'bb': s['bb'], 's': s['from'], 'e': s['to']}
+        if 'o' in s:   # an OpenHistoricalMap patch: drawn over (1) or under (-1) the source's states
+            r['o'], r['ohm'] = s['o'], s['ohm']
+        return r
     size = {s['id']: len(json.dumps(rec(s), ensure_ascii=False, separators=(',', ':'))) + 8 for s in shapes}
     # Shape files: consecutive stored years share one file ("b1450.json": every shape used from 1450 until
     # the next file starts), grown until the file would pass TARGET bytes. A shape that lives across
@@ -430,22 +459,28 @@ def main():
         need_of[y] = [cur]
     for f, ids in files.items():
         total += write_json(os.path.join(out, f), {str(i): rec(byid[i]) for i in sorted(ids)})
-    # A sketch-map region borrowed from a snapshot other than the year's own (Travancore from the map of 1815,
-    # drawn in 1776) would make the browser load that whole snapshot for one outline: the borrowed outlines
-    # of each snapshot are written to a small extract (clio/u<snapshot>.json) that the year file names in 'ux'.
+    # The sketch-map outlines a year uses are read from extracts, not from the whole snapshot: a region borrowed
+    # from another snapshot (Travancore from the map of 1815, drawn in 1776) from clio/u<snapshot>.json (named in
+    # the year file's 'ux'), and the year's own snapshot's regions from clio/o<snapshot>.json ('ox': every
+    # outline of that snapshot that some year uses, about half of it; round 7, to make the first map lighter).
     snaps_all = sorted(b['y'] for b in read_json(os.path.join(DATA, 'borders', 'index.json'))['snapshots'])
     ux_of, ux_ks = {}, defaultdict(set)
+    ox_of, ox_ks = {}, defaultdict(set)
     for y in ys:
         own = max(sy for sy in snaps_all if sy <= y)
         for r in years[y]:
             if len(r) >= 5 and r[4] != own:
                 ux_of.setdefault(y, set()).add(r[4])
                 ux_ks[r[4]].add(r[0])
-    for sy, ks in ux_ks.items():
-        doc = read_json(os.path.join(DATA, 'borders', f'{sy}.json'))
-        total += write_json(os.path.join(out, f'u{sy}.json'), {
-            'year': doc.get('year', sy), 'polities': {str(k): doc['polities'][k] for k in sorted(ks)},
-            'features': [f for f in doc['features'] if f['properties']['k'] in ks]})
+            elif len(r) >= 5:
+                ox_of.setdefault(y, set()).add(r[4])
+                ox_ks[r[4]].add(r[0])
+    for pre, kss in (('u', ux_ks), ('o', ox_ks)):
+        for sy, ks in kss.items():
+            doc = read_json(os.path.join(DATA, 'borders', f'{sy}.json'))
+            total += write_json(os.path.join(out, f'{pre}{sy}.json'), {
+                'year': doc.get('year', sy), 'polities': {str(k): doc['polities'][k] for k in sorted(ks)},
+                'features': [f for f in doc['features'] if f['properties']['k'] in ks]})
     powers = read_json(os.path.join(DATA, 'powers.json'))
     prev, prev_y = None, None
     for y in ys:
@@ -469,6 +504,8 @@ def main():
         ydoc = {'year': y, 'rows': rows, 'need': need_of[y], 'largest': largest, 'changes': changes}
         if y in ux_of:
             ydoc['ux'] = sorted(ux_of[y])
+        if y in ox_of:
+            ydoc['ox'] = sorted(ox_of[y])
         total += write_json(os.path.join(out, 'years', f'{y}.json'), ydoc)
     write_json(os.path.join(out, 'index.json'), {'from': FIRST, 'to': LAST, 'years': ys, 'files': sorted(files), 'shapes': len(shapes)})
     # Wikidata ids and article titles as given by Cliopatria, for link_wikidata.py

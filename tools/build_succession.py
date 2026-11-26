@@ -48,6 +48,7 @@ FIRST, LAST = -3400, 2019
 DEBUG = set(filter(None, os.environ.get('SUCC_DEBUG', '').split('|')))   # names whose raw lists are logged
 RISING = re.compile(r'\b(rebellion|uprising|revolt)\b', re.I)   # map rows that are a rising, not a state
 # Wikidata targets that are not states: periods, cultures, governments, groups of states
+STATE_WORD = re.compile(r'\b(republic|kingdom|empire|state|dynasty|sultanate|caliphate|federation|union|confederation|khanate|emirate|principality|duchy)\b', re.I)
 NOT_A_STATE = re.compile(r'\b(period|culture|era|age|ages|cabinet|government of|occupation of|states|committee|krai|sanjak|rebellion|voivodeship|governorate|guberniya|oblast)\b', re.I)
 
 
@@ -138,7 +139,9 @@ def holders(y_shape, name, y_other):
                 parent[h] = q['s']
             und[h] = bool(q.get('u'))
     for h in list(c):
-        if h in own and c[h] - via[h] <= 0:
+        # a state with a shape of its own counts only where its own shape takes a real share of the land: one
+        # credited almost wholly through states drawn as its parts did not take the land over
+        if h in own and (c[h] - via[h]) / total < LOW:
             del c[h]
     return {n: (v / total, und[n]) for n, v in c.items() if v / total >= LOW}, area, parent, over
 
@@ -178,11 +181,26 @@ def from_maps():
         _, pols = index_at(y)
         return sum(q['a'] for q in pols if not q.get('u') and (q['n'] == name or q.get('s') == name))
     n = 0
+    n_brief = [0]
+    n_remnant = [0]
     written = []                      # (name, area at the event, [(dict, key, key, entry)])
     for y, kind, name, x in events:
         made = []
         if kind == 'start' and y - 1 >= FIRST:
             hs, area, parent, over = holders(y, name, y - 1)
+            if y <= 1885 and y - 2 >= FIRST:
+                # Cliopatria sometimes draws an army's passage as a holder for a single year (Gran Colombia over
+                # Upper Peru in 1824): a holder that did not hold the land two years before is passed over, and
+                # the ones that held it then are listed in its place
+                hs2 = holders(y, name, y - 2)[0]
+                brief = [h for h in hs if h not in hs2 and not hs[h][1]]
+                if brief:
+                    for h in brief:
+                        del hs[h]
+                    for h, v in hs2.items():
+                        if h not in hs and h != name:
+                            hs[h] = v
+                    n_brief[0] += 1
             for h, (share, und) in hs.items():
                 fl = 'm' + ('u' if und else '') + ('r' if y == 1886 else '') + x
                 # a part (a county of France) is not listed beside the state it is part of
@@ -198,6 +216,12 @@ def from_maps():
                     made.append((after, h, name, after[h][name]))
         elif kind == 'end' and y + 1 <= LAST:
             hs, area, parent, _ = holders(y, name, y + 1)
+            # an end that is only a remnant's (the Holy Roman Empire's last minor states of 1806, a hundredth of
+            # what it held ten years before): whoever took that remnant did not succeed the state
+            a10 = area_of(y - 10, name) if y - 10 >= FIRST else 0
+            if a10 and area < 0.05 * a10:
+                hs = {}
+                n_remnant[0] += 1
             for h, (share, und) in hs.items():
                 if und or parent.get(h) in hs:
                     continue
@@ -219,6 +243,7 @@ def from_maps():
             for dct, k1, k2, ent in made:
                 if dct[k1].get(k2) is ent:
                     del dct[k1][k2]
+    log(f'  maps: {n_brief[0]} beginnings where a one-year holder was passed over; {n_remnant[0]} ends that were a remnant\'s')
     # the years a state is on the maps, as its own shape or through its parts (the Holy Roman Empire has a
     # shape of its own only until 1621)
     return before, after, {n: sorted(v) for n, v in present.items()}
@@ -247,16 +272,17 @@ def from_wikidata(name_q):
     info = {}
     for i in range(0, len(targets), 150):
         vals = ' '.join('wd:' + q for q in targets[i:i + 150])
-        query = f'''SELECT ?p ?l ?start ?end ?w ?human WHERE {{ VALUES ?p {{ {vals} }}
+        query = f'''SELECT ?p ?l ?start ?end ?w ?human (GROUP_CONCAT(DISTINCT ?al; SEPARATOR="|") AS ?als) WHERE {{ VALUES ?p {{ {vals} }}
   ?p rdfs:label ?l FILTER(LANG(?l) = "en")
+  OPTIONAL {{ ?p skos:altLabel ?al FILTER(LANG(?al) = "en") }}
   OPTIONAL {{ ?p wdt:P571 ?start }} OPTIONAL {{ ?p wdt:P576 ?end }}
   OPTIONAL {{ ?a schema:about ?p; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?w }}
-  OPTIONAL {{ ?p wdt:P31 wd:Q5 BIND(1 AS ?human) }} }}'''
+  OPTIONAL {{ ?p wdt:P31 wd:Q5 BIND(1 AS ?human) }} }} GROUP BY ?p ?l ?start ?end ?w ?human'''
         try:
             for r in sparql(query):
                 if r.get('human'):
                     continue
-                e = info.setdefault(qid(r['p']), {'q': qid(r['p']), 'n': r['l'], 'w': r.get('w')})
+                e = info.setdefault(qid(r['p']), {'q': qid(r['p']), 'n': r['l'], 'w': r.get('w'), 'al': [a for a in (r.get('als') or '').split('|') if a]})
                 a, b = year_of(r.get('start')), year_of(r.get('end'))
                 if a is not None:
                     e['from'] = min(e.get('from', a), a)
@@ -282,7 +308,7 @@ def maps_cached():
         d = os.path.join(DATA, src, 'years')
         for f in sorted(os.listdir(d)):
             hsh.update(json.dumps(read_json(os.path.join(d, f))['rows']).encode())
-    stamp = 'v10:' + hsh.hexdigest()
+    stamp = 'v15:' + hsh.hexdigest()
     path = os.path.join(CACHE, 'succession_maps.json')
     if os.path.exists(path):
         c = read_json(path)
@@ -312,6 +338,8 @@ def main():
         v = (ents.get(n) or {}).get(key)
         return v if isinstance(v, int) else None
     dropped = Counter()
+    n_unlinked = [0]
+    n_regime = n_late = 0
     for name in sorted(years_of):
         rec = {}
         yl = years_of[name]
@@ -341,6 +369,26 @@ def main():
                 #  2. the hand-over shows from the other state's side (a predecessor whose land this state held
                 #     the year after it ended; a successor that first appeared on this state's land); or
                 #  3. the other state is on no map, and its Wikidata dates meet this state's start or end.
+                # a map name linked to the target that was, when the target began, a part of another state or not
+                # drawn at all, is another polity under the same name (Wikidata's "Taiwan" for the Republic of
+                # China of 1912, when the map's Taiwan was Japanese): it is not linked, and the target is named by
+                # an English alias that names a state ("Republic of China")
+                t0 = e.get('from')
+                if mnames and t0 is not None and FIRST <= t0 <= LAST and not any(m in lst for m in mnames):
+                    def other_then(m):
+                        # drawn then only as a part of a third state (Taiwan under Japan in 1913)
+                        _, pols_ = index_at(min(LAST, max(FIRST, t0 + 1)))
+                        qs_ = [q for q in pols_ if q['n'] == m and not q.get('u')]
+                        return bool(qs_) and all(q.get('s') and q['s'] not in (m, name) for q in qs_)
+                    if all(other_then(m) for m in mnames):
+                        mnames = []
+                        if not STATE_WORD.search(e['n']):
+                            als = [a for a in e.get('al', []) if STATE_WORD.search(a) and not NOT_A_STATE.search(a)]
+                            als.sort(key=lambda a: ('(' in a, not STATE_WORD.match(a), len(a)))
+                            alt = als[0] if als else None   # "Republic of China" before "China, Republic of"
+                            if alt:
+                                e = dict(e, n=alt)
+                        n_unlinked[0] += 1
                 hit = [m for m in mnames if m in lst]
                 cross = [m for m in mnames if name in other.get(m, {})]
                 if hit:
@@ -439,9 +487,35 @@ def main():
                     return 3
                 return 4
             items = sorted((e for e in lst.values() if keep(e)), key=lambda e: (group(e), -e[7], near(e)))
+            # a change of regime: one state takes (or gave) nearly all the land (the Kingdom of France and the
+            # First Republic). Small pieces the maps show beside it are the source redrawing (Saint-Domingue,
+            # drawn on its own from 1792 while still a French colony), not successors (predecessors), unless
+            # Wikidata names them
+            if any('m' in e[2] and 'u' not in e[2] and e[7] >= 0.9 for e in items):
+                k0 = len(items)
+                items = [e for e in items if 'w' in e[2] or 's' in e[2] or e[7] >= MAP_ONLY]   # (break-aways before the end stay)
+                n_regime += k0 - len(items)
+            # the maps draw the state late (or end it early): when Wikidata names a predecessor whose end meets
+            # this state's Wikidata beginning, a holder the maps alone name at a hand-over more than a year after
+            # that end only held the land meanwhile (the Holy Roman Empire and Prussia around the Principality of
+            # Lippe, which the County of Lippe preceded); the same for successors
+            wd_edge = wd_year(name, 'from') if side == 'b' else None   # (successors: Wikidata's end dates are too often a later remnant's)
+            if wd_edge is not None:
+                ref_w = [e[6] if side == 'b' else e[5] for e in items if 'w' in e[2]]
+                ref_w = [v for v in ref_w if v is not None and abs(v - wd_edge) <= MEET]
+                if ref_w:
+                    lim = max(ref_w) + 1 if side == 'b' else min(ref_w) - 1
+                    k0 = len(items)
+                    items = [e for e in items if 'w' in e[2] or 'r' in e[2] or e[1] is None
+                             or (e[1] <= lim if side == 'b' else e[1] >= lim)]
+                    n_late += k0 - len(items)
             # where the maps change source (1885 to 1886) only the main holder is the same state going on;
             # colonies drawn apart by the new source (Cuba, the Philippines) did not succeed it
             r_top = max((e[7] for e in items if 'r' in e[2]), default=None)
+            # when Wikidata confirms one of them (Portugal to Portugal), that one is the state going on, and a
+            # larger colony the new source draws apart (Angola) is not a successor
+            if any('r' in e[2] and 'w' in e[2] for e in items):
+                r_top = None
             items = [e for e in items if 'r' not in e[2] or 'w' in e[2] or e[7] == r_top]
             cap = {0: 10, 1: 6, 2: 4, 3: 8, 4: 2}
             kept, n_in = [], {}
@@ -458,6 +532,8 @@ def main():
         if rec:
             out[name] = rec
     log('  Wikidata statements left out:', dict(dropped))
+    log(f'  rules: {n_unlinked[0]} Wikidata targets not linked to a namesake on the maps; {n_regime} map-only pieces left out '
+        f'beside a change of regime; {n_late} map-only holders left out where the maps draw a state late or end it early')
     size = write_json(os.path.join(DATA, 'succession.json'), out)
     log(f'succession: {len(out)} of {len(years_of)} territories have a before or after; {n_w} links from Wikidata, '
         f'{n_m} from the maps; {size // 1024} KB')

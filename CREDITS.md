@@ -90,6 +90,16 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
   https://www.openhistoricalmap.org/ through its Overpass API (fetched 26 November 2026). Public domain
   (CC0 1.0), the project's default for its data; the relation carries no other licence tag. Member ways are
   joined into a ring, simplified (0.015 degrees) and rounded to 0.01 degrees (`data/occupation_shapes.json`).
+- **OpenHistoricalMap, states the border sources lack** (`tools/curated/ohm_patches.json`, fetched 26 November
+  2026, same licence): the Malwa Sultanate (relation 2847908, drawn 1401 to 1561 where no source draws a state),
+  the Dominion of Canada (relations 2831017, 2831027, 2831026, 2831033, 2831052; 1867 to 1885, as a part of the
+  British Empire) and Portuguese Goa (relation 2965457, 1543 to 1763). Same processing as above; they are added to
+  the Cliopatria years by `tools/build_clio.py` and their panel names the relation. Searched and not used: OHM's
+  Viceroyalty of New Spain of 1697 to 1704 (it includes the Philippines and the far north, which would paint the
+  Spanish colour over land Cliopatria leaves to its peoples) and Governorate General of Brazil (1549 to 1621, it
+  overlaps Cliopatria's Spanish shape only in part). No OHM relation was found for the Gajapati kingdom, the Río de
+  la Plata around 1700, the Germanic peoples around AD 100, the Maratha state of 1680, the Durrani empire, the
+  Palmyrene empire, the kingdom of Dahomey or the Edetani.
 - **Also searched** (26 November 2026, about 20 minutes) for a dataset of front lines or occupation zones:
   OpenHistoricalMap has the German civil administrations of 1941 to 1944 (Reichskommissariat Ostland and
   Ukraine, the Generalgouvernement, the military administration in Belgium and northern France), which

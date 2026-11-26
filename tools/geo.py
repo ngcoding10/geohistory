@@ -304,6 +304,12 @@ class PolyIndex:
                 return key
         return None
 
+    def lookup_all(self, x, y):
+        """Every feature that contains the point."""
+        cands = self.grid.get((int(math.floor(x / self.cell)), int(math.floor(y / self.cell))), [])
+        return [self.items[i][0] for i in cands
+                if self.items[i][2][0] <= x <= self.items[i][2][2] and self.items[i][2][1] <= y <= self.items[i][2][3] and point_in_polys(x, y, self.items[i][1])]
+
     def nearest(self, x, y, max_deg=1.0):
         """Containing feature, else the closest by vertex distance within max_deg (coastal points)."""
         k = self.lookup(x, y)

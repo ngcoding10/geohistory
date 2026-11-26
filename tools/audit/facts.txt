@@ -1292,3 +1292,16 @@ M|House of Khalifa|1800|!Brit
 M|West Franks|920|!Carolingian
 M|Duchy of Legnica|1310|!Poland
 M|Capetian House of Anjou|1380|!France
+# Round 7 (one per rule added to tools/build_succession.py, written before the rebuild):
+# a one-year holder on Cliopatria (Gran Colombia's army in Upper Peru, 1824) is not a predecessor
+S|Bolivia|before|!Gran Colombia
+# a change of regime keeps only the main successor: Saint-Domingue (a French colony until 1804) did not succeed the kingdom
+S|Kingdom of France|after|!Saint-Domingue
+# a state credited only through its "parts" did not take the land: Napoleon's France did not succeed the Holy Roman Empire
+S|Holy Roman Empire|after|!First French Empire
+# a state the maps draw late: the County of Lippe preceded the principality, not the empire around it
+S|Principality of Lippe|before|!Holy Roman Empire
+# a Wikidata target named after a namesake on the maps (Taiwan, Japanese in 1912) is named by its alias
+S|Qing Dynasty|after|Republic of China
+# a colony the second map source draws apart is not a successor when Wikidata confirms the state going on
+S|Kingdom of Portugal|after|!Angola

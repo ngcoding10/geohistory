@@ -9,8 +9,9 @@ Rows whose "ruler" text is a status, an occupation or a dispute are not membersh
 data/occupations.json, see build_occupations.py).
 
 Each membership is checked against Wikidata: verified when the item of the part names an item of the empire
-as its country (P17), as what it is part of (P361), as its administrative parent (P131), its owner (P127) or
-its jurisdiction (P1001), or when the empire's item lists the part (P150, P527).
+as its country (P17), as what it is part of (P361), as its administrative parent (P131), its owner (P127),
+its jurisdiction (P1001) or what it is a member of (P463), in a statement of any rank but deprecated, or one
+"part of" / "located in" step further up; or when the empire's item lists the part (P150, P527).
 
 The app merges the drawn parts of an empire at world zoom and shows them apart when zoomed in.
 """
@@ -53,13 +54,29 @@ def titles_to_q(titles):
 
 
 def links_of(qs):
-    """For each item: the items it points at with P17/P361/P131/P127/P1001, and the items that list it."""
+    """For each item: the items it points at with P17/P361/P131/P127/P1001/P5125, and the items that list it.
+    Statements of every rank count (a place's former country is often kept beside its current one at a lower
+    rank), and so does one step further up "part of" / "located in" (a colony part of the British West Indies,
+    which are part of the British Empire)."""
     out = defaultdict(set)
     qs = sorted(set(qs))
     for i in range(0, len(qs), 150):
         vals = ' '.join('wd:' + q for q in qs[i:i + 150])
         for r in sparql('SELECT ?x ?o WHERE { VALUES ?x { %s } { ?x wdt:P17|wdt:P361|wdt:P131|wdt:P127|wdt:P1001|wdt:P5125 ?o } '
                         'UNION { ?o wdt:P150|wdt:P527 ?x } }' % vals):
+            out[qid(r['x'])].add(qid(r['o']))
+    for i in range(0, len(qs), 100):
+        vals = ' '.join('wd:' + q for q in qs[i:i + 100])
+        try:
+            rows = sparql('SELECT DISTINCT ?x ?o WHERE { VALUES ?x { %s } '
+                          '{ ?x p:P17|p:P361|p:P131|p:P127|p:P1001|p:P463 ?st . ?st ps:P17|ps:P361|ps:P131|ps:P127|ps:P1001|ps:P463 ?o . '
+                          '  FILTER NOT EXISTS { ?st wikibase:rank wikibase:DeprecatedRank } } '
+                          'UNION { ?o p:P150|p:P527 ?st2 . ?st2 ps:P150|ps:P527 ?x } '
+                          'UNION { ?x wdt:P361|wdt:P131 ?m . ?m wdt:P361|wdt:P17|wdt:P131 ?o } }' % vals)
+        except Exception as ex:
+            log(f'  broader membership check, batch {i} failed: {ex}')
+            continue
+        for r in rows:
             out[qid(r['x'])].add(qid(r['o']))
     return out
 

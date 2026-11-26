@@ -534,7 +534,7 @@
    "to": 1931,
    "kind": "dominion",
    "source": "https://en.wikipedia.org/wiki/Australia",
-   "verified": false,
+   "verified": true,
    "rows": [
     "Australia"
    ],
@@ -560,7 +560,7 @@
    "to": 1931,
    "kind": "dominion",
    "source": "https://en.wikipedia.org/wiki/Union_of_South_Africa",
-   "verified": false,
+   "verified": true,
    "rows": [
     "South Africa"
    ],
@@ -609,7 +609,7 @@
    "to": 1837,
    "kind": "personal union",
    "source": "https://en.wikipedia.org/wiki/Kingdom_of_Hanover",
-   "verified": false,
+   "verified": true,
    "rows": [
     "Electorate of Hanover",
     "Kingdom of Hanover"
@@ -1183,7 +1183,7 @@
    "to": 1800,
    "kind": "province",
    "source": "https://en.wikipedia.org/wiki/Louisiana_(New_Spain)",
-   "verified": false,
+   "verified": true,
    "note": "Ceded by France in 1762 and returned in 1800; Cliopatria leaves it blank."
   },
   {

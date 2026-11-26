@@ -260,6 +260,7 @@ async function waitEvents(page) {
     ok(zan && /United Kingdom/.test(zan.s) && tan && /United Kingdom/.test(tan.s), `1930: Zanzibar and Tanganyika are British ("${zan?.s}", "${tan?.s}")`);
     const p1942 = await polAt(1942);
     await page.waitForFunction(() => /see note/.test(document.querySelector('#badge').textContent), null, { timeout: 20000 }).catch(() => {});
+    await waitEvents(page);   // the panel is complete (it loads the year's notes, summaries and events one after another)
     ok(/see note/.test(await page.locator('#badge').innerText()) && /lines in the occupier's colour/.test(await page.locator('#panelBody').innerText()) && /Manchukuo/.test(await page.locator('#panelBody').innerText()), '1942: the badge and the year panel say that the borders are the recognised ones, that occupied countries are hatched, and what is not shown');
     ok(p1942.length > 100, '1942 map loaded');
     const p1848 = await polAt(1848);
@@ -377,6 +378,7 @@ async function waitEvents(page) {
     await page.goto(BASE + '?y=1942&v=flat');
     await waitH1(page, 'The world in 1942');
     await page.waitForFunction(() => window.__geo?.map?.map.getSource('occ') && window.__geo.map.map.querySourceFeatures('occ').length > 0, null, { timeout: 60000 }).catch(() => {});
+    await waitEvents(page);
     const occ42 = await page.evaluate(() => ({ n: new Set(window.__geo.map.map.querySourceFeatures('occ').map((f) => f.properties.by)).size, t: document.querySelector('#panelBody').innerText }));
     const leg42 = await page.evaluate(() => ({ sw: document.querySelectorAll('#panelBody .hatchsw').length, wash: !!window.__geo.map.map.getLayer('occ-wash'),
       ukr: window.__geo.map.map.querySourceFeatures('occ').length, by: [...document.querySelectorAll('#panelBody .hatchsw')].map((e) => e.nextSibling.textContent).join('|') }));

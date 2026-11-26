@@ -1,0 +1,82 @@
+{
+ "about": "States that the border sources leave blank or file under another power, drawn from OpenHistoricalMap (public domain, CC0) for the years given. 'mode': 'gap' fills a blank (drawn under the source's own states, which win where both are drawn); 'over' is a part that the source merges into a larger shape (drawn above it, inside the same empire or over another power). A patch is skipped in a year in which the source itself draws that power at the patch's label point. Each row names the OpenHistoricalMap relation, the article that documents the state and its dates, and whether Wikidata confirms them (verified).",
+ "rows": [
+  {
+   "name": "Malwa Sultanate",
+   "ohm": 2847908,
+   "from": 1401,
+   "to": 1561,
+   "mode": "gap",
+   "ruler": null,
+   "source": "https://en.wikipedia.org/wiki/Malwa_Sultanate",
+   "verified": false,
+   "note": "Cliopatria and the sketch maps leave central India blank in these years. The outline is OpenHistoricalMap's for 1401 to 1562 (the Mughal conquest); where a source draws a state, that state is shown instead."
+  },
+  {
+   "name": "Dominion of Canada",
+   "ohm": 2831017,
+   "from": 1867,
+   "to": 1870,
+   "mode": "over",
+   "ruler": "British Empire",
+   "source": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+   "verified": false,
+   "note": "Cliopatria files Canada under the British colonial empire after Confederation (1 July 1867). The four founding provinces, OpenHistoricalMap's outline until 15 July 1870."
+  },
+  {
+   "name": "Dominion of Canada",
+   "ohm": 2831027,
+   "from": 1871,
+   "to": 1871,
+   "mode": "over",
+   "ruler": "British Empire",
+   "source": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+   "verified": false,
+   "note": "With Manitoba and the North-Western Territory (15 July 1870); OpenHistoricalMap's outline until 20 July 1871."
+  },
+  {
+   "name": "Dominion of Canada",
+   "ohm": 2831026,
+   "from": 1872,
+   "to": 1872,
+   "mode": "over",
+   "ruler": "British Empire",
+   "source": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+   "verified": false,
+   "note": "With British Columbia (20 July 1871); OpenHistoricalMap's outline until 1 July 1873."
+  },
+  {
+   "name": "Dominion of Canada",
+   "ohm": 2831033,
+   "from": 1873,
+   "to": 1880,
+   "mode": "over",
+   "ruler": "British Empire",
+   "source": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+   "verified": false,
+   "note": "With Prince Edward Island (1 July 1873); OpenHistoricalMap's outline until 1 September 1880."
+  },
+  {
+   "name": "Dominion of Canada",
+   "ohm": 2831052,
+   "from": 1881,
+   "to": 1885,
+   "mode": "over",
+   "ruler": "British Empire",
+   "source": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+   "verified": false,
+   "note": "With the Arctic islands (1 September 1880); OpenHistoricalMap's outline. CShapes draws Canada from 1886."
+  },
+  {
+   "name": "Portuguese Goa",
+   "ohm": 2965457,
+   "from": 1543,
+   "to": 1763,
+   "mode": "over",
+   "ruler": "Portuguese Empire",
+   "source": "https://en.wikipedia.org/wiki/Portuguese_Goa",
+   "verified": false,
+   "note": "Goa was Portuguese from 1510; Cliopatria draws the Bijapur Sultanate over it. The 'Old Conquests', OpenHistoricalMap's outline for 1543 to 1763."
+  }
+ ]
+}
