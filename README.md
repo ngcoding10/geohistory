@@ -42,7 +42,9 @@ A full run from an empty `data/` folder with the caches in place takes about 13 
 The intermediate files `tools/cache/*_raw.json` are kept between runs, and `fetch_extra.py` and
 `fetch_famous.py` leave out items that later steps found on the previous run, so a second run in a row sends
 new Wikidata queries and can differ in a few hundred events (which births and deaths are listed, how an event
-without coordinates is placed). The border, ruler and year-article steps give identical output on every run.
+without coordinates is placed). The border, ruler and year-article steps give identical output on every run. The committed data is such a
+second state: after the run from scratch `fetch_extra.py` was refreshed from Wikidata, which added 240 births
+that an old failed query had left out.
 
 Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (59 checks; uses the globally installed Playwright; starts its
 own `python3 -m http.server`).
