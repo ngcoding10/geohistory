@@ -62,37 +62,38 @@
  },
  "counts": {
   "snapshots": 54,
-  "polityNames": 4242,
+  "polityNames": 4248,
   "linkedToWikidata": 2122,
-  "events": 131613,
-  "eventsFromWikidata": 103502,
+  "events": 131238,
+  "eventsFromWikidata": 103404,
   "stateChanges": 6941,
   "rulers": 16312,
   "yearArticles": 2440,
   "yearArticleEvents": 5962,
   "yearArticleSentences": 5463,
-  "yearArticleUnverified": 27842,
+  "yearArticleUnverified": 27564,
   "rulerTerms": 15660,
   "curatedRulerTerms": 323,
   "rulerTermsAttached": 3483,
   "headlines": 26,
   "birthsDeaths": 12386,
   "foundings": 3785,
-  "curated": 574,
-  "curatedAdded": 203,
+  "curated": 575,
+  "curatedAdded": 204,
   "curatedMerged": 371,
-  "withCoordinates": 83702,
-  "coordinatesFromLocation": 43964,
+  "withCoordinates": 83507,
+  "coordinatesFromLocation": 43903,
   "usStateVersions": 220,
   "famousItems": 933,
   "cultures": 370,
-  "placedInModernCountry": 109497,
+  "placedInModernCountry": 109286,
   "yearlyMaps": 5420
  },
  "consistency": {
   "curatedAliases": 11,
   "curatedRulerEvents": 66,
   "curatedRulerTerms": 323,
+  "deathsMergedIntoTheKilling": 40,
   "handCorrections": 5,
   "headlines": 26,
   "labelsCompletedFromArticleTitle": 93,
@@ -105,49 +106,50 @@
   "placedByFormerState": 911,
   "placedByLocation": 489,
   "placedByParent": 1133,
-  "rankDemotedAsDuplicateNews": 40,
-  "rulerEventsLeftOutAsNotRulers": 928,
+  "rankDemotedAsDuplicateNews": 6,
+  "rulerEventsLeftOutAsNotRulers": 927,
   "rulerTermEndsInferredFromSuccessor": 65,
   "rulerTermsAttachedToMapTerritories": 3483,
   "rulerTermsFromOffices": 1790,
   "rulersPlacedByState": 7223,
+  "sameArticleSameYearMerged": 59,
   "stateDatesCoarserThanAYear": 402,
   "statesPlacedByCapital": 5203,
   "termsLeftOutAsNotRulers": 1006,
   "warsRenamedWithYear": 121,
-  "yearArticleBulletsRepeatingAVerifiedEvent": 928,
-  "yearArticleBulletsSameAsAnEvent": 1625,
+  "yearArticleBulletsRepeatingAVerifiedEvent": 920,
+  "yearArticleBulletsSameAsAnEvent": 1911,
   "yearArticleSentences": 5463,
-  "yearArticleUnverified": 27842
+  "yearArticleUnverified": 27564
  },
  "eventsByType": {
   "war": 2845,
-  "battle": 26089,
-  "revolt": 4710,
-  "violence": 4859,
-  "treaty": 3006,
-  "state": 7503,
+  "battle": 26084,
+  "revolt": 4695,
+  "violence": 4850,
+  "treaty": 3004,
+  "state": 7458,
   "ruler": 17813,
-  "politics": 19348,
+  "politics": 19214,
   "economy": 1194,
-  "epidemic": 939,
-  "disaster": 7234,
+  "epidemic": 938,
+  "disaster": 7233,
   "discovery": 2356,
-  "religion": 3085,
-  "founding": 6092,
+  "religion": 3068,
+  "founding": 6076,
   "culture": 1859,
   "birth": 6058,
-  "death": 5636,
-  "other": 10987
+  "death": 5596,
+  "other": 10897
  },
  "eventsByEra": {
-  "before 3000 BC": 211,
-  "3000 BC to 500 BC": 1401,
-  "500 BC to AD 500": 9241,
-  "500 to 1500": 23727,
-  "1500 to 1800": 21343,
-  "1800 to 1900": 19135,
-  "1900 to today": 56555
+  "before 3000 BC": 210,
+  "3000 BC to 500 BC": 1400,
+  "500 BC to AD 500": 9226,
+  "500 to 1500": 23663,
+  "1500 to 1800": 21280,
+  "1800 to 1900": 19095,
+  "1900 to today": 56364
  },
  "eventsByRegionEra": {
   "Antarctica": {
@@ -160,69 +162,69 @@
    "500 BC-AD 500": 23,
    "500-1000": 60,
    "1000-1500": 104,
-   "1500-1700": 38,
+   "1500-1700": 37,
    "1700s": 31,
    "1800s": 106,
-   "1900-today": 497
+   "1900-today": 492
   },
   "East Asia": {
-   "before 500 BC": 55,
-   "500 BC-AD 500": 630,
+   "before 500 BC": 54,
+   "500 BC-AD 500": 628,
    "500-1000": 688,
-   "1000-1500": 765,
-   "1500-1700": 796,
+   "1000-1500": 759,
+   "1500-1700": 795,
    "1700s": 111,
    "1800s": 627,
-   "1900-today": 3105
+   "1900-today": 3101
   },
   "Europe": {
    "before 500 BC": 200,
-   "500 BC-AD 500": 3585,
-   "500-1000": 3084,
-   "1000-1500": 7583,
-   "1500-1700": 5131,
-   "1700s": 3001,
-   "1800s": 4802,
-   "1900-today": 15629
+   "500 BC-AD 500": 3581,
+   "500-1000": 3082,
+   "1000-1500": 7566,
+   "1500-1700": 5119,
+   "1700s": 2996,
+   "1800s": 4796,
+   "1900-today": 15613
   },
   "Latin America": {
-   "before 500 BC": 26,
-   "500 BC-AD 500": 49,
-   "500-1000": 122,
-   "1000-1500": 138,
+   "before 500 BC": 25,
+   "500 BC-AD 500": 48,
+   "500-1000": 120,
+   "1000-1500": 137,
    "1500-1700": 872,
    "1700s": 342,
-   "1800s": 2378,
-   "1900-today": 3658
+   "1800s": 2376,
+   "1900-today": 3651
   },
   "Middle East": {
    "before 500 BC": 377,
-   "500 BC-AD 500": 1065,
-   "500-1000": 977,
-   "1000-1500": 1398,
+   "500 BC-AD 500": 1061,
+   "500-1000": 976,
+   "1000-1500": 1396,
    "1500-1700": 415,
    "1700s": 232,
-   "1800s": 416,
-   "1900-today": 3936
+   "1800s": 415,
+   "1900-today": 3914
   },
   "North Africa": {
    "before 500 BC": 133,
    "500 BC-AD 500": 342,
    "500-1000": 216,
-   "1000-1500": 394,
+   "1000-1500": 393,
    "1500-1700": 244,
    "1700s": 115,
    "1800s": 255,
-   "1900-today": 1256
+   "1900-today": 1255
   },
   "North America": {
    "before 500 BC": 6,
    "500 BC-AD 500": 13,
    "500-1000": 16,
-   "1000-1500": 29,
+   "1000-1500": 28,
    "1500-1700": 428,
-   "1700s": 1121,
-   "1800s": 3231,
+   "1700s": 1119,
+   "1800s": 3230,
    "1900-today": 6824
   },
   "Oceania": {
@@ -244,42 +246,42 @@
   "South Asia": {
    "before 500 BC": 77,
    "500 BC-AD 500": 269,
-   "500-1000": 217,
-   "1000-1500": 554,
-   "1500-1700": 569,
+   "500-1000": 215,
+   "1000-1500": 553,
+   "1500-1700": 568,
    "1700s": 481,
    "1800s": 357,
-   "1900-today": 2935
+   "1900-today": 2931
   },
   "Southeast Asia": {
    "before 500 BC": 6,
    "500 BC-AD 500": 31,
-   "500-1000": 93,
-   "1000-1500": 354,
-   "1500-1700": 448,
-   "1700s": 172,
+   "500-1000": 91,
+   "1000-1500": 351,
+   "1500-1700": 446,
+   "1700s": 170,
    "1800s": 364,
-   "1900-today": 2326
+   "1900-today": 2321
   },
   "Sub-Saharan Africa": {
    "before 500 BC": 9,
    "500 BC-AD 500": 47,
    "500-1000": 42,
-   "1000-1500": 209,
+   "1000-1500": 207,
    "1500-1700": 251,
    "1700s": 131,
    "1800s": 705,
-   "1900-today": 3640
+   "1900-today": 3624
   },
   "unplaced": {
    "before 500 BC": 323,
-   "500 BC-AD 500": 1820,
-   "500-1000": 1159,
-   "1000-1500": 2972,
-   "1500-1700": 2424,
-   "1700s": 1402,
-   "1800s": 2670,
-   "1900-today": 8610
+   "500 BC-AD 500": 1817,
+   "500-1000": 1154,
+   "1000-1500": 2959,
+   "1500-1700": 2402,
+   "1700s": 1390,
+   "1800s": 2644,
+   "1900-today": 8528
   }
  },
  "yearRange": {
@@ -302,14 +304,14 @@
   "Rulers need a start date on Wikidata; many early and minor rulers have none and are missing."
  ],
  "empires": {
-  "memberships": 424,
-  "verified": 216,
-  "drawn": 353,
+  "memberships": 416,
+  "verified": 217,
+  "drawn": 345,
   "listedOnly": 71,
   "bySource": {
    "cliopatria": [
-    148,
-    93
+    136,
+    94
    ],
    "curatedOwners": [
     158,
@@ -320,14 +322,14 @@
     4
    ],
    "curatedEmpires": [
-    106,
+    110,
     70
    ]
   },
-  "empires": 34
+  "empires": 35
  },
  "occupations": {
-  "rows": 38,
-  "verified": 16
+  "rows": 63,
+  "verified": 17
  }
 }

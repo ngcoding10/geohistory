@@ -47,6 +47,22 @@
    "source": "https://en.wikipedia.org/wiki/Castle_Bravo",
    "verified": false,
    "check": "Wikidata item has no date"
+  },
+  {
+   "id": "cp19-04",
+   "y": 1835,
+   "y2": 1846,
+   "m": 0,
+   "d": 0,
+   "type": "other",
+   "label": "Great Trek",
+   "wiki": "Great Trek",
+   "lon": 26.84,
+   "lat": -29.21,
+   "desc": "Boer families leave the British Cape Colony by ox-wagon for the interior; the first parties under Louis Tregardt and Hans van Rensburg set out in 1835, and the treks found the Natalia, Orange Free State and Transvaal republics. Placed at Thaba Nchu, where the trekkers gathered in 1836.",
+   "source": "https://en.wikipedia.org/wiki/Great_Trek",
+   "verified": false,
+   "check": "Wikidata item has no date"
   }
  ]
 }

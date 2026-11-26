@@ -1,0 +1,299 @@
+{
+ "about": "Corrections to the years in which a Cliopatria shape is drawn, and to the name it is drawn under. Cliopatria redraws a state every few years, so a shape can outlive its state or carry a later name. 'name' and 'row' (the source row's first and last year) pick one source shape; 'segments' replaces its years: the shape is drawn only in the listed spans, each optionally under another name ('as') and as part of another state ('member'). A span may reach outside the source row's years when the note says why. No outline is changed. 'check' is the year that tools/build_clio.py compares with the Wikidata item of the article in 'source' (inception, dissolution, start or end); 'verified' is set from that comparison.",
+ "rows": [
+  {
+   "name": "Khwarezmid Empire",
+   "row": [
+    1220,
+    1226
+   ],
+   "segments": [
+    {
+     "from": 1220,
+     "to": 1221
+    }
+   ],
+   "note": "The Mongols overran Transoxiana, Khwarezm and Khorasan in 1219 to 1221: Shah Muhammad II died a fugitive in December 1220, Urgench fell in April 1221 and Jalal al-Din was beaten on the Indus in November 1221. The source keeps this outline until 1226; it is dropped after 1221.",
+   "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire",
+   "check": 1221,
+   "verified": true
+  },
+  {
+   "name": "Khwarezmid Empire",
+   "row": [
+    1227,
+    1235
+   ],
+   "segments": [
+    {
+     "from": 1222,
+     "to": 1231
+    },
+    {
+     "from": 1232,
+     "to": 1235,
+     "as": "Former Khwarezmid lands",
+     "member": "Mongol Empire"
+    }
+   ],
+   "note": "This outline is western and southern Iran, which stayed under Khwarezmian princes after 1221 (Ghiyath al-Din in Persian Iraq, then Jalal al-Din from 1224) until the Mongol general Chormaqan destroyed Jalal al-Din's state in 1230 to 1231; Jalal al-Din was killed in August 1231. The source draws it for 1227 to 1235: it is drawn here from 1222 and as Khwarezmian only until 1231, then as Mongol-held.",
+   "source": "https://en.wikipedia.org/wiki/Khwarazmian_Empire",
+   "check": 1231,
+   "verified": true
+  },
+  {
+   "name": "North German Confederation",
+   "row": [
+    1870,
+    1870
+   ],
+   "segments": [],
+   "note": "The source's outline for 1870 includes the parts of France that German armies overran from August 1870. The war began on 19 July 1870, so the map of 1870 keeps the borders of 1869.",
+   "source": "https://en.wikipedia.org/wiki/Franco-Prussian_War",
+   "check": 1870,
+   "verified": true
+  },
+  {
+   "name": "North German Confederation",
+   "row": [
+    1868,
+    1869
+   ],
+   "segments": [
+    {
+     "from": 1868,
+     "to": 1870
+    }
+   ],
+   "note": "Drawn for 1870 as well: the Confederation's own territory did not change until it became the German Empire on 1 January 1871.",
+   "source": "https://en.wikipedia.org/wiki/North_German_Confederation",
+   "check": 1870,
+   "verified": true
+  },
+  {
+   "name": "Second French Empire",
+   "row": [
+    1870,
+    1870
+   ],
+   "segments": [],
+   "note": "The source's outline for 1870 leaves out the departments that German armies overran from August 1870; see the North German Confederation.",
+   "source": "https://en.wikipedia.org/wiki/Franco-Prussian_War",
+   "check": 1870,
+   "verified": true
+  },
+  {
+   "name": "Second French Empire",
+   "row": [
+    1864,
+    1869
+   ],
+   "segments": [
+    {
+     "from": 1864,
+     "to": 1870
+    }
+   ],
+   "note": "Drawn for 1870 as well: France kept its borders of 1860 until the Treaty of Frankfurt; the Empire fell on 4 September 1870.",
+   "source": "https://en.wikipedia.org/wiki/Second_French_Empire",
+   "check": 1870,
+   "verified": true
+  },
+  {
+   "name": "German Empire",
+   "row": [
+    1871,
+    1872
+   ],
+   "segments": [],
+   "note": "The source's outline for 1871 and 1872 adds the French departments that German troops occupied until the war indemnity was paid (the last left in September 1873), Paris among them, to the German Empire. They were never German territory.",
+   "source": "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)",
+   "check": 1871,
+   "verified": true
+  },
+  {
+   "name": "German Empire",
+   "row": [
+    1873,
+    1884
+   ],
+   "segments": [
+    {
+     "from": 1871,
+     "to": 1884
+    }
+   ],
+   "note": "The Empire's own territory, with Alsace-Lorraine as ceded by France in the Treaty of Frankfurt of 10 May 1871: drawn from 1871.",
+   "source": "https://en.wikipedia.org/wiki/German_Empire",
+   "check": 1871,
+   "verified": true
+  },
+  {
+   "name": "French Third Republic",
+   "row": [
+    1871,
+    1872
+   ],
+   "segments": [],
+   "note": "See the German Empire: the source's outline for 1871 and 1872 leaves out the departments under German occupation.",
+   "source": "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)",
+   "check": 1871,
+   "verified": true
+  },
+  {
+   "name": "French Third Republic",
+   "row": [
+    1873,
+    1914
+   ],
+   "segments": [
+    {
+     "from": 1871,
+     "to": 1914
+    }
+   ],
+   "note": "France without Alsace-Lorraine, its territory from the Treaty of Frankfurt of 10 May 1871: drawn from 1871.",
+   "source": "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)",
+   "check": 1871,
+   "verified": true
+  },
+  {
+   "name": "Tang Dynasty",
+   "row": [
+    884,
+    910
+   ],
+   "segments": [
+    {
+     "from": 884,
+     "to": 906
+    },
+    {
+     "from": 907,
+     "to": 910,
+     "as": "Five Dynasties and Ten Kingdoms (former Tang lands)"
+    }
+   ],
+   "note": "The Tang dynasty ended in 907, when Zhu Wen deposed the last emperor and founded the Later Liang. The source keeps the whole Tang outline until 910 and draws the successor states from 911; for 907 to 910 the outline is shown as the former Tang lands, by then divided among the Later Liang and the regional regimes that became the Ten Kingdoms.",
+   "source": "https://en.wikipedia.org/wiki/Tang_dynasty",
+   "check": 907,
+   "verified": true
+  },
+  {
+   "name": "Mitanni",
+   "row": [
+    -1300,
+    -1241
+   ],
+   "segments": [
+    {
+     "from": -1300,
+     "to": -1260
+    },
+    {
+     "from": -1259,
+     "to": -1241,
+     "as": "Hanigalbat (former Mitanni)",
+     "member": "Assyria"
+    }
+   ],
+   "note": "The last Mitanni kings were Assyrian vassals; Shalmaneser I of Assyria conquered what was left of the kingdom (Hanigalbat) about 1260 BC and made it an Assyrian province. Bronze Age dates are uncertain by a decade or more.",
+   "source": "https://en.wikipedia.org/wiki/Mitanni",
+   "check": -1260,
+   "verified": true
+  },
+  {
+   "name": "Great Moravia",
+   "row": [
+    814,
+    824
+   ],
+   "segments": [
+    {
+     "from": 814,
+     "to": 824,
+     "as": "Moravians"
+    }
+   ],
+   "note": "Great Moravia dates from about 833, when Mojmir I joined the principality of Nitra to Moravia. Before that the source's outline is the land of the Moravians, first named in Frankish annals in 822.",
+   "source": "https://en.wikipedia.org/wiki/Great_Moravia",
+   "check": 833,
+   "verified": true
+  },
+  {
+   "name": "Great Moravia",
+   "row": [
+    825,
+    839
+   ],
+   "segments": [
+    {
+     "from": 825,
+     "to": 832,
+     "as": "Moravians"
+    },
+    {
+     "from": 833,
+     "to": 839
+    }
+   ],
+   "note": "See the row above: Great Moravia from about 833.",
+   "source": "https://en.wikipedia.org/wiki/Great_Moravia",
+   "check": 833,
+   "verified": true
+  },
+  {
+   "name": "Hoysala Kingdom",
+   "row": [
+    1344,
+    1351
+   ],
+   "segments": [
+    {
+     "from": 1344,
+     "to": 1346
+    },
+    {
+     "from": 1347,
+     "to": 1351,
+     "as": "Former Hoysala lands",
+     "member": "Vijayanagara Empire"
+    }
+   ],
+   "note": "Veera Ballala III was killed at Madurai in 1343 and his son Ballala IV is last heard of in 1346; the Hoysala lands passed to the new Vijayanagara Empire of Harihara I. The source keeps a Hoysala kingdom until 1351. (Wikidata ends the kingdom in 1343.)",
+   "source": "https://en.wikipedia.org/wiki/Hoysala_Kingdom",
+   "check": 1346,
+   "verified": false
+  },
+  {
+   "name": "Poles",
+   "row": [
+    1830,
+    1833
+   ],
+   "segments": [
+    {
+     "from": 1830,
+     "to": 1830,
+     "as": "Congress Poland",
+     "member": "Russian Empire"
+    },
+    {
+     "from": 1831,
+     "to": 1831,
+     "as": "Kingdom of Poland (November Uprising)"
+    },
+    {
+     "from": 1832,
+     "to": 1833,
+     "as": "Congress Poland",
+     "member": "Russian Empire"
+    }
+   ],
+   "note": "The source takes Congress Poland out of the Russian Empire for 1830 to 1833 and calls it \"Poles\". The kingdom was under the Russian tsar from 1815; Polish insurgents held it only during the November Uprising, from 29 November 1830 to October 1831, after which Russia ruled it more directly.",
+   "source": "https://en.wikipedia.org/wiki/November_Uprising",
+   "check": 1831,
+   "verified": true
+  }
+ ]
+}

@@ -1,10 +1,10 @@
 {
  "counts": {
-  "names": 2176,
-  "linked": 482,
-  "dated": 106,
+  "names": 2180,
+  "linked": 484,
+  "dated": 108,
   "limited": 18,
-  "byHand": 39
+  "byHand": 40
  },
  "about": "Written by tools/build_underlay_spans.py from Wikidata inception and dissolution dates (60 years of slack). Do not edit: add exceptions to the \"keep\" list of underlay.json instead.",
  "spans": [

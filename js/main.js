@@ -4,7 +4,7 @@ import { prepareDoc } from './prepare.js';
 import { membershipOf, empireName, listedParts, tones } from './groups.js';
 import {
   loadBordersIndex, snapshotFor, nextSnapshotAfter, datedRange, clioRange, loadSnapshot, loadEventsIndex, eventsBetween, nearestYearsWithEvents,
-  loadPowers, loadEntities, getJSON, loadUS, loadModern, loadSea, loadMeta, countFor, findEvent, loadEmpires, loadSuccession, loadOccupations, loadShape,
+  loadPowers, loadEntities, getJSON, loadUS, loadModern, loadSea, loadMeta, countFor, findEvent, loadEmpires, loadSuccession, loadOccupations, loadShape, decodeGeom,
 } from './data.js';
 import { parseYear, formatYear, formatDate, addYears, yearToFrac, fracToYear, ERAS, MIN_YEAR, MAX_YEAR } from './year.js';
 import { TYPES, TYPE_KEYS } from './types.js';
@@ -229,6 +229,7 @@ async function updateColonies() {
   try {
     if (!colFC) {
       colFC = await getJSON('us/colonies.json');
+      for (const f of colFC.features) f.geometry = decodeGeom(f.geometry);   // rings come encoded (tools/build_colonies.py)
       const codes = Object.keys(colFC.states);
       for (const f of colFC.features) f.properties.c = COL_COLORS[Math.max(0, codes.indexOf(colParent(f.properties.st))) % COL_COLORS.length];
     }

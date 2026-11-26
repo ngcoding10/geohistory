@@ -154,6 +154,13 @@
    "verified": false,
    "from": -800,
    "to": -51
+  },
+  {
+   "name": "Ghaznavid Emirate",
+   "to": 1186,
+   "source": "https://en.wikipedia.org/wiki/Ghaznavids",
+   "verified": true,
+   "note": "The sketch map of 1200 still has a Ghaznavid emirate in Khorasan and Afghanistan; the Ghurids took Lahore, the last Ghaznavid city, in 1186."
   }
  ],
  "rename": [
@@ -572,6 +579,46 @@
    "key": "spain",
    "source": "https://en.wikipedia.org/wiki/Viceroyalty_of_the_Río_de_la_Plata",
    "verified": false
+  },
+  {
+   "name": "Greek city-states",
+   "snap": -500,
+   "from": -480,
+   "to": -405,
+   "as": "Greek cities (city-states and colonies)",
+   "source": "https://en.wikipedia.org/wiki/Classical_Greece",
+   "verified": false,
+   "note": "Cliopatria leaves most of Greece, the Aegean islands and several Greek colonies blank from 480 to 405 BC. The outline is the sketch map's Greek area of 500 BC (the homeland and the colonies in Sicily, southern Italy and Gaul), shown where no state covers it. These were independent city-states; Athens led most of those around the Aegean in the Delian League from 478 to 404 BC."
+  },
+  {
+   "name": "Dacians",
+   "snap": -100,
+   "from": -1,
+   "to": 106,
+   "as": "Dacians",
+   "source": "https://en.wikipedia.org/wiki/Dacians",
+   "verified": false,
+   "note": "The outline is the sketch map's Dacian region of 100 BC, shown where no state covers it. The Dacians and Getae of the lower Danube and the Carpathians had kings from Burebista (about 82 to 44 BC) to Decebalus; Trajan made Dacia a Roman province in AD 106."
+  },
+  {
+   "name": "Muisca",
+   "snap": 1492,
+   "from": 1450,
+   "to": 1537,
+   "as": "Muisca",
+   "source": "https://en.wikipedia.org/wiki/Muisca_Confederation",
+   "verified": false,
+   "note": "The outline is the sketch map's Muisca region of 1492. The Muisca Confederation of the highlands around Bacatá (Bogotá) and Hunza (Tunja) is dated from about 1450; Gonzalo Jiménez de Quesada conquered it in 1537."
+  },
+  {
+   "name": "Travancore",
+   "snap": 1815,
+   "from": 1729,
+   "to": 1814,
+   "as": "Travancore",
+   "source": "https://en.wikipedia.org/wiki/Travancore",
+   "verified": false,
+   "note": "The outline is the sketch map's Travancore of 1815. Marthanda Varma founded the kingdom in 1729 and enlarged it to about this extent by the 1750s (he beat the Dutch at Colachel in 1741); it was a British ally from 1795. The sketch maps of 1715 to 1800 wrongly give this coast to the Netherlands."
   }
  ],
  "keep": [

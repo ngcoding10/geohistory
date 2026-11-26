@@ -126,7 +126,8 @@ async function loadCsYear(y, src) {
   if (clio) {
     const snaps = [...new Set(yr.rows.filter((r) => r[4]).map((r) => r[4]))];
     await Promise.all(snaps.map(async (sy) => {
-      const d = await getJSON(`borders/${sy}.json`);
+      // outlines borrowed from another snapshot come from its small extract (tools/build_clio.py)
+      const d = await getJSON(yr.ux?.includes(sy) ? `clio/u${sy}.json` : `borders/${sy}.json`);
       if (!d._byK) {
         d._byK = new Map();
         for (const f of d.features) {

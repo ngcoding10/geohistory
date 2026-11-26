@@ -103,7 +103,10 @@ def main():
             names_, side, text = a[0].split(';'), a[1][0], a[2]
             recs = [succ[n.strip()] for n in names_ if n.strip() in succ]
             labels = [str(x) for r in recs for e in r.get(side, []) for x in (e[0], e[3], e[4]) if x]
-            ok = any(fold(alt.strip()) in fold(' | '.join(labels)) for alt in text.split(';'))
+            if text.startswith('!'):   # "!text": none of these may be listed
+                ok = bool(recs) and not any(fold(alt.strip()) in fold(' | '.join(labels)) for alt in text[1:].split(';'))
+            else:
+                ok = any(fold(alt.strip()) in fold(' | '.join(labels)) for alt in text.split(';'))
             got = '; '.join(sorted(set(labels)))[:160] if recs else 'no before/after recorded'
         elif kind == 'M':
             # empire membership in a year (merged members and listed parts; "!text" = must not belong)

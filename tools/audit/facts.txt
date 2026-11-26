@@ -911,6 +911,7 @@ R|Franz Joseph I|1848
 # ---- Round 5: all of the following were written from memory BEFORE the round-5 data was built or looked at.
 # New kinds:
 #   S|name;alt names|after or before|text;alt   the Before/After lists of that state contain text
+#   ("!text;alt": none of these may be listed)
 #   M|part;alt names|year|empire text           in that year the part belongs to that empire ("!text": it does not)
 #   O|territory;alt names|year|occupier         in that year the territory is marked occupied by ("!text": is not)
 #   H|territory;alt names|year|person;alt       that person is listed as in office there in that year
@@ -1259,3 +1260,35 @@ R|Hadrian|117
 # corrected in round 5: Wikidata and the app call him Otto the Great; the check uses that name
 R|Otto the Great|936
 
+# round 6: Cliopatria shapes re-dated (tools/curated/clio_dates.json)
+C|51.67|32.65|1228|Khwar
+C|51.67|32.65|1233|Mongol;Former Khwarezmid
+C|2.35|48.85|1871|French
+C|4.03|49.26|1870|French
+C|7.75|48.58|1872|German
+C|108.9|34.3|905|Tang
+C|108.9|34.3|908|Five Dynasties;Liang
+C|39.03|36.87|-1250|Hanigalbat;Assyria
+C|17.05|48.8|820|Moravians
+C|17.05|48.8|840|Great Moravia
+C|76.0|13.21|1350|Vijayanagara;Former Hoysala
+
+# round 6: Before/After rules (tools/build_succession.py): no annexations as predecessors, no conquests as break-aways
+S|Ottoman Empire|before|!Venice;Abbasid;Trebizond
+S|Ottoman Empire|before|Byzantine
+S|Russian Empire|before|!Abkhazia;Imereti
+S|Byzantine Empire|after|!Zengid;Umayyad
+S|Mongol Empire|after|Golden Horde
+S|Mongol Empire|after|Chagatai
+S|Roman Empire|after|!Nabataea
+S|Spanish Empire|after|!Cuba;Philippines;Puerto Rico
+S|Carolingian Empire|after|!County of Rouergue;County of Flanders
+S|United States of America|after|Confederate States
+
+# round 6: empire memberships re-dated or removed (tools/curated/empires.json, "exclude")
+M|Kingdom of Arles|1200|!France
+M|Kingdom of Arles|1200|Holy Roman
+M|House of Khalifa|1800|!Brit
+M|West Franks|920|!Carolingian
+M|Duchy of Legnica|1310|!Poland
+M|Capetian House of Anjou|1380|!France

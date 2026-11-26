@@ -145,22 +145,24 @@
   },
   {
    "names": [
-    "Poles",
+    "Congress Poland",
+    "Kingdom of Poland (November Uprising)",
     "Russian Empire"
    ],
    "from": 1830,
    "to": 1833,
-   "note": "Cliopatria leaves Congress Poland (Warsaw) out of the Russian Empire for 1830 to 1833. Poland was under the Russian tsar from 1815; Polish insurgents controlled it only during the November Uprising, from November 1830 to October 1831.",
+   "note": "Cliopatria takes Congress Poland (Warsaw) out of the Russian Empire for 1830 to 1833 and calls it \"Poles\". Poland was under the Russian tsar from 1815; Polish insurgents controlled it only during the November Uprising, from 29 November 1830 to October 1831. It is shown as a Russian possession in 1830, 1832 and 1833 and as the insurgent kingdom in 1831.",
    "source": "https://en.wikipedia.org/wiki/November_Uprising"
   },
   {
    "names": [
     "Greek City-States",
-    "Peloponnesian League"
+    "Peloponnesian League",
+    "Greek cities (city-states and colonies)"
    ],
    "from": -480,
    "to": -384,
-   "note": "Athens and Attica are blank on the source map for these years. Athens was an independent city-state and led the Delian League from 478 BC to 404 BC.",
+   "note": "Cliopatria leaves Athens, Attica, the Aegean islands and several colonies blank for these years; they are filled from the sketch map of 500 BC as \"Greek cities (city-states and colonies)\". Athens was an independent city-state and led the Delian League from 478 BC to 404 BC.",
    "source": "https://en.wikipedia.org/wiki/Delian_League"
   },
   {
@@ -298,6 +300,121 @@
    "to": -324,
    "note": "Cliopatria files the lands Alexander took from Persia between 331 and 324 BC under \"Ptolemaic Kingdom\". Ptolemy became satrap of Egypt only in 323 BC and king in 305 BC; these rows are shown as Alexander's conquests, part of the Macedonian Empire.",
    "source": "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great"
+  },
+  {
+   "names": [
+    "Mongol Empire",
+    "Khwarezmid Empire"
+   ],
+   "from": 1222,
+   "to": 1226,
+   "note": "Khwarezm itself (the lower Amu Darya) and Transoxiana are blank in these years. The Mongols conquered them in 1219 to 1221, but Cliopatria adds them to the Mongol Empire only from 1227; it keeps a Khwarezmid Empire in Iran and Afghanistan, whose outline is shown from 1222 (see the Khwarezmid Empire).",
+   "source": "https://en.wikipedia.org/wiki/Mongol_invasion_of_the_Khwarazmian_Empire"
+  },
+  {
+   "names": [
+    "Former Khwarezmid lands"
+   ],
+   "from": 1232,
+   "to": 1235,
+   "note": "Western Iran after the Mongol general Chormaqan destroyed the state of Jalal al-Din, the last Khwarezmshah, in 1230 to 1231. The outline is Cliopatria's Khwarezmid Empire of 1227 to 1235; much of it (Fars, Kerman) was held by local rulers who paid tribute to the Mongols.",
+   "source": "https://en.wikipedia.org/wiki/Khwarazmian_Empire"
+  },
+  {
+   "world": true,
+   "names": [
+    "North German Confederation",
+    "Second French Empire",
+    "German Empire",
+    "French Third Republic"
+   ],
+   "from": 1870,
+   "to": 1873,
+   "note": "The map shows the borders in law. German armies occupied northern and eastern France from August 1870; after the Treaty of Frankfurt (10 May 1871), which gave Alsace and part of Lorraine to the German Empire, the occupied departments were evacuated step by step as France paid its indemnity, the last in September 1873. Cliopatria draws the occupied area as German in 1870 to 1872 (Paris included); that is corrected here, and 1870 keeps the borders of before the war, which began on 19 July.",
+   "source": "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)"
+  },
+  {
+   "names": [
+    "Tang Dynasty"
+   ],
+   "from": 884,
+   "to": 906,
+   "note": "Cliopatria draws the Tang empire whole until its end. After the Huang Chao rebellion (874 to 884) the court controlled little outside the capital region, and the provinces were ruled by military governors, whose regimes became the Five Dynasties and Ten Kingdoms after 907.",
+   "source": "https://en.wikipedia.org/wiki/Tang_dynasty"
+  },
+  {
+   "names": [
+    "Five Dynasties and Ten Kingdoms (former Tang lands)"
+   ],
+   "from": 907,
+   "to": 910,
+   "note": "The Tang dynasty ended in 907, when Zhu Wen deposed the last emperor and founded the Later Liang at Kaifeng. Cliopatria keeps the whole Tang outline until 910 and draws the separate states (Later Liang, Jin, Former Shu, Wu, Wuyue, Chu, Min and others) only from 911, so these four years show the former Tang lands as one area.",
+   "source": "https://en.wikipedia.org/wiki/Five_Dynasties_and_Ten_Kingdoms_period"
+  },
+  {
+   "names": [
+    "Hanigalbat (former Mitanni)",
+    "Mitanni"
+   ],
+   "from": -1300,
+   "to": -1241,
+   "note": "The last kings of Mitanni (Hanigalbat) were vassals of Assyria, and Shalmaneser I made the country an Assyrian province about 1260 BC. Cliopatria draws a Mitanni state until 1241 BC; from 1259 BC it is shown as an Assyrian possession. Dates this early are uncertain by a decade or more.",
+   "source": "https://en.wikipedia.org/wiki/Mitanni"
+  },
+  {
+   "names": [
+    "Moravians"
+   ],
+   "from": 814,
+   "to": 832,
+   "note": "Cliopatria calls this area Great Moravia from 814. Great Moravia is dated from about 833, when Mojmir I joined the principality of Nitra to Moravia; the Moravians are first named in Frankish annals in 822.",
+   "source": "https://en.wikipedia.org/wiki/Great_Moravia"
+  },
+  {
+   "names": [
+    "Former Hoysala lands",
+    "Hoysala Kingdom"
+   ],
+   "from": 1343,
+   "to": 1351,
+   "note": "The Hoysala king Veera Ballala III was killed at Madurai in 1343 and his son Ballala IV is last heard of in 1346; their lands passed to the Vijayanagara Empire, founded by Harihara I in 1336. Cliopatria draws a Hoysala kingdom until 1351; from 1347 its outline is shown as part of Vijayanagara.",
+   "source": "https://en.wikipedia.org/wiki/Hoysala_Kingdom"
+  },
+  {
+   "names": [
+    "Travancore"
+   ],
+   "from": 1729,
+   "to": 1814,
+   "note": "The outline is the sketch map's Travancore of 1815: Cliopatria has no shape for the kingdom, founded by Marthanda Varma in 1729.",
+   "source": "https://en.wikipedia.org/wiki/Travancore"
+  },
+  {
+   "names": [
+    "Khwarezmid Empire"
+   ],
+   "from": 1222,
+   "to": 1231,
+   "note": "The outline is Cliopatria's Khwarezmid Empire of 1227 to 1235, which reaches the Indus, and is larger than what the Khwarezmian princes held. After the Mongol campaign of 1219 to 1221 Ghiyath al-Din held Persian Iraq and Kerman, and Jalal al-Din, back from India in 1224, ruled western Iran and from 1225 Azerbaijan, until the Mongol general Chormaqan destroyed his state in 1230 to 1231. Khorasan and Afghanistan, sacked by the Mongols in 1220 to 1221, were held by no lasting power in these years.",
+   "source": "https://en.wikipedia.org/wiki/Jalal_al-Din_Mangburni"
+  },
+  {
+   "names": [
+    "Arab tribes"
+   ],
+   "from": 630,
+   "to": 632,
+   "note": "Most of the tribes of inner and eastern Arabia sent delegations to Muhammad in 630 and 631 (the Year of Delegations) and acknowledged the Muslim state at Medina, which the sources draw only in the Hejaz. Many broke away at his death in June 632; Abu Bakr brought them back in the Ridda Wars of 632 and 633.",
+   "source": "https://en.wikipedia.org/wiki/Ridda_Wars"
+  },
+  {
+   "names": [
+    "Sasanian Empire"
+   ],
+   "from": 628,
+   "to": 632,
+   "note": "Cliopatria still draws Yemen as Sasanian. Badhan, the Persian governor of Yemen, accepted Islam in 628, and Yemen was no longer ruled from Ctesiphon.",
+   "source": "https://en.wikipedia.org/wiki/Badhan_(Persian_governor)"
   }
  ]
 }

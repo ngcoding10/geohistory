@@ -64,6 +64,8 @@ CLIO_KEYS = {
 
 
 CLIO_FIXES = read_json(os.path.join(TOOLS, 'curated', 'names.json')).get('clio_rows', [])
+# years and names of single source shapes, corrected (curated/clio_dates.json)
+CLIO_DATES = {(r['name'], r['row'][0], r['row'][1]): r for r in read_json(os.path.join(TOOLS, 'curated', 'clio_dates.json'))['rows']}
 
 
 def strip(name):
@@ -108,6 +110,7 @@ def sample_points(g, lab):
 def build():
     src = load()
     shapes = []
+    used_fixes = set()
     for f in src['features']:
         p = f['properties']
         if p.get('Type') != 'POLITY' or p['Name'].startswith('('):
@@ -125,10 +128,23 @@ def build():
         for fx in CLIO_FIXES:   # rows the source files under the wrong name for some years (curated/names.json)
             if fx['name'] == p['Name'] and fx['from'] <= p['FromYear'] and p['ToYear'] <= fx['to']:
                 shown, member = fx['as'], fx.get('member', member)
-        shapes.append({'n': shown, 'from': p['FromYear'], 'to': p['ToYear'], 'm': display(member),
-                       'q': p.get('Wikidata') or '', 'w': p.get('Wikipedia') or '', 'g': g,
-                       'a': round(p.get('Area') or sum(polygon_area_km2(q) for q in polys_of(g))), 'l': label_point(g),
-                       'bb': [round(v, 1) for v in bbox_of(g)]})
+        base = {'g': g, 'a': round(p.get('Area') or sum(polygon_area_km2(q) for q in polys_of(g))), 'l': label_point(g),
+                'bb': [round(v, 1) for v in bbox_of(g)]}
+        fix = CLIO_DATES.get((p['Name'], p['FromYear'], p['ToYear']))
+        if fix is None:
+            segs = [{'from': p['FromYear'], 'to': p['ToYear']}]
+        else:   # the shape is drawn only in the curated spans, each optionally under another name
+            segs = fix['segments']
+            used_fixes.add((p['Name'], p['FromYear'], p['ToYear']))
+        for sg in segs:
+            if sg['to'] < FIRST or sg['from'] > LAST:
+                continue
+            renamed = 'as' in sg
+            shapes.append(dict(base, n=sg.get('as', shown), m=display(sg.get('member', member)),
+                               q='' if renamed else p.get('Wikidata') or '', w='' if renamed else p.get('Wikipedia') or ''))
+            shapes[-1]['from'], shapes[-1]['to'] = sg['from'], sg['to']
+    for k in set(CLIO_DATES) - used_fixes:
+        log('  curated/clio_dates.json: no source shape', k)
     shapes.sort(key=lambda s: (s['from'], s['n']))
     for i, s in enumerate(shapes):
         s['id'] = i
@@ -414,6 +430,22 @@ def main():
         need_of[y] = [cur]
     for f, ids in files.items():
         total += write_json(os.path.join(out, f), {str(i): rec(byid[i]) for i in sorted(ids)})
+    # A sketch-map region borrowed from a snapshot other than the year's own (Travancore from the map of 1815,
+    # drawn in 1776) would make the browser load that whole snapshot for one outline: the borrowed outlines
+    # of each snapshot are written to a small extract (clio/u<snapshot>.json) that the year file names in 'ux'.
+    snaps_all = sorted(b['y'] for b in read_json(os.path.join(DATA, 'borders', 'index.json'))['snapshots'])
+    ux_of, ux_ks = {}, defaultdict(set)
+    for y in ys:
+        own = max(sy for sy in snaps_all if sy <= y)
+        for r in years[y]:
+            if len(r) >= 5 and r[4] != own:
+                ux_of.setdefault(y, set()).add(r[4])
+                ux_ks[r[4]].add(r[0])
+    for sy, ks in ux_ks.items():
+        doc = read_json(os.path.join(DATA, 'borders', f'{sy}.json'))
+        total += write_json(os.path.join(out, f'u{sy}.json'), {
+            'year': doc.get('year', sy), 'polities': {str(k): doc['polities'][k] for k in sorted(ks)},
+            'features': [f for f in doc['features'] if f['properties']['k'] in ks]})
     powers = read_json(os.path.join(DATA, 'powers.json'))
     prev, prev_y = None, None
     for y in ys:
@@ -434,8 +466,10 @@ def main():
             gone = sorted((n for n in prev if n not in names), key=lambda n: -prev[n])
             changes = {'since': prev_y, 'appeared': ap[:12], 'gone': gone[:12], 'nAppeared': len(ap), 'nGone': len(gone), 'ruler': []}
         prev, prev_y = names, y
-        total += write_json(os.path.join(out, 'years', f'{y}.json'),
-                            {'year': y, 'rows': rows, 'need': need_of[y], 'largest': largest, 'changes': changes})
+        ydoc = {'year': y, 'rows': rows, 'need': need_of[y], 'largest': largest, 'changes': changes}
+        if y in ux_of:
+            ydoc['ux'] = sorted(ux_of[y])
+        total += write_json(os.path.join(out, 'years', f'{y}.json'), ydoc)
     write_json(os.path.join(out, 'index.json'), {'from': FIRST, 'to': LAST, 'years': ys, 'files': sorted(files), 'shapes': len(shapes)})
     # Wikidata ids and article titles as given by Cliopatria, for link_wikidata.py
     links = {}
@@ -471,6 +505,21 @@ def main():
                 'https://github.com/Seshat-Global-History-Databank/cliopatria, DOI 10.1038/s41597-025-04516-9,\n'
                 'licensed CC BY 4.0. Rows marked with a snapshot year come from aourednik/historical-basemaps (GPL-3.0),\n'
                 'see ../borders/LICENSE.txt.\n')
+    # the year each correction rests on, compared with the Wikidata item of the article it cites
+    try:
+        from verify import wikidata_years
+        import re as _re
+        import urllib.parse as _up
+        dpath = os.path.join(TOOLS, 'curated', 'clio_dates.json')
+        cur = read_json(dpath)
+        title = lambda r: _re.sub('_', ' ', _up.unquote(r['source'].rsplit('/wiki/', 1)[-1]))
+        wd = wikidata_years([title(r) for r in cur['rows']])
+        for r in cur['rows']:
+            r['verified'] = any(abs(y - r['check']) <= 1 for y in wd.get(title(r), {}).get('years', ()))
+        write_json(dpath, cur, pretty=True)
+        log(f"  clio_dates: {len(cur['rows'])} corrected shapes, {sum(r['verified'] for r in cur['rows'])} with the year confirmed by Wikidata")
+    except Exception as ex:
+        log('  Wikidata not reachable, curated/clio_dates.json keeps its verified flags:', ex)
     log(f'clio: {len(shapes)} shapes in {len(files)} files, {len(ys)} stored years for {FIRST} to {LAST}, {total // 1024} KB')
 
 

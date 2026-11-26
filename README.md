@@ -71,30 +71,41 @@ the part, which says "Part of ...". No outline is merged or changed: the inner b
 order in which the map draws them (`js/groups.js`, `js/map.js`).
 
 A part belongs to an empire only in the years a source says so (`tools/build_empires.py`,
-`data/empires.json`): 424 dated memberships, of which 216 are confirmed by Wikidata (the part's item names
+`data/empires.json`): 416 dated memberships, of which 217 are confirmed by Wikidata (the part's item names
 an item of the empire as its country, as what it is part of, or as its administrative parent).
-- 148 come from Cliopatria's member-of field (the Holy Roman Empire and its states, the fiefs of the French
+- 136 come from Cliopatria's member-of field (the Holy Roman Empire and its states, the fiefs of the French
   crown, the Portuguese, Dutch and British possessions before 1886).
 - 158 are the CShapes dependencies of 1886 to 2019 with the owners in `tools/curated/dependency_owners.json`,
   and 12 come from the sketch maps.
-- 106 are written for GeoHistory in `tools/curated/empires.json`, each with a source article: the British
+- 110 are written for GeoHistory in `tools/curated/empires.json`, each with a source article: the British
   dominions until the Statute of Westminster (1931), the Ottoman vassals, personal unions, and 71 parts that
   no source draws (New Spain and Peru, the two halves of Austria-Hungary, the Crown and Lithuania, the Soviet
   republics, the four Mongol khanates of 1260 to 1293). These are listed in the empire's panel and never drawn.
 Not merged although the sources colour them alike: Egypt after the British occupation of 1882, the Congo Free
 State (Leopold II's own, not Belgium's), occupied countries, Hanover (in personal union with Great Britain but
 never part of its empire), and states only partly inside the Holy Roman Empire (the Habsburg Monarchy,
-Brandenburg-Prussia).
+Brandenburg-Prussia) or France (the Angevin princes' lands, which include Provence).
+In round 6 the unverified memberships were read one by one; 15 that were wrong were removed or re-dated
+(`"exclude"` in `tools/curated/empires.json`, each with its reason): the Carolingian realms count as one
+empire only until 887, not 987; the Kingdom of Arles is imperial from 1033, not French; Bahrain is British
+from 1861, not 1783; three Silesian duchies were not in the Kingdom of Poland in 1305 to 1313.
 
 ## Before and after
 
 Every territory panel has "Before" and "After" (`tools/build_succession.py`, `data/succession.json`), one
 step only: what Wikidata lists as replaced and replacing (P1365/P1366, P155/P156), and who held the same
-land on the yearly map just before the first year a state is drawn and just after the last (measured at
-sample points; a holder counts from 15% of them). A state that first appears on land another state keeps
-(a secession) is listed under that state's "After". Each entry says which of the two it comes from; a click
-jumps to that state in its year. 1562 of 1570 territories have an entry (2973 links from Wikidata, 4231 from
-the maps). "Today this is" and, for one of today's countries, "In <year> this was" are measured in the
+land on the yearly map just before the first year a state is drawn and just after the last (measured on
+a grid of points weighted by area). The rules, rewritten in round 6 after the lists were read for 25
+well-known states: a holder the maps alone name needs 10% of the land and must hand over within 25 years
+of the state's beginning or end (an annexation a century later is not a predecessor); a break-away needs
+80% of its own land from the earlier state, at least 5 years on the map, and a large share or a place in
+the earlier state's last years; a Wikidata statement is shown only when the maps agree, or when it is on
+the state's own item and the two states' Wikidata dates meet within 10 years. A state that first appears
+on land another state keeps (a secession) is listed under that state's "After". Each entry says which of
+the two it comes from; a click jumps to that state in its year. 1548 of 1576 territories have an entry
+(1453 links from Wikidata, 3732 from the maps). Known weak spots: a conquest by a state that first appears
+on the conquered land reads as a break-away (the Turkish beyliks under the Byzantine Empire), and Wikidata
+labels are used as they are (the Republic of China is "Taiwan"). "Today this is" and, for one of today's countries, "In <year> this was" are measured in the
 browser by overlap at sample points, and are approximate.
 
 ## Known limits
@@ -110,16 +121,22 @@ browser by overlap at sample points, and are approximate.
   historical-basemaps sketch map, drawn pale and without outlines, with italic names. At world zoom they are
   merged into 41 named regions ("Great Plains", "Amazonia and the Guianas"); the peoples themselves appear
   from zoom 3.4. The sketch maps reuse outlines across centuries. `tools/curated/underlay.json` dates or
-  renames 39 of the 2,176 names by hand, and `tools/build_underlay_spans.py` limits a name to its Wikidata
-  years where the linked item has dates: 482 names are linked to an item, 106 of those have a date, and
+  renames 40 of the 2,180 names by hand, and `tools/build_underlay_spans.py` limits a name to its Wikidata
+  years where the linked item has dates: 484 names are linked to an item, 108 of those have a date, and
   18 were drawn outside those dates and are now cut to them. For most peoples Wikidata has no dates, so
-  anachronisms remain. 29 regions that the nearest sketch map lacks are borrowed from another sketch map
+  anachronisms remain. 33 regions that the nearest sketch map lacks are borrowed from another sketch map
   for a documented span of years (Celtic and Germanic peoples, Irish kingdoms, Picts, Sarmatians, Arab
-  tribes, Saharan peoples, Rajput states, Gujarat, Spanish Louisiana, Rupert's Land, Quebec, New South Wales):
+  tribes, Saharan peoples, Rajput states, Gujarat, Spanish Louisiana, Rupert's Land, Quebec, New South Wales,
+  the Greek cities of 480 to 405 BC, the Dacians, the Muisca, Travancore):
   the outline is that map's, nothing is drawn by hand, and the panel says which map it comes from. Still blank
   because no source has an outline: most of Germania between the Elbe and the Vistula, the Malwa Sultanate
-  and Khandesh around 1450, Travancore, the Muisca. Known source errors are listed in
-  `tools/curated/map_notes.json` (30 notes) and shown in the panel of the territory concerned; three rows
+  and Khandesh around 1450, Odisha around 1450, the Río de la Plata coast around 1700. (A borrowed region
+  whose name equals a Cliopatria state's name of that year is skipped as already drawn: that is why Athens
+  stayed blank in 440 BC, with Cliopatria's "Greek City-States" elsewhere; it is now borrowed under another
+  name.) `tools/curated/clio_dates.json` re-dates or renames 16 single Cliopatria shapes that outlive their
+  state or carry a later name (Khwarezm after 1221, France and Germany in 1870 to 1872, Tang in 907 to 910,
+  Mitanni, Great Moravia before 833, Hoysala after 1346, Congress Poland). Known source errors are listed in
+  `tools/curated/map_notes.json` (42 notes) and shown in the panel of the territory concerned; three rows
   that Cliopatria files under a wrong name are renamed (`tools/curated/names.json`: "Assyrian Egypt" for the
   whole Assyrian Empire of 650 to 616 BC, "Ptolemaic Kingdom" for Alexander's conquests of 331 to 324 BC,
   "Western Jin" for the Eastern Jin after 317).
@@ -163,13 +180,17 @@ browser by overlap at sample points, and are approximate.
   "curated, unverified". Still empty: the Maya and Sumerian city-states (Wikidata has dated holders only for
   single cities such as Tikal, which are not territories on the maps), Elam, Champa.
 - Year-article sentences are Wikipedia text (CC BY-SA 4.0), shown with a link to the year article. The
-  27,842 entries whose date nothing but the year article confirms are tagged "unverified" and ranked last.
+  27,564 entries whose date nothing but the year article confirms are tagged "unverified" and ranked last.
   Their type comes from keyword rules (`tools/classify.py`), rewritten in round 5. Judged strictly by one
   reader, a sample of 150 under the old rules had 18 wrong types and 30 left as the general "Event" although
   a specific type applies (48 in 150). Two fresh samples of 150 under the new rules had 15 wrong and 12
   general (27 in 150), and after one more round of rules 8 wrong and 13 general (21 in 150); the last small
-  round of rules after that is unmeasured. A sentence that only repeats a verified event of the same year (it
-  links to that event, or it has the same day and names) is dropped: 928 were.
+  round of rules after that is unmeasured. In round 6 another reader judged a fresh sample of 150 (rules
+  unchanged) more strictly: 17 wrong and 27 left general (44 in 150). A sentence that only repeats a verified event of the same year (it
+  links to that event, or it has the same day and names) is dropped: 920 were. A sentence that reports a
+  ruler taking office on the day of that ruler's event (round 6: also when it is not worded as a succession,
+  "Cleopatra declares her son co-ruler as Ptolemy XV Caesarion") only confirms the event: 1,911 were. Two events in one year about the same Wikipedia article are merged (59), and a death
+  beside the killing it was ("Death of Julius Caesar", "assassination of Julius Caesar") is merged into it (40).
 - Archaeological cultures and early sites carry approximate dates ("c."), sometimes only a century.
 - Curated text (decades, state descriptions, period events) is written from general knowledge and tagged
   "curated"; entries whose year Wikidata does not confirm are tagged "curated, unverified".
@@ -177,8 +198,8 @@ browser by overlap at sample points, and are approximate.
   checked only in headless Chromium with software rendering, not yet on real phones. No relief or paper
   texture is drawn (no hillshade source was evaluated); the map has a faint vignette only.
 - Births and deaths (the 12 most notable per year) are off by default; turn them on under "Event types".
-- `tools/audit.py` checks 1,202 hand-written well-known facts (who held a city in a given year; dates of
+- `tools/audit.py` checks 1,236 hand-written well-known facts (who held a city in a given year; dates of
   events and reigns; successions; empire memberships; occupations; who was in office; "top five of the year
-  must include" checks); 1,181 pass. The 21 failures are listed in `data/audit.json`: all but a few are map
-  points where the border source is wrong, late or blank (see the map notes); no check was removed or
+  must include" checks); 1,222 pass. The 14 failures are listed in `data/audit.json`: all are map points
+  where the border source is wrong, late or blank (four of them blank in every source) (see the map notes); no check was removed or
   loosened, and the six checks that were themselves corrected say so in `tools/audit/facts.txt`.

@@ -19,7 +19,7 @@ from collections import defaultdict, Counter
 
 from common import CACHE, DATA, TOOLS, fetch, sparql, qid, log, write_json, read_json
 from fetch_sources import NE
-from geo import PolyIndex
+from geo import PolyIndex, decode_geom
 import yearly
 import names as names_mod
 from classify import classify
@@ -258,6 +258,8 @@ def main():
     us_pi_cache = {}
 
     col = read_json(os.path.join(DATA, 'us', 'colonies.json'))
+    for f in col['features']:   # rings are stored encoded (build_colonies.py)
+        f['geometry'] = decode_geom(f['geometry'])
     col_names = col['states']
     col_pi = {}
 
@@ -1141,6 +1143,11 @@ def main():
             dup = have_ly.get((norm_l(text), b['y']))
             if dup is None and classify(text, '', b.get('head', '')) == 'ruler':
                 dup = next((events[k_] for l_, q_ in b.get('links', []) for k_ in (f'r{q_}-{b["y"]}', f'cr{q_}-{b["y"]}') if k_ in events), None)
+            if dup is None and b['m'] and b['d']:
+                # a ruler taking office on the same day, named by a link ("Cleopatra declares her son co-ruler as
+                # Ptolemy XV Caesarion" and "Caesarion becomes Pharaoh")
+                dup = next((events[k_] for l_, q_ in b.get('links', []) for k_ in (f'r{q_}-{b["y"]}', f'cr{q_}-{b["y"]}')
+                            if k_ in events and events[k_].get('m') == b['m'] and events[k_].get('dd') == b['d']), None)
             if dup is None and repeats(b, text) is not None:
                 n_bul_same += 1
                 continue
@@ -1263,6 +1270,43 @@ def main():
     n_dup = len(events) - len(best)
     events = {e['i']: e for e in best.values()}
     log(f'{n_dup} duplicate events merged')
+
+    # the same Wikipedia article twice in one year ("Union of South Africa founded" from Wikidata and "Union of
+    # South Africa formed" from the curated lists; "British Museum built" and "British Museum founded"), and a
+    # death beside the killing it was ("Death of Julius Caesar" and "assassination of Julius Caesar"): one is
+    # kept, the curated one or the better known, with what the other adds. A state's "founded" and "ends" in
+    # the same year are two events and both stay.
+    def merge_into(keep, e):
+        for f in ('lo', 'la', 'c', 'ci', 'm', 'dd', 'd'):
+            if f not in keep and f in e:
+                keep[f] = e[f]
+        del events[e['i']]
+    n_same_w = n_death = 0
+    by_w = defaultdict(list)
+    for e in events.values():
+        if e.get('w') and e['t'] not in ('ruler', 'birth', 'death'):
+            by_w[(e['w'], e['y'])].append(e)
+    for grp in by_w.values():
+        if len(grp) < 2:
+            continue
+        grp.sort(key=lambda e: (-e.get('cur', 0), -e['s']))
+        ending = lambda e: e['l'].endswith(' ends')   # an end is not the same event as a founding
+        for e in grp[1:]:
+            if ending(e) != ending(grp[0]):
+                continue
+            merge_into(grp[0], e)
+            n_same_w += 1
+    deaths = {(e['w'], e['y']): e for e in events.values() if e['t'] == 'death' and e.get('w')}
+    for e in list(events.values()):
+        m_ = re.match(r'(?i)(assassination|death|execution|killing|murder|martyrdom) of (.+)$', e.get('w') or '')
+        if m_ and e['t'] != 'death' and (m_.group(2), e['y']) in deaths:
+            d_ = deaths.pop((m_.group(2), e['y']))
+            if d_['i'] in events:
+                merge_into(e, d_)
+                n_death += 1
+    stats['sameArticleSameYearMerged'] = n_same_w
+    stats['deathsMergedIntoTheKilling'] = n_death
+    log(f'{n_same_w} events with the same article in the same year merged; {n_death} deaths merged into the killing')
 
     # ---------- extra names (tools/curated/aliases.json) ----------
     extra_names = read_json(os.path.join(TOOLS, 'curated', 'aliases.json'))['aliases']

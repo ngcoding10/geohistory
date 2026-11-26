@@ -15,7 +15,7 @@ RULER = re.compile(
     r'asantehene|kabaka|mwami|mansa|taoiseach|co-prince|co-monarch|list of [\w ]*monarchs|führer|commissars|council of ministers|'
     r'manikongo|maharana|yang di-pertuan|shikken|state elder|judge of|khwarazmshah|supreme director|tsenpo|interrex|jefe supremo|'
     r'council of people|posadnik|hetman|o le ao|beylerbey|wali|state counsellor|head of the central rada|ban of|druk gyalpo|aksum|'
-    r'caudillo|chhatrapati|supreme leader|protector|lord of|grand duke|archduke|khedive|mikado|autocrat|khanum|despot|exarch|high king|chief executive)\b', re.I)
+    r'caudillo|chhatrapati|chatrapati|supreme leader|protector|lord of|grand duke|archduke|khedive|mikado|autocrat|khanum|despot|exarch|high king|chief executive)\b', re.I)
 NOT_RULER = re.compile(
     r'\b(mayor|lord mayor|bürgermeister\w*|\w*bürgermeister|consort|haseki|valide|empress of japan|byzantine empress|empress of nicaea|'
     r'emerita|emeritus|deputy|vice[- ]president|vice[- ]chancellor|vice[- ]premier|local|chiltern|civil governor|regional governor|district|arrondissement|bank|banco|senate|'

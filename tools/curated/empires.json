@@ -1616,6 +1616,58 @@
    "source": "https://en.wikipedia.org/wiki/Greenland",
    "verified": true,
    "note": "CShapes 2.0 has no outline for Greenland in these years, so it is listed here but not drawn."
+  },
+  {
+   "empire": "britain",
+   "part": "Bahrain",
+   "from": 1861,
+   "to": 1885,
+   "kind": "protectorate",
+   "source": "https://en.wikipedia.org/wiki/History_of_Bahrain",
+   "verified": false,
+   "rows": [
+    "House of Khalifa"
+   ],
+   "note": "Under British protection from the Perpetual Truce of Peace and Friendship of 1861 (a formal protectorate from 1892) until 1971."
+  },
+  {
+   "empire": "carolingian empire",
+   "part": "West Francia",
+   "from": 843,
+   "to": 887,
+   "kind": "member",
+   "source": "https://en.wikipedia.org/wiki/West_Francia",
+   "verified": false,
+   "rows": [
+    "West Franks"
+   ],
+   "note": "The Carolingian realms are counted as one empire only until 887, when Charles the Fat, the last emperor to rule all of them, was deposed; Cliopatria keeps them together until 987."
+  },
+  {
+   "empire": "carolingian empire",
+   "part": "Middle Francia",
+   "from": 843,
+   "to": 855,
+   "kind": "member",
+   "source": "https://en.wikipedia.org/wiki/Middle_Francia",
+   "verified": false,
+   "rows": [
+    "Lotharingia"
+   ],
+   "note": "The kingdom of the emperor Lothair I until his death in 855. The Carolingian realms are counted as one empire only until 887, when Charles the Fat, the last emperor to rule all of them, was deposed; Cliopatria keeps them together until 987."
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Kingdom of Arles",
+   "from": 1033,
+   "to": 1384,
+   "kind": "imperial kingdom",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Arles",
+   "verified": false,
+   "rows": [
+    "Kingdom of Arles"
+   ],
+   "note": "Part of the Holy Roman Empire from the death of Rudolph III of Burgundy in 1032; the emperors were its kings."
   }
  ],
  "exclude": [
@@ -1630,6 +1682,84 @@
    "empire": "france",
    "note": "Cliopatria lists the Angevin lands under both the English and the French crown (the French lands were fiefs of France held by the king of England). They are not merged into France.",
    "source": "https://en.wikipedia.org/wiki/Angevin_Empire"
+  },
+  {
+   "row": "Bahrain",
+   "empire": "britain",
+   "note": "Cliopatria counts Bahrain as British from 1820. The General Maritime Treaty of 1820 was a truce against piracy; Bahrain came under British protection with the Perpetual Truce of 1861.",
+   "source": "https://en.wikipedia.org/wiki/History_of_Bahrain"
+  },
+  {
+   "row": "House of Khalifa",
+   "empire": "britain",
+   "note": "Counted as British only from the Perpetual Truce of 1861 (see below), not from 1783.",
+   "source": "https://en.wikipedia.org/wiki/History_of_Bahrain"
+  },
+  {
+   "row": "Duchy of Głogów",
+   "empire": "kingdom of poland",
+   "note": "The Silesian duchies were not part of the Kingdom of Poland in 1305 to 1313; they became fiefs of Bohemia from 1327.",
+   "source": "https://en.wikipedia.org/wiki/Duchies_of_Silesia"
+  },
+  {
+   "row": "Duchy of Jawor",
+   "empire": "kingdom of poland",
+   "note": "See the Duchy of Głogów.",
+   "source": "https://en.wikipedia.org/wiki/Duchies_of_Silesia"
+  },
+  {
+   "row": "Duchy of Legnica",
+   "empire": "kingdom of poland",
+   "note": "See the Duchy of Głogów.",
+   "source": "https://en.wikipedia.org/wiki/Duchies_of_Silesia"
+  },
+  {
+   "row": "Kingdom of Arles",
+   "empire": "holy roman empire",
+   "note": "The Kingdom of Burgundy (Arles) passed to the Holy Roman Empire only on the death of its last king, Rudolph III, in 1032; Cliopatria counts it as imperial from 1010.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Burgundy"
+  },
+  {
+   "row": "Upper Burgundy",
+   "empire": "carolingian empire",
+   "note": "Upper Burgundy became a separate kingdom under Rudolph I in 888. The Carolingian realms are counted as one empire only until 887, when Charles the Fat, the last emperor to rule all of them, was deposed; Cliopatria keeps them together until 987.",
+   "source": "https://en.wikipedia.org/wiki/Upper_Burgundy"
+  },
+  {
+   "row": "Kingdom of Lower Burgundy",
+   "empire": "carolingian empire",
+   "note": "Lower Burgundy (Provence) was a separate kingdom from 879. The Carolingian realms are counted as one empire only until 887, when Charles the Fat, the last emperor to rule all of them, was deposed; Cliopatria keeps them together until 987.",
+   "source": "https://en.wikipedia.org/wiki/Lower_Burgundy"
+  },
+  {
+   "row": "Lotharingia",
+   "empire": "carolingian empire",
+   "note": "The Carolingian realms are counted as one empire only until 887, when Charles the Fat, the last emperor to rule all of them, was deposed; Cliopatria keeps them together until 987.",
+   "source": "https://en.wikipedia.org/wiki/Lotharingia"
+  },
+  {
+   "row": "West Franks",
+   "empire": "carolingian empire",
+   "note": "The Carolingian realms are counted as one empire only until 887, when Charles the Fat, the last emperor to rule all of them, was deposed; Cliopatria keeps them together until 987.",
+   "source": "https://en.wikipedia.org/wiki/West_Francia"
+  },
+  {
+   "row": "Capetian House of Anjou",
+   "empire": "france",
+   "note": "The lands of the Angevin princes include Provence, which belonged to the Kingdom of Arles in the Holy Roman Empire, and in some years are Provence alone. Like other states only partly inside an empire, they are not merged into France.",
+   "source": "https://en.wikipedia.org/wiki/County_of_Provence"
+  },
+  {
+   "row": "House of Valois-Anjou",
+   "empire": "france",
+   "note": "See the Capetian House of Anjou: these lands include Provence, which was not French until 1481.",
+   "source": "https://en.wikipedia.org/wiki/County_of_Provence"
+  },
+  {
+   "row": "Kingdom of Arles",
+   "empire": "france",
+   "note": "Cliopatria files the Kingdom of Arles (Burgundy) under the French crown from 1034. It was a kingdom of the Holy Roman Empire from 1033; France took its parts piece by piece (the Dauphiné from 1349, Provence in 1481).",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Arles"
   }
  ]
 }

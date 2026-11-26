@@ -11,7 +11,7 @@ import os
 import zipfile
 
 from common import fetch, write_json, DATA, log
-from geo import simplify_geom, label_point
+from geo import simplify_geom, label_point, encode_geom
 
 STATES = {'CT': 'Connecticut', 'DE': 'Delaware', 'GA': 'Georgia', 'MD': 'Maryland', 'MA': 'Massachusetts',
           'NH': 'New Hampshire', 'NJ': 'New Jersey', 'NY': 'New York', 'NC': 'North Carolina',
@@ -39,7 +39,8 @@ def main():
                 continue
             props = {'n': r['NAME'], 'st': r['STATE'] or code, 's': s, 'e': int(r['END_DATE']),
                      't': r.get('CNTY_TYPE') or '', 'l': label_point(sg)}
-            feats.append({'type': 'Feature', 'geometry': sg, 'properties': props})
+            # rings as encoded strings (0.001 degree, as simplified): the file is less than half the size
+            feats.append({'type': 'Feature', 'geometry': encode_geom(sg), 'properties': props})
             n += 1
         log(f'{code}: {n} units before 1783')
     size = write_json(os.path.join(DATA, 'us', 'colonies.json'), {'type': 'FeatureCollection', 'features': feats,
