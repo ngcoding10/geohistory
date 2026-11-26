@@ -15,17 +15,19 @@ Nothing is drawn by hand here: every outline is a source polygon, simplified.
 import io
 import json
 import os
+import sys
 import zipfile
 from collections import defaultdict, Counter
 
 from common import fetch, write_json, read_json, DATA, CACHE, TOOLS, log
 from fetch_sources import CLIO
 from names import display
-from geo import simplify_geom, label_point, bbox_of, polygon_area_km2, polys_of, PolyIndex
-from build_borders import power_key, PALETTE
+from geo import simplify_geom, label_point, bbox_of, polygon_area_km2, polys_of, PolyIndex, encode_geom, decode_geom
+from build_borders import power_key, PALETTE, CURATED
 
 FIRST, LAST = -3400, 1885   # Cliopatria's first polity is dated 3400 BC; CShapes takes over in 1886
 TARGET = 520_000            # aim for shape files of about this many bytes
+TOL = 0.012                 # degrees (about 1.3 km): Douglas-Peucker tolerance; coordinates keep 0.001 degrees
 # "Member of" values that are a label for a group of independent states, not a power ruling them
 GROUPINGS = {'Spring and Autumn States', 'Brythonic Kingdoms', 'Warring States China', 'Mahajanapadas',
              'Anglo-Saxon England', 'Taifas of Iberia', 'Duchies of Poland', 'Five Dynasties and Ten Kingdoms',
@@ -38,6 +40,8 @@ CLIO_KEYS = {
     'french colonial empire': 'france', 'first french empire': 'france', 'second french empire': 'france',
     'french first republic': 'france', 'french second republic': 'france', 'french third republic': 'france',
     'kingdom of france': 'france', 'bourbon restoration': 'france', 'july monarchy': 'france',
+    'bourbon kingdom of france': 'france', 'french directory': 'france', 'french consulate': 'france',
+    'french fourth republic': 'france', 'vichy france': 'france',
     'kingdom of spain': 'spain', 'kingdom of portugal': 'portugal', 'dutch republic': 'netherlands',
     'kingdom of the netherlands': 'netherlands', 'batavian republic': 'netherlands',
     'united states of america': 'usa', 'tokugawa shogunate': 'japan', 'empire of japan': 'japan',
@@ -57,6 +61,9 @@ CLIO_KEYS = {
     'mongol empire': 'mongols', 'ottoman empire': 'ottoman', 'mughal empire': 'mughal',
     'habsburg monarchy': 'austria', 'archduchy of austria': 'austria',
 }
+
+
+CLIO_FIXES = read_json(os.path.join(TOOLS, 'curated', 'names.json')).get('clio_rows', [])
 
 
 def strip(name):
@@ -107,13 +114,18 @@ def build():
             continue   # "(Spanish Empire)" rows are the union of their members; the members are drawn
         if p['ToYear'] < FIRST or p['FromYear'] > LAST or not f.get('geometry'):
             continue
-        g = simplify_geom(f['geometry'], 0.03, 2)
+        g = simplify_geom(f['geometry'], TOL, 3)
         if not g:
             continue
-        member = strip((p.get('MemberOf') or '').split(';')[0].strip())
-        if member in GROUPINGS:
-            member = ''
-        shapes.append({'n': display(p['Name']), 'from': p['FromYear'], 'to': p['ToYear'], 'm': display(member) if member != p['Name'] else '',
+        # the first "member of" value that is a ruling power: not the polity's own aggregate row
+        # ("Kingdom of Bohemia" in "(Kingdom of Bohemia)") and not a label for a group of independent states
+        members = [strip(x.strip()) for x in (p.get('MemberOf') or '').split(';') if x.strip()]
+        member = next((x for x in members if x != p['Name'] and x not in GROUPINGS), '')
+        shown = display(p['Name'])
+        for fx in CLIO_FIXES:   # rows the source files under the wrong name for some years (curated/names.json)
+            if fx['name'] == p['Name'] and fx['from'] <= p['FromYear'] and p['ToYear'] <= fx['to']:
+                shown, member = fx['as'], fx.get('member', member)
+        shapes.append({'n': shown, 'from': p['FromYear'], 'to': p['ToYear'], 'm': display(member),
                        'q': p.get('Wikidata') or '', 'w': p.get('Wikipedia') or '', 'g': g,
                        'a': round(p.get('Area') or sum(polygon_area_km2(q) for q in polys_of(g))), 'l': label_point(g),
                        'bb': [round(v, 1) for v in bbox_of(g)]})
@@ -137,12 +149,13 @@ def build():
                     geoms[k] += polys_of(f['geometry'])
             out = []
             for k, pol in enumerate(doc['polities']):
-                if pol.get('s') and pol['s'] != pol['n']:
-                    continue   # colonies and dependencies: their ruler may have changed since the snapshot
                 if not pol.get('l') or k not in geoms:
                     continue
                 g = {'type': 'MultiPolygon', 'coordinates': geoms[k]}
-                out.append({'k': k, 'n': pol['n'], 'pts': sample_points(g, pol['l']), 'a': pol['a']})
+                # colonies and dependencies are not drawn by default (their ruler may have changed since the
+                # snapshot); a curated 'borrow' entry can still use one, with the ruler it documents
+                out.append({'k': k, 'n': pol['n'], 'pts': sample_points(g, pol['l']), 'a': pol['a'],
+                            'ruled': bool(pol.get('s') and pol['s'] != pol['n'])})
             under_cache[snap_year] = out
         return under_cache[snap_year]
 
@@ -163,13 +176,41 @@ def build():
                 return [u['k'], r['as'], r.get('key') or power_key(r['as']), r.get('ruler'), snap]
         return [u['k'], u['n'], power_key(u['n']), None, snap]
 
+    # 'borrow': a people or region that the nearest earlier sketch map lacks is taken from another sketch map
+    # for a documented range of years (the outline is that map's; nothing is drawn by hand)
+    borrow = ucfg.get('borrow', [])
+    # spans read from Wikidata by build_underlay_spans.py (inception and dissolution of the linked item)
+    auto_path = os.path.join(TOOLS, 'curated', 'underlay_auto.json')
+    if os.path.exists(auto_path) and '--no-auto' not in sys.argv:
+        for r in read_json(auto_path)['spans']:
+            spans.setdefault(r['name'], r)
+
+    def uncovered(row, u, idx, limit=0.4):
+        """Drop a sketch-map territory when Cliopatria states cover over 40% of it (measured at sample points;
+        80% for the curated 'borrow' rows, whose years are documented: what a state covers is hidden under it).
+        When they cover its label point but less than that, the row carries another point for the label:
+        the uncovered sample point nearest the middle of the uncovered ones."""
+        hit = [idx.lookup(x, yy) is not None for x, yy in u['pts']]
+        if not hit:
+            return row
+        if sum(hit) > limit * len(hit):
+            return None
+        if hit[0]:
+            free = [p for p, hh in zip(u['pts'], hit) if not hh]
+            if not free:
+                return None
+            mx, my = sum(p[0] for p in free) / len(free), sum(p[1] for p in free) / len(free)
+            best = min(free, key=lambda p: (p[0] - mx) ** 2 + (p[1] - my) ** 2)
+            return row + [[round(best[0], 2), round(best[1], 2)]]
+        return row
+
     # a year gets its own map only when the list of shapes differs from the year before
     cand = {FIRST}
     for s in shapes:
         cand.add(max(s['from'], FIRST))
         cand.add(s['to'] + 1)
     cand |= {b['y'] for b in bindex}
-    for r in ucfg['spans'] + ucfg['rename']:
+    for r in list(spans.values()) + ucfg['rename'] + borrow:
         if 'from' in r:
             cand.add(r['from'])
         if 'to' in r:
@@ -182,7 +223,8 @@ def build():
         # one shape per name: the row whose range starts latest
         byname = {}
         for s in live:
-            if s['n'] not in byname or s['from'] > byname[s['n']]['from']:
+            o = byname.get(s['n'])
+            if o is None or (s['from'], s['a']) > (o['from'], o['a']):   # the latest start; of two, the larger
                 byname[s['n']] = s
         live = list(byname.values())
         idx = PolyIndex([(s['id'], s['g']) for s in live])
@@ -190,14 +232,28 @@ def build():
         snap = max(b['y'] for b in bindex if b['y'] <= y)
         rows = []
         for u in underlay(snap):
+            if u['ruled']:
+                continue
             row = under_row(u, y, snap)
             if row is None or power_key(row[1]) in names:
                 continue
-            # skip a sketch-map territory when a Cliopatria state covers its label point or over 40% of it
-            hit = [idx.lookup(x, yy) is not None for x, yy in u['pts']]
-            if hit and (hit[0] or sum(hit) > 0.4 * len(hit)):
+            row = uncovered(row, u, idx)
+            if row is not None:
+                rows.append(row)
+        have = {power_key(r[1]) for r in rows} | names
+        for b in borrow:
+            if not (b['from'] <= y <= b['to']):
                 continue
-            rows.append(row)
+            u = next((u for u in underlay(b['snap']) if u['n'] == b['name']), None)
+            nm = b.get('as', b['name'])
+            if u is None or power_key(nm) in have:
+                continue
+            if u['ruled'] and not b.get('ruler'):
+                continue
+            row = uncovered([u['k'], nm, b.get('key') or power_key(nm), b.get('ruler'), b['snap']], u, idx, 0.8)
+            if row is not None:
+                rows.append(row)
+                have.add(power_key(nm))
         for s in live:
             ruler = s['m'] or None
             rows.append([s['id'], s['n'], key_of(ruler or s['n']), ruler])
@@ -267,7 +323,7 @@ def build():
         for _, name, pk, ruler, *_ in rows:
             if pk not in powers:
                 h = sum(ord(c) * (i + 1) for i, c in enumerate(pk))
-                powers[pk] = {'name': ruler or name, 'color': PALETTE[colour.get(pk, h % len(PALETTE))], 'years': [y, y]}
+                powers[pk] = {'name': ruler or name, 'color': CURATED.get(pk) or PALETTE[colour.get(pk, h % len(PALETTE))], 'years': [y, y]}
                 span[pk] = powers[pk]
             elif pk in span:
                 span[pk]['years'][1] = y
@@ -318,6 +374,7 @@ def _cache():
         shapes = {}
         for f in idx['files']:
             for sid, s in read_json(os.path.join(DATA, 'clio', f)).items():
+                s['g'] = decode_geom(s['g'])
                 shapes[int(sid)] = s
         years = {y: read_json(os.path.join(DATA, 'clio', 'years', f'{y}.json'))['rows'] for y in idx['years']}
         _C['v'] = (shapes, years, idx['years'])
@@ -335,7 +392,7 @@ def main():
     byid = {s['id']: s for s in shapes}
 
     def rec(s):
-        return {'g': s['g'], 'a': s['a'], 'l': s['l'], 'bb': s['bb'], 's': s['from'], 'e': s['to']}
+        return {'g': encode_geom(s['g']), 'a': s['a'], 'l': s['l'], 'bb': s['bb'], 's': s['from'], 'e': s['to']}
     size = {s['id']: len(json.dumps(rec(s), ensure_ascii=False, separators=(',', ':'))) + 8 for s in shapes}
     # Shape files: consecutive stored years share one file ("b1450.json": every shape used from 1450 until
     # the next file starts), grown until the file would pass TARGET bytes. A shape that lives across
@@ -394,9 +451,21 @@ def main():
         end = ys_all[i + 1] - 1 if i + 1 < len(ys_all) else LAST
         for r in years[y]:
             seen[r[1]].update(range(y, end + 1))   # every year the stored map stands for
+    # this script can run twice in one build (before and after the sketch-map spans are read from Wikidata):
+    # the years it added last time are taken out first, so that the index never lists a year that is not drawn
+    mine_path = os.path.join(CACHE, 'names_clio.json')
+    if os.path.exists(mine_path):
+        for n, ys_old in read_json(mine_path).items():
+            if n in names:
+                left = sorted(set(names[n]) - set(ys_old))
+                if left:
+                    names[n] = left
+                else:
+                    del names[n]
     for n, v in seen.items():
         names[n] = sorted(set(names.get(n, [])) | v)
     write_json(names_path, names)
+    write_json(mine_path, {n: sorted(v) for n, v in seen.items()})
     with open(os.path.join(out, 'LICENSE.txt'), 'w') as f:
         f.write('Polity shapes in this folder are simplified from Cliopatria (Seshat Global History Databank),\n'
                 'https://github.com/Seshat-Global-History-Databank/cliopatria, DOI 10.1038/s41597-025-04516-9,\n'

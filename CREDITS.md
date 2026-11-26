@@ -43,11 +43,14 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
   https://zenodo.org/records/13363121
 - **Licence:** Creative Commons Attribution 4.0 (CC BY 4.0), as stated on the Zenodo record (checked
   26 November 2026). Commercial use is allowed with attribution.
-- **Changes we made:** geometry simplified and rounded; one map for each year in which the list of valid rows changes (482 maps);
+- **Changes we made:** geometry simplified (Douglas-Peucker, 0.012 degrees) and rounded to 0.001 degrees, rings stored as
+  delta-encoded strings (`tools/geo.py`); one map for each year in which the list of valid rows changes;
   the aggregate rows in brackets, such as "(Spanish Empire)", are used only to name the ruling power of
   their members, and group labels such as "(Warring States China)" are not treated as a ruler; territories
   without a Cliopatria state are filled in from the nearest earlier historical-basemaps snapshot and labelled
-  as such; a few names are respelled (`tools/curated/names.json`) (`tools/build_clio.py`). The derived files are in `data/clio/`.
+  as such; a few names are respelled, and three rows that the source files under a wrong name for some years are renamed
+  (`tools/curated/names.json`: "Assyrian Egypt", "Ptolemaic Kingdom" for 331 to 324 BC, "Western Jin" after 317);
+  the member-of field is also used to group the parts of an empire (`tools/build_empires.py`) (`tools/build_clio.py`). The derived files are in `data/clio/`.
 - **Caveat from the source:** "these maps reflect only one version of the territory held by past polities";
   a polity is redrawn only every few years (every few decades in antiquity), so a border change can show
   some years late or early. Errors we know of are in `tools/curated/map_notes.json`.
@@ -59,7 +62,7 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
   https://icr.ethz.ch/data/cshapes/
 - **Licence:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). The derived
   files in `data/cshapes/` are shared under the same licence.
-- **Changes we made:** geometry simplified, one map per year as of 1 July, display names for renamed states
+- **Changes we made:** geometry simplified (0.012 degrees) and stored as encoded strings, one map per year as of 1 July, display names for renamed states
   (`tools/curated/cshapes_names.json`), rulers of dependencies from the world snapshots or from
   `tools/curated/dependency_owners.json` (curated, marked unverified in the app) (`tools/build_cshapes.py`).
 
@@ -68,8 +71,10 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
 - **Source:** Kristian S. Gleditsch and Michael D. Ward, *A revised list of independent states since the
   Congress of Vienna* (1999), http://ksgleditsch.com/data/iisystem.dat (free academic data; cited here).
 
-### Coastlines and today's countries: Natural Earth
-- **What:** 1:50m land and admin-0 countries.
+### Coastlines, lakes and today's countries: Natural Earth
+- **What:** the 1:10m ocean polygon (drawn above the territories, so every state meets the sea along the same
+  coastline), the larger 1:50m lakes, and 1:50m admin-0 countries. Simplified to about 300 m and cut into
+  30-degree cells (`tools/build_sea.py`).
 - **Source:** https://www.naturalearthdata.com/ (via https://github.com/nvkelso/natural-earth-vector)
 - **Licence:** public domain. "Made with Natural Earth."
 
@@ -131,10 +136,32 @@ Written from general knowledge, conservatively, and checked by `tools/build_cura
   of renamed states. `centuries.json`: a short "state of the world" per century (narrative, unverified).
   Plus `tools/supplement_events.json` (American Revolution, hand-checked against the linked articles).
 
+### Empires, occupations, before and after (written for GeoHistory, checked against Wikidata)
+- `tools/curated/empires.json`: the sovereign powers and 106 dated memberships (dominions, vassals, personal
+  unions, and parts that no source draws), each with the Wikipedia article that supports it. Further memberships
+  are read from Cliopatria's member-of field and from the CShapes dependencies. `tools/build_empires.py` marks a
+  membership verified when the Wikidata item of the part names an item of the empire as its country (P17), as
+  what it is part of (P361), as its administrative parent (P131), owner (P127) or jurisdiction (P1001).
+- `tools/curated/occupations.json`: 40 dated occupations and wartime annexations. **No openly available dataset
+  of occupation areas was found** (none of the sources above has one, and no other could be located from the
+  build machine), so each row re-tints an existing CShapes outline; the dates are the commonly cited ones from
+  the Wikipedia article in each row, and a row is verified when the Wikidata item of that article has the same
+  start and end years.
+- `data/succession.json` ("Before" and "After"): Wikidata's replaces / replaced by and follows / followed by
+  statements (CC0), and a comparison of the yearly maps (`tools/build_succession.py`).
+- `tools/curated/underlay.json` now also lists regions borrowed from one sketch map for the years another lacks
+  them, each with the article that documents the years; `tools/curated/underlay_auto.json` is generated from
+  Wikidata dates (`tools/build_underlay_spans.py`).
+
 ## Software and fonts
 - **MapLibre GL JS** 5.23.0, BSD 3-Clause licence, `vendor/maplibre/LICENSE.txt`. https://maplibre.org/
 - **Noto Sans** (Regular, Italic) map label glyphs, SIL Open Font License 1.1, `fonts/LICENSE-OFL.txt`.
   https://notofonts.github.io/
+- **Alegreya** and **Alegreya SC** by Juan Pablo del Peral (Huerta Tipográfica), SIL Open Font License 1.1,
+  `fonts/LICENSE-Alegreya-OFL.txt`; files from the `@fontsource/alegreya` and `@fontsource/alegreya-sc` packages.
+  Used for headings (`fonts/web/`) and, drawn into MapLibre's glyph format by `tools/make_glyphs.cjs`, for the
+  map labels: "Atlas Serif Regular" is Alegreya SC Medium (lower case as small capitals), "Atlas Serif Italic"
+  is Alegreya Italic. https://github.com/huertatipografica/Alegreya
 - **fuzzy.js**, the shared typo-tolerant search from `ngcoding10/backend-combination`, copied unchanged.
 
 ## Not used, and why

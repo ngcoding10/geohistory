@@ -41,7 +41,8 @@
   "Satavahanihara": "Satavahanas",
   "Vishnu-Kundins": "Vishnukundinas",
   "Mesoamerican hunter-gatherers and maïze farmers": "Mesoamerican hunter-gatherers and maize farmers",
-  "Danemark": "Denmark"
+  "Danemark": "Denmark",
+  "Assyrian Egypt": "Neo-Assyrian Empire"
  },
  "aliases": {
   "Qing Dynasty": [
@@ -225,6 +226,43 @@
   ],
   "British Colonial Empire": [
    "British Empire"
+  ],
+  "Swahili city-states": [
+   "Kilwa Sultanate",
+   "Mombasa",
+   "Mogadishu",
+   "Swahili coast"
+  ],
+  "Islamic state of Medina": [
+   "First Islamic state",
+   "Rashidun Caliphate"
+  ],
+  "Eastern Jin": [
+   "Jin dynasty"
+  ],
+  "Greek city-states of the Aegean": [
+   "Greek city-states",
+   "Athens, Sparta, Corinth, Thebes"
   ]
- }
+ },
+ "clio_rows": [
+  {
+   "name": "Ptolemaic Kingdom",
+   "from": -331,
+   "to": -324,
+   "as": "Conquests of Alexander the Great",
+   "member": "Macedonian Empire",
+   "note": "Cliopatria files the lands Alexander took from Persia between 331 and 324 BC under \"Ptolemaic Kingdom\". Ptolemy became satrap of Egypt only in 323 BC and king in 305 BC; these rows are shown as Alexander's conquests, part of the Macedonian Empire.",
+   "source": "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great"
+  },
+  {
+   "name": "Western Jin",
+   "from": 318,
+   "to": 425,
+   "as": "Eastern Jin",
+   "note": "Cliopatria calls the Jin dynasty \"Western Jin\" for all of 266 to 420. The Western Jin fell in 316; from 317 the dynasty ruled the south from Jiankang as the Eastern Jin.",
+   "source": "https://en.wikipedia.org/wiki/Jin_dynasty_(266–420)"
+  }
+ ],
+ "about_clio_rows": "Rows of Cliopatria that carry the wrong name for some years: a shape called 'name' whose years lie within 'from'..'to' is shown as 'as' and counted as part of 'member'. No outline is changed."
 }

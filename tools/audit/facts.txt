@@ -907,3 +907,347 @@ C|6.96|50.94|1960|West Germany
 R|Napoleon|1804
 R|Philip II|1556
 R|Franz Joseph I|1848
+
+# ---- Round 5: all of the following were written from memory BEFORE the round-5 data was built or looked at.
+# New kinds:
+#   S|name;alt names|after or before|text;alt   the Before/After lists of that state contain text
+#   M|part;alt names|year|empire text           in that year the part belongs to that empire ("!text": it does not)
+#   O|territory;alt names|year|occupier         in that year the territory is marked occupied by ("!text": is not)
+#   H|territory;alt names|year|person;alt       that person is listed as in office there in that year
+# -- successions
+S|Russian Empire|after|Russian Republic;Soviet Union;Russian Soviet;Russia
+S|Soviet Union|after|Russia
+S|Soviet Union|after|Ukraine
+S|Soviet Union|after|Kazakhstan
+S|Ottoman Empire|after|Turkey
+S|Gran Colombia|after|New Granada;Colombia
+S|Gran Colombia|after|Venezuela
+S|Gran Colombia|after|Ecuador
+S|Yugoslavia|after|Croatia
+S|Yugoslavia|after|Slovenia
+S|Yugoslavia|after|Bosnia
+S|Yugoslavia|after|Macedonia
+S|Yugoslavia|after|Serbia
+S|Western Roman Empire|after|Odoacer;Kingdom of Italy;Ostrogoth;Visigoth;Frank;Soissons
+S|Czechoslovakia|after|Czech
+S|Czechoslovakia|after|Slovakia
+S|Austria-Hungary|after|Austria
+S|Austria-Hungary|after|Hungary
+S|Austria-Hungary|after|Czechoslovakia
+S|Holy Roman Empire|after|Confederation of the Rhine;Austrian Empire;Austria
+S|Kingdom of Prussia|after|German Empire;North German Confederation;Free State of Prussia
+S|Qing Dynasty;Qing dynasty;Qing Empire|after|Republic of China;China
+S|Ming Dynasty;Ming dynasty|after|Qing;Shun;Southern Ming
+S|Yuan Dynasty;Yuan dynasty|after|Ming;Northern Yuan
+S|Mughal Empire|after|British Raj;Brit;Maratha;East India Company
+S|Byzantine Empire|after|Ottoman
+S|Sasanian Empire|after|Rashidun
+S|Achaemenid Empire|after|Macedon;Alexander;Seleucid
+S|Roman Republic|after|Roman Empire
+S|Tokugawa Shogunate;Tokugawa shogunate|after|Japan
+S|Kingdom of Sardinia|after|Italy
+S|Papal States|after|Italy
+S|Kingdom of the Two Sicilies|after|Italy
+S|Republic of Texas;Texas|after|United States
+S|Confederate States of America|after|United States
+S|East Germany;German Democratic Republic|after|Germany
+S|Tanganyika|after|Tanzania
+S|Federal Republic of Central America;United Provinces of Central America|after|Guatemala;Honduras;Nicaragua;Costa Rica;El Salvador
+S|Kingdom of Hawaii;Hawaii;Hawaiian Kingdom|after|United States;Republic of Hawaii
+S|Inca Empire|after|Spanish;Spain;Peru;New Castile
+S|Aztec Empire;Aztec Triple Alliance;Triple Alliance|after|Spanish;Spain;New Spain
+S|Kingdom of England|after|Great Britain
+S|Kingdom of Scotland|after|Great Britain
+S|Kingdom of Great Britain|after|United Kingdom
+S|Soviet Union|before|Russia
+S|Turkey|before|Ottoman
+# corrected in round 5: the maps and Wikidata give the direct predecessor under the name the Thirteen Colonies used in 1775 and 1776, "United Colonies"; that name is accepted too
+S|United States of America;United States|before|Brit;Great Britain;Thirteen Colonies;United Colonies
+S|Belgium|before|Netherlands
+S|Bangladesh|before|Pakistan
+S|South Sudan|before|Sudan
+S|Eritrea|before|Ethiopia
+S|Kingdom of Italy;Italy|before|Sardinia
+S|German Empire|before|North German Confederation;Prussia
+S|Pakistan|before|India;British Raj;Brit
+S|Norway|before|Sweden
+S|Finland|before|Russia
+S|Republic of Ireland;Ireland|before|United Kingdom
+S|Panama|before|Colombia
+S|Timor-Leste;East Timor|before|Indonesia;Portug
+S|Mexico;First Mexican Empire;Mexican Empire|before|Spain;Spanish;New Spain
+S|Brazil;Empire of Brazil|before|Portug
+S|Umayyad Caliphate|before|Rashidun
+S|Abbasid Caliphate|before|Umayyad
+S|Seleucid Empire;Seleucid Kingdom|before|Macedon;Alexander
+# -- empires and their parts
+M|India;British India;British Raj|1914|Brit
+M|Canada|1914|Brit
+M|Australia|1914|Brit
+M|New Zealand|1914|Brit
+M|South Africa;Union of South Africa|1914|Brit
+M|Algeria;French Algeria|1914|Fran
+M|Vietnam;French Indochina;Annam;Tonkin|1914|Fran
+M|Belgian Congo;Congo|1914|Belgi
+M|Angola;Portuguese Angola|1914|Portug
+M|Mozambique;Portuguese East Africa;Portuguese Mozambique|1914|Portug
+M|Dutch East Indies;Indonesia;Netherlands East Indies|1914|Netherl;Dutch
+M|Philippines|1914|United States;America
+M|Korea;Chosen|1914|Japan
+M|Taiwan;Formosa|1914|Japan
+M|Libya;Italian Libya;Tripolitania|1914|Ital
+M|Namibia;German South West Africa;South West Africa;German South-West Africa|1914|German
+M|Tanganyika;German East Africa;Tanzania|1914|German
+M|Greenland|1914|Denmark;Danish
+M|Canada|1935|!Brit
+M|Australia|1950|!Brit
+M|India|1950|!Brit
+M|Algeria|1970|!Fran
+M|Portugal;Kingdom of Portugal|1600|Spanish;Spain;Iberian
+M|New Spain|1700|Spanish;Spain
+M|Peru;Viceroyalty of Peru|1700|Spanish;Spain
+M|Hungary;Kingdom of Hungary|1900|Austria
+M|Lithuania;Grand Duchy of Lithuania|1600|Polish;Commonwealth
+M|Ukrainian;Ukraine|1950|Soviet
+M|Kazakh|1950|Soviet
+M|Golden Horde|1270|Mongol
+M|Ilkhanate|1270|Mongol
+M|Chagatai|1270|Mongol
+# corrected in round 5 (before any data was looked at): in 1600 Wallachia and Moldavia were held by Michael the Brave, in revolt against the Ottomans; the check is for 1650
+M|Wallachia|1650|Ottoman
+M|Moldavia|1650|Ottoman
+M|Crimea;Crimean Khanate|1600|Ottoman
+M|Bohemia|1500|Holy Roman
+M|Bavaria|1500|Holy Roman
+M|Brandenburg|1500|Holy Roman
+M|Egypt|1850|Ottoman
+M|Norway|1850|Sweden
+M|Finland|1850|Russia
+M|Iceland|1900|Denmark;Danish
+M|Cuba|1890|Spain;Spanish
+M|Puerto Rico|1890|Spain;Spanish
+M|Poland;Congress Poland;Kingdom of Poland|1850|Russia
+# -- wartime occupation
+O|Poland|1942|German
+O|France|1942|German
+O|Norway|1942|German
+O|Denmark|1942|German
+O|Netherlands|1942|German
+O|Belgium|1942|German
+O|Greece|1942|German;Ital;Axis
+O|Yugoslavia|1942|German;Axis;Ital
+O|Philippines|1943|Japan
+O|Malaya;Malaysia|1943|Japan
+O|Burma;Myanmar|1943|Japan
+O|Dutch East Indies;Indonesia|1943|Japan
+O|Estonia|1942|German
+O|Latvia|1942|German
+O|Lithuania|1942|German
+O|Belgium|1916|German
+O|Serbia|1917|Austria;Central Powers;Bulgaria
+O|Luxembourg|1942|German
+O|Czechoslovakia;Czech|1941|German
+O|France|1946|!German
+O|Poland|1938|!German
+O|Japan|1947|United States;Allied
+# -- in office (de facto leaders, emperors, khans)
+H|Soviet Union|1935|Stalin
+H|Soviet Union|1960|Khrushchev
+H|Soviet Union|1975|Brezhnev
+H|Soviet Union|1987|Gorbachev
+H|China|1960|Mao
+H|China|1995|Jiang Zemin
+H|Holy Roman Empire;Holy Roman Empire Minor States|1000|Otto III
+H|Holy Roman Empire;Holy Roman Empire Minor States|1160|Frederick
+H|Holy Roman Empire;Holy Roman Empire Minor States|1250|Frederick II
+H|Holy Roman Empire;Holy Roman Empire Minor States|1350|Charles IV
+H|Holy Roman Empire;Holy Roman Empire Minor States|1450|Frederick III
+H|Holy Roman Empire;Holy Roman Empire Minor States|1530|Charles V
+H|Holy Roman Empire;Holy Roman Empire Minor States|1700|Leopold
+H|Holy Roman Empire;Holy Roman Empire Minor States|1790|Leopold II;Joseph II
+H|Parthian Empire;Parthia|-100|Mithridates
+H|Golden Horde|1350|Jani Beg;Jani;Janibeg
+H|Golden Horde|1320|Öz Beg;Uzbeg;Ozbeg;Uzbek
+H|Ilkhanate|1300|Ghazan
+H|Ilkhanate|1260|Hulagu;Hülegü
+H|Durrani Empire;Durrani|1760|Ahmad Shah
+H|Cuba|1980|Castro
+H|Yugoslavia|1960|Tito
+H|East Germany;German Democratic Republic|1980|Honecker
+H|Romania|1980|Ceau
+H|Poland|1960|Gomułka;Gomulka
+H|North Korea;Korea, North;Korea, People's Republic of|1970|Kim Il
+# -- who held where: weak regions and eras
+C|75.4|22.35|1450|Malwa
+C|72.58|23.03|1450|Gujarat
+C|76.83|17.33|1400|Bahman
+C|76.47|15.33|1450|Vijayanagar
+C|74.64|24.88|1450|Mewar;Rajput;Sisodia
+C|82.68|25.75|1450|Jaunpur
+C|88.14|24.87|1450|Bengal
+C|77.21|28.61|1450|Sayyid;Delhi;Lodi
+C|77.21|28.61|1500|Lodi;Delhi
+C|85.88|20.46|1450|Gajapati;Orissa;Odisha
+C|73.44|18.23|1680|Maratha
+C|73.86|18.52|1760|Maratha
+C|79.09|21.15|1760|Maratha;Nagpur;Bhonsle
+C|78.48|17.38|1600|Golconda;Qutb
+C|75.71|16.83|1600|Bijapur;Adil
+C|80.27|13.08|1700|Brit;English;East India
+C|72.83|18.94|1700|Brit;English;East India
+C|73.83|15.49|1600|Portug
+C|76.96|8.5|1750|Travancore
+C|76.65|12.31|1780|Mysore
+C|74.34|31.55|1820|Sikh
+C|69.17|34.53|1780|Durrani;Afghan
+C|65.71|31.61|1750|Durrani;Afghan
+C|66.96|39.65|1400|Timur
+C|64.42|39.77|1550|Bukhara;Shayban;Uzbek
+C|60.63|41.38|1700|Khiva;Khwarazm;Khwarezm
+C|48.03|46.35|1350|Golden Horde;Jochi;Kipchak
+C|49.12|55.79|1500|Kazan
+C|33.88|44.75|1600|Crimea
+C|102.83|47.2|1230|Mongol
+C|46.29|38.08|1300|Ilkhan
+C|66.96|39.65|1300|Chagatai
+C|106.9|47.9|100|Xianbei;Xiongnu
+C|106.9|47.9|-150|Xiongnu
+C|106.9|47.9|600|Turk;Göktürk;Gokturk;Tujue
+C|106.9|47.9|800|Uyghur;Uighur
+C|35.0|48.5|-400|Scyth
+C|47.9|46.1|900|Khazar
+C|30.52|50.45|1000|Kiev;Rus
+C|39.83|21.42|632|Rashidun;Medina;Muhammad;Caliphate;Islam
+C|46.7|24.6|650|Rashidun;Caliphate
+C|44.2|15.35|650|Rashidun;Caliphate
+C|58.4|23.6|650|Rashidun;Caliphate
+C|45.33|15.42|-500|Saba;Sheba
+C|35.44|30.33|50|Nabat
+C|38.27|34.55|271|Palmyr
+C|44.2|15.35|1800|Yemen;Zaidi;Qasimi;Imam
+C|46.57|24.73|1800|Diriyah;Saud;Najd;Nejd;Wahhabi
+C|39.83|21.42|1800|Ottoman;Hejaz;Sharif;Mecca
+C|58.4|23.6|1800|Oman;Muscat
+C|-3.0|16.77|1400|Mali
+C|-3.0|16.77|1500|Songhai
+C|-0.04|16.27|1550|Songhai
+C|-3.0|16.77|1650|Morocc;Pashalik;Arma;Saadi;Timbuktu
+C|12.4|13.0|1600|Bornu;Kanem
+C|8.52|12.0|1500|Kano;Hausa
+C|5.24|13.06|1850|Sokoto
+C|-1.62|6.69|1800|Asante;Ashanti
+C|1.99|7.18|1800|Dahomey
+C|5.62|6.34|1600|Benin
+C|4.3|8.97|1750|Oyo
+C|38.75|9.02|1900|Ethiopia;Abyssinia
+C|37.47|12.6|1700|Ethiopia;Abyssinia;Gondar
+C|38.72|14.13|300|Aksum;Axum
+C|33.75|16.94|-300|Kush;Mero
+C|30.93|-20.27|1400|Zimbabwe
+C|14.25|-6.27|1600|Kongo
+C|32.58|0.31|1850|Buganda
+C|31.4|-28.3|1830|Zulu
+C|18.42|-33.92|1700|Dutch;VOC;Netherlands;Cape
+C|18.42|-33.92|1850|Brit;Cape
+C|47.52|-18.9|1850|Merina;Madagascar;Imerina
+C|39.27|-6.17|1850|Zanzibar;Oman;Muscat
+C|-17.44|14.69|1900|Fran;Senegal
+C|10.18|36.8|1700|Tunis;Ottoman
+C|3.06|36.75|1700|Algiers;Ottoman
+C|-5.0|34.03|1400|Marinid
+C|10.1|36.85|-300|Carthag
+C|31.24|30.04|1000|Fatimid
+C|31.24|30.04|1300|Mamluk
+C|31.24|30.04|1200|Ayyubid
+C|4.83|45.76|-200|Gaul;Celt;Allobrog;Arvern;Aedui;Sequani
+C|2.35|48.85|-100|Gaul;Celt;Parisii;Senones
+C|13.4|52.5|100|German;Semnon;Suebi;Lombard
+C|9.99|53.55|100|German;Saxon;Chauci;Langobard;Lombard;Angl;Suebi
+C|-3.7|40.4|-300|Iberi;Celtiber;Carpetan;Celt
+C|-0.38|39.47|-300|Iberi;Edetan
+C|-6.26|53.35|100|Irish;Gael;Hibern;Celt;Ireland;Eblani
+C|-4.22|57.48|100|Caledon;Pict;Celt;Brit
+C|26.1|44.43|50|Dacia;Geta
+C|23.6|46.77|150|Roman;Dacia
+# corrected in round 5: the map's "Scandinavian minor kingdoms" is a right answer for Svealand in 800 and is accepted too
+C|18.07|59.33|800|Swed;Svea;Norse;Viking;Scandinavian minor kingdoms
+C|10.75|59.91|1000|Norw
+C|12.57|55.68|1000|Denmark;Danish;Danes
+C|21.01|52.23|1000|Poland;Piast;Polan;Mazov
+C|19.04|47.5|1000|Hungar;Magyar
+C|14.42|50.09|1000|Bohemia;Holy Roman
+C|23.32|42.7|900|Bulgar
+C|-9.14|38.72|1000|Córdoba;Umayyad;Andalus;Caliphate
+C|-99.13|19.43|1450|Aztec;Mexica;Tenochtitlan;Triple Alliance
+C|-71.97|-13.52|1500|Inca;Tawantinsuyu
+C|-78.5|-0.22|1520|Inca;Tawantinsuyu
+C|-88.57|20.68|1000|Maya;Chichen;Itza
+C|-89.62|17.22|700|Maya;Tikal;Mutal
+C|-98.84|19.69|300|Teotihuac
+C|-79.07|-8.1|1400|Chim
+C|-68.67|-16.55|700|Tiwanaku;Tiahuanaco
+C|-74.07|4.6|1500|Muisca;Chibcha
+C|-90.06|38.66|1100|Mississippi;Cahokia
+C|-108.0|36.06|1100|Pueblo;Anasazi;Chaco
+C|-58.38|-34.6|1700|Spain;Spanish
+C|-43.2|-22.9|1700|Portug;Brazil
+C|-77.03|-12.05|1700|Spain;Spanish;Peru
+C|-74.07|4.6|1825|Colombia
+C|-66.9|10.5|1850|Venezuela
+C|-70.65|-33.45|1850|Chile
+C|-57.63|-25.3|1850|Paraguay
+C|-72.34|18.54|1810|Haiti
+C|-82.38|23.13|1850|Spain;Spanish;Cuba
+C|-135.33|57.05|1850|Russia
+C|-135.33|57.05|1870|United States;USA;Alaska
+C|-123.12|49.28|1860|Brit;Columbia
+C|-97.14|49.9|1850|Hudson;Rupert;Brit;Red River;Assiniboia
+C|-157.86|21.31|1850|Hawai
+C|151.21|-33.87|1850|New South Wales;Brit
+C|144.96|-37.81|1880|Victoria;Brit
+C|115.86|-31.95|1880|Western Australia;Brit
+C|174.78|-41.29|1880|New Zealand;Brit
+C|178.44|-18.14|1880|Fiji;Brit
+C|-175.2|-21.14|1880|Tonga
+C|103.86|13.41|1200|Khmer;Angkor;Kambuja
+C|100.5|14.35|1500|Ayutthaya;Siam
+C|96.0|21.9|1800|Burma;Konbaung;Ava
+C|94.86|21.17|1100|Pagan;Bagan;Burma
+C|105.85|21.03|1100|Dai Viet;Đại Việt;Ly;Lý;Annam;Vietnam
+C|108.2|15.9|1000|Champa;Cham
+C|112.4|-7.55|1350|Majapahit
+C|104.75|-2.99|800|Srivijaya;Sriwijaya
+C|102.25|2.2|1480|Malacca;Melaka
+C|102.25|2.2|1700|Dutch;VOC;Netherlands
+C|106.83|-6.17|1700|Dutch;VOC;Netherlands
+C|120.98|14.6|1700|Spain;Spanish;Philippines
+C|127.77|26.21|1500|Ryukyu;Ryūkyū
+C|126.98|37.57|1500|Joseon;Korea;Chosŏn;Choson
+C|129.2|35.85|700|Silla
+C|125.75|39.02|500|Goguryeo;Koguryo
+C|135.8|34.69|750|Japan;Yamato;Nara
+C|91.1|29.65|800|Tibet;Tubo;Tufan
+C|91.1|29.65|1700|Tibet;Khoshut;Ganden;Qing;Dzungar;Dalai
+C|100.2|25.6|900|Nanzhao;Nanchao;Dali
+C|100.2|25.6|1100|Dali
+E|Battle of Yarmouk|636
+E|Great Trek|1835
+E|First Opium War|1839
+E|Battle of Las Navas de Tolosa|1212
+R|Shivaji|1674
+R|Mansa Musa|1312
+# corrected in round 5: the usual spelling is Sonni Ali ("Sunni Ali" also matched the caliph Ali of 656)
+R|Sonni Ali|1464
+R|Shaka|1816
+R|Pachacuti|1438
+R|Ashoka|-268
+R|Saladin|1174
+R|Ranjit Singh|1801
+R|Tipu Sultan|1782
+R|Hongwu Emperor|1368
+R|Sejong the Great|1418
+R|Trajan|98
+R|Hadrian|117
+# corrected in round 5: Wikidata and the app call him Otto the Great; the check uses that name
+R|Otto the Great|936
+

@@ -289,3 +289,64 @@ def label_point(geom):
     if not best:
         return [round(sum(xs) / len(xs), 2), round(sum(ys) / len(ys), 2)]
     return [round(best[1], 2), round(best[2], 2)]
+
+
+# ---- compact geometry: rings as delta-encoded strings (the "encoded polyline" format, x then y) ----
+PREC = 1000   # 0.001 degree, about 110 m
+
+
+def _enc_num(v, out):
+    v = ~(v << 1) if v < 0 else (v << 1)
+    while v >= 0x20:
+        out.append(chr((0x20 | (v & 0x1f)) + 63))
+        v >>= 5
+    out.append(chr(v + 63))
+
+
+def encode_ring(ring, prec=PREC):
+    out = []
+    px = py = 0
+    for p in ring:
+        x, y = round(p[0] * prec), round(p[1] * prec)
+        _enc_num(x - px, out)
+        _enc_num(y - py, out)
+        px, py = x, y
+    return ''.join(out)
+
+
+def decode_ring(s, prec=PREC):
+    out = []
+    x = y = 0
+    i, n = 0, len(s)
+    while i < n:
+        for k in (0, 1):
+            shift = res = 0
+            while True:
+                b = ord(s[i]) - 63
+                i += 1
+                res |= (b & 0x1f) << shift
+                shift += 5
+                if b < 0x20:
+                    break
+            d = ~(res >> 1) if res & 1 else res >> 1
+            if k == 0:
+                x += d
+            else:
+                y += d
+        out.append([x / prec, y / prec])
+    return out
+
+
+def encode_geom(g, prec=PREC):
+    """{'type', 'coordinates'} -> {'type', 'enc'} (rings as strings)."""
+    if g['type'] == 'Polygon':
+        return {'type': 'Polygon', 'enc': [encode_ring(r, prec) for r in g['coordinates']]}
+    return {'type': 'MultiPolygon', 'enc': [[encode_ring(r, prec) for r in p] for p in g['coordinates']]}
+
+
+def decode_geom(g, prec=PREC):
+    if 'coordinates' in g:
+        return g
+    if g['type'] == 'Polygon':
+        return {'type': 'Polygon', 'coordinates': [decode_ring(r, prec) for r in g['enc']]}
+    return {'type': 'MultiPolygon', 'coordinates': [[decode_ring(r, prec) for r in p] for p in g['enc']]}

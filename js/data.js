@@ -79,13 +79,44 @@ export function nextSnapshotAfter(y) {
   return n || null;
 }
 
+// ---- compact geometry (tools/geo.py encode_geom): rings as delta-encoded strings, 0.001 degree ----
+function decodeRing(s) {
+  const out = [];
+  let x = 0, y = 0, i = 0;
+  const n = s.length;
+  while (i < n) {
+    for (let k = 0; k < 2; k++) {
+      let shift = 0, res = 0, b;
+      do { b = s.charCodeAt(i++) - 63; res |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+      const d = res & 1 ? ~(res >> 1) : res >> 1;
+      if (k === 0) x += d; else y += d;
+    }
+    out.push([x / 1000, y / 1000]);
+  }
+  return out;
+}
+export function decodeGeom(g) {
+  if (g.coordinates) return g;
+  return g.type === 'Polygon' ? { type: 'Polygon', coordinates: g.enc.map(decodeRing) }
+    : { type: 'MultiPolygon', coordinates: g.enc.map((p) => p.map(decodeRing)) };
+}
+
 const shapeStore = new Map();
+/** One shape of a yearly source by file and id (used for occupied countries that are off the map that year). */
+export async function loadShape(src, f, id) {
+  if (!shapeStore.has(src + '/' + f)) {
+    const d = await getJSON(src + '/' + f);
+    for (const [sid, sh] of Object.entries(d)) { sh.g = decodeGeom(sh.g); shapeStore.set(src + ':' + sid, sh); }
+    shapeStore.set(src + '/' + f, true);
+  }
+  return shapeStore.get(src + ':' + id);
+}
 async function loadCsYear(y, src) {
   const yr = await getJSON(`${src}/years/${y}.json`);
   await Promise.all(yr.need.map(async (f) => {
     if (shapeStore.has(src + '/' + f)) return;
     const d = await getJSON(src + '/' + f);
-    for (const [id, sh] of Object.entries(d)) shapeStore.set(src + ':' + id, sh);
+    for (const [id, sh] of Object.entries(d)) { sh.g = decodeGeom(sh.g); shapeStore.set(src + ':' + id, sh); }
     shapeStore.set(src + '/' + f, true);
   }));
   const features = [];
@@ -106,12 +137,13 @@ async function loadCsYear(y, src) {
       under.set(sy, d);
     }));
   }
-  const polities = yr.rows.map(([id, n, p, s, extra], k) => {
+  const polities = yr.rows.map(([id, n, p, s, extra, alt], k) => {
     if (clio && extra) {
       const d = under.get(extra);
       const src0 = d.polities[id];
       for (const g of d._byK.get(id) || []) features.push({ type: 'Feature', geometry: g, properties: { k, c: null, p, u: 1 } });
-      const pol = { n, p, a: src0.a, l: src0.l, bb: src0.bb, pr: 3, under: extra };
+      const pol = { n, p, a: src0.a, l: alt || src0.l, bb: src0.bb, pr: 3, under: extra };   // alt: a label point outside the states that cover part of it
+      if (src0.ln && n === src0.n) pol.ln = src0.ln;   // the sketch map's label text, unless the row is renamed
       if (s) pol.s = s;
       return pol;
     }
@@ -130,12 +162,13 @@ async function loadCsYear(y, src) {
 }
 
 export async function loadSnapshot(s) {
-  if (s.cs) {
-    const [doc, powers] = await Promise.all([loadCsYear(s.y, s.src || 'cshapes'), getJSON('powers.json')]);
-    for (const f of doc.features) f.properties.c = powers[f.properties.p]?.color || '#ccc';
-    return doc;
-  }
-  return getJSON('borders/' + s.f);
+  if (s.cs) return loadCsYear(s.y, s.src || 'cshapes');
+  // a world sketch map (before 3400 BC): every territory is a people or culture, and each feature gets its
+  // power key so that it can be coloured like the yearly maps
+  const d = await getJSON('borders/' + s.f);
+  const doc = { type: 'FeatureCollection', year: d.year, features: d.features.filter((f) => f.properties.k >= 0).map((f) => ({ type: 'Feature', geometry: f.geometry, properties: { k: f.properties.k, p: d.polities[f.properties.k].p, u: 1 } })),
+    polities: d.polities.map((p) => ({ ...p, under: d.year })), largest: d.largest, changes: d.changes };
+  return doc;
 }
 
 // ---- events ----
@@ -206,6 +239,9 @@ export const loadPowers = () => getJSON('powers.json');
 export const loadEntities = () => getJSON('entities.json');
 export const loadUS = () => getJSON('us/states.json');
 export const loadModern = () => getJSON('base/modern.json');
-export const loadLand = () => getJSON('base/land.json');
+export const loadSea = () => getJSON('base/sea.json').then((d) => ({ sea: decodeGeom(d.sea), lakes: decodeGeom(d.lakes) }));
+export const loadEmpires = () => getJSON('empires.json').catch(() => ({ empires: {}, rows: {}, undrawn: {}, notes: [] }));
+export const loadSuccession = () => getJSON('succession.json').catch(() => ({}));
+export const loadOccupations = () => getJSON('occupations.json').catch(() => ({ rows: [] }));
 export const loadSearch = () => getJSON('search.json');
 export const loadMeta = () => getJSON('meta.json');

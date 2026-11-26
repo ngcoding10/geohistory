@@ -228,7 +228,7 @@ async function waitEvents(page) {
     await page.waitForFunction(() => /In office in 1700/.test(document.querySelector('#panelBody')?.innerText || ''), null, { timeout: 30000 }).catch(() => {});
     const qing = await page.locator('#panelBody').innerText();
     ok(/Kangxi Emperor/.test(qing) && /curated/i.test(qing), 'the Qing panel in 1700 names the Kangxi Emperor, tagged curated');
-    ok(/Also called/.test(qing) && /Manchu Empire/.test(qing), 'the Qing panel lists its aliases (Manchu Empire)');
+    ok(/Also called/i.test(qing) && /Manchu Empire/.test(qing), 'the Qing panel lists its aliases (Manchu Empire)');
     await page.goto(BASE + '?y=1800&c=' + encodeURIComponent('Danish India'));
     await waitH1(page, 'Danish India');
     await page.waitForFunction(() => /map note/.test(document.querySelector('#panelBody')?.innerText || ''), null, { timeout: 30000 }).catch(() => {});
@@ -250,7 +250,7 @@ async function waitEvents(page) {
 
     // ---- round 4: what a look at the map by eye turned up ----
     const polAt = async (y) => { await page.goto(BASE + '?y=' + y); await waitH1(page, 'The world in ' + (y < 0 ? (-y).toLocaleString('en-US') + ' BC' : y)); await page.waitForFunction((yy) => window.__geo?.state.year === yy && window.__geo.state.snapDoc && window.__geo.map?.ready, y, { timeout: 60000 }); await page.waitForTimeout(600); return page.evaluate(() => window.__geo.state.snapDoc.polities.map((p) => ({ n: p.n, s: p.s || '', u: !!p.under }))); };
-    const layers = await page.evaluate(() => { const m = window.__geo.map.map; const ids = m.getStyle().layers.map((l) => l.id); return { u: ids.indexOf('ufillA'), f: ids.indexOf('fillA'), ul: ids.includes('ulbl-1'), usl: m.getLayer('us-label').source }; });
+    const layers = await page.evaluate(() => { const m = window.__geo.map.map; const ids = m.getStyle().layers.map((l) => l.id); return { u: ids.indexOf('ufillA'), f: ids.indexOf('fill0A'), ul: ids.includes('lbl-people') && ids.includes('lbl-region'), usl: m.getLayer('us-label').source }; });
     ok(layers.u >= 0 && layers.u < layers.f && layers.ul, 'sketch-map territories have their own fill below the states and their own label layers');
     ok(layers.usl === 'us-lbl', 'US state names come from one label point per state');
     const p1914 = await polAt(1914);
@@ -303,6 +303,99 @@ async function waitEvents(page) {
     const firstHit = await page.locator('#results li').first().innerText();
     ok(/^Byzantine Empire\s*Territory/.test(firstHit), `searching "bizantine empir" puts the territory first ("${firstHit.replace(/\n/g, ' ')}")`);
     await page.keyboard.press('Escape');
+
+    // ---------------- empires and their parts ----------------
+    await page.goto(BASE + '?y=1914&v=flat');
+    await waitH1(page, 'The world in 1914');
+    await page.waitForFunction(() => window.__geo?.state.snapDoc?.groups, null, { timeout: 60000 });
+    const grp = await page.evaluate(() => {
+      const d = window.__geo.state.snapDoc;
+      const g = d.groups.find((x) => x.key === 'e:britain');
+      const prop = (n) => d.features.find((f) => d.polities[f.properties.k].n === n)?.properties;
+      return { n: g?.members.length, name: g?.name, india: prop('India'), canada: prop('Canada'), france: prop('France') };
+    });
+    ok(grp.name === 'British Empire' && grp.n > 25, `1914: the British Empire is one group of ${grp.n} drawn parts`);
+    ok(grp.india.g === grp.canada.g && grp.india.c === grp.canada.c && grp.india.s === grp.canada.s && grp.india.c !== grp.france.c,
+      '1914: India and Canada share the empire colour and draw slot, France has another colour');
+    await page.evaluate(() => window.__geo.map.map.jumpTo({ center: [60, 25], zoom: 1.6 }));
+    await page.waitForTimeout(4000);
+    const lowZoom = await page.evaluate(() => {
+      const m = window.__geo.map.map;
+      const names = (ls) => m.queryRenderedFeatures({ layers: ls }).map((f) => f.properties.n);
+      return { emp: names(['lbl-emp', 'lbl-emp-fb', 'lbl-emp-line']), parts: names(['lbl-part', 'lbl-s', 'lbl-xs']).filter((n) => ['India', 'Nigeria', 'Algeria', 'Uganda'].includes(n)),
+        inner: m.getPaintProperty('inner' + window.__geo.map.active, 'line-opacity') };
+    });
+    ok(lowZoom.emp.includes('British Empire') && lowZoom.parts.length === 0, `world zoom shows the empire label and no part labels (${[...new Set(lowZoom.emp)].slice(0, 5).join(', ')})`);
+    const px = await page.evaluate(() => { const p = window.__geo.map.map.project([78, 22]); return [p.x, p.y]; });
+    await page.mouse.click(px[0], px[1]);
+    await waitH1(page, 'British Empire');
+    const empText = await page.locator('#panelBody').innerText();
+    ok(/Parts on the map in 1914/i.test(empText) && /India/.test(empText) && /Canada/.test(empText), 'clicking India at world zoom opens the British Empire with its parts listed');
+    await page.locator('#panelBody .parts button', { hasText: /^India$/ }).first().click();
+    await waitH1(page, 'India');
+    const partText = await page.locator('#panelBody .facts').innerText();
+    ok(/Part of\s*British Empire/i.test(partText), 'the part\'s panel says "Part of British Empire"');
+    await page.evaluate(() => window.__geo.map.map.jumpTo({ center: [8, 9], zoom: 4.4 }));
+    await page.waitForTimeout(5000);
+    const hiZoom = await page.evaluate(() => {
+      const m = window.__geo.map.map;
+      return { parts: m.queryRenderedFeatures({ layers: ['lbl-part', 'lbl-s', 'lbl-xs'] }).map((f) => f.properties.n), emp: m.queryRenderedFeatures({ layers: ['lbl-emp', 'lbl-emp-fb', 'lbl-emp-line'] }).length };
+    });
+    ok(hiZoom.parts.includes('Nigeria') && hiZoom.emp === 0, `zoomed in, the parts carry their own labels (${[...new Set(hiZoom.parts)].slice(0, 6).join(', ')}) and the empire label is gone`);
+    const px2 = await page.evaluate(() => { const p = window.__geo.map.map.project([8, 9.5]); return [p.x, p.y]; });
+    await page.mouse.click(px2[0], px2[1]);
+    await waitH1(page, 'Nigeria');
+    ok(true, 'zoomed in, a click selects the part (Nigeria), not the empire');
+    await page.goto(BASE + '?y=1935&v=flat&c=Canada');
+    await waitH1(page, 'Canada');
+    await page.waitForSelector('#panelBody .facts');
+    ok(!/Part of/i.test(await page.locator('#panelBody .facts').innerText()), '1935: Canada is no longer part of the British Empire');
+    await page.goto(BASE + '?y=1700&v=flat&em=spain');
+    await waitH1(page, 'Spanish Empire');
+    ok(/Viceroyalty of New Spain/.test(await page.locator('#panelBody').innerText()), '1700: the Spanish Empire panel lists New Spain as a part without a shape');
+
+    // ---------------- before and after ----------------
+    await page.goto(BASE + '?y=1900&v=flat&c=Ottoman+Empire');
+    await waitH1(page, 'Ottoman Empire');
+    await page.waitForSelector('#panelBody .succ h2', { timeout: 30000 });
+    const succText = await page.locator('#panelBody .succ').innerText();
+    ok(/Before/i.test(succText) && /Byzantine Empire/.test(succText) && /After/i.test(succText) && /Turkey/.test(succText), 'the Ottoman Empire panel has Before (Byzantine Empire) and After (Turkey)');
+    await page.waitForFunction(() => /Today this is/.test(document.querySelector('#panelBody .today')?.textContent || ''), null, { timeout: 30000 });
+    ok(/Turkey/.test(await page.locator('#panelBody .today').first().innerText()), '"Today this is" names Turkey for the Ottoman Empire of 1900');
+    await page.locator('#panelBody .succ button', { hasText: /^Turkey$/ }).first().click();
+    await waitH1(page, 'Turkey');
+    const ty = await page.evaluate(() => window.__geo.state.year);
+    ok(ty >= 1923 && ty <= 1925, `clicking "Turkey" under After jumps to Turkey in ${ty}`);
+    await page.waitForSelector('#panelBody .succ h2', { timeout: 30000 });
+    ok(/Before[\s\S]*Ottoman Empire/i.test(await page.locator('#panelBody .succ').innerText()), 'Turkey lists the Ottoman Empire under Before');
+    await page.goto(BASE + '?y=1700&v=flat&mc=PL');
+    await waitH1(page, 'Poland');
+    await page.waitForFunction(() => /In 1700 this was/.test(document.querySelector('#panelBody .today')?.textContent || ''), null, { timeout: 30000 });
+    ok(/Polish-Lithuanian Commonwealth/.test(await page.locator('#panelBody .today').first().innerText()), 'today\'s Poland: "In 1700 this was" names the Polish-Lithuanian Commonwealth');
+
+    // ---------------- round 5: occupations, filled blanks, de facto leaders ----------------
+    await page.goto(BASE + '?y=1942&v=flat');
+    await waitH1(page, 'The world in 1942');
+    await page.waitForFunction(() => window.__geo?.map?.map.getSource('occ') && window.__geo.map.map.querySourceFeatures('occ').length > 0, null, { timeout: 60000 }).catch(() => {});
+    const occ42 = await page.evaluate(() => ({ n: new Set(window.__geo.map.map.querySourceFeatures('occ').map((f) => f.properties.by)).size, t: document.querySelector('#panelBody').innerText }));
+    ok(occ42.n >= 2 && /occupied/i.test(occ42.t) && /Poland/.test(occ42.t) && /France/.test(occ42.t), `1942: occupied countries are hatched on the map (${occ42.n} occupiers) and listed in the year panel`);
+    await page.goto(BASE + '?y=1942&v=flat&c=Poland');
+    await waitH1(page, 'Poland');
+    await page.waitForSelector('#panelBody .occ', { timeout: 30000 });
+    ok(/Occupied by Germany/.test(await page.locator('#panelBody .occ').first().innerText()), '1942: the Poland panel says "Occupied by Germany" with dates and a source');
+    await page.goto(BASE + '?y=1938&v=flat&c=Poland');
+    await waitH1(page, 'Poland');
+    await page.waitForSelector('#panelBody .facts');
+    ok((await page.locator('#panelBody .occ').count()) === 0, '1938: Poland is not marked occupied');
+    const p117 = await polAt(117);
+    ok(p117.some((p) => /Irish kingdoms/.test(p.n) && p.u) && p117.some((p) => /Germanic peoples/.test(p.n) && p.u), 'AD 117: Ireland and Germania are labelled as peoples (italic, from the sketch maps), not left blank');
+    const p1770 = await polAt(1770);
+    const lou = p1770.find((p) => p.n === 'Spanish Louisiana');
+    ok(lou && /Spanish/.test(lou.s), `1770: Spanish Louisiana is on the map under the Spanish Empire ("${lou?.s}")`);
+    await page.goto(BASE + '?y=1935&v=flat&c=Soviet+Union');
+    await waitH1(page, 'Soviet Union');
+    await page.waitForFunction(() => /In office in 1935/i.test(document.querySelector('#panelBody').innerText), null, { timeout: 30000 });
+    ok(/Stalin/.test(await page.locator('#panelBody').innerText()), '1935: Stalin is listed in office for the Soviet Union');
 
     ok(errors.length === 0, `no console errors on desktop${errors.length ? ': ' + errors.slice(0, 5).join(' | ') : ''}`);
 

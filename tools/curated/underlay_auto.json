@@ -1,0 +1,266 @@
+{
+ "counts": {
+  "names": 2176,
+  "linked": 482,
+  "dated": 106,
+  "limited": 18,
+  "byHand": 39
+ },
+ "about": "Written by tools/build_underlay_spans.py from Wikidata inception and dissolution dates (60 years of slack). Do not edit: add exceptions to the \"keep\" list of underlay.json instead.",
+ "spans": [
+  {
+   "name": "Bashkirs",
+   "source": "https://www.wikidata.org/wiki/Q485348",
+   "verified": true,
+   "wikidata": [
+    900,
+    null
+   ],
+   "shownBefore": [
+    800,
+    899
+   ],
+   "from": 840
+  },
+  {
+   "name": "Beaker",
+   "source": "https://www.wikidata.org/wiki/Q470867",
+   "verified": true,
+   "wikidata": [
+    -2601,
+    -1801
+   ],
+   "shownBefore": [
+    -2000,
+    -1501
+   ],
+   "to": -1741
+  },
+  {
+   "name": "Catacomb culture",
+   "source": "https://www.wikidata.org/wiki/Q1511519",
+   "verified": true,
+   "wikidata": [
+    -2500,
+    -2000
+   ],
+   "shownBefore": [
+    -2000,
+    -1501
+   ],
+   "to": -1940
+  },
+  {
+   "name": "Chorrera",
+   "source": "https://www.wikidata.org/wiki/Q1076565",
+   "verified": true,
+   "wikidata": [
+    -1301,
+    -301
+   ],
+   "shownBefore": [
+    -1500,
+    -2
+   ],
+   "from": -1361,
+   "to": -241
+  },
+  {
+   "name": "Denmark-Norway",
+   "source": "https://www.wikidata.org/wiki/Q62651",
+   "verified": true,
+   "wikidata": [
+    1536,
+    1814
+   ],
+   "shownBefore": [
+    1000,
+    1525
+   ],
+   "from": 1476
+  },
+  {
+   "name": "Hittites",
+   "source": "https://www.wikidata.org/wiki/Q5406",
+   "verified": true,
+   "wikidata": [
+    -1701,
+    -1201
+   ],
+   "shownBefore": [
+    -2000,
+    -701
+   ],
+   "from": -1761,
+   "to": -1141
+  },
+  {
+   "name": "Kalinga",
+   "source": "https://www.wikidata.org/wiki/Q1150706",
+   "verified": true,
+   "wikidata": [
+    -301,
+    -261
+   ],
+   "shownBefore": [
+    -1,
+    1009
+   ],
+   "to": -201
+  },
+  {
+   "name": "Karasuk culture",
+   "source": "https://www.wikidata.org/wiki/Q129282",
+   "verified": true,
+   "wikidata": [
+    -1500,
+    -800
+   ],
+   "shownBefore": [
+    -1500,
+    -501
+   ],
+   "to": -740
+  },
+  {
+   "name": "La Tène culture",
+   "source": "https://www.wikidata.org/wiki/Q208247",
+   "verified": true,
+   "wikidata": [
+    -450,
+    15
+   ],
+   "shownBefore": [
+    -700,
+    -501
+   ],
+   "from": -510
+  },
+  {
+   "name": "Magadha",
+   "source": "https://www.wikidata.org/wiki/Q234009",
+   "verified": true,
+   "wikidata": [
+    -1201,
+    -345
+   ],
+   "shownBefore": [
+    -500,
+    299
+   ],
+   "to": -285
+  },
+  {
+   "name": "Minoan",
+   "source": "https://www.wikidata.org/wiki/Q134178",
+   "verified": true,
+   "wikidata": [
+    -3300,
+    -1100
+   ],
+   "shownBefore": [
+    -3400,
+    -1601
+   ],
+   "from": -3360
+  },
+  {
+   "name": "Moche",
+   "source": "https://www.wikidata.org/wiki/Q208188",
+   "verified": true,
+   "wikidata": [
+    1,
+    700
+   ],
+   "shownBefore": [
+    -1,
+    799
+   ],
+   "to": 760
+  },
+  {
+   "name": "Nanzhao",
+   "source": "https://www.wikidata.org/wiki/Q1045322",
+   "verified": true,
+   "wikidata": [
+    738,
+    902
+   ],
+   "shownBefore": [
+    700,
+    969
+   ],
+   "to": 962
+  },
+  {
+   "name": "Saxons",
+   "source": "https://www.wikidata.org/wiki/Q101985",
+   "verified": true,
+   "wikidata": [
+    500,
+    null
+   ],
+   "shownBefore": [
+    250,
+    799
+   ],
+   "from": 440
+  },
+  {
+   "name": "Tuʻi Tonga Empire",
+   "source": "https://www.wikidata.org/wiki/Q842390",
+   "verified": true,
+   "wikidata": [
+    951,
+    1826
+   ],
+   "shownBefore": [
+    500,
+    1870
+   ],
+   "from": 891
+  },
+  {
+   "name": "Wu",
+   "source": "https://www.wikidata.org/wiki/Q912068",
+   "verified": true,
+   "wikidata": [
+    -901,
+    -473
+   ],
+   "shownBefore": [
+    -1500,
+    -751
+   ],
+   "from": -961
+  },
+  {
+   "name": "Xiongnu",
+   "source": "https://www.wikidata.org/wiki/Q188836",
+   "verified": true,
+   "wikidata": [
+    -301,
+    500
+   ],
+   "shownBefore": [
+    -400,
+    -324
+   ],
+   "from": -361
+  },
+  {
+   "name": "Yamnaya culture",
+   "source": "https://www.wikidata.org/wiki/Q426737",
+   "verified": true,
+   "wikidata": [
+    -3300,
+    -2600
+   ],
+   "shownBefore": [
+    -3000,
+    -2001
+   ],
+   "to": -2540
+  }
+ ]
+}

@@ -4,7 +4,6 @@ Writes:
   data/borders/index.json        snapshot years, polity counts, file names
   data/borders/<year>.json       simplified features + polity table + largest powers + changes
   data/powers.json               every ruling power: display name, colour (stable across years)
-  data/base/land.json            Natural Earth land (background), simplified
   data/base/modern.json          Natural Earth modern countries, simplified (overlay + search)
   tools/cache/names.json         polity/power names with the years they appear (for Wikidata linking)
 """
@@ -53,10 +52,41 @@ ALIASES = {
 }
 DISPLAY = {'UK': 'United Kingdom', 'USA': 'United States', 'USSR': 'Soviet Union'}
 
-# Muted atlas fills. Dark text with a light halo stays readable on all of them.
-PALETTE = ['#d9b77e', '#a9c08f', '#d79c86', '#94b4cc', '#c7a8c9', '#e3cf86', '#9fc6ad', '#dba8a8',
-           '#a9a7d6', '#c4cd8c', '#e5b893', '#86bdb8', '#c9b9a0', '#b996b0', '#d8d39a', '#9cb0d2',
-           '#cf9a9a', '#b3cfa7', '#d7b0cf', '#bfae84']
+# Map colours, in OKLCH (lightness, chroma, hue) so that they share one lightness and saturation range: a
+# calm atlas palette. PALETTE: 24 muted hues for every power without a colour of its own, assigned so that
+# neighbours differ. CURATED: one fixed colour per major power, the same in every year; successor states use
+# the same key (Russian Empire and Soviet Union, the Chinese dynasties, the Persian empires) or a related hue.
+def oklch(L, C, H):
+    import math
+    a, b = C * math.cos(math.radians(H)), C * math.sin(math.radians(H))
+    l = (L + 0.3963377774 * a + 0.2158037573 * b) ** 3
+    m = (L - 0.1055613458 * a - 0.0638541728 * b) ** 3
+    s = (L - 0.0894841775 * a - 1.2914855480 * b) ** 3
+    rgb = (4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s,
+           -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s,
+           -0.0041960863 * l - 0.7034186147 * m + 1.7076147010 * s)
+    out = '#'
+    for v in rgb:
+        v = max(0.0, min(1.0, v))
+        v = 12.92 * v if v <= 0.0031308 else 1.055 * v ** (1 / 2.4) - 0.055
+        out += '%02x' % round(max(0.0, min(1.0, v)) * 255)
+    return out
+
+
+PALETTE = [oklch((0.83, 0.775, 0.865)[i % 3], (0.052, 0.062, 0.045)[i % 3], (i * 15 * 7) % 360) for i in range(24)]
+CURATED = {
+    'britain': oklch(0.80, 0.078, 5), 'france': oklch(0.78, 0.075, 255), 'spain': oklch(0.86, 0.095, 90),
+    'portugal': oklch(0.79, 0.08, 152), 'netherlands': oklch(0.80, 0.10, 58), 'russia': oklch(0.80, 0.065, 128),
+    'ottoman': oklch(0.74, 0.065, 168), 'austria': oklch(0.87, 0.04, 78), 'holy roman empire': oklch(0.86, 0.035, 105),
+    'germany': oklch(0.73, 0.045, 238), 'italy': oklch(0.83, 0.085, 140), 'usa': oklch(0.75, 0.065, 248),
+    'japan': oklch(0.80, 0.065, 322), 'china': oklch(0.83, 0.09, 82), 'mongols': oklch(0.76, 0.05, 112),
+    'rome': oklch(0.73, 0.10, 25), 'byzantium': oklch(0.73, 0.08, 318), 'persia': oklch(0.79, 0.065, 202),
+    'mughal': oklch(0.77, 0.09, 52), 'india': oklch(0.80, 0.085, 36), 'canada': oklch(0.86, 0.06, 104), 'denmark': oklch(0.82, 0.065, 22),
+    'sweden': oklch(0.84, 0.055, 232), 'belgium': oklch(0.81, 0.075, 98), 'polish-lithuanian commonwealth': oklch(0.79, 0.07, 14),
+    'umayyad caliphate': oklch(0.77, 0.085, 155), 'abbasid caliphate': oklch(0.75, 0.08, 160), 'rashidun caliphate': oklch(0.79, 0.085, 150),
+    'macedonian empire': oklch(0.78, 0.065, 278), 'franks': oklch(0.80, 0.07, 262), 'carolingian empire': oklch(0.80, 0.07, 262),
+    'brazil': oklch(0.82, 0.075, 136), 'delhi sultanate': oklch(0.78, 0.07, 185),
+}
 
 TOL = 0.03       # degrees, Douglas-Peucker tolerance
 DECIMALS = 2     # coordinate rounding (about 1 km)
@@ -176,7 +206,7 @@ def main():
     powers = {}
     for key in tot_area:
         disp = power_names[key].most_common(1)[0][0]
-        powers[key] = {'name': disp, 'color': PALETTE[colour[key]],
+        powers[key] = {'name': disp, 'color': CURATED.get(key) or PALETTE[colour[key]],
                        'years': [min(power_years[key]), max(power_years[key])]}
     write_json(os.path.join(DATA, 'powers.json'), powers)
 
@@ -262,17 +292,10 @@ def main():
                 b'The scripts that made them are in tools/ (build_borders.py).\n\n')
         f.write(fetch(HB + 'LICENSE'))
     write_json(os.path.join(CACHE, 'names.json'), {n: sorted(v) for n, v in names.items()})
+    if os.path.exists(os.path.join(CACHE, 'names_clio.json')):
+        os.remove(os.path.join(CACHE, 'names_clio.json'))   # the list starts afresh: build_clio.py has nothing to take out
 
     # --- base layers ---
-    land = json.loads(fetch(NE + 'ne_50m_land.geojson'))
-    lf = []
-    for f in land['features']:
-        g = simplify_geom(f['geometry'], 0.07, 2, min_area_km2=600)
-        if g:
-            lf.append({'type': 'Feature', 'geometry': g, 'properties': {}})
-    s = write_json(os.path.join(DATA, 'base', 'land.json'), {'type': 'FeatureCollection', 'features': lf})
-    log(f'land: {len(lf)} features, {s // 1024} KB')
-
     mod = json.loads(fetch(NE + 'ne_50m_admin_0_countries.geojson'))
     mf = []
     for f in mod['features']:

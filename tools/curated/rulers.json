@@ -1483,6 +1483,608 @@
      "William V, Prince of Orange"
     ]
    ]
+  },
+  {
+   "polities": [
+    "Soviet Union"
+   ],
+   "title": "Leader of the Soviet Union (General or First Secretary of the Communist Party; de facto leader)",
+   "source": "https://en.wikipedia.org/wiki/List_of_leaders_of_the_Soviet_Union",
+   "rulers": [
+    [
+     "Joseph Stalin",
+     1922,
+     1953
+    ],
+    [
+     "Nikita Khrushchev",
+     1953,
+     1964
+    ],
+    [
+     "Leonid Brezhnev",
+     1964,
+     1982
+    ],
+    [
+     "Yuri Andropov",
+     1982,
+     1984
+    ],
+    [
+     "Konstantin Chernenko",
+     1984,
+     1985
+    ],
+    [
+     "Mikhail Gorbachev",
+     1985,
+     1991
+    ]
+   ]
+  },
+  {
+   "polities": [
+    "Poland"
+   ],
+   "title": "First Secretary of the Polish United Workers' Party (de facto leader)",
+   "source": "https://en.wikipedia.org/wiki/Polish_United_Workers'_Party",
+   "rulers": [
+    [
+     "Bolesław Bierut",
+     1948,
+     1956
+    ],
+    [
+     "Władysław Gomułka",
+     1956,
+     1970
+    ],
+    [
+     "Edward Gierek",
+     1970,
+     1980
+    ],
+    [
+     "Stanisław Kania",
+     1980,
+     1981
+    ],
+    [
+     "Wojciech Jaruzelski",
+     1981,
+     1989
+    ]
+   ]
+  },
+  {
+   "polities": [
+    "East Germany"
+   ],
+   "title": "General Secretary of the Socialist Unity Party (the East German communist party; de facto leader)",
+   "source": "https://en.wikipedia.org/wiki/Socialist_Unity_Party_of_Germany",
+   "rulers": [
+    [
+     "Walter Ulbricht",
+     1950,
+     1971
+    ],
+    [
+     "Erich Honecker",
+     1971,
+     1989
+    ]
+   ]
+  },
+  {
+   "polities": [
+    "Ilkhanate"
+   ],
+   "title": "Ilkhan (khan of the Ilkhanate)",
+   "source": "https://en.wikipedia.org/wiki/Ilkhanate",
+   "rulers": [
+    [
+     "Hulagu Khan",
+     1256,
+     1265,
+     "Hulegu Khan"
+    ],
+    [
+     "Abaqa Khan",
+     1265,
+     1282
+    ],
+    [
+     "Tekuder",
+     1282,
+     1284
+    ],
+    [
+     "Arghun",
+     1284,
+     1291
+    ],
+    [
+     "Gaykhatu",
+     1291,
+     1295
+    ],
+    [
+     "Ghazan",
+     1295,
+     1304
+    ],
+    [
+     "Öljaitü",
+     1304,
+     1316
+    ],
+    [
+     "Abu Sa'id Bahadur Khan",
+     1316,
+     1335
+    ]
+   ]
+  },
+  {
+   "polities": [
+    "Golden Horde",
+    "Khanate of the Golden Horde"
+   ],
+   "title": "Khan of the Golden Horde",
+   "source": "https://en.wikipedia.org/wiki/List_of_khans_of_the_Golden_Horde",
+   "rulers": [
+    [
+     "Batu Khan",
+     1227,
+     1255
+    ],
+    [
+     "Sartaq Khan",
+     1255,
+     1256
+    ],
+    [
+     "Berke",
+     1257,
+     1266
+    ],
+    [
+     "Möngke Temür",
+     1266,
+     1280
+    ],
+    [
+     "Töde Möngke",
+     1280,
+     1287
+    ],
+    [
+     "Töle Buqa",
+     1287,
+     1291
+    ],
+    [
+     "Toqta",
+     1291,
+     1312
+    ],
+    [
+     "Öz Beg Khan",
+     1313,
+     1341
+    ],
+    [
+     "Tini Beg",
+     1341,
+     1342
+    ],
+    [
+     "Jani Beg",
+     1342,
+     1357
+    ],
+    [
+     "Berdi Beg",
+     1357,
+     1359
+    ],
+    [
+     "Tokhtamysh",
+     1380,
+     1395
+    ]
+   ]
+  },
+  {
+   "polities": [
+    "Parthian Empire",
+    "Parthia"
+   ],
+   "title": "King of Kings (Arsacid)",
+   "source": "https://en.wikipedia.org/wiki/List_of_Parthian_kings",
+   "rulers": [
+    [
+     "Mithridates I of Parthia",
+     -171,
+     -132
+    ],
+    [
+     "Phraates II",
+     -132,
+     -127
+    ],
+    [
+     "Artabanus I of Parthia",
+     -127,
+     -124
+    ],
+    [
+     "Mithridates II of Parthia",
+     -124,
+     -91
+    ],
+    [
+     "Orodes II",
+     -57,
+     -37
+    ],
+    [
+     "Phraates IV",
+     -37,
+     -2
+    ],
+    [
+     "Vologases I of Parthia",
+     51,
+     78
+    ],
+    [
+     "Vologases IV",
+     147,
+     191
+    ],
+    [
+     "Artabanus IV of Parthia",
+     213,
+     224
+    ]
+   ],
+   "approx": true
+  },
+  {
+   "polities": [
+    "Durrani Empire",
+    "Durrani Dynasty"
+   ],
+   "title": "Shah of the Durrani Empire",
+   "source": "https://en.wikipedia.org/wiki/Durrani_Empire",
+   "rulers": [
+    [
+     "Ahmad Shah Durrani",
+     1747,
+     1772
+    ],
+    [
+     "Timur Shah Durrani",
+     1772,
+     1793
+    ],
+    [
+     "Zaman Shah Durrani",
+     1793,
+     1801
+    ],
+    [
+     "Mahmud Shah Durrani",
+     1801,
+     1803
+    ],
+    [
+     "Shah Shujah Durrani",
+     1803,
+     1809
+    ]
+   ]
+  },
+  {
+   "polities": [
+    "Holy Roman Empire",
+    "Holy Roman Empire Minor States"
+   ],
+   "title": "King of the Romans and Holy Roman Emperor (years as ruler of the Empire)",
+   "source": "https://en.wikipedia.org/wiki/List_of_German_monarchs",
+   "rulers": [
+    [
+     "Otto I",
+     936,
+     973,
+     "Otto the Great"
+    ],
+    [
+     "Otto II",
+     973,
+     983,
+     "Otto II, Holy Roman Emperor"
+    ],
+    [
+     "Otto III",
+     983,
+     1002,
+     "Otto III, Holy Roman Emperor"
+    ],
+    [
+     "Henry II",
+     1002,
+     1024,
+     "Henry II, Holy Roman Emperor"
+    ],
+    [
+     "Conrad II",
+     1024,
+     1039,
+     "Conrad II, Holy Roman Emperor"
+    ],
+    [
+     "Henry III",
+     1039,
+     1056,
+     "Henry III, Holy Roman Emperor"
+    ],
+    [
+     "Henry IV",
+     1056,
+     1105,
+     "Henry IV, Holy Roman Emperor"
+    ],
+    [
+     "Henry V",
+     1105,
+     1125,
+     "Henry V, Holy Roman Emperor"
+    ],
+    [
+     "Lothair III",
+     1125,
+     1137,
+     "Lothair III, Holy Roman Emperor"
+    ],
+    [
+     "Conrad III",
+     1138,
+     1152,
+     "Conrad III of Germany"
+    ],
+    [
+     "Frederick I Barbarossa",
+     1152,
+     1190,
+     "Frederick Barbarossa"
+    ],
+    [
+     "Henry VI",
+     1190,
+     1197,
+     "Henry VI, Holy Roman Emperor"
+    ],
+    [
+     "Philip of Swabia",
+     1198,
+     1208,
+     "Philip of Swabia"
+    ],
+    [
+     "Otto IV",
+     1208,
+     1215,
+     "Otto IV, Holy Roman Emperor"
+    ],
+    [
+     "Frederick II",
+     1215,
+     1250,
+     "Frederick II, Holy Roman Emperor"
+    ],
+    [
+     "Conrad IV",
+     1250,
+     1254,
+     "Conrad IV of Germany"
+    ],
+    [
+     "Rudolf I",
+     1273,
+     1291,
+     "Rudolf I of Germany"
+    ],
+    [
+     "Adolf of Nassau",
+     1292,
+     1298,
+     "Adolf, King of the Romans"
+    ],
+    [
+     "Albert I",
+     1298,
+     1308,
+     "Albert I of Germany"
+    ],
+    [
+     "Henry VII",
+     1308,
+     1313,
+     "Henry VII, Holy Roman Emperor"
+    ],
+    [
+     "Louis IV",
+     1314,
+     1347,
+     "Louis IV, Holy Roman Emperor"
+    ],
+    [
+     "Charles IV",
+     1347,
+     1378,
+     "Charles IV, Holy Roman Emperor"
+    ],
+    [
+     "Wenceslaus",
+     1378,
+     1400,
+     "Wenceslaus IV of Bohemia"
+    ],
+    [
+     "Rupert",
+     1400,
+     1410,
+     "Rupert, King of the Romans"
+    ],
+    [
+     "Sigismund",
+     1411,
+     1437,
+     "Sigismund, Holy Roman Emperor"
+    ],
+    [
+     "Albert II",
+     1438,
+     1439,
+     "Albert II of Germany"
+    ],
+    [
+     "Frederick III",
+     1440,
+     1493,
+     "Frederick III, Holy Roman Emperor"
+    ],
+    [
+     "Maximilian I",
+     1493,
+     1519,
+     "Maximilian I, Holy Roman Emperor"
+    ],
+    [
+     "Charles V",
+     1519,
+     1556,
+     "Charles V, Holy Roman Emperor"
+    ],
+    [
+     "Ferdinand I",
+     1556,
+     1564,
+     "Ferdinand I, Holy Roman Emperor"
+    ],
+    [
+     "Maximilian II",
+     1564,
+     1576,
+     "Maximilian II, Holy Roman Emperor"
+    ],
+    [
+     "Rudolf II",
+     1576,
+     1612,
+     "Rudolf II, Holy Roman Emperor"
+    ],
+    [
+     "Matthias",
+     1612,
+     1619,
+     "Matthias, Holy Roman Emperor"
+    ],
+    [
+     "Ferdinand II",
+     1619,
+     1637,
+     "Ferdinand II, Holy Roman Emperor"
+    ],
+    [
+     "Ferdinand III",
+     1637,
+     1657,
+     "Ferdinand III, Holy Roman Emperor"
+    ],
+    [
+     "Leopold I",
+     1658,
+     1705,
+     "Leopold I, Holy Roman Emperor"
+    ],
+    [
+     "Joseph I",
+     1705,
+     1711,
+     "Joseph I, Holy Roman Emperor"
+    ],
+    [
+     "Charles VI",
+     1711,
+     1740,
+     "Charles VI, Holy Roman Emperor"
+    ],
+    [
+     "Charles VII",
+     1742,
+     1745,
+     "Charles VII, Holy Roman Emperor"
+    ],
+    [
+     "Francis I",
+     1745,
+     1765,
+     "Francis I, Holy Roman Emperor"
+    ],
+    [
+     "Joseph II",
+     1765,
+     1790,
+     "Joseph II, Holy Roman Emperor"
+    ],
+    [
+     "Leopold II",
+     1790,
+     1792,
+     "Leopold II, Holy Roman Emperor"
+    ],
+    [
+     "Francis II",
+     1792,
+     1806,
+     "Francis II, Holy Roman Emperor"
+    ]
+   ]
+  },
+  {
+   "polities": [
+    "Maratha Empire",
+    "Maratha Kingdom",
+    "Maratha Confederacy"
+   ],
+   "title": "Chhatrapati of the Maratha Empire",
+   "source": "https://en.wikipedia.org/wiki/Chhatrapati",
+   "rulers": [
+    [
+     "Shivaji",
+     1674,
+     1680
+    ],
+    [
+     "Sambhaji",
+     1681,
+     1689
+    ],
+    [
+     "Rajaram I",
+     1689,
+     1700
+    ],
+    [
+     "Shahu I",
+     1707,
+     1749
+    ]
+   ]
   }
  ]
 }

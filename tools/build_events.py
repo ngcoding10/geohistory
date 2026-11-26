@@ -877,7 +877,18 @@ def main():
                         if name not in map_names:
                             continue
                         dst = terms_out[key_of(name)]
-                        if any((r['q'] and x[4] == r['q'] or x[0] == r['name']) and abs(x[1] - r['from']) <= 2 for x in dst):
+                        same = [x for x in dst if (r['q'] and x[4] == r['q'] or x[0] == r['name']) and abs(x[1] - r['from']) <= 2]
+                        # a Wikidata term that ends years before the curated one (Stalin's title of General
+                        # Secretary lapsed in 1934; he led the country until 1953) does not replace it
+                        if same and all(x[2] is not None and x[2] < r['to'] - 2 for x in same):
+                            same = []
+                        if same:
+                            # Wikidata has the term but no end (Stalin as General Secretary from 1922): the
+                            # curated end year completes it
+                            for x in same:
+                                if x[2] is None and r['verified']:
+                                    x[2] = r['to']
+                                    x[5:] = ['c']
                             continue
                         dst.append([r['name'], r['from'], r['to'], l['title'], r['q'] or '', flag])
                         lab.setdefault(key_of(name), [name, None])
@@ -1096,6 +1107,33 @@ def main():
         n_bul = n_bul_dup = 0
         norm_l = lambda t: re.sub(r'[^a-z0-9]+', ' ', t.lower()).strip()
         have_ly = {(norm_l(e['l']), e['y']): e for e in events.values()}
+        # verified events by day, to drop a sentence that only repeats one of them (Caesar's assassination twice)
+        by_day = {}
+        for e in events.values():
+            if e.get('m') and e.get('dd') and not e.get('uv'):
+                by_day.setdefault((e['y'], e['m'], e['dd']), []).append(e)
+        n_bul_same = 0
+
+        def repeats(b, text):
+            """A verified event of the same year that this sentence is about: an event the sentence links to, or
+            an event of the same day whose proper names (at least one of five letters or more) are all in it."""
+            low = text.lower()
+
+            def named(e):
+                names_ = [w for w in re.findall(r"[A-Z][\w'\u2019-]{4,}", e['l'])
+                          if w.lower() not in ('battle', 'siege', 'treaty', 'peace', 'first', 'second', 'third', 'great', 'council', 'kingdom', 'empire', 'republic')]
+                return bool(names_) and all(w.lower()[:6] in low for w in names_)
+            # an event the sentence links to: its first link, or a later link whose names the sentence repeats
+            # (a sentence about one battle of a war that began that year links the war too, and is kept)
+            for i_, (l_, q_) in enumerate(b.get('links', [])):
+                e = events.get(q_)
+                if e is not None and e['y'] == b['y'] and not e.get('uv') and e['t'] not in ('birth', 'death') and (i_ == 0 or named(e)):
+                    return e
+            if b['m'] and b['d']:
+                for e in by_day.get((b['y'], b['m'], b['d']), []):
+                    if e['t'] not in ('birth', 'death', 'ruler') and named(e):
+                        return e
+            return None
         for b in yp.get('bullets', []):
             text = b['text']
             # the same news as an event already there (a ruler taking office, or the same wording): the bullet
@@ -1103,6 +1141,9 @@ def main():
             dup = have_ly.get((norm_l(text), b['y']))
             if dup is None and classify(text, '', b.get('head', '')) == 'ruler':
                 dup = next((events[k_] for l_, q_ in b.get('links', []) for k_ in (f'r{q_}-{b["y"]}', f'cr{q_}-{b["y"]}') if k_ in events), None)
+            if dup is None and repeats(b, text) is not None:
+                n_bul_same += 1
+                continue
             if dup is not None:
                 if b['m'] and not dup.get('m') and dup['t'] == 'ruler':
                     dup['m'] = b['m']
@@ -1128,6 +1169,7 @@ def main():
         stats['yearArticleSentences'] = n_text
         stats['yearArticleUnverified'] = n_bul
         stats['yearArticleBulletsSameAsAnEvent'] = n_bul_dup
+        stats['yearArticleBulletsRepeatingAVerifiedEvent'] = n_bul_same
         log(f'{n_yp} events added from {yp_pages} Wikipedia year articles')
 
     # ---------- curated supplement ----------
@@ -1528,6 +1570,13 @@ def main():
             'Rulers need a start date on Wikidata; many early and minor rulers have none and are missing.',
         ],
     }
+    ep = os.path.join(DATA, 'empires.json')
+    if os.path.exists(ep):
+        meta['empires'] = read_json(ep)['stats']
+    op = os.path.join(DATA, 'occupations.json')
+    if os.path.exists(op):
+        orows = read_json(op)['rows']
+        meta['occupations'] = {'rows': len(orows), 'verified': sum(1 for o in orows if o['v'])}
     write_json(os.path.join(DATA, 'meta.json'), meta, pretty=True)
     log(json.dumps(meta['counts']))
 

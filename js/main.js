@@ -1,8 +1,10 @@
 // GeoHistory: choose a year, see the world's borders, powers and events at that time.
-import { HistoryMap } from './map.js';
+import { HistoryMap, isDark, Z_SPLIT } from './map.js';
+import { prepareDoc } from './prepare.js';
+import { membershipOf, empireName, listedParts, tones } from './groups.js';
 import {
   loadBordersIndex, snapshotFor, nextSnapshotAfter, datedRange, clioRange, loadSnapshot, loadEventsIndex, eventsBetween, nearestYearsWithEvents,
-  loadPowers, loadEntities, getJSON, loadUS, loadModern, loadLand, loadMeta, countFor, findEvent,
+  loadPowers, loadEntities, getJSON, loadUS, loadModern, loadSea, loadMeta, countFor, findEvent, loadEmpires, loadSuccession, loadOccupations, loadShape,
 } from './data.js';
 import { parseYear, formatYear, formatDate, addYears, yearToFrac, fracToYear, ERAS, MIN_YEAR, MAX_YEAR } from './year.js';
 import { TYPES, TYPE_KEYS } from './types.js';
@@ -37,6 +39,8 @@ let entities = null;
 let modernNames = {};
 let modernFC = null;
 let usFC = null;
+let empires = { empires: {}, rows: {}, undrawn: {}, notes: [] };
+let occupations = { rows: [] };
 const US_FILL_UNTIL = 1912;   // Arizona, the last contiguous state, was admitted in 1912
 // The eleven states of the Confederacy with the day each passed its ordinance of secession (yyyymmdd), and
 // the surrender of the last large Confederate army (26 May 1865). Between those days the state is filled in
@@ -60,7 +64,7 @@ async function init() {
   if (p.get('v') === 'flat') state.projection = 'mercator';
   if (p.get('v') === 'globe') state.projection = 'globe';
   state.modern = p.get('mb') === '1';
-  const want = { c: p.get('c'), s: p.get('s'), mc: p.get('mc'), e: p.get('e'), col: p.get('col') };
+  const want = { c: p.get('c'), s: p.get('s'), mc: p.get('mc'), e: p.get('e'), col: p.get('col'), em: p.get('em') };
 
   setupTimebar();
   setupPanel();
@@ -75,25 +79,28 @@ async function init() {
   const mapReady = map.init({ projection: state.projection, zoom: startZoom() }).then(() => {
     mapOk = true;
     showStatus('');
-    map.addEventListener('polity', (e) => selectPolityByIndex(e.detail, { fly: false }));
+    map.addEventListener('polity', (e) => selectPolityByIndex(e.detail.k, { fly: false, whole: e.detail.whole }));
     map.addEventListener('usstate', (e) => selectUS(e.detail.id, { fly: false }));
     map.addEventListener('colony', (e) => selectColony(e.detail, { fly: false }));
     map.addEventListener('event', (e) => openEvent(e.detail, { fly: false }));
     map.addEventListener('empty', () => { if (state.view !== 'year') { clearSelection(); } });
-    loadLand().then((fc) => map.setLand(fc)).catch(() => {});
+    loadSea().then((d) => map.setSea(d)).catch((e) => console.warn(e));
     applyPadding();
   }).catch((err) => {
     console.warn('map failed', err);
     showStatus('The map could not start here (it needs WebGL). The year panel still works.', true);
   });
 
-  const [, , pw] = await Promise.all([loadBordersIndex(), loadEventsIndex(), loadPowers()]);
+  const [, , pw, em, oc] = await Promise.all([loadBordersIndex(), loadEventsIndex(), loadPowers(), loadEmpires(), loadOccupations()]);
   powers = pw;
+  empires = em;
+  occupations = oc;
   drawTicks();
   await mapReady;
   await goToYear(state.year, { month: state.month, day: state.day, keepSel: false });
   if (state.modern) toggleModern(true);
-  if (want.c) await selectPolityByName(want.c, { fly: true });
+  if (want.em) await selectEmpire(want.em, { fly: true });
+  else if (want.c) await selectPolityByName(want.c, { fly: true });
   else if (want.s) await selectUS(want.s, { fly: true });
   else if (want.mc) await selectModern(want.mc, { fly: true });
   else if (want.col) await selectColony(want.col, { fly: true });
@@ -133,6 +140,7 @@ async function goToYear(year, { month = 0, day = 0, keepSel = true, fromSlider =
         const doc = await loadSnapshot(snap);
         if (token !== state.token && state.snap?.y !== snap.y) return;
         state.snapDoc = doc;
+        state.sig = prepareDoc(doc, { emp: empires, powers, year: state.year, dark: isDark() });
         if (mapOk) map.setSnapshot(doc);
       } catch (e) {
         console.warn(e);
@@ -142,14 +150,20 @@ async function goToYear(year, { month = 0, day = 0, keepSel = true, fromSlider =
       state.snapDoc = null;
       if (mapOk) map.setSnapshot(null);
     }
+  } else if (state.snapDoc) {
+    // the same stored map, another year: memberships are dated by year, so the groups can still change
+    const sig = prepareDoc(state.snapDoc, { emp: empires, powers, year: state.year, dark: isDark() });
+    if (sig !== state.sig) { state.sig = sig; if (mapOk) map.setSnapshot(state.snapDoc, { fade: false }); }
   }
   updateBadge();
+  updateOccupied();
   await updateUS();
   if (token !== state.token) return;
 
   // keep a selected territory across years (matched by name); close an open event that belongs to another year
   if (keepSel && state.sel?.kind === 'polity') remapPolity();
   if (keepSel && state.sel?.kind === 'us') remapUS();
+  if (keepSel && state.sel?.kind === 'empire') remapEmpire();
   if (keepSel && state.sel?.kind === 'colony') {
     const u = colonyUnits(state.sel.st, colDate());
     if (u.length) Object.assign(state.sel, { name: colonyName(state.sel.st, colDate()), test: makeAreaTest(u.map((f) => f.geometry)), n: u.length, missing: false });
@@ -407,6 +421,15 @@ async function renderYear() {
     nodes.push(h('p.note.worldnote', null, h('span.unver', { title: 'A known limit of the border source, written for GeoHistory' }, 'map note'), ' ', nt.note, ' ',
       h('a', { href: nt.source, target: '_blank', rel: 'noopener' }, 'Source')));
   }
+  const occ = occupiedNow();
+  if (occ.length) {
+    const by = new Map();
+    for (const o of occ) { if (!by.has(o.by)) by.set(o.by, []); by.get(o.by).push(o); }
+    nodes.push(h('div.note.worldnote', null, h('span.unver', { title: 'From GeoHistory\'s dated list of occupations; drawn hatched on the map' }, 'occupied'), ' ',
+      [...by.entries()].map(([who, lst], i) => [i ? '; ' : '', h('b', null, `by ${who}: `), lst.map((o, j) => [j ? ', ' : '',
+        state.snapDoc?.polities.some((p) => o.n.includes(p.n)) ? h('button.link', { type: 'button', onclick: () => selectPolityByName(state.snapDoc.polities.find((p) => o.n.includes(p.n)).n, { fly: true }) }, o.label) : o.label])]),
+      '. Hatched on the map; the borders are still the recognised ones.'));
+  }
   const strip = await changeStrip(y);
   if (token !== state.token || state.view !== 'year' || state.sel) return;
   if (strip) nodes.push(strip);
@@ -436,7 +459,7 @@ async function renderYear() {
     nodes.push(h('h2', null, `Largest territories on the ${formatYear(doc.year)} map`));
     const ul = h('ul.legend');
     for (const p of doc.largest.slice(0, 10)) {
-      const col = powers[p.p]?.color || '#ccc';
+      const col = tones(powers[p.p]?.color || '#c9c1b0', p.name, isDark()).fill;
       const name = p.name;
       ul.append(h('li', null, h('button', { type: 'button', onclick: () => selectPower(p.p) },
         h('span.sw', { style: `background:${col}`, 'aria-hidden': 'true' }),
@@ -475,10 +498,11 @@ function toggleType(k) {
 }
 
 // ---------------------------------------------------------------- selections
-async function selectPolityByIndex(k, { fly }) {
+async function selectPolityByIndex(k, { fly, whole = false }) {
   const doc = state.snapDoc;
   if (!doc || k == null || k < 0) return;
   const p = doc.polities[k];
+  if (whole && p.e && doc.groups[p.g]?.members.length > 1) return selectEmpire(p.e, { fly });
   state.sel = { kind: 'polity', name: p.n };
   state.view = 'sel';
   state.eventId = null;
@@ -489,17 +513,61 @@ async function selectPolityByIndex(k, { fly }) {
   await render();
 }
 
-async function selectPolityByName(name, { fly }) {
+async function selectPolityByName(name, { fly, tried = 0 }) {
   const doc = state.snapDoc;
   const k = doc ? doc.polities.findIndex((p) => p.n === name) : -1;
   if (k >= 0) return selectPolityByIndex(k, { fly });
-  // not on this map: jump to the nearest map that has it
+  // not on this map: jump to the nearest map that has it (once: the index of names can be a little wider
+  // than what is drawn)
+  if (tried) return;
   const ys = await yearsOf(name);
   if (ys.length) {
     const best = ys.reduce((a, b) => (Math.abs(b - state.year) < Math.abs(a - state.year) ? b : a));
     await goToYear(best, { keepSel: false });
-    return selectPolityByName(name, { fly });
+    return selectPolityByName(name, { fly, tried: 1 });
   }
+}
+
+/** Select an empire: all of its parts on this year's map. */
+async function selectEmpire(id, { fly }) {
+  state.sel = { kind: 'empire', id, name: empireName(empires, id, state.year) };
+  state.view = 'sel';
+  state.eventId = null;
+  remapEmpire();
+  if (state.sel.missing && !listedParts(empires, id, state.year).length) {
+    // not an empire in this year: fall back to its ruling state
+    const core = (empires.empires[id]?.core || []).find((n) => state.snapDoc?.polities.some((p) => p.n === n));
+    if (core) return selectPolityByName(core, { fly });
+  }
+  if (fly && mapOk && state.sel.bb) map.fitBBox(state.sel.bb, 4);
+  expandSheet();
+  writeUrl();
+  await render();
+}
+
+function remapEmpire() {
+  const sel = state.sel;
+  const doc = state.snapDoc;
+  sel.name = empireName(empires, sel.id, state.year);
+  const gi = doc ? doc.groups.findIndex((g) => g.key === 'e:' + sel.id) : -1;
+  if (gi < 0) {
+    sel.missing = true; sel.members = []; sel.g = null; sel.test = null;
+    if (mapOk) map.selectGroup(-99);
+    return;
+  }
+  const g = doc.groups[gi];
+  sel.missing = false;
+  sel.g = gi;
+  sel.members = g.members;
+  sel.area = g.area;
+  const set = new Set(g.members);
+  const geoms = doc.features.filter((f) => set.has(f.properties.k)).map((f) => f.geometry);
+  sel.test = makeAreaTest(geoms);
+  sel.names = new Set(g.members.map((k) => doc.polities[k].n));
+  let w = 180, s0 = 90, e = -180, n = -90;
+  for (const k of g.members) { const bb = doc.polities[k].bb; if (!bb) continue; w = Math.min(w, bb[0]); s0 = Math.min(s0, bb[1]); e = Math.max(e, bb[2]); n = Math.max(n, bb[3]); }
+  sel.bb = [w, s0, e, n];
+  if (mapOk) map.selectGroup(gi);
 }
 
 async function selectGone(name, since) {
@@ -510,8 +578,10 @@ async function selectGone(name, since) {
 async function selectPower(key) {
   const doc = state.snapDoc;
   if (!doc) return;
-  const k = doc.polities.findIndex((p) => p.p === key);
-  if (k >= 0) return selectPolityByIndex(k, { fly: true });
+  // the ruling state of that power if it is on the map, else its largest territory; an empire opens as a whole
+  let k = doc.polities.findIndex((p) => p.p === key && p.core);
+  if (k < 0) k = doc.polities.findIndex((p) => p.p === key);
+  if (k >= 0) return selectPolityByIndex(k, { fly: true, whole: true });
 }
 
 let searchIndex = null;
@@ -580,6 +650,7 @@ function inSelection(e) {
   if (!s) return false;
   if (s.kind === 'modern') return e.mc === s.iso || (e.lo != null && !e.mc && s.test(e.lo, e.la));
   if (s.kind === 'us' || s.kind === 'colony') return e.ci === s.id || (e.lo != null && s.test(e.lo, e.la));
+  if (s.kind === 'empire') return !!(s.names?.has(e.p) || (s.test && e.lo != null && s.test(e.lo, e.la)));
   if (e.p === s.name) return true;
   return !!(s.test && e.lo != null && s.test(e.lo, e.la));
 }
@@ -680,8 +751,22 @@ async function selectionHeader(s) {
       return box;
     }
     const facts = h('dl.facts');
-    if (p.s && p.s !== p.n) facts.append(h('dt', null, 'Ruled by'), h('dd', null, p.s, p.cur ? h('span.unver', { title: 'From a curated list, not checked against Wikidata' }, ' unverified') : null));
-    else facts.append(h('dt', null, 'Status'), h('dd', null, 'Independent or self-ruling on this map'));
+    const mem = p.mem && empires.empires[p.mem.id] ? p.mem : null;
+    if (mem) {
+      const top = p.e && p.e !== mem.id ? p.e : mem.id;
+      facts.append(h('dt', null, 'Part of'), h('dd', null,
+        h('button.link', { type: 'button', onclick: () => selectEmpire(top, { fly: true }) }, empireName(empires, top, state.year)),
+        top !== mem.id ? ` (through ${empireName(empires, mem.id, state.year)})` : '', ` · ${mem.kind}`, memTag(mem.flags)));
+      if (mem.flags.includes('n')) box.append(h('p.note', null, 'Listed with this power but not merged into it on the map.'));
+      if (mem.note) box.append(h('p.note', null, mem.note));
+      if (p.s && p.s !== p.n && !/^(United Kingdom|France|Spain|Portugal|Netherlands|Japan|Italy|Belgium|Denmark|United States|German Empire|Russian Empire|Australia|South Africa)$/.test(p.s) && p.s !== empireName(empires, mem.id, state.year))
+        facts.append(h('dt', null, 'Ruled by'), h('dd', null, p.s));
+    } else if (p.core && p.e) {
+      const en = empireName(empires, p.e, state.year);
+      facts.append(h('dt', null, 'Status'), h('dd', null, en === p.n ? 'Sovereign power; ' : 'Ruling state of ',
+        h('button.link', { type: 'button', onclick: () => selectEmpire(p.e, { fly: true }) }, en === p.n ? 'see its parts' : en)));
+    } else if (p.s && p.s !== p.n) facts.append(h('dt', null, 'Ruled by'), h('dd', null, p.s, p.cur ? h('span.unver', { title: 'From a curated list, not checked against Wikidata' }, ' unverified') : null));
+    else facts.append(h('dt', null, 'Status'), h('dd', null, p.under ? 'A people, culture or region without a state on this map' : 'Independent or self-ruling on this map'));
     facts.append(h('dt', null, 'Area'), h('dd', null, `about ${fmtArea(p.a)}`));
     if (p.dated) {
       const f = (d) => formatDate(Math.floor(d / 10000), Math.floor(d / 100) % 100, d % 100);
@@ -690,6 +775,8 @@ async function selectionHeader(s) {
     else if (p.under) facts.append(h('dt', null, 'Map'), h('dd', null, `Not a state in Cliopatria: outline from the ${formatYear(p.under)} world sketch map (approximate, may be out of date)`));
     else facts.append(h('dt', null, 'Map'), h('dd', null, `Borders as of ${formatYear(state.snap.y)}${p.pr === 1 ? ', approximate' : ''}`));
     box.append(facts);
+    for (const o of occupiedNow(s.name)) box.append(occupationNote(o));
+    box.append(await successionBlock(s.name), todayBlock(s));
     try {
       const mn = await getJSON('mapnotes.json');
       const aka = mn.aliases[s.name];
@@ -749,6 +836,41 @@ async function selectionHeader(s) {
     } catch { /* descriptions are optional */ }
     return box;
   }
+  if (s.kind === 'empire') {
+    const e = empires.empires[s.id] || { n: s.name };
+    const doc = state.snapDoc;
+    box.append(h('p.kicker', null, 'Empire and its parts'), h('h1', null, s.name));
+    const listed = listedParts(empires, s.id, state.year);
+    if (s.missing && !listed.length) {
+      box.append(h('p.lead', null, `No parts of ${s.name} are recorded for ${formatYear(state.year)}.`));
+      return box;
+    }
+    const drawn = (s.members || []).map((k) => ({ k, p: doc.polities[k] })).sort((a, b) => (b.p.core ? 1 : 0) - (a.p.core ? 1 : 0) || b.p.a - a.p.a);
+    const facts = h('dl.facts');
+    if (s.area) facts.append(h('dt', null, 'Area'), h('dd', null, `about ${fmtArea(s.area)} drawn on the map`));
+    facts.append(h('dt', null, 'Parts'), h('dd', null, `${drawn.length} drawn${listed.length ? `, ${listed.length} more listed` : ''} in ${formatYear(state.year)}`));
+    box.append(facts);
+    box.append(h('p.note', null, 'At world zoom the parts are drawn as one power. Zoom in to see each part, or choose one below.'));
+    if (drawn.length) {
+      box.append(h('h2', null, `Parts on the map in ${formatYear(state.year)}`));
+      box.append(h('ul.parts', null, drawn.map(({ k, p }) => h('li', null,
+        h('button.link', { type: 'button', onclick: () => selectPolityByIndex(k, { fly: true }) }, p.n),
+        h('span.muted', null, p.core ? ' · ruling state' : p.mem ? ` · ${p.mem.kind}${p.via ? `, through ${empireName(empires, p.via, state.year)}` : ''}` : ''),
+        p.mem ? memTag(p.mem.flags) : null))));
+    }
+    if (listed.length) {
+      box.append(h('h2', null, 'Parts without a shape of their own'),
+        h('p.note', null, 'The border sources draw these inside the empire, so they are listed but cannot be shown apart.'));
+      box.append(h('ul.parts', null, listed.map((u) => h('li', null, h('b', null, u.n), h('span.muted', null, ` · ${u.kind} · ${formatYear(u.from)} to ${formatYear(u.to)}`), memTag(u.flags),
+        u.w ? [' ', h('a.ext', { href: wikiUrl(u.w), target: '_blank', rel: 'noopener' }, 'Wikipedia')] : null))));
+      const notes = [...new Set(listed.map((u) => u.note).filter(Boolean))];
+      for (const nt of notes) box.append(h('p.note', null, nt));
+    }
+    const core = drawn.find((d) => d.p.core)?.p.n || (e.core || [])[0];
+    if (core) box.append(await successionBlock(core, `${core}: `));
+    if (e.w) box.append(h('p.note', null, h('a.ext', { href: wikiUrl(e.w), target: '_blank', rel: 'noopener' }, 'Wikipedia')));
+    return box;
+  }
   if (s.kind === 'colony') {
     box.append(h('p.kicker', null, colDate() >= 17760704 ? 'State' : 'British colony'), h('h1', null, s.name));
     box.append(h('dl.facts', null, h('dt', null, 'On the map'), h('dd', null, `${s.n} organized counties or parishes on ${formatDate(state.year, state.month || 12, state.day || 31)}`)));
@@ -773,10 +895,147 @@ async function selectionHeader(s) {
   }
   box.append(h('p.kicker', null, "Today's country"), h('h1', null, s.name),
     h('p.lead', null, `Events that happened on the land that is ${s.name} today, whoever ruled it at the time.`));
+  box.append(thenBlock(s));
   return box;
 }
 
 const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+
+/** The small tag after a membership: where it comes from and whether Wikidata confirms it. */
+function memTag(flags = '') {
+  const src = flags.includes('c') ? 'Cliopatria' : flags.includes('x') ? 'curated' : flags.includes('d') ? 'curated list of colonial rulers' : 'sketch map';
+  return flags.includes('v')
+    ? h('span.unver', { title: `Source: ${src}. Wikidata names this power as its country or parent.` }, 'verified')
+    : h('span.unver', { title: `Source: ${src}. Not confirmed by Wikidata.` }, flags.includes('c') ? 'Cliopatria' : 'unverified');
+}
+
+// ---- before and after: what a state replaced and what replaced it (data/succession.json)
+let successionP = null;
+async function successionBlock(name, prefix = '') {
+  successionP = successionP || loadSuccession();
+  const box = h('div.succ');
+  let rec;
+  try { rec = (await successionP)[name]; } catch { rec = null; }
+  if (!rec) return box;
+  const row = (e, side) => {
+    const [label, mapYear, flags, mapName, w, wdFrom, wdTo] = e;
+    const fromMap = flags.includes('m'), fromWd = flags.includes('w');
+    const years = wdFrom != null || wdTo != null
+      ? `${wdFrom != null ? formatYear(wdFrom) : '?'} to ${wdTo != null ? formatYear(wdTo) : 'today'}`
+      : mapYear != null ? (side === 'b' ? `on the map until ${formatYear(mapYear)}` : `on the map from ${formatYear(mapYear)}`) : '';
+    const jump = fromMap ? mapYear : side === 'b' ? (wdTo != null ? wdTo - 1 : wdFrom) : (wdFrom != null ? wdFrom + 1 : wdTo);
+    const what = flags.includes('u') ? 'peoples, from the sketch map' : flags.includes('r') ? 'the same land on the other map source'
+      : flags.includes('s') ? 'broke away; the earlier state went on' : null;
+    const src = fromWd && fromMap ? 'Wikidata and the maps' : fromWd ? 'Wikidata' : 'the maps';
+    return h('li', null,
+      mapName ? h('button.link' + (flags.includes('u') ? '.people' : ''), { type: 'button', onclick: () => jumpTo(mapName, jump) }, label) : h('b', null, label),
+      years ? h('span.muted', null, ` · ${years}`) : null, what ? h('span.muted', null, ` · ${what}`) : null,
+      h('span.unver', { title: fromWd ? 'Wikidata: replaces / replaced by, follows / followed by' : 'Who held this land on the map just before or just after' }, src),
+      !mapName && w ? [' ', h('a.ext', { href: wikiUrl(w), target: '_blank', rel: 'noopener' }, 'Wikipedia')] : null);
+  };
+  if (rec.b?.length) box.append(h('h2', null, `${prefix}Before`), h('ul.parts', null, rec.b.map((e) => row(e, 'b'))));
+  if (rec.a?.length) box.append(h('h2', null, `${prefix}After`), h('ul.parts', null, rec.a.map((e) => row(e, 'a'))));
+  if (rec.b?.length || rec.a?.length) box.append(h('p.note', null, 'One step back and one step forward only. Click a name to jump to it on the map.'));
+  return box;
+}
+
+async function jumpTo(name, year) {
+  if (year != null) await goToYear(year, { keepSel: false });
+  return selectPolityByName(name, { fly: true });
+}
+
+// ---- overlap with today's countries, measured at sample points
+let modernTests = null;
+async function modernIndex() {
+  if (!modernFC) modernFC = await loadModern();
+  if (!modernTests) modernTests = modernFC.features.map((f) => ({ n: f.properties.n, iso: f.properties.iso, bb: bboxOf([f.geometry]), test: makeAreaTest([f.geometry]) }));
+  return modernTests;
+}
+function samplePoints(bb, test, n = 26) {
+  const pts = [];
+  if (!bb || !test) return pts;
+  let [w, s0, e, nn] = bb;
+  for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) {
+    const x = w + ((e - w) * (i + 0.5)) / n, y = s0 + ((nn - s0) * (j + 0.5)) / n;
+    if (test(x, y)) pts.push([x, y]);
+  }
+  return pts;
+}
+/** "Today this is: ..." for a territory or an empire. */
+function todayBlock(s) {
+  const box = h('p.note.today');
+  if (state.year >= 2010 || !s.test) return box;
+  const bb = s.kind === 'empire' ? null : s.p?.bb;
+  (async () => {
+    const idx = await modernIndex();
+    const geomsBB = s.kind === 'empire' ? s.bb : bb || (state.snapDoc ? bboxOf(state.snapDoc.features.filter((f) => f.properties.k === s.k).map((f) => f.geometry)) : null);
+    const pts = samplePoints(geomsBB, s.test);
+    if (pts.length < 3) return;
+    const c = new Map();
+    for (const [x, y] of pts) {
+      const m = idx.find((t) => x >= t.bb[0] && x <= t.bb[2] && y >= t.bb[1] && y <= t.bb[3] && t.test(x, y));
+      if (m) c.set(m, (c.get(m) || 0) + 1);
+    }
+    const list = [...c.entries()].sort((a, b) => b[1] - a[1]).filter(([, v]) => v / pts.length >= 0.03);
+    if (!list.length) return;
+    box.append(h('b', null, 'Today this is: '));
+    list.slice(0, 10).forEach(([m], i) => box.append(i ? ', ' : '', h('button.link', { type: 'button', onclick: () => selectModern(m.iso, { fly: true }) }, m.n)));
+    if (list.length > 10) box.append(` and ${list.length - 10} more`);
+    box.append(h('span.muted', null, ' (by overlap with today\'s borders, approximate)'));
+  })().catch(() => {});
+  return box;
+}
+/** "In <year> this was: ..." for one of today's countries. */
+function thenBlock(s) {
+  const box = h('p.note.today');
+  const doc = state.snapDoc;
+  if (!doc || !s.test || !modernFC) return box;
+  const f = modernFC.features.find((x) => x.properties.iso === s.iso);
+  const pts = samplePoints(bboxOf([f.geometry]), s.test, 22);
+  if (!pts.length) return box;
+  const feats = doc.features.map((ft) => ({ k: ft.properties.k, bb: bboxOf([ft.geometry]), test: makeAreaTest([ft.geometry]), u: ft.properties.u }));
+  const c = new Map();
+  for (const [x, y] of pts) {
+    const hit = feats.filter((t) => t.bb && x >= t.bb[0] && x <= t.bb[2] && y >= t.bb[1] && y <= t.bb[3] && t.test(x, y)).sort((a, b) => a.u - b.u)[0];
+    if (hit) c.set(hit.k, (c.get(hit.k) || 0) + 1);
+  }
+  const list = [...c.entries()].sort((a, b) => b[1] - a[1]).filter(([, v]) => v / pts.length >= 0.04);
+  if (!list.length) { box.append(`No state or people is drawn here on the ${formatYear(state.year)} map.`); return box; }
+  box.append(h('b', null, `In ${formatYear(state.year)} this was: `));
+  list.slice(0, 8).forEach(([k], i) => box.append(i ? ', ' : '', h('button.link' + (doc.polities[k].under ? '.people' : ''), { type: 'button', onclick: () => selectPolityByIndex(k, { fly: true }) }, doc.polities[k].n)));
+  box.append(h('span.muted', null, ' (by overlap with the map of that year, approximate)'));
+  return box;
+}
+
+// ---- wartime occupation (data/occupations.json): existing outlines, hatched in the occupier's colour
+const occDate = () => state.year * 10000 + (state.month || 7) * 100 + (state.day || 1);
+function occupiedNow(name) {
+  const d = occDate();
+  return (occupations.rows || []).filter((o) => o.from <= d && d <= o.to && (!name || o.n.includes(name)));
+}
+function occupationNote(o) {
+  const f = (d) => formatDate(Math.floor(d / 10000), Math.floor(d / 100) % 100, d % 100);
+  return h('p.note.occ', null, h('span.unver', { title: 'From GeoHistory\'s dated list of occupations' }, o.v ? 'occupation' : 'occupation, unverified'), ' ',
+    h('b', null, `${o.kind || 'Occupied'} by ${o.by}`), ` from ${f(o.from)} to ${f(o.to)}. `, o.note || '', ' ',
+    h('a', { href: o.src, target: '_blank', rel: 'noopener' }, 'Source'));
+}
+let occToken = 0;
+async function updateOccupied() {
+  if (!mapOk) return;
+  const token = ++occToken;
+  const doc = state.snapDoc;
+  const feats = [];
+  for (const o of occupiedNow()) {
+    const c = powers[o.key]?.color || '#888888';
+    const ks = new Set((doc?.polities || []).map((p, k) => (o.n.includes(p.n) ? k : -1)).filter((k) => k >= 0));
+    let geoms = ks.size ? doc.features.filter((f) => ks.has(f.properties.k)).map((f) => f.geometry) : [];
+    if (!geoms.length && o.shape) {
+      try { geoms = [(await loadShape('cshapes', o.shape.f, o.shape.id)).g]; } catch { geoms = []; }
+    }
+    for (const g of geoms) feats.push({ type: 'Feature', geometry: g, properties: { by: o.by, c } });
+  }
+  if (token === occToken) map.setOccupied(feats);
+}
 
 let changesP = null;
 const loadChanges = () => (changesP = changesP || getJSON('changes.json').then((d) => d.changes).catch(() => []));
@@ -806,7 +1065,13 @@ async function changeStrip(y) {
 async function loadTimeline(s) {
   try {
     const idx = await getJSON('timelines/index.json');
-    const key = s.kind === 'modern' ? 'iso:' + s.iso : s.name;
+    let key = s.kind === 'modern' ? 'iso:' + s.iso : s.name;
+    if (s.kind === 'empire') {
+      // an empire's rulers are those of its ruling state
+      const doc = state.snapDoc;
+      const core = (s.members || []).map((k) => doc.polities[k]).find((p) => p.core) || (empires.empires[s.id]?.core || []).map((n) => ({ n })).find((p) => idx[p.n]);
+      key = core?.n;
+    }
     const f = idx[key];
     return f ? await getJSON('timelines/' + f) : null;
   } catch { return null; }
@@ -1102,6 +1367,11 @@ function sourcesContent(meta, audit) {
     h('p', null, 'GeoHistory is a way to explore the past, not an authority on it. Please check anything important against a good history book or the linked articles.'),
     h('h3', null, 'Borders'),
     h('p', null, `From 1886 to 2019 the map uses CShapes 2.0, which dates every change of state borders. From 3400 BC to 1885 it uses Cliopatria, which gives each state a shape for a range of years: every year has a map, but it is approximate (a state is redrawn every few years, in antiquity every few decades), and peoples without a state, and states Cliopatria does not have, are filled in from an older sketch map (historical-basemaps, ${n(c.snapshots)} world snapshots). Before 3400 BC only those snapshots exist, from ${formatYear(meta?.borders?.first ?? MIN_YEAR)} on: you see the nearest earlier one, and the badge on the map says which. Borders before about 1500 are rough sketches; many places had no fixed borders.`),
+    h('p', null, 'Every state is cut to one coastline (Natural Earth, 1:10 million), drawn above the borders, so coasts are sharper than the border sources themselves; inland borders are as detailed as the sources, which generalise them to a few kilometres.'),
+    h('h3', null, 'Empires, occupations, before and after'),
+    h('p', null, `At world zoom an empire is drawn as one power and splits into its parts when you zoom in. A part belongs to an empire only in the years a source says so: the border sources themselves (Cliopatria's member-of field, CShapes dependencies) and a dated list written for GeoHistory${meta?.empires ? ` (${n(meta.empires.memberships)} memberships, ${n(meta.empires.verified)} confirmed by Wikidata)` : ''}. Parts that the sources do not draw (New Spain, the Soviet republics) are listed in the empire's panel, never drawn.`),
+    h('p', null, 'Wartime occupations are not in the border sources. They are shown as hatching over the existing outline of the occupied country, from a dated list written for GeoHistory; whole countries only, and each entry says so where only a part was occupied.'),
+    h('p', null, '"Before" and "After" in a territory panel go one step only: what Wikidata lists as replaced and replacing, and who held the same land on the map just before and just after. "Today this is" is measured by overlap with today\'s borders and is approximate.'),
     h('h3', null, 'Events come from Wikidata'),
     h('p', null, `${n(c.events)} events, most of them from Wikidata's free database, ranked by how many Wikipedia language editions cover them. Entries made from a city, a state or a person rather than from an event of their own ("X founded", "X becomes king") count for less, periods that run for decades count for less in their first year, and the curated landmark events of each period and the defining event of ${n(c.headlines || 0)} famous years are listed first. Dates, places and descriptions can be wrong or missing, and coverage is much thinner for Africa, Asia and the distant past than for Europe and North America. ${n(c.placedInModernCountry || 0)} of them could be placed in one of today's countries.`),
     h('p', null, `English Wikipedia's year articles add ${n(c.yearArticleEvents || 0)} more whose linked article Wikidata dates to the same year, and ${n(c.yearArticleUnverified || 0)} further entries that are shown as "unverified": complete sentences from the year's own article whose date nothing else confirms (sport and entertainment are left out). For both kinds the one-sentence description is Wikipedia's text, shortened, © Wikipedia contributors, CC BY-SA 4.0; each such event links to the year article it comes from. Archaeological cultures and periods are listed with approximate dates.`),
@@ -1133,6 +1403,7 @@ function writeUrl() {
   if (state.month) p.set('d', state.day ? `${state.month}-${state.day}` : String(state.month));
   const s = state.sel;
   if (s?.kind === 'polity') p.set('c', s.name);
+  if (s?.kind === 'empire') p.set('em', s.id);
   if (s?.kind === 'us') p.set('s', s.id);
   if (s?.kind === 'colony') p.set('col', s.st);
   if (s?.kind === 'modern') p.set('mc', s.iso);
@@ -1145,4 +1416,4 @@ function writeUrl() {
 }
 
 // exposed for the end-to-end test only
-window.__geo = { state, goToYear: (y) => goToYear(y), get map() { return map; } };
+window.__geo = { state, goToYear: (y) => goToYear(y), get map() { return map; }, selectEmpire, selectPolityByName, Z_SPLIT };

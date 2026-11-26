@@ -1,5 +1,5 @@
 {
- "about": "Corrections to the sketch-map territories (historical-basemaps) that are drawn under the Cliopatria states for 3400 BC to 1885. The sketch maps exist only for some years and reuse outlines, so a people or state can appear centuries before it existed or long after it ended. 'spans': a territory with this name is drawn only between 'from' and 'to' (either may be missing). 'rename': between 'from' and 'to' the territory is shown under another name, optionally with a ruler and the ruler's colour key. No outline is changed or added. Years are the commonly cited ones from the Wikipedia article named in 'source'; 'verified' is true where Wikidata's inception or dissolution year for the linked item is the same (within a few years).",
+ "about": "Corrections to the sketch-map territories (historical-basemaps) that are drawn under the Cliopatria states for 3400 BC to 1885. The sketch maps exist only for some years and reuse outlines, so a people or state can appear centuries before it existed or long after it ended. 'spans': a territory with this name is drawn only between 'from' and 'to' (either may be missing). 'rename': between 'from' and 'to' the territory is shown under another name, optionally with a ruler and the ruler's colour key. No outline is changed or added. Years are the commonly cited ones from the Wikipedia article named in 'source'; 'verified' is true where Wikidata's inception or dissolution year for the linked item is the same (within a few years). 'borrow': a people or region that the nearest earlier sketch map lacks is drawn from another sketch map ('snap') between 'from' and 'to', under the name 'as'; the outline is that map's, and the years are the documented span of the people or culture from the article in 'source'. 'keep': names that tools/build_underlay_spans.py must not date from Wikidata (the linked item is about something else). (Xia: the linked item is the Xia of the Sixteen Kingdoms, AD 407 to 431, not the Xia dynasty the sketch maps mean.)",
  "spans": [
   {
    "name": "Urartu",
@@ -147,6 +147,13 @@
    "to": 1854,
    "source": "https://en.wikipedia.org/wiki/Kaarta",
    "verified": true
+  },
+  {
+   "name": "Hallstatt culture",
+   "source": "https://en.wikipedia.org/wiki/Hallstatt_culture",
+   "verified": false,
+   "from": -800,
+   "to": -51
   }
  ],
  "rename": [
@@ -159,6 +166,415 @@
    "source": "https://en.wikipedia.org/wiki/British_North_America",
    "verified": false,
    "note": "The 1815 sketch map labels all British territory north of the United States 'Canada'. Before Confederation on 1 July 1867 these were separate British possessions: the Canadas (one Province of Canada from 1841), the Atlantic colonies, and Rupert's Land and the North-Western Territory of the Hudson's Bay Company."
+  },
+  {
+   "name": "Hallstatt culture",
+   "as": "Celtic peoples (La Tène culture)",
+   "source": "https://en.wikipedia.org/wiki/La_Tène_culture",
+   "verified": false,
+   "from": -449,
+   "to": -51
+  },
+  {
+   "name": "Germanic tribes",
+   "as": "Germanic peoples (Scandinavia)",
+   "source": "https://en.wikipedia.org/wiki/Germanic_peoples",
+   "verified": false
+  },
+  {
+   "name": "Norsemen",
+   "as": "Germanic peoples (Scandinavia)",
+   "source": "https://en.wikipedia.org/wiki/Germanic_peoples",
+   "verified": false,
+   "to": 400
+  },
+  {
+   "name": "Celts",
+   "as": "Celtic peoples of Britain and Ireland",
+   "source": "https://en.wikipedia.org/wiki/Insular_Celts",
+   "verified": false
+  },
+  {
+   "name": "Arabs",
+   "as": "Arab tribes",
+   "source": "https://en.wikipedia.org/wiki/Pre-Islamic_Arabia",
+   "verified": false,
+   "to": 633
+  },
+  {
+   "name": "Maratha",
+   "as": "Maratha Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Maratha_Empire",
+   "verified": false,
+   "to": 1717
+  },
+  {
+   "name": "Islamic city-states",
+   "as": "Swahili city-states",
+   "source": "https://en.wikipedia.org/wiki/Swahili_coast",
+   "verified": false
+  },
+  {
+   "name": "Hejaz",
+   "as": "Islamic state of Medina",
+   "key": "rashidun caliphate",
+   "from": 622,
+   "to": 633,
+   "source": "https://en.wikipedia.org/wiki/First_Islamic_state",
+   "verified": false
+  },
+  {
+   "name": "Turingians",
+   "as": "Thuringians",
+   "source": "https://en.wikipedia.org/wiki/Thuringii",
+   "verified": false
+  },
+  {
+   "name": "Gujarat",
+   "as": "Gujarat Sultanate",
+   "source": "https://en.wikipedia.org/wiki/Gujarat_Sultanate",
+   "verified": false,
+   "to": 1573
+  },
+  {
+   "name": "Rajastan",
+   "as": "Rajput states (Mewar, Marwar)",
+   "source": "https://en.wikipedia.org/wiki/Rajputana",
+   "verified": false
+  },
+  {
+   "name": "Orissa",
+   "as": "Gajapati Kingdom (Orissa)",
+   "source": "https://en.wikipedia.org/wiki/Gajapati_Empire",
+   "verified": false,
+   "from": 1434,
+   "to": 1541
+  },
+  {
+   "name": "Arabs",
+   "as": "Arab tribes (Bedouin)",
+   "source": "https://en.wikipedia.org/wiki/Bedouin",
+   "verified": false,
+   "from": 1492,
+   "to": 1743
+  },
+  {
+   "name": "Eastern North American hunter-gatherers",
+   "as": "Mississippian and Woodland peoples",
+   "from": 800,
+   "to": 1491,
+   "source": "https://en.wikipedia.org/wiki/Mississippian_culture",
+   "verified": false
+  },
+  {
+   "name": "Greek city-states",
+   "as": "Greek city-states of the Aegean",
+   "source": "https://en.wikipedia.org/wiki/Polis",
+   "verified": false
   }
+ ],
+ "borrow": [
+  {
+   "name": "Hallstatt culture",
+   "snap": -400,
+   "from": -799,
+   "to": -450,
+   "as": "Hallstatt culture",
+   "source": "https://en.wikipedia.org/wiki/Hallstatt_culture",
+   "verified": false
+  },
+  {
+   "name": "Hallstatt culture",
+   "snap": -400,
+   "from": -449,
+   "to": -51,
+   "as": "Celtic peoples (La Tène culture)",
+   "source": "https://en.wikipedia.org/wiki/La_Tène_culture",
+   "verified": false,
+   "note": "The outline is the sketch map's Hallstatt region of 400 BC; the La Tène culture of the Celts followed the Hallstatt culture about 450 BC and lasted until the Roman conquest of Gaul (58 to 51 BC)."
+  },
+  {
+   "name": "Germanic tribes",
+   "snap": -400,
+   "from": -500,
+   "to": 400,
+   "as": "Germanic peoples (Scandinavia)",
+   "source": "https://en.wikipedia.org/wiki/Germanic_peoples",
+   "verified": false,
+   "note": "The outline is the sketch map's Germanic region of 400 BC (the Nordic Bronze and Iron Age homeland); Germanic peoples are attested from about 500 BC, and by the first century AD also lived between the Rhine, the Danube and the Vistula, which the sources leave blank."
+  },
+  {
+   "name": "Celts",
+   "snap": -100,
+   "from": -600,
+   "to": 42,
+   "as": "Celtic peoples of Britain and Ireland",
+   "source": "https://en.wikipedia.org/wiki/Insular_Celts",
+   "verified": false
+  },
+  {
+   "name": "Celtic kingdoms",
+   "snap": 1000,
+   "from": 43,
+   "to": 999,
+   "as": "Irish kingdoms (Gaelic Ireland)",
+   "source": "https://en.wikipedia.org/wiki/Gaelic_Ireland",
+   "verified": false,
+   "note": "The outline is the sketch map's Ireland of AD 1000. Ireland was never part of the Roman Empire and was divided among Gaelic kingdoms throughout these centuries."
+  },
+  {
+   "name": "Picts",
+   "snap": 800,
+   "from": 80,
+   "to": 296,
+   "as": "Caledonians",
+   "source": "https://en.wikipedia.org/wiki/Caledonians",
+   "verified": false,
+   "note": "The outline is the sketch map's Pictland of AD 800. Roman writers call the peoples north of the Forth Caledonians from the 80s AD and Picts from 297."
+  },
+  {
+   "name": "Picts",
+   "snap": 800,
+   "from": 297,
+   "to": 799,
+   "as": "Picts",
+   "source": "https://en.wikipedia.org/wiki/Picts",
+   "verified": false
+  },
+  {
+   "name": "Celtiberians",
+   "snap": -700,
+   "from": -500,
+   "to": -19,
+   "as": "Iberians and Celtiberians",
+   "source": "https://en.wikipedia.org/wiki/Celtiberians",
+   "verified": false,
+   "note": "The outline is the sketch map's Iberia of 700 BC. Rome completed the conquest of the peninsula in 19 BC."
+  },
+  {
+   "name": "Sarmatians",
+   "snap": -100,
+   "from": -1,
+   "to": 375,
+   "as": "Sarmatians",
+   "source": "https://en.wikipedia.org/wiki/Sarmatians",
+   "verified": false,
+   "note": "Sarmatian peoples held the Pontic steppe from about the third century BC until the Huns arrived about AD 375."
+  },
+  {
+   "name": "Arabs",
+   "snap": -200,
+   "from": -199,
+   "to": 633,
+   "as": "Arab tribes",
+   "source": "https://en.wikipedia.org/wiki/Pre-Islamic_Arabia",
+   "verified": false,
+   "note": "The outline is the sketch map's Arabia of 200 BC. The tribes of inner Arabia had no common state before Islam; most of them had accepted the rule of Medina by 632."
+  },
+  {
+   "name": "Saharan pastoral nomads",
+   "snap": -200,
+   "from": -100,
+   "to": 699,
+   "as": "Saharan pastoral nomads",
+   "source": "https://en.wikipedia.org/wiki/Berbers",
+   "verified": false,
+   "note": "The outline is the sketch map's Sahara of 200 BC."
+  },
+  {
+   "name": "Maratha",
+   "snap": 1715,
+   "from": 1691,
+   "to": 1714,
+   "as": "Maratha Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Maratha_Empire",
+   "verified": false,
+   "note": "Cliopatria has no Maratha state between 1691 and 1717, the years of the long war against the Mughal Empire after the death of Sambhaji (1689); the outline is the sketch map's Maratha territory of 1715."
+  },
+  {
+   "name": "Rupert's Land",
+   "snap": 1715,
+   "from": 1670,
+   "to": 1869,
+   "as": "Rupert's Land (Hudson's Bay Company)",
+   "source": "https://en.wikipedia.org/wiki/Rupert's_Land",
+   "verified": false,
+   "ruler": "British Empire",
+   "key": "britain",
+   "note": "Chartered to the Hudson's Bay Company in 1670 and transferred to Canada in 1869 and 1870; the outline is the sketch map's of 1715."
+  },
+  {
+   "name": "Quebec",
+   "snap": 1783,
+   "from": 1763,
+   "to": 1790,
+   "as": "Province of Quebec",
+   "source": "https://en.wikipedia.org/wiki/Province_of_Quebec_(1763–1791)",
+   "verified": false,
+   "ruler": "British Empire",
+   "key": "britain",
+   "note": "British from the Treaty of Paris of 1763 (the sketch map of 1783 wrongly keeps it French); divided into Upper and Lower Canada in 1791."
+  },
+  {
+   "name": "Quebec",
+   "snap": 1783,
+   "from": 1791,
+   "to": 1814,
+   "as": "Upper Canada and Lower Canada",
+   "source": "https://en.wikipedia.org/wiki/The_Canadas",
+   "verified": false,
+   "ruler": "British Empire",
+   "key": "britain"
+  },
+  {
+   "name": "Luisiana",
+   "snap": 1783,
+   "from": 1763,
+   "to": 1800,
+   "as": "Spanish Louisiana",
+   "source": "https://en.wikipedia.org/wiki/Louisiana_(New_Spain)",
+   "verified": false,
+   "ruler": "Spanish Empire",
+   "key": "spain",
+   "note": "France ceded Louisiana west of the Mississippi to Spain in 1762; Spain governed it until the retrocession to France of 1800 (the sketch map of 1783 wrongly keeps it French). Cliopatria leaves it blank."
+  },
+  {
+   "name": "New South Wales",
+   "snap": 1815,
+   "from": 1788,
+   "to": 1850,
+   "as": "New South Wales",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_New_South_Wales",
+   "verified": false,
+   "ruler": "British Empire",
+   "key": "britain",
+   "note": "The British colony claimed the eastern part of the continent from 1788; the outline is the sketch map's of 1815. Most of the land was still held by Aboriginal peoples."
+  },
+  {
+   "name": "New South Wales",
+   "snap": 1815,
+   "from": 1851,
+   "to": 1885,
+   "as": "New South Wales, Victoria and Queensland",
+   "source": "https://en.wikipedia.org/wiki/History_of_Australia_(1851–1900)",
+   "verified": false,
+   "ruler": "British Empire",
+   "key": "britain",
+   "note": "Victoria (1851) and Queensland (1859) were separated from New South Wales; the sketch map has one outline for the three colonies."
+  },
+  {
+   "name": "Saxons",
+   "snap": 500,
+   "from": -50,
+   "to": 249,
+   "as": "Germanic peoples (Chauci, Cherusci)",
+   "source": "https://en.wikipedia.org/wiki/Germania",
+   "verified": false,
+   "note": "The outline is the sketch map's of AD 500. Roman writers place Germanic peoples between the Rhine and the Elbe from the first century BC; the sources leave the area blank."
+  },
+  {
+   "name": "Saxons",
+   "snap": 500,
+   "from": 250,
+   "to": 499,
+   "as": "Saxons",
+   "source": "https://en.wikipedia.org/wiki/Saxons",
+   "verified": false,
+   "note": "The Saxons are first named in the second and third centuries AD; the outline is the sketch map's of AD 500."
+  },
+  {
+   "name": "Turingians",
+   "snap": 500,
+   "from": -50,
+   "to": 399,
+   "as": "Germanic peoples (Chatti, Hermunduri)",
+   "source": "https://en.wikipedia.org/wiki/Germania",
+   "verified": false,
+   "note": "The outline is the sketch map's of AD 500. Roman writers place Germanic peoples between the Rhine and the Elbe from the first century BC; the sources leave the area blank."
+  },
+  {
+   "name": "Turingians",
+   "snap": 500,
+   "from": 400,
+   "to": 499,
+   "as": "Thuringians",
+   "source": "https://en.wikipedia.org/wiki/Thuringii",
+   "verified": false
+  },
+  {
+   "name": "Gujarat",
+   "snap": 1492,
+   "from": 1407,
+   "to": 1491,
+   "as": "Gujarat Sultanate",
+   "source": "https://en.wikipedia.org/wiki/Gujarat_Sultanate",
+   "verified": false,
+   "note": "Independent of Delhi from 1407 until the Mughal conquest of 1573; the outline is the sketch map's of 1492."
+  },
+  {
+   "name": "Rajastan",
+   "snap": 1492,
+   "from": 1350,
+   "to": 1491,
+   "as": "Rajput states (Mewar, Marwar)",
+   "source": "https://en.wikipedia.org/wiki/Rajputana",
+   "verified": false,
+   "note": "The Rajput kingdoms of Rajasthan stayed outside the sultanates of Delhi, Gujarat and Malwa in these years; the outline is the sketch map's of 1492."
+  },
+  {
+   "name": "Tuareg",
+   "snap": 1279,
+   "from": 1300,
+   "to": 1885,
+   "as": "Tuareg and other Saharan peoples",
+   "source": "https://en.wikipedia.org/wiki/Tuareg_people",
+   "verified": false,
+   "note": "The outline is the sketch map's of 1279. The Sahara between the states of the Maghreb and the Sahel was held by Tuareg, Arab and Toubou nomads until the French conquest around 1900."
+  },
+  {
+   "name": "Arabs",
+   "snap": 1492,
+   "from": 950,
+   "to": 1491,
+   "as": "Arab tribes (Bedouin)",
+   "source": "https://en.wikipedia.org/wiki/Bedouin",
+   "verified": false,
+   "note": "The outline is the sketch map's of 1492. After the Abbasid Caliphate lost control of inner Arabia in the tenth century it was held by Bedouin tribes and short-lived emirates."
+  },
+  {
+   "name": "Arabs",
+   "snap": 1500,
+   "from": 1530,
+   "to": 1743,
+   "as": "Arab tribes (Bedouin)",
+   "source": "https://en.wikipedia.org/wiki/Bedouin",
+   "verified": false
+  },
+  {
+   "name": "Viceroyalty of Peru",
+   "snap": 1715,
+   "from": 1542,
+   "to": 1775,
+   "as": "Viceroyalty of Peru",
+   "ruler": "Spanish Empire",
+   "key": "spain",
+   "source": "https://en.wikipedia.org/wiki/Viceroyalty_of_Peru",
+   "verified": false,
+   "note": "Cliopatria leaves the Río de la Plata region out of the Spanish Empire; until 1776 it belonged to the Viceroyalty of Peru. The outline is the sketch map's of 1715; where Cliopatria draws the Spanish Empire, that is shown instead."
+  },
+  {
+   "name": "Viceroyalty of the Río de la Plata",
+   "snap": 1783,
+   "from": 1776,
+   "to": 1810,
+   "as": "Viceroyalty of the Río de la Plata",
+   "ruler": "Spanish Empire",
+   "key": "spain",
+   "source": "https://en.wikipedia.org/wiki/Viceroyalty_of_the_Río_de_la_Plata",
+   "verified": false
+  }
+ ],
+ "keep": [
+  "Xia"
  ]
 }

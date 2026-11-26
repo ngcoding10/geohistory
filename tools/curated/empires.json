@@ -1,0 +1,1635 @@
+{
+ "about": "Empires and their parts. 'empires': each sovereign power, the ruler names the border sources use for it ('rulers'), the map rows that are its core ('core') and the Wikipedia articles whose Wikidata items count as the empire when a membership is checked. 'memberships': dated memberships written for GeoHistory from general knowledge, each with the Wikipedia article that supports it. With 'rows' the membership applies to the named map territories and they are merged into the empire at world zoom (unless 'merge' is false); without 'rows' the part has no shape of its own in the sources and is only listed in the empire's panel. Further memberships are read from the border sources themselves (Cliopatria's member-of field; CShapes dependencies with the owners in dependency_owners.json or the sketch maps). 'verified' is set by tools/build_empires.py: true when the Wikidata item of the part names an item of the empire as its country, as what it is part of, or as its administrative parent.",
+ "empires": [
+  {
+   "id": "britain",
+   "name": "British Empire",
+   "wiki": [
+    "British Empire",
+    "United Kingdom",
+    "United Kingdom of Great Britain and Ireland",
+    "Kingdom of Great Britain",
+    "Kingdom of England"
+   ],
+   "rulers": [
+    "United Kingdom",
+    "British Empire",
+    "Kingdom of England",
+    "United Kingdom and Egypt (condominium)"
+   ],
+   "core": [
+    "United Kingdom",
+    "Kingdom of Great Britain",
+    "Kingdom of England",
+    "United Kingdom of Great Britain and Ireland"
+   ],
+   "source": "https://en.wikipedia.org/wiki/British_Empire",
+   "names": [
+    [
+     null,
+     1602,
+     "Kingdom of England"
+    ],
+    [
+     1603,
+     1706,
+     "England, Scotland and Ireland"
+    ],
+    [
+     1707,
+     null,
+     "British Empire"
+    ]
+   ]
+  },
+  {
+   "id": "france",
+   "name": "French Empire",
+   "wiki": [
+    "French colonial empire",
+    "France",
+    "Kingdom of France",
+    "French Third Republic",
+    "Second French Empire",
+    "First French Empire"
+   ],
+   "rulers": [
+    "France",
+    "Kingdom of France",
+    "Second French Empire",
+    "French Third Republic",
+    "First French Empire",
+    "French First Republic",
+    "French Directory",
+    "French Consulate",
+    "French Second Republic",
+    "Bourbon Kingdom of France"
+   ],
+   "core": [
+    "France",
+    "Kingdom of France",
+    "Second French Empire",
+    "French Third Republic",
+    "First French Empire",
+    "French First Republic",
+    "French Directory",
+    "French Consulate",
+    "French Second Republic",
+    "Bourbon Kingdom of France",
+    "July Monarchy"
+   ],
+   "source": "https://en.wikipedia.org/wiki/French_colonial_empire",
+   "names": [
+    [
+     null,
+     1533,
+     "Kingdom of France"
+    ],
+    [
+     1534,
+     null,
+     "French Empire"
+    ]
+   ]
+  },
+  {
+   "id": "spain",
+   "name": "Spanish Empire",
+   "wiki": [
+    "Spanish Empire",
+    "Spain",
+    "Habsburg Spain"
+   ],
+   "rulers": [
+    "Spain",
+    "Spanish Empire"
+   ],
+   "core": [
+    "Spain",
+    "Kingdom of Spain",
+    "Spanish Empire"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Spanish_Empire"
+  },
+  {
+   "id": "portugal",
+   "name": "Portuguese Empire",
+   "wiki": [
+    "Portuguese Empire",
+    "Portugal",
+    "Kingdom of Portugal"
+   ],
+   "rulers": [
+    "Portugal",
+    "Portuguese Empire"
+   ],
+   "core": [
+    "Portugal",
+    "Kingdom of Portugal",
+    "Portuguese Empire"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Portuguese_Empire"
+  },
+  {
+   "id": "netherlands",
+   "name": "Dutch Empire",
+   "wiki": [
+    "Dutch colonial empire",
+    "Netherlands",
+    "Dutch Republic",
+    "Kingdom of the Netherlands"
+   ],
+   "rulers": [
+    "Netherlands",
+    "Dutch Republic",
+    "Batavian Republic"
+   ],
+   "core": [
+    "Netherlands",
+    "Dutch Republic",
+    "Batavian Republic"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Dutch_colonial_empire"
+  },
+  {
+   "id": "germany",
+   "name": "German Empire",
+   "wiki": [
+    "German colonial empire",
+    "German Empire"
+   ],
+   "rulers": [
+    "German Empire"
+   ],
+   "core": [
+    "German Empire"
+   ],
+   "source": "https://en.wikipedia.org/wiki/German_colonial_empire"
+  },
+  {
+   "id": "italy",
+   "name": "Italian Empire",
+   "wiki": [
+    "Italian Empire",
+    "Italy",
+    "Kingdom of Italy"
+   ],
+   "rulers": [
+    "Italy",
+    "Italy (United Nations trust territory)"
+   ],
+   "core": [
+    "Italy"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Italian_Empire"
+  },
+  {
+   "id": "japan",
+   "name": "Empire of Japan",
+   "wiki": [
+    "Empire of Japan",
+    "Japan"
+   ],
+   "rulers": [
+    "Japan"
+   ],
+   "core": [
+    "Japan"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Empire_of_Japan"
+  },
+  {
+   "id": "belgium",
+   "name": "Belgium and the Congo",
+   "wiki": [
+    "Belgian colonial empire",
+    "Belgium"
+   ],
+   "rulers": [
+    "Belgium"
+   ],
+   "core": [
+    "Belgium"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Belgian_colonial_empire"
+  },
+  {
+   "id": "usa",
+   "name": "United States",
+   "wiki": [
+    "Territories of the United States",
+    "United States"
+   ],
+   "rulers": [
+    "United States"
+   ],
+   "core": [
+    "United States of America"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Territories_of_the_United_States"
+  },
+  {
+   "id": "denmark",
+   "name": "Danish Realm",
+   "wiki": [
+    "Danish Realm",
+    "Denmark",
+    "Denmark–Norway"
+   ],
+   "rulers": [
+    "Denmark",
+    "Kingdom of Iceland, in personal union with Denmark (1918 to 1944)"
+   ],
+   "core": [
+    "Denmark",
+    "Denmark-Norway",
+    "Kingdom of Denmark"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Danish_Realm",
+   "names": [
+    [
+     null,
+     1523,
+     "Kingdom of Denmark"
+    ],
+    [
+     1524,
+     1814,
+     "Denmark–Norway"
+    ],
+    [
+     1815,
+     null,
+     "Danish Realm"
+    ]
+   ]
+  },
+  {
+   "id": "russian empire",
+   "name": "Russian Empire",
+   "wiki": [
+    "Russian Empire"
+   ],
+   "rulers": [
+    "Russian Empire"
+   ],
+   "core": [
+    "Russian Empire"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Russian_Empire",
+   "ck": "russia"
+  },
+  {
+   "id": "soviet union",
+   "name": "Soviet Union",
+   "wiki": [
+    "Soviet Union"
+   ],
+   "rulers": [],
+   "core": [
+    "Soviet Union"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Soviet_Union",
+   "ck": "russia"
+  },
+  {
+   "id": "australia",
+   "name": "Australia",
+   "wiki": [
+    "States and territories of Australia",
+    "Australia"
+   ],
+   "rulers": [
+    "Australia"
+   ],
+   "core": [
+    "Australia"
+   ],
+   "source": "https://en.wikipedia.org/wiki/States_and_territories_of_Australia"
+  },
+  {
+   "id": "south africa",
+   "name": "South Africa",
+   "wiki": [
+    "Union of South Africa",
+    "South Africa"
+   ],
+   "rulers": [
+    "South Africa"
+   ],
+   "core": [
+    "South Africa"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Union_of_South_Africa"
+  },
+  {
+   "id": "austria",
+   "name": "Habsburg Monarchy",
+   "wiki": [
+    "Habsburg monarchy",
+    "Austria-Hungary",
+    "Austrian Empire"
+   ],
+   "rulers": [
+    "Austria-Hungary",
+    "Habsburg Monarchy"
+   ],
+   "core": [
+    "Austria-Hungary",
+    "Habsburg Monarchy",
+    "Austrian Empire"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Habsburg_monarchy",
+   "names": [
+    [
+     null,
+     1803,
+     "Habsburg Monarchy"
+    ],
+    [
+     1804,
+     1866,
+     "Austrian Empire"
+    ],
+    [
+     1867,
+     1918,
+     "Austria-Hungary"
+    ]
+   ]
+  },
+  {
+   "id": "holy roman empire",
+   "name": "Holy Roman Empire",
+   "wiki": [
+    "Holy Roman Empire"
+   ],
+   "rulers": [
+    "Holy Roman Empire"
+   ],
+   "core": [
+    "Holy Roman Empire Minor States",
+    "Holy Roman Empire"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Holy_Roman_Empire"
+  },
+  {
+   "id": "ottoman",
+   "name": "Ottoman Empire",
+   "wiki": [
+    "Ottoman Empire"
+   ],
+   "rulers": [
+    "Ottoman Empire"
+   ],
+   "core": [
+    "Ottoman Empire"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+  },
+  {
+   "id": "mongols",
+   "name": "Mongol Empire",
+   "wiki": [
+    "Mongol Empire"
+   ],
+   "rulers": [
+    "Mongol Empire"
+   ],
+   "core": [
+    "Mongol Empire"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Mongol_Empire"
+  },
+  {
+   "id": "polish-lithuanian commonwealth",
+   "name": "Polish–Lithuanian Commonwealth",
+   "wiki": [
+    "Polish–Lithuanian Commonwealth"
+   ],
+   "rulers": [
+    "Polish-Lithuanian Commonwealth"
+   ],
+   "core": [
+    "Polish-Lithuanian Commonwealth",
+    "House of Jagiellon"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Polish–Lithuanian_Commonwealth",
+   "names": [
+    [
+     null,
+     1568,
+     "Poland and Lithuania (Jagiellon union)"
+    ],
+    [
+     1569,
+     null,
+     "Polish–Lithuanian Commonwealth"
+    ]
+   ]
+  },
+  {
+   "id": "polish-lithuania kingdom",
+   "name": "Polish–Lithuanian union",
+   "wiki": [
+    "Polish–Lithuanian union"
+   ],
+   "rulers": [
+    "Polish-Lithuania Kingdom"
+   ],
+   "core": [],
+   "source": "https://en.wikipedia.org/wiki/Polish–Lithuanian_union"
+  },
+  {
+   "id": "sweden-norway",
+   "name": "United Kingdoms of Sweden and Norway",
+   "wiki": [
+    "Union between Sweden and Norway"
+   ],
+   "rulers": [],
+   "core": [
+    "United Kingdoms of Sweden and Norway"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Union_between_Sweden_and_Norway",
+   "ck": "sweden"
+  },
+  {
+   "id": "sweden",
+   "name": "Kingdom of Sweden",
+   "wiki": [
+    "Swedish Empire",
+    "Sweden"
+   ],
+   "rulers": [
+    "Kingdom of Sweden",
+    "Swedish Empire"
+   ],
+   "core": [
+    "Kingdom of Sweden",
+    "Swedish Empire"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Swedish_Empire",
+   "names": [
+    [
+     null,
+     1610,
+     "Kingdom of Sweden"
+    ],
+    [
+     1611,
+     1721,
+     "Swedish Empire"
+    ],
+    [
+     1722,
+     null,
+     "Kingdom of Sweden"
+    ]
+   ]
+  },
+  {
+   "id": "delhi sultanate",
+   "name": "Delhi Sultanate",
+   "wiki": [
+    "Delhi Sultanate"
+   ],
+   "rulers": [
+    "Delhi Sultanate"
+   ],
+   "core": [],
+   "source": "https://en.wikipedia.org/wiki/Delhi_Sultanate"
+  },
+  {
+   "id": "qing",
+   "name": "Qing Empire",
+   "wiki": [
+    "Qing dynasty"
+   ],
+   "rulers": [],
+   "core": [
+    "Qing Dynasty"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Qing_dynasty",
+   "ck": "china"
+  }
+ ],
+ "memberships": [
+  {
+   "empire": "britain",
+   "part": "Canada",
+   "from": 1867,
+   "to": 1931,
+   "kind": "dominion",
+   "source": "https://en.wikipedia.org/wiki/Canada",
+   "verified": false,
+   "rows": [
+    "Canada"
+   ],
+   "note": "Self-governing dominion; counted with the British Empire until the Statute of Westminster (11 December 1931) recognised the dominions as equal in status to the United Kingdom."
+  },
+  {
+   "empire": "britain",
+   "part": "Australia",
+   "from": 1901,
+   "to": 1931,
+   "kind": "dominion",
+   "source": "https://en.wikipedia.org/wiki/Australia",
+   "verified": false,
+   "rows": [
+    "Australia"
+   ],
+   "note": "Self-governing dominion; counted with the British Empire until the Statute of Westminster (11 December 1931) recognised the dominions as equal in status to the United Kingdom."
+  },
+  {
+   "empire": "britain",
+   "part": "New Zealand",
+   "from": 1841,
+   "to": 1931,
+   "kind": "colony, dominion from 1907",
+   "source": "https://en.wikipedia.org/wiki/Dominion_of_New_Zealand",
+   "verified": true,
+   "rows": [
+    "New Zealand"
+   ],
+   "note": "Self-governing dominion; counted with the British Empire until the Statute of Westminster (11 December 1931) recognised the dominions as equal in status to the United Kingdom."
+  },
+  {
+   "empire": "britain",
+   "part": "South Africa",
+   "from": 1910,
+   "to": 1931,
+   "kind": "dominion",
+   "source": "https://en.wikipedia.org/wiki/Union_of_South_Africa",
+   "verified": false,
+   "rows": [
+    "South Africa"
+   ],
+   "note": "Self-governing dominion; counted with the British Empire until the Statute of Westminster (11 December 1931) recognised the dominions as equal in status to the United Kingdom."
+  },
+  {
+   "empire": "britain",
+   "part": "Irish Free State",
+   "from": 1922,
+   "to": 1931,
+   "kind": "dominion",
+   "source": "https://en.wikipedia.org/wiki/Irish_Free_State",
+   "verified": false,
+   "rows": [
+    "Irish Free State",
+    "Ireland"
+   ],
+   "note": "Self-governing dominion; counted with the British Empire until the Statute of Westminster (11 December 1931) recognised the dominions as equal in status to the United Kingdom."
+  },
+  {
+   "empire": "britain",
+   "part": "Kingdom of Scotland",
+   "from": 1603,
+   "to": 1707,
+   "kind": "personal union",
+   "source": "https://en.wikipedia.org/wiki/Union_of_the_Crowns",
+   "verified": true,
+   "rows": [
+    "Kingdom of Scotland"
+   ],
+   "note": "One king from 1603 (Union of the Crowns); two kingdoms until the Acts of Union of 1707."
+  },
+  {
+   "empire": "britain",
+   "part": "Kingdom of Ireland",
+   "from": 1542,
+   "to": 1800,
+   "kind": "personal union",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Ireland",
+   "verified": false
+  },
+  {
+   "empire": "britain",
+   "part": "Electorate of Hanover",
+   "from": 1714,
+   "to": 1837,
+   "kind": "personal union",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Hanover",
+   "verified": false,
+   "rows": [
+    "Electorate of Hanover",
+    "Kingdom of Hanover"
+   ],
+   "merge": false,
+   "note": "Shared its ruler with Great Britain from 1714 to 1837 but was never part of the British Empire; not merged on the map."
+  },
+  {
+   "empire": "britain",
+   "part": "Thirteen Colonies",
+   "from": 1607,
+   "to": 1783,
+   "kind": "colonies",
+   "source": "https://en.wikipedia.org/wiki/Thirteen_Colonies",
+   "verified": true
+  },
+  {
+   "empire": "britain",
+   "part": "Province of Quebec",
+   "from": 1763,
+   "to": 1791,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Province_of_Quebec_(1763–1791)",
+   "verified": true
+  },
+  {
+   "empire": "britain",
+   "part": "Upper Canada and Lower Canada",
+   "from": 1791,
+   "to": 1841,
+   "kind": "colonies",
+   "source": "https://en.wikipedia.org/wiki/The_Canadas",
+   "verified": false
+  },
+  {
+   "empire": "britain",
+   "part": "Province of Canada",
+   "from": 1841,
+   "to": 1867,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Province_of_Canada",
+   "verified": true
+  },
+  {
+   "empire": "britain",
+   "part": "Rupert's Land (Hudson's Bay Company)",
+   "from": 1670,
+   "to": 1870,
+   "kind": "chartered company territory",
+   "source": "https://en.wikipedia.org/wiki/Rupert's_Land",
+   "verified": true
+  },
+  {
+   "empire": "britain",
+   "part": "New South Wales",
+   "from": 1788,
+   "to": 1900,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_New_South_Wales",
+   "verified": true
+  },
+  {
+   "empire": "britain",
+   "part": "Company rule in India (East India Company)",
+   "from": 1757,
+   "to": 1858,
+   "kind": "chartered company territory",
+   "source": "https://en.wikipedia.org/wiki/Company_rule_in_India",
+   "verified": true
+  },
+  {
+   "empire": "britain",
+   "part": "British Raj",
+   "from": 1858,
+   "to": 1947,
+   "kind": "crown rule",
+   "source": "https://en.wikipedia.org/wiki/British_Raj",
+   "verified": true
+  },
+  {
+   "empire": "britain",
+   "part": "Jamaica",
+   "from": 1655,
+   "to": 1962,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_Jamaica",
+   "verified": true
+  },
+  {
+   "empire": "britain",
+   "part": "Cape Colony",
+   "from": 1806,
+   "to": 1910,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Cape_Colony",
+   "verified": true
+  },
+  {
+   "empire": "ottoman",
+   "part": "Principality of Wallachia",
+   "from": 1476,
+   "to": 1593,
+   "kind": "tributary principality",
+   "source": "https://en.wikipedia.org/wiki/Wallachia",
+   "verified": false,
+   "rows": [
+    "Principality of Wallachia"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Principality of Wallachia",
+   "from": 1602,
+   "to": 1859,
+   "kind": "tributary principality",
+   "source": "https://en.wikipedia.org/wiki/Wallachia",
+   "verified": false,
+   "rows": [
+    "Principality of Wallachia"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Principality of Moldavia",
+   "from": 1538,
+   "to": 1599,
+   "kind": "tributary principality",
+   "source": "https://en.wikipedia.org/wiki/Moldavia",
+   "verified": false,
+   "rows": [
+    "Principality of Moldavia"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Principality of Moldavia",
+   "from": 1602,
+   "to": 1859,
+   "kind": "tributary principality",
+   "source": "https://en.wikipedia.org/wiki/Moldavia",
+   "verified": false,
+   "rows": [
+    "Principality of Moldavia"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "United Principalities of Moldavia and Wallachia",
+   "from": 1859,
+   "to": 1877,
+   "kind": "tributary principality",
+   "source": "https://en.wikipedia.org/wiki/United_Principalities_of_Moldavia_and_Wallachia",
+   "verified": false,
+   "rows": [
+    "United Principalities of Moldavia and Wallachia"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Crimean Khanate",
+   "from": 1478,
+   "to": 1774,
+   "kind": "vassal khanate",
+   "source": "https://en.wikipedia.org/wiki/Crimean_Khanate",
+   "verified": false,
+   "rows": [
+    "Crimean Khanate"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Principality of Transylvania",
+   "from": 1570,
+   "to": 1699,
+   "kind": "tributary principality",
+   "source": "https://en.wikipedia.org/wiki/Principality_of_Transylvania_(1570–1711)",
+   "verified": false,
+   "rows": [
+    "Principality of Transylvania"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Republic of Ragusa",
+   "from": 1458,
+   "to": 1806,
+   "kind": "tributary republic",
+   "source": "https://en.wikipedia.org/wiki/Republic_of_Ragusa",
+   "verified": false,
+   "rows": [
+    "Republic of Ragusa"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Principality of Serbia",
+   "from": 1817,
+   "to": 1878,
+   "kind": "autonomous principality",
+   "source": "https://en.wikipedia.org/wiki/Principality_of_Serbia",
+   "verified": false,
+   "rows": [
+    "Principality of Serbia"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Principality of Bulgaria",
+   "from": 1878,
+   "to": 1908,
+   "kind": "autonomous principality",
+   "source": "https://en.wikipedia.org/wiki/Principality_of_Bulgaria",
+   "verified": false,
+   "rows": [
+    "Principality of Bulgaria",
+    "Bulgaria"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Egypt under the Muhammad Ali dynasty",
+   "from": 1805,
+   "to": 1881,
+   "kind": "autonomous province, khedivate from 1867",
+   "source": "https://en.wikipedia.org/wiki/Egypt_under_the_Muhammad_Ali_dynasty",
+   "verified": false,
+   "rows": [
+    "Muhammad Ali Dynasty",
+    "Khedivate of Egypt"
+   ],
+   "note": "Nominally Ottoman until 1914; from 1882 it was occupied by Britain and is not merged with the Ottoman Empire after 1881."
+  },
+  {
+   "empire": "ottoman",
+   "part": "Regency of Algiers",
+   "from": 1516,
+   "to": 1830,
+   "kind": "autonomous regency",
+   "source": "https://en.wikipedia.org/wiki/Regency_of_Algiers",
+   "verified": false,
+   "rows": [
+    "Regency of Algiers"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Beylik of Tunis",
+   "from": 1574,
+   "to": 1881,
+   "kind": "autonomous regency",
+   "source": "https://en.wikipedia.org/wiki/Beylik_of_Tunis",
+   "verified": false,
+   "rows": [
+    "Beylik of Tunis"
+   ]
+  },
+  {
+   "empire": "ottoman",
+   "part": "Ottoman Tripolitania",
+   "from": 1551,
+   "to": 1911,
+   "kind": "autonomous regency, province from 1835",
+   "source": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania",
+   "verified": true,
+   "rows": [
+    "Ottoman Tripolitania"
+   ]
+  },
+  {
+   "empire": "russian empire",
+   "part": "Grand Duchy of Finland",
+   "from": 1809,
+   "to": 1917,
+   "kind": "autonomous grand duchy",
+   "source": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Finland",
+   "verified": true
+  },
+  {
+   "empire": "russian empire",
+   "part": "Congress Poland (Kingdom of Poland)",
+   "from": 1815,
+   "to": 1915,
+   "kind": "personal union, province from 1867",
+   "source": "https://en.wikipedia.org/wiki/Congress_Poland",
+   "verified": true
+  },
+  {
+   "empire": "russian empire",
+   "part": "Emirate of Bukhara",
+   "from": 1873,
+   "to": 1917,
+   "kind": "protectorate",
+   "source": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara",
+   "verified": true,
+   "rows": [
+    "Emirate of Bukhara"
+   ]
+  },
+  {
+   "empire": "russian empire",
+   "part": "Khanate of Khiva",
+   "from": 1873,
+   "to": 1917,
+   "kind": "protectorate",
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Khiva",
+   "verified": true,
+   "rows": [
+    "Khanate of Khiva"
+   ]
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Duchy of Bavaria",
+   "from": 962,
+   "to": 1806,
+   "kind": "imperial state",
+   "source": "https://en.wikipedia.org/wiki/Duchy_of_Bavaria",
+   "verified": false,
+   "rows": [
+    "Duchy of Bavaria"
+   ]
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Electorate of Saxony",
+   "from": 962,
+   "to": 1806,
+   "kind": "imperial state",
+   "source": "https://en.wikipedia.org/wiki/Electorate_of_Saxony",
+   "verified": true,
+   "rows": [
+    "Electorate of Saxony"
+   ]
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Electorate of Brandenburg",
+   "from": 962,
+   "to": 1806,
+   "kind": "imperial state",
+   "source": "https://en.wikipedia.org/wiki/Margraviate_of_Brandenburg",
+   "verified": true,
+   "rows": [
+    "Electorate of Brandenburg"
+   ]
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Margraviate of Brandenburg",
+   "from": 962,
+   "to": 1806,
+   "kind": "imperial state",
+   "source": "https://en.wikipedia.org/wiki/Margraviate_of_Brandenburg",
+   "verified": true,
+   "rows": [
+    "Margraviate of Brandenburg"
+   ]
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Kingdom of Bohemia",
+   "from": 962,
+   "to": 1806,
+   "kind": "imperial state",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Bohemia",
+   "verified": true,
+   "rows": [
+    "Kingdom of Bohemia"
+   ]
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Electorate of Hanover",
+   "from": 962,
+   "to": 1806,
+   "kind": "imperial state",
+   "source": "https://en.wikipedia.org/wiki/Electorate_of_Hanover",
+   "verified": true,
+   "rows": [
+    "Electorate of Hanover"
+   ]
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Duchy of Bohemia",
+   "from": 1002,
+   "to": 1198,
+   "kind": "imperial fief",
+   "source": "https://en.wikipedia.org/wiki/Duchy_of_Bohemia",
+   "verified": false,
+   "rows": [
+    "Duchy of Bohemia"
+   ]
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Habsburg Monarchy (the Austrian and Bohemian lands)",
+   "from": 1526,
+   "to": 1806,
+   "kind": "imperial state, partly outside the Empire",
+   "source": "https://en.wikipedia.org/wiki/Habsburg_monarchy",
+   "verified": false,
+   "rows": [
+    "Habsburg Monarchy"
+   ],
+   "merge": false,
+   "note": "Hungary and other Habsburg lands lay outside the Empire, so the Habsburg Monarchy is not merged into it on the map."
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Brandenburg-Prussia (Brandenburg only)",
+   "from": 1618,
+   "to": 1701,
+   "kind": "imperial state, partly outside the Empire",
+   "source": "https://en.wikipedia.org/wiki/Brandenburg-Prussia",
+   "verified": false,
+   "rows": [
+    "Brandenburg-Prussia"
+   ],
+   "merge": false,
+   "note": "The Duchy of Prussia lay outside the Empire, so Brandenburg-Prussia is not merged into it on the map."
+  },
+  {
+   "empire": "holy roman empire",
+   "part": "Kingdom of Prussia (Brandenburg only)",
+   "from": 1701,
+   "to": 1806,
+   "kind": "imperial state, partly outside the Empire",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Prussia",
+   "verified": false,
+   "rows": [
+    "Kingdom of Prussia"
+   ],
+   "merge": false
+  },
+  {
+   "empire": "mongols",
+   "part": "Golden Horde (Ulus of Jochi)",
+   "from": 1260,
+   "to": 1293,
+   "kind": "khanate",
+   "source": "https://en.wikipedia.org/wiki/Golden_Horde",
+   "verified": true,
+   "note": "After the death of Möngke Khan (1259) the empire split into four khanates that still nominally recognised the Great Khan until 1294. Cliopatria draws one Mongol Empire until 1293, so they are listed here but not drawn apart."
+  },
+  {
+   "empire": "mongols",
+   "part": "Chagatai Khanate",
+   "from": 1260,
+   "to": 1293,
+   "kind": "khanate",
+   "source": "https://en.wikipedia.org/wiki/Chagatai_Khanate",
+   "verified": true,
+   "note": "After the death of Möngke Khan (1259) the empire split into four khanates that still nominally recognised the Great Khan until 1294. Cliopatria draws one Mongol Empire until 1293, so they are listed here but not drawn apart."
+  },
+  {
+   "empire": "mongols",
+   "part": "Ilkhanate",
+   "from": 1260,
+   "to": 1293,
+   "kind": "khanate",
+   "source": "https://en.wikipedia.org/wiki/Ilkhanate",
+   "verified": true,
+   "note": "After the death of Möngke Khan (1259) the empire split into four khanates that still nominally recognised the Great Khan until 1294. Cliopatria draws one Mongol Empire until 1293, so they are listed here but not drawn apart."
+  },
+  {
+   "empire": "mongols",
+   "part": "Yuan dynasty (realm of the Great Khan)",
+   "from": 1260,
+   "to": 1293,
+   "kind": "khanate",
+   "source": "https://en.wikipedia.org/wiki/Yuan_dynasty",
+   "verified": true,
+   "note": "After the death of Möngke Khan (1259) the empire split into four khanates that still nominally recognised the Great Khan until 1294. Cliopatria draws one Mongol Empire until 1293, so they are listed here but not drawn apart."
+  },
+  {
+   "empire": "spain",
+   "part": "Viceroyalty of New Spain",
+   "from": 1535,
+   "to": 1821,
+   "kind": "viceroyalty",
+   "source": "https://en.wikipedia.org/wiki/New_Spain",
+   "verified": true
+  },
+  {
+   "empire": "spain",
+   "part": "Viceroyalty of Peru",
+   "from": 1542,
+   "to": 1824,
+   "kind": "viceroyalty",
+   "source": "https://en.wikipedia.org/wiki/Viceroyalty_of_Peru",
+   "verified": true
+  },
+  {
+   "empire": "spain",
+   "part": "Viceroyalty of New Granada",
+   "from": 1739,
+   "to": 1819,
+   "kind": "viceroyalty",
+   "source": "https://en.wikipedia.org/wiki/Viceroyalty_of_New_Granada",
+   "verified": true
+  },
+  {
+   "empire": "spain",
+   "part": "Viceroyalty of the Río de la Plata",
+   "from": 1776,
+   "to": 1814,
+   "kind": "viceroyalty",
+   "source": "https://en.wikipedia.org/wiki/Viceroyalty_of_the_Río_de_la_Plata",
+   "verified": true
+  },
+  {
+   "empire": "spain",
+   "part": "Captaincy General of the Philippines",
+   "from": 1565,
+   "to": 1898,
+   "kind": "captaincy general",
+   "source": "https://en.wikipedia.org/wiki/Captaincy_General_of_the_Philippines",
+   "verified": true
+  },
+  {
+   "empire": "spain",
+   "part": "Captaincy General of Cuba",
+   "from": 1607,
+   "to": 1898,
+   "kind": "captaincy general",
+   "source": "https://en.wikipedia.org/wiki/Captaincy_General_of_Cuba",
+   "verified": true
+  },
+  {
+   "empire": "spain",
+   "part": "Spanish Netherlands",
+   "from": 1556,
+   "to": 1714,
+   "kind": "crown land",
+   "source": "https://en.wikipedia.org/wiki/Spanish_Netherlands",
+   "verified": true
+  },
+  {
+   "empire": "spain",
+   "part": "Kingdom of Naples",
+   "from": 1504,
+   "to": 1714,
+   "kind": "crown land",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Naples",
+   "verified": false
+  },
+  {
+   "empire": "spain",
+   "part": "Duchy of Milan",
+   "from": 1556,
+   "to": 1714,
+   "kind": "crown land",
+   "source": "https://en.wikipedia.org/wiki/Duchy_of_Milan",
+   "verified": true
+  },
+  {
+   "empire": "spain",
+   "part": "Kingdom of Portugal and its empire (Iberian Union)",
+   "from": 1580,
+   "to": 1640,
+   "kind": "personal union",
+   "source": "https://en.wikipedia.org/wiki/Iberian_Union",
+   "verified": true,
+   "note": "The kings of Spain were also kings of Portugal from 1580 to 1640; Portugal and its colonies (Brazil, Goa, Angola) kept their own administration. Cliopatria draws them inside the Spanish Empire in these years."
+  },
+  {
+   "empire": "spain",
+   "part": "Spanish Louisiana",
+   "from": 1762,
+   "to": 1800,
+   "kind": "province",
+   "source": "https://en.wikipedia.org/wiki/Louisiana_(New_Spain)",
+   "verified": false,
+   "note": "Ceded by France in 1762 and returned in 1800; Cliopatria leaves it blank."
+  },
+  {
+   "empire": "portugal",
+   "part": "State of Brazil",
+   "from": 1549,
+   "to": 1815,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/State_of_Brazil",
+   "verified": true
+  },
+  {
+   "empire": "portugal",
+   "part": "Portuguese India (Goa)",
+   "from": 1505,
+   "to": 1961,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Portuguese_India",
+   "verified": true
+  },
+  {
+   "empire": "portugal",
+   "part": "Portuguese Angola",
+   "from": 1575,
+   "to": 1975,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Portuguese_Angola",
+   "verified": true
+  },
+  {
+   "empire": "portugal",
+   "part": "Portuguese Mozambique",
+   "from": 1505,
+   "to": 1975,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Portuguese_Mozambique",
+   "verified": true
+  },
+  {
+   "empire": "portugal",
+   "part": "Macau",
+   "from": 1557,
+   "to": 1999,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Portuguese_Macau",
+   "verified": true
+  },
+  {
+   "empire": "france",
+   "part": "New France (Canada, Louisiana)",
+   "from": 1534,
+   "to": 1763,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/New_France",
+   "verified": true
+  },
+  {
+   "empire": "france",
+   "part": "Saint-Domingue",
+   "from": 1697,
+   "to": 1804,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Saint-Domingue",
+   "verified": true
+  },
+  {
+   "empire": "france",
+   "part": "French India",
+   "from": 1674,
+   "to": 1954,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/French_India",
+   "verified": true
+  },
+  {
+   "empire": "netherlands",
+   "part": "New Netherland",
+   "from": 1614,
+   "to": 1667,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/New_Netherland",
+   "verified": true
+  },
+  {
+   "empire": "denmark",
+   "part": "Kingdom of Norway",
+   "from": 1537,
+   "to": 1814,
+   "kind": "union under the Danish crown",
+   "source": "https://en.wikipedia.org/wiki/Denmark–Norway",
+   "verified": false
+  },
+  {
+   "empire": "denmark",
+   "part": "Iceland",
+   "from": 1537,
+   "to": 1918,
+   "kind": "dependency",
+   "source": "https://en.wikipedia.org/wiki/History_of_Iceland",
+   "verified": false
+  },
+  {
+   "empire": "sweden",
+   "part": "Finland",
+   "from": 1323,
+   "to": 1809,
+   "kind": "part of the realm",
+   "source": "https://en.wikipedia.org/wiki/Finland_under_Swedish_rule",
+   "verified": true
+  },
+  {
+   "empire": "sweden-norway",
+   "part": "Kingdom of Sweden",
+   "from": 1814,
+   "to": 1905,
+   "kind": "personal union",
+   "source": "https://en.wikipedia.org/wiki/Union_between_Sweden_and_Norway",
+   "verified": false
+  },
+  {
+   "empire": "sweden-norway",
+   "part": "Kingdom of Norway",
+   "from": 1814,
+   "to": 1905,
+   "kind": "personal union",
+   "source": "https://en.wikipedia.org/wiki/Union_between_Sweden_and_Norway",
+   "verified": false
+  },
+  {
+   "empire": "polish-lithuanian commonwealth",
+   "part": "Crown of the Kingdom of Poland",
+   "from": 1569,
+   "to": 1795,
+   "kind": "one of the two states of the union",
+   "source": "https://en.wikipedia.org/wiki/Crown_of_the_Kingdom_of_Poland",
+   "verified": true
+  },
+  {
+   "empire": "polish-lithuanian commonwealth",
+   "part": "Grand Duchy of Lithuania",
+   "from": 1569,
+   "to": 1795,
+   "kind": "one of the two states of the union",
+   "source": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Lithuania",
+   "verified": true
+  },
+  {
+   "empire": "polish-lithuanian commonwealth",
+   "part": "Duchy of Prussia",
+   "from": 1525,
+   "to": 1657,
+   "kind": "fief",
+   "source": "https://en.wikipedia.org/wiki/Duchy_of_Prussia",
+   "verified": false,
+   "rows": [
+    "Duchy of Prussia"
+   ]
+  },
+  {
+   "empire": "polish-lithuanian commonwealth",
+   "part": "Duchy of Courland and Semigallia",
+   "from": 1561,
+   "to": 1795,
+   "kind": "fief",
+   "source": "https://en.wikipedia.org/wiki/Duchy_of_Courland_and_Semigallia",
+   "verified": false,
+   "rows": [
+    "Duchy of Courland"
+   ]
+  },
+  {
+   "empire": "austria",
+   "part": "Cisleithania (Austria)",
+   "from": 1867,
+   "to": 1918,
+   "kind": "one of the two halves of the Dual Monarchy",
+   "source": "https://en.wikipedia.org/wiki/Cisleithania",
+   "verified": true
+  },
+  {
+   "empire": "austria",
+   "part": "Kingdom of Hungary (Transleithania)",
+   "from": 1867,
+   "to": 1918,
+   "kind": "one of the two halves of the Dual Monarchy",
+   "source": "https://en.wikipedia.org/wiki/Lands_of_the_Crown_of_Saint_Stephen",
+   "verified": true
+  },
+  {
+   "empire": "austria",
+   "part": "Kingdom of Hungary",
+   "from": 1526,
+   "to": 1867,
+   "kind": "crown land",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1526–1867)",
+   "verified": true
+  },
+  {
+   "empire": "austria",
+   "part": "Kingdom of Bohemia",
+   "from": 1526,
+   "to": 1918,
+   "kind": "crown land",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Bohemia",
+   "verified": true
+  },
+  {
+   "empire": "austria",
+   "part": "Archduchy of Austria",
+   "from": 1453,
+   "to": 1918,
+   "kind": "crown land",
+   "source": "https://en.wikipedia.org/wiki/Archduchy_of_Austria",
+   "verified": true
+  },
+  {
+   "empire": "austria",
+   "part": "Kingdom of Galicia and Lodomeria",
+   "from": 1772,
+   "to": 1918,
+   "kind": "crown land",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Galicia_and_Lodomeria",
+   "verified": true
+  },
+  {
+   "empire": "soviet union",
+   "part": "Russian SFSR",
+   "from": 1922,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Russian_Soviet_Federative_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Ukrainian SSR",
+   "from": 1922,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Ukrainian_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Byelorussian SSR",
+   "from": 1922,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Byelorussian_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Transcaucasian SFSR",
+   "from": 1922,
+   "to": 1936,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Transcaucasian_Socialist_Federative_Soviet_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Uzbek SSR",
+   "from": 1924,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Uzbek_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Turkmen SSR",
+   "from": 1924,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Turkmen_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Tajik SSR",
+   "from": 1929,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Tajik_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Kazakh SSR",
+   "from": 1936,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Kazakh_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Kirghiz SSR",
+   "from": 1936,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Kirghiz_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Georgian SSR",
+   "from": 1936,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Georgian_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Armenian SSR",
+   "from": 1936,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Armenian_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Azerbaijan SSR",
+   "from": 1936,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Azerbaijan_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Lithuanian SSR",
+   "from": 1940,
+   "to": 1990,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Lithuanian_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Latvian SSR",
+   "from": 1940,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Latvian_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Estonian SSR",
+   "from": 1940,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Estonian_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Moldavian SSR",
+   "from": 1940,
+   "to": 1991,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Moldavian_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "soviet union",
+   "part": "Karelo-Finnish SSR",
+   "from": 1940,
+   "to": 1956,
+   "kind": "union republic",
+   "source": "https://en.wikipedia.org/wiki/Karelo-Finnish_Soviet_Socialist_Republic",
+   "verified": true,
+   "note": "CShapes draws the Soviet Union as one state; its republics are listed but not drawn apart."
+  },
+  {
+   "empire": "japan",
+   "part": "Manchukuo",
+   "from": 1932,
+   "to": 1945,
+   "kind": "puppet state",
+   "source": "https://en.wikipedia.org/wiki/Manchukuo",
+   "verified": false,
+   "merge": false,
+   "note": "A puppet state set up by Japan in Manchuria; CShapes draws the area as part of China."
+  },
+  {
+   "empire": "qing",
+   "part": "Tibet (under Qing protection)",
+   "from": 1720,
+   "to": 1912,
+   "kind": "protectorate",
+   "source": "https://en.wikipedia.org/wiki/Tibet_under_Qing_rule",
+   "verified": false
+  },
+  {
+   "empire": "qing",
+   "part": "Outer Mongolia",
+   "from": 1691,
+   "to": 1911,
+   "kind": "dependency",
+   "source": "https://en.wikipedia.org/wiki/Mongolia_under_Qing_rule",
+   "verified": false
+  },
+  {
+   "empire": "denmark",
+   "part": "Greenland",
+   "from": 1814,
+   "to": 1953,
+   "kind": "colony",
+   "source": "https://en.wikipedia.org/wiki/Greenland",
+   "verified": true,
+   "note": "CShapes 2.0 has no outline for Greenland in these years, so it is listed here but not drawn."
+  }
+ ],
+ "exclude": [
+  {
+   "row": "Angevin Empire",
+   "empire": "france",
+   "note": "Cliopatria lists the Angevin lands under both the English and the French crown (the French lands were fiefs of France held by the king of England). They are not merged into France.",
+   "source": "https://en.wikipedia.org/wiki/Angevin_Empire"
+  },
+  {
+   "row": "Angevins",
+   "empire": "france",
+   "note": "Cliopatria lists the Angevin lands under both the English and the French crown (the French lands were fiefs of France held by the king of England). They are not merged into France.",
+   "source": "https://en.wikipedia.org/wiki/Angevin_Empire"
+  }
+ ]
+}

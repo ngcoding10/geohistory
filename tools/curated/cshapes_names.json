@@ -3,10 +3,10 @@
  "rules": [
   {
    "cs": "Turkey (Ottoman Empire)",
-   "until": 19231028,
+   "until": 19221101,
    "name": "Ottoman Empire",
    "after": "Turkey",
-   "source": "https://en.wikipedia.org/wiki/Republic_of_Turkey"
+   "source": "https://en.wikipedia.org/wiki/Abolition_of_the_Ottoman_sultanate"
   },
   {
    "cs": "Russia (Soviet Union)",

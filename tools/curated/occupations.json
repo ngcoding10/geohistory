@@ -1,0 +1,588 @@
+{
+ "about": "Dated occupations and wartime annexations that the border sources do not draw (CShapes shows recognised borders only). No openly available dataset of occupation areas was found, so each row re-tints an existing outline: the territory called 'names' on the map of that year, or, when that territory is not on the map (the Baltic states after 1940), the CShapes outline named in 'shape' as it stood on the given date. Whole countries only; where only a part was occupied the note says so. Dates are the commonly cited ones from the Wikipedia article in 'source'. 'verified' is set by tools/build_occupations.py when the Wikidata item of that article has the same start and end years.",
+ "rows": [
+  {
+   "label": "Poland",
+   "names": [
+    "Poland"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19390901,
+   "to": 19450508,
+   "kind": "Occupied",
+   "note": "Germany invaded on 1 September 1939 and the Soviet Union on 17 September; the Soviet Union held the east until the German attack of June 1941. The Red Army drove the German forces out between July 1944 and early 1945. The whole country is hatched: the sources have no shape for the occupied part alone.",
+   "source": "https://en.wikipedia.org/wiki/Occupation_of_Poland_(1939–1945)",
+   "verified": true
+  },
+  {
+   "label": "Czechoslovakia",
+   "names": [
+    "Czechoslovakia"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19390315,
+   "to": 19450508,
+   "kind": "Occupied",
+   "note": "Bohemia and Moravia became a German protectorate on 15 March 1939; Slovakia was a German client state; the Sudetenland had been annexed in October 1938. The whole country is hatched: the sources have no shape for the occupied part alone.",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Czechoslovakia",
+   "verified": false
+  },
+  {
+   "label": "Austria",
+   "names": [
+    "Austria"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19380312,
+   "to": 19450427,
+   "kind": "Annexed",
+   "note": "Annexed into Germany (the Anschluss) on 12 March 1938; a provisional Austrian government was set up on 27 April 1945. CShapes keeps the pre-war border.",
+   "source": "https://en.wikipedia.org/wiki/Anschluss",
+   "verified": false
+  },
+  {
+   "label": "Denmark",
+   "names": [
+    "Denmark"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19400409,
+   "to": 19450505,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Denmark_in_World_War_II",
+   "verified": false
+  },
+  {
+   "label": "Norway",
+   "names": [
+    "Norway"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19400409,
+   "to": 19450508,
+   "kind": "Occupied",
+   "note": "The fighting in Norway lasted until 10 June 1940.",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Norway",
+   "verified": true
+  },
+  {
+   "label": "Netherlands",
+   "names": [
+    "Netherlands"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19400515,
+   "to": 19450505,
+   "kind": "Occupied",
+   "note": "The south was freed in the autumn of 1944.",
+   "source": "https://en.wikipedia.org/wiki/Netherlands_in_World_War_II",
+   "verified": true
+  },
+  {
+   "label": "Belgium",
+   "names": [
+    "Belgium"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19400528,
+   "to": 19450204,
+   "kind": "Occupied",
+   "note": "Most of the country was freed in September 1944.",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Belgium_during_World_War_II",
+   "verified": false
+  },
+  {
+   "label": "Luxembourg",
+   "names": [
+    "Luxembourg"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19400510,
+   "to": 19440910,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Luxembourg_during_World_War_II",
+   "verified": false
+  },
+  {
+   "label": "France",
+   "names": [
+    "France"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19400622,
+   "to": 19440825,
+   "kind": "Occupied",
+   "note": "After the armistice of 22 June 1940 Germany occupied the north and the Atlantic coast; the south was governed from Vichy until German and Italian troops occupied it as well in November 1942. Paris was freed on 25 August 1944. The whole country is hatched: the sources have no shape for the occupied part alone.",
+   "source": "https://en.wikipedia.org/wiki/German_military_administration_in_occupied_France_during_World_War_II",
+   "verified": true
+  },
+  {
+   "label": "Yugoslavia",
+   "names": [
+    "Yugoslavia"
+   ],
+   "by": "Germany, Italy, Hungary and Bulgaria (Axis)",
+   "key": "germany",
+   "from": 19410417,
+   "to": 19450515,
+   "kind": "Occupied",
+   "note": "The country was divided between the Axis powers and their client states (the Independent State of Croatia). The whole country is hatched: the sources have no shape for the occupied part alone.",
+   "source": "https://en.wikipedia.org/wiki/World_War_II_in_Yugoslavia",
+   "verified": true
+  },
+  {
+   "label": "Greece",
+   "names": [
+    "Greece"
+   ],
+   "by": "Germany, Italy and Bulgaria (Axis)",
+   "key": "germany",
+   "from": 19410430,
+   "to": 19441012,
+   "kind": "Occupied",
+   "note": "Crete fell on 1 June 1941; Athens was freed on 12 October 1944.",
+   "source": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece",
+   "verified": true
+  },
+  {
+   "label": "Albania",
+   "names": [
+    "Albania"
+   ],
+   "by": "Italy",
+   "key": "italy",
+   "from": 19390407,
+   "to": 19430908,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Italian_protectorate_of_Albania_(1939–1943)",
+   "verified": false
+  },
+  {
+   "label": "Albania",
+   "names": [
+    "Albania"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19430909,
+   "to": 19441129,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Albania",
+   "verified": false
+  },
+  {
+   "label": "Hungary",
+   "names": [
+    "Hungary"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19440319,
+   "to": 19450404,
+   "kind": "Occupied",
+   "note": "Hungary was a German ally until German troops occupied it on 19 March 1944.",
+   "source": "https://en.wikipedia.org/wiki/Operation_Margarethe",
+   "verified": false
+  },
+  {
+   "label": "Estonia",
+   "names": [
+    "Estonia"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19410905,
+   "to": 19440922,
+   "kind": "Occupied",
+   "note": "The Soviet Union had occupied and annexed Estonia in 1940; CShapes draws it inside the Soviet Union in these years, so its 1939 outline is used.",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Estonia_during_World_War_II",
+   "verified": true,
+   "shape": {
+    "cs": "Estonia",
+    "date": 19390101
+   }
+  },
+  {
+   "label": "Latvia",
+   "names": [
+    "Latvia"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19410710,
+   "to": 19441013,
+   "kind": "Occupied",
+   "note": "The Soviet Union had occupied and annexed Latvia in 1940; German forces held Courland until May 1945. Its 1939 outline is used.",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Latvia_during_World_War_II",
+   "verified": false,
+   "shape": {
+    "cs": "Latvia",
+    "date": 19390101
+   }
+  },
+  {
+   "label": "Lithuania",
+   "names": [
+    "Lithuania"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19410625,
+   "to": 19440713,
+   "kind": "Occupied",
+   "note": "The Soviet Union had occupied and annexed Lithuania in 1940. Its 1939 outline is used.",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Lithuania_during_World_War_II",
+   "verified": false,
+   "shape": {
+    "cs": "Lithuania",
+    "date": 19390101
+   }
+  },
+  {
+   "label": "Iran",
+   "names": [
+    "Iran",
+    "Persia"
+   ],
+   "by": "the United Kingdom and the Soviet Union",
+   "key": "britain",
+   "from": 19410825,
+   "to": 19460509,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Anglo-Soviet_invasion_of_Iran",
+   "verified": false
+  },
+  {
+   "label": "Iceland",
+   "names": [
+    "Iceland"
+   ],
+   "by": "the United Kingdom, then the United States",
+   "key": "britain",
+   "from": 19400510,
+   "to": 19450508,
+   "kind": "Occupied",
+   "note": "British troops landed on 10 May 1940; United States forces took over from July 1941.",
+   "source": "https://en.wikipedia.org/wiki/Allied_occupation_of_Iceland",
+   "verified": false
+  },
+  {
+   "label": "Ethiopia",
+   "names": [
+    "Ethiopia"
+   ],
+   "by": "Italy",
+   "key": "italy",
+   "from": 19360509,
+   "to": 19410505,
+   "kind": "Occupied",
+   "note": "Annexed into Italian East Africa after the war of 1935 and 1936; Emperor Haile Selassie returned on 5 May 1941.",
+   "source": "https://en.wikipedia.org/wiki/Italian_Ethiopia",
+   "verified": false
+  },
+  {
+   "label": "Philippines",
+   "names": [
+    "Philippines"
+   ],
+   "by": "Japan",
+   "key": "japan",
+   "from": 19420102,
+   "to": 19450705,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines",
+   "verified": true
+  },
+  {
+   "label": "Dutch East Indies",
+   "names": [
+    "Dutch East Indies"
+   ],
+   "by": "Japan",
+   "key": "japan",
+   "from": 19420309,
+   "to": 19450815,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Dutch_East_Indies",
+   "verified": true
+  },
+  {
+   "label": "Malaya",
+   "names": [
+    "Malaya",
+    "British Malaya",
+    "Malaysia",
+    "Federated Malay States",
+    "Straits Settlements"
+   ],
+   "by": "Japan",
+   "key": "japan",
+   "from": 19420131,
+   "to": 19450815,
+   "kind": "Occupied",
+   "note": "Singapore fell on 15 February 1942.",
+   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya",
+   "verified": false
+  },
+  {
+   "label": "Burma",
+   "names": [
+    "Burma"
+   ],
+   "by": "Japan",
+   "key": "japan",
+   "from": 19420308,
+   "to": 19450503,
+   "kind": "Occupied",
+   "note": "Rangoon fell on 8 March 1942 and was retaken on 3 May 1945.",
+   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Burma",
+   "verified": false
+  },
+  {
+   "label": "French Indochina",
+   "names": [
+    "Vietnam",
+    "Cambodia",
+    "Laos",
+    "French Indochina"
+   ],
+   "by": "Japan",
+   "key": "japan",
+   "from": 19410728,
+   "to": 19450815,
+   "kind": "Occupied",
+   "note": "Japanese troops were stationed in the north from September 1940 and in the south from July 1941; the French administration stayed in place until the Japanese coup of 9 March 1945.",
+   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_French_Indochina",
+   "verified": false
+  },
+  {
+   "label": "Hong Kong",
+   "names": [
+    "Hong Kong"
+   ],
+   "by": "Japan",
+   "key": "japan",
+   "from": 19411225,
+   "to": 19450815,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong",
+   "verified": true
+  },
+  {
+   "label": "Singapore",
+   "names": [
+    "Singapore"
+   ],
+   "by": "Japan",
+   "key": "japan",
+   "from": 19420215,
+   "to": 19450815,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Singapore",
+   "verified": true
+  },
+  {
+   "label": "British Borneo",
+   "names": [
+    "Sarawak",
+    "North Borneo",
+    "Brunei"
+   ],
+   "by": "Japan",
+   "key": "japan",
+   "from": 19420119,
+   "to": 19450815,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo",
+   "verified": false
+  },
+  {
+   "label": "Portuguese Timor",
+   "names": [
+    "East Timor",
+    "Portuguese Timor"
+   ],
+   "by": "Japan",
+   "key": "japan",
+   "from": 19420220,
+   "to": 19450911,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Portuguese_Timor",
+   "verified": false
+  },
+  {
+   "label": "Japan",
+   "names": [
+    "Japan"
+   ],
+   "by": "the United States (Allied occupation)",
+   "key": "usa",
+   "from": 19450902,
+   "to": 19520428,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Occupation_of_Japan",
+   "verified": true
+  },
+  {
+   "label": "Austria",
+   "names": [
+    "Austria"
+   ],
+   "by": "the United States, the Soviet Union, the United Kingdom and France (Allied occupation)",
+   "key": "usa",
+   "from": 19450427,
+   "to": 19551025,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Allied-occupied_Austria",
+   "verified": true
+  },
+  {
+   "label": "Belgium",
+   "names": [
+    "Belgium"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19140820,
+   "to": 19181111,
+   "kind": "Occupied",
+   "note": "All but a strip behind the Yser was occupied. The whole country is hatched: the sources have no shape for the occupied part alone.",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Belgium_during_World_War_I",
+   "verified": true
+  },
+  {
+   "label": "Luxembourg",
+   "names": [
+    "Luxembourg"
+   ],
+   "by": "Germany",
+   "key": "germany",
+   "from": 19140802,
+   "to": 19181111,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/German_occupation_of_Luxembourg_during_World_War_I",
+   "verified": true
+  },
+  {
+   "label": "Serbia",
+   "names": [
+    "Serbia"
+   ],
+   "by": "Austria-Hungary and Bulgaria",
+   "key": "austria",
+   "from": 19151125,
+   "to": 19181101,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Serbian_campaign",
+   "verified": false
+  },
+  {
+   "label": "Montenegro",
+   "names": [
+    "Montenegro"
+   ],
+   "by": "Austria-Hungary",
+   "key": "austria",
+   "from": 19160125,
+   "to": 19181101,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Austro-Hungarian_occupation_of_Montenegro",
+   "verified": true
+  },
+  {
+   "label": "Romania",
+   "names": [
+    "Romania"
+   ],
+   "by": "Germany, Austria-Hungary and Bulgaria (Central Powers)",
+   "key": "germany",
+   "from": 19161206,
+   "to": 19181110,
+   "kind": "Occupied",
+   "note": "Bucharest fell on 6 December 1916; about two thirds of the country was occupied while the government held Moldavia. The whole country is hatched: the sources have no shape for the occupied part alone.",
+   "source": "https://en.wikipedia.org/wiki/Romania_in_World_War_I",
+   "verified": false
+  },
+  {
+   "label": "Haiti",
+   "names": [
+    "Haiti"
+   ],
+   "by": "the United States",
+   "key": "usa",
+   "from": 19150728,
+   "to": 19340801,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/United_States_occupation_of_Haiti",
+   "verified": true
+  },
+  {
+   "label": "Dominican Republic",
+   "names": [
+    "Dominican Republic"
+   ],
+   "by": "the United States",
+   "key": "usa",
+   "from": 19161129,
+   "to": 19240918,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/United_States_occupation_of_the_Dominican_Republic_(1916–1924)",
+   "verified": false
+  },
+  {
+   "label": "Kuwait",
+   "names": [
+    "Kuwait"
+   ],
+   "by": "Iraq",
+   "key": "iraq",
+   "from": 19900802,
+   "to": 19910226,
+   "kind": "Occupied",
+   "note": "",
+   "source": "https://en.wikipedia.org/wiki/Iraqi_invasion_of_Kuwait",
+   "verified": false
+  },
+  {
+   "label": "Iraq",
+   "names": [
+    "Iraq"
+   ],
+   "by": "the United States and its coalition",
+   "key": "usa",
+   "from": 20030409,
+   "to": 20040628,
+   "kind": "Occupied",
+   "note": "Baghdad fell on 9 April 2003; the Coalition Provisional Authority handed power to an Iraqi government on 28 June 2004.",
+   "source": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority",
+   "verified": true
+  }
+ ]
+}

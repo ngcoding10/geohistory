@@ -19,8 +19,8 @@ from collections import defaultdict, Counter
 
 from common import fetch, write_json, read_json, DATA, TOOLS, CACHE, log
 from fetch_sources import CSHAPES
-from geo import simplify_geom, label_point, bbox_of, PolyIndex
-from build_borders import power_key, PALETTE, label_name
+from geo import simplify_geom, label_point, bbox_of, PolyIndex, encode_geom, decode_geom
+from build_borders import power_key, PALETTE, CURATED, label_name
 
 GW = 'http://ksgleditsch.com/data/iisystem.dat'
 FIRST, LAST = 1886, 2019
@@ -68,7 +68,7 @@ def build():
     shapes = []
     for f in src['features']:
         p = f['properties']
-        g = simplify_geom(f['geometry'], 0.03, 2)
+        g = simplify_geom(f['geometry'], 0.012, 3)
         if not g:
             continue
         shapes.append({'cs': p['cntry_name'], 'gw': p['gwcode'], 'a': int(p['area']),
@@ -148,7 +148,7 @@ def build():
         for _, name, pk, *_ in rows:
             if pk not in powers:
                 h = sum(ord(c) * (i + 1) for i, c in enumerate(pk))
-                powers[pk] = {'name': name, 'color': PALETTE[h % len(PALETTE)], 'years': [FIRST, LAST]}
+                powers[pk] = {'name': name, 'color': CURATED.get(pk) or PALETTE[h % len(PALETTE)], 'years': [FIRST, LAST]}
     write_json(os.path.join(DATA, 'powers.json'), powers)
     return shapes, years, powers
 
@@ -174,7 +174,7 @@ def _cache():
         shapes = []
         for c in idx['chunks']:
             for sid, s in read_json(os.path.join(DATA, 'cshapes', c['f'])).items():
-                shapes.append({'id': int(sid), 'a': s['a'], 'g': s['g']})
+                shapes.append({'id': int(sid), 'a': s['a'], 'g': decode_geom(s['g'])})
         years = {}
         for y in range(idx['from'], idx['to'] + 1):
             years[y] = read_json(os.path.join(DATA, 'cshapes', 'years', f'{y}.json'))['rows']
@@ -191,7 +191,7 @@ def main():
     for i in range(0, len(shapes), CHUNK):
         part = shapes[i:i + CHUNK]
         f = f'shapes-{i // CHUNK}.json'
-        doc = {str(s['id']): {'g': s['g'], 'a': s['a'], 'l': s['l'], 'bb': s['bb'], 'cs': s['cs'], 's': s['s'], 'e': s['e']}
+        doc = {str(s['id']): {'g': encode_geom(s['g']), 'a': s['a'], 'l': s['l'], 'bb': s['bb'], 'cs': s['cs'], 's': s['s'], 'e': s['e']}
                for s in part}
         total += write_json(os.path.join(out, f), doc)
         chunks.append({'f': f, 'lo': part[0]['id'], 'hi': part[-1]['id']})

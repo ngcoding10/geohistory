@@ -63,6 +63,14 @@ def main():
         t = t.replace('đ', 'd').replace('Đ', 'D').replace('ʻ', '').replace("'", '').replace('’', '')
         return ''.join(c for c in unicodedata.normalize('NFKD', t) if not unicodedata.combining(c)).lower()
 
+    def opt(name, default):
+        p = os.path.join(DATA, name)
+        return read_json(p) if os.path.exists(p) else default
+    succ = opt('succession.json', {})
+    emp = opt('empires.json', {'rows': {}, 'undrawn': {}, 'empires': {}})
+    occ = opt('occupations.json', {'rows': []})['rows']
+    tl_index = opt('timelines/index.json', {})
+
     results = []
     for line in open(os.path.join(TOOLS, 'audit', 'facts.txt'), encoding='utf-8'):
         line = line.strip()
@@ -90,6 +98,54 @@ def main():
                      (person(e) == nm or person(e).startswith(nm + ' of ') or nm.endswith(' ' + person(e)))]
             ok = any(abs(e['y'] - y) <= 1 for e in cands)
             got = sorted({e['y'] for e in cands})[:6] if cands else 'not found'
+        elif kind == 'S':
+            # before / after: the lists of data/succession.json for that state (any of its names)
+            names_, side, text = a[0].split(';'), a[1][0], a[2]
+            recs = [succ[n.strip()] for n in names_ if n.strip() in succ]
+            labels = [str(x) for r in recs for e in r.get(side, []) for x in (e[0], e[3], e[4]) if x]
+            ok = any(fold(alt.strip()) in fold(' | '.join(labels)) for alt in text.split(';'))
+            got = '; '.join(sorted(set(labels)))[:160] if recs else 'no before/after recorded'
+        elif kind == 'M':
+            # empire membership in a year (merged members and listed parts; "!text" = must not belong)
+            parts, y, text = [fold(x.strip()) for x in a[0].split(';')], int(a[1]), a[2]
+            neg = text.startswith('!')
+            wants = [fold(x.strip()) for x in text.lstrip('!').split(';')]
+            word = lambda alt, nm: re.search(r'(^|[^a-z])' + re.escape(alt) + r'($|[^a-z])', fold(nm)) is not None
+            found = []
+            for rn, ms in emp['rows'].items():
+                for m in ms:
+                    if m[0] <= y <= m[1] and 'n' not in (m[4] or '') and any(word(p, rn) or (m[6] and word(p, m[6])) for p in parts):
+                        found.append((rn, m[2]))
+            for eid, us in emp['undrawn'].items():
+                for u in us:
+                    if u[1] <= y <= u[2] and 'n' not in (u[4] or '') and any(word(p, u[0]) for p in parts):
+                        found.append((u[0], eid))
+            def ename(eid):
+                e = emp['empires'][eid]
+                return fold(' | '.join([eid, e['n']] + [n[2] for n in e.get('names', [])] + e.get('core', [])))
+            hit = any(w in ename(eid) for _, eid in found for w in wants)
+            ok = (not hit) if neg else hit
+            got = '; '.join(f'{n} in {emp["empires"][e]["n"]}' for n, e in found[:4]) or 'no membership that year'
+        elif kind == 'O':
+            terr, y, text = [fold(x.strip()) for x in a[0].split(';')], int(a[1]), a[2]
+            neg = text.startswith('!')
+            wants = [fold(x.strip()) for x in text.lstrip('!').split(';')]
+            d = y * 10000 + 701
+            rows_ = [o for o in occ if o['from'] <= d <= o['to'] and any(t in fold(' | '.join([o['label']] + o['n'])) for t in terr)]
+            hit = any(w in fold(o['by']) for o in rows_ for w in wants)
+            ok = (not hit) if neg else hit
+            got = '; '.join(f"{o['label']} by {o['by']}" for o in rows_) or 'not marked occupied that year'
+        elif kind == 'H':
+            names_, y, text = [x.strip() for x in a[0].split(';')], int(a[1]), a[2]
+            holders = []
+            for n in names_:
+                f = tl_index.get(n)
+                if f:
+                    for r in read_json(os.path.join(DATA, 'timelines', f)).get('rulers', []):
+                        if r[1] <= y and (r[2] >= y if r[2] is not None else r[1] == y):
+                            holders.append(r[0])
+            ok = any(fold(alt.strip()) in fold(' | '.join(holders)) for alt in text.split(';'))
+            got = '; '.join(holders[:5]) or 'nobody listed in office'
         else:
             lon, lat, y, text = float(a[0]), float(a[1]), int(a[2]), a[3]
             t = territory(lon, lat, y)

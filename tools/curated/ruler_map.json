@@ -639,6 +639,68 @@
    "to": [
     "Roman Republic"
    ]
+  },
+  {
+   "q": "Q181765",
+   "label": "Holy Roman Emperor",
+   "to": [
+    "Holy Roman Empire",
+    "Holy Roman Empire Minor States"
+   ]
+  },
+  {
+   "q": "Q782985",
+   "label": "King of the Romans",
+   "to": [
+    "Holy Roman Empire",
+    "Holy Roman Empire Minor States"
+   ]
+  },
+  {
+   "q": "Q24004130",
+   "label": "king of Germany",
+   "to": [
+    "Holy Roman Empire",
+    "Holy Roman Empire Minor States",
+    "Kingdom of Germany",
+    "East Francia"
+   ]
+  },
+  {
+   "q": "Q2708520",
+   "label": "Chairman of the Chinese Communist Party (party leader)",
+   "to": [
+    "China"
+   ]
+  },
+  {
+   "q": "Q849418",
+   "label": "General Secretary of the Chinese Communist Party (party leader)",
+   "to": [
+    "China"
+   ]
+  },
+  {
+   "q": "Q848786",
+   "label": "General Secretary of the Communist Party of Vietnam (party leader)",
+   "to": [
+    "Vietnam",
+    "North Vietnam"
+   ]
+  },
+  {
+   "q": "Q5453787",
+   "label": "First Secretary of the Communist Party of Cuba (party leader)",
+   "to": [
+    "Cuba"
+   ]
+  },
+  {
+   "q": "Q24944203",
+   "label": "President of Yugoslavia",
+   "to": [
+    "Yugoslavia"
+   ]
   }
  ],
  "exclude": [

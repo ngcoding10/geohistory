@@ -6,11 +6,12 @@ import sys
 
 from common import DATA, ROOT, read_json
 
+from build_borders import label_name
 fonts = os.path.join(ROOT, 'fonts')
 have = {}
 for font in os.listdir(fonts):
     d = os.path.join(fonts, font)
-    if os.path.isdir(d):
+    if os.path.isdir(d) and any(f.endswith('.pbf') for f in os.listdir(d)):
         have[font] = {f for f in os.listdir(d) if f.endswith('.pbf')}
 
 def rng(ch):
@@ -28,6 +29,19 @@ for f in os.listdir(os.path.join(DATA, 'borders')):
 for feat in read_json(os.path.join(DATA, 'us', 'states.json'))['features']:
     for ch in feat['properties']['n']:
         need.setdefault(rng(ch), set()).add(ch)
+# names on the yearly maps and the names of empires
+for src in ('clio', 'cshapes'):
+    d = os.path.join(DATA, src, 'years')
+    for f in os.listdir(d):
+        for r in read_json(os.path.join(d, f))['rows']:
+            for ch in (label_name(r[1]) if len(r) >= 5 else r[1]):
+                need.setdefault(rng(ch), set()).add(ch)
+ep = os.path.join(DATA, 'empires.json')
+if os.path.exists(ep):
+    for e in read_json(ep)['empires'].values():
+        for n in [e['n']] + [x[2] for x in e.get('names', [])]:
+            for ch in n:
+                need.setdefault(rng(ch), set()).add(ch)
 need.setdefault('0-255.pbf', set()).update('0123456789k')  # cluster counts
 bad = False
 for font, files in have.items():
