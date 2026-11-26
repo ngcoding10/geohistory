@@ -38,6 +38,12 @@ let modernNames = {};
 let modernFC = null;
 let usFC = null;
 const US_FILL_UNTIL = 1912;   // Arizona, the last contiguous state, was admitted in 1912
+// The eleven states of the Confederacy with the day each passed its ordinance of secession (yyyymmdd), and
+// the surrender of the last large Confederate army (26 May 1865). Between those days the state is filled in
+// the Confederacy's colour. Source: https://en.wikipedia.org/wiki/Confederate_States_of_America
+const SECEDED = { sc_state: 18601220, ms_state: 18610109, fl_state: 18610110, al_state: 18610111, ga_state: 18610119, la_state: 18610126,
+  tx_state: 18610201, va_state: 18610417, ar_state: 18610506, nc_state: 18610520, tn_state: 18610608 };
+const CSA_END = 18650526;
 
 // ---------------------------------------------------------------- start
 init().catch((err) => {
@@ -190,6 +196,10 @@ const COLONY_NAMES = { CT: 'Connecticut Colony', DE: 'Delaware Colony', GA: 'Pro
   NC: 'Province of North Carolina', PA: 'Province of Pennsylvania', RI: 'Colony of Rhode Island', SC: 'Province of South Carolina',
   VA: 'Colony of Virginia', ME: 'Province of Massachusetts Bay', VT: 'Vermont (disputed)' };
 let colFC = null;
+// counties in what are now other states belonged to these colonies (Maine to Massachusetts; the counties of
+// today's West Virginia and Kentucky to Virginia; the Washington District, today's Tennessee, to North Carolina)
+const COL_PARENT = { ME: 'MA', WV: 'VA', KY: 'VA', TN: 'NC' };
+const colParent = (st) => COL_PARENT[st] || st;
 const colDate = () => state.year * 10000 + (state.month || 12) * 100 + (state.day || (state.month ? 28 : 31));
 function colonyName(st, date) {
   const states = colFC?.states || {};
@@ -197,7 +207,7 @@ function colonyName(st, date) {
   return COLONY_NAMES[st] || states[st] || st;
 }
 function colonyUnits(st, date) {
-  return (colFC?.features || []).filter((f) => f.properties.s <= date && f.properties.e >= date && (f.properties.st === st || (st === 'MA' && f.properties.st === 'ME')));
+  return (colFC?.features || []).filter((f) => f.properties.s <= date && f.properties.e >= date && colParent(f.properties.st) === st);
 }
 async function updateColonies() {
   const y = state.year;
@@ -206,14 +216,14 @@ async function updateColonies() {
     if (!colFC) {
       colFC = await getJSON('us/colonies.json');
       const codes = Object.keys(colFC.states);
-      for (const f of colFC.features) f.properties.c = COL_COLORS[codes.indexOf(f.properties.st === 'ME' ? 'MA' : f.properties.st) % COL_COLORS.length];
+      for (const f of colFC.features) f.properties.c = COL_COLORS[Math.max(0, codes.indexOf(colParent(f.properties.st))) % COL_COLORS.length];
     }
     const d = colDate();
     const best = {};
     for (const f of colFC.features) {
       const p = f.properties;
       if (p.s > d || p.e < d) continue;
-      const st = p.st === 'ME' ? 'MA' : p.st;
+      const st = colParent(p.st);
       const a = bboxArea(f.geometry);
       if (!best[st] || a > best[st].a) best[st] = { a, l: p.l };
     }
@@ -227,7 +237,7 @@ function bboxArea(g) {
 }
 
 async function selectColony(st, { fly }) {
-  st = st === 'ME' ? 'MA' : st;
+  st = colParent(st);
   const d = colDate();
   const units = colonyUnits(st, d);
   if (!units.length) return;
@@ -248,7 +258,13 @@ async function updateUS() {
     if (!usFC) { usFC = await loadUS(); if (mapOk) map.setUS(usFC); }
     if (mapOk) map.setUSDate(usDateInt(), state.sel?.kind === 'us' ? state.sel.id : null);
     // 1783 to 1912: fill states, organized territories and unorganized territory in three tints of the US colour
-    if (mapOk) map.setUSFill(y <= US_FILL_UNTIL ? ((await loadPowers()).usa?.color || '#94b4cc') : null);
+    if (mapOk) {
+      const pw = await loadPowers();
+      const d = usDateInt();
+      const seceded = d <= CSA_END ? Object.keys(SECEDED).filter((id) => SECEDED[id] <= d) : [];
+      map.setUSFill(y <= US_FILL_UNTIL ? (pw.usa?.color || '#94b4cc') : null,
+        { seceded, csaColor: pw['confederate states of america']?.color || '#c9b9a0' });
+    }
   } catch (e) { console.warn(e); }
 }
 
@@ -271,6 +287,9 @@ function updateBadge() {
   const exact = s.y === state.year || s.src === 'clio';
   els.badge.textContent = s.src === 'clio' ? `Borders in ${formatYear(state.year)} (approximate)` : s.cs ? `Borders on 1 July ${s.y}` : `Borders as of ${formatYear(s.y)}`;
   els.badge.classList.toggle('exact', exact);
+  // a note that concerns the whole map this year (wartime occupation and the like) is flagged on the badge
+  const yy = state.year;
+  worldNotes(yy).then((ns) => { if (ns.length && state.year === yy && !els.badge.textContent.includes('see note')) els.badge.textContent += ' · see note'; });
 }
 
 function usNote() {
@@ -280,6 +299,7 @@ function usNote() {
     ? 'In North America the colonies are drawn from their organized counties on this date (exact dates, Newberry Library).'
     : y <= US_FILL_UNTIL
       ? 'Inside the United States the map shows states (full colour), organized territories (lighter) and unorganized territory (lightest) with their borders on this date (Newberry Library atlas). Click one for its history.'
+        + (y >= 1860 && y <= 1865 ? ' The states that had seceded are drawn in the colour of the Confederacy, from the day each seceded until May 1865.' : '')
       : 'Dashed lines in the United States show state borders on this date.');
 }
 
@@ -288,6 +308,9 @@ function badgeText() {
   if (!s) return [h('p', null, `The border maps start in ${formatYear(MIN_YEAR)}.`)];
   const next = nextSnapshotAfter(s.y);
   const out = [];
+  for (const nt of (mapNotesDoc?.notes || [])) {
+    if (nt.world && state.year >= nt.from && state.year <= nt.to) out.push(h('p', null, h('b', null, 'Note. '), nt.note));
+  }
   if (s.src === 'clio') {
     out.push(h('p', null, `From ${formatYear(clioRange()[0])} to ${clioRange()[1]} the map uses Cliopatria (Seshat Global History Databank), which gives each state a shape for a range of years. You see the shapes it lists for ${formatYear(state.year)}${s.y !== state.year ? ` (nothing changes in its data between ${formatYear(s.y)} and ${formatYear(state.year)})` : ''}. They are approximate: the source redraws a state only every few years (every few decades in antiquity), and border dates can be a few years off. Borders before about 1500 are rough: many places had no fixed borders.`));
     out.push(h('p', null, 'Cliopatria only draws states. Peoples and regions without a state are filled in from the nearest earlier world sketch map (historical-basemaps); click one to see which map it comes from.'));
@@ -380,6 +403,10 @@ async function renderYear() {
     ? 'Written for GeoHistory; every event it names is dated to this decade by Wikidata' : 'Written for GeoHistory; not every statement could be confirmed in Wikidata' },
   dec.verified ? 'curated' : 'curated, unverified')));
   else if (cen) nodes.push(h('p.lead.century', null, cen.text, h('span.unver', { title: 'Curated summary, not checked against a dataset' }, 'curated')));
+  for (const nt of await worldNotes(y)) {
+    nodes.push(h('p.note.worldnote', null, h('span.unver', { title: 'A known limit of the border source, written for GeoHistory' }, 'map note'), ' ', nt.note, ' ',
+      h('a', { href: nt.source, target: '_blank', rel: 'noopener' }, 'Source')));
+  }
   const strip = await changeStrip(y);
   if (token !== state.token || state.view !== 'year' || state.sel) return;
   if (strip) nodes.push(strip);
@@ -426,6 +453,15 @@ async function renderYear() {
     }
   }
   setBody(nodes);
+}
+
+/** Map notes that concern the whole map in a year (wartime occupation, a region the sources leave blank). */
+let mapNotesDoc = null;
+async function worldNotes(y) {
+  try {
+    const mn = mapNotesDoc = await getJSON('mapnotes.json');
+    return mn.notes.filter((nt) => nt.world && y >= nt.from && y <= nt.to);
+  } catch { return []; }
 }
 
 function pills(names, onClick) {
@@ -575,11 +611,22 @@ async function renderSelection() {
   if (token !== state.token || state.sel !== s) return;
   const nodes = [head];
   if (tl?.rulers?.length) {
-    const now = tl.rulers.filter(([, a, b]) => a <= y && (b != null ? b >= y : a === y));
+    // in office this year: sovereigns first, then heads of government; one line per person and office
+    const rankOf = (t) => (/emperor|empress|king|queen|monarch|sultan|caliph|shah|tsar|pope|pharaoh|khan|khagan|president(?! of the council)|shogun|doge|emir|prince|duke|consul|dictator|inca|tlatoani|ruler|stadtholder|general secretary|head of state|f\u00fchrer/i.test(t)
+      && !/prime minister|vizier|chancellor|premier|council of ministers|head of government/i.test(t) ? 0 : 1);
+    const seenNow = new Map();
+    for (const r of tl.rulers) {
+      const [n, a, b, t] = r;
+      if (!(a <= y && (b != null ? b >= y : a === y))) continue;
+      const key = n + '|' + t;
+      const prev = seenNow.get(key);
+      if (prev) { prev[1] = Math.min(prev[1], a); if (prev[2] != null) prev[2] = b == null ? prev[2] : Math.max(prev[2], b); } else seenNow.set(key, [...r]);
+    }
+    const now = [...seenNow.values()].sort((p, q) => rankOf(p[3]) - rankOf(q[3]) || p[1] - q[1]);
     nodes.push(h('h2', null, `In office in ${formatYear(y)}`));
     // flags: c = from GeoHistory's curated list and confirmed by Wikidata, u = curated and not confirmed,
     // a = approximate dates, i = the end year is the start of the next holder of the office
-    const span = (a, b, f = '') => `${f.includes('a') ? 'c. ' : ''}${formatYear(a)}${b != null ? '–' + (f.includes('i') ? 'c. ' : '') + formatYear(b) : ''}`;
+    const span = (a, b, f = '') => `${f.includes('a') ? 'c. ' : ''}${formatYear(a)}${b != null && b !== a ? '–' + (f.includes('i') ? 'c. ' : '') + formatYear(b) : ''}`;
     const tag = (f = '') => (f.includes('u') ? h('span.unver', { title: 'Written for GeoHistory; Wikidata does not confirm both years' }, 'curated, unverified')
       : f.includes('c') ? h('span.unver', { title: 'Written for GeoHistory; both years match Wikidata' }, 'curated') : null);
     if (now.length) nodes.push(h('ul.changes-list', null, now.slice(0, 8).map(([n, a, b, t, , f]) =>
@@ -648,13 +695,18 @@ async function selectionHeader(s) {
       const aka = mn.aliases[s.name];
       if (aka) facts.append(h('dt', null, 'Also called'), h('dd', null, aka.join(', ')));
       for (const nt of mn.notes) {
-        if (!nt.names.includes(s.name) || state.year < nt.from || state.year > nt.to) continue;
+        if (!(nt.names || []).includes(s.name) || state.year < nt.from || state.year > nt.to) continue;
         box.append(h('p.note', null, h('span.unver', { title: 'A known problem of the border source, written for GeoHistory' }, 'map note'), ' ', nt.note, ' ',
           h('a', { href: nt.source, target: '_blank', rel: 'noopener' }, 'Source')));
       }
     } catch { /* optional */ }
     try {
-      const pd = await getJSON('polities.json').then((d) => d.polities.find((x) => x.names.includes(s.name))).catch(() => null);
+      // several descriptions can share a name (Germany 1918 to 1933 and 1933 to 1945): the one whose years
+      // contain this year wins, else the nearest one
+      const pd = await getJSON('polities.json').then((d) => {
+        const gap = (x) => (x.from != null && state.year < x.from ? x.from - state.year : x.to != null && state.year > x.to ? state.year - x.to : 0);
+        return d.polities.filter((x) => x.names.includes(s.name)).sort((a, b) => gap(a) - gap(b))[0];
+      }).catch(() => null);
       if (pd && (pd.from == null || pd.from - 25 <= state.year) && (pd.to == null || pd.to + 25 >= state.year)) {
         box.insertBefore(h('p.about', null, pd.text, h('span.unver', { title: pd.verified
           ? 'Written for GeoHistory; the years in it match Wikidata' : 'Written for GeoHistory; not every year in it could be confirmed in Wikidata' },
@@ -670,8 +722,10 @@ async function selectionHeader(s) {
         const y = state.year;
         // "mod": Wikidata dates today's state of this name from that year (independence, a new constitution);
         // "eras": the earlier states it replaced. Before "mod" show the era that fits, or say so plainly.
-        const before = info.mod != null && y < info.mod - 25;
-        const era = before ? (info.eras || []).filter((c) => c.from - 25 <= y && (c.to ?? info.mod) + 25 >= y).pop() || null : null;
+        const before = info.mod != null && y < info.mod;
+        const eras = before ? (info.eras || []) : [];
+        const era = eras.filter((c) => c.from <= y && (c.to ?? info.mod) >= y).pop()
+          || eras.filter((c) => c.from - 25 <= y && (c.to ?? info.mod) + 25 >= y).pop() || null;
         const shown = era || info;
         const fits = era ? true : before ? false
           : (info.mod != null || info.from == null || info.from - 25 <= y) && (info.to == null || info.to + 25 >= y);

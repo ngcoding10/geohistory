@@ -110,8 +110,10 @@ async function loadCsYear(y, src) {
     if (clio && extra) {
       const d = under.get(extra);
       const src0 = d.polities[id];
-      for (const g of d._byK.get(id) || []) features.push({ type: 'Feature', geometry: g, properties: { k, c: null, p } });
-      return { n, p, a: src0.a, l: src0.l, bb: src0.bb, pr: 3, under: extra };
+      for (const g of d._byK.get(id) || []) features.push({ type: 'Feature', geometry: g, properties: { k, c: null, p, u: 1 } });
+      const pol = { n, p, a: src0.a, l: src0.l, bb: src0.bb, pr: 3, under: extra };
+      if (s) pol.s = s;
+      return pol;
     }
     const sh = shapeStore.get(src + ':' + id);
     features.push({ type: 'Feature', geometry: sh.g, properties: { k, c: null, p } });

@@ -71,8 +71,13 @@ export class Search {
     let out = scored.slice(0, 12).map((x) => x.it);
     if (out.length < 5) {
       const seen = new Set(out);
-      for (const r of this.fuzzy.search(q, { limit: 12 })) {
-        if (!seen.has(r.item)) { out.push(r.item); seen.add(r.item); }
+      // typo-tolerant matches: a territory or country whose whole name is about as long as the query
+      // ("bizantine empir" -> Byzantine Empire) goes before the events that merely contain that name
+      const near = (it) => (it.k !== 'e' && Math.abs(foldText(it.n).length - fq.length) <= 3 ? 0 : 1);
+      const places = this.fuzzy.search(q, { limit: 6, filter: (it) => it.k !== 'e' && near(it) === 0 });
+      const fz = [...places, ...this.fuzzy.search(q, { limit: 12 })].map((r) => ({ it: r.item }));
+      for (const r of fz) {
+        if (!seen.has(r.it)) { out.push(r.it); seen.add(r.it); }
         if (out.length >= 12) break;
       }
     }

@@ -8,8 +8,8 @@ const dark = () => document.documentElement.dataset.theme === 'dark'
   || (document.documentElement.dataset.theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
 const COLORS = {
-  light: { ocean: '#c6d5d8', land: '#ece5d4', line: '#5e5241', text: '#2a241c', halo: 'rgba(255,252,244,0.9)', us: '#3d2f22', modern: '#2c4a6b' },
-  dark: { ocean: '#1f2b33', land: '#3b372f', line: '#1d1a16', text: '#221d16', halo: 'rgba(250,244,230,0.85)', us: '#f3e9d6', modern: '#9cc3ef' },
+  light: { ocean: '#c6d5d8', land: '#ece5d4', line: '#5e5241', text: '#2a241c', textUnder: '#6a5d49', halo: 'rgba(255,252,244,0.9)', us: '#3d2f22', modern: '#2c4a6b' },
+  dark: { ocean: '#1f2b33', land: '#3b372f', line: '#1d1a16', text: '#221d16', textUnder: '#4f4636', halo: 'rgba(250,244,230,0.85)', us: '#f3e9d6', modern: '#9cc3ef' },
 };
 const FONT = ['Noto Sans Regular'];
 const FONT_IT = ['Noto Sans Italic'];
@@ -61,14 +61,28 @@ export class HistoryMap extends EventTarget {
     const m = this.map, c = this.c;
     m.addSource('land', { type: 'geojson', data: EMPTY });
     m.addLayer({ id: 'land', type: 'fill', source: 'land', paint: { 'fill-color': c.land } });
+    // Two stacks (A and B) for the cross-fade. In each, the territories that are not states in the source
+    // (peoples and cultures from the older sketch maps, property u = 1) lie below the states and are drawn
+    // paler and with thinner outlines, so that states stand out and no sketch outline crosses a state.
+    const STATE = ['all', ['>=', ['get', 'k'], 0], ['!=', ['get', 'u'], 1]];
+    const UNDER = ['all', ['>=', ['get', 'k'], 0], ['==', ['get', 'u'], 1]];
     for (const id of ['A', 'B']) {
       m.addSource('t' + id, { type: 'geojson', data: EMPTY });
       m.addLayer({
-        id: 'fill' + id, type: 'fill', source: 't' + id, filter: ['>=', ['get', 'k'], 0],
+        id: 'ufill' + id, type: 'fill', source: 't' + id, filter: UNDER,
         paint: { 'fill-color': ['get', 'c'], 'fill-opacity': 0, 'fill-opacity-transition': { duration: 0 } },
       });
       m.addLayer({
-        id: 'line' + id, type: 'line', source: 't' + id, filter: ['>=', ['get', 'k'], 0],
+        id: 'uline' + id, type: 'line', source: 't' + id, filter: UNDER,
+        paint: { 'line-color': c.line, 'line-opacity': 0, 'line-width': ['interpolate', ['linear'], ['zoom'], 1, 0.25, 5, 0.7],
+                 'line-opacity-transition': { duration: 0 } },
+      });
+      m.addLayer({
+        id: 'fill' + id, type: 'fill', source: 't' + id, filter: STATE,
+        paint: { 'fill-color': ['get', 'c'], 'fill-opacity': 0, 'fill-opacity-transition': { duration: 0 } },
+      });
+      m.addLayer({
+        id: 'line' + id, type: 'line', source: 't' + id, filter: STATE,
         paint: { 'line-color': c.line, 'line-opacity': 0, 'line-width': ['interpolate', ['linear'], ['zoom'], 1, 0.4, 5, 1.1],
                  'line-opacity-transition': { duration: 0 } },
       });
@@ -98,20 +112,31 @@ export class HistoryMap extends EventTarget {
 
     // territory labels: bigger places first, smaller ones as you zoom in
     m.addSource('labels', { type: 'geojson', data: EMPTY });
-    const lbl = (id, minzoom, filter, size, upper) => m.addLayer({
+    // Labels of peoples and cultures (italic, lighter) are added first, so the state labels above them win a
+    // collision. Large state labels may move off their point when an event marker sits on it.
+    const lbl = (id, minzoom, filter, size, { upper = false, under = false, move = false } = {}) => m.addLayer({
       id, type: 'symbol', source: 'labels', minzoom, filter,
       layout: {
-        'text-field': ['get', 'n'], 'text-font': FONT, 'text-size': size, 'text-max-width': 8,
+        'text-field': ['get', 'n'], 'text-font': under ? FONT_IT : FONT, 'text-size': size, 'text-max-width': 8,
         'text-transform': upper ? 'uppercase' : 'none', 'text-letter-spacing': upper ? 0.08 : 0.02,
-        'symbol-sort-key': ['-', 0, ['get', 'a']], 'text-padding': 3,
+        'symbol-sort-key': ['-', 0, ['get', 'a']], 'text-padding': under ? 6 : 3,
+        ...(move ? { 'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'], 'text-radial-offset': 0.9, 'text-justify': 'center' } : {}),
       },
-      paint: { 'text-color': c.text, 'text-halo-color': c.halo, 'text-halo-width': 1.4, 'text-halo-blur': 0.3 },
+      paint: { 'text-color': under ? c.textUnder : c.text, 'text-halo-color': c.halo, 'text-halo-width': under ? 1.1 : 1.4, 'text-halo-blur': 0.3 },
     });
-    lbl('lbl-1', 0, ['>=', ['get', 'a'], 1500000], ['interpolate', ['linear'], ['zoom'], 1, 10.5, 4, 15], true);
-    lbl('lbl-2', 2.2, ['all', ['>=', ['get', 'a'], 250000], ['<', ['get', 'a'], 1500000]], ['interpolate', ['linear'], ['zoom'], 2, 10.5, 5, 14], false);
-    lbl('lbl-3', 3.4, ['all', ['>=', ['get', 'a'], 30000], ['<', ['get', 'a'], 250000]], 11.5, false);
-    lbl('lbl-4', 4.6, ['<', ['get', 'a'], 30000], 11, false);
-    m.addLayer({ id: 'us-label', type: 'symbol', source: 'us', minzoom: 3.2, filter: NONE,
+    const isU = ['==', ['get', 'u'], 1], notU = ['!=', ['get', 'u'], 1];
+    const area = (lo, hi) => [...(lo != null ? [['>=', ['get', 'a'], lo]] : []), ...(hi != null ? [['<', ['get', 'a'], hi]] : [])];
+    lbl('ulbl-1', 0, ['all', isU, ...area(2500000, null)], ['interpolate', ['linear'], ['zoom'], 1, 10, 4, 13.5], { under: true });
+    lbl('ulbl-2', 2.6, ['all', isU, ...area(400000, 2500000)], ['interpolate', ['linear'], ['zoom'], 2, 10, 5, 12.5], { under: true });
+    lbl('ulbl-3', 3.3, ['all', isU, ...area(40000, 400000)], 11, { under: true });
+    lbl('ulbl-4', 4.8, ['all', isU, ...area(null, 40000)], 10.5, { under: true });
+    lbl('lbl-4', 4.4, ['all', notU, ...area(null, 30000)], 11);
+    lbl('lbl-3', 3.2, ['all', notU, ...area(30000, 250000)], 11.5);
+    lbl('lbl-2', 1.5, ['all', notU, ...area(250000, 1500000)], ['interpolate', ['linear'], ['zoom'], 1.5, 10, 5, 14], { move: true });
+    lbl('lbl-1', 0, ['all', notU, ...area(1500000, null)], ['interpolate', ['linear'], ['zoom'], 1, 10.5, 4, 15], { upper: true, move: true });
+    // one label per state or territory, at its label point (a symbol layer on the polygons repeats the name on every part)
+    m.addSource('us-lbl', { type: 'geojson', data: EMPTY });
+    m.addLayer({ id: 'us-label', type: 'symbol', source: 'us-lbl', minzoom: 3.2, filter: NONE,
       layout: { 'text-field': ['get', 'n'], 'text-font': FONT_IT, 'text-size': 11.5, 'text-max-width': 7, 'text-padding': 2 },
       paint: { 'text-color': c.text, 'text-halo-color': c.halo, 'text-halo-width': 1.4 } });
 
@@ -142,7 +167,7 @@ export class HistoryMap extends EventTarget {
         m.on('mouseleave', l, () => { m.getCanvas().style.cursor = ''; });
       }
     };
-    pointer(['ev-point', 'ev-cluster', 'fillA', 'fillB', 'us-fill', 'col-fill']);
+    pointer(['ev-point', 'ev-cluster', 'fillA', 'fillB', 'ufillA', 'ufillB', 'us-fill', 'col-fill']);
     m.on('click', (e) => this._click(e));
   }
 
@@ -175,7 +200,8 @@ export class HistoryMap extends EventTarget {
       this.dispatchEvent(new CustomEvent('colony', { detail: col[0].properties.st }));
       return;
     }
-    const t = m.queryRenderedFeatures(e.point, { layers: ['fill' + this.active] });
+    let t = m.queryRenderedFeatures(e.point, { layers: ['fill' + this.active] });
+    if (!t.length) t = m.queryRenderedFeatures(e.point, { layers: ['ufill' + this.active] });
     if (t.length) {
       this.dispatchEvent(new CustomEvent('polity', { detail: t[0].properties.k }));
       return;
@@ -191,21 +217,22 @@ export class HistoryMap extends EventTarget {
     const next = this.active === 'A' ? 'B' : 'A';
     const prev = this.active;
     const dur = reduceMotion() || this.snapshotYear == null ? 0 : 650;
-    const op = dark() ? 0.8 : 0.92;
+    const op = dark() ? 0.9 : 1;   // states are opaque so that the paler sketch-map territories below never show through
     m.getSource('t' + next).setData(doc || EMPTY);
     for (const [id, o] of [[next, op], [prev, 0]]) {
-      m.setPaintProperty('fill' + id, 'fill-opacity-transition', { duration: dur });
-      m.setPaintProperty('line' + id, 'line-opacity-transition', { duration: dur });
-      m.setPaintProperty('fill' + id, 'fill-opacity', o);
-      m.setPaintProperty('line' + id, 'line-opacity', o ? 0.55 : 0);
+      for (const [f, l, fo, lo] of [['fill', 'line', o, o ? 0.55 : 0], ['ufill', 'uline', o * 0.62, o ? 0.3 : 0]]) {
+        m.setPaintProperty(f + id, 'fill-opacity-transition', { duration: dur });
+        m.setPaintProperty(l + id, 'line-opacity-transition', { duration: dur });
+        m.setPaintProperty(f + id, 'fill-opacity', fo);
+        m.setPaintProperty(l + id, 'line-opacity', lo);
+      }
     }
     // keep the new snapshot on top so clicks and the outline use it
-    m.moveLayer('fill' + next, 'modern');
-    m.moveLayer('line' + next, 'modern');
+    for (const l of ['ufill', 'uline', 'fill', 'line']) m.moveLayer(l + next, 'modern');
     this.active = next;
     this.snapshotYear = doc ? doc.year : null;
     const labels = { type: 'FeatureCollection', features: (doc?.polities || []).map((p, k) => ({
-      type: 'Feature', geometry: { type: 'Point', coordinates: p.l }, properties: { n: p.ln || p.n, a: p.a, k },
+      type: 'Feature', geometry: { type: 'Point', coordinates: p.l }, properties: { n: p.ln || p.n, a: p.a, k, u: p.under ? 1 : 0 },
     })) };
     m.getSource('labels').setData(labels);
     this._sel();
@@ -222,14 +249,20 @@ export class HistoryMap extends EventTarget {
       paint: { 'line-color': dark() ? '#fff6e0' : '#1d1810', 'line-width': 2.6 } }, 'us-fill');
   }
 
-  setUS(fc) { this.map.getSource('us').setData(fc || EMPTY); }
+  setUS(fc) {
+    this.map.getSource('us').setData(fc || EMPTY);
+    this.map.getSource('us-lbl').setData({ type: 'FeatureCollection', features: (fc?.features || []).filter((f) => f.properties.l).map((f) => ({
+      type: 'Feature', geometry: { type: 'Point', coordinates: f.properties.l }, properties: { n: f.properties.n, s: f.properties.s, e: f.properties.e, id: f.properties.id },
+    })) });
+  }
 
   /** Fill US states and territories by status (1783 to 1912, when the interior was still being organized):
    *  states in the US colour, organized territories lighter, unorganized territory lightest. null: outlines only. */
-  setUSFill(color) {
+  setUSFill(color, { seceded = [], csaColor = null } = {}) {
     const m = this.map;
-    if (this._usFill === color) return;
-    this._usFill = color;
+    const key = color + '|' + seceded.join(',');
+    if (this._usFill === key) return;
+    this._usFill = key;
     if (!color) {
       m.setPaintProperty('us-fill', 'fill-color', '#000');
       m.setPaintProperty('us-fill', 'fill-opacity', 0.001);
@@ -237,9 +270,12 @@ export class HistoryMap extends EventTarget {
       return;
     }
     const mix = (hex, t) => '#' + [1, 3, 5].map((i) => Math.round(parseInt(hex.slice(i, i + 2), 16) * (1 - t) + 255 * t).toString(16).padStart(2, '0')).join('');
-    m.setPaintProperty('us-fill', 'fill-color', ['match', ['get', 't'], 'State', color, 'District of Columbia', color,
-      'Territory', mix(color, 0.45), 'Unorganized Territory', mix(color, 0.75), '#000']);
-    m.setPaintProperty('us-fill', 'fill-opacity', ['match', ['get', 't'], 'Other', 0.001, dark() ? 0.8 : 0.92]);
+    const byStatus = ['match', ['get', 't'], 'State', color, 'District of Columbia', color,
+      'Territory', mix(color, 0.45), 'Unorganized Territory', mix(color, 0.68), '#000'];
+    // 1861 to 1865: the states that had seceded take the colour of the Confederacy
+    m.setPaintProperty('us-fill', 'fill-color', seceded.length && csaColor
+      ? ['case', ['in', ['get', 'id'], ['literal', seceded]], csaColor, byStatus] : byStatus);
+    m.setPaintProperty('us-fill', 'fill-opacity', ['match', ['get', 't'], 'Other', 0.001, dark() ? 0.9 : 1]);
     m.setPaintProperty('us-line', 'line-dasharray', [1, 0]);
   }
 
