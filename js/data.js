@@ -152,6 +152,7 @@ async function loadCsYear(y, src) {
     features.push({ type: 'Feature', geometry: sh.g, properties: { k, c: null, p } });
     const pol = { n, p, a: sh.a, l: sh.l, bb: sh.bb, pr: 3 };
     if (clio) pol.clio = [sh.s, sh.e];
+    if (sh.o) { pol.o = sh.o; pol.ohm = sh.ohm; }   // an OpenHistoricalMap outline the sources lack (tools/curated/ohm_patches.json)
     else {
       pol.dated = [sh.s, sh.e];
       if (extra) pol.cur = 1;
@@ -159,7 +160,9 @@ async function loadCsYear(y, src) {
     if (s) pol.s = s;
     return pol;
   });
-  return { type: 'FeatureCollection', year: y, cs: true, src, date: yr.date, features, polities, largest: yr.largest, changes: yr.changes };
+  // what is drawn, independent of the year: consecutive years with the same rows look the same
+  const key = src + ':' + yr.rows.map((r) => r.slice(0, 5).join(',')).join('|');
+  return { type: 'FeatureCollection', year: y, cs: true, src, date: yr.date, features, polities, largest: yr.largest, changes: yr.changes, key };
 }
 
 export async function loadSnapshot(s) {
@@ -168,7 +171,7 @@ export async function loadSnapshot(s) {
   // power key so that it can be coloured like the yearly maps
   const d = await getJSON('borders/' + s.f);
   const doc = { type: 'FeatureCollection', year: d.year, features: d.features.filter((f) => f.properties.k >= 0).map((f) => ({ type: 'Feature', geometry: f.geometry, properties: { k: f.properties.k, p: d.polities[f.properties.k].p, u: 1 } })),
-    polities: d.polities.map((p) => ({ ...p, under: d.year })), largest: d.largest, changes: d.changes };
+    polities: d.polities.map((p) => ({ ...p, under: d.year })), largest: d.largest, changes: d.changes, key: 'sketch:' + d.year };
   return doc;
 }
 
@@ -240,9 +243,26 @@ export const loadPowers = () => getJSON('powers.json');
 export const loadEntities = () => getJSON('entities.json');
 export const loadUS = () => getJSON('us/states.json');
 export const loadModern = () => getJSON('base/modern.json');
-export const loadSea = () => getJSON('base/sea.json').then((d) => ({ sea: decodeGeom(d.sea), lakes: decodeGeom(d.lakes) }));
+/** The sea and lakes: coarse ('lo', for world zoom, loaded first) or full. */
+export const loadSea = (lo = false) => getJSON(lo ? 'base/sea_lo.json' : 'base/sea.json').then((d) => ({ sea: decodeGeom(d.sea), lakes: decodeGeom(d.lakes) }));
 export const loadEmpires = () => getJSON('empires.json').catch(() => ({ empires: {}, rows: {}, undrawn: {}, notes: [] }));
 export const loadSuccession = () => getJSON('succession.json').catch(() => ({}));
 export const loadOccupations = () => getJSON('occupations.json').catch(() => ({ rows: [] }));
 export const loadSearch = () => getJSON('search.json');
 export const loadMeta = () => getJSON('meta.json');
+
+/** Every year in which the drawn border map changes (a stored map starts), ascending. */
+let storedCache = null;
+export function storedYears() {
+  if (storedCache) return storedCache;
+  const ys = new Set((bordersIndex || []).map((s) => s.y));
+  for (const y of clioIndex?.years || []) ys.add(y);
+  if (csIndex) for (let y = csIndex.from; y <= csIndex.to; y++) ys.add(y);
+  const sorted = [...ys].sort((a, b) => a - b);
+  // a stored year counts when the map for it is its own (a sketch map inside the yearly range is not used)
+  storedCache = sorted.filter((y) => snapshotFor(y)?.y === y);
+  // the first year after a yearly range falls back to a sketch map: the map changes there too
+  for (const r of [clioIndex, csIndex]) if (r && !storedCache.includes(r.to + 1) && snapshotFor(r.to + 1) && snapshotFor(r.to + 1).y !== snapshotFor(r.to).y) storedCache.push(r.to + 1);
+  storedCache.sort((a, b) => a - b);
+  return storedCache;
+}

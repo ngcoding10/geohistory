@@ -5,6 +5,7 @@ Writes:
   data/events/index.json     blocks (year ranges -> file) and event counts per year
   data/events/<a>_<b>.json   events that start in [a, b), plus long events still running ("ongoing")
   data/search.json           names for the search box (territories, today's countries, US states, events)
+  data/modern_names.json     today's countries by code (for the place line of an event)
   data/meta.json             build date, counts per source, year range, known gaps
 
 Every event is placed: coordinates -> the territory containing it on the border map shown for its year,
@@ -1550,6 +1551,8 @@ def main():
                 places.append([c, n, [names[n][0], names[n][-1]]])
     sz = write_json(os.path.join(DATA, 'search.json'), {'polities': polities, 'modern': modern, 'us': list(usl.values()),
                                                         'events': sev, 'places': places})
+    # today's country names alone (14 KB): the event lists need them at once, the search box only when used
+    write_json(os.path.join(DATA, 'modern_names.json'), modern)
     log(f'search.json: {len(polities)} territories, {len(sev)} events, {len(places)} capitals, {sz // 1024} KB')
 
     # ---------- meta ----------

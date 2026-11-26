@@ -24,6 +24,7 @@ const SANS = ['Noto Sans Regular'];
 const NONE = ['==', ['get', 'id'], '__none'];
 const EMPTY = { type: 'FeatureCollection', features: [] };
 export const SLOTS = 7;
+const STACKS = ['A', 'B', 'C'];   // one shown, one fading out, one being loaded with the next map
 export const Z_SPLIT = 3.2;    // above this zoom an empire is drawn as its parts
 const Z_PEOPLES = 3.4;         // above this zoom peoples are drawn one by one instead of as regions
 
@@ -83,7 +84,8 @@ export class HistoryMap extends EventTarget {
   _build() {
     const m = this.map, c = this.c;
     const zoomIn = (lo, hi, a, b) => ['interpolate', ['linear'], ['zoom'], lo, a, hi, b];
-    // Two stacks (A and B) for the cross-fade. In each stack:
+    // Three stacks (A, B, C) for the transitions between years: the shown map, the one fading out and the next
+    // one being loaded. In each stack:
     //   ufill          peoples and cultures from the sketch maps: pale, no outline at world zoom
     //   uline          their hairlines, only when zoomed in
     //   line<s>/fill<s> for s in 0..SLOTS-1: the states. Groups that touch are in different slots, and each
@@ -93,7 +95,7 @@ export class HistoryMap extends EventTarget {
     const STATE = ['all', ['>=', ['get', 'k'], 0], ['!=', ['get', 'u'], 1]];
     const UNDER = ['all', ['>=', ['get', 'k'], 0], ['==', ['get', 'u'], 1]];
     const fillColor = ['interpolate', ['linear'], ['zoom'], Z_SPLIT - 0.5, ['to-color', ['get', 'c']], Z_SPLIT + 0.3, ['to-color', ['get', 'c2']]];
-    for (const id of ['A', 'B']) {
+    for (const id of STACKS) {
       m.addSource('t' + id, { type: 'geojson', data: EMPTY, tolerance: 0.2, buffer: 8 });
       m.addLayer({ id: 'ufill' + id, type: 'fill', source: 't' + id, filter: UNDER,
         paint: { 'fill-color': ['interpolate', ['linear'], ['zoom'], Z_PEOPLES - 0.5, ['to-color', ['get', 'c']], Z_PEOPLES + 0.3, ['to-color', ['get', 'c2']]],
@@ -114,8 +116,10 @@ export class HistoryMap extends EventTarget {
         paint: { 'line-color': ['get', 'ce'], 'line-opacity': 0, 'line-width': zoomIn(Z_SPLIT, 7, 0.6, 1.3), 'line-opacity-transition': { duration: 0 } } });
     }
 
-    // US states (filled 1783 to 1912) and colonial counties, below the sea
+    // US states (filled 1783 to 1912) and colonial counties, below the sea. us-old and us-vis draw the fills (the
+    // previous date fades out under the new one); us-fill is the invisible layer that clicks are tested against.
     m.addSource('us', { type: 'geojson', data: EMPTY });
+    for (const id of ['us-old', 'us-vis']) m.addLayer({ id, type: 'fill', source: 'us', filter: NONE, paint: { 'fill-color': '#000', 'fill-opacity': 0, 'fill-antialias': false, 'fill-opacity-transition': { duration: 0 } } });
     m.addLayer({ id: 'us-fill', type: 'fill', source: 'us', filter: NONE, paint: { 'fill-color': '#000', 'fill-opacity': 0.001, 'fill-antialias': false } });
     m.addSource('col', { type: 'geojson', data: EMPTY });
     m.addSource('col-lbl', { type: 'geojson', data: EMPTY });
@@ -233,8 +237,8 @@ export class HistoryMap extends EventTarget {
       paint: { 'circle-color': 'rgba(0,0,0,0)', 'circle-radius': 13, 'circle-stroke-color': c.sel, 'circle-stroke-width': 2.5 } });
 
     // interaction
-    const hover = ['ev-point', 'ev-cluster', 'us-fill', 'col-fill', 'ufillA', 'ufillB'];
-    for (const id of ['A', 'B']) for (let s = 0; s < SLOTS; s++) hover.push(`fill${s}${id}`);
+    const hover = ['ev-point', 'ev-cluster', 'us-fill', 'col-fill', ...STACKS.map((id) => 'ufill' + id)];
+    for (const id of STACKS) for (let s = 0; s < SLOTS; s++) hover.push(`fill${s}${id}`);
     m.on('mousemove', (e) => {
       const hit = m.queryRenderedFeatures(e.point, { layers: hover.filter((l) => m.getLayer(l)) }).length > 0;
       m.getCanvas().style.cursor = hit ? 'pointer' : '';
@@ -323,40 +327,97 @@ export class HistoryMap extends EventTarget {
   }
 
   /** Show a border snapshot (prepared by prepareDoc in main.js), cross-fading from the previous one. */
-  setSnapshot(doc, { fade = true } = {}) {
+  async setSnapshot(doc, { fade = true } = {}) {
+    const tok = (this._snapTok = (this._snapTok || 0) + 1);
+    const id = await this.stage(doc);
+    if (tok !== this._snapTok) { this.release(id); return; }   // a later call took over
+    await this.show(id, doc, { dur: reduceMotion() || this.snapshotYear == null || !fade ? 0 : 650 });
+  }
+
+  /** Load a document into a hidden stack and wait until its tiles are in. Resolves with the stack id, which is
+   *  held for show() (or release()). */
+  async stage(doc) {
+    const free = () => STACKS.find((s) => s !== this.active && s !== this._out && !(this._held ||= new Set()).has(s));
+    // every stack busy (calls in quick succession): wait for one; a running fade ends within a second
+    for (let i = 0; !free() && i < 300; i++) await new Promise((r) => setTimeout(r, 30));
+    const id = free() || STACKS.find((s) => s !== this.active);
+    this._held.add(id);
+    const src = this.map.getSource('t' + id);
+    // only the features go to the worker (the document also holds polities, groups and label places)
+    try { await src.setData(doc ? { type: 'FeatureCollection', features: doc.features } : EMPTY, true); } catch { /* the source reports errors itself */ }
+    const t0 = performance.now();
+    await new Promise((res) => {
+      const poll = () => (this.map.isSourceLoaded('t' + id) || performance.now() - t0 > 8000 ? res() : setTimeout(poll, 16));
+      setTimeout(poll, 0);
+    });
+    return id;
+  }
+
+  release(id) { this._held?.delete(id); }
+
+  /** Show a staged stack. Its fills fade in on top of the shown map over `dur` ms, so land that keeps its
+   *  ruler (same colour in both) stays still and land that changes hands turns from the old ruler's colour
+   *  to the new one's; the old map fades out under it near the end, and outlines fade across. Resolves when
+   *  the transition is over. */
+  show(id, doc, { dur = 0 } = {}) {
     const m = this.map;
-    const next = this.active === 'A' ? 'B' : 'A';
+    this._held?.delete(id);
     const prev = this.active;
-    const dur = reduceMotion() || this.snapshotYear == null || !fade ? 0 : 650;
-    this._setData('t' + next, doc || EMPTY);
-    const set = (layer, prop, v, d) => { m.setPaintProperty(layer, prop + '-transition', { duration: d }); m.setPaintProperty(layer, prop, v); };
-    clearTimeout(this._lineTimer);
-    const lines = (id, on) => {
+    const set = (layer, prop, v, d = 0, delay = 0) => { m.setPaintProperty(layer, prop + '-transition', { duration: d, delay }); m.setPaintProperty(layer, prop, v); };
+    const lines = (sid, on, d = 0, delay = 0) => {
       for (let s = 0; s < SLOTS; s++) {
-        set(`line${s}${id}`, 'line-opacity', on ? 0.85 : 0, 0);
-        set(`glow${s}${id}`, 'line-opacity', on ? (this.dark ? 0.5 : 0.22) : 0, 0);
+        set(`line${s}${sid}`, 'line-opacity', on ? 0.85 : 0, d, delay);
+        set(`glow${s}${sid}`, 'line-opacity', on ? (this.dark ? 0.5 : 0.22) : 0, d, delay);
       }
-      set('inner' + id, 'line-opacity', on ? ['interpolate', ['linear'], ['zoom'], Z_SPLIT - 0.5, 0, Z_SPLIT + 0.4, 0.55] : 0, 0);
-      set('uline' + id, 'line-opacity', on ? ['interpolate', ['linear'], ['zoom'], Z_PEOPLES - 0.4, 0, Z_PEOPLES + 0.4, 0.45] : 0, 0);
+      // zoom-dependent values cannot be animated: these switch at the end
+      setTimeout(() => {
+        set('inner' + sid, 'line-opacity', on && this.active === sid ? ['interpolate', ['linear'], ['zoom'], Z_SPLIT - 0.5, 0, Z_SPLIT + 0.4, 0.55] : 0);
+        set('uline' + sid, 'line-opacity', on && this.active === sid ? ['interpolate', ['linear'], ['zoom'], Z_PEOPLES - 0.4, 0, Z_PEOPLES + 0.4, 0.45] : 0);
+      }, on ? d + delay : 0);
     };
-    for (const [id, o] of [[next, 1], [prev, 0]]) {
-      for (let s = 0; s < SLOTS; s++) set(`fill${s}${id}`, 'fill-opacity', o, dur);
-      set('ufill' + id, 'fill-opacity', o * (this.dark ? 0.85 : 0.9), dur);
-    }
-    // outlines lie under the fills, so they would show through both maps during the fade: the old ones go
-    // at once and the new ones come when the fade is over
-    lines(prev, false);
-    if (dur) { lines(next, false); this._lineTimer = setTimeout(() => lines(next, true), dur); } else lines(next, true);
-    // keep the new snapshot on top so clicks and the outline use it
-    const order = ['ufill', 'uline'];
-    for (let s = 0; s < SLOTS; s++) order.push('glow' + s, 'line' + s, 'fill' + s);
-    order.push('inner');
-    for (const l of order) m.moveLayer(l + next, 'us-fill');
-    this.active = next;
+    const fills = (sid, o, d = 0, delay = 0) => {
+      for (let s = 0; s < SLOTS; s++) set(`fill${s}${sid}`, 'fill-opacity', o, d, delay);
+      set('ufill' + sid, 'fill-opacity', o * (this.dark ? 0.85 : 0.9), d, delay);
+    };
+    // a transition still running: its old map goes at once
+    clearTimeout(this._outTimer);
+    if (this._out && this._out !== id && this._out !== prev) { fills(this._out, 0); lines(this._out, false); }
+    this._out = null;
+    if (prev !== id) {
+      // the new map on top, so that clicks, the outline and the fade use it
+      const order = ['ufill', 'uline'];
+      for (let s = 0; s < SLOTS; s++) order.push('glow' + s, 'line' + s, 'fill' + s);
+      order.push('inner');
+      for (const l of order) m.moveLayer(l + id, 'us-old');
+      fills(id, 0);
+      fills(id, 1, dur);
+      lines(id, false);
+      lines(id, true, dur * 0.55, dur * 0.45);
+      fills(prev, 0, dur * 0.4, dur * 0.6);
+      lines(prev, false, dur * 0.45);
+      this._out = prev;
+      this._outTimer = setTimeout(() => { if (this._out === prev) this._out = null; }, dur + 30);
+    } else { fills(id, 1); lines(id, true); }
+    this.active = id;
     this.snapshotYear = doc ? doc.year : null;
-    this._setData('labels', doc?.labels || EMPTY);
-    this._setData('label-lines', doc?.labelLines || EMPTY);
+    // names change a little after the colours have started to: they fade across (MapLibre's symbol fade)
+    clearTimeout(this._lblT);
+    const names = () => { this._setData('labels', doc?.labels || EMPTY); this._setData('label-lines', doc?.labelLines || EMPTY); };
+    if (dur) this._lblT = setTimeout(names, dur * 0.35); else names();
     this._sel();
+    return new Promise((res) => setTimeout(res, dur));
+  }
+
+  /** While the years run (play, a step, the timeline being dragged): the names of small states and peoples
+   *  fade out, so that only the major powers' names stay, in steady places. */
+  setTravel(on) {
+    if (this._travel === on) return;
+    this._travel = on;
+    for (const l of ['lbl-xs', 'lbl-s', 'lbl-people-s', 'lbl-people', 'us-label', 'col-label']) {
+      if (!this.map.getLayer(l)) continue;
+      this.map.setPaintProperty(l, 'text-opacity-transition', { duration: 300 });
+      this.map.setPaintProperty(l, 'text-opacity', on ? 0 : 1);
+    }
   }
 
   selectPolity(k) { this.selK = k; this.selG = null; this._sel(); }
@@ -399,7 +460,7 @@ export class HistoryMap extends EventTarget {
     this._usFill = key;
     if (!color) {
       m.setPaintProperty('us-fill', 'fill-color', '#000');
-      m.setPaintProperty('us-fill', 'fill-opacity', 0.001);
+      for (const l of ['us-old', 'us-vis']) { m.setPaintProperty(l, 'fill-opacity-transition', { duration: 0 }); m.setPaintProperty(l, 'fill-opacity', 0); }
       m.setPaintProperty('us-line', 'line-dasharray', [2, 1.5]);
       return;
     }
@@ -409,17 +470,41 @@ export class HistoryMap extends EventTarget {
     const byStatus = ['match', ['get', 't'], 'State', base, 'District of Columbia', base,
       'Territory', mix(0.5), 'Unorganized Territory', mix(0.85), '#000'];
     // 1861 to 1865: the states that had seceded take the colour of the Confederacy
-    m.setPaintProperty('us-fill', 'fill-color', seceded.length && csaColor
-      ? ['case', ['in', ['get', 'id'], ['literal', seceded]], tones(csaColor, 'csa', this.dark).fill, byStatus] : byStatus);
-    m.setPaintProperty('us-fill', 'fill-opacity', ['match', ['get', 't'], 'Other', 0.001, 1]);
+    const fc = seceded.length && csaColor
+      ? ['case', ['in', ['get', 'id'], ['literal', seceded]], tones(csaColor, 'csa', this.dark).fill, byStatus] : byStatus;
+    // the colour on the visible layers; us-old keeps the previous colours until it has faded
+    m.setPaintProperty('us-fill', 'fill-color', fc);
+    m.setPaintProperty('us-vis', 'fill-color', fc);
+    clearTimeout(this._usColT);
+    this._usColT = setTimeout(() => m.setPaintProperty('us-old', 'fill-color', fc), 700);
+    if (m.getPaintProperty('us-vis', 'fill-opacity') === 0) { m.setPaintProperty('us-vis', 'fill-opacity-transition', { duration: 0 }); m.setPaintProperty('us-vis', 'fill-opacity', 1); }
     m.setPaintProperty('us-line', 'line-dasharray', [1, 0]);
   }
 
-  /** Show US states/colonies valid on a date (yyyymmdd), or hide them (null). */
-  setUSDate(d, selId = null) {
+  /** Show US states/colonies valid on a date (yyyymmdd), or hide them (null). With `dur`, the fills of the new
+   *  date fade in over those of the old one (a territory organized or admitted grows in instead of popping). */
+  setUSDate(d, selId = null, { dur = 0 } = {}) {
     const m = this.map;
-    const f = d == null ? NONE : ['all', ['<=', ['get', 's'], d], ['>=', ['get', 'e'], d]];
+    const at = (x) => (x == null ? NONE : ['all', ['<=', ['get', 's'], x], ['>=', ['get', 'e'], x]]);
+    const f = at(d);
+    const vis = (x) => (x == null ? NONE : ['all', at(x), ['!=', ['get', 't'], 'Other']]);
+    const prev = this.usDate;
     for (const l of ['us-fill', 'us-line', 'us-label']) m.setFilter(l, f);
+    const op = (l, v, du = 0, delay = 0) => { m.setPaintProperty(l, 'fill-opacity-transition', { duration: du, delay }); m.setPaintProperty(l, 'fill-opacity', v); };
+    const filled = this._usFill && !this._usFill.startsWith('null');
+    clearTimeout(this._usT);
+    if (dur && prev != null && d != null && prev !== d && filled && !reduceMotion()) {
+      m.setFilter('us-old', vis(prev));
+      op('us-old', 1);
+      m.setFilter('us-vis', vis(d));
+      op('us-vis', 0);
+      op('us-vis', 1, dur);
+      op('us-old', 0, dur * 0.4, dur * 0.6);
+    } else {
+      m.setFilter('us-vis', vis(d));
+      m.setFilter('us-old', NONE);
+      op('us-vis', filled ? 1 : 0);
+    }
     m.setFilter('us-sel', d == null || !selId ? NONE : ['all', f, ['==', ['get', 'id'], selId]]);
     this.usDate = d;
   }

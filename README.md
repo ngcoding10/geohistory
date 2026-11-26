@@ -62,6 +62,25 @@ unchanged) come from [ngcoding10/backend-combination](https://github.com/ngcodin
 see `docs/STANDARD.md` and `HANDOFF.md` there. Version 1 has no backend, sign-in, ads or analytics. A
 later "save bookmarks and notes" feature would add the shared `core.js` with the data prefix `geo_`.
 
+## Time travel
+
+When the year changes by the timeline, the step buttons, the arrow keys or play, the map passes through
+every stored border map in between, in order, and animates each change (`js/travel.js`, `js/map.js`
+`show()`): the new map fades in on top of the old one, so land that keeps its ruler (the same colour in both,
+since a power's colour comes from its key in `data/powers.json`) stays still and land that changes hands
+turns from the old ruler's colour to the new one's; borders fade across, and the old map fades out under the
+new one near the end. Empires are merged at world zoom during the run, as at rest. A third stack of layers
+loads and tiles the next map while one change is on screen. The stops are every year in which a stored map
+starts or an empire membership or name changes (in the CShapes years, every year; a year with the same rows as
+the one before only moves the year on). At rest the map is always a stored map for the year shown; nothing is
+interpolated or morphed. While the years run, small states' and peoples' names fade out, and a power's name
+stays where it was while that place is still inside it. The panel is dimmed during a jump and updated at the
+end; while playing it is updated every few seconds. Play runs at 1, 2, 5, 10 or 50 years per second (the
+button beside play) but never skips a map: the year waits for the next map to be ready. Dragging the timeline
+far may take larger steps (at most four) to keep up. With `prefers-reduced-motion` there is no animation;
+when frames come slowly (over 70 ms on two changes in a row) a jump goes to its end in one cross-fade and
+play skips the maps it cannot keep up with.
+
 ## Empires and their parts
 
 At world zoom an empire is drawn as one power: one colour, one name, no inner borders. Zoom in (past

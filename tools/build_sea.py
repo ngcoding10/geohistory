@@ -12,6 +12,7 @@ from fetch_sources import NE
 from geo import simplify_ring, ring_area_km2, polys_of, encode_geom
 
 TOL = 0.003
+TOL_LO = 0.03   # about 3 km: below a pixel up to zoom 2.5
 
 
 def simp(geom, tol, min_island_km2, min_poly_km2):
@@ -147,6 +148,11 @@ def main():
         if (f['properties'].get('scalerank') or 0) <= 3:
             lp += polys_of(f['geometry'])
     lk = simp({'type': 'MultiPolygon', 'coordinates': lp}, 0.006, 20, 600)
+    # a coarse sea for world zoom, loaded first; the full one is loaded when the map is zoomed in (js/main.js)
+    lo = cut_cells(simp({'type': 'MultiPolygon', 'coordinates': polys}, TOL_LO, 40.0, 400))
+    lk_lo = simp({'type': 'MultiPolygon', 'coordinates': lp}, 0.03, 200, 3000)
+    size_lo = write_json(os.path.join(DATA, 'base', 'sea_lo.json'), {'sea': encode_geom(lo), 'lakes': encode_geom(lk_lo)})
+    log(f'sea for world zoom: {size_lo // 1024} KB')
     n = sum(len(r) for p in sea['coordinates'] for r in p)
     size = write_json(os.path.join(DATA, 'base', 'sea.json'), {'sea': encode_geom(sea), 'lakes': encode_geom(lk)})
     log(f'sea: {len(sea["coordinates"])} polygons, {sum(len(p) - 1 for p in sea["coordinates"])} islands and land masses, '

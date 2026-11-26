@@ -1,6 +1,7 @@
 // Turns a loaded border snapshot into what the map draws for one year: groups (empires, states, regions of
 // peoples), draw slots, colours, and labels (points, and lines across the largest states for spaced lettering).
 import { attachGroups, assignSlots, tones, empireName } from './groups.js';
+import { makeAreaTest } from './geo.js';
 
 const REGION_HUES = ['#d9c08c', '#b4cf9c', '#dab4a0', '#a9cfc6', '#dccb8e', '#c9c0e0', '#bcd3a0', '#e0b7b9', '#a8c6dc', '#d6c4a2'];
 const hash = (s) => { let hsh = 0; for (let i = 0; i < s.length; i++) hsh = (hsh * 31 + s.charCodeAt(i)) >>> 0; return hsh; };
@@ -64,8 +65,10 @@ function labelLine(geoms, l) {
   return { line, len: (b - a) };
 }
 
-/** Prepare a snapshot document for a year. Returns the signature of its empire groups. */
-export function prepareDoc(doc, { emp, powers, year, dark }) {
+/** Prepare a snapshot document for a year. Returns the signature of its empire groups.
+ *  `prev`: the label places of the map shown before (doc._lbl of that map). While the years run, a power's
+ *  name stays where it was as long as that place is still inside the power, so names do not jump about. */
+export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
   const { groups, sig } = attachGroups(doc, emp, year);
   doc.groups = groups;
   const pols = doc.polities;
@@ -96,14 +99,32 @@ export function prepareDoc(doc, { emp, powers, year, dark }) {
 
   // ---- labels
   const labels = [], lines = [];
+  const placed = new Map();
   const text = (p) => p.ln || p.n;
-  const point = (t, n, a, p, extra = {}) => labels.push({ type: 'Feature', geometry: { type: 'Point', coordinates: p.l }, properties: { t, n, a, ...extra } });
+  const point = (t, n, a, p, extra = {}, at = p.l) => labels.push({ type: 'Feature', geometry: { type: 'Point', coordinates: at }, properties: { t, n, a, ...extra } });
   const big = (t, n, a, p) => {
     const geoms = (featsOf.get(pols.indexOf(p)) || []).map((f) => f.geometry);
-    const ll = a >= BIG ? labelLine(geoms, p.l) : null;
+    let key = t + '|' + n;
+    while (placed.has(key)) key += '+';
+    let at = p.l;
+    const pv = prev?.get(key);
+    let test = null;
+    if (pv) {
+      test = makeAreaTest(geoms);
+      if (test(pv.at[0], pv.at[1])) at = pv.at;
+      if (pv.line && at === pv.at && pv.line.every((q) => test(q[0], q[1]))) {
+        // the same name along the same line as on the map before
+        lines.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: pv.line }, properties: { ...pv.props, a } });
+        placed.set(key, pv);
+        point(t, n, a, p, { zf: pv.props.zf }, at);
+        return;
+      }
+    }
+    const ll = a >= BIG ? labelLine(geoms, at) : null;
     const chars = n.length;
     let zf = 99;
     const props = { t, n, a };
+    placed.set(key, { at, line: ll && ll.len >= 6 ? ll.line : null, props });
     if (ll && ll.len >= 6) {
       const pxAt = (z) => (ll.len * 512 * 2 ** z) / 360;
       const font = 13;
@@ -112,14 +133,14 @@ export function prepareDoc(doc, { emp, powers, year, dark }) {
       props.zf = Math.max(0, Math.round(zf * 10) / 10);
       lines.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: ll.line }, properties: props });
     }
-    point(t, n, a, p, { zf: ll && ll.len >= 6 ? props.zf : 99 });
+    point(t, n, a, p, { zf: ll && ll.len >= 6 ? props.zf : 99 }, at);
   };
   for (const g of groups) {
     const ms = g.members.map((k) => pols[k]).filter((p) => p.l);
     if (!ms.length) continue;
     if (g.kind === 'state') {
       const p = ms[0];
-      if (p.a >= BIG) big('s', text(p), p.a, p); else point('s', text(p), p.a, p, { zf: 99 });
+      big('s', text(p), p.a, p);
     } else if (g.kind === 'empire') {
       // the empire's name on its largest part, and again on other large parts far away from it
       const sorted = [...ms].sort((a, b) => b.a - a.a);
@@ -144,6 +165,7 @@ export function prepareDoc(doc, { emp, powers, year, dark }) {
   }
   doc.labels = { type: 'FeatureCollection', features: labels };
   doc.labelLines = { type: 'FeatureCollection', features: lines };
+  doc._lbl = placed;
   doc.sig = sig + '|' + dark;
   return doc.sig;
 }

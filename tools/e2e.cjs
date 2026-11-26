@@ -400,7 +400,77 @@ async function waitEvents(page) {
     await page.waitForFunction(() => /In office in 1935/i.test(document.querySelector('#panelBody').innerText), null, { timeout: 30000 });
     ok(/Stalin/.test(await page.locator('#panelBody').innerText()), '1935: Stalin is listed in office for the Soviet Union');
 
+    // ---------------- time travel: the map runs through every stored map between two years ----------------
+    await page.goto(BASE + '?y=1914&v=flat');
+    await waitH1(page, 'The world in 1914');
+    await page.waitForFunction(() => window.__geo?.travel && window.__geo.state.snapDoc, null, { timeout: 60000 });
+    const runTo = async (fn) => {
+      await page.evaluate((src) => {
+        const g = window.__geo; const t = g.travel;
+        t.full = true;   // software rendering is slow: test the full animation, not the degraded path
+        window.__seen = []; window.__shown = [];
+        if (!t._wrapped) { const o = t.onStep; t.onStep = (y, st) => { window.__seen.push(y); if (!st.same) window.__shown.push(y); o(y, st); }; t._wrapped = true; }
+        (0, eval)(src)();
+      }, fn.toString());
+      await page.waitForFunction(() => !window.__geo.travel.running, null, { timeout: 240000 });
+      return page.evaluate(() => ({ seen: window.__seen, shown: window.__shown, year: window.__geo.state.year, input: document.querySelector('#year').value,
+        h1: document.querySelector('#panelBody h1')?.textContent, badge: document.querySelector('#badge').textContent, tr: window.__geo.travel.stats.transitions }));
+    };
+    const fwd = await runTo(() => window.__geo.step(10));
+    await waitH1(page, 'The world in 1924');
+    const want = () => [1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924];
+    ok(JSON.stringify(fwd.seen) === JSON.stringify(want()) && fwd.year === 1924 && fwd.input === '1924' && /1924/.test(fwd.badge),
+      `+10 from 1914 runs through every yearly map in between (${fwd.seen.join(',')}; ${fwd.shown.length} animated changes) and rests on 1924`);
+    const back = await runTo(() => window.__geo.step(-10));
+    await waitH1(page, 'The world in 1914');
+    ok(back.seen.length === 10 && back.seen[0] === 1923 && back.seen[9] === 1914 && back.year === 1914, `-10 runs backwards through ${back.seen.join(',')} and rests on 1914`);
+    // Cliopatria years: only the stored change years are passed, and the end year is the one asked for
+    await page.goto(BASE + '?y=1600&v=flat');
+    await waitH1(page, 'The world in 1600');
+    await page.waitForFunction(() => window.__geo?.travel && window.__geo.state.snapDoc, null, { timeout: 60000 });
+    const romeStops = await page.evaluate(() => window.__geo.stopsBetween(1600, 1480).length);
+    const rome = await runTo(() => window.__geo.travelTo(1480));
+    ok(rome.year === 1480 && rome.seen.length === romeStops && rome.seen.length >= 10 && rome.seen.every((y, i) => !i || y < rome.seen[i - 1]),
+      `1600 -> 1480 passes all ${rome.seen.length} change years of the Cliopatria maps in order (${rome.shown.length} animated) and rests on 1480`);
+    await waitH1(page, 'The world in 1480');
+    // play and pause
+    await page.goto(BASE + '?y=1989&v=flat');
+    await waitH1(page, 'The world in 1989');
+    await page.waitForFunction(() => window.__geo?.travel && window.__geo.state.snapDoc, null, { timeout: 60000 });
+    await page.evaluate(() => { window.__geo.travel.full = true; });
+    while ((await page.locator('#speedBtn').innerText()) !== '5×') await page.click('#speedBtn');
+    await page.click('#playBtn');
+    await page.waitForFunction(() => window.__geo.state.year >= 1992, null, { timeout: 120000 });
+    ok((await page.getAttribute('#playBtn', 'aria-pressed')) === 'true', 'play runs (the button shows pause)');
+    await page.click('#playBtn');
+    await page.waitForFunction(() => !window.__geo.travel.running, null, { timeout: 60000 });
+    const paused = await page.evaluate(() => ({ y: window.__geo.state.year, snap: window.__geo.state.snap?.y, key: window.__geo.state.snapDoc?.year }));
+    await waitH1(page, `The world in ${paused.y}`);
+    ok(paused.y >= 1992 && paused.snap === paused.y, `pause rests on a year with its own map (${paused.y}, map ${paused.snap})`);
+    // the timeline dragged far: it may take larger steps, but ends on the year of the thumb
+    const scrub = await runTo(() => { const s = document.querySelector('#slider'); s.value = 640; s.dispatchEvent(new Event('input')); });
+    const scrubY = await page.evaluate(() => (window.__geo.state.year));
+    ok(scrub.seen.length >= 1 && scrub.seen.length <= 5 && scrubY === scrub.year, `dragging the timeline from ${paused.y} to ${scrubY} animates ${scrub.seen.length} steps (coarser when far) and ends on the thumb's year`);
     ok(errors.length === 0, `no console errors on desktop${errors.length ? ': ' + errors.slice(0, 5).join(' | ') : ''}`);
+
+    // reduced motion: no animation, the year changes at once
+    {
+      const ctxR = await browser.newContext({ viewport: { width: 1280, height: 800 }, deviceScaleFactor: 1, reducedMotion: 'reduce' });
+      const pr = await ctxR.newPage();
+      const errR = [];
+      pr.on('console', (m) => { if (m.type() === 'error') errR.push(m.text()); });
+      pr.on('pageerror', (e) => errR.push(String(e)));
+      await pr.goto(BASE + '?y=1914&v=flat');
+      await waitH1(pr, 'The world in 1914');
+      await pr.waitForFunction(() => window.__geo?.travel && window.__geo.state.snapDoc, null, { timeout: 60000 });
+      await pr.click('[data-step="10"]');
+      await waitH1(pr, 'The world in 1924');
+      await pr.waitForFunction(() => window.__geo.state.snapDoc?.year === 1924, null, { timeout: 60000 });
+      const r = await pr.evaluate(() => ({ tr: window.__geo.travel.stats.transitions, running: window.__geo.travel.running }));
+      ok(r.tr === 0 && !r.running, `with reduced motion +10 jumps straight to 1924 (${r.tr} animated steps)`);
+      ok(errR.length === 0, `no console errors with reduced motion${errR.length ? ': ' + errR.slice(0, 3).join(' | ') : ''}`);
+      await ctxR.close();
+    }
 
     // ---------------- phones ----------------
     for (const vp of [{ width: 390, height: 844 }, { width: 360, height: 740 }]) {

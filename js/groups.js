@@ -182,11 +182,21 @@ export function assignSlots(doc, groups, nSlots) {
   }
   const order = groups.map((g, i) => i).filter((i) => groups[i].kind !== 'region').sort((a, b) => groups[b].area - groups[a].area);
   const slot = new Map();
+  // OpenHistoricalMap patches (polity.o): a part drawn over a larger shape goes in the top slot, a filled
+  // gap in the bottom one (and first in it), so that the sources' own states stay on top of it
+  const pols = doc.polities;
+  const forced = (g) => { let o = 0; for (const k of g.members) if (pols[k]?.o) o = o > 0 ? o : pols[k].o; return o; };
+  let top = false;
   for (const i of order) {
+    const o = forced(groups[i]);
+    if (o > 0) { slot.set(i, nSlots - 1); top = true; } else if (o < 0) slot.set(i, 0);
+  }
+  for (const i of order) {
+    if (slot.has(i)) continue;
     const used = new Array(nSlots).fill(0);
     for (const j of adj.get(i) || []) if (slot.has(j)) used[slot.get(j)]++;
     let best = 0;
-    for (let s = 1; s < nSlots; s++) if (used[s] < used[best]) best = s;
+    for (let s = 1; s < (top ? nSlots - 1 : nSlots); s++) if (used[s] < used[best]) best = s;
     slot.set(i, best);
   }
   groups.forEach((g, i) => { g.slot = slot.get(i) ?? 0; });
