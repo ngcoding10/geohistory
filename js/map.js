@@ -89,6 +89,13 @@ export class HistoryMap extends EventTarget {
                'line-dasharray': [2, 1.5] } });
     m.addLayer({ id: 'us-sel', type: 'line', source: 'us', filter: NONE, paint: { 'line-color': c.us, 'line-width': 2.6 } });
 
+    // colonial counties before 1783, filled by colony
+    m.addSource('col', { type: 'geojson', data: EMPTY });
+    m.addSource('col-lbl', { type: 'geojson', data: EMPTY });
+    m.addLayer({ id: 'col-fill', type: 'fill', source: 'col', filter: NONE,
+      paint: { 'fill-color': ['get', 'c'], 'fill-opacity': 0.75, 'fill-outline-color': 'rgba(60,50,40,0.25)' } });
+    m.addLayer({ id: 'col-sel', type: 'line', source: 'col', filter: NONE, paint: { 'line-color': c.us, 'line-width': 2.2 } });
+
     // territory labels: bigger places first, smaller ones as you zoom in
     m.addSource('labels', { type: 'geojson', data: EMPTY });
     const lbl = (id, minzoom, filter, size, upper) => m.addLayer({
@@ -107,6 +114,10 @@ export class HistoryMap extends EventTarget {
     m.addLayer({ id: 'us-label', type: 'symbol', source: 'us', minzoom: 3.2, filter: NONE,
       layout: { 'text-field': ['get', 'n'], 'text-font': FONT_IT, 'text-size': 11.5, 'text-max-width': 7, 'text-padding': 2 },
       paint: { 'text-color': c.text, 'text-halo-color': c.halo, 'text-halo-width': 1.4 } });
+
+    m.addLayer({ id: 'col-label', type: 'symbol', source: 'col-lbl', minzoom: 3,
+      layout: { 'text-field': ['get', 'n'], 'text-font': FONT_IT, 'text-size': 12, 'text-max-width': 7 },
+      paint: { 'text-color': c.text, 'text-halo-color': c.halo, 'text-halo-width': 1.6 } });
 
     // events
     m.addSource('ev', { type: 'geojson', data: EMPTY, cluster: true, clusterRadius: 34, clusterMaxZoom: 5 });
@@ -131,7 +142,7 @@ export class HistoryMap extends EventTarget {
         m.on('mouseleave', l, () => { m.getCanvas().style.cursor = ''; });
       }
     };
-    pointer(['ev-point', 'ev-cluster', 'fillA', 'fillB', 'us-fill']);
+    pointer(['ev-point', 'ev-cluster', 'fillA', 'fillB', 'us-fill', 'col-fill']);
     m.on('click', (e) => this._click(e));
   }
 
@@ -157,6 +168,11 @@ export class HistoryMap extends EventTarget {
       ? m.queryRenderedFeatures(e.point, { layers: ['us-fill'] }) : [];
     if (us.length && m.getZoom() >= 3) {
       this.dispatchEvent(new CustomEvent('usstate', { detail: us[0].properties }));
+      return;
+    }
+    const col = m.queryRenderedFeatures(e.point, { layers: ['col-fill'] });
+    if (col.length && m.getZoom() >= 2.5) {
+      this.dispatchEvent(new CustomEvent('colony', { detail: col[0].properties.st }));
       return;
     }
     const t = m.queryRenderedFeatures(e.point, { layers: ['fill' + this.active] });
@@ -215,6 +231,15 @@ export class HistoryMap extends EventTarget {
     for (const l of ['us-fill', 'us-line', 'us-label']) m.setFilter(l, f);
     m.setFilter('us-sel', d == null || !selId ? NONE : ['all', f, ['==', ['get', 'id'], selId]]);
     this.usDate = d;
+  }
+
+  /** Colonial counties on a date (yyyymmdd), coloured by colony; null hides them. */
+  setColonies(fc, d, labels, selSt = null) {
+    if (fc && !this._colSet) { this.map.getSource('col').setData(fc); this._colSet = true; }
+    const f = d == null ? NONE : ['all', ['<=', ['get', 's'], d], ['>=', ['get', 'e'], d]];
+    this.map.setFilter('col-fill', f);
+    this.map.setFilter('col-sel', d == null || !selSt ? NONE : ['all', f, ['==', ['get', 'st'], selSt]]);
+    this.map.getSource('col-lbl').setData(labels || EMPTY);
   }
 
   setModern(fc, visible) {

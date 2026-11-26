@@ -157,7 +157,27 @@ def main():
             us_versions[yy].append(f)
     us_pi_cache = {}
 
+    col = read_json(os.path.join(DATA, 'us', 'colonies.json'))
+    col_names = col['states']
+    col_pi = {}
+
+    def colony(y, m, d, lon, lat):
+        date = y * 10000 + (m or 7) * 100 + (d or 1)
+        cands = [f for f in col['features'] if f['properties']['s'] <= date <= f['properties']['e']]
+        key = tuple(sorted(id(f) for f in cands))
+        if key not in col_pi:
+            col_pi[key] = PolyIndex([(f['properties']['st'], f['geometry']) for f in cands], cell=2.0)
+        st = col_pi[key].lookup(lon, lat)
+        if not st:
+            return None
+        st = 'MA' if st == 'ME' else st
+        return col_names.get(st, st), st.lower() + '_state'
+
     def us_state(y, m, d, lon, lat):
+        if 1607 <= y and y * 10000 + (m or 7) * 100 + (d or 1) < 17830903:
+            if -90 < lon < -60 and 25 < lat < 50:
+                return colony(y, m, d, lon, lat)
+            return None
         if y < 1763 or y > 2000:
             return None
         date = y * 10000 + (m or 7) * 100 + (d or 1)

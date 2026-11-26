@@ -53,7 +53,7 @@ async function init() {
   if (p.get('v') === 'flat') state.projection = 'mercator';
   if (p.get('v') === 'globe') state.projection = 'globe';
   state.modern = p.get('mb') === '1';
-  const want = { c: p.get('c'), s: p.get('s'), mc: p.get('mc'), e: p.get('e') };
+  const want = { c: p.get('c'), s: p.get('s'), mc: p.get('mc'), e: p.get('e'), col: p.get('col') };
 
   setupTimebar();
   setupPanel();
@@ -70,6 +70,7 @@ async function init() {
     showStatus('');
     map.addEventListener('polity', (e) => selectPolityByIndex(e.detail, { fly: false }));
     map.addEventListener('usstate', (e) => selectUS(e.detail.id, { fly: false }));
+    map.addEventListener('colony', (e) => selectColony(e.detail, { fly: false }));
     map.addEventListener('event', (e) => openEvent(e.detail, { fly: false }));
     map.addEventListener('empty', () => { if (state.view !== 'year') { clearSelection(); } });
     loadLand().then((fc) => map.setLand(fc)).catch(() => {});
@@ -88,6 +89,7 @@ async function init() {
   if (want.c) await selectPolityByName(want.c, { fly: true });
   else if (want.s) await selectUS(want.s, { fly: true });
   else if (want.mc) await selectModern(want.mc, { fly: true });
+  else if (want.col) await selectColony(want.col, { fly: true });
   if (want.e) await openEvent(want.e, { fly: !want.c });
 }
 
@@ -141,6 +143,10 @@ async function goToYear(year, { month = 0, day = 0, keepSel = true, fromSlider =
   // keep a selected territory across years (matched by name); close an open event that belongs to another year
   if (keepSel && state.sel?.kind === 'polity') remapPolity();
   if (keepSel && state.sel?.kind === 'us') remapUS();
+  if (keepSel && state.sel?.kind === 'colony') {
+    const u = colonyUnits(state.sel.st, colDate());
+    if (u.length) Object.assign(state.sel, { name: colonyName(state.sel.st, colDate()), test: makeAreaTest(u.map((f) => f.geometry)), n: u.length, missing: false });
+  }
   if (state.view === 'event' && !keepEvent) {
     state.view = state.sel ? 'sel' : 'year';
     state.eventId = null;
@@ -175,9 +181,68 @@ function remapUS() {
   else s.missing = true;
 }
 
-async function updateUS() {
+// ---- the colonies before 1783 (Newberry county files) ----
+const COL_COLORS = ['#d79c86', '#94b4cc', '#a9c08f', '#e3cf86', '#c7a8c9', '#86bdb8', '#e5b893', '#a9a7d6',
+  '#dba8a8', '#c4cd8c', '#9fc6ad', '#d9b77e', '#b996b0', '#9cb0d2', '#cf9a9a'];
+const COLONY_NAMES = { CT: 'Connecticut Colony', DE: 'Delaware Colony', GA: 'Province of Georgia', MD: 'Province of Maryland',
+  MA: 'Province of Massachusetts Bay', NH: 'Province of New Hampshire', NJ: 'Province of New Jersey', NY: 'Province of New York',
+  NC: 'Province of North Carolina', PA: 'Province of Pennsylvania', RI: 'Colony of Rhode Island', SC: 'Province of South Carolina',
+  VA: 'Colony of Virginia', ME: 'Province of Massachusetts Bay', VT: 'Vermont (disputed)' };
+let colFC = null;
+const colDate = () => state.year * 10000 + (state.month || 12) * 100 + (state.day || (state.month ? 28 : 31));
+function colonyName(st, date) {
+  const states = colFC?.states || {};
+  if (date >= 17760704) return st === 'ME' ? 'Massachusetts' : st === 'VT' ? 'Vermont' : `${states[st] || st} (state)`;
+  return COLONY_NAMES[st] || states[st] || st;
+}
+function colonyUnits(st, date) {
+  return (colFC?.features || []).filter((f) => f.properties.s <= date && f.properties.e >= date && (f.properties.st === st || (st === 'MA' && f.properties.st === 'ME')));
+}
+async function updateColonies() {
   const y = state.year;
-  if (y < 1763 || y > 2000) { if (mapOk && map.usDate != null) map.setUSDate(null); return; }
+  if (y < 1607 || y > 1783 || colDate() >= 17830903) { if (mapOk && map._colOn) { map.setColonies(null, null); map._colOn = false; } return; }
+  try {
+    if (!colFC) {
+      colFC = await getJSON('us/colonies.json');
+      const codes = Object.keys(colFC.states);
+      for (const f of colFC.features) f.properties.c = COL_COLORS[codes.indexOf(f.properties.st === 'ME' ? 'MA' : f.properties.st) % COL_COLORS.length];
+    }
+    const d = colDate();
+    const best = {};
+    for (const f of colFC.features) {
+      const p = f.properties;
+      if (p.s > d || p.e < d) continue;
+      const st = p.st === 'ME' ? 'MA' : p.st;
+      const a = bboxArea(f.geometry);
+      if (!best[st] || a > best[st].a) best[st] = { a, l: p.l };
+    }
+    const labels = { type: 'FeatureCollection', features: Object.entries(best).map(([st, b]) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: b.l }, properties: { n: colonyName(st, d) } })) };
+    if (mapOk) { map.setColonies(colFC, d, labels, state.sel?.kind === 'colony' ? state.sel.st : null); map._colOn = true; }
+  } catch (e) { console.warn(e); }
+}
+function bboxArea(g) {
+  const b = bboxOf([g]);
+  return b ? (b[2] - b[0]) * (b[3] - b[1]) : 0;
+}
+
+async function selectColony(st, { fly }) {
+  st = st === 'ME' ? 'MA' : st;
+  const d = colDate();
+  const units = colonyUnits(st, d);
+  if (!units.length) return;
+  state.sel = { kind: 'colony', st, id: st.toLowerCase() + '_state', name: colonyName(st, d), test: makeAreaTest(units.map((f) => f.geometry)), n: units.length };
+  state.view = 'sel';
+  state.eventId = null;
+  if (mapOk) { map.selectPolity(null); updateColonies(); if (fly) map.fitBBox(bboxOf(units.map((f) => f.geometry)), 6.5); }
+  expandSheet();
+  writeUrl();
+  await render();
+}
+
+async function updateUS() {
+  await updateColonies();
+  const y = state.year;
+  if (y < 1783 || y > 2000) { if (mapOk && map.usDate != null) map.setUSDate(null); return; }
   try {
     if (!usFC) { usFC = await loadUS(); if (mapOk) map.setUS(usFC); }
     if (mapOk) map.setUSDate(usDateInt(), state.sel?.kind === 'us' ? state.sel.id : null);
@@ -222,9 +287,9 @@ function badgeText() {
   out.push(h('p', null, s.y < 1500
     ? 'Borders this early are rough sketches. Many regions had no fixed borders at all.'
     : 'Borders are simplified for speed and may be off by a few kilometres or more.'));
-  if (state.year >= 1763 && state.year <= 2000) {
+  if (state.year >= 1607 && state.year <= 2000) {
     out.push(h('p', null, state.year < 1783
-      ? 'Dashed lines in North America show the thirteen colonies, drawn from their 1783 state borders, so they are approximate.'
+      ? 'In North America the colonies are drawn from their organized counties on this date (exact dates, Newberry Library).'
       : 'Dashed lines in the United States show state and territory borders on this date.'));
   }
   out.push(h('p', null, h('button.more', { type: 'button', onclick: openSources }, 'Sources and accuracy')));
@@ -286,6 +351,9 @@ async function renderYear() {
   nodes.push(h('p.note', null, `${all.length} ${all.length === 1 ? 'event' : 'events'} recorded · `,
     state.snap ? (state.snap.cs ? `map borders on 1 July ${state.snap.y}` : `map borders as of ${formatYear(state.snap.y)}`) : 'no border map this early'));
 
+  const strip = await changeStrip(y);
+  if (token !== state.token || state.view !== 'year' || state.sel) return;
+  if (strip) nodes.push(strip);
   nodes.push(h('h2', null, 'Events'));
   if (all.length) {
     const hidden = TYPE_KEYS.filter((k) => state.disabled.has(k) && counts(all)[k]).length;
@@ -435,7 +503,8 @@ function clearSelection() {
   state.sel = null;
   state.view = 'year';
   state.eventId = null;
-  if (mapOk) { map.selectPolity(null); map.selectEvent(null); if (state.year >= 1763 && state.year <= 2000) map.setUSDate(usDateInt()); }
+  if (mapOk) { map.selectPolity(null); map.selectEvent(null); if (state.year >= 1783 && state.year <= 2000) map.setUSDate(usDateInt()); }
+  updateColonies();
   writeUrl();
   render();
 }
@@ -445,7 +514,7 @@ function inSelection(e) {
   const s = state.sel;
   if (!s) return false;
   if (s.kind === 'modern') return e.mc === s.iso || (e.lo != null && !e.mc && s.test(e.lo, e.la));
-  if (s.kind === 'us') return e.ci === s.id || (e.lo != null && s.test(e.lo, e.la));
+  if (s.kind === 'us' || s.kind === 'colony') return e.ci === s.id || (e.lo != null && s.test(e.lo, e.la));
   if (e.p === s.name) return true;
   return !!(s.test && e.lo != null && s.test(e.lo, e.la));
 }
@@ -488,6 +557,13 @@ async function renderSelection() {
   }
   const ongoing = filtered(data.ongoing.filter(inSelection)).slice(0, 5);
   if (ongoing.length) nodes.push(h('h2', null, 'Still going'), eventList(ongoing, { ...listOpts(), isToday: () => false }, 5));
+  const chg = (await loadChanges()).filter((c) => Math.abs(c.y - y) <= 30 && s.test && s.test(c.lon, c.lat));
+  if (token !== state.token || state.sel !== s) return;
+  if (chg.length) {
+    nodes.push(h('h2', null, 'Border changes recorded here'),
+      h('p.note', null, state.snap && !state.snap.cs ? `The map shows ${formatYear(state.snap.y)} borders; these dated changes happened within 30 years of ${formatYear(y)}.` : `Within 30 years of ${formatYear(y)}.`),
+      h('ul.changes-list', null, chg.map(changeRow)));
+  }
   setBody(nodes);
 }
 
@@ -534,6 +610,12 @@ async function selectionHeader(s) {
     } catch { /* descriptions are optional */ }
     return box;
   }
+  if (s.kind === 'colony') {
+    box.append(h('p.kicker', null, colDate() >= 17760704 ? 'State' : 'British colony'), h('h1', null, s.name));
+    box.append(h('dl.facts', null, h('dt', null, 'On the map'), h('dd', null, `${s.n} organized counties or parishes on ${formatDate(state.year, state.month || 12, state.day || 31)}`)));
+    box.append(h('p.note', null, 'Colonies are drawn as their organized counties, with the exact dates in the Newberry Library\'s Atlas of Historical County Boundaries. Land not yet organized into counties, and colonial charter claims to the west, are not shown.'));
+    return box;
+  }
   if (s.kind === 'us') {
     const pr = s.props;
     if (s.missing) {
@@ -556,6 +638,31 @@ async function selectionHeader(s) {
 }
 
 const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+
+let changesP = null;
+const loadChanges = () => (changesP = changesP || getJSON('changes.json').then((d) => d.changes).catch(() => []));
+
+function changeRow(c) {
+  return h('li', null, h('span.ch-date', null, formatDate(c.y, c.m, c.d)), ' ', c.text,
+    c.verified ? null : h('span.unver', { title: c.check || 'Not confirmed by Wikidata' }, 'unverified'), ' ',
+    h('a.ext', { href: c.source, target: '_blank', rel: 'noopener' }, 'source'));
+}
+
+/** "What changed this year": dated border changes (curated before 1886, CShapes after) and map changes. */
+async function changeStrip(y) {
+  const items = [];
+  const doc = state.snapDoc;
+  const curated = (await loadChanges()).filter((c) => c.y === y);
+  for (const c of curated) items.push(changeRow(c));
+  if (doc?.cs && doc.changes && doc.year === y) {
+    const ch = doc.changes;
+    for (const n of ch.appeared) items.push(h('li', null, h('b', null, n), ' appears on the map'));
+    for (const n of ch.gone) items.push(h('li', null, h('b', null, n), ' leaves the map'));
+    for (const r of ch.ruler || []) items.push(h('li', null, r));
+  }
+  if (!items.length) return null;
+  return h('section.strip', { 'aria-label': 'What changed this year' }, h('h2', null, 'What changed this year'), h('ul.changes-list', null, items));
+}
 
 /** "Who held it over time": runs of maps with the same ruler, loaded on demand. */
 function historyLine(name) {
@@ -859,6 +966,7 @@ function writeUrl() {
   const s = state.sel;
   if (s?.kind === 'polity') p.set('c', s.name);
   if (s?.kind === 'us') p.set('s', s.id);
+  if (s?.kind === 'colony') p.set('col', s.st);
   if (s?.kind === 'modern') p.set('mc', s.iso);
   if (state.view === 'event' && state.eventId) p.set('e', state.eventId);
   if (state.projection === 'mercator') p.set('v', 'flat');

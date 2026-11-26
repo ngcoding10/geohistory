@@ -1,9 +1,8 @@
 """Step 2b: US states and territories over time from the Newberry Library's Atlas of Historical
 County Boundaries (state/territory file, generalised 0.01 degree). Writes data/us/states.json.
 
-The AHCB state file starts on 3 September 1783 (Treaty of Paris). For 1763-1783 the app shows the
-Thirteen Colonies using each state's first (1783) outline, marked as approximate. Those synthetic
-versions are added here with "approx": 1 so the app can say so.
+The AHCB state file starts on 3 September 1783 (Treaty of Paris). Earlier years use the colonial
+county units from build_colonies.py.
 """
 import io
 import os
@@ -53,19 +52,7 @@ def main():
             first[r['ID']] = (sg, props)
         if r['ID'] == 'vt_republic' and int(r['START_DATE']) == TREATY_1783:
             first[r['ID']] = (sg, props)
-    # synthetic, clearly approximate versions for 1763-1783
-    for sid, (sg, props) in sorted(first.items()):
-        if sid == 'vt_republic':
-            feats.append({'type': 'Feature', 'geometry': sg, 'properties': {
-                'id': sid, 'n': 'Vermont Republic', 't': 'Other', 's': 17770115, 'e': TREATY_1783 - 1,
-                'l': props['l'], 'approx': 1}})
-            continue
-        feats.append({'type': 'Feature', 'geometry': sg, 'properties': {
-            'id': sid, 'n': COLONIES[sid], 't': 'Colony', 's': TREATY_1763, 'e': INDEPENDENCE - 1,
-            'l': props['l'], 'approx': 1}})
-        feats.append({'type': 'Feature', 'geometry': sg, 'properties': {
-            'id': sid, 'n': props['n'], 't': 'State', 's': INDEPENDENCE, 'e': TREATY_1783 - 1,
-            'l': props['l'], 'approx': 1}})
+    # before 1783 the colonies come from the county files instead (build_colonies.py)
     size = write_json(os.path.join(DATA, 'us', 'states.json'), {'type': 'FeatureCollection', 'features': feats})
     log(f'us states: {len(feats)} versions, {size // 1024} KB')
 

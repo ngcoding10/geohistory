@@ -245,3 +245,8 @@ a { color: var(--accent); }
 .ruled-hist { font-size: 13px; color: var(--ink-2); margin: 6px 0 0; }
 .ruled-hist summary { cursor: pointer; color: var(--ink-3); }
 .ruled-hist ol { margin: 6px 0 0; padding-left: 18px; }
+.strip { margin: 14px 0 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+.strip h2 { margin: 0 0 6px !important; font-size: 15px !important; }
+.changes-list { list-style: none; margin: 0; padding: 0; font-size: 14px; color: var(--ink-2); }
+.changes-list li { padding: 3px 0; }
+.ch-date { color: var(--ink-3); font-variant-numeric: tabular-nums; }
