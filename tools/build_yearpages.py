@@ -68,7 +68,7 @@ def main():
     # A bullet usually links a person or a place before the event itself, so each of its first three links
     # is checked and the first whose Wikidata item is dated to this year (within one) names the event.
     # Bullets with no such link are dropped: a name without a matching date is not an event we can stand by.
-    wd = wikidata_years([l for f in found for l in f['links']]) if found else {}
+    wd = wikidata_years([l for f in found for l in f['links']], batch=150) if found else {}
     kept = []
     for f in found:
         for l in f['links']:

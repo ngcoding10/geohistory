@@ -29,7 +29,7 @@ REG = {'Eastern Asia': 'East Asia', 'Southern Asia': 'South Asia', 'South-Easter
 MORE_POLITY = ['Q164950', 'Q1642488', 'Q331644', 'Q133442', 'Q208500', 'Q170156', 'Q131401', 'Q164142',
                'Q2495771', 'Q12356456', 'Q1798550', 'Q2479824', 'Q12857432']
 CULTURE_ROOTS = ['Q465299', 'Q15401633']
-SETTLE = ['Q486972', 'Q839954']
+SETTLE = ['Q486972', 'Q839954', 'Q811979']   # settlements, archaeological sites, built structures (before 1500 only)
 
 
 def regions():
@@ -74,7 +74,8 @@ def polities():
 
 def by_country(iso, region):
     """Dated items and dated settlements/sites in one country."""
-    cap = '' if region == 'Central Asia' else 'FILTER(?d < "1900-01-01T00:00:00Z"^^xsd:dateTime)'
+    # North America is dense after 1700 already (the gap there is before 1500), so its pass stops at 1700
+    cap = '' if region == 'Central Asia' else 'FILTER(?d < "%d-01-01T00:00:00Z"^^xsd:dateTime)' % (1700 if region == 'North America' else 1900)
     items, settle = {}, {}
     try:
         for r in sparql(f'''SELECT ?item (MAX(?sl) AS ?s) (GROUP_CONCAT(DISTINCT STRAFTER(STR(?c), "entity/")) AS ?cls) WHERE {{
@@ -85,10 +86,12 @@ def by_country(iso, region):
         log(f'  {iso} dated items failed: {e}')
     thr = 15 if iso in ('US', 'CA', 'AU', 'MX', 'BR', 'AR') else 6
     for root in SETTLE:
+        before = 1500 if root == 'Q811979' else 1900
+        minsl = thr if root == 'Q486972' else 2
         try:
             for r in sparql(f'''SELECT ?item ?sl WHERE {{ ?country wdt:P297 "{iso}" . ?item wdt:P17 ?country ; wdt:P571 ?d .
-  FILTER(?d < "1900-01-01T00:00:00Z"^^xsd:dateTime) ?item wdt:P31/wdt:P279* wd:{root} . ?item wikibase:sitelinks ?sl . FILTER(?sl >= {thr if root == 'Q486972' else 2}) }}'''):
-                settle.setdefault(qid(r['item']), {'sl': int(r['sl']), 'kind': 'city' if root == 'Q486972' else 'site'})
+  FILTER(?d < "{before}-01-01T00:00:00Z"^^xsd:dateTime) ?item wdt:P31/wdt:P279* wd:{root} . ?item wikibase:sitelinks ?sl . FILTER(?sl >= {minsl}) }}'''):
+                settle.setdefault(qid(r['item']), {'sl': int(r['sl']), 'kind': {'Q486972': 'city', 'Q839954': 'site'}.get(root, 'built')})
         except Exception as e:
             log(f'  {iso} {root} failed: {e}')
     return items, settle

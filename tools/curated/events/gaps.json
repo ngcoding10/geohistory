@@ -1,0 +1,52 @@
+{
+ "_about": "Well-known events whose Wikidata item carries no date, so the Wikidata passes cannot place them. Dates written for GeoHistory from general knowledge; they stay \"curated, unverified\" until Wikidata has a date to compare with.",
+ "period": "Events without a date on Wikidata",
+ "events": [
+  {
+   "id": "cp19-01",
+   "y": 1901,
+   "m": 1,
+   "d": 1,
+   "type": "state",
+   "label": "Federation of Australia",
+   "wiki": "Federation of Australia",
+   "lon": 151.21,
+   "lat": -33.87,
+   "desc": "The six British colonies in Australia unite as the Commonwealth of Australia.",
+   "source": "https://en.wikipedia.org/wiki/Federation_of_Australia",
+   "verified": false,
+   "check": "Wikidata item has no date"
+  },
+  {
+   "id": "cp19-02",
+   "y": 1830,
+   "y2": 1850,
+   "m": 0,
+   "d": 0,
+   "type": "violence",
+   "label": "Trail of Tears",
+   "wiki": "Trail of Tears",
+   "lon": -85.0,
+   "lat": 35.0,
+   "desc": "After the Indian Removal Act of 1830 the United States forces the Cherokee, Muscogee, Seminole, Chickasaw and Choctaw nations west of the Mississippi; the Cherokee removal of 1838 gives the name.",
+   "source": "https://en.wikipedia.org/wiki/Trail_of_Tears",
+   "verified": false,
+   "check": "Wikidata item has no date"
+  },
+  {
+   "id": "cp19-03",
+   "y": 1954,
+   "m": 3,
+   "d": 1,
+   "type": "discovery",
+   "label": "Castle Bravo",
+   "wiki": "Castle Bravo",
+   "lon": 165.27,
+   "lat": 11.69,
+   "desc": "The United States tests its largest hydrogen bomb at Bikini Atoll; fallout contaminates nearby atolls and a Japanese fishing boat.",
+   "source": "https://en.wikipedia.org/wiki/Castle_Bravo",
+   "verified": false,
+   "check": "Wikidata item has no date"
+  }
+ ]
+}

@@ -73,10 +73,11 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
 
 ### Events, descriptions and links: Wikidata
 - **What:** wars, battles, sieges, revolts, treaties, declarations of independence, states founded and
-  dissolved, monarchs taking office, disasters, epidemics, discoveries and other notable events, with
+  dissolved, rulers taking office, documents, spaceflights, organisations, archaeological cultures, disasters, epidemics, discoveries and other notable events, with
   dates, coordinates, countries, locations, participants and English Wikipedia titles; descriptions,
   dates and capitals for linked territories.
 - **Source:** Wikidata Query Service, https://query.wikidata.org/ (`tools/fetch_events.py`,
+  `fetch_extra.py`, `fetch_rulers.py`, `fetch_famous.py`, `fetch_regions.py`, `fetch_places.py`,
   `tools/link_wikidata.py`)
 - **Licence:** CC0 1.0 (public domain dedication). Links in the app go to the English Wikipedia articles;
   no Wikipedia text is copied.
@@ -98,9 +99,13 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
 Written from general knowledge, conservatively, and checked by `tools/build_curated.py` and
 `tools/build_changes.py` against the Wikidata item of the article each entry names. The app tags them
 "curated", or "curated, unverified" when Wikidata has no matching date.
-- `events/*.json`: 380 events in 17 periods (fall of the Roman Republic to the fall of the USSR); 366
-  match Wikidata by year. `decades.json`: one summary per decade from 1500 (53; 49 fully verified).
-  `polities.json`: 181 short descriptions of major historical states (177 with every year verified).
+- `events/*.json`: 498 events in 19 files: 17 periods from the fall of the Roman Republic to the fall of the
+  USSR, early history of thinly recorded regions and Central Asia, and three well-known events that have no
+  date on Wikidata; 445 match Wikidata by year (approximate entries within 50 years). `decades.json`: one
+  summary per decade from 1500 (53; 50 fully verified). `polities.json`: 264 short descriptions of
+  historical states (259 with every year verified; 227 have a name that is on the maps).
+- `famous_include.json`: titles of well-known Wikidata items that the class filters miss (content comes
+  from Wikidata). `aliases.json`: extra search names for 11 events.
 - `territory_changes.json`: 81 dated border changes before 1886 (70 match). `event_overrides.json`: hand
   corrections to single Wikidata dates, each with a source and a note shown in the app.
   `dependency_owners.json`: rulers of 1886-2019 dependencies (unverified). `cshapes_names.json`: era names

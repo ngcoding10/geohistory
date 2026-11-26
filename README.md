@@ -25,11 +25,16 @@ do not hit the sources again.
 tools/build_all.sh
 ```
 
-Steps: download the border snapshots, Natural Earth and Newberry files; simplify borders; build US
-states; query Wikidata for events (slow the first time: a few hundred queries, one at a time); link
-territories to Wikidata; place every event and write the event files, search index and `data/meta.json`;
-check label fonts; write `js/data-version.js` (a hash of `data/`, used to version data URLs).
+Steps (see `tools/build_all.sh`): download the border sources; simplify borders; build US states, colonial
+counties, the CShapes years and the Cliopatria years; query Wikidata (events, rulers, the deep pass, the
+famous-items pass, the per-region passes, places for events without coordinates: a few thousand queries,
+one at a time, all cached); read Wikipedia's year articles; link territories to Wikidata; check the curated
+files against Wikidata; place every event and write the event files, search index and `data/meta.json`;
+build timelines; run the audit; write `js/data-version.js` (a hash of `data/`, used to version data URLs).
 
+Curated text lives in `tools/curated/`: period supplements (`events/*.json`), decade summaries, state
+descriptions, dated border changes and a few hand corrections. Every entry names the Wikipedia article it
+is about and carries a `verified` flag set by `tools/build_curated.py` when Wikidata has the same year.
 `tools/supplement_events.json` is a small hand-checked list of American Revolution events (1763 to 1789),
 each with a source link. Sources and licences: [CREDITS.md](CREDITS.md).
 
@@ -45,26 +50,30 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
 
 ## Known limits
 
-- From 1886 to 2019 borders come from CShapes 2.0, one map per year as on 1 July. Outside that span
-  borders are snapshots (54 maps from 123,000 BC to AD 2010): other years show the nearest earlier map,
-  and the badge on the map says which. Rulers of colonies in 1886-2019 can lag a change by a few years.
+- Borders: 1886 to 2019 come from CShapes 2.0, one map per year as on 1 July. 1700 to 1885 come from
+  Cliopatria, one map per year, approximate (a state is redrawn every few years; peoples without a state are
+  filled in from the nearest earlier sketch map and can be out of date). Before 1700 there are only
+  snapshots (37 maps from 123,000 BC to 1650): other years show the nearest earlier map, and the badge on
+  the map says which. Rulers of colonies in 1886-2019 can lag a change by a few years.
 - **Licences:** CShapes 2.0 is CC BY-NC-SA (non-commercial). NC sources must be cleared or replaced
-  before ads are added to this site (see CREDITS.md).
+  before ads are added to this site (see CREDITS.md). Cliopatria is CC BY 4.0.
 - Borders before about 1500 are rough, and all borders are simplified (about 1 to 3 km).
 - US state borders come from the Newberry atlas from 1783. For 1763 to 1783 the thirteen colonies are
   drawn from their 1783 outlines and marked approximate.
 - Events come from Wikidata and follow Wikipedia's coverage: strong for Europe and North America, thin
-  for much of Africa, Asia and the distant past. Dates and places can be wrong or missing.
-- Rulers are monarchs only (from Wikidata position-held dates); presidents and prime ministers are not
-  included yet.
+  for much of Africa, Oceania, Central and Southeast Asia and the distant past. Dates and places can be
+  wrong or missing. `data/meta.json` has the full region-by-era table and the share of events placed in a
+  modern country.
+- Events that Wikidata dates outside the war it files them under are detached from the war or marked
+  "doubtful date" (`data/meta.json`, `consistency`).
+- Rulers need a start date on Wikidata ("position held" or "noble title" with a start); many early and
+  minor rulers have none and are missing.
+- Archaeological cultures and early sites carry approximate dates ("c."), sometimes only a century.
+- Curated text (decades, state descriptions, period events) is written from general knowledge and tagged
+  "curated"; entries whose year Wikidata does not confirm are tagged "curated, unverified".
 - The flat map is the default because borders are easier to read; the globe is one tap away. Both were
   checked only in headless Chromium with software rendering, not yet on real phones.
-- Births and deaths (about 11,000, the 12 most notable per year) are off by default; turn them on under
-  "Event types".
-- Event coverage is uneven by region: before 1500 there is almost nothing for North America, Oceania,
-  Southeast Asia and sub-Saharan Africa, and about a fifth of events cannot be placed in a modern country.
-  `data/meta.json` has the full region-by-era table.
-- Wikipedia year articles are fetched very slowly (the API throttles the build machine); only a few have
-  been read so far. Re-run `tools/fetch_yearpages.py` to continue.
-- `tools/audit.py` checks 354 well-known facts; failures are listed in `data/audit.json`. Known source map
-  errors (for example Constantinople shown as Ottoman on the 1400 map) are explained as dated changes.
+- Births and deaths (the 12 most notable per year) are off by default; turn them on under "Event types".
+- `tools/audit.py` checks 682 hand-written well-known facts spread over every region and era; 665 pass.
+  The 17 failures are listed in `data/audit.json` (source-map errors, coastal points that fall outside
+  simplified polygons, naming differences, and a few real gaps on Wikidata).

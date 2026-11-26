@@ -638,7 +638,7 @@ async function selectionHeader(s) {
         // "mod": Wikidata dates today's state of this name from that year (independence, a new constitution);
         // "eras": the earlier states it replaced. Before "mod" show the era that fits, or say so plainly.
         const before = info.mod != null && y < info.mod - 25;
-        const era = before ? (info.eras || []).find((c) => c.from - 25 <= y && (c.to ?? info.mod) + 25 >= y) : null;
+        const era = before ? (info.eras || []).filter((c) => c.from - 25 <= y && (c.to ?? info.mod) + 25 >= y).pop() || null : null;
         const shown = era || info;
         const fits = era ? true : before ? false
           : (info.mod != null || info.from == null || info.from - 25 <= y) && (info.to == null || info.to + 25 >= y);

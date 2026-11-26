@@ -72,6 +72,7 @@ async function waitEvents(page) {
     ok(snap1776.src === 'clio' && snap1776.n > 100 && snap1776.usa, `the 1776 map comes from Cliopatria and shows the United States (${snap1776.n} territories, ${snap1776.under} from the older sketch map)`);
     // the full list, so a lower-ranked headline still counts
     if (await page.locator('#panelBody .more').count()) await page.locator('#panelBody .more').first().click();
+    ok(/The 1770s\./.test(await page.locator('#panelBody').innerText()), 'the 1776 panel opens with the curated summary of the 1770s');
     const t1776 = await listText(page);
     ok(/Declaration of Independence/.test(t1776), '1776 list contains the Declaration of Independence');
     await page.screenshot({ path: path.join(SHOTS, 'desktop-1776.png') });
@@ -99,6 +100,18 @@ async function waitEvents(page) {
     await waitEvents(page);
     const today = await page.locator('#panelBody .ev.today').first().innerText().catch(() => '');
     ok(/Declaration of Independence/.test(today), '"4 July 1776" highlights the Declaration');
+
+    // famous items that the first round missed, and approximate dates
+    await typeYear(page, '1969');
+    await waitH1(page, 'The world in 1969');
+    await waitEvents(page);
+    if (await page.locator('#panelBody .more').count()) await page.locator('#panelBody .more').first().click();
+    ok(/Apollo 11/.test(await listText(page)), '1969 list contains Apollo 11');
+    await typeYear(page, '1215');
+    await waitH1(page, 'The world in 1215');
+    await waitEvents(page);
+    if (await page.locator('#panelBody .more').count()) await page.locator('#panelBody .more').first().click();
+    ok(/Magna Carta/.test(await listText(page)), '1215 list contains Magna Carta');
 
     // BC years
     await typeYear(page, '44 BC');
@@ -155,6 +168,8 @@ async function waitEvents(page) {
     await page.locator('#results li', { hasText: /^Ottoman Empire\s*Territory/ }).first().click();
     await waitH1(page, 'Ottoman Empire');
     ok(true, 'choosing it opens the Ottoman Empire panel');
+    await page.waitForSelector('#panelBody p.about', { timeout: 30000 }).catch(() => {});
+    ok(/Anatolia/.test(await page.locator('#panelBody p.about').first().innerText().catch(() => '')), 'the Ottoman Empire panel shows the curated description, tagged as curated');
     for (const q of ['prusia', 'constantinopel']) {
       await page.fill('#q', q);
       await page.waitForSelector('#results li[data-i]', { timeout: 30000 }).catch(() => {});

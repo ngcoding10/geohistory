@@ -92,10 +92,19 @@ def main():
     n_ok = 0
     for f, d in docs:
         for e in d['events']:
-            e['verified'], e['check'] = check(e['wiki'], e['y'])
+            slack = 50 if e.get('approx') else 0
+            e['verified'], e['check'] = check(e['wiki'], e['y'], slack)
+            if not e['verified'] and e.get('y2'):
+                v2, note2 = check(e['wiki'], e['y2'], slack)
+                if v2:
+                    e['verified'], e['check'] = True, note2 + ' (end date)'
             n_ok += e['verified']
             ev = {'id': e['id'], 'label': e['label'], 'y': e['y'], 'm': e.get('m', 0), 'd': e.get('d', 0), 'type': e['type'],
                   'desc': e['desc'], 'wiki': e['wiki'], 'verified': e['verified']}
+            if e.get('y2'):
+                ev['y2'] = e['y2']
+            if e.get('approx'):
+                ev['approx'] = 1
             if e.get('lon') is not None:
                 ev['lon'], ev['lat'] = e['lon'], e['lat']
             events.append(ev)

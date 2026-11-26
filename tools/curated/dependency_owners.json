@@ -419,6 +419,13 @@
    "owner": "France",
    "source": "https://en.wikipedia.org/wiki/Gabon",
    "verified": false
+  },
+  {
+   "name": "Indonesia",
+   "owner": "Netherlands",
+   "until": 19491227,
+   "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies",
+   "verified": false
   }
  ]
 }

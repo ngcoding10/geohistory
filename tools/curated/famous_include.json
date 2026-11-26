@@ -1,0 +1,533 @@
+{
+ "_about": "Well-known Wikidata items that the class filters miss (their class on Wikidata is missing, unusual or vandalised), named by their English Wikipedia title. Nothing here is curated content: label, date, place and description all come from Wikidata, this list only says \"include it\" and under which event type. Items without a date on Wikidata still do not appear.",
+ "items": [
+  [
+   "Cuban Revolution",
+   "revolt"
+  ],
+  [
+   "Prague Spring",
+   "politics"
+  ],
+  [
+   "German reunification",
+   "state"
+  ],
+  [
+   "Unification of Germany",
+   "state"
+  ],
+  [
+   "Unification of Italy",
+   "state"
+  ],
+  [
+   "Glasnost",
+   "politics"
+  ],
+  [
+   "Perestroika",
+   "politics"
+  ],
+  [
+   "Great Leap Forward",
+   "politics"
+  ],
+  [
+   "Hijrah",
+   "religion"
+  ],
+  [
+   "Triple Entente",
+   "treaty"
+  ],
+  [
+   "Central Powers",
+   "politics"
+  ],
+  [
+   "Holy Alliance",
+   "treaty"
+  ],
+  [
+   "Pact of Steel",
+   "treaty"
+  ],
+  [
+   "I Have a Dream",
+   "politics"
+  ],
+  [
+   "Gettysburg Address",
+   "politics"
+  ],
+  [
+   "Schuman Declaration",
+   "politics"
+  ],
+  [
+   "Green Revolution",
+   "economy"
+  ],
+  [
+   "Little Ice Age",
+   "disaster"
+  ],
+  [
+   "Avignon Papacy",
+   "religion"
+  ],
+  [
+   "Austro-Hungarian Compromise of 1867",
+   "politics"
+  ],
+  [
+   "German Instrument of Surrender",
+   "treaty"
+  ],
+  [
+   "Zimmermann telegram",
+   "politics"
+  ],
+  [
+   "Live Aid",
+   "other"
+  ],
+  [
+   "Chelyabinsk meteor",
+   "disaster"
+  ],
+  [
+   "Flight and expulsion of Germans (1944–1950)",
+   "violence"
+  ],
+  [
+   "Continental Congress",
+   "politics"
+  ],
+  [
+   "Greek junta",
+   "politics"
+  ],
+  [
+   "Warsaw Ghetto",
+   "violence"
+  ],
+  [
+   "French Resistance",
+   "revolt"
+  ],
+  [
+   "Death of Mahsa Amini",
+   "violence"
+  ],
+  [
+   "Sexual revolution",
+   "other"
+  ],
+  [
+   "Jim Crow laws",
+   "politics"
+  ],
+  [
+   "Colour revolution",
+   "revolt"
+  ],
+  [
+   "First Council of Nicaea",
+   "religion"
+  ],
+  [
+   "Diet of Worms",
+   "religion"
+  ],
+  [
+   "Great Famine (Ireland)",
+   "disaster"
+  ],
+  [
+   "Fukushima nuclear accident",
+   "disaster"
+  ],
+  [
+   "Gallipoli campaign",
+   "battle"
+  ],
+  [
+   "Spanish Armada",
+   "battle"
+  ],
+  [
+   "Russian annexation of Crimea",
+   "state"
+  ],
+  [
+   "1815 eruption of Mount Tambora",
+   "disaster"
+  ],
+  [
+   "Siege of Tenochtitlan",
+   "battle"
+  ],
+  [
+   "Fall of Tenochtitlan",
+   "battle"
+  ],
+  [
+   "Iranian Constitutional Revolution",
+   "revolt"
+  ],
+  [
+   "Persian Constitutional Revolution",
+   "revolt"
+  ],
+  [
+   "Second Battle of El Alamein",
+   "battle"
+  ],
+  [
+   "First Battle of El Alamein",
+   "battle"
+  ],
+  [
+   "Battle of the Little Bighorn",
+   "battle"
+  ],
+  [
+   "Capture of Malacca (1511)",
+   "battle"
+  ],
+  [
+   "Federation of Australia",
+   "state"
+  ],
+  [
+   "Perry Expedition",
+   "discovery"
+  ],
+  [
+   "Industrial Revolution",
+   "economy"
+  ],
+  [
+   "Renaissance",
+   "other"
+  ],
+  [
+   "Age of Enlightenment",
+   "other"
+  ],
+  [
+   "Reformation",
+   "religion"
+  ],
+  [
+   "Counter-Reformation",
+   "religion"
+  ],
+  [
+   "Scientific Revolution",
+   "discovery"
+  ],
+  [
+   "Great Depression",
+   "economy"
+  ],
+  [
+   "The Holocaust",
+   "violence"
+  ],
+  [
+   "Atlantic slave trade",
+   "economy"
+  ],
+  [
+   "Columbian exchange",
+   "other"
+  ],
+  [
+   "Migration Period",
+   "other"
+  ],
+  [
+   "Great Schism",
+   "religion"
+  ],
+  [
+   "Western Schism",
+   "religion"
+  ],
+  [
+   "Investiture Controversy",
+   "religion"
+  ],
+  [
+   "Reconquista",
+   "war"
+  ],
+  [
+   "Meiji Restoration",
+   "politics"
+  ],
+  [
+   "Apartheid",
+   "politics"
+  ],
+  [
+   "Civil rights movement",
+   "revolt"
+  ],
+  [
+   "Space Race",
+   "discovery"
+  ],
+  [
+   "Dissolution of the Soviet Union",
+   "state"
+  ],
+  [
+   "Partition of India",
+   "state"
+  ],
+  [
+   "Scramble for Africa",
+   "politics"
+  ],
+  [
+   "Decolonisation of Africa",
+   "politics"
+  ],
+  [
+   "Arab Spring",
+   "revolt"
+  ],
+  [
+   "Great Purge",
+   "violence"
+  ],
+  [
+   "Holodomor",
+   "disaster"
+  ],
+  [
+   "Great Chinese Famine",
+   "disaster"
+  ],
+  [
+   "Trail of Tears",
+   "violence"
+  ],
+  [
+   "Great Trek",
+   "other"
+  ],
+  [
+   "California Gold Rush",
+   "economy"
+  ],
+  [
+   "Black Death",
+   "epidemic"
+  ],
+  [
+   "Spanish flu",
+   "epidemic"
+  ],
+  [
+   "Islamic Golden Age",
+   "other"
+  ],
+  [
+   "Pax Romana",
+   "other"
+  ],
+  [
+   "Crisis of the Third Century",
+   "politics"
+  ],
+  [
+   "Bronze Age collapse",
+   "disaster"
+  ],
+  [
+   "Edo period",
+   "other"
+  ],
+  [
+   "Warring States period",
+   "other"
+  ],
+  [
+   "Three Kingdoms",
+   "other"
+  ],
+  [
+   "Sengoku period",
+   "other"
+  ],
+  [
+   "Sinking of the Titanic",
+   "disaster"
+  ],
+  [
+   "Bantu expansion",
+   "other"
+  ],
+  [
+   "Polynesian navigation",
+   "other"
+  ],
+  [
+   "Indian independence movement",
+   "revolt"
+  ],
+  [
+   "Salt March",
+   "revolt"
+  ],
+  [
+   "Long March",
+   "other"
+  ],
+  [
+   "Iron Curtain",
+   "politics"
+  ],
+  [
+   "Marshall Plan",
+   "economy"
+  ],
+  [
+   "New Deal",
+   "politics"
+  ],
+  [
+   "Manhattan Project",
+   "discovery"
+  ],
+  [
+   "Moon landing",
+   "discovery"
+  ],
+  [
+   "Human Genome Project",
+   "discovery"
+  ],
+  [
+   "World Wide Web",
+   "discovery"
+  ],
+  [
+   "Emancipation Proclamation",
+   "politics"
+  ],
+  [
+   "United States Declaration of Independence",
+   "state"
+  ],
+  [
+   "Constitution of the United States",
+   "politics"
+  ],
+  [
+   "Declaration of the Rights of Man and of the Citizen",
+   "politics"
+  ],
+  [
+   "Universal Declaration of Human Rights",
+   "politics"
+  ],
+  [
+   "Code of Hammurabi",
+   "politics"
+  ],
+  [
+   "Edict of Milan",
+   "religion"
+  ],
+  [
+   "Edict of Nantes",
+   "politics"
+  ],
+  [
+   "Peace of Augsburg",
+   "treaty"
+  ],
+  [
+   "Golden Bull of 1356",
+   "politics"
+  ],
+  [
+   "Balfour Declaration",
+   "politics"
+  ],
+  [
+   "Sykes–Picot Agreement",
+   "treaty"
+  ],
+  [
+   "Atlantic Charter",
+   "politics"
+  ],
+  [
+   "Monroe Doctrine",
+   "politics"
+  ],
+  [
+   "Truman Doctrine",
+   "politics"
+  ],
+  [
+   "Nuremberg trials",
+   "politics"
+  ],
+  [
+   "Dreyfus affair",
+   "politics"
+  ],
+  [
+   "Watergate scandal",
+   "politics"
+  ],
+  [
+   "Suez Canal",
+   "founding"
+  ],
+  [
+   "Panama Canal",
+   "founding"
+  ],
+  [
+   "Berlin Wall",
+   "founding"
+  ],
+  [
+   "Great Wall of China",
+   "founding"
+  ],
+  [
+   "Transcontinental railroad",
+   "founding"
+  ],
+  [
+   "Trans-Siberian Railway",
+   "founding"
+  ],
+  [
+   "Khmer Rouge",
+   "politics"
+  ],
+  [
+   "Lei Áurea",
+   "politics"
+  ],
+  [
+   "Black War",
+   "war"
+  ],
+  [
+   "Great Famine (Ireland)",
+   "disaster"
+  ]
+ ]
+}

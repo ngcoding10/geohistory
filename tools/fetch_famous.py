@@ -42,7 +42,6 @@ KEEP = [
     ('Q820655', 'politics', '{}', 40),           # legislative act
     ('Q1464916', 'state', '{}', 40),             # declaration of independence
     ('Q3150005', 'politics', '{}', 40),          # legal instrument
-    ('Q49848', 'politics', '{}', 40),            # document
     ('Q727002', 'politics', '{}', 40),           # charter
     ('Q189867', 'religion', '{}', 40),           # papal bull
     ('Q46337', 'politics', '{}', 40),            # manifesto
@@ -70,6 +69,8 @@ KEEP = [
     ('Q17737', 'discovery', '{} proposed', 60),  # theory
 ]
 # never: people, places that already have founding events, creative works, sport, taxa, chemistry, astronomy
+# checked in a second pass (kept separate so the first pass's cached queries stay valid)
+DROP2 = ['Q618779', 'Q4504495', 'Q2485448', 'Q11422536', 'Q14296', 'Q1445650', 'Q2558684', 'Q15275719']
 DROP = ['Q5', 'Q486972', 'Q56061', 'Q6256', 'Q3024240', 'Q7725634', 'Q11424', 'Q482994', 'Q7889', 'Q5398426',
         'Q16521', 'Q11344', 'Q79529', 'Q6999', 'Q18340514', 'Q27020041', 'Q2188189', 'Q7366', 'Q3305213',
         'Q838948', 'Q215380', 'Q476028', 'Q12973014', 'Q13406463', 'Q4167836', 'Q34770', 'Q9143', 'Q35127',
@@ -86,17 +87,18 @@ RULER_ROOTS = ['Q116', 'Q48352', 'Q2285706', 'Q19546', 'Q65997', 'Q39018', 'Q120
 RULER_NAME = re.compile(
     r'^(king|queen regnant|queen|emperor|empress regnant|empress|tsar|tsarina|sultan|caliph|khan|khagan|great khan|shogun|'
     r'pharaoh|shah|shahanshah|emir|amir|grand prince|grand duke|doge|pope|negus|mansa|sapa inca|huey tlatoani|tlatoani|'
-    r'first consul|lord protector|dictator|roman dictator|roman emperor|'
+    r'president of|prime minister of|chancellor of|first consul|lord protector|dictator|roman dictator|roman emperor|'
     r'byzantine emperor|holy roman emperor|general secretary of the (central committee of the )?[a-z ]*communist party|'
     r'first secretary of the (central committee of the )?[a-z ]*communist party|chairman of the chinese communist party|'
     r'paramount leader|supreme leader|f[uü]hrer|duce|head of state|head of government|maharaja|peshwa|mughal emperor|'
     r'ottoman sultan|sultan of the ottoman empire|basileus|archon|stadtholder|taoiseach|kaiser|imam|bey|dey|khedive|'
     r'chairman of the council of (ministers|people.s commissars))( |$)', re.I)
-NOT_RULER = re.compile(r'(vice[- ]|deputy|candidate|elect\b|consort|member of|minister of|ministers? for|secretary of state|'
+NOT_RULER = re.compile(r'(vice[- ]|deputy|candidate|elect\b|consort|member of|(?<!prime )(?<!first )minister of|ministers? for|^mayor|^governor(?!.general)|lord lieutenant|lieutenant governor|secretary of state|'
                        r'pretender|titular|leader of the opposition|leader of the house|president of the (senate|chamber|'
                        r'assembly|parliament|council of the|court|board|university|royal|european|general assembly|bundes|'
                        r'national (assembly|council)|supreme court|regional|generalitat|province|government of [a-z]+ia$)|'
-                       r'club|company|society|association|federation|committee|party of|academy)', re.I)
+                       r'club|company|society|association|federation|committee|academy)', re.I)
+PARTY_LEADER = re.compile(r'^(general|first) secretary of the (central committee of the )?[a-z ]*communist party|^chairman of the chinese communist party', re.I)
 
 
 def by_prop(prop, a, b):
@@ -162,8 +164,9 @@ def famous_items(have):
                 if prop not in c['props']:
                     c['props'].append(prop)
         log(f'{prop}: {len(cands)} candidates so far')
-    roots = [k for k, *_ in KEEP] + DROP
+    roots = [k for k, *_ in KEEP] + ['Q49848'] + DROP
     anc = ancestors({c for v in cands.values() for c in v['cls']}, roots)
+    anc2 = ancestors({c for v in cands.values() for c in v['cls']}, DROP2)
     out = {}
     for k, v in cands.items():
         if k in have:
@@ -172,6 +175,8 @@ def famous_items(have):
         for c in v['cls']:
             rs |= anc.get(c, set()) | {c}
         if rs & set(DROP):
+            continue
+        if any(anc2.get(c) for c in v['cls']) or set(v['cls']) & set(DROP2):
             continue
         for root, typ, pat, thr in KEEP:
             if root in rs and v['sl'] >= thr:
@@ -236,20 +241,36 @@ def famous_rulers(people):
     anc = ancestors(positions, RULER_ROOTS)
     labels = {}
     need = sorted(set(positions) | {r['p'] for r in rows})
-    for i in range(0, len(need), 300):
-        v = ' '.join('wd:' + x for x in need[i:i + 300])
+    def lab_run(batch):
+        v = ' '.join('wd:' + x for x in batch)
         try:
-            for r in sparql(f'''SELECT ?x ?l ?w ?j WHERE {{ VALUES ?x {{ {v} }} ?x rdfs:label ?l FILTER(LANG(?l) = "en")
+            # Wikidata now stores many names once, as a language-neutral "mul" label, with no English label
+            for r in sparql(f'''SELECT ?x ?l ?m ?w ?j WHERE {{ VALUES ?x {{ {v} }}
+  OPTIONAL {{ ?x rdfs:label ?l FILTER(LANG(?l) = "en") }} OPTIONAL {{ ?x rdfs:label ?m FILTER(LANG(?m) = "mul") }}
   OPTIONAL {{ ?a schema:about ?x; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?w }} OPTIONAL {{ ?x wdt:P1001 ?j }} }}'''):
-                labels.setdefault(qid(r['x']), [r['l'], r.get('w'), qid(r.get('j'))])
+                name = r.get('l') or r.get('m') or r.get('w')
+                if name:
+                    labels.setdefault(qid(r['x']), [name, r.get('w'), qid(r.get('j'))])
         except Exception as ex:
-            log(f'  labels batch {i} failed: {ex}')
+            if len(batch) <= 20:
+                log(f'  labels batch failed: {ex}')
+                return
+            lab_run(batch[:len(batch) // 2])
+            lab_run(batch[len(batch) // 2:])
+    for i in range(0, len(need), 300):
+        lab_run(need[i:i + 300])
+    missing = [x for x in need if x not in labels]
+    for i in range(0, len(missing), 100):   # a batch that failed silently the first time
+        lab_run(missing[i:i + 100])
     keep = []
     for r in rows:
         lab = labels.get(r['pos'])
         if not lab:
             continue
         name = lab[0]
+        if PARTY_LEADER.match(name):
+            keep.append(r)
+            continue
         if NOT_RULER.search(name):
             continue
         if anc.get(r['pos']) or RULER_NAME.match(name):
@@ -278,12 +299,28 @@ def main():
     items = famous_items(have)
     for k, v in dropped_periods(have | set(items)).items():
         items[k] = v
+    # well-known items the class filters miss, named in tools/curated/famous_include.json
+    inc = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'curated', 'famous_include.json')))['items']
+    titles = [t for t, _ in inc]
+    typ = dict(inc)
+    n_inc = 0
+    for i in range(0, len(titles), 60):
+        vals = ' '.join('"%s"@en' % t.replace('\\', '\\\\').replace('"', '\\"') for t in titles[i:i + 60])
+        for r in sparql(f'''SELECT ?t ?item ?sl WHERE {{ VALUES ?t {{ {vals} }}
+  ?a schema:about ?item; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?t . ?item wikibase:sitelinks ?sl . }}'''):
+            k = qid(r['item'])
+            if k not in have and k not in items:
+                items[k] = {'type': typ[r['t']], 'pat': '{}', 'sl': int(r['sl']), 'props': ['include']}
+                n_inc += 1
+    log(f'include list: {n_inc} of {len(titles)} titles added (the rest are already in, or have no item)')
     people = {x['p'] for x in extra['people']}
     terms, labels = famous_rulers(people)
     have_det = set(raw['details']) | set(extra['details'])
     det = details(set(items) - have_det)
     dates = extra_dates(set(items), DATE_PROPS + ['P576', 'P582', 'P730'])
-    well_known = [k for k, v in list(raw['kept'].items()) + list(extra['deep'].items()) + list(items.items()) if v['sl'] >= 15]
+    reg_path = os.path.join(CACHE, 'regions_raw.json')
+    reg_kept = json.load(open(reg_path))['kept'] if os.path.exists(reg_path) else {}
+    well_known = [k for k, v in list(raw['kept'].items()) + list(extra['deep'].items()) + list(items.items()) + list(reg_kept.items()) if v['sl'] >= 15]
     al = aliases(set(well_known))
     with open(os.path.join(CACHE, 'famous_raw.json'), 'w') as f:
         json.dump({'items': items, 'details': det, 'dates': dates, 'terms': terms, 'labels': labels, 'aliases': al}, f)

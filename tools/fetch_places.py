@@ -11,13 +11,14 @@ build_events.py adds a last fallback itself: the placement of the parent event (
 """
 import json
 import os
+import re
 
 from common import sparql, qid, log, CACHE
 
 
 def entity_points(ids):
     out = {}
-    ids = sorted(ids, key=lambda q: int(q[1:]))
+    ids = sorted((q for q in ids if q and re.match(r'^Q\d+$', q)), key=lambda q: int(q[1:]))
     for i in range(0, len(ids), 200):
         v = ' '.join('wd:' + x for x in ids[i:i + 200])
         try:
@@ -41,7 +42,7 @@ def entity_points(ids):
 
 def event_locations(ids):
     out = {}
-    ids = sorted(ids, key=lambda q: int(q[1:]))
+    ids = sorted((q for q in ids if q and re.match(r'^Q\d+$', q)), key=lambda q: int(q[1:]))
     for i in range(0, len(ids), 200):
         v = ' '.join('wd:' + x for x in ids[i:i + 200])
         try:

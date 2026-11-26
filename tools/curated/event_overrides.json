@@ -3,16 +3,32 @@
  "overrides": [
   {
    "q": "Q771451",
-   "set": {"y": 1854, "m": 3, "dd": 31},
+   "set": {
+    "y": 1854,
+    "m": 3,
+    "dd": 31
+   },
    "note": "Wikidata dates this 31 March 1864; the convention was signed on 31 March 1854.",
    "source": "https://en.wikipedia.org/wiki/Convention_of_Kanagawa",
    "verified": false
   },
   {
    "q": "Q391358",
-   "set": {"y2": 1863},
+   "set": {
+    "y2": 1863
+   },
    "note": "Issued in preliminary form on 22 September 1862 (the Wikidata date); the final proclamation took effect on 1 January 1863.",
    "source": "https://en.wikipedia.org/wiki/Emancipation_Proclamation",
+   "verified": false
+  },
+  {
+   "q": "Q4438492",
+   "set": {
+    "y": 1916,
+    "y2": 1917
+   },
+   "note": "Wikidata gives only February 1917, when the revolt was finally suppressed; it began in July 1916.",
+   "source": "https://en.wikipedia.org/wiki/Central_Asian_revolt_of_1916",
    "verified": false
   }
  ]

@@ -53,9 +53,13 @@ def main():
     labels = {}
     for i in range(0, len(need), 400):
         v = ' '.join('wd:' + x for x in need[i:i + 400])
-        for r in sparql(f'''SELECT ?x ?l ?w WHERE {{ VALUES ?x {{ {v} }} ?x rdfs:label ?l FILTER(LANG(?l) = "en")
+        # Wikidata now stores many names once, as a language-neutral "mul" label, with no English label
+        for r in sparql(f'''SELECT ?x ?l ?m ?w WHERE {{ VALUES ?x {{ {v} }}
+  OPTIONAL {{ ?x rdfs:label ?l FILTER(LANG(?l) = "en") }} OPTIONAL {{ ?x rdfs:label ?m FILTER(LANG(?m) = "mul") }}
   OPTIONAL {{ ?a schema:about ?x; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?w }} }}'''):
-            labels[qid(r['x'])] = [r['l'], r.get('w')]
+            name = r.get('l') or r.get('m') or r.get('w')
+            if name:
+                labels.setdefault(qid(r['x']), [name, r.get('w')])
     with open(os.path.join(CACHE, 'rulers_raw.json'), 'w') as f:
         json.dump({'terms': terms, 'pos_j': pos_j, 'labels': labels}, f)
     log(f'wrote rulers_raw.json: {len(terms)} terms, {len(labels)} labels')

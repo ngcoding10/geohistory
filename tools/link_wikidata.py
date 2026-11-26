@@ -45,8 +45,8 @@ def fix_early(out, names):
     2. the item is one of today's countries and Wikidata's inception is its independence or current
        constitution (Madagascar 1960): the name on older maps is the land or an earlier realm, so the date is
        kept as "mod" (shown as a note) instead of "from";
-    3. the item is something else that starts later (Oldenburg the 1933 district, Tibet 1912-1951) and most
-       of the maps are earlier: the link was wrong, drop it;
+    3. the item is a modern unit that starts after 1700 (Oldenburg the 1933 district, Tibet 1912-1951, a US
+       state) and most of the maps are earlier: the link was wrong, drop it;
     4. anything else stays linked and flagged (the audit counts it).
     """
     early = {}
@@ -62,13 +62,22 @@ def fix_early(out, names):
         vals = ' '.join('wd:' + q for q in qs[i:i + 200])
         for r in sparql(f'SELECT ?x WHERE {{ VALUES ?x {{ {vals} }} ?x wdt:P297 [] . }}'):
             iso.add(qid(r['x']))
-    # predecessors, up to five steps back
+    # Predecessors, up to six steps back. "Replaces" on Wikidata fans out quickly (France <- ... <- Ancient
+    # Rome), so a predecessor only counts, and is only followed further, when its name carries the map name
+    # ("Kingdom of France", "Ethiopian Empire", "Roman Egypt").
+    def stem(n):
+        n = re.sub(r'[^a-z ]', '', n.lower())
+        w = max(n.split(), key=len) if n.split() else n
+        return w[:max(4, len(w) - 2)]
+    stems = {}
+    for name in early:
+        stems.setdefault(out[name]['q'], set()).add(stem(name))
     pred = {}
     info = {}
-    frontier = set(qs)
+    frontier = {q: set(st) for q, st in stems.items()}
     seen = set(qs)
-    for depth in range(5):
-        nxt = set()
+    for depth in range(6):
+        nxt = {}
         fl = sorted(frontier)
         for i in range(0, len(fl), 150):
             vals = ' '.join('wd:' + q for q in fl[i:i + 150])
@@ -83,8 +92,12 @@ def fix_early(out, names):
                 log(f'  predecessor batch failed: {ex}')
                 continue
             for r in rows:
-                p = qid(r['p'])
-                pred.setdefault(qid(r['x']), set()).add(p)
+                x, p = qid(r['x']), qid(r['p'])
+                want = frontier.get(x, set())
+                lab = re.sub(r'[^a-z ]', '', r['l'].lower())
+                if not any(st in lab for st in want):
+                    continue
+                pred.setdefault(x, set()).add(p)
                 e = info.setdefault(p, {'q': p, 'n': r['l']})
                 a, b = year_of(r.get('start')), year_of(r.get('end'))
                 if a is not None:
@@ -97,7 +110,7 @@ def fix_early(out, names):
                     e['w'] = r['w']
                 if p not in seen:
                     seen.add(p)
-                    nxt.add(p)
+                    nxt.setdefault(p, set()).update(want)
         frontier = nxt
         if not frontier:
             break
@@ -118,16 +131,23 @@ def fix_early(out, names):
             e['eras'] = sorted(chain, key=lambda c: c['from'])[:8]
             e['mod'] = e['from']
             e['from'] = min(c['from'] for c in chain)
-            if any(y < e['from'] - 50 for y in ys):
-                stats['flagged'] += 1
-            else:
+            if not any(y < e['from'] - 50 for y in ys):
                 stats['eras'] += 1
+            elif e['q'] in iso:
+                del e['from']   # the earlier states do not reach back far enough: the name is the land
+                stats['modern'] += 1
+            else:
+                stats['flagged'] += 1
         elif e['q'] in iso:
             e['mod'] = e.pop('from')
+            if chain:
+                e['eras'] = sorted(chain, key=lambda c: c['from'])[:8]
             stats['modern'] += 1
         else:
             fit = [y for y in names.get(name, []) if y >= e['from'] - 50 and (e.get('to') is None or y <= e['to'] + 50)]
-            if len(ys) > len(fit):
+            # a modern unit (a US state, a 20th-century province) on mostly older maps is the wrong item;
+            # an old state drawn too early is the map's anachronism and stays linked and flagged
+            if len(ys) > len(fit) and e['from'] >= 1700:
                 del out[name]
                 stats['dropped'] += 1
             else:

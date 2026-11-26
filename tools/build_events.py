@@ -76,6 +76,8 @@ def to_date(v, prec, cal):
         return hy, 0, 0, 0
     if prec in (7, 8) and hy < 500:
         return hy, 0, 0, 1
+    if prec == 8:
+        return hy, 0, 0, 1   # known to the decade ("1820s"): shown as "c. 1820"
     return None
 
 
@@ -129,6 +131,9 @@ def pick_main(dates):
 
 JUNK = re.compile(r'^(January|February|March|April|May|June|July|August|September|October|November|December) \d{4}$'
                   r'|Wiki Loves|Wikimedia|Wikipedia|^\d{4}s? in |^Timeline of ', re.I)
+# year-article links that are sport, show business or by-elections rather than history
+YP_SKIP = re.compile(r'UEFA|FIFA|Eurovision|Miss (World|Universe|America)|Championships?\b|Grand Prix|Super Bowl|\bCup\b|\bseason\b|'
+                     r'\bAwards?\b|by-election|\bOpen\b|Tour de France|World Series|Stanley|Wimbledon|\bLeague\b|Idol\b|\(film\)|\(album\)|\(song\)|\(novel\)|\(TV', re.I)
 # kinds of event that happen inside the state they are filed under (so a former state's capital places them)
 DOMESTIC = {'politics', 'revolt', 'state', 'ruler', 'economy', 'religion', 'epidemic', 'disaster', 'violence', 'other', 'founding'}
 
@@ -387,6 +392,14 @@ def main():
         kept.setdefault(k, {'type': {'famine': 'disaster'}.get(v['t'], v['t']), 'sl': v['sl'], 'deep': 1})
     det.update(fam['details'])
     det.update(regs['details'])
+    # Wikidata now stores many names once, as a language-neutral "mul" label, and the detail queries asked
+    # for English: fall back to the English Wikipedia title (minus any bracketed qualifier)
+    n_mul = 0
+    for r in det.values():
+        if not r.get('label') and r.get('enwiki'):
+            r['label'] = re.sub(r'\s*\([^)]*\)$', '', r['enwiki'])
+            n_mul += 1
+    log(f'{n_mul} items named from their Wikipedia title (no English label on Wikidata)')
     for k, v in regs['kept'].items():
         kept.setdefault(k, v)
     parent_q = {}
@@ -454,11 +467,12 @@ def main():
 
     # ---------- famous items dated by inception, publication, launch... (fetch_famous.py) ----------
     ORDER = ['P585', 'P580', 'P619', 'P571', 'P577', 'P575', 'P606', 'P1619', 'P1191', 'P620']
+    today = datetime.date.today()
     n_fam = 0
     for k, v in fam['items'].items():
         r = det.get(k)
-        if k in events or not r or not good_label(r.get('label')) or JUNK.search(r['label']):
-            continue
+        if k in events or k in regs['cultures'] or not r or not good_label(r.get('label')) or JUNK.search(r['label']):
+            continue   # cultures are handled below, where century-precision dates are kept
         dates = defaultdict(list)
         for prop, val, prec, cal in split_pairs(r.get('dates'), 4) + [d4 for d4 in fam['dates'].get(k, [])]:
             dt = to_date(val, prec, cal)
@@ -472,6 +486,8 @@ def main():
         else:
             main, more_ends = sorted(dates[prop], key=lambda x: (x[1][0], -x[0]))[0][1], []
         y, m, d, approx = main
+        if (y, m, d) > (today.year, today.month, today.day):
+            continue   # planned launches and openings are not history yet
         pat = v['pat']
         if prop in ('P585', 'P580', 'P577') and pat.endswith((' founded', ' built', ' launched', ' invented', ' proposed')):
             pat = '{}'
@@ -804,7 +820,14 @@ def main():
         if not ds:
             continue
         y, m, d, approx, note = min(ds)
-        ev = {'i': f'n{q}', 'l': f'{r["label"]} founded' if v['kind'] == 'city' else f'{r["label"]} (archaeological site) first occupied',
+        # the regional pass is for the thin early cells: after 1600 only better-known towns are kept
+        # (Central Asia is thin in every era and keeps them all)
+        # (towns on 25+ editions are in the global foundings pass anyway)
+        if v['kind'] == 'city' and y >= 1600 and not (48 < (parse_point(r.get('coord')) or (0, 0))[0] < 88
+                                                      and 35 < (parse_point(r.get('coord')) or (0, 0))[1] < 56):
+            continue
+        ev = {'i': f'n{q}', 'l': f'{r["label"]} founded' if v['kind'] == 'city' else f'{r["label"]} built' if v['kind'] == 'built'
+              else f'{r["label"]} (archaeological site) first occupied',
               'y': y, 't': 'founding', 's': max(1, int(v['sl'] * 0.4))}
         if m:
             ev['m'] = m
@@ -837,7 +860,7 @@ def main():
         for i, f in enumerate(yp['events']):
             q = f.get('q')
             if not f.get('verified') or q in events or f'f{q}' in events or f'x{q}' in events or f'n{q}' in events \
-                    or f['link'] in have_w or JUNK.search(f['link']):
+                    or f['link'] in have_w or JUNK.search(f['link']) or YP_SKIP.search(f['link']):
                 continue
             ev = {'i': q or f"wp{f['y']}-{i}", 'l': re.sub(r'\s*\([^)]*\)$', '', f['link']), 'y': f['y'], 't': 'other', 's': 3,
                   'w': f['link'], 'src': f['source']}
@@ -897,6 +920,8 @@ def main():
             # the event is already there under its Wikidata item: only lift its rank and fill gaps
             e = match[0]
             n_merged += 1
+            if s['label'].lower() != e['l'].lower() and len(s['label']) <= 60 and s['label'] == s['wiki']:
+                e['al'] = sorted(set(e.get('al', [])) | {s['label']})
             e['s'] = max(e['s'], 25)
             if s.get('m') and not e.get('m'):
                 e['m'] = s['m']
@@ -916,6 +941,10 @@ def main():
             ev['lo'], ev['la'] = s['lon'], s['lat']
         if s.get('_rev') is None and not s.get('verified'):
             ev['uv'] = 1
+        if s.get('y2') and s['y2'] > s['y']:
+            ev['y2'] = s['y2']
+        if s.get('approx'):
+            ev['ya'] = 1
         if s.get('colony'):
             ev['c'] = s['colony']
             ev['ci'] = us_by_name.get(s['colony'])
@@ -941,6 +970,13 @@ def main():
     n_dup = len(events) - len(best)
     events = {e['i']: e for e in best.values()}
     log(f'{n_dup} duplicate events merged')
+
+    # ---------- extra names (tools/curated/aliases.json) ----------
+    extra_names = read_json(os.path.join(TOOLS, 'curated', 'aliases.json'))['aliases']
+    for e in events.values():
+        if e['l'] in extra_names and e['t'] not in ('ruler', 'birth', 'death'):
+            e['al'] = sorted(set(e.get('al', [])) | set(extra_names[e['l']]))
+            stats['curatedAliases'] += 1
 
     # ---------- hand corrections (tools/curated/event_overrides.json) ----------
     for o in read_json(os.path.join(TOOLS, 'curated', 'event_overrides.json'))['overrides']:

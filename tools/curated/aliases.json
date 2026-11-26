@@ -1,0 +1,40 @@
+{
+ "_about": "Extra names for events already in the data, keyed by the event's label, so that a search for a common name finds them (the audit matches on them too). Only names that plainly mean the same event.",
+ "aliases": {
+  "First Opium War": [
+   "Opium War"
+  ],
+  "Nigerian Civil War": [
+   "Biafran War"
+  ],
+  "Russian annexation of Crimea": [
+   "Annexation of Crimea by the Russian Federation"
+  ],
+  "Fukushima Daiichi nuclear disaster": [
+   "Fukushima nuclear disaster"
+  ],
+  "Persian Constitutional Revolution": [
+   "Iranian Constitutional Revolution"
+  ],
+  "Capture of Malacca": [
+   "Siege of Malacca (1511)",
+   "Portuguese conquest of Malacca"
+  ],
+  "Second Battle of El Alamein": [
+   "Battle of El Alamein"
+  ],
+  "Battle of Gate Pa": [
+   "Battle of Gate Pā"
+  ],
+  "First Council of Nicaea": [
+   "Council of Nicaea"
+  ],
+  "Grito de Dolores": [
+   "Cry of Dolores"
+  ],
+  "Great Irish Famine": [
+   "Irish Potato Famine",
+   "Irish Famine (1845–1852)"
+  ]
+ }
+}

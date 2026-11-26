@@ -4019,6 +4019,1776 @@
      1882
     ]
    ]
+  },
+  {
+   "id": "pol-latin-empire",
+   "names": [
+    "Latin Empire",
+    "Latin Empire of Constantinople"
+   ],
+   "from": 1204,
+   "to": 1261,
+   "wiki": "Latin Empire",
+   "text": "The crusader state set up at Constantinople after the Fourth Crusade sacked the city in 1204. The Byzantines of Nicaea retook the city in 1261.",
+   "source": "https://en.wikipedia.org/wiki/Latin_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Latin Empire",
+     1204
+    ],
+    [
+     "Latin Empire",
+     1261
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-empire-of-nicaea",
+   "names": [
+    "Empire of Nicaea",
+    "Nicaea"
+   ],
+   "from": 1204,
+   "to": 1261,
+   "wiki": "Empire of Nicaea",
+   "text": "The largest of the Greek states formed after the fall of Constantinople in 1204. Its rulers recovered the city in 1261 and restored the Byzantine Empire.",
+   "source": "https://en.wikipedia.org/wiki/Empire_of_Nicaea",
+   "verified": true,
+   "claims": [
+    [
+     "Empire of Nicaea",
+     1204
+    ],
+    [
+     "Empire of Nicaea",
+     1261
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-empire-of-trebizond",
+   "names": [
+    "Empire of Trebizond",
+    "Trebizond"
+   ],
+   "from": 1204,
+   "to": 1461,
+   "wiki": "Empire of Trebizond",
+   "text": "A Greek state on the south-eastern coast of the Black Sea, founded in 1204 and ruled by the Komnenos family. The Ottomans took it in 1461.",
+   "source": "https://en.wikipedia.org/wiki/Empire_of_Trebizond",
+   "verified": true,
+   "claims": [
+    [
+     "Empire of Trebizond",
+     1204
+    ],
+    [
+     "Empire of Trebizond",
+     1461
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-jerusalem",
+   "names": [
+    "Kingdom of Jerusalem",
+    "Jerusalem"
+   ],
+   "from": 1099,
+   "to": 1291,
+   "wiki": "Kingdom of Jerusalem",
+   "text": "The largest of the crusader states, founded after the First Crusade took Jerusalem in 1099. Saladin captured the city in 1187; the kingdom's last stronghold, Acre, fell in 1291.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Jerusalem",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Jerusalem",
+     1099
+    ],
+    [
+     "Kingdom of Jerusalem",
+     1187
+    ],
+    [
+     "Kingdom of Jerusalem",
+     1291
+    ],
+    [
+     "Siege of Jerusalem (1187)",
+     1187
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Siege of Jerusalem (1187)",
+     1187
+    ]
+   ]
+  },
+  {
+   "id": "pol-first-bulgarian-empire",
+   "names": [
+    "First Bulgarian Empire",
+    "Bulgaria",
+    "Bulgarian Empire",
+    "Bulgar Khanate"
+   ],
+   "from": 681,
+   "to": 1018,
+   "wiki": "First Bulgarian Empire",
+   "text": "A state founded by Bulgars and Slavs south of the Danube, recognised by Byzantium in 681. It adopted Christianity and the Cyrillic script, and was conquered by Basil II in 1018.",
+   "source": "https://en.wikipedia.org/wiki/First_Bulgarian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "First Bulgarian Empire",
+     681
+    ],
+    [
+     "First Bulgarian Empire",
+     1018
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-second-bulgarian-empire",
+   "names": [
+    "Second Bulgarian Empire",
+    "Bulgaria",
+    "Bulgarian Empire"
+   ],
+   "from": 1185,
+   "to": 1396,
+   "wiki": "Second Bulgarian Empire",
+   "text": "The Bulgarian state restored by the revolt of the brothers Asen and Peter in 1185. The Ottomans conquered it at the end of the 14th century.",
+   "source": "https://en.wikipedia.org/wiki/Second_Bulgarian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Second Bulgarian Empire",
+     1185
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-serbian-empire",
+   "names": [
+    "Serbian Empire",
+    "Serbia"
+   ],
+   "from": 1346,
+   "to": 1371,
+   "wiki": "Serbian Empire",
+   "text": "The empire proclaimed by Stefan Dušan in 1346, which for a time ruled much of the Balkans. It broke up after 1371.",
+   "source": "https://en.wikipedia.org/wiki/Serbian_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "Serbian Empire",
+     1346
+    ],
+    [
+     "Serbian Empire",
+     1371
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-bohemia",
+   "names": [
+    "Kingdom of Bohemia",
+    "Bohemia"
+   ],
+   "from": 1198,
+   "to": 1918,
+   "wiki": "Kingdom of Bohemia",
+   "text": "The kingdom of the Czech lands within the Holy Roman Empire, hereditary from 1198. The Habsburgs ruled it from 1526 until 1918.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Bohemia",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Bohemia",
+     1198
+    ],
+    [
+     "Kingdom of Bohemia",
+     1526
+    ],
+    [
+     "Kingdom of Bohemia",
+     1918
+    ],
+    [
+     "Battle of Mohács",
+     1526
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Battle of Mohács",
+     1526
+    ]
+   ]
+  },
+  {
+   "id": "pol-wallachia",
+   "names": [
+    "Wallachia",
+    "Principality of Wallachia"
+   ],
+   "from": 1330,
+   "to": 1859,
+   "wiki": "Wallachia",
+   "text": "A Romanian principality north of the lower Danube, tributary to the Ottomans from the 15th century. It united with Moldavia in 1859 to form Romania.",
+   "source": "https://en.wikipedia.org/wiki/Wallachia",
+   "verified": true,
+   "claims": [
+    [
+     "Wallachia",
+     1859
+    ],
+    [
+     "United Principalities of Moldavia and Wallachia",
+     1859
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "United Principalities of Moldavia and Wallachia",
+     1859
+    ]
+   ]
+  },
+  {
+   "id": "pol-moldavia",
+   "names": [
+    "Moldavia",
+    "Principality of Moldavia"
+   ],
+   "from": 1346,
+   "to": 1859,
+   "wiki": "Moldavia",
+   "text": "A Romanian principality east of the Carpathians, at its height under Stephen the Great. It united with Wallachia in 1859.",
+   "source": "https://en.wikipedia.org/wiki/Moldavia",
+   "verified": true,
+   "claims": [
+    [
+     "Moldavia",
+     1859
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-principality-of-transylvania-1570-1711",
+   "names": [
+    "Principality of Transylvania",
+    "Transylvania"
+   ],
+   "from": 1570,
+   "to": 1711,
+   "wiki": "Principality of Transylvania (1570–1711)",
+   "text": "A largely self-governing principality under Ottoman overlordship, formed from the eastern part of the old Kingdom of Hungary. It passed to the Habsburgs.",
+   "source": "https://en.wikipedia.org/wiki/Principality_of_Transylvania_(1570–1711)",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-georgia",
+   "names": [
+    "Kingdom of Georgia",
+    "Georgia"
+   ],
+   "from": 1008,
+   "to": 1490,
+   "wiki": "Kingdom of Georgia",
+   "text": "The united Georgian monarchy, formed in 1008, which reached its height under David the Builder and Queen Tamar. Mongol and Timurid invasions broke it, and it split into three kingdoms.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Georgia",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Georgia",
+     1008
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-armenian-kingdom-of-cilicia",
+   "names": [
+    "Armenian Kingdom of Cilicia",
+    "Cilician Armenia",
+    "Lesser Armenia",
+    "Cilicia"
+   ],
+   "from": 1198,
+   "to": 1375,
+   "wiki": "Armenian Kingdom of Cilicia",
+   "text": "An Armenian state on the Mediterranean coast of Anatolia, allied with the crusaders, a kingdom from the end of the 12th century. The Mamluks conquered it in 1375.",
+   "source": "https://en.wikipedia.org/wiki/Armenian_Kingdom_of_Cilicia",
+   "verified": true,
+   "claims": [
+    [
+     "Armenian Kingdom of Cilicia",
+     1375
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-khanate-of-kazan",
+   "names": [
+    "Khanate of Kazan",
+    "Kazan Khanate",
+    "Kazan"
+   ],
+   "from": 1438,
+   "to": 1552,
+   "wiki": "Khanate of Kazan",
+   "text": "A Tatar state on the middle Volga, a successor of the Golden Horde, founded in 1438. Ivan the Terrible conquered it in 1552.",
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Kazan",
+   "verified": true,
+   "claims": [
+    [
+     "Khanate of Kazan",
+     1438
+    ],
+    [
+     "Khanate of Kazan",
+     1552
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-khanate-of-astrakhan",
+   "names": [
+    "Astrakhan Khanate",
+    "Khanate of Astrakhan",
+    "Astrakhan"
+   ],
+   "from": 1466,
+   "to": 1556,
+   "wiki": "Khanate of Astrakhan",
+   "text": "A Tatar khanate at the mouth of the Volga. Russia conquered it in the 1550s, gaining the whole course of the river.",
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Astrakhan",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-khanate-of-sibir",
+   "names": [
+    "Khanate of Sibir",
+    "Sibir",
+    "Siberian Khanate"
+   ],
+   "from": 1468,
+   "to": 1598,
+   "wiki": "Khanate of Sibir",
+   "text": "A Tatar khanate in western Siberia. Its conquest by Cossacks under Yermak opened Siberia to Russia.",
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Sibir",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-cossack-hetmanate",
+   "names": [
+    "Cossack Hetmanate",
+    "Hetmanate",
+    "Zaporozhian Host"
+   ],
+   "from": 1649,
+   "to": 1764,
+   "wiki": "Cossack Hetmanate",
+   "text": "The Ukrainian Cossack state created by Bohdan Khmelnytsky's rising against Poland, formed in the mid-17th century. It came under Russian protection and was abolished in 1764.",
+   "source": "https://en.wikipedia.org/wiki/Cossack_Hetmanate",
+   "verified": true,
+   "claims": [
+    [
+     "Cossack Hetmanate",
+     1764
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-volga-bulgaria",
+   "names": [
+    "Volga Bulgaria",
+    "Volga Bulgars"
+   ],
+   "from": 700,
+   "to": 1240,
+   "wiki": "Volga Bulgaria",
+   "text": "A state of the Bulgars at the meeting of the Volga and Kama rivers, Muslim from the 10th century, living by the fur trade. The Mongols destroyed it.",
+   "source": "https://en.wikipedia.org/wiki/Volga_Bulgaria",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-asturias",
+   "names": [
+    "Kingdom of Asturias",
+    "Asturias"
+   ],
+   "from": 718,
+   "to": 924,
+   "wiki": "Kingdom of Asturias",
+   "text": "The Christian kingdom formed in the mountains of northern Spain after the Muslim conquest, the starting point of the Reconquista. It became the Kingdom of León.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Asturias",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-le-n",
+   "names": [
+    "Kingdom of León",
+    "Leon",
+    "León"
+   ],
+   "from": 910,
+   "to": 1230,
+   "wiki": "Kingdom of León",
+   "text": "The successor of Asturias in north-western Spain. It was united for good with Castile in the 13th century.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_León",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-navarre",
+   "names": [
+    "Kingdom of Navarre",
+    "Navarre"
+   ],
+   "from": 824,
+   "to": 1841,
+   "wiki": "Kingdom of Navarre",
+   "text": "A Basque kingdom on both sides of the western Pyrenees. Its southern part was conquered by Castile and Aragon in the early 16th century; the northern part passed to France.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Navarre",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-republic-of-florence",
+   "names": [
+    "Republic of Florence",
+    "Florence"
+   ],
+   "from": 1115,
+   "to": 1532,
+   "wiki": "Republic of Florence",
+   "text": "A city-republic in Tuscany, a centre of banking and of the Renaissance, dominated from the 15th century by the Medici family. It became a duchy in 1532.",
+   "source": "https://en.wikipedia.org/wiki/Republic_of_Florence",
+   "verified": true,
+   "claims": [
+    [
+     "Republic of Florence",
+     1532
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-duchy-of-milan",
+   "names": [
+    "Duchy of Milan",
+    "Milan"
+   ],
+   "from": 1395,
+   "to": 1796,
+   "wiki": "Duchy of Milan",
+   "text": "A state in northern Italy ruled by the Visconti and Sforza families, a duchy from 1395. It passed to Spain and then Austria.",
+   "source": "https://en.wikipedia.org/wiki/Duchy_of_Milan",
+   "verified": true,
+   "claims": [
+    [
+     "Duchy of Milan",
+     1395
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-duchy-of-burgundy",
+   "names": [
+    "Duchy of Burgundy",
+    "Burgundy",
+    "Burgundian State",
+    "Burgundian Netherlands"
+   ],
+   "from": 918,
+   "to": 1482,
+   "wiki": "Duchy of Burgundy",
+   "text": "A duchy of the French crown whose Valois dukes in the 14th and 15th centuries added Flanders and most of the Low Countries, making one of the richest states in Europe.",
+   "source": "https://en.wikipedia.org/wiki/Duchy_of_Burgundy",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-confederation-of-the-rhine",
+   "names": [
+    "Confederation of the Rhine"
+   ],
+   "from": 1806,
+   "to": 1813,
+   "wiki": "Confederation of the Rhine",
+   "text": "A league of German states under Napoleon's protection, formed in 1806 as the Holy Roman Empire ended. It collapsed after his defeat at Leipzig in 1813.",
+   "source": "https://en.wikipedia.org/wiki/Confederation_of_the_Rhine",
+   "verified": true,
+   "claims": [
+    [
+     "Confederation of the Rhine",
+     1806
+    ],
+    [
+     "Confederation of the Rhine",
+     1813
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-duchy-of-warsaw",
+   "names": [
+    "Duchy of Warsaw",
+    "Warsaw"
+   ],
+   "from": 1807,
+   "to": 1815,
+   "wiki": "Duchy of Warsaw",
+   "text": "A Polish state created by Napoleon in 1807 from lands Prussia had taken in the partitions. The Congress of Vienna divided it in 1815.",
+   "source": "https://en.wikipedia.org/wiki/Duchy_of_Warsaw",
+   "verified": true,
+   "claims": [
+    [
+     "Duchy of Warsaw",
+     1807
+    ],
+    [
+     "Duchy of Warsaw",
+     1815
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-congress-poland",
+   "names": [
+    "Congress Poland",
+    "Kingdom of Poland"
+   ],
+   "from": 1815,
+   "to": 1915,
+   "wiki": "Congress Poland",
+   "text": "The Kingdom of Poland created at the Congress of Vienna in 1815, with the Russian tsar as king. It lost its autonomy after the risings of the 19th century.",
+   "source": "https://en.wikipedia.org/wiki/Congress_Poland",
+   "verified": true,
+   "claims": [
+    [
+     "Congress Poland",
+     1815
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-bavaria",
+   "names": [
+    "Kingdom of Bavaria",
+    "Bavaria"
+   ],
+   "from": 1806,
+   "to": 1918,
+   "wiki": "Kingdom of Bavaria",
+   "text": "The largest of the south German states, a kingdom from 1806, ruled by the Wittelsbach family. It joined the German Empire in 1871 and its monarchy fell in 1918.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Bavaria",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Bavaria",
+     1806
+    ],
+    [
+     "Kingdom of Bavaria",
+     1871
+    ],
+    [
+     "Kingdom of Bavaria",
+     1918
+    ],
+    [
+     "Proclamation of the German Empire",
+     1871
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Proclamation of the German Empire",
+     1871
+    ]
+   ]
+  },
+  {
+   "id": "pol-kingdom-of-romania",
+   "names": [
+    "Kingdom of Romania",
+    "Romania"
+   ],
+   "from": 1881,
+   "to": 1947,
+   "wiki": "Kingdom of Romania",
+   "text": "Romania as a monarchy, proclaimed in 1881. It gained Transylvania and Bessarabia after the First World War; the king was forced to abdicate in 1947.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Romania",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Romania",
+     1881
+    ],
+    [
+     "Kingdom of Romania",
+     1947
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-emirate-of-sicily",
+   "names": [
+    "Emirate of Sicily",
+    "Sicily"
+   ],
+   "from": 831,
+   "to": 1091,
+   "wiki": "Emirate of Sicily",
+   "text": "Sicily under Muslim rule, with its capital at Palermo, from the 9th century. The Normans completed their conquest of the island in 1091.",
+   "source": "https://en.wikipedia.org/wiki/Emirate_of_Sicily",
+   "verified": true,
+   "claims": [
+    [
+     "Emirate of Sicily",
+     1091
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-wessex",
+   "names": [
+    "Kingdom of Wessex",
+    "Wessex"
+   ],
+   "from": 519,
+   "to": 927,
+   "wiki": "Wessex",
+   "text": "The kingdom of the West Saxons in southern England. Under Alfred the Great it resisted the Vikings, and its kings went on to unite England.",
+   "source": "https://en.wikipedia.org/wiki/Wessex",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-idrisid-dynasty",
+   "names": [
+    "Idrisid dynasty",
+    "Idrisids",
+    "Idrisid Kingdom"
+   ],
+   "from": 788,
+   "to": 974,
+   "wiki": "Idrisid dynasty",
+   "text": "The first Muslim dynasty of Morocco, founded in 788 by a descendant of the Prophet, which established the city of Fez.",
+   "source": "https://en.wikipedia.org/wiki/Idrisid_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Idrisid dynasty",
+     788
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-marinid-sultanate",
+   "names": [
+    "Marinid Sultanate",
+    "Marinids",
+    "Marinid dynasty",
+    "Merinids"
+   ],
+   "from": 1244,
+   "to": 1465,
+   "wiki": "Marinid Sultanate",
+   "text": "A Berber dynasty that replaced the Almohads in Morocco and ruled from Fez.",
+   "source": "https://en.wikipedia.org/wiki/Marinid_Sultanate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-saadi-sultanate",
+   "names": [
+    "Saadi Sultanate",
+    "Saadi dynasty",
+    "Saadians",
+    "Morocco"
+   ],
+   "from": 1510,
+   "to": 1659,
+   "wiki": "Saadi Sultanate",
+   "text": "A Moroccan dynasty that drove the Portuguese from most of the coast, defeated a Portuguese invasion at Alcácer Quibir and conquered Songhai.",
+   "source": "https://en.wikipedia.org/wiki/Saadi_Sultanate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-hafsid-dynasty",
+   "names": [
+    "Hafsid dynasty",
+    "Hafsids",
+    "Hafsid Kingdom",
+    "Hafsid Caliphate"
+   ],
+   "from": 1229,
+   "to": 1574,
+   "wiki": "Hafsid dynasty",
+   "text": "The dynasty that ruled Tunisia and eastern Algeria from Tunis after breaking with the Almohads. The Ottomans ended it in 1574.",
+   "source": "https://en.wikipedia.org/wiki/Hafsid_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Hafsid dynasty",
+     1574
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-aghlabids",
+   "names": [
+    "Aghlabids",
+    "Aghlabid Emirate",
+    "Aghlabid dynasty"
+   ],
+   "from": 800,
+   "to": 909,
+   "wiki": "Aghlabid dynasty",
+   "text": "An Arab dynasty that ruled Tunisia for the Abbasids from 800 and conquered Sicily. The Fatimids overthrew it in 909.",
+   "source": "https://en.wikipedia.org/wiki/Aghlabid_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Aghlabid dynasty",
+     800
+    ],
+    [
+     "Aghlabid dynasty",
+     909
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-regency-of-algiers",
+   "names": [
+    "Regency of Algiers",
+    "Algiers"
+   ],
+   "from": 1516,
+   "to": 1830,
+   "wiki": "Regency of Algiers",
+   "text": "An Ottoman province in North Africa that was in practice a self-governing state, known for its corsairs. France invaded it in 1830.",
+   "source": "https://en.wikipedia.org/wiki/Regency_of_Algiers",
+   "verified": true,
+   "claims": [
+    [
+     "Regency of Algiers",
+     1830
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-makuria",
+   "names": [
+    "Makuria",
+    "Kingdom of Makuria"
+   ],
+   "from": 400,
+   "to": 1518,
+   "wiki": "Makuria",
+   "text": "A Christian Nubian kingdom on the middle Nile, with its capital at Old Dongola, which held off the Arab conquest and lasted for many centuries.",
+   "source": "https://en.wikipedia.org/wiki/Makuria",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-alodia",
+   "names": [
+    "Alodia",
+    "Alwa"
+   ],
+   "from": 600,
+   "to": 1504,
+   "wiki": "Alodia",
+   "text": "The southernmost of the Christian kingdoms of medieval Nubia, around the meeting of the Blue and White Niles.",
+   "source": "https://en.wikipedia.org/wiki/Alodia",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-sultanate-of-darfur",
+   "names": [
+    "Sultanate of Darfur",
+    "Darfur"
+   ],
+   "from": 1603,
+   "to": 1916,
+   "wiki": "Sultanate of Darfur",
+   "text": "A Muslim sultanate in the west of present-day Sudan. Britain annexed it to Sudan in 1916.",
+   "source": "https://en.wikipedia.org/wiki/Sultanate_of_Darfur",
+   "verified": true,
+   "claims": [
+    [
+     "Sultanate of Darfur",
+     1916
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-adal-sultanate",
+   "names": [
+    "Adal Sultanate",
+    "Adal"
+   ],
+   "from": 1415,
+   "to": 1577,
+   "wiki": "Adal Sultanate",
+   "text": "A Muslim sultanate in the Horn of Africa whose leader Ahmad Gragn overran most of Christian Ethiopia in the 16th century.",
+   "source": "https://en.wikipedia.org/wiki/Adal_Sultanate",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-buganda",
+   "names": [
+    "Buganda",
+    "Kingdom of Buganda"
+   ],
+   "from": 1300,
+   "to": 1967,
+   "wiki": "Buganda",
+   "text": "A kingdom on the northern shore of Lake Victoria, the most powerful state of the region in the 19th century, which gave its name to Uganda.",
+   "source": "https://en.wikipedia.org/wiki/Buganda",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-luba",
+   "names": [
+    "Luba Empire",
+    "Luba",
+    "Kingdom of Luba"
+   ],
+   "from": 1585,
+   "to": 1889,
+   "wiki": "Kingdom of Luba",
+   "text": "A state in the savanna of the south-eastern Congo basin, known for its system of sacred kingship.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Luba",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-lunda-empire",
+   "names": [
+    "Lunda Empire",
+    "Lunda",
+    "Kingdom of Lunda"
+   ],
+   "from": 1665,
+   "to": 1887,
+   "wiki": "Lunda Empire",
+   "text": "A confederation of states in the southern Congo basin and neighbouring Angola and Zambia, trading in ivory, copper and slaves.",
+   "source": "https://en.wikipedia.org/wiki/Lunda_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-rozvi-empire",
+   "names": [
+    "Rozvi Empire",
+    "Rozwi",
+    "Rozvi"
+   ],
+   "from": 1660,
+   "to": 1866,
+   "wiki": "Rozvi Empire",
+   "text": "A Shona state on the Zimbabwean plateau that drove the Portuguese from the interior.",
+   "source": "https://en.wikipedia.org/wiki/Rozvi_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-orange-free-state",
+   "names": [
+    "Orange Free State"
+   ],
+   "from": 1854,
+   "to": 1902,
+   "wiki": "Orange Free State",
+   "text": "A Boer republic between the Orange and Vaal rivers, independent from 1854. Britain annexed it in the Second Boer War, which ended in 1902.",
+   "source": "https://en.wikipedia.org/wiki/Orange_Free_State",
+   "verified": true,
+   "claims": [
+    [
+     "Orange Free State",
+     1854
+    ],
+    [
+     "Orange Free State",
+     1902
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-south-african-republic",
+   "names": [
+    "South African Republic",
+    "Transvaal",
+    "Transvaal Republic"
+   ],
+   "from": 1852,
+   "to": 1902,
+   "wiki": "South African Republic",
+   "text": "The Boer republic north of the Vaal river, recognised by Britain in 1852, where gold was found on the Witwatersrand. Britain annexed it in the Second Boer War.",
+   "source": "https://en.wikipedia.org/wiki/South_African_Republic",
+   "verified": true,
+   "claims": [
+    [
+     "South African Republic",
+     1852
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-cape-colony",
+   "names": [
+    "Cape Colony",
+    "Dutch Cape Colony",
+    "British Cape Colony"
+   ],
+   "from": 1652,
+   "to": 1910,
+   "wiki": "Cape Colony",
+   "text": "The colony founded by the Dutch East India Company at the Cape of Good Hope in 1652 and taken by Britain during the Napoleonic Wars. It joined the Union of South Africa in 1910.",
+   "source": "https://en.wikipedia.org/wiki/Cape_Colony",
+   "verified": true,
+   "claims": [
+    [
+     "Cape Colony",
+     1652
+    ],
+    [
+     "Cape Colony",
+     1910
+    ],
+    [
+     "Dutch Cape Colony",
+     1652
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Dutch Cape Colony",
+     1652
+    ]
+   ]
+  },
+  {
+   "id": "pol-jolof-empire",
+   "names": [
+    "Jolof Empire",
+    "Wolof Empire",
+    "Jolof",
+    "Wolof"
+   ],
+   "from": 1350,
+   "to": 1549,
+   "wiki": "Jolof Empire",
+   "text": "A Wolof state in present-day Senegal that ruled several coastal kingdoms until they broke away.",
+   "source": "https://en.wikipedia.org/wiki/Jolof_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-toucouleur-empire",
+   "names": [
+    "Toucouleur Empire",
+    "Tukulor Empire",
+    "Tukulor"
+   ],
+   "from": 1861,
+   "to": 1890,
+   "wiki": "Toucouleur Empire",
+   "text": "An Islamic state on the upper Niger founded by the jihad of El Hadj Umar Tall. France conquered it.",
+   "source": "https://en.wikipedia.org/wiki/Toucouleur_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-wassoulou-empire",
+   "names": [
+    "Wassoulou Empire",
+    "Wassoulou",
+    "Samori"
+   ],
+   "from": 1878,
+   "to": 1898,
+   "wiki": "Wassoulou Empire",
+   "text": "The state built by Samori Ture in the highlands of Guinea, which resisted the French for many years until his capture at the end of the century.",
+   "source": "https://en.wikipedia.org/wiki/Wassoulou_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-pala-empire",
+   "names": [
+    "Pala Empire",
+    "Pala"
+   ],
+   "from": 750,
+   "to": 1161,
+   "wiki": "Pala Empire",
+   "text": "A Buddhist dynasty ruling Bengal and Bihar, patrons of the great monastic universities of Nalanda and Vikramashila.",
+   "source": "https://en.wikipedia.org/wiki/Pala_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-rashtrakuta-dynasty",
+   "names": [
+    "Rashtrakuta dynasty",
+    "Rashtrakutas",
+    "Rashtrakuta",
+    "Rashtrakuta Empire"
+   ],
+   "from": 753,
+   "to": 982,
+   "wiki": "Rashtrakuta dynasty",
+   "text": "A dynasty of the Deccan that was one of the great powers of India in the 9th century and had the Kailasa temple at Ellora cut from the rock.",
+   "source": "https://en.wikipedia.org/wiki/Rashtrakuta_dynasty",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-bahmani-sultanate",
+   "names": [
+    "Bahmani Sultanate",
+    "Bahmani Kingdom",
+    "Bahmani"
+   ],
+   "from": 1347,
+   "to": 1527,
+   "wiki": "Bahmani Kingdom",
+   "text": "The first independent Muslim kingdom of the Deccan, founded in 1347. It broke up into five sultanates.",
+   "source": "https://en.wikipedia.org/wiki/Bahmani_Kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Bahmani Kingdom",
+     1347
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-bengal-sultanate",
+   "names": [
+    "Bengal Sultanate",
+    "Sultanate of Bengal",
+    "Bengal"
+   ],
+   "from": 1352,
+   "to": 1576,
+   "wiki": "Bengal Sultanate",
+   "text": "An independent Muslim kingdom in Bengal, wealthy from textiles and trade. The Mughals conquered it in 1576.",
+   "source": "https://en.wikipedia.org/wiki/Bengal_Sultanate",
+   "verified": true,
+   "claims": [
+    [
+     "Bengal Sultanate",
+     1576
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-ahom-kingdom",
+   "names": [
+    "Ahom kingdom",
+    "Ahom",
+    "Ahom Kingdom",
+    "Assam"
+   ],
+   "from": 1228,
+   "to": 1826,
+   "wiki": "Ahom kingdom",
+   "text": "A kingdom in the Brahmaputra valley founded by a Tai prince in 1228, which beat off Mughal invasions. It passed to the British in 1826.",
+   "source": "https://en.wikipedia.org/wiki/Ahom_kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Ahom kingdom",
+     1228
+    ],
+    [
+     "Ahom kingdom",
+     1826
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-mysore",
+   "names": [
+    "Kingdom of Mysore",
+    "Mysore"
+   ],
+   "from": 1399,
+   "to": 1950,
+   "wiki": "Kingdom of Mysore",
+   "text": "A south Indian kingdom that under Hyder Ali and Tipu Sultan fought four wars against the British East India Company.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Mysore",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-hyderabad-state",
+   "names": [
+    "Hyderabad State",
+    "Hyderabad"
+   ],
+   "from": 1724,
+   "to": 1948,
+   "wiki": "Hyderabad State",
+   "text": "The state of the Nizams in the Deccan, founded in 1724, the largest princely state of British India. India annexed it in 1948.",
+   "source": "https://en.wikipedia.org/wiki/Hyderabad_State",
+   "verified": true,
+   "claims": [
+    [
+     "Hyderabad State",
+     1724
+    ],
+    [
+     "Hyderabad State",
+     1948
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-kandy",
+   "names": [
+    "Kingdom of Kandy",
+    "Kandy"
+   ],
+   "from": 1469,
+   "to": 1815,
+   "wiki": "Kingdom of Kandy",
+   "text": "The last independent kingdom of Sri Lanka, in the central highlands, which outlasted Portuguese and Dutch rule on the coast. Britain took it in 1815.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Kandy",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Kandy",
+     1815
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-kingdom-of-nepal",
+   "names": [
+    "Kingdom of Nepal",
+    "Nepal",
+    "Gorkha Kingdom"
+   ],
+   "from": 1768,
+   "to": 2008,
+   "wiki": "Kingdom of Nepal",
+   "text": "The kingdom created when the Gorkha ruler Prithvi Narayan Shah conquered the Kathmandu valley in 1768. The monarchy was abolished in 2008.",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Nepal",
+   "verified": true,
+   "claims": [
+    [
+     "Kingdom of Nepal",
+     1768
+    ],
+    [
+     "Kingdom of Nepal",
+     2008
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-tibetan-empire",
+   "names": [
+    "Tibetan Empire",
+    "Tibet",
+    "Tufan",
+    "Tubo"
+   ],
+   "from": 618,
+   "to": 842,
+   "wiki": "Tibetan Empire",
+   "text": "The empire of the Yarlung kings, which at its height rivalled Tang China, held the oasis towns of the Silk Road and adopted Buddhism. It broke up in the 9th century.",
+   "source": "https://en.wikipedia.org/wiki/Tibetan_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-nanzhao",
+   "names": [
+    "Nanzhao"
+   ],
+   "from": 738,
+   "to": 902,
+   "wiki": "Nanzhao",
+   "text": "A kingdom in present-day Yunnan that fought both Tang China and Tibet. It fell in 902.",
+   "source": "https://en.wikipedia.org/wiki/Nanzhao",
+   "verified": true,
+   "claims": [
+    [
+     "Nanzhao",
+     902
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-dali-kingdom",
+   "names": [
+    "Kingdom of Dali",
+    "Dali Kingdom",
+    "Dali"
+   ],
+   "from": 937,
+   "to": 1253,
+   "wiki": "Dali Kingdom",
+   "text": "A Buddhist kingdom in Yunnan, founded in 937. The Mongols conquered it in 1253.",
+   "source": "https://en.wikipedia.org/wiki/Dali_Kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Dali Kingdom",
+     937
+    ],
+    [
+     "Dali Kingdom",
+     1253
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-balhae",
+   "names": [
+    "Balhae",
+    "Bohai",
+    "Parhae"
+   ],
+   "from": 698,
+   "to": 926,
+   "wiki": "Balhae",
+   "text": "A kingdom in Manchuria and northern Korea founded in 698 by former subjects of Goguryeo. The Khitans destroyed it in 926.",
+   "source": "https://en.wikipedia.org/wiki/Balhae",
+   "verified": false,
+   "claims": [
+    [
+     "Balhae",
+     698
+    ],
+    [
+     "Balhae",
+     926
+    ]
+   ],
+   "check": "years in the text without a matching Wikidata date: 698, 926"
+  },
+  {
+   "id": "pol-ryukyu-kingdom",
+   "names": [
+    "Ryukyu Kingdom",
+    "Ryukyu",
+    "Ryūkyū Kingdom"
+   ],
+   "from": 1429,
+   "to": 1879,
+   "wiki": "Ryukyu Kingdom",
+   "text": "An island kingdom, united in 1429, that prospered as a go-between in the trade of China, Japan and Southeast Asia. Japan annexed it in 1879.",
+   "source": "https://en.wikipedia.org/wiki/Ryukyu_Kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Ryukyu Kingdom",
+     1429
+    ],
+    [
+     "Ryukyu Kingdom",
+     1879
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-lan-xang",
+   "names": [
+    "Lan Xang",
+    "Kingdom of Lan Xang"
+   ],
+   "from": 1353,
+   "to": 1707,
+   "wiki": "Lan Xang",
+   "text": "The \"kingdom of a million elephants\", the Lao state on the middle Mekong. It split into three kingdoms in 1707.",
+   "source": "https://en.wikipedia.org/wiki/Lan_Xang",
+   "verified": true,
+   "claims": [
+    [
+     "Lan Xang",
+     1707
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-lan-na",
+   "names": [
+    "Lan Na",
+    "Lanna",
+    "Kingdom of Lan Na"
+   ],
+   "from": 1292,
+   "to": 1775,
+   "wiki": "Lan Na",
+   "text": "A northern Thai kingdom centred on Chiang Mai, later under Burmese rule.",
+   "source": "https://en.wikipedia.org/wiki/Lan_Na",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-sukhothai-kingdom",
+   "names": [
+    "Sukhothai Kingdom",
+    "Sukhothai"
+   ],
+   "from": 1238,
+   "to": 1438,
+   "wiki": "Sukhothai Kingdom",
+   "text": "An early Thai kingdom, founded in 1238 and remembered for King Ramkhamhaeng and the Thai script. Ayutthaya absorbed it in 1438.",
+   "source": "https://en.wikipedia.org/wiki/Sukhothai_Kingdom",
+   "verified": true,
+   "claims": [
+    [
+     "Sukhothai Kingdom",
+     1238
+    ],
+    [
+     "Sukhothai Kingdom",
+     1438
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-nguy-n-dynasty",
+   "names": [
+    "Nguyễn dynasty",
+    "Nguyen dynasty",
+    "Vietnam",
+    "Annam",
+    "Empire of Vietnam"
+   ],
+   "from": 1802,
+   "to": 1945,
+   "wiki": "Nguyễn dynasty",
+   "text": "The last Vietnamese dynasty, which united the country from Huế in 1802. France made it a protectorate in the 1880s, and its last emperor abdicated in 1945.",
+   "source": "https://en.wikipedia.org/wiki/Nguyễn_dynasty",
+   "verified": true,
+   "claims": [
+    [
+     "Nguyễn dynasty",
+     1802
+    ],
+    [
+     "Nguyễn dynasty",
+     1945
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-mataram-sultanate",
+   "names": [
+    "Mataram Sultanate",
+    "Mataram",
+    "Sultanate of Mataram"
+   ],
+   "from": 1586,
+   "to": 1755,
+   "wiki": "Mataram Sultanate",
+   "text": "The last major independent Javanese kingdom, which under Sultan Agung ruled most of Java. The Dutch East India Company divided it in 1755.",
+   "source": "https://en.wikipedia.org/wiki/Mataram_Sultanate",
+   "verified": true,
+   "claims": [
+    [
+     "Mataram Sultanate",
+     1755
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-aceh-sultanate",
+   "names": [
+    "Aceh Sultanate",
+    "Sultanate of Aceh",
+    "Aceh",
+    "Atjeh"
+   ],
+   "from": 1496,
+   "to": 1903,
+   "wiki": "Aceh Sultanate",
+   "text": "A sultanate at the northern tip of Sumatra, a centre of Islamic learning and the pepper trade. It fought the Dutch for thirty years before its sultan surrendered in 1903.",
+   "source": "https://en.wikipedia.org/wiki/Aceh_Sultanate",
+   "verified": true,
+   "claims": [
+    [
+     "Aceh Sultanate",
+     1903
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-dutch-east-indies",
+   "names": [
+    "Dutch East Indies",
+    "Netherlands Indies",
+    "Netherlands East Indies"
+   ],
+   "from": 1800,
+   "to": 1949,
+   "wiki": "Dutch East Indies",
+   "text": "The Dutch colony that took over the possessions of the Dutch East India Company in 1800 and grew to cover the Indonesian archipelago. The Netherlands recognised Indonesian independence in 1949.",
+   "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies",
+   "verified": true,
+   "claims": [
+    [
+     "Dutch East Indies",
+     1800
+    ],
+    [
+     "Dutch East Indies",
+     1949
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-french-indochina",
+   "names": [
+    "French Indochina",
+    "Indochina"
+   ],
+   "from": 1887,
+   "to": 1954,
+   "wiki": "French Indochina",
+   "text": "The federation of French colonies and protectorates in Vietnam, Cambodia and Laos, formed in 1887. French rule ended in 1954 after the defeat at Dien Bien Phu.",
+   "source": "https://en.wikipedia.org/wiki/French_Indochina",
+   "verified": true,
+   "claims": [
+    [
+     "French Indochina",
+     1887
+    ],
+    [
+     "French Indochina",
+     1954
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-new-france",
+   "names": [
+    "New France"
+   ],
+   "from": 1534,
+   "to": 1763,
+   "wiki": "New France",
+   "text": "The French colonies in North America, from the St. Lawrence and the Great Lakes down the Mississippi to Louisiana. France lost them to Britain and Spain in 1763.",
+   "source": "https://en.wikipedia.org/wiki/New_France",
+   "verified": true,
+   "claims": [
+    [
+     "New France",
+     1763
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-new-netherland",
+   "names": [
+    "New Netherland",
+    "New Netherlands"
+   ],
+   "from": 1614,
+   "to": 1667,
+   "wiki": "New Netherland",
+   "text": "The Dutch colony on the Hudson river, with New Amsterdam as its main town. The English took it in the 1660s and the Dutch gave it up by treaty in 1667.",
+   "source": "https://en.wikipedia.org/wiki/New_Netherland",
+   "verified": true,
+   "claims": [
+    [
+     "New Netherland",
+     1667
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-russian-america",
+   "names": [
+    "Russian America",
+    "Alaska"
+   ],
+   "from": 1799,
+   "to": 1867,
+   "wiki": "Russian America",
+   "text": "Russia's colony in Alaska, run by the Russian-American Company from 1799 for the fur trade. Russia sold it to the United States in 1867.",
+   "source": "https://en.wikipedia.org/wiki/Russian_America",
+   "verified": true,
+   "claims": [
+    [
+     "Russian America",
+     1799
+    ],
+    [
+     "Russian America",
+     1867
+    ],
+    [
+     "Russian-American Company",
+     1799
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Russian-American Company",
+     1799
+    ]
+   ]
+  },
+  {
+   "id": "pol-republic-of-texas",
+   "names": [
+    "Republic of Texas",
+    "Texas"
+   ],
+   "from": 1836,
+   "to": 1846,
+   "wiki": "Republic of Texas",
+   "text": "The state formed when settlers in Texas broke away from Mexico in 1836. The United States annexed it in 1845, and the transfer was completed in 1846.",
+   "source": "https://en.wikipedia.org/wiki/Republic_of_Texas",
+   "verified": true,
+   "claims": [
+    [
+     "Republic of Texas",
+     1836
+    ],
+    [
+     "Republic of Texas",
+     1845
+    ],
+    [
+     "Republic of Texas",
+     1846
+    ],
+    [
+     "Texas annexation",
+     1845
+    ]
+   ],
+   "check": "every year in the text matches Wikidata",
+   "more": [
+    [
+     "Texas annexation",
+     1845
+    ]
+   ]
+  },
+  {
+   "id": "pol-first-mexican-empire",
+   "names": [
+    "First Mexican Empire",
+    "Mexican Empire",
+    "Mexico"
+   ],
+   "from": 1821,
+   "to": 1823,
+   "wiki": "First Mexican Empire",
+   "text": "Independent Mexico under Agustín de Iturbide, who was crowned emperor. He abdicated in 1823 and a republic followed.",
+   "source": "https://en.wikipedia.org/wiki/First_Mexican_Empire",
+   "verified": true,
+   "claims": [
+    [
+     "First Mexican Empire",
+     1823
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-federal-republic-of-central-america",
+   "names": [
+    "Federal Republic of Central America",
+    "United Provinces of Central America",
+    "Central America"
+   ],
+   "from": 1823,
+   "to": 1841,
+   "wiki": "Federal Republic of Central America",
+   "text": "A federation of Guatemala, El Salvador, Honduras, Nicaragua and Costa Rica, formed in 1823 after independence. It broke up in civil wars.",
+   "source": "https://en.wikipedia.org/wiki/Federal_Republic_of_Central_America",
+   "verified": true,
+   "claims": [
+    [
+     "Federal Republic of Central America",
+     1823
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-peru-bolivian-confederation",
+   "names": [
+    "Peru–Bolivian Confederation",
+    "Peru-Bolivian Confederation"
+   ],
+   "from": 1836,
+   "to": 1839,
+   "wiki": "Peru–Bolivian Confederation",
+   "text": "A union of Peru and Bolivia created by Andrés de Santa Cruz in 1836. Chile and Argentina went to war against it, and it was dissolved in 1839.",
+   "source": "https://en.wikipedia.org/wiki/Peru–Bolivian_Confederation",
+   "verified": true,
+   "claims": [
+    [
+     "Peru–Bolivian Confederation",
+     1836
+    ],
+    [
+     "Peru–Bolivian Confederation",
+     1839
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-united-provinces-of-the-r-o-de-la-plata",
+   "names": [
+    "United Provinces of the Río de la Plata",
+    "United Provinces of Rio de la Plata",
+    "Argentina"
+   ],
+   "from": 1810,
+   "to": 1831,
+   "wiki": "United Provinces of the Río de la Plata",
+   "text": "The state that grew out of the May Revolution of 1810 in Buenos Aires, the forerunner of Argentina.",
+   "source": "https://en.wikipedia.org/wiki/United_Provinces_of_the_Río_de_la_Plata",
+   "verified": true,
+   "claims": [
+    [
+     "United Provinces of the Río de la Plata",
+     1810
+    ]
+   ],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-muisca-confederation",
+   "names": [
+    "Muisca Confederation",
+    "Muisca",
+    "Muiscas"
+   ],
+   "from": 800,
+   "to": 1540,
+   "wiki": "Muisca Confederation",
+   "text": "A group of chiefdoms in the highlands of present-day Colombia, known for their goldwork, the source of the legend of El Dorado.",
+   "source": "https://en.wikipedia.org/wiki/Muisca_Confederation",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
+  },
+  {
+   "id": "pol-pur-pecha-empire",
+   "names": [
+    "Purépecha Empire",
+    "Tarascan state",
+    "Tarascan Empire",
+    "Tarascans",
+    "Purépecha"
+   ],
+   "from": 1300,
+   "to": 1530,
+   "wiki": "Purépecha Empire",
+   "text": "A state in western Mexico with its capital at Tzintzuntzan, which the Aztecs never conquered.",
+   "source": "https://en.wikipedia.org/wiki/Purépecha_Empire",
+   "verified": true,
+   "claims": [],
+   "check": "every year in the text matches Wikidata"
   }
  ]
 }
