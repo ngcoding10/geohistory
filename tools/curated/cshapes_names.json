@@ -1,0 +1,21 @@
+{
+ "_about": "Curated display names for CShapes units whose official name changed while the shape code stayed the same. Dates are the commonly cited change dates; source per rule. Used only for the label shown on the map; CShapes' own name is kept in the data as 'cs'.",
+ "rules": [
+  {"cs": "Turkey (Ottoman Empire)", "until": 19231028, "name": "Ottoman Empire", "after": "Turkey", "source": "https://en.wikipedia.org/wiki/Republic_of_Turkey"},
+  {"cs": "Russia (Soviet Union)", "until": 19171106, "name": "Russian Empire", "source": "https://en.wikipedia.org/wiki/Russian_Empire"},
+  {"cs": "Russia (Soviet Union)", "until": 19221229, "name": "Russia", "source": "https://en.wikipedia.org/wiki/Russian_Soviet_Federative_Socialist_Republic"},
+  {"cs": "Russia (Soviet Union)", "until": 19911225, "name": "Soviet Union", "after": "Russia", "source": "https://en.wikipedia.org/wiki/Soviet_Union"},
+  {"cs": "Germany (Prussia)", "until": 19181108, "name": "German Empire", "after": "Germany", "source": "https://en.wikipedia.org/wiki/German_Empire"},
+  {"cs": "Iran (Persia)", "until": 19350320, "name": "Persia", "after": "Iran", "source": "https://en.wikipedia.org/wiki/Name_of_Iran"},
+  {"cs": "Thailand", "until": 19390623, "name": "Siam", "after": "Thailand", "source": "https://en.wikipedia.org/wiki/Thailand"},
+  {"cs": "Myanmar (Burma)", "until": 19890617, "name": "Burma", "after": "Myanmar", "source": "https://en.wikipedia.org/wiki/Names_of_Myanmar"},
+  {"cs": "Sri Lanka (Ceylon)", "until": 19720521, "name": "Ceylon", "after": "Sri Lanka", "source": "https://en.wikipedia.org/wiki/Dominion_of_Ceylon"},
+  {"cs": "Congo, Democratic Republic of (Zaire)", "until": 19711026, "name": "Congo", "source": "https://en.wikipedia.org/wiki/Zaire"},
+  {"cs": "Congo, Democratic Republic of (Zaire)", "until": 19970516, "name": "Zaire", "after": "DR Congo", "source": "https://en.wikipedia.org/wiki/Zaire"},
+  {"cs": "Zimbabwe (Rhodesia)", "until": 19800417, "name": "Rhodesia", "after": "Zimbabwe", "source": "https://en.wikipedia.org/wiki/Rhodesia"},
+  {"cs": "Burkina Faso (Upper Volta)", "until": 19840803, "name": "Upper Volta", "after": "Burkina Faso", "source": "https://en.wikipedia.org/wiki/Republic_of_Upper_Volta"},
+  {"cs": "Swaziland (Eswatini)", "until": 20180418, "name": "Swaziland", "after": "Eswatini", "source": "https://en.wikipedia.org/wiki/Eswatini"},
+  {"cs": "Italy/Sardinia", "name": "Italy", "source": "https://en.wikipedia.org/wiki/Kingdom_of_Italy"},
+  {"cs": "Rumania", "name": "Romania", "source": "https://en.wikipedia.org/wiki/Romania"}
+ ]
+}

@@ -2,6 +2,7 @@
 
   - aourednik/historical-basemaps: index.json, LICENSE and every world_<year>.geojson snapshot (GPL-3.0)
   - Natural Earth 50m land and admin-0 countries (public domain), via the natural-earth-vector repo
+  - CShapes 2.0 (ETH Zurich): state borders with exact dates, 1886-2019 (CC BY-NC-SA 4.0)
   - Newberry Library Atlas of Historical County Boundaries: US state and territory boundaries over
     time, generalised at 0.01 degree (free for any lawful use)
 """
@@ -10,6 +11,7 @@ from common import fetch, log
 
 HB = 'https://raw.githubusercontent.com/aourednik/historical-basemaps/master/'
 NE = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/'
+CSHAPES = 'https://icr.ethz.ch/data/cshapes/CShapes-2.0.geojson'
 AHCB = 'https://publications.newberry.org/ahcb/downloads/gis/US_AtlasHCB_StateTerr_Gen01.zip'
 
 
@@ -28,6 +30,8 @@ def main():
         fetch(NE + f)
     log('newberry ahcb')
     fetch(AHCB, ext='.zip', timeout=300)
+    log('cshapes 2.0')
+    fetch(CSHAPES, ext='.geojson', timeout=600)
     log('done')
 
 

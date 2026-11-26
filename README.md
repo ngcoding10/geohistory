@@ -45,8 +45,11 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
 
 ## Known limits
 
-- Borders are snapshots: 54 maps from 123,000 BC to AD 2010. Any other year shows the nearest earlier
-  map, and the badge on the map says which year that is. There is no border map after 2010.
+- From 1886 to 2019 borders come from CShapes 2.0, one map per year as on 1 July. Outside that span
+  borders are snapshots (54 maps from 123,000 BC to AD 2010): other years show the nearest earlier map,
+  and the badge on the map says which. Rulers of colonies in 1886-2019 can lag a change by a few years.
+- **Licences:** CShapes 2.0 is CC BY-NC-SA (non-commercial). NC sources must be cleared or replaced
+  before ads are added to this site (see CREDITS.md).
 - Borders before about 1500 are rough, and all borders are simplified (about 1 to 3 km).
 - US state borders come from the Newberry atlas from 1783. For 1763 to 1783 the thirteen colonies are
   drawn from their 1783 outlines and marked approximate.

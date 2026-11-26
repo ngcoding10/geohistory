@@ -23,23 +23,64 @@ export function getJSON(path) {
 
 // ---- borders ----
 let bordersIndex = null;
+let csIndex = null;
 export async function loadBordersIndex() {
-  bordersIndex = bordersIndex || (await getJSON('borders/index.json')).snapshots;
+  if (!bordersIndex) {
+    const [b, cs] = await Promise.all([getJSON('borders/index.json'), getJSON('cshapes/index.json')]);
+    bordersIndex = b.snapshots;
+    csIndex = cs;
+  }
   return bordersIndex;
 }
 
-/** Latest snapshot at or before the year (or null when the year is before the first one). */
+/** Is this year covered by the dated CShapes borders (one map per year, as on 1 July)? */
+export const isDatedYear = (y) => !!csIndex && y >= csIndex.from && y <= csIndex.to;
+export const datedRange = () => csIndex && [csIndex.from, csIndex.to];
+
+/** The border map for a year: a dated CShapes year, else the latest snapshot at or before it. */
 export function snapshotFor(year) {
+  if (isDatedYear(year)) return { y: year, cs: true };
   let best = null;
   for (const s of bordersIndex || []) if (s.y <= year) best = s;
   return best;
 }
 
 export function nextSnapshotAfter(y) {
+  if (csIndex && y < csIndex.from) {
+    const n = (bordersIndex || []).find((s) => s.y > y);
+    return n && n.y < csIndex.from ? n : { y: csIndex.from, cs: true };
+  }
+  if (isDatedYear(y)) return y < csIndex.to ? { y: y + 1, cs: true } : (bordersIndex || []).find((s) => s.y > y) || null;
   return (bordersIndex || []).find((s) => s.y > y) || null;
 }
 
-export function loadSnapshot(s) {
+const shapeStore = new Map();
+async function loadCsYear(y) {
+  const yr = await getJSON(`cshapes/years/${y}.json`);
+  await Promise.all(yr.need.map(async (f) => {
+    if (shapeStore.has(f)) return;
+    const d = await getJSON('cshapes/' + f);
+    for (const [id, sh] of Object.entries(d)) shapeStore.set(+id, sh);
+    shapeStore.set(f, true);
+  }));
+  const features = [];
+  const polities = yr.rows.map(([id, n, p, s, cur], k) => {
+    const sh = shapeStore.get(id);
+    features.push({ type: 'Feature', geometry: sh.g, properties: { k, c: null, p } });
+    const pol = { n, p, a: sh.a, l: sh.l, bb: sh.bb, pr: 3, dated: [sh.s, sh.e] };
+    if (s) pol.s = s;
+    if (cur) pol.cur = 1;
+    return pol;
+  });
+  return { type: 'FeatureCollection', year: y, cs: true, date: yr.date, features, polities, largest: yr.largest, changes: yr.changes };
+}
+
+export async function loadSnapshot(s) {
+  if (s.cs) {
+    const [doc, powers] = await Promise.all([loadCsYear(s.y), getJSON('powers.json')]);
+    for (const f of doc.features) f.properties.c = powers[f.properties.p]?.color || '#ccc';
+    return doc;
+  }
   return getJSON('borders/' + s.f);
 }
 

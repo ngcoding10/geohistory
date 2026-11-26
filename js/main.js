@@ -1,8 +1,8 @@
 // GeoHistory: choose a year, see the world's borders, powers and events at that time.
 import { HistoryMap } from './map.js';
 import {
-  loadBordersIndex, snapshotFor, nextSnapshotAfter, loadSnapshot, loadEventsIndex, eventsBetween, nearestYearsWithEvents,
-  loadPowers, loadEntities, loadUS, loadModern, loadLand, loadMeta, countFor, findEvent,
+  loadBordersIndex, snapshotFor, nextSnapshotAfter, datedRange, loadSnapshot, loadEventsIndex, eventsBetween, nearestYearsWithEvents,
+  loadPowers, loadEntities, getJSON, loadUS, loadModern, loadLand, loadMeta, countFor, findEvent,
 } from './data.js';
 import { parseYear, formatYear, formatDate, addYears, yearToFrac, fracToYear, ERAS, MIN_YEAR, MAX_YEAR } from './year.js';
 import { TYPES, TYPE_KEYS } from './types.js';
@@ -201,7 +201,7 @@ function updateBadge() {
     return;
   }
   const exact = s.y === state.year;
-  els.badge.textContent = `Borders as of ${formatYear(s.y)}`;
+  els.badge.textContent = s.cs ? `Borders on 1 July ${s.y}` : `Borders as of ${formatYear(s.y)}`;
   els.badge.classList.toggle('exact', exact);
 }
 
@@ -210,6 +210,12 @@ function badgeText() {
   if (!s) return [h('p', null, `The border maps start in ${formatYear(MIN_YEAR)}.`)];
   const next = nextSnapshotAfter(s.y);
   const out = [];
+  if (s.cs) {
+    out.push(h('p', null, `From ${datedRange()[0]} to ${datedRange()[1]} the map uses CShapes 2.0, which dates every change of state borders. You see the borders as they stood on 1 July ${s.y}.`));
+    out.push(h('p', null, 'Rulers of colonies come from the older world maps or from a short curated list, so they can lag a change by a few years.'));
+    out.push(h('p', null, h('button.more', { type: 'button', onclick: openSources }, 'Sources and accuracy')));
+    return out;
+  }
   if (s.y === state.year) out.push(h('p', null, `This is one of the years with its own border map.`));
   else out.push(h('p', null, `There is no border map for ${formatYear(state.year)}. You are seeing the nearest earlier one, from ${formatYear(s.y)}.`));
   out.push(h('p', null, next ? `The next border map is ${formatYear(next.y)}.` : 'This is the latest border map.'));
@@ -278,7 +284,7 @@ async function renderYear() {
   const nodes = [h('p.kicker', null, 'Year'), h('h1', null, `The world in ${formatYear(y)}`)];
   if (state.month) nodes.push(h('p.lead', null, `Highlighting ${dayLabel(state.month, state.day)}.`));
   nodes.push(h('p.note', null, `${all.length} ${all.length === 1 ? 'event' : 'events'} recorded · `,
-    state.snap ? `map borders as of ${formatYear(state.snap.y)}` : 'no border map this early'));
+    state.snap ? (state.snap.cs ? `map borders on 1 July ${state.snap.y}` : `map borders as of ${formatYear(state.snap.y)}`) : 'no border map this early'));
 
   nodes.push(h('h2', null, 'Events'));
   if (all.length) {
@@ -382,7 +388,13 @@ async function yearsOf(name) {
     searchIndex = await loadSearch();
   }
   const p = searchIndex.polities.find((x) => x[0] === name);
-  return p ? p[1] : [];
+  if (!p) return [];
+  const out = [];
+  for (const r of p[1]) {
+    if (!Array.isArray(r)) out.push(r);
+    else for (let y = r[0]; y <= r[1]; y++) out.push(y);
+  }
+  return out;
 }
 
 async function selectUS(id, { fly }) {
@@ -485,15 +497,19 @@ async function selectionHeader(s) {
   if (s.kind === 'polity') {
     const p = s.p;
     box.append(h('p.kicker', null, 'Territory'), h('h1', null, s.name));
+    box.append(historyLine(s.name));
     if (s.missing) {
       box.append(h('p.lead', null, `${s.name} is not on the ${state.snap ? formatYear(state.snap.y) : ''} map. Events below are inside its last outline.`));
       return box;
     }
     const facts = h('dl.facts');
-    if (p.s && p.s !== p.n) facts.append(h('dt', null, 'Ruled by'), h('dd', null, p.s));
+    if (p.s && p.s !== p.n) facts.append(h('dt', null, 'Ruled by'), h('dd', null, p.s, p.cur ? h('span.unver', { title: 'From a curated list, not checked against Wikidata' }, ' unverified') : null));
     else facts.append(h('dt', null, 'Status'), h('dd', null, 'Independent or self-ruling on this map'));
     facts.append(h('dt', null, 'Area'), h('dd', null, `about ${fmtArea(p.a)}`));
-    facts.append(h('dt', null, 'Map'), h('dd', null, `Borders as of ${formatYear(state.snap.y)}${p.pr === 1 ? ', approximate' : ''}`));
+    if (p.dated) {
+      const f = (d) => formatDate(Math.floor(d / 10000), Math.floor(d / 100) % 100, d % 100);
+      facts.append(h('dt', null, 'Map'), h('dd', null, `These borders held from ${f(p.dated[0])} to ${p.dated[1] >= 20191231 ? '2019 or later' : f(p.dated[1])} (CShapes)`));
+    } else facts.append(h('dt', null, 'Map'), h('dd', null, `Borders as of ${formatYear(state.snap.y)}${p.pr === 1 ? ', approximate' : ''}`));
     box.append(facts);
     try {
       entities = entities || await loadEntities();
@@ -502,7 +518,7 @@ async function selectionHeader(s) {
         // the same name can mean a different state in another era ("France" in 1000 is not the modern
         // republic): only show the description when Wikidata's dates fit the year on screen
         const y = state.year;
-        const fits = (info.from == null || info.from - 100 <= y) && (info.to == null || info.to + 100 >= y);
+        const fits = (info.from == null || info.from - 25 <= y) && (info.to == null || info.to + 25 >= y);
         if (fits) {
           if (info.d) box.insertBefore(h('p.lead', null, cap(info.d)), facts);
           if (info.from != null || info.to != null) facts.append(h('dt', null, 'Existed'), h('dd', null, `${info.from != null ? formatYear(info.from) : '?'} to ${info.to != null ? formatYear(info.to) : 'today'}`));
@@ -540,6 +556,25 @@ async function selectionHeader(s) {
 }
 
 const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+
+/** "Who held it over time": runs of maps with the same ruler, loaded on demand. */
+function historyLine(name) {
+  const box = h('details.ruled-hist', null, h('summary', null, 'Who held it over time'));
+  box.addEventListener('toggle', async () => {
+    if (!box.open || box.dataset.done) return;
+    box.dataset.done = '1';
+    let d;
+    try { d = await getJSON('history/ruledby.json'); } catch { box.append(h('p.empty', null, 'Could not load.')); return; }
+    const runs = d[name] || [];
+    if (!runs.length) { box.append(h('p.empty', null, 'Not recorded.')); return; }
+    box.append(h('ol', null, runs.map(([a, b, r, src]) => {
+      const span = a === b ? (src === 'm' ? `${formatYear(a)} map` : `${a}`) : (src === 'm' ? `maps of ${formatYear(a)} to ${formatYear(b)}` : `${a} to ${b}`);
+      return h('li', null, `${span}: `, r ? `ruled by ${r}` : 'self-ruling');
+    })));
+    box.append(h('p.note', null, 'From the border maps only: a run means the same ruler on every map in that span, not that nothing changed between maps.'));
+  });
+  return box;
+}
 
 // ---------------------------------------------------------------- events
 async function openEvent(id, { fly }) {

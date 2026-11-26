@@ -240,3 +240,8 @@ a { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+.unver { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); border: 1px solid var(--line); border-radius: 6px; padding: 0 4px; margin-left: 6px; white-space: nowrap; }
+.ruled-hist { font-size: 13px; color: var(--ink-2); margin: 6px 0 0; }
+.ruled-hist summary { cursor: pointer; color: var(--ink-3); }
+.ruled-hist ol { margin: 6px 0 0; padding-left: 18px; }

@@ -113,7 +113,16 @@ def main():
     snap_years = [s['y'] for s in bindex]
     snap_cache = {}
 
+    cs_index = read_json(os.path.join(DATA, 'cshapes', 'index.json'))
+
     def snap_index(y):
+        if cs_index['from'] <= y <= cs_index['to']:
+            key = ('cs', y)
+            if key not in snap_cache:
+                import build_cshapes
+                pols = build_cshapes.year_doc(y)
+                snap_cache[key] = (PolyIndex([(k, p['g']) for k, p in enumerate(pols)]), pols)
+            return key, snap_cache[key]
         best = None
         for sy in snap_years:
             if sy <= y:
@@ -448,10 +457,20 @@ def main():
         doc = read_json(os.path.join(DATA, 'borders', f'{s["y"]}.json'))
         for p in doc['polities']:
             pol_area[p['n']] = max(pol_area[p['n']], p['a'])
+    for y in range(cs_index['from'], cs_index['to'] + 1):
+        for p in snap_index(y)[1][1]:
+            pol_area[p['n']] = max(pol_area[p['n']], p['a'])
     polities = []
     for n, ys in sorted(names.items()):
         if n in pol_area:
-            polities.append([n, ys, round(pol_area[n] / 1e5, 1)])
+            # consecutive CShapes years collapse into [first, last] ranges to keep the file small
+            rng = []
+            for y in ys:
+                if rng and y == rng[-1][1] + 1 and y > 1886:
+                    rng[-1][1] = y
+                else:
+                    rng.append([y, y])
+            polities.append([n, [r[0] if r[0] == r[1] else r for r in rng], round(pol_area[n] / 1e5, 1)])
     modern = []
     for f in mod['features']:
         p = f['properties']
@@ -474,7 +493,7 @@ def main():
     for n, e in ents.items():
         for c in e.get('cap', []):
             if n in names and c != n:
-                places.append([c, n, names[n]])
+                places.append([c, n, [names[n][0], names[n][-1]]])
     sz = write_json(os.path.join(DATA, 'search.json'), {'polities': polities, 'modern': modern, 'us': list(usl.values()),
                                                         'events': sev, 'places': places})
     log(f'search.json: {len(polities)} territories, {len(sev)} events, {len(places)} capitals, {sz // 1024} KB')

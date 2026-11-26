@@ -33,6 +33,22 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
   the file does not cover, the app reuses each state's first (1783) outline for the thirteen colonies
   and marks those outlines as approximate.
 
+### State borders by date, 1886 to 2019: CShapes 2.0 (non-commercial licence)
+- **What:** borders of states and dependent territories with exact start and end dates.
+- **Source:** Schvitz, Rüegger, Girardin, Cederman, Weidmann and Gleditsch, *Mapping the International
+  System, 1886-2019: The CShapes 2.0 Dataset*, Journal of Conflict Resolution (2022).
+  https://icr.ethz.ch/data/cshapes/
+- **Licence:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0). The derived
+  files in `data/cshapes/` are shared under the same licence.
+- **Changes we made:** geometry simplified, one map per year as of 1 July, display names for renamed states
+  (`tools/curated/cshapes_names.json`), rulers of dependencies from the world snapshots or from
+  `tools/curated/dependency_owners.json` (curated, marked unverified in the app) (`tools/build_cshapes.py`).
+
+### Independent states list: Gleditsch and Ward
+- **What:** start and end dates of independence for each state code, used to tell states from dependencies.
+- **Source:** Kristian S. Gleditsch and Michael D. Ward, *A revised list of independent states since the
+  Congress of Vienna* (1999), http://ksgleditsch.com/data/iisystem.dat (free academic data; cited here).
+
 ### Coastlines and today's countries: Natural Earth
 - **What:** 1:50m land and admin-0 countries.
 - **Source:** https://www.naturalearthdata.com/ (via https://github.com/nvkelso/natural-earth-vector)
@@ -60,7 +76,9 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
 - **fuzzy.js**, the shared typo-tolerant search from `ngcoding10/backend-combination`, copied unchanged.
 
 ## Not used, and why
-- **CShapes 2.0** (state borders by date, 1886 to 2019): licensed CC BY-NC-SA 4.0. The non-commercial
-  term would conflict with the planned ads on these sites, so it is not included in v1.
 - **Wikipedia text and summaries**: the API is heavily rate-limited from the build machine, and Wikidata
   descriptions were enough for one-line summaries. The app links to Wikipedia instead.
+
+## Non-commercial licences: clear or replace before ads
+CShapes 2.0 is licensed CC BY-NC-SA 4.0. **Every NC-licensed source listed here must be cleared with its
+authors or replaced before ads are added to this site.**
