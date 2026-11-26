@@ -1,0 +1,358 @@
+# Well-known facts checked against the built data by tools/audit.py.
+# E|event name|year            an event with this name is dated that year
+# R|person|year                 that person takes office or the throne that year (±1)
+# C|lon|lat|year|text           on the map shown for that year, the territory there (or its ruler) contains text
+E|Battle of Marathon|-490
+E|Battle of Thermopylae|-480
+E|Battle of Salamis|-480
+E|Battle of Gaugamela|-331
+E|Battle of Cannae|-216
+E|Battle of Zama|-202
+E|Siege of Carthage|-146
+E|Battle of Pharsalus|-48
+E|Battle of Actium|-31
+E|Battle of the Teutoburg Forest|9
+E|Great Fire of Rome|64
+E|Siege of Jerusalem|70
+E|Battle of Adrianople|378
+E|Sack of Rome|410
+E|Battle of the Catalaunian Plains|451
+E|Battle of Badr|624
+E|Battle of the Yarmuk|636
+E|Battle of al-Qadisiyyah|636
+E|Battle of Tours|732
+E|Battle of Talas|751
+E|Battle of Hastings|1066
+E|Battle of Manzikert|1071
+E|Siege of Jerusalem (1099)|1099
+E|Battle of Hattin|1187
+E|Battle of Legnano|1176
+E|Siege of Baghdad|1258
+E|Battle of Ain Jalut|1260
+E|Battle of Bannockburn|1314
+E|Battle of Crécy|1346
+E|Battle of Poitiers|1356
+E|Battle of Kosovo|1389
+E|Battle of Ankara|1402
+E|Battle of Grunwald|1410
+E|Battle of Agincourt|1415
+E|Fall of Constantinople|1453
+E|Battle of Bosworth Field|1485
+E|Battle of Panipat|1526
+E|Battle of Mohács|1526
+E|Sack of Rome|1527
+E|Battle of Lepanto|1571
+E|Spanish Armada|1588
+E|Battle of Sekigahara|1600
+E|Battle of White Mountain|1620
+E|Peace of Westphalia|1648
+E|Battle of Vienna|1683
+E|Battle of Blenheim|1704
+E|Battle of Poltava|1709
+E|Battle of Plassey|1757
+E|Battle of Quiberon Bay|1759
+E|Battle of the Plains of Abraham|1759
+E|Boston Tea Party|1773
+E|Battles of Lexington and Concord|1775
+E|Battle of Bunker Hill|1775
+E|United States Declaration of Independence|1776
+E|Battle of Trenton|1776
+E|Battles of Saratoga|1777
+E|Siege of Yorktown|1781
+E|Treaty of Paris (1783)|1783
+E|Storming of the Bastille|1789
+E|Battle of Valmy|1792
+E|Battle of the Nile|1798
+E|Battle of Marengo|1800
+E|Battle of Trafalgar|1805
+E|Battle of Austerlitz|1805
+E|Battle of Jena–Auerstedt|1806
+E|Battle of Borodino|1812
+E|Battle of Leipzig|1813
+E|Battle of Waterloo|1815
+E|Congress of Vienna|1814
+E|Battle of Boyacá|1819
+E|Battle of Ayacucho|1824
+E|Battle of Navarino|1827
+E|Battle of the Alamo|1836
+E|Battle of San Jacinto|1836
+E|Opium War|1839
+E|Taiping Rebellion|1850
+E|Battle of Balaclava|1854
+E|Indian Rebellion of 1857|1857
+E|Battle of Solferino|1859
+E|Battle of Gettysburg|1863
+E|Battle of Antietam|1862
+E|Battle of Königgrätz|1866
+E|Battle of Sedan|1870
+E|Paris Commune|1871
+E|Battle of Little Bighorn|1876
+E|Battle of Isandlwana|1879
+E|Berlin Conference|1884
+E|Battle of Adwa|1896
+E|Battle of Omdurman|1898
+E|Boxer Rebellion|1899
+E|Battle of Tsushima|1905
+E|Russo-Japanese War|1904
+E|Xinhai Revolution|1911
+E|Sinking of the Titanic|1912
+E|Assassination of Archduke Franz Ferdinand|1914
+E|First Battle of the Marne|1914
+E|Battle of Gallipoli|1915
+E|Gallipoli campaign|1915
+E|Battle of Verdun|1916
+E|Battle of the Somme|1916
+E|Battle of Jutland|1916
+E|Easter Rising|1916
+E|October Revolution|1917
+E|February Revolution|1917
+E|Treaty of Brest-Litovsk|1918
+E|Armistice of 11 November 1918|1918
+E|Treaty of Versailles|1919
+E|Spanish flu|1918
+E|March on Rome|1922
+E|Great Kantō earthquake|1923
+E|Wall Street Crash of 1929|1929
+E|Salt March|1930
+E|Reichstag fire|1933
+E|Long March|1934
+E|Spanish Civil War|1936
+E|Nanjing Massacre|1937
+E|Marco Polo Bridge incident|1937
+E|Munich Agreement|1938
+E|Kristallnacht|1938
+E|Invasion of Poland|1939
+E|Battle of France|1940
+E|Battle of Britain|1940
+E|Operation Barbarossa|1941
+E|Attack on Pearl Harbor|1941
+E|Battle of Midway|1942
+E|Battle of Stalingrad|1942
+E|Battle of El Alamein|1942
+E|Second Battle of El Alamein|1942
+E|Battle of Kursk|1943
+E|Normandy landings|1944
+E|Warsaw Uprising|1944
+E|Battle of the Bulge|1944
+E|Battle of Iwo Jima|1945
+E|Battle of Okinawa|1945
+E|Atomic bombings of Hiroshima and Nagasaki|1945
+E|Yalta Conference|1945
+E|Potsdam Conference|1945
+E|Partition of India|1947
+E|1948 Arab–Israeli War|1948
+E|Berlin Blockade|1948
+E|Korean War|1950
+E|Battle of Dien Bien Phu|1954
+E|Hungarian Revolution of 1956|1956
+E|Suez Crisis|1956
+E|Cuban Revolution|1953
+E|Great Chinese Famine|1959
+E|Bay of Pigs Invasion|1961
+E|Cuban Missile Crisis|1962
+E|Assassination of John F. Kennedy|1963
+E|Gulf of Tonkin incident|1964
+E|Six-Day War|1967
+E|Prague Spring|1968
+E|Tet Offensive|1968
+E|Apollo 11|1969
+E|Bangladesh Liberation War|1971
+E|Yom Kippur War|1973
+E|1973 Chilean coup d'état|1973
+E|Carnation Revolution|1974
+E|Fall of Saigon|1975
+E|Iranian Revolution|1978
+E|Soviet–Afghan War|1979
+E|Iran–Iraq War|1980
+E|Falklands War|1982
+E|Chernobyl disaster|1986
+E|1989 Tiananmen Square protests and massacre|1989
+E|Fall of the Berlin Wall|1989
+E|German reunification|1990
+E|Gulf War|1990
+E|Dissolution of the Soviet Union|1991
+E|Rwandan genocide|1994
+E|Srebrenica massacre|1995
+E|September 11 attacks|2001
+E|2003 invasion of Iraq|2003
+E|2004 Indian Ocean earthquake and tsunami|2004
+E|2008 Sichuan earthquake|2008
+E|2010 Haiti earthquake|2010
+E|Arab Spring|2010
+E|2011 Tōhoku earthquake and tsunami|2011
+E|Fukushima nuclear disaster|2011
+E|Annexation of Crimea by the Russian Federation|2014
+E|Eruption of Mount Vesuvius in 79 AD|79
+E|1755 Lisbon earthquake|1755
+E|1815 eruption of Mount Tambora|1815
+E|1883 eruption of Krakatoa|1883
+E|1906 San Francisco earthquake|1906
+E|Great Chicago Fire|1871
+E|Great Fire of London|1666
+E|Black Death|1346
+E|Plague of Justinian|541
+E|Irish Famine (1845–1852)|1845
+E|Great Irish Famine|1845
+E|Bengal famine of 1943|1943
+E|Council of Nicaea|325
+E|First Council of Nicaea|325
+E|Council of Chalcedon|451
+E|East–West Schism|1054
+E|Council of Trent|1545
+E|Ninety-five Theses|1517
+E|Diet of Worms|1521
+E|Magna Carta|1215
+E|Glorious Revolution|1688
+E|Treaty of Tordesillas|1494
+E|Treaty of Nanking|1842
+E|Treaty of Guadalupe Hidalgo|1848
+E|Louisiana Purchase|1803
+E|Treaty of Waitangi|1840
+E|Meiji Restoration|1868
+E|Emancipation Proclamation|1863
+E|Battle of Kadesh|-1274
+E|Battle of Gaixia|-202
+E|Battle of Red Cliffs|208
+E|An Lushan Rebellion|755
+E|Battle of Baekgang|663
+E|Mongol invasions of Japan|1274
+E|Battle of Talikota|1565
+E|Imjin War|1592
+E|Battle of Hansan Island|1592
+E|Battle of Myeongnyang|1597
+E|Siege of Malacca (1511)|1511
+E|Battle of Chaldiran|1514
+E|Battle of Marj Dabiq|1516
+E|Battle of Karbala|680
+E|Battle of Nahavand|642
+E|Battle of Plassey|1757
+E|Third Battle of Panipat|1761
+E|Battle of Buxar|1764
+E|Siege of Seringapatam (1799)|1799
+E|Battle of Assaye|1803
+E|Battle of Blood River|1838
+E|Battle of Rorke's Drift|1879
+E|Zulu War|1879
+E|Anglo-Zulu War|1879
+E|Mahdist War|1881
+E|Maji Maji Rebellion|1905
+E|Herero and Nama genocide|1904
+E|Mau Mau rebellion|1952
+E|Algerian War|1954
+E|Biafran War|1967
+E|Nigerian Civil War|1967
+E|Soweto uprising|1976
+E|Battle of Cuito Cuanavale|1987
+E|Battle of Tenochtitlan|1521
+E|Fall of Tenochtitlan|1521
+E|Battle of Cajamarca|1532
+E|Battle of Otumba|1520
+E|Battle of Carabobo|1821
+E|Battle of Chacabuco|1817
+E|Battle of Maipú|1818
+E|Battle of Puebla|1862
+E|War of the Pacific|1879
+E|Paraguayan War|1864
+E|Mexican Revolution|1910
+E|Chaco War|1932
+E|Battle of Pichincha|1822
+E|First Fleet|1787
+E|Treaty of Kanagawa|1854
+E|Boshin War|1868
+E|First Sino-Japanese War|1894
+E|Battle of Mukden|1905
+E|Mukden Incident|1931
+E|Battle of Shanghai|1937
+E|Battle of Wuhan|1938
+E|Chinese Civil War|1927
+E|Cultural Revolution|1966
+E|Great Leap Forward|1958
+E|Khmer Rouge|1975
+E|Cambodian genocide|1975
+E|Vietnam War|1955
+E|Indonesian National Revolution|1945
+E|Iranian Constitutional Revolution|1905
+E|Young Turk Revolution|1908
+E|Armenian genocide|1915
+E|Arab Revolt|1916
+E|Sykes–Picot Agreement|1916
+E|Balfour Declaration|1917
+E|Treaty of Lausanne|1923
+E|Lebanese Civil War|1975
+E|Gulf War|1991
+E|Iraq War|2003
+E|Syrian civil war|2011
+R|Augustus|-27
+R|Charlemagne|768
+R|William the Conqueror|1066
+R|Elizabeth I|1558
+R|Louis XIV|1643
+R|Peter the Great|1682
+R|Catherine the Great|1762
+R|Napoleon|1804
+R|Queen Victoria|1837
+R|George Washington|1789
+R|Abraham Lincoln|1861
+R|Franklin D. Roosevelt|1933
+R|Winston Churchill|1940
+R|Akbar|1556
+R|Suleiman the Magnificent|1520
+R|Mehmed II|1451
+R|Kangxi Emperor|1661
+R|Qianlong Emperor|1735
+R|Emperor Meiji|1867
+R|Tokugawa Ieyasu|1603
+R|Henry VIII|1509
+R|Frederick the Great|1740
+R|Maria Theresa|1740
+R|Charles V, Holy Roman Emperor|1519
+R|Philip II of Spain|1556
+R|Ivan the Terrible|1547
+R|Kublai Khan|1260
+R|Genghis Khan|1206
+R|Justinian I|527
+R|Constantine the Great|306
+R|Haile Selassie|1930
+R|Nelson Mandela|1994
+R|Jawaharlal Nehru|1947
+R|Mustafa Kemal Atatürk|1923
+R|Charles de Gaulle|1959
+R|Otto von Bismarck|1871
+R|Margaret Thatcher|1979
+R|John F. Kennedy|1961
+R|Mikhail Gorbachev|1985
+C|-77.0|38.9|1800|United States
+C|2.35|48.85|1700|France
+C|28.9|41.05|1500|Ottoman
+C|28.9|41.05|1400|Byzantine
+C|12.5|41.9|100|Roman
+C|-0.13|51.5|1800|United Kingdom
+C|116.4|39.9|1700|Manchu
+C|116.4|39.9|1950|China
+C|77.2|28.6|1600|Mughal
+C|77.2|28.6|1900|India
+C|77.2|28.6|1900|United Kingdom
+C|37.6|55.75|1900|Russian Empire
+C|37.6|55.75|1960|Soviet Union
+C|31.2|30.0|1900|Egypt
+C|-99.1|19.4|1700|New Spain
+C|-99.1|19.4|1900|Mexico
+C|-58.4|-34.6|1900|Argentina
+C|-43.2|-22.9|1700|Portug
+C|139.7|35.7|1900|Japan
+C|106.8|-6.2|1900|Netherlands
+C|106.8|-6.2|1960|Indonesia
+C|3.06|36.75|1900|France
+C|36.8|-1.3|1930|United Kingdom
+C|15.3|-4.3|1920|Belgium
+C|18.6|-33.9|1950|South Africa
+C|151.2|-33.9|1950|Australia
+C|44.4|33.3|1900|Ottoman
+C|44.4|33.3|800|Abbasid
+C|51.4|35.7|1900|Persia
+C|-3.7|40.4|1600|Spain
+C|13.4|52.5|1900|German
+C|16.37|48.2|1900|Austria
+C|21.0|52.2|1900|Russian
+C|21.0|52.2|1930|Poland
+C|-74.4|40.9|1700|British

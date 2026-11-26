@@ -8,10 +8,14 @@ export const TYPES = {
   state: { label: 'New and ended states', one: 'State change', color: '#1e6c58' },
   ruler: { label: 'Rulers', one: 'Ruler', color: '#86641c' },
   politics: { label: 'Politics and law', one: 'Politics', color: '#4a5462' },
+  economy: { label: 'Economy', one: 'Economic event', color: '#3f6f6a' },
   epidemic: { label: 'Epidemics', one: 'Epidemic', color: '#5b6d22' },
   disaster: { label: 'Disasters', one: 'Disaster', color: '#9a4a12' },
   discovery: { label: 'Discovery and exploration', one: 'Discovery', color: '#3b57a0' },
   religion: { label: 'Religion', one: 'Religion', color: '#6a4c92' },
+  founding: { label: 'Cities and institutions founded', one: 'Founding', color: '#7a6a3a' },
+  birth: { label: 'Births', one: 'Birth', color: '#8a7f99' },
+  death: { label: 'Deaths', one: 'Death', color: '#5d5d5d' },
   other: { label: 'Other events', one: 'Event', color: '#6b6359' },
 };
 export const TYPE_KEYS = Object.keys(TYPES);

@@ -64,45 +64,176 @@
   "snapshots": 54,
   "polityNames": 3080,
   "linkedToWikidata": 967,
-  "events": 36854,
-  "eventsFromWikidata": 36823,
+  "events": 89255,
+  "eventsFromWikidata": 89224,
   "stateChanges": 4790,
-  "rulers": 1817,
+  "rulers": 12377,
+  "yearArticles": 12,
+  "yearArticleEvents": 47,
+  "rulerTerms": 12447,
+  "birthsDeaths": 11878,
+  "foundings": 3180,
   "curated": 76,
   "curatedAdded": 31,
   "curatedMerged": 45,
-  "withCoordinates": 20497,
-  "coordinatesFromLocation": 7815,
+  "withCoordinates": 47350,
+  "coordinatesFromLocation": 14554,
   "usStateVersions": 220
  },
  "eventsByType": {
-  "war": 2593,
-  "battle": 11551,
-  "revolt": 1031,
-  "violence": 1182,
-  "treaty": 1498,
-  "state": 4906,
-  "ruler": 1925,
-  "politics": 5032,
-  "epidemic": 341,
-  "disaster": 2998,
-  "discovery": 228,
+  "war": 2701,
+  "battle": 21052,
+  "revolt": 3319,
+  "violence": 3422,
+  "treaty": 2087,
+  "state": 4919,
+  "ruler": 12497,
+  "politics": 14031,
+  "economy": 48,
+  "epidemic": 765,
+  "disaster": 6024,
+  "discovery": 396,
   "religion": 195,
-  "other": 3374
+  "founding": 3178,
+  "birth": 5607,
+  "death": 5608,
+  "other": 3406
  },
  "eventsByEra": {
-  "before 3000 BC": 22,
-  "3000 BC to 500 BC": 491,
-  "500 BC to AD 500": 1820,
-  "500 to 1500": 5782,
-  "1500 to 1800": 6317,
-  "1800 to 1900": 5279,
-  "1900 to today": 17143
+  "before 3000 BC": 28,
+  "3000 BC to 500 BC": 1021,
+  "500 BC to AD 500": 4031,
+  "500 to 1500": 12386,
+  "1500 to 1800": 13123,
+  "1800 to 1900": 13011,
+  "1900 to today": 45655
+ },
+ "eventsByRegionEra": {
+  "Antarctica": {
+   "1800s": 1,
+   "1900-today": 21
+  },
+  "Central Asia": {
+   "before 500 BC": 5,
+   "500 BC-AD 500": 10,
+   "500-1000": 20,
+   "1000-1500": 37,
+   "1500-1700": 17,
+   "1700s": 18,
+   "1800s": 46,
+   "1900-today": 301
+  },
+  "East Asia": {
+   "before 500 BC": 13,
+   "500 BC-AD 500": 119,
+   "500-1000": 123,
+   "1000-1500": 290,
+   "1500-1700": 511,
+   "1700s": 52,
+   "1800s": 433,
+   "1900-today": 2550
+  },
+  "Europe": {
+   "before 500 BC": 58,
+   "500 BC-AD 500": 882,
+   "500-1000": 579,
+   "1000-1500": 2990,
+   "1500-1700": 2561,
+   "1700s": 1743,
+   "1800s": 3056,
+   "1900-today": 12027
+  },
+  "Latin America": {
+   "before 500 BC": 1,
+   "500 BC-AD 500": 1,
+   "500-1000": 4,
+   "1000-1500": 26,
+   "1500-1700": 434,
+   "1700s": 247,
+   "1800s": 1774,
+   "1900-today": 3199
+  },
+  "Middle East": {
+   "before 500 BC": 91,
+   "500 BC-AD 500": 385,
+   "500-1000": 391,
+   "1000-1500": 536,
+   "1500-1700": 200,
+   "1700s": 109,
+   "1800s": 209,
+   "1900-today": 3100
+  },
+  "North Africa": {
+   "before 500 BC": 20,
+   "500 BC-AD 500": 81,
+   "500-1000": 67,
+   "1000-1500": 132,
+   "1500-1700": 182,
+   "1700s": 96,
+   "1800s": 185,
+   "1900-today": 1001
+  },
+  "North America": {
+   "1000-1500": 4,
+   "1500-1700": 111,
+   "1700s": 607,
+   "1800s": 2161,
+   "1900-today": 5565
+  },
+  "Oceania": {
+   "500 BC-AD 500": 1,
+   "1000-1500": 1,
+   "1500-1700": 1,
+   "1700s": 12,
+   "1800s": 257,
+   "1900-today": 1166
+  },
+  "Seven seas (open ocean)": {
+   "1900-today": 3
+  },
+  "South Asia": {
+   "before 500 BC": 20,
+   "500 BC-AD 500": 37,
+   "500-1000": 53,
+   "1000-1500": 136,
+   "1500-1700": 238,
+   "1700s": 264,
+   "1800s": 205,
+   "1900-today": 2425
+  },
+  "Southeast Asia": {
+   "500 BC-AD 500": 1,
+   "500-1000": 5,
+   "1000-1500": 60,
+   "1500-1700": 129,
+   "1700s": 53,
+   "1800s": 208,
+   "1900-today": 1825
+  },
+  "Sub-Saharan Africa": {
+   "500 BC-AD 500": 5,
+   "500-1000": 1,
+   "1000-1500": 16,
+   "1500-1700": 91,
+   "1700s": 29,
+   "1800s": 337,
+   "1900-today": 2896
+  },
+  "unplaced": {
+   "before 500 BC": 455,
+   "500 BC-AD 500": 1147,
+   "500-1000": 1560,
+   "1000-1500": 2847,
+   "1500-1700": 1917,
+   "1700s": 1184,
+   "1800s": 2252,
+   "1900-today": 6821
+  }
  },
  "yearRange": {
   "events": [
    -12301,
-   2026
+   2030
   ],
   "borders": [
    -123000,

@@ -25,7 +25,7 @@ const state = {
   sel: null,            // {kind: 'polity'|'us'|'modern', ...}
   eventId: null,
   view: 'year',         // 'year' | 'sel' | 'event'
-  disabled: new Set(getPref('hiddenTypes', [])),
+  disabled: new Set(getPref('hiddenTypes2', ['birth', 'death'])),   // births and deaths are off until turned on
   projection: getPref('projection', 'mercator'),
   modern: false,
   token: 0,
@@ -351,6 +351,8 @@ async function renderYear() {
   nodes.push(h('p.note', null, `${all.length} ${all.length === 1 ? 'event' : 'events'} recorded · `,
     state.snap ? (state.snap.cs ? `map borders on 1 July ${state.snap.y}` : `map borders as of ${formatYear(state.snap.y)}`) : 'no border map this early'));
 
+  const cen = await getJSON('centuries.json').then((d) => d.centuries.find((c) => c.from <= y && c.to >= y)).catch(() => null);
+  if (cen) nodes.push(h('p.lead.century', null, cen.text, h('span.unver', { title: 'Curated summary, not checked against a dataset' }, 'curated')));
   const strip = await changeStrip(y);
   if (token !== state.token || state.view !== 'year' || state.sel) return;
   if (strip) nodes.push(strip);
@@ -405,7 +407,7 @@ function pills(names, onClick) {
 
 function toggleType(k) {
   if (state.disabled.has(k)) state.disabled.delete(k); else state.disabled.add(k);
-  setPref('hiddenTypes', [...state.disabled]);
+  setPref('hiddenTypes2', [...state.disabled]);
   render();
 }
 
@@ -542,9 +544,28 @@ async function renderSelection() {
   const near = mine.filter((e) => e.y !== y);
   if (mapOk) map.setEvents([...thisYear, ...near], { near: new Set(near.map((e) => e.i)) });
 
-  const nodes = [head, h('h2', null, `In ${formatYear(y)}`)];
+  const tl = await loadTimeline(s);
+  if (token !== state.token || state.sel !== s) return;
+  const nodes = [head];
+  if (tl?.rulers?.length) {
+    const now = tl.rulers.filter(([, a, b]) => a <= y && (b != null ? b >= y : a === y));
+    nodes.push(h('h2', null, `In office in ${formatYear(y)}`));
+    if (now.length) nodes.push(h('ul.changes-list', null, now.slice(0, 8).map(([n, a, b, t]) =>
+      h('li', null, h('b', null, n), `, ${t} (${formatYear(a)}${b != null ? '–' + formatYear(b) : ''})`))));
+    else nodes.push(h('p.empty', null, 'No head of state or government recorded for this year.'));
+    const all = h('details.ruled-hist', null, h('summary', null, `All ${tl.rulers.length} recorded terms (${tl.rulersOf})`),
+      h('ol', null, tl.rulers.map(([n, a, b, t]) => h('li', null, `${formatYear(a)}${b != null ? '–' + formatYear(b) : ''}: ${n}, ${t}`))));
+    nodes.push(all);
+  }
+  nodes.push(h('h2', null, `In ${formatYear(y)}`));
   if (thisYear.length) nodes.push(eventList(thisYear, listOpts(), 15));
-  else nodes.push(h('p.empty', null, `No events recorded here for ${formatYear(y)}.`));
+  else {
+    nodes.push(h('p.empty', null, `No events recorded here for ${formatYear(y)}.`));
+    const ys = [...new Set((tl?.events || []).map((r) => r[1]))].filter((x) => x !== y)
+      .sort((a, b) => Math.abs(a - y) - Math.abs(b - y)).slice(0, 4).sort((a, b) => a - b);
+    if (ys.length) nodes.push(h('p.note', null, 'Nearest years with entries here: '),
+      h('ul.pill-list', null, ys.map((ny) => h('li', null, h('button', { type: 'button', onclick: () => goToYear(ny) }, formatYear(ny))))));
+  }
   nodes.push(h('h2', null, 'Nearby years'));
   const byYear = new Map();
   for (const e of near) { if (!byYear.has(e.y)) byYear.set(e.y, []); byYear.get(e.y).push(e); }
@@ -664,6 +685,15 @@ async function changeStrip(y) {
   return h('section.strip', { 'aria-label': 'What changed this year' }, h('h2', null, 'What changed this year'), h('ul.changes-list', null, items));
 }
 
+async function loadTimeline(s) {
+  try {
+    const idx = await getJSON('timelines/index.json');
+    const key = s.kind === 'modern' ? 'iso:' + s.iso : s.name;
+    const f = idx[key];
+    return f ? await getJSON('timelines/' + f) : null;
+  } catch { return null; }
+}
+
 /** "Who held it over time": runs of maps with the same ruler, loaded on demand. */
 function historyLine(name) {
   const box = h('details.ruled-hist', null, h('summary', null, 'Who held it over time'));
@@ -727,6 +757,8 @@ async function renderEvent() {
   if (e.w) links.append(h('a.ext', { href: wikiUrl(e.w), target: '_blank', rel: 'noopener' }, 'Read on Wikipedia'), '  ');
   if (/^Q\d+$/.test(e.i)) links.append(h('a.ext', { href: wikidataUrl(e.i), target: '_blank', rel: 'noopener' }, 'Wikidata'));
   nodes.push(links);
+  if (e.src) nodes.push(h('p.note', null, 'Listed in ', h('a', { href: e.src, target: '_blank', rel: 'noopener' }, "Wikipedia's article for this year"),
+    e.uv ? '. Its date could not be confirmed in Wikidata (unverified).' : ', and its date matches Wikidata.'));
   if (e.cur) nodes.push(h('p.note', null, 'From GeoHistory\'s hand-checked list of American Revolution events. Day and place are checked against the linked article.'));
   if (e.lo != null) nodes.push(h('p', null, h('button.more', { type: 'button', onclick: () => mapOk && map.flyTo(e.lo, e.la, 6) }, 'Show on map')));
   setBody(nodes);
@@ -927,15 +959,16 @@ async function openSources() {
   const body = els.sourcesBody;
   if (!body.dataset.filled) {
     body.replaceChildren(h('p', null, 'Loading…'));
-    let meta = null;
+    let meta = null, audit = null;
     try { meta = await loadMeta(); } catch { /* still show the text */ }
-    body.replaceChildren(...sourcesContent(meta));
+    try { audit = await getJSON('audit.json'); } catch { /* optional */ }
+    body.replaceChildren(...sourcesContent(meta, audit));
     body.dataset.filled = '1';
   }
   els.sources.showModal();
 }
 
-function sourcesContent(meta) {
+function sourcesContent(meta, audit) {
   const n = (x) => (x == null ? '?' : Number(x).toLocaleString('en-GB'));
   const c = meta?.counts || {};
   return [
@@ -945,10 +978,13 @@ function sourcesContent(meta) {
     h('h3', null, 'Events come from Wikidata'),
     h('p', null, `${n(c.events)} events, from Wikidata's free database, ranked by how many Wikipedia language editions cover them. Dates, places and descriptions can be wrong or missing, and coverage is much thinner for Africa, Asia and the distant past than for Europe and North America.`),
     h('p', null, `For the American Revolution (1763 to 1789) a short hand-checked list adds days, places and colonies where Wikidata lacks them (${n(c.curated)} entries).`),
+    h('h3', null, 'Accuracy check'),
+    h('p', null, audit ? `On ${audit.date} the data was checked against ${audit.facts} well-known facts (dates of events, reigns, who held a city in a given year): ${audit.passed} passed (${Math.round(audit.rate * 100)}%). Entries marked "unverified" or "curated" were written by hand or could not be confirmed in Wikidata.` : 'The accuracy check has not been run for this build.'),
     h('h3', null, 'Sources'),
     h('ul', null,
       h('li', null, h('a', { href: 'https://github.com/aourednik/historical-basemaps', target: '_blank', rel: 'noopener' }, 'historical-basemaps'), ' by André Ourednik and contributors: world borders by year (GPL-3.0).'),
       h('li', null, h('a', { href: 'https://publications.newberry.org/ahcb/', target: '_blank', rel: 'noopener' }, 'Atlas of Historical County Boundaries'), ', Newberry Library: US state and territory borders since 1783.'),
+      h('li', null, h('a', { href: 'https://icr.ethz.ch/data/cshapes/', target: '_blank', rel: 'noopener' }, 'CShapes 2.0'), ': dated state borders 1886 to 2019 (CC BY-NC-SA, non-commercial).'),
       h('li', null, h('a', { href: 'https://www.naturalearthdata.com/', target: '_blank', rel: 'noopener' }, 'Natural Earth'), ': coastlines and today\'s countries (public domain).'),
       h('li', null, h('a', { href: 'https://www.wikidata.org/', target: '_blank', rel: 'noopener' }, 'Wikidata'), ': events and descriptions (CC0). Links go to Wikipedia.'),
       h('li', null, h('a', { href: 'https://maplibre.org/', target: '_blank', rel: 'noopener' }, 'MapLibre GL JS'), ' (BSD licence) draws the map; labels use Noto Sans (SIL Open Font License).')),

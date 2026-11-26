@@ -59,3 +59,12 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
   included yet.
 - The flat map is the default because borders are easier to read; the globe is one tap away. Both were
   checked only in headless Chromium with software rendering, not yet on real phones.
+- Births and deaths (about 11,000, the 12 most notable per year) are off by default; turn them on under
+  "Event types".
+- Event coverage is uneven by region: before 1500 there is almost nothing for North America, Oceania,
+  Southeast Asia and sub-Saharan Africa, and about a fifth of events cannot be placed in a modern country.
+  `data/meta.json` has the full region-by-era table.
+- Wikipedia year articles are fetched very slowly (the API throttles the build machine); only a few have
+  been read so far. Re-run `tools/fetch_yearpages.py` to continue.
+- `tools/audit.py` checks 354 well-known facts; failures are listed in `data/audit.json`. Known source map
+  errors (for example Constantinople shown as Ottoman on the 1400 map) are explained as dated changes.

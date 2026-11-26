@@ -22,8 +22,8 @@ from fetch_sources import NE
 from geo import PolyIndex
 
 JULIAN = 'Q1985786'
-TYPE_ORDER = ['war', 'battle', 'revolt', 'violence', 'treaty', 'state', 'ruler', 'politics', 'epidemic',
-              'disaster', 'discovery', 'religion', 'other']
+TYPE_ORDER = ['war', 'battle', 'revolt', 'violence', 'treaty', 'state', 'ruler', 'politics', 'economy', 'epidemic',
+              'disaster', 'discovery', 'religion', 'founding', 'birth', 'death', 'other']
 
 
 def hist_year(astro):
@@ -212,6 +212,15 @@ def main():
         for b in sparql(f'SELECT ?c ?iso WHERE {{ VALUES ?c {{ {vals} }} ?c wdt:P297 ?iso . }}'):
             iso_of[qid(b['c'])] = b['iso']
     log(f'{len(iso_of)} of {len(cq)} country items have ISO codes')
+    rr_path0 = os.path.join(CACHE, 'rulers_raw.json')
+    if os.path.exists(rr_path0):
+        # ISO codes for the ruler jurisdictions too, so today's countries find their heads of state
+        js = sorted(set(read_json(rr_path0)['pos_j'].values()) - set(iso_of))
+        for i in range(0, len(js), 300):
+            vals = ' '.join('wd:' + q for q in js[i:i + 300])
+            for b in sparql(f'SELECT ?c ?iso WHERE {{ VALUES ?c {{ {vals} }} ?c wdt:P297 ?iso . }}'):
+                iso_of[qid(b['c'])] = b['iso']
+    write_json(os.path.join(CACHE, 'iso_q.json'), {iso: q for q, iso in sorted(iso_of.items(), key=lambda x: x[0], reverse=True)})
 
     events = {}
 
@@ -250,7 +259,14 @@ def main():
                     ev['mc'] = iso_of[q]
                     break
 
-    # ---------- Wikidata events ----------
+    # ---------- Wikidata events (first pass plus the deep pass by class) ----------
+    extra_path = os.path.join(CACHE, 'extra_raw.json')
+    extra = read_json(extra_path) if os.path.exists(extra_path) else {'deep': {}, 'people': [], 'found': {}, 'details': {}, 'dates': {}}
+    det = dict(det)
+    det.update(extra['details'])
+    kept = dict(kept)
+    for k, v in extra['deep'].items():
+        kept.setdefault(k, {'type': {'famine': 'disaster'}.get(v['t'], v['t']), 'sl': v['sl'], 'deep': 1})
     for k, v in kept.items():
         r = det.get(k)
         if not r or not good_label(r.get('label')):
@@ -303,6 +319,12 @@ def main():
         pof = split_pairs(r.get('partof'))
         if pof:
             ev['po'] = pof[0][1]
+        # fix obvious type slips from Wikidata classes (a riot classed under "armed conflict" is not a war)
+        low = ev['l'].lower()
+        if ev['t'] in ('war', 'battle') and any(w in low for w in ('riot', 'uprising', 'revolt', 'rebellion', 'insurrection', 'mutiny', 'protest', 'strike')):
+            ev['t'] = 'revolt'
+        if ev['t'] in ('war', 'battle', 'revolt') and any(w in low for w in ('massacre', 'genocide', 'pogrom')):
+            ev['t'] = 'violence'
         place(ev, countries)
         events[k] = ev
     n_wd = len(events)
@@ -374,6 +396,143 @@ def main():
         events[ev['i']] = ev
         n_rulers += 1
     log(f'{n_rulers} ruler events')
+
+    # ---------- heads of state and government (terms) ----------
+    rr_path = os.path.join(CACHE, 'rulers_raw.json')
+    terms_out = defaultdict(list)
+    n_terms = 0
+    if os.path.exists(rr_path):
+        rr = read_json(rr_path)
+        lab = rr['labels']
+        for t in sorted(rr['terms'], key=lambda t: -t['sl']):
+            pl, posl = lab.get(t['p']), lab.get(t['pos'])
+            j = rr['pos_j'].get(t['pos'])
+            if not pl or not posl or not good_label(pl[0]):
+                continue
+            dt = to_date(t['s'], t['sp'], t['sc'])
+            if not dt:
+                continue
+            y, m, d, _ = dt
+            end = None
+            if t.get('e') and parse_time(t['e']):
+                end = hist_year(parse_time(t['e'])[0])
+            if end is not None and end < y:
+                end = None   # Wikidata has the end before the start: keep the start only
+            key = (t['p'], y)
+            title = posl[0][0].upper() + posl[0][1:]
+            terms_out[j].append([pl[0], y, end, title, t['p']])
+            n_terms += 1
+            if key in seen:
+                continue
+            seen.add(key)
+            ev = {'i': f'r{t["p"]}-{y}', 'l': f'{pl[0]} becomes {title}', 'y': y, 't': 'ruler', 's': max(1, int(t['sl'] * 0.5))}
+            if m:
+                ev['m'] = m
+            if d:
+                ev['dd'] = d
+            if end and end > y:
+                ev['y2'] = end
+            if pl[1]:
+                ev['w'] = pl[1]
+            place(ev, [(j, lab.get(j, [''])[0])] if j else [])
+            events[ev['i']] = ev
+            n_rulers += 1
+        rdir = os.path.join(DATA, 'rulers')
+        os.makedirs(rdir, exist_ok=True)
+        rulers_doc = {}
+        for j, lst in terms_out.items():
+            lst = sorted({tuple(x[:4] + [x[4]]) for x in lst}, key=lambda x: (x[1], x[0]))
+            rulers_doc[j] = {'n': lab.get(j, [j])[0], 'terms': [list(x) for x in lst]}
+        write_json(os.path.join(rdir, 'terms.json'), rulers_doc)
+        log(f'{n_terms} terms in {len(rulers_doc)} jurisdictions')
+
+    # ---------- people (optional filter) and foundings ----------
+    n_people = n_found = 0
+    for kind_list, prop in ((extra['people'], None),):
+        pass
+    by_year = defaultdict(list)
+    for x in extra['people']:
+        r = det.get(x['p'])
+        if not r or not good_label(r.get('label')):
+            continue
+        for prop, val, prec, cal, pc in extra['dates'].get(x['p'], []):
+            if (prop == 'P569') != (x['k'] == 'birth') or prop not in ('P569', 'P570'):
+                continue
+            dt = to_date(val, prec, cal)
+            if not dt:
+                continue
+            y, m, d, _ = dt
+            ev = {'i': f'{x["k"][0]}{x["p"]}', 'l': f'{"Birth" if x["k"] == "birth" else "Death"} of {r["label"]}', 'y': y,
+                  't': x['k'], 's': max(1, x['sl'] // 3)}
+            if m:
+                ev['m'] = m
+            if d:
+                ev['dd'] = d
+            if r.get('desc'):
+                ev['d'] = r['desc'][:160]
+            if r.get('enwiki'):
+                ev['w'] = r['enwiki']
+            pt = parse_point(pc)
+            if pt:
+                ev['lo'], ev['la'] = pt
+            by_year[(y, x['k'])].append(ev)
+            break
+    for (y, k), lst in by_year.items():
+        for ev in sorted(lst, key=lambda e: -e['s'])[:12]:   # the 12 most notable births and deaths per year
+            place(ev, [])
+            events[ev['i']] = ev
+            n_people += 1
+    for q, v in extra['found'].items():
+        r = det.get(q)
+        if not r or not good_label(r.get('label')):
+            continue
+        ds = [to_date(val, prec, cal) for prop, val, prec, cal, _ in extra['dates'].get(q, []) if prop == 'P571']
+        ds = [d for d in ds if d]
+        if not ds:
+            continue
+        y, m, d, approx = min(ds)
+        ev = {'i': f'n{q}', 'l': f'{r["label"]} founded', 'y': y, 't': 'founding', 's': max(1, int(v['sl'] * 0.4))}
+        if m:
+            ev['m'] = m
+        if d:
+            ev['dd'] = d
+        if approx:
+            ev['ya'] = 1
+        if r.get('desc'):
+            ev['d'] = r['desc'][:160]
+        if r.get('enwiki'):
+            ev['w'] = r['enwiki']
+        pt = parse_point(r.get('coord'))
+        if pt:
+            ev['lo'], ev['la'] = pt
+        place(ev, split_pairs(r.get('countries')))
+        events[ev['i']] = ev
+        n_found += 1
+    log(f'{n_people} births and deaths, {n_found} foundings')
+
+    # ---------- Wikipedia year articles (dated links; only what Wikidata does not already have) ----------
+    yp_path = os.path.join(CACHE, 'yearpage_events.json')
+    n_yp = 0
+    yp_pages = 0
+    if os.path.exists(yp_path):
+        yp = read_json(yp_path)
+        yp_pages = yp['pages']
+        have_w = {e.get('w') for e in events.values()}
+        for i, f in enumerate(yp['events']):
+            if f.get('q') in events or f['link'] in have_w:
+                continue
+            ev = {'i': f"wp{f['y']}-{i}", 'l': f['link'], 'y': f['y'], 't': 'other', 's': 2, 'w': f['link'], 'src': f['source']}
+            if f['m']:
+                ev['m'] = f['m']
+            if f['d']:
+                ev['dd'] = f['d']
+            if not f['verified']:
+                ev['uv'] = 1
+            place(ev, [])
+            events[ev['i']] = ev
+            have_w.add(f['link'])
+            n_yp += 1
+        log(f'{n_yp} events added from {yp_pages} Wikipedia year articles')
 
     # ---------- curated supplement ----------
     sup = read_json(os.path.join(TOOLS, 'supplement_events.json'))['events']
@@ -520,6 +679,27 @@ def main():
 
     # ---------- meta ----------
     by_type = Counter(e['t'] for e in evs)
+    # region x era table (region from today's country, Natural Earth subregions grouped)
+    REG = {'Eastern Asia': 'East Asia', 'Southern Asia': 'South Asia', 'South-Eastern Asia': 'Southeast Asia',
+           'Central Asia': 'Central Asia', 'Western Asia': 'Middle East', 'Northern Africa': 'North Africa',
+           'Northern America': 'North America', 'Caribbean': 'Latin America', 'Central America': 'Latin America',
+           'South America': 'Latin America', 'Australia and New Zealand': 'Oceania', 'Melanesia': 'Oceania',
+           'Micronesia': 'Oceania', 'Polynesia': 'Oceania'}
+    sub = {}
+    for f in mod['features']:
+        p = f['properties']
+        iso = p.get('ISO_A2_EH') if p.get('ISO_A2_EH') not in (None, '-99') else p.get('ADM0_A3')
+        sr = p.get('SUBREGION') or ''
+        sub[iso] = REG.get(sr, 'Sub-Saharan Africa' if 'Africa' in sr else 'Europe' if 'Europe' in sr else sr or 'Other')
+    era_cuts = [(-10**6, -500, 'before 500 BC'), (-500, 500, '500 BC-AD 500'), (500, 1000, '500-1000'), (1000, 1500, '1000-1500'),
+                (1500, 1700, '1500-1700'), (1700, 1800, '1700s'), (1800, 1900, '1800s'), (1900, 3000, '1900-today')]
+    grid = defaultdict(Counter)
+    for e in evs:
+        if e['t'] in ('birth', 'death'):
+            continue
+        rg = sub.get(e.get('mc'), 'unplaced')
+        era = next(l for a, b, l in era_cuts if a <= e['y'] < b)
+        grid[rg][era] += 1
     eras = [('before 3000 BC', -10**6, -3000), ('3000 BC to 500 BC', -3000, -500), ('500 BC to AD 500', -500, 500),
             ('500 to 1500', 500, 1500), ('1500 to 1800', 1500, 1800), ('1800 to 1900', 1800, 1900),
             ('1900 to today', 1900, 3000)]
@@ -534,6 +714,8 @@ def main():
             'events': len(evs),
             'eventsFromWikidata': len(evs) - n_added,
             'stateChanges': n_states, 'rulers': n_rulers,
+            'yearArticles': yp_pages, 'yearArticleEvents': n_yp,
+            'rulerTerms': n_terms, 'birthsDeaths': n_people, 'foundings': n_found,
             'curated': n_added + n_merged, 'curatedAdded': n_added, 'curatedMerged': n_merged,
             'withCoordinates': sum(1 for e in evs if e.get('lo') is not None),
             'coordinatesFromLocation': sum(1 for e in evs if e.get('ap')),
@@ -541,6 +723,7 @@ def main():
         },
         'eventsByType': {t: by_type.get(t, 0) for t in TYPE_ORDER},
         'eventsByEra': by_era,
+        'eventsByRegionEra': {rg: dict(c) for rg, c in sorted(grid.items())},
         'yearRange': {'events': [evs[0]['y'], evs[-1]['y']], 'borders': [snap_years[0], snap_years[-1]]},
         'gaps': [
             'Borders are snapshots: there are only %d maps, so most years show the nearest earlier map.' % len(snap_years),

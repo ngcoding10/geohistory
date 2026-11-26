@@ -1,0 +1,413 @@
+{
+ "_about": "Curated \"state of the world\" per century (written for GeoHistory, conservative). Narrative summaries; dates inside are commonly cited ones but not machine-checked, so they are shown as unverified.",
+ "centuries": [
+  {
+   "id": "cen-3000",
+   "from": -3000,
+   "to": -2901,
+   "text": "Writing and the first cities spread in Mesopotamia; Egypt is unified under its first dynasties around 3100 BC. Farming villages cover much of Eurasia, Africa and the Americas, but most people live outside any state.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2900",
+   "from": -2900,
+   "to": -2801,
+   "text": "City-states such as Uruk, Ur and Kish compete in Sumer. Egypt's Early Dynastic kings rule the Nile valley from Memphis.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2800",
+   "from": -2800,
+   "to": -2701,
+   "text": "Sumerian city-states grow and trade widely. In the Indus valley, settlements are growing toward the cities of the Harappan civilisation.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2700",
+   "from": -2700,
+   "to": -2601,
+   "text": "Egypt's Old Kingdom begins and builds the first stone pyramids. Sumerian kings record their deeds in cuneiform.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2600",
+   "from": -2600,
+   "to": -2501,
+   "text": "The great pyramids of Giza are built in Egypt. Harappan cities such as Mohenjo-daro and Harappa flourish in the Indus valley.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2500",
+   "from": -2500,
+   "to": -2401,
+   "text": "Egypt's Old Kingdom and the Indus cities are at their height. Early Bronze Age cultures spread across Europe and China's Longshan culture builds walled towns.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2400",
+   "from": -2400,
+   "to": -2301,
+   "text": "Sumerian city-states fight over land and water. Ebla in Syria is a major trading power.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2300",
+   "from": -2300,
+   "to": -2201,
+   "text": "Sargon of Akkad unites Mesopotamia in what is often called the first empire. Egypt's Old Kingdom is in its last long reigns.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2200",
+   "from": -2200,
+   "to": -2101,
+   "text": "The Akkadian Empire collapses and Egypt's Old Kingdom breaks up, at a time of drought across the region. The Indus cities begin a slow decline.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2100",
+   "from": -2100,
+   "to": -2001,
+   "text": "The Third Dynasty of Ur revives Sumerian rule in Mesopotamia. Egypt is divided between rival centres.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-2000",
+   "from": -2000,
+   "to": -1901,
+   "text": "Egypt is reunited under the Middle Kingdom. Minoan palaces rise on Crete, and Bronze Age China sees the traditional start of the Xia dynasty.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1900",
+   "from": -1900,
+   "to": -1801,
+   "text": "Amorite kingdoms rule much of Mesopotamia. Assyrian merchants run a trade network into Anatolia.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1800",
+   "from": -1800,
+   "to": -1701,
+   "text": "Hammurabi of Babylon unites much of Mesopotamia and issues his law code. The Indus cities are largely abandoned.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1700",
+   "from": -1700,
+   "to": -1601,
+   "text": "The Hyksos take control of northern Egypt. The Hittites rise in Anatolia.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1600",
+   "from": -1600,
+   "to": -1501,
+   "text": "The Shang dynasty rules the Yellow River valley in China. Mycenaean Greece and the Hittite kingdom grow; Egypt drives out the Hyksos.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1500",
+   "from": -1500,
+   "to": -1401,
+   "text": "Egypt's New Kingdom builds an empire into the Levant and Nubia. The Mitanni, Hittites and Kassite Babylon are the other great powers of the Near East.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1400",
+   "from": -1400,
+   "to": -1301,
+   "text": "Egypt, the Hittites, Mitanni, Babylon and Assyria trade letters and gifts as great powers. Mycenaean palaces dominate Greece.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1300",
+   "from": -1300,
+   "to": -1201,
+   "text": "Egypt and the Hittites fight for Syria and make one of the earliest known peace treaties. Shang China leaves the first written records on oracle bones.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1200",
+   "from": -1200,
+   "to": -1101,
+   "text": "The Late Bronze Age collapse destroys the Hittite kingdom, Mycenaean palaces and many cities of the eastern Mediterranean. The Olmec culture develops in Mexico.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1100",
+   "from": -1100,
+   "to": -1001,
+   "text": "Small kingdoms and city-states replace the fallen empires of the Near East. In China the Zhou overthrow the Shang around 1046 BC.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-1000",
+   "from": -1000,
+   "to": -901,
+   "text": "Iron working spreads. Phoenician cities trade across the Mediterranean; Israel and Judah form kingdoms; Zhou kings rule much of northern China.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-900",
+   "from": -900,
+   "to": -801,
+   "text": "The Neo-Assyrian Empire begins to expand. Phoenicians found trading posts in the western Mediterranean.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-800",
+   "from": -800,
+   "to": -701,
+   "text": "Greek city-states grow and found colonies; Carthage is founded by Phoenicians. Zhou royal power weakens in China.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-700",
+   "from": -700,
+   "to": -601,
+   "text": "Assyria rules most of the Near East. Rome is a small city in Italy; Kush rules Egypt for a time.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-600",
+   "from": -600,
+   "to": -501,
+   "text": "Babylon replaces Assyria; the Persian Achaemenid Empire is founded by Cyrus the Great around 550 BC. The Buddha and Confucius teach in this period.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-500",
+   "from": -500,
+   "to": -401,
+   "text": "Persia rules from Egypt to the Indus and fights the Greek city-states. China is divided among warring states; Rome becomes a republic.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-400",
+   "from": -400,
+   "to": -301,
+   "text": "Greek city-states exhaust each other in war. Alexander the Great conquers Persia in the 330s BC and his empire splits after his death.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-300",
+   "from": -300,
+   "to": -201,
+   "text": "Hellenistic kingdoms rule the eastern Mediterranean; the Maurya Empire unites most of India. Qin unifies China in 221 BC and the Han follow.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-200",
+   "from": -200,
+   "to": -101,
+   "text": "Rome defeats Carthage and expands around the Mediterranean. Han China fights the Xiongnu and opens routes into Central Asia.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen-100",
+   "from": -100,
+   "to": -1,
+   "text": "Rome's republic falls into civil wars and becomes an empire under Augustus. Han China and Parthia are the other great powers of Eurasia.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1",
+   "from": 1,
+   "to": 100,
+   "text": "The Roman and Han empires dominate the two ends of Eurasia. Christianity begins in Roman Judaea.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen100",
+   "from": 100,
+   "to": 199,
+   "text": "The Roman Empire reaches its greatest extent under Trajan. The Kushan Empire rules Central Asia and northern India.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen200",
+   "from": 200,
+   "to": 299,
+   "text": "Han China collapses into the Three Kingdoms. Rome suffers civil wars and invasions; the Sasanian dynasty replaces the Parthians in Persia.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen300",
+   "from": 300,
+   "to": 399,
+   "text": "Constantine favours Christianity and founds Constantinople. The Gupta Empire rises in India; northern China is ruled by many short-lived states.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen400",
+   "from": 400,
+   "to": 499,
+   "text": "The Western Roman Empire falls to Germanic kingdoms; the Eastern Empire survives. Huns raid Europe and India.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen500",
+   "from": 500,
+   "to": 599,
+   "text": "Justinian reconquers parts of the West for the Eastern Roman Empire. China is reunited under the Sui in 589.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen600",
+   "from": 600,
+   "to": 699,
+   "text": "Islam begins in Arabia and the early caliphates conquer the Middle East, North Africa and Persia. Tang China is the largest state in East Asia.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen700",
+   "from": 700,
+   "to": 799,
+   "text": "The Umayyad and then Abbasid caliphates rule from Spain to Central Asia. The Franks rise in western Europe; the Tang are at their height.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen800",
+   "from": 800,
+   "to": 899,
+   "text": "Charlemagne is crowned emperor in 800. The Abbasids rule from Baghdad; Vikings raid Europe.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen900",
+   "from": 900,
+   "to": 999,
+   "text": "The Tang dynasty ends in 907; the caliphate splits into rival states. The Holy Roman Empire is founded in 962.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1000",
+   "from": 1000,
+   "to": 1099,
+   "text": "Song China is the richest state in the world. The Seljuk Turks take much of the Middle East; Europe launches the First Crusade in 1096.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1100",
+   "from": 1100,
+   "to": 1199,
+   "text": "Crusader states hold parts of the Levant. The Jin conquer northern China; the Khmer Empire builds Angkor Wat.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1200",
+   "from": 1200,
+   "to": 1299,
+   "text": "The Mongols under Genghis Khan and his successors conquer the largest land empire in history. The Delhi Sultanate rules northern India.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1300",
+   "from": 1300,
+   "to": 1399,
+   "text": "The Black Death kills a large share of the population of Europe, the Middle East and North Africa. The Ming replace the Mongol Yuan in China in 1368.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1400",
+   "from": 1400,
+   "to": 1499,
+   "text": "The Ottomans take Constantinople in 1453. The Aztec and Inca empires expand; Portuguese ships explore Africa and Columbus reaches the Americas in 1492.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1500",
+   "from": 1500,
+   "to": 1599,
+   "text": "Spain conquers the Aztec and Inca empires. The Ottoman, Safavid and Mughal empires dominate the Islamic world; the Reformation divides western Christianity.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1600",
+   "from": 1600,
+   "to": 1699,
+   "text": "European trading companies set up in Asia and colonies in the Americas. The Qing replace the Ming in China; Tokugawa Japan limits foreign contact.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1700",
+   "from": 1700,
+   "to": 1799,
+   "text": "Britain and France fight for empire worldwide. Revolutions in America and France end the century; the Mughal Empire declines.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1800",
+   "from": 1800,
+   "to": 1899,
+   "text": "Latin America becomes independent, industry transforms Britain and then other countries, and European powers colonise most of Africa and much of Asia.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen1900",
+   "from": 1900,
+   "to": 1999,
+   "text": "Two world wars, the end of European colonial empires, the Cold War and the fall of the Soviet Union in 1991 reshape the world.",
+   "source": "curated",
+   "verified": false
+  },
+  {
+   "id": "cen2000",
+   "from": 2000,
+   "to": 2099,
+   "text": "Global trade and the internet connect the world. China grows into a great power; wars continue in the Middle East and Ukraine.",
+   "source": "curated",
+   "verified": false
+  }
+ ]
+}

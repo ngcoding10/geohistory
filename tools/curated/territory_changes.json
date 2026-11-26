@@ -2,6 +2,28 @@
  "_about": "Curated, dated territory changes between the coarse border maps (before 1886). No shapes are drawn from these: they are shown as text in the year and territory panels, placed by a point inside the affected area. Each date is cross-checked against the Wikidata item of the linked article by tools/build_changes.py.",
  "changes": [
   {
+   "id": "tc081",
+   "y": 1453,
+   "m": 5,
+   "d": 29,
+   "text": "The Ottomans take Constantinople, ending the Byzantine Empire (the 1400 world map already shows the city as Ottoman)",
+   "lon": 28.95,
+   "lat": 41.01,
+   "wiki": "Fall of Constantinople",
+   "source": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+  },
+  {
+   "id": "tc080",
+   "y": 1664,
+   "m": 8,
+   "d": 27,
+   "text": "England takes New Amsterdam from the Dutch and renames it New York (the 1700 world map still shows it as Dutch)",
+   "lon": -74.0,
+   "lat": 40.75,
+   "wiki": "New Amsterdam",
+   "source": "https://en.wikipedia.org/wiki/New_Amsterdam"
+  },
+  {
    "id": "tc001",
    "y": 1699,
    "text": "Ottoman Empire cedes most of Hungary and Transylvania to the Habsburgs",

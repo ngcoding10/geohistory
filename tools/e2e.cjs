@@ -106,6 +106,15 @@ async function waitEvents(page) {
     await waitH1(page, 'The world in 44 BC');
     ok(new URL(page.url()).searchParams.get('y') === '-44', '"-44" is 44 BC and the URL says y=-44');
 
+    // dated CShapes borders, the change strip, colonies
+    await typeYear(page, '1914');
+    await waitH1(page, 'The world in 1914');
+    ok(/^Borders on 1 July 1914/.test(await page.locator('#badge').innerText()), '1914 uses dated borders (badge "Borders on 1 July 1914")');
+    await typeYear(page, '1772');
+    await waitH1(page, 'The world in 1772');
+    await page.waitForSelector('.strip', { timeout: 30000 }).catch(() => {});
+    ok(/Poland/.test(await page.locator('#panelBody').innerText()), '1772 "What changed this year" names the partition of Poland');
+
     // click a territory on the map
     await typeYear(page, '1776');
     await waitH1(page, 'The world in 1776');
@@ -143,6 +152,10 @@ async function waitEvents(page) {
     await page.goto(url);
     await waitH1(page, before.h);
     ok((await page.inputValue('#year')) === before.y, `reload keeps the view (${before.h}, ${before.y})`);
+
+    await page.goto(BASE + '?y=1750&col=VA');
+    await waitH1(page, 'Colony of Virginia');
+    ok(true, 'colony panel opens from the URL (Colony of Virginia, 1750)');
 
     ok(errors.length === 0, `no console errors on desktop${errors.length ? ': ' + errors.slice(0, 5).join(' | ') : ''}`);
 

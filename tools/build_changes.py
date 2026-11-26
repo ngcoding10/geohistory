@@ -18,6 +18,9 @@ def main():
         out.append(e)
     write_json(os.path.join(DATA, 'changes.json'), {'changes': out})
     log(f'territory changes: {len(out)}, {ok} verified against Wikidata')
+    cen = read_json(os.path.join(TOOLS, 'curated', 'centuries.json'))['centuries']
+    write_json(os.path.join(DATA, 'centuries.json'), {'centuries': cen})
+    log(f'century summaries: {len(cen)} (narrative, unverified)')
     for e in out:
         if not e['verified']:
             log(f"  unverified: {e['y']} {e['wiki']}: {e['check']}")

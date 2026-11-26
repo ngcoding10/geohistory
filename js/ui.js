@@ -56,7 +56,7 @@ export function eventRow(e, { onOpen, highlight = false, showYear = false, moder
   return h('li', null, h('button.ev' + (highlight ? '.today' : ''), { type: 'button', onclick: () => onOpen(e) },
     h('span.dot', { style: `background:${typeColor(e.t)}`, 'aria-hidden': 'true' }),
     h('span', null,
-      h('span.t', null, e.l),
+      h('span.t', null, e.l, e.uv ? h('span.unver', { title: 'Not confirmed by Wikidata' }, 'unverified') : null),
       h('span.m', null, [t.one, when, place].filter(Boolean).join(' · ')),
       e.d ? h('span.d', null, e.d) : null)));
 }

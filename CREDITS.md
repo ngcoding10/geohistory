@@ -69,6 +69,19 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
   the Wikipedia article linked from each entry. They add day, approximate place and colony where
   Wikidata lacks them. Same licence as the app code.
 
+### Wikipedia year articles (CC BY-SA 4.0)
+- The "Events" sections of English Wikipedia's year articles ("1776", "44 BC", "AD 5") are read by
+  `tools/fetch_yearpages.py` (slow, resumable). Only dated links to other articles are kept: an event is
+  named by the article it links to and credited to the year article; no sentence text is copied. Each is
+  checked against the Wikidata item of the linked article and shown as unverified when the year differs.
+  Text from Wikipedia is © Wikipedia contributors, CC BY-SA 4.0.
+
+### Curated files (written for GeoHistory, `tools/curated/`)
+- `territory_changes.json`: 81 dated border changes before 1886, each with a source article, checked
+  against Wikidata (70 match). `dependency_owners.json`: rulers of 1886-2019 dependencies (unverified).
+  `cshapes_names.json`: era names of renamed states. `centuries.json`: a short "state of the world" per
+  century (narrative, unverified). Plus `tools/supplement_events.json` (American Revolution).
+
 ## Software and fonts
 - **MapLibre GL JS** 5.23.0, BSD 3-Clause licence, `vendor/maplibre/LICENSE.txt`. https://maplibre.org/
 - **Noto Sans** (Regular, Italic) map label glyphs, SIL Open Font License 1.1, `fonts/LICENSE-OFL.txt`.
