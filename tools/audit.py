@@ -7,10 +7,12 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from collections import defaultdict
 
 from common import DATA, TOOLS, read_json, write_json
-from geo import PolyIndex
+from geo import PolyIndex, near_index
+from names import aliases
 
 
 def norm(s):
@@ -26,22 +28,40 @@ def main():
             by_name[norm(e['w'])].append(e)
         for al in e.get('al', []):   # English "also known as" names from Wikidata
             by_name[norm(al)].append(e)
+    tcache = {}
     bindex = read_json(os.path.join(DATA, 'borders', 'index.json'))['snapshots']
     cs = read_json(os.path.join(DATA, 'cshapes', 'index.json'))
     import yearly
 
+    NEAR_KM = 8.0   # coastal cities: outlines are simplified by about 3 km and rounded to 1 km
+
     def territory(lon, lat, y):
+        """(name, ruler) of the territory at a point; a state within NEAR_KM wins over open sea."""
         if yearly.source(y):
-            pols = yearly.year_doc(y)
-            k = PolyIndex([(i, p['g']) for i, p in enumerate(pols)]).lookup(lon, lat)
-            return None if k is None else f"{pols[k]['n']} | {pols[k]['s'] or ''}"
+            key = yearly.map_key(y)
+            if key not in tcache:
+                pols = yearly.year_doc(y)
+                tcache[key] = (PolyIndex([(i, p['g']) for i, p in enumerate(pols)]), pols)
+            pi, pols = tcache[key]
+            k = pi.lookup(lon, lat)
+            if k is None or pols[k].get('u'):
+                # not inside a state: a state whose outline passes within a few km, else the sketch-map row
+                k2 = near_index(pi, lon, lat, NEAR_KM, accept=lambda i: not pols[i].get('u'))
+                k = k2 if k2 is not None else (k if k is not None else near_index(pi, lon, lat, NEAR_KM))
+            return None if k is None else (pols[k]['n'], pols[k]['s'] or '')
         snap = max(s['y'] for s in bindex if s['y'] <= y)
-        doc = read_json(os.path.join(DATA, 'borders', f'{snap}.json'))
-        k = PolyIndex([(f['properties']['k'], f['geometry']) for f in doc['features'] if f['properties']['k'] >= 0]).lookup(lon, lat)
+        if snap not in tcache:
+            doc = read_json(os.path.join(DATA, 'borders', f'{snap}.json'))
+            tcache[snap] = (PolyIndex([(f['properties']['k'], f['geometry']) for f in doc['features'] if f['properties']['k'] >= 0]), doc['polities'])
+        pi, pols = tcache[snap]
+        k = near_index(pi, lon, lat, NEAR_KM)
         if k is None:
             return None
-        p = doc['polities'][k]
-        return f"{p['n']} | {p.get('s', '')}"
+        return (pols[k]['n'], pols[k].get('s', ''))
+
+    def fold(t):
+        t = t.replace('đ', 'd').replace('Đ', 'D').replace('ʻ', '').replace("'", '').replace('’', '')
+        return ''.join(c for c in unicodedata.normalize('NFKD', t) if not unicodedata.combining(c)).lower()
 
     results = []
     for line in open(os.path.join(TOOLS, 'audit', 'facts.txt'), encoding='utf-8'):
@@ -68,8 +88,10 @@ def main():
         else:
             lon, lat, y, text = float(a[0]), float(a[1]), int(a[2]), a[3]
             t = territory(lon, lat, y)
-            ok = bool(t) and text.lower() in t.lower()
-            got = t or 'no territory'
+            # the name, its ruler and their aliases (tools/curated/names.json); ";" separates spellings
+            hay = fold(' | '.join([x for n in t for x in [n] + aliases(n)])) if t else ''
+            ok = bool(t) and any(fold(alt.strip()) in hay for alt in text.split(';'))
+            got = f'{t[0]} | {t[1]}' if t else 'no territory'
         results.append({'fact': line, 'ok': ok, 'got': str(got)})
         print(('PASS ' if ok else 'FAIL ') + line + ('' if ok else f'   (data: {got})'))
 

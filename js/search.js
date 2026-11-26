@@ -32,7 +32,7 @@ export class Search {
     if (!this.loading) {
       this.loading = loadSearch().then((d) => {
         const items = [];
-        for (const p of d.polities) items.push({ k: 'p', n: p[0], ys: p[1].flatMap((r) => (Array.isArray(r) ? [r[0], r[1]] : [r])), w: p[2] || 0 });
+        for (const p of d.polities) items.push({ k: 'p', n: p[0], ys: p[1].flatMap((r) => (Array.isArray(r) ? [r[0], r[1]] : [r])), w: p[2] || 0, alt: p[3] || [] });
         for (const m of d.modern) items.push({ k: 'm', n: m[0], iso: m[1], alt: m[2] || [], w: 5 });
         for (const u of d.us) items.push({ k: 'u', n: u[0], id: u[1], y0: u[2], y1: u[3], w: 3 });
         for (const e of d.events) items.push({ k: 'e', n: e[0], i: e[1], y: e[2], f: e[3], w: e[4] || 0, alt: e[5] || [] });

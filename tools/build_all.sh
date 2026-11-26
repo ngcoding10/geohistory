@@ -7,7 +7,7 @@ python3 build_borders.py      # data/borders/*, data/powers.json, data/base/*
 python3 build_us.py           # data/us/states.json
 python3 build_colonies.py     # data/us/colonies.json (colonial counties before 1783)
 python3 build_cshapes.py      # data/cshapes/* (dated borders 1886-2019)
-python3 build_clio.py         # data/clio/* (yearly borders 1700-1885 from Cliopatria)
+python3 build_clio.py         # data/clio/* (borders 3400 BC-1885 from Cliopatria, one map per change year)
 python3 fetch_events.py       # Wikidata events -> tools/cache/events_raw.json (slow the first time)
 python3 fetch_rulers.py       # heads of state and government -> tools/cache/rulers_raw.json
 python3 fetch_extra.py        # deep pass, births/deaths, foundings -> tools/cache/extra_raw.json

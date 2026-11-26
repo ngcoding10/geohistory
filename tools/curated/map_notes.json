@@ -1,0 +1,26 @@
+{
+ "about": "Known errors and simplifications of the border sources that cannot be fixed by reassigning existing outlines. Shown in the panel of the named territories for the given years. Written for GeoHistory from general knowledge; each names the Wikipedia article that supports it.",
+ "notes": [
+  {"names": ["Danish India"], "from": 1755, "to": 1845,
+   "note": "The source outline for the Danish settlement in Bengal is misplaced: it covers Calcutta, which was the capital of British Bengal. The Danish settlement was Serampore (Frederiksnagore), about 20 km to the north, held from 1755 to 1845.",
+   "source": "https://en.wikipedia.org/wiki/Serampore"},
+  {"names": ["Poles", "Russian Empire"], "from": 1830, "to": 1833,
+   "note": "Cliopatria leaves Congress Poland (Warsaw) out of the Russian Empire for 1830 to 1833. Poland was under the Russian tsar from 1815; Polish insurgents controlled it only during the November Uprising, from November 1830 to October 1831.",
+   "source": "https://en.wikipedia.org/wiki/November_Uprising"},
+  {"names": ["Greek City-States", "Peloponnesian League"], "from": -480, "to": -384,
+   "note": "Athens and Attica are blank on the source map for these years. Athens was an independent city-state and led the Delian League from 478 BC to 404 BC.",
+   "source": "https://en.wikipedia.org/wiki/Delian_League"},
+  {"names": ["Spanish Empire"], "from": 1580, "to": 1640,
+   "note": "During the Iberian Union (1580 to 1640) the kings of Spain were also kings of Portugal. Cliopatria draws Portugal's possessions, such as Brazil, as part of the Spanish Empire in these years; they stayed a separate Portuguese crown with their own administration.",
+   "source": "https://en.wikipedia.org/wiki/Iberian_Union"},
+  {"names": ["Spanish Empire"], "from": 1535, "to": 1821,
+   "note": "Cliopatria draws Spain's American possessions as one territory. They were governed as viceroyalties: New Spain (Mexico City) from 1535 and Peru (Lima) from 1542, later also New Granada (1717) and the Río de la Plata (1776).",
+   "source": "https://en.wikipedia.org/wiki/Spanish_Empire"},
+  {"names": ["British Colonial Empire"], "from": 1867, "to": 1885,
+   "note": "Cliopatria draws British possessions as one territory. From 1 July 1867 Ontario, Quebec, Nova Scotia and New Brunswick formed the self-governing Dominion of Canada inside the British Empire.",
+   "source": "https://en.wikipedia.org/wiki/Canadian_Confederation"},
+  {"names": ["Islamic city-states"], "from": 1000, "to": 1505,
+   "note": "This sketch-map label covers the Swahili city-states of the East African coast. The strongest of them in the 13th to 15th centuries was the Kilwa Sultanate, which the Portuguese took in 1505.",
+   "source": "https://en.wikipedia.org/wiki/Kilwa_Sultanate"}
+ ]
+}

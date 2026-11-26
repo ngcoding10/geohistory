@@ -116,17 +116,27 @@ async function waitEvents(page) {
     // BC years
     await typeYear(page, '44 BC');
     await waitH1(page, 'The world in 44 BC');
-    ok(/Borders as of 100 BC/.test(await page.locator('#badge').innerText()), '44 BC uses the 100 BC border map');
+    ok(/^Borders in 44 BC \(approximate\)/.test(await page.locator('#badge').innerText()), '44 BC has a Cliopatria map (badge "Borders in 44 BC (approximate)")');
+    const snap44 = await page.evaluate(() => { const d = window.__geo.state.snapDoc; return { src: d.src, rome: d.polities.some((p) => /Roman Republic/.test(p.n)), under: d.polities.filter((p) => p.under).length, feats: d.features.length }; });
+    ok(snap44.src === 'clio' && snap44.rome && snap44.under > 5, `the 44 BC map shows the Roman Republic and ${snap44.under} territories from the older sketch map (${snap44.feats} outlines)`);
     await typeYear(page, '-44');
     await waitH1(page, 'The world in 44 BC');
     ok(new URL(page.url()).searchParams.get('y') === '-44', '"-44" is 44 BC and the URL says y=-44');
 
-    // before 1700 the coarse snapshots are still used
+    // before 1700 Cliopatria is used too; before 3400 BC the coarse snapshots remain
     await typeYear(page, '1660');
     await waitH1(page, 'The world in 1660');
-    ok(/^Borders as of 1650/.test(await page.locator('#badge').innerText()), '1660 uses the 1650 snapshot (badge "Borders as of 1650")');
+    ok(/^Borders in 1660 \(approximate\)/.test(await page.locator('#badge').innerText()), '1660 has a Cliopatria map (badge "Borders in 1660 (approximate)")');
+    await typeYear(page, '1453');
+    await waitH1(page, 'The world in 1453');
+    await page.waitForFunction(() => window.__geo.state.snapDoc?.src === 'clio' && window.__geo.state.snapDoc.year <= 1453 && window.__geo.state.snapDoc.year > 1400, null, { timeout: 60000 });
+    const n1453 = await page.evaluate(() => window.__geo.state.snapDoc.polities.map((p) => p.n).join('|'));
+    ok(/Ottoman/.test(n1453) && /Ming/.test(n1453) && /Inca/.test(n1453), 'the 1453 map has the Ottoman Empire, the Ming and the Inca');
+    await typeYear(page, '5000 BC');
+    await waitH1(page, 'The world in 5,000 BC');
+    ok(/^Borders as of 5,000 BC/.test(await page.locator('#badge').innerText()), '5000 BC, before Cliopatria starts, uses the 5000 BC snapshot');
     // borders change between nearby years in the yearly range: Poland is on the 1790 map and gone from 1800
-    const names = async (y) => { await typeYear(page, String(y)); await waitH1(page, `The world in ${y}`); await page.waitForFunction((yy) => window.__geo.state.snapDoc?.year === yy, y, { timeout: 60000 }); return page.evaluate(() => window.__geo.state.snapDoc.polities.map((p) => p.n).join('|')); };
+    const names = async (y) => { await typeYear(page, String(y)); await waitH1(page, `The world in ${y}`); await page.waitForFunction((yy) => { const d = window.__geo.state.snapDoc; return d && d.year <= yy && window.__geo.state.snap?.y === d.year && window.__geo.state.year === yy; }, y, { timeout: 60000 }); return page.evaluate(() => window.__geo.state.snapDoc.polities.map((p) => p.n).join('|')); };
     const n1790 = await names(1790);
     const n1800 = await names(1800);
     ok(/Polish/.test(n1790) && !/Polish-Lithuanian/.test(n1800), 'Poland-Lithuania is on the 1790 map and gone from the 1800 map');

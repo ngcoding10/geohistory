@@ -265,8 +265,8 @@ function updateBadge() {
     els.badge.classList.remove('exact');
     return;
   }
-  const exact = s.y === state.year;
-  els.badge.textContent = s.src === 'clio' ? `Borders in ${s.y} (approximate)` : s.cs ? `Borders on 1 July ${s.y}` : `Borders as of ${formatYear(s.y)}`;
+  const exact = s.y === state.year || s.src === 'clio';
+  els.badge.textContent = s.src === 'clio' ? `Borders in ${formatYear(state.year)} (approximate)` : s.cs ? `Borders on 1 July ${s.y}` : `Borders as of ${formatYear(s.y)}`;
   els.badge.classList.toggle('exact', exact);
 }
 
@@ -276,7 +276,7 @@ function badgeText() {
   const next = nextSnapshotAfter(s.y);
   const out = [];
   if (s.src === 'clio') {
-    out.push(h('p', null, `From ${clioRange()[0]} to ${clioRange()[1]} the map uses Cliopatria (Seshat Global History Databank), which gives each state a shape for a range of years. You see the shapes it lists for ${s.y}. They are approximate: the source redraws a state only every few years, and border dates can be a year or two off.`));
+    out.push(h('p', null, `From ${formatYear(clioRange()[0])} to ${clioRange()[1]} the map uses Cliopatria (Seshat Global History Databank), which gives each state a shape for a range of years. You see the shapes it lists for ${formatYear(state.year)}${s.y !== state.year ? ` (nothing changes in its data between ${formatYear(s.y)} and ${formatYear(state.year)})` : ''}. They are approximate: the source redraws a state only every few years (every few decades in antiquity), and border dates can be a few years off. Borders before about 1500 are rough: many places had no fixed borders.`));
     out.push(h('p', null, 'Cliopatria only draws states. Peoples and regions without a state are filled in from the nearest earlier world sketch map (historical-basemaps); click one to see which map it comes from.'));
     out.push(h('p', null, h('button.more', { type: 'button', onclick: openSources }, 'Sources and accuracy')));
     return out;
@@ -355,7 +355,7 @@ async function renderYear() {
   const nodes = [h('p.kicker', null, 'Year'), h('h1', null, `The world in ${formatYear(y)}`)];
   if (state.month) nodes.push(h('p.lead', null, `Highlighting ${dayLabel(state.month, state.day)}.`));
   nodes.push(h('p.note', null, `${all.length} ${all.length === 1 ? 'event' : 'events'} recorded · `,
-    state.snap ? (state.snap.src === 'clio' ? `map borders in ${state.snap.y}, approximate` : state.snap.cs ? `map borders on 1 July ${state.snap.y}` : `map borders as of ${formatYear(state.snap.y)}`) : 'no border map this early'));
+    state.snap ? (state.snap.src === 'clio' ? `map borders in ${formatYear(state.year)}, approximate` : state.snap.cs ? `map borders on 1 July ${state.snap.y}` : `map borders as of ${formatYear(state.snap.y)}`) : 'no border map this early'));
 
   const cen = await getJSON('centuries.json').then((d) => d.centuries.find((c) => c.from <= y && c.to >= y)).catch(() => null);
   const dec = y >= 1500 ? await getJSON('decades.json').then((d) => d.decades.find((c) => c.from <= y && c.to >= y)).catch(() => null) : null;
@@ -616,10 +616,20 @@ async function selectionHeader(s) {
     if (p.dated) {
       const f = (d) => formatDate(Math.floor(d / 10000), Math.floor(d / 100) % 100, d % 100);
       facts.append(h('dt', null, 'Map'), h('dd', null, `These borders held from ${f(p.dated[0])} to ${p.dated[1] >= 20191231 ? '2019 or later' : f(p.dated[1])} (CShapes)`));
-    } else if (p.clio) facts.append(h('dt', null, 'Map'), h('dd', null, `Cliopatria gives this shape for ${p.clio[0]} to ${p.clio[1]} (approximate)`));
+    } else if (p.clio) facts.append(h('dt', null, 'Map'), h('dd', null, `Cliopatria gives this shape for ${formatYear(p.clio[0])} to ${formatYear(p.clio[1])} (approximate)`));
     else if (p.under) facts.append(h('dt', null, 'Map'), h('dd', null, `Not a state in Cliopatria: outline from the ${formatYear(p.under)} world sketch map (approximate, may be out of date)`));
     else facts.append(h('dt', null, 'Map'), h('dd', null, `Borders as of ${formatYear(state.snap.y)}${p.pr === 1 ? ', approximate' : ''}`));
     box.append(facts);
+    try {
+      const mn = await getJSON('mapnotes.json');
+      const aka = mn.aliases[s.name];
+      if (aka) facts.append(h('dt', null, 'Also called'), h('dd', null, aka.join(', ')));
+      for (const nt of mn.notes) {
+        if (!nt.names.includes(s.name) || state.year < nt.from || state.year > nt.to) continue;
+        box.append(h('p.note', null, h('span.unver', { title: 'A known problem of the border source, written for GeoHistory' }, 'map note'), ' ', nt.note, ' ',
+          h('a', { href: nt.source, target: '_blank', rel: 'noopener' }, 'Source')));
+      }
+    } catch { /* optional */ }
     try {
       const pd = await getJSON('polities.json').then((d) => d.polities.find((x) => x.names.includes(s.name))).catch(() => null);
       if (pd && (pd.from == null || pd.from - 25 <= state.year) && (pd.to == null || pd.to + 25 >= state.year)) {
@@ -1013,7 +1023,7 @@ function sourcesContent(meta, audit) {
   return [
     h('p', null, 'GeoHistory is a way to explore the past, not an authority on it. Please check anything important against a good history book or the linked articles.'),
     h('h3', null, 'Borders'),
-    h('p', null, `From 1886 to 2019 the map uses CShapes 2.0, which dates every change of state borders. From 1700 to 1885 it uses Cliopatria, which gives each state a shape for a range of years: there is a map for every year, but it is approximate, and peoples without a state are filled in from an older sketch map. Before 1700 there are only ${n(c.snapshots)} world snapshots, from ${formatYear(meta?.borders?.first ?? MIN_YEAR)} on: for any other year you see the nearest earlier one, and the badge on the map says which. Borders before about 1500 are rough sketches; many places had no fixed borders.`),
+    h('p', null, `From 1886 to 2019 the map uses CShapes 2.0, which dates every change of state borders. From 3400 BC to 1885 it uses Cliopatria, which gives each state a shape for a range of years: every year has a map, but it is approximate (a state is redrawn every few years, in antiquity every few decades), and peoples without a state, and states Cliopatria does not have, are filled in from an older sketch map (historical-basemaps, ${n(c.snapshots)} world snapshots). Before 3400 BC only those snapshots exist, from ${formatYear(meta?.borders?.first ?? MIN_YEAR)} on: you see the nearest earlier one, and the badge on the map says which. Borders before about 1500 are rough sketches; many places had no fixed borders.`),
     h('h3', null, 'Events come from Wikidata'),
     h('p', null, `${n(c.events)} events, from Wikidata's free database, ranked by how many Wikipedia language editions cover them. Dates, places and descriptions can be wrong or missing, and coverage is much thinner for Africa, Asia and the distant past than for Europe and North America. ${n(c.placedInModernCountry || 0)} of them could be placed in one of today's countries.`),
     h('p', null, `English Wikipedia's year articles add ${n(c.yearArticleEvents || 0)} more (only entries whose linked article Wikidata dates to the same year). Archaeological cultures and periods are listed with approximate dates.`),
@@ -1025,7 +1035,7 @@ function sourcesContent(meta, audit) {
     h('ul', null,
       h('li', null, h('a', { href: 'https://github.com/aourednik/historical-basemaps', target: '_blank', rel: 'noopener' }, 'historical-basemaps'), ' by André Ourednik and contributors: world borders by year (GPL-3.0).'),
       h('li', null, h('a', { href: 'https://publications.newberry.org/ahcb/', target: '_blank', rel: 'noopener' }, 'Atlas of Historical County Boundaries'), ', Newberry Library: US state and territory borders since 1783.'),
-      h('li', null, h('a', { href: 'https://github.com/Seshat-Global-History-Databank/cliopatria', target: '_blank', rel: 'noopener' }, 'Cliopatria'), ' (Seshat Global History Databank): state shapes for every year from 1700 to 1885 (CC BY 4.0).'),
+      h('li', null, h('a', { href: 'https://github.com/Seshat-Global-History-Databank/cliopatria', target: '_blank', rel: 'noopener' }, 'Cliopatria'), ' (Seshat Global History Databank): state shapes from 3400 BC to 1885 (CC BY 4.0).'),
       h('li', null, h('a', { href: 'https://icr.ethz.ch/data/cshapes/', target: '_blank', rel: 'noopener' }, 'CShapes 2.0'), ': dated state borders 1886 to 2019 (CC BY-NC-SA, non-commercial).'),
       h('li', null, h('a', { href: 'https://www.naturalearthdata.com/', target: '_blank', rel: 'noopener' }, 'Natural Earth'), ': coastlines and today\'s countries (public domain).'),
       h('li', null, h('a', { href: 'https://www.wikidata.org/', target: '_blank', rel: 'noopener' }, 'Wikidata'), ': events and descriptions (CC0). Links go to Wikipedia.'),

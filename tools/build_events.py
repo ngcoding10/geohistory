@@ -21,6 +21,7 @@ from common import CACHE, DATA, TOOLS, fetch, sparql, qid, log, write_json, read
 from fetch_sources import NE
 from geo import PolyIndex
 import yearly
+import names as names_mod
 
 JULIAN = 'Q1985786'
 TYPE_ORDER = ['war', 'battle', 'revolt', 'violence', 'treaty', 'state', 'ruler', 'politics', 'economy', 'epidemic',
@@ -185,7 +186,7 @@ def main():
 
     def snap_index(y):
         if yearly.source(y):
-            key = ('cs', y)
+            key = yearly.map_key(y)
             if key not in snap_cache:
                 pols = yearly.year_doc(y)
                 snap_cache[key] = (PolyIndex([(k, p['g']) for k, p in enumerate(pols)]), pols)
@@ -1116,7 +1117,7 @@ def main():
                     rng[-1][1] = y
                 else:
                     rng.append([y, y])
-            polities.append([n, [r[0] if r[0] == r[1] else r for r in rng], round(pol_area[n] / 1e5, 1)])
+            polities.append([n, [r[0] if r[0] == r[1] else r for r in rng], round(pol_area[n] / 1e5, 1)] + ([names_mod.aliases(n)] if names_mod.aliases(n) else []))
     modern = []
     for f in mod['features']:
         p = f['properties']
@@ -1197,8 +1198,8 @@ def main():
         'eventsByRegionEra': {rg: dict(c) for rg, c in sorted(grid.items())},
         'yearRange': {'events': [evs[0]['y'], evs[-1]['y']], 'borders': [snap_years[0], snap_years[-1]]},
         'gaps': [
-            'Before 1700 borders are snapshots: there are only %d maps, so most years show the nearest earlier map.' % len(snap_years),
-            'From 1700 to 1885 borders come from Cliopatria and are approximate; from 1886 to 2019 from CShapes (dated).',
+            'Before 3400 BC borders are snapshots: only a handful of sketch maps, so most years show the nearest earlier map.',
+            'From 3400 BC to 1885 borders come from Cliopatria and are approximate (a state is redrawn every few years, in antiquity every few decades; territories it lacks come from the nearest earlier sketch map); from 1886 to 2019 from CShapes (dated).',
             'No border map between 2010 and today.',
             'US colony outlines for 1763-1783 reuse the 1783 state borders; the Newberry data starts in 1783.',
             'Event coverage follows Wikipedia: thin for Africa, Asia, the Americas before 1500 and the distant past.',

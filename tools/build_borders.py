@@ -14,6 +14,7 @@ import re
 from collections import defaultdict, Counter
 
 from common import fetch, write_json, DATA, CACHE, log
+import names as names_mod
 from fetch_sources import HB, NE, hb_index
 from geo import (simplify_geom, polys_of, polygon_area_km2, label_point, bbox_of)
 
@@ -112,8 +113,8 @@ def main():
         grid = defaultdict(set)
         for f in src['features']:
             p = f.get('properties') or {}
-            name = clean(p.get('NAME'))
-            subj = clean(p.get('SUBJECTO'))
+            name = names_mod.display(clean(p.get('NAME')))
+            subj = names_mod.display(clean(p.get('SUBJECTO')))
             if subj.isdigit():
                 subj = ''
             if not name and subj:

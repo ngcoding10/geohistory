@@ -1,14 +1,14 @@
-"""Step 2f: yearly border maps for 1700-1885 from Cliopatria (Seshat Global History Databank, CC BY 4.0).
+"""Step 2f: border maps for 3400 BC to 1885 from Cliopatria (Seshat Global History Databank, CC BY 4.0).
 
-The coarse world snapshots have nothing between 1715 and 1783 or between 1815 and 1878, so 1776 used to
-show 1715 borders. Cliopatria gives every polity one or more shapes, each valid for a range of years, with
-the empire it belongs to. We store each shape once (data/clio/shapes-N.json) and a short list of shape ids
-per year (data/clio/years/<year>.json): the same layout as the CShapes years (build_cshapes.py).
+Cliopatria gives every polity one or more shapes, each valid for a range of years, with the empire it
+belongs to. A map is stored only for a year in which the list of shapes differs from the year before
+(data/clio/years/<year>.json, listed in data/clio/index.json); any other year uses the latest stored map
+at or before it. Shapes are kept in files that cover a run of stored years (data/clio/b<year>.json).
 
 Cliopatria only draws states. Peoples and regions without a state (most of North America, Australia,
-parts of Africa and the Amazon in these years) would be blank, so self-ruled territories of the nearest
-earlier world snapshot are drawn underneath wherever Cliopatria has no polity; those rows carry the
-snapshot year and the app labels them as coming from the older sketch map.
+parts of Africa and the Amazon), and states it does not have, would be blank, so self-ruled territories of
+the nearest earlier world snapshot are drawn underneath wherever Cliopatria has no polity; those rows
+point at the snapshot's own file and the app labels them as coming from the older sketch map.
 
 Nothing is drawn by hand here: every outline is a source polygon, simplified.
 """
@@ -20,11 +20,17 @@ from collections import defaultdict, Counter
 
 from common import fetch, write_json, read_json, DATA, CACHE, log
 from fetch_sources import CLIO
+from names import display
 from geo import simplify_geom, label_point, bbox_of, polygon_area_km2, polys_of, PolyIndex
 from build_borders import power_key, PALETTE
 
-FIRST, LAST = 1700, 1885
-BUCKET = 5
+FIRST, LAST = -3400, 1885   # Cliopatria's first polity is dated 3400 BC; CShapes takes over in 1886
+TARGET = 520_000            # aim for shape files of about this many bytes
+# "Member of" values that are a label for a group of independent states, not a power ruling them
+GROUPINGS = {'Spring and Autumn States', 'Brythonic Kingdoms', 'Warring States China', 'Mahajanapadas',
+             'Anglo-Saxon England', 'Taifas of Iberia', 'Duchies of Poland', 'Five Dynasties and Ten Kingdoms',
+             'Eighteen Kingdoms', 'Sixteen Kingdoms', 'Three Kingdoms', 'Phoenician Empire', 'Chenla',
+             'Northern and Southern Dynasties', 'Ten Kingdoms', 'Five Dynasties'}
 # Cliopatria spellings -> the colour keys used by the other maps (build_borders.ALIASES)
 CLIO_KEYS = {
     'qing dynasty': 'china', 'ming dynasty': 'china', 'british colonial empire': 'britain',
@@ -39,6 +45,17 @@ CLIO_KEYS = {
     'tsardom of russia': 'russia', 'kingdom of prussia': 'germany', 'north german confederation': 'germany',
     'kingdom of italy': 'italy', 'kingdom of sweden': 'sweden', 'swedish empire': 'sweden',
     'kingdom of denmark': 'denmark', 'danish colonial empire': 'denmark',
+    'han dynasty': 'china', 'western han': 'china', 'eastern han': 'china', 'tang dynasty': 'china',
+    'song dynasty': 'china', 'northern song': 'china', 'southern song': 'china', 'yuan dynasty': 'china',
+    'qin dynasty': 'china', 'sui dynasty': 'china', 'jin dynasty': 'china', 'western jin': 'china',
+    'kingdom of england': 'britain', 'english colonial empire': 'britain', 'kingdom of great britain': 'britain',
+    'spanish empire': 'spain', 'crown of castile': 'spain', 'kingdom of castile': 'spain',
+    'portuguese empire': 'portugal', 'grand duchy of moscow': 'russia', 'russian empire': 'russia',
+    'achaemenid empire': 'persia', 'parthian empire': 'persia', 'sasanian empire': 'persia',
+    'roman republic': 'rome', 'roman empire': 'rome', 'western roman empire': 'rome',
+    'byzantine empire': 'byzantium', 'eastern roman empire': 'byzantium',
+    'mongol empire': 'mongols', 'ottoman empire': 'ottoman', 'mughal empire': 'mughal',
+    'habsburg monarchy': 'austria', 'archduchy of austria': 'austria',
 }
 
 
@@ -58,6 +75,29 @@ def load():
         return json.loads(z.read(name))
 
 
+def sample_points(g, lab):
+    """A few points inside a shape (its label point and points on three horizontal lines)."""
+    pts = [tuple(lab)] if lab else []
+    polys = sorted(polys_of(g), key=polygon_area_km2, reverse=True)[:2]
+    for poly in polys:
+        ys = [p[1] for p in poly[0]]
+        y0, y1 = min(ys), max(ys)
+        for fr in (0.25, 0.5, 0.75):
+            y = y0 + (y1 - y0) * fr
+            xs = []
+            r = poly[0]
+            for i in range(len(r) - 1):
+                (xa, ya), (xb, yb) = r[i][:2], r[i + 1][:2]
+                if (ya > y) != (yb > y):
+                    xs.append(xa + (y - ya) * (xb - xa) / (yb - ya))
+            xs.sort()
+            for i in range(0, len(xs) - 1, 2):
+                w = xs[i + 1] - xs[i]
+                for t in (0.25, 0.5, 0.75):
+                    pts.append((xs[i] + w * t, y))
+    return pts[:24]
+
+
 def build():
     src = load()
     shapes = []
@@ -71,7 +111,9 @@ def build():
         if not g:
             continue
         member = strip((p.get('MemberOf') or '').split(';')[0].strip())
-        shapes.append({'n': p['Name'], 'from': p['FromYear'], 'to': p['ToYear'], 'm': member if member != p['Name'] else '',
+        if member in GROUPINGS:
+            member = ''
+        shapes.append({'n': display(p['Name']), 'from': p['FromYear'], 'to': p['ToYear'], 'm': display(member) if member != p['Name'] else '',
                        'q': p.get('Wikidata') or '', 'w': p.get('Wikipedia') or '', 'g': g,
                        'a': round(p.get('Area') or sum(polygon_area_km2(q) for q in polys_of(g))), 'l': label_point(g),
                        'bb': [round(v, 1) for v in bbox_of(g)]})
@@ -80,7 +122,8 @@ def build():
         s['id'] = i
     log(f'cliopatria: {len(shapes)} polity shapes touch {FIRST}-{LAST}')
 
-    # peoples and regions without a state, from the nearest earlier world snapshot
+    # peoples and regions without a state, from the nearest earlier world snapshot. Their outlines are
+    # not copied: a row points at the polity number in data/borders/<snapshot>.json.
     bindex = read_json(os.path.join(DATA, 'borders', 'index.json'))['snapshots']
     under_cache = {}
 
@@ -99,16 +142,21 @@ def build():
                 if not pol.get('l') or k not in geoms:
                     continue
                 g = {'type': 'MultiPolygon', 'coordinates': geoms[k]}
-                s = {'n': pol['n'], 'from': None, 'to': None, 'm': '', 'q': '', 'w': '', 'g': g, 'a': pol['a'],
-                     'l': pol['l'], 'bb': pol['bb'], 'u': snap_year, 'id': len(shapes)}
-                shapes.append(s)
-                out.append(s)
+                out.append({'k': k, 'n': pol['n'], 'pts': sample_points(g, pol['l']), 'a': pol['a']})
             under_cache[snap_year] = out
         return under_cache[snap_year]
 
+    # a year gets its own map only when the list of shapes differs from the year before
+    cand = {FIRST}
+    for s in shapes:
+        cand.add(max(s['from'], FIRST))
+        cand.add(s['to'] + 1)
+    cand |= {b['y'] for b in bindex}
+    cand = sorted(y for y in cand if FIRST <= y <= LAST)
     years = {}
-    for y in range(FIRST, LAST + 1):
-        live = [s for s in shapes if s['from'] is not None and s['from'] <= y <= s['to']]
+    prev_rows = None
+    for y in cand:
+        live = [s for s in shapes if s['from'] <= y <= s['to']]
         # one shape per name: the row whose range starts latest
         byname = {}
         for s in live:
@@ -116,45 +164,77 @@ def build():
                 byname[s['n']] = s
         live = list(byname.values())
         idx = PolyIndex([(s['id'], s['g']) for s in live])
-        names = {s['n'] for s in live}
+        names = {power_key(s['n']) for s in live}
         snap = max(b['y'] for b in bindex if b['y'] <= y)
         rows = []
-        for s in underlay(snap):
-            if s['n'] in names or idx.lookup(*s['l']) is not None:
+        for u in underlay(snap):
+            if power_key(u['n']) in names:
                 continue
-            rows.append([s['id'], s['n'], power_key(s['n']), None, snap])
+            # skip a sketch-map territory when a Cliopatria state covers its label point or over 40% of it
+            hit = [idx.lookup(x, yy) is not None for x, yy in u['pts']]
+            if hit and (hit[0] or sum(hit) > 0.4 * len(hit)):
+                continue
+            rows.append([u['k'], u['n'], power_key(u['n']), None, snap])
         for s in live:
             ruler = s['m'] or None
             rows.append([s['id'], s['n'], key_of(ruler or s['n']), ruler])
-        years[y] = rows
-        if y % 20 == 0:
-            log(f'  {y}: {len(live)} Cliopatria polities, {len(rows) - len(live)} from the {snap} snapshot')
-    used = {r[0] for rows in years.values() for r in rows}
+        if rows != prev_rows:
+            years[y] = rows
+            prev_rows = rows
+    log(f'{len(years)} stored years out of {len(cand)} candidate change years')
+    used = {r[0] for rows in years.values() for r in rows if len(r) < 5}
     shapes = [s for s in shapes if s['id'] in used]
     remap = {s['id']: i for i, s in enumerate(shapes)}
     for s in shapes:
         s['id'] = remap[s['id']]
-    for rows in years.values():
-        for r in rows:
-            r[0] = remap[r[0]]
+    years = {y: [r if len(r) >= 5 else [remap[r[0]]] + r[1:] for r in rows] for y, rows in years.items()}
 
     powers = read_json(os.path.join(DATA, 'powers.json'))
-    for rows in years.values():
+    span = {}
+    for y, rows in years.items():
         for _, name, pk, ruler, *_ in rows:
             if pk not in powers:
                 h = sum(ord(c) * (i + 1) for i, c in enumerate(pk))
-                powers[pk] = {'name': ruler or name, 'color': PALETTE[h % len(PALETTE)], 'years': [FIRST, LAST]}
+                powers[pk] = {'name': ruler or name, 'color': PALETTE[h % len(PALETTE)], 'years': [y, y]}
+                span[pk] = powers[pk]
+            elif pk in span:
+                span[pk]['years'][1] = y
     write_json(os.path.join(DATA, 'powers.json'), powers)
     return shapes, years
 
 
+def stored_year(y, ys):
+    """The stored map that is valid in year y (the latest one at or before it)."""
+    import bisect
+    i = bisect.bisect_right(ys, y) - 1
+    return ys[max(i, 0)]
+
+
+_U = {}
+
+
+def under_geom(snap, k):
+    if snap not in _U:
+        doc = read_json(os.path.join(DATA, 'borders', f'{snap}.json'))
+        geoms = defaultdict(list)
+        for f in doc['features']:
+            geoms[f['properties']['k']] += polys_of(f['geometry'])
+        _U[snap] = (geoms, doc['polities'])
+    geoms, pols = _U[snap]
+    return {'type': 'MultiPolygon', 'coordinates': geoms[k]}, pols[k]['a']
+
+
 def year_doc(y):
-    """Polity table + geometries for one year (for event placement and the audit). Cliopatria rows come
-    last in the year files, so they are listed first here: a point lookup prefers them to the underlay."""
-    shapes, years = _cache()
-    rows = years[y]
-    rows = [r for r in rows if len(r) < 5] + [r for r in rows if len(r) >= 5]
-    return [{'n': r[1], 'p': r[2], 's': r[3], 'a': shapes[r[0]]['a'], 'g': shapes[r[0]]['g']} for r in rows]
+    """Polity table + geometries for one year (for event placement and the audit). Cliopatria rows are
+    listed first: a point lookup prefers them to the underlay."""
+    shapes, years, ys = _cache()
+    rows = years[stored_year(y, ys)]
+    out = [{'n': r[1], 'p': r[2], 's': r[3], 'a': shapes[r[0]]['a'], 'g': shapes[r[0]]['g']} for r in rows if len(r) < 5]
+    for r in rows:
+        if len(r) >= 5:
+            g, a = under_geom(r[4], r[0])
+            out.append({'n': r[1], 'p': r[2], 's': None, 'a': a, 'g': g, 'u': r[4]})
+    return out
 
 
 _C = {}
@@ -167,8 +247,8 @@ def _cache():
         for f in idx['files']:
             for sid, s in read_json(os.path.join(DATA, 'clio', f)).items():
                 shapes[int(sid)] = s
-        years = {y: read_json(os.path.join(DATA, 'clio', 'years', f'{y}.json'))['rows'] for y in range(idx['from'], idx['to'] + 1)}
-        _C['v'] = (shapes, years)
+        years = {y: read_json(os.path.join(DATA, 'clio', 'years', f'{y}.json'))['rows'] for y in idx['years']}
+        _C['v'] = (shapes, years, idx['years'])
     return _C['v']
 
 
@@ -176,33 +256,39 @@ def main():
     shapes, years = build()
     out = os.path.join(DATA, 'clio')
     os.makedirs(os.path.join(out, 'years'), exist_ok=True)
-    for f in os.listdir(out):
-        if f.endswith('.json') and f != 'index.json':
-            os.remove(os.path.join(out, f))
+    for d in (out, os.path.join(out, 'years')):
+        for f in os.listdir(d):
+            if f.endswith('.json'):
+                os.remove(os.path.join(d, f))
     byid = {s['id']: s for s in shapes}
-    # Files: one per snapshot for the underlay ("u1715.json"), one per BUCKET years for Cliopatria shapes
-    # ("b1775.json": every shape used in 1775-1779). A year needs two files, and nearby years share them.
+
     def rec(s):
-        d = {'g': s['g'], 'a': s['a'], 'l': s['l'], 'bb': s['bb']}
-        if s['from'] is not None:
-            d['s'], d['e'] = s['from'], s['to']
-        return d
+        return {'g': s['g'], 'a': s['a'], 'l': s['l'], 'bb': s['bb'], 's': s['from'], 'e': s['to']}
+    size = {s['id']: len(json.dumps(rec(s), ensure_ascii=False, separators=(',', ':'))) + 8 for s in shapes}
+    # Shape files: consecutive stored years share one file ("b1450.json": every shape used from 1450 until
+    # the next file starts), grown until the file would pass TARGET bytes. A shape that lives across
+    # several files is repeated in each, so that any year needs exactly one file.
+    ys = sorted(years)
     total = 0
     files = {}
     need_of = {}
-    for y, rows in years.items():
-        b = FIRST + (y - FIRST) // BUCKET * BUCKET
-        need = set()
-        for r in rows:
-            f = f'u{r[4]}.json' if len(r) >= 5 else f'b{b}.json'
-            files.setdefault(f, {})[str(r[0])] = byid[r[0]]
-            need.add(f)
-        need_of[y] = sorted(need)
-    for f, doc in files.items():
-        total += write_json(os.path.join(out, f), {k: rec(s) for k, s in doc.items()})
+    cur, cur_ids, cur_size = None, set(), 0
+    for y in ys:
+        ids = {r[0] for r in years[y] if len(r) < 5}
+        add = sum(size[i] for i in ids - cur_ids)
+        if cur is None or (cur_size + add > TARGET and cur_ids):
+            cur, cur_ids, cur_size = f'b{y}.json', set(), 0
+            add = sum(size[i] for i in ids)
+            files[cur] = cur_ids
+        cur_ids |= ids
+        cur_size += add
+        need_of[y] = [cur]
+    for f, ids in files.items():
+        total += write_json(os.path.join(out, f), {str(i): rec(byid[i]) for i in sorted(ids)})
     powers = read_json(os.path.join(DATA, 'powers.json'))
-    prev = None
-    for y, rows in years.items():
+    prev, prev_y = None, None
+    for y in ys:
+        rows = years[y]
         parea, pcount, pname = defaultdict(float), Counter(), {}
         for sid, name, pk, ruler, *rest in rows:
             if rest:
@@ -217,34 +303,34 @@ def main():
         if prev is not None:
             ap = sorted((n for n in names if n not in prev), key=lambda n: -names[n])
             gone = sorted((n for n in prev if n not in names), key=lambda n: -prev[n])
-            changes = {'since': y - 1, 'appeared': ap[:12], 'gone': gone[:12], 'nAppeared': len(ap), 'nGone': len(gone), 'ruler': []}
-        prev = names
-        need = need_of[y]
+            changes = {'since': prev_y, 'appeared': ap[:12], 'gone': gone[:12], 'nAppeared': len(ap), 'nGone': len(gone), 'ruler': []}
+        prev, prev_y = names, y
         total += write_json(os.path.join(out, 'years', f'{y}.json'),
-                            {'year': y, 'rows': rows, 'need': need, 'largest': largest, 'changes': changes})
-    write_json(os.path.join(out, 'index.json'), {'from': FIRST, 'to': LAST, 'files': sorted(files), 'shapes': len(shapes)})
+                            {'year': y, 'rows': rows, 'need': need_of[y], 'largest': largest, 'changes': changes})
+    write_json(os.path.join(out, 'index.json'), {'from': FIRST, 'to': LAST, 'years': ys, 'files': sorted(files), 'shapes': len(shapes)})
     # Wikidata ids and article titles as given by Cliopatria, for link_wikidata.py
     links = {}
     for s in shapes:
-        if s.get('q') and s['from'] is not None:
+        if s.get('q'):
             links.setdefault(s['n'], {'q': s['q'], 'w': s['w']})
     write_json(os.path.join(CACHE, 'clio_links.json'), links)
     names_path = os.path.join(CACHE, 'names.json')
     names = read_json(names_path)
-    for y, rows in years.items():
-        for r in rows:
-            ys = names.setdefault(r[1], [])
-            if y not in ys:
-                ys.append(y)
-    for ys in names.values():
-        ys.sort()
+    ys_all = sorted(years)
+    seen = defaultdict(set)
+    for i, y in enumerate(ys_all):
+        end = ys_all[i + 1] - 1 if i + 1 < len(ys_all) else LAST
+        for r in years[y]:
+            seen[r[1]].update(range(y, end + 1))   # every year the stored map stands for
+    for n, v in seen.items():
+        names[n] = sorted(set(names.get(n, [])) | v)
     write_json(names_path, names)
     with open(os.path.join(out, 'LICENSE.txt'), 'w') as f:
         f.write('Polity shapes in this folder are simplified from Cliopatria (Seshat Global History Databank),\n'
                 'https://github.com/Seshat-Global-History-Databank/cliopatria, DOI 10.1038/s41597-025-04516-9,\n'
                 'licensed CC BY 4.0. Rows marked with a snapshot year come from aourednik/historical-basemaps (GPL-3.0),\n'
                 'see ../borders/LICENSE.txt.\n')
-    log(f'clio: {len(shapes)} shapes in {len(files)} files, {LAST - FIRST + 1} years, {total // 1024} KB')
+    log(f'clio: {len(shapes)} shapes in {len(files)} files, {len(ys)} stored years for {FIRST} to {LAST}, {total // 1024} KB')
 
 
 if __name__ == '__main__':

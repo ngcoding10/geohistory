@@ -62,8 +62,8 @@
  },
  "counts": {
   "snapshots": 54,
-  "polityNames": 3392,
-  "linkedToWikidata": 1269,
+  "polityNames": 4196,
+  "linkedToWikidata": 2092,
   "events": 102685,
   "eventsFromWikidata": 102467,
   "stateChanges": 6941,
@@ -82,7 +82,7 @@
   "famousItems": 933,
   "cultures": 370,
   "placedInModernCountry": 87812,
-  "yearlyMaps": 320
+  "yearlyMaps": 5420
  },
  "consistency": {
   "curatedAliases": 11,
@@ -270,8 +270,8 @@
   ]
  },
  "gaps": [
-  "Before 1700 borders are snapshots: there are only 54 maps, so most years show the nearest earlier map.",
-  "From 1700 to 1885 borders come from Cliopatria and are approximate; from 1886 to 2019 from CShapes (dated).",
+  "Before 3400 BC borders are snapshots: only a handful of sketch maps, so most years show the nearest earlier map.",
+  "From 3400 BC to 1885 borders come from Cliopatria and are approximate (a state is redrawn every few years, in antiquity every few decades; territories it lacks come from the nearest earlier sketch map); from 1886 to 2019 from CShapes (dated).",
   "No border map between 2010 and today.",
   "US colony outlines for 1763-1783 reuse the 1783 state borders; the Newberry data starts in 1783.",
   "Event coverage follows Wikipedia: thin for Africa, Asia, the Americas before 1500 and the distant past.",

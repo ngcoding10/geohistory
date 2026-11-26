@@ -50,11 +50,13 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
 
 ## Known limits
 
-- Borders: 1886 to 2019 come from CShapes 2.0, one map per year as on 1 July. 1700 to 1885 come from
-  Cliopatria, one map per year, approximate (a state is redrawn every few years; peoples without a state are
-  filled in from the nearest earlier sketch map and can be out of date). Before 1700 there are only
-  snapshots (37 maps from 123,000 BC to 1650): other years show the nearest earlier map, and the badge on
-  the map says which. Rulers of colonies in 1886-2019 can lag a change by a few years.
+- Borders: 1886 to 2019 come from CShapes 2.0, one map per year as on 1 July. 3400 BC to 1885 come from
+  Cliopatria: a map is stored for each of the 469 years in which its data changes, and every other year
+  uses the latest one before it. These are approximate (a state is redrawn every few years, in antiquity
+  every few decades; peoples without a state, and states Cliopatria lacks, are filled in from the nearest
+  earlier historical-basemaps sketch map and can be out of date). Before 3400 BC there are only the
+  sketch-map snapshots, and the badge on the map says which one you see. Known source errors are listed
+  in `tools/curated/map_notes.json` and shown in the panel of the territory concerned. Rulers of colonies in 1886-2019 can lag a change by a few years.
 - **Licences:** CShapes 2.0 is CC BY-NC-SA (non-commercial). NC sources must be cleared or replaced
   before ads are added to this site (see CREDITS.md). Cliopatria is CC BY 4.0.
 - Borders before about 1500 are rough, and all borders are simplified (about 1 to 3 km).

@@ -213,6 +213,52 @@ class PolyIndex:
         return bk
 
 
+def _seg_d2(x, y, ax, ay, bx, by, kx):
+    """Squared distance in degrees of latitude from a point to a segment (kx = cos(latitude))."""
+    dx, dy = (bx - ax) * kx, by - ay
+    px, py = (x - ax) * kx, y - ay
+    dd = dx * dx + dy * dy
+    t = 0.0 if dd == 0 else max(0.0, min(1.0, (px * dx + py * dy) / dd))
+    return (px - t * dx) ** 2 + (py - t * dy) ** 2
+
+
+def near_index(index, x, y, km=8.0, accept=None):
+    """Containing feature of a PolyIndex, else the feature whose outline passes within `km` of the point
+    (true distance to the nearest edge). For coastal cities: simplified outlines cut a few km off coasts.
+    `accept(key)` can restrict which features are considered."""
+    k = index.lookup(x, y)
+    if k is not None and (accept is None or accept(k)):
+        return k
+    deg = km / 111.2
+    kx = math.cos(math.radians(y))
+    padx = deg / max(kx, 0.05)
+    best, bk = deg * deg, None
+    c = index.cell
+    seen = set()
+    for gx in range(int(math.floor((x - padx) / c)), int(math.floor((x + padx) / c)) + 1):
+        for gy in range(int(math.floor((y - deg) / c)), int(math.floor((y + deg) / c)) + 1):
+            for i in index.grid.get((gx, gy), []):
+                if i in seen:
+                    continue
+                seen.add(i)
+                key, polys, bb = index.items[i]
+                if x < bb[0] - padx or x > bb[2] + padx or y < bb[1] - deg or y > bb[3] + deg:
+                    continue
+                if accept is not None and not accept(key):
+                    continue
+                for poly in polys:
+                    for ring in poly:
+                        for j in range(len(ring) - 1):
+                            a, b = ring[j], ring[j + 1]
+                            if (a[0] < x - padx and b[0] < x - padx) or (a[0] > x + padx and b[0] > x + padx) or \
+                               (a[1] < y - deg and b[1] < y - deg) or (a[1] > y + deg and b[1] > y + deg):
+                                continue
+                            d = _seg_d2(x, y, a[0], a[1], b[0], b[1], kx)
+                            if d < best:
+                                best, bk = d, key
+    return bk
+
+
 def label_point(geom):
     """A point inside the largest polygon, near its visual middle (widest horizontal span)."""
     polys = polys_of(geom)

@@ -1,4 +1,4 @@
-"""Yearly border maps: CShapes 2.0 for 1886-2019, Cliopatria for 1700-1885. One place to ask "which map
+"""Yearly border maps: CShapes 2.0 for 1886-2019, Cliopatria for 3400 BC-1885 (stored at change years). One place to ask "which map
 covers this year, and what is on it" for event placement, the audit and the ruled-by history."""
 import os
 from common import DATA, read_json
@@ -33,3 +33,12 @@ def year_doc(y):
         import build_clio
         return build_clio.year_doc(y)
     return None
+
+
+def map_key(y):
+    """A key that is the same for every year sharing one stored map (Cliopatria stores change years only)."""
+    src = source(y)
+    if src == 'clio':
+        import build_clio
+        return ('clio', build_clio.stored_year(y, build_clio._cache()[2]))
+    return (src, y) if src else None

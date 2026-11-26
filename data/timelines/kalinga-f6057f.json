@@ -1,1 +1,1 @@
-{"name":"Kalinga","ruledBy":[[-1,1000,"","m"]],"events":[["fQ12816977",200,"Kanker State founded","state","200_300.json"],["Q4872672",1068,"Battle of Vijayawada","battle","1050_1100.json"]],"wars":[]}
+{"name":"Kalinga","ruledBy":[[-318,-197,"","q"],[-1,1003,"","m"]],"events":[["fQ1150706",-301,"Kalinga founded","state","-400_-300.json"],["Q714557",-262,"Kalinga War","war","-300_-200.json"],["xQ1150706",-261,"Kalinga ends","state","-300_-200.json"]],"wars":[["Q714557",-262,"Kalinga War","war","-300_-200.json"]]}

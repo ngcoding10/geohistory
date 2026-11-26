@@ -49,13 +49,29 @@ export const clioRange = () => clioIndex && [clioIndex.from, clioIndex.to];
 /** The border map for a year: a yearly map (CShapes or Cliopatria), else the latest snapshot at or before it. */
 export function snapshotFor(year) {
   const src = yearlySource(year);
+  if (src === 'clio') return { y: clioStored(year), cs: true, src };
   if (src) return { y: year, cs: true, src };
   let best = null;
   for (const s of bordersIndex || []) if (s.y <= year) best = s;
   return best;
 }
 
+/** Cliopatria stores a map only for years in which something changes: the latest stored year at or before y. */
+function clioStored(y) {
+  const ys = clioIndex.years;
+  let lo = 0, hi = ys.length - 1;
+  while (lo < hi) {
+    const mid = (lo + hi + 1) >> 1;
+    if (ys[mid] <= y) lo = mid; else hi = mid - 1;
+  }
+  return ys[lo];
+}
+
 export function nextSnapshotAfter(y) {
+  if (yearlySource(y) === 'clio') {
+    const n = clioIndex.years.find((v) => v > y);
+    if (n != null) return { y: n, cs: true, src: 'clio' };
+  }
   if (yearlySource(y + 1)) return { y: y + 1, cs: true, src: yearlySource(y + 1) };
   const n = (bordersIndex || []).find((s) => s.y > y);
   const firstYearly = [clioIndex, csIndex].filter(Boolean).map((i) => i.from).filter((f) => f > y).sort((a, b) => a - b)[0];
@@ -74,13 +90,34 @@ async function loadCsYear(y, src) {
   }));
   const features = [];
   const clio = src === 'clio';
+  // Cliopatria years: territories without a state point at a polity of an older world snapshot
+  const under = new Map();
+  if (clio) {
+    const snaps = [...new Set(yr.rows.filter((r) => r[4]).map((r) => r[4]))];
+    await Promise.all(snaps.map(async (sy) => {
+      const d = await getJSON(`borders/${sy}.json`);
+      if (!d._byK) {
+        d._byK = new Map();
+        for (const f of d.features) {
+          if (!d._byK.has(f.properties.k)) d._byK.set(f.properties.k, []);
+          d._byK.get(f.properties.k).push(f.geometry);
+        }
+      }
+      under.set(sy, d);
+    }));
+  }
   const polities = yr.rows.map(([id, n, p, s, extra], k) => {
+    if (clio && extra) {
+      const d = under.get(extra);
+      const src0 = d.polities[id];
+      for (const g of d._byK.get(id) || []) features.push({ type: 'Feature', geometry: g, properties: { k, c: null, p } });
+      return { n, p, a: src0.a, l: src0.l, bb: src0.bb, pr: 3, under: extra };
+    }
     const sh = shapeStore.get(src + ':' + id);
     features.push({ type: 'Feature', geometry: sh.g, properties: { k, c: null, p } });
     const pol = { n, p, a: sh.a, l: sh.l, bb: sh.bb, pr: 3 };
-    if (clio) {
-      if (extra) pol.under = extra; else pol.clio = [sh.s, sh.e];
-    } else {
+    if (clio) pol.clio = [sh.s, sh.e];
+    else {
       pol.dated = [sh.s, sh.e];
       if (extra) pol.cur = 1;
     }

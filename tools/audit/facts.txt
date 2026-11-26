@@ -77,7 +77,8 @@ E|Battle of Navarino|1827
 E|Battle of the Alamo|1836
 E|Battle of San Jacinto|1836
 E|Opium War|1839
-E|Taiping Rebellion|1850
+# corrected in round 3: the rebellion is dated from the Jintian uprising of 11 January 1851
+E|Taiping Rebellion|1851
 E|Battle of Balaclava|1854
 E|Indian Rebellion of 1857|1857
 E|Battle of Solferino|1859
@@ -267,7 +268,8 @@ E|Battle of Wuhan|1938
 E|Chinese Civil War|1927
 E|Cultural Revolution|1966
 E|Great Leap Forward|1958
-E|Khmer Rouge|1975
+# corrected in round 3: the Khmer Rouge movement dates from 1951; what happened in 1975 was the fall of Phnom Penh
+E|Fall of Phnom Penh|1975
 E|Cambodian genocide|1975
 E|Vietnam War|1955
 E|Indonesian National Revolution|1945
@@ -326,7 +328,8 @@ C|2.35|48.85|1700|France
 C|28.9|41.05|1500|Ottoman
 C|28.9|41.05|1400|Byzantine
 C|12.5|41.9|100|Roman
-C|-0.13|51.5|1800|United Kingdom
+# corrected in round 3: the United Kingdom dates from 1 January 1801; in 1800 London was in Great Britain
+C|-0.13|51.5|1800|Great Britain
 C|116.4|39.9|1700|Manchu
 C|116.4|39.9|1950|China
 C|77.2|28.6|1600|Mughal
@@ -355,7 +358,8 @@ C|13.4|52.5|1900|German
 C|16.37|48.2|1900|Austria
 C|21.0|52.2|1900|Russian
 C|21.0|52.2|1930|Poland
-C|-74.4|40.9|1700|British
+# corrected in round 3: before the Union of 1707 New Jersey was an English, not a British, colony
+C|-74.4|40.9|1700|Engl
 # ---- round 2: written before looking at the rebuilt data, spread over regions and eras ----
 # East Asia
 E|Battle of Yamen|1279
@@ -699,3 +703,162 @@ C|44.8|41.7|2000|Georgia
 C|20.5|44.8|2010|Serbia
 C|32.58|15.6|2015|Sudan
 C|31.6|4.85|2015|South Sudan
+
+# ---- Round 3: map points before 1700, written from memory before the Cliopatria years were built.
+# The text may list alternative spellings of the same answer separated by ";" (any one must match the
+# territory name, its ruler or one of their aliases; accents are ignored).
+C|12.5|41.9|-100|Rom
+C|12.5|41.9|300|Roman
+C|12.5|41.9|-400|Rom
+C|12.5|41.9|800|Papal
+C|23.73|37.98|150|Roman
+C|23.73|37.98|-440|Athen;Greek;Delian
+C|22.43|37.07|-440|Sparta;Greek;Pelopon
+C|22.5|40.76|-340|Macedon
+C|22.76|37.73|-1300|Mycen
+C|28.98|41.01|600|Byzantine;Eastern Roman
+C|28.98|41.01|1000|Byzantine;Eastern Roman
+C|28.98|41.01|1300|Byzantine;Eastern Roman
+C|28.98|41.01|1600|Ottoman
+C|2.35|48.85|1300|France
+C|2.35|48.85|1500|France
+C|2.35|48.85|850|Franc;Frank;Carolingian
+C|6.08|50.78|810|Frank;Carolingian;Francia
+C|-0.12|51.5|200|Roman
+C|-0.12|51.5|1400|England
+C|-0.12|51.5|1600|England
+C|-3.19|55.95|1400|Scotland
+C|-4.78|37.88|950|Cordoba;Umayyad
+C|-4.78|37.88|100|Roman
+C|-3.6|37.18|1400|Granada;Nasrid
+C|-4.02|39.86|600|Visigoth
+C|-9.14|38.72|1500|Portug
+C|37.6|55.75|1500|Mosc;Muscov;Russia
+C|30.5|50.45|1000|Rus
+C|31.27|58.52|1300|Novgorod
+C|25.28|54.69|1400|Lithuania
+C|16.37|48.2|1600|Austria;Habsburg
+C|12.33|45.44|1400|Venice;Venetian
+C|19.94|50.06|1400|Poland
+C|18.07|59.33|1600|Sweden
+C|12.57|55.68|1600|Denmark
+C|19.04|47.5|1400|Hungary
+C|19.04|47.5|1600|Ottoman
+C|14.42|50.08|1400|Bohemia
+C|8.68|50.11|1400|Holy Roman
+C|13.36|38.12|1150|Sicily
+C|12.2|44.42|500|Ostrogoth
+C|12.2|44.42|600|Byzantine;Eastern Roman;Exarchate
+C|6.64|49.75|300|Roman
+C|6.96|50.94|100|Roman
+C|10.2|36.85|100|Roman
+C|10.2|36.85|450|Vandal
+C|10.2|36.85|600|Byzantine;Eastern Roman;Exarchate
+C|29.9|31.2|-250|Ptolem
+C|29.9|31.2|100|Roman
+C|29.9|31.2|1000|Fatimid
+C|31.25|30.05|1300|Mamluk
+C|31.25|30.05|1600|Ottoman
+C|32.64|25.7|-1300|Egypt
+C|31.25|29.85|-2500|Egypt
+C|44.42|32.54|-1750|Babylon
+C|44.42|32.54|-550|Babylon
+C|44.42|32.54|-450|Achaemenid;Persia
+C|44.42|32.54|-250|Seleucid
+C|43.15|36.36|-700|Assyria
+C|48.26|32.19|-1500|Elam
+C|34.62|40.02|-1300|Hitti
+C|28.04|38.49|-600|Lydia
+C|27.18|39.13|-200|Pergam;Attalid
+C|36.16|36.2|-250|Seleucid
+C|52.89|29.93|-450|Achaemenid;Persia
+C|44.58|33.09|300|Sasan;Sassan
+C|44.58|33.09|100|Parthia;Arsacid
+C|44.4|33.3|900|Abbasid
+C|36.3|33.5|700|Umayyad
+C|39.83|21.42|700|Umayyad
+C|39.6|24.47|640|Rashidun
+C|35.23|31.78|1150|Jerusalem
+C|35.23|31.78|100|Roman
+C|35.23|31.78|1600|Ottoman
+C|51.67|32.65|1650|Safavid;Persia
+C|51.67|32.65|1100|Selju
+C|66.97|39.65|1400|Timur
+C|64.42|39.77|950|Samanid
+C|68.42|33.55|1020|Ghaznavid
+C|32.48|37.87|1200|Rum;Selju
+C|29.06|40.18|1400|Ottoman
+C|39.72|41.0|1300|Trebizond
+C|44.8|41.7|1200|Georgia
+C|85.14|25.6|400|Gupta
+C|72.83|33.74|-250|Maurya
+C|66.9|36.76|-200|Bactria
+C|71.57|34.01|130|Kushan
+C|77.2|28.6|1300|Delhi
+C|77.2|28.6|1650|Mughal
+C|78.0|27.18|1600|Mughal
+C|74.34|31.55|1600|Mughal
+C|76.46|15.33|1500|Vijayanagar
+C|79.14|10.79|1050|Chola
+C|80.4|8.31|100|Anur
+C|68.14|27.33|-2300|Indus;Harappa
+C|108.9|34.3|-100|Han
+C|108.9|34.3|750|Tang
+C|108.9|34.3|-215|Qin
+C|112.45|34.62|100|Han
+C|112.45|34.62|500|Wei
+C|114.3|36.1|-1200|Shang
+C|114.3|34.8|1100|Song
+C|120.15|30.25|1200|Song
+C|116.4|39.9|1300|Yuan
+C|116.4|39.9|1500|Ming
+C|116.4|39.9|1200|Jin;Jurchen
+C|118.78|32.06|1400|Ming
+C|118.78|32.06|520|Liang
+C|104.07|30.66|230|Shu
+C|91.1|29.65|800|Tibet
+C|102.83|47.2|1240|Mongol
+C|102.66|47.43|800|Uyghur;Uighur
+C|135.77|35.01|1000|Japan;Heian
+C|135.8|34.68|750|Japan;Nara
+C|139.7|35.68|1650|Tokugawa;Japan
+C|129.22|35.85|800|Silla
+C|126.55|37.97|1100|Goryeo;Koryo
+C|126.98|37.57|1500|Joseon;Choson
+C|125.75|39.03|500|Goguryeo;Koguryo
+C|103.87|13.41|1100|Khmer
+C|94.86|21.17|1150|Pagan;Bagan
+C|105.85|21.03|1200|Viet
+C|100.57|14.35|1500|Ayutthaya
+C|104.75|-2.99|800|Srivijaya
+C|112.38|-7.56|1350|Majapahit
+C|102.25|2.2|1450|Malacca;Melaka
+C|102.25|2.2|1550|Portug
+C|38.72|14.13|300|Axum;Aksum
+C|33.75|16.94|-300|Kush
+C|-3.0|16.77|1350|Mali
+C|-0.04|16.27|1500|Songhai;Songhay
+C|-7.97|15.77|1000|Ghana;Wagadu
+C|10.1|35.68|850|Aghlabid
+C|-7.99|31.63|1100|Almoravid
+C|-7.99|31.63|1200|Almohad
+C|-5.0|34.03|1350|Marinid
+C|10.18|36.8|1300|Hafsid
+C|30.93|-20.27|1350|Zimbabwe
+C|37.47|12.6|1650|Ethiopia
+C|39.51|-8.96|1400|Kilwa
+C|14.25|-6.27|1550|Kongo
+C|5.62|6.34|1550|Benin
+C|-99.13|19.43|1500|Aztec;Mexica;Triple Alliance
+C|-99.13|19.43|1600|Spain;Spanish
+C|-71.97|-13.52|1500|Inca
+C|-77.03|-12.05|1600|Spain;Spanish;Peru
+C|-89.62|17.22|600|Maya
+C|-98.84|19.69|400|Teotihuac
+C|-96.77|17.04|300|Zapotec
+C|-79.07|-8.11|1400|Chim
+C|-68.67|-16.55|800|Tiwanaku;Tiahuanaco
+C|-71.2|46.8|1650|France;French
+C|-71.06|42.36|1650|Engl;Massachusetts
+C|-82.36|23.13|1600|Spain;Spanish
+C|-38.5|-12.97|1600|Portug
