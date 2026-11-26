@@ -39,7 +39,7 @@ const REGIONS = [
   ['Iran and Central Asia', 44, 24, 78, 40], ['Tibetan plateau', 78, 27, 103, 40], ['Indian subcontinent', 66, 5, 93, 35],
   ['Mainland Southeast Asia', 92, 5, 110, 28], ['East Asia', 100, 20, 146, 54], ['Island Southeast Asia', 94, -11, 130, 20],
   ['Australia', 112, -45, 155, -10], ['New Guinea and Melanesia', 130, -12, 180, 0], ['New Zealand', 165, -48, 180, -33],
-  ['Pacific islands', 155, -30, 180, 30], ['Pacific islands', -180, -30, -130, 30],
+  ['Pacific islands', 155, -30, 180, 30], ['Pacific islands', -180, -50, -100, 30],
   ['Africa', -20, -36, 52, 38], ['Europe', -25, 36, 60, 72], ['Asia', 25, 0, 180, 80], ['North America', -170, 7, -50, 84], ['South America', -82, -56, -34, 13],
   ['Other regions', -180, -90, 180, 90],
 ];
