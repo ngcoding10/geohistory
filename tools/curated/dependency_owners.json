@@ -1,6 +1,832 @@
 {
- "_about": "Curated rulers for CShapes dependencies where the historical-basemaps map does not name one. Dates are the commonly cited start/end of rule; conservative, unverified against Wikidata (owner relations are not reliably stored there). Shown in the app as curated.",
+ "_about": "Curated rulers for CShapes dependencies, keyed by the CShapes source name ('name'). They take precedence over the ruler read from the nearest historical-basemaps sketch map, which is often missing or wrong for colonies. 'self': the unit keeps its own colour and the text explains its status; 'key': the colour key when the owner text is longer than a state name. Dates (yyyymmdd) are the commonly cited start and end of rule; written from general knowledge, each with the Wikipedia article that supports it; not verified against Wikidata (owner relations are not reliably stored there). Shown in the app as curated.",
  "rules": [
+  {
+   "name": "Algeria",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Algeria",
+   "verified": false
+  },
+  {
+   "name": "Benin",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Dahomey",
+   "verified": false
+  },
+  {
+   "name": "Chad",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Chad",
+   "verified": false
+  },
+  {
+   "name": "Central African Republic",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/Ubangi-Shari",
+   "verified": false
+  },
+  {
+   "name": "Cote D'Ivoire",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Ivory_Coast",
+   "verified": false
+  },
+  {
+   "name": "Guinea",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Guinea",
+   "verified": false
+  },
+  {
+   "name": "Mali",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Sudan",
+   "verified": false
+  },
+  {
+   "name": "Mauritania",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/Colonial_Mauritania",
+   "verified": false
+  },
+  {
+   "name": "Niger",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_Niger",
+   "verified": false
+  },
+  {
+   "name": "Senegal",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_West_Africa",
+   "verified": false
+  },
+  {
+   "name": "Madagascar (Malagasy)",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Madagascar",
+   "verified": false
+  },
+  {
+   "name": "Gabon",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Equatorial_Africa",
+   "verified": false
+  },
+  {
+   "name": "Congo",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Congo",
+   "verified": false
+  },
+  {
+   "name": "French West Africa",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_West_Africa",
+   "verified": false
+  },
+  {
+   "name": "Burkina Faso (Upper Volta)",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Upper_Volta",
+   "verified": false
+  },
+  {
+   "name": "Togo",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Togoland",
+   "verified": false
+  },
+  {
+   "name": "Cameroon",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Cameroon",
+   "verified": false
+  },
+  {
+   "name": "Inini",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/Inini",
+   "verified": false
+  },
+  {
+   "name": "Laos",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos",
+   "verified": false
+  },
+  {
+   "name": "Vietnam (Annam/Cochin China/Tonkin)",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_Indochina",
+   "verified": false
+  },
+  {
+   "name": "Cambodia (Kampuchea)",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/French_protectorate_of_Cambodia",
+   "verified": false
+  },
+  {
+   "name": "Syria",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon",
+   "verified": false
+  },
+  {
+   "name": "Lebanon",
+   "owner": "France",
+   "source": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon",
+   "verified": false
+  },
+  {
+   "name": "Botswana",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "British Bechuanaland",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/British_Bechuanaland",
+   "verified": false
+  },
+  {
+   "name": "Cape Colony",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Cape_Colony",
+   "verified": false
+  },
+  {
+   "name": "Natal",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_Natal",
+   "verified": false
+  },
+  {
+   "name": "Lagos",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Lagos_Colony",
+   "verified": false
+  },
+  {
+   "name": "Northern Nigeria",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Northern_Nigeria_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Southern Nigeria",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Southern_Nigeria_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Oil Rivers Protectorate",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Niger_Coast_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Nigeria",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Colonial_Nigeria",
+   "verified": false
+  },
+  {
+   "name": "Ghana",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Gold_Coast_(British_colony)",
+   "verified": false
+  },
+  {
+   "name": "Gambia",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Gambia_Colony_and_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Sierra Leone",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Sierra_Leone_Colony_and_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Kenya",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/East_Africa_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Uganda",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Uganda_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Zanzibar",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar",
+   "verified": false
+  },
+  {
+   "name": "British Somaliland (Somaliland Republic)",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/British_Somaliland",
+   "verified": false
+  },
+  {
+   "name": "British Togoland",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/British_Togoland",
+   "verified": false
+  },
+  {
+   "name": "British Cameroons",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/British_Cameroon",
+   "verified": false
+  },
+  {
+   "name": "Zambia",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Northern_Rhodesia",
+   "verified": false
+  },
+  {
+   "name": "Northeastern Rhodesia",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/North-Eastern_Rhodesia",
+   "verified": false
+  },
+  {
+   "name": "Northwestern Rhodesia",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/North-Western_Rhodesia",
+   "verified": false
+  },
+  {
+   "name": "Zimbabwe (Rhodesia)",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Southern_Rhodesia",
+   "verified": false
+  },
+  {
+   "name": "Malawi",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Nyasaland",
+   "verified": false
+  },
+  {
+   "name": "Lesotho",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Basutoland",
+   "verified": false
+  },
+  {
+   "name": "New Zealand",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_New_Zealand",
+   "verified": false
+  },
+  {
+   "name": "Tasmania",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_Tasmania",
+   "verified": false
+  },
+  {
+   "name": "Western Australia",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Western_Australia",
+   "verified": false
+  },
+  {
+   "name": "New South Wales",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_New_South_Wales",
+   "verified": false
+  },
+  {
+   "name": "Queensland",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_Queensland",
+   "verified": false
+  },
+  {
+   "name": "South Australia",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/South_Australia",
+   "verified": false
+  },
+  {
+   "name": "Victoria",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_Victoria",
+   "verified": false
+  },
+  {
+   "name": "Newfoundland",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Dominion_of_Newfoundland",
+   "verified": false
+  },
+  {
+   "name": "Pahang",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Federated_Malay_States",
+   "verified": false
+  },
+  {
+   "name": "Perak",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Federated_Malay_States",
+   "verified": false
+  },
+  {
+   "name": "Selangore",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Federated_Malay_States",
+   "verified": false
+  },
+  {
+   "name": "Federated Malay States",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Federated_Malay_States",
+   "verified": false
+  },
+  {
+   "name": "Unfederated Malay States",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Unfederated_Malay_States",
+   "verified": false
+  },
+  {
+   "name": "Straits Settlements",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Straits_Settlements",
+   "verified": false
+  },
+  {
+   "name": "Malaysia",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Federation_of_Malaya",
+   "verified": false
+  },
+  {
+   "name": "Singapore",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Colony_of_Singapore",
+   "verified": false
+  },
+  {
+   "name": "Qatar",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/History_of_Qatar",
+   "verified": false
+  },
+  {
+   "name": "United Arab Emirates",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Trucial_States",
+   "verified": false
+  },
+  {
+   "name": "Cyprus",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/British_Cyprus",
+   "verified": false
+  },
+  {
+   "name": "Palestine",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Mandatory_Palestine",
+   "verified": false
+  },
+  {
+   "name": "Iraq",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Mandatory_Iraq",
+   "verified": false
+  },
+  {
+   "name": "Jordan",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan",
+   "verified": false
+  },
+  {
+   "name": "India",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/British_Raj",
+   "verified": false
+  },
+  {
+   "name": "Myanmar (Burma)",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/British_rule_in_Burma",
+   "verified": false
+  },
+  {
+   "name": "Federation of Rhodesia and Nyasaland",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Federation_of_Rhodesia_and_Nyasaland",
+   "verified": false
+  },
+  {
+   "name": "Federation of South Arabia",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Federation_of_South_Arabia",
+   "verified": false
+  },
+  {
+   "name": "Aden",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Aden_Colony",
+   "verified": false
+  },
+  {
+   "name": "East Aden Protectorate",
+   "owner": "United Kingdom",
+   "source": "https://en.wikipedia.org/wiki/Aden_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Sudan",
+   "owner": "United Kingdom and Egypt (condominium)",
+   "source": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan",
+   "verified": false,
+   "key": "britain"
+  },
+  {
+   "name": "Egypt",
+   "owner": "United Kingdom (occupied from 1882; nominally Ottoman until 1914)",
+   "until": 19220227,
+   "source": "https://en.wikipedia.org/wiki/History_of_Egypt_under_the_British",
+   "verified": false,
+   "key": "britain"
+  },
+  {
+   "name": "Tanzania (Tanganyika)",
+   "owner": "German Empire",
+   "until": 19181125,
+   "source": "https://en.wikipedia.org/wiki/German_East_Africa",
+   "verified": false
+  },
+  {
+   "name": "Tanzania (Tanganyika)",
+   "owner": "United Kingdom",
+   "from": 19181126,
+   "source": "https://en.wikipedia.org/wiki/Tanganyika_(territory)",
+   "verified": false
+  },
+  {
+   "name": "Swaziland (Eswatini)",
+   "owner": "Transvaal",
+   "until": 19020531,
+   "source": "https://en.wikipedia.org/wiki/Swaziland_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Swaziland (Eswatini)",
+   "owner": "United Kingdom",
+   "from": 19020601,
+   "source": "https://en.wikipedia.org/wiki/Swaziland_Protectorate",
+   "verified": false
+  },
+  {
+   "name": "Cuba",
+   "owner": "Spain",
+   "until": 18981209,
+   "source": "https://en.wikipedia.org/wiki/Captaincy_General_of_Cuba",
+   "verified": false
+  },
+  {
+   "name": "Cuba",
+   "owner": "United States",
+   "from": 18981210,
+   "until": 19020519,
+   "source": "https://en.wikipedia.org/wiki/United_States_Military_Government_in_Cuba",
+   "verified": false
+  },
+  {
+   "name": "Haiti",
+   "owner": "United States (occupation, 1915 to 1934)",
+   "source": "https://en.wikipedia.org/wiki/United_States_occupation_of_Haiti",
+   "verified": false,
+   "key": "usa"
+  },
+  {
+   "name": "Serbia",
+   "owner": "Austria-Hungary and Bulgaria (occupation, 1915 to 1918)",
+   "from": 19151101,
+   "until": 19181101,
+   "source": "https://en.wikipedia.org/wiki/Austro-Hungarian_occupation_of_Serbia",
+   "verified": false,
+   "key": "austria"
+  },
+  {
+   "name": "Montenegro",
+   "owner": "Austria-Hungary (occupation, 1916 to 1918)",
+   "from": 19160101,
+   "until": 19181101,
+   "source": "https://en.wikipedia.org/wiki/Austro-Hungarian_occupation_of_Montenegro",
+   "verified": false,
+   "key": "austria"
+  },
+  {
+   "name": "Bosnia",
+   "owner": "Austria-Hungary",
+   "source": "https://en.wikipedia.org/wiki/Austro-Hungarian_rule_in_Bosnia_and_Herzegovina",
+   "verified": false
+  },
+  {
+   "name": "Herzegovina",
+   "owner": "Austria-Hungary",
+   "source": "https://en.wikipedia.org/wiki/Austro-Hungarian_rule_in_Bosnia_and_Herzegovina",
+   "verified": false
+  },
+  {
+   "name": "Bokhara",
+   "owner": "Russian Empire",
+   "until": 19171107,
+   "source": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara",
+   "verified": false
+  },
+  {
+   "name": "Bokhara",
+   "owner": "Self-ruling after the Russian Revolution; taken by the Red Army in 1920",
+   "from": 19171108,
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara",
+   "verified": false
+  },
+  {
+   "name": "Khiva",
+   "owner": "Russian Empire",
+   "until": 19171107,
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Khiva",
+   "verified": false
+  },
+  {
+   "name": "Khiva",
+   "owner": "Self-ruling after the Russian Revolution; taken by the Red Army in 1920",
+   "from": 19171108,
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Khiva",
+   "verified": false
+  },
+  {
+   "name": "Afghanistan",
+   "owner": "Self-ruling; Britain controlled its foreign relations from 1879 to 1919",
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/Emirate_of_Afghanistan",
+   "verified": false
+  },
+  {
+   "name": "Bhutan",
+   "owner": "Self-ruling; its foreign relations were guided by British India from 1910 and by India from 1949",
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/Bhutan%E2%80%93India_relations",
+   "verified": false
+  },
+  {
+   "name": "Iceland",
+   "owner": "Kingdom of Iceland, in personal union with Denmark (1918 to 1944)",
+   "from": 19181201,
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Iceland",
+   "verified": false
+  },
+  {
+   "name": "Danzig",
+   "owner": "Free city under the protection of the League of Nations",
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/Free_City_of_Danzig",
+   "verified": false
+  },
+  {
+   "name": "Morocco",
+   "owner": "Self-ruling sultanate until the French protectorate of 1912",
+   "until": 19120329,
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/Treaty_of_Fes",
+   "verified": false
+  },
+  {
+   "name": "Italian Somaliland",
+   "owner": "Italy",
+   "until": 19410225,
+   "source": "https://en.wikipedia.org/wiki/Italian_Somaliland",
+   "verified": false
+  },
+  {
+   "name": "Italian Somaliland",
+   "owner": "United Kingdom (military administration)",
+   "from": 19410226,
+   "until": 19500331,
+   "source": "https://en.wikipedia.org/wiki/British_Military_Administration_(Somali)",
+   "verified": false,
+   "key": "britain"
+  },
+  {
+   "name": "Italian Somaliland",
+   "owner": "Italy (United Nations trust territory)",
+   "from": 19500401,
+   "source": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland",
+   "verified": false,
+   "key": "italy"
+  },
+  {
+   "name": "Eritrea",
+   "owner": "Italy",
+   "until": 19410331,
+   "source": "https://en.wikipedia.org/wiki/Italian_Eritrea",
+   "verified": false
+  },
+  {
+   "name": "Eritrea",
+   "owner": "United Kingdom (military administration)",
+   "from": 19410401,
+   "until": 19520914,
+   "source": "https://en.wikipedia.org/wiki/British_Military_Administration_(Eritrea)",
+   "verified": false,
+   "key": "britain"
+  },
+  {
+   "name": "Libya",
+   "owner": "Italy",
+   "until": 19430212,
+   "source": "https://en.wikipedia.org/wiki/Italian_Libya",
+   "verified": false
+  },
+  {
+   "name": "Libya",
+   "owner": "United Kingdom and France (military administration)",
+   "from": 19430213,
+   "source": "https://en.wikipedia.org/wiki/Allied_administration_of_Libya",
+   "verified": false,
+   "key": "britain"
+  },
+  {
+   "name": "Kamerun",
+   "owner": "German Empire",
+   "until": 19160220,
+   "source": "https://en.wikipedia.org/wiki/Kamerun",
+   "verified": false
+  },
+  {
+   "name": "Kamerun",
+   "owner": "France and United Kingdom (occupation)",
+   "from": 19160221,
+   "source": "https://en.wikipedia.org/wiki/Kamerun_campaign",
+   "verified": false,
+   "key": "france"
+  },
+  {
+   "name": "German Togoland",
+   "owner": "German Empire",
+   "until": 19140826,
+   "source": "https://en.wikipedia.org/wiki/Togoland",
+   "verified": false
+  },
+  {
+   "name": "German Togoland",
+   "owner": "United Kingdom and France (occupation)",
+   "from": 19140827,
+   "source": "https://en.wikipedia.org/wiki/Togoland_campaign",
+   "verified": false,
+   "key": "britain"
+  },
+  {
+   "name": "German Solomon Islands",
+   "owner": "German Empire",
+   "source": "https://en.wikipedia.org/wiki/North_Solomon_Islands",
+   "verified": false
+  },
+  {
+   "name": "New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+   "owner": "German Empire",
+   "until": 19140916,
+   "source": "https://en.wikipedia.org/wiki/German_New_Guinea",
+   "verified": false
+  },
+  {
+   "name": "New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+   "owner": "Australia",
+   "from": 19140917,
+   "source": "https://en.wikipedia.org/wiki/Territory_of_New_Guinea",
+   "verified": false
+  },
+  {
+   "name": "Spanish Morocco",
+   "owner": "Spain",
+   "source": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco",
+   "verified": false
+  },
+  {
+   "name": "Southern zone of Spanish Morocco",
+   "owner": "Spain",
+   "source": "https://en.wikipedia.org/wiki/Cape_Juby",
+   "verified": false
+  },
+  {
+   "name": "Spanish Sahara",
+   "owner": "Spain",
+   "source": "https://en.wikipedia.org/wiki/Spanish_Sahara",
+   "verified": false
+  },
+  {
+   "name": "Spanish West Africa",
+   "owner": "Spain",
+   "source": "https://en.wikipedia.org/wiki/Spanish_West_Africa",
+   "verified": false
+  },
+  {
+   "name": "East Timor",
+   "owner": "Portugal",
+   "until": 19751206,
+   "source": "https://en.wikipedia.org/wiki/Portuguese_Timor",
+   "verified": false
+  },
+  {
+   "name": "East Timor",
+   "owner": "Indonesia",
+   "from": 19751207,
+   "until": 19991024,
+   "source": "https://en.wikipedia.org/wiki/Indonesian_occupation_of_East_Timor",
+   "verified": false
+  },
+  {
+   "name": "East Timor",
+   "owner": "United Nations (transitional administration)",
+   "from": 19991025,
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/United_Nations_Transitional_Administration_in_East_Timor",
+   "verified": false
+  },
+  {
+   "name": "Gaza",
+   "owner": "Egypt",
+   "source": "https://en.wikipedia.org/wiki/Occupation_of_the_Gaza_Strip_by_the_United_Arab_Republic",
+   "verified": false
+  },
+  {
+   "name": "West Bank",
+   "owner": "Jordan",
+   "source": "https://en.wikipedia.org/wiki/Jordanian_annexation_of_the_West_Bank",
+   "verified": false
+  },
+  {
+   "name": "Jammu and Kashmir",
+   "owner": "Disputed between India and Pakistan",
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/Kashmir_conflict",
+   "verified": false
+  },
+  {
+   "name": "Kashmir (North, Azad)",
+   "owner": "Disputed between India and Pakistan",
+   "self": true,
+   "source": "https://en.wikipedia.org/wiki/Kashmir_conflict",
+   "verified": false
+  },
+  {
+   "name": "German Federal Republic",
+   "owner": "United States, United Kingdom and France (occupation zones)",
+   "source": "https://en.wikipedia.org/wiki/Allied-occupied_Germany",
+   "verified": false,
+   "key": "germany"
+  },
+  {
+   "name": "West Irian (Dutch New Guinea)",
+   "owner": "Netherlands",
+   "until": 19620930,
+   "source": "https://en.wikipedia.org/wiki/Dutch_New_Guinea",
+   "verified": false
+  },
+  {
+   "name": "West Irian (Dutch New Guinea)",
+   "owner": "Indonesia",
+   "from": 19621001,
+   "source": "https://en.wikipedia.org/wiki/Western_New_Guinea",
+   "verified": false
+  },
+  {
+   "name": "Congo, Democratic Republic of (Zaire)",
+   "owner": "Leopold II of Belgium (Congo Free State)",
+   "until": 19081114,
+   "source": "https://en.wikipedia.org/wiki/Congo_Free_State",
+   "verified": false
+  },
+  {
+   "name": "Congo, Democratic Republic of (Zaire)",
+   "owner": "Belgium",
+   "from": 19081115,
+   "until": 19600629,
+   "source": "https://en.wikipedia.org/wiki/Belgian_Congo",
+   "verified": false
+  },
   {
    "name": "Reunion",
    "owner": "France",
@@ -53,12 +879,6 @@
    "name": "Tunisia",
    "owner": "France",
    "source": "https://en.wikipedia.org/wiki/Tunisia",
-   "verified": false
-  },
-  {
-   "name": "Togo",
-   "owner": "France",
-   "source": "https://en.wikipedia.org/wiki/Togo",
    "verified": false
   },
   {
@@ -184,7 +1004,7 @@
    "verified": false
   },
   {
-   "name": "Ceylon",
+   "name": "Sri Lanka (Ceylon)",
    "owner": "United Kingdom",
    "source": "https://en.wikipedia.org/wiki/Ceylon",
    "verified": false
@@ -196,45 +1016,15 @@
    "verified": false
   },
   {
-   "name": "Sierra Leone",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Sierra_Leone",
-   "verified": false
-  },
-  {
-   "name": "Lesotho",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Lesotho",
-   "verified": false
-  },
-  {
-   "name": "Unfederated Malay States",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Unfederated_Malay_States",
-   "verified": false
-  },
-  {
-   "name": "Straits Settlements",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Straits_Settlements",
-   "verified": false
-  },
-  {
    "name": "Sarawak",
    "owner": "United Kingdom",
    "source": "https://en.wikipedia.org/wiki/Sarawak",
    "verified": false
   },
   {
-   "name": "Sabah",
+   "name": "Sabah (North Borneo)",
    "owner": "United Kingdom",
    "source": "https://en.wikipedia.org/wiki/Sabah",
-   "verified": false
-  },
-  {
-   "name": "Cyprus",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Cyprus",
    "verified": false
   },
   {
@@ -244,49 +1034,7 @@
    "verified": false
   },
   {
-   "name": "Uganda",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Uganda",
-   "verified": false
-  },
-  {
-   "name": "Federated Malay States",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Federated_Malay_States",
-   "verified": false
-  },
-  {
-   "name": "Newfoundland",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Newfoundland",
-   "verified": false
-  },
-  {
-   "name": "United Arab Emirates",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
-   "verified": false
-  },
-  {
-   "name": "Malawi",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Malawi",
-   "verified": false
-  },
-  {
-   "name": "Botswana",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Botswana",
-   "verified": false
-  },
-  {
-   "name": "Gambia",
-   "owner": "United Kingdom",
-   "source": "https://en.wikipedia.org/wiki/Gambia",
-   "verified": false
-  },
-  {
-   "name": "Swaziland",
+   "name": "Swaziland (Eswatini)",
    "from": 19060101,
    "owner": "United Kingdom",
    "source": "https://en.wikipedia.org/wiki/Swaziland",
@@ -314,12 +1062,6 @@
    "name": "Surinam",
    "owner": "Netherlands",
    "source": "https://en.wikipedia.org/wiki/Surinam",
-   "verified": false
-  },
-  {
-   "name": "Spanish West Africa",
-   "owner": "Spain",
-   "source": "https://en.wikipedia.org/wiki/Spanish_West_Africa",
    "verified": false
   },
   {
@@ -351,29 +1093,7 @@
    "verified": false
   },
   {
-   "name": "Congo",
-   "until": 19081114,
-   "owner": "Leopold II of Belgium (Congo Free State)",
-   "source": "https://en.wikipedia.org/wiki/Congo_Free_State",
-   "verified": false
-  },
-  {
-   "name": "Congo",
-   "from": 19081115,
-   "until": 19600629,
-   "owner": "Belgium",
-   "source": "https://en.wikipedia.org/wiki/Belgian_Congo",
-   "verified": false
-  },
-  {
-   "name": "New Guinea",
-   "until": 19140916,
-   "owner": "German Empire",
-   "source": "https://en.wikipedia.org/wiki/German_New_Guinea",
-   "verified": false
-  },
-  {
-   "name": "New Guinea",
+   "name": "New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
    "from": 19200101,
    "owner": "Australia",
    "source": "https://en.wikipedia.org/wiki/Territory_of_New_Guinea",
@@ -412,12 +1132,6 @@
    "until": 19140801,
    "owner": "German Empire",
    "source": "https://en.wikipedia.org/wiki/German_colonial_empire",
-   "verified": false
-  },
-  {
-   "name": "Gabon",
-   "owner": "France",
-   "source": "https://en.wikipedia.org/wiki/Gabon",
    "verified": false
   },
   {

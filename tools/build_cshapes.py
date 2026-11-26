@@ -128,9 +128,16 @@ def build():
                         pk, ruler = cp['p'], cp['s']
                         break
             if not indep:
-                for r in owners.get(name, []) + owners.get(s['cs'], []):
+                # curated owners, keyed by the CShapes source name (the display name is tried last)
+                for r in owners.get(s['cs'], []) + (owners.get(name, []) if name != s['cs'] else []):
                     if r.get('from', 0) <= date <= r.get('until', 99991231):
-                        pk, ruler = power_key(r['owner']) if r['owner'] != 'Leopold II of Belgium (Congo Free State)' else 'belgium', r['owner']
+                        if r.get('self'):
+                            pk = power_key(name)        # keeps its own colour; the text explains its status
+                        elif r.get('key'):
+                            pk = r['key']
+                        else:
+                            pk = power_key(r['owner']) if r['owner'] != 'Leopold II of Belgium (Congo Free State)' else 'belgium'
+                        ruler = r['owner']
                         curated_rows.add((y, s['id']))
                         break
             rows.append([s['id'], name, pk, ruler] + ([1] if (y, s['id']) in curated_rows else []))

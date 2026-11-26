@@ -1,21 +1,482 @@
 {
  "_about": "Curated display names for CShapes units whose official name changed while the shape code stayed the same. Dates are the commonly cited change dates; source per rule. Used only for the label shown on the map; CShapes' own name is kept in the data as 'cs'.",
  "rules": [
-  {"cs": "Turkey (Ottoman Empire)", "until": 19231028, "name": "Ottoman Empire", "after": "Turkey", "source": "https://en.wikipedia.org/wiki/Republic_of_Turkey"},
-  {"cs": "Russia (Soviet Union)", "until": 19171106, "name": "Russian Empire", "source": "https://en.wikipedia.org/wiki/Russian_Empire"},
-  {"cs": "Russia (Soviet Union)", "until": 19221229, "name": "Russia", "source": "https://en.wikipedia.org/wiki/Russian_Soviet_Federative_Socialist_Republic"},
-  {"cs": "Russia (Soviet Union)", "until": 19911225, "name": "Soviet Union", "after": "Russia", "source": "https://en.wikipedia.org/wiki/Soviet_Union"},
-  {"cs": "Germany (Prussia)", "until": 19181108, "name": "German Empire", "after": "Germany", "source": "https://en.wikipedia.org/wiki/German_Empire"},
-  {"cs": "Iran (Persia)", "until": 19350320, "name": "Persia", "after": "Iran", "source": "https://en.wikipedia.org/wiki/Name_of_Iran"},
-  {"cs": "Thailand", "until": 19390623, "name": "Siam", "after": "Thailand", "source": "https://en.wikipedia.org/wiki/Thailand"},
-  {"cs": "Myanmar (Burma)", "until": 19890617, "name": "Burma", "after": "Myanmar", "source": "https://en.wikipedia.org/wiki/Names_of_Myanmar"},
-  {"cs": "Sri Lanka (Ceylon)", "until": 19720521, "name": "Ceylon", "after": "Sri Lanka", "source": "https://en.wikipedia.org/wiki/Dominion_of_Ceylon"},
-  {"cs": "Congo, Democratic Republic of (Zaire)", "until": 19711026, "name": "Congo", "source": "https://en.wikipedia.org/wiki/Zaire"},
-  {"cs": "Congo, Democratic Republic of (Zaire)", "until": 19970516, "name": "Zaire", "after": "DR Congo", "source": "https://en.wikipedia.org/wiki/Zaire"},
-  {"cs": "Zimbabwe (Rhodesia)", "until": 19800417, "name": "Rhodesia", "after": "Zimbabwe", "source": "https://en.wikipedia.org/wiki/Rhodesia"},
-  {"cs": "Burkina Faso (Upper Volta)", "until": 19840803, "name": "Upper Volta", "after": "Burkina Faso", "source": "https://en.wikipedia.org/wiki/Republic_of_Upper_Volta"},
-  {"cs": "Swaziland (Eswatini)", "until": 20180418, "name": "Swaziland", "after": "Eswatini", "source": "https://en.wikipedia.org/wiki/Eswatini"},
-  {"cs": "Italy/Sardinia", "name": "Italy", "source": "https://en.wikipedia.org/wiki/Kingdom_of_Italy"},
-  {"cs": "Rumania", "name": "Romania", "source": "https://en.wikipedia.org/wiki/Romania"}
+  {
+   "cs": "Turkey (Ottoman Empire)",
+   "until": 19231028,
+   "name": "Ottoman Empire",
+   "after": "Turkey",
+   "source": "https://en.wikipedia.org/wiki/Republic_of_Turkey"
+  },
+  {
+   "cs": "Russia (Soviet Union)",
+   "until": 19171106,
+   "name": "Russian Empire",
+   "source": "https://en.wikipedia.org/wiki/Russian_Empire"
+  },
+  {
+   "cs": "Russia (Soviet Union)",
+   "until": 19221229,
+   "name": "Russia",
+   "source": "https://en.wikipedia.org/wiki/Russian_Soviet_Federative_Socialist_Republic"
+  },
+  {
+   "cs": "Russia (Soviet Union)",
+   "until": 19911225,
+   "name": "Soviet Union",
+   "after": "Russia",
+   "source": "https://en.wikipedia.org/wiki/Soviet_Union"
+  },
+  {
+   "cs": "Germany (Prussia)",
+   "until": 19181108,
+   "name": "German Empire",
+   "after": "Germany",
+   "source": "https://en.wikipedia.org/wiki/German_Empire"
+  },
+  {
+   "cs": "Iran (Persia)",
+   "until": 19350320,
+   "name": "Persia",
+   "after": "Iran",
+   "source": "https://en.wikipedia.org/wiki/Name_of_Iran"
+  },
+  {
+   "cs": "Thailand",
+   "until": 19390623,
+   "name": "Siam",
+   "after": "Thailand",
+   "source": "https://en.wikipedia.org/wiki/Thailand"
+  },
+  {
+   "cs": "Myanmar (Burma)",
+   "until": 19890617,
+   "name": "Burma",
+   "after": "Myanmar",
+   "source": "https://en.wikipedia.org/wiki/Names_of_Myanmar"
+  },
+  {
+   "cs": "Sri Lanka (Ceylon)",
+   "until": 19720521,
+   "name": "Ceylon",
+   "after": "Sri Lanka",
+   "source": "https://en.wikipedia.org/wiki/Dominion_of_Ceylon"
+  },
+  {
+   "cs": "Burkina Faso (Upper Volta)",
+   "until": 19840803,
+   "name": "Upper Volta",
+   "after": "Burkina Faso",
+   "source": "https://en.wikipedia.org/wiki/Republic_of_Upper_Volta"
+  },
+  {
+   "cs": "Swaziland (Eswatini)",
+   "until": 20180418,
+   "name": "Swaziland",
+   "after": "Eswatini",
+   "source": "https://en.wikipedia.org/wiki/Eswatini"
+  },
+  {
+   "cs": "Italy/Sardinia",
+   "name": "Italy",
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Italy"
+  },
+  {
+   "cs": "Rumania",
+   "name": "Romania",
+   "source": "https://en.wikipedia.org/wiki/Romania"
+  },
+  {
+   "cs": "Mali",
+   "until": 19600921,
+   "name": "French Sudan",
+   "after": "Mali",
+   "source": "https://en.wikipedia.org/wiki/French_Sudan"
+  },
+  {
+   "cs": "Benin",
+   "until": 19751129,
+   "name": "Dahomey",
+   "after": "Benin",
+   "source": "https://en.wikipedia.org/wiki/Republic_of_Dahomey"
+  },
+  {
+   "cs": "Cote D'Ivoire",
+   "until": 19860101,
+   "name": "Ivory Coast",
+   "after": "Côte d'Ivoire",
+   "source": "https://en.wikipedia.org/wiki/Ivory_Coast"
+  },
+  {
+   "cs": "Central African Republic",
+   "until": 19581130,
+   "name": "Ubangi-Shari",
+   "after": "Central African Republic",
+   "source": "https://en.wikipedia.org/wiki/Ubangi-Shari"
+  },
+  {
+   "cs": "Ghana",
+   "until": 19570305,
+   "name": "Gold Coast",
+   "after": "Ghana",
+   "source": "https://en.wikipedia.org/wiki/Gold_Coast_(British_colony)"
+  },
+  {
+   "cs": "Zambia",
+   "until": 19641023,
+   "name": "Northern Rhodesia",
+   "after": "Zambia",
+   "source": "https://en.wikipedia.org/wiki/Northern_Rhodesia"
+  },
+  {
+   "cs": "Malawi",
+   "until": 19640705,
+   "name": "Nyasaland",
+   "after": "Malawi",
+   "source": "https://en.wikipedia.org/wiki/Nyasaland"
+  },
+  {
+   "cs": "Tanzania (Tanganyika)",
+   "until": 19190627,
+   "name": "German East Africa",
+   "source": "https://en.wikipedia.org/wiki/Tanganyika_(territory)"
+  },
+  {
+   "cs": "Tanzania (Tanganyika)",
+   "until": 19640425,
+   "name": "Tanganyika",
+   "after": "Tanzania",
+   "source": "https://en.wikipedia.org/wiki/Tanganyika_(territory)"
+  },
+  {
+   "cs": "Botswana",
+   "until": 19660929,
+   "name": "Bechuanaland",
+   "after": "Botswana",
+   "source": "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate"
+  },
+  {
+   "cs": "Lesotho",
+   "until": 19661003,
+   "name": "Basutoland",
+   "after": "Lesotho",
+   "source": "https://en.wikipedia.org/wiki/Basutoland"
+  },
+  {
+   "cs": "Namibia",
+   "until": 19150709,
+   "name": "German South West Africa",
+   "source": "https://en.wikipedia.org/wiki/South_West_Africa"
+  },
+  {
+   "cs": "Namibia",
+   "until": 19900320,
+   "name": "South West Africa",
+   "after": "Namibia",
+   "source": "https://en.wikipedia.org/wiki/South_West_Africa"
+  },
+  {
+   "cs": "Indonesia",
+   "until": 19450816,
+   "name": "Dutch East Indies",
+   "after": "Indonesia",
+   "source": "https://en.wikipedia.org/wiki/Dutch_East_Indies"
+  },
+  {
+   "cs": "Guyana",
+   "until": 19660525,
+   "name": "British Guiana",
+   "after": "Guyana",
+   "source": "https://en.wikipedia.org/wiki/British_Guiana"
+  },
+  {
+   "cs": "Belize",
+   "until": 19730531,
+   "name": "British Honduras",
+   "after": "Belize",
+   "source": "https://en.wikipedia.org/wiki/British_Honduras"
+  },
+  {
+   "cs": "Zimbabwe (Rhodesia)",
+   "until": 19641023,
+   "name": "Southern Rhodesia",
+   "source": "https://en.wikipedia.org/wiki/Southern_Rhodesia"
+  },
+  {
+   "cs": "Zimbabwe (Rhodesia)",
+   "until": 19800417,
+   "name": "Rhodesia",
+   "after": "Zimbabwe",
+   "source": "https://en.wikipedia.org/wiki/Southern_Rhodesia"
+  },
+  {
+   "cs": "Kenya",
+   "until": 19200722,
+   "name": "British East Africa",
+   "after": "Kenya",
+   "source": "https://en.wikipedia.org/wiki/East_Africa_Protectorate"
+  },
+  {
+   "cs": "Djibouti",
+   "until": 19670704,
+   "name": "French Somaliland",
+   "source": "https://en.wikipedia.org/wiki/French_Somaliland"
+  },
+  {
+   "cs": "Djibouti",
+   "until": 19770626,
+   "name": "Afars and Issas",
+   "after": "Djibouti",
+   "source": "https://en.wikipedia.org/wiki/French_Somaliland"
+  },
+  {
+   "cs": "Equatorial Guinea",
+   "until": 19681011,
+   "name": "Spanish Guinea",
+   "after": "Equatorial Guinea",
+   "source": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+  },
+  {
+   "cs": "Guinea-Bissau",
+   "until": 19740909,
+   "name": "Portuguese Guinea",
+   "after": "Guinea-Bissau",
+   "source": "https://en.wikipedia.org/wiki/Portuguese_Guinea"
+  },
+  {
+   "cs": "Guinea",
+   "until": 19581001,
+   "name": "French Guinea",
+   "after": "Guinea",
+   "source": "https://en.wikipedia.org/wiki/French_Guinea"
+  },
+  {
+   "cs": "Jordan",
+   "until": 19460524,
+   "name": "Transjordan",
+   "after": "Jordan",
+   "source": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan"
+  },
+  {
+   "cs": "Malaysia",
+   "until": 19630915,
+   "name": "Malaya",
+   "after": "Malaysia",
+   "source": "https://en.wikipedia.org/wiki/Federation_of_Malaya"
+  },
+  {
+   "cs": "German Federal Republic",
+   "until": 19490522,
+   "name": "Germany (Western zones)",
+   "source": "https://en.wikipedia.org/wiki/West_Germany"
+  },
+  {
+   "cs": "German Federal Republic",
+   "until": 19901002,
+   "name": "West Germany",
+   "after": "Germany",
+   "source": "https://en.wikipedia.org/wiki/West_Germany"
+  },
+  {
+   "cs": "German Democratic Republic",
+   "until": 19491006,
+   "name": "Germany (Soviet zone)",
+   "after": "East Germany",
+   "source": "https://en.wikipedia.org/wiki/East_Germany"
+  },
+  {
+   "cs": "Korea, People's Republic of",
+   "until": 19480908,
+   "name": "Korea (Soviet zone)",
+   "after": "North Korea",
+   "source": "https://en.wikipedia.org/wiki/North_Korea"
+  },
+  {
+   "cs": "Korea, Republic of",
+   "until": 19480814,
+   "name": "Korea (US zone)",
+   "after": "South Korea",
+   "source": "https://en.wikipedia.org/wiki/South_Korea"
+  },
+  {
+   "cs": "Vietnam, Democratic Republic of",
+   "until": 19760701,
+   "name": "North Vietnam",
+   "after": "Vietnam",
+   "source": "https://en.wikipedia.org/wiki/North_Vietnam"
+  },
+  {
+   "cs": "Vietnam, Republic of",
+   "name": "South Vietnam",
+   "source": "https://en.wikipedia.org/wiki/South_Vietnam"
+  },
+  {
+   "cs": "Yemen (Arab Republic of Yemen)",
+   "until": 19900521,
+   "name": "North Yemen",
+   "after": "Yemen",
+   "source": "https://en.wikipedia.org/wiki/Yemeni_unification"
+  },
+  {
+   "cs": "Yemen, People's Republic of",
+   "name": "South Yemen",
+   "source": "https://en.wikipedia.org/wiki/South_Yemen"
+  },
+  {
+   "cs": "Congo, Democratic Republic of (Zaire)",
+   "until": 19081114,
+   "name": "Congo Free State",
+   "source": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+  },
+  {
+   "cs": "Congo, Democratic Republic of (Zaire)",
+   "until": 19600629,
+   "name": "Belgian Congo",
+   "source": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+  },
+  {
+   "cs": "Congo, Democratic Republic of (Zaire)",
+   "until": 19711026,
+   "name": "Congo (Léopoldville)",
+   "source": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+  },
+  {
+   "cs": "Congo, Democratic Republic of (Zaire)",
+   "until": 19970516,
+   "name": "Zaire",
+   "after": "DR Congo",
+   "source": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo"
+  },
+  {
+   "cs": "Congo",
+   "until": 19031228,
+   "name": "French Congo",
+   "source": "https://en.wikipedia.org/wiki/French_Congo"
+  },
+  {
+   "cs": "Congo",
+   "until": 19600814,
+   "name": "Middle Congo",
+   "after": "Congo (Brazzaville)",
+   "source": "https://en.wikipedia.org/wiki/French_Congo"
+  },
+  {
+   "cs": "Macedonia (FYROM/North Macedonia)",
+   "until": 20190211,
+   "name": "Macedonia",
+   "after": "North Macedonia",
+   "source": "https://en.wikipedia.org/wiki/North_Macedonia"
+  },
+  {
+   "cs": "Kyrgyz Republic",
+   "name": "Kyrgyzstan",
+   "source": "https://en.wikipedia.org/wiki/Kyrgyzstan"
+  },
+  {
+   "cs": "Sabah (North Borneo)",
+   "name": "North Borneo",
+   "source": "https://en.wikipedia.org/wiki/North_Borneo"
+  },
+  {
+   "cs": "Selangore",
+   "name": "Selangor",
+   "source": "https://en.wikipedia.org/wiki/Selangor"
+  },
+  {
+   "cs": "French Guyana",
+   "name": "French Guiana",
+   "source": "https://en.wikipedia.org/wiki/French_Guiana"
+  },
+  {
+   "cs": "Surinam",
+   "until": 19751124,
+   "name": "Surinam",
+   "after": "Suriname",
+   "source": "https://en.wikipedia.org/wiki/Suriname"
+  },
+  {
+   "cs": "New Guinea (German New Guinea) (Kaiser Wilhelmsland)",
+   "until": 19140916,
+   "name": "German New Guinea",
+   "after": "New Guinea",
+   "source": "https://en.wikipedia.org/wiki/German_New_Guinea"
+  },
+  {
+   "cs": "West Irian (Dutch New Guinea)",
+   "until": 19620930,
+   "name": "Dutch New Guinea",
+   "after": "West Irian",
+   "source": "https://en.wikipedia.org/wiki/Dutch_New_Guinea"
+  },
+  {
+   "cs": "Togo",
+   "until": 19600426,
+   "name": "French Togoland",
+   "after": "Togo",
+   "source": "https://en.wikipedia.org/wiki/French_Togoland"
+  },
+  {
+   "cs": "Cameroon",
+   "until": 19591231,
+   "name": "French Cameroons",
+   "after": "Cameroon",
+   "source": "https://en.wikipedia.org/wiki/French_Cameroon"
+  },
+  {
+   "cs": "Sudan",
+   "until": 19551231,
+   "name": "Anglo-Egyptian Sudan",
+   "after": "Sudan",
+   "source": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan"
+  },
+  {
+   "cs": "United Arab Emirates",
+   "until": 19711201,
+   "name": "Trucial States",
+   "after": "United Arab Emirates",
+   "source": "https://en.wikipedia.org/wiki/Trucial_States"
+  },
+  {
+   "cs": "Yugoslavia",
+   "until": 19291002,
+   "name": "Kingdom of Serbs, Croats and Slovenes",
+   "source": "https://en.wikipedia.org/wiki/Yugoslavia"
+  },
+  {
+   "cs": "Yugoslavia",
+   "until": 20030203,
+   "name": "Yugoslavia",
+   "after": "Serbia and Montenegro",
+   "source": "https://en.wikipedia.org/wiki/Yugoslavia"
+  },
+  {
+   "cs": "Ireland",
+   "until": 19371228,
+   "name": "Irish Free State",
+   "after": "Ireland",
+   "source": "https://en.wikipedia.org/wiki/Irish_Free_State"
+  },
+  {
+   "cs": "Papua",
+   "until": 19060831,
+   "name": "British New Guinea",
+   "after": "Papua",
+   "source": "https://en.wikipedia.org/wiki/Territory_of_Papua"
+  },
+  {
+   "cs": "Bokhara",
+   "name": "Emirate of Bukhara",
+   "source": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+  },
+  {
+   "cs": "Khiva",
+   "name": "Khanate of Khiva",
+   "source": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+  },
+  {
+   "cs": "Kashmir (North, Azad)",
+   "name": "Azad Kashmir",
+   "source": "https://en.wikipedia.org/wiki/Azad_Kashmir"
+  }
  ]
 }

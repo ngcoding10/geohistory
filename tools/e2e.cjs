@@ -248,6 +248,62 @@ async function waitEvents(page) {
     await waitH1(page, 'Colony of Virginia');
     ok(true, 'colony panel opens from the URL (Colony of Virginia, 1750)');
 
+    // ---- round 4: what a look at the map by eye turned up ----
+    const polAt = async (y) => { await page.goto(BASE + '?y=' + y); await waitH1(page, 'The world in ' + (y < 0 ? (-y).toLocaleString('en-US') + ' BC' : y)); await page.waitForFunction((yy) => window.__geo?.state.year === yy && window.__geo.state.snapDoc && window.__geo.map?.ready, y, { timeout: 60000 }); await page.waitForTimeout(600); return page.evaluate(() => window.__geo.state.snapDoc.polities.map((p) => ({ n: p.n, s: p.s || '', u: !!p.under }))); };
+    const layers = await page.evaluate(() => { const m = window.__geo.map.map; const ids = m.getStyle().layers.map((l) => l.id); return { u: ids.indexOf('ufillA'), f: ids.indexOf('fillA'), ul: ids.includes('ulbl-1'), usl: m.getLayer('us-label').source }; });
+    ok(layers.u >= 0 && layers.u < layers.f && layers.ul, 'sketch-map territories have their own fill below the states and their own label layers');
+    ok(layers.usl === 'us-lbl', 'US state names come from one label point per state');
+    const p1914 = await polAt(1914);
+    ok(p1914.some((p) => p.n === 'French Sudan') && !p1914.some((p) => p.n === 'Mali') && p1914.some((p) => p.n === 'Belgian Congo'), '1914 uses colonial names (French Sudan, Belgian Congo), not the names of today\'s countries');
+    const p1930 = await polAt(1930);
+    const zan = p1930.find((p) => p.n === 'Zanzibar'), tan = p1930.find((p) => p.n === 'Tanganyika');
+    ok(zan && /United Kingdom/.test(zan.s) && tan && /United Kingdom/.test(tan.s), `1930: Zanzibar and Tanganyika are British ("${zan?.s}", "${tan?.s}")`);
+    const p1942 = await polAt(1942);
+    await page.waitForFunction(() => /see note/.test(document.querySelector('#badge').textContent), null, { timeout: 20000 }).catch(() => {});
+    ok(/see note/.test(await page.locator('#badge').innerText()) && /does not show wartime occupation/.test(await page.locator('#panelBody').innerText()), '1942: the badge and the year panel say that occupation is not shown');
+    ok(p1942.length > 100, '1942 map loaded');
+    const p1848 = await polAt(1848);
+    const bna = p1848.find((p) => p.n === 'British North America');
+    ok(bna && bna.u && /United Kingdom/.test(bna.s) && !p1848.some((p) => p.n === 'Canada'), '1848: the sketch map\'s "Canada" is shown as British North America under the United Kingdom');
+    const pm1300 = await polAt(-1300);
+    ok(!pm1300.some((p) => /^(Urartu|Phrygians|Greek city-states)$/.test(p.n)) && pm1300.some((p) => p.n === 'Hittites'), '1300 BC: Urartu, the Phrygians and the Greek city-states are not drawn centuries early');
+    await page.goto(BASE + '?y=1861');
+    await waitH1(page, 'The world in 1861');
+    await page.waitForFunction(() => window.__geo?.map?.usDate != null, null, { timeout: 60000 });
+    await page.waitForTimeout(800);
+    const csa = await page.evaluate(() => JSON.stringify(window.__geo.map.map.getPaintProperty('us-fill', 'fill-color')));
+    ok(/va_state/.test(csa) && /tn_state/.test(csa) && !/ky_state/.test(csa), '1861: the eleven seceded states are filled in the Confederacy\'s colour');
+    const office = async (y, name) => { await page.goto(BASE + '?y=' + y + '&c=' + encodeURIComponent(name)); await waitH1(page, name); await page.waitForSelector('#panelBody .changes-list, #panelBody .empty', { timeout: 60000 }); return (await page.locator('#panelBody .changes-list').first().innerText().catch(() => '')).replace(/\n/g, ' | '); };
+    const o1812 = await office(1812, 'First French Empire');
+    ok(/Napoleon/.test(o1812), `France 1812 lists Napoleon in office ("${o1812.slice(0, 80)}")`);
+    const o1942 = await office(1942, 'Germany');
+    ok(/Adolf Hitler/.test(o1942), `Germany 1942 lists Hitler in office ("${o1942.slice(0, 80)}")`);
+    const o1600 = await office(1600, 'Ottoman Empire');
+    ok(/^Mehmed III, Sultan/.test(o1600) && !/Haseki|Hürrem/.test(o1600), `Ottoman Empire 1600: the sultan comes first and consorts are not listed ("${o1600.slice(0, 90)}")`);
+    const o1700 = await office(1700, 'Tokugawa Shogunate');
+    ok(/Emperor of Japan/.test(o1700) && /Shogun/.test(o1700), `Tokugawa Japan 1700 shows the emperor and the shogun as separate offices ("${o1700.slice(0, 110)}")`);
+    const o63 = await office(-63, 'Roman Republic');
+    ok(/Cicero/.test(o63) && /consul/i.test(o63), `Roman Republic 63 BC lists Cicero as consul ("${o63.slice(0, 100)}")`);
+    const o1580 = await office(1580, 'Spanish Empire');
+    ok(/Philip II/.test(o1580), `Spanish Empire 1580 lists Philip II ("${o1580.slice(0, 80)}")`);
+    const t1945 = await top5(1945);
+    ok(!/Cold War/.test(t1945), `the Cold War is not among the top five of 1945 (${t1945})`);
+    const t1492 = await top5(1492);
+    ok(!/European colonization/.test(t1492) && /Columbus/.test(t1492), `1492 is led by Columbus, not by "European colonization of the Americas" (${t1492})`);
+    const t800 = await top5(800);
+    ok(!/Denmark founded/.test(t800) && /Charlemagne/.test(t800), `"Denmark founded" is not among the top five of 800 (${t800})`);
+    await page.goto(BASE + '?y=1942');
+    await waitH1(page, 'The world in 1942');
+    await waitEvents(page);
+    const mid = await page.locator('#panelBody ul.events li', { hasText: 'Battle of Midway' }).first().innerText().catch(() => '');
+    ok(mid && !/Congo/.test(mid), `the Battle of Midway is not placed in the Congo ("${mid.replace(/\n/g, ' / ').slice(0, 90)}")`);
+    await page.click('#q');
+    await page.fill('#q', 'bizantine empir');
+    await page.waitForSelector('#results li[data-i]', { timeout: 30000 });
+    const firstHit = await page.locator('#results li').first().innerText();
+    ok(/^Byzantine Empire\s*Territory/.test(firstHit), `searching "bizantine empir" puts the territory first ("${firstHit.replace(/\n/g, ' ')}")`);
+    await page.keyboard.press('Escape');
+
     ok(errors.length === 0, `no console errors on desktop${errors.length ? ': ' + errors.slice(0, 5).join(' | ') : ''}`);
 
     // ---------------- phones ----------------

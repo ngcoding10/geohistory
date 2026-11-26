@@ -877,3 +877,33 @@ T|1911|Xinhai Revolution
 T|1929|Wall Street crash
 T|1941|Pearl Harbor
 T|1994|Rwandan genocide
+# Round 4 (after looking at the map by eye): colonial rulers and names in 1886-2019, sketch-map corrections.
+# The two older Kinshasa points (15.3, -4.3) lie in the Congo river between Kinshasa and Brazzaville and
+# are kept as they were; these use the city centres.
+C|15.32|-4.33|1920|Belgium
+C|15.32|-4.33|1930|Belgian Congo
+C|15.28|-4.27|1920|France
+C|39.19|-6.16|1930|United Kingdom
+C|39.28|-6.8|1930|United Kingdom
+C|39.28|-6.8|1910|German
+C|-8.0|12.65|1914|French Sudan
+C|-8.0|12.65|1914|France
+C|125.57|-8.56|1950|Portug
+C|18.42|-33.92|1890|United Kingdom
+C|45.34|2.04|1910|Ital
+C|44.06|9.56|1910|United Kingdom
+C|104.92|11.56|1940|France
+C|-5.37|35.57|1940|Spain
+C|34.47|31.5|1955|Egypt
+C|35.2|31.9|1955|Jordan
+C|32.53|15.6|1910|United Kingdom
+C|31.24|30.04|1900|United Kingdom
+C|-97.1|49.9|1850|British North America
+C|-0.2|5.55|1930|Gold Coast
+C|28.28|-15.42|1930|Northern Rhodesia
+C|106.82|-6.2|1930|Dutch East Indies
+C|13.4|52.52|1960|East Germany
+C|6.96|50.94|1960|West Germany
+R|Napoleon|1804
+R|Philip II|1556
+R|Franz Joseph I|1848

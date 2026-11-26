@@ -30,6 +30,24 @@
    "note": "Wikidata gives only February 1917, when the revolt was finally suppressed; it began in July 1916.",
    "source": "https://en.wikipedia.org/wiki/Central_Asian_revolt_of_1916",
    "verified": false
+  },
+  {
+   "q": "Q184716",
+   "set": {
+    "y2": 1800
+   },
+   "note": "A process, not an event of 1492: it runs from Columbus's first voyage to about 1800.",
+   "source": "https://en.wikipedia.org/wiki/European_colonization_of_the_Americas",
+   "verified": false
+  },
+  {
+   "q": "Q8683",
+   "set": {
+    "y": 1947
+   },
+   "note": "Wikidata also lists 1945 as a start. The usual starting point is the Truman Doctrine of 12 March 1947.",
+   "source": "https://en.wikipedia.org/wiki/Cold_War",
+   "verified": false
   }
  ]
 }

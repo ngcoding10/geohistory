@@ -1,0 +1,164 @@
+{
+ "about": "Corrections to the sketch-map territories (historical-basemaps) that are drawn under the Cliopatria states for 3400 BC to 1885. The sketch maps exist only for some years and reuse outlines, so a people or state can appear centuries before it existed or long after it ended. 'spans': a territory with this name is drawn only between 'from' and 'to' (either may be missing). 'rename': between 'from' and 'to' the territory is shown under another name, optionally with a ruler and the ruler's colour key. No outline is changed or added. Years are the commonly cited ones from the Wikipedia article named in 'source'; 'verified' is true where Wikidata's inception or dissolution year for the linked item is the same (within a few years).",
+ "spans": [
+  {
+   "name": "Urartu",
+   "from": -860,
+   "to": -590,
+   "source": "https://en.wikipedia.org/wiki/Urartu",
+   "verified": true
+  },
+  {
+   "name": "Phrygians",
+   "from": -1200,
+   "source": "https://en.wikipedia.org/wiki/Phrygia",
+   "verified": false
+  },
+  {
+   "name": "Greek city-states",
+   "from": -800,
+   "source": "https://en.wikipedia.org/wiki/Polis",
+   "verified": false
+  },
+  {
+   "name": "Kingdom of David and Solomon",
+   "from": -1047,
+   "to": -930,
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(united_monarchy)",
+   "verified": false
+  },
+  {
+   "name": "Cimmerians",
+   "from": -1000,
+   "source": "https://en.wikipedia.org/wiki/Cimmerians",
+   "verified": false
+  },
+  {
+   "name": "Saba",
+   "from": -1000,
+   "source": "https://en.wikipedia.org/wiki/Sabaeans",
+   "verified": true
+  },
+  {
+   "name": "Pomeranian culture",
+   "to": -150,
+   "source": "https://en.wikipedia.org/wiki/Pomeranian_culture",
+   "verified": false
+  },
+  {
+   "name": "Bell-shaped burials culture",
+   "to": -100,
+   "source": "https://en.wikipedia.org/wiki/Cloche_Grave_culture",
+   "verified": false
+  },
+  {
+   "name": "Milograd culture",
+   "to": 100,
+   "source": "https://en.wikipedia.org/wiki/Milograd_culture",
+   "verified": false
+  },
+  {
+   "name": "Teotihuacan",
+   "from": -180,
+   "to": 750,
+   "source": "https://en.wikipedia.org/wiki/Teotihuacan",
+   "verified": true
+  },
+  {
+   "name": "Western Gokturk Khaganate",
+   "to": 657,
+   "source": "https://en.wikipedia.org/wiki/Western_Turkic_Khaganate",
+   "verified": false
+  },
+  {
+   "name": "Gupta Empire",
+   "to": 550,
+   "source": "https://en.wikipedia.org/wiki/Gupta_Empire",
+   "verified": true
+  },
+  {
+   "name": "Hunnic Empire",
+   "to": 469,
+   "source": "https://en.wikipedia.org/wiki/Huns",
+   "verified": false
+  },
+  {
+   "name": "Khazars",
+   "to": 1048,
+   "source": "https://en.wikipedia.org/wiki/Khazars",
+   "verified": true
+  },
+  {
+   "name": "Huari Empire",
+   "to": 1100,
+   "source": "https://en.wikipedia.org/wiki/Wari_Empire",
+   "verified": true
+  },
+  {
+   "name": "Tiahuanaco Empire",
+   "to": 1150,
+   "source": "https://en.wikipedia.org/wiki/Tiwanaku_Empire",
+   "verified": false
+  },
+  {
+   "name": "Toltec Empire",
+   "to": 1122,
+   "source": "https://en.wikipedia.org/wiki/Toltec_Empire",
+   "verified": true
+  },
+  {
+   "name": "Kediri",
+   "to": 1222,
+   "source": "https://en.wikipedia.org/wiki/Kediri_Kingdom",
+   "verified": true
+  },
+  {
+   "name": "Mongol Empire",
+   "from": 1206,
+   "source": "https://en.wikipedia.org/wiki/Mongol_Empire",
+   "verified": true
+  },
+  {
+   "name": "Merina Kingdom",
+   "from": 1540,
+   "source": "https://en.wikipedia.org/wiki/Merina_Kingdom",
+   "verified": true
+  },
+  {
+   "name": "Kalmar Union",
+   "to": 1523,
+   "source": "https://en.wikipedia.org/wiki/Kalmar_Union",
+   "verified": true
+  },
+  {
+   "name": "Songhai Empire",
+   "to": 1591,
+   "source": "https://en.wikipedia.org/wiki/Songhai_Empire",
+   "verified": true
+  },
+  {
+   "name": "Mali",
+   "to": 1670,
+   "source": "https://en.wikipedia.org/wiki/Mali_Empire",
+   "verified": false
+  },
+  {
+   "name": "Kaarta",
+   "to": 1854,
+   "source": "https://en.wikipedia.org/wiki/Kaarta",
+   "verified": true
+  }
+ ],
+ "rename": [
+  {
+   "name": "Canada",
+   "to": 1866,
+   "as": "British North America",
+   "ruler": "United Kingdom",
+   "key": "britain",
+   "source": "https://en.wikipedia.org/wiki/British_North_America",
+   "verified": false,
+   "note": "The 1815 sketch map labels all British territory north of the United States 'Canada'. Before Confederation on 1 July 1867 these were separate British possessions: the Canadas (one Province of Canada from 1841), the Atlantic colonies, and Rupert's Land and the North-Western Territory of the Hudson's Bay Company."
+  }
+ ]
+}

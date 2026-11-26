@@ -46,7 +46,7 @@ without coordinates is placed). The border, ruler and year-article steps give id
 second state: after the run from scratch `fetch_extra.py` was refreshed from Wikidata, which added 240 births
 that an old failed query had left out.
 
-Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (59 checks; uses the globally installed Playwright; starts its
+Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (79 checks; uses the globally installed Playwright; starts its
 own `python3 -m http.server`).
 
 ## How it fits with the other apps
@@ -59,12 +59,25 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
 ## Known limits
 
 - Borders: 1886 to 2019 come from CShapes 2.0, one map per year as on 1 July. 3400 BC to 1885 come from
-  Cliopatria: a map is stored for each of the 469 years in which its data changes, and every other year
+  Cliopatria: a map is stored for each of the 482 years in which the map changes, and every other year
   uses the latest one before it. These are approximate (a state is redrawn every few years, in antiquity
   every few decades; peoples without a state, and states Cliopatria lacks, are filled in from the nearest
-  earlier historical-basemaps sketch map and can be out of date). Before 3400 BC there are only the
-  sketch-map snapshots, and the badge on the map says which one you see. Known source errors are listed
-  in `tools/curated/map_notes.json` and shown in the panel of the territory concerned. Rulers of colonies in 1886-2019 can lag a change by a few years.
+  earlier historical-basemaps sketch map and can be out of date). These sketch-map territories are drawn
+  paler, below the states, with italic labels. The sketch maps reuse outlines across centuries, so
+  `tools/curated/underlay.json` limits 24 of them to the years they existed (Urartu, the Phrygians and the
+  Greek city-states are no longer drawn in 1300 BC, the Songhai Empire no longer in 1800) and shows the
+  1815 map's "Canada" as British North America until 1867; many smaller anachronisms remain. Before 3400 BC
+  there are only the sketch-map snapshots, and the badge on the map says which one you see. Known source
+  errors are listed in `tools/curated/map_notes.json` and shown in the panel of the territory concerned;
+  notes that concern the whole map are also shown in the year panel and flagged on the badge ("see note").
+- 1886 to 2019 shows recognised borders, not control on the ground: wartime occupation (1914 to 1918, 1939
+  to 1945) and Manchukuo are not drawn, only noted. Colonies carry the name they had at the time (French
+  Sudan, Belgian Congo, Gold Coast: `tools/curated/cshapes_names.json`) and their ruler comes from a curated
+  table of 176 dated rules (`tools/curated/dependency_owners.json`), written from general knowledge and not
+  checked against a dataset. Cliopatria leaves well-known regions blank in some years (the Celts and Germans
+  of antiquity, central India around 1400, Spanish Louisiana, eastern Australia in 1848).
+- Inside the United States the eleven seceded states are filled in the Confederacy's colour from the day of
+  each ordinance of secession until 26 May 1865; the border states and Union-held areas are not drawn apart.
 - **Licences:** CShapes 2.0 is CC BY-NC-SA (non-commercial). NC sources must be cleared or replaced
   before ads are added to this site (see CREDITS.md). Cliopatria is CC BY 4.0.
 - Borders before about 1500 are rough, and all borders are simplified (about 1 to 3 km).
@@ -78,23 +91,30 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
   "doubtful date" (`data/meta.json`, `consistency`).
 - Rulers need a start date on Wikidata ("position held" or "noble title" with a start); many early and
   minor rulers have none and are missing. For the 150 most significant states on the maps (map years x
-  Wikipedia editions) a ruler is known for 61% of their map years on average (49% before the curated lists
-  and the office table of round 3); `data/rulers/coverage.json` has the figure per state. Still empty among
-  the largest: the Roman Republic (consuls), Parthia, the Maya and Sumerian city-states, Elam, Champa.
+  Wikipedia editions) a ruler is known for 61.5% of their map years on average (49% before the curated lists
+  and the office table of round 3); `data/rulers/coverage.json` has the figure per state. Only heads of
+  state and of government are listed (`tools/ruler_titles.py` drops the mayors, queens consort, party and
+  court presidents that Wikidata files under a country: 1,017 terms). The Roman Republic now lists its consuls
+  and dictators (765 dated terms from Wikidata, 86% of its map years); Spain, the Habsburg lands and the Dutch
+  stadtholders come from curated lists. Still empty among the largest: Parthia, the Maya and Sumerian
+  city-states, Elam, Champa, the Golden Horde, the Ilkhanate, the Durrani Empire. Where two offices ruled side by
+  side (emperor and shogun, sultan and grand vizier) both are listed, sovereigns first, each with its title.
 - Year-article sentences are Wikipedia text (CC BY-SA 4.0), shown with a link to the year article. The
-  29,130 entries whose date nothing but the year article confirms are tagged "unverified" and ranked last;
+  29,120 entries whose date nothing but the year article confirms are tagged "unverified" and ranked last;
   in a random sample of 150, 147 read as correct complete sentences (one was garbled in the source, one had a
-  doubled full stop, one was a sports club). Their type comes from keyword rules and is wrong for roughly one
-  in five; their place on the map is the first linked article with coordinates and is approximate.
+  doubled full stop, one was a sports club). Their type comes from keyword rules (`tools/classify.py`). In a fresh random sample of 100 after
+  the rules were extended in round 4, 8 carry a wrong type and 9 more are left as the general "Event" although a
+  specific type applies (17 in 100; a sample of 100 before the change had 4 wrong and about 18 left
+  general, 22 in 100); their place on the map is the first linked article with coordinates and is approximate.
 - Archaeological cultures and early sites carry approximate dates ("c."), sometimes only a century.
 - Curated text (decades, state descriptions, period events) is written from general knowledge and tagged
   "curated"; entries whose year Wikidata does not confirm are tagged "curated, unverified".
 - The flat map is the default because borders are easier to read; the globe is one tap away. Both were
   checked only in headless Chromium with software rendering, not yet on real phones.
 - Births and deaths (the 12 most notable per year) are off by default; turn them on under "Event types".
-- `tools/audit.py` checks 849 hand-written well-known facts spread over every region and era (who held a
-  city in a given year, 303 points of which 150 are before 1700; dates of events and reigns; twelve "top five
-  of the year must include" checks); 842 pass. The 7 failures are listed in `data/audit.json`: all are map
+- `tools/audit.py` checks 876 hand-written well-known facts spread over every region and era (who held a
+  city in a given year, 327 points of which 150 are before 1700; dates of events and reigns; twelve "top five
+  of the year must include" checks); 867 pass. The 9 failures are listed in `data/audit.json`: all are map
   points where the border source is wrong or coarser than the fact (Calcutta inside a misplaced Danish
   outline in 1800, Warsaw outside Russia in 1830, Athens blank in 440 BC, New Spain and Canada not drawn
   apart from the Spanish and British empires, Brazil drawn as Spanish in 1600, Kilwa under a generic

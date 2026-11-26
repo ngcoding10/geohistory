@@ -1,5 +1,5 @@
 {
- "about": "Where Wikidata files rulers under an office or a jurisdiction that is not the state drawn on the map, this table attaches them to the map's territories. 'jurisdictions': the terms Wikidata lists for that item are also shown for each named territory, for the terms that overlap the years the territory is on the map. 'positions': offices with no country on Wikidata; tools/build_rulers.py fetches their holders (start dates from Wikidata) and attaches them the same way. Only used where every holder of the office ruled the territories named in those years.",
+ "about": "Where Wikidata files rulers under an office or a jurisdiction that is not the state drawn on the map, this table attaches them to the map's territories. 'jurisdictions': the terms Wikidata lists for that item are also shown for each named territory, for the terms that overlap the years the territory is on the map. 'positions': offices with no country on Wikidata; tools/build_rulers.py fetches their holders (start dates from Wikidata) and attaches them the same way. Only used where every holder of the office ruled the territories named in those years. A jurisdiction entry may carry 'title': only terms whose office matches that pattern are attached (the Wikidata item also holds other offices). 'exclude' lists offices that Wikidata files under a state but that did not rule it (the electors of the Holy Roman Empire).",
  "jurisdictions": [
   {
    "q": "Q1747689",
@@ -274,6 +274,64 @@
    "to": [
     "Safavid Dynasty"
    ]
+  },
+  {
+   "q": "Q34",
+   "label": "Sweden",
+   "title": "Monarch of Sweden|Regent of Sweden",
+   "to": [
+    "Kingdom of Sweden",
+    "Swedish Empire"
+   ]
+  },
+  {
+   "q": "Q7318",
+   "label": "Nazi Germany",
+   "to": [
+    "Germany"
+   ]
+  },
+  {
+   "q": "Q1206012",
+   "label": "German Reich",
+   "to": [
+    "Germany"
+   ]
+  },
+  {
+   "q": "Q41304",
+   "label": "Weimar Republic",
+   "to": [
+    "Germany"
+   ]
+  },
+  {
+   "q": "Q31747",
+   "label": "United Kingdom of Great Britain and Ireland (monarchs, filed on Wikidata with the Irish Free State)",
+   "title": "Monarch of the United Kingdom",
+   "to": [
+    "United Kingdom of Great Britain and Ireland",
+    "United Kingdom",
+    "British Colonial Empire",
+    "British Empire"
+   ]
+  },
+  {
+   "q": "Q79854",
+   "label": "Communist Party of the Soviet Union (general secretaries)",
+   "title": "General Secretary",
+   "to": [
+    "Soviet Union"
+   ]
+  },
+  {
+   "q": "Q889",
+   "label": "Afghanistan",
+   "title": "Emir of Afghanistan",
+   "to": [
+    "Durrani Empire",
+    "Emirate of Afghanistan"
+   ]
   }
  ],
  "positions": [
@@ -537,6 +595,57 @@
    "to": [
     "Hammadid Dynasty"
    ]
+  },
+  {
+   "q": "Q5373953",
+   "label": "Emperor of the French",
+   "to": [
+    "First French Empire",
+    "Second French Empire"
+   ]
+  },
+  {
+   "q": "Q166877",
+   "label": "Emperor of Austria",
+   "to": [
+    "Austrian Empire",
+    "Austria-Hungary"
+   ]
+  },
+  {
+   "q": "Q2639920",
+   "label": "Grand Duke of Lithuania",
+   "to": [
+    "Grand Duchy of Lithuania"
+   ]
+  },
+  {
+   "q": "Q1816155",
+   "label": "Peshwa",
+   "to": [
+    "Maratha Empire"
+   ]
+  },
+  {
+   "q": "Q40779",
+   "label": "Roman consul",
+   "to": [
+    "Roman Republic"
+   ]
+  },
+  {
+   "q": "Q236885",
+   "label": "Roman dictator",
+   "to": [
+    "Roman Republic"
+   ]
+  }
+ ],
+ "exclude": [
+  {
+   "q": "Q12548",
+   "label": "Holy Roman Empire",
+   "title": "Prince-Elector|Viceroy of Sardinia"
   }
  ]
 }

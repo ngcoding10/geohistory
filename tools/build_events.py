@@ -23,6 +23,7 @@ from geo import PolyIndex
 import yearly
 import names as names_mod
 from classify import classify
+from ruler_titles import is_ruler_title
 
 JULIAN = 'Q1985786'
 TYPE_ORDER = ['war', 'battle', 'revolt', 'violence', 'treaty', 'state', 'ruler', 'politics', 'economy', 'epidemic',
@@ -171,6 +172,32 @@ def split_pairs(s, n=2):
         if len(bits) >= n and bits[0]:
             out.append(bits)
     return out
+
+
+# Locations too wide to put a marker on: an event "in Africa" or "in the Pacific Ocean" is not at the centre
+# of the continent or the sea, and the country nearest to that centre is not where it happened.
+WIDE_PLACES = {'africa', 'europe', 'asia', 'north america', 'south america', 'americas', 'america', 'oceania',
+               'antarctica', 'eurasia', 'earth', 'world', 'worldwide', 'atlantic ocean', 'pacific ocean',
+               'indian ocean', 'arctic ocean', 'mediterranean sea', 'caribbean sea', 'caribbean', 'baltic sea',
+               'north sea', 'black sea', 'middle east', 'near east', 'southeast asia', 'south asia', 'east asia',
+               'central asia', 'western europe', 'eastern europe', 'central europe', 'northern europe',
+               'southern europe', 'latin america', 'central america', 'mesoamerica', 'north africa',
+               'sub-saharan africa', 'west africa', 'east africa', 'southern africa', 'western world',
+               'old world', 'new world', 'pacific', 'atlantic', 'global', 'northern hemisphere'}
+
+
+WIDE_Q = {'Q15', 'Q46', 'Q48', 'Q49', 'Q18', 'Q828', 'Q51', 'Q2', 'Q5401', 'Q97', 'Q98', 'Q1239', 'Q4918',
+          'Q1247', 'Q7204', 'Q664609', 'Q13703', 'Q12585', 'Q27611', 'Q11708', 'Q27231', 'Q27275', 'Q27496',
+          'Q27468', 'Q27381', 'Q4412', 'Q132959'}
+
+
+def narrow_locs(locs):
+    """An event's locations without continents, oceans and world regions -> (locations, wide). When one of
+    them was that wide (the Second World War: "Africa, Europe, Asia, ...") the event is not a local one:
+    wide is True, no location is kept, and the caller does not place it in a country either."""
+    keep = [b for b in locs if b[0] not in WIDE_Q and (len(b) < 2 or (b[1] or '').strip().lower() not in WIDE_PLACES)]
+    wide = len(keep) < len(locs)
+    return ([] if wide else keep), wide
 
 
 def good_label(l):
@@ -333,7 +360,7 @@ def main():
         if ev.get('mc'):
             return
         for kind, lq, iso, lc in places['locations'].get(q, []):
-            if kind != 'loc':
+            if kind != 'loc' or lq in WIDE_Q:
                 continue
             xy = parse_point(lc)
             if xy and ev.get('lo') is None:
@@ -439,7 +466,7 @@ def main():
         if r.get('enwiki'):
             ev['w'] = r['enwiki']
         pt = parse_point(r.get('coord'))
-        locs = split_pairs(r.get('locs'), 2)
+        locs, wide = narrow_locs(split_pairs(r.get('locs'), 2))
         if locs:
             ev['loc'] = locs[0][1]
         if not pt:
@@ -450,7 +477,7 @@ def main():
                     break
         if pt:
             ev['lo'], ev['la'] = pt
-        countries = split_pairs(r.get('countries'))
+        countries = [] if wide else split_pairs(r.get('countries'))
         if countries:
             ev['cn'] = [c[1] for c in countries[:3]]
         parts = split_pairs(r.get('parts'))
@@ -470,7 +497,8 @@ def main():
         if ev['t'] in ('war', 'battle', 'revolt') and any(w in low for w in ('massacre', 'genocide', 'pogrom')):
             ev['t'] = 'violence'
         place(ev, countries)
-        place_more(ev, k)
+        if not wide:
+            place_more(ev, k)
         events[k] = ev
 
     # ---------- famous items dated by inception, publication, launch... (fetch_famous.py) ----------
@@ -518,7 +546,7 @@ def main():
         if r.get('enwiki'):
             ev['w'] = r['enwiki']
         pt = parse_point(r.get('coord'))
-        locs = split_pairs(r.get('locs'), 2)
+        locs, wide = narrow_locs(split_pairs(r.get('locs'), 2))
         if locs:
             ev['loc'] = locs[0][1]
         if not pt:
@@ -529,7 +557,7 @@ def main():
                     break
         if pt:
             ev['lo'], ev['la'] = pt
-        countries = split_pairs(r.get('countries'))
+        countries = [] if wide else split_pairs(r.get('countries'))
         if countries:
             ev['cn'] = [c[1] for c in countries[:3]]
         pof = split_pairs(r.get('partof'))
@@ -540,7 +568,8 @@ def main():
         if al:
             ev['al'] = sorted(set(al), key=lambda a: (len(a), a))[:4]
         place(ev, countries)
-        place_more(ev, k)
+        if not wide:
+            place_more(ev, k)
         events[k] = ev
         n_fam += 1
     log(f'{n_fam} famous items added (inception, publication, launch, periods)')
@@ -573,7 +602,7 @@ def main():
         if r.get('enwiki'):
             ev['w'] = r['enwiki']
         pt = parse_point(r.get('coord'))
-        locs = split_pairs(r.get('locs'), 2)
+        locs, wide = narrow_locs(split_pairs(r.get('locs'), 2))
         if not pt:
             for bits in locs:
                 if len(bits) >= 3 and parse_point(bits[2]):
@@ -582,11 +611,12 @@ def main():
                     break
         if pt:
             ev['lo'], ev['la'] = pt
-        countries = split_pairs(r.get('countries'))
+        countries = [] if wide else split_pairs(r.get('countries'))
         if countries:
             ev['cn'] = [c[1] for c in countries[:3]]
         place(ev, countries)
-        place_more(ev, k)
+        if not wide:
+            place_more(ev, k)
         events[k] = ev
         n_cult += 1
     log(f'{n_cult} archaeological cultures and periods')
@@ -602,6 +632,18 @@ def main():
             t = parse_time(r.get(f))
             if t:
                 pol[q][f].append(hist_year(t[0]))
+    # A founding or end "in 800" is often Wikidata's way of writing "8th or 9th century" (Denmark). Ask for
+    # the precision of the dates that fall on a round century; anything coarser than a year is marked
+    # approximate, shown with "c." and kept out of the top of the year's list.
+    round_q = sorted(q for q, v in pol.items() if any(y % 100 == 0 for y in v['start'] + v['end']))
+    coarse = set()
+    for prop, kind in (('P571', 'start'), ('P576', 'end')):
+        for i in range(0, len(round_q), 80):
+            vals = ' '.join('wd:' + q for q in round_q[i:i + 80])
+            for r in sparql(f'SELECT ?item ?prec WHERE {{ VALUES ?item {{ {vals} }} ?item p:{prop} ?st . ?st psv:{prop} ?n . ?n wikibase:timePrecision ?prec . }}'):
+                if int(r['prec']) <= 8:
+                    coarse.add((qid(r['item']), kind))
+    stats['stateDatesCoarserThanAYear'] = len(coarse)
     n_states = 0
     for q, v in pol.items():
         r = det.get(q)
@@ -616,6 +658,8 @@ def main():
                 continue
             ev = {'i': f'{"f" if f == "start" else "x"}{q}', 'l': f'{name} {verb}', 'y': y, 't': 'state',
                   's': max(1, int(v['sl'] * 0.6)), 'w': r.get('enwiki')}
+            if (q, f) in coarse and y % 100 == 0:
+                ev['ya'] = 1
             if r.get('desc'):
                 ev['d'] = r['desc'][:160]
             if not ev['w']:
@@ -804,7 +848,7 @@ def main():
                 n_rulers += 1
         # attach terms to the map territories named in tools/curated/ruler_map.json, by overlapping years
         n_att = 0
-        for src, to in [(j_['q'], j_['to']) for j_ in rmap['jurisdictions']] + [('pos:' + p_['q'], p_['to']) for p_ in rmap['positions']]:
+        for src, to, only in [(j_['q'], j_['to'], j_.get('title')) for j_ in rmap['jurisdictions']] + [('pos:' + p_['q'], p_['to'], None) for p_ in rmap['positions']]:
             for name in to:
                 ys = map_names.get(name)
                 if not ys or key_of(name) == src:
@@ -812,6 +856,8 @@ def main():
                 dst = terms_out[key_of(name)]
                 have_t = {(x[4], x[1]) for x in dst}
                 for x in list(terms_out.get(src, [])):
+                    if only and not re.search(only, x[3]):
+                        continue
                     last = x[2] if x[2] is not None else x[1]
                     if x[1] <= ys[-1] + 2 and last >= ys[0] - 2 and (x[4], x[1]) not in have_t:
                         dst.append(list(x[:5]))
@@ -862,7 +908,20 @@ def main():
         os.makedirs(rdir, exist_ok=True)
         rulers_doc = {}
         n_inf = 0
+        # only heads of state and of government count as "in office" (tools/ruler_titles.py); offices that
+        # Wikidata files under a state but that did not rule it are left out (ruler_map.json, "exclude")
+        excl = {x_['q']: re.compile(x_['title']) for x_ in rmap.get('exclude', [])}
+        n_not_ruler = 0
         for j, lst in terms_out.items():
+            n0 = len(lst)
+            lst = [x for x in lst if is_ruler_title(x[3]) and not (j in excl and excl[j].search(x[3]))]
+            n_not_ruler += n0 - len(lst)
+            if not lst:
+                continue
+            for x in lst:      # an office named after its list article ("List of Safavid monarchs")
+                m_ = re.match(r'^List of (.+?)s$', x[3])
+                if m_:
+                    x[3] = m_.group(1)[0].upper() + m_.group(1)[1:]
             lst = sorted({tuple(x) for x in lst}, key=lambda x: (x[1], x[0]))
             lst = [list(x) for x in lst]
             # a term without an end: the next holder of the same office within 80 years ends it ("i" = inferred)
@@ -875,6 +934,12 @@ def main():
                         n_inf += 1
             rulers_doc[j] = {'n': lab.get(j, [j])[0], 'terms': lst}
         stats['rulerTermEndsInferredFromSuccessor'] = n_inf
+        stats['termsLeftOutAsNotRulers'] = n_not_ruler
+        # "X becomes Mayor of a place in Hungary" and the like are not ruler events either
+        for k_ in [k_ for k_, e_ in events.items() if e_['t'] == 'ruler' and ' becomes ' in e_['l'] and not e_.get('cur')
+                   and not is_ruler_title(e_['l'].split(' becomes ', 1)[1])]:
+            del events[k_]
+            stats['rulerEventsLeftOutAsNotRulers'] += 1
         write_json(os.path.join(rdir, 'terms.json'), rulers_doc)
         log(f'{n_terms} terms in {len(rulers_doc)} jurisdictions')
 
@@ -1263,6 +1328,8 @@ def main():
                 sc = 30 + (sc - 30) * 0.2
         elif derived and typ == 'founding':
             sc = min(sc, 22)
+        elif derived and e.get('ya'):
+            sc = min(sc, 18)        # a founding known only to the century is not the news of that year
         elif derived and sc > 45:
             sc = 45 + (sc - 45) * 0.07
         if typ not in ('ruler', 'birth', 'death', 'culture') and span >= (50 if typ == 'war' else 40):

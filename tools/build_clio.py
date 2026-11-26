@@ -18,7 +18,7 @@ import os
 import zipfile
 from collections import defaultdict, Counter
 
-from common import fetch, write_json, read_json, DATA, CACHE, log
+from common import fetch, write_json, read_json, DATA, CACHE, TOOLS, log
 from fetch_sources import CLIO
 from names import display
 from geo import simplify_geom, label_point, bbox_of, polygon_area_km2, polys_of, PolyIndex
@@ -146,12 +146,34 @@ def build():
             under_cache[snap_year] = out
         return under_cache[snap_year]
 
+    # curated corrections to the sketch-map territories: years in which a name may be drawn, and renames
+    ucfg = read_json(os.path.join(TOOLS, 'curated', 'underlay.json'))
+    spans = {r['name']: r for r in ucfg['spans']}
+    renames = {}
+    for r in ucfg['rename']:
+        renames.setdefault(r['name'], []).append(r)
+
+    def under_row(u, y, snap):
+        """The row for a sketch-map territory in year y, or None when it does not belong on that year's map."""
+        sp = spans.get(u['n'])
+        if sp and (y < sp.get('from', -99999) or y > sp.get('to', 99999)):
+            return None
+        for r in renames.get(u['n'], []):
+            if r.get('from', -99999) <= y <= r.get('to', 99999):
+                return [u['k'], r['as'], r.get('key') or power_key(r['as']), r.get('ruler'), snap]
+        return [u['k'], u['n'], power_key(u['n']), None, snap]
+
     # a year gets its own map only when the list of shapes differs from the year before
     cand = {FIRST}
     for s in shapes:
         cand.add(max(s['from'], FIRST))
         cand.add(s['to'] + 1)
     cand |= {b['y'] for b in bindex}
+    for r in ucfg['spans'] + ucfg['rename']:
+        if 'from' in r:
+            cand.add(r['from'])
+        if 'to' in r:
+            cand.add(r['to'] + 1)
     cand = sorted(y for y in cand if FIRST <= y <= LAST)
     years = {}
     prev_rows = None
@@ -168,13 +190,14 @@ def build():
         snap = max(b['y'] for b in bindex if b['y'] <= y)
         rows = []
         for u in underlay(snap):
-            if power_key(u['n']) in names:
+            row = under_row(u, y, snap)
+            if row is None or power_key(row[1]) in names:
                 continue
             # skip a sketch-map territory when a Cliopatria state covers its label point or over 40% of it
             hit = [idx.lookup(x, yy) is not None for x, yy in u['pts']]
             if hit and (hit[0] or sum(hit) > 0.4 * len(hit)):
                 continue
-            rows.append([u['k'], u['n'], power_key(u['n']), None, snap])
+            rows.append(row)
         for s in live:
             ruler = s['m'] or None
             rows.append([s['id'], s['n'], key_of(ruler or s['n']), ruler])
@@ -190,12 +213,61 @@ def build():
     years = {y: [r if len(r) >= 5 else [remap[r[0]]] + r[1:] for r in rows] for y, rows in years.items()}
 
     powers = read_json(os.path.join(DATA, 'powers.json'))
+    # Colours for powers that only Cliopatria has. Neighbours should not share a colour, so the powers are
+    # coloured greedily, largest first: each takes the palette colour that its neighbours use least.
+    # Two shapes are neighbours when they exist in the same years and have outline points in the same or
+    # an adjacent cell of a 0.5 degree grid.
+    pk_of = {}
+    for rows in years.values():
+        for r in rows:
+            if len(r) < 5:
+                pk_of[r[0]] = r[2]
+    grid = defaultdict(set)
+    for s in shapes:
+        cells = set()
+        for poly in polys_of(s['g']):
+            for x, yy in poly[0]:
+                cells.add((int(x * 2 // 1), int(yy * 2 // 1)))
+        s['_cells'] = cells
+        for c in cells:
+            grid[c].add(s['id'])
+    byid = {s['id']: s for s in shapes}
+    nbrs = defaultdict(lambda: defaultdict(float))
+    tot = defaultdict(float)
+    for s in shapes:
+        a = pk_of[s['id']]
+        tot[a] += s['a'] * (s['to'] - s['from'] + 1)
+        near = set()
+        for cx, cy in s['_cells']:
+            for dx in (-1, 0, 1):
+                for dy in (-1, 0, 1):
+                    near |= grid.get((cx + dx, cy + dy), set())
+        for j in near:
+            o = byid[j]
+            b = pk_of[j]
+            if b == a:
+                continue
+            both = min(s['to'], o['to']) - max(s['from'], o['from']) + 1
+            if both > 0:
+                nbrs[a][b] += both * (1 + min(s['a'], o['a']) / 1e5)
+    for s in shapes:
+        del s['_cells']
+    colour = {k: PALETTE.index(v['color']) for k, v in powers.items() if v['color'] in PALETTE}
+    for pk in sorted(tot, key=lambda k: (-tot[k], k)):
+        if pk in colour:
+            continue
+        cost = [0.0] * len(PALETTE)
+        for nb, w in nbrs[pk].items():
+            if nb in colour:
+                cost[colour[nb]] += w
+        h = sum(ord(c) * (i + 1) for i, c in enumerate(pk))
+        colour[pk] = min(range(len(PALETTE)), key=lambda i: (cost[i], (i - h) % len(PALETTE)))
     span = {}
     for y, rows in years.items():
         for _, name, pk, ruler, *_ in rows:
             if pk not in powers:
                 h = sum(ord(c) * (i + 1) for i, c in enumerate(pk))
-                powers[pk] = {'name': ruler or name, 'color': PALETTE[h % len(PALETTE)], 'years': [y, y]}
+                powers[pk] = {'name': ruler or name, 'color': PALETTE[colour.get(pk, h % len(PALETTE))], 'years': [y, y]}
                 span[pk] = powers[pk]
             elif pk in span:
                 span[pk]['years'][1] = y
@@ -233,7 +305,7 @@ def year_doc(y):
     for r in rows:
         if len(r) >= 5:
             g, a = under_geom(r[4], r[0])
-            out.append({'n': r[1], 'p': r[2], 's': None, 'a': a, 'g': g, 'u': r[4]})
+            out.append({'n': r[1], 'p': r[2], 's': r[3], 'a': a, 'g': g, 'u': r[4]})
     return out
 
 

@@ -43,7 +43,7 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
   https://zenodo.org/records/13363121
 - **Licence:** Creative Commons Attribution 4.0 (CC BY 4.0), as stated on the Zenodo record (checked
   26 November 2026). Commercial use is allowed with attribution.
-- **Changes we made:** geometry simplified and rounded; one map for each year in which the list of valid rows changes (469 maps);
+- **Changes we made:** geometry simplified and rounded; one map for each year in which the list of valid rows changes (482 maps);
   the aggregate rows in brackets, such as "(Spanish Empire)", are used only to name the ruling power of
   their members, and group labels such as "(Warring States China)" are not treated as a ruler; territories
   without a Cliopatria state are filled in from the nearest earlier historical-basemaps snapshot and labelled
