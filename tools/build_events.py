@@ -22,6 +22,7 @@ from fetch_sources import NE
 from geo import PolyIndex
 import yearly
 import names as names_mod
+from classify import classify
 
 JULIAN = 'Q1985786'
 TYPE_ORDER = ['war', 'battle', 'revolt', 'violence', 'treaty', 'state', 'ruler', 'politics', 'economy', 'epidemic',
@@ -136,6 +137,10 @@ JUNK = re.compile(r'^(January|February|March|April|May|June|July|August|Septembe
 YP_SKIP = re.compile(r'UEFA|FIFA|Eurovision|Miss (World|Universe|America)|Championships?\b|Grand Prix|Super Bowl|\bCup\b|\bseason\b|'
                      r'\bAwards?\b|by-election|\bOpen\b|Tour de France|World Series|Stanley|Wimbledon|\bLeague\b|Idol\b|\(film\)|\(album\)|\(song\)|\(novel\)|\(TV', re.I)
 # kinds of event that happen inside the state they are filed under (so a former state's capital places them)
+# Wikidata classes of things (not events) that carry a start date: ranked like "X founded"
+THINGS = {'Q8142', 'Q28783456', 'Q1368', 'Q25530138', 'Q93636179', 'Q378427', 'Q618779', 'Q1709894', 'Q11448906',
+          'Q62049', 'Q1093829', 'Q515', 'Q15221310', 'Q976327', 'Q15087423', 'Q8192', 'Q3918', 'Q875538',
+          'Q2385804', 'Q9826', 'Q3914', 'Q107655869'}
 DOMESTIC = {'politics', 'revolt', 'state', 'ruler', 'economy', 'religion', 'epidemic', 'disaster', 'violence', 'other', 'founding'}
 
 
@@ -418,6 +423,8 @@ def main():
             continue
         y, m, d, approx = main
         ev = {'i': k, 'l': r['label'], 'y': y, 't': v['type'], 's': v['sl']}
+        if set(v.get('cls') or []) & THINGS:
+            ev['_inc'] = 1     # a currency, prize, town or school with a start date: a thing, not an event
         if m:
             ev['m'] = m
         if d:
@@ -495,6 +502,8 @@ def main():
         if prop == 'P619':
             pat = '{} launched' if not r['label'].lower().startswith(('apollo', 'soyuz', 'vostok', 'gemini', 'mercury', 'sts', 'shenzhou', 'voskhod')) else '{}'
         ev = {'i': k, 'l': pat.format(r['label']), 'y': y, 't': v['type'], 's': max(1, int(v['sl'] * (0.5 if pat != '{}' else 1)))}
+        if prop == 'P571':
+            ev['_inc'] = 1     # dated by the inception of a thing (a currency, a prize, a script), not by an event
         if m:
             ev['m'] = m
         if d:
@@ -741,12 +750,131 @@ def main():
             n_rulers += 1
             n_fr += 1
         log(f'{n_fr} more ruler events from well-known people')
+        # ---------- rulers Wikidata does not file under the state on the map (build_rulers.py) ----------
+        map_names = read_json(os.path.join(CACHE, 'names.json'))
+        rmap = read_json(os.path.join(TOOLS, 'curated', 'ruler_map.json'))
+
+        def key_of(name):
+            """terms.json key of a map territory: its Wikidata id, else "n:<name>"."""
+            return ents[name]['q'] if name in ents else 'n:' + name
+
+        def first_entity(names_):
+            return next((ents[n]['q'] for n in names_ if n in ents), None)
+
+        extra_path = os.path.join(CACHE, 'rulers_extra.json')
+        n_extra = 0
+        if os.path.exists(extra_path):
+            ex = read_json(extra_path)
+            xlab = ex['labels']
+            pos_to = {p_['q']: p_['to'] for p_ in rmap['positions']}
+            for t in sorted(ex['terms'], key=lambda t: -t['sl']):
+                pl, posl = xlab.get(t['p']), xlab.get(t['pos'])
+                if not pl or not posl or not good_label(pl[0]):
+                    continue
+                dt = to_date(t['s'], t['sp'], t['sc'])
+                if not dt:
+                    continue
+                y, m, d, _ = dt
+                end = None
+                if t.get('e') and parse_time(t['e']):
+                    end = hist_year(parse_time(t['e'])[0])
+                if end is not None and end < y:
+                    end = None
+                title = posl[0][0].upper() + posl[0][1:]
+                terms_out['pos:' + t['pos']].append([pl[0], y, end, title, t['p']])
+                n_terms += 1
+                n_extra += 1
+                if (t['p'], y) in seen:
+                    continue
+                seen.add((t['p'], y))
+                ev = {'i': f'r{t["p"]}-{y}', 'l': f'{person_name(pl[0], pl[1])} becomes {title}', 'y': y, 't': 'ruler', 's': max(1, int(t['sl'] * 0.5))}
+                if m:
+                    ev['m'] = m
+                if d:
+                    ev['dd'] = d
+                if end and end > y:
+                    ev['y2'] = end
+                if pl[1]:
+                    ev['w'] = pl[1]
+                place(ev, [])
+                jj = first_entity([n for n in pos_to.get(t['pos'], []) if n in map_names and map_names[n][0] - 5 <= y <= map_names[n][-1] + 5])
+                if not ev.get('mc') and jj and place_entity(ev, jj):
+                    stats['rulersPlacedByState'] += 1
+                events[ev['i']] = ev
+                n_rulers += 1
+        # attach terms to the map territories named in tools/curated/ruler_map.json, by overlapping years
+        n_att = 0
+        for src, to in [(j_['q'], j_['to']) for j_ in rmap['jurisdictions']] + [('pos:' + p_['q'], p_['to']) for p_ in rmap['positions']]:
+            for name in to:
+                ys = map_names.get(name)
+                if not ys or key_of(name) == src:
+                    continue
+                dst = terms_out[key_of(name)]
+                have_t = {(x[4], x[1]) for x in dst}
+                for x in list(terms_out.get(src, [])):
+                    last = x[2] if x[2] is not None else x[1]
+                    if x[1] <= ys[-1] + 2 and last >= ys[0] - 2 and (x[4], x[1]) not in have_t:
+                        dst.append(list(x[:5]))
+                        have_t.add((x[4], x[1]))
+                        n_att += 1
+                lab.setdefault(key_of(name), [name, None])
+        for k_ in [k_ for k_ in terms_out if k_.startswith('pos:')]:
+            del terms_out[k_]
+        # curated ruler lists, checked against Wikidata by tools/build_rulers.py
+        cr_path = os.path.join(CACHE, 'curated_rulers.json')
+        n_cur_r = n_cur_ev = 0
+        if os.path.exists(cr_path):
+            for l in read_json(cr_path)['lists']:
+                for r in l['rulers']:
+                    flag = ('c' if r['verified'] else 'u') + ('a' if l['approx'] else '')
+                    for name in l['polities']:
+                        if name not in map_names:
+                            continue
+                        dst = terms_out[key_of(name)]
+                        if any((r['q'] and x[4] == r['q'] or x[0] == r['name']) and abs(x[1] - r['from']) <= 2 for x in dst):
+                            continue
+                        dst.append([r['name'], r['from'], r['to'], l['title'], r['q'] or '', flag])
+                        lab.setdefault(key_of(name), [name, None])
+                        n_cur_r += 1
+                    if r['q'] and any((r['q'], r['from'] + k_) in seen for k_ in (-1, 0, 1)):
+                        continue
+                    if r['q']:
+                        seen.add((r['q'], r['from']))
+                    ev = {'i': f"cr{r['q'] or re.sub(r'[^a-z]+', '', r['name'].lower())}-{r['from']}", 'l': f"{r['name']} becomes {l['title']}",
+                          'y': r['from'], 't': 'ruler', 's': 12, 'w': r['wiki'], 'cur': 2}
+                    if r['to'] > r['from']:
+                        ev['y2'] = r['to']
+                    if not r['verified']:
+                        ev['uv'] = 1
+                    if l['approx']:
+                        ev['ya'] = 1
+                    place(ev, [])
+                    jj = first_entity(l['polities'])
+                    if not ev.get('mc') and jj:
+                        place_entity(ev, jj)
+                    events[ev['i']] = ev
+                    n_cur_ev += 1
+        stats['rulerTermsFromOffices'] = n_extra
+        stats['rulerTermsAttachedToMapTerritories'] = n_att
+        stats['curatedRulerTerms'] = n_cur_r
+        stats['curatedRulerEvents'] = n_cur_ev
         rdir = os.path.join(DATA, 'rulers')
         os.makedirs(rdir, exist_ok=True)
         rulers_doc = {}
+        n_inf = 0
         for j, lst in terms_out.items():
-            lst = sorted({tuple(x[:4] + [x[4]]) for x in lst}, key=lambda x: (x[1], x[0]))
-            rulers_doc[j] = {'n': lab.get(j, [j])[0], 'terms': [list(x) for x in lst]}
+            lst = sorted({tuple(x) for x in lst}, key=lambda x: (x[1], x[0]))
+            lst = [list(x) for x in lst]
+            # a term without an end: the next holder of the same office within 80 years ends it ("i" = inferred)
+            for i_, x in enumerate(lst):
+                if x[2] is None:
+                    nxt = next((z for z in lst[i_ + 1:] if z[3] == x[3] and z[4] != x[4] and z[1] > x[1]), None)
+                    if nxt and nxt[1] - x[1] <= 80:
+                        x[2] = nxt[1]
+                        x[5:] = [(x[5] if len(x) > 5 else '') + 'i']
+                        n_inf += 1
+            rulers_doc[j] = {'n': lab.get(j, [j])[0], 'terms': lst}
+        stats['rulerTermEndsInferredFromSuccessor'] = n_inf
         write_json(os.path.join(rdir, 'terms.json'), rulers_doc)
         log(f'{n_terms} terms in {len(rulers_doc)} jurisdictions')
 
@@ -858,9 +986,22 @@ def main():
         yp = read_json(yp_path)
         yp_pages = yp['pages']
         have_w = {e.get('w') for e in events.values()}
+        def put(ev, at):
+            """Place a year-article event at the first linked article that has coordinates."""
+            if ev.get('lo') is None and at:
+                ev['lo'], ev['la'] = at[0], at[1]
+                ev['mi' if at[2] else 'ap'] = 1
+
+        n_text = 0
         for i, f in enumerate(yp['events']):
             q = f.get('q')
-            if not f.get('verified') or q in events or f'f{q}' in events or f'x{q}' in events or f'n{q}' in events \
+            have = events.get(q) or events.get(f'f{q}') or events.get(f'x{q}') or events.get(f'n{q}')
+            if have is not None and f.get('text') and not have.get('d') and have['y'] == f['y']:
+                # the event is already there from Wikidata but has no description: use the bullet's sentence
+                have['d'], have['wx'] = f['text'], 1
+                have.setdefault('src', f['source'])
+                n_text += 1
+            if not f.get('verified') or have is not None \
                     or f['link'] in have_w or JUNK.search(f['link']) or YP_SKIP.search(f['link']):
                 continue
             ev = {'i': q or f"wp{f['y']}-{i}", 'l': re.sub(r'\s*\([^)]*\)$', '', f['link']), 'y': f['y'], 't': 'other', 's': 3,
@@ -877,10 +1018,51 @@ def main():
                 pt = parse_point(r.get('coord'))
                 if pt:
                     ev['lo'], ev['la'] = pt
+            if f.get('text'):
+                ev['d'], ev['wx'] = f['text'], 1     # the bullet's own sentence (Wikipedia, CC BY-SA)
+                n_text += 1
+            ev['t'] = classify(f.get('text') or ev.get('d') or '', ev['l'], f.get('head', ''))
+            put(ev, f.get('at'))
             place(ev, [])
             events[ev['i']] = ev
             have_w.add(f['link'])
             n_yp += 1
+        # the other bullets: complete sentences whose date nothing but the year article confirms
+        n_bul = n_bul_dup = 0
+        norm_l = lambda t: re.sub(r'[^a-z0-9]+', ' ', t.lower()).strip()
+        have_ly = {(norm_l(e['l']), e['y']): e for e in events.values()}
+        for b in yp.get('bullets', []):
+            text = b['text']
+            # the same news as an event already there (a ruler taking office, or the same wording): the bullet
+            # only confirms it, and gives it a day when it has none
+            dup = have_ly.get((norm_l(text), b['y']))
+            if dup is None and classify(text, '', b.get('head', '')) == 'ruler':
+                dup = next((events[k_] for l_, q_ in b.get('links', []) for k_ in (f'r{q_}-{b["y"]}', f'cr{q_}-{b["y"]}') if k_ in events), None)
+            if dup is not None:
+                if b['m'] and not dup.get('m') and dup['t'] == 'ruler':
+                    dup['m'] = b['m']
+                    if b['d']:
+                        dup['dd'] = b['d']
+                n_bul_dup += 1
+                continue
+            label = text
+            if len(label) > 110:
+                label = label[:108].rsplit(' ', 1)[0].rstrip(',;:') + '\u2026'
+            ev = {'i': b['id'], 'l': label, 'y': b['y'], 't': classify(text, '', b.get('head', '')), 's': 2,
+                  'src': b['source'], 'uv': 1, 'wx': 1}
+            if label != text:
+                ev['d'] = text
+            if b['m']:
+                ev['m'] = b['m']
+                if b['d']:
+                    ev['dd'] = b['d']
+            put(ev, b.get('at'))
+            place(ev, [])
+            events[ev['i']] = ev
+            n_bul += 1
+        stats['yearArticleSentences'] = n_text
+        stats['yearArticleUnverified'] = n_bul
+        stats['yearArticleBulletsSameAsAnEvent'] = n_bul_dup
         log(f'{n_yp} events added from {yp_pages} Wikipedia year articles')
 
     # ---------- curated supplement ----------
@@ -898,7 +1080,9 @@ def main():
             by_wiki[e['w']].append(e)
     n_merged = n_added = 0
     for s in sup:
-        match = [e for e in by_wiki.get(s['wiki'], []) if e['y'] == s['y'] and e['t'] not in ('ruler', 'birth', 'death', 'founding', 'state')]
+        # "X founded", "X ends" and "P becomes T" are derived from a state or a person, not the event itself
+        match = [e for e in by_wiki.get(s['wiki'], []) if e['y'] == s['y'] and e['t'] not in ('ruler', 'birth', 'death')
+                 and not re.search(r' (founded|ends)$| becomes ', e['l'])]
         if match and (s.get('_rev') or s.get('own')):
             e = match[0]
             n_merged += 1
@@ -921,6 +1105,7 @@ def main():
             # the event is already there under its Wikidata item: only lift its rank and fill gaps
             e = match[0]
             n_merged += 1
+            e['_lm'] = 1     # a curated landmark: ranked with the curated events
             if s['label'].lower() != e['l'].lower() and len(s['label']) <= 60 and s['label'] == s['wiki']:
                 e['al'] = sorted(set(e.get('al', [])) | {s['label']})
             e['s'] = max(e['s'], 25)
@@ -1053,6 +1238,75 @@ def main():
             stats['placedByParent'] += 1
     log('placement and consistency: ' + json.dumps(dict(sorted(stats.items()))))
 
+    # ---------- rank ----------
+    # The raw score is the number of Wikipedia editions of the item an event was made from. That is the
+    # event itself for a battle or a treaty, but for "X founded", "X ends" and "P becomes T" it is the fame of
+    # the city, state or person, which says little about the event: Istanbul "founded" in 1453 outranked the
+    # fall of Constantinople. So derived events are compressed, periods that run for decades count less in
+    # their first year, and the curated landmark events of each period are lifted near the top.
+    by_year_ev = defaultdict(list)
+    n_lab = 0
+    for e in events.values():
+        # a Wikidata label cut off in the middle of a word ("Peace of Westph"): use the article title
+        w0 = e.get('w') or ''
+        if w0.startswith(e['l']) and len(w0) > len(e['l']) and w0[len(e['l'])].isalpha() and e['l'][-1:].isalpha():
+            e['l'] = re.sub(r'\s*\([^)]*\)$', '', w0)
+            n_lab += 1
+    stats['labelsCompletedFromArticleTitle'] = n_lab
+    for e in events.values():
+        sc = e['s']
+        lbl, typ = e['l'], e['t']
+        span = (e.get('y2') or e['y']) - e['y']
+        derived = bool(re.search(r' (founded|ends)$', lbl)) or bool(e.pop('_inc', None))
+        if typ == 'ruler' and ' becomes ' in lbl:
+            if sc > 30:
+                sc = 30 + (sc - 30) * 0.2
+        elif derived and typ == 'founding':
+            sc = min(sc, 22)
+        elif derived and sc > 45:
+            sc = 45 + (sc - 45) * 0.07
+        if typ not in ('ruler', 'birth', 'death', 'culture') and span >= (50 if typ == 'war' else 40):
+            sc *= 0.6 if typ == 'war' else 0.4
+        if sc > 100:
+            sc = 100 + (sc - 100) * 0.2
+        lm = e.pop('_lm', None)
+        if e.get('ya') or e.get('uv'):
+            pass        # approximate or unconfirmed curated entries are not lifted
+        elif (e.get('cur') == 2 and not e['i'].startswith('cr')) or lm:
+            sc = max(sc, 80 + min(e['s'], 100) * 0.15)
+        elif e.get('cur') == 1:
+            sc = max(sc, 30)
+        e['s'] = max(1, int(round(sc)))
+        if typ not in ('birth', 'death'):
+            by_year_ev[e['y']].append(e)
+    # the defining event of a famous year leads its list (tools/curated/headlines.json)
+    for hl in read_json(os.path.join(TOOLS, 'curated', 'headlines.json'))['headlines']:
+        hit = [e for e in by_year_ev.get(hl['y'], []) if re.search(hl['match'], e['l']) and not e.get('uv')]
+        if not hit:
+            log(f"  headline for {hl['y']} matches no event: {hl['match']}")
+        for e in hit:
+            e['s'] = max(e['s'], 130)
+            e['hl'] = 1
+        stats['headlines'] += len(hit)
+    n_demoted = 0
+    for y, lst in by_year_ev.items():
+        others = [o for o in lst if o['t'] != 'ruler' and not o.get('uv') and o['s'] >= 20]
+        cur_w = {o.get('w'): o for o in lst if o.get('cur') == 2 and o.get('w')}
+        for e in lst:
+            # a ruler whose name is in the label of another event of the year ("Death of Muhammad; Abu Bakr
+            # becomes caliph") is the same news: keep it just below that event
+            if e['t'] == 'ruler' and ' becomes ' in e['l'] and not e.get('cur'):
+                who = e['l'].split(' becomes ')[0]
+                top = max((o['s'] for o in others if re.search(r'\b' + re.escape(who) + r'\b', o['l'])), default=None)
+                if top is not None and e['s'] >= top:
+                    e['s'] = top - 1
+                    n_demoted += 1
+            # "X founded" next to a curated event about the same article
+            elif re.search(r' (founded|ends)$', e['l']) and e.get('w') in cur_w and cur_w[e['w']] is not e and e['s'] > 20:
+                e['s'] = 20
+                n_demoted += 1
+    stats['rankDemotedAsDuplicateNews'] = n_demoted
+
     # ---------- shards ----------
     # nothing before the first border map (Wikidata has a few geological "events" millions of years ago)
     events = {k: e for k, e in events.items() if e['y'] >= -130000}
@@ -1180,10 +1434,10 @@ def main():
             'polityNames': len(polities),
             'linkedToWikidata': len(ents),
             'events': len(evs),
-            'eventsFromWikidata': len(evs) - n_added,
+            'eventsFromWikidata': len(evs) - n_added - stats.get('yearArticleUnverified', 0) - stats.get('curatedRulerEvents', 0),
             'stateChanges': n_states, 'rulers': n_rulers,
-            'yearArticles': yp_pages, 'yearArticleEvents': n_yp,
-            'rulerTerms': n_terms, 'birthsDeaths': n_people, 'foundings': n_found,
+            'yearArticles': yp_pages, 'yearArticleEvents': n_yp, 'yearArticleSentences': stats.get('yearArticleSentences', 0), 'yearArticleUnverified': stats.get('yearArticleUnverified', 0),
+            'rulerTerms': n_terms, 'curatedRulerTerms': stats.get('curatedRulerTerms', 0), 'rulerTermsAttached': stats.get('rulerTermsAttachedToMapTerritories', 0), 'headlines': stats.get('headlines', 0), 'birthsDeaths': n_people, 'foundings': n_found,
             'curated': n_added + n_merged, 'curatedAdded': n_added, 'curatedMerged': n_merged,
             'withCoordinates': sum(1 for e in evs if e.get('lo') is not None),
             'coordinatesFromLocation': sum(1 for e in evs if e.get('ap')),

@@ -1,0 +1,535 @@
+{
+ "about": "Where Wikidata files rulers under an office or a jurisdiction that is not the state drawn on the map, this table attaches them to the map's territories. 'jurisdictions': the terms Wikidata lists for that item are also shown for each named territory, for the terms that overlap the years the territory is on the map. 'positions': offices with no country on Wikidata; tools/build_rulers.py fetches their holders (start dates from Wikidata) and attaches them the same way. Only used where every holder of the office ruled the territories named in those years.",
+ "jurisdictions": [
+  {
+   "q": "Q1747689",
+   "label": "Ancient Rome",
+   "to": [
+    "Roman Empire",
+    "Roman Kingdom"
+   ]
+  },
+  {
+   "q": "Q11768",
+   "label": "Ancient Egypt",
+   "to": [
+    "Early Dynastic Period of Egypt",
+    "Old Kingdom of Egypt",
+    "Middle Kingdom of Egypt",
+    "New Kingdom of Egypt",
+    "Ptolemaic Kingdom",
+    "Twenty-first Dynasty of Egypt",
+    "Twenty-second Dynasty of Egypt",
+    "Twenty-sixth Dynasty of Egypt",
+    "Thirtieth Dynasty of Egypt"
+   ]
+  },
+  {
+   "q": "Q9592",
+   "label": "Catholic Church (popes)",
+   "to": [
+    "Papal States"
+   ]
+  },
+  {
+   "q": "Q171348",
+   "label": "Crown of the Kingdom of Poland",
+   "to": [
+    "Kingdom of Poland",
+    "Polish-Lithuanian Commonwealth",
+    "Polish–Lithuanian Commonwealth",
+    "Poland-Lithuania"
+   ]
+  },
+  {
+   "q": "Q29999",
+   "label": "Kingdom of the Netherlands",
+   "to": [
+    "Netherlands",
+    "Kingdom of the Netherlands",
+    "United Kingdom of Netherlands"
+   ]
+  },
+  {
+   "q": "Q2638486",
+   "label": "Kingdom of Cambodia",
+   "to": [
+    "Khmer Empire",
+    "Cambodia"
+   ]
+  },
+  {
+   "q": "Q151148",
+   "label": "Chola dynasty",
+   "to": [
+    "Chola Empire",
+    "Cholas"
+   ]
+  },
+  {
+   "q": "Q180114",
+   "label": "Ayyubid dynasty",
+   "to": [
+    "Ayyubid Sultanate"
+   ]
+  },
+  {
+   "q": "Q83958",
+   "label": "Macedonia (ancient kingdom)",
+   "to": [
+    "Macedonian Empire",
+    "Antigonid Macedonia"
+   ]
+  },
+  {
+   "q": "Q145",
+   "label": "United Kingdom",
+   "to": [
+    "United Kingdom of Great Britain and Ireland",
+    "Kingdom of Great Britain",
+    "Great Britain"
+   ]
+  },
+  {
+   "q": "Q142",
+   "label": "France",
+   "to": [
+    "Kingdom of France",
+    "Bourbon Kingdom of France",
+    "First French Empire",
+    "Second French Empire",
+    "French First Republic",
+    "French Second Republic",
+    "French Third Republic",
+    "July Monarchy"
+   ]
+  },
+  {
+   "q": "Q70972",
+   "label": "Kingdom of France",
+   "to": [
+    "France",
+    "Bourbon Kingdom of France"
+   ]
+  },
+  {
+   "q": "Q17",
+   "label": "Japan",
+   "to": [
+    "Empire of Japan",
+    "Imperial Japan",
+    "Heian Japan",
+    "Nara Japan",
+    "Asuka Japan",
+    "Tokugawa Shogunate",
+    "Ashikaga Shogunate",
+    "Kamakura Shogunate",
+    "Imperial Japan (Fujiwara)"
+   ]
+  },
+  {
+   "q": "Q794",
+   "label": "Iran",
+   "to": [
+    "Qajar Dynasty",
+    "Persia",
+    "Afsharid Iran",
+    "Zand Dynasty"
+   ]
+  },
+  {
+   "q": "Q96",
+   "label": "Mexico",
+   "to": [
+    "Federated Republic of Mexico",
+    "Centralist Republic of Mexico",
+    "Second Federal Republic of Mexico",
+    "First Mexican Empire",
+    "Second Mexican Empire"
+   ]
+  },
+  {
+   "q": "Q13426199",
+   "label": "Republic of China",
+   "to": [
+    "China"
+   ]
+  },
+  {
+   "q": "Q179876",
+   "label": "Kingdom of England",
+   "to": [
+    "England"
+   ]
+  },
+  {
+   "q": "Q230791",
+   "label": "Kingdom of Scotland",
+   "to": [
+    "Scotland"
+   ]
+  },
+  {
+   "q": "Q34266",
+   "label": "Russian Empire",
+   "to": [
+    "Russia"
+   ]
+  },
+  {
+   "q": "Q186096",
+   "label": "Tsardom of Russia",
+   "to": [
+    "Russia"
+   ]
+  },
+  {
+   "q": "Q235",
+   "label": "Monaco",
+   "to": [
+    "Principality of Monaco"
+   ]
+  },
+  {
+   "q": "Q347",
+   "label": "Liechtenstein",
+   "to": [
+    "Principality of Liechtenstein"
+   ]
+  },
+  {
+   "q": "Q172579",
+   "label": "Kingdom of Italy",
+   "to": [
+    "Italy"
+   ]
+  },
+  {
+   "q": "Q207521",
+   "label": "Ethiopian Empire",
+   "to": [
+    "Ethiopia"
+   ]
+  },
+  {
+   "q": "Q29",
+   "label": "Spain",
+   "to": [
+    "Spanish Empire",
+    "Kingdom of Spain",
+    "Iberian Union"
+   ]
+  },
+  {
+   "q": "Q161885",
+   "label": "Kingdom of Great Britain",
+   "to": [
+    "British Colonial Empire",
+    "British Empire"
+   ]
+  },
+  {
+   "q": "Q145",
+   "label": "United Kingdom",
+   "to": [
+    "British Colonial Empire",
+    "British Empire"
+   ]
+  },
+  {
+   "q": "Q45670",
+   "label": "Kingdom of Portugal",
+   "to": [
+    "Portuguese Colonies",
+    "Portuguese Empire",
+    "Portugal"
+   ]
+  },
+  {
+   "q": "Q756617",
+   "label": "Kingdom of Denmark",
+   "to": [
+    "Denmark",
+    "Denmark-Norway",
+    "Danish Colonial Empire"
+   ]
+  },
+  {
+   "q": "Q70972",
+   "label": "Kingdom of France",
+   "to": [
+    "French Colonial Empire"
+   ]
+  },
+  {
+   "q": "Q142",
+   "label": "France",
+   "to": [
+    "French Colonial Empire"
+   ]
+  }
+ ],
+ "positions": [
+  {
+   "q": "Q111841409",
+   "label": "Western Roman emperor",
+   "to": [
+    "Western Roman Empire"
+   ]
+  },
+  {
+   "q": "Q28108903",
+   "label": "emperor of the Sasanian Empire",
+   "to": [
+    "Sasanian Empire"
+   ]
+  },
+  {
+   "q": "Q67497236",
+   "label": "Umayyad Caliph",
+   "to": [
+    "Umayyad Caliphate"
+   ]
+  },
+  {
+   "q": "Q22304810",
+   "label": "king of Joseon Dynasty",
+   "to": [
+    "Joseon"
+   ]
+  },
+  {
+   "q": "Q48896564",
+   "label": "Mamluk sultan",
+   "to": [
+    "Mamluk Sultanate"
+   ]
+  },
+  {
+   "q": "Q27582039",
+   "label": "Mauryan Emperor",
+   "to": [
+    "Maurya Empire",
+    "Mauryan Empire"
+   ]
+  },
+  {
+   "q": "Q27596022",
+   "label": "Gupta emperor",
+   "to": [
+    "Gupta Empire"
+   ]
+  },
+  {
+   "q": "Q28124026",
+   "label": "King of Assyria",
+   "to": [
+    "Assyria",
+    "Neo-Assyrian Empire"
+   ]
+  },
+  {
+   "q": "Q28132899",
+   "label": "King of Babylon",
+   "to": [
+    "Babylonia",
+    "Neo-Babylonian Empire"
+   ]
+  },
+  {
+   "q": "Q38037531",
+   "label": "King of Kush",
+   "to": [
+    "Kingdom of Kush",
+    "Kush"
+   ]
+  },
+  {
+   "q": "Q48605742",
+   "label": "King of Anuradhapura",
+   "to": [
+    "Anurādhapura"
+   ]
+  },
+  {
+   "q": "Q120966432",
+   "label": "Tlatoani of Tenochtitlán",
+   "to": [
+    "Aztec Triple Alliance",
+    "Aztec Empire"
+   ]
+  },
+  {
+   "q": "Q29168087",
+   "label": "King of West Francia",
+   "to": [
+    "West Francia"
+   ]
+  },
+  {
+   "q": "Q28150764",
+   "label": "emperor of Trebizond",
+   "to": [
+    "Empire of Trebizond",
+    "Trebizond"
+   ]
+  },
+  {
+   "q": "Q115556515",
+   "label": "sultan of Granada",
+   "to": [
+    "Emirate of Granada",
+    "Granada"
+   ]
+  },
+  {
+   "q": "Q21715287",
+   "label": "King of Wessex",
+   "to": [
+    "Kingdom of Wessex",
+    "Wessex"
+   ]
+  },
+  {
+   "q": "Q139765204",
+   "label": "King of Gwynedd",
+   "to": [
+    "Kingdom of Gwynedd"
+   ]
+  },
+  {
+   "q": "Q693614",
+   "label": "King of Jerusalem",
+   "to": [
+    "Kingdom of Jerusalem"
+   ]
+  },
+  {
+   "q": "Q116785942",
+   "label": "Kazakh khan",
+   "to": [
+    "Kazakh Khanate"
+   ]
+  },
+  {
+   "q": "Q452581",
+   "label": "Asantehene",
+   "to": [
+    "Ashanti Empire",
+    "Asante"
+   ]
+  },
+  {
+   "q": "Q28470012",
+   "label": "Sultan of Aceh",
+   "to": [
+    "Sultanate of Aceh",
+    "Aceh"
+   ]
+  },
+  {
+   "q": "Q28121087",
+   "label": "king of the Vandals",
+   "to": [
+    "Vandal Kingdom"
+   ]
+  },
+  {
+   "q": "Q21400700",
+   "label": "King of East Anglia",
+   "to": [
+    "Kingdom of East Anglia"
+   ]
+  },
+  {
+   "q": "Q762457",
+   "label": "Despot of Epirus",
+   "to": [
+    "Despotate of Epirus"
+   ]
+  },
+  {
+   "q": "Q4389210",
+   "label": "King of Bavaria",
+   "to": [
+    "Kingdom of Bavaria"
+   ]
+  },
+  {
+   "q": "Q135778367",
+   "label": "King of Georgia",
+   "to": [
+    "Kingdom of Georgia"
+   ]
+  },
+  {
+   "q": "Q12298699",
+   "label": "King of Bulgaria",
+   "to": [
+    "First Bulgarian Empire",
+    "Second Bulgarian Empire",
+    "Principality of Bulgaria"
+   ]
+  },
+  {
+   "q": "Q27341831",
+   "label": "Ahom King",
+   "to": [
+    "Ahom Kingdom"
+   ]
+  },
+  {
+   "q": "Q28051747",
+   "label": "Sultan of Bengal",
+   "to": [
+    "Sultanate of Bengal"
+   ]
+  },
+  {
+   "q": "Q4499908",
+   "label": "Khwarazmshah",
+   "to": [
+    "Khwarezmid Empire",
+    "Khwarezmid Dynasty"
+   ]
+  },
+  {
+   "q": "Q65556515",
+   "label": "King of Imerina",
+   "to": [
+    "Merina Kingdom",
+    "Imerina"
+   ]
+  },
+  {
+   "q": "Q131767",
+   "label": "shogun",
+   "to": [
+    "Kamakura Shogunate",
+    "Ashikaga Shogunate",
+    "Tokugawa Shogunate"
+   ]
+  },
+  {
+   "q": "Q28054704",
+   "label": "king of the Huns",
+   "to": [
+    "Hunnic Empire"
+   ]
+  },
+  {
+   "q": "Q27670301",
+   "label": "Rashtrakuta emperor",
+   "to": [
+    "Rashtrakuta Empire"
+   ]
+  },
+  {
+   "q": "Q14693806",
+   "label": "Hammadid sultan",
+   "to": [
+    "Hammadid Dynasty"
+   ]
+  }
+ ]
+}

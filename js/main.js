@@ -37,6 +37,7 @@ let entities = null;
 let modernNames = {};
 let modernFC = null;
 let usFC = null;
+const US_FILL_UNTIL = 1912;   // Arizona, the last contiguous state, was admitted in 1912
 
 // ---------------------------------------------------------------- start
 init().catch((err) => {
@@ -246,6 +247,8 @@ async function updateUS() {
   try {
     if (!usFC) { usFC = await loadUS(); if (mapOk) map.setUS(usFC); }
     if (mapOk) map.setUSDate(usDateInt(), state.sel?.kind === 'us' ? state.sel.id : null);
+    // 1783 to 1912: fill states, organized territories and unorganized territory in three tints of the US colour
+    if (mapOk) map.setUSFill(y <= US_FILL_UNTIL ? ((await loadPowers()).usa?.color || '#94b4cc') : null);
   } catch (e) { console.warn(e); }
 }
 
@@ -270,6 +273,16 @@ function updateBadge() {
   els.badge.classList.toggle('exact', exact);
 }
 
+function usNote() {
+  const y = state.year;
+  if (y < 1607 || y > 2000) return null;
+  return h('p', null, y < 1783
+    ? 'In North America the colonies are drawn from their organized counties on this date (exact dates, Newberry Library).'
+    : y <= US_FILL_UNTIL
+      ? 'Inside the United States the map shows states (full colour), organized territories (lighter) and unorganized territory (lightest) with their borders on this date (Newberry Library atlas). Click one for its history.'
+      : 'Dashed lines in the United States show state borders on this date.');
+}
+
 function badgeText() {
   const s = state.snap;
   if (!s) return [h('p', null, `The border maps start in ${formatYear(MIN_YEAR)}.`)];
@@ -278,12 +291,14 @@ function badgeText() {
   if (s.src === 'clio') {
     out.push(h('p', null, `From ${formatYear(clioRange()[0])} to ${clioRange()[1]} the map uses Cliopatria (Seshat Global History Databank), which gives each state a shape for a range of years. You see the shapes it lists for ${formatYear(state.year)}${s.y !== state.year ? ` (nothing changes in its data between ${formatYear(s.y)} and ${formatYear(state.year)})` : ''}. They are approximate: the source redraws a state only every few years (every few decades in antiquity), and border dates can be a few years off. Borders before about 1500 are rough: many places had no fixed borders.`));
     out.push(h('p', null, 'Cliopatria only draws states. Peoples and regions without a state are filled in from the nearest earlier world sketch map (historical-basemaps); click one to see which map it comes from.'));
+    if (usNote()) out.push(usNote());
     out.push(h('p', null, h('button.more', { type: 'button', onclick: openSources }, 'Sources and accuracy')));
     return out;
   }
   if (s.cs) {
     out.push(h('p', null, `From ${datedRange()[0]} to ${datedRange()[1]} the map uses CShapes 2.0, which dates every change of state borders. You see the borders as they stood on 1 July ${s.y}.`));
     out.push(h('p', null, 'Rulers of colonies come from the older world maps or from a short curated list, so they can lag a change by a few years.'));
+    if (usNote()) out.push(usNote());
     out.push(h('p', null, h('button.more', { type: 'button', onclick: openSources }, 'Sources and accuracy')));
     return out;
   }
@@ -296,7 +311,9 @@ function badgeText() {
   if (state.year >= 1607 && state.year <= 2000) {
     out.push(h('p', null, state.year < 1783
       ? 'In North America the colonies are drawn from their organized counties on this date (exact dates, Newberry Library).'
-      : 'Dashed lines in the United States show state and territory borders on this date.'));
+      : state.year <= US_FILL_UNTIL
+        ? 'Inside the United States the map shows states (full colour), organized territories (lighter) and unorganized territory (lightest) with their borders on this date (Newberry Library atlas). Click one for its history.'
+        : 'Dashed lines in the United States show state borders on this date.'));
   }
   out.push(h('p', null, h('button.more', { type: 'button', onclick: openSources }, 'Sources and accuracy')));
   return out;
@@ -560,11 +577,17 @@ async function renderSelection() {
   if (tl?.rulers?.length) {
     const now = tl.rulers.filter(([, a, b]) => a <= y && (b != null ? b >= y : a === y));
     nodes.push(h('h2', null, `In office in ${formatYear(y)}`));
-    if (now.length) nodes.push(h('ul.changes-list', null, now.slice(0, 8).map(([n, a, b, t]) =>
-      h('li', null, h('b', null, n), `, ${t} (${formatYear(a)}${b != null ? '–' + formatYear(b) : ''})`))));
+    // flags: c = from GeoHistory's curated list and confirmed by Wikidata, u = curated and not confirmed,
+    // a = approximate dates, i = the end year is the start of the next holder of the office
+    const span = (a, b, f = '') => `${f.includes('a') ? 'c. ' : ''}${formatYear(a)}${b != null ? '–' + (f.includes('i') ? 'c. ' : '') + formatYear(b) : ''}`;
+    const tag = (f = '') => (f.includes('u') ? h('span.unver', { title: 'Written for GeoHistory; Wikidata does not confirm both years' }, 'curated, unverified')
+      : f.includes('c') ? h('span.unver', { title: 'Written for GeoHistory; both years match Wikidata' }, 'curated') : null);
+    if (now.length) nodes.push(h('ul.changes-list', null, now.slice(0, 8).map(([n, a, b, t, , f]) =>
+      h('li', null, h('b', null, n), `, ${t} (${span(a, b, f)})`, tag(f)))));
     else nodes.push(h('p.empty', null, 'No head of state or government recorded for this year.'));
     const all = h('details.ruled-hist', null, h('summary', null, `All ${tl.rulers.length} recorded terms (${tl.rulersOf})`),
-      h('ol', null, tl.rulers.map(([n, a, b, t]) => h('li', null, `${formatYear(a)}${b != null ? '–' + formatYear(b) : ''}: ${n}, ${t}`))));
+      h('ol', null, tl.rulers.map(([n, a, b, t, , f]) => h('li', null, `${span(a, b, f)}: ${n}, ${t}`, tag(f)))),
+      tl.rulers.some((r) => (r[5] || '').includes('i')) ? h('p.note', null, 'An end year marked "c." is not recorded on Wikidata: it is the year the next holder of the same office began.') : null);
     nodes.push(all);
   }
   nodes.push(h('h2', null, `In ${formatYear(y)}`));
@@ -801,8 +824,9 @@ async function renderEvent() {
   if (e.w) links.append(h('a.ext', { href: wikiUrl(e.w), target: '_blank', rel: 'noopener' }, 'Read on Wikipedia'), '  ');
   if (/^Q\d+$/.test(e.i)) links.append(h('a.ext', { href: wikidataUrl(e.i), target: '_blank', rel: 'noopener' }, 'Wikidata'));
   nodes.push(links);
-  if (e.src) nodes.push(h('p.note', null, 'Listed in ', h('a', { href: e.src, target: '_blank', rel: 'noopener' }, "Wikipedia's article for this year"),
-    e.uv ? '. Its date could not be confirmed in Wikidata (unverified).' : ', and its date matches Wikidata.'));
+  if (e.src) nodes.push(h('p.note', null, e.wx ? 'Text from ' : 'Listed in ', h('a', { href: e.src, target: '_blank', rel: 'noopener' }, "Wikipedia's article for this year"),
+    e.wx ? ' (Wikipedia contributors, CC BY-SA 4.0), shortened to one sentence' : '',
+    e.uv ? '. Its date could not be confirmed in Wikidata (unverified).' : e.wx && !/^Q\d+$/.test(e.i) ? '.' : ', and its date matches Wikidata.'));
   if (e.on) nodes.push(h('p.note', null, h('span.unver', null, 'corrected by hand'), ' ', e.on));
   if (e.dq) nodes.push(h('p.note', null, h('span.unver', null, 'doubtful date'), ' Wikidata dates this outside the war it is filed under. One of the two is wrong, so treat the date as unverified.'));
   if (e.cur === 1) nodes.push(h('p.note', null, 'From GeoHistory\'s hand-checked list of American Revolution events. Day and place are checked against the linked article.'));
@@ -1025,10 +1049,11 @@ function sourcesContent(meta, audit) {
     h('h3', null, 'Borders'),
     h('p', null, `From 1886 to 2019 the map uses CShapes 2.0, which dates every change of state borders. From 3400 BC to 1885 it uses Cliopatria, which gives each state a shape for a range of years: every year has a map, but it is approximate (a state is redrawn every few years, in antiquity every few decades), and peoples without a state, and states Cliopatria does not have, are filled in from an older sketch map (historical-basemaps, ${n(c.snapshots)} world snapshots). Before 3400 BC only those snapshots exist, from ${formatYear(meta?.borders?.first ?? MIN_YEAR)} on: you see the nearest earlier one, and the badge on the map says which. Borders before about 1500 are rough sketches; many places had no fixed borders.`),
     h('h3', null, 'Events come from Wikidata'),
-    h('p', null, `${n(c.events)} events, from Wikidata's free database, ranked by how many Wikipedia language editions cover them. Dates, places and descriptions can be wrong or missing, and coverage is much thinner for Africa, Asia and the distant past than for Europe and North America. ${n(c.placedInModernCountry || 0)} of them could be placed in one of today's countries.`),
-    h('p', null, `English Wikipedia's year articles add ${n(c.yearArticleEvents || 0)} more (only entries whose linked article Wikidata dates to the same year). Archaeological cultures and periods are listed with approximate dates.`),
+    h('p', null, `${n(c.events)} events, most of them from Wikidata's free database, ranked by how many Wikipedia language editions cover them. Entries made from a city, a state or a person rather than from an event of their own ("X founded", "X becomes king") count for less, periods that run for decades count for less in their first year, and the curated landmark events of each period and the defining event of ${n(c.headlines || 0)} famous years are listed first. Dates, places and descriptions can be wrong or missing, and coverage is much thinner for Africa, Asia and the distant past than for Europe and North America. ${n(c.placedInModernCountry || 0)} of them could be placed in one of today's countries.`),
+    h('p', null, `English Wikipedia's year articles add ${n(c.yearArticleEvents || 0)} more whose linked article Wikidata dates to the same year, and ${n(c.yearArticleUnverified || 0)} further entries that are shown as "unverified": complete sentences from the year's own article whose date nothing else confirms (sport and entertainment are left out). For both kinds the one-sentence description is Wikipedia's text, shortened, © Wikipedia contributors, CC BY-SA 4.0; each such event links to the year article it comes from. Archaeological cultures and periods are listed with approximate dates.`),
     h('h3', null, 'Curated text'),
     h('p', null, `Decade summaries from 1500, short descriptions of major states and ${n(c.curated)} events for major periods were written for GeoHistory. Each is checked against Wikidata by its year and tagged "curated", or "curated, unverified" when Wikidata has no matching date.`),
+    h('p', null, `Rulers come from Wikidata's "position held" statements. Where Wikidata files an office under something other than the state on the map (Roman emperors under "Ancient Rome", popes under the Catholic Church), a hand-made table attaches them to the map's territories (${n(c.rulerTermsAttached || 0)} terms). ${n(c.curatedRulerTerms || 0)} more terms for major states (the Chinese dynasties, the caliphates, the Tokugawa shoguns and others) were written for GeoHistory and are tagged "curated" when Wikidata confirms both years, otherwise "curated, unverified". An end year shown with "c." is the year the next holder took office.`),
     h('h3', null, 'Accuracy check'),
     h('p', null, audit ? `On ${audit.date} the data was checked against ${audit.facts} well-known facts (dates of events, reigns, who held a city in a given year): ${audit.passed} passed (${Math.round(audit.rate * 100)}%). Entries marked "unverified" or "curated" were written by hand or could not be confirmed in Wikidata.` : 'The accuracy check has not been run for this build.'),
     h('h3', null, 'Sources'),
@@ -1039,6 +1064,7 @@ function sourcesContent(meta, audit) {
       h('li', null, h('a', { href: 'https://icr.ethz.ch/data/cshapes/', target: '_blank', rel: 'noopener' }, 'CShapes 2.0'), ': dated state borders 1886 to 2019 (CC BY-NC-SA, non-commercial).'),
       h('li', null, h('a', { href: 'https://www.naturalearthdata.com/', target: '_blank', rel: 'noopener' }, 'Natural Earth'), ': coastlines and today\'s countries (public domain).'),
       h('li', null, h('a', { href: 'https://www.wikidata.org/', target: '_blank', rel: 'noopener' }, 'Wikidata'), ': events and descriptions (CC0). Links go to Wikipedia.'),
+      h('li', null, h('a', { href: 'https://en.wikipedia.org/wiki/List_of_years', target: '_blank', rel: 'noopener' }, 'English Wikipedia year articles'), ': one-sentence descriptions of events, © Wikipedia contributors, ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/4.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 4.0'), '. The sentences are shortened and stripped of links; the same licence applies to them here.'),
       h('li', null, h('a', { href: 'https://maplibre.org/', target: '_blank', rel: 'noopener' }, 'MapLibre GL JS'), ' (BSD licence) draws the map; labels use Noto Sans (SIL Open Font License).')),
     h('p', null, 'Full credits and licences: ', h('a', { href: 'https://github.com/ngcoding10/geohistory/blob/main/CREDITS.md', target: '_blank', rel: 'noopener' }, 'CREDITS.md'),
       '. Data built on ', meta?.built || '?', '.'),

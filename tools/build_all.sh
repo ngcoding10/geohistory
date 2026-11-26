@@ -15,12 +15,14 @@ python3 fetch_famous.py       # famous items by other dates, periods, well-known
 python3 fetch_regions.py      # per-region passes for thin regions, cultures, small states
 python3 fetch_places.py       # locations for events without coordinates
 python3 fetch_yearpages.py 3000 # Wikipedia year articles (resumable; about 1.5 s per page)
-python3 build_yearpages.py
+python3 build_yearpages.py     # year-article bullets -> dated events and unverified one-sentence entries
 python3 link_wikidata.py      # data/entities.json
 python3 build_curated.py      # check tools/curated/* against Wikidata; data/decades.json, data/polities.json
+python3 build_rulers.py       # offices without a country, curated ruler lists checked against Wikidata
 python3 build_events.py       # data/events/*, data/search.json, data/meta.json
 python3 build_history.py      # data/history/ruledby.json
 python3 build_timelines.py    # data/timelines/* (one per territory and modern country)
+python3 ruler_coverage.py 150 # data/rulers/coverage.json (share of map years with a known ruler)
 python3 build_changes.py      # data/changes.json (curated, checked against Wikidata)
 python3 audit.py              # data/audit.json (fact checks)
 python3 check_glyphs.py       # every label character has a font file

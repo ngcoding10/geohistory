@@ -81,21 +81,29 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
 - **Source:** Wikidata Query Service, https://query.wikidata.org/ (`tools/fetch_events.py`,
   `fetch_extra.py`, `fetch_rulers.py`, `fetch_famous.py`, `fetch_regions.py`, `fetch_places.py`,
   `tools/link_wikidata.py`)
-- **Licence:** CC0 1.0 (public domain dedication). Links in the app go to the English Wikipedia articles;
-  no Wikipedia text is copied.
+- **Licence:** CC0 1.0 (public domain dedication). Links in the app go to the English Wikipedia articles.
 
 ### Curated American Revolution events
 - `tools/supplement_events.json`: 76 events from 1763 to 1789, written for GeoHistory and checked against
   the Wikipedia article linked from each entry. They add day, approximate place and colony where
   Wikidata lacks them. Same licence as the app code.
 
-### Wikipedia year articles (CC BY-SA 4.0)
+### Wikipedia year articles (text under CC BY-SA 4.0)
 - The "Events" sections of English Wikipedia's year articles ("1776", "44 BC") are read by
-  `tools/fetch_yearpages.py` (the plain wikitext endpoint, one page every 1.5 seconds, resumable). No
-  sentence text is copied. For each bullet the first three linked articles are looked up on Wikidata, and
-  the bullet becomes an event only when one of them is dated to that year (within one); the event is named
-  by that article and credited to the year article. Text from Wikipedia is © Wikipedia contributors,
-  CC BY-SA 4.0.
+  `tools/fetch_yearpages.py` (the plain wikitext endpoint, one page every 1.5 seconds, resumable) and turned
+  into events by `tools/build_yearpages.py`.
+- **Text that is copied:** the first sentence of a bullet, with wiki markup, links and references removed
+  and long sentences cut for list labels. This text is © Wikipedia contributors and licensed
+  [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); the authors are listed in the history of
+  the year article, which every such event links to ("Text from Wikipedia's article for this year"). The
+  sentences in `data/events/*.json` (fields `d` and `l` of events marked `wx`) and in `data/timelines/`
+  stay under CC BY-SA 4.0: anyone reusing them must credit Wikipedia and keep that licence.
+- **Verified entries:** a bullet becomes a verified event only when one of its first three linked articles
+  is dated to that year (within one) on Wikidata; the event is named by that article.
+- **Unverified entries:** other bullets are kept only when the cleaned text is a complete sentence and is
+  not about sport or entertainment (`tools/build_yearpages.py`). They are tagged "unverified" in the app
+  and ranked below everything else. Their place on the map is the first linked article with coordinates.
+- Event types for both kinds come from keyword rules (`tools/classify.py`).
 
 ### Curated files (written for GeoHistory, `tools/curated/`)
 Written from general knowledge, conservatively, and checked by `tools/build_curated.py` and
@@ -106,6 +114,15 @@ Written from general knowledge, conservatively, and checked by `tools/build_cura
   date on Wikidata; 445 match Wikidata by year (approximate entries within 50 years). `decades.json`: one
   summary per decade from 1500 (53; 50 fully verified). `polities.json`: 264 short descriptions of
   historical states (259 with every year verified; 227 have a name that is on the maps).
+- `rulers.json`: 183 ruler terms in 28 lists for major states whose rulers Wikidata does not file under the
+  state on the map (Qin, Han, Sui, Tang, Song, Yuan, Ming and Qing emperors, Rashidun and Umayyad caliphs,
+  Tokugawa shoguns, Qajar shahs, Achaemenid kings, Mongol great khans and others). `tools/build_rulers.py`
+  compares both years of each term with the offices and the year of death on the Wikidata item of the linked
+  article: 178 are confirmed and tagged "curated", 5 are tagged "curated, unverified".
+  `ruler_map.json`: which Wikidata jurisdictions and offices belong to which territories on the map (content
+  comes from Wikidata). `names.json`: display names and aliases of territories. `map_notes.json`: 7 notes on
+  known errors of the border sources, shown in the territory panel. `headlines.json`: the defining event of
+  24 famous years, used only for ranking.
 - `famous_include.json`: titles of well-known Wikidata items that the class filters miss (content comes
   from Wikidata). `aliases.json`: extra search names for 11 events.
 - `territory_changes.json`: 81 dated border changes before 1886 (70 match). `event_overrides.json`: hand
@@ -121,8 +138,8 @@ Written from general knowledge, conservatively, and checked by `tools/build_cura
 - **fuzzy.js**, the shared typo-tolerant search from `ngcoding10/backend-combination`, copied unchanged.
 
 ## Not used, and why
-- **Wikipedia text and summaries**: the API is heavily rate-limited from the build machine, and Wikidata
-  descriptions were enough for one-line summaries. The app links to Wikipedia instead.
+- **Wikipedia article summaries**: the API is heavily rate-limited from the build machine. Only single
+  sentences from year articles are used (see above); the app links to Wikipedia for everything else.
 
 ## Non-commercial licences: clear or replace before ads
 CShapes 2.0 is licensed CC BY-NC-SA 4.0. **Every NC-licensed source listed here must be cleared with its

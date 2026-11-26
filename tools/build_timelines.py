@@ -52,6 +52,8 @@ def main():
         rows = sorted(rows, key=lambda r: (r[1], r[2]))
         doc = {'name': name, 'ruledBy': ruled_runs or [], 'events': rows,
                'wars': [r for r in rows if r[3] == 'war'][:80]}
+        if not (q and q in terms) and 'n:' + name in terms:
+            q = 'n:' + name      # a territory without a Wikidata link that has a curated or attached ruler list
         if q and q in terms:
             doc['rulers'] = terms[q]['terms']
             doc['rulersOf'] = terms[q]['n']

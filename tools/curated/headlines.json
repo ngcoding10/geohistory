@@ -1,0 +1,30 @@
+{
+ "about": "The one or two events that define a famous year, written for GeoHistory. They only affect ranking: an event of that year whose name matches is listed first in the year panel. Nothing is added to the data by this file; a line that matches no event is reported by the build and has no effect.",
+ "source": "General knowledge; every entry is an event already in the data with its own Wikidata item or curated source.",
+ "headlines": [
+  {"y": -44, "match": "^assassination of Julius Caesar$"},
+  {"y": 476, "match": "^fall of the western Roman Empire$"},
+  {"y": 632, "match": "^Death of Muhammad"},
+  {"y": 800, "match": "^Charlemagne becomes Holy Roman Emperor$"},
+  {"y": 1066, "match": "^Battle of Hastings$"},
+  {"y": 1206, "match": "^Temüjin is proclaimed Genghis Khan$"},
+  {"y": 1215, "match": "^Magna Carta$"},
+  {"y": 1453, "match": "^Fall of Constantinople$"},
+  {"y": 1492, "match": "^first arrival of Christopher Columbus to America$"},
+  {"y": 1517, "match": "Ninety-five Theses"},
+  {"y": 1588, "match": "^Spanish Armada$"},
+  {"y": 1648, "match": "^Peace of Westphalia$"},
+  {"y": 1776, "match": "^United States Declaration of Independence$"},
+  {"y": 1789, "match": "^Storming of the Bastille$"},
+  {"y": 1815, "match": "^Battle of Waterloo$"},
+  {"y": 1868, "match": "^Meiji Restoration$"},
+  {"y": 1914, "match": "^assassination of Archduke Franz Ferdinand$"},
+  {"y": 1917, "match": "^October Revolution$"},
+  {"y": 1945, "match": "^(German Instrument of Surrender|surrender of Japan|atomic bombings of Hiroshima and Nagasaki)$"},
+  {"y": 1963, "match": "^assassination of John F. Kennedy$"},
+  {"y": 1969, "match": "^Apollo 11$"},
+  {"y": 1989, "match": "^fall of the Berlin Wall$"},
+  {"y": 1991, "match": "^dissolution of the Soviet Union$"},
+  {"y": 2001, "match": "^September 11 attacks$"}
+ ]
+}

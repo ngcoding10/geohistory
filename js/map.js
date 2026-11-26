@@ -224,6 +224,25 @@ export class HistoryMap extends EventTarget {
 
   setUS(fc) { this.map.getSource('us').setData(fc || EMPTY); }
 
+  /** Fill US states and territories by status (1783 to 1912, when the interior was still being organized):
+   *  states in the US colour, organized territories lighter, unorganized territory lightest. null: outlines only. */
+  setUSFill(color) {
+    const m = this.map;
+    if (this._usFill === color) return;
+    this._usFill = color;
+    if (!color) {
+      m.setPaintProperty('us-fill', 'fill-color', '#000');
+      m.setPaintProperty('us-fill', 'fill-opacity', 0.001);
+      m.setPaintProperty('us-line', 'line-dasharray', [2, 1.5]);
+      return;
+    }
+    const mix = (hex, t) => '#' + [1, 3, 5].map((i) => Math.round(parseInt(hex.slice(i, i + 2), 16) * (1 - t) + 255 * t).toString(16).padStart(2, '0')).join('');
+    m.setPaintProperty('us-fill', 'fill-color', ['match', ['get', 't'], 'State', color, 'District of Columbia', color,
+      'Territory', mix(color, 0.45), 'Unorganized Territory', mix(color, 0.75), '#000']);
+    m.setPaintProperty('us-fill', 'fill-opacity', ['match', ['get', 't'], 'Other', 0.001, dark() ? 0.8 : 0.92]);
+    m.setPaintProperty('us-line', 'line-dasharray', [1, 0]);
+  }
+
   /** Show US states/colonies valid on a date (yyyymmdd), or hide them (null). */
   setUSDate(d, selId = null) {
     const m = this.map;

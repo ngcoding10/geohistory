@@ -69,7 +69,12 @@ def main():
         if not line or line.startswith('#'):
             continue
         kind, *a = line.split('|')
-        if kind == 'E':
+        if kind == 'T':
+            y, text = int(a[0]), a[1]
+            lst = sorted((e for e in events if e['y'] == y and e['t'] not in ('birth', 'death')), key=lambda e: (-e['s'], e.get('m') or 13))[:5]
+            ok = any(text.lower() in ' | '.join([e['l'], e.get('w') or ''] + e.get('al', [])).lower() for e in lst)   # name, article title, aliases
+            got = [e['l'][:40] for e in lst]
+        elif kind == 'E':
             name, y = a[0], int(a[1])
             key = norm(name)
             cands = by_name.get(key, []) + [e for k2, lst in by_name.items() if k2.startswith(key + ' ') and k2[len(key) + 1:].isdigit() for e in lst]

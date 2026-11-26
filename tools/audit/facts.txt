@@ -862,3 +862,18 @@ C|-71.2|46.8|1650|France;French
 C|-71.06|42.36|1650|Engl;Massachusetts
 C|-82.36|23.13|1600|Spain;Spanish
 C|-38.5|-12.97|1600|Portug
+
+# ---- Round 3: ranking. "T|year|text": one of the first five events the year panel lists for that year
+# (births and deaths are hidden by default) has this text in its name. Chosen before looking at the lists.
+T|1054|Schism
+T|1096|First Crusade
+T|1337|Hundred Years' War
+T|1521|Tenochtitlan
+T|1618|Thirty Years' War
+T|1688|Glorious Revolution
+T|1861|American Civil War
+T|1865|assassination of Abraham Lincoln
+T|1911|Xinhai Revolution
+T|1929|Wall Street crash
+T|1941|Pearl Harbor
+T|1994|Rwandan genocide

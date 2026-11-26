@@ -69,7 +69,15 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
 - Events that Wikidata dates outside the war it files them under are detached from the war or marked
   "doubtful date" (`data/meta.json`, `consistency`).
 - Rulers need a start date on Wikidata ("position held" or "noble title" with a start); many early and
-  minor rulers have none and are missing.
+  minor rulers have none and are missing. For the 150 most significant states on the maps (map years x
+  Wikipedia editions) a ruler is known for 61% of their map years on average (49% before the curated lists
+  and the office table of round 3); `data/rulers/coverage.json` has the figure per state. Still empty among
+  the largest: the Roman Republic (consuls), Parthia, the Maya and Sumerian city-states, Elam, Champa.
+- Year-article sentences are Wikipedia text (CC BY-SA 4.0), shown with a link to the year article. The
+  29,130 entries whose date nothing but the year article confirms are tagged "unverified" and ranked last;
+  in a random sample of 150, 147 read as correct complete sentences (one was garbled in the source, one had a
+  doubled full stop, one was a sports club). Their type comes from keyword rules and is wrong for roughly one
+  in five; their place on the map is the first linked article with coordinates and is approximate.
 - Archaeological cultures and early sites carry approximate dates ("c."), sometimes only a century.
 - Curated text (decades, state descriptions, period events) is written from general knowledge and tagged
   "curated"; entries whose year Wikidata does not confirm are tagged "curated, unverified".
