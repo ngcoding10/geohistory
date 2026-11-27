@@ -1908,7 +1908,62 @@
    "Until 1635 mainly a civil war within the empire, largely ended by the Peace of Prague; France then entered allied with Sweden against Ferdinand III and Spain.",
    "The Peace of Westphalia (1648) gave autonomy to states such as Bavaria and Saxony, territory to Sweden, and Spain's acceptance of Dutch independence."
   ],
-  "disagree": "Death tolls: 4.5 to 8 million in the estimates Wikipedia cites; HISTORY.com says more than 8 million.",
+  "disagree": "Death tolls: 4.5 to 8 million in the estimates Wikipedia cites; HISTORY.com gives more than 8 million casualties.",
+  "checked": null
+ },
+ "Q8698": {
+  "title": "Great Depression",
+  "y": 1929,
+  "place": "Worldwide, beginning in the United States",
+  "paras": [
+   "The Great Depression was the severe worldwide economic slump of 1929 to 1939, marked by mass unemployment and poverty, collapsing industrial output and trade, and bank and business failures around the world. It began in the United States, then the world's largest economy, and the Wall Street crash of October 1929 is usually taken as its start; the United States, Britain and Germany had among the most unemployed.",
+   "It followed the boom of the 'Roaring Twenties', when much profit went into speculation on the stock market, banks were lightly regulated, lending was loose and debt widespread. Wages were low and farming was already struggling with drought and falling prices. By 1929 falling spending had begun to cut output and raise unemployment while share prices went on rising. On 24 October, 'Black Thursday', panic selling set a record of 12.9 million shares traded, and on 29 October, 'Black Tuesday', some 16 million; prices kept falling until July 1932.",
+   "Waves of bank panics followed from the autumn of 1930. By 1933 unemployment in the United States had reached about 25 percent, about a third of farmers had lost their land and some 9,000 of 25,000 banks had failed; the Dust Bowl drove many from the land. President Herbert Hoover was reluctant to intervene, and the Smoot-Hawley Tariff Act he signed in 1930 made matters worse. Franklin D. Roosevelt defeated him in 1932 and from 1933 launched the New Deal programmes of relief and job creation.",
+   "Between 1929 and 1932 world output fell by an estimated 15 percent, and that of the United States by about 30 percent. In Germany, which depended heavily on American loans, unemployment rose to nearly 30 percent and fed the political extremism that brought Hitler's Nazi Party to power in 1933. Recovery was uneven: the United States, Germany and Japan began to recover in the mid-1930s, France only later in the decade, and in the American account it was the production boom of the Second World War that finally ended the Depression."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Great_Depression",
+    "title": "Great Depression",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/great-depression-history",
+    "title": "Great Depression: Stock Market Crash & Summary",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "The Great Depression lasted from 1929 to 1939 with unemployment, poverty, falling production and trade, bank failures.",
+   "It began in the US; the 1929 crash is often taken as its start; the US, UK and Germany had the most unemployed.",
+   "The Roaring Twenties boom, speculation, light bank regulation, loose lending and debt; by 1929 falling spending cut output; low wages, struggling farms.",
+   "Shares rose until the October 1929 crash and slid until July 1932.",
+   "Black Thursday (24 October, 12.9 million shares) and Black Tuesday (29 October, about 16 million shares).",
+   "Bank panics from autumn 1930; the Dust Bowl; by 1933 US unemployment about 25% (HISTORY.com: above 20%), a third of farmers lost land, 9,000 of 25,000 banks failed.",
+   "Hoover was reluctant to intervene; Smoot-Hawley (1930) worsened the slump; Roosevelt won in 1932 and launched the New Deal from 1933.",
+   "World GDP fell about 15% (1929-1932), US GDP about 30%; German unemployment nearly 30% helped bring the Nazis to power in 1933.",
+   "Recovery varied (US, Germany, Japan mid-1930s; France later); World War II production ended the Depression (HISTORY.com)."
+  ],
+  "disagree": "US unemployment in 1933: about 25 percent (Wikipedia) or 'topped 20 percent' (HISTORY.com).",
   "checked": null
  }
 }
