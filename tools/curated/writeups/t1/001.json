@@ -1965,5 +1965,63 @@
   ],
   "disagree": "US unemployment in 1933: about 25 percent (Wikipedia) or 'topped 20 percent' (HISTORY.com).",
   "checked": null
+ },
+ "Q8663": {
+  "title": "Korean War",
+  "y": 1950,
+  "place": "The Korean Peninsula",
+  "paras": [
+   "The Korean War, from 25 June 1950 to 27 July 1953, was fought between North Korea, backed by China and the Soviet Union, and South Korea, backed by a United Nations Command led by the United States. Korea, a Japanese colony for 35 years, had been divided in 1945 into Soviet and American occupation zones along the 38th parallel. In 1948 the zones formed rival governments, Kim Il Sung's in Pyongyang and Syngman Rhee's in Seoul, each claiming to be the only legitimate government of Korea, and border clashes were frequent.",
+   "On 25 June 1950 about 75,000 North Korean soldiers crossed the 38th parallel. With the Soviet representative absent, the UN Security Council condemned the invasion and called on members to help repel it; troops from 21 countries served under the UN command, about 90 percent of them American. North Korean forces took Seoul on 28 June, and by early August the South Korean and allied forces held only the Pusan Perimeter in the south-east.",
+   "On 15 September UN forces under General Douglas MacArthur landed at Inchon near Seoul, cutting the North Korean supply lines; they broke out of the perimeter, retook Seoul, invaded the North in October, took Pyongyang and advanced towards the Yalu River on the Chinese border. On 19 October Chinese 'People's Volunteers' crossed the Yalu, and by December the UN forces had been driven out of the North. The communists took Seoul again in January 1951 but lost it two months later, and the front settled roughly along the 38th parallel.",
+   "Armistice talks began in July 1951 but dragged on for two years of attritional fighting, while UN bombing destroyed nearly every major city in the North. The armistice signed on 27 July 1953 provided for an exchange of prisoners and created a demilitarised zone along the front, with a Joint Security Area at Panmunjom. No peace treaty has ever been signed. Estimates of the dead differ: about a million soldiers and 1.5 to 3 million civilians according to the figures cited by Wikipedia, about 5 million soldiers and civilians in all according to HISTORY.com."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Korean_War",
+    "title": "Korean War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/korean-war",
+    "title": "Korean War - Causes, Timeline & Veterans",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     6,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The war lasted from 25 June 1950 to 27 July 1953; North Korea backed by China and the USSR, South Korea by the US-led UN Command.",
+   "Korea, a Japanese colony for 35 years, was divided at the 38th parallel in 1945.",
+   "Rival governments formed in 1948 under Kim Il Sung and Syngman Rhee; border clashes.",
+   "About 75,000 North Korean soldiers crossed the 38th parallel on 25 June 1950.",
+   "The Security Council, with the Soviet delegate absent, called for help; 21 countries; the US provided about 90%.",
+   "Seoul fell on 28 June; by early August the South held only the Pusan Perimeter.",
+   "The Inchon landing on 15 September (MacArthur); breakout, Seoul retaken, the North invaded in October, Pyongyang taken, advance to the Yalu.",
+   "Chinese forces crossed the Yalu on 19 October; UN forces retreated in December; Seoul lost in January 1951 and retaken two months later; front near the 38th parallel.",
+   "Talks from July 1951; attrition; bombing destroyed the North's cities; the armistice of 27 July 1953: prisoner exchange, DMZ, Panmunjom; no peace treaty.",
+   "Deaths: about 1 million military and 1.5-3 million civilian (Wikipedia) or about 5 million in all (HISTORY.com)."
+  ],
+  "disagree": "Death tolls differ between sources (see the last paragraph).",
+  "checked": null
  }
 }
