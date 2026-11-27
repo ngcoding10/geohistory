@@ -939,8 +939,12 @@
    "Japan announced surrender on 15 August and signed on 2 September 1945.",
    "Supporters and critics still debate whether the bombings were necessary or a war crime."
   ],
-  "disagree": "Death tolls differ widely: about 70,000 in Hiroshima from the immediate effects and about 40,000 at first, approaching 70,000 by January 1946, in Nagasaki (US Department of Energy history), against 90,000-166,000 and 60,000-80,000 by the end of 1945 (estimates cited by Wikipedia).",
-  "checked": null
+  "disagree": "Death tolls differ widely: about 70,000 in Hiroshima from the immediate effects and about 40,000 at first, approaching 70,000 by January 1946, in Nagasaki (US Department of Energy history), against 90,000-166,000 and 60,000-80,000 by the end of 1945 (estimates cited by Wikipedia). Kokura was hidden by smoke and haze (US Department of Energy) or by thick clouds (HISTORY.com).",
+  "checked": {
+   "by": "https://www.history.com/articles/bombing-of-hiroshima-and-nagasaki",
+   "claims": 8,
+   "contradicted": 0
+  }
  },
  "Q43653": {
   "title": "Apollo 11",
@@ -1571,8 +1575,13 @@
    "The CIA identified al-Qaeda under bin Laden that evening.",
    "NATO invoked Article 5 for the only time; the US invaded Afghanistan and launched the Global War on Terror, including Iraq."
   ],
-  "disagree": null,
-  "checked": null
+  "disagree": "The death toll is given as 2,977 victims (National September 11 Memorial) or 2,996 including the 19 hijackers (HISTORY.com).",
+  "checked": {
+   "by": "https://www.history.com/articles/9-11-attacks",
+   "claims": 9,
+   "contradicted": 0,
+   "note": "HISTORY.com's total of 2,996 includes the hijackers; added to the disagreements."
+  }
  },
  "Q6540361": {
   "title": "Surrender of Japan",
