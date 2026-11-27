@@ -88,6 +88,8 @@ class Ctx:
         self.wd = read_json(os.path.join(OUT, 'wikidata.json'))
         self.items = self.wd['items']
         self.tl_index = read_json(os.path.join(DATA, 'timelines', 'index.json'))
+        self.terms = read_json(os.path.join(DATA, 'rulers', 'terms.json'))
+        self.offices_from = {k: v for k, v in read_json(os.path.join(TOOLS, 'curated', 'context', 'regimes.json')).get('officesFrom', {}).items() if not k.startswith('_')}
         cur = read_json(os.path.join(TOOLS, 'curated', 'context', 'movements.json'))
         self.cur_mov = cur['movements']
         self.mov_by_state = {}
@@ -106,13 +108,45 @@ class Ctx:
                 self.parties_by_item.setdefault(c, []).append((q, p))
         d = read_json(os.path.join(DATA, 'context', 'discoveries.json'))
         F = d['fields']
-        self.disc = {}
+        self.disc, self.disc_pw = {}, {}
         for row in d['items']:
             r = dict(zip(F, row))
             if r['p']:
                 self.disc.setdefault(r['p'], []).append(r)
+            if r['pw']:
+                self.disc_pw.setdefault(r['pw'], []).append(r)
         iso_q = read_json(os.path.join(CACHE, 'iso_q.json'))
         self.iso_of_q = {q: iso for iso, q in iso_q.items()}
+        self.cur_gov, self.cur_rel = {}, {}
+        g = read_json(os.path.join(TOOLS, 'curated', 'context', 'government.json'))
+        for e in g['states']:
+            for n in e['names']:
+                self.cur_gov.setdefault(n, []).append(e)
+        r = read_json(os.path.join(TOOLS, 'curated', 'context', 'religion.json'))
+        for e in r['states']:
+            for n in e['names']:
+                self.cur_rel.setdefault(n, []).append(e)
+        self.gov_doc, self.rel_doc = g, r
+        self.cur_pop = {}
+        for r in read_json(os.path.join(TOOLS, 'curated', 'context', 'population.json'))['rows']:
+            for n in r['names']:
+                self.cur_pop.setdefault(n, []).append(r)
+        self.party_doc = read_json(os.path.join(TOOLS, 'curated', 'context', 'parties.json'))
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from fetch_context import resolve_titles
+        res = resolve_titles([row[2] for e in self.party_doc['states'] for row in e['rows']])
+        self.cur_party = {}
+        for e in self.party_doc['states']:
+            ok = True
+            for row in e['rows']:
+                r = res.get(row[2]) or {}
+                row_ok = bool(r.get('q')) and (r.get('from') is None or r['from'] <= row[0] + 1) and (r.get('to') is None or r['to'] >= row[1] - 1)
+                ok = ok and row_ok
+                for n in e['names']:
+                    self.cur_party.setdefault(n, []).append((row[0], row[1], r.get('q'), self.wd['parties'].get(r.get('q'), {}).get('n') or row[2], row[3], e['source']))
+            e['verified'] = ok
+        self.modern_pts = modern_index()
+        self.label_pt = label_points(self.st)
 
     # ------------------------------------------------------------------ items speaking for a state
     def items_at(self, name, s, y):
@@ -146,6 +180,56 @@ class Ctx:
                 break   # the first item that has an answer speaks for the state
         return res
 
+    def gov(self, name, qs, y):
+        """(forms, undated forms, source): curated dated rows first, else Wikidata (dated statements, or the
+        only undated one; several undated forms are kept apart as 'at some time')."""
+        for e in self.cur_gov.get(name, []):
+            for a, b, form in e['rows']:
+                if a <= y <= b:
+                    return [form], [], 'c'
+        for q in qs:
+            it = self.items.get(q, {})
+            rows = [r for r in it.get('P122', []) if r[1]]
+            dated = [r for r in rows if (r[2] is not None or r[3] is not None) and valid(r, y, it)]
+            undated = [r for r in rows if r[2] is None and r[3] is None and valid(r, y, it)]
+            if dated:
+                return list(dict.fromkeys(r[1] for r in dated)), [], 'w'
+            short = it.get('from') is not None and it.get('to') is not None and it['to'] - it['from'] <= 30
+            if len(undated) == 1 or (undated and short):
+                return list(dict.fromkeys(r[1] for r in undated)), [], 'w'
+            if undated:
+                return [], list(dict.fromkeys(r[1] for r in undated)), 'w'
+        return [], [], None
+
+    def religion(self, name, qs, y):
+        out = []
+        for e in self.cur_rel.get(name, []):
+            if e['from'] <= y <= e['to']:
+                for k in ('official', 'majority', 'rulers'):
+                    for v in e.get(k, []):
+                        if not any(o[0] == v and o[1] == k for o in out):
+                            out.append([v, k, 'c', e['source'], e.get('note')])
+        curated = bool(out)
+        for q in qs:
+            it = self.items.get(q, {})
+            long_lived = it.get('from') is None or it.get('to') is None or it['to'] - it['from'] > 100
+            for prop, kind in (('P3075', 'official'), ('P140', 'recorded')):
+                rows = pick(it.get(prop, []), y, it)
+                undated = [r for r in rows if r[2] is None and r[3] is None]
+                for r in rows:
+                    k = kind
+                    if r in undated and long_lived and len(undated) > 1:
+                        if curated:
+                            continue      # a curated, dated entry speaks for these years
+                        k = 'recorded, undated'
+                    elif prop == 'P3075' and len(undated) > 2:
+                        k = 'recognised'
+                    if not any(fold(r[1]) in fold(o[0]) or fold(o[0]) in fold(r[1]) for o in out):
+                        out.append([r[1], k, 'w', f'https://www.wikidata.org/wiki/{q}', None])
+            if it.get('P3075') or it.get('P140'):
+                break
+        return out
+
     # ------------------------------------------------------------------ parties
     def party_of(self, person, y):
         rows = self.wd['persons'].get(person, [])
@@ -161,9 +245,13 @@ class Ctx:
             out = [r[0] for r in dated if r[0] in out]
         return out[:1] if len(set(out)) == 1 else (out[:1] if out else [])
 
-    def ruling(self, rulers, y, gov):
+    def ruling(self, rulers, y, gov, name=None):
+        for a, b, q, label, kind, src in self.cur_party.get(name, []):
+            if a <= y <= b:
+                return q or label, [label, None, None, f'{kind} rule ({src})', label]
         now = [r for r in rulers if r[1] <= y and (r[2] if r[2] is not None else r[1]) >= y and not BAD_TITLE.search(r[3])]
-        lead = [r for r in now if LEADER.search(r[3])]
+        one_party = any(re.search(r'one-party|communist|socialist|soviet|people.s republic|fascis|totalitarian', g, re.I) for g in gov)
+        lead = [r for r in now if LEADER.search(r[3]) and (one_party or (len(r) > 5 and 'c' in (r[5] or '')))]
         hog = [r for r in now if HOG.search(r[3]) and r not in lead]
         hos = [r for r in now if HOS.search(r[3]) and r not in lead and r not in hog]
         presidential = any('presidential' in g.lower() for g in gov)
@@ -204,8 +292,33 @@ class Ctx:
         out = []
         iso = self.modern_iso(name, s)
         mod = self.pop['modern'].get(iso, {}) if iso else {}
+        census = []
+        for q in (qs_by_year[0][1][:1] if qs_by_year else []):
+            for r in self.items.get(q, {}).get('P1082', []):
+                try:
+                    if r[4] is not None and float(r[0]) > 0:
+                        census.append((r[4], float(r[0]), r[6] or 'Wikidata'))
+                except (TypeError, ValueError):
+                    pass
         for y, hy in samples:
             figs = [[hy, 'HYDE 3.2.1 (model estimate for this territory)']]
+            cur = sorted(self.cur_pop.get(name, []), key=lambda r: r['year'])
+            hit = [r for r in cur if abs(r['year'] - y) <= 5]
+            if hit:
+                r = hit[0]
+                for v in ([r['value']] if 'value' in r else [r['low'], r['high']]):
+                    figs.append([v, f"{r['who']}, {r['year']} (curated)"])
+            elif y < 1500:
+                lo_ = [r for r in cur if r['year'] < y and 'value' in r]
+                hi_ = [r for r in cur if r['year'] > y and 'value' in r]
+                if lo_ and hi_:
+                    a_, b_ = lo_[-1], hi_[0]
+                    v = a_['value'] * (b_['value'] / a_['value']) ** ((y - a_['year']) / (b_['year'] - a_['year']))
+                    figs.append([v, f"{a_['who']}, between {a_['year']} and {b_['year']} (curated, interpolated)"])
+            near = [c for c in census if abs(c[0] - y) <= 5]
+            if near:
+                c = min(near, key=lambda c: abs(c[0] - y))
+                figs.append([c[1], f'Wikidata, {c[0]} ({c[2]})'])
             if mod.get('maddison') and mod.get('hyde'):
                 mh = interp_series(mod['hyde'], y)
                 md = [r for r in mod['maddison'] if abs(r[0] - y) <= (5 if y >= 1820 else 50)]
@@ -234,14 +347,28 @@ class Ctx:
         return out, wdp
 
     def modern_iso(self, name, s):
+        """Today's country the state most resembles: its own item when that is a country of today, else the
+        country under a point inside its largest shape (the population ratio test then decides)."""
         if s.get('q') in self.iso_of_q:
             return self.iso_of_q[s['q']]
-        return None
+        pt = self.label_pt.get(name)
+        return self.modern_pts.lookup(pt[0], pt[1]) if pt else None
 
     # ------------------------------------------------------------------ one state
     def build(self, name, s):
         tlf = self.tl_index.get(name)
         rulers = read_json(os.path.join(DATA, 'timelines', tlf)).get('rulers', []) if tlf else []
+        # the office holders filed under the regimes and earlier eras of this name (ROC 1912-1949 for China)
+        extra_q = [r[2] for r in self.wd['regimes'].get(name, []) if r[2]] + [e['q'] for e in s.get('eras', [])] + self.offices_from.get(name, [])
+        seen = {(r[0], r[1], r[3]) for r in rulers}
+        for q in extra_q:
+            for r in self.terms.get(q, {}).get('terms', []):
+                if r[1] > s['last'] or (r[2] if r[2] is not None else r[1]) < s['first']:
+                    continue
+                if (r[0], r[1], r[3]) not in seen:
+                    seen.add((r[0], r[1], r[3]))
+                    rulers.append(r)
+        rulers.sort(key=lambda r: (r[1], r[0]))
         maps = self.st['maps']
         spans = []
         for mi, *_ in s['maps']:
@@ -255,17 +382,17 @@ class Ctx:
             cur, start, facts = None, a, None
             for y in range(a, b + 1):
                 qs, main = self.items_at(name, s, y)
-                gov = [g[0] for g in self.statements(qs, 'P122', y)]
-                off = [g[0] for g in self.statements(qs, 'P3075', y)]
-                party, holder = self.ruling(rulers, y, gov)
+                gov, gany, gsrc = self.gov(name, qs, y)
+                off = [r[0] for r in self.religion(name, qs, y) if r[1] == 'official']
+                party, holder = self.ruling(rulers, y, gov or gany, name)
                 key = (main, tuple(gov), tuple(off), party)
                 step = 100 if y < 1500 else 50 if y < 1800 else 25
                 if cur is None:
-                    cur, facts = key, (qs, gov, off, party, holder)
+                    cur, facts = key, (qs, gov, gany, gsrc, party, holder)
                     continue
                 if key != cur or y - start >= step:
                     periods.append(self.period(name, s, start, y - 1, facts, rulers))
-                    cur, start, facts = key, y, (qs, gov, off, party, holder)
+                    cur, start, facts = key, y, (qs, gov, gany, gsrc, party, holder)
             periods.append(self.period(name, s, start, b, facts, rulers))
         # merge one-year slices caused by a change of party or office in the middle of a year into the next
         merged = []
@@ -277,12 +404,9 @@ class Ctx:
         return {'name': name, 'q': s.get('q'), 'from': s['first'], 'to': s['last'], 'periods': merged}
 
     def period(self, name, s, a, b, facts, rulers):
-        qs, gov, off, party, holder = facts
+        qs, gov, gany, gsrc, party, holder = facts
         mid = (a + b) // 2
-        rel = [[r[0], 'official'] for r in self.statements(qs, 'P3075', mid)]
-        for r in self.statements(qs, 'P140', mid):
-            if r[0] not in [x[0] for x in rel]:
-                rel.append([r[0], 'recorded'])
+        rel = self.religion(name, qs, mid)
         p = {'from': a, 'to': b}
         items = [[q, self.items.get(q, {}).get('n', q)] for q in qs[:2]]
         if items:
@@ -292,11 +416,20 @@ class Ctx:
             p['regime'] = [reg[0][3], reg[0][4]]
         if gov:
             p['gov'] = gov[:3]
+            p['govSrc'] = gsrc
+            if gsrc == 'c':
+                e = next(e for e in self.cur_gov[name] if any(r[0] <= a <= r[1] for r in e['rows']))
+                p['govCite'] = e['source']
+        if gany:
+            p['govAny'] = gany[:6]
         if rel:
-            p['rel'] = rel[:4]
+            p['rel'] = rel[:6]
         if party:
             pp = self.wd['parties'].get(party, {})
-            p['party'] = [pp.get('n', party), party, holder[0], holder[3]]
+            if holder[1] is None and holder[2] is None:     # curated party row
+                p['party'] = [holder[0], party if str(party).startswith('Q') else None, None, holder[3], 'c']
+            else:
+                p['party'] = [pp.get('n', party), party, holder[0], holder[3]]
         parties = self.parties(qs, a, b)
         if parties:
             p['parties'] = parties
@@ -316,7 +449,7 @@ class Ctx:
             p['popw'] = wdp
         mov = []
         for m in self.mov_by_state.get(name, []):
-            if m['from'] <= b and m['to'] >= a:
+            if m['from'] <= b and m['to'] >= a and m['name'] not in [x[0] for x in mov]:
                 mov.append([m['name'], m['from'], m['to'], m['text'], m['source'], 'c', m.get('verified')])
         seen = {m[0].lower() for m in mov}
         wm = []
@@ -338,6 +471,42 @@ class Ctx:
                 p['discMore'] = len(ds) - 12
         p['glance'] = glance(name, p)
         return p
+
+
+def fold(t):
+    return ''.join(c for c in unicodedata.normalize('NFKD', t or '') if not unicodedata.combining(c)).lower()
+
+
+def modern_index():
+    from geo import PolyIndex
+    feats = read_json(os.path.join(DATA, 'base', 'modern.json'))['features']
+    return PolyIndex([(f['properties']['iso'], f['geometry']) for f in feats])
+
+
+def label_points(st):
+    """{name: (lon, lat)}: a point inside the state's largest shape on the last map that draws it."""
+    from geo import decode_geom, polys_of
+    clio = {}
+    ci = read_json(os.path.join(DATA, 'clio', 'index.json'))
+    for f in ci['files']:
+        for sid, sh in read_json(os.path.join(DATA, 'clio', f)).items():
+            clio[int(sid)] = (sh['a'], sh.get('l'))
+    cs = {}
+    ix = read_json(os.path.join(DATA, 'cshapes', 'index.json'))
+    for c in ix['chunks']:
+        for sid, sh in read_json(os.path.join(DATA, 'cshapes', c['f'])).items():
+            ring = max((pl[0] for pl in polys_of(decode_geom(sh['g']))), key=len)
+            xs, ys = [p_[0] for p_ in ring], [p_[1] for p_ in ring]
+            cs[int(sid)] = (sh['a'], (sum(xs) / len(xs), sum(ys) / len(ys)))
+    maps = st['maps']
+    out = {}
+    for name, s in st['states'].items():
+        mi, sids = s['maps'][-1][0], s['maps'][-1][1]
+        src = cs if maps[mi][2] == 'cshapes' else clio
+        best = max((src[i] for i in sids if i in src), key=lambda t: t[0], default=None)
+        if best and best[1]:
+            out[name] = best[1]
+    return out
 
 
 def interp_series(ser, y):
@@ -397,7 +566,7 @@ def glance(name, p):
     elif rec:
         parts.append(f'Religion recorded on Wikidata: {", ".join(rec[:2])}.')
     if p.get('party'):
-        parts.append(f'Ruling party: {p["party"][0]} ({p["party"][2]}).')
+        parts.append(f'Ruling party: {p["party"][0]}' + (f' ({p["party"][2]})' if p['party'][2] else '') + '.')
     led = [l for l in p.get('leaders', [])]
     if led:
         names = []
@@ -436,7 +605,40 @@ def main():
                     e[k] = e.get(k, 0) + yrs
             if any(r[1] == 'official' for r in p.get('rel', [])):
                 e['relOfficial'] = e.get('relOfficial', 0) + yrs
+    # empires (a power drawn as one colour with its parts): the core state's items and leaders, the whole
+    # power's population, its parts' discoveries
+    emp = read_json(os.path.join(DATA, 'empires.json'))['empires']
+    for eid, e in sorted(emp.items()):
+        core = [n for n in e.get('core', []) if n in c.st['states']]
+        rows = c.st['powers'].get(eid)
+        if not core or not rows:
+            continue
+        key = 'e:' + eid
+        base = c.st['states'][core[0]]
+        s = {k: base[k] for k in ('q', 'eras', 'from', 'to', 'mod') if k in base}
+        s['maps'] = [[mi, [], eid, None] for mi, names in rows]
+        maps = c.st['maps']
+        s['first'], s['last'] = min(maps[mi][0] for mi, _ in rows), max(maps[mi][1] for mi, _ in rows)
+        label = e['n']
+        for d_ in (c.cur_gov, c.cur_rel, c.cur_party, c.mov_by_state, c.cur_pop):
+            merged = [x for n in core for x in d_.get(n, [])]
+            if merged:
+                d_[label] = merged
+        if core[0] in c.wd['regimes']:
+            c.wd['regimes'][label] = c.wd['regimes'][core[0]]
+        if core[0] in c.tl_index:
+            c.tl_index[label] = c.tl_index[core[0]]
+        c.pop['states'][label] = c.pop['powers'].get(eid, [])
+        c.disc[label] = c.disc_pw.get(eid, [])
+        doc = c.build(label, s)
+        doc['empire'] = eid
+        doc['core'] = core
+        f = 'e-' + slug(eid) + '.json'
+        total += write_json(os.path.join(DEST, f), doc)
+        index[key] = f
     write_json(os.path.join(DEST, 'index.json'), index)
+    for doc, fn in ((c.party_doc, 'parties.json'),):
+        write_json(os.path.join(TOOLS, 'curated', 'context', fn), doc, pretty=True)
     for era, e in cov.items():
         for k in list(e):
             if k not in ('slices', 'years'):

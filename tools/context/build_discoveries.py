@@ -27,6 +27,7 @@ from fetch_context import batch, esc, year_of, resolve_titles  # noqa: E402
 from mapwhere import where  # noqa: E402
 
 OUT = os.path.join(CACHE, 'context')
+GEO = re.compile(r'island|continent|country|archipelago|lake|ocean|\bsea\b|region|territory|\bpole\b|mountain|river|cape|bay|peninsula|atoll|colony|sovereign state|geographic|land mass|landmass')
 FIELDS = ['id', 'y', 'l', 'k', 'p', 'pw', 'lo', 'la', 'how', 'sl', 'w', 'who', 'note', 'src', 'v', 'approx', 'text']
 # kinds by class words: what to call it in the panel
 KIND = [('invention', r'invention|machine|device|engine|vehicle|tool|instrument|apparatus|technology|weapon|aircraft|vaccine|drug|medication'),
@@ -70,6 +71,7 @@ def by_country(q, y, idx, caps):
 def main():
     raw = read_json(os.path.join(OUT, 'discoveries_raw.json'))
     items, people, caps = raw['items'], raw['people'], raw['capitals']
+    country_locs = set(raw.get('countryLocs', []))
     cur = read_json(os.path.join(TOOLS, 'curated', 'context', 'discoveries.json'))
     idx = state_index()
     out = []
@@ -78,7 +80,7 @@ def main():
     res = resolve_titles(titles)
     qs = sorted({r['q'] for r in res.values()})
     dates = {}
-    for r in batch(qs, 100, lambda vals: f'''SELECT ?x ?p ?d WHERE {{ VALUES ?x {{ {vals} }} VALUES ?p {{ wdt:P575 wdt:P571 wdt:P577 wdt:P585 wdt:P580 }}
+    for r in batch(qs, 100, lambda vals: f'''SELECT ?x ?p ?d WHERE {{ VALUES ?x {{ {vals} }} VALUES ?p {{ wdt:P575 wdt:P571 wdt:P577 wdt:P585 wdt:P580 wdt:P582 }}
   ?x ?p ?d }}''', 'curated dates'):
         y = year_of(r['d'])
         if y is not None:
@@ -107,24 +109,45 @@ def main():
                     'note': d.get('note'), 'src': d['source'], 'v': v, 'approx': bool(d.get('approx')), 'text': d['text'], 'cur': True})
     write_json(os.path.join(TOOLS, 'curated', 'context', 'discoveries.json'), cur, pretty=True)
     # Wikidata items
-    n_placed = 0
+    n_placed = skipped = 0
+
+    def alive(wq, y):
+        p = people.get(wq, {})
+        return (p.get('born') is None or p['born'] + 10 <= y) and (p.get('died') is None or y <= p['died'])
     for q, e in sorted(items.items(), key=lambda kv: -kv[1]['sl']):
         if q in taken or e.get('y') is None or not e.get('n') or e['n'] == q:
             continue
         y = e['y']
         cls = ' '.join(e.get('cls', [])).lower()
-        kind = next(k for k, rx in KIND if re.search(rx, cls))
+        # not a datable discovery: places "discovered" by Europeans, prehistoric materials, and items with
+        # neither a discoverer nor a place (broad concepts such as electricity or the newspaper)
+        if GEO.search(cls) or y < -3000 or not (e.get('who') or e.get('loc')):
+            skipped += 1
+            continue
+        kind = next((k for k, rx in KIND if re.search(rx, cls)), 'discovery')
         p = how = None
         lo = la = None
-        for loc in e.get('loc', []):
+        # Wikidata often lists a later isolator beside the first discoverer (barium: Scheele 1772, Davy 1808):
+        # when a listed discoverer was born after the year, the item mixes two events and is not placed
+        mixed = any((people.get(w, {}).get('born') or -99999) > y - 10 for w, _ in e.get('who', []))
+        for loc in ([] if mixed else e.get('loc', [])):
+            if loc[0] in country_locs:
+                name, h = by_country(loc[0], y, idx, caps)
+                if name:
+                    p, how = (name, None, None), f'country of discovery ({loc[1]}), {h}'
+                    break
+                continue
             if loc[2] is not None:
                 w = where(loc[2], loc[3], y)
                 if w:
                     p, how, lo, la = w, f'place of discovery: {loc[1]}', loc[2], loc[3]
                     break
+        # the discoverer's own facts count only when there is one discoverer, alive and adult in that year
+        solo = [w for w, _ in e.get('who', [])]
+        solo = solo if len(solo) == 1 and alive(solo[0], y) and not mixed else []
         if not p:
             works = []
-            for wq, _ in e.get('who', []):
+            for wq in solo:
                 for wk in people.get(wq, {}).get('work', []):
                     s, en = wk[4], wk[5]
                     if (s is None or s <= y) and (en is None or y <= en):
@@ -138,7 +161,7 @@ def main():
             w = where(e['coord'][0], e['coord'][1], y)
             if w:
                 p, how, lo, la = w, 'where it was found', e['coord'][0], e['coord'][1]
-        if not p:
+        if not p and not mixed:
             for c in e.get('origin', []):
                 name, h = by_country(c[0], y, idx, caps)
                 if name:
@@ -146,7 +169,7 @@ def main():
                     break
         if not p:
             cits = []
-            for wq, _ in e.get('who', []):
+            for wq in solo:
                 for c in people.get(wq, {}).get('cit', []):
                     if (c[2] is None or c[2] <= y) and (c[3] is None or y <= c[3]):
                         cits.append(c)
@@ -174,6 +197,7 @@ def main():
                {'fields': FIELDS, 'items': [[d.get(f) for f in FIELDS] for d in out]})
     write_json(os.path.join(OUT, 'discoveries_check.json'), out[:260], pretty=True)
     cv = [d for d in out if d.get('cur')]
+    log(f'  {skipped} Wikidata items left out (places, prehistoric materials, no discoverer or place)')
     log(f'discoveries: {len(out)} ({len(cv)} curated, {sum(1 for d in cv if d["v"])} of them confirmed by Wikidata, '
         f'{sum(1 for d in cv if d["v"] is None)} without a Wikidata date); {n_placed} of {len(out) - len(cv)} Wikidata items placed on a state')
 

@@ -1,0 +1,513 @@
+{
+ "_about": "Ruling parties of one-party and dominant-party states, by period, for the years in which the party (not one officeholder's membership) ruled: Wikidata's party memberships of heads of government leave gaps here (the Nationalist government of China 1932-1942). Written for GeoHistory from general knowledge (AI-written, labelled so in the app). Each row: [first year, last year, English Wikipedia title of the party, kind]; kind 'one-party' (the only legal party) or 'dominant' (other parties legal). Where a row covers a year it is the ruling party shown. tools/context/build_context.py resolves the titles to Wikidata and sets 'verified' when the party existed in those years (inception before the first year, no dissolution before the last).",
+ "states": [
+  {
+   "names": [
+    "Soviet Union"
+   ],
+   "rows": [
+    [
+     1922,
+     1990,
+     "Communist Party of the Soviet Union",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Communist_Party_of_the_Soviet_Union",
+   "verified": true
+  },
+  {
+   "names": [
+    "Russia"
+   ],
+   "rows": [
+    [
+     1918,
+     1922,
+     "Communist Party of the Soviet Union",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Communist_Party_of_the_Soviet_Union",
+   "verified": true
+  },
+  {
+   "names": [
+    "China"
+   ],
+   "rows": [
+    [
+     1928,
+     1947,
+     "Kuomintang",
+     "one-party"
+    ],
+    [
+     1949,
+     2019,
+     "Chinese Communist Party",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Nationalist_government",
+   "verified": true
+  },
+  {
+   "names": [
+    "Taiwan"
+   ],
+   "rows": [
+    [
+     1949,
+     1986,
+     "Kuomintang",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Martial_law_in_Taiwan",
+   "verified": true
+  },
+  {
+   "names": [
+    "Germany"
+   ],
+   "rows": [
+    [
+     1933,
+     1945,
+     "Nazi Party",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Nazi_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "Austria"
+   ],
+   "rows": [
+    [
+     1934,
+     1938,
+     "Fatherland Front (Austria)",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Fatherland_Front_(Austria)",
+   "verified": true
+  },
+  {
+   "names": [
+    "Italy"
+   ],
+   "rows": [
+    [
+     1926,
+     1943,
+     "National Fascist Party",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/National_Fascist_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "Spain"
+   ],
+   "rows": [
+    [
+     1939,
+     1975,
+     "FET y de las JONS",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/FET_y_de_las_JONS",
+   "verified": true
+  },
+  {
+   "names": [
+    "Portugal"
+   ],
+   "rows": [
+    [
+     1933,
+     1974,
+     "National Union (Portugal)",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/National_Union_(Portugal)",
+   "verified": true
+  },
+  {
+   "names": [
+    "East Germany"
+   ],
+   "rows": [
+    [
+     1949,
+     1989,
+     "Socialist Unity Party of Germany",
+     "dominant"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Socialist_Unity_Party_of_Germany",
+   "verified": true
+  },
+  {
+   "names": [
+    "Poland"
+   ],
+   "rows": [
+    [
+     1948,
+     1989,
+     "Polish United Workers' Party",
+     "dominant"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Polish_United_Workers%27_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "Czechoslovakia"
+   ],
+   "rows": [
+    [
+     1948,
+     1989,
+     "Communist Party of Czechoslovakia",
+     "dominant"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Communist_Party_of_Czechoslovakia",
+   "verified": true
+  },
+  {
+   "names": [
+    "Hungary"
+   ],
+   "rows": [
+    [
+     1949,
+     1956,
+     "Hungarian Working People's Party",
+     "one-party"
+    ],
+    [
+     1957,
+     1989,
+     "Hungarian Socialist Workers' Party",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Hungarian_Socialist_Workers%27_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "Romania"
+   ],
+   "rows": [
+    [
+     1948,
+     1989,
+     "Romanian Communist Party",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Romanian_Communist_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "Bulgaria"
+   ],
+   "rows": [
+    [
+     1946,
+     1990,
+     "Bulgarian Communist Party",
+     "dominant"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Bulgarian_Communist_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "Albania"
+   ],
+   "rows": [
+    [
+     1946,
+     1991,
+     "Party of Labour of Albania",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Party_of_Labour_of_Albania",
+   "verified": true
+  },
+  {
+   "names": [
+    "Yugoslavia"
+   ],
+   "rows": [
+    [
+     1945,
+     1990,
+     "League of Communists of Yugoslavia",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/League_of_Communists_of_Yugoslavia",
+   "verified": true
+  },
+  {
+   "names": [
+    "Mongolia"
+   ],
+   "rows": [
+    [
+     1924,
+     1990,
+     "Mongolian People's Party",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Mongolian_People%27s_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "North Korea"
+   ],
+   "rows": [
+    [
+     1949,
+     2019,
+     "Workers' Party of Korea",
+     "dominant"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Workers%27_Party_of_Korea",
+   "verified": true
+  },
+  {
+   "names": [
+    "North Vietnam",
+    "Vietnam"
+   ],
+   "rows": [
+    [
+     1954,
+     2019,
+     "Communist Party of Vietnam",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Communist_Party_of_Vietnam",
+   "verified": true
+  },
+  {
+   "names": [
+    "Laos"
+   ],
+   "rows": [
+    [
+     1975,
+     2019,
+     "Lao People's Revolutionary Party",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Lao_People%27s_Revolutionary_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "Cuba"
+   ],
+   "rows": [
+    [
+     1965,
+     2019,
+     "Communist Party of Cuba",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Communist_Party_of_Cuba",
+   "verified": true
+  },
+  {
+   "names": [
+    "Mexico"
+   ],
+   "rows": [
+    [
+     1929,
+     1999,
+     "Institutional Revolutionary Party",
+     "dominant"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Institutional_Revolutionary_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "Turkey"
+   ],
+   "rows": [
+    [
+     1923,
+     1945,
+     "Republican People's Party",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Republican_People%27s_Party",
+   "verified": true
+  },
+  {
+   "names": [
+    "Iraq"
+   ],
+   "rows": [
+    [
+     1968,
+     2003,
+     "Ba'ath Party (Iraqi-dominated faction)",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Ba%27ath_Party_(Iraqi-dominated_faction)",
+   "verified": true
+  },
+  {
+   "names": [
+    "Syria"
+   ],
+   "rows": [
+    [
+     1963,
+     2019,
+     "Ba'ath Party (Syrian-dominated faction)",
+     "dominant"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Ba%27ath_Party_(Syrian-dominated_faction)",
+   "verified": false
+  },
+  {
+   "names": [
+    "South Africa"
+   ],
+   "rows": [
+    [
+     1948,
+     1994,
+     "National Party (South Africa)",
+     "dominant"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/National_Party_(South_Africa)",
+   "verified": true
+  },
+  {
+   "names": [
+    "Tanzania"
+   ],
+   "rows": [
+    [
+     1977,
+     1992,
+     "Chama Cha Mapinduzi",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Chama_Cha_Mapinduzi",
+   "verified": true
+  },
+  {
+   "names": [
+    "Kenya"
+   ],
+   "rows": [
+    [
+     1982,
+     1991,
+     "Kenya African National Union",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Kenya_African_National_Union",
+   "verified": true
+  },
+  {
+   "names": [
+    "Zaire"
+   ],
+   "rows": [
+    [
+     1971,
+     1990,
+     "Popular Movement of the Revolution",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Popular_Movement_of_the_Revolution",
+   "verified": true
+  },
+  {
+   "names": [
+    "Ottoman Empire"
+   ],
+   "rows": [
+    [
+     1913,
+     1918,
+     "Committee of Union and Progress",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Committee_of_Union_and_Progress",
+   "verified": true
+  },
+  {
+   "names": [
+    "Cambodia"
+   ],
+   "rows": [
+    [
+     1975,
+     1979,
+     "Communist Party of Kampuchea",
+     "one-party"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/Communist_Party_of_Kampuchea",
+   "verified": true
+  },
+  {
+   "names": [
+    "Japan"
+   ],
+   "rows": [
+    [
+     1955,
+     1992,
+     "Liberal Democratic Party (Japan)",
+     "dominant"
+    ]
+   ],
+   "source": "https://en.wikipedia.org/wiki/1955_System",
+   "verified": true
+  }
+ ]
+}
