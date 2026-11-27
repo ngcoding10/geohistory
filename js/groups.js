@@ -106,26 +106,63 @@ export function preferredIndex(key, stored) {
 /** A power's own map colour (light-theme hex), as preferred. */
 export const vividColor = (key, stored) => PALETTE[preferredIndex(key, stored)];
 
-/** Colour the groups of one map. adj: Map(group index -> Set of neighbouring group indices). prefs[i]: the
- *  preferred palette index of group i (null for regions, which keep their own pale tints). Larger groups
- *  choose first; a group takes its preferred colour unless a neighbour that chose before is too close to it,
- *  else the nearest entry that is clear of every such neighbour. Deterministic: the same map always gets the
+// ---- fills from flags: each power is filled with a colour of the flag of the present-day country it maps to
+// (data/flags/colors.json, tools/build_flags.py): the flag's most distinctive colour first, then its second
+// colour, each set into the map's two lightness bands so that names stay readable.
+const lab = (hex) => { const [L, C, H] = hexToLch(hex); return [L, C * Math.cos((H * Math.PI) / 180), C * Math.sin((H * Math.PI) / 180)]; };
+const labMemo = new Map();
+const labOf = (hex) => { let v = labMemo.get(hex); if (!v) labMemo.set(hex, (v = lab(hex))); return v; };
+export const hexDist = (a, b) => { const x = labOf(a), y = labOf(b); return Math.hypot(x[0] - y[0], x[1] - y[1], x[2] - y[2]); };
+const BANDS = [0.8, 0.68];
+/** A flag colour set into a lightness band of the map (0: light, 1: deeper). */
+export function flagTone(hex, band) {
+  const [, C, H] = hexToLch(hex);
+  const yellow = H > 70 && H < 115;
+  // yellows stay golden in the deeper band (at the band's own lightness they turn olive)
+  return lchToHex([BANDS[band] + (yellow ? (band === 0 ? 0.06 : 0.08) : 0), Math.max(0.05, Math.min(yellow ? 0.15 : 0.145, C)), yellow && band === 1 ? H - 12 : H]);
+}
+const candMemo = new Map();
+/** The fill candidates of a power, best first: [first colour, second colour] in the band nearest the flag's
+ *  own lightness, then both in the other band. Without flag colours: the palette entry it prefers, then its
+ *  twin in the other band. */
+export function fillCandidates(key, stored, flagCols) {
+  const mk = key + '|' + stored + '|' + (flagCols || []).join(',');
+  if (candMemo.has(mk)) return candMemo.get(mk);
+  let out;
+  const cols = (flagCols || []).filter(Boolean);
+  if (cols.length) {
+    const b0 = hexToLch(cols[0])[0] >= 0.66 ? 0 : 1;
+    out = [];
+    for (const b of [b0, 1 - b0]) for (const c of cols) out.push(flagTone(c, b));
+  } else {
+    const p = preferredIndex(key, stored);
+    out = [PALETTE[p], PALETTE[(p + HUES.length) % PALETTE.length]];
+  }
+  candMemo.set(mk, out);
+  return out;
+}
+
+/** Colour the groups of one map. adj: Map(group index -> Set of neighbouring group indices). cands[i]: the
+ *  fill candidates of group i, best first (null for regions, which keep their own pale tints). Larger groups
+ *  (an empire by its ruling state's own land) choose first; a group takes its first candidate unless a neighbour that chose before is too close to it,
+ *  then its next (its flag's second colour, then a lightness shift), else the nearest palette entry that is
+ *  clear of every such neighbour. Neighbours always differ. Deterministic: the same map always gets the
  *  same colours, whatever year was shown before. */
-export function colorGroups(groups, adj, prefs) {
-  const order = groups.map((g, i) => i).filter((i) => prefs[i] != null).sort((a, b) => groups[b].area - groups[a].area || a - b);
+export const MIN_FILL_DIST = 0.085;
+// the size that decides who chooses first: an empire's ruling state (its homeland), not its colonies
+const sz = (g) => g.carea ?? g.area;
+export function colorGroups(groups, adj, cands) {
+  const order = groups.map((g, i) => i).filter((i) => cands[i] != null).sort((a, b) => sz(groups[b]) - sz(groups[a]) || a - b);
   const pick = new Map();
-  const MIN = 0.085;
   for (const i of order) {
     const nb = [...(adj.get(i) || [])].filter((j) => pick.has(j)).map((j) => pick.get(j));
-    const clear = (c) => nb.every((o) => o !== c && dist(c, o) >= MIN);
-    const p = prefs[i];
-    let c = p;
-    if (!clear(p)) {
-      // first the same hue in the other lightness band (the power still reads as itself), then the nearest
-      const twin = (p + HUES.length) % PALETTE.length;
-      const cands = [twin, ...PALETTE.map((_, k) => k).filter((k) => k !== twin).sort((a, b) => dist(a, p) - dist(b, p))];
-      c = cands.find(clear);
-      if (c == null) c = cands.reduce((a, b) => (Math.min(...nb.map((o) => dist(b, o))) > Math.min(...nb.map((o) => dist(a, o))) ? b : a));
+    const clear = (c) => nb.every((o) => o !== c && hexDist(c, o) >= MIN_FILL_DIST);
+    const own = cands[i];
+    let c = own.find(clear);
+    if (c == null) {
+      const rest = [...PALETTE].sort((a, b) => hexDist(a, own[0]) - hexDist(b, own[0]));
+      c = rest.find(clear);
+      if (c == null) c = rest.reduce((a, b) => (Math.min(...nb.map((o) => hexDist(b, o))) > Math.min(...nb.map((o) => hexDist(a, o))) ? b : a));
     }
     pick.set(i, c);
   }

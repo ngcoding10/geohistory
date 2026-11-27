@@ -1,0 +1,379 @@
+{
+ "about": "Flags for tools/build_flags.py. 'flags': rows that replace whatever Wikidata gives for a state in a span of years (file = Wikimedia Commons file name; flags: u = uncertain or not an official national flag, s = a royal banner or standard rather than a national flag; note is shown in the panel). 'drop': spans in which a state shows no flag although Wikidata gives one, each with the reason. 'checked': states whose undated Wikidata flag was read and holds for all the years the state is on the map. 'early': states whose flags before 1600 were read and are kept (other pre-1600 flags are dropped: most are modern drawings of arms or reconstructions). 'qid': map names that have no item in data/entities.json. 'standard': states whose flag in the given years is a royal banner or standard, not a national flag (also any file whose name says royal, standard or banner). 'modern': power keys whose present-day country (for the fill colour) is set by hand instead of measured from the maps. 'colors': present-day flag colours set by hand (first: the fill; second: the neighbour fallback). 'same_design': a file Commons would not serve to the build, and a file of the same design (a shade or proportion apart) shown in its place.",
+ "qid": {
+  "Kingdom of Spain": "Q29",
+  "Persia": "Q794"
+ },
+ "flags": {
+  "Russian Empire": [
+   {
+    "from": 1858,
+    "to": 1882,
+    "file": "Flag of Russia (1858–1896).svg",
+    "note": "The black-yellow-white imperial flag, approved by Alexander II in 1858.",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Russia"
+   },
+   {
+    "from": 1883,
+    "to": 1917,
+    "file": "Flag of Russia.svg",
+    "note": "White-blue-red: decreed for festive use by Alexander III in 1883 and made the national flag in 1896; the black-yellow-white flag stayed in some official use until then.",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Russia"
+   }
+  ],
+  "Austria-Hungary": [
+   {
+    "from": 1869,
+    "to": 1918,
+    "file": "Civil Ensign of Austria-Hungary (1869–1918).svg",
+    "flags": "u",
+    "note": "Civil ensign. Austria-Hungary had no common national flag; Austria and Hungary each kept their own.",
+    "source": "https://en.wikipedia.org/wiki/Flags_of_Austria-Hungary"
+   }
+  ],
+  "Austrian Empire": [
+   {
+    "from": 1806,
+    "to": 1867,
+    "file": "Flag of the Habsburg Monarchy.svg",
+    "note": "The black and yellow flag of the Austrian Empire.",
+    "source": "https://en.wikipedia.org/wiki/Austrian_Empire"
+   }
+  ],
+  "Bourbon Kingdom of France": [
+   {
+    "from": 1815,
+    "to": 1830,
+    "file": "Flag of France (1814–1830).svg",
+    "note": "The white flag of the Bourbon Restoration.",
+    "source": "https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France"
+   },
+   {
+    "from": 1831,
+    "to": 1847,
+    "file": "Flag of France.svg",
+    "note": "The July Monarchy restored the tricolour in 1830.",
+    "source": "https://en.wikipedia.org/wiki/July_Monarchy"
+   }
+  ],
+  "Kingdom of Denmark": [
+   {
+    "from": 1370,
+    "to": 1406,
+    "file": "Flag of Denmark.svg",
+    "note": "The Dannebrog, first shown as Denmark's in the Gelre Armorial (c. 1370 to 1386).",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Denmark"
+   }
+  ],
+  "Confederate States of America": [
+   {
+    "from": 1862,
+    "to": 1862,
+    "file": "Flag of the Confederate States (1861–1863).svg",
+    "note": "The 'Stars and Bars' with 13 stars (November 1861 to May 1863).",
+    "source": "https://en.wikipedia.org/wiki/Flags_of_the_Confederate_States_of_America"
+   }
+  ],
+  "United States of America": [
+   {
+    "from": 1864,
+    "to": 1865,
+    "file": "Flag of the United States (1863–1865).svg",
+    "note": "35 stars (4 July 1863 to 3 July 1865).",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_the_United_States"
+   }
+  ],
+  "China": [
+   {
+    "from": 1886,
+    "to": 1888,
+    "file": "Flag of China (1862–1889).svg",
+    "note": "Qing dynasty: the triangular Yellow Dragon flag.",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_the_Qing_dynasty"
+   },
+   {
+    "from": 1889,
+    "to": 1911,
+    "file": "Flag of China (1889–1912).svg",
+    "note": "Qing dynasty: the rectangular Yellow Dragon flag.",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_the_Qing_dynasty"
+   },
+   {
+    "from": 1912,
+    "to": 1928,
+    "file": "Flag of China (1912–1928).svg",
+    "note": "Republic of China: the Five-Coloured Flag of the Beiyang government.",
+    "source": "https://en.wikipedia.org/wiki/Five-Colored_Flag"
+   },
+   {
+    "from": 1929,
+    "to": 1949,
+    "file": "Flag of the Republic of China.svg",
+    "note": "Republic of China: Blue Sky, White Sun, and a Wholly Red Earth (national flag from December 1928).",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China"
+   },
+   {
+    "from": 1950,
+    "to": 2019,
+    "file": "Flag of the People's Republic of China.svg",
+    "note": "People's Republic of China: the Five-starred Red Flag (from 1 October 1949).",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_China"
+   }
+  ],
+  "Persia": [
+   {
+    "from": 1907,
+    "to": 1932,
+    "file": "State flag of Persia (1907–1933).svg",
+    "note": "Lion and Sun tricolour of the Qajar and early Pahlavi state.",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Iran"
+   },
+   {
+    "from": 1933,
+    "to": 1934,
+    "file": "State flag of Iran (1933–1964).svg",
+    "note": "Pahlavi state flag.",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Iran"
+   }
+  ],
+  "Iran": [
+   {
+    "from": 1935,
+    "to": 1963,
+    "file": "State flag of Iran (1933–1964).svg",
+    "note": "Pahlavi state flag.",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Iran"
+   },
+   {
+    "from": 1964,
+    "to": 1978,
+    "file": "State flag of Iran (1964–1980).svg",
+    "note": "Pahlavi state flag.",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Iran"
+   },
+   {
+    "from": 1979,
+    "to": 1980,
+    "file": "First Flag of I.R.Iran.svg",
+    "flags": "u",
+    "note": "Provisional flag of the Islamic Republic, used until July 1980.",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Iran"
+   },
+   {
+    "from": 1981,
+    "to": 2019,
+    "file": "Flag of Iran.svg",
+    "note": "Flag of the Islamic Republic (from 29 July 1980).",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Iran"
+   }
+  ],
+  "Ghana": [
+   {
+    "from": 1957,
+    "to": 1963,
+    "file": "Flag of Ghana.svg",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Ghana"
+   },
+   {
+    "from": 1964,
+    "to": 1965,
+    "file": "Flag of Ghana (1964–1966).svg",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Ghana"
+   },
+   {
+    "from": 1966,
+    "to": 2019,
+    "file": "Flag of Ghana.svg",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_Ghana"
+   }
+  ],
+  "French First Republic": [
+   {
+    "from": 1792,
+    "to": 1793,
+    "file": "Flag of France (1790–1794).svg",
+    "note": "The first tricolour, red at the hoist (1790 to 1794).",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_France"
+   },
+   {
+    "from": 1794,
+    "to": 1795,
+    "file": "Flag of France.svg",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_France",
+    "note": "The tricolour as decreed on 15 February 1794."
+   }
+  ],
+  "French Consulate": [
+   {
+    "from": 1799,
+    "to": 1804,
+    "file": "Flag of France.svg",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_France"
+   }
+  ],
+  "First French Empire": [
+   {
+    "from": 1804,
+    "to": 1815,
+    "file": "Flag of France.svg",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_France"
+   }
+  ],
+  "French Second Republic": [
+   {
+    "from": 1848,
+    "to": 1852,
+    "file": "Flag of France.svg",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_France"
+   }
+  ],
+  "French Third Republic": [
+   {
+    "from": 1870,
+    "to": 1885,
+    "file": "Flag of France.svg",
+    "source": "https://en.wikipedia.org/wiki/Flag_of_France"
+   }
+  ],
+  "Holy Roman Empire": [
+   {
+    "from": 1430,
+    "to": 1806,
+    "file": "Banner of the Holy Roman Emperor with haloes (1430-1806).svg",
+    "flags": "s",
+    "note": "The imperial banner (double-headed eagle), the emperor's, not a national flag.",
+    "source": "https://en.wikipedia.org/wiki/Flags_of_the_Holy_Roman_Empire"
+   }
+  ]
+ },
+ "drop": {
+  "Habsburg Monarchy": [
+   [
+    1487,
+    1805,
+    "No flag of the monarchy as a whole: the red-white-red Wikidata gives is the Austrian archduchy's banner, and the black and yellow imperial colours became a state flag only with the Austrian Empire (1804)."
+   ]
+  ],
+  "Holy Roman Empire Minor States": [
+   [
+    1430,
+    1806,
+    "A grouping of the source map, not a state."
+   ]
+  ],
+  "Tsardom of Russia": [
+   [
+    1547,
+    1695,
+    "No national flag: the 1668 ship flag Wikidata gives is a reconstruction."
+   ]
+  ],
+  "Mozambique": [
+   [
+    1886,
+    1973,
+    "A Portuguese colony: Wikidata dates the 1983 flag wrongly."
+   ]
+  ],
+  "Martinique": [
+   [
+    1886,
+    2019,
+    "Wikidata gives the flag adopted in 2023."
+   ]
+  ],
+  "Puerto Rico": [
+   [
+    1886,
+    1951,
+    "The Puerto Rican flag was made official only in 1952 (a Spanish, then US territory)."
+   ]
+  ],
+  "Venezuela": [
+   [
+    1834,
+    1930,
+    "Wikidata's dates for Venezuela's 19th-century flags do not match the flags' own years."
+   ]
+  ],
+  "Cuba": [
+   [
+    1886,
+    1901,
+    "A Spanish colony, then under US military rule, until 1902."
+   ]
+  ],
+  "Jammu and Kashmir": [
+   [
+    1948,
+    1948,
+    "Wikidata gives the state flag of 1952."
+   ]
+  ],
+  "Taiwan": [
+   [
+    1895,
+    1949,
+    "A Japanese colony until 1945 (no flag of its own), then a province of the Republic of China."
+   ]
+  ],
+  "Korea": [
+   [
+    1886,
+    1945,
+    "Not checked: Joseon and the Korean Empire used the Taegeukgi from 1883, Korea was Japanese from 1910."
+   ]
+  ]
+ },
+ "checked": {
+  "Kingdom of France": "The royal standard (white with gold fleurs-de-lis); the kingdom had no national flag.",
+  "Denmark-Norway": "The Dannebrog.",
+  "Dutch Republic": "The States Flag (red-white-blue), the republic's flag from the mid-17th century; the Prince's Flag (orange-white-blue) was used before."
+ },
+ "early": {
+  "Kingdom of England": "The royal banner of the arms (from c. 1200) and St George's cross.",
+  "Kingdom of Portugal": "The royal banners of the arms, which changed with the arms.",
+  "Kingdom of Scotland": "The saltire.",
+  "Spanish Empire": "The Cross of Burgundy, the Spanish military and naval flag from 1506.",
+  "Republic of Pisa": "The red flag with the white cross of Pisa."
+ },
+ "standard": {
+  "Kingdom of France": [
+   0,
+   1791
+  ],
+  "Holy Roman Empire": [
+   0,
+   1806
+  ],
+  "Spanish Empire": [
+   1506,
+   1700
+  ],
+  "Kingdom of Portugal": [
+   1143,
+   1829
+  ]
+ },
+ "modern": {
+  "rome": "IT",
+  "mongols": "MN",
+  "abbasid caliphate": "IQ",
+  "umayyad caliphate": "SY",
+  "seljuk dynasty": "IR",
+  "timurid empire": "UZ",
+  "macedonian empire": "GR",
+  "holy roman empire": "DE",
+  "ottoman": "TR",
+  "mughal": "IN",
+  "russia": "RU",
+  "britain": "GB",
+  "byzantium": "TR"
+ },
+ "colors": {},
+ "same_design": {
+  "Flag of France (1976–2020).svg": "Flag of France.svg",
+  "Flag of Italy (1946–2003).svg": "Flag of Italy.svg",
+  "Flag of Togo (3-2).svg": "Flag of Togo.svg"
+ }
+}

@@ -203,6 +203,24 @@ export class HistoryMap extends EventTarget {
     const sym = (id, filter, layout, paint, extra = {}) => m.addLayer({ id, type: 'symbol', source: extra.source || 'labels', filter, ...(extra.minzoom != null ? { minzoom: extra.minzoom } : {}), ...(extra.maxzoom != null ? { maxzoom: extra.maxzoom } : {}),
       layout: { 'text-field': ['get', 'n'], 'text-max-width': 7.5, 'symbol-sort-key': ['-', 0, ['get', 'a']], ...layout },
       paint: { 'text-halo-blur': 0.6, ...paint } });
+    // flag badges (js/flags.js): beside the name, below it; placed after the names (lower in the stack), so a
+    // badge never covers a name, and after the war markers' blocks, so it never sits under a marker. A badge
+    // shows once its state covers about 50 by 50 pixels; at world zoom only the largest powers have one.
+    m.addSource('badges', { type: 'geojson', data: EMPTY });
+    const badge = (id, kinds, extra) => m.addLayer({ id, type: 'symbol', source: 'badges', filter: ['in', ['get', 'k'], ['literal', kinds]], ...extra,
+      layout: { 'icon-image': ['get', 'id'], 'icon-size': ['interpolate', ['linear'], ['zoom'], 1, 0.82, 4, 1, 7, 1.15],
+        'icon-anchor': 'top', 'icon-offset': ['match', ['get', 'o'], 2, ['literal', [0, 30]], ['literal', [0, 21]]], 'icon-padding': 1, 'symbol-sort-key': ['-', 0, ['get', 'a']], visibility: 'visible' },
+      paint: { 'icon-opacity': 1 } });
+    badge('badge-lo', ['s', 'e'], { maxzoom: Z_SPLIT });
+    badge('badge-hi', ['s', 'p'], { minzoom: Z_SPLIT });
+    // which badges may show depends on the zoom (the state's size on screen, and at world zoom a cap on the
+    // count): the source is given those when a zoom ends
+    m.on('zoomend', () => this._badgeData());
+    // war markers are HTML markers: an invisible symbol at each keeps badges off them
+    m.addSource('warblk', { type: 'geojson', data: EMPTY });
+    const blk = new ImageData(22, 22);
+    m.addImage('blk', blk, { pixelRatio: 1 });
+    m.addLayer({ id: 'warblk', type: 'symbol', source: 'warblk', layout: { 'icon-image': 'blk', 'icon-allow-overlap': true, 'icon-ignore-placement': false } });
     const under = { 'text-color': c.textUnder, 'text-halo-color': c.haloUnder, 'text-halo-width': 1 };
     // peoples: one by one when zoomed in ...
     sym('lbl-people-s', ['all', kind('u'), ['<', ['get', 'a'], 60000]], { 'text-font': SERIF_IT, 'text-size': 11, 'text-padding': 4 }, under, { minzoom: 3.8 });
@@ -628,6 +646,7 @@ export class HistoryMap extends EventTarget {
       el.title = mk.label;
     }
     for (const [id, w] of this._wm) if (!keep.has(id)) { w.remove(); this._wm.delete(id); }
+    this._setData('warblk', { type: 'FeatureCollection', features: this._warOn === false ? [] : markers.map((mk) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: [mk.lo, mk.la] }, properties: { w: 1 } })) });
     this._warLayers();
   }
 
@@ -757,6 +776,31 @@ export class HistoryMap extends EventTarget {
     this.map.setFilter('col-fill', f);
     this.map.setFilter('col-sel', d == null || !selSt ? NONE : ['all', f, ['==', ['get', 'st'], selSt]]);
     this.map.getSource('col-lbl').setData(labels || EMPTY);
+  }
+
+  /** Flag badges for the map shown (js/flags.js badgeFeatures). */
+  setBadges(features) {
+    this._badges = features || [];
+    this._bz = null;
+    this._badgeData();
+    this.setBadgesVisible(true);
+  }
+
+  _badgeData() {
+    const z = Math.round(this.map.getZoom() * 4) / 4;
+    if (z === this._bz || !this._badges) return;
+    this._bz = z;
+    const cap = z < 2 ? 6 : z < 3 ? 12 : 30;     // at world zoom only the largest powers
+    const fs = this._badges.filter((f) => f.properties.zm <= z && (z >= Z_SPLIT || f.properties.re < cap));
+    this.badgeCount = fs.length;
+    this._setData('badges', { type: 'FeatureCollection', features: fs });
+  }
+
+  /** Badges are hidden while the years run and come back when the map rests. */
+  setBadgesVisible(on) {
+    if (this._badgesOn === on) return;
+    this._badgesOn = on;
+    for (const l of ['badge-lo', 'badge-hi']) this.map.setLayoutProperty(l, 'visibility', on ? 'visible' : 'none');
   }
 
   setModern(fc, visible) {

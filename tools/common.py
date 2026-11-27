@@ -32,7 +32,7 @@ def cache_path(key, ext=''):
     return os.path.join(CACHE, h + ext)
 
 
-def fetch(url, data=None, headers=None, cache_key=None, ext='', min_gap=1.0, timeout=120, tries=6):
+def fetch(url, data=None, headers=None, cache_key=None, ext='', min_gap=1.0, timeout=120, tries=6, max_wait=None):
     """GET (or POST when data is given) with on-disk cache. Returns bytes."""
     key = cache_key or (url + ('|' + data if data else ''))
     path = cache_path(key, ext)
@@ -61,7 +61,9 @@ def fetch(url, data=None, headers=None, cache_key=None, ext='', min_gap=1.0, tim
             if e.code in (429, 500, 502, 503, 504) and attempt < tries - 1:
                 ra = e.headers.get('Retry-After')
                 pause = int(ra) if ra and ra.isdigit() else delay
-                log(f'  HTTP {e.code}, waiting {pause}s')
+                if max_wait is not None and pause > max_wait:
+                    raise
+                log(f'  HTTP {e.code}, waiting {pause}s ({url[:60]})')
                 time.sleep(pause)
                 delay = min(delay * 2, 120)
                 continue

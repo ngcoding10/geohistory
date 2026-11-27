@@ -330,6 +330,21 @@ p.lead.century { font: 400 17.5px/1.5 var(--serif); color: var(--ink); text-wrap
 .ki { display: flex; justify-content: center; }
 .ksw { display: inline-block; width: 26px; height: 16px; border: 2px solid; border-radius: 2px; }
 .ktrio { display: inline-flex; }
+.kflag { display: inline-flex; width: 22px; height: 15px; border: 1px solid rgba(40, 34, 26, 0.8); border-radius: 1px; overflow: hidden; }
+.kflag i { flex: 1; }
+.kflag i:nth-child(1) { background: #fff; }
+.kflag i:nth-child(2) { background: #2f5aa8; }
+.kflag i:nth-child(3) { background: #c8312c; }
+.kflag { flex-direction: column; }
+/* the flag in a territory panel */
+.flagbox { display: flex; gap: 12px; align-items: flex-start; margin: 10px 0 6px; }
+.flagbig { width: auto; max-width: 132px; max-height: 88px; border: 1px solid var(--line, rgba(0, 0, 0, 0.25)); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); flex: none; }
+.flagbig.emblem { border: none; box-shadow: none; max-height: 96px; }
+.flagtext { min-width: 0; }
+.flagtext p { margin: 0 0 4px; }
+.flagname { font-weight: 600; }
+.flagwarn { color: var(--warn, #8a5a00); }
+.noflag { margin: 8px 0; }
 .ktrio .ksw { width: 11px; border-width: 2px 1px; margin-left: -1px; }
 .kemp { background: linear-gradient(90deg, var(--p1) 0 50%, var(--p2) 50%); position: relative; }
 .kunder { display: inline-flex; align-items: center; justify-content: center; border: 1px dashed var(--line-2) !important; font: italic 11px/1 var(--serif); color: var(--ink-3); }

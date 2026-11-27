@@ -1,6 +1,12 @@
 // Turns a loaded border snapshot into what the map draws for one year: groups (empires, states, regions of
 // peoples), draw slots, colours, and labels (points, and lines across the largest states for spaced lettering).
-import { attachGroups, assignSlots, tones, empireName, colorGroups, preferredIndex, PALETTE } from './groups.js';
+import { attachGroups, assignSlots, tones, empireName, colorGroups, fillCandidates } from './groups.js';
+
+// today's countries' flag colours (data/flags/colors.json): {p: power key -> ISO, c: ISO -> [first, second]}
+let FC = null;
+export function setFlagColors(fc) { FC = fc; }
+/** The present-day country a power's fill comes from (ISO code), or null. */
+export const modernOf = (pk) => FC?.p?.[pk] || null;
 import { makeAreaTest } from './geo.js';
 
 const REGION_HUES = ['#d9c08c', '#b4cf9c', '#dab4a0', '#a9cfc6', '#dccb8e', '#c9c0e0', '#bcd3a0', '#e0b7b9', '#a8c6dc', '#d6c4a2'];
@@ -76,6 +82,7 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
   for (const f of doc.features) { const k = f.properties.k; if (!featsOf.has(k)) featsOf.set(k, []); featsOf.get(k).push(f); }
   for (const f of doc.features) { const p = pols[f.properties.k]; f.properties.u = p.under && !p.s ? 1 : 0; }
   const adj = assignSlots(doc, groups, 7);
+  doc.adj = adj;
   const colorOf = (key) => powers[key]?.color || '#c9c1b0';
   // each group's power key: what its colour is remembered by from year to year
   const keyOf = (g) => {
@@ -90,14 +97,17 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
   const prefs = groups.map((g) => {
     if (g.kind === 'region') return null;
     g.pk = keyOf(g);
-    return preferredIndex(g.pk || g.name, powers[g.pk]?.color);
+    g.iso = modernOf(g.pk);
+    const core = g.kind === 'empire' ? g.members.map((k) => pols[k]).find((p) => p.core) : null;
+    g.carea = core ? Math.max(core.a, g.area * 0.25) : g.area;   // a colonial empire counts a quarter of its colonies
+    return fillCandidates(g.pk || g.name, powers[g.pk]?.color, g.iso ? FC.c[g.iso] : null);
   });
   const pick = colorGroups(groups, adj, prefs);
   doc.powerColor = new Map();
   for (const g of groups) {
     if (g.kind === 'region') g.color = REGION_HUES[hash(g.name) % REGION_HUES.length];
     else {
-      g.color = PALETTE[pick.get(groups.indexOf(g))];
+      g.color = pick.get(groups.indexOf(g));
       if (g.pk && !doc.powerColor.has(g.pk)) doc.powerColor.set(g.pk, g.color);
     }
     const tg = tones(g.color, g.name, dark);
@@ -132,7 +142,7 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
         lines.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: pv.line }, properties: { ...pv.props, a } });
         placed.set(key, pv);
         point(t, n, a, p, { zf: pv.props.zf }, at);
-        return;
+        return at;
       }
     }
     const ll = a >= BIG ? labelLine(geoms, at) : null;
@@ -149,13 +159,16 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
       lines.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: ll.line }, properties: props });
     }
     point(t, n, a, p, { zf: ll && ll.len >= 6 ? props.zf : 99 }, at);
+    // a badge goes below the label point: below the compact name, and below the name along the line (which
+    // runs through the point, bowed towards the pole) when that is placed instead
+    return at;
   };
   for (const g of groups) {
     const ms = g.members.map((k) => pols[k]).filter((p) => p.l);
     if (!ms.length) continue;
     if (g.kind === 'state') {
       const p = ms[0];
-      big('s', text(p), p.a, p);
+      g.at = big('s', text(p), p.a, p);
     } else if (g.kind === 'empire') {
       // the empire's name on its largest part, and again on other large parts far away from it
       const sorted = [...ms].sort((a, b) => b.a - a.a);
@@ -166,7 +179,7 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
       }
       // an empire with one drawn member (its other parts are only listed) keeps that member's own name
       const name = ms.length === 1 ? text(ms[0]) : g.name;
-      anchors.forEach((p, i) => big('e', name, i ? p.a : Math.max(g.area, BIG), p));
+      anchors.forEach((p, i) => { const at = big('e', name, i ? p.a : Math.max(g.area, BIG), p); if (!i) g.at = at; });
       for (const p of ms) point('p', text(p), p.a, p, { zf: 99 });
     } else {
       // a region of peoples: its name at the member nearest the area-weighted middle

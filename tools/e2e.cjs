@@ -509,7 +509,7 @@ async function waitEvents(page) {
     await page.waitForFunction(() => /Battle/.test(document.querySelector('#panelBody .kicker')?.textContent || ''), null, { timeout: 30000 });
     const btText = await page.locator('#panelBody').innerText();
     ok(/Part of/i.test(btText) && (await page.evaluate(() => window.__geo.state.year)) === 1916, `clicking a battle marker opens it in 1916 with its war ("${btName.slice(0, 60)}")`);
-    ok(await page.locator('#key .key-toggle').isVisible() && /One colour|A state/.test(await page.locator('#key').innerText()) && /Occupied/.test(await page.locator('#key').innerText()), 'the map key is visible and explains states, empires, occupation, war and events');
+    ok(await page.locator('#key .key-toggle').isVisible() && /today's country's flag/.test(await page.locator('#key').innerText()) && /Badge = the flag at the time/.test(await page.locator('#key').innerText()) && /Occupied/.test(await page.locator('#key').innerText()), 'the map key is visible and explains states, empires, occupation, war and events');
     await page.locator('#key input[type=checkbox]').uncheck();
     await page.waitForTimeout(500);
     ok(await page.evaluate(() => [...document.querySelectorAll('.warwrap')].every((e) => getComputedStyle(e).display === 'none') && window.__geo.map.map.getLayoutProperty('war-edge', 'visibility') === 'none'), 'the key turns the war layer off');
@@ -518,6 +518,61 @@ async function waitEvents(page) {
     ok(await page.locator('#keyBody').isHidden(), 'the key collapses');
     await page.click('#key .key-toggle');
     }
+    // ---------------- flags: fills from today's country's flag, badges with the flag at the time ----------------
+    const { page: fp, errors: fErr, ctx: fCtx } = await newPage(browser, { width: 1280, height: 800 });
+    const atYear = async (y, view) => {
+      await fp.goto(BASE + '?y=' + y);
+      await waitH1(fp, 'The world in ' + y);
+      await fp.waitForFunction((yy) => window.__geo?.state.year === yy && window.__geo.state.snapDoc && window.__geo.map?.ready, y, { timeout: 60000 });
+      if (view) await fp.evaluate((v) => window.__geo.map.map.jumpTo(v), view);
+      await fp.waitForFunction(() => window.__geo.map.badgeCount > 0, null, { timeout: 30000 }).catch(() => {});
+      await fp.waitForTimeout(3000);
+      // badges placed on screen (each layer on its own: MapLibre can throw on a query across layers while a
+      // symbol source is being replaced; then ask again)
+      let last = [];
+      for (let i = 0; i < 20; i++) {
+        try {
+          last = await fp.evaluate(() => ['badge-lo', 'badge-hi'].flatMap((l) => window.__geo.map.map.queryRenderedFeatures({ layers: [l] }))
+            .map((f) => ({ n: f.properties.n, id: f.properties.id, a: f.properties.a, file: window.__geo.flagFor(f.properties.n, window.__geo.state.year)?.file || '' })));
+          if (last.length) return last;
+        } catch (e) { if (i > 15) throw e; }
+        await fp.waitForTimeout(1000);   // badges come in once the map rests and the era's sheet is loaded
+      }
+      return last;
+    };
+    const world = { center: [40, 35], zoom: 1.6 };
+    const b50 = await atYear(1950, world);
+    ok(b50.some((b) => b.n === 'Soviet Union' && /Soviet Union/.test(b.file)), `1950 at world zoom: the Soviet Union has a badge with the Soviet flag (${b50.length} badges: ${b50.slice(0, 6).map((b) => b.n).join(', ')})`);
+    ok(b50.length <= 12 && b50.every((b) => b.a >= 400000), `1950 at world zoom: badges only on large states, at most 12 (${b50.length}; smallest ${Math.min(...b50.map((b) => b.a))} km2)`);
+    const nb = await fp.evaluate(() => {
+      const d = window.__geo.state.snapDoc; let pairs = 0, bad = 0, min = 9;
+      for (const [i, js] of d.adj) for (const j of js) {
+        const a = d.groups[i], b = d.groups[j];
+        if (i >= j || a.kind === 'region' || b.kind === 'region') continue;
+        pairs++; const dd = window.__geo.hexDist(a.color, b.color); min = Math.min(min, dd); if (a.color === b.color || dd < 0.08) bad++;
+      }
+      const ru = d.groups.find((g) => g.name === 'Soviet Union');
+      return { pairs, bad, min: Math.round(min * 1000) / 1000, ru: ru && ru.iso };
+    });
+    ok(nb.pairs > 100 && nb.bad === 0 && nb.ru === 'RU', `1950: all ${nb.pairs} neighbouring fills differ (closest pair ${nb.min} in OKLab), the Soviet Union is filled from Russia's flag (${nb.ru})`);
+    await fp.evaluate(() => window.__geo.selectPolityByName('Soviet Union', { fly: false }));
+    await fp.waitForSelector('#panelBody .flagbox img', { timeout: 30000 });
+    ok(/Soviet Union/.test(await fp.locator('#panelBody .flagbox').innerText()) && /shown for 19\d\d to 19\d\d/.test(await fp.locator('#panelBody .flagbox').innerText()), 'the Soviet Union panel shows its flag larger, with its name and years');
+    const europe = { center: [14, 50], zoom: 3.6 };
+    const b40 = await atYear(1940, europe);
+    ok(b40.some((b) => b.n === 'Germany' && /Flag of Germany \(1935–1945\)/.test(b.file)), `1940 in Europe: Germany's badge is the swastika flag of 1935 to 1945 (${b40.map((b) => b.n).join(', ')})`);
+    const sw = (bs) => bs.filter((b) => /1935–1945/.test(b.file)).length;
+    const b30 = await atYear(1930, europe);
+    const f30 = await fp.evaluate(() => window.__geo.flagFor('Germany', 1930)?.file || '');
+    ok(sw(b30) === 0 && /3-2/.test(f30), `1930: no swastika flag; Germany's badge is the Weimar black-red-gold (${f30})`);
+    const b46 = await atYear(1946, europe);
+    ok(sw(b46) === 0, `1946: no swastika flag on the map (${b46.length} badges)`);
+    const b00 = await atYear(1900, world);
+    ok(b00.some((b) => b.n === 'Russian Empire' && /Flag of Russia/.test(b.file)), `1900 at world zoom: the Russian Empire has a badge with its flag (${b00.map((b) => b.n).join(', ')})`);
+    ok(b00.every((b) => b.a >= 400000) && !b00.some((b) => /Luxembourg|Belgium|Netherlands|Switzerland|Denmark/.test(b.n)), '1900 at world zoom: no badge on small states');
+    ok(fErr.length === 0, `no console errors on the flag checks${fErr.length ? ': ' + fErr.slice(0, 3).join(' | ') : ''}`);
+    await fCtx.close();
+
     ok(errors.length === 0, `no console errors on desktop${errors.length ? ': ' + errors.slice(0, 5).join(' | ') : ''}`);
 
     // reduced motion: no animation, the year changes at once

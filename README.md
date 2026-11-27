@@ -52,7 +52,7 @@ without coordinates is placed). The border, ruler and year-article steps give id
 second state: after the run from scratch `fetch_extra.py` was refreshed from Wikidata, which added 240 births
 that an old failed query had left out.
 
-Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (124 checks; uses the globally installed Playwright; starts its
+Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (134 checks; uses the globally installed Playwright; starts its
 own `python3 -m http.server`).
 
 ## How it fits with the other apps
@@ -90,14 +90,80 @@ may take larger steps (at most four). With `prefers-reduced-motion` there is no 
 slowly (over 70 ms on two changes in a row) a jump goes to its end in one change and play skips the maps it
 cannot keep up with.
 
-## Colours
+## Colours and flags
 
-Every power has a colour of its own from a palette of 24 bold, flat colours (twelve hues in two lightness
-bands, `js/groups.js`): the hue of its colour in the source data, or its key when that has none. A graph colouring
-on each map (neighbours from the outlines, larger powers first) keeps it unless a larger neighbour already holds a
-colour too close to it, so neighbours always differ; the result depends only on the map, not on the year shown
-before. Over 1936 to 1947 seven of 1,818 unchanged shapes change colour from one year to the next. Peoples and
-sketch-map regions stay pale with italic names. Borders are a dark line with a flat rim, no blur.
+**Fill colour = today's country's flag.** Each power is filled with a colour of the flag of the present-day
+country that holds most of its land (`data/flags/colors.json`, `tools/build_flags.py`): the Russian Empire, the
+Soviet Union and Russia take Russia's flag, the Ottoman Empire Türkiye's, Rome Italy's. That country is measured
+on the yearly maps (sample points in every shape the power draws as a state of its own, weighted by area and
+years, not its colonies), except that a power named after one of today's countries that holds some of that
+country is that country (Denmark, not Norway; Spain, not Argentina), and a few are set by hand
+(`tools/curated/flags.json` `modern`: Rome, the Mongols, the Abbasids, the Umayyads, the Seljuks, the Timurids,
+Macedon, the Holy Roman Empire, the Ottomans, the Mughals, the Byzantine Empire). The flag's colours come from
+its current image on Wikimedia Commons: the most distinctive colour first (its share of the flag, counted for
+less when many flags share that hue, as red, white and blue do; white, grey and black are never a fill), then
+the next colour of another hue. Each is set into one of two lightness bands so that names stay readable.
+
+**Clash rule.** A graph colouring on each map (neighbours from the outlines) lets larger powers choose first; a
+power takes its first colour unless a neighbour that already chose is too close to it (under 0.085 in OKLab),
+then its flag's second colour, then the same two in the other lightness band, and only then the nearest of the
+24 colours of round 8 that is clear of every such neighbour. Neighbours always differ, and the result depends
+only on the map, not on the year shown before. Powers with no country (none of the sample points fell on land
+today's countries hold) keep their round-8 palette colour. Peoples and sketch-map regions stay pale with italic
+names. Borders are a dark line with a flat rim, no blur. No flag stripes are drawn inside states (tried on paper,
+left out: it would cost legibility and frame time).
+
+**Badge = the flag at the time.** A small flag beside each state's name (below it), from sprite sheets of
+15-pixel-high badges, one sheet per era, loaded when a year of that era is first shown (`js/flags.js`). A badge
+shows once its state covers about 50 by 50 pixels; at world zoom only the largest powers have one (at most 6,
+12 and 30 below zoom 2, 3 and 3.2), and more as you zoom in (30, 60, 120). Badges are placed by MapLibre's symbol
+collision after the names and after an invisible block at each war marker, so a badge never covers a name or a
+marker; one that would is not drawn. An empire shows its ruling state's flag at world zoom and its parts' own
+flags (colonies) when zoomed in. Badges hide while the years run and come back when the map rests. The panel of
+a territory or empire shows the flag larger, with its name, the years it is shown for, notes, its licence and
+links to Commons and Wikidata.
+
+Which flag: Wikidata's flag image (P41) with its start and end time, in force on 1 July of the year shown,
+asked of a curated regime, then of the Wikidata era of the map's item that covers the year (Nazi Germany within
+"Germany"), then of the item itself. A statement without dates counts from the adoption date of its flag item
+(P163, inception) or within the years in the file name ("Flag of Germany (1867–1918)"), else not at all, unless the
+state is listed as checked. Dropped: deprecated statements; files named fictitious, proposed, reconstructed,
+alternative or variant, from a medieval atlas, or a civil, merchant, naval or war ensign; every flag before 1600
+except six states read by hand; and the spans in `tools/curated/flags.json` `drop`, each with its reason.
+Curated rows replace Wikidata where it is wrong or silent (the Russian Empire's black-yellow-white flag of 1858 to
+1882, China's five flags from the Qing to the People's Republic, Iran's Pahlavi and Islamic Republic flags,
+Austria-Hungary's civil ensign, the Bourbon Restoration's white flag), each with a source. A royal banner or
+standard, and a flag that is not official or dated only by its file name, is marked in the panel. A state with
+no flag shows none; a former state's coat of arms (P94, on its own item) is shown in the panel only, marked
+"emblem, not a flag".
+
+Coverage (`data/flags/index.json` `stats`; states drawn as a state of their own in some year of the era, and of
+those the ones with a flag in it): before 1600, 6 of 924; 1600s 16 of 142; 1700s 21 of 173; 1800 to 1849 51 of
+244; 1850 to 1885 69 of 178; 1886 to 1913 57 of 104; 1914 to 1938 80 of 132; 1939 to 1960 106 of 141; 1961 to 2019
+185 of 196. In all 307 states have a dated flag (591 dated runs, 492 images; 80 runs marked uncertain, 17 a royal
+banner or standard). What has none, and why: almost every state before 1600 and most outside Europe and the
+Americas before 1800 (no national flag, or only a modern drawing on Wikidata: the Ottoman flags before 1844 are
+filed as "fictitious", the Mughal Empire, the Qing before 1862, Tokugawa Japan, the Roman Empire have none);
+colonies whose Wikidata item has no flag; and 29 runs whose image Wikimedia Commons refused to serve to the
+build (`tools/cache/flags_refused.json`; rerun `tools/build_flags.py --retry`). Three such images are replaced by
+the same design (`same_design`: France 1976 to 2020 and Italy 1946 to 2003, which differ only in shade).
+
+Spot check (round 9): 85 state-years were read against Wikipedia's flag articles and the Commons file pages,
+among them the Soviet Union (1925, 1940, 1950, 1985), Germany (1925, 1934, 1940, 1946, 2000; Weimar, the 1933
+to 1935 black-white-red, the swastika flag of 15 September 1935 to May 1945, none under occupation), the German
+Empire, the Russian Empire (1800, 1870, 1900), the Ottoman Empire, the Qing and the Republic of China, Japan,
+Great Britain and the United Kingdom, France (Kingdom, the Revolution, both Empires, Restoration, July
+Monarchy, Vichy), Spain (Bourbon, Second Republic, both Franco flags, today), Italy, Austria-Hungary, the
+Austrian Empire, the Mughal Empire, the Confederacy (1861, 1862, 1864), the United States (star counts) and Iran
+(Qajar, Pahlavi, Islamic Republic). Found and fixed: Wikidata's "fictitious" Ottoman flags of 1299 to 1844;
+the Russian black-yellow-white dated to 1896; the tricolour missing for Napoleon's France and the Consulate (its
+flag item dates it from 1853) and the 1790 tricolour for 1792; the Holy Roman Empire's pre-1433 banner shown for
+1620; no flag at all for China 1886 to 2019, Iran before 1964 and Austria-Hungary; the Habsburg Monarchy given
+Austria's red-white-red; Taiwan given the Republic of China's flags under Japanese rule; gaps for the
+Confederacy in 1862 and the United States in 1864 and 1865; a reconstructed Muscovite ship flag; undated
+modern flags shown decades too early (Morocco, Guatemala, Burma, Sweden without the union mark, Monaco,
+Andorra, Bolivia, Chile, Siam, Hawaii); wrong flags for Mozambique, Martinique, Puerto Rico, Cuba, Venezuela,
+Jammu and Kashmir and Ghana.
 
 ## War on the map
 
@@ -123,7 +189,9 @@ about 3 km, below a pixel at world zoom) until the map is zoomed in past 2.4, th
 country names for the event lists from a 14 KB file (the 1 MB search index loads when the search box is used);
 and the sketch-map outlines a Cliopatria year draws from an extract of its snapshot (`data/clio/o<year>.json`,
 about half of the snapshot). Measured in headless Chromium on a local server (bodies, uncompressed), bytes
-before the first map: 1776 6.37 to 4.39 MB, 1942 7.41 to 5.71 MB, 300 BC 5.47 to 3.66 MB.
+before the first map: 1776 6.37 to 4.39 MB, 1942 7.41 to 5.71 MB, 300 BC 5.47 to 3.66 MB. Round 9 (flags; measured up to the first map with its badges, a slightly later point):
+1776 4.08 to 4.33 MB, 1942 5.53 to 5.79 MB, 300 BC 3.53 to 3.68 MB: the fill colours (36 KB), the flag index (80 KB,
+28 KB compressed) and one era's badge sheet (17 to 251 KB). The panel's larger flag (about 10 KB) loads on click.
 
 ## Empires and their parts
 

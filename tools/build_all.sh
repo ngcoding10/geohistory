@@ -31,6 +31,7 @@ python3 build_history.py      # data/history/ruledby.json
 python3 build_timelines.py    # data/timelines/* (one per territory and modern country)
 python3 ruler_coverage.py 150 # data/rulers/coverage.json (share of map years with a known ruler)
 python3 build_changes.py      # data/changes.json (curated, checked against Wikidata)
+python3 build_flags.py        # data/flags/* (flags by year, badge sheets, fill colours; needs Pillow and Playwright)
 python3 audit.py              # data/audit.json (fact checks)
 python3 check_glyphs.py       # every label character has a font file
 python3 build_version.py      # js/data-version.js

@@ -1,8 +1,9 @@
 // GeoHistory: choose a year, see the world's borders, powers and events at that time.
 import { HistoryMap, isDark, Z_SPLIT, hatchColor } from './map.js';
-import { prepareDoc } from './prepare.js';
+import { prepareDoc, setFlagColors, modernOf } from './prepare.js';
+import { loadFlagColors, loadFlags, ensureSheet, badgeFeatures, flagBlock, flagFor } from './flags.js';
 import { Travel, SPEEDS, reducedMotion } from './travel.js';
-import { membershipOf, empireName, listedParts, tones, vividColor } from './groups.js';
+import { membershipOf, empireName, listedParts, tones, vividColor, hexDist } from './groups.js';
 import {
   loadBordersIndex, snapshotFor, nextSnapshotAfter, datedRange, clioRange, loadSnapshot, loadEventsIndex, eventsBetween, nearestYearsWithEvents,
   loadPowers, loadEntities, getJSON, loadUS, loadModern, loadSea, loadMeta, countFor, findEvent, loadEmpires, loadSuccession, loadOccupations, loadShape, decodeGeom,
@@ -115,7 +116,9 @@ async function init() {
     showStatus('This browser cannot draw the map (it needs WebGL). You can still read each year in the panel.', true);
   });
 
-  const [, , pw, em, oc] = await Promise.all([loadBordersIndex(), loadEventsIndex(), loadPowers(), loadEmpires(), loadOccupations()]);
+  const [, , pw, em, oc, fc] = await Promise.all([loadBordersIndex(), loadEventsIndex(), loadPowers(), loadEmpires(), loadOccupations(),
+    loadFlagColors().catch(() => null)]);
+  setFlagColors(fc);
   powers = pw;
   empires = em;
   occupations = oc;
@@ -185,6 +188,7 @@ async function goToYear(year, { month = 0, day = 0, keepSel = true, fromSlider =
   updateBadge();
   updateOccupied();
   updateWar(state.year);
+  updateFlags();
   await updateUS();
   if (token !== state.token) return;
 
@@ -569,6 +573,21 @@ async function updateWar(y, data = null) {
   drawKey();
 }
 
+// flag badges: the flag of each state at the time, beside its name (js/flags.js). Set when the map rests; hidden
+// while the years run.
+let flagTok = 0;
+async function updateFlags() {
+  if (!mapOk) return;
+  const tok = ++flagTok;
+  const y = state.year, doc = state.snapDoc;
+  try {
+    await loadFlags();
+    await ensureSheet(map.map, y);
+  } catch (e) { console.warn('flags', e); return; }
+  if (tok !== flagTok || y !== state.year || doc !== state.snapDoc) return;
+  map.setBadges(badgeFeatures(doc, y, empires));
+}
+
 function drawKey() {
   renderKey(els.key, {
     doc: state.snapDoc, year: state.year, dark: isDark(), wars: state.wars, warOn: state.warOn,
@@ -876,6 +895,7 @@ async function selectionHeader(s) {
     else if (p.under) facts.append(h('dt', null, 'Map'), h('dd', null, `Not a state in Cliopatria: outline from the ${formatYear(p.under)} world sketch map (approximate, may be out of date)`));
     else facts.append(h('dt', null, 'Map'), h('dd', null, `Borders as of ${formatYear(state.snap.y)}${p.pr === 1 ? ', approximate' : ''}`));
     box.append(facts);
+    if (!p.under || p.s) { const fb = await flagBlock(s.name, state.year); if (fb) box.append(fb); }
     for (const o of occupiedNow(s.name)) box.append(occupationNote(o));
     box.append(await successionBlock(s.name), todayBlock(s));
     try {
@@ -951,6 +971,9 @@ async function selectionHeader(s) {
     if (s.area) facts.append(h('dt', null, 'Area'), h('dd', null, `about ${fmtArea(s.area)} drawn on the map`));
     facts.append(h('dt', null, 'Parts'), h('dd', null, `${drawn.length} drawn${listed.length ? `, ${listed.length} more listed` : ''} in ${formatYear(state.year)}`));
     box.append(facts);
+    const coreP = drawn.find(({ p }) => p.core)?.p;
+    const coreName = coreP?.n || (e.core || [])[0];
+    if (coreName) { const fb = await flagBlock(coreName, state.year, { label: coreName }); if (fb) box.append(fb); }
     box.append(h('p.note', null, 'At world zoom the parts are drawn as one power. Zoom in to see each part, or choose one below.'));
     if (drawn.length) {
       box.append(h('h2', null, `Parts on the map in ${formatYear(state.year)}`));
@@ -1486,6 +1509,8 @@ function travelShow(dur = 0) {
   updateOccupied();
   updateUS({ dur: Math.min(dur || 400, 500) });
   updateWar(state.year);
+  ++flagTok;
+  map.setBadgesVisible(false);
   if (state.sel?.kind === 'polity') remapPolity();
   if (state.sel?.kind === 'empire') remapEmpire();
   if (travel.playing && performance.now() - lastPanel > (travel.speed <= 1 ? 900 : 2500)) {
@@ -1709,4 +1734,4 @@ function writeUrl() {
 }
 
 // exposed for the end-to-end test only
-window.__geo = { state, goToYear: (y) => goToYear(y), get travel() { return travel; }, stopsBetween, travelTo, step, get map() { return map; }, selectEmpire, selectPolityByName, Z_SPLIT };
+window.__geo = { state, modernOf, flagFor, hexDist, goToYear: (y) => goToYear(y), get travel() { return travel; }, stopsBetween, travelTo, step, get map() { return map; }, selectEmpire, selectPolityByName, Z_SPLIT };

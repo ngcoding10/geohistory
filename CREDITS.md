@@ -118,6 +118,27 @@ GeoHistory ships only processed files under `data/`. They are rebuilt by the scr
   `tools/link_wikidata.py`)
 - **Licence:** CC0 1.0 (public domain dedication). Links in the app go to the English Wikipedia articles.
 
+### Flags: Wikidata and Wikimedia Commons
+- **What:** the flag of each state by date (Wikidata's flag image, P41, with its start and end time
+  qualifiers; flag items, P163, for the adoption date of an undated image; coats of arms, P94, for former states
+  without a flag), queried by `tools/build_flags.py`; and the flag images themselves from Wikimedia Commons.
+  Wikidata is CC0. `tools/curated/flags.json` (written for GeoHistory, each row with a source article) replaces
+  or drops Wikidata's flag where it is wrong or silent.
+- **Images:** the Commons files named in `data/flags/index.json` (field `f`: file name and licence class, and
+  the author for files that are not public domain), rendered to PNG (from the original SVG with headless
+  Chromium where Commons served it, else Wikimedia's own 330-pixel rendering), scaled down and framed for the
+  badges (`data/flags/s*.png`) and the panel (`data/flags/b/*.png`). The panel links every flag to its
+  Commons page and names its licence and author.
+- **Licences, by class** (from each file's Commons page, `LicenseShortName`): of the 492 flag images, 433 public
+  domain, 55 CC BY-SA, 3 "Attribution", 1 OGL Oman; of the 202 emblems shown in panels, 74 public domain, 110
+  CC BY-SA, 16 CC BY, 2 "Attribution". Most national flags are public domain (works of governments, or too
+  simple for copyright); many historical reconstructions on Commons are the drawer's own work under CC BY-SA:
+  those keep that licence, with the author named in the panel and in `data/flags/index.json`. Not cleared for
+  reuse outside this site beyond what each licence allows. Flags are shown as historical facts; a flag shown is
+  not an endorsement (the swastika flag of 1935 to 1945 is shown for Germany as its national flag of the time).
+- **Fill colours:** today's flags (Wikidata P41 of each country with an ISO 3166 code, P297), from the same
+  images; the colours are measured, not copied.
+
 ### Curated American Revolution events
 - `tools/supplement_events.json`: 76 events from 1763 to 1789, written for GeoHistory and checked against
   the Wikipedia article linked from each entry. They add day, approximate place and colony where
