@@ -1858,5 +1858,57 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q2487": {
+  "title": "Thirty Years' War",
+  "y": 1618,
+  "place": "Central Europe, mainly the Holy Roman Empire",
+  "paras": [
+   "The Thirty Years' War, fought mainly in Central Europe from 1618 to 1648, was one of the most destructive wars in European history. An estimated 4.5 to 8 million soldiers and civilians died from fighting, famine and disease, and parts of Germany lost more than half their population.",
+   "Its roots lay in the religious divisions of the Holy Roman Empire after the Reformation. The Peace of Augsburg of 1555 had divided the empire between Catholic and Lutheran states, but Protestantism kept spreading beyond those lines, and princes and emperor disputed the limits of imperial power. In 1618 the Protestant nobles of Bohemia, angered by Ferdinand II's restrictions on their religious freedom, threw his representatives out of a window of Prague Castle, the Defenestration of Prague, and rejected him as king, choosing the Protestant Frederick V of the Palatinate instead.",
+   "Frederick was soon defeated and deposed, but the fighting spread into the Palatinate and drew in outside powers: Spain and the Dutch Republic, then at war in the Eighty Years' War, and kings seeking land in the empire, Christian IV of Denmark and, from 1630, Gustavus Adolphus of Sweden, who came to the aid of the northern Protestants and pushed back the Catholic armies. Until 1635 it was mainly a civil war within the empire, largely ended by the Peace of Prague; but France then entered the war in alliance with Sweden, turning it into a wider struggle against the Habsburgs, Emperor Ferdinand III and Spain.",
+   "The Peace of Westphalia of 1648 ended the war. It gave the German states, such as Bavaria and Saxony, greater autonomy, gave Sweden territory in northern Germany, and included Spain's recognition of Dutch independence."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+    "title": "Thirty Years' War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/thirty-years-war",
+    "title": "Thirty Years' War",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     6
+    ]
+   }
+  ],
+  "claims": [
+   "The war was fought mainly in Central Europe from 1618 to 1648.",
+   "An estimated 4.5-8 million died (HISTORY.com: more than 8 million casualties); parts of Germany lost over 50%.",
+   "The Peace of Augsburg (1555) divided the empire into Catholic and Lutheran states; Protestantism spread further; disputes over imperial authority.",
+   "Bohemian nobles, angered by Ferdinand II's decree on religion, threw his representatives from a window of Prague Castle in 1618.",
+   "Frederick V of the Palatinate replaced Ferdinand as King of Bohemia and was soon deposed; fighting spread to the Palatinate.",
+   "The Dutch Republic and Spain were drawn in; Christian IV and Gustavus Adolphus intervened; Sweden joined in 1630 for the northern Protestants.",
+   "Until 1635 mainly a civil war within the empire, largely ended by the Peace of Prague; France then entered allied with Sweden against Ferdinand III and Spain.",
+   "The Peace of Westphalia (1648) gave autonomy to states such as Bavaria and Saxony, territory to Sweden, and Spain's acceptance of Dutch independence."
+  ],
+  "disagree": "Death tolls: 4.5 to 8 million in the estimates Wikipedia cites; HISTORY.com says more than 8 million.",
+  "checked": null
  }
 }
