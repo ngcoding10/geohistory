@@ -841,5 +841,186 @@
   ],
   "disagree": "Dates: Russia used the Julian calendar until February 1918, so the revolution is dated 25 October (Old Style) or 7 November (New Style). Its character: a popular revolution in Soviet accounts, a coup in many Western ones.",
   "checked": null
+ },
+ "Q488": {
+  "title": "Atomic bombings of Hiroshima and Nagasaki",
+  "y": 1945,
+  "place": "Hiroshima and Nagasaki (Japan)",
+  "paras": [
+   "On 6 and 9 August 1945 the United States dropped atomic bombs on the Japanese cities of Hiroshima and Nagasaki. They were the product of the Manhattan Project. The Hiroshima bomb, 'Little Boy', was a uranium gun-type weapon dropped from the B-29 Enola Gay, commanded by Paul Tibbets; the Nagasaki bomb, 'Fat Man', was a plutonium implosion weapon, carried by the B-29 Bockscar under Charles Sweeney.",
+   "On 26 July the Allies' Potsdam Declaration demanded Japan's unconditional surrender and threatened 'prompt and utter destruction'; the Japanese government ignored it. Orders of 25 July listed Hiroshima, Kokura, Niigata and Nagasaki as targets.",
+   "Over Hiroshima on the morning of 6 August, Little Boy exploded about 1,900 feet above the city, close to where soldiers of the Japanese Second Army were exercising. President Truman announced the new weapon that day and warned of more if Japan did not surrender. On 9 August Bockscar's primary target was the arsenal city of Kokura, but it was hidden by smoke and haze; short of fuel, the crew turned to the secondary target, Nagasaki, where the bombardier dropped the bomb after glimpsing the city through the clouds.",
+   "Estimates of the dead by the end of 1945 range from 90,000 to 166,000 in Hiroshima and 60,000 to 80,000 in Nagasaki; an official US history estimates some 70,000 deaths in Hiroshima from the immediate effects of blast, heat and radiation. In the same days the Soviet Union declared war on Japan and invaded Manchuria. Japan announced its surrender on 15 August and signed the instrument of surrender on 2 September 1945. Whether the bombings were necessary to end the war, or were a war crime, is still debated."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
+    "title": "Atomic bombings of Hiroshima and Nagasaki",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1945/hiroshima.htm",
+    "title": "The Atomic Bombing of Hiroshima, August 6, 1945 (The Manhattan Project: An Interactive History)",
+    "publisher": "US Department of Energy, Office of History and Heritage Resources",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     8
+    ]
+   },
+   {
+    "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1945/nagasaki.htm",
+    "title": "The Atomic Bombing of Nagasaki, August 9, 1945",
+    "publisher": "US Department of Energy, Office of History and Heritage Resources",
+    "accessed": "2026-11-27",
+    "supports": [
+     3,
+     7,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "The US bombed Hiroshima on 6 August and Nagasaki on 9 August 1945.",
+   "Little Boy was a uranium gun-type bomb dropped from the Enola Gay; Fat Man was a plutonium implosion bomb.",
+   "Tibbets and Sweeney commanded; Bockscar (Bock's Car) carried the Nagasaki bomb.",
+   "The Potsdam Declaration of 26 July threatened prompt and utter destruction; Japan ignored it.",
+   "The 25 July orders listed Hiroshima, Kokura, Niigata and Nagasaki.",
+   "Little Boy detonated about 1,900 feet above Hiroshima, over where Second Army soldiers were exercising; Truman announced it and warned of more attacks.",
+   "Kokura was obscured by smoke and haze; short of fuel the crew bombed Nagasaki, the secondary target, through a gap in the clouds.",
+   "About 70,000 died in Hiroshima from the initial effects (DOE); 90,000-166,000 in Hiroshima and 60,000-80,000 in Nagasaki by the end of 1945 (Wikipedia).",
+   "The Soviet Union declared war on Japan and invaded Manchuria.",
+   "Japan announced surrender on 15 August and signed on 2 September 1945.",
+   "Supporters and critics still debate whether the bombings were necessary or a war crime."
+  ],
+  "disagree": "Death tolls differ widely: about 70,000 in Hiroshima from the immediate effects and about 40,000 at first, approaching 70,000 by January 1946, in Nagasaki (US Department of Energy history), against 90,000-166,000 and 60,000-80,000 by the end of 1945 (estimates cited by Wikipedia).",
+  "checked": null
+ },
+ "Q43653": {
+  "title": "Apollo 11",
+  "y": 1969,
+  "place": "Launched from Kennedy Space Center, Florida (United States); landed in the Sea of Tranquility on the Moon",
+  "paras": [
+   "Apollo 11 was the NASA mission that first landed people on the Moon. A Saturn V rocket launched it from Launch Complex 39A at the Kennedy Space Center on 16 July 1969 with Neil Armstrong as commander, Michael Collins as command module pilot and Edwin 'Buzz' Aldrin as lunar module pilot.",
+   "It answered the goal President John F. Kennedy set on 25 May 1961: to land a man on the Moon and return him safely to Earth before the end of the decade. The Soviet Union had led the early Space Race, launching the first satellite, Sputnik 1, in October 1957 and the first person in space, Yuri Gagarin, in April 1961.",
+   "On 20 July, Armstrong and Aldrin separated in the lunar module Eagle from the command module Columbia, which Collins kept in lunar orbit. Partly flown by hand by Armstrong, Eagle landed in the Sea of Tranquility at 20:17 UTC. About six hours later Armstrong stepped onto the surface, saying 'That's one small step for [a] man, one giant leap for mankind'; Aldrin followed 19 minutes later. An estimated 650 million people watched on television. Their moonwalk lasted about two and a half hours, and they collected about 21.5 kg of lunar rock and soil.",
+   "After more than 21 hours on the surface, Eagle's ascent stage rejoined Columbia, and the crew splashed down in the Pacific on 24 July 1969, where USS Hornet picked them up. The landing fulfilled Kennedy's goal; a Soviet probe, Luna 15, crashed on the Moon on 21 July while Apollo 11 was there."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Apollo_11",
+    "title": "Apollo 11",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.nasa.gov/history/apollo-11-mission-overview/",
+    "title": "Apollo 11 Mission Overview",
+    "publisher": "NASA",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  ],
+  "claims": [
+   "Apollo 11 launched on 16 July 1969 from Kennedy Space Center (Cape Kennedy) on a Saturn V.",
+   "Crew: Armstrong (commander), Collins (CM pilot), Aldrin (LM pilot).",
+   "Kennedy set the goal on 25 May 1961.",
+   "On 20 July Eagle separated from Columbia; Collins stayed in orbit.",
+   "Eagle, partly piloted by Armstrong manually, landed in the Sea of Tranquility (20:17 UTC).",
+   "Armstrong stepped out hours after landing with the 'one small step' words; Aldrin followed 19 minutes later.",
+   "An estimated 650 million watched on television.",
+   "The EVA lasted about 2 h 31 min; about 21.5 kg of samples were collected; more than 21 hours on the surface.",
+   "Splashdown in the Pacific on 24 July 1969; recovered by USS Hornet.",
+   "Sputnik 1 (October 1957), Gagarin (April 1961); Luna 15 crashed on the Moon on 21 July 1969."
+  ],
+  "disagree": "The '[a]' in Armstrong's first words is an editorial insertion in the way the quotation is usually printed.",
+  "checked": null
+ },
+ "Q8707": {
+  "title": "Meiji Restoration",
+  "y": 1868,
+  "place": "Kyoto and Edo (Tokyo), Japan",
+  "paras": [
+   "The Meiji Restoration was the overthrow of the Tokugawa shogunate, the military government of the shōguns, and the return of practical power to the emperor. On 3 January 1868 Emperor Meiji declared political power restored to the Imperial House. The movement was led by the domains of Satsuma and Chōshū.",
+   "The shogunate was weakened by economic and political strains and by foreign pressure. In July 1853 the American Commodore Matthew Perry sailed four warships into Tokyo (Edo) Bay to force Japan to open regular trade with the West, which it had kept to a minimum for over two hundred years; the shogunate's acceptance of treaties on foreign terms, the 'unequal treaties', divided the samurai. Many rallied to the slogan sonnō jōi, 'revere the emperor, expel the barbarians'.",
+   "Supporters of the Tokugawa fought on in the Boshin War of 1868-1869 and briefly in the Republic of Ezo, but by the early 1870s the emperor's government was unchallenged. Its aims were set out in the Charter Oath of 1868. In a few years it replaced the old currency, abolished the feudal domains and ended the privileged status of the samurai, and it set out to build industry and an army on Western models. Discontented samurai rose against these changes in the Saga Rebellion and the Satsuma Rebellion.",
+   "The Meiji Constitution of 1889 gave the new Empire of Japan its framework until the Allied occupation after the Second World War. Industrialised on Western lines, Japan went on to pursue colonial interests in East Asia. At the time it was called goishin, the 'honourable restoration'; it has also been translated as the Meiji Reformation."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+    "title": "Meiji Restoration",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1830-1860/opening-to-japan",
+    "title": "The United States and the Opening to Japan, 1853",
+    "publisher": "Office of the Historian, US Department of State",
+    "accessed": "2026-11-27",
+    "supports": [
+     5
+    ]
+   }
+  ],
+  "claims": [
+   "The Meiji Restoration restored practical power to the emperor in 1868, ending the shogunal system.",
+   "On 3 January 1868 Emperor Meiji declared political power restored to the Imperial House.",
+   "Satsuma and Chōshū led the overthrow.",
+   "Economic and political strain and foreign pressure, the unequal treaties, and the sonnō jōi movement weakened the shogunate.",
+   "On 8 July 1853 Perry led four ships into Tokyo Bay seeking to re-establish trade after more than 200 years.",
+   "Tokugawa resistance continued in the Boshin War and the Republic of Ezo; by the 1870s imperial authority was unchallenged.",
+   "The Charter Oath set out the government's aims.",
+   "The government abolished the old currency, the domain system and the samurai's status; it industrialised on Western models; the Saga and Satsuma rebellions opposed this.",
+   "The Meiji Constitution of 1889 lasted until the Allied occupation; Japan pursued colonial interests in East Asia.",
+   "It was called goishin at the time and has been translated as the Meiji Reformation."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
