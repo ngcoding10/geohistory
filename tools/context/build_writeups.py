@@ -119,8 +119,11 @@ def main():
         if out:
             name = b['f'].replace('.json', '.json.gz')
             raw = json.dumps(out, ensure_ascii=False, separators=(',', ':')).encode()
-            with gzip.open(os.path.join(DEST, name), 'wb', compresslevel=9) as g:
-                g.write(raw)
+            gz = gzip.compress(raw, compresslevel=9, mtime=0)     # no timestamp: unchanged blocks stay byte-identical
+            path = os.path.join(DEST, name)
+            if not os.path.exists(path) or open(path, 'rb').read() != gz:
+                with open(path, 'wb') as g:
+                    g.write(gz)
             kb = os.path.getsize(os.path.join(DEST, name)) // 1024
             out_index[b['f']] = {'n': len(out), 'kb': kb}
             total += kb

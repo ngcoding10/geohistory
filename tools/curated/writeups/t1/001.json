@@ -2279,5 +2279,735 @@
   ],
   "disagree": "Evacuation figures are counted differently: about 49,000 from the first 10 km zone and 68,000 more from the 30 km zone (Wikipedia), about 115,000 in 1986 and 220,000 later (UNSCEAR), some 350,000 in all (World Nuclear Association).",
   "checked": null
+ },
+ "Q42005": {
+  "title": "Black Death",
+  "y": 1346,
+  "place": "Eurasia and North Africa",
+  "paras": [
+   "The Black Death was the pandemic of plague that swept through western Asia, North Africa and Europe from 1346 to 1353, one of the deadliest in human history. It was caused by the bacterium Yersinia pestis, carried mainly by fleas on rats and, in its pneumonic form, passed directly between people through the air. Contemporaries did not call it 'black'; they spoke of the pestilence or the great death.",
+   "Its exact origin is disputed, though genetic studies point to Central Asia. Europeans of the time traced it to Caffa in the Crimea, the Genoese trading port besieged by the Golden Horde army of Jani Beg, whose troops were sick; the Mongols are said to have catapulted corpses over the walls. Genoese ships carried the disease to Constantinople in the summer of 1347, and in October 1347 twelve galleys put in at Messina in Sicily with dead and dying sailors aboard. From Sicily and northern Italy it spread along the trade routes: Marseille and Tunis, then Paris, England and Spain by mid-1348, and Germany, Scotland and Scandinavia by 1350. In the Islamic world it reached Alexandria in 1347 and Cairo in 1348, where more than a third of the city's inhabitants died, and Mecca with the pilgrims of the Hajj the same year.",
+   "No one understood how it spread. Physicians bled patients and burned herbs; many blamed sin or the stars, and others blamed scapegoats. Jews were accused of poisoning wells and murdered in many towns in 1348 and 1349, about 2,000 of them in Strasbourg in February 1349, and many fled east to Poland. Bands of flagellants went from town to town whipping themselves in public penance until the papacy turned against them. Some ports began to hold arriving ships in isolation, first for thirty days and later for forty, the origin of the word quarantine.",
+   "Estimates of the dead vary: HISTORY.com gives more than 20 million in Europe, almost a third of the population, while the Wikipedia article gives up to 50 million, between 30 and 60 percent of Europeans and about a third of the people of the Middle East. Labour became scarce and wages rose, loosening the old feudal order, and some historians link the shock to the coming of the Renaissance. Plague returned every few generations for centuries; Europe's population did not recover its earlier level until the 16th century."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Black_Death",
+    "title": "Black Death",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/black-death",
+    "title": "Black Death: Plague Causes, Symptoms & Impact",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "A plague pandemic in Europe, western Asia and North Africa, 1346-1353, one of the deadliest in history.",
+   "Caused by Yersinia pestis, spread mainly by flea bites and in pneumonic cases by respiratory droplets.",
+   "Contemporaries did not call it black; they called it pestilence or great death.",
+   "Origin disputed; genetic evidence points to Central Asia (Tian Shan).",
+   "Reportedly introduced from Caffa, besieged by Jani Beg's Golden Horde army, which catapulted corpses over the walls.",
+   "Reached Constantinople in summer 1347; twelve Genoese galleys reached Sicily (Messina) in October 1347 with dead and sick sailors.",
+   "Spread to Marseille and Tunis, then Paris and England by mid-1348, Germany, Scotland and Scandinavia by 1350.",
+   "Reached Alexandria in 1347 and Cairo in 1348 (more than a third died); Mecca in 1348 with Hajj pilgrims.",
+   "Physicians bled patients and burned herbs; many blamed sin or the stars.",
+   "Jews were accused of poisoning wells and massacred in 1348-49 (about 2,000 in Strasbourg, Feb 1349); many fled to Poland.",
+   "Flagellant processions until the papacy turned against them; isolation of ships for 30 then 40 days, origin of 'quarantine'.",
+   "Deaths: more than 20 million in Europe, almost a third (HISTORY.com); up to 50 million, 30-60% of Europe and about a third of the Middle East (Wikipedia).",
+   "Labour shortage raised wages; linked by some historians to the Renaissance; plague recurred for centuries; Europe's population did not recover until the 16th century."
+  ],
+  "disagree": "Death toll: HISTORY.com gives more than 20 million in Europe (almost a third); Wikipedia gives up to 50 million, 30 to 60 percent of Europe. HISTORY.com says the plague is thought to have come from Asia; Wikipedia says the origin is disputed and its recent genetic studies point to the Tian Shan.",
+  "checked": null
+ },
+ "rQ3044-800": {
+  "title": "Charlemagne crowned emperor",
+  "y": 800,
+  "place": "Rome",
+  "paras": [
+   "On Christmas Day 800, in St Peter's Basilica in Rome, Pope Leo III crowned Charlemagne, King of the Franks and of the Lombards, and proclaimed him 'emperor of the Romans'. He was the first emperor recognised in the West for more than three centuries, since the fall of the Western Roman Empire, and later tradition counted him the first Holy Roman Emperor.",
+   "Charlemagne had ruled the Franks alone since his brother Carloman died in 771. Three decades of campaigns had added the Lombard kingdom of northern Italy, Bavaria, Saxony, whose pagans he forced into baptism after long and brutal wars, and lands in northern Spain. He was the papacy's protector, and the pope needed him: in April 799 Leo III's enemies in Rome attacked him and tried to put out his eyes and cut out his tongue. Leo escaped and fled north to Charlemagne at Paderborn, who sent him back to Rome under Frankish escort to be reinstated.",
+   "Charlemagne followed in late 1800. On 23 December Leo swore an oath that he was innocent of the charges against him, and two days later, at the Christmas mass, he crowned the king. Charlemagne's son Charles the Younger was anointed king at the same time. Historians still debate who planned the coronation and what it meant; some argue that Charlemagne meant to take the imperial title from as early as 798 or 799.",
+   "The new title marked the height of his prestige, but it offended the emperors in Constantinople, who saw themselves as the only Roman emperors. After years of conflict over the Adriatic, the Byzantine emperor Michael I finally sent envoys to Aachen to recognise him. Charlemagne made his son Louis the Pious co-emperor in 813 and died in January 814; within a few decades his empire was divided among his heirs, but the western imperial title lasted, in the Holy Roman Empire, until 1806."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Charlemagne",
+    "title": "Charlemagne",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/charlemagne",
+    "title": "Charlemagne: Facts, Empire & Holy Roman Emperor",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Leo III crowned Charlemagne emperor of the Romans on Christmas Day 800 in St Peter's Basilica, Rome.",
+   "He was the first recognised emperor in the West since the fall of the Western Roman Empire about three centuries earlier.",
+   "Charlemagne became sole king of the Franks in 771 after Carloman's death.",
+   "He conquered the Lombards (774), Bavaria, Saxony (forced conversion) and northern Spain; he protected the papacy.",
+   "In April 799 Leo's enemies attacked him and tried to remove his eyes and tongue; he fled to Charlemagne at Paderborn, who sent him back to Rome with legates to be reinstated.",
+   "Leo swore an oath of innocence on 23 December 800; Charles the Younger was anointed king at the same time.",
+   "Historians debate the coronation's significance; Collins and Fried argue Charlemagne planned it by 798/799.",
+   "The title brought conflict with the Byzantine emperors in Constantinople.",
+   "After conflict over the Adriatic, Michael I sent envoys to Aachen to recognise Charlemagne as emperor.",
+   "In 813 Charlemagne crowned Louis the Pious co-emperor; he died in January 814; the empire was divided among his heirs and dissolved by the late 800s.",
+   "The Holy Roman Empire lasted from 800 to 1806 (as dated by HISTORY.com)."
+  ],
+  "disagree": "HISTORY.com gives Charlemagne's birth as around 742; Wikipedia gives 2 April 748. HISTORY.com calls him the first ruler of the Holy Roman Empire from 800; Wikipedia calls his realm the Carolingian Empire and notes that historians debate what the coronation meant.",
+  "checked": null
+ },
+ "Q8729": {
+  "title": "Russian Revolution",
+  "y": 1917,
+  "place": "Russia (Petrograd)",
+  "paras": [
+   "The Russian Revolution was the upheaval that began in 1917 with two revolutions, ended the rule of the tsars and, after a civil war, brought the Bolsheviks to power and led to the founding of the Soviet Union. It broke out in the middle of the First World War, which had cost Russia immense casualties, while shortages of food and fuel and rising prices had destroyed faith in Tsar Nicholas II.",
+   "The February Revolution began on 8 March 1917 (23 February in the Julian calendar Russia then used), when crowds demanding bread filled the streets of Petrograd, joined by striking workers. Troops sent to restore order fired on them in places, but the garrison wavered. The Duma formed a Provisional Government, and on 15 March Nicholas II abdicated, ending three centuries of Romanov rule. Alongside the new government, workers and soldiers formed councils, or soviets, led by the Petrograd Soviet; for months Russia had two rival centres of power, the government running the war and foreign affairs while the soviets held sway at home.",
+   "The Provisional Government, in which Alexander Kerensky became the leading figure, granted civil liberties but kept Russia in the deeply unpopular war, and unrest grew. On 6-7 November 1917 (24-25 October in the Julian calendar, hence 'October Revolution') the Bolsheviks under Vladimir Lenin seized government buildings and other key points in Petrograd in an almost bloodless coup and formed a government of soviets headed by Lenin.",
+   "Civil war followed between the Bolshevik Red Army and the loosely allied White forces of monarchists, liberals and other socialists. In the early hours of 16 July 1918 the Bolsheviks shot Nicholas II, his wife and their five children in a basement in Yekaterinburg, where the family had been moved that spring. The Reds won, and the Soviet Union was founded in 1922 (HISTORY.com says 1923); the Bolsheviks became its Communist Party. The revolution was a model and a warning for the revolutions that followed the First World War, and set the stage for the Soviet rivalry with the West in the Cold War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Russian_Revolution",
+    "title": "Russian Revolution",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/russian-revolution",
+    "title": "Russian Revolution: Causes, Timeline & Bolsheviks",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Two revolutions in 1917 ended tsarist rule; after civil war the Bolsheviks founded the Soviet Union.",
+   "It broke out during WWI, which caused immense Russian casualties; food and fuel shortages and inflation destroyed faith in Nicholas II.",
+   "The February Revolution began on 8 March 1917 (23 February Julian) with bread demonstrations in Petrograd joined by striking workers; troops fired but wavered.",
+   "The Duma formed a provisional government; Nicholas II abdicated on 15 March (2 March O.S.), ending Romanov rule.",
+   "Soviets formed in Petrograd; dual power: the Provisional Government held military and foreign affairs, the soviets domestic power.",
+   "Kerensky was a leader of the Provisional Government, which granted liberties but continued the unpopular war.",
+   "On 6-7 November (24-25 October O.S.) 1917 the Bolsheviks under Lenin seized Petrograd in a nearly bloodless coup and formed a government with Lenin at its head.",
+   "Civil war between the Red Army and the White forces (monarchists, capitalists, democratic socialists).",
+   "The Bolsheviks shot Nicholas II, Alexandra and their five children on 16 July 1918 in Yekaterinburg, where the family had been moved in April-May 1918.",
+   "The Reds won; the Soviet Union was founded; the Bolsheviks became its Communist Party.",
+   "It was a precursor of the post-WWI revolutions and set the stage for the Cold War rivalry."
+  ],
+  "disagree": "HISTORY.com dates the end of the civil war and the founding of the Soviet Union to 1923; Wikipedia puts the end of the revolutionary period in 1922, and the Soviet Union was formally established in December 1922.",
+  "checked": null
+ },
+ "Q38789": {
+  "title": "Battle of Stalingrad",
+  "y": 1942,
+  "place": "Stalingrad (now Volgograd), southern Russia",
+  "paras": [
+   "The Battle of Stalingrad, from August 1942 to February 1943, was fought between Nazi Germany and its allies, chiefly Romania, Italy and Hungary, and the Soviet Union for the city of Stalingrad on the Volga. It is considered the largest and deadliest urban battle in history and the deadliest battle of the Second World War, and the Soviet victory is generally seen as the turning point of the war in Europe.",
+   "In the summer of 1942 Germany struck south rather than at Moscow. Stalingrad was an industrial city making artillery, and the Volga a vital shipping route; Hitler also prized the city for bearing Stalin's name and added it to the campaign's objectives in July. On 23 August Friedrich Paulus's 6th Army and part of the 4th Panzer Army attacked, while Luftwaffe raids reduced much of the city to rubble; its civilians had not been evacuated, and tens of thousands were killed. Stalin's Order No. 227, 'Not a step back!', forbade retreat.",
+   "From 13 September the fighting moved into the city itself. Vasily Chuikov's 62nd Army, down to about 20,000 men, held a narrowing strip along the river. The hill of Mamayev Kurgan, the central railway station and the grain elevator changed hands again and again, snipers fought from the rooftops, and Sergeant Yakov Pavlov's platoon held a four-storey building, 'Pavlov's House', for weeks.",
+   "On 19 November the Red Army, under plans by Georgy Zhukov and Aleksandr Vasilevsky, launched Operation Uranus, striking the weaker Romanian armies on the flanks; by late November it had encircled the 6th Army, with roughly 300,000 German and Axis troops. Relief efforts failed, Hitler forbade a breakout, and the trapped army starved through the winter. Paulus's army capitulated on 2 February 1943, the first of Hitler's field armies to surrender; nearly 100,000 were taken prisoner, most of whom died in Soviet camps. Axis losses are put between 800,000 and 1.5 million killed, wounded or captured. Germany never recovered the initiative in the east."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
+    "title": "Battle of Stalingrad",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-stalingrad",
+    "title": "Battle of Stalingrad - Definition, Dates & Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Fought between Germany and its Axis allies and the Soviet Union for Stalingrad (now Volgograd), August 1942 to February 1943.",
+   "Considered the largest and deadliest urban battle and the deadliest battle of WWII.",
+   "The Soviet victory is regarded as the turning point of the European war.",
+   "In summer 1942 Germany attacked southern Russia, not Moscow; Stalingrad made artillery; the Volga was a key shipping route; Hitler valued the name, adding the city to objectives in July 1942.",
+   "On 23 August 1942 the 6th Army and 4th Panzer Army attacked with heavy Luftwaffe bombing that reduced much of the city to rubble.",
+   "Civilians were not evacuated; tens of thousands were killed; Order No. 227 'Not a step back!'.",
+   "From 13 September the battle moved into the city; Chuikov's 62nd Army was down to about 20,000 men.",
+   "Mamayev Kurgan, the railway station and the grain elevator changed hands repeatedly; Pavlov's House; snipers on rooftops.",
+   "On 19 November the Red Army launched Operation Uranus against the Romanian flanks; Zhukov and Vasilevsky organised the counter-attack.",
+   "By late November nearly 300,000 German and Axis troops of the 6th Army were encircled; Hitler refused surrender and they starved.",
+   "The 6th Army capitulated on 2 February 1943, the first of Hitler's field armies to surrender.",
+   "Axis casualties are estimated at 800,000 to 1.5 million killed, wounded or captured.",
+   "Nearly 100,000 Germans were captured; most died in Soviet camps."
+  ],
+  "disagree": "HISTORY.com says nearly 100,000 Germans were captured and that pockets fought on until early March; Wikipedia dates the 6th Army's capitulation to 2 February 1943. Casualty totals vary widely by source.",
+  "checked": null
+ },
+ "Q80034": {
+  "title": "Armenian genocide",
+  "y": 1915,
+  "place": "Ottoman Empire (Anatolia and the Syrian desert)",
+  "paras": [
+   "The Armenian genocide was the systematic destruction of the Armenian people of the Ottoman Empire during the First World War. It was carried out by the ruling Committee of Union and Progress (the 'Young Turks'), led by Talaat Pasha and Enver Pasha, mainly through deportations and death marches from Anatolia into the Syrian desert, mass killings, and the forced conversion of others, chiefly women and children. About two million Armenians lived in the empire on the eve of the war.",
+   "Armenians, Christians in a Muslim empire, had long lived with lesser rights, and from the late 19th century the authorities came to see them as a threat; in the massacres of 1894 to 1896 under Sultan Abdul Hamid II at least 100,000 were killed. The Young Turks who seized power in 1908 turned to a radical Turkish nationalism and feared that the Armenian homeland in Anatolia would break away as the Balkans had. When the empire entered the war on Germany's side in 1914 and Enver's army was crushed by the Russians at Sarikamish in the winter of 1914-15, he blamed the Armenians for siding with Russia.",
+   "On the night of 23-24 April 1915 hundreds of Armenian intellectuals and community leaders were arrested in Constantinople, and most were later killed; Armenians mark 24 April as the beginning of the genocide. On Talaat's orders, an estimated 800,000 to 1.2 million Armenians were then driven on death marches to the Syrian desert in 1915 and 1916, without food or water. Men were often killed outright; a 'Special Organization' of irregulars, many of them released convicts, carried out massacres, children were taken and converted, and Muslim settlers took over Armenian homes and property.",
+   "By 1922 only about 388,000 Armenians remained in the empire. After the Ottoman defeat in 1918 the leaders fled to Germany; several, Talaat among them, were later assassinated by Armenian avengers. Together with the concurrent Assyrian and Greek genocides, the destruction of the Armenians helped make possible an ethnically Turkish state, the Republic of Turkey, whose government still denies that it was genocide. Almost all historians outside Turkey accept it as such, and 36 countries had recognised it by 2026, the United States in 2021."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Armenian_genocide",
+    "title": "Armenian genocide",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/armenian-genocide",
+    "title": "Armenian Genocide: Facts & Timeline",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Operation_Nemesis",
+    "title": "Operation Nemesis",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Carried out by the CUP, mainly through death marches from Anatolia to the Syrian desert and forced Islamisation of women and children.",
+   "Talaat and Enver were CUP leaders.",
+   "About two million Armenians lived in the Ottoman Empire in 1914.",
+   "Christians had unequal rights; authorities saw Armenians as a threat from the late 19th century; the 1894/95-96 massacres under Abdul Hamid II killed at least 100,000 (HISTORY.com: hundreds of thousands).",
+   "The Young Turks took power in 1908 and turned to radical Turkish nationalism, fearing Armenian Anatolia would break away.",
+   "Enver was defeated at Sarikamish (Dec 1914 - Jan 1915) and blamed the Armenians for siding with Russia.",
+   "On the night of 23-24 April 1915 hundreds of Armenian intellectuals and leaders were arrested in Constantinople; most were later murdered; 24 April is taken as the start.",
+   "On Talaat's orders an estimated 800,000 to 1.2 million Armenians were sent on death marches to the Syrian desert in 1915-16, without food or water.",
+   "The Special Organization formed killing squads, often of ex-convicts.",
+   "Children were kidnapped and converted; Muslim families took Armenian homes and property.",
+   "In 1922 only 388,000 Armenians remained; after the 1918 surrender the leaders fled to Germany; Operation Nemesis killed several, including Talaat (Berlin, March 1921).",
+   "With the Assyrian and Greek genocides it enabled the ethnonationalist Republic of Turkey; Turkey denies it was genocide.",
+   "Almost all historians outside Turkey accept it; 36 countries recognised it as of 2026; US recognition in 2021 (Biden)."
+  ],
+  "disagree": "The 1890s massacres: Wikipedia says at least 100,000 killed in 1895-96; HISTORY.com says hundreds of thousands in 1894-96. HISTORY.com says the intellectuals were arrested and executed on 24 April; Wikipedia says they were arrested on the night of 23-24 April and most were murdered later.",
+  "checked": null
+ },
+ "Q8690": {
+  "title": "Cultural Revolution",
+  "y": 1966,
+  "place": "China",
+  "paras": [
+   "The Cultural Revolution (in full, the Great Proletarian Cultural Revolution) was the political upheaval Mao Zedong, chairman of the Chinese Communist Party, launched in 1966 and which lasted until his death in 1976. Mao, whose standing had suffered after the disastrous Great Leap Forward and the famine that followed it, claimed that bourgeois elements had infiltrated the party and society to restore capitalism, and set out to purge his rivals and reassert his authority, with the help of radicals including his wife Jiang Qing and the defence minister Lin Biao.",
+   "In May 1966 the Politburo set up the Maoist Cultural Revolution Group, and in August Mao called on the young to take party leaders to task; schools were closed, and students formed paramilitary bands of Red Guards. They attacked teachers, intellectuals and officials and set out to destroy the 'Four Olds' (old customs, culture, habits and ideas), wrecking temples, artefacts and historic sites. A personality cult grew around Mao, and Lin Biao had the 'Little Red Book' of his quotations printed by the millions. Head of state Liu Shaoqi was purged and died in prison in 1969, and Deng Xiaoping was removed. As Red Guard factions fought one another and cities neared anarchy, Mao sent in the army from 1967 and more than ten million urban young people were sent to the countryside.",
+   "Lin Biao was named Mao's successor in 1969 but died in a plane crash in Mongolia in September 1971, apparently fleeing to the Soviet Union. Premier Zhou Enlai then restored some order and some purged officials, while the radical 'Gang of Four' around Jiang Qing gained influence. Deng, brought back in the 1970s, was purged again in April 1976; after Mao died that September, the Gang of Four were arrested.",
+   "Estimates of the dead range from about 1 to 2 million, and tens of millions were persecuted, imprisoned or humiliated; industrial output in 1968 fell 12 percent below that of 1966. Deng Xiaoping became paramount leader in 1978 and dismantled the ideology of the Cultural Revolution with the 'reform and opening up'."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Cultural_Revolution",
+    "title": "Cultural Revolution",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     8,
+     10,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/cultural-revolution",
+    "title": "Cultural Revolution - Definition, Effects & Mao Zedong",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Launched by Mao in 1966, it lasted until his death in 1976.",
+   "Mao said bourgeois elements had infiltrated the government and society to restore capitalism; his position had weakened after the Great Leap Forward; he used radicals including Jiang Qing and Lin Biao.",
+   "In May 1966 the Politburo created the Cultural Revolution Group.",
+   "In August 1966 Mao called for youth mobilisation and closed the schools.",
+   "Students formed Red Guards, who attacked intellectuals and officials and sought to destroy the Four Olds.",
+   "A personality cult grew around Mao; Lin Biao printed the Little Red Book by the millions.",
+   "Liu Shaoqi was purged and died in prison in 1969; Deng Xiaoping was purged.",
+   "Mao had the army restore order from September 1967; Red Guards were sent to rural areas; more than 10 million urban youth relocated (Down to the Countryside).",
+   "Lin was named successor in 1969 and died in a plane crash in Mongolia in September 1971, apparently fleeing to the USSR.",
+   "Zhou Enlai restored some order; the Gang of Four became influential from 1972.",
+   "Deng was purged again in April 1976; after Mao's death in September 1976 the Gang of Four were removed/arrested.",
+   "About 1.5 million killed (HISTORY.com); industrial output in 1968 12% below 1966.",
+   "Death toll estimates 1-2 million; tens of millions persecuted; Deng became paramount leader in 1978 and dismantled the Cultural Revolution's ideology with reform and opening up."
+  ],
+  "disagree": "Start: Wikipedia dates the launch to May 1966 (the 16 May notice and the Cultural Revolution Group), HISTORY.com to the Central Committee plenum of August 1966; both are part of the start. Death toll: HISTORY.com gives some 1.5 million, Wikipedia a range of 1 to 2 million.",
+  "checked": null
+ },
+ "Q49077": {
+  "title": "Six-Day War",
+  "y": 1967,
+  "place": "Sinai, the West Bank and Jerusalem, and the Golan Heights",
+  "paras": [
+   "The Six-Day War of 5 to 10 June 1967 was fought between Israel and its Arab neighbours Egypt, Jordan and Syria, with support from Iraq. In six days Israel took the Sinai Peninsula and the Gaza Strip from Egypt, the West Bank and East Jerusalem from Jordan and the Golan Heights from Syria, reshaping the Middle East into the 21st century.",
+   "Tension had built since the wars of 1948 and 1956. Syrian-backed Palestinian guerrillas raided across the border and Israel struck back, and in April 1967 Israeli and Syrian forces fought an air battle. In May a Soviet report, which was false, told Egypt that Israel was massing troops against Syria. President Gamal Abdel Nasser moved his army into Sinai, expelled the United Nations Emergency Force that had guarded the border for more than a decade, and on 22 May closed the Straits of Tiran, Israel's only outlet to the Red Sea; at the end of May he signed a defence pact with King Hussein of Jordan. Israel's leaders decided to strike first.",
+   "On the morning of 5 June the Israeli air force launched Operation Focus: some 200 aircraft flew out low over the Mediterranean and hit Egypt's airfields from the north, destroying most of its air force on the ground, then struck Jordan, Syria and Iraq. Israeli armour and infantry drove into Sinai and Gaza; after Field Marshal Abdel Hakim Amer ordered a retreat, the Egyptian army was routed. Jordan opened fire in Jerusalem the same day, and on 7 June Israeli troops took the Old City and prayed at the Western Wall. On 9 and 10 June Israel stormed the Golan Heights. Egypt and Jordan accepted a ceasefire on 8 June and Syria on 10 June.",
+   "About 20,000 Arabs and some 800 Israelis were killed. Nasser resigned, only to return after mass demonstrations in his favour; at Khartoum in August the Arab states answered with 'no peace, no recognition, no negotiation' with Israel. Some 280,000 to 325,000 Palestinians fled or were expelled from the West Bank and about 100,000 Syrians from the Golan. Israel returned Sinai to Egypt in 1982 and left Gaza in 2005, but the territories taken in 1967 remain at the centre of the Arab-Israeli conflict."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Six-Day_War",
+    "title": "Six-Day War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     9,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/six-day-war",
+    "title": "Six-Day War",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The war was fought 5-10 June 1967 between Israel and Egypt, Jordan and Syria (Iraq also involved).",
+   "Israel took Sinai and Gaza from Egypt, the West Bank and East Jerusalem from Jordan, and the Golan from Syria; it shaped the Middle East into the 21st century.",
+   "Guerrilla raids from Syria and Israeli reprisals; an air battle with Syria in April 1967.",
+   "A false Soviet report of Israeli troops massing against Syria; Nasser moved forces into Sinai and expelled UNEF.",
+   "Nasser closed the Straits of Tiran (22 May), Israel's only access to the Red Sea; then a defence pact with Jordan; Israel decided on a pre-emptive strike.",
+   "On 5 June Israel launched Operation Focus against Egyptian airfields, destroying most of the Egyptian air force on the ground; then struck Jordan, Syria and Iraq.",
+   "About 200 aircraft flew over the Mediterranean and hit Egypt from the north; ground forces entered Sinai and Gaza; Amer ordered a general retreat and Egyptian forces were routed.",
+   "Jordan shelled Jerusalem on 5 June; Israel took the Old City on 7 June and prayed at the Western Wall; it attacked the Golan on 9 June and took it on 10 June.",
+   "Egypt and Jordan accepted a ceasefire on 8 June, Syria on 10 June.",
+   "About 20,000 Arabs and 800 Israelis died; Nasser resigned and returned after demonstrations; Khartoum resolution 'no peace, no recognition, no negotiation' (August 1967).",
+   "280,000-325,000 Palestinians and 100,000 Syrians fled or were expelled.",
+   "Israel returned Sinai in 1982 and left Gaza in 2005; the territories remain central to the conflict."
+  ],
+  "disagree": "Wikipedia records ceasefires with Egypt and Jordan on 8 June and Syria on 10 June, signed on 11 June; HISTORY.com dates a UN-brokered ceasefire to 10 June. Egyptian aircraft losses on 5 June are disputed.",
+  "checked": {
+   "by": "https://history.state.gov/milestones/1961-1968/arab-israeli-war-1967",
+   "result": "claims 1, 2, 4, 5 and the Jordan pact checked: dates 5-10 June, the territories taken, the false Soviet report, UNEF withdrawal and the closure of Tiran announced 22 May agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q40949": {
+  "title": "American Revolutionary War",
+  "y": 1775,
+  "place": "The Thirteen Colonies of British North America",
+  "paras": [
+   "The American Revolutionary War, from 1775 to 1783, was fought between Great Britain and thirteen of its North American colonies, which declared their independence in 1776 as the United States. France joined the Americans in 1778 and Spain allied itself with France in 1779, turning a colonial rebellion into a world war.",
+   "The quarrel grew out of the costly Seven Years' War, after which Parliament tried to raise revenue in the colonies with the Stamp Act of 1765, the Townshend Acts of 1767 and the Tea Act of 1773. Colonists protested against taxation without representation; British soldiers killed five men in the Boston Massacre of 1770, and in December 1773 Bostonians threw 342 chests of tea into the harbour. Parliament answered with the punitive 'Intolerable Acts', and a First Continental Congress met in Philadelphia in September 1774.",
+   "Fighting began on 19 April 1775, when British troops marching from Boston to seize arms at Concord clashed with militia at Lexington and Concord. The Second Continental Congress formed a Continental Army under George Washington, the British won a costly victory at Bunker Hill in June, and in March 1776 they evacuated Boston. On 4 July 1776 Congress adopted the Declaration of Independence. The British took New York, but in October 1777 John Burgoyne's army, marching down from Canada, surrendered at Saratoga; the victory persuaded France to enter the war openly.",
+   "After the hard winter at Valley Forge, where the Prussian officer Baron von Steuben drilled Washington's army, the war moved south: the British took Georgia and, in May 1780, Charleston, but Nathanael Greene's campaign wore down Lord Cornwallis, who fell back to Yorktown in Virginia. There Washington and the French general Rochambeau besieged him while a French fleet blocked the sea, and on 19 October 1781 Cornwallis surrendered his army. In the Treaty of Paris of 3 September 1783 Britain recognised the independence of the United States, and separate treaties ended its war with France and Spain."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/American_Revolutionary_War",
+    "title": "American Revolutionary War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     6,
+     7,
+     8,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/american-revolution-history",
+    "title": "Revolutionary War - Timeline, Facts & Battles",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "War between Great Britain and thirteen colonies, 1775-1783, which declared independence as the United States.",
+   "France entered in 1778; Spain allied with France in 1779; it became a world war.",
+   "The Seven Years' War brought new, unpopular taxes: the Stamp Act 1765, Townshend Acts 1767, Tea Act 1773; protest against lack of representation.",
+   "Boston Massacre 1770 (five killed); Boston Tea Party December 1773 (342 chests); Intolerable Acts; First Continental Congress in Philadelphia, September 1774.",
+   "On 19 April 1775 militia clashed with British troops marching to seize arms at Concord (Lexington and Concord).",
+   "The Second Continental Congress formed the Continental Army under Washington; Bunker Hill (17 June) a British victory; the British evacuated Boston in March 1776.",
+   "The Declaration of Independence was adopted on 4 July 1776.",
+   "Burgoyne's army from Canada surrendered at Saratoga in October 1777, convincing France to enter openly.",
+   "Valley Forge; von Steuben trained the army; the British occupied Georgia and took Charleston in May 1780.",
+   "Greene forced Cornwallis back to Yorktown; Washington and Rochambeau besieged it with a French fleet offshore; Cornwallis surrendered on 19 October 1781.",
+   "The Treaty of Paris of 3 September 1783 recognised US independence; separate treaties with France and Spain."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://history.state.gov/milestones/1776-1783/french-alliance",
+   "result": "7 claims checked against this page and https://history.state.gov/milestones/1776-1783/treaty: French entry in 1778 after Saratoga (October 1777), Spain in 1779, the Declaration in 1776, French help at Yorktown in 1781 and the Treaty of Paris of 3 September 1783 agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q37643": {
+  "title": "Gulf War",
+  "y": 1990,
+  "place": "Kuwait, Iraq and Saudi Arabia",
+  "paras": [
+   "The Gulf War was fought between Iraq and a coalition of 42 countries led by the United States after Iraq invaded Kuwait on 2 August 1990. It ended with the liberation of Kuwait on 28 February 1991.",
+   "Iraq's long war with Iran had ended in a ceasefire in 1988. In July 1990 Saddam Hussein accused Kuwait of taking oil from the Rumaila fields on their border, demanded that Kuwait and Saudi Arabia write off some $30 billion of Iraqi debt, and massed troops on the border; talks brokered by Egypt's President Hosni Mubarak broke down within hours. The invasion was condemned by the United States, Britain, the Soviet Union and most of the Arab League. On 8 August the first American aircraft arrived in Saudi Arabia to guard it, the start of the build-up known as Operation Desert Shield. Iraq first set up a puppet 'Republic of Kuwait' and on 28 August annexed the whole country, calling it Iraq's 19th province.",
+   "On 29 November the UN Security Council authorised 'all necessary means' if Iraq did not leave Kuwait by 15 January 1991. By then the coalition had gathered some 750,000 troops, 540,000 of them American. Operation Desert Storm began on 17 January with a huge air campaign against Iraq's air defences, communications, weapons plants and oil refineries, using stealth aircraft, cruise missiles and laser-guided bombs; Iraq fired Scud missiles, some of them at Israel. The ground offensive opened on 24 February: coalition forces drove into Kuwait while American armour swung west into Iraq to strike the Republican Guard from behind. Retreating Iraqi troops set more than 600 Kuwaiti oil wells on fire. President George H. W. Bush declared a ceasefire on 28 February, after four days of ground fighting.",
+   "Iraq agreed to recognise Kuwait and give up its weapons of mass destruction. An estimated 8,000 to 10,000 Iraqi troops were killed, against about 300 coalition troops. Saddam Hussein stayed in power and crushed uprisings by Kurds in the north and Shia in the south; disputes over weapons inspections and the no-fly zones led on to the Iraq War of 2003."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Gulf_War",
+    "title": "Gulf War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     6,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/persian-gulf-war",
+    "title": "Persian Gulf War: Dates & Operation Desert Storm",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iraqi_invasion_of_Kuwait",
+    "title": "Iraqi invasion of Kuwait",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     5
+    ]
+   }
+  ],
+  "claims": [
+   "Iraq against a US-led coalition (42 countries per Wikipedia) after Iraq invaded Kuwait on 2 August 1990.",
+   "Desert Storm ran from the bombing campaign of 17 January to the liberation of Kuwait on 28 February 1991.",
+   "The Iran-Iraq war ended in a ceasefire in August 1988; Saddam accused Kuwait of siphoning oil from Rumaila and demanded cancellation of $30 billion of debt; troops massed on the border.",
+   "Mubarak's negotiations broke down after two hours; the invasion was condemned by the US, Britain and the USSR and by two-thirds of the Arab League.",
+   "The first US fighters arrived in Saudi Arabia on 8 August (Operation Desert Shield); Iraq set up a puppet Republic of Kuwait and annexed Kuwait on 28 August 1990 (as its 19th province).",
+   "UN Security Council authorised all necessary means on 29 November 1990 with a deadline of 15 January 1991; Desert Shield was the build-up.",
+   "Coalition of about 750,000 including 540,000 US personnel; the air campaign used stealth bombers, cruise missiles and smart bombs against air defences, communications, weapons plants and refineries.",
+   "Iraq fired Scud missiles (88 in total), including at Israel.",
+   "The ground offensive began 24 February; US forces struck Iraq's armoured reserves from the rear; Iraqi troops set Kuwaiti oil wells on fire (over 600 fires) while retreating.",
+   "Bush declared a ceasefire on 28 February; Iraq recognised Kuwait's sovereignty and agreed to give up weapons of mass destruction; an estimated 8,000-10,000 Iraqi forces and 300 coalition troops were killed.",
+   "Saddam stayed in power, suppressed Kurdish and Shia uprisings; no-fly zones and inspection disputes led to the 2003 Iraq War."
+  ],
+  "disagree": "HISTORY.com dates the annexation of Kuwait as Iraq's '19th province' to 8 August 1990; Wikipedia and the U.S. Office of the Historian date it to 28 August. Iraqi military deaths are uncertain; the figure given here is HISTORY.com's estimate.",
+  "checked": {
+   "by": "https://history.state.gov/milestones/1989-1992/gulf-war",
+   "result": "7 claims checked; 1 wrong and corrected: the annexation of Kuwait as the 19th province was dated 8 August after HISTORY.com, the Office of the Historian and Wikipedia give 28 August. The invasion of 2 August, the Rumaila and debt dispute, UN authorisation of force, missiles at Israel, the four-day ground war from 24 February and the end on 28 February agree (the Office of the Historian dates the air war to 16 January, US time)",
+   "errors": 1
+  }
+ },
+ "Q11035": {
+  "title": "Telephone patented by Alexander Graham Bell",
+  "y": 1876,
+  "place": "Boston and Washington, United States",
+  "paras": [
+   "On 7 March 1876 the United States Patent Office granted Alexander Graham Bell, a Scottish-born teacher of the deaf working in Boston, the patent for the electric telephone: a method of sending speech along a wire by electrical currents that varied in the same way as the vibrations of the air carrying the sound. It became the master patent from which the telephone industry grew.",
+   "Bell had come to the problem through his work on speech and hearing and his experiments with a 'harmonic telegraph' that would carry several telegraph messages on one wire. From 1875 he worked with the electrical mechanic Thomas Watson, and on 2 June 1875 an accidentally plucked reed showed him that a wire could carry the overtones needed for speech. Others were working on the same idea, among them Elisha Gray, who filed a caveat for a telephone design at the patent office on 14 February 1876, the same day as Bell's application, and Antonio Meucci, who had built a voice apparatus decades earlier.",
+   "Three days after the patent was granted, on 10 March 1876, Bell called Watson from another room of their Boston workshop with the words 'Mr. Watson, come here', the first successful call. His demonstration at the Centennial Exposition in Philadelphia that summer, where visitors included Emperor Pedro II of Brazil, brought the telephone international attention.",
+   "The Bell Telephone Company, later AT&T, was formed in 1877, and by 1886 more than 150,000 people in the United States had telephones. The patent was fought over for some twenty years: the Bell company faced some 550 legal challenges, including claims by Gray and Meucci and a move by the U.S. government in 1887 to annul the patent, and won them all. Who should be credited with the invention is still debated."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Alexander_Graham_Bell",
+    "title": "Alexander Graham Bell",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Telephone",
+    "title": "Telephone",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     5,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/alexander-graham-bell",
+    "title": "Alexander Graham Bell: Telephone & Inventions",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Bell was granted the first US patent for the telephone on 7 March 1876.",
+   "The patent covered transmitting vocal sounds by electrical undulations similar to the vibrations of the air; it was the master patent of the telephone.",
+   "Bell, born in Edinburgh, taught the deaf in Boston; his research on hearing and speech led him to the telephone.",
+   "He worked on a harmonic telegraph; Watson became his assistant; on 2 June 1875 a plucked reed showed the overtones needed for speech.",
+   "Elisha Gray filed a caveat on 14 February 1876; Meucci and Gray worked on similar devices; Meucci developed a voice apparatus in 1849.",
+   "On 10 March 1876 Bell called Watson in another room ('Mr. Watson, come here').",
+   "The demonstration at the 1876 Centennial Exposition in Philadelphia brought international attention; Pedro II of Brazil visited.",
+   "The Bell Telephone Company was created in 1877; by 1886 more than 150,000 people in the US owned telephones.",
+   "A nearly 20-year legal battle; over 550 court challenges, all unsuccessful; the US government moved to withdraw the patent in 1887; Bell Telephone later became AT&T.",
+   "Who invented the telephone is debated; several people are credited."
+  ],
+  "disagree": "Wikipedia's Bell article says Gray filed his caveat on 14 February 1876 and examines the claims that Bell saw it; HISTORY.com says it is said Bell raced to the patent office. Meucci, Reis, Bourseul and Gray are all credited by some with inventing the telephone.",
+  "checked": null
+ },
+ "Q171328": {
+  "title": "Charter of the United Nations",
+  "y": 1945,
+  "place": "San Francisco, United States",
+  "paras": [
+   "The Charter of the United Nations is the founding treaty of the United Nations. It was drafted at the United Nations Conference on International Organization in San Francisco, which opened on 25 April 1945, and signed there on 26 June 1945 by 50 of the 51 original member states.",
+   "The idea grew out of the Second World War. In August 1941 Franklin D. Roosevelt and Winston Churchill set out shared aims in the Atlantic Charter, and in January 1942 the Allies pledged themselves in the Declaration by United Nations, the basis of the later Charter. A new organisation to replace the failed League of Nations was first formally announced in the Moscow Declarations of 1943, and its outline was worked out by the great powers at talks hosted by the United States from August to October 1944.",
+   "The San Francisco conference was perhaps the largest international gathering held until then, with 850 delegates and some 3,500 participants in all. Each part of the text needed a two-thirds majority, and the final Charter was adopted unanimously. It set out the organisation's purposes of keeping peace and security, developing friendly relations among nations and cooperating on international problems, and created its main organs, including a General Assembly and a Security Council with power to investigate disputes and to authorise sanctions and the use of force, while forbidding the UN to intervene in matters essentially within a state's domestic jurisdiction.",
+   "The Charter came into force on 24 October 1945, once the five permanent members of the Security Council (the United States, the Soviet Union, the United Kingdom, France and China) and a majority of the other signatories had ratified it. That date, celebrated as United Nations Day, counts as the UN's birthday; the first General Assembly met in London in January 1946. Membership has since grown from 51 to 193 states."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Charter_of_the_United_Nations",
+    "title": "Charter of the United Nations",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/united-nations",
+    "title": "United Nations: Purpose, Members & History",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     7,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The Charter was drafted at the UN Conference on International Organization in San Francisco, which began 25 April 1945.",
+   "It was signed on 26 June 1945 by 50 of the 51 original members.",
+   "The Atlantic Charter of August 1941 (Roosevelt and Churchill) paved the way.",
+   "The Declaration by United Nations formed the basis of the Charter.",
+   "A new organisation to replace the League of Nations was first formally announced (Moscow Declarations); talks hosted by the US 21 August - 7 October 1944.",
+   "850 delegates and 3,500 participants; two-thirds approval of each part; final text adopted unanimously.",
+   "Purposes and principles are set out in the Charter (peace and security, friendly relations, cooperation).",
+   "Security Council powers under Chapters VI and VII; Article 2(7) forbids intervention in domestic matters.",
+   "Entered into force on 24 October 1945 after ratification by the five permanent members and a majority of signatories; UN Day; first General Assembly in London the following January.",
+   "Membership grew from 51 to 193 (193 parties to the Charter)."
+  ],
+  "disagree": "HISTORY.com says the Charter was ratified by 51 members on 24 October 1945; Wikipedia says 50 states signed it on 26 June and it came into force on 24 October once the five permanent members and a majority of signatories had ratified it.",
+  "checked": null
  }
 }
