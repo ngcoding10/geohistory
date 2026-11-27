@@ -1411,5 +1411,111 @@
   ],
   "disagree": "The fall of the Jin capital Zhongdu is dated 1215 by Wikipedia; HISTORY.com dates the siege to 1214. The meaning of the title 'Genghis' is uncertain.",
   "checked": null
+ },
+ "Q69163529": {
+  "title": "Fall of the Berlin Wall",
+  "y": 1989,
+  "place": "Berlin (East and West)",
+  "paras": [
+   "On the evening of 9 November 1989 a spokesman of East Germany's ruling party told a press conference that East Germans could now travel across the border, and that the new rules applied 'immediately, without delay'. The announcement was premature: the new travel law was still being discussed. Broadcast in both East and West, the news brought crowds to the crossing points in Berlin, and in the late evening the puzzled border guards let them through, as television carried the scenes around the world.",
+   "The Wall had been built from August 1961; at least 140 people were killed trying to get over, under or around it, and hundreds more died at the fortified inner German border. In 1989 the communist bloc began to open: Hungary removed its border fence in May and opened its border in August, after the Pan-European Picnic of 19 August on the Austro-Hungarian border, and Czechoslovakia let out East Germans who had crowded into the West German embassy in Prague. The flight of East Germans through neighbouring countries put the leadership under pressure, and its long-time leader Erich Honecker was ousted in October.",
+   "In the following days thousands crossed, and further crossings were opened; the Wall was later demolished and its concrete segments spread around the world. Having lost control of the border, the East German government soon lost control of the country in the Peaceful Revolution. The first free elections in spring 1990 showed a wish for unification and the West German mark, which came in July; on 3 October 1990 East Germany joined the Federal Republic as five new states, with Berlin reunited."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
+    "title": "Fall of the Berlin Wall",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/berlin-wall",
+    "title": "Berlin Wall",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "On 9 November 1989 a party spokesman announced at a press conference that East Germans could travel, effective immediately.",
+   "The announcement was premature; the travel law was still under discussion.",
+   "Crowds gathered at Berlin crossings and guards let them pass in the late evening, broadcast live worldwide.",
+   "The Wall was built from August 1961; at least 140 people were killed trying to cross it.",
+   "Hundreds were killed at the border by East German border troops.",
+   "Hungary removed its fence in May and opened its border in August after the Pan-European Picnic of 19 August; Czechoslovakia followed after East Germans fled into the West German embassy in Prague.",
+   "Honecker was ousted in October 1989.",
+   "Thousands crossed in the next days; the Wall was demolished; the Peaceful Revolution; first free elections in spring 1990; the D-Mark in July; reunification on 3 October 1990 with five new states and Berlin."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q193484": {
+  "title": "Assassination of John F. Kennedy",
+  "y": 1963,
+  "place": "Dealey Plaza, Dallas, Texas (United States)",
+  "paras": [
+   "On Friday 22 November 1963 President John F. Kennedy was shot while riding in an open car in a motorcade through Dallas, Texas, with his wife Jacqueline, Texas governor John Connally and Connally's wife Nellie. The motorcade, planned by Connally and the President's aide Kenneth O'Donnell for a two-day Texas trip, was passing the Texas School Book Depository, a seven-storey warehouse at Houston and Elm Streets, at about 12:30 p.m. when shots were fired from the building.",
+   "Kennedy was rushed to Parkland Memorial Hospital, four miles away, and pronounced dead about 30 minutes after the shooting; Connally was badly wounded but recovered. Vice President Lyndon B. Johnson was sworn in as president aboard Air Force One at Dallas Love Field two hours and eight minutes later.",
+   "Lee Harvey Oswald, a former US Marine, went home for a pistol, shot dead a Dallas policeman, J. D. Tippit, and was arrested about 70 minutes after the assassination. Two days later, as live television covered his transfer through the basement of Dallas police headquarters, he was shot dead by the nightclub owner Jack Ruby, who was convicted of murder but died in prison in 1967 awaiting a new trial after the verdict was overturned.",
+   "After a ten-month inquiry the Warren Commission (1964) concluded that Oswald killed Kennedy and found no evidence that he or Ruby was part of a conspiracy; later federal inquiries agreed. In 1979, however, the House Select Committee on Assassinations concluded that Kennedy was probably killed as the result of a conspiracy, with 'a high probability that two gunmen fired', a finding that rested largely on a police recording. The only trial, brought by the New Orleans district attorney Jim Garrison against Clay Shaw in 1967, ended in acquittal."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Assassination_of_John_F._Kennedy",
+    "title": "Assassination of John F. Kennedy",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.archives.gov/research/jfk/warren-commission-report/chapter-1.html",
+    "title": "Report of the President's Commission on the Assassination of President Kennedy, chapter 1",
+    "publisher": "US National Archives (Warren Commission report, 1964)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  ],
+  "claims": [
+   "Kennedy was shot on 22 November 1963 in a Dallas motorcade with Jacqueline Kennedy and John and Nellie Connally.",
+   "Connally and O'Donnell planned the motorcade; the Depository was a seven-storey building at Houston and Elm; the clock read 12:30.",
+   "Shots came from the Texas School Book Depository; Kennedy was taken to Parkland Hospital, four miles away, and declared dead about 30 minutes after the shooting.",
+   "Connally was wounded and recovered.",
+   "Johnson was sworn in aboard Air Force One at Love Field 2 hours 8 minutes later.",
+   "Oswald, a former Marine, shot Officer Tippit and was arrested about 70 minutes after the shooting.",
+   "Jack Ruby shot Oswald on live television two days later; Ruby's conviction was overturned and he died in prison in 1967.",
+   "The Warren Commission concluded Oswald was the assassin and found no evidence of conspiracy; later federal inquiries agreed.",
+   "The HSCA (1979) concluded a probable conspiracy with two gunmen, largely on a police recording; Garrison's trial of Clay Shaw (1967) ended in acquittal."
+  ],
+  "disagree": "The Warren Commission found no conspiracy; the House Select Committee on Assassinations (1979) concluded that there probably was one.",
+  "checked": null
  }
 }
