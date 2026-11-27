@@ -1,0 +1,1402 @@
+{
+ "_about": "Big movements (religious, intellectual, political, social) attached to the states and years where they mattered, written for GeoHistory from general knowledge (AI-written, shown with that label). 'states' are the territory names on the maps; 'from'/'to' are the movement's conventional dates, shown as written. Every entry names its English Wikipedia article in 'wiki' and 'source'; tools/context/build_context.py checks 'from' against the article's Wikidata item (inception P571 or start time P580, 5 years of slack; 15 for movements dated by century) and writes the result to 'verified' (true, false, or null when Wikidata has no start date). 'text' is one line.",
+ "movements": [
+  {
+   "id": "reformation",
+   "name": "Protestant Reformation",
+   "wiki": "Reformation",
+   "from": 1517,
+   "to": 1648,
+   "kind": "religious",
+   "states": [
+    "Holy Roman Empire",
+    "Holy Roman Empire Minor States",
+    "Electorate of Saxony",
+    "Kingdom of England",
+    "Kingdom of Scotland",
+    "Swiss Confederation",
+    "Kingdom of Sweden",
+    "Denmark-Norway",
+    "Kingdom of France",
+    "Dutch Republic",
+    "Kingdom of Bohemia",
+    "Duchy of Prussia",
+    "Electorate of Brandenburg",
+    "Kingdom of Hungary"
+   ],
+   "text": "Break with the Roman Church that began with Martin Luther's 95 theses (1517) and produced Lutheran, Reformed and Anglican churches.",
+   "source": "https://en.wikipedia.org/wiki/Reformation"
+  },
+  {
+   "id": "counter-reformation",
+   "name": "Counter-Reformation",
+   "wiki": "Counter-Reformation",
+   "from": 1545,
+   "to": 1648,
+   "kind": "religious",
+   "states": [
+    "Papal States",
+    "Kingdom of Spain",
+    "Spanish Empire",
+    "Kingdom of France",
+    "Holy Roman Empire",
+    "Polish-Lithuanian Commonwealth",
+    "Kingdom of Portugal",
+    "Republic of Venice",
+    "Duchy of Bavaria"
+   ],
+   "text": "Catholic renewal and response to Protestantism, from the Council of Trent (1545-1563), with the Jesuits and the Inquisition.",
+   "source": "https://en.wikipedia.org/wiki/Counter-Reformation"
+  },
+  {
+   "id": "hussites",
+   "name": "Hussite movement",
+   "wiki": "Hussites",
+   "from": 1415,
+   "to": 1436,
+   "kind": "religious",
+   "states": [
+    "Kingdom of Bohemia"
+   ],
+   "text": "Followers of Jan Hus, burned at Constance in 1415, who fought off five crusades and won concessions from the Church.",
+   "source": "https://en.wikipedia.org/wiki/Hussites"
+  },
+  {
+   "id": "renaissance",
+   "name": "Italian Renaissance",
+   "wiki": "Italian Renaissance",
+   "from": 1400,
+   "to": 1550,
+   "kind": "cultural",
+   "century": true,
+   "states": [
+    "Republic of Florence",
+    "Republic of Venice",
+    "Duchy of Milan",
+    "Papal States",
+    "Kingdom of Naples",
+    "Republic of Genoa"
+   ],
+   "text": "Revival of classical learning and art in the Italian city-states: Brunelleschi, Leonardo, Michelangelo, Machiavelli.",
+   "source": "https://en.wikipedia.org/wiki/Italian_Renaissance"
+  },
+  {
+   "id": "northern-renaissance",
+   "name": "Northern Renaissance",
+   "wiki": "Northern Renaissance",
+   "from": 1450,
+   "to": 1600,
+   "kind": "cultural",
+   "century": true,
+   "states": [
+    "Holy Roman Empire",
+    "Holy Roman Empire Minor States",
+    "Kingdom of France",
+    "Kingdom of England",
+    "Duchy of Burgundy"
+   ],
+   "text": "Renaissance humanism and art north of the Alps: Erasmus, Dürer, van Eyck, Thomas More.",
+   "source": "https://en.wikipedia.org/wiki/Northern_Renaissance"
+  },
+  {
+   "id": "scientific-revolution",
+   "name": "Scientific Revolution",
+   "wiki": "Scientific Revolution",
+   "from": 1543,
+   "to": 1687,
+   "kind": "intellectual",
+   "states": [
+    "Kingdom of England",
+    "Commonwealth of England",
+    "Dutch Republic",
+    "Kingdom of France",
+    "Holy Roman Empire",
+    "Republic of Venice",
+    "Grand Duchy of Tuscany",
+    "Polish-Lithuanian Commonwealth"
+   ],
+   "text": "From Copernicus (1543) to Newton's Principia (1687): observation, experiment and mathematics remade astronomy and physics.",
+   "source": "https://en.wikipedia.org/wiki/Scientific_Revolution"
+  },
+  {
+   "id": "enlightenment",
+   "name": "Age of Enlightenment",
+   "wiki": "Age of Enlightenment",
+   "from": 1685,
+   "to": 1815,
+   "kind": "intellectual",
+   "states": [
+    "Kingdom of France",
+    "Kingdom of Great Britain",
+    "Kingdom of Prussia",
+    "Holy Roman Empire Minor States",
+    "Dutch Republic",
+    "Russian Empire",
+    "Habsburg Monarchy",
+    "United States of America",
+    "Kingdom of Spain",
+    "Kingdom of Portugal",
+    "Kingdom of Naples"
+   ],
+   "text": "Reason, science and rights against custom and absolutism: Locke, Voltaire, Montesquieu, Rousseau, Kant, Hume.",
+   "source": "https://en.wikipedia.org/wiki/Age_of_Enlightenment"
+  },
+  {
+   "id": "industrial-revolution",
+   "name": "Industrial Revolution",
+   "wiki": "Industrial Revolution",
+   "from": 1760,
+   "to": 1840,
+   "kind": "economic",
+   "states": [
+    "Kingdom of Great Britain",
+    "United Kingdom"
+   ],
+   "text": "Shift to machine production, steam power and factories, beginning in Britain's textile and iron industries.",
+   "source": "https://en.wikipedia.org/wiki/Industrial_Revolution"
+  },
+  {
+   "id": "second-industrial-revolution",
+   "name": "Second Industrial Revolution",
+   "wiki": "Second Industrial Revolution",
+   "from": 1870,
+   "to": 1914,
+   "kind": "economic",
+   "states": [
+    "United States of America",
+    "German Empire",
+    "United Kingdom",
+    "France",
+    "Empire of Japan",
+    "Japan"
+   ],
+   "text": "Steel, electricity, chemicals, railways and the telephone: mass production in Germany and the United States.",
+   "source": "https://en.wikipedia.org/wiki/Second_Industrial_Revolution"
+  },
+  {
+   "id": "abolitionism-uk",
+   "name": "Abolitionism in the United Kingdom",
+   "wiki": "Abolitionism in the United Kingdom",
+   "from": 1783,
+   "to": 1838,
+   "kind": "social",
+   "states": [
+    "Kingdom of Great Britain",
+    "United Kingdom"
+   ],
+   "text": "Campaign against the slave trade (abolished 1807) and slavery in the colonies (Slavery Abolition Act 1833): Clarkson, Wilberforce, Equiano.",
+   "source": "https://en.wikipedia.org/wiki/Abolitionism_in_the_United_Kingdom"
+  },
+  {
+   "id": "abolitionism-us",
+   "name": "Abolitionism in the United States",
+   "wiki": "Abolitionism in the United States",
+   "from": 1830,
+   "to": 1865,
+   "kind": "social",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Movement to end slavery, from Garrison's Liberator (1831) and Frederick Douglass to the Thirteenth Amendment (1865).",
+   "source": "https://en.wikipedia.org/wiki/Abolitionism_in_the_United_States"
+  },
+  {
+   "id": "abolition-brazil",
+   "name": "Abolitionism in Brazil",
+   "wiki": "Abolitionism in Brazil",
+   "from": 1850,
+   "to": 1888,
+   "kind": "social",
+   "states": [
+    "Empire of Brazil",
+    "Brazil"
+   ],
+   "text": "Campaign that ended the slave trade (1850) and slavery itself with the Golden Law of 1888, the last in the Americas.",
+   "source": "https://en.wikipedia.org/wiki/Abolitionism_in_Brazil"
+  },
+  {
+   "id": "romanticism",
+   "name": "Romanticism",
+   "wiki": "Romanticism",
+   "from": 1798,
+   "to": 1850,
+   "kind": "cultural",
+   "states": [
+    "Kingdom of Great Britain",
+    "United Kingdom",
+    "German Confederation",
+    "Kingdom of Prussia",
+    "French Consulate",
+    "First French Empire",
+    "Austrian Empire"
+   ],
+   "text": "Art and thought of feeling, nature and the nation, against Enlightenment rationalism: Goethe, Wordsworth, Byron, Beethoven.",
+   "source": "https://en.wikipedia.org/wiki/Romanticism"
+  },
+  {
+   "id": "jacobinism",
+   "name": "French Revolution and Jacobinism",
+   "wiki": "Jacobin",
+   "from": 1789,
+   "to": 1799,
+   "kind": "political",
+   "states": [
+    "Kingdom of France",
+    "French First Republic",
+    "French Directory"
+   ],
+   "text": "Radical republicanism of the Jacobin Club, which led the Revolution's most radical phase and the Terror (1793-1794).",
+   "source": "https://en.wikipedia.org/wiki/Jacobin"
+  },
+  {
+   "id": "liberalism-1848",
+   "name": "Revolutions of 1848",
+   "wiki": "Revolutions of 1848",
+   "from": 1848,
+   "to": 1849,
+   "kind": "political",
+   "states": [
+    "French Second Republic",
+    "German Confederation",
+    "Austrian Empire",
+    "Kingdom of Prussia",
+    "Kingdom of Sardinia",
+    "Papal States",
+    "Kingdom of the Two Sicilies",
+    "Italian Nationalists"
+   ],
+   "text": "Liberal and national revolutions across Europe: the 'Springtime of Nations', mostly crushed within two years.",
+   "source": "https://en.wikipedia.org/wiki/Revolutions_of_1848"
+  },
+  {
+   "id": "risorgimento",
+   "name": "Risorgimento",
+   "wiki": "Italian unification",
+   "from": 1815,
+   "to": 1871,
+   "kind": "nationalist",
+   "states": [
+    "Kingdom of Sardinia",
+    "Kingdom of Italy",
+    "Kingdom of the Two Sicilies",
+    "Papal States",
+    "Italian Nationalists"
+   ],
+   "text": "Movement for Italian unity and independence: Mazzini, Garibaldi and Cavour; the Kingdom of Italy was proclaimed in 1861.",
+   "source": "https://en.wikipedia.org/wiki/Italian_unification"
+  },
+  {
+   "id": "german-unification",
+   "name": "German nationalism and unification",
+   "wiki": "Unification of Germany",
+   "from": 1815,
+   "to": 1871,
+   "kind": "nationalist",
+   "states": [
+    "German Confederation",
+    "Kingdom of Prussia",
+    "North German Confederation",
+    "German Empire"
+   ],
+   "text": "Drive for a German nation-state, from the student fraternities of 1815 to Bismarck's empire of 1871.",
+   "source": "https://en.wikipedia.org/wiki/Unification_of_Germany"
+  },
+  {
+   "id": "pan-slavism",
+   "name": "Pan-Slavism",
+   "wiki": "Pan-Slavism",
+   "from": 1830,
+   "to": 1914,
+   "kind": "nationalist",
+   "states": [
+    "Russian Empire",
+    "Austrian Empire",
+    "Austria-Hungary",
+    "Kingdom of Serbia",
+    "Serbia",
+    "Bulgaria"
+   ],
+   "text": "Idea of the unity of the Slavic peoples, used by Russia to back the Balkan Slavs against the Ottomans and Austria.",
+   "source": "https://en.wikipedia.org/wiki/Pan-Slavism"
+  },
+  {
+   "id": "marxism",
+   "name": "Marxism and the socialist movement",
+   "wiki": "Socialism",
+   "from": 1848,
+   "to": 1917,
+   "kind": "political",
+   "states": [
+    "German Empire",
+    "United Kingdom",
+    "France",
+    "Russian Empire",
+    "Austria-Hungary",
+    "Italy"
+   ],
+   "text": "Workers' parties and trade unions inspired by Marx and Engels (Communist Manifesto, 1848): the SPD, the Second International.",
+   "source": "https://en.wikipedia.org/wiki/Socialism"
+  },
+  {
+   "id": "bolshevism",
+   "name": "Bolsheviks",
+   "wiki": "Bolsheviks",
+   "from": 1903,
+   "to": 1917,
+   "kind": "political",
+   "states": [
+    "Russian Empire"
+   ],
+   "text": "Lenin's faction of the Russian Social Democratic Labour Party (split of 1903), which seized power in October 1917.",
+   "source": "https://en.wikipedia.org/wiki/Bolsheviks"
+  },
+  {
+   "id": "communism-ussr",
+   "name": "Communism (Marxism-Leninism)",
+   "wiki": "Marxism–Leninism",
+   "from": 1922,
+   "to": 1991,
+   "kind": "political",
+   "states": [
+    "Soviet Union",
+    "China",
+    "North Korea",
+    "Vietnam",
+    "North Vietnam",
+    "Cuba",
+    "East Germany",
+    "Poland",
+    "Hungary",
+    "Czechoslovakia",
+    "Romania",
+    "Bulgaria",
+    "Albania",
+    "Mongolia",
+    "Yugoslavia"
+   ],
+   "text": "State ideology of the Soviet Union and the states modelled on it: one party, planned economy, rule in the name of the working class.",
+   "source": "https://en.wikipedia.org/wiki/Marxism%E2%80%93Leninism"
+  },
+  {
+   "id": "fascism-italy",
+   "name": "Italian Fascism",
+   "wiki": "Italian fascism",
+   "from": 1919,
+   "to": 1945,
+   "kind": "political",
+   "states": [
+    "Italy"
+   ],
+   "text": "Mussolini's movement: nationalist, anti-communist, violent, ruling Italy as a one-party dictatorship from 1922-1925 to 1943.",
+   "source": "https://en.wikipedia.org/wiki/Italian_fascism"
+  },
+  {
+   "id": "nazism",
+   "name": "Nazism",
+   "wiki": "Nazism",
+   "from": 1920,
+   "to": 1945,
+   "kind": "political",
+   "states": [
+    "Germany",
+    "Austria"
+   ],
+   "text": "Hitler's racist, antisemitic and totalitarian ideology; the Nazi Party ruled Germany 1933-1945 and carried out the Holocaust.",
+   "source": "https://en.wikipedia.org/wiki/Nazism"
+  },
+  {
+   "id": "francoism",
+   "name": "Francoism",
+   "wiki": "Francoism",
+   "from": 1936,
+   "to": 1975,
+   "kind": "political",
+   "states": [
+    "Spain"
+   ],
+   "text": "Franco's authoritarian, Catholic-nationalist regime after the Civil War, with the Falange as the single party.",
+   "source": "https://en.wikipedia.org/wiki/Francoism"
+  },
+  {
+   "id": "estado-novo",
+   "name": "Estado Novo (Portugal)",
+   "wiki": "Estado Novo (Portugal)",
+   "from": 1933,
+   "to": 1974,
+   "kind": "political",
+   "states": [
+    "Portugal"
+   ],
+   "text": "Salazar's corporatist dictatorship, ended by the Carnation Revolution of 1974.",
+   "source": "https://en.wikipedia.org/wiki/Estado_Novo_(Portugal)"
+  },
+  {
+   "id": "womens-suffrage-uk",
+   "name": "Women's suffrage in the United Kingdom",
+   "wiki": "Women's suffrage in the United Kingdom",
+   "from": 1867,
+   "to": 1928,
+   "kind": "social",
+   "states": [
+    "United Kingdom"
+   ],
+   "text": "Campaign for women's votes, by suffragists and the militant suffragettes of the WSPU (1903); partial suffrage 1918, equal 1928.",
+   "source": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_the_United_Kingdom"
+  },
+  {
+   "id": "womens-suffrage-us",
+   "name": "Women's suffrage in the United States",
+   "wiki": "Women's suffrage in the United States",
+   "from": 1848,
+   "to": 1920,
+   "kind": "social",
+   "states": [
+    "United States of America"
+   ],
+   "text": "From the Seneca Falls Convention (1848) to the Nineteenth Amendment (1920).",
+   "source": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_the_United_States"
+  },
+  {
+   "id": "progressive-era",
+   "name": "Progressive Era",
+   "wiki": "Progressive Era",
+   "from": 1896,
+   "to": 1917,
+   "kind": "political",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Reform against corruption, monopolies and child labour; trust-busting, food safety laws, direct election of senators.",
+   "source": "https://en.wikipedia.org/wiki/Progressive_Era"
+  },
+  {
+   "id": "temperance-us",
+   "name": "Temperance movement and Prohibition",
+   "wiki": "Prohibition in the United States",
+   "from": 1920,
+   "to": 1933,
+   "kind": "social",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Nationwide ban on alcohol under the Eighteenth Amendment, repealed in 1933.",
+   "source": "https://en.wikipedia.org/wiki/Prohibition_in_the_United_States"
+  },
+  {
+   "id": "civil-rights-us",
+   "name": "Civil rights movement",
+   "wiki": "Civil rights movement",
+   "from": 1954,
+   "to": 1968,
+   "kind": "social",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Struggle against segregation and for Black voting rights: Brown v. Board (1954), Montgomery, King, Civil Rights Act 1964, Voting Rights Act 1965.",
+   "source": "https://en.wikipedia.org/wiki/Civil_rights_movement"
+  },
+  {
+   "id": "anti-apartheid",
+   "name": "Anti-apartheid movement",
+   "wiki": "Internal resistance to apartheid",
+   "from": 1948,
+   "to": 1994,
+   "kind": "social",
+   "states": [
+    "South Africa"
+   ],
+   "text": "Resistance to racial segregation laws by the ANC and others: Defiance Campaign, Sharpeville (1960), Soweto (1976), Mandela.",
+   "source": "https://en.wikipedia.org/wiki/Internal_resistance_to_apartheid"
+  },
+  {
+   "id": "indian-independence",
+   "name": "Indian independence movement",
+   "wiki": "Indian independence movement",
+   "from": 1857,
+   "to": 1947,
+   "kind": "nationalist",
+   "states": [
+    "British Raj",
+    "India"
+   ],
+   "text": "From the Indian National Congress (1885) to Gandhi's non-violent campaigns (Salt March 1930, Quit India 1942) and independence in 1947.",
+   "source": "https://en.wikipedia.org/wiki/Indian_independence_movement"
+  },
+  {
+   "id": "decolonisation-uk",
+   "name": "Decolonisation of the British Empire",
+   "wiki": "Decolonisation of Asia",
+   "from": 1945,
+   "to": 1975,
+   "kind": "political",
+   "states": [
+    "United Kingdom",
+    "France",
+    "Netherlands",
+    "Belgium",
+    "Portugal"
+   ],
+   "text": "End of the European colonial empires after the Second World War: India 1947, Indonesia 1949, most of Africa 1957-1975.",
+   "source": "https://en.wikipedia.org/wiki/Decolonization"
+  },
+  {
+   "id": "decolonisation-africa",
+   "name": "Decolonisation of Africa",
+   "wiki": "Decolonisation of Africa",
+   "from": 1951,
+   "to": 1980,
+   "kind": "nationalist",
+   "states": [
+    "Ghana",
+    "Nigeria",
+    "Kenya",
+    "Algeria",
+    "Senegal",
+    "Tanzania",
+    "Congo (Léopoldville)",
+    "Angola",
+    "Mozambique",
+    "Zimbabwe",
+    "Guinea",
+    "Mali",
+    "Uganda",
+    "Zambia",
+    "Cameroon",
+    "Madagascar"
+   ],
+   "text": "Independence of African colonies, from Libya (1951) and Ghana (1957) to Zimbabwe (1980).",
+   "source": "https://en.wikipedia.org/wiki/Decolonisation_of_Africa"
+  },
+  {
+   "id": "pan-africanism",
+   "name": "Pan-Africanism",
+   "wiki": "Pan-Africanism",
+   "from": 1900,
+   "to": 1963,
+   "kind": "political",
+   "states": [
+    "Ghana",
+    "Ethiopia",
+    "Liberia",
+    "Gold Coast"
+   ],
+   "text": "Solidarity of Africans and the African diaspora: the Pan-African Congresses, Nkrumah, the Organisation of African Unity (1963).",
+   "source": "https://en.wikipedia.org/wiki/Pan-Africanism"
+  },
+  {
+   "id": "arab-nationalism",
+   "name": "Arab nationalism",
+   "wiki": "Arab nationalism",
+   "from": 1916,
+   "to": 1970,
+   "kind": "nationalist",
+   "states": [
+    "Egypt",
+    "Syria",
+    "Iraq",
+    "Jordan",
+    "Ottoman Empire"
+   ],
+   "text": "From the Arab Revolt of 1916 to Nasser's pan-Arabism and the Ba'ath parties.",
+   "source": "https://en.wikipedia.org/wiki/Arab_nationalism"
+  },
+  {
+   "id": "zionism",
+   "name": "Zionism",
+   "wiki": "Zionism",
+   "from": 1897,
+   "to": 1948,
+   "kind": "nationalist",
+   "states": [
+    "Palestine",
+    "Ottoman Empire",
+    "Israel"
+   ],
+   "text": "Movement for a Jewish homeland in Palestine, organised by Herzl's First Zionist Congress (1897); Israel was founded in 1948.",
+   "source": "https://en.wikipedia.org/wiki/Zionism"
+  },
+  {
+   "id": "young-turks",
+   "name": "Young Turks",
+   "wiki": "Young Turks",
+   "from": 1889,
+   "to": 1918,
+   "kind": "political",
+   "states": [
+    "Ottoman Empire"
+   ],
+   "text": "Constitutionalist reformers whose revolution of 1908 restored the constitution; their CUP ruled the empire through the First World War.",
+   "source": "https://en.wikipedia.org/wiki/Young_Turks"
+  },
+  {
+   "id": "tanzimat",
+   "name": "Tanzimat",
+   "wiki": "Tanzimat",
+   "from": 1839,
+   "to": 1876,
+   "kind": "political",
+   "states": [
+    "Ottoman Empire"
+   ],
+   "text": "Ottoman reforms of law, army, schools and taxation, with equality of Muslims and non-Muslims before the law.",
+   "source": "https://en.wikipedia.org/wiki/Tanzimat"
+  },
+  {
+   "id": "kemalism",
+   "name": "Kemalism",
+   "wiki": "Kemalism",
+   "from": 1923,
+   "to": 1938,
+   "kind": "political",
+   "states": [
+    "Turkey"
+   ],
+   "text": "Atatürk's reforms: a secular republic, Latin alphabet, Western law and dress, under the Republican People's Party.",
+   "source": "https://en.wikipedia.org/wiki/Kemalism"
+  },
+  {
+   "id": "self-strengthening",
+   "name": "Self-Strengthening Movement",
+   "wiki": "Self-Strengthening Movement",
+   "from": 1861,
+   "to": 1895,
+   "kind": "political",
+   "states": [
+    "Qing Dynasty",
+    "China"
+   ],
+   "text": "Qing reforms after the Opium Wars: arsenals, shipyards and Western technology under Confucian rule.",
+   "source": "https://en.wikipedia.org/wiki/Self-Strengthening_Movement"
+  },
+  {
+   "id": "taiping",
+   "name": "Taiping Heavenly Kingdom",
+   "wiki": "Taiping Rebellion",
+   "from": 1850,
+   "to": 1864,
+   "kind": "religious",
+   "states": [
+    "Qing Dynasty"
+   ],
+   "text": "Millenarian Christian-inspired rebellion of Hong Xiuquan; one of the deadliest wars in history.",
+   "source": "https://en.wikipedia.org/wiki/Taiping_Rebellion"
+  },
+  {
+   "id": "may-fourth",
+   "name": "May Fourth Movement",
+   "wiki": "May Fourth Movement",
+   "from": 1919,
+   "to": 1921,
+   "kind": "political",
+   "states": [
+    "China"
+   ],
+   "text": "Student-led nationalist and cultural movement after the Treaty of Versailles gave Shandong to Japan; seedbed of the Chinese Communist Party.",
+   "source": "https://en.wikipedia.org/wiki/May_Fourth_Movement"
+  },
+  {
+   "id": "cultural-revolution",
+   "name": "Cultural Revolution",
+   "wiki": "Cultural Revolution",
+   "from": 1966,
+   "to": 1976,
+   "kind": "political",
+   "states": [
+    "China"
+   ],
+   "text": "Mao's campaign against 'bourgeois' elements: Red Guards, purges, persecution and mass deaths.",
+   "source": "https://en.wikipedia.org/wiki/Cultural_Revolution"
+  },
+  {
+   "id": "meiji",
+   "name": "Meiji Restoration and modernisation",
+   "wiki": "Meiji Restoration",
+   "from": 1868,
+   "to": 1889,
+   "kind": "political",
+   "states": [
+    "Empire of Japan",
+    "Japan"
+   ],
+   "text": "Restoration of imperial rule and rapid Westernising reform: an army, railways, schools and the constitution of 1889.",
+   "source": "https://en.wikipedia.org/wiki/Meiji_Restoration"
+  },
+  {
+   "id": "freedom-peoples-rights",
+   "name": "Freedom and People's Rights Movement",
+   "wiki": "Freedom and People's Rights Movement",
+   "from": 1874,
+   "to": 1890,
+   "kind": "political",
+   "states": [
+    "Empire of Japan",
+    "Japan"
+   ],
+   "text": "Campaign for an elected assembly and a constitution in Meiji Japan.",
+   "source": "https://en.wikipedia.org/wiki/Freedom_and_People%27s_Rights_Movement"
+  },
+  {
+   "id": "solidarity",
+   "name": "Solidarity",
+   "wiki": "Solidarity (Polish trade union)",
+   "from": 1980,
+   "to": 1989,
+   "kind": "social",
+   "states": [
+    "Poland"
+   ],
+   "text": "Independent trade union led by Lech Wałęsa, banned under martial law (1981), which won the semi-free election of 1989.",
+   "source": "https://en.wikipedia.org/wiki/Solidarity_(Polish_trade_union)"
+  },
+  {
+   "id": "prague-spring",
+   "name": "Prague Spring",
+   "wiki": "Prague Spring",
+   "from": 1968,
+   "to": 1968,
+   "kind": "political",
+   "states": [
+    "Czechoslovakia"
+   ],
+   "text": "Dubček's 'socialism with a human face', ended by the Warsaw Pact invasion of August 1968.",
+   "source": "https://en.wikipedia.org/wiki/Prague_Spring"
+  },
+  {
+   "id": "chartism",
+   "name": "Chartism",
+   "wiki": "Chartism",
+   "from": 1838,
+   "to": 1857,
+   "kind": "social",
+   "states": [
+    "United Kingdom"
+   ],
+   "text": "Working-class movement for the People's Charter: votes for all men, secret ballot, paid MPs.",
+   "source": "https://en.wikipedia.org/wiki/Chartism"
+  },
+  {
+   "id": "irish-nationalism",
+   "name": "Irish nationalism and Home Rule",
+   "wiki": "Home Rule movement",
+   "from": 1870,
+   "to": 1922,
+   "kind": "nationalist",
+   "states": [
+    "United Kingdom",
+    "Irish Free State"
+   ],
+   "text": "From Parnell's Home Rule campaign to the Easter Rising (1916), the War of Independence and the Irish Free State (1922).",
+   "source": "https://en.wikipedia.org/wiki/Home_Rule_movement"
+  },
+  {
+   "id": "latin-american-independence",
+   "name": "Spanish American wars of independence",
+   "wiki": "Spanish American wars of independence",
+   "from": 1808,
+   "to": 1826,
+   "kind": "nationalist",
+   "states": [
+    "Spanish Empire",
+    "Kingdom of Spain",
+    "Gran Colombia",
+    "Federated Republic of Mexico",
+    "Republic of Peru",
+    "Republic of Chile",
+    "Río de la Plata"
+   ],
+   "text": "Creole-led wars that ended Spanish rule on the mainland of the Americas: Bolívar, San Martín, Hidalgo.",
+   "source": "https://en.wikipedia.org/wiki/Spanish_American_wars_of_independence"
+  },
+  {
+   "id": "american-revolution",
+   "name": "American Revolution",
+   "wiki": "American Revolution",
+   "from": 1765,
+   "to": 1791,
+   "kind": "political",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Colonial resistance to British taxation that became a war of independence (1775-1783) and a federal republic under the Constitution of 1787.",
+   "source": "https://en.wikipedia.org/wiki/American_Revolution"
+  },
+  {
+   "id": "great-awakening",
+   "name": "Great Awakenings",
+   "wiki": "Second Great Awakening",
+   "from": 1790,
+   "to": 1840,
+   "kind": "religious",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Protestant revival of camp meetings and new churches that fed the temperance and abolition movements.",
+   "source": "https://en.wikipedia.org/wiki/Second_Great_Awakening"
+  },
+  {
+   "id": "labour-movement-us",
+   "name": "Labor movement in the United States",
+   "wiki": "Labor movement in the United States",
+   "from": 1869,
+   "to": 1935,
+   "kind": "social",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Unions from the Knights of Labor and the AFL to the strikes of the 1930s and the Wagner Act (1935).",
+   "source": "https://en.wikipedia.org/wiki/Labor_movement_in_the_United_States"
+  },
+  {
+   "id": "new-deal",
+   "name": "New Deal",
+   "wiki": "New Deal",
+   "from": 1933,
+   "to": 1939,
+   "kind": "political",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Roosevelt's programmes against the Great Depression: relief, public works, Social Security, bank and labour reform.",
+   "source": "https://en.wikipedia.org/wiki/New_Deal"
+  },
+  {
+   "id": "mccarthyism",
+   "name": "McCarthyism",
+   "wiki": "McCarthyism",
+   "from": 1947,
+   "to": 1957,
+   "kind": "political",
+   "states": [
+    "United States of America"
+   ],
+   "text": "The Second Red Scare: loyalty oaths, blacklists and Senator McCarthy's accusations of communist subversion.",
+   "source": "https://en.wikipedia.org/wiki/McCarthyism"
+  },
+  {
+   "id": "counterculture-1960s",
+   "name": "Counterculture of the 1960s and anti-war movement",
+   "wiki": "Opposition to United States involvement in the Vietnam War",
+   "from": 1964,
+   "to": 1973,
+   "kind": "social",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Mass protest against the Vietnam War, campus revolts and the youth counterculture.",
+   "source": "https://en.wikipedia.org/wiki/Opposition_to_United_States_involvement_in_the_Vietnam_War"
+  },
+  {
+   "id": "feminism-second-wave",
+   "name": "Second-wave feminism",
+   "wiki": "Second-wave feminism",
+   "from": 1960,
+   "to": 1980,
+   "kind": "social",
+   "states": [
+    "United States of America",
+    "United Kingdom",
+    "France",
+    "West Germany",
+    "Italy"
+   ],
+   "text": "Campaigns for equal pay, reproductive rights and against discrimination in law and work.",
+   "source": "https://en.wikipedia.org/wiki/Second-wave_feminism"
+  },
+  {
+   "id": "may-1968",
+   "name": "May 68",
+   "wiki": "May 68",
+   "from": 1968,
+   "to": 1968,
+   "kind": "social",
+   "states": [
+    "France"
+   ],
+   "text": "Student revolt and general strike that shook de Gaulle's France in May and June 1968.",
+   "source": "https://en.wikipedia.org/wiki/May_68"
+  },
+  {
+   "id": "european-integration",
+   "name": "European integration",
+   "wiki": "European integration",
+   "from": 1951,
+   "to": 2019,
+   "kind": "political",
+   "states": [
+    "France",
+    "West Germany",
+    "Germany",
+    "Italy",
+    "Belgium",
+    "Netherlands",
+    "Luxembourg"
+   ],
+   "text": "From the Coal and Steel Community (1951) and the Treaty of Rome (1957) to the European Union (1993) and the euro.",
+   "source": "https://en.wikipedia.org/wiki/European_integration"
+  },
+  {
+   "id": "perestroika",
+   "name": "Perestroika and glasnost",
+   "wiki": "Perestroika",
+   "from": 1985,
+   "to": 1991,
+   "kind": "political",
+   "states": [
+    "Soviet Union"
+   ],
+   "text": "Gorbachev's restructuring of the economy and openness in public life, which ended in the Soviet Union's dissolution.",
+   "source": "https://en.wikipedia.org/wiki/Perestroika"
+  },
+  {
+   "id": "revolutions-1989",
+   "name": "Revolutions of 1989",
+   "wiki": "Revolutions of 1989",
+   "from": 1989,
+   "to": 1991,
+   "kind": "political",
+   "states": [
+    "Poland",
+    "East Germany",
+    "Hungary",
+    "Czechoslovakia",
+    "Romania",
+    "Bulgaria",
+    "Albania",
+    "Soviet Union"
+   ],
+   "text": "Fall of the communist governments of Central and Eastern Europe; the Berlin Wall opened on 9 November 1989.",
+   "source": "https://en.wikipedia.org/wiki/Revolutions_of_1989"
+  },
+  {
+   "id": "islamic-revolution",
+   "name": "Iranian Revolution and Islamism",
+   "wiki": "Iranian revolution",
+   "from": 1978,
+   "to": 1979,
+   "kind": "religious",
+   "states": [
+    "Iran"
+   ],
+   "text": "Revolution that overthrew the Shah and made Iran an Islamic republic under Ayatollah Khomeini.",
+   "source": "https://en.wikipedia.org/wiki/Iranian_revolution"
+  },
+  {
+   "id": "arab-spring",
+   "name": "Arab Spring",
+   "wiki": "Arab Spring",
+   "from": 2010,
+   "to": 2012,
+   "kind": "political",
+   "states": [
+    "Tunisia",
+    "Egypt",
+    "Libya",
+    "Syria",
+    "Yemen",
+    "Bahrain"
+   ],
+   "text": "Wave of protests and uprisings from Tunisia (December 2010) that toppled rulers in Tunisia, Egypt, Libya and Yemen.",
+   "source": "https://en.wikipedia.org/wiki/Arab_Spring"
+  },
+  {
+   "id": "wahhabism",
+   "name": "Wahhabism",
+   "wiki": "Wahhabism",
+   "from": 1744,
+   "to": 2019,
+   "kind": "religious",
+   "states": [
+    "Emirate of Diriyah",
+    "Emirate of Nejd",
+    "Saudi Arabia"
+   ],
+   "text": "Strict Sunni revival of Muhammad ibn Abd al-Wahhab, allied with the House of Saud since 1744.",
+   "source": "https://en.wikipedia.org/wiki/Wahhabism"
+  },
+  {
+   "id": "sikhism-khalsa",
+   "name": "Khalsa and the rise of the Sikhs",
+   "wiki": "Khalsa",
+   "from": 1699,
+   "to": 1849,
+   "kind": "religious",
+   "states": [
+    "Sikh Empire",
+    "Sikh Confederacy",
+    "Mughal Empire"
+   ],
+   "text": "Order of initiated Sikhs founded by Guru Gobind Singh (1699), the core of later Sikh power in the Punjab.",
+   "source": "https://en.wikipedia.org/wiki/Khalsa"
+  },
+  {
+   "id": "bhakti",
+   "name": "Bhakti movement",
+   "wiki": "Bhakti movement",
+   "from": 1300,
+   "to": 1700,
+   "kind": "religious",
+   "century": true,
+   "states": [
+    "Vijayanagara Empire",
+    "Mughal Empire",
+    "Tughlaq Dynasty",
+    "Bahmani Sultanate",
+    "Khalji Dynasty"
+   ],
+   "text": "Devotional Hinduism in the vernacular languages: Kabir, Mirabai, Tulsidas, Chaitanya.",
+   "source": "https://en.wikipedia.org/wiki/Bhakti_movement"
+  },
+  {
+   "id": "neo-confucianism",
+   "name": "Neo-Confucianism",
+   "wiki": "Neo-Confucianism",
+   "from": 1000,
+   "to": 1600,
+   "kind": "intellectual",
+   "century": true,
+   "states": [
+    "Northern Song",
+    "Southern Song",
+    "Ming Dynasty",
+    "Joseon"
+   ],
+   "text": "Revival of Confucian philosophy by Zhu Xi and others; the basis of the civil-service examinations until 1905.",
+   "source": "https://en.wikipedia.org/wiki/Neo-Confucianism"
+  },
+  {
+   "id": "crusades",
+   "name": "Crusading movement",
+   "wiki": "Crusades",
+   "from": 1095,
+   "to": 1291,
+   "kind": "religious",
+   "states": [
+    "Kingdom of France",
+    "Holy Roman Empire",
+    "Kingdom of England",
+    "Norman England",
+    "Kingdom of Jerusalem",
+    "County of Tripoli",
+    "Principality of Antioch",
+    "County of Edessa",
+    "Papal States",
+    "Republic of Venice"
+   ],
+   "text": "Papal call to armed pilgrimage to take and hold Jerusalem, from Urban II (1095) to the fall of Acre (1291).",
+   "source": "https://en.wikipedia.org/wiki/Crusades"
+  },
+  {
+   "id": "reconquista",
+   "name": "Reconquista",
+   "wiki": "Reconquista",
+   "from": 718,
+   "to": 1492,
+   "kind": "political",
+   "century": true,
+   "states": [
+    "Kingdom of Castile",
+    "Crown of Castile",
+    "Kingdom of León",
+    "Kingdom of Aragon",
+    "Crown of Aragon",
+    "Kingdom of Portugal",
+    "Kingdom of Navarre"
+   ],
+   "text": "Christian kingdoms' reconquest of Iberia from Muslim rule, ending with the fall of Granada in 1492.",
+   "source": "https://en.wikipedia.org/wiki/Reconquista"
+  },
+  {
+   "id": "cluniac",
+   "name": "Cluniac and Gregorian reforms",
+   "wiki": "Gregorian Reform",
+   "from": 1050,
+   "to": 1122,
+   "kind": "religious",
+   "states": [
+    "Papal States",
+    "Holy Roman Empire",
+    "Kingdom of France"
+   ],
+   "text": "Church reform against simony and lay control, which led to the Investiture Controversy with the emperors.",
+   "source": "https://en.wikipedia.org/wiki/Gregorian_Reform"
+  },
+  {
+   "id": "scholasticism",
+   "name": "Scholasticism and the first universities",
+   "wiki": "Scholasticism",
+   "from": 1100,
+   "to": 1500,
+   "kind": "intellectual",
+   "century": true,
+   "states": [
+    "Kingdom of France",
+    "Kingdom of England",
+    "Holy Roman Empire",
+    "Papal States"
+   ],
+   "text": "Method of reasoned inquiry taught at Bologna, Paris and Oxford: Abelard, Aquinas, Ockham.",
+   "source": "https://en.wikipedia.org/wiki/Scholasticism"
+  },
+  {
+   "id": "islamic-golden-age",
+   "name": "Islamic Golden Age",
+   "wiki": "Islamic Golden Age",
+   "from": 786,
+   "to": 1258,
+   "kind": "intellectual",
+   "century": true,
+   "states": [
+    "Abbasid Caliphate",
+    "Caliphate of Córdoba",
+    "Fatimid Caliphate",
+    "Buyid Dynasty",
+    "Samanid Empire"
+   ],
+   "text": "Flowering of science, medicine and philosophy: the House of Wisdom, al-Khwarizmi, Ibn Sina, Ibn Rushd.",
+   "source": "https://en.wikipedia.org/wiki/Islamic_Golden_Age"
+  },
+  {
+   "id": "sufism-safavid",
+   "name": "Safavid Shi'ism",
+   "wiki": "Safavid conversion of Iran to Shia Islam",
+   "from": 1501,
+   "to": 1736,
+   "kind": "religious",
+   "states": [
+    "Safavid Dynasty"
+   ],
+   "text": "Ismail I made Twelver Shia Islam the state religion in 1501 and the Safavids converted most of Iran.",
+   "source": "https://en.wikipedia.org/wiki/Safavid_conversion_of_Iran_to_Shia_Islam"
+  },
+  {
+   "id": "hellenism",
+   "name": "Hellenism",
+   "wiki": "Hellenistic period",
+   "from": -323,
+   "to": -31,
+   "kind": "cultural",
+   "states": [
+    "Ptolemaic Kingdom",
+    "Seleucid Empire",
+    "Greco-Bactrian Kingdom",
+    "Kingdom of Pergamon",
+    "Antigonid Macedonia",
+    "Macedonian Empire"
+   ],
+   "text": "Spread of Greek language, cities and learning across the lands Alexander conquered; Alexandria's Library and Museum.",
+   "source": "https://en.wikipedia.org/wiki/Hellenistic_period"
+  },
+  {
+   "id": "early-christianity",
+   "name": "Spread of Christianity",
+   "wiki": "Christianity in the Roman Empire",
+   "from": 33,
+   "to": 380,
+   "kind": "religious",
+   "states": [
+    "Roman Empire"
+   ],
+   "text": "From a persecuted Jewish sect to the empire's favoured faith under Constantine (313) and its state religion (380).",
+   "source": "https://en.wikipedia.org/wiki/Christianity_in_the_Roman_Empire"
+  },
+  {
+   "id": "buddhism-ashoka",
+   "name": "Ashoka's Buddhism",
+   "wiki": "Ashoka",
+   "from": -260,
+   "to": -232,
+   "kind": "religious",
+   "states": [
+    "Maurya Empire"
+   ],
+   "text": "After the Kalinga war Ashoka promoted Buddhist ethics (dhamma) in edicts across his empire and sent missions abroad.",
+   "source": "https://en.wikipedia.org/wiki/Ashoka"
+  },
+  {
+   "id": "hundred-schools",
+   "name": "Hundred Schools of Thought",
+   "wiki": "Hundred Schools of Thought",
+   "from": -500,
+   "to": -221,
+   "kind": "intellectual",
+   "century": true,
+   "states": [
+    "Qi",
+    "Lu",
+    "Wei",
+    "Chu",
+    "Qin",
+    "Zhao",
+    "Han",
+    "Yan",
+    "Eastern Zhou"
+   ],
+   "text": "Confucians, Mohists, Daoists and Legalists debated how to govern in the Warring States era.",
+   "source": "https://en.wikipedia.org/wiki/Hundred_Schools_of_Thought"
+  },
+  {
+   "id": "athenian-democracy",
+   "name": "Athenian democracy",
+   "wiki": "Athenian democracy",
+   "from": -508,
+   "to": -322,
+   "kind": "political",
+   "states": [
+    "Greek City-States",
+    "Second Athenian League"
+   ],
+   "text": "Rule by the assembly of male citizens, from Cleisthenes' reforms (508 BC) to the Macedonian conquest.",
+   "source": "https://en.wikipedia.org/wiki/Athenian_democracy"
+  },
+  {
+   "id": "mfecane",
+   "name": "Mfecane",
+   "wiki": "Mfecane",
+   "from": 1815,
+   "to": 1840,
+   "kind": "political",
+   "states": [
+    "Zululand"
+   ],
+   "text": "Wars and migrations in southern Africa around the rise of the Zulu kingdom under Shaka.",
+   "source": "https://en.wikipedia.org/wiki/Mfecane"
+  },
+  {
+   "id": "fulani-jihads",
+   "name": "Fulani jihads",
+   "wiki": "Fula jihads",
+   "from": 1725,
+   "to": 1854,
+   "kind": "religious",
+   "states": [
+    "Sokoto Caliphate",
+    "Massina Empire"
+   ],
+   "text": "Islamic reform wars across West Africa that founded the Sokoto Caliphate (1804) and other states.",
+   "source": "https://en.wikipedia.org/wiki/Fula_jihads"
+  },
+  {
+   "id": "nationalism-balkans",
+   "name": "Balkan national revivals",
+   "wiki": "Bulgarian National Revival",
+   "from": 1762,
+   "to": 1878,
+   "kind": "nationalist",
+   "states": [
+    "Ottoman Empire",
+    "Principality of Serbia",
+    "First Hellenic Republic"
+   ],
+   "text": "Language, schools and churches of the Balkan nations, and their risings against Ottoman rule.",
+   "source": "https://en.wikipedia.org/wiki/Bulgarian_National_Revival"
+  },
+  {
+   "id": "greek-independence",
+   "name": "Greek War of Independence",
+   "wiki": "Greek War of Independence",
+   "from": 1821,
+   "to": 1829,
+   "kind": "nationalist",
+   "states": [
+    "Ottoman Empire",
+    "First Hellenic Republic"
+   ],
+   "text": "Uprising against Ottoman rule supported by Britain, France and Russia; Greece became independent in 1830.",
+   "source": "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+  },
+  {
+   "id": "satyagraha",
+   "name": "Non-cooperation and civil disobedience",
+   "wiki": "Non-cooperation movement",
+   "from": 1920,
+   "to": 1922,
+   "kind": "nationalist",
+   "states": [
+    "India"
+   ],
+   "text": "Gandhi's first mass campaign: boycott of British goods, courts and schools.",
+   "source": "https://en.wikipedia.org/wiki/Non-cooperation_movement"
+  },
+  {
+   "id": "khmer-rouge",
+   "name": "Khmer Rouge",
+   "wiki": "Khmer Rouge",
+   "from": 1951,
+   "to": 1979,
+   "kind": "political",
+   "states": [
+    "Cambodia"
+   ],
+   "text": "Communist movement under Pol Pot that ruled 1975-1979 and killed between 1.5 and 2 million people.",
+   "source": "https://en.wikipedia.org/wiki/Khmer_Rouge"
+  },
+  {
+   "id": "peronism",
+   "name": "Peronism",
+   "wiki": "Peronism",
+   "from": 1946,
+   "to": 1955,
+   "kind": "political",
+   "states": [
+    "Argentina"
+   ],
+   "text": "Juan and Eva Perón's movement of organised labour, nationalism and social welfare.",
+   "source": "https://en.wikipedia.org/wiki/Peronism"
+  },
+  {
+   "id": "mexican-revolution",
+   "name": "Mexican Revolution",
+   "wiki": "Mexican Revolution",
+   "from": 1910,
+   "to": 1920,
+   "kind": "political",
+   "states": [
+    "Mexico"
+   ],
+   "text": "Revolt against Porfirio Díaz that became a civil war of Madero, Villa, Zapata and Carranza; constitution of 1917.",
+   "source": "https://en.wikipedia.org/wiki/Mexican_Revolution"
+  },
+  {
+   "id": "cuban-revolution",
+   "name": "Cuban Revolution",
+   "wiki": "Cuban Revolution",
+   "from": 1953,
+   "to": 1959,
+   "kind": "political",
+   "states": [
+    "Cuba"
+   ],
+   "text": "Castro's 26th of July Movement overthrew Batista in January 1959; Cuba became a communist state.",
+   "source": "https://en.wikipedia.org/wiki/Cuban_Revolution"
+  },
+  {
+   "id": "environmentalism",
+   "name": "Environmental movement",
+   "wiki": "Environmental movement",
+   "from": 1962,
+   "to": 2019,
+   "kind": "social",
+   "states": [
+    "United States of America",
+    "West Germany",
+    "Germany",
+    "United Kingdom"
+   ],
+   "text": "From Rachel Carson's Silent Spring (1962) and Earth Day (1970) to green parties and climate campaigns.",
+   "source": "https://en.wikipedia.org/wiki/Environmental_movement"
+  },
+  {
+   "id": "lgbt-rights-us",
+   "name": "Gay liberation",
+   "wiki": "Gay liberation",
+   "from": 1969,
+   "to": 1980,
+   "kind": "social",
+   "states": [
+    "United States of America"
+   ],
+   "text": "Movement for gay and lesbian rights after the Stonewall riots of 1969.",
+   "source": "https://en.wikipedia.org/wiki/Gay_liberation"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "Q7283727": {
+  "title": "Raid on Scone",
+  "y": 1297,
+  "place": "Scone, Perthshire (Kingdom of Scotland)",
+  "paras": [
+   "In 1296 Edward I of England deposed King John Balliol and ruled Scotland through his own officials. One of them was William de Ormesby, an English judge made Justice of Scotland when Earl Warenne became warden of the conquered kingdom. Edward ordered him to take oaths of homage and fealty from Scotland's landholders, and Ormesby did so with notorious severity, driving those who refused into exile.",
+   "In the spring of 1297 the Scots rose against English rule in several places at once. After killing the English sheriff of Lanark in May, William Wallace joined forces with Sir William Douglas, 'the Hardy', and the two led a raid on Scone, the old royal centre near Perth where Ormesby then was. Ormesby was warned at the last moment and escaped with great difficulty, but he had to leave all his property behind as spoil for the raiders. The Scots took control of Scone.",
+   "The raid was both practical and symbolic: it drove the chief English law officer out of the heart of the kingdom and struck at the place where Scottish kings had been inaugurated. Sources differ on the month: the Wikipedia article on the raid dates it to June 1297, while the Dictionary of National Biography and the Wikipedia article on Ormesby place it at the outbreak of Wallace's revolt in May.",
+   "Douglas was soon captured by the English after the Scottish nobles' capitulation at Irvine, but Wallace kept fighting. Joining Andrew Moray, who had raised the north, he won the Battle of Stirling Bridge on 11 September 1297 and became Guardian of Scotland. Ormesby survived to serve Edward I in England, raising foot soldiers in October 1297 after the defeat at Stirling."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Raid_on_Scone",
+    "title": "Raid on Scone",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     4,
+     5,
+     6,
+     8
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Ormesby,_William_de",
+    "title": "Ormesby, William de (T. F. Tout, 1895)",
+    "publisher": "Dictionary of National Biography, vol. 42, via Wikisource (public domain)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     3,
+     6,
+     7
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/William_de_Ormesby",
+    "title": "William de Ormesby",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     3,
+     7,
+     8,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/William_Wallace",
+    "title": "William Wallace",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     4,
+     5
+    ]
+   },
+   {
+    "url": "https://portal.historicenvironment.scot/designation/BTL28",
+    "title": "Battle of Stirling Bridge (Inventory of Historic Battlefields, BTL28)",
+    "publisher": "Historic Environment Scotland",
+    "accessed": "2026-11-27",
+    "supports": [
+     4,
+     9,
+     10,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Edward I deposed John Balliol in 1296 and ruled Scotland through English officials.",
+   "William de Ormesby was appointed Justice of Scotland when Earl Warenne became warden.",
+   "Edward ordered Ormesby to take homage and fealty; he did so with severity and exiled those who refused.",
+   "The Scots rose against English rule in spring 1297; Wallace killed the English sheriff of Lanark in May 1297.",
+   "Wallace joined Sir William Douglas the Hardy and they raided Scone.",
+   "Ormesby was warned at the last moment and escaped with difficulty, leaving all his property as spoil.",
+   "Ormesby was attacked at Scone when Wallace's revolt broke out in May 1297 (DNB; Ormesby article).",
+   "The raid article dates the raid to June 1297.",
+   "Douglas was captured following the Capitulation of Irvine.",
+   "Wallace and Andrew Moray won the Battle of Stirling Bridge on 11 September 1297.",
+   "After Stirling Bridge Wallace became Guardian of Scotland.",
+   "Ormesby was appointed on 23 October 1297 to raise foot soldiers in English counties.",
+   "Scone was where Scottish kings were inaugurated and the Stone of Destiny was kept until Edward I removed it."
+  ],
+  "disagree": "Month of the raid: June 1297 (Wikipedia, Raid on Scone; the event record) or May 1297, at the outbreak of the revolt (DNB; Wikipedia, William de Ormesby).",
+  "checked": null
+ }
+}
