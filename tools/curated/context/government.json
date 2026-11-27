@@ -630,6 +630,11 @@
     ],
     [
      1976,
+     1977,
+     "monarchy in transition to democracy"
+    ],
+    [
+     1978,
      2019,
      "parliamentary constitutional monarchy"
     ]
@@ -703,6 +708,331 @@
      1975,
      2019,
      "semi-presidential republic"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Romania"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Romania",
+   "rows": [
+    [
+     1886,
+     1937,
+     "constitutional monarchy"
+    ],
+    [
+     1938,
+     1940,
+     "royal dictatorship (Carol II)"
+    ],
+    [
+     1940,
+     1944,
+     "military dictatorship (Antonescu) under the monarchy"
+    ],
+    [
+     1944,
+     1947,
+     "constitutional monarchy"
+    ],
+    [
+     1948,
+     1989,
+     "one-party socialist republic"
+    ],
+    [
+     1990,
+     2019,
+     "semi-presidential republic"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Italy"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Italy",
+   "rows": [
+    [
+     1886,
+     1921,
+     "constitutional monarchy"
+    ],
+    [
+     1922,
+     1943,
+     "fascist dictatorship under the monarchy"
+    ],
+    [
+     1943,
+     1945,
+     "constitutional monarchy (in the south; the Italian Social Republic in the north)"
+    ],
+    [
+     1946,
+     2019,
+     "parliamentary republic"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Hungary"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920%E2%80%931946)",
+   "rows": [
+    [
+     1920,
+     1944,
+     "kingdom under a regent (Horthy), authoritarian"
+    ],
+    [
+     1946,
+     1948,
+     "republic"
+    ],
+    [
+     1949,
+     1989,
+     "one-party socialist state"
+    ],
+    [
+     1990,
+     2019,
+     "parliamentary republic"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Greece"
+   ],
+   "source": "https://en.wikipedia.org/wiki/4th_of_August_Regime",
+   "rows": [
+    [
+     1936,
+     1941,
+     "dictatorship (Metaxas) under the monarchy"
+    ],
+    [
+     1967,
+     1974,
+     "military dictatorship"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Yugoslavia",
+    "Kingdom of Serbs, Croats and Slovenes"
+   ],
+   "source": "https://en.wikipedia.org/wiki/6_January_Dictatorship",
+   "rows": [
+    [
+     1918,
+     1928,
+     "constitutional monarchy"
+    ],
+    [
+     1929,
+     1934,
+     "royal dictatorship (Alexander I)"
+    ],
+    [
+     1935,
+     1941,
+     "constitutional monarchy"
+    ],
+    [
+     1945,
+     1991,
+     "one-party socialist federation"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Poland"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Sanation",
+   "rows": [
+    [
+     1919,
+     1925,
+     "parliamentary republic"
+    ],
+    [
+     1926,
+     1939,
+     "authoritarian republic (Sanation)"
+    ],
+    [
+     1947,
+     1989,
+     "one-party socialist state"
+    ],
+    [
+     1990,
+     2019,
+     "parliamentary republic"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Bulgaria"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Tsardom_of_Bulgaria",
+   "rows": [
+    [
+     1934,
+     1943,
+     "royal authoritarian rule (Boris III)"
+    ],
+    [
+     1946,
+     1990,
+     "one-party socialist state"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Egypt"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Sultanate_of_Egypt",
+   "rows": [
+    [
+     1886,
+     1913,
+     "autonomous khedivate (Ottoman suzerainty, British occupation)"
+    ],
+    [
+     1914,
+     1922,
+     "British protectorate (Sultanate of Egypt)"
+    ],
+    [
+     1922,
+     1952,
+     "constitutional monarchy"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Greece"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Kingdom_of_Greece",
+   "rows": [
+    [
+     1886,
+     1923,
+     "constitutional monarchy"
+    ],
+    [
+     1924,
+     1935,
+     "republic (Second Hellenic Republic)"
+    ],
+    [
+     1935,
+     1935,
+     "constitutional monarchy"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Taiwan"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Martial_law_in_Taiwan",
+   "rows": [
+    [
+     1949,
+     1986,
+     "one-party state under martial law (Kuomintang)"
+    ],
+    [
+     1987,
+     1995,
+     "republic in transition to democracy"
+    ],
+    [
+     1996,
+     2019,
+     "semi-presidential republic"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Hawaii"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Territory_of_Hawaii",
+   "rows": [
+    [
+     1898,
+     1959,
+     "territory of the United States"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Zululand"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Zulu_Kingdom",
+   "rows": [
+    [
+     1816,
+     1897,
+     "monarchy (Zulu Kingdom)"
+    ]
+   ]
+  },
+  {
+   "names": [
+    "Brazil"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Military_dictatorship_in_Brazil",
+   "rows": [
+    [
+     1886,
+     1888,
+     "constitutional monarchy (Empire of Brazil)"
+    ],
+    [
+     1889,
+     1929,
+     "federal presidential republic (First Republic)"
+    ],
+    [
+     1930,
+     1936,
+     "provisional government, then constitutional republic (Vargas)"
+    ],
+    [
+     1937,
+     1945,
+     "dictatorship (Estado Novo)"
+    ],
+    [
+     1946,
+     1963,
+     "federal presidential republic"
+    ],
+    [
+     1964,
+     1984,
+     "military dictatorship"
+    ],
+    [
+     1985,
+     2019,
+     "federal presidential republic"
     ]
    ]
   }

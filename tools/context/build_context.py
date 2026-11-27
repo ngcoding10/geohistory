@@ -94,6 +94,7 @@ class Ctx:
         self.items = self.wd['items']
         self.tl_index = read_json(os.path.join(DATA, 'timelines', 'index.json'))
         self.terms = read_json(os.path.join(DATA, 'rulers', 'terms.json'))
+        self.party_ok = set(read_json(os.path.join(OUT, 'party_ok.json')))
         self.offices_from = {k: v for k, v in read_json(os.path.join(TOOLS, 'curated', 'context', 'regimes.json')).get('officesFrom', {}).items() if not k.startswith('_')}
         cur = read_json(os.path.join(TOOLS, 'curated', 'context', 'movements.json'))
         self.cur_mov = cur['movements']
@@ -168,7 +169,7 @@ class Ctx:
         out = []
         for e in s.get('eras', []):
             f, t = e.get('from'), e.get('to')
-            if (f is None or f - SLACK <= y) and (t is None or y <= t + SLACK):
+            if (f is None or f - 2 <= y) and (t is None or y <= t + 2):
                 out.append(e['q'])
         q = s.get('q')
         if q:
@@ -202,6 +203,9 @@ class Ctx:
             rows = [r for r in it.get('P122', []) if r[1]]
             dated = [r for r in rows if (r[2] is not None or r[3] is not None) and valid(r, y, it)]
             undated = [r for r in rows if r[2] is None and r[3] is None and valid(r, y, it)]
+            # 'federal' and 'self-governing' are modern constitutional terms: not used for early states, nor for colonies
+            dated = [r for r in dated if not (y < 1787 and 'federal' in r[1])]
+            undated = [r for r in undated if not (y < 1787 and 'federal' in r[1]) and 'self-governing' not in r[1]]
             if dated:
                 return list(dict.fromkeys(r[1] for r in dated)), [], 'w'
             short = it.get('from') is not None and it.get('to') is not None and it['to'] - it['from'] <= 30
@@ -209,12 +213,12 @@ class Ctx:
             today = q in self.iso_of_q and it.get('to') is None
             # a country of today: its undated forms describe its present constitution: used from 1991, or from
             # 1946 where no curated regime says the state changed in between
-            current = today and y >= 2010
+            current = False   # (spot checks: a country's present form, as Wikidata gives it now, misdated changes such as Barbados's republic of 2021)
             labels = ' '.join(r[1] for r in undated).lower()
             conflict = ('presidential' in labels and 'parliamentary' in labels) or ('monarchy' in labels and 'republic' in labels)
             generic = bool(re.fullmatch(r'(?:hereditary |elective )?(?:monarchy|kingdom|empire|sultanate|caliphate|khanate|principality|chiefdom|city-state|tribal (?:confederation|society)|theocracy|emirate)', labels.strip()))
             ended = it.get('to') is not None and it['to'] <= 1789
-            ok_one = len(undated) == 1 and (current or (not today and (span <= 150 or ended or generic)))
+            ok_one = len(undated) == 1 and (current or (not today and (span <= 100 or ended or generic)))
             if undated and not conflict and (ok_one or short or current):
                 return list(dict.fromkeys(r[1] for r in undated)), [], 'w'
             if undated:
@@ -230,18 +234,22 @@ class Ctx:
                         if not any(o[0] == v and o[1] == k for o in out):
                             out.append([v, k, 'c', e['source'], e.get('note')])
         curated = bool(out)
+        if curated:
+            return out          # a curated, dated entry speaks for these years
         for q in qs:
             it = self.items.get(q, {})
             long_lived = it.get('from') is None or it.get('to') is None or it['to'] - it['from'] > 100
+            # a country of today: its undated statements describe the present, not earlier years
+            present_only = q in self.iso_of_q and it.get('to') is None and y < 2010
             for prop, kind in (('P3075', 'official'), ('P140', 'recorded')):
                 rows = pick(it.get(prop, []), y, it)
+                if present_only:
+                    rows = [r for r in rows if r[2] is not None or r[3] is not None]
                 undated = [r for r in rows if r[2] is None and r[3] is None]
                 for r in rows:
                     k = kind
                     if r in undated and long_lived and len(undated) > 1:
-                        if curated:
-                            continue      # a curated, dated entry speaks for these years
-                        k = 'recorded, undated'
+                        continue      # several undated values over a long life: which held when is unknown
                     elif prop == 'P3075' and len(undated) > 2:
                         k = 'recognised'
                     if not any(fold(r[1]) in fold(o[0]) or fold(o[0]) in fold(r[1]) for o in out):
@@ -262,7 +270,7 @@ class Ctx:
         for r in cand:
             p = self.wd['parties'].get(r[0], {})
             n = p.get('n', '')
-            if not n or re.fullmatch(r'Q\d+', n) or NO_PARTY.search(n):
+            if r[0] not in self.party_ok or not n or re.fullmatch(r'Q\d+', n) or NO_PARTY.search(n):
                 continue
             f, t = p.get('from'), p.get('to')
             if f is None and not dated:
@@ -280,31 +288,47 @@ class Ctx:
         for a, b, q, label, kind, src in self.cur_party.get(name, []):
             if a <= y <= b:
                 return q or label, [label, None, None, f'{kind} rule ({src})', label]
-        now = [r for r in rulers if r[1] <= y and (r[2] if r[2] is not None else r[1]) >= y and not BAD_TITLE.search(r[3])]
-        # the holder at the start of the year first: one who took office during the year comes after
-        now.sort(key=lambda r: r[1] == y)
-        one_party = any(re.search(r'one-party|communist|socialist|soviet|people.s republic|fascis|totalitarian', g, re.I) for g in gov)
-        lead = [r for r in now if LEADER.search(r[3]) and (one_party or (len(r) > 5 and 'c' in (r[5] or '')))]
-        hog = [r for r in now if HOG.search(r[3]) and r not in lead]
-        hos = [r for r in now if HOS.search(r[3]) and r not in lead and r not in hog]
-        presidential = any('presidential' in g.lower() and 'semi' not in g.lower() for g in gov)
-        if any('directorial' in g.lower() for g in gov):
+        # high confidence only: office holders in office for the whole year (not those who came or went in it)
+        now = [r for r in rulers if r[1] < y and (r[2] is None or r[2] > y) and not BAD_TITLE.search(r[3])]
+        govl = ' '.join(gov).lower()
+        if 'directorial' in govl:
             return None, None     # a collegial executive (Switzerland): no ruling party
+        one_party = re.search(r'one-party|communist|socialist|soviet|people.s republic|fascis|totalitarian', govl)
+        lead = [r for r in now if LEADER.search(r[3]) and (one_party or (len(r) > 5 and 'c' in (r[5] or '')))]
+        for r in lead:
+            ps = self.party_of(r[4], y) if len(r) > 4 and r[4] else []
+            if ps:
+                return ps[0], r
+        hog = [r for r in now if HOG.search(r[3])]
+        pres = [r for r in now if re.search(r'\bpresident\b', r[3], re.I) and not HOG.search(r[3])]
+        mon = [r for r in now if HOS.search(r[3]) and r not in pres and r not in hog]
+
+        def party(rs):
+            got = {self.party_of(r[4], y)[0] for r in rs if len(r) > 4 and r[4] and self.party_of(r[4], y)}
+            return got.pop() if len(got) == 1 else None
+        presidential = 'presidential' in govl and 'semi-presidential' not in govl
+        semi = 'semi-presidential' in govl
+        parliamentary = re.search(r'parliamentary|constitutional monarchy|westminster', govl) and not presidential and not semi
         if presidential:
-            # the president's party, or none: a non-party president is not replaced by his prime minister's party
-            pres = [r for r in hos if re.search(r'president', r[3], re.I)]
-            order = lead + (pres or hos + hog)
+            pick_ = pres
+        elif semi:
+            # semi-presidential: the president's party, unless the head of government's differs (cohabitation)
+            pp, hp = party(pres), party(hog)
+            if pp and hp and pp != hp:
+                return None, None
+            pick_ = pres or hog
+        elif parliamentary:
+            pick_ = hog
         else:
-            semi = any('semi-presidential' in g.lower() for g in gov)
-            order = lead + (hos + hog if semi else hog + hos)
-        for r in order:
-            if len(r) > 4 and r[4]:
-                ps = self.party_of(r[4], y)
-                if ps:
-                    return ps[0], r
-            elif presidential and r in order[len(lead):]:
-                break
-        return None, None
+            # no form of government known: only when the president and the head of government agree
+            pp, hp = party(pres), party(hog)
+            if pres and hog:
+                return (pp, (pres + hog)[0]) if pp and pp == hp else (None, None)
+            pick_ = pres or hog
+        if not pick_:
+            return None, None
+        pq = party(pick_)
+        return (pq, pick_[0]) if pq else (None, None)
 
     def parties(self, qs, a, b, limit=6):
         seen, out = set(), []
@@ -343,6 +367,7 @@ class Ctx:
                         census.append((r[4], float(r[0]), r[6] or 'Wikidata'))
                 except (TypeError, ValueError):
                     pass
+        km2 = {r[0]: (r[2] if len(r) > 2 else 99999999) for r in self.pop['states'].get(name, [])}
         for y, hy in samples:
             figs = [[hy, 'HYDE 3.2.1 (model estimate for this territory)']]
             cur = sorted(self.cur_pop.get(name, []), key=lambda r: r['year'])
@@ -368,6 +393,17 @@ class Ctx:
                 if md and mh and 0.87 <= hy / mh <= 1.15:
                     yy, v = min(md, key=lambda r: abs(r[0] - y))
                     figs.append([v, f"Maddison Project 2023 ({mod.get('mname')}, today's borders, {yy})"])
+            # a source's own range (low and high) counts once, by its middle, in the test of agreement
+            by_src = {}
+            for v, src_ in figs:
+                by_src.setdefault(src_, []).append(v)
+            vals = [math.sqrt(min(v) * max(v)) for v in by_src.values()]
+            if len(vals) > 1 and max(vals) > 2 * min(vals):
+                continue   # figures more than twofold apart describe different territories: none is shown
+            if len(figs) == 1 and y < 1800 and hy / max(km2.get(y, 1), 1) < 2:
+                continue   # thinly peopled land before 1800: HYDE fills it from regional assumptions
+            if len(figs) == 1 and (y < 1000 or km2.get(y, 99999999) < 100000):
+                continue   # the model alone is shown only for large states after 1000 (spot checks: small and early ones too often wrong)
             out.append([y] + compact(figs, y))
         # census and official figures on Wikidata
         wdp = []
@@ -463,8 +499,7 @@ class Ctx:
             if gsrc == 'c':
                 e = next(e for e in self.cur_gov[name] if any(r[0] <= a <= r[1] for r in e['rows']))
                 p['govCite'] = e['source']
-        if gany:
-            p['govAny'] = gany[:6]
+        # undated forms of uncertain years are not shown (low confidence)
         if rel:
             p['rel'] = rel[:6]
         if party:
@@ -505,7 +540,8 @@ class Ctx:
                     seen.add(m['n'].lower())
                     wm.append((m['sl'], [m['n'], f, t, m.get('d'), f'https://www.wikidata.org/wiki/{mq}', 'w', True]))
         wm.sort(key=lambda x: -x[0])
-        mov += [x[1] for x in wm[:5]]
+        # Wikidata's movements are left out: in the spot checks too many were events, places or foreign
+        # movements filed under a country (kept in tools/cache for later review)
         if mov:
             p['mov'] = mov
         ds = [d for d in self.disc.get(name, []) if a <= d['y'] <= b]

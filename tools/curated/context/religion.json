@@ -1,56 +1,658 @@
 {
  "_about": "Official (state) religions and, where well documented, the majority religion of major states, with dates. Written for GeoHistory from general knowledge (AI-written, labelled so in the app); each entry names the English Wikipedia article it follows. 'official': the religion of the state (established church, state religion, or the stated policy); 'majority': the religion of most of the population, only where censuses or surveys show it; 'rulers': the religion of the ruling dynasty and court where most subjects followed others. No percentages are given. 'verified' is set by tools/context/build_context.py when an official religion also appears in the Wikidata item's official religion (P3075) or religion (P140).",
  "states": [
-  {"names": ["Ottoman Empire"], "from": 1299, "to": 1922, "official": ["Sunni Islam"], "source": "https://en.wikipedia.org/wiki/Religion_in_the_Ottoman_Empire", "note": "Christians and Jews were organised as recognised communities (millets)."},
-  {"names": ["Safavid Dynasty"], "from": 1501, "to": 1736, "official": ["Twelver Shia Islam"], "source": "https://en.wikipedia.org/wiki/Safavid_conversion_of_Iran_to_Shia_Islam"},
-  {"names": ["Mughal Empire"], "from": 1526, "to": 1857, "official": ["Sunni Islam"], "majority": ["Hinduism"], "source": "https://en.wikipedia.org/wiki/Mughal_Empire", "note": "Islam was the religion of the dynasty and the state; most subjects were Hindus. Akbar (1556-1605) abolished the jizya tax on non-Muslims; Aurangzeb restored it in 1679."},
-  {"names": ["Kingdom of England"], "from": 1559, "to": 1648, "official": ["Church of England (Anglican)"], "source": "https://en.wikipedia.org/wiki/Elizabethan_Religious_Settlement"},
-  {"names": ["Kingdom of England"], "from": 1660, "to": 1707, "official": ["Church of England (Anglican)"], "source": "https://en.wikipedia.org/wiki/Church_of_England"},
-  {"names": ["Kingdom of Great Britain", "United Kingdom"], "from": 1707, "to": 2019, "official": ["Church of England (established in England)", "Church of Scotland (national church in Scotland)"], "source": "https://en.wikipedia.org/wiki/Religion_in_the_United_Kingdom"},
-  {"names": ["Kingdom of Spain", "Spanish Empire"], "from": 1516, "to": 1885, "official": ["Catholicism"], "source": "https://en.wikipedia.org/wiki/Religion_in_Spain"},
-  {"names": ["Kingdom of France"], "from": 987, "to": 1789, "official": ["Catholicism"], "source": "https://en.wikipedia.org/wiki/Religion_in_France", "note": "The Edict of Nantes (1598) tolerated Protestants until its revocation in 1685."},
-  {"names": ["Kingdom of Sweden", "Swedish Empire"], "from": 1593, "to": 1814, "official": ["Lutheranism (Church of Sweden)"], "source": "https://en.wikipedia.org/wiki/Church_of_Sweden"},
-  {"names": ["Denmark-Norway", "Denmark"], "from": 1536, "to": 2019, "official": ["Lutheranism (Church of Denmark)"], "source": "https://en.wikipedia.org/wiki/Church_of_Denmark"},
-  {"names": ["Tsardom of Russia", "Russian Empire"], "from": 1547, "to": 1917, "official": ["Russian Orthodox Church"], "source": "https://en.wikipedia.org/wiki/Russian_Orthodox_Church"},
-  {"names": ["Byzantine Empire", "Eastern Roman Empire"], "from": 395, "to": 1453, "official": ["Chalcedonian (Eastern Orthodox) Christianity"], "source": "https://en.wikipedia.org/wiki/Byzantine_Empire"},
-  {"names": ["Roman Empire"], "from": -27, "to": 379, "official": ["Roman state religion and the imperial cult"], "source": "https://en.wikipedia.org/wiki/Religion_in_ancient_Rome", "note": "Christianity was legalised in 313 and favoured by Constantine."},
-  {"names": ["Roman Empire", "Western Roman Empire"], "from": 380, "to": 476, "official": ["Nicene Christianity"], "source": "https://en.wikipedia.org/wiki/Edict_of_Thessalonica"},
-  {"names": ["Ethiopian Empire"], "from": 1270, "to": 1974, "official": ["Ethiopian Orthodox Tewahedo Church"], "source": "https://en.wikipedia.org/wiki/Ethiopian_Orthodox_Tewahedo_Church"},
-  {"names": ["Mali Empire"], "from": 1235, "to": 1600, "rulers": ["Islam"], "source": "https://en.wikipedia.org/wiki/Mali_Empire", "note": "The mansas (Mansa Musa made the pilgrimage to Mecca in 1324) and the trading towns were Muslim; most rural subjects kept traditional religions."},
-  {"names": ["Songhai Empire"], "from": 1464, "to": 1591, "rulers": ["Islam"], "source": "https://en.wikipedia.org/wiki/Songhai_Empire"},
-  {"names": ["Tibet"], "from": 1642, "to": 1950, "official": ["Tibetan Buddhism (Gelug school)"], "source": "https://en.wikipedia.org/wiki/Ganden_Phodrang"},
-  {"names": ["United States of America"], "from": 1791, "to": 2019, "official": ["none (First Amendment, 1791)"], "majority": ["Christianity (Protestant the largest group)"], "source": "https://en.wikipedia.org/wiki/Religion_in_the_United_States"},
-  {"names": ["India"], "from": 1947, "to": 2019, "official": ["none (secular state)"], "majority": ["Hinduism"], "source": "https://en.wikipedia.org/wiki/Religion_in_India", "note": "About 80% Hindu and 14% Muslim in the 2011 census."},
-  {"names": ["Pakistan"], "from": 1956, "to": 2019, "official": ["Islam"], "majority": ["Islam"], "source": "https://en.wikipedia.org/wiki/Religion_in_Pakistan"},
-  {"names": ["Israel"], "from": 1948, "to": 2019, "majority": ["Judaism"], "source": "https://en.wikipedia.org/wiki/Religion_in_Israel", "note": "Israel has no state religion; Jewish, Muslim, Christian and Druze communities run their own religious courts."},
-  {"names": ["Saudi Arabia"], "from": 1932, "to": 2019, "official": ["Sunni Islam"], "majority": ["Islam"], "source": "https://en.wikipedia.org/wiki/Religion_in_Saudi_Arabia"},
-  {"names": ["Iran"], "from": 1979, "to": 2019, "official": ["Twelver Shia Islam"], "majority": ["Shia Islam"], "source": "https://en.wikipedia.org/wiki/Religion_in_Iran"},
-  {"names": ["Persia", "Iran"], "from": 1906, "to": 1978, "official": ["Twelver Shia Islam"], "majority": ["Shia Islam"], "source": "https://en.wikipedia.org/wiki/Religion_in_Iran"},
-  {"names": ["Soviet Union"], "from": 1922, "to": 1991, "official": ["none: state atheism (official policy)"], "source": "https://en.wikipedia.org/wiki/State_atheism"},
-  {"names": ["Empire of Japan", "Japan"], "from": 1868, "to": 1945, "official": ["State Shinto"], "source": "https://en.wikipedia.org/wiki/State_Shinto"},
-  {"names": ["Japan"], "from": 1946, "to": 2019, "official": ["none (separation of religion and state, 1947 constitution)"], "source": "https://en.wikipedia.org/wiki/Religion_in_Japan"},
-  {"names": ["Siam", "Thailand"], "from": 1886, "to": 2019, "majority": ["Theravada Buddhism"], "source": "https://en.wikipedia.org/wiki/Religion_in_Thailand"},
-  {"names": ["Egypt"], "from": 1923, "to": 2019, "official": ["Islam"], "majority": ["Sunni Islam"], "source": "https://en.wikipedia.org/wiki/Religion_in_Egypt"},
-  {"names": ["Turkey"], "from": 1928, "to": 2019, "official": ["none (secular state since 1928)"], "majority": ["Sunni Islam"], "source": "https://en.wikipedia.org/wiki/Religion_in_Turkey"},
-  {"names": ["Greece"], "from": 1886, "to": 2019, "official": ["Eastern Orthodoxy (the 'prevailing religion')"], "majority": ["Greek Orthodox Christianity"], "source": "https://en.wikipedia.org/wiki/Religion_in_Greece"},
-  {"names": ["Kingdom of Italy", "Italy"], "from": 1861, "to": 1984, "official": ["Catholicism"], "majority": ["Catholicism"], "source": "https://en.wikipedia.org/wiki/Religion_in_Italy"},
-  {"names": ["Italy"], "from": 1985, "to": 2019, "official": ["none (since the 1984 concordat)"], "majority": ["Catholicism"], "source": "https://en.wikipedia.org/wiki/Religion_in_Italy"},
-  {"names": ["Spain"], "from": 1939, "to": 1978, "official": ["Catholicism"], "majority": ["Catholicism"], "source": "https://en.wikipedia.org/wiki/Religion_in_Spain"},
-  {"names": ["Spain"], "from": 1979, "to": 2019, "official": ["none (1978 constitution)"], "majority": ["Catholicism"], "source": "https://en.wikipedia.org/wiki/Religion_in_Spain"},
-  {"names": ["Empire of Brazil"], "from": 1822, "to": 1885, "official": ["Catholicism"], "majority": ["Catholicism"], "source": "https://en.wikipedia.org/wiki/Religion_in_Brazil"},
-  {"names": ["Brazil", "Mexico", "Argentina", "Colombia", "Peru", "Chile", "Poland", "Ireland", "Philippines"], "from": 1886, "to": 2019, "majority": ["Catholicism"], "source": "https://en.wikipedia.org/wiki/Catholic_Church_by_country"},
-  {"names": ["France"], "from": 1905, "to": 2019, "official": ["none (laïcité, law of 1905)"], "source": "https://en.wikipedia.org/wiki/1905_French_law_on_the_Separation_of_the_Churches_and_the_State"},
-  {"names": ["Indonesia"], "from": 1945, "to": 2019, "majority": ["Sunni Islam"], "source": "https://en.wikipedia.org/wiki/Religion_in_Indonesia"},
-  {"names": ["Achaemenid Empire"], "from": -550, "to": -330, "rulers": ["Zoroastrianism"], "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire", "note": "The kings worshipped Ahura Mazda; the empire tolerated the cults of its peoples."},
-  {"names": ["Sasanian Empire", "Sassanid Empire"], "from": 224, "to": 651, "official": ["Zoroastrianism"], "source": "https://en.wikipedia.org/wiki/Sasanian_Empire"},
-  {"names": ["Rashidun Caliphate", "Umayyad Caliphate", "Abbasid Caliphate"], "from": 632, "to": 1258, "official": ["Sunni Islam"], "source": "https://en.wikipedia.org/wiki/Caliphate"},
-  {"names": ["Fatimid Caliphate"], "from": 909, "to": 1171, "official": ["Ismaili Shia Islam"], "source": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"},
-  {"names": ["Kievan Rus'"], "from": 988, "to": 1240, "official": ["Eastern Orthodox Christianity"], "source": "https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus%27"},
-  {"names": ["Holy Roman Empire", "Holy Roman Empire Minor States"], "from": 962, "to": 1554, "official": ["Catholicism"], "source": "https://en.wikipedia.org/wiki/Holy_Roman_Empire"},
-  {"names": ["Holy Roman Empire", "Holy Roman Empire Minor States"], "from": 1555, "to": 1806, "official": ["Catholicism and Lutheranism (Peace of Augsburg, 1555), and Calvinism (from 1648); each prince chose for his lands"], "source": "https://en.wikipedia.org/wiki/Peace_of_Augsburg"},
-  {"names": ["Inca Empire"], "from": 1438, "to": 1572, "official": ["Inca religion (cult of the Sun, Inti)"], "source": "https://en.wikipedia.org/wiki/Inca_religion"},
-  {"names": ["Aztec Triple Alliance"], "from": 1428, "to": 1521, "official": ["Aztec religion"], "source": "https://en.wikipedia.org/wiki/Aztec_religion"},
-  {"names": ["Maurya Empire"], "from": -268, "to": -232, "rulers": ["Buddhism (Ashoka)"], "source": "https://en.wikipedia.org/wiki/Ashoka"},
-  {"names": ["Joseon"], "from": 1392, "to": 1897, "official": ["Neo-Confucianism (state ideology)"], "source": "https://en.wikipedia.org/wiki/Joseon"}
+  {
+   "names": [
+    "Ottoman Empire"
+   ],
+   "from": 1299,
+   "to": 1922,
+   "official": [
+    "Sunni Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_the_Ottoman_Empire",
+   "note": "Christians and Jews were organised as recognised communities (millets)."
+  },
+  {
+   "names": [
+    "Safavid Dynasty"
+   ],
+   "from": 1501,
+   "to": 1736,
+   "official": [
+    "Twelver Shia Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Safavid_conversion_of_Iran_to_Shia_Islam"
+  },
+  {
+   "names": [
+    "Mughal Empire"
+   ],
+   "from": 1526,
+   "to": 1857,
+   "official": [
+    "Sunni Islam"
+   ],
+   "majority": [
+    "Hinduism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Mughal_Empire",
+   "note": "Islam was the religion of the dynasty and the state; most subjects were Hindus. Akbar (1556-1605) abolished the jizya tax on non-Muslims; Aurangzeb restored it in 1679."
+  },
+  {
+   "names": [
+    "Kingdom of England"
+   ],
+   "from": 1559,
+   "to": 1648,
+   "official": [
+    "Church of England (Anglican)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Elizabethan_Religious_Settlement"
+  },
+  {
+   "names": [
+    "Kingdom of England"
+   ],
+   "from": 1660,
+   "to": 1707,
+   "official": [
+    "Church of England (Anglican)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Church_of_England"
+  },
+  {
+   "names": [
+    "Kingdom of Great Britain",
+    "United Kingdom"
+   ],
+   "from": 1707,
+   "to": 2019,
+   "official": [
+    "Church of England (established in England)",
+    "Church of Scotland (national church in Scotland)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_the_United_Kingdom"
+  },
+  {
+   "names": [
+    "Kingdom of Spain",
+    "Spanish Empire"
+   ],
+   "from": 1516,
+   "to": 1885,
+   "official": [
+    "Catholicism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Spain"
+  },
+  {
+   "names": [
+    "Kingdom of France"
+   ],
+   "from": 987,
+   "to": 1789,
+   "official": [
+    "Catholicism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_France",
+   "note": "The Edict of Nantes (1598) tolerated Protestants until its revocation in 1685."
+  },
+  {
+   "names": [
+    "Kingdom of Sweden",
+    "Swedish Empire"
+   ],
+   "from": 1593,
+   "to": 1814,
+   "official": [
+    "Lutheranism (Church of Sweden)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Church_of_Sweden"
+  },
+  {
+   "names": [
+    "Denmark-Norway",
+    "Denmark"
+   ],
+   "from": 1536,
+   "to": 2019,
+   "official": [
+    "Lutheranism (Church of Denmark)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Church_of_Denmark"
+  },
+  {
+   "names": [
+    "Tsardom of Russia",
+    "Russian Empire"
+   ],
+   "from": 1547,
+   "to": 1917,
+   "official": [
+    "Russian Orthodox Church"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Russian_Orthodox_Church"
+  },
+  {
+   "names": [
+    "Byzantine Empire",
+    "Eastern Roman Empire"
+   ],
+   "from": 395,
+   "to": 1453,
+   "official": [
+    "Chalcedonian (Eastern Orthodox) Christianity"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Byzantine_Empire"
+  },
+  {
+   "names": [
+    "Roman Empire"
+   ],
+   "from": -27,
+   "to": 379,
+   "official": [
+    "Roman state religion and the imperial cult"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_ancient_Rome",
+   "note": "Christianity was legalised in 313 and favoured by Constantine."
+  },
+  {
+   "names": [
+    "Roman Empire",
+    "Western Roman Empire"
+   ],
+   "from": 380,
+   "to": 476,
+   "official": [
+    "Nicene Christianity"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Edict_of_Thessalonica"
+  },
+  {
+   "names": [
+    "Ethiopian Empire"
+   ],
+   "from": 1270,
+   "to": 1974,
+   "official": [
+    "Ethiopian Orthodox Tewahedo Church"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Ethiopian_Orthodox_Tewahedo_Church"
+  },
+  {
+   "names": [
+    "Mali Empire"
+   ],
+   "from": 1235,
+   "to": 1600,
+   "rulers": [
+    "Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Mali_Empire",
+   "note": "The mansas (Mansa Musa made the pilgrimage to Mecca in 1324) and the trading towns were Muslim; most rural subjects kept traditional religions."
+  },
+  {
+   "names": [
+    "Songhai Empire"
+   ],
+   "from": 1464,
+   "to": 1591,
+   "rulers": [
+    "Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Songhai_Empire"
+  },
+  {
+   "names": [
+    "Tibet"
+   ],
+   "from": 1642,
+   "to": 1950,
+   "official": [
+    "Tibetan Buddhism (Gelug school)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Ganden_Phodrang"
+  },
+  {
+   "names": [
+    "United States of America"
+   ],
+   "from": 1791,
+   "to": 2019,
+   "official": [
+    "none (First Amendment, 1791)"
+   ],
+   "majority": [
+    "Christianity (Protestant the largest group)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_the_United_States"
+  },
+  {
+   "names": [
+    "India"
+   ],
+   "from": 1947,
+   "to": 2019,
+   "official": [
+    "none (secular state)"
+   ],
+   "majority": [
+    "Hinduism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_India",
+   "note": "About 80% Hindu and 14% Muslim in the 2011 census."
+  },
+  {
+   "names": [
+    "Pakistan"
+   ],
+   "from": 1956,
+   "to": 2019,
+   "official": [
+    "Islam"
+   ],
+   "majority": [
+    "Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Pakistan"
+  },
+  {
+   "names": [
+    "Israel"
+   ],
+   "from": 1948,
+   "to": 2019,
+   "majority": [
+    "Judaism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Israel",
+   "note": "Israel has no state religion; Jewish, Muslim, Christian and Druze communities run their own religious courts."
+  },
+  {
+   "names": [
+    "Saudi Arabia"
+   ],
+   "from": 1932,
+   "to": 2019,
+   "official": [
+    "Sunni Islam"
+   ],
+   "majority": [
+    "Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Saudi_Arabia"
+  },
+  {
+   "names": [
+    "Iran"
+   ],
+   "from": 1979,
+   "to": 2019,
+   "official": [
+    "Twelver Shia Islam"
+   ],
+   "majority": [
+    "Shia Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Iran"
+  },
+  {
+   "names": [
+    "Persia",
+    "Iran"
+   ],
+   "from": 1906,
+   "to": 1978,
+   "official": [
+    "Twelver Shia Islam"
+   ],
+   "majority": [
+    "Shia Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Iran"
+  },
+  {
+   "names": [
+    "Soviet Union"
+   ],
+   "from": 1922,
+   "to": 1991,
+   "official": [
+    "none: state atheism (official policy)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/State_atheism"
+  },
+  {
+   "names": [
+    "Empire of Japan",
+    "Japan"
+   ],
+   "from": 1868,
+   "to": 1945,
+   "official": [
+    "State Shinto"
+   ],
+   "source": "https://en.wikipedia.org/wiki/State_Shinto"
+  },
+  {
+   "names": [
+    "Japan"
+   ],
+   "from": 1946,
+   "to": 2019,
+   "official": [
+    "none (separation of religion and state, 1947 constitution)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Japan"
+  },
+  {
+   "names": [
+    "Siam",
+    "Thailand"
+   ],
+   "from": 1886,
+   "to": 2019,
+   "majority": [
+    "Theravada Buddhism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Thailand"
+  },
+  {
+   "names": [
+    "Egypt"
+   ],
+   "from": 1923,
+   "to": 2019,
+   "official": [
+    "Islam"
+   ],
+   "majority": [
+    "Sunni Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Egypt"
+  },
+  {
+   "names": [
+    "Turkey"
+   ],
+   "from": 1928,
+   "to": 2019,
+   "official": [
+    "none (secular state since 1928)"
+   ],
+   "majority": [
+    "Sunni Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Turkey"
+  },
+  {
+   "names": [
+    "Greece"
+   ],
+   "from": 1886,
+   "to": 2019,
+   "official": [
+    "Eastern Orthodoxy (the 'prevailing religion')"
+   ],
+   "majority": [
+    "Greek Orthodox Christianity"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Greece"
+  },
+  {
+   "names": [
+    "Kingdom of Italy",
+    "Italy"
+   ],
+   "from": 1861,
+   "to": 1984,
+   "official": [
+    "Catholicism"
+   ],
+   "majority": [
+    "Catholicism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Italy"
+  },
+  {
+   "names": [
+    "Italy"
+   ],
+   "from": 1985,
+   "to": 2019,
+   "official": [
+    "none (since the 1984 concordat)"
+   ],
+   "majority": [
+    "Catholicism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Italy"
+  },
+  {
+   "names": [
+    "Spain"
+   ],
+   "from": 1939,
+   "to": 1978,
+   "official": [
+    "Catholicism"
+   ],
+   "majority": [
+    "Catholicism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Spain"
+  },
+  {
+   "names": [
+    "Spain"
+   ],
+   "from": 1979,
+   "to": 2019,
+   "official": [
+    "none (1978 constitution)"
+   ],
+   "majority": [
+    "Catholicism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Spain"
+  },
+  {
+   "names": [
+    "Empire of Brazil"
+   ],
+   "from": 1822,
+   "to": 1885,
+   "official": [
+    "Catholicism"
+   ],
+   "majority": [
+    "Catholicism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Brazil"
+  },
+  {
+   "names": [
+    "Brazil",
+    "Mexico",
+    "Argentina",
+    "Colombia",
+    "Peru",
+    "Chile",
+    "Poland",
+    "Ireland",
+    "Philippines"
+   ],
+   "from": 1886,
+   "to": 2019,
+   "majority": [
+    "Catholicism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Catholic_Church_by_country"
+  },
+  {
+   "names": [
+    "France"
+   ],
+   "from": 1905,
+   "to": 2019,
+   "official": [
+    "none (laïcité, law of 1905)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/1905_French_law_on_the_Separation_of_the_Churches_and_the_State"
+  },
+  {
+   "names": [
+    "Indonesia"
+   ],
+   "from": 1945,
+   "to": 2019,
+   "majority": [
+    "Sunni Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Indonesia"
+  },
+  {
+   "names": [
+    "Achaemenid Empire"
+   ],
+   "from": -550,
+   "to": -330,
+   "rulers": [
+    "Zoroastrianism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
+   "note": "The kings worshipped Ahura Mazda; the empire tolerated the cults of its peoples."
+  },
+  {
+   "names": [
+    "Sasanian Empire",
+    "Sassanid Empire"
+   ],
+   "from": 224,
+   "to": 651,
+   "official": [
+    "Zoroastrianism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Sasanian_Empire"
+  },
+  {
+   "names": [
+    "Rashidun Caliphate",
+    "Umayyad Caliphate",
+    "Abbasid Caliphate"
+   ],
+   "from": 632,
+   "to": 1258,
+   "official": [
+    "Sunni Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Caliphate"
+  },
+  {
+   "names": [
+    "Fatimid Caliphate"
+   ],
+   "from": 909,
+   "to": 1171,
+   "official": [
+    "Ismaili Shia Islam"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"
+  },
+  {
+   "names": [
+    "Kievan Rus'"
+   ],
+   "from": 988,
+   "to": 1240,
+   "official": [
+    "Eastern Orthodox Christianity"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus%27"
+  },
+  {
+   "names": [
+    "Holy Roman Empire",
+    "Holy Roman Empire Minor States"
+   ],
+   "from": 962,
+   "to": 1554,
+   "official": [
+    "Catholicism"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Holy_Roman_Empire"
+  },
+  {
+   "names": [
+    "Holy Roman Empire",
+    "Holy Roman Empire Minor States"
+   ],
+   "from": 1555,
+   "to": 1806,
+   "official": [
+    "Catholicism and Lutheranism (Peace of Augsburg, 1555), and Calvinism (from 1648); each prince chose for his lands"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Peace_of_Augsburg"
+  },
+  {
+   "names": [
+    "Inca Empire"
+   ],
+   "from": 1438,
+   "to": 1572,
+   "official": [
+    "Inca religion (cult of the Sun, Inti)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Inca_religion"
+  },
+  {
+   "names": [
+    "Aztec Triple Alliance"
+   ],
+   "from": 1428,
+   "to": 1521,
+   "official": [
+    "Aztec religion"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Aztec_religion"
+  },
+  {
+   "names": [
+    "Maurya Empire"
+   ],
+   "from": -268,
+   "to": -232,
+   "rulers": [
+    "Buddhism (Ashoka)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Ashoka"
+  },
+  {
+   "names": [
+    "Joseon"
+   ],
+   "from": 1392,
+   "to": 1897,
+   "official": [
+    "Neo-Confucianism (state ideology)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Joseon"
+  },
+  {
+   "names": [
+    "Armenia"
+   ],
+   "from": 1991,
+   "to": 2019,
+   "official": [
+    "none (the Armenian Apostolic Church is recognised in the constitution as the national church)"
+   ],
+   "majority": [
+    "Armenian Apostolic Church"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Religion_in_Armenia"
+  }
  ]
 }
