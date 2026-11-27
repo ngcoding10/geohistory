@@ -2,13 +2,14 @@
 import { HistoryMap, isDark, Z_SPLIT, hatchColor } from './map.js';
 import { prepareDoc } from './prepare.js';
 import { Travel, SPEEDS, reducedMotion } from './travel.js';
-import { membershipOf, empireName, listedParts, tones } from './groups.js';
+import { membershipOf, empireName, listedParts, tones, vividColor } from './groups.js';
 import {
   loadBordersIndex, snapshotFor, nextSnapshotAfter, datedRange, clioRange, loadSnapshot, loadEventsIndex, eventsBetween, nearestYearsWithEvents,
   loadPowers, loadEntities, getJSON, loadUS, loadModern, loadSea, loadMeta, countFor, findEvent, loadEmpires, loadSuccession, loadOccupations, loadShape, decodeGeom,
   storedYears,
 } from './data.js';
 import { parseYear, formatYear, formatDate, addYears, yearToFrac, fracToYear, ERAS, MIN_YEAR, MAX_YEAR } from './year.js';
+import { renderKey } from './key.js';
 import { TYPES, TYPE_KEYS } from './types.js';
 import { getPref, setPref } from './store.js';
 import { makeAreaTest, bboxOf } from './geo.js';
@@ -18,7 +19,7 @@ import { h, eventList, filterChips, skeleton, fmtArea, wikiUrl, wikidataUrl, eve
 const $ = (s) => document.querySelector(s);
 const els = {
   year: $('#year'), form: $('#yearForm'), hint: $('#yearHint'), slider: $('#slider'), ticks: $('#ticks'), eras: $('#eras'),
-  play: $('#playBtn'), speed: $('#speedBtn'), panel: $('#panel'), body: $('#panelBody'), handle: $('#sheetHandle'), status: $('#mapStatus'),
+  play: $('#playBtn'), speed: $('#speedSel'), prevCh: $('#prevChange'), nextCh: $('#nextChange'), thumbYear: $('#thumbYear'), timeline: $('#timeline'), key: $('#key'), panel: $('#panel'), body: $('#panelBody'), handle: $('#sheetHandle'), status: $('#mapStatus'),
   badge: $('#badge'), badgeInfo: $('#badgeInfo'), proj: $('#projBtn'), modernBtn: $('#modernBtn'), sourcesBtn: $('#sourcesBtn'),
   sources: $('#sources'), sourcesBody: $('#sourcesBody'),
 };
@@ -32,8 +33,12 @@ const state = {
   disabled: new Set(getPref('hiddenTypes2', ['birth', 'death'])),   // births and deaths are off until turned on
   projection: getPref('projection', 'mercator'),
   modern: false,
+  warOn: getPref('wars', true),
+  wars: [],             // the wars shown on the map this year (for the key)
+  warIds: new Set(),
   token: 0,
 };
+const SL = 4000;   // timeline slider resolution
 let map = null;
 let mapOk = false;
 let travel = null;
@@ -52,10 +57,15 @@ const SECEDED = { sc_state: 18601220, ms_state: 18610109, fl_state: 18610110, al
   tx_state: 18610201, va_state: 18610417, ar_state: 18610506, nc_state: 18610520, tn_state: 18610608 };
 const CSA_END = 18650526;
 
+/** A power's colour on the map shown (it can differ from its own colour where a neighbour holds that one). */
+function pcolor(key) {
+  return state.snapDoc?.powerColor?.get(key) || vividColor(key || '', powers[key]?.color);
+}
+
 // ---------------------------------------------------------------- start
 init().catch((err) => {
   console.error(err);
-  showStatus('Something went wrong while loading. Reload the page to try again.', true);
+  showStatus('GeoHistory could not finish loading. Reload the page to try again.', true);
 });
 
 async function init() {
@@ -85,7 +95,7 @@ async function init() {
     map.addEventListener('polity', (e) => selectPolityByIndex(e.detail.k, { fly: false, whole: e.detail.whole }));
     map.addEventListener('usstate', (e) => selectUS(e.detail.id, { fly: false }));
     map.addEventListener('colony', (e) => selectColony(e.detail, { fly: false }));
-    map.addEventListener('event', (e) => openEvent(e.detail, { fly: false }));
+    map.addEventListener('event', (e) => openEvent(e.detail, { fly: false, stay: state.warIds.has(e.detail) }));
     map.addEventListener('empty', () => { if (state.view !== 'year') { clearSelection(); } });
     // the coast: a coarse sea at world zoom (a fifth of the size), the full one once the map is zoomed in
     let fullSea = false;
@@ -102,7 +112,7 @@ async function init() {
     applyPadding();
   }).catch((err) => {
     console.warn('map failed', err);
-    showStatus('The map could not start here (it needs WebGL). The year panel still works.', true);
+    showStatus('This browser cannot draw the map (it needs WebGL). You can still read each year in the panel.', true);
   });
 
   const [, , pw, em, oc] = await Promise.all([loadBordersIndex(), loadEventsIndex(), loadPowers(), loadEmpires(), loadOccupations()]);
@@ -111,7 +121,8 @@ async function init() {
   occupations = oc;
   drawTicks();
   await mapReady;
-  if (mapOk) setupTravel();
+  if (mapOk) { setupTravel(); map.setWarVisible(state.warOn); }
+  drawKey();
   await goToYear(state.year, { month: state.month, day: state.day, keepSel: false });
   if (state.modern) toggleModern(true);
   if (want.em) await selectEmpire(want.em, { fly: true });
@@ -160,7 +171,7 @@ async function goToYear(year, { month = 0, day = 0, keepSel = true, fromSlider =
         if (mapOk) map.setSnapshot(doc);
       } catch (e) {
         console.warn(e);
-        showStatus('Could not load the borders for this year. Check your connection and try again.', true);
+        showStatus('The borders for this year did not load. Check your connection and try again.', true);
       }
     } else {
       state.snapDoc = null;
@@ -173,6 +184,7 @@ async function goToYear(year, { month = 0, day = 0, keepSel = true, fromSlider =
   }
   updateBadge();
   updateOccupied();
+  updateWar(state.year);
   await updateUS();
   if (token !== state.token) return;
 
@@ -293,8 +305,8 @@ async function updateUS({ dur = 0 } = {}) {
       const pw = await loadPowers();
       const d = usDateInt();
       const seceded = d <= CSA_END ? Object.keys(SECEDED).filter((id) => SECEDED[id] <= d) : [];
-      map.setUSFill(y <= US_FILL_UNTIL ? (pw.usa?.color || '#94b4cc') : null,
-        { seceded, csaColor: pw['confederate states of america']?.color || '#c9b9a0' });
+      map.setUSFill(y <= US_FILL_UNTIL ? pcolor('usa') : null,
+        { seceded, csaColor: pcolor('confederate states of america') });
     }
   } catch (e) { console.warn(e); }
 }
@@ -415,14 +427,16 @@ async function renderYear() {
     console.warn(e);
     if (token !== state.token) return;
     setBody(h('h1', null, `The world in ${formatYear(y)}`),
-      h('p.empty', null, 'The events for this year could not load.'),
+      h('p.empty', null, 'The events for this year did not load.'),
       h('button.more', { type: 'button', onclick: () => render() }, 'Try again'));
     return;
   }
   if (token !== state.token || state.view !== 'year' || state.sel) return;
   const all = data.events;
   const shown = rank(filtered(all));
-  if (mapOk) map.setEvents(shown);
+  await updateWar(y, data);
+  if (token !== state.token || state.view !== 'year' || state.sel) return;
+  if (mapOk) map.setEvents(shown.filter((e) => !state.warIds.has(e.i)));
   const nodes = [h('p.kicker', null, 'Year'), h('h1', null, `The world in ${formatYear(y)}`)];
   if (state.month) nodes.push(h('p.lead', null, `Highlighting ${dayLabel(state.month, state.day)}.`));
   nodes.push(h('p.note', null, `${all.length} ${all.length === 1 ? 'event' : 'events'} recorded · `,
@@ -446,7 +460,7 @@ async function renderYear() {
     const onMap = (o) => state.snapDoc?.polities.find((p) => o.n.includes(p.n) || (o.in || []).includes(p.n));
     nodes.push(h('div.note.worldnote', null, h('span.unver', { title: 'From GeoHistory\'s dated list of occupations; drawn hatched on the map' }, 'occupied'), ' ',
       [...by.entries()].map(([who, lst], i) => [i ? '; ' : '',
-        h('span.hatchsw', { style: `--hc:${hatchColor(powers[lst[0].key]?.color || '#888888', isDark())}`, title: `Lines of this colour on the map: ${lst[0].kind === 'Annexed' ? 'annexed' : 'occupied or controlled'} by ${who}` }),
+        h('span.hatchsw', { style: `--hc:${hatchColor(pcolor(lst[0].key), isDark())}`, title: `Lines of this colour on the map: ${lst[0].kind === 'Annexed' ? 'annexed' : 'occupied or controlled'} by ${who}` }),
         h('b', null, `by ${who}: `), lst.map((o, j) => [j ? ', ' : '',
           onMap(o) ? h('button.link', { type: 'button', onclick: () => selectPolityByName(onMap(o).n, { fly: true }) }, o.label) : o.label])]),
       '. On the map each keeps its own colour, made faint, under lines in the occupier\'s colour; the borders are still the recognised ones.'));
@@ -462,7 +476,7 @@ async function renderYear() {
       filterChips(counts(all), state.disabled, toggleType));
     nodes.push(box);
     if (shown.length) nodes.push(eventList(shown, listOpts(), 12));
-    else nodes.push(h('p.empty', null, 'All event types are hidden. Turn some back on above.'));
+    else nodes.push(h('p.empty', null, 'Every event type is switched off. Turn one back on above.'));
   } else {
     const near = nearestYearsWithEvents(y, 4).filter((x) => x !== y);
     nodes.push(h('p.empty', null, `No events recorded for ${formatYear(y)} yet.`));
@@ -471,7 +485,7 @@ async function renderYear() {
   }
   const ongoing = rank(filtered(data.ongoing)).slice(0, 8);
   if (ongoing.length) {
-    nodes.push(h('h2', null, 'Still going'));
+    nodes.push(h('h2', null, 'Still under way'));
     nodes.push(eventList(ongoing, { ...listOpts(), isToday: () => false }, 6));
   }
 
@@ -480,7 +494,7 @@ async function renderYear() {
     nodes.push(h('h2', null, `Largest territories on the ${formatYear(doc.year)} map`));
     const ul = h('ul.legend');
     for (const p of doc.largest.slice(0, 10)) {
-      const col = tones(powers[p.p]?.color || '#c9c1b0', p.name, isDark()).fill;
+      const col = tones(pcolor(p.p), p.name, isDark()).fill;
       const name = p.name;
       ul.append(h('li', null, h('button', { type: 'button', onclick: () => selectPower(p.p) },
         h('span.sw', { style: `background:${col}`, 'aria-hidden': 'true' }),
@@ -497,6 +511,70 @@ async function renderYear() {
     }
   }
   setBody(nodes);
+}
+
+
+// ---------------------------------------------------------------- war on the map
+// For the year shown: the major wars going on (by how notable they are) and the battles fought that year at a
+// recorded place, battles of those wars first. At most 8 battles at world zoom (24 when zoomed in) and 3 war
+// markers (only for wars none of whose battles is shown). The land where a shown battle was fought gets a red
+// edge. Nothing here is inferred: names, years, places and participants are the event data's own.
+const WAR_MAX = 24, WAR_WORLD = 8, WAR_WARS = 6;
+let warTok = 0;
+async function updateWar(y, data = null) {
+  if (!mapOk) return;
+  const tok = ++warTok;
+  if (!state.warOn) { state.wars = []; state.warIds = new Set(); map.setWar({}); drawKey(); return; }
+  try { data = data || await eventsBetween(y, y); } catch { return; }
+  if (tok !== warTok || y !== state.year) return;
+  const wars = [...data.events, ...data.ongoing].filter((e) => e.t === 'war' && e.y <= y && (e.y2 || e.y) >= y)
+    .sort((a, b) => b.s - a.s).slice(0, WAR_WARS);
+  const major = new Set(wars.map((e) => e.i));
+  const battles = data.events.filter((e) => e.t === 'battle' && e.y === y && e.lo != null && !e.mi)
+    .sort((a, b) => (b.s + (major.has(b.pq) ? 40 : 0)) - (a.s + (major.has(a.pq) ? 40 : 0)))
+    .slice(0, WAR_MAX);
+  // at world zoom: at most WAR_WORLD battles, none within 2.5 degrees of another (a front's many battles would
+  // stack up); the others show once zoomed in
+  const world = [];
+  for (const e of battles) {
+    if (world.length >= WAR_WORLD) break;
+    if (world.every((o) => Math.hypot(o.lo - e.lo, o.la - e.la) > 2.5)) world.push(e);
+  }
+  const worldSet = new Set(world);
+  battles.sort((a, b) => worldSet.has(b) - worldSet.has(a));
+  const shownWar = new Set(world.map((e) => e.pq).filter(Boolean));
+  const warMk = wars.filter((e) => e.lo != null && !e.mi && !shownWar.has(e.i)).slice(0, 3);
+  const markers = [
+    ...battles.map((e) => ({ id: e.i, kind: 'battle', lo: e.lo, la: e.la, minor: !worldSet.has(e), label: `${e.l}, ${formatYear(e.y)}${e.po ? ` (${e.po})` : ''}` })),
+    ...warMk.map((e) => ({ id: e.i, kind: 'war', lo: e.lo, la: e.la, label: `${e.l}, ${eventDate(e)}` })),
+  ];
+  // the territories (single states or parts of empires, not whole empires) under the battles shown at world zoom
+  const doc = state.snapDoc;
+  const groups = new Set();
+  if (doc) {
+    for (const e of world) {
+      for (const f of doc.features) {
+        if (f.properties.u === 1) continue;
+        f._bb ||= bboxOf([f.geometry]);
+        const bb = f._bb;
+        if (!bb || e.lo < bb[0] || e.lo > bb[2] || e.la < bb[1] || e.la > bb[3]) continue;
+        f._test ||= makeAreaTest([f.geometry]);
+        if (f._test(e.lo, e.la)) { groups.add(f.properties.k); break; }
+      }
+    }
+  }
+  state.wars = wars;
+  state.warIds = new Set(markers.map((m) => m.id));
+  map.setWar({ markers, groups: [...groups] });
+  drawKey();
+}
+
+function drawKey() {
+  renderKey(els.key, {
+    doc: state.snapDoc, year: state.year, dark: isDark(), wars: state.wars, warOn: state.warOn,
+    onWar: (on) => { state.warOn = on; setPref('wars', on); if (mapOk) map.setWarVisible(on); updateWar(state.year); if (state.view === 'year' && !state.sel) render(); },
+    onOpenWar: (id) => openEvent(id, { fly: true, stay: true }),
+  });
 }
 
 /** Map notes that concern the whole map in a year (wartime occupation, a region the sources leave blank). */
@@ -690,7 +768,7 @@ async function renderSelection() {
   } catch (e) {
     console.warn(e);
     if (token !== state.token) return;
-    setBody(head, h('p.empty', null, 'The events could not load.'), h('button.more', { type: 'button', onclick: () => render() }, 'Try again'));
+    setBody(head, h('p.empty', null, 'The events did not load.'), h('button.more', { type: 'button', onclick: () => render() }, 'Try again'));
     return;
   }
   if (token !== state.token || state.sel !== s || state.view !== 'sel') return;
@@ -723,7 +801,7 @@ async function renderSelection() {
       : f.includes('c') ? h('span.unver', { title: 'Written for GeoHistory; both years match Wikidata' }, 'curated') : null);
     if (now.length) nodes.push(h('ul.changes-list', null, now.slice(0, 8).map(([n, a, b, t, , f]) =>
       h('li', null, h('b', null, n), `, ${t} (${span(a, b, f)})`, tag(f)))));
-    else nodes.push(h('p.empty', null, 'No head of state or government recorded for this year.'));
+    else nodes.push(h('p.empty', null, 'No head of state or government is recorded for this year.'));
     const all = h('details.ruled-hist', null, h('summary', null, `All ${tl.rulers.length} recorded terms (${tl.rulersOf})`),
       h('ol', null, tl.rulers.map(([n, a, b, t, , f]) => h('li', null, `${span(a, b, f)}: ${n}, ${t}`, tag(f)))),
       tl.rulers.some((r) => (r[5] || '').includes('i')) ? h('p.note', null, 'An end year marked "c." is not recorded on Wikidata: it is the year the next holder of the same office began.') : null);
@@ -749,11 +827,11 @@ async function renderSelection() {
     nodes.push(eventList(rank(byYear.get(yy)), { ...listOpts(), isToday: () => false }, 4));
   }
   const ongoing = filtered(data.ongoing.filter(inSelection)).slice(0, 5);
-  if (ongoing.length) nodes.push(h('h2', null, 'Still going'), eventList(ongoing, { ...listOpts(), isToday: () => false }, 5));
+  if (ongoing.length) nodes.push(h('h2', null, 'Still under way'), eventList(ongoing, { ...listOpts(), isToday: () => false }, 5));
   const chg = (await loadChanges()).filter((c) => Math.abs(c.y - y) <= 30 && s.test && s.test(c.lon, c.lat));
   if (token !== state.token || state.sel !== s) return;
   if (chg.length) {
-    nodes.push(h('h2', null, 'Border changes recorded here'),
+    nodes.push(h('h2', null, 'Border changes here'),
       h('p.note', null, state.snap && !state.snap.cs ? `The map shows ${formatYear(state.snap.y)} borders; these dated changes happened within 30 years of ${formatYear(y)}.` : `Within 30 years of ${formatYear(y)}.`),
       h('ul.changes-list', null, chg.map(changeRow)));
   }
@@ -1055,7 +1133,7 @@ async function updateOccupied() {
   const covered = new Set(now.flatMap((o) => o.covers || []));   // drawn by a wider row's own outline instead
   for (const o of now) {
     if (covered.has(o.label)) continue;
-    const c = powers[o.key]?.color || '#888888';
+    const c = pcolor(o.key);
     const ks = new Set((doc?.polities || []).map((p, k) => (o.n.includes(p.n) ? k : -1)).filter((k) => k >= 0));
     let geoms = ks.size ? doc.features.filter((f) => ks.has(f.properties.k)).map((f) => f.geometry) : [];
     if (!geoms.length && o.shape) {
@@ -1117,9 +1195,9 @@ function historyLine(name) {
     if (!box.open || box.dataset.done) return;
     box.dataset.done = '1';
     let d;
-    try { d = await getJSON('history/ruledby.json'); } catch { box.append(h('p.empty', null, 'Could not load.')); return; }
+    try { d = await getJSON('history/ruledby.json'); } catch { box.append(h('p.empty', null, 'This did not load.')); return; }
     const runs = d[name] || [];
-    if (!runs.length) { box.append(h('p.empty', null, 'Not recorded.')); return; }
+    if (!runs.length) { box.append(h('p.empty', null, 'Nothing recorded.')); return; }
     box.append(h('ol', null, runs.map(([a, b, r, src]) => {
       const span = a === b ? (src === 'm' ? `${formatYear(a)} map` : `${a}`) : (src === 'm' ? `maps of ${formatYear(a)} to ${formatYear(b)}` : `${a} to ${b}`);
       return h('li', null, `${span}: `, r ? `ruled by ${r}` : 'self-ruling');
@@ -1130,7 +1208,7 @@ function historyLine(name) {
 }
 
 // ---------------------------------------------------------------- events
-async function openEvent(id, { fly }) {
+async function openEvent(id, { fly, stay = false }) {
   let e = await findEvent(id);
   if (!e) {
     // maybe the panel for its year is not loaded yet
@@ -1138,7 +1216,7 @@ async function openEvent(id, { fly }) {
     e = await findEvent(id);
   }
   if (!e) return;
-  if (e.y !== state.year && state.view !== 'sel') {
+  if (e.y !== state.year && state.view !== 'sel' && !(stay && e.y <= state.year && (e.y2 || e.y) >= state.year)) {
     await goToYear(e.y, { month: e.m || 0, day: e.dd || 0, keepEvent: true });
   }
   state.prevView = state.view === 'event' ? state.prevView : state.view;
@@ -1164,7 +1242,7 @@ async function renderEvent() {
   const facts = h('dl.facts');
   const place = placeLine(e, modernNames);
   if (place) facts.append(h('dt', null, 'Where'), h('dd', null, place));
-  if (e.pa?.length) facts.append(h('dt', null, 'Who'), h('dd', null, e.pa.join(', ')));
+  if (e.pa?.length) facts.append(h('dt', null, 'Took part'), h('dd', null, e.pa.join(', '), h('span.muted', null, ' (as listed by Wikidata, which does not record who fought on which side)')));
   if (e.po) facts.append(h('dt', null, 'Part of'), h('dd', null, e.po));
   if (e.al?.length) facts.append(h('dt', null, 'Also called'), h('dd', null, e.al.join(', ')));
   if (e.dn) facts.append(h('dt', null, 'Dated'), h('dd', null, `${e.dn} (approximate)`));
@@ -1226,18 +1304,101 @@ function setHint(text, err = false) {
 }
 
 function updateSlider() {
-  els.slider.value = Math.round(yearToFrac(state.year) * 1000);
+  els.slider.value = Math.round(yearToFrac(state.year) * SL);
   els.slider.setAttribute('aria-valuetext', formatYear(state.year));
 }
 
+/** The year bubble over the timeline thumb, shown while it is dragged. */
+let bubbleT = null;
+function showBubble(y) {
+  const f = els.slider.value / SL;
+  els.thumbYear.textContent = formatYear(y);
+  els.thumbYear.style.left = `calc(${(f * 100).toFixed(3)}% + ${(8 - 16 * f).toFixed(1)}px)`;
+  els.thumbYear.classList.add('on');
+  clearTimeout(bubbleT);
+  bubbleT = setTimeout(() => els.thumbYear.classList.remove('on'), 900);
+}
+
+/** Tick marks with year labels under the timeline. The scale is uneven (recent centuries get more room), so the
+ *  interval is chosen piece by piece: the smallest round interval whose labels stay at least ~64 px apart, and
+ *  minor ticks at a smaller one where they stay ~7 px apart. Redrawn when the timeline changes width. */
 function drawTicks() {
-  els.ticks.replaceChildren();
-  // one tick per border map: you can see where the borders change
-  import('./data.js').then(({ loadBordersIndex: li }) => li()).then((snaps) => {
-    for (const s of snaps) els.ticks.append(h('i', { style: `left:${(yearToFrac(s.y) * 100).toFixed(2)}%`, title: `Border map ${formatYear(s.y)}` }));
-  });
-  els.eras.replaceChildren(...ERAS.map((e) => h('span', { style: `left:${(yearToFrac(e.y) * 100).toFixed(2)}%` },
-    h('span.lg', null, e.label), e.short ? h('span.sm', null, e.short) : null)));
+  const W = els.ticks.clientWidth || 800;
+  const IV = [100000, 50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10];
+  const px = (y) => yearToFrac(y) * W;
+  const ticks = [];
+  const labels = new Map();
+  const lab = (y) => (y < 0 ? `${(-y).toLocaleString('en-GB')} BC` : y < 1000 ? `AD ${y}` : String(y));
+  // walk the range in pieces of the scale, so each piece can have its own interval
+  const pieces = [[MIN_YEAR, -10000], [-10000, -3000], [-3000, -500], [-500, 500], [500, 1000], [1000, 1500], [1500, 1800], [1800, 1900], [1900, MAX_YEAR]];
+  for (const [y0, y1] of pieces) {
+    const perYear = (px(y1) - px(y0)) / (y1 - y0);
+    const major = [...IV].reverse().find((iv) => iv * perYear >= 64) || IV[0];
+    const minor = [...IV].reverse().find((iv) => iv * perYear >= 7 && major % iv === 0) || major;
+    for (let y = Math.ceil(y0 / minor) * minor; y <= y1; y += minor) {
+      const yy = y === 0 ? 1 : y;
+      if (y % major === 0) labels.set(yy, lab(yy));
+      ticks.push([yy, y % major === 0]);
+    }
+  }
+  // labels: left to right, none closer than 58 px to the one before
+  const out = [];
+  let last = -1e9;
+  for (const [y, isMajor] of ticks.sort((a, b) => a[0] - b[0])) {
+    const x = px(y);
+    let t = isMajor ? labels.get(y) : null;
+    if (t && x - last < 58) t = null;
+    if (t) last = x;
+    out.push(h('i' + (isMajor ? '.mj' : ''), { style: `left:${x.toFixed(1)}px` }, t ? h('b', { style: x < 30 ? 'transform:none' : x > W - 30 ? 'transform:translateX(-100%)' : null }, t) : null));
+  }
+  els.ticks.replaceChildren(...out);
+  els.eras.replaceChildren(...ERAS.map((e) => {
+    const l = px(Math.max(MIN_YEAR, e.from)), r = px(Math.min(MAX_YEAR, e.to));
+    return h('span', { style: `left:${l.toFixed(1)}px;width:${(r - l).toFixed(1)}px`, title: `${e.label}: ${formatYear(e.from)} to ${e.to >= MAX_YEAR ? 'today' : formatYear(e.to)} (rough dates)` },
+      r - l > e.label.length * 6.5 + 10 ? e.label : '');
+  }));
+}
+
+/** The next (dir 1) or previous (dir -1) year in which the drawn borders change: a stored map whose shapes
+ *  differ from the shown one, or a year in which an empire gains or loses a part or changes its name. */
+async function changeYearFrom(y, dir) {
+  const stops = stopsBetween(y, dir > 0 ? MAX_YEAR : MIN_YEAR);
+  const memb = memberChangeYears();
+  const keyOf = async (yy) => {
+    const sn = snapshotFor(yy);
+    if (!sn) return 'none';
+    if (sn.src === 'cshapes') {
+      const yr = await getJSON(`cshapes/years/${sn.y}.json`);
+      return 'cs:' + yr.rows.map((r) => r[0]).join(',');
+    }
+    return sn.src + ':' + sn.y;
+  };
+  let cur = await keyOf(y);
+  for (let i = 0; i < stops.length && i < 60; i++) {
+    const s = stops[i];
+    // backwards, a stop is the last year of the earlier map: the change itself is the year after it
+    const k = await keyOf(s);
+    if (k !== cur || memb.has(dir > 0 ? s : addYears(s, 1))) return s;
+    cur = k;
+  }
+  return stops.length ? stops[Math.min(stops.length, 60) - 1] : null;
+}
+
+let memberYearsCache = null;
+function memberChangeYears() {
+  if (memberYearsCache) return memberYearsCache;
+  const ys = new Set();
+  for (const ms of Object.values(empires.rows || {})) for (const m of ms) { ys.add(m[0]); ys.add(addYears(m[1], 1)); }
+  for (const e of Object.values(empires.empires || {})) for (const [a, b] of e.names || []) { if (a != null) ys.add(a); if (b != null) ys.add(addYears(b, 1)); }
+  return (memberYearsCache = ys);
+}
+
+async function jumpChange(dir) {
+  const base = travel?.mode === 'to' ? travel.target : state.year;
+  const y = await changeYearFrom(base, dir).catch(() => null);
+  if (y == null) { setHint(dir > 0 ? 'No later border change on record.' : 'No earlier border change on record.'); return; }
+  playUI(false);
+  travelTo(y);
 }
 
 function setupTimebar() {
@@ -1253,38 +1414,37 @@ function setupTimebar() {
     goToYear(r.year, { month: r.month || 0, day: r.day || 0 });
   });
   els.year.addEventListener('input', () => { els.year.removeAttribute('aria-invalid'); setHint(''); });
-  for (const b of document.querySelectorAll('[data-step]')) {
-    b.addEventListener('click', () => step(+b.dataset.step));
-  }
+  els.prevCh.addEventListener('click', () => jumpChange(-1));
+  els.nextCh.addEventListener('click', () => jumpChange(1));
   let pending = null;
   els.slider.addEventListener('input', () => {
-    const y = fracToYear(els.slider.value / 1000);
+    const y = fracToYear(els.slider.value / SL);
     els.year.value = formatYear(y);
     els.slider.setAttribute('aria-valuetext', formatYear(y));
+    showBubble(y);
     // the map runs through the years towards the thumb (in fewer, larger steps when it is far behind)
     if (travelOn()) { playUI(false); travelTo(y, { scrub: true }); return; }
     clearTimeout(pending);
     pending = setTimeout(() => goToYear(y, { fromSlider: true }), 140);
   });
   els.slider.addEventListener('keydown', (e) => {
-    const map_ = { ArrowLeft: -1, ArrowDown: -1, ArrowRight: 1, ArrowUp: 1, PageDown: -10, PageUp: 10 };
-    if (e.key in map_) {
+    const k = { ArrowLeft: -1, ArrowDown: -1, ArrowRight: 1, ArrowUp: 1, PageDown: -10, PageUp: 10 };
+    if (e.key in k) {
       e.preventDefault();
-      step(map_[e.key] * (e.shiftKey ? 100 : 1));
+      if (e.shiftKey && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) { jumpChange(k[e.key]); return; }
+      step(k[e.key] * (e.shiftKey ? 100 : 1));
+    } else if (e.key === 'Home' || e.key === 'End') {
+      e.preventDefault();
+      travelTo(e.key === 'Home' ? -3000 : MAX_YEAR);
     }
   });
   els.play.addEventListener('click', () => (travel?.playing ? stopPlay() : startPlay()));
-  let sp = +getPref('speed', 2);
-  if (!SPEEDS.includes(sp)) sp = 2;
-  const showSpeed = () => {
-    els.speed.textContent = `${sp}×`;
-    els.speed.setAttribute('aria-label', `Playback speed: ${sp} ${sp === 1 ? 'year' : 'years'} per second. Change`);
-    els.speed.title = `Play ${sp} ${sp === 1 ? 'year' : 'years'} per second`;
-    if (travel) travel.speed = sp;
-  };
-  els.speed.addEventListener('click', () => { sp = SPEEDS[(SPEEDS.indexOf(sp) + 1) % SPEEDS.length]; setPref('speed', sp); showSpeed(); });
-  showSpeed();
+  let sp = +getPref('speed2', 5);
+  if (!SPEEDS.includes(sp)) sp = 5;
+  els.speed.value = String(sp);
+  els.speed.addEventListener('change', () => { sp = +els.speed.value; setPref('speed2', sp); if (travel) travel.speed = sp; });
   els.speed._sp = () => sp;
+  new ResizeObserver(() => drawTicks()).observe(els.timeline);
 }
 
 const travelOn = () => mapOk && travel && !reducedMotion();
@@ -1325,6 +1485,7 @@ function travelShow(dur = 0) {
   updateBadge();
   updateOccupied();
   updateUS({ dur: Math.min(dur || 400, 500) });
+  updateWar(state.year);
   if (state.sel?.kind === 'polity') remapPolity();
   if (state.sel?.kind === 'empire') remapEmpire();
   if (travel.playing && performance.now() - lastPanel > (travel.speed <= 1 ? 900 : 2500)) {
@@ -1403,7 +1564,11 @@ function globalKeys(e) {
   if (typing || t.closest?.('.maplibregl-canvas-container, dialog') || e.altKey || e.ctrlKey || e.metaKey) return;
   if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
     e.preventDefault();
-    step((e.key === 'ArrowLeft' ? -1 : 1) * (e.shiftKey ? 10 : 1));
+    if (e.shiftKey) jumpChange(e.key === 'ArrowLeft' ? -1 : 1);
+    else step(e.key === 'ArrowLeft' ? -1 : 1);
+  } else if (e.key === ' ' && !t.closest?.('button, a, summary')) {
+    e.preventDefault();
+    if (travel?.playing) stopPlay(); else startPlay();
   } else if (e.key === 'Escape' && state.view !== 'year') {
     if (state.view === 'event') closeEvent(); else clearSelection();
   }

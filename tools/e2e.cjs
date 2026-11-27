@@ -84,12 +84,12 @@ async function waitEvents(page) {
     let prev = await listText(page);
     ok(/Boston Tea Party/.test(prev), '1773 list contains the Boston Tea Party');
     for (const y of [1774, 1775, 1776]) {
-      await page.click('[data-step="1"]');
+      await page.focus('#slider'); await page.keyboard.press('ArrowRight');
       await waitH1(page, `The world in ${y}`);
       await waitEvents(page);
       await page.waitForTimeout(300);
       const cur = await listText(page);
-      ok(cur && cur !== prev, `stepping to ${y} changes the event list`);
+      ok(cur && cur !== prev, `the Right arrow on the timeline steps to ${y} and changes the event list`);
       prev = cur;
     }
     ok(/Lexington and Concord|Bunker Hill/.test(await (async () => { await typeYear(page, '1775'); await waitH1(page, 'The world in 1775'); await waitEvents(page); return listText(page); })()), '1775 has Lexington and Concord or Bunker Hill');
@@ -440,7 +440,7 @@ async function waitEvents(page) {
     await waitH1(page, 'The world in 1989');
     await page.waitForFunction(() => window.__geo?.travel && window.__geo.state.snapDoc, null, { timeout: 60000 });
     await page.evaluate(() => { window.__geo.travel.full = true; });
-    while ((await page.locator('#speedBtn').innerText()) !== '5×') await page.click('#speedBtn');
+    await page.selectOption('#speedSel', '5');
     await page.click('#playBtn');
     await page.waitForFunction(() => window.__geo.state.year >= 1992, null, { timeout: 120000 });
     ok((await page.getAttribute('#playBtn', 'aria-pressed')) === 'true', 'play runs (the button shows pause)');
@@ -450,9 +450,74 @@ async function waitEvents(page) {
     await waitH1(page, `The world in ${paused.y}`);
     ok(paused.y >= 1992 && paused.snap === paused.y, `pause rests on a year with its own map (${paused.y}, map ${paused.snap})`);
     // the timeline dragged far: it may take larger steps, but ends on the year of the thumb
-    const scrub = await runTo(() => { const s = document.querySelector('#slider'); s.value = 640; s.dispatchEvent(new Event('input')); });
+    const scrub = await runTo(() => { const s = document.querySelector('#slider'); s.value = 2560; s.dispatchEvent(new Event('input')); });
     const scrubY = await page.evaluate(() => (window.__geo.state.year));
     ok(scrub.seen.length >= 1 && scrub.seen.length <= 5 && scrubY === scrub.year, `dragging the timeline from ${paused.y} to ${scrubY} animates ${scrub.seen.length} steps (coarser when far) and ends on the thumb's year`);
+
+    {
+    // ---------------- round 8: only changed land animates; next/previous change; timeline ticks ----------------
+    await page.goto(BASE + '?y=1990&v=flat');
+    await waitH1(page, 'The world in 1990');
+    await page.waitForFunction(() => window.__geo?.travel && window.__geo.state.snapDoc, null, { timeout: 60000 });
+    await page.evaluate(() => { window.NOPAD = 1; window.__geo.map.map.jumpTo({ center: [60, 50], zoom: 2 }); });
+    await page.waitForTimeout(2500);
+    // a fixed spot in China (unchanged in 1991-1992) and the map's stack opacities, sampled through the change
+    const spot = await page.evaluate(() => { const p = window.__geo.map.map.project([104, 33]); return [Math.round(p.x), Math.round(p.y)]; });
+    const mbox = await page.locator("#map").boundingBox();
+    await page.evaluate(() => { const t = window.__geo.travel; t.full = true; t.durScale = 6; window.__mid = []; window.__geo.travelTo(1992); });
+    const px = [];
+    const opac = [];
+    for (let i = 0; i < 8; i++) {
+      const buf = await page.screenshot({ clip: { x: mbox.x + spot[0], y: mbox.y + spot[1], width: 2, height: 2 } });
+      px.push(buf.toString('base64'));
+      opac.push(await page.evaluate(() => { const M = window.__geo.map, m = M.map; return ['A', 'B', 'C'].map((s) => m.getPaintProperty('fill0' + s, 'fill-opacity')).join(','); }));
+      await page.waitForTimeout(250);
+    }
+    await page.waitForFunction(() => !window.__geo.travel.running, null, { timeout: 120000 });
+    const lc = await page.evaluate(() => ({ ...window.__geo.map.lastChange, n: window.__geo.state.snapDoc.features.length }));
+    ok(new Set(px).size === 1, `while 1991 -> 1992 runs, unchanged land (China) never changes colour (${new Set(px).size} distinct samples in ${px.length})`);
+    ok(opac.every((o) => o.split(',').every((v) => v === '0' || v === '1')), `stacks are only ever fully on or off, never cross-faded (${[...new Set(opac)].join(' | ')})`);
+    ok(lc.gained >= 10 && lc.lost >= 1 && lc.gained < lc.n / 3, `1992: only the changed territories animate (${lc.lost} old shapes leave, ${lc.gained} of ${lc.n} new shapes flash in)`);
+    await page.evaluate(() => { window.__geo.travel.durScale = 1; });
+    await page.goto(BASE + '?y=1938&v=flat');
+    await waitH1(page, 'The world in 1938');
+    await page.waitForFunction(() => window.__geo?.travel && window.__geo.state.snapDoc, null, { timeout: 60000 });
+    const key38 = await page.evaluate(() => window.__geo.state.snapDoc.key);
+    await page.click('#nextChange');
+    await page.waitForFunction(() => window.__geo.state.year > 1938 && !window.__geo.travel.running, null, { timeout: 60000 });
+    const nc = await page.evaluate(() => ({ y: window.__geo.state.year, key: window.__geo.state.snapDoc.key }));
+    ok(nc.y >= 1939 && nc.key !== key38, `"Next change" goes from 1938 to ${nc.y}, the next year whose borders differ`);
+    await page.click('#prevChange');
+    await page.waitForFunction((y) => window.__geo.state.year < y && !window.__geo.travel.running, nc.y, { timeout: 60000 });
+    ok(await page.evaluate(() => window.__geo.state.year) === nc.y - 1, '"Previous change" goes back to the last year of the earlier borders');
+    const tk = await page.evaluate(() => [...document.querySelectorAll('#ticks b')].map((b) => b.textContent));
+    ok(tk.length >= 8 && tk.some((t) => / BC$/.test(t)) && tk.some((t) => /^AD /.test(t)) && tk.includes('1900'), `the timeline has labelled ticks (${tk.join(', ')})`);
+    ok((await page.locator('[data-step]').count()) === 0 && (await page.locator('#speedSel option').count()) === 4, 'no +1/+10/+100 buttons; one speed control with 4 named speeds');
+
+    // ---------------- round 8: war on the map and the key ----------------
+    await page.goto(BASE + '?y=1916&v=flat');
+    await waitH1(page, 'The world in 1916');
+    await waitEvents(page);
+    await page.waitForSelector('.warmk', { timeout: 30000 });
+    const wm = await page.evaluate(() => ({ all: document.querySelectorAll('.warwrap').length, shown: [...document.querySelectorAll('.warwrap')].filter((e) => getComputedStyle(e).display !== 'none').length,
+      edge: window.__geo.map.map.getLayoutProperty('war-edge', 'visibility'), wars: [...document.querySelectorAll('#key .kwars button')].map((b) => b.textContent) }));
+    ok(wm.shown >= 3 && wm.shown <= 11 && wm.all <= 27, `1916: ${wm.shown} war markers at world zoom (of ${wm.all}, capped)`);
+    ok(wm.edge === 'visible' && wm.wars.some((w) => /World War I/.test(w)), `1916: land with battles is edged in red and the key names the major wars (${wm.wars.slice(0, 3).join(', ')})`);
+    const bt = page.locator('.warwrap:not(.minor) .warmk.battle').first();
+    const btName = await bt.getAttribute('aria-label');
+    await bt.evaluate((el) => el.click());
+    await page.waitForFunction(() => /Battle/.test(document.querySelector('#panelBody .kicker')?.textContent || ''), null, { timeout: 30000 });
+    const btText = await page.locator('#panelBody').innerText();
+    ok(/Part of/i.test(btText) && (await page.evaluate(() => window.__geo.state.year)) === 1916, `clicking a battle marker opens it in 1916 with its war ("${btName.slice(0, 60)}")`);
+    ok(await page.locator('#key .key-toggle').isVisible() && /One colour|A state/.test(await page.locator('#key').innerText()) && /Occupied/.test(await page.locator('#key').innerText()), 'the map key is visible and explains states, empires, occupation, war and events');
+    await page.locator('#key input[type=checkbox]').uncheck();
+    await page.waitForTimeout(500);
+    ok(await page.evaluate(() => [...document.querySelectorAll('.warwrap')].every((e) => getComputedStyle(e).display === 'none') && window.__geo.map.map.getLayoutProperty('war-edge', 'visibility') === 'none'), 'the key turns the war layer off');
+    await page.locator('#key input[type=checkbox]').check();
+    await page.click('#key .key-toggle');
+    ok(await page.locator('#keyBody').isHidden(), 'the key collapses');
+    await page.click('#key .key-toggle');
+    }
     ok(errors.length === 0, `no console errors on desktop${errors.length ? ': ' + errors.slice(0, 5).join(' | ') : ''}`);
 
     // reduced motion: no animation, the year changes at once
@@ -465,11 +530,15 @@ async function waitEvents(page) {
       await pr.goto(BASE + '?y=1914&v=flat');
       await waitH1(pr, 'The world in 1914');
       await pr.waitForFunction(() => window.__geo?.travel && window.__geo.state.snapDoc, null, { timeout: 60000 });
-      await pr.click('[data-step="10"]');
+      await pr.evaluate(() => window.__geo.step(10));
       await waitH1(pr, 'The world in 1924');
       await pr.waitForFunction(() => window.__geo.state.snapDoc?.year === 1924, null, { timeout: 60000 });
       const r = await pr.evaluate(() => ({ tr: window.__geo.travel.stats.transitions, running: window.__geo.travel.running }));
       ok(r.tr === 0 && !r.running, `with reduced motion +10 jumps straight to 1924 (${r.tr} animated steps)`);
+      await pr.click('#nextChange');
+      await pr.waitForFunction(() => window.__geo.state.year > 1924 && document.querySelector('#panelBody h1')?.textContent === `The world in ${window.__geo.state.year}`, null, { timeout: 60000 });
+      const rn = await pr.evaluate(() => ({ y: window.__geo.state.year, tr: window.__geo.travel.stats.transitions }));
+      ok(rn.tr === 0, `with reduced motion "Next change" jumps at once to the next year with a border change (${rn.y})`);
       ok(errR.length === 0, `no console errors with reduced motion${errR.length ? ': ' + errR.slice(0, 3).join(' | ') : ''}`);
       await ctxR.close();
     }
@@ -484,6 +553,8 @@ async function waitEvents(page) {
       await p.page.waitForTimeout(2500);
       const sw = await p.page.evaluate(() => [document.documentElement.scrollWidth, window.innerWidth, document.body.scrollWidth]);
       ok(sw[0] <= sw[1] && sw[2] <= sw[1], `no horizontal scroll at ${vp.width}px (${sw.join('/')})`);
+      ok(await p.page.locator('#key .key-toggle').isVisible() && await p.page.locator('#keyBody').isHidden() && await p.page.locator('#playBtn').isVisible() && await p.page.locator('#nextChange').isVisible(),
+        `${vp.width}px: the key is a closed button, play and next change are on screen`);
       await p.page.screenshot({ path: path.join(SHOTS, `phone-${vp.width}.png`) });
       if (vp.width === 390) {
         await p.page.click('#sheetHandle');

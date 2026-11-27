@@ -1,18 +1,18 @@
 // Time travel. When the year runs (play, a step of several years, the timeline being dragged) the map passes
 // through every stored border map in between, in order, and each change is animated by the map (js/map.js
-// show(): land that changes hands turns from the old ruler's colour to the new one's, borders fade across).
-// What rests on the screen is always a stored map for the year shown; the frames in between are only a fade
-// between two stored maps. While one change is shown, the next map is loaded and tiled in a third stack.
+// show(): only the land that changes hands moves; it switches to its new owner in a sweep from that owner's
+// side and flashes; unchanged land stays still and borders snap). What rests on the screen is always a stored
+// map for the year shown; nothing is morphed. While one change is shown, the next map is loaded in a third stack.
 //
 // Degrades: with prefers-reduced-motion there is no animation at all (the caller jumps). When frames come
-// slowly (a slow device), a jump goes straight to its end in one cross-fade and play skips the maps it cannot
+// slowly (a slow device), a jump goes straight to its end in one change and play skips the maps it cannot
 // keep up with.
 import { MAX_YEAR } from './year.js';
 
 const astro = (y) => (y < 0 ? y + 1 : y);
 const hist = (a) => (a <= 0 ? a - 1 : a);
 export const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-export const SPEEDS = [1, 2, 5, 10, 50];
+export const SPEEDS = [2, 5, 20, 60];   // years per second: slow, normal, fast, fastest
 
 export class Travel {
   /** stopsBetween(a, b): the years between a (exclusive) and b (inclusive) in which the map may change, in
@@ -20,7 +20,7 @@ export class Travel {
    *  onStep(year, st): a new map is shown. onTick(year): play reached a year. onRest(year): the run ended. */
   constructor({ map, stopsBetween, docFor, keyNow, yearNow, onStep, onTick, onRest }) {
     Object.assign(this, { map, stopsBetween, docFor, keyNow, yearNow, onStep, onTick, onRest });
-    this.speed = 2;          // years per second while playing
+    this.speed = 5;          // years per second while playing
     this.mode = null;        // 'to' | 'play' | null
     this.full = false;       // never degrade (tests)
     this.durScale = 1;       // stretches every transition (tests, to look at the frames in between)

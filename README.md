@@ -52,7 +52,7 @@ without coordinates is placed). The border, ruler and year-article steps give id
 second state: after the run from scratch `fetch_extra.py` was refreshed from Wikidata, which added 240 births
 that an old failed query had left out.
 
-Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (100 checks; uses the globally installed Playwright; starts its
+Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (124 checks; uses the globally installed Playwright; starts its
 own `python3 -m http.server`).
 
 ## How it fits with the other apps
@@ -64,22 +64,57 @@ later "save bookmarks and notes" feature would add the shared `core.js` with the
 
 ## Time travel
 
-When the year changes by the timeline, the step buttons, the arrow keys or play, the map passes through
-every stored border map in between, in order, and animates each change (`js/travel.js`, `js/map.js`
-`show()`): the new map fades in on top of the old one, so land that keeps its ruler (the same colour in both,
-since a power's colour comes from its key in `data/powers.json`) stays still and land that changes hands
-turns from the old ruler's colour to the new one's; borders fade across, and the old map fades out under the
-new one near the end. Empires are merged at world zoom during the run, as at rest. A third stack of layers
-loads and tiles the next map while one change is on screen. The stops are every year in which a stored map
-starts or an empire membership or name changes (in the CShapes years, every year; a year with the same rows as
-the one before only moves the year on). At rest the map is always a stored map for the year shown; nothing is
-interpolated or morphed. While the years run, small states' and peoples' names fade out, and a power's name
-stays where it was while that place is still inside it. The panel is dimmed during a jump and updated at the
-end; while playing it is updated every few seconds. Play runs at 1, 2, 5, 10 or 50 years per second (the
-button beside play) but never skips a map: the year waits for the next map to be ready. Dragging the timeline
-far may take larger steps (at most four) to keep up. With `prefers-reduced-motion` there is no animation;
-when frames come slowly (over 70 ms on two changes in a row) a jump goes to its end in one cross-fade and
-play skips the maps it cannot keep up with.
+The time bar has a year box (type 1914, 44 BC or 4 July 1776), "Previous change" and "Next change" (the
+previous or next year in which the drawn borders change: a stored map with other shapes, or an empire gaining,
+losing or renaming a part), play/pause, and one speed control in plain words (slow, normal, fast, fastest:
+2, 5, 20 or 60 years a second). Under it the timeline has era bands and labelled ticks; its scale is uneven
+(recent centuries get more room) and the tick interval is chosen piece by piece from the width available, so
+labels never crowd. Keys: Left/Right one year, Shift+Left/Right the previous/next change, Space play/pause; on the
+timeline Page Up/Down ten years.
+
+When the year changes by the timeline, the change buttons, the arrow keys or play, the map passes through
+every stored border map in between, in order (`js/travel.js`). Each change animates only the land that
+changed hands (`js/map.js` `show()` and `diff()`): a shape is unchanged when the next map has the same outline in
+the same colours, and everything else is changed land. The new map is laid under the old one; in the same frame
+every unchanged part of the old map goes (the two are identical there), and the old map's changed shapes stay
+on top in their own layer and are taken away one by one, sweeping out from the part of the new owner that it
+already held (a conquest spreads from the conqueror's side; new states stamp in one after another). Each gained
+shape shows in its old owner's colour until its moment, then flashes: a light fill and a white outline that switch
+off in two steps. Nothing is faded or cross-faded: borders snap, and unchanged land does not change at all. Feature
+state switches the shapes on and off, so a frame costs no rebuilt sources. At rest the map is always a stored map
+for the year shown; nothing is interpolated or morphed. The stops are every year in which a stored map starts or an
+empire membership or name changes; a year with the same rows as the one before only moves the year on. While
+the years run, small states' and peoples' names hide, and a power's name stays where it was while that place is
+still inside it. Play never skips a map: the year waits for the next map to be ready. Dragging the timeline far
+may take larger steps (at most four). With `prefers-reduced-motion` there is no animation; when frames come
+slowly (over 70 ms on two changes in a row) a jump goes to its end in one change and play skips the maps it
+cannot keep up with.
+
+## Colours
+
+Every power has a colour of its own from a palette of 24 bold, flat colours (twelve hues in two lightness
+bands, `js/groups.js`): the hue of its colour in the source data, or its key when that has none. A graph colouring
+on each map (neighbours from the outlines, larger powers first) keeps it unless a larger neighbour already holds a
+colour too close to it, so neighbours always differ; the result depends only on the map, not on the year shown
+before. Over 1936 to 1947 seven of 1,818 unchanged shapes change colour from one year to the next. Peoples and
+sketch-map regions stay pale with italic names. Borders are a dark line with a flat rim, no blur.
+
+## War on the map
+
+For the year shown (`js/main.js` `updateWar()`), from the event data only: the major wars going on (those with
+the highest notability score, at most six, named in the map key), and the battles fought that year at a recorded
+place (not those only placed at a state's centre), battles of the major wars first. At most 8 battle markers at
+world zoom and 24 when zoomed in, plus up to 3 war markers for major wars none of whose battles is shown. The
+state (or part of an empire) where a shown battle was fought is edged in red, with a slow pulse at rest. A click
+on a marker opens the battle or war: its war ("Part of") and the participants Wikidata lists; Wikidata does not
+record sides, and the panel says so. The key turns the layer off. The markers stay on while the years play.
+
+## Map key
+
+A collapsible card on the map (`js/key.js`), open on wide screens and closed on phones, with icons drawn in the
+map's own colours for the year shown: states, empires and their parts, peoples and sketch borders, occupation
+hatching, the change flash, battle and war markers and the red edge, event dots by type, clusters, and what a
+click does.
 
 ## First load
 

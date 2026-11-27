@@ -84,14 +84,15 @@ export function parseYear(input) {
 
 // ---- timeline scale: piecewise, so recent centuries get more room than deep prehistory ----
 const STOPS = [
-  [MIN_YEAR, 0], [-10000, 0.03], [-3000, 0.1], [-500, 0.25], [500, 0.4], [1000, 0.5],
-  [1500, 0.64], [1800, 0.8], [1900, 0.9], [MAX_YEAR, 1],
+  [MIN_YEAR, 0], [-10000, 0.025], [-3000, 0.075], [-500, 0.19], [500, 0.32], [1000, 0.41],
+  [1500, 0.54], [1800, 0.72], [1900, 0.845], [MAX_YEAR, 1],
 ];
+export const SCALE_STOPS = STOPS;
+/** Eras drawn as bands under the timeline (rough conventional dates, for orientation only). */
 export const ERAS = [
-  { y: -10000, label: 'Stone Age', short: '' }, { y: -3000, label: 'Bronze Age', short: '3000 BC' },
-  { y: -500, label: 'Classical', short: '500 BC' }, { y: 500, label: 'Middle Ages', short: 'AD 500' },
-  { y: 1500, label: 'Early modern', short: '1500' }, { y: 1800, label: 'Modern', short: '1800' },
-  { y: 1900, label: '1900s', short: '1900' },
+  { from: MIN_YEAR, to: -3300, label: 'Prehistory' }, { from: -3300, to: -1200, label: 'Bronze Age' },
+  { from: -1200, to: 500, label: 'Classical' }, { from: 500, to: 1500, label: 'Medieval' },
+  { from: 1500, to: 1800, label: 'Early modern' }, { from: 1800, to: MAX_YEAR, label: 'Modern' },
 ];
 
 export function yearToFrac(y) {

@@ -72,21 +72,82 @@ export function lchToHex([L, C, H]) {
   return '#' + rgb.map((v) => Math.round(Math.max(0, Math.min(1, gam(v))) * 255).toString(16).padStart(2, '0')).join('');
 }
 const hash = (s) => { let hsh = 2166136261; for (let i = 0; i < s.length; i++) hsh = Math.imul(hsh ^ s.charCodeAt(i), 16777619); return (hsh >>> 0) / 4294967296; };
+
+// ---- the map palette: bold, flat colours, two lightness bands of twelve hues (OKLCH). Every power has a
+// preferred entry that stays the same in every year (from the hue of its stored colour, else its key); a
+// graph-colouring pass per map (colorGroups) keeps neighbours apart and moves a power off its entry only
+// when a larger neighbour already holds a colour too close to it.
+const HUES = [22, 48, 75, 100, 128, 150, 172, 200, 232, 262, 298, 335];
+export const PALETTE = [];
+for (const band of [0, 1]) for (const H of HUES) {
+  const L = band ? 0.7 : 0.81;
+  const C = band ? 0.135 : 0.125 + (H > 60 && H < 140 ? 0.02 : 0);
+  PALETTE.push(lchToHex([L, C, H + (band ? 8 : 0)]));
+}
+const LAB = PALETTE.map((hex) => { const [L, C, H] = hexToLch(hex); return [L, C * Math.cos((H * Math.PI) / 180), C * Math.sin((H * Math.PI) / 180)]; });
+const dist = (i, j) => Math.hypot(LAB[i][0] - LAB[j][0], LAB[i][1] - LAB[j][1], LAB[i][2] - LAB[j][2]);
+const prefMemo = new Map();
+/** The palette entry a power prefers: the hue of its stored colour when that has one, its key otherwise. */
+export function preferredIndex(key, stored) {
+  const mk = key + '|' + stored;
+  if (prefMemo.has(mk)) return prefMemo.get(mk);
+  const band = hash(key + '#') < 0.5 ? 0 : 1;
+  let hi;
+  if (stored && /^#[0-9a-f]{6}$/i.test(stored) && hexToLch(stored)[1] > 0.045) {
+    const H = (hexToLch(stored)[2] + 360) % 360;
+    let best = 0;
+    HUES.forEach((h, i) => { const d = Math.min(Math.abs(h - H), 360 - Math.abs(h - H)); if (d < Math.min(Math.abs(HUES[best] - H), 360 - Math.abs(HUES[best] - H))) best = i; });
+    hi = best;
+  } else hi = Math.floor(hash(key) * HUES.length);
+  const i = band * HUES.length + hi;
+  prefMemo.set(mk, i);
+  return i;
+}
+/** A power's own map colour (light-theme hex), as preferred. */
+export const vividColor = (key, stored) => PALETTE[preferredIndex(key, stored)];
+
+/** Colour the groups of one map. adj: Map(group index -> Set of neighbouring group indices). prefs[i]: the
+ *  preferred palette index of group i (null for regions, which keep their own pale tints). Larger groups
+ *  choose first; a group takes its preferred colour unless a neighbour that chose before is too close to it,
+ *  else the nearest entry that is clear of every such neighbour. Deterministic: the same map always gets the
+ *  same colours, whatever year was shown before. */
+export function colorGroups(groups, adj, prefs) {
+  const order = groups.map((g, i) => i).filter((i) => prefs[i] != null).sort((a, b) => groups[b].area - groups[a].area || a - b);
+  const pick = new Map();
+  const MIN = 0.085;
+  for (const i of order) {
+    const nb = [...(adj.get(i) || [])].filter((j) => pick.has(j)).map((j) => pick.get(j));
+    const clear = (c) => nb.every((o) => o !== c && dist(c, o) >= MIN);
+    const p = prefs[i];
+    let c = p;
+    if (!clear(p)) {
+      // first the same hue in the other lightness band (the power still reads as itself), then the nearest
+      const twin = (p + HUES.length) % PALETTE.length;
+      const cands = [twin, ...PALETTE.map((_, k) => k).filter((k) => k !== twin).sort((a, b) => dist(a, p) - dist(b, p))];
+      c = cands.find(clear);
+      if (c == null) c = cands.reduce((a, b) => (Math.min(...nb.map((o) => dist(b, o))) > Math.min(...nb.map((o) => dist(a, o))) ? b : a));
+    }
+    pick.set(i, c);
+  }
+  return pick;
+}
+
 const memo = new Map();
-/** Map colours for one power colour: fill (group colour), part (a member's own tone in the same hue family),
- *  under (pale tone for peoples), edge (darker line). Dark theme: deeper, less bright fills. */
+/** Map colours for one power colour: fill (group colour), part (a member's own tone of the same hue, shown
+ *  when zoomed in), under (pale tone for peoples and sketch regions), edge (the dark border line).
+ *  Dark theme: deeper fills under light text. */
 export function tones(hex, name, dark) {
   const key = hex + '|' + name + '|' + dark;
   if (memo.has(key)) return memo.get(key);
   const [L, C, H] = hexToLch(hex);
   const t = hash(name);
-  const fl = dark ? 0.2 + (L - 0.6) * 0.75 : L;
-  const fc = dark ? C * 0.8 : C * 0.9;      // a little under the stored colour: calm on paper
+  const fl = dark ? L * 0.74 : L;
+  const fc = dark ? C * 0.95 : C;
   const out = {
     fill: lchToHex([fl, fc, H]),
-    part: lchToHex([fl + (t - 0.5) * (dark ? 0.08 : 0.07), fc * (0.8 + 0.5 * hash(name + 'c')), H + (hash(name + 'h') - 0.5) * 16]),
-    under: lchToHex(dark ? [0.31 + (t - 0.5) * 0.03, C * 0.4, H] : [0.872 + (t - 0.5) * 0.03, C * 0.55, H]),
-    edge: lchToHex(dark ? [0.14, fc * 0.7, H] : [Math.max(0.3, L - 0.36), Math.min(0.09, C * 1.15), H]),
+    part: lchToHex([fl + (t - 0.5) * (dark ? 0.09 : 0.085), fc * (0.78 + 0.4 * hash(name + 'c')), H + (hash(name + 'h') - 0.5) * 22]),
+    under: lchToHex(dark ? [0.3 + (t - 0.5) * 0.03, Math.min(0.05, C * 0.4), H] : [0.9 + (t - 0.5) * 0.025, Math.min(0.045, C * 0.4), H]),
+    edge: lchToHex(dark ? [0.13, Math.min(0.04, fc * 0.4), H] : [0.33, Math.min(0.06, C * 0.5), H]),
   };
   memo.set(key, out);
   return out;
@@ -200,4 +261,5 @@ export function assignSlots(doc, groups, nSlots) {
     slot.set(i, best);
   }
   groups.forEach((g, i) => { g.slot = slot.get(i) ?? 0; });
+  return adj;
 }

@@ -1,6 +1,6 @@
 // Turns a loaded border snapshot into what the map draws for one year: groups (empires, states, regions of
 // peoples), draw slots, colours, and labels (points, and lines across the largest states for spaced lettering).
-import { attachGroups, assignSlots, tones, empireName } from './groups.js';
+import { attachGroups, assignSlots, tones, empireName, colorGroups, preferredIndex, PALETTE } from './groups.js';
 import { makeAreaTest } from './geo.js';
 
 const REGION_HUES = ['#d9c08c', '#b4cf9c', '#dab4a0', '#a9cfc6', '#dccb8e', '#c9c0e0', '#bcd3a0', '#e0b7b9', '#a8c6dc', '#d6c4a2'];
@@ -75,16 +75,31 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
   const featsOf = new Map();
   for (const f of doc.features) { const k = f.properties.k; if (!featsOf.has(k)) featsOf.set(k, []); featsOf.get(k).push(f); }
   for (const f of doc.features) { const p = pols[f.properties.k]; f.properties.u = p.under && !p.s ? 1 : 0; }
-  assignSlots(doc, groups, 7);
+  const adj = assignSlots(doc, groups, 7);
   const colorOf = (key) => powers[key]?.color || '#c9c1b0';
-  for (const g of groups) {
+  // each group's power key: what its colour is remembered by from year to year
+  const keyOf = (g) => {
     if (g.kind === 'empire') {
       const id = g.key.slice(2);
       const core = g.members.map((k) => pols[k]).find((p) => p.core) || pols[g.members[0]];
-      g.color = powers[emp.empires[id]?.ck || id]?.color || colorOf(core.p);
       g.id = id;
-    } else if (g.kind === 'region') g.color = REGION_HUES[hash(g.name) % REGION_HUES.length];
-    else g.color = colorOf(pols[g.members[0]].p);
+      return powers[emp.empires[id]?.ck || id] ? (emp.empires[id]?.ck || id) : core.p;
+    }
+    return pols[g.members[0]].p;
+  };
+  const prefs = groups.map((g) => {
+    if (g.kind === 'region') return null;
+    g.pk = keyOf(g);
+    return preferredIndex(g.pk || g.name, powers[g.pk]?.color);
+  });
+  const pick = colorGroups(groups, adj, prefs);
+  doc.powerColor = new Map();
+  for (const g of groups) {
+    if (g.kind === 'region') g.color = REGION_HUES[hash(g.name) % REGION_HUES.length];
+    else {
+      g.color = PALETTE[pick.get(groups.indexOf(g))];
+      if (g.pk && !doc.powerColor.has(g.pk)) doc.powerColor.set(g.pk, g.color);
+    }
     const tg = tones(g.color, g.name, dark);
     for (const k of g.members) {
       const p = pols[k];
