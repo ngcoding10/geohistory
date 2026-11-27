@@ -121,7 +121,13 @@ def main():
         cls = ' '.join(e.get('cls', [])).lower()
         # not a datable discovery: places "discovered" by Europeans, prehistoric materials, and items with
         # neither a discoverer nor a place (broad concepts such as electricity or the newspaper)
-        if GEO.search(cls) or y < -3000 or not (e.get('who') or e.get('loc')):
+        if GEO.search(cls) or y < -3000 or not (e.get('who') or e.get('loc')) or e.get('prec', 9) < 9:
+            skipped += 1
+            continue
+        # sites known long before a European 'discovery' (Persepolis), and elements known since antiquity that
+        # Lavoisier only listed as elements (carbon, sulfur): not discoveries in the sense shown here
+        if re.search(r'archaeological site|world heritage|ancient city|ruins|city\b', cls) or \
+                ('chemical element' in cls and (y < 1700 or any('Lavoisier' in n for _, n in e.get('who', [])))):
             skipped += 1
             continue
         kind = next((k for k, rx in KIND if re.search(rx, cls)), 'discovery')
@@ -132,11 +138,7 @@ def main():
         mixed = any((people.get(w, {}).get('born') or -99999) > y - 10 for w, _ in e.get('who', []))
         for loc in ([] if mixed else e.get('loc', [])):
             if loc[0] in country_locs:
-                name, h = by_country(loc[0], y, idx, caps)
-                if name:
-                    p, how = (name, None, None), f'country of discovery ({loc[1]}), {h}'
-                    break
-                continue
+                continue     # a whole country as the place: too coarse (spot checks), not used
             if loc[2] is not None:
                 w = where(loc[2], loc[3], y)
                 if w:
@@ -150,33 +152,25 @@ def main():
             for wq in solo:
                 for wk in people.get(wq, {}).get('work', []):
                     s, en = wk[4], wk[5]
-                    if (s is None or s <= y) and (en is None or y <= en):
-                        works.append(wk)
+                    if (s is not None or en is not None) and (s is None or s <= y) and (en is None or y <= en):
+                        works.append(wk)     # only a dated workplace (spot checks: undated ones were often a birthplace or later post)
             if len({w[0] for w in works}) == 1:
                 wk = works[0]
                 w = where(wk[2], wk[3], y)
                 if w:
                     p, how, lo, la = w, f"discoverer's workplace: {wk[1]}", wk[2], wk[3]
-        if not p and e.get('coord') and kind == 'find':
+        if False and not p and e.get('coord') and kind == 'find':   # an object's coordinates are where it is kept now (the Venus de Milo: the Louvre)
             w = where(e['coord'][0], e['coord'][1], y)
             if w:
                 p, how, lo, la = w, 'where it was found', e['coord'][0], e['coord'][1]
-        if not p and not mixed:
+        if False:   # country of origin: not used (spot checks: photography 'from' Britain, the sonnet dated 1300)
             for c in e.get('origin', []):
                 name, h = by_country(c[0], y, idx, caps)
                 if name:
                     p, how = (name, None, None), f'country of origin ({c[1]}), {h}'
                     break
-        if not p:
-            cits = []
-            for wq in solo:
-                for c in people.get(wq, {}).get('cit', []):
-                    if (c[2] is None or c[2] <= y) and (c[3] is None or y <= c[3]):
-                        cits.append(c)
-            if len({c[0] for c in cits}) == 1:
-                name, h = by_country(cits[0][0], y, idx, caps)
-                if name:
-                    p, how = (name, None, None), f"discoverer's citizenship ({cits[0][1]}), {h}"
+        # (a discoverer's citizenship is not used: in the spot checks it put finds and work done abroad in the
+        # wrong country, Luzia in France and the quantum Hall effect in Germany)
         if p:
             n_placed += 1
         out.append({'id': q, 'q': q, 'y': y, 'l': e['n'][:1].upper() + e['n'][1:], 'k': kind, 'p': p[0] if p else None,
@@ -192,6 +186,7 @@ def main():
                 if maps[mi][0] <= d['y'] <= maps[mi][1]:
                     d['pw'] = pk
                     break
+    out = [d for d in out if d.get('cur') or d['p']]   # an unplaced Wikidata item is not shown anywhere
     out.sort(key=lambda d: (not d.get('cur'), -d['sl']))
     write_json(os.path.join(DATA, 'context', 'discoveries.json'),
                {'fields': FIELDS, 'items': [[d.get(f) for f in FIELDS] for d in out]})
