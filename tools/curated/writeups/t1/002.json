@@ -1,0 +1,617 @@
+{
+ "Q178275": {
+  "title": "1918 influenza pandemic ('Spanish flu')",
+  "y": 1918,
+  "place": "Worldwide",
+  "paras": [
+   "The influenza pandemic of 1918 to 1920 was one of the deadliest in history. It was caused by an H1N1 strain of influenza A, infected an estimated 500 million people, nearly a third of the world's population, and killed somewhere between 17 million and 50 million, possibly as many as 100 million.",
+   "Its origin is uncertain. The earliest probable cases were recorded in Kansas in the United States in early 1918, with cases in France, Germany and Britain in April, though some researchers argue that the virus had arisen years earlier. It came to be called the 'Spanish flu' only because Spain, neutral in the First World War and free of wartime censorship, reported on it openly from late May 1918, while the warring countries suppressed news of it to protect morale.",
+   "The pandemic came in waves. The first, in the spring of 1918, was mostly mild. A second, far deadlier wave spread in the autumn of 1918, carried by troops moving in crowded ships and trains at the end of the war: victims could die within hours or days, their lungs filling with fluid. Unusually, many of the dead were healthy young adults; more American soldiers died of the flu than in battle. With no vaccine or antiviral drugs, authorities closed schools, churches and theatres, ordered masks and banned spitting. Cities that acted early, like St. Louis, fared far better than Philadelphia, which held a crowded parade on 28 September 1918 and lost more than a thousand people in ten days.",
+   "Further waves followed into 1919 and 1920. In the United States average life expectancy fell by about twelve years in 1918 alone. The pandemic overwhelmed hospitals and undertakers, left countless orphans and widows, and disrupted economies already strained by the war."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Spanish_flu",
+    "title": "Spanish flu",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/1918-flu-pandemic",
+    "title": "Spanish Flu - Symptoms, How It Began & Ended",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The 1918-1920 pandemic was caused by the H1N1 subtype of influenza A.",
+   "An estimated 500 million people (nearly a third of the world's population) were infected.",
+   "Deaths are estimated at 17 to 50 million, possibly 100 million.",
+   "The earliest probable cases were in Kansas in early 1918, then France, Germany and the UK in April; some studies argue an older origin.",
+   "It was called the Spanish flu because neutral Spain reported it freely from late May 1918 while warring nations censored news.",
+   "The first wave in spring 1918 was mild; a deadlier second wave came in the autumn; victims died within hours or days with fluid-filled lungs.",
+   "Troop movements in crowded ships and trains spread it; unusually many young adults died; more US soldiers died of flu than in battle.",
+   "There were no vaccines or antivirals; communities closed schools, churches and theatres, ordered masks and banned spitting.",
+   "Philadelphia's 28 September parade led to over 1,000 deaths in 10 days; St. Louis's early closures cut its peak death rate to one-eighth of Philadelphia's.",
+   "The pandemic lasted into 1920 (Wikipedia; HISTORY.com dates it 1918-1919).",
+   "US life expectancy fell by a dozen years in 1918; funeral parlours were overwhelmed; families and economies were devastated."
+  ],
+  "disagree": "Death toll estimates range from 17 million (Wikipedia's lower bound) or 20 million (HISTORY.com) to 50 million or even 100 million. The origin is disputed: Kansas is often named, but a 2018 study and analyses of the virus suggest it arose earlier or elsewhere. Wikipedia notes that the high mortality among young adults has itself been contested.",
+  "checked": null
+ },
+ "Q130796": {
+  "title": "Molotov–Ribbentrop Pact",
+  "y": 1939,
+  "place": "Moscow",
+  "paras": [
+   "The Molotov–Ribbentrop Pact was the non-aggression treaty between Nazi Germany and the Soviet Union signed in Moscow in the early hours of 24 August 1939 and dated 23 August, by the Soviet foreign minister Vyacheslav Molotov and the German foreign minister Joachim von Ribbentrop, in Stalin's presence. Each side promised not to attack the other or help any third party that did. A secret protocol divided Eastern Europe between them.",
+   "In March 1939 Hitler had broken the Munich agreement and occupied the rest of Czechoslovakia, and Poland looked to be next; Britain and France guaranteed Poland's independence on 31 March and courted the Soviet Union. Hitler, whose generals feared a two-front war, began sounding out Stalin instead, hinting that the Soviets could have part of Poland. On 20 August he asked Stalin to receive his foreign minister, and on 22 August Ribbentrop flew to Moscow. The pact came as a shock to the world, given the two regimes' open hostility; Hitler had called the Soviet Union the greatest danger to civilisation only two years before.",
+   "Under the secret protocol Germany and the Soviet Union agreed to partition Poland and assigned Latvia, Estonia, Finland and Bessarabia to the Soviet sphere; Lithuania was moved to the Soviet sphere in a further agreement in September. Freed of the threat from the east, Hitler invaded Poland on 1 September 1939; Britain and France declared war on 3 September, and on 17 September the Red Army invaded Poland from the east. In 1940 the Soviet Union took land from Finland after the Winter War and annexed Estonia, Latvia, Lithuania and Romania's Bessarabia and Northern Bukovina.",
+   "The pact lasted less than two years: on 22 June 1941 Germany invaded the Soviet Union. The existence of the secret protocol, proven in the West at the Nuremberg trials, was officially denied by the Soviet Union until December 1989, when a commission set up under Mikhail Gorbachev confirmed it and the Soviet government condemned it."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Molotov%E2%80%93Ribbentrop_Pact",
+    "title": "Molotov–Ribbentrop Pact",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/molotov-ribbentrop-pact",
+    "title": "Molotov-Ribbentrop Pact",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Signed in Moscow on 24 August 1939 (backdated 23 August) by Molotov and Ribbentrop; neither would aid a third party attacking the other; a secret protocol on spheres of influence.",
+   "On 15 March 1939 Germany invaded Czechoslovakia, breaking the Munich agreement; Poland appeared next; Britain and France guaranteed Poland on 31 March 1939.",
+   "Hitler's generals feared a two-front war; Hitler explored a thaw; Ribbentrop hinted the Soviets could gain Polish territory.",
+   "On 20 August Hitler asked Stalin to receive his foreign minister; Ribbentrop flew to Moscow on 22 August and met Stalin and Molotov.",
+   "Two years earlier Hitler had called the Soviet Union the greatest danger to civilisation.",
+   "The secret protocol partitioned Poland; Latvia, Estonia, Finland and Bessarabia went to the Soviet sphere; Lithuania was transferred by the 28 September treaty.",
+   "Germany invaded Poland on 1 September 1939; Britain and France declared war on 3 September.",
+   "The Soviet invasion of Poland began on 17 September 1939.",
+   "The Soviets annexed parts of Finland after the Winter War (March 1940), and Estonia, Latvia, Lithuania, Bessarabia and Northern Bukovina; the pact held for two years until Operation Barbarossa on 22 June 1941.",
+   "The protocol's existence was proven in the West at Nuremberg and denied by the USSR until December 1989, when a commission under Gorbachev confirmed it and the government condemned it."
+  ],
+  "disagree": "HISTORY.com says the treaty was settled in the early hours of 23 August and that Ribbentrop's draft put Lithuania in the Soviet sphere; Wikipedia says it was signed on 24 August, backdated to 23 August, and that the original protocol placed Lithuania in the German sphere until the treaty of 28 September 1939.",
+  "checked": null
+ },
+ "Q12546": {
+  "title": "The Crusades",
+  "y": 1095,
+  "place": "The eastern Mediterranean, from Anatolia to Egypt",
+  "paras": [
+   "The Crusades were a series of military campaigns launched by the papacy between 1095 and 1291 against the Muslim rulers of the Holy Land, to win back and then defend Jerusalem and the holy places for Christendom. They began when Pope Urban II, answering an appeal from the Byzantine emperor Alexios I Komnenos for help against the Seljuk Turks, called on Western Christians at the Council of Clermont in November 1095 to take up arms, promising spiritual rewards to those who went.",
+   "The response was enormous. A popular 'People's Crusade' under the preacher Peter the Hermit set out first and was destroyed by the Turks in Anatolia, and some crusaders massacred Jews in the Rhineland towns in 1096. The main armies, under leaders such as Godfrey of Bouillon, Raymond of Saint-Gilles and Bohemond of Taranto, left in August 1096, took Nicaea in 1097 and Antioch in June 1098, and in July 1099 captured Jerusalem, slaughtering many of its inhabitants. They set up four crusader states, at Jerusalem, Edessa, Antioch and Tripoli, defended by castles and by new military orders such as the Templars and Hospitallers.",
+   "Muslim rulers struck back. Zangi of Mosul took Edessa in 1144; the Second Crusade that followed, led by Louis VII of France and Conrad III of Germany, failed before Damascus. Saladin, who united Egypt and Syria, destroyed the army of the Kingdom of Jerusalem at Hattin in 1187 and took the city. The Third Crusade of Frederick Barbarossa, Philip II of France and Richard I of England regained much of the coast but not Jerusalem, and in 1192 Richard made peace with Saladin. The Fourth Crusade turned against Christian Constantinople, which it sacked in 1204.",
+   "Later crusades against Egypt failed, though the Emperor Frederick II regained Jerusalem by treaty for a decade in 1229. The Mamluks, who took power in Egypt and halted the Mongols in 1260, conquered the remaining crusader strongholds, ending with Acre in 1291. Crusading went on elsewhere, against Muslims in Spain, pagans around the Baltic and heretics in southern France, but faded with the Reformation. During the crusades the wealth of the Church and the authority of the popes grew."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Crusades",
+    "title": "Crusades",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/crusades",
+    "title": "Crusades: Definition, Map & Religion",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "A series of papal campaigns between 1095 and 1291 against Muslim rulers to recover and defend the Holy Land.",
+   "Alexios I asked Urban II for military aid against the Seljuk Turks (1095).",
+   "At the Council of Clermont in November 1095 Urban II called on Christians to take up arms, promising spiritual reward.",
+   "The People's Crusade under Peter the Hermit was crushed by the Turks; Count Emicho's crusaders massacred Jews in the Rhineland in 1096.",
+   "The main armies under Raymond of Saint-Gilles, Godfrey of Bouillon, Hugh of Vermandois and Bohemond departed in August 1096; Nicaea fell in June 1097, Antioch in June 1098, Jerusalem in July 1099 with a massacre.",
+   "Four crusader states (Jerusalem, Edessa, Antioch, Tripoli) guarded by castles; military orders such as the Templars and Hospitallers.",
+   "Zangi took Edessa in 1144; the Second Crusade (1147) under Louis VII and Conrad III failed before Damascus.",
+   "Saladin took control of Egypt and won at Hattin in 1187, taking Jerusalem.",
+   "The Third Crusade (Barbarossa, Philip II, Richard I); Richard won at Arsuf; peace treaty with Saladin in September 1192 without Jerusalem.",
+   "The Fourth Crusade sacked Constantinople in 1204.",
+   "Fifth Crusade failed in Egypt (1221); Frederick II regained Jerusalem by negotiation in 1229 for a decade; Louis IX's crusades failed.",
+   "The Mamluks halted the Mongols in 1260 and captured the last crusader strongholds, Acre, in 1291.",
+   "Crusades were also waged in Iberia, the Baltic and against the Albigensians; support diminished with the Reformation.",
+   "The Catholic Church's wealth and papal power increased."
+  ],
+  "disagree": "Wikipedia notes that in scholarly usage 'crusade' also covers papally authorised wars in Iberia, northern Europe and southern France; HISTORY.com counts eight or nine numbered crusades to the east.",
+  "checked": null
+ },
+ "Q254106": {
+  "title": "Crimean War",
+  "y": 1853,
+  "place": "Crimea, the Danube and the Black Sea",
+  "paras": [
+   "The Crimean War, from October 1853 to February 1856, was fought between the Russian Empire and an alliance of the Ottoman Empire, France and Britain, joined in 1855 by the Kingdom of Sardinia. It is remembered for the Charge of the Light Brigade, for Florence Nightingale's nursing, and as one of the first wars fought with modern technology and reported in photographs.",
+   "It grew out of a quarrel between Catholic and Orthodox Christians over the holy places of Jerusalem and Bethlehem under Ottoman rule. Tsar Nicholas I demanded that the sultan recognise him as protector of all the Orthodox subjects of the Ottoman Empire, and when the sultan refused, Russia occupied the Danubian principalities of Moldavia and Wallachia. The Ottomans declared war in October 1853. In November a Russian fleet destroyed an Ottoman squadron at Sinop on the Black Sea, killing nearly 2,000 Ottoman sailors, and the outcry, together with fear of Russian expansion towards the Mediterranean and India, brought Britain and France into the war in March 1854.",
+   "In September 1854 the allies landed in Crimea to take Sevastopol, the base of Russia's Black Sea fleet, and routed the Russians at the Alma. The expected short siege lasted eleven months. At Balaklava in October 1854 the 93rd Highlanders' 'thin red line' held off Russian cavalry, but a misunderstood order sent the Light Brigade charging into a valley ringed by Russian guns; of about 670 men, 110 were killed and 160 wounded. The Russians were beaten again at Inkerman in November, fought in thick fog. The armies suffered terribly through the winter of 1854-55 from cold, storms and diseases such as cholera, and the reports of the conditions prompted Nightingale's work in the military hospitals.",
+   "In September 1855 French troops stormed the Malakoff redoubt, and the Russians abandoned Sevastopol. Isolated and threatened by Austria, Russia sued for peace, and the Treaty of Paris of 30 March 1856 ended the war; Russia gave up its conquests and was forbidden to keep warships on the Black Sea. The war saw rifles made in factories, railways, the telegraph and explosive naval shells, and was among the first to be documented by war correspondents and photographers."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Crimean_War",
+    "title": "Crimean War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     9,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/crimean-war",
+    "title": "Crimean War: Causes, Battles & Florence Nightingale",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Fought between Russia and the Ottoman Empire, France, the UK and Sardinia (which joined in 1855) from October 1853 to February 1856.",
+   "Remembered for the Charge of the Light Brigade and Florence Nightingale's pioneering nursing.",
+   "The spark was a dispute between Catholics and Orthodox over holy places; Nicholas I demanded to be protector of the Ottomans' Orthodox subjects.",
+   "After the sultan refused, Russia occupied Moldavia and Wallachia; Turkey declared war in October 1853.",
+   "At Sinop Russian ships destroyed an Ottoman squadron, killing nearly 2,000 Ottoman sailors.",
+   "Britain and France, fearing Russian influence and outraged by Sinop, joined in March 1854 (concern for India and trade).",
+   "In September 1854 the allies landed in Crimea to take Sevastopol, Russia's Black Sea base; the Russians were routed at the Alma; the siege lasted 11 months.",
+   "At Balaklava (October 1854) the 93rd Highlanders' thin red line held; the Light Brigade attacked the wrong battery; of 670, 110 killed and 160 wounded.",
+   "Russians defeated at Inkerman in November in fog.",
+   "Winter 1854-55 storms, cold and disease (cholera).",
+   "French troops took the Malakoff redoubt in September 1855 and the Russians left Sevastopol.",
+   "Facing Austria, Russia sued for peace; Treaty of Paris (30 March 1856); Russia returned territory and could not base warships in the Black Sea.",
+   "Modern technologies: mass-produced rifles, railways, telegraph, explosive shells; documented in reports and photographs."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q33143": {
+  "title": "Seven Years' War",
+  "y": 1756,
+  "place": "Europe, North America, India and the seas",
+  "paras": [
+   "The Seven Years' War of 1756 to 1763 was a global conflict between the great powers of Europe, fought in Europe, in North America (where its American part is known as the French and Indian War), in India and on the oceans. On one side stood Britain and Prussia, on the other France, Austria and Russia, with Sweden, and from 1762 Spain.",
+   "Two rivalries drove it. In Europe, Austria wanted to recover the rich province of Silesia, which Frederick II ('the Great') of Prussia had seized in the War of the Austrian Succession of 1740 to 1748. To do so it broke with tradition and allied itself with its old enemy France, while Britain allied with Prussia, a reversal known as the Diplomatic Revolution. Overseas, Britain and France were competing for empire, above all in the Ohio valley in North America, where fighting had already begun in 1754, when a young George Washington clashed with French forces and was forced to surrender at Fort Necessity.",
+   "Frederick struck first, invading Saxony in August 1756. Facing far larger enemies, he won great victories at Rossbach and Leuthen in late 1757, but by 1760 Russian and Austrian troops briefly occupied Berlin, and Prussia was near exhaustion when the Russian empress Elizabeth died; her successor Peter III, an admirer of Frederick, made peace in 1762, the 'Miracle of the House of Brandenburg'. Britain, under William Pitt, paid subsidies to Prussia and threw its own strength into the war at sea and in the colonies: it took Louisbourg and Fort Duquesne in 1758, won Quebec in 1759 and Montreal in 1760, beat the French navy at Lagos and Quiberon Bay in 1759, and took French posts in the Caribbean, West Africa and India.",
+   "The Treaty of Paris of February 1763 gave Britain Canada and Spanish Florida, while France lost its possessions in North America and Britain established its commercial dominance in India. The Treaty of Hubertusburg, signed days later, left Silesia with Prussia, confirming it as a great power. Britain emerged as the leading colonial and naval power, but deep in debt; its efforts to make the American colonies pay a share led to the American Revolution, in which France took its revenge."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Seven_Years%27_War",
+    "title": "Seven Years' War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/seven-years-war",
+    "title": "Seven Years' War: Causes & Effects of French and Indian War",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "A global conflict of 1756-1763 fought mainly in Europe with campaigns in North America and India; related wars include the French and Indian War.",
+   "Britain and Prussia faced France and Austria, joined by Sweden and Russia, and Spain from 1762 (Saxony counted with Britain and Prussia by HISTORY.com).",
+   "Austria sought to recover Silesia, seized by Frederick II in 1740-48; the Diplomatic Revolution aligned France with Austria and Britain with Prussia.",
+   "Britain and France competed in the Ohio valley; fighting began earlier in North America.",
+   "Washington's skirmish with the French and his surrender at Fort Necessity on 3 July 1754.",
+   "Frederick invaded Saxony in August 1756; victories at Rossbach (5 November 1757) and Leuthen (5 December 1757).",
+   "Russian and Austrian forces occupied Berlin in October 1760; Russia withdrew in 1762 after Elizabeth's death and Peter III's accession, the 'Miracle of the House of Brandenburg'.",
+   "Pitt financed Prussia's army from 1756 (British subsidies).",
+   "Louisbourg (July 1758), Fort Duquesne (September 1758), Quebec (September 1759), Montreal (1760); Lagos and Quiberon Bay (1759); victories in the Caribbean, West Africa and India.",
+   "Treaty of Paris (February 1763): France lost its North American possessions; Britain gained Canada and Florida and commercial dominance in India.",
+   "Treaty of Hubertusburg (15 February 1763) confirmed Prussia's hold on Silesia and its great-power status.",
+   "Britain gained a reputation as a world power with a strong navy but incurred debt and taxed the colonies; France's loss inspired it to side with the Americans."
+  ],
+  "disagree": "HISTORY.com counts Saxony with Britain and Prussia, though Prussia invaded and occupied Saxony in 1756; Wikipedia lists Saxony among the minor states of the war. HISTORY.com also lists Louisiana among Britain's gains in 1763; this account follows Wikipedia in naming Canada and Florida.",
+  "checked": null
+ },
+ "Q49100": {
+  "title": "Yom Kippur War",
+  "y": 1973,
+  "place": "Sinai and the Golan Heights",
+  "paras": [
+   "The Yom Kippur War, the fourth major Arab-Israeli war, began on 6 October 1973, when Egypt and Syria launched a surprise attack on Israel on Yom Kippur, the Day of Atonement, when many Israeli soldiers were away observing the holy day. Most of the fighting took place in the Sinai Peninsula and on the Golan Heights, which Israel had occupied since 1967.",
+   "Egypt's president Anwar Sadat, who had taken office in 1970, wanted to recover Sinai and to force a peace on better terms than Israel would then offer; his peace proposals, the last in February 1973, had been rejected by Golda Meir's government. In 1972 he expelled some 20,000 Soviet advisers, opened channels to Washington and planned a joint attack with Syria.",
+   "Armed with modern Soviet weapons, Egyptian forces crossed the Suez Canal in Operation Badr and dug in on the eastern bank, while Syrian forces advanced on the Golan. Iraqi troops joined the war and Jordan helped Syria. Once fully mobilised, Israel threw back the Syrians and, after a failed Egyptian advance into Sinai on 14 October, crossed the canal itself, driving north and south to cut off the Egyptian Second and Third Armies. A large American airlift of arms helped Israel. A UN ceasefire on 22 October broke down the next day, and a second, on 25 October, ended the fighting.",
+   "Israel won on the battlefield but at heavy cost, and anger at the lack of preparation led Golda Meir to resign in April 1974. Egypt's early successes restored Sadat's prestige and let him negotiate: disengagement agreements in 1974 returned part of Sinai, the Camp David Accords of 1978 and the peace treaty of 1979 made Egypt the first Arab state to recognise Israel, and the last of Sinai was handed back in 1982."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Yom_Kippur_War",
+    "title": "Yom Kippur War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/yom-kippur-war",
+    "title": "Yom Kippur War: Definition, Causes & Results",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Egypt and Syria attacked on 6 October 1973 on Yom Kippur, when many Israeli soldiers were away; fighting was mostly in Sinai and the Golan, occupied in 1967.",
+   "Meir's government rejected Sadat's peace proposals, the last in February 1973.",
+   "Sadat became president in 1970 and wanted to recover Sinai and make peace on better terms.",
+   "In 1972 Sadat expelled 20,000 Soviet advisers, opened channels with Washington and allied with Syria.",
+   "Egyptians crossed the Suez Canal (Operation Badr); Syrians advanced on the Golan; Soviet weaponry; Iraq joined and Jordan supported Syria.",
+   "After the failed Egyptian advance of 14 October Israel crossed the canal and threatened to cut off the Second and Third Armies; a US airlift helped Israel.",
+   "A UN ceasefire on 22 October collapsed the next day; a second on 25 October ended the war.",
+   "Israel won at heavy cost; criticism of unpreparedness; Golda Meir stepped down in April 1974.",
+   "Disengagement agreements from 1974; Camp David 1978; the 1979 treaty made Egypt the first Arab state to recognise Israel; the last of Sinai returned in 1982."
+  ],
+  "disagree": "HISTORY.com says President Nixon delayed the U.S. airlift for a week as a signal to Egypt; Wikipedia gives a fuller account of the American decision-making.",
+  "checked": null
+ },
+ "Q82664": {
+  "title": "Iran–Iraq War",
+  "y": 1980,
+  "place": "The Iran–Iraq border, Khuzestan and the Persian Gulf",
+  "paras": [
+   "The Iran–Iraq War began on 22 September 1980, when Iraq under Saddam Hussein invaded Iran, and lasted almost eight years, until a United Nations ceasefire in August 1988. With around half a million dead, it was one of the deadliest conventional wars of the 20th century, and it ended with neither side gaining anything.",
+   "The two states had long quarrelled over the Shatt al-Arab, the waterway that forms their southern border and is Iraq's only outlet to the Gulf; in the Algiers Agreement of 1975 Iraq had given up part of its control in return for Iran ending its support for Kurdish rebels in Iraq. The Iranian Revolution of 1978-79 changed everything: Saddam, who became president in July 1979, feared that Ayatollah Khomeini's Shia revolution would spread to Iraq's Shia majority, and saw a chance to strike while Iran's army was weakened by the upheaval.",
+   "Iraqi aircraft struck Iranian air bases and its army invaded the oil-rich province of Khuzestan, taking the port of Khorramshahr after a long battle. But Iranian resistance, reinforced by revolutionary militias, stiffened, and by 1982 Iran had won back almost all the lost ground. Khomeini refused peace and carried the war into Iraq, launching repeated offensives towards Basra with massed 'human wave' attacks. The front settled into a stalemate of trench warfare; both sides attacked cities and oil installations, and Western navies came into the Gulf to protect shipping. Iraq, backed by Saudi Arabia, Kuwait and other Arab states and tacitly by Western powers, used chemical weapons against Iranian troops and Kurdish civilians.",
+   "In 1988 Iraqi offensives convinced Iran's leaders they could not win, and Iran accepted Security Council Resolution 598; the war formally ended on 20 August 1988. Estimates of total casualties run from 1 to 2 million. Iraq came out with a strengthened army and more power in the region, and two years later Saddam invaded Kuwait."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Iran%E2%80%93Iraq_War",
+    "title": "Iran–Iraq War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/iran-iraq-war",
+    "title": "Iran-Iraq War: Timeline, Causes & Death Toll",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Iraq invaded Iran on 22 September 1980; the war lasted eight years.",
+   "About 500,000 killed, one of the deadliest conventional wars; no real benefit to either side.",
+   "Dispute over the Shatt al-Arab, Iraq's only access to the Gulf; the 1975 Algiers Agreement reduced Iraqi control in exchange for Iran ending support for Kurdish insurgents.",
+   "Saddam became president in July 1979; he feared the spread of Iran's Shia revolution to Shia-dominated Iraq and struck while Iran's military was weakened.",
+   "Iraqi air strikes on Iranian air bases; ground invasion of Khuzestan; Khorramshahr captured.",
+   "Iranian resistance, reinforced by revolutionary militias, regained almost all lost territory by 1982; Iran refused peace and invaded Iraq aiming at Basra; human wave assaults.",
+   "Stalemate and trench warfare; attacks on cities and oil facilities; Western warships sent to the Gulf.",
+   "Iraq was backed by Saudi Arabia, Kuwait and other Arab states and tacitly by the West; Iraq used chemical weapons against Iranian troops and Kurdish civilians.",
+   "Iraqi offensives in 1988; Iran accepted Resolution 598; the war formally ended on 20 August 1988.",
+   "Casualty estimates of 1-2 million; Iraq emerged with more power and invaded Kuwait on 2 August 1990."
+  ],
+  "disagree": "Death tolls are uncertain: Wikipedia gives around 500,000 deaths; HISTORY.com gives 1 to 2 million casualties, with about 500,000 killed.",
+  "checked": null
+ },
+ "Q128160": {
+  "title": "Cuban Missile Crisis",
+  "y": 1962,
+  "place": "Cuba, Washington and Moscow",
+  "paras": [
+   "The Cuban Missile Crisis of October 1962 was a thirteen-day confrontation between the United States and the Soviet Union over Soviet nuclear missiles secretly being installed in Cuba, and is often seen as the moment the Cold War came closest to nuclear war.",
+   "Cuba, under Fidel Castro since 1959, had aligned itself with the Soviet Union, and the United States had backed the failed Bay of Pigs invasion in 1961. The Soviet leader Nikita Khrushchev sent missiles to Cuba to deter another invasion and to offset American nuclear superiority, including the Jupiter missiles the United States had placed in Italy and Turkey. On 14 October 1962 an American U-2 spy plane photographed a medium-range missile site being built, about 90 miles from Florida.",
+   "President John F. Kennedy was briefed on 16 October and met with a group of advisers, the ExComm. Rejecting air strikes and an invasion for the moment, he chose a naval 'quarantine' of Cuba, announced in a television address on 22 October, and demanded that the missiles be removed. On 24 October Soviet ships heading for Cuba stopped short of the blockade line. Tension peaked on 'Black Saturday', 27 October: a U-2 was shot down over Cuba, killing its pilot, Major Rudolf Anderson, and U.S. ships dropped signalling depth charges on the Soviet submarine B-59, unaware that it carried a nuclear torpedo.",
+   "Khrushchev had offered on 26 October to withdraw the missiles in return for an American promise not to invade Cuba, and on 27 October asked for the removal of the American missiles in Turkey too. Kennedy publicly accepted the first offer, while his brother Robert privately assured the Soviet ambassador that the missiles in Turkey would go. On 28 October Khrushchev agreed to remove the missiles; the blockade ended on 20 November once missiles and bombers had left. A direct hotline between Washington and Moscow followed in 1963, and treaties limiting nuclear weapons, but the Soviets also expanded their arsenal of intercontinental missiles."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+    "title": "Cuban Missile Crisis",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     3,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/cuban-missile-crisis",
+    "title": "Cuban Missile Crisis: Timeline, Causes & Facts",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "A confrontation between the US and USSR over Soviet nuclear missiles in Cuba in October 1962, bringing the superpowers close to nuclear war.",
+   "Castro took power in 1959 and aligned with the USSR; the Bay of Pigs invasion of 1961.",
+   "Khrushchev sent missiles to deter US aggression and increase strike capability; US missiles in Turkey (and Italy, per Wikipedia) worried the Soviets.",
+   "A U-2 photographed a missile being assembled on 14 October 1962; Cuba is 90 miles from Florida.",
+   "Kennedy was briefed on 16 October and convened ExComm; he chose a naval blockade or quarantine over air strikes or invasion, announced on television on 22 October.",
+   "On 24 October Soviet ships stopped short of the blockade.",
+   "On 27 October a US reconnaissance plane was shot down and Major Rudolf Anderson killed.",
+   "On 27 October ('Black Saturday') US ships dropped signalling depth charges on submarine B-59, which carried a nuclear torpedo.",
+   "Khrushchev's letters of 26 October (no-invasion pledge) and 27 October (Turkey missiles); Kennedy accepted the first publicly and privately agreed to withdraw from Turkey via Robert Kennedy; ended 28 October.",
+   "The quarantine ended on 20 November 1962; the Moscow-Washington hotline; nuclear treaties; the Soviets increased their ICBM arsenal."
+  ],
+  "disagree": "Wikipedia says Khrushchev's second message asked for the removal of the Jupiter missiles from Italy and Turkey; HISTORY.com mentions Turkey only.",
+  "checked": {
+   "by": "https://history.state.gov/milestones/1961-1968/cuban-missile-crisis",
+   "result": "9 claims checked: the Bay of Pigs, the deterrent motive, the U-2 photographs of 14 October, the quarantine and broadcast of 22 October, ships turning back on 24-25 October, the U-2 shot down on 27 October, the letters of 26 and 27 October, Robert Kennedy's meeting with Dobrynin over the missiles in Turkey, Khrushchev's statement of 28 October, the end of the quarantine on 20 November and the hotline agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q5086": {
+  "title": "Berlin Wall built",
+  "y": 1961,
+  "place": "Berlin",
+  "paras": [
+   "In the early hours of 13 August 1961 the communist government of East Germany (the GDR) began sealing off West Berlin with barbed wire and concrete blocks. Within two weeks the first wall had gone up, and over the following years it became a guarded barrier with a 'death strip' that divided Berlin for 28 years, the best-known symbol of the Cold War.",
+   "After the Second World War Germany and Berlin were each divided into four occupation zones. West Berlin, held by the United States, Britain and France, lay deep inside Soviet-controlled East Germany, and the Soviet attempt to force the Western powers out with the blockade of 1948-49 had failed in the face of the Berlin Airlift. West Berlin then became the main escape route from the East: before the wall about 3.5 million East Germans, a fifth of the population and many of them doctors, engineers, teachers and skilled workers, left for the West. The flight speeded up in 1961; in July alone some 30,000 fled, and on 12 August about 2,400 crossed in a single day.",
+   "The GDR leader Walter Ulbricht had assured the press in June that no one intended to build a wall; the initiative appears to have come from the Soviet leader Nikita Khrushchev, who gave his approval at the start of August. Officially the 'Anti-Fascist Protection Rampart' was to keep out Western 'fascists'; its real purpose was to stop people leaving. Families and neighbourhoods were split and the free movement of Berliners to work and shops across the city ended. In October 1961 American and Soviet tanks faced each other at Checkpoint Charlie. Kennedy, who accepted the wall as 'a hell of a lot better than a war', told West Berliners in 1963, 'I am a Berliner.'",
+   "More than 5,000 people escaped across the wall, but between 136 and more than 200 were killed by the East German authorities while trying. The wall stood until 9 November 1989, when, after weeks of protests, the GDR announced that its citizens could cross freely and crowds poured through the checkpoints. Germany was reunified on 3 October 1990."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+    "title": "Berlin Wall",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     5,
+     7,
+     8,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/berlin-wall",
+    "title": "Berlin Wall: Fall, Construction & Location",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The GDR began construction on 13 August 1961 with barbed wire and concrete blocks; a makeshift wall completed in two weeks.",
+   "The wall included guard towers and a death strip.",
+   "Germany and Berlin were split into four occupation zones; West Berlin lay deep in the Soviet zone.",
+   "The 1948-49 Soviet blockade failed against the Berlin Airlift.",
+   "About 3.5 million East Germans (20% of the population) defected before the wall, disproportionately professionals and skilled workers.",
+   "In July 1961 30,000 fled; on 12 August some 2,400, the most in a single day.",
+   "Ulbricht said on 15 June 1961 that no one intended to build a wall; the initiative came from Khrushchev (1 August call); officially called the Anti-Fascist Protection Rampart.",
+   "Its real purpose was to stop defections; movement between the halves of the city ended.",
+   "American and Soviet tanks faced off at Checkpoint Charlie in October 1961 (after an incident on 22 October, per HISTORY.com).",
+   "Kennedy: 'a wall is a hell of a lot better than a war'; 'I am a Berliner' speech in 1963.",
+   "Over 5,000 escaped; between 136 and more than 200 were killed (HISTORY.com: at least 140).",
+   "On 9 November 1989 the GDR announced its citizens could cross; crowds went through; reunification on 3 October 1990."
+  ],
+  "disagree": "The death toll at the wall is disputed: Wikipedia gives a range of 136 to more than 200 killed by the East German authorities; HISTORY.com says at least 140. HISTORY.com says Khrushchev gave the GDR permission to close the border on 12 August 1961.",
+  "checked": null
+ },
+ "Q52418": {
+  "title": "Attack on Pearl Harbor",
+  "y": 1941,
+  "place": "Pearl Harbor, Oahu, Hawaii",
+  "paras": [
+   "On the morning of Sunday 7 December 1941 the Imperial Japanese Navy made a surprise air attack on the U.S. Pacific Fleet at its base at Pearl Harbor in Hawaii. Launched from six aircraft carriers under Admiral Chūichi Nagumo, 353 Japanese aircraft struck in two waves beginning at 7:48 a.m. All eight American battleships present were damaged and four were sunk, nearly 20 ships and more than 300 aircraft were damaged or destroyed, 2,403 Americans were killed and 1,178 wounded. Japan lost 29 aircraft and five midget submarines.",
+   "Japan, at war with China since 1937, had met with mounting American sanctions and trade embargoes, including on oil, and months of talks had led nowhere. Admiral Isoroku Yamamoto planned the strike to knock out the Pacific Fleet so that it could not interfere with Japan's planned conquests in Southeast Asia, hoping for rapid gains and a negotiated peace. The American command expected any attack to fall on the European colonies to the south, not on Hawaii, some 4,000 miles from Japan, and the fleet lay crowded around Ford Island.",
+   "At 8:10 a bomb penetrated the forward magazine of the battleship USS Arizona, which blew up and sank with more than 1,000 men; about half of all the dead were aboard her. Torpedoes capsized the USS Oklahoma. Within less than two hours the attack was over. Within the same seven hours Japan also attacked the Philippines, Guam and Wake Island and the British in Malaya, Singapore and Hong Kong.",
+   "Japan had failed to cripple the fleet: its three carriers were at sea, and the base's oil storage and repair yards were left untouched; most of the damaged battleships were later repaired. On 8 December President Franklin D. Roosevelt called 7 December 'a date which will live in infamy', and Congress declared war on Japan with a single vote against; Britain declared war the same day. On 11 December Germany and Italy declared war on the United States, bringing it fully into the Second World War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor",
+    "title": "Attack on Pearl Harbor",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/pearl-harbor",
+    "title": "Pearl Harbor: Facts, Date & Attack Summary",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Japan made a surprise attack on Pearl Harbor on Sunday 7 December 1941, just before 8 a.m.",
+   "The attack force under Nagumo launched at 7:48 a.m.; 353 aircraft in two waves from six carriers.",
+   "All eight battleships were damaged and four sunk; nearly 20 ships and over 300 aircraft damaged or destroyed; 2,403 Americans killed and 1,178 wounded.",
+   "Japanese losses: 29 aircraft and five midget submarines; 64 killed per Wikipedia (55 airmen, 9 submariners), 129 per HISTORY.com.",
+   "Japan's war on China from 1937; US sanctions and embargoes including oil; failed negotiations; Yamamoto planned a pre-emptive strike to keep the fleet from interfering in Southeast Asia, hoping for a negotiated peace.",
+   "US intelligence expected attacks on European colonies to the south; Hawaii is about 4,000 miles from Japan; the fleet was moored around Ford Island.",
+   "At 8:10 a bomb hit Arizona's forward magazine; it sank with more than 1,000 men; half the dead were on Arizona; Oklahoma capsized; the attack lasted less than two hours.",
+   "Over seven hours Japan also attacked the Philippines, Guam, Wake, Malaya, Singapore and Hong Kong.",
+   "The three US carriers were at sea; oil storage and repair facilities were not attacked.",
+   "Most damaged battleships were repaired (all but Arizona and Utah per HISTORY.com); Roosevelt's 'infamy' speech on 8 December.",
+   "Congress declared war with one vote against (Jeannette Rankin).",
+   "The UK and US declared war on Japan on 8 December; on 11 December Germany and Italy declared war on the US."
+  ],
+  "disagree": "Japanese dead: Wikipedia counts 64 (55 airmen and nine submariners; 130 personnel lost in all), HISTORY.com 129. HISTORY.com says six ships were sunk or destroyed and lists the target ship USS Utah among the battleships; Wikipedia says four of the eight battleships present were sunk. American deaths agree at 2,403.",
+  "checked": null
+ }
+}
