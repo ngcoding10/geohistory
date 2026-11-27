@@ -2023,5 +2023,63 @@
   ],
   "disagree": "Death tolls differ between sources (see the last paragraph).",
   "checked": null
+ },
+ "Q8740": {
+  "title": "Vietnam War",
+  "y": 1955,
+  "place": "Vietnam, Laos and Cambodia",
+  "paras": [
+   "The Vietnam War, from about 1955 to 30 April 1975, was fought in Vietnam, Laos and Cambodia between communist North Vietnam, supported by China and the Soviet Union, and South Vietnam, supported by the United States and other anti-communist countries. It was at once a post-colonial war of national liberation, a civil war and a theatre of the Cold War.",
+   "After the Viet Minh defeated France, decisively at Dien Bien Phu in May 1954, the Geneva Conference of July 1954 split Vietnam at the 17th parallel. Ho Chi Minh's communists ruled the North, and an anti-communist government under Ngô Đình Diệm, backed by the United States, took over the South. From 1957 the Viet Cong, a communist front in the South supplied and later directed by the North, stepped up a guerrilla war; from 1958 the Ho Chi Minh trail through Laos carried supplies, and by 1961 North Vietnamese soldiers were being sent south. President Kennedy sent military advisers and aid; in 1963 Diệm was killed in a coup by his own army, which the United States backed.",
+   "After the Gulf of Tonkin incident of 1964, Congress allowed President Johnson to expand the American role without declaring war. He began bombing the North and sent combat troops: 184,000 by 1966 and 536,000 by 1969. The Tet Offensive of 1968, a military defeat for the communists, turned more Americans against the war. From 1969 President Nixon pursued 'Vietnamization', handing the fighting to the South Vietnamese army as American troops withdrew; the war spread into Cambodia after a coup there in 1970.",
+   "The last American forces left after the Paris Peace Accords of 1973. The North broke the accords, and its 1975 Spring Offensive overran the South; Saigon fell on 30 April 1975, and the country was reunified as the Socialist Republic of Vietnam in 1976, while Laos and Cambodia also became communist. Estimates of Vietnamese dead range from 970,000 to 3 million, with some 275,000-310,000 Cambodians, 20,000-62,000 Laotians and 58,220 American service members killed; the war was marked by massacres such as Huế and Mỹ Lai and by the spraying of toxic herbicides over a fifth of South Vietnam's jungle."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Vietnam_War",
+    "title": "Vietnam War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/vietnam-war-history",
+    "title": "Vietnam War: Dates, Causes & Facts",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     3,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The war lasted from about 1955 to 30 April 1975 in Vietnam, Laos and Cambodia; North backed by China and the USSR, South by the US.",
+   "It was a war of national liberation, a Cold War theatre and a civil war.",
+   "The Viet Minh's victory at Dien Bien Phu (May 1954); the Geneva agreement of July 1954 split Vietnam at the 17th parallel.",
+   "Ho Chi Minh ruled the North; Diệm, US-backed, the South.",
+   "The Viet Cong intensified a guerrilla war from 1957; the Ho Chi Minh trail from 1958; northern soldiers sent by 1961.",
+   "Kennedy sent advisers; Diệm was killed in a US-backed coup in 1963.",
+   "After the Gulf of Tonkin incident (1964) Congress authorised Johnson; bombing; 184,000 troops by 1966 and 536,000 by 1969.",
+   "The Tet Offensive (1968) was a tactical defeat but increased American opposition; Vietnamization from 1969; the 1970 Cambodian coup widened the war.",
+   "The last US forces left after the Paris Peace Accords (1973); the 1975 Spring Offensive; Saigon fell.",
+   "Reunification in 1976; Laos and Cambodia became communist in 1975.",
+   "Deaths: 970,000-3 million Vietnamese (HISTORY.com: more than 3 million in all), 275,000-310,000 Cambodians, 20,000-62,000 Laotians, 58,220 US; massacres at Huế and Mỹ Lai; herbicide on 20% of the jungle."
+  ],
+  "disagree": "Death tolls differ: 970,000 to 3 million Vietnamese (Wikipedia) against more than 3 million people in all, over half of them Vietnamese civilians (HISTORY.com).",
+  "checked": null
  }
 }
