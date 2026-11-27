@@ -221,13 +221,16 @@ def main():
         return [a] + [y for y in ys if a < y <= b]
 
     out_states, out_powers = {}, {}
+    area = {k: a for k, (g, a) in shp.items()}
     for name, s in st['states'].items():
         ser = {}
         for mi, sids, pk, ruler in s['maps']:
             a, b = maps[mi][0], maps[mi][1]
+            km2 = sum(area[shape_key(mi, sid)] or 0 for sid in sids)
             for y in years_of(a, b):
-                ser[y] = sum(interp(ys, per[shape_key(mi, sid)], y) for sid in sids)
-        out_states[name] = [[y, round(v)] for y, v in sorted(ser.items())]
+                ser[y] = (sum(interp(ys, per[shape_key(mi, sid)], y) for sid in sids), km2)
+        # the third value is the area drawn (km2): the 85 km2 grid cells cannot measure very small states
+        out_states[name] = [[y, round(v), round(km2)] for y, (v, km2) in sorted(ser.items())]
     # powers: all rows of the power on the map (the empire drawn as one colour)
     rows_by_map = {}
     for name, s in st['states'].items():

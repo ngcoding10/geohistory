@@ -37,7 +37,10 @@ from common import CACHE, DATA, TOOLS, log, read_json, write_json  # noqa: E402
 
 OUT = os.path.join(CACHE, 'context')
 DEST = os.path.join(DATA, 'context')
+MOV_OK = re.compile(r'movement|ideolog|school|style|genre|tendency|campaign|revival|tradition|philosoph|denomination|sect\b|\bcult\b|religio|nationalism|irredent|\bart\b|music|literary|architect')
+MOV_BAD = re.compile(r'\b(?:riots?|uprising|rebellion|war|attack|battle|massacre|ferris|wheel|building|tower|company|band|album|film|novel|armed|militant|terrorist)\b')
 SLACK = 10
+MIN_KM2 = 2500      # below this the HYDE grid (cells of about 85 km2, counted by their centres) cannot measure a state
 HOG = re.compile(r'prime minister|premier\b|taoiseach|head of government|president of the government|'
                  r'president of the council of ministers|chairman of the council of ministers|chairman of the council of people|'
                  r'(?:reich |federal )?chancellor(?! of the exchequer)(?! of the duchy)(?! of the university)(?! of the high court)|'
@@ -45,8 +48,9 @@ HOG = re.compile(r'prime minister|premier\b|taoiseach|head of government|preside
 LEADER = re.compile(r'general secretary|first secretary|leader of the|chairman of the (?:chinese )?communist party|'
                     r'chairman of the central committee|supreme leader|führer|duce', re.I)
 HOS = re.compile(r'president|king|queen|emperor|empress|monarch|sultan|shah|tsar|emir|head of state', re.I)
-NO_PARTY = re.compile(r'before the emergence|independent politician|nonpartisan|non-partisan|no party|unaffiliated', re.I)
-BAD_TITLE = re.compile(r'exchequer|duchy of lancaster|vice[- ]president|vice[- ]chancellor|deputy|speaker', re.I)
+NO_PARTY = re.compile(r'before the emergence|independent politician|nonpartisan|non-partisan|no party|unaffiliated|dictatorship|armed forces|\barmy\b|military|'
+                      r'^(?:State|Supreme|Revolutionary|Military|National) (?:\w+ ){0,3}(?:Council|Committee)$|junta', re.I)
+BAD_TITLE = re.compile(r'president of (?:the )?(?:[\w\'-]+ ){0,5}(?:party|rally|union|front|league|movement|alliance)\b|exchequer|duchy of lancaster|vice[- ]president|vice[- ]chancellor|deputy|speaker', re.I)
 
 
 def slug(name):
@@ -101,6 +105,10 @@ class Ctx:
         for q, m in self.wd['movements'].items():
             if m.get('sl', 0) < 25 or m.get('from') is None:
                 continue
+            # only what Wikidata describes as a movement, school, style or creed, not an event or a thing
+            d = (m.get('d') or '').lower()
+            if not MOV_OK.search(d) or MOV_BAD.search(d):
+                continue
             for c in m['c']:
                 self.wd_mov_by_item.setdefault(c, []).append((q, m))
         self.parties_by_item = {}
@@ -144,7 +152,8 @@ class Ctx:
                 row_ok = bool(r.get('q')) and (r.get('from') is None or r['from'] <= row[0] + 1) and (r.get('to') is None or r['to'] >= row[1] - 1)
                 ok = ok and row_ok
                 for n in e['names']:
-                    self.cur_party.setdefault(n, []).append((row[0], row[1], r.get('q'), self.wd['parties'].get(r.get('q'), {}).get('n') or row[2], row[3], e['source']))
+                    self.cur_party.setdefault(n, []).append((row[0], row[1], r.get('q'), self.wd['parties'].get(r.get('q'), {}).get('n') or row[2], row[3],
+                                                             'https://en.wikipedia.org/wiki/' + row[2].replace(' ', '_')))
             e['verified'] = ok
         self.modern_pts = modern_index()
         self.label_pt = label_points(self.st)
@@ -196,9 +205,17 @@ class Ctx:
             if dated:
                 return list(dict.fromkeys(r[1] for r in dated)), [], 'w'
             short = it.get('from') is not None and it.get('to') is not None and it['to'] - it['from'] <= 30
-            # a country of today: its undated forms describe its present constitution (used from 1946 on)
-            current = q in self.iso_of_q and it.get('to') is None and y >= 1946
-            if len(undated) == 1 or (undated and (short or current)):
+            span = (it.get('to') if it.get('to') is not None else 2019) - (it.get('from') if it.get('from') is not None else -10000)
+            today = q in self.iso_of_q and it.get('to') is None
+            # a country of today: its undated forms describe its present constitution: used from 1991, or from
+            # 1946 where no curated regime says the state changed in between
+            current = today and y >= 2010
+            labels = ' '.join(r[1] for r in undated).lower()
+            conflict = ('presidential' in labels and 'parliamentary' in labels) or ('monarchy' in labels and 'republic' in labels)
+            generic = bool(re.fullmatch(r'(?:hereditary |elective )?(?:monarchy|kingdom|empire|sultanate|caliphate|khanate|principality|chiefdom|city-state|tribal (?:confederation|society)|theocracy|emirate)', labels.strip()))
+            ended = it.get('to') is not None and it['to'] <= 1789
+            ok_one = len(undated) == 1 and (current or (not today and (span <= 150 or ended or generic)))
+            if undated and not conflict and (ok_one or short or current):
                 return list(dict.fromkeys(r[1] for r in undated)), [], 'w'
             if undated:
                 return [], list(dict.fromkeys(r[1] for r in undated)), 'w'
@@ -235,37 +252,58 @@ class Ctx:
 
     # ------------------------------------------------------------------ parties
     def party_of(self, person, y):
+        """The person's party in year y: a dated membership covering the year, else an undated one whose party
+        existed that year; among several, the most recently founded. Nothing when the party has no English
+        name or is not a party (a junta, the armed forces)."""
         rows = self.wd['persons'].get(person, [])
         dated = [r for r in rows if (r[1] is not None or r[2] is not None) and (r[1] is None or r[1] <= y) and (r[2] is None or y <= r[2])]
         cand = dated or [r for r in rows if r[1] is None and r[2] is None]
         out = []
         for r in cand:
             p = self.wd['parties'].get(r[0], {})
-            if NO_PARTY.search(p.get('n', '')):
+            n = p.get('n', '')
+            if not n or re.fullmatch(r'Q\d+', n) or NO_PARTY.search(n):
                 continue
             f, t = p.get('from'), p.get('to')
-            if (f is None or f <= y + 1) and (t is None or y <= t + 1):
-                out.append(r[0])
-        if len(out) > 1 and dated:
-            out = [r[0] for r in dated if r[0] in out]
-        return out[:1] if len(set(out)) == 1 else (out[:1] if out else [])
+            if f is None and not dated:
+                continue        # an undated membership of a party of unknown age cannot be placed in time
+            if (f is None or f <= y) and (t is None or y <= t):
+                out.append((f if f is not None else -9999, r[0]))
+        if not out:
+            return []
+        if not dated and len({o[1] for o in out}) > 1:
+            return []       # several undated memberships: which one held then is unknown
+        out.sort()
+        return [out[-1][1]]
 
     def ruling(self, rulers, y, gov, name=None):
         for a, b, q, label, kind, src in self.cur_party.get(name, []):
             if a <= y <= b:
                 return q or label, [label, None, None, f'{kind} rule ({src})', label]
         now = [r for r in rulers if r[1] <= y and (r[2] if r[2] is not None else r[1]) >= y and not BAD_TITLE.search(r[3])]
+        # the holder at the start of the year first: one who took office during the year comes after
+        now.sort(key=lambda r: r[1] == y)
         one_party = any(re.search(r'one-party|communist|socialist|soviet|people.s republic|fascis|totalitarian', g, re.I) for g in gov)
         lead = [r for r in now if LEADER.search(r[3]) and (one_party or (len(r) > 5 and 'c' in (r[5] or '')))]
         hog = [r for r in now if HOG.search(r[3]) and r not in lead]
         hos = [r for r in now if HOS.search(r[3]) and r not in lead and r not in hog]
-        presidential = any('presidential' in g.lower() for g in gov)
-        order = lead + (hos + hog if presidential else hog + hos)
+        presidential = any('presidential' in g.lower() and 'semi' not in g.lower() for g in gov)
+        if any('directorial' in g.lower() for g in gov):
+            return None, None     # a collegial executive (Switzerland): no ruling party
+        if presidential:
+            # the president's party, or none: a non-party president is not replaced by his prime minister's party
+            pres = [r for r in hos if re.search(r'president', r[3], re.I)]
+            order = lead + (pres or hos + hog)
+        else:
+            semi = any('semi-presidential' in g.lower() for g in gov)
+            order = lead + (hos + hog if semi else hog + hos)
         for r in order:
             if len(r) > 4 and r[4]:
                 ps = self.party_of(r[4], y)
                 if ps:
                     return ps[0], r
+            elif presidential and r in order[len(lead):]:
+                break
         return None, None
 
     def parties(self, qs, a, b, limit=6):
@@ -282,7 +320,7 @@ class Ctx:
 
     # ------------------------------------------------------------------ population
     def population(self, name, s, a, b, qs_by_year):
-        ser = self.pop['states'].get(name, [])
+        ser = [r[:2] for r in self.pop['states'].get(name, []) if len(r) < 3 or r[2] >= MIN_KM2]
         pw = None
         samples = [r for r in ser if a <= r[0] <= b]
         before = [r for r in ser if r[0] < a]
@@ -454,8 +492,10 @@ class Ctx:
             p['popw'] = wdp
         mov = []
         for m in self.mov_by_state.get(name, []):
-            if m['from'] <= b and m['to'] >= a and m['name'] not in [x[0] for x in mov]:
-                mov.append([m['name'], m['from'], m['to'], m['text'], m['source'], 'c', m.get('verified')])
+            end = min(m['to'], m.get('until', {}).get(name, m['to']))
+            start = max(m['from'], m.get('since', {}).get(name, m['from']))
+            if start <= b and end >= a and m['name'] not in [x[0] for x in mov]:
+                mov.append([m['name'], start, end, m['text'], m['source'], 'c', m.get('verified')])
         seen = {m[0].lower() for m in mov}
         wm = []
         for q in qs:
