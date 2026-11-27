@@ -1751,7 +1751,7 @@
   "paras": [
    "The Holocaust, in Hebrew the Shoah, was the genocide of the Jews of Europe by Nazi Germany and its allies and collaborators. Around six million Jews were murdered, about two-thirds of Europe's Jewish population, which in 1933 numbered some nine million. The United States Holocaust Memorial Museum dates the Holocaust era from January 1933, when Hitler and the Nazi Party came to power, to the defeat of Germany in May 1945; the systematic murder itself took place from 1941 to 1945.",
    "Nazi ideology rested on racism, antisemitism and the pursuit of 'living space'. The instability of the Weimar Republic, fear of communism and the shock of the Great Depression made many Germans receptive to it. From 1933 the regime passed anti-Jewish laws and encouraged violence to drive German Jews to emigrate, culminating in the nationwide pogrom of Kristallnacht in November 1938. After the invasion of Poland in September 1939 the occupiers forced Jews into ghettos.",
-   "After the invasion of the Soviet Union in June 1941, German forces and local collaborators shot 1.5 to 2 million Jews, first men and prisoners of war, soon women and children too. By early 1942, after the Wannsee Conference chaired by Reinhard Heydrich, the 'Final Solution' to murder all the Jews of Europe was in operation. Deportation trains carried Jews to extermination camps in occupied Poland, Auschwitz-Birkenau, Treblinka, Bełżec, Sobibór, Chełmno and Majdanek, where most were killed in gas chambers, while others died in forced-labour camps of starvation, abuse and exhaustion or in medical experiments. The killing was most intense in Operation Reinhard, from March 1942 to November 1943, and most victims died in 1942, but it continued until the end of the war.",
+   "After the invasion of the Soviet Union in June 1941, German forces and local collaborators shot 1.5 to 2 million Jews, first men and prisoners of war, soon women and children too. By early 1942, after the Wannsee Conference chaired by Reinhard Heydrich, the 'Final Solution' to murder all the Jews of Europe was in operation. Jews were deported to extermination camps in occupied Poland, Auschwitz-Birkenau, Treblinka, Bełżec, Sobibór, Chełmno and Majdanek, where those who survived the journey were killed in gas chambers, while others died in forced-labour camps of starvation, abuse and exhaustion or in medical experiments. The killing was most intense in Operation Reinhard, from March 1942 to November 1943, and most victims died in 1942, but it continued until the end of the war.",
    "Nazi persecution also killed millions of non-Jewish civilians and prisoners of war, among them Roma and Soviet POWs, and the term is sometimes used to include them. After the war many survivors left Europe; relatively few perpetrators were tried, and the reparations paid have fallen short of what was lost."
   ],
   "sources": [
@@ -1798,6 +1798,65 @@
    "Millions of non-Jewish civilians and POWs (Roma, Soviet POWs) were also killed; survivors emigrated; few trials; reparations fell short."
   ],
   "disagree": "Its dates: the USHMM speaks of the Holocaust era as 1933-1945, while the systematic murder is dated 1941-1945.",
+  "checked": null
+ },
+ "Q6534": {
+  "title": "French Revolution",
+  "y": 1789,
+  "place": "France (Versailles and Paris)",
+  "paras": [
+   "The French Revolution is the period of political and social upheaval in France from the meeting of the Estates-General in May 1789 to Napoleon Bonaparte's coup of 18 Brumaire (9 November 1799). Many of its ideas became founding principles of liberal democracy.",
+   "Its causes were social, political and financial. France's costly part in the American Revolution and the spending of Louis XVI's court had brought the state close to bankruptcy, and in 1786 the controller-general Calonne proposed a land tax from which the nobility would no longer be exempt. To find money, the King called the Estates-General, which had not met since 1614, for 5 May 1789. The Third Estate, the commoners, quarrelled with the clergy and nobility over voting; on 17 June it declared itself the National Assembly, and three days later its members swore the Tennis Court Oath not to disperse until France had a constitution. On 27 June the King gave way and merged the three orders into the Assembly.",
+   "The storming of the Bastille in Paris on 14 July 1789 was followed by radical measures: the abolition of feudalism, state control of the Catholic Church, and the Declaration of the Rights of Man and of the Citizen. Louis XVI's attempted flight to Varennes in June 1791 discredited the monarchy, and defeats in the war that began in April 1792 led to the insurrection of 10 August 1792. The monarchy was abolished and the First Republic proclaimed in September 1792, and the King was executed in January 1793.",
+   "After a further revolt in June 1793 power passed to the Committee of Public Safety, dominated by the radical Jacobins under Maximilien Robespierre. In the Reign of Terror about 16,000 people were sentenced by the Revolutionary Tribunal and executed, until the Thermidorian Reaction of July 1794 ended it. The Directory that governed from November 1795 was unstable, and in 1799 the coup of 18 Brumaire set up the Consulate with Napoleon as First Consul."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/French_Revolution",
+    "title": "French Revolution",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/french-revolution",
+    "title": "French Revolution: Timeline, Causes, Key Figures & Events",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The Revolution ran from the Estates-General of 1789 to the coup of 18 Brumaire on 9 November 1799.",
+   "Many of its ideas are fundamental principles of liberal democracy.",
+   "Caused by social, political and economic factors; financial crisis led to the Estates-General in May 1789, the first since 1614.",
+   "The American Revolution and court spending brought France near bankruptcy; Calonne proposed a land tax on the nobility in 1786; the meeting was set for 5 May 1789.",
+   "The Third Estate declared itself the National Assembly on 17 June; the Tennis Court Oath three days later; the King merged the orders on 27 June.",
+   "The Bastille fell on 14 July; feudalism abolished; state control of the Church; the Declaration of the Rights of Man.",
+   "The flight to Varennes in June 1791 discredited the monarchy.",
+   "War from April 1792; the insurrection of 10 August 1792; the First Republic in September 1792; Louis XVI executed in January 1793.",
+   "After a revolt in June 1793 power passed to the Committee of Public Safety under Robespierre.",
+   "About 16,000 were sentenced and executed in the Terror, which ended in July 1794 (Thermidor).",
+   "The Directory from November 1795; the coup of 1799 created the Consulate with Napoleon as First Consul."
+  ],
+  "disagree": null,
   "checked": null
  }
 }
