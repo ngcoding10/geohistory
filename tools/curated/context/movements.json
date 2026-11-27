@@ -1,5 +1,5 @@
 {
- "_about": "Big movements (religious, intellectual, political, social) attached to the states and years where they mattered, written for GeoHistory from general knowledge (AI-written, shown with that label). 'states' are the territory names on the maps; 'from'/'to' are the movement's conventional dates, shown as written. Every entry names its English Wikipedia article in 'wiki' and 'source'; tools/context/build_context.py checks 'from' against the article's Wikidata item (inception P571 or start time P580, 5 years of slack; 15 for movements dated by century) and writes the result to 'verified' (true, false, or null when Wikidata has no start date). 'text' is one line.",
+ "_about": "Big movements (religious, intellectual, political, social) attached to the states and years where they mattered, written for GeoHistory from general knowledge (AI-written, shown with that label). 'states' are the territory names on the maps; 'from'/'to' are the movement's conventional dates, shown as written. Every entry names its English Wikipedia article in 'wiki' and 'source'; tools/context/build_context.py checks 'from' against the article's Wikidata item (inception P571 or start time P580, 5 years of slack; 15 for movements dated by century) and writes the result to 'verified' (true, false, or null when Wikidata has no start date). 'text' is one line. 'since' and 'until' (optional) start or end the movement later or earlier for the states named.",
  "movements": [
   {
    "id": "reformation",
@@ -375,7 +375,34 @@
     "Yugoslavia"
    ],
    "text": "State ideology of the Soviet Union and the states modelled on it: one party, planned economy, rule in the name of the working class.",
-   "source": "https://en.wikipedia.org/wiki/Marxism%E2%80%93Leninism"
+   "source": "https://en.wikipedia.org/wiki/Marxism%E2%80%93Leninism",
+   "until": {
+    "Poland": 1989,
+    "Hungary": 1989,
+    "East Germany": 1990,
+    "Czechoslovakia": 1989,
+    "Romania": 1989,
+    "Bulgaria": 1990,
+    "Albania": 1991,
+    "Mongolia": 1990,
+    "Yugoslavia": 1990
+   },
+   "since": {
+    "China": 1949,
+    "North Korea": 1948,
+    "Vietnam": 1976,
+    "North Vietnam": 1954,
+    "Cuba": 1961,
+    "East Germany": 1949,
+    "Poland": 1947,
+    "Hungary": 1949,
+    "Czechoslovakia": 1948,
+    "Romania": 1947,
+    "Bulgaria": 1946,
+    "Albania": 1946,
+    "Mongolia": 1924,
+    "Yugoslavia": 1945
+   }
   },
   {
    "id": "fascism-italy",
@@ -524,8 +551,8 @@
   },
   {
    "id": "decolonisation-uk",
-   "name": "Decolonisation of the British Empire",
-   "wiki": "Decolonisation of Asia",
+   "name": "Decolonisation of the European empires",
+   "wiki": "Decolonization",
    "from": 1945,
    "to": 1975,
    "kind": "political",

@@ -32,9 +32,16 @@ BG = re.compile(r'^(?:background|prelude|origins?|causes?|context|historical bac
 AFTER = re.compile(r'^(?:aftermath|consequences?|outcome|results?|legacy|impact|significance)$', re.I)
 
 
+def clean(t):
+    """Drop pronunciation guides and IPA from the opening sentence: '(Spanish pronunciation: [...])', '(/ˈ.../)'."""
+    t = re.sub(r'\s*\((?:[^()]*\b(?:pronunciation|pronounced|listen)\b[^()]*|[^()]*/[^()/]{1,40}/[^()]*)\)', '', t)
+    t = re.sub(r'\s*\[[^\]]*[ˈˌːɐɑɒæɔəɛɜɪʊʌʃʒθðŋɾɣ][^\]]*\]', '', t)
+    return re.sub(r'\s+([,.;:])', r'\1', t)
+
+
 def sentences(t, limit):
     """Whole sentences up to about `limit` characters."""
-    t = re.sub(r'\s+', ' ', t).strip()
+    t = clean(re.sub(r'\s+', ' ', t).strip())
     if len(t) <= limit:
         return t
     cut = t[:limit]
@@ -94,14 +101,14 @@ def main():
             src = [[f"{a['title']}", 'https://en.wikipedia.org/wiki/' + a['title'].replace(' ', '_'),
                     f"Wikipedia (CC BY-SA 4.0), revision {a['rev']}", DUMP_DATE]]
             if tier.get(i) in (1, 2):
-                paras = [sentences(lead, 1000)]
+                paras = [sentences(lead, 750)]
                 for rx, label in ((BG, 'Background'), (AFTER, 'Aftermath')):
                     sec = next((s for s in a['sec'][1:] if rx.match(s[0].strip())), None)
                     if sec and len(sec[2]) > 120:
-                        paras.append(f'{label}: ' + sentences(sec[2], 500))
+                        paras.append(f'{label}: ' + sentences(sec[2], 380))
                 k = 2
             else:
-                paras = [sentences(lead, 600)]
+                paras = [sentences(lead, 420)]
                 k = 3
             rec = {'k': k, 'p': paras, 's': src}
             if date_flag(' '.join(paras), e):
