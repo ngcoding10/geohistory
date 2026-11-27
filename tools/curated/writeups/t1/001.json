@@ -1517,5 +1517,171 @@
   ],
   "disagree": "The Warren Commission found no conspiracy; the House Select Committee on Assassinations (1979) concluded that there probably was one.",
   "checked": null
+ },
+ "Q10806": {
+  "title": "September 11 attacks",
+  "y": 2001,
+  "place": "New York City; the Pentagon, Arlington, Virginia; near Shanksville, Pennsylvania (United States)",
+  "paras": [
+   "On 11 September 2001 nineteen hijackers of the Islamist terrorist organisation al-Qaeda seized four commercial airliners over the eastern United States. At 8:46 a.m. the ringleader, Mohamed Atta, flew American Airlines Flight 11 into floors 93 to 99 of the North Tower of the World Trade Center in New York; at 9:03 a.m. Marwan al-Shehhi flew United Airlines Flight 175 into floors 77 to 85 of the South Tower. Both towers collapsed within an hour and forty-two minutes, destroying the rest of the complex.",
+   "At 9:37 a.m. Hani Hanjour flew American Airlines Flight 77 into the Pentagon, the headquarters of the US Department of Defense in Arlington County, Virginia. On United Airlines Flight 93, hijacked by Ziad Jarrah and believed to be heading for the Capitol or the White House, the passengers learned of the other attacks and fought back; the hijackers crashed the plane into a field near Shanksville, Pennsylvania, at 10:03 a.m., about 20 minutes' flying time from Washington.",
+   "The attacks killed 2,977 people from 90 nations: 2,753 in New York, 184 at the Pentagon and 40 on Flight 93. All civil air traffic over the United States was grounded, and flights in the air were sent back or diverted to Canada. That evening the CIA told President George W. Bush that al-Qaeda under Osama bin Laden was responsible.",
+   "NATO invoked Article 5 of the North Atlantic Treaty for the only time to date. The United States invaded Afghanistan and launched what it called the Global War on Terror, which later included the invasion of Iraq."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/September_11_attacks",
+    "title": "September 11 attacks",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.911memorial.org/911-faqs",
+    "title": "9/11 FAQs",
+    "publisher": "National September 11 Memorial & Museum",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     6,
+     7
+    ]
+   }
+  ],
+  "claims": [
+   "19 al-Qaeda hijackers seized four airliners on 11 September 2001.",
+   "Flight 11 (Atta) hit the North Tower at 8:46 a.m. (floors 93-99); Flight 175 (al-Shehhi) hit the South Tower at 9:03 (floors 77-85).",
+   "Both towers collapsed within 1 hour 42 minutes, destroying the rest of the complex.",
+   "Flight 77 (Hanjour) hit the Pentagon at 9:37.",
+   "Flight 93 (Jarrah) was believed to target the Capitol or the White House.",
+   "Flight 93's passengers fought back; it crashed near Shanksville at 10:03, about 20 minutes' flight from Washington.",
+   "2,977 killed from 90 nations: 2,753 in New York, 184 at the Pentagon, 40 on Flight 93.",
+   "The FAA grounded all US air traffic; flights were diverted to Canada.",
+   "The CIA identified al-Qaeda under bin Laden that evening.",
+   "NATO invoked Article 5 for the only time; the US invaded Afghanistan and launched the Global War on Terror, including Iraq."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q6540361": {
+  "title": "Surrender of Japan",
+  "y": 1945,
+  "place": "Tokyo Bay (aboard USS Missouri), Japan",
+  "paras": [
+   "Japan's surrender, which ended the Second World War, was announced by Emperor Hirohito on 15 August 1945 and signed on 2 September 1945. By the end of July Japan's navy could no longer conduct major operations and an Allied invasion was imminent. On 26 July the United States, the United Kingdom and China demanded Japan's unconditional surrender in the Potsdam Declaration, the alternative being 'prompt and utter destruction'. Japan's leaders, the 'Big Six' of the Supreme Council for the Direction of the War, publicly vowed to fight on while privately asking the still-neutral Soviet Union to mediate better terms.",
+   "The Soviet Union was secretly preparing to attack instead, as it had promised the Allies at the Tehran and Yalta conferences. On 6 August the United States dropped an atomic bomb on Hiroshima, and Truman warned Japan to expect 'a rain of ruin from the air'. Late on 8 August the Soviet Union declared war on Japan, breaking their neutrality pact, and just after midnight invaded Manchuria; hours later a second atomic bomb fell on Nagasaki. Hirohito then told the Supreme Council to accept the Potsdam terms.",
+   "After further negotiations and a failed coup by army hardliners, the Emperor's recorded radio address of 15 August announced the surrender. The Allied occupation began on 28 August. On the morning of 2 September, on the deck of the battleship USS Missouri in Tokyo Bay, Foreign Minister Mamoru Shigemitsu signed for the Emperor and government and General Yoshijirō Umezu for the Imperial General Headquarters, and General Douglas MacArthur signed as Supreme Commander for the Allied Powers.",
+   "Some isolated Japanese soldiers in Asia and the Pacific refused to surrender for years, a few into the 1970s. The part the atomic bombings played in the surrender, and their ethics, are still debated. The state of war formally ended when the Treaty of San Francisco came into force on 28 April 1952; Japan and the Soviet Union ended theirs by a joint declaration in 1956."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Surrender_of_Japan",
+    "title": "Surrender of Japan",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.archives.gov/milestone-documents/surrender-of-japan",
+    "title": "Surrender of Japan (1945)",
+    "publisher": "US National Archives",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "Hirohito announced the surrender on 15 August; it was signed on 2 September 1945.",
+   "By late July the navy was incapable of major operations; an invasion was imminent.",
+   "The Potsdam Declaration of 26 July (US, UK, China) demanded unconditional surrender or 'prompt and utter destruction'.",
+   "The Big Six publicly vowed to fight on and privately sought Soviet mediation.",
+   "The Soviets were preparing to attack, as promised at Tehran and Yalta.",
+   "Hiroshima was bombed on 6 August; Truman warned of 'a rain of ruin from the air'.",
+   "The Soviet Union declared war late on 8 August, violating the neutrality pact, invaded Manchuria after midnight; Nagasaki was bombed hours later; Hirohito ordered acceptance of the Potsdam terms.",
+   "After a failed coup, the radio address of 15 August; occupation began 28 August; signing aboard USS Missouri in Tokyo Bay on 2 September by Shigemitsu and Umezu; MacArthur signed as Supreme Commander.",
+   "Some soldiers held out into the 1970s; the role of the bombs is debated.",
+   "The Treaty of San Francisco ended the state of war on 28 April 1952; the Soviet-Japanese Joint Declaration of 1956."
+  ],
+  "disagree": "The role of the atomic bombings in Japan's decision to surrender, and their ethics, are debated.",
+  "checked": null
+ },
+ "Q5167679": {
+  "title": "Dissolution of the Soviet Union",
+  "y": 1991,
+  "place": "Moscow and the Soviet republics",
+  "paras": [
+   "The Soviet Union was formally dissolved on 26 December 1991. Its collapse had many causes: chronic economic stagnation, the cost of the arms race with the United States and of foreign wars, nationalism and separatism in the fifteen union republics, and the destabilising effects of Mikhail Gorbachev's own reforms, glasnost and perestroika.",
+   "The republics pulled away first. Estonia declared its sovereignty on 16 November 1988, and Lithuania was the first to declare independence, in March 1990; in January 1991 violence broke out in Lithuania and Latvia. Gorbachev was squeezed between Boris Yeltsin and the democrats, who wanted faster reform, and hard-line communists who wanted to stop it.",
+   "In August 1991 hard-line communists tried to overthrow Gorbachev. The coup failed, but it left him weakened and made Yeltsin, who had defied it from the Russian parliament building, the leading figure; the Communist Party's Central Committee was dissolved, and in the following days and months most republics declared independence, Ukraine and Belarus among the first. On 8 December 1991 the leaders of Russia, Ukraine and Belarus signed the Belovezha Accords, declaring that the Soviet Union no longer existed and founding the Commonwealth of Independent States; on 21 December most of the other republics joined the Commonwealth by the Alma-Ata Protocol.",
+   "On 25 December Gorbachev resigned as president and handed his powers, including control of the nuclear forces, to Yeltsin as president of Russia; that evening the Soviet flag was lowered over the Kremlin for the last time and replaced by the Russian tricolour. The next day the upper chamber of the Supreme Soviet formally dissolved the union. Russia became its recognised successor state, and the dissolution marked the end of the Cold War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+    "title": "Dissolution of the Soviet Union",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1989-1992/collapse-soviet-union",
+    "title": "The Collapse of the Soviet Union",
+    "publisher": "Office of the Historian, US Department of State",
+    "accessed": "2026-11-27",
+    "supports": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "The Soviet Union was formally dissolved on 26 December 1991.",
+   "Causes: stagnation, arms race and foreign conflicts, nationalism in the 15 republics, glasnost and perestroika.",
+   "Estonia declared sovereignty on 16 November 1988; Lithuania declared independence in March 1990.",
+   "In January 1991 violence erupted in Lithuania and Latvia; Gorbachev was caught between Yeltsin's reformers and hardliners.",
+   "The failed August 1991 coup by hard-line communists weakened Gorbachev and raised Yeltsin; the Central Committee was dissolved.",
+   "Many republics declared independence, Ukraine and Belarus a few days after the coup.",
+   "On 8 December 1991 Russia, Ukraine and Belarus signed the Belovezha Accords and founded the CIS; most others joined on 21 December (Alma-Ata Protocol).",
+   "On 25 December Gorbachev resigned and transferred powers including the nuclear codes to Yeltsin; the Soviet flag was lowered over the Kremlin.",
+   "On 26 December the Soviet of the Republics dissolved the USSR; Russia became the successor state; it marked the end of the Cold War."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
