@@ -158,7 +158,11 @@
    "William was crowned in Westminster Abbey on Christmas Day 1066."
   ],
   "disagree": "Harold's death: the arrow in the eye is a later tradition; other accounts have him killed by knights. Some sources date William's landing to 29 September and place it at Hastings rather than Pevensey.",
-  "checked": null
+  "checked": {
+   "by": "https://www.english-heritage.org.uk/visit/places/1066-battle-of-hastings-abbey-and-battlefield/history-and-stories/history/",
+   "claims": 11,
+   "contradicted": 0
+  }
  },
  "Q12519": {
   "title": "Magna Carta",
@@ -660,7 +664,11 @@
    "Most historians call the sovereignty interpretation the 'Westphalian myth'."
   ],
   "disagree": "How far the peace founded modern state sovereignty is disputed; most recent historians reject the idea.",
-  "checked": null
+  "checked": {
+   "by": "https://www.encyclopedia.com/history/modern-europe/treaties-and-alliances/peace-westphalia",
+   "claims": 9,
+   "contradicted": 0
+  }
  },
  "Q48314": {
   "title": "Battle of Waterloo",
@@ -706,6 +714,19 @@
      8,
      11
     ]
+   },
+   {
+    "url": "https://www.nam.ac.uk/explore/battle-waterloo",
+    "title": "Battle of Waterloo",
+    "publisher": "National Army Museum (London)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     5,
+     8,
+     9,
+     11
+    ]
    }
   ],
   "claims": [
@@ -721,8 +742,13 @@
    "Casualties about 17,000 (Wellington), 6,600-7,000 (Prussians), 25,000 French killed or wounded and 8,000 captured; Napoleon abdicated four days later; coalition entered Paris 7 July; end of the Hundred Days and First Empire.",
    "Napoleon was exiled to Saint Helena."
   ],
-  "disagree": "French strength is given as about 72,000 (HISTORY.com) or 74,500 (Wikipedia); French prisoners as about 8,000 (Wikipedia) or 9,000 (HISTORY.com).",
-  "checked": null
+  "disagree": "Figures differ between sources: French strength about 72,000 (HISTORY.com, the National Army Museum) or 74,500 (Wikipedia); the Prussians about 48,000 (National Army Museum) or 50,000. The National Army Museum puts French losses at nearly 40,000 killed, wounded or captured and Allied losses at 22,000, and links Napoleon's abdication with the Allies' entry into Paris on 7 July; HISTORY.com and Wikipedia date the abdication to 22 June.",
+  "checked": {
+   "by": "https://www.nam.ac.uk/explore/battle-waterloo",
+   "claims": 9,
+   "contradicted": 0,
+   "note": "Differences in figures and the abdication date added to the disagreements."
+  }
  },
  "Q192050": {
   "title": "Assassination of Archduke Franz Ferdinand",
@@ -839,8 +865,13 @@
    "The Constituent Assembly, with about a quarter Bolshevik seats, was dissolved in January 1918 after one day.",
    "The Civil War lasted to 1922 and led to the Soviet Union; Soviet vs Western interpretations (coup)."
   ],
-  "disagree": "Dates: Russia used the Julian calendar until February 1918, so the revolution is dated 25 October (Old Style) or 7 November (New Style). Its character: a popular revolution in Soviet accounts, a coup in many Western ones.",
-  "checked": null
+  "disagree": "Dates: Russia used the Julian calendar until February 1918, so the revolution is dated 25 October (Old Style) or 7 November (New Style). Its character: a popular revolution in Soviet accounts, a coup in many Western ones. HISTORY.com dates the seizure of power to 24-25 October (6-7 November) and the end of the Civil War to 1923.",
+  "checked": {
+   "by": "https://www.history.com/articles/russian-revolution",
+   "claims": 10,
+   "contradicted": 0,
+   "note": "Two dating differences added to the disagreements."
+  }
  },
  "Q488": {
   "title": "Atomic bombings of Hiroshima and Nagasaki",
@@ -1021,6 +1052,255 @@
    "It was called goishin at the time and has been translated as the Meiji Reformation."
   ],
   "disagree": null,
+  "checked": null
+ },
+ "Q127912": {
+  "title": "United States Declaration of Independence",
+  "y": 1776,
+  "place": "Pennsylvania State House (Independence Hall), Philadelphia",
+  "paras": [
+   "On 4 July 1776 the Second Continental Congress, meeting in the Pennsylvania State House in Philadelphia, approved the Declaration of Independence, announcing that the thirteen American colonies regarded themselves as independent states no longer under British rule.",
+   "The vote for independence itself came two days earlier. On 7 June 1776 Richard Henry Lee of Virginia, following instructions from the Virginia Convention of 15 May, moved that 'these United Colonies are, and of right ought to be, free and independent States'. Congress postponed the decision, but appointed a Committee of Five to draft a statement of the colonies' case: John Adams of Massachusetts, Roger Sherman of Connecticut, Benjamin Franklin of Pennsylvania, Robert R. Livingston of New York and Thomas Jefferson of Virginia. On 2 July Congress adopted Lee's resolution by the votes of 12 colonies, with New York abstaining.",
+   "Jefferson wrote the first draft; Adams and Franklin made a few changes, and Congress then cut the text by about a quarter, removing Jefferson's passage blaming King George III for imposing slavery on the colonies. The final text listed 27 grievances against the King. Printed broadsides by John Dunlap spread it across the colonies; a handwritten 'engrossed' copy, ordered on 19 July, was signed mostly on 2 August 1776, eventually by 56 delegates.",
+   "It became the founding statement of the United States. Abraham Lincoln later treated it as the nation's moral standard and built the Gettysburg Address around it."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence",
+    "title": "United States Declaration of Independence",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.archives.gov/founding-docs/declaration-history",
+    "title": "The Declaration of Independence: A History",
+    "publisher": "US National Archives",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   }
+  ],
+  "claims": [
+   "Congress met in the Pennsylvania State House (later Independence Hall), Philadelphia, and approved the text on 4 July 1776.",
+   "Richard Henry Lee presented his resolution on 7 June 1776, after the Virginia Convention's instruction of 15 May 1776; the quoted words are from the resolution.",
+   "Consideration was postponed (on 10 or 11 June).",
+   "The Committee of Five: Adams, Sherman, Franklin, Livingston, Jefferson.",
+   "The Lee Resolution was adopted on 2 July by 12 colonies, New York abstaining.",
+   "Jefferson wrote the draft; Adams and Franklin made few changes.",
+   "Congress cut about a quarter and removed the passage blaming George III for slavery.",
+   "The Declaration lists 27 grievances against the King.",
+   "Dunlap broadsides were distributed; the engrossed copy was ordered on 19 July and mostly signed on 2 August 1776 by 56 delegates.",
+   "Lincoln treated it as a moral standard and centred the Gettysburg Address on it."
+  ],
+  "disagree": "The day Congress postponed Lee's resolution: 10 June (Wikipedia) or 11 June (National Archives). Accounts of how the committee drafted the text conflict, because Jefferson and Adams wrote them many years later.",
+  "checked": null
+ },
+ "Q362": {
+  "title": "World War II",
+  "y": 1939,
+  "place": "Worldwide (Europe, Asia and the Pacific, Africa, the Atlantic)",
+  "paras": [
+   "The Second World War, from 1 September 1939 to 2 September 1945, was fought between two coalitions: the Allies and the Axis powers. Nearly every country in the world was drawn in, and much of it was fought as total war. It was the deadliest conflict in history: estimates of the dead run from about 60 million to 75 million, most of them civilians, who died in massacres, starvation, disease and genocides.",
+   "Its causes lay in the unresolved tensions left by the First World War and in the rise of fascism in Europe and militarism in Japan. Japan invaded Manchuria in 1931 and went to war with China in 1937; Germany annexed Austria and the Sudetenland. On 1 September 1939 Germany invaded Poland, and two days later Britain and France declared war on Germany; the Soviet Union, bound to Germany by the Molotov-Ribbentrop Pact, invaded Poland from the east in mid-September and the two divided it.",
+   "In 1940 Germany conquered Norway, Denmark, the Low Countries and France, while the Soviet Union annexed the Baltic states and parts of Finland and Romania; Britain and its Commonwealth fought on, in the air over Britain, at sea in the Atlantic and in North Africa and the Mediterranean. On 22 June 1941 Germany invaded the Soviet Union. In December 1941 Japan attacked Pearl Harbor and British and American territories in the Pacific, bringing the United States into the war. The tide turned in 1942-1943: at Midway in June 1942, in North Africa, and at Stalingrad, where a Soviet counter-offensive from November 1942 destroyed a German army.",
+   "The Allies invaded Italy in 1943, bringing down Mussolini's regime, and landed in Normandy in June 1944 while the Soviet army advanced into Central Europe. Berlin fell and Germany surrendered unconditionally on 8 May 1945. After the atomic bombings of Hiroshima and Nagasaki and the Soviet invasion of Manchuria in August, Japan announced its surrender on 15 August and signed it on 2 September 1945. Germany, Austria, Japan and Korea were occupied, German and Japanese leaders were tried for war crimes, and the United Nations was founded; the war left the United States and the Soviet Union as rival superpowers."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/World_War_II",
+    "title": "World War II",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/world-war-ii-history",
+    "title": "World War II: Causes, Timeline, Key Battles, Facts & Legacy",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     3,
+     5,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.nationalww2museum.org/students-teachers/student-resources/research-starters/research-starters-worldwide-deaths-world-war",
+    "title": "Research Starters: Worldwide Deaths in World War II",
+    "publisher": "The National WWII Museum (New Orleans)",
+    "accessed": "2026-11-27",
+    "supports": [
+     3
+    ]
+   }
+  ],
+  "claims": [
+   "The war lasted from 1 September 1939 to 2 September 1945 between the Allies and the Axis.",
+   "Nearly all countries were involved; much of it was total war.",
+   "It was the deadliest conflict in history: about 60-75 million dead, most of them civilians.",
+   "Causes: tensions after WWI, fascism in Europe, militarism in Japan; Japan invaded Manchuria (1931) and China (1937); Germany annexed Austria and the Sudetenland.",
+   "Germany invaded Poland on 1 September 1939; Britain and France declared war two days later.",
+   "The Soviet Union invaded Poland in mid-September; Poland was partitioned under the Molotov-Ribbentrop Pact.",
+   "In 1940 the Soviets annexed the Baltic states and parts of Finland and Romania; Germany conquered Norway, Denmark, the Low Countries and France; Britain fought on (Battle of Britain, Atlantic, North Africa, Mediterranean).",
+   "Germany invaded the Soviet Union on 22 June 1941.",
+   "Japan attacked Pearl Harbor in December 1941 and the US entered the war; Midway in June 1942 was a turning point; Stalingrad was won by a Soviet counter-offensive from November 1942.",
+   "The Allies invaded Italy in July 1943 (fall of the fascist regime) and Normandy in 1944; the Soviets advanced into Central Europe.",
+   "Germany surrendered on 8 May 1945; atomic bombs on 6 and 9 August and the Soviet invasion of Manchuria; Japan announced surrender on 15 August.",
+   "Germany, Austria, Japan and Korea were occupied and leaders tried for war crimes; the UN was founded; the US and USSR emerged as rival superpowers."
+  ],
+  "disagree": "Death tolls vary widely between sources: the National WWII Museum gives about 60 million (15 million in battle, 45 million civilians), others up to 75 million.",
+  "checked": null
+ },
+ "Q361": {
+  "title": "World War I",
+  "y": 1914,
+  "place": "Europe, the Middle East, Africa, Asia and the oceans",
+  "paras": [
+   "The First World War, or Great War, lasted from 28 July 1914 to 11 November 1918. It was fought between the Allies (the Entente) and the Central Powers, and caused some 15 to 22 million deaths, including those from war crimes and genocides; it also helped spread the 1918 influenza pandemic. It brought machine guns, artillery, aircraft, poison gas and tanks into large-scale use.",
+   "Its deeper causes were the rise of the German Empire, which upset the balance of power in Europe, and the sharpening of imperial rivalries through new alliances and an arms race. The spark came on 28 June 1914, when the Bosnian Serb Gavrilo Princip assassinated Archduke Franz Ferdinand, heir to Austria-Hungary. Austria-Hungary blamed Serbia and declared war on it on 28 July; Russia mobilised to defend Serbia, Germany declared war on Russia and France in early August, and Britain entered after Germany invaded Belgium.",
+   "Germany's plan to defeat France quickly was stopped in September 1914, and the Western Front settled into lines of trenches. The great battles of Verdun and the Somme in 1916, and Passchendaele, failed to break the deadlock; at Verdun alone German and French casualties approached a million. The Eastern Front was more fluid but indecisive. The Ottoman Empire joined the Central Powers in November 1914, and an Allied landing at Gallipoli failed; Japan and Italy joined the Allies. In April 1917 the United States entered the war after Germany resumed unrestricted submarine warfare; American opinion had already been turned by the sinking of the liner Lusitania in May 1915.",
+   "After the October Revolution, Soviet Russia made an armistice in December 1917 and a separate peace in March 1918. Germany's spring offensive of 1918 exhausted its army, and the Allied Hundred Days Offensive from August broke the German front. The Ottomans and Austria-Hungary signed armistices in early November; facing revolution at home, Kaiser Wilhelm II abdicated on 9 November, and the Armistice of 11 November ended the fighting.",
+   "The Paris Peace Conference of 1919-1920 imposed the peace treaties: under the Treaty of Versailles Germany lost territory, was disarmed and had to pay reparations. The German, Austro-Hungarian, Ottoman and Russian empires collapsed, and new states arose, among them Poland, Finland, the Baltic states, Czechoslovakia and Yugoslavia. The League of Nations was set up to keep the peace; its failure to manage the instability of the interwar years contributed to the Second World War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/World_War_I",
+    "title": "World War I",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/world-war-i-history",
+    "title": "World War I: Summary, Causes & Facts",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The war lasted from 28 July 1914 to 11 November 1918 between the Allies (Entente) and the Central Powers.",
+   "15-22 million deaths; it contributed to the spread of the influenza pandemic.",
+   "Weapons developments: machine guns, artillery, aircraft, chemical weapons, tanks.",
+   "Causes: the rise of the German Empire, imperial rivalries, alliances, arms race.",
+   "Princip assassinated Franz Ferdinand on 28 June 1914; Austria-Hungary declared war on Serbia on 28 July.",
+   "Russia mobilised; Germany declared war on Russia and France in early August; Britain entered after the invasion of Belgium.",
+   "Germany's advance was halted in September 1914; trench lines on the Western Front.",
+   "Verdun and the Somme (1916) and Passchendaele failed to break the stalemate; close to a million German and French casualties at Verdun.",
+   "The Ottoman Empire joined the Central Powers in November 1914; Gallipoli failed; Japan and Italy joined the Allies.",
+   "The US joined in April 1917 after unrestricted submarine warfare resumed; the Lusitania was sunk in May 1915.",
+   "Russia signed an armistice in December 1917 and a separate peace in March 1918.",
+   "The spring offensive of 1918 failed; the Hundred Days Offensive from August 1918; armistices with the Ottomans and Austria-Hungary in early November; Wilhelm II abdicated on 9 November; Armistice of 11 November 1918.",
+   "The Paris Peace Conference; Versailles terms for Germany; collapse of four empires; new states; the League of Nations and its failure."
+  ],
+  "disagree": "Death tolls are given as 15 to 22 million depending on what is counted.",
+  "checked": null
+ },
+ "Q608613": {
+  "title": "Fall of the Western Roman Empire",
+  "y": 476,
+  "place": "Ravenna and Italy (Western Roman Empire)",
+  "paras": [
+   "By convention the Western Roman Empire ended on 4 September 476, when Odoacer, a Germanic leader of the mercenaries in Italy, deposed the boy emperor Romulus Augustulus and made himself ruler of Italy; the Roman Senate sent the imperial insignia to the Eastern emperor Zeno in Constantinople. The date marks the end of a long process in which the Western Empire lost central control of its provinces, which were divided among successor kingdoms.",
+   "Historians give many causes: the size and effectiveness of the army, the health and numbers of the population, the economy, the competence of emperors, civil wars, religious change and the efficiency of the administration, together with growing pressure from peoples outside the empire, worsened by climate change and epidemics. In 376 a large body of Goths fleeing the Huns entered the empire and could not be expelled or subdued. When Theodosius I died in 395 the empire was divided between his two sons, and from then on the Western army became small and ineffective.",
+   "Barbarian groups crossed the Rhine and other frontiers. The Visigoth king Alaric sacked Rome in 410, the Vandals took North Africa and sacked Rome again in 455, and Germanic peoples occupied Britain and Spain. By the 470s Western emperors were puppets of military strongmen. In 475 the general Orestes drove out the emperor Julius Nepos and proclaimed his young son Romulus emperor; 'Augustulus', 'little Augustus', was his rivals' mockery. When Orestes refused land in Italy to his Heruli, Scirian and Torcilingi mercenaries, they revolted under Odoacer, and in 476 Odoacer deposed Romulus.",
+   "The convention has many qualifications. Julius Nepos still claimed to be emperor in Dalmatia until he was murdered in 480, and Syagrius ruled a Roman remnant at Soissons until 486. The Eastern Roman, or Byzantine, Empire survived for centuries more, and the legitimacy and culture of Rome long outlived the Western Empire."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+    "title": "Fall of the Western Roman Empire",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/8-reasons-why-rome-fell",
+    "title": "8 Reasons Why Rome Fell",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     6,
+     7
+    ]
+   }
+  ],
+  "claims": [
+   "In 476 Odoacer deposed Romulus Augustulus; by convention the Western Empire ended on 4 September 476; the Senate sent the insignia to Zeno.",
+   "The fall was a loss of central control; the territory was divided among successor polities.",
+   "Historians cite army, population, economy, emperors, internal struggles, religion, administration, outside pressure, climate and disease.",
+   "In 376 Goths fleeing the Huns entered the empire and could not be expelled.",
+   "Theodosius I died in 395; the empire was divided between his sons; the Western army became few and ineffective.",
+   "Alaric's Visigoths sacked Rome in 410; the Vandals took North Africa and sacked Rome in 455; Germanic peoples occupied Britain, Spain and North Africa.",
+   "Barbarian groups crossed the Rhine and other frontiers.",
+   "In 475 Orestes drove out Julius Nepos and proclaimed his son Romulus; 'Augustulus' was a diminutive used by rivals; mercenaries (Heruli, Scirian, Torcilingi) denied land revolted under Odoacer.",
+   "Julius Nepos controlled Dalmatia until his murder in 480; Syagrius ruled at Soissons until 486; the Eastern Empire survived."
+  ],
+  "disagree": "The date 476 is a convention: Roman rule went on in remnants in Dalmatia and at Soissons, and Julius Nepos still claimed the Western throne until 480.",
   "checked": null
  }
 }
