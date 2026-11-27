@@ -1302,5 +1302,114 @@
   ],
   "disagree": "The date 476 is a convention: Roman rule went on in remnants in Dalmatia and at Soissons, and Julius Nepos still claimed the Western throne until 480.",
   "checked": null
+ },
+ "Q700983": {
+  "title": "German Instrument of Surrender",
+  "y": 1945,
+  "place": "Reims (France) and Berlin (Germany)",
+  "paras": [
+   "Germany's unconditional surrender, which ended the Second World War in Europe, was signed twice. In the early hours of Monday 7 May 1945, at General Eisenhower's headquarters (SHAEF) in Reims in north-eastern France, General Alfred Jodl, chief of staff of the German army, signed for the German High Command. The Allied delegation was led by Eisenhower's chief of staff, Walter Bedell Smith, with Soviet and French representatives present; Eisenhower refused to meet the Germans until the surrender had been signed.",
+   "Germany was then governed by Grand Admiral Karl Dönitz, whom Hitler had named head of state in his testament before killing himself in his bunker on 30 April 1945. Berlin fell two days later. After the Reims signing the German forces were ordered to stop fighting in the west but to go on fighting in the east, and the Soviet command protested that the Reims document looked like a separate peace. It demanded that the surrender be signed again in Berlin, the seat of the government from which the war had been launched.",
+   "So on 8 May, in Berlin, a second document, only slightly changed from the Reims text, was signed with Field Marshal Wilhelm Keitel as the senior German representative, before representatives of the Allied Expeditionary Force and the Soviet High Command, with French and American witnesses. It was signed at 22:43 Central European Time and took effect at 23:01 the same day. For the Soviet Union, the Berlin document was the official, legal surrender of the Third Reich.",
+   "The surrender was military only. On 5 June 1945 the four Allies (the Soviet Union, the United States, the United Kingdom and France) declared in the Berlin Declaration that Germany had no government and that they had assumed supreme authority over it, the basis of the Allied occupation."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/German_Instrument_of_Surrender",
+    "title": "German Instrument of Surrender",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://www.archives.gov/milestone-documents/surrender-of-germany",
+    "title": "Surrender of Germany (1945)",
+    "publisher": "US National Archives",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6
+    ]
+   }
+  ],
+  "claims": [
+   "On 7 May 1945, in the early morning, Jodl signed the surrender at SHAEF in Reims; Bedell Smith led the Allied delegation; Eisenhower refused to meet the Germans until it was signed.",
+   "Dönitz was German head of state (named in Hitler's testament).",
+   "Hitler killed himself in the Führerbunker on 30 April 1945; Berlin fell two days later.",
+   "After Reims, German forces were ordered to cease fire in the west and fight on in the east; the Soviets objected that it looked like a separate peace.",
+   "The Soviets demanded a signing in Berlin, the seat of government.",
+   "A second document, little changed, was signed in Berlin on 8 May; Keitel was the senior German signatory; signed before the Allied Expeditionary Force and the Soviet High Command with French and American witnesses. The Soviets regarded the Berlin documents as the official surrender.",
+   "It was signed at 22:43 CET on 8 May and took effect at 23:01 CET.",
+   "The surrender was military; the Berlin Declaration of 5 June 1945 by the four Allies stated Germany had no government and the Allies assumed authority."
+  ],
+  "disagree": "Which signing counts: the Western Allies dated the surrender from Reims on 7 May; the Soviet Union regarded the Berlin document of 8 May as the legal surrender.",
+  "checked": null
+ },
+ "cp03-01": {
+  "title": "Temüjin is proclaimed Genghis Khan",
+  "y": 1206,
+  "place": "Source of the Onon River (Mongolia)",
+  "paras": [
+   "In 1206 a great assembly of the Mongols, a kurultai, met at the source of the Onon River and proclaimed the warlord Temüjin ruler of all the steppe peoples he had united, with the title Genghis (Chinggis) Khan. He had been born around 1162, the son of the Borjigin chieftain Yesugei; after his father's death, when Temüjin was a boy, the clan abandoned the family and left it close to poverty.",
+   "His rise took some twenty years of war and shifting alliances. With his early allies, the steppe leaders Jamukha and Toghrul, he recovered his kidnapped wife Börte; later both became his enemies. Defeated by Jamukha around 1187, he re-emerged in 1196, overcame Toghrul after a surprise attack in 1203, defeated the Naiman, and had Jamukha executed, leaving him sole ruler of the Mongolian steppe.",
+   "What 'Genghis' meant is debated: it may simply have set him above the older title gurkhan that Jamukha had held, it may suggest strength or righteousness, or it may come from the Turkic tängiz, 'ocean', making him a universal ruler. After the assembly he reorganised the Mongols to break the power of the tribes: warriors were grouped in units of ten without regard to kinship, and loyalty was owed to the khan and his family, the 'Golden Family'.",
+   "The new state turned outward at once: it raided Western Xia in 1209, made war on the Jin dynasty and took the Jin capital Zhongdu (Beijing), and from 1219 destroyed the Khwarazmian Empire after the killing of Genghis's envoys. Genghis Khan died in August 1227 while subduing Western Xia; his son Ögedei succeeded him in 1229."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Genghis_Khan",
+    "title": "Genghis Khan",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/genghis-khan",
+    "title": "Genghis Khan",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     6,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "In 1206 an assembly (kurultai) at the source of the Onon proclaimed Temüjin Genghis Khan.",
+   "Temüjin was born around 1162, son of Yesugei of the Borjigin; after his father's death the family was abandoned.",
+   "Jamukha and Toghrul were allies who helped recover Börte and later became enemies.",
+   "Temüjin was defeated around 1187, re-emerged in 1196, overcame Toghrul after a surprise attack in 1203, defeated the Naiman and executed Jamukha.",
+   "The meaning of 'Genghis' is debated (gurkhan, strength, tängiz 'ocean').",
+   "He organised warriors in units of ten without regard to kin; loyalty to the khan and the Golden Family.",
+   "Western Xia was raided in 1209; the Jin war; the capture of Zhongdu.",
+   "From 1219 he destroyed the Khwarazmian Empire after his envoys were killed.",
+   "He died in August 1227 subduing Western Xia; Ögedei acceded in 1229."
+  ],
+  "disagree": "The fall of the Jin capital Zhongdu is dated 1215 by Wikipedia; HISTORY.com dates the siege to 1214. The meaning of the title 'Genghis' is uncertain.",
+  "checked": null
  }
 }
