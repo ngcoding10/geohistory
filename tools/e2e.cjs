@@ -355,6 +355,43 @@ async function waitEvents(page) {
     await waitH1(page, 'Spanish Empire');
     ok(/Viceroyalty of New Spain/.test(await page.locator('#panelBody').innerText()), '1700: the Spanish Empire panel lists New Spain as a part without a shape');
 
+    // ---------------- state context (round 9) ----------------
+    const ctxSections = async (q, h1) => {
+      await page.goto(BASE + q);
+      await waitH1(page, h1);
+      await page.waitForSelector('#panelBody .ctx-glance', { timeout: 60000 });
+      return page.evaluate(() => [...document.querySelectorAll('#panelBody details.ctx')].map((d) => d.dataset.sec));
+    };
+    const ussr = await ctxSections('?y=1950&v=flat&c=Soviet+Union', 'Soviet Union');
+    ok(['glance', 'pop', 'gov', 'rel', 'lead'].every((k) => ussr.includes(k)), `1950: the Soviet Union panel has At a glance, Population, Government, Religion and Leaders (${ussr.join(', ')})`);
+    const ussrText = await page.locator('#panelBody .ctx-wrap').innerText();
+    ok(/Communist Party of the Soviet Union/.test(ussrText), '1950: the Soviet Union\'s ruling party is the CPSU');
+    ok(/estimate/i.test(ussrText), 'population figures are labelled as estimates');
+    await page.screenshot({ path: path.join(SHOTS, 'context-ussr-1950.png') });
+    const ott = await ctxSections('?y=1600&v=flat&c=Ottoman+Empire', 'Ottoman Empire');
+    ok(ott.includes('rel') && /Sunni Islam/.test(await page.locator('#panelBody .ctx-wrap').innerText()), `1600: the Ottoman panel gives Sunni Islam as official religion (${ott.join(', ')})`);
+    await page.screenshot({ path: path.join(SHOTS, 'context-ottoman-1600.png') });
+    const usa = await ctxSections('?y=1876&v=flat&c=United+States+of+America', 'United States of America');
+    ok(usa.includes('disc') && /Telephone/.test(await page.locator('#panelBody details[data-sec=disc]').innerText()), '1876: the telephone is among the discoveries of the United States');
+    const tel = await page.evaluate(async () => {
+      const { eventsBetween } = await import('./js/data.js');
+      const d = await eventsBetween(1876, 1876);
+      return d.events.filter((e) => e.y === 1876 && e.t === 'invention' && /^Telephone$/.test(e.l)).map((e) => ({ i: e.i, p: e.p, lo: e.lo }));
+    });
+    ok(tel.length === 1 && tel[0].p === 'United States of America' && tel[0].lo != null, `1876: a telephone invention event placed in the United States (${JSON.stringify(tel)})`);
+    if (tel.length) {
+      await page.goto(BASE + '?y=1876&v=flat&e=' + tel[0].i);
+      await page.waitForSelector('#panelBody .wu, #panelBody .wu-none', { timeout: 60000 });
+      const evText = await page.locator('#panelBody').innerText();
+      ok(/Meucci/.test(evText) && /Gray/.test(evText), 'the telephone event names Meucci and Gray');
+      ok(/From Wikipedia|What happened/i.test(evText) && /Wikipedia|Source/i.test(evText), 'the telephone event shows a write-up with its source');
+      await page.screenshot({ path: path.join(SHOTS, 'telephone-1876.png') });
+    }
+    await page.goto(BASE + '?y=1066&v=flat&e=Q83224');
+    await page.waitForSelector('#panelBody .wu', { timeout: 60000 });
+    const hast = await page.locator('#panelBody .wu').innerText();
+    ok(/AI-written/i.test(hast) && /Sources/i.test(hast) && (await page.locator('#panelBody .wu-src li').count()) >= 2, 'Battle of Hastings: a written write-up labelled AI-written with at least two sources');
+
     // ---------------- before and after ----------------
     await page.goto(BASE + '?y=1900&v=flat&c=Ottoman+Empire');
     await waitH1(page, 'Ottoman Empire');

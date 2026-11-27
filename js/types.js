@@ -12,6 +12,7 @@ export const TYPES = {
   epidemic: { label: 'Epidemics', one: 'Epidemic', color: '#5b6d22' },
   disaster: { label: 'Disasters', one: 'Disaster', color: '#9a4a12' },
   discovery: { label: 'Discovery and exploration', one: 'Discovery', color: '#3b57a0' },
+  invention: { label: 'Inventions and scientific discoveries', one: 'Invention or discovery', color: '#0f7c8c' },
   religion: { label: 'Religion', one: 'Religion', color: '#6a4c92' },
   founding: { label: 'Cities and institutions founded', one: 'Founding', color: '#7a6a3a' },
   culture: { label: 'Cultures and periods', one: 'Culture or period', color: '#7d5a3c' },

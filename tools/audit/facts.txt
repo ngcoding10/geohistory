@@ -1305,3 +1305,159 @@ S|Principality of Lippe|before|!Holy Roman Empire
 S|Qing Dynasty|after|Republic of China
 # a colony the second map source draws apart is not a successor when Wikidata confirms the state going on
 S|Kingdom of Portugal|after|!Angola
+
+# ---- Round 9 (context): written from memory BEFORE any context data was built or looked at (first kept in
+# tools/context/facts_context.txt, committed before the data). Names are the map's territory names (";" separates alternatives).
+# New kinds:
+#   P|state;alts|year|low|high        the population shown for that state in that year (any estimate given,
+#                                     or the middle of a range) lies between low and high
+#   G|state;alts|year|text;alt        the form of government listed for that year contains the text
+#   Y|state;alts|year|party;alt       the ruling party listed for that year contains the text
+#   L|state;alts|year|kind|text;alt   a religion of that kind (official, majority or any) listed for that year contains the text
+#   V|state;alts|year|text;alt        a movement listed for that state and year contains the text
+#   D|discovery;alts|year|state;alt   the discovery is dated that year (±1) and attached to that state
+# -- population (orders of magnitude; the published estimates fall well inside these ranges)
+P|Ming Dynasty|1600|100000000|220000000
+P|Roman Empire|100|40000000|100000000
+P|United States of America|1876|40000000|52000000
+P|Soviet Union|1950|165000000|200000000
+P|Germany|1938|60000000|82000000
+P|Ottoman Empire|1600|14000000|40000000
+P|India|1901|230000000|330000000
+P|Japan|1900|38000000|50000000
+P|French Consulate|1801|24000000|34000000
+P|Mughal Empire|1600|70000000|180000000
+P|Spain|1900|16000000|21000000
+P|Brazil|1950|45000000|60000000
+P|Kingdom of England|1500|1500000|4500000
+P|Russian Empire|1897|100000000|140000000
+P|Achaemenid Empire|-500|10000000|60000000
+P|Han Dynasty|2|35000000|80000000
+P|Inca Empire|1520|3000000|20000000
+P|Mexico|1950|22000000|30000000
+P|Nigeria|2000|100000000|145000000
+P|India|2000|950000000|1100000000
+P|China|1960|580000000|720000000
+P|Byzantine Empire|1000|7000000|25000000
+P|Polish-Lithuanian Commonwealth|1650|6000000|16000000
+P|Qing Dynasty|1850|330000000|480000000
+P|Kingdom of France|1700|17000000|28000000
+# -- form of government
+G|Soviet Union|1950|socialist;communist;soviet;one-party
+G|United States of America|1876|republic;presidential;federal
+G|Ottoman Empire|1600|monarchy;absolute;sultanate
+G|Roman Republic|-100|republic
+G|Roman Empire|100|monarchy;autocracy;principate;empire
+G|Republic of Venice|1600|republic
+G|Germany|1938|dictatorship;totalitarian;one-party;fascist
+G|United Kingdom|1900|constitutional monarchy;parliamentary
+G|France|1890|republic
+G|Japan|1900|monarchy;constitutional
+G|Kingdom of France|1700|absolute monarchy;monarchy
+G|Iran|1990|islamic republic;theocracy
+G|Switzerland|1900|federal;republic;directorial
+G|Dutch Republic|1700|republic
+# corrected after the first build: from 1260 the maps draw the Holy Roman Empire as a power of many members, so its context is the empire's (e:holy roman empire)
+G|Holy Roman Empire;e:holy roman empire|1500|elective monarchy;monarchy
+G|Polish-Lithuanian Commonwealth|1650|elective monarchy;monarchy
+# -- ruling party (25+ states; cross-checked against Wikipedia's lists of heads of government)
+Y|Soviet Union|1950|Communist Party of the Soviet Union;All-Union Communist Party
+Y|Germany|1938|Nazi Party;National Socialist German Workers' Party;NSDAP
+Y|Italy|1935|National Fascist Party
+Y|China|1970|Chinese Communist Party;Communist Party of China
+Y|China|1935|Kuomintang
+Y|United Kingdom|1946|Labour Party
+Y|United Kingdom|1985|Conservative Party
+Y|United States of America|1935|Democratic Party
+Y|United States of America|1985|Republican Party
+Y|United States of America|1863|Republican Party
+Y|India|1960|Indian National Congress
+Y|Japan|1970|Liberal Democratic Party
+Y|Mexico|1960|Institutional Revolutionary Party
+# corrected after the first build: the map's name for the Federal Republic in 1949-1990 is West Germany
+Y|Germany;West Germany|1960|Christian Democratic Union
+Y|France|1982|Socialist Party
+Y|Spain|1985|Spanish Socialist Workers' Party
+Y|Cuba|1980|Communist Party of Cuba
+Y|Vietnam|1990|Communist Party of Vietnam
+Y|North Korea|1980|Workers' Party of Korea
+Y|Germany (Soviet zone);German Democratic Republic;East Germany|1970|Socialist Unity Party
+Y|Poland|1970|Polish United Workers' Party
+Y|South Africa|1970|National Party
+Y|Israel|1960|Mapai
+Y|Canada|1970|Liberal Party
+Y|Australia|1960|Liberal Party
+Y|Sweden|1960|Social Democratic
+Y|Yugoslavia|1970|League of Communists of Yugoslavia
+Y|Turkey|1930|Republican People's Party
+Y|Iraq|1990|Ba'ath;Baath
+Y|Syria|1990|Ba'ath;Baath
+Y|Egypt|1990|National Democratic Party
+Y|Taiwan|1970|Kuomintang
+# -- religion
+L|Ottoman Empire|1600|official|Islam;Sunni
+L|Kingdom of Spain;Spanish Empire|1600|official|Catholic
+L|Kingdom of England|1600|official|Church of England;Anglican;Protestant
+L|Safavid Dynasty|1600|official|Shia;Twelver
+L|Mughal Empire|1600|official|Islam
+L|Byzantine Empire|1000|official|Orthodox;Christianity
+L|Roman Empire|100|official|Roman;pagan;polytheism;imperial cult
+L|Roman Empire|390|official|Christianity;Nicene
+# corrected after the first build: the map's name for Sweden in 1612-1720 is Swedish Empire
+L|Kingdom of Sweden;Swedish Empire|1700|official|Lutheran
+L|United States of America|1900|majority|Christian;Protestant
+L|Soviet Union|1950|any|atheism
+L|Saudi Arabia|1980|official|Islam
+L|Ethiopian Empire|1700|official|Orthodox;Christianity
+L|Iran|1990|official|Shia;Islam
+L|Pakistan|1980|official|Islam
+L|Israel|1970|majority|Judaism
+L|Denmark|1900|official|Lutheran;Church of Denmark
+L|India|1960|majority|Hinduism
+L|Mali Empire|1330|any|Islam
+L|Tibet;Ganden Phodrang|1700|any|Buddhism
+# -- movements
+# corrected after the first build: the empire's context (e:holy roman empire), as above
+V|Holy Roman Empire;e:holy roman empire|1530|Reformation;Protestant
+V|Kingdom of France|1750|Enlightenment
+V|Kingdom of Great Britain|1790|abolition
+V|United States of America|1960|civil rights
+V|India|1930|independence movement
+V|Germany|1935|Nazism;fascism
+V|Italy|1925|fascism
+V|United Kingdom|1910|suffrage
+V|Republic of Florence|1480|Renaissance
+V|United States of America|1850|abolition
+V|Kingdom of Sardinia|1850|Risorgimento;unification;nationalism
+V|Ottoman Empire|1910|Young Turks
+V|Qing Dynasty|1870|Self-Strengthening
+V|United Kingdom|1955|decolonisation;decolonization
+V|Poland|1981|Solidarity
+V|South Africa|1960|anti-apartheid
+V|Kingdom of Great Britain|1790|Industrial Revolution
+V|Kingdom of England|1680|Scientific Revolution
+V|Russian Empire|1905|socialism;Marxism;Bolshevik
+V|United States of America|1915|suffrage
+# -- discoveries and inventions
+D|Telephone|1876|United States
+D|Printing press;movable-type printing;Gutenberg|1450|Holy Roman Empire
+D|Penicillin|1928|United Kingdom
+D|Newcomen;atmospheric engine|1712|Great Britain
+D|Watt steam engine|1776|Great Britain
+D|Incandescent light bulb|1879|United States
+D|X-ray|1895|German Empire;Germany
+D|Wright Flyer;airplane;aeroplane|1903|United States
+D|Paper;papermaking|105|Han
+D|Telescope|1608|Dutch Republic
+D|Smallpox vaccine|1796|Great Britain
+# corrected after the first build: Nobel made and patented dynamite at his Krümmel works near Hamburg (Wikipedia: Dynamite), not in Sweden; the maps' state there in 1867
+D|Dynamite|1867|German Confederation;North German Confederation;Prussia
+D|Special relativity|1905|Switzerland
+D|DNA double helix;structure of DNA|1953|United Kingdom
+D|Sputnik 1|1957|Soviet Union
+D|Nuclear fission|1938|Germany
+D|Transistor|1947|United States
+D|Insulin|1921|Canada
+D|Phonograph|1877|United States
+D|Benz Patent-Motorwagen;automobile|1885|German Empire;Germany
+D|World Wide Web|1989|Switzerland;France

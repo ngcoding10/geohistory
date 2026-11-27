@@ -34,7 +34,9 @@ thousand queries, one at a time, all cached); read Wikipedia's year articles; li
 limit sketch-map names to their Wikidata years and build the Cliopatria years a second time with those limits;
 build the empires, the occupations and the before/after lists; check the curated files and ruler lists
 against Wikidata; place every event and write the event files, search index and `data/meta.json`; build
-timelines; run the audit; write `js/data-version.js` (a hash of `data/`, used to version data URLs).
+timelines (after the context steps: per-state population, government, parties, religion, leaders, movements and
+placed discoveries, which become map events of the type "invention", and the event write-ups; see "State
+context and event write-ups"); run the audit; write `js/data-version.js` (a hash of `data/`, used to version data URLs).
 The map label glyphs in `fonts/Atlas Serif */` are not part of that run: `tools/make_glyphs.cjs` draws them
 from the Alegreya fonts in `fonts/src/` with headless Chromium.
 
@@ -52,7 +54,7 @@ without coordinates is placed). The border, ruler and year-article steps give id
 second state: after the run from scratch `fetch_extra.py` was refreshed from Wikidata, which added 240 births
 that an old failed query had left out.
 
-Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (134 checks; uses the globally installed Playwright; starts its
+Test: `NODE_PATH=$(npm root -g) node tools/e2e.cjs` (143 checks; uses the globally installed Playwright; starts its
 own `python3 -m http.server`).
 
 ## How it fits with the other apps
@@ -258,6 +260,39 @@ Byzantine Empire); a name used by both map sources for different states (Vietnam
 has one list; Egypt's predecessor in 1886 is Cliopatria's "British Africa". "Today this is" and, for one of today's countries, "In <year> this was" are measured in the
 browser by overlap at sample points, and are approximate.
 
+## State context and event write-ups
+
+Round 9. A click on a state or empire adds collapsible sections under its description: At a glance,
+Population, Government & parties, Religion, Leaders, Movements, Discoveries (`js/context.js`, loaded only on a
+click from `data/context/<state>.json`, about 9.5 MB in all). Built by `tools/context/` from:
+
+- Population: HYDE 3.2.1 (5 arc-minute grids summed over each state's shape in each year, interpolated between
+  the HYDE steps) and the Maddison Project 2023 where a state is close to one of today's countries. Every
+  figure is labelled an estimate with its range and source. Not shown: states under 2,500 km², HYDE-only
+  figures before 1000 or for states under 100,000 km², very thin densities before 1800, and figures where two
+  sources differ more than twofold.
+- Government form, official and majority religion, ruling and major parties, leaders: Wikidata statements with
+  dates (P122, P140, P3075, P102 and the offices of head of state and government), plus dated hand entries in
+  `tools/curated/context/`. A ruling party is named only for a holder in office the whole year, and none during
+  cohabitation or for directorial systems.
+- Movements: only the hand-written list `tools/curated/context/movements.json` (Wikidata's were too loose).
+- Discoveries and inventions: 99 hand-placed ones and Wikidata items with a dated place of discovery or a
+  dated workplace of the one discoverer (`tools/context/build_discoveries.py`), shown on the map as the event
+  type "Inventions and scientific discoveries" (a ringed dot). The telephone of 1876 is in the United States;
+  Gutenberg's press of about 1450 in Mainz, in the Holy Roman Empire.
+
+Spot checks of 50 random values per field, after the rules above, found 1 wrong value in 50 (2%) for
+government, party, religion, population and discoveries and none for movements. Coverage per field and era
+is in `tools/cache/context/coverage.json` when built; thin before 1000 (population and government) and for
+parties before 1900.
+
+Event write-ups (`data/writeups/*.json.gz`, gzipped per event block, about 19 MB, loaded when an event is
+opened): 37 hand-written ones (`tools/curated/writeups/t1/`, 2 to 5 paragraphs from two or more fetched
+sources each, marked "AI-written", with their sources and the points where sources disagree), and lead
+excerpts of the event's English Wikipedia article for the rest (labelled "From Wikipedia", with a link and the
+CC BY-SA licence; from the CirrusSearch dump of 22 November 2026). Events with neither say "No detailed source
+found for this event." The work queue for more hand-written ones is `tools/curated/writeups/queue.json`.
+
 ## Known limits
 
 - Borders: 1886 to 2019 come from CShapes 2.0, one map per year as on 1 July. 3400 BC to 1885 come from
@@ -356,8 +391,10 @@ browser by overlap at sample points, and are approximate.
   checked only in headless Chromium with software rendering, not yet on real phones. No relief or paper
   texture is drawn (no hillshade source was evaluated); the map has a faint vignette only.
 - Births and deaths (the 12 most notable per year) are off by default; turn them on under "Event types".
-- `tools/audit.py` checks 1,242 hand-written well-known facts (who held a city in a given year; dates of
+- `tools/audit.py` checks 1,376 hand-written well-known facts (who held a city in a given year; dates of
   events and reigns; successions; empire memberships; occupations; who was in office; "top five of the year
-  must include" checks); 1,231 pass. The 11 failures are listed in `data/audit.json`: all are map points
+  must include" checks; and, from round 9, 134 context facts: population ranges, forms of government, ruling
+  parties, religions, movements and where discoveries were made); 1,364 pass. One context failure: HYDE gives
+  the French Consulate of 1801 36.2 million against a checked range of 24 to 34 million. The other 11 failures are listed in `data/audit.json`: all are map points
   where the border source is wrong, late or blank (three of them blank in every source) (see the map notes); no check was removed or
   loosened, and the six checks that were themselves corrected say so in `tools/audit/facts.txt`.

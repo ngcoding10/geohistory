@@ -7,7 +7,7 @@ import { TYPES } from './types.js';
 import { getPref, setPref } from './store.js';
 import { formatYear } from './year.js';
 
-const KEY_TYPES = ['war', 'battle', 'revolt', 'treaty', 'state', 'ruler', 'discovery', 'other'];
+const KEY_TYPES = ['war', 'battle', 'revolt', 'treaty', 'state', 'ruler', 'discovery', 'invention', 'other'];
 
 export function renderKey(el, { doc, year, dark, wars = [], warOn = true, onWar, onOpenWar }) {
   if (!el) return;
@@ -48,7 +48,7 @@ export function renderKey(el, { doc, year, dark, wars = [], warOn = true, onWar,
       wars.map((w, i) => [i ? ', ' : '', h('button.link', { type: 'button', onclick: () => onOpenWar?.(w.i) }, w.l)])) : null,
     warOn && !wars.length ? h('p.kwars.muted', null, `No war is recorded for ${formatYear(year)}.`) : null,
     h('h3', null, 'Events'),
-    h('ul.kdots', null, KEY_TYPES.map((t) => h('li', null, h('span.kdot', { style: `background:${TYPES[t].color}` }), TYPES[t].one))),
+    h('ul.kdots', null, KEY_TYPES.map((t) => h('li', null, h(t === 'invention' ? 'span.kdot.kinv' : 'span.kdot', { style: `background:${TYPES[t].color}` + (t === 'invention' ? `;--ring:${TYPES[t].color}` : '') }), TYPES[t].one))),
     h('p.kt', null, h('span.kcluster', { 'aria-hidden': 'true' }, '12'), ' Several events: click to zoom in.'),
     h('p.kt', null, 'Click land for who ruled it, before and after. Click a marker for the event, the sea to go back.'));
   const btn = h('button.key-toggle', { type: 'button', 'aria-expanded': open ? 'true' : 'false', 'aria-controls': 'keyBody',

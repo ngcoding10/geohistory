@@ -280,7 +280,9 @@ export class HistoryMap extends EventTarget {
     m.addLayer({ id: 'ev-point', type: 'circle', source: 'ev', filter: ['!', ['has', 'point_count']],
       paint: { 'circle-color': ['get', 'c'], 'circle-radius': ['interpolate', ['linear'], ['get', 's'], 0, 4, 40, 6, 150, 8],
         'circle-opacity': ['case', ['==', ['get', 'near'], 1], 0.45, 1],
-        'circle-stroke-color': c.marker, 'circle-stroke-width': 1.6 } });
+        'circle-stroke-color': ['case', ['==', ['get', 'inv'], 1], ['get', 'c'], c.marker],
+        'circle-stroke-width': ['case', ['==', ['get', 'inv'], 1], 3.5, 1.6], 'circle-stroke-opacity': ['case', ['==', ['get', 'inv'], 1], 0.45, 1] } });
+    // inventions and discoveries: a ring round the dot (their own mark in the key)
     // an invisible letter on every single marker: territory labels move away from markers instead of hiding them
     m.addLayer({ id: 'ev-pad', type: 'symbol', source: 'ev', filter: ['!', ['has', 'point_count']],
       layout: { 'text-field': 'O', 'text-font': SANS, 'text-size': 13, 'text-allow-overlap': true, 'text-padding': 3 }, paint: { 'text-opacity': 0 } });
@@ -813,7 +815,7 @@ export class HistoryMap extends EventTarget {
     for (const e of events) {
       if (e.lo == null) continue;
       fc.features.push({ type: 'Feature', geometry: { type: 'Point', coordinates: [e.lo, e.la] },
-        properties: { i: e.i, c: typeColor(e.t), s: e.s || 0, near: near.has(e.i) ? 1 : 0 } });
+        properties: { i: e.i, c: typeColor(e.t), s: e.s || 0, near: near.has(e.i) ? 1 : 0, inv: e.t === 'invention' ? 1 : 0 } });
     }
     this._setData('ev', fc);
     this.selectEvent(selected);

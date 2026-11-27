@@ -81,7 +81,7 @@ def check(kind, a):
 
 
 def main():
-    path = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), 'facts_context.txt')
+    path = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'audit', 'facts.txt')
     n = ok_n = 0
     by = {}
     for line in open(path, encoding='utf-8'):

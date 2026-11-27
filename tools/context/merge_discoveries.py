@@ -8,6 +8,7 @@ drawn on the map (it keeps its place in the context panel only if it has one).
 """
 import glob
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
@@ -31,6 +32,12 @@ def main():
             continue
         qid = x['id'] if str(x['id']).startswith('Q') else None
         hits = by_id.get(qid, []) if qid else []
+        if not hits:
+            # the same thing already among the events under its own name in the same year
+            n = re.sub(r'[^a-z0-9]+', ' ', x['l'].lower()).strip()
+            n0 = re.sub(r'\s*\(.*?\)', '', x['l']).lower().strip()
+            hits = [e for es in by_id.values() for e in es if abs(e['y'] - x['y']) <= 1 and e['t'] in ('discovery', 'invention', 'other', 'culture')
+                    and re.sub(r'[^a-z0-9]+', ' ', e['l'].lower()).strip() in (n, re.sub(r'[^a-z0-9]+', ' ', n0).strip())]
         if not hits and x.get('w'):
             hits = [e for es in by_id.values() for e in es if e.get('w') == x['w'] and abs(e['y'] - x['y']) <= 1] if x['id'].startswith('c:') else []
         if hits:
@@ -43,11 +50,15 @@ def main():
                 if x.get('who') and not e.get('who'):
                     e['who'] = x['who']
                 e['iv'] = x['how']
+                if str(x['id']).startswith('c:'):
+                    e['vt'], e['vs'] = x['text'], x['src']     # GeoHistory's curated text (AI-written) and its source
+                    if x.get('note'):
+                        e['vn'] = x['note']
             changed += 1
             continue
         b = next((b for b in blocks if b['a'] <= x['y'] < b['b']), None)
-        if not b:
-            continue
+        if not b or ('v' + str(x['id']).replace('c:', '')) in by_id:
+            continue      # outside the event years, or added by an earlier run
         ev = {'i': 'v' + str(x['id']).replace('c:', ''), 'l': x['l'], 'y': x['y'], 't': 'invention',
               's': max(3, (x['sl'] or 60) // 3), 'p': x['p'], 'pw': x['pw'], 'iv': x['how']}
         for k_src, k in (('lo', 'lo'), ('la', 'la'), ('w', 'w'), ('who', 'who'), ('text', 'd')):
@@ -55,10 +66,18 @@ def main():
                 ev[k] = x[k_src]
         if x.get('approx'):
             ev['ya'] = 1
+        if str(x['id']).startswith('c:'):
+            ev['vt'], ev['vs'] = x['text'], x['src']
+            if x.get('note'):
+                ev['vn'] = x['note']
         docs[b['f']]['events'].append(ev)
+        b['n'] = b.get('n', 0) + 1
+        k = str(x['y'])
+        idx['counts'][k] = idx['counts'].get(k, 0) + 1
         added += 1
     for f, doc in docs.items():
         write_json(os.path.join(DATA, 'events', f), doc)
+    write_json(os.path.join(DATA, 'events', 'index.json'), idx)
     log(f'inventions on the map: {changed} events marked, {added} added')
 
 

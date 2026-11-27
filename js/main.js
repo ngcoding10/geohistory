@@ -16,6 +16,7 @@ import { getPref, setPref } from './store.js';
 import { makeAreaTest, bboxOf } from './geo.js';
 import { Search } from './search.js';
 import { h, eventList, filterChips, skeleton, fmtArea, wikiUrl, wikidataUrl, eventDate, placeLine, dayLabel } from './ui.js';
+import { contextSections, writeupFor, writeupBlock } from './context.js';
 
 const $ = (s) => document.querySelector(s);
 const els = {
@@ -796,9 +797,12 @@ async function renderSelection() {
   const near = mine.filter((e) => e.y !== y);
   if (mapOk) map.setEvents([...thisYear, ...near], { near: new Set(near.map((e) => e.i)) });
 
-  const tl = await loadTimeline(s);
+  const [tl, ctx] = await Promise.all([loadTimeline(s),
+    // the state's context for this year (loaded only now, one small file per state)
+    s.kind === 'polity' && !s.missing ? contextSections(s.name, y) : s.kind === 'empire' ? contextSections('e:' + s.id, y) : []]);
   if (token !== state.token || state.sel !== s) return;
   const nodes = [head];
+  if (ctx.length) nodes.push(h('div.ctx-wrap', null, ctx));
   if (tl?.rulers?.length) {
     // in office this year: sovereigns first, then heads of government; one line per person and office
     const rankOf = (t) => (/emperor|empress|king|queen|monarch|sultan|caliph|shah|tsar|pope|pharaoh|khan|khagan|president(?! of the council)|shogun|doge|emir|prince|duke|consul|dictator|inca|tlatoani|ruler|stadtholder|general secretary|head of state|f\u00fchrer/i.test(t)
@@ -1277,6 +1281,13 @@ async function renderEvent() {
   if (e.w) links.append(h('a.ext', { href: wikiUrl(e.w), target: '_blank', rel: 'noopener' }, 'Read on Wikipedia'), '  ');
   if (/^Q\d+$/.test(e.i)) links.append(h('a.ext', { href: wikidataUrl(e.i), target: '_blank', rel: 'noopener' }, 'Wikidata'));
   nodes.push(links);
+  if (e.vt) nodes.push(h('p', null, e.vt, ' ', h('span.unver', { title: 'Written for GeoHistory from the source linked; checked against Wikidata where it has the date' }, 'AI-written'), ' ',
+    h('a.ext', { href: e.vs, target: '_blank', rel: 'noopener' }, 'Source')), e.vn ? h('p.note', null, e.vn) : null);
+  if (e.iv) nodes.push(h('p.note', null, `On the map: ${e.iv}.`));
+  const wuSlot = h('div.wu-slot');
+  nodes.push(wuSlot);
+  const blk = (await loadEventsIndex().catch(() => null))?.blocks?.find((b) => b.a <= e.y && e.y < b.b);
+  writeupFor(e, blk?.f).then((w) => { if (state.eventId === e.i) wuSlot.replaceWith(writeupBlock(w)); }).catch(() => wuSlot.remove());
   if (e.src) nodes.push(h('p.note', null, e.wx ? 'Text from ' : 'Listed in ', h('a', { href: e.src, target: '_blank', rel: 'noopener' }, "Wikipedia's article for this year"),
     e.wx ? ' (Wikipedia contributors, CC BY-SA 4.0), shortened to one sentence' : '',
     e.uv ? '. Its date could not be confirmed in Wikidata (unverified).' : e.wx && !/^Q\d+$/.test(e.i) ? '.' : ', and its date matches Wikidata.'));

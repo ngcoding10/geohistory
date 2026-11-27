@@ -28,6 +28,17 @@ python3 build_curated.py      # check tools/curated/* against Wikidata; data/dec
 python3 build_rulers.py       # offices without a country, curated ruler lists checked against Wikidata
 python3 build_events.py       # data/events/*, data/search.json, data/meta.json
 python3 build_history.py      # data/history/ruledby.json
+python3 context/states.py            # state context (round 9): the states and their shapes, map by map
+python3 context/fetch_hyde.py        # HYDE 3.2.1 population grids (range reads from the 5.3 GB archive; cached)
+python3 context/build_population.py  # population of every state and power over the map's own outlines
+python3 context/fetch_context.py     # Wikidata: government, religion, population, parties, movements
+python3 context/fetch_discoveries.py # Wikidata: discoveries and inventions with their places
+python3 context/build_discoveries.py # data/context/discoveries.json (placed on the map of their year)
+python3 context/build_context.py     # data/context/* (time slices per state and empire)
+python3 context/merge_discoveries.py # inventions into the event files (type 'invention')
+python3 context/fetch_cirrus.py 1    # English Wikipedia text from the CirrusSearch dump (about 41 GB streamed; cached)
+python3 context/writeup_queue.py     # tools/curated/writeups/queue.json (events by notability, tiers)
+python3 context/build_writeups.py    # data/writeups/* (written write-ups and Wikipedia excerpts, gzipped)
 python3 build_timelines.py    # data/timelines/* (one per territory and modern country)
 python3 ruler_coverage.py 150 # data/rulers/coverage.json (share of map years with a known ruler)
 python3 build_changes.py      # data/changes.json (curated, checked against Wikidata)

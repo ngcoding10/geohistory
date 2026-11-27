@@ -186,7 +186,8 @@ def main():
                 if maps[mi][0] <= d['y'] <= maps[mi][1]:
                     d['pw'] = pk
                     break
-    out = [d for d in out if d.get('cur') or d['p']]   # an unplaced Wikidata item is not shown anywhere
+    cur_keys = {(re.sub(r'\s*\(.*?\)', '', d['l']).lower().strip(), d['y']) for d in out if d.get('cur')}
+    out = [d for d in out if d.get('cur') or (d['p'] and (d['l'].lower(), d['y']) not in cur_keys)]   # an unplaced Wikidata item is not shown anywhere
     out.sort(key=lambda d: (not d.get('cur'), -d['sl']))
     write_json(os.path.join(DATA, 'context', 'discoveries.json'),
                {'fields': FIELDS, 'items': [[d.get(f) for f in FIELDS] for d in out]})

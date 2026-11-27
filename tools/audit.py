@@ -77,7 +77,12 @@ def main():
         if not line or line.startswith('#'):
             continue
         kind, *a = line.split('|')
-        if kind == 'T':
+        if kind in 'PGYLVD' and len(kind) == 1:
+            # the state context (round 9): population, government, ruling party, religion, movements, discoveries
+            sys.path.insert(0, os.path.join(TOOLS, 'context'))
+            from audit_context import check as context_check
+            ok, got = context_check(kind, a)
+        elif kind == 'T':
             y, text = int(a[0]), a[1]
             lst = sorted((e for e in events if e['y'] == y and e['t'] not in ('birth', 'death')), key=lambda e: (-e['s'], e.get('m') or 13))[:5]
             ok = any(text.lower() in ' | '.join([e['l'], e.get('w') or ''] + e.get('al', [])).lower() for e in lst)   # name, article title, aliases
