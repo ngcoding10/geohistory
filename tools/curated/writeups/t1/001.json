@@ -2081,5 +2081,62 @@
   ],
   "disagree": "Death tolls differ: 970,000 to 3 million Vietnamese (Wikipedia) against more than 3 million people in all, over half of them Vietnamese civilians (HISTORY.com).",
   "checked": null
+ },
+ "Q8683": {
+  "title": "Cold War",
+  "y": 1947,
+  "place": "Worldwide",
+  "paras": [
+   "The Cold War was the geopolitical rivalry between the United States and the Soviet Union and their allies, the capitalist Western Bloc and the communist Eastern Bloc, from the end of the Second World War until the dissolution of the Soviet Union in 1991. It was 'cold' because the two superpowers never fought each other directly; they backed opposing sides in proxy wars and competed through an arms race in conventional and nuclear weapons, the space race, espionage, propaganda, embargoes and even sport. The writer George Orwell used the term 'cold war' in a 1945 essay.",
+   "After 1945 the Soviet Union installed satellite governments in Eastern Europe and North Korea, dividing Europe and Germany by an 'Iron Curtain'. American policy was 'containment', set out by the diplomat George Kennan and declared as the Truman Doctrine in 1947; the Marshall Plan of 1948 helped rebuild Western Europe and NATO was founded in 1949, matched by the Soviet-led Warsaw Pact in 1955. In 1949 the Soviet Union tested its first atomic bomb and the communist People's Republic of China was founded. Early confrontations were the Berlin Blockade of 1948-1949 and the Korean War of 1950-1953.",
+   "As colonies won independence, many became battlefields of the Cold War, and both powers used aid to court non-aligned states. The Cuban Revolution of 1959 created the first communist government in the Western Hemisphere, and the Cuban Missile Crisis of 1962 is widely seen as the closest the world came to nuclear war. The Soviet Union crushed the Hungarian Revolution in 1956 and led the invasion of Czechoslovakia in 1968; the Vietnam War of 1955-1975 ended in North Vietnamese victory; and the Soviet Union and China fell out by 1961, coming close to war in 1969.",
+   "In the 1970s 'détente' brought American contacts with China from 1972 and treaties limiting nuclear arsenals, but the fall of US-allied governments in Iran and Nicaragua and the Soviet war in Afghanistan from 1979 raised tensions again. Mikhail Gorbachev, Soviet leader from 1985, widened political freedoms, which helped bring about the revolutions of 1989 in Eastern Europe and the collapse of the Soviet Union in 1991, ending the Cold War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Cold_War",
+    "title": "Cold War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/cold-war-history",
+    "title": "Cold War: Summary, Events, Dates, Start & End",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     3,
+     4,
+     5,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "The Cold War was the rivalry between the US and USSR and their blocs, from after WWII to 1991.",
+   "No direct fighting; proxy wars; arms race, space race, espionage, propaganda, embargoes, sports diplomacy.",
+   "Orwell used the term 'cold war' in a 1945 essay.",
+   "The USSR installed satellite governments in Eastern Europe and North Korea; the Iron Curtain; Kennan's containment and the Truman Doctrine (1947).",
+   "Marshall Plan 1948; NATO 1949; Warsaw Pact 1955; Soviet atomic bomb 1949; PRC founded 1949.",
+   "The Berlin Blockade (1948-1949) and the Korean War (1950-1953).",
+   "Decolonised states became battlefields; aid to non-aligned states; the Cuban Revolution (1959).",
+   "The Cuban Missile Crisis (1962) is widely seen as the closest to nuclear war.",
+   "Hungary 1956; Czechoslovakia 1968; Vietnam War 1955-1975; the Sino-Soviet split by 1961 and the border conflict of 1969.",
+   "Détente: US contacts with China from 1972, arms treaties; Iran, Nicaragua and Afghanistan (1979) raised tensions; Gorbachev from 1985; 1989 revolutions; the Soviet collapse in 1991."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
