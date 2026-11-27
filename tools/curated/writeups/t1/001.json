@@ -1683,5 +1683,121 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q8676": {
+  "title": "American Civil War",
+  "y": 1861,
+  "place": "The United States, mostly the South",
+  "paras": [
+   "The American Civil War, from 12 April 1861 to 26 May 1865, was fought between the Union (the North) and the Confederate States (the South), formed in 1861 by Southern states that seceded from the Union to preserve slavery. Decades of conflict over slavery came to a head when Abraham Lincoln, a Republican who opposed its spread into the western territories, won the presidential election of November 1860. Within three months seven slave states, South Carolina, Mississippi, Florida, Alabama, Georgia, Louisiana and Texas, had seceded and seized federal forts and property.",
+   "The war began on 12 April 1861, when Confederate artillery bombarded Fort Sumter in Charleston harbour after Lincoln had ordered it resupplied. Virginia, Arkansas, North Carolina and Tennessee then joined the Confederacy, which under its president Jefferson Davis numbered eleven states with about a third of the country's population; slave states on the border, such as Missouri, Kentucky and Maryland, did not secede. At the First Battle of Bull Run on 21 July 1861 the Confederates forced the Union army back towards Washington, ending hopes of a quick victory.",
+   "In the west the Union made lasting gains, taking New Orleans in 1862; in the east the war was long indecisive. With the Emancipation Proclamation of 1 January 1863 Lincoln declared the slaves in the rebel states free, making abolition a Union war aim. In 1863 the fall of Vicksburg split the Confederacy at the Mississippi, and Robert E. Lee's invasion of the North was defeated at Gettysburg. Ulysses S. Grant, given command of all Union armies in 1864, pressed the Confederacy on every front while a naval blockade tightened; William T. Sherman took Atlanta and marched to the sea at Savannah, and after a ten-month siege of Petersburg the Confederates abandoned their capital, Richmond.",
+   "Lee surrendered to Grant at Appomattox Court House on 9 April 1865. Five days later, on 14 April, Lincoln was shot by the Confederate sympathiser John Wilkes Booth at Ford's Theatre in Washington and died the next day. The Thirteenth Amendment abolished slavery and freed some four million people, and the country entered Reconstruction. Estimates of the soldiers killed range from about 620,000 to 750,000, making it the deadliest war fought on American soil."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/American_Civil_War",
+    "title": "American Civil War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/american-civil-war-history",
+    "title": "Civil War: Causes, Dates, Battles & Aftermath",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The war lasted from 12 April 1861 to 26 May 1865 between the Union and the Confederacy, formed by states that seceded to preserve slavery.",
+   "Lincoln, opposed to slavery's expansion, won the 1860 election.",
+   "Seven states (SC, MS, FL, AL, GA, LA, TX) seceded within three months and seized federal property.",
+   "The war began on 12 April 1861 with the bombardment of Fort Sumter after Lincoln ordered it resupplied; VA, AR, NC, TN then joined; border states did not secede.",
+   "The Confederacy under Jefferson Davis had eleven states and a third of the population; First Bull Run on 21 July 1861 ended hopes of a quick victory.",
+   "In the west the Union took New Orleans; the east was inconclusive.",
+   "The Emancipation Proclamation of 1 January 1863 made abolition a war aim.",
+   "Vicksburg (1863) split the Confederacy; Lee was defeated at Gettysburg; Grant got command of all armies in 1864; Sherman took Atlanta and Savannah; the siege of Petersburg; Richmond abandoned.",
+   "Lee surrendered at Appomattox on 9 April 1865; Booth shot Lincoln at Ford's Theatre on 14 April and he died the next day.",
+   "The Thirteenth Amendment abolished slavery, freeing four million; Reconstruction followed; 620,000-750,000 soldiers died."
+  ],
+  "disagree": "Estimates of the soldiers killed differ: about 700,000 (Wikipedia) within a range of 620,000 to 750,000 (HISTORY.com).",
+  "checked": null
+ },
+ "Q2763": {
+  "title": "The Holocaust",
+  "y": 1933,
+  "place": "Germany and German-occupied Europe",
+  "paras": [
+   "The Holocaust, in Hebrew the Shoah, was the genocide of the Jews of Europe by Nazi Germany and its allies and collaborators. Around six million Jews were murdered, about two-thirds of Europe's Jewish population, which in 1933 numbered some nine million. The United States Holocaust Memorial Museum dates the Holocaust era from January 1933, when Hitler and the Nazi Party came to power, to the defeat of Germany in May 1945; the systematic murder itself took place from 1941 to 1945.",
+   "Nazi ideology rested on racism, antisemitism and the pursuit of 'living space'. The instability of the Weimar Republic, fear of communism and the shock of the Great Depression made many Germans receptive to it. From 1933 the regime passed anti-Jewish laws and encouraged violence to drive German Jews to emigrate, culminating in the nationwide pogrom of Kristallnacht in November 1938. After the invasion of Poland in September 1939 the occupiers forced Jews into ghettos.",
+   "After the invasion of the Soviet Union in June 1941, German forces and local collaborators shot 1.5 to 2 million Jews, first men and prisoners of war, soon women and children too. By early 1942, after the Wannsee Conference chaired by Reinhard Heydrich, the 'Final Solution' to murder all the Jews of Europe was in operation. Deportation trains carried Jews to extermination camps in occupied Poland, Auschwitz-Birkenau, Treblinka, Bełżec, Sobibór, Chełmno and Majdanek, where most were killed in gas chambers, while others died in forced-labour camps of starvation, abuse and exhaustion or in medical experiments. The killing was most intense in Operation Reinhard, from March 1942 to November 1943, and most victims died in 1942, but it continued until the end of the war.",
+   "Nazi persecution also killed millions of non-Jewish civilians and prisoners of war, among them Roma and Soviet POWs, and the term is sometimes used to include them. After the war many survivors left Europe; relatively few perpetrators were tried, and the reparations paid have fallen short of what was lost."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/The_Holocaust",
+    "title": "The Holocaust",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust",
+    "title": "Introduction to the Holocaust",
+    "publisher": "Holocaust Encyclopedia, United States Holocaust Memorial Museum",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  ],
+  "claims": [
+   "The Holocaust was the genocide of European Jews by Nazi Germany and its collaborators; about six million were murdered.",
+   "About two-thirds of Europe's Jews; Europe's Jewish population was about nine million in 1933.",
+   "The USHMM dates the era from January 1933 to May 1945.",
+   "The genocide was carried out from 1941 to 1945; Weimar instability, fear of communism and the Depression made Germans open to Nazi ideas.",
+   "Nazi ideology rested on racism and 'living space'; anti-Jewish laws and violence aimed to force emigration; Kristallnacht in November 1938.",
+   "After the invasion of Poland, ghettos were set up.",
+   "After June 1941, 1.5-2 million Jews were shot, first men and POWs, then women and children.",
+   "By early 1942, after the Wannsee Conference under Heydrich, the Final Solution was implemented; the extermination camps named; gassing, forced labour, starvation, experiments.",
+   "Operation Reinhard (March 1942 - November 1943) was the most intense phase; most victims died in 1942; the killing went on until 1945.",
+   "Millions of non-Jewish civilians and POWs (Roma, Soviet POWs) were also killed; survivors emigrated; few trials; reparations fell short."
+  ],
+  "disagree": "Its dates: the USHMM speaks of the Holocaust era as 1933-1945, while the systematic murder is dated 1941-1945.",
+  "checked": null
  }
 }
