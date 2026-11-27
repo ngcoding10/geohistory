@@ -142,6 +142,11 @@ a { color: var(--accent); }
 .back:hover { color: var(--accent); }
 .lead { color: var(--ink-2); margin: 8px 0 0; line-height: 1.5; }
 p.lead.century { font: 400 17.5px/1.5 var(--serif); color: var(--ink); text-wrap: pretty; }
+.yearhead .yh-date { font-size: 13px; font-weight: 600; color: var(--ink-3); white-space: nowrap; }
+.yearhead .yh-d { display: block; color: var(--ink-2); font-size: 15.5px; }
+.yearhead .link.yh-top { font: inherit; font-weight: 600; }
+p.yearhead.none { font-style: italic; }
+h2.context { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); margin-top: 18px; }
 .about { margin: 10px 0 4px; line-height: 1.5; }
 .facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 14px 0 0; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 14px; }
 .facts dt { color: var(--ink-3); font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; padding-top: 2px; }
@@ -408,3 +413,131 @@ p.lead.century { font: 400 17.5px/1.5 var(--serif); color: var(--ink); text-wrap
 .wu-src { font-size: 13px; padding-left: 20px; margin: 0; }
 .wu-src li { margin-bottom: 4px; }
 .kdot.kinv { box-shadow: 0 0 0 2.5px color-mix(in srgb, var(--ring) 45%, transparent); }
+/* ======================================================================================================
+   Scholarly atlas finish (round 11): a quiet frame around the flag-filled map. Paper and charcoal, one muted
+   ink-blue accent, Alegreya for headings, thin rules instead of boxes and shadows, small capitals for labels,
+   tabular figures for years, no bouncy motion. Dark mode is an evening reading mode, not neon.
+   ====================================================================================================== */
+:root {
+  --paper: #f6f4ee; --paper-2: #ece8de; --card: #fbfaf6; --ink: #1f1d1a; --ink-2: #423e37; --ink-3: #67625a;
+  --line: #dedad0; --line-2: #c9c4b8; --accent: #2f4d6e; --accent-2: #3d5f84; --accent-ink: #fbfaf6;
+  --focus: #2f6db5; --ok: #4d6b52; --warn: #7a5a1c;
+  --shadow: 0 1px 2px rgba(30, 26, 20, .08);
+  --radius: 3px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #1b1a18; --paper-2: #23211e; --card: #201f1c; --ink: #e4dfd4; --ink-2: #c3bdb0; --ink-3: #969083;
+    --line: #34312c; --line-2: #45413a; --accent: #a9bdd3; --accent-2: #bccbdd; --accent-ink: #1b1a18; --focus: #9cc0ea; --ok: #8fae93;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .35);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #1b1a18; --paper-2: #23211e; --card: #201f1c; --ink: #e4dfd4; --ink-2: #c3bdb0; --ink-3: #969083;
+  --line: #34312c; --line-2: #45413a; --accent: #a9bdd3; --accent-2: #bccbdd; --accent-ink: #1b1a18; --focus: #9cc0ea; --ok: #8fae93;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .35);
+}
+body { font-size: 15px; font-variant-numeric: lining-nums; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: var(--radius); }
+.stage::after { display: none; }
+
+/* top bar: a hairline under a paper strip */
+.top { background: var(--paper); backdrop-filter: none; border-bottom-color: var(--line-2); }
+.brand { font: 500 21px/1 var(--serif); letter-spacing: .01em; }
+.search input { height: 34px; border-radius: var(--radius); background-color: var(--card); }
+.results { border-radius: var(--radius); }
+.results li { border-radius: 2px; }
+.chip { height: 30px; border-radius: var(--radius); background: transparent; font-size: 13.5px; border-color: var(--line-2); transition: none; }
+.chip[aria-pressed="true"] { background: var(--ink-2); border-color: var(--ink-2); }
+
+/* map furniture */
+.badge { border-radius: var(--radius); box-shadow: none; backdrop-filter: none; background: var(--card); font: 500 14.5px/1.3 var(--serif); font-variant-numeric: lining-nums tabular-nums; }
+.badge::before { width: 6px; height: 6px; }
+.badge-info, .map-status { border-radius: var(--radius); box-shadow: var(--shadow); }
+.maplibregl-ctrl-group { border-radius: var(--radius) !important; box-shadow: 0 0 0 1px var(--line-2) !important; }
+
+/* the panel: one hairline frame, no plate rule, no drop shadow */
+.panel { border-radius: var(--radius); border-color: var(--line-2); box-shadow: var(--shadow); }
+.panel::before { display: none; }
+.panel h1 { font-size: 29px; font-weight: 500; font-variant-numeric: lining-nums tabular-nums; }
+.panel h2 { font: 500 16px/1.2 var(--serif); text-transform: none; letter-spacing: .06em; font-variant: small-caps; font-variant-caps: all-small-caps; color: var(--ink-2); margin: 24px 0 8px; }
+.panel h2::after { background: var(--line-2); }
+.kicker { font: 500 15px/1.2 var(--serif); text-transform: none; font-variant-caps: all-small-caps; letter-spacing: .1em; color: var(--ink-3); }
+p.lead.century { font-size: 17px; }
+.note, .facts, .changes-list, .legend .a, .ev .m { font-variant-numeric: lining-nums tabular-nums; }
+.facts dt { font: 500 14.5px/1.3 var(--serif); text-transform: none; font-variant-caps: all-small-caps; letter-spacing: .06em; }
+/* curated / map note / unverified: footnote-style annotations, not stickers */
+.unver { border: 0; padding: 0; margin-left: 4px; font: 500 14px/1 var(--serif); text-transform: none; font-variant-caps: all-small-caps; letter-spacing: .05em; color: var(--ink-3); vertical-align: baseline; }
+.unver::before { content: "["; } .unver::after { content: "]"; }
+.link { font-weight: 500; text-decoration-thickness: 1px; text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+.strip { border: 0; border-top: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); border-radius: 0; background: none; padding: 8px 0 10px; }
+.occ { border-left: 1px solid var(--line-2); }
+.ev { border-radius: 2px; }
+.ev .dot { box-shadow: none; width: 7px; height: 7px; margin-top: 8px; }
+.ev .t { font-size: 16px; }
+.ev.today { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.more, .filters button, .pill-list button, .icon-btn { border-radius: var(--radius); }
+.filters button[aria-pressed="false"] { text-decoration: none; opacity: .5; }
+.skeleton { border-radius: 2px; animation-duration: 2s; }
+.sheet { border-radius: var(--radius); box-shadow: 0 8px 30px rgba(20, 16, 10, .18); }
+.flagbig { box-shadow: none; }
+
+/* the year opening the panel */
+.yearhead .link.yh-top { font-weight: 600; color: var(--ink); text-decoration-color: var(--line-2); }
+.yearhead .yh-date { font: 500 14px/1 var(--serif); font-variant-numeric: lining-nums tabular-nums; color: var(--ink-3); }
+.yearhead .yh-d { font-size: 15px; margin-top: 2px; }
+h2.context { margin-top: 22px; }
+.yearhead .yh-also-h { font-size: 13.5px; color: var(--ink-3); margin-top: 10px; }
+.yh-also { list-style: none; margin: 2px 0 0; padding: 0; font-size: 14.5px; }
+.yh-also li { padding: 2px 0; }
+.yh-also .yh-date { font-size: 13px; margin-left: 4px; }
+
+/* time bar: a ruled instrument */
+.timebar { background: var(--paper); border-top-color: var(--line-2); box-shadow: none; }
+.year-input { border-radius: var(--radius); font: 500 22px/1 var(--serif); font-variant-numeric: lining-nums tabular-nums; border-color: var(--line-2); }
+.go { border-radius: var(--radius); background: transparent; color: var(--ink); border: 1px solid var(--line-2); font-weight: 500; transition: none; }
+.go:hover { background: var(--paper-2); border-color: var(--ink-3); }
+.tbtn { border-radius: var(--radius); background: transparent; height: 36px; font-weight: 400; }
+.play { width: 38px; height: 38px; background: transparent; color: var(--ink); border: 1px solid var(--ink-3); box-shadow: none; }
+.play:hover { background: var(--paper-2); }
+.play[aria-pressed="true"] { background: var(--ink-2); color: var(--paper); border-color: var(--ink-2); }
+.speed select { border-radius: var(--radius); background: transparent; height: 36px; font-weight: 400; }
+.eras > span { font: 500 13px/13px var(--serif); text-transform: none; font-variant-caps: all-small-caps; letter-spacing: .08em; border-radius: 0; background: none !important; border-left: 1px solid var(--line-2); }
+.eras > span:first-child { border-left: 0; }
+.slider::-webkit-slider-runnable-track { height: 1px; background: var(--ink-3); }
+.slider::-moz-range-track { height: 1px; background: var(--ink-3); }
+.slider::-webkit-slider-thumb { width: 3px; height: 22px; margin-top: -10.5px; border-radius: 0; background: var(--accent); border: 0; box-shadow: 0 0 0 3px color-mix(in srgb, var(--paper) 85%, transparent); }
+.slider::-moz-range-thumb { width: 3px; height: 22px; border-radius: 0; background: var(--accent); border: 0; box-shadow: 0 0 0 3px var(--paper); }
+.slider:active::-webkit-slider-thumb { transform: none; }
+.ticks i b { font: 500 11px/1 var(--serif); font-variant-numeric: lining-nums tabular-nums; }
+.thumb-year { border-radius: 2px; font: 500 12.5px/1.3 var(--serif); font-variant-numeric: lining-nums tabular-nums; background: var(--ink-2); }
+
+/* the key: a legend card, ruled */
+.key { border-radius: var(--radius); box-shadow: var(--shadow); background: var(--card); border-color: var(--line-2); }
+.key-toggle { font: 500 16px/1 var(--serif); text-transform: none; font-variant-caps: all-small-caps; letter-spacing: .08em; }
+.key-body h3 { font: 500 14.5px/1 var(--serif); text-transform: none; font-variant-caps: all-small-caps; letter-spacing: .08em; border-top: 1px solid var(--line); padding-top: 8px; }
+.key-body h3:first-child { border-top: 0; padding-top: 0; }
+.kseg { display: inline-flex; margin: 2px 0 6px; border: 1px solid var(--line-2); border-radius: var(--radius); overflow: hidden; }
+.kseg button { border: 0; background: none; padding: 3px 9px; font-size: 12px; color: var(--ink-2); }
+.kseg button + button { border-left: 1px solid var(--line-2); }
+.kseg button[aria-checked="true"] { background: var(--ink-2); color: var(--paper); }
+.kffill { width: 26px; height: 16px; border: 1px solid #2a2219; background: linear-gradient(#fff 0 33%, #1c3f94 33% 66%, #d52b1e 66%); }
+.kflash { background: color-mix(in srgb, var(--card) 45%, #7fa0c4); box-shadow: inset 0 0 0 1.5px #3d5f84; border-radius: 1px; }
+.kcluster { background: var(--ink-2); }
+
+/* the state context panel and write-ups (context round): the same small-capital labels, footnote sources */
+.ctx > summary, .wu h3 { font: 500 16px/1.3 var(--serif); text-transform: none; font-variant-caps: all-small-caps; letter-spacing: .06em; }
+.ctx > summary .muted { font-variant-caps: normal; font-size: 13px; }
+.ctx-src, .wu-src { font-variant-numeric: lining-nums tabular-nums; }
+
+/* war markers: settle in, no stamp or ping */
+.warmk { animation: settle .4s ease-out both; }
+.warmk.battle::before { animation: none; opacity: .5; }
+@keyframes settle { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+@media (max-width: 899px) {
+  .panel { border-radius: var(--radius) var(--radius) 0 0; }
+  .panel h1 { font-size: 23px; }
+  .year-input { font-size: 18px; }
+  .tbtn { height: 38px; }
+}

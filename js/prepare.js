@@ -77,6 +77,7 @@ function labelLine(geoms, l) {
 export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
   const { groups, sig } = attachGroups(doc, emp, year);
   doc.groups = groups;
+  doc.fy = year;          // the year the flags are drawn for (js/flagfill.js)
   const pols = doc.polities;
   const featsOf = new Map();
   for (const f of doc.features) { const k = f.properties.k; if (!featsOf.has(k)) featsOf.set(k, []); featsOf.get(k).push(f); }

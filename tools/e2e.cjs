@@ -72,7 +72,7 @@ async function waitEvents(page) {
     ok(snap1776.src === 'clio' && snap1776.n > 100 && snap1776.usa, `the 1776 map comes from Cliopatria and shows the United States (${snap1776.n} territories, ${snap1776.under} from the older sketch map)`);
     // the full list, so a lower-ranked headline still counts
     if (await page.locator('#panelBody .more').count()) await page.locator('#panelBody .more').first().click();
-    ok(/The 1770s\./.test(await page.locator('#panelBody').innerText()), 'the 1776 panel opens with the curated summary of the 1770s');
+    ok(/Context: the 1770s/i.test(await page.locator('#panelBody').innerText()), 'the 1776 panel has the curated summary of the 1770s, under its own heading');
     const t1776 = await listText(page);
     ok(/Declaration of Independence/.test(t1776), '1776 list contains the Declaration of Independence');
     await page.screenshot({ path: path.join(SHOTS, 'desktop-1776.png') });
@@ -504,17 +504,25 @@ async function waitEvents(page) {
     await page.evaluate(() => { const t = window.__geo.travel; t.full = true; t.durScale = 6; window.__mid = []; window.__geo.travelTo(1992); });
     const px = [];
     const opac = [];
+    const fxSeen = { a: new Set(), e: new Set(), o: new Set() };
     for (let i = 0; i < 8; i++) {
       const buf = await page.screenshot({ clip: { x: mbox.x + spot[0], y: mbox.y + spot[1], width: 2, height: 2 } });
       px.push(buf.toString('base64'));
       opac.push(await page.evaluate(() => { const M = window.__geo.map, m = M.map; return ['A', 'B', 'C'].map((s) => m.getPaintProperty('fill0' + s, 'fill-opacity')).join(','); }));
+      const st = await page.evaluate(() => { const m = window.__geo.map.map; const out = []; for (let j = 0; j < 40; j++) { out.push(m.getFeatureState({ source: 'fx', id: j }), m.getFeatureState({ source: 'leave', id: j })); } return out; });
+      for (const x of st) for (const k of ['a', 'e', 'o']) if (typeof x[k] === 'number') fxSeen[k].add(x[k]);
       await page.waitForTimeout(250);
     }
     await page.waitForFunction(() => !window.__geo.travel.running, null, { timeout: 120000 });
     const lc = await page.evaluate(() => ({ ...window.__geo.map.lastChange, n: window.__geo.state.snapDoc.features.length }));
     ok(new Set(px).size === 1, `while 1991 -> 1992 runs, unchanged land (China) never changes colour (${new Set(px).size} distinct samples in ${px.length})`);
     ok(opac.every((o) => o.split(',').every((v) => v === '0' || v === '1')), `stacks are only ever fully on or off, never cross-faded (${[...new Set(opac)].join(' | ')})`);
-    ok(lc.gained >= 10 && lc.lost >= 1 && lc.gained < lc.n / 3, `1992: only the changed territories animate (${lc.lost} old shapes leave, ${lc.gained} of ${lc.n} new shapes flash in)`);
+    ok(lc.gained >= 10 && lc.lost >= 1 && lc.gained < lc.n / 3, `1992: only the changed territories animate (${lc.lost} old shapes leave, ${lc.gained} of ${lc.n} new shapes settle in)`);
+    const mid = (set) => [...set].filter((v) => v > 0 && v < 1).length;
+    const ez = await page.evaluate(() => { const c = window.__geo.map.lastChange; return { e: c.eases?.size || 0, f: c.fades?.size || 0, seen: 0 }; });
+    ok(ez.e >= 3 && ez.f >= 1, `1992: changed land eases in steps, no blinking (outline passed through ${ez.e} in-between values, the leaving land's fade ${ez.f}; sampled on screen: ${mid(fxSeen.e) + mid(fxSeen.o) + mid(fxSeen.a)})`);
+    const calm = await page.evaluate(() => { const m = window.__geo.map.map; return { pop: !!m.getLayer('fx-pop') || !!m.getLayer('fx-line'), us: m.getPaintProperty('us-flash', 'line-color'), edge: JSON.stringify(m.getPaintProperty('fx-edge', 'line-color')) }; });
+    ok(!calm.pop && !/^#fff/i.test(calm.us) && calm.edge === '["get","ce"]', `no white flash layers; the outline of changed land is in the new owner's colour (${calm.edge}, US ${calm.us})`);
     await page.evaluate(() => { window.__geo.travel.durScale = 1; });
     await page.goto(BASE + '?y=1938&v=flat');
     await waitH1(page, 'The world in 1938');
@@ -546,7 +554,7 @@ async function waitEvents(page) {
     await page.waitForFunction(() => /Battle/.test(document.querySelector('#panelBody .kicker')?.textContent || ''), null, { timeout: 30000 });
     const btText = await page.locator('#panelBody').innerText();
     ok(/Part of/i.test(btText) && (await page.evaluate(() => window.__geo.state.year)) === 1916, `clicking a battle marker opens it in 1916 with its war ("${btName.slice(0, 60)}")`);
-    ok(await page.locator('#key .key-toggle').isVisible() && /today's country's flag/.test(await page.locator('#key').innerText()) && /Badge = the flag at the time/.test(await page.locator('#key').innerText()) && /Occupied/.test(await page.locator('#key').innerText()), 'the map key is visible and explains states, empires, occupation, war and events');
+    ok(await page.locator('#key .key-toggle').isVisible() && /present-day successor|today's country's flag/.test(await page.locator('#key').innerText()) && /Badge = the flag at the time/.test(await page.locator('#key').innerText()) && /Occupied/.test(await page.locator('#key').innerText()), 'the map key is visible and explains states, empires, occupation, war and events');
     await page.locator('#key input[type=checkbox]').uncheck();
     await page.waitForTimeout(500);
     ok(await page.evaluate(() => [...document.querySelectorAll('.warwrap')].every((e) => getComputedStyle(e).display === 'none') && window.__geo.map.map.getLayoutProperty('war-edge', 'visibility') === 'none'), 'the key turns the war layer off');
@@ -608,7 +616,6 @@ async function waitEvents(page) {
     ok(b00.some((b) => b.n === 'Russian Empire' && /Flag of Russia/.test(b.file)), `1900 at world zoom: the Russian Empire has a badge with its flag (${b00.map((b) => b.n).join(', ')})`);
     ok(b00.every((b) => b.a >= 400000) && !b00.some((b) => /Luxembourg|Belgium|Netherlands|Switzerland|Denmark/.test(b.n)), '1900 at world zoom: no badge on small states');
     ok(fErr.length === 0, `no console errors on the flag checks${fErr.length ? ': ' + fErr.slice(0, 3).join(' | ') : ''}`);
-    await fCtx.close();
 
     ok(errors.length === 0, `no console errors on desktop${errors.length ? ': ' + errors.slice(0, 5).join(' | ') : ''}`);
 
@@ -634,6 +641,52 @@ async function waitEvents(page) {
       ok(errR.length === 0, `no console errors with reduced motion${errR.length ? ': ' + errR.slice(0, 3).join(' | ') : ''}`);
       await ctxR.close();
     }
+
+    // ---------------- round 11: flag fill (today's successor's flag over the land), badges stay the flag of the time ----------------
+    const fillAt = (lon, lat) => fp.evaluate(([x, y]) => window.__geo.map.fillAt(x, y), [lon, lat]);
+    const waitFill = () => fp.waitForFunction(() => { const M = window.__geo.map; return M._flagOn(M.active); }, null, { timeout: 30000 }).catch(() => {});
+    const r50 = await atYear(1950, world); await waitFill();
+    const ru50 = await fillAt(37.6, 55.75);
+    ok(ru50?.on && ru50.key === 'm:RU' && r50.some((b) => b.n === 'Soviet Union' && /Soviet Union/.test(b.file)), `1950: Moscow (${ru50?.name}) is drawn with the Russian flag fill (${ru50?.key}) and the Soviet Union keeps its Soviet badge`);
+    await fp.screenshot({ path: path.join(SHOTS, 'flagfill-1950.png') });
+    const r40 = await atYear(1940, europe); await waitFill();
+    const de40 = await fillAt(13.4, 52.5);
+    ok(de40?.on && de40.key === 'm:DE' && r40.some((b) => b.n === 'Germany' && /1935–1945/.test(b.file)), `1940: Berlin (${de40?.name}) has the German flag fill (${de40?.key}) and the swastika badge`);
+    await atYear(1900, world); await waitFill();
+    const in00 = await fillAt(77.2, 28.6);
+    ok(in00?.on && in00.key === 'm:GB', `1900: Delhi (${in00?.name}) is drawn with the UK flag fill (${in00?.key})`);
+    const ah00 = await fillAt(16.37, 48.2);
+    ok(ah00?.on && /^h:/.test(ah00.key || ''), `1900: Vienna (${ah00?.name}), with no obvious successor, is filled with its own flag of the time (${ah00?.key})`);
+    await fp.locator('#key .key-toggle[aria-expanded="false"]').click().catch(() => {});
+    await fp.locator('#key .kseg button', { hasText: 'Plain colours' }).click();
+    await fp.waitForTimeout(600);
+    const plain = await fillAt(77.2, 28.6);
+    await fp.locator('#key .kseg button', { hasText: 'Flag fill' }).click();
+    await waitFill();
+    const flagBack = await fillAt(77.2, 28.6);
+    ok(plain && !plain.on && flagBack?.on, `the key switches between flag fill and plain colours (plain: flags ${plain?.on ? 'on' : 'off'}; flag fill: ${flagBack?.on ? 'on' : 'off'})`);
+    ok(fErr.length === 0, `no console errors with flag fill${fErr.length ? ': ' + fErr.slice(0, 3).join(' | ') : ''}`);
+
+    // ---------------- round 11: the year panel opens with the year itself ----------------
+    for (const [q, label] of [['2009', '2009'], ['1969', '1969'], ['1914', '1914'], ['1492', '1492'], ['AD 800', '800'], ['300 BC', '300 BC']]) {
+      await fp.goto(BASE + '?y=' + encodeURIComponent(q));
+      await waitH1(fp, 'The world in ' + label);
+      await fp.waitForSelector('#panelBody .yearhead', { timeout: 60000 });
+      const yh = await fp.evaluate(() => {
+        const b = document.querySelector('#panelBody');
+        const head = b.querySelector('.yearhead'), ctxH = b.querySelector('h2.context');
+        return { y: +head.querySelector('.yh-top')?.dataset.y, date: head.querySelector('.yh-date')?.textContent || '', year: window.__geo.state.year,
+          first: [...b.children].findIndex((n) => n.classList.contains('yearhead')), ctx: ctxH ? [...b.children].indexOf(ctxH) : -1, ctxText: ctxH?.textContent || '' };
+      });
+      const dateYear = (yh.date.match(/(\d+(?: BC)?)(?: to .*)?$/) || [])[1];
+      ok(yh.y === yh.year && dateYear === label && yh.first >= 0 && (yh.ctx < 0 || yh.ctx > yh.first),
+        `${label}: the first headline is dated in ${label} itself ("${yh.date}"), and the overview comes after it under "${yh.ctxText}"`);
+    }
+    await fp.goto(BASE + '?y=5000%20BC');
+    await waitH1(fp, 'The world in 5,000 BC');
+    await fp.waitForSelector('#panelBody .yearhead', { timeout: 60000 });
+    ok(/No major recorded events for 5,000 BC in this dataset/.test(await fp.locator('#panelBody .yearhead').innerText()), 'a year with no events of its own says so plainly before any overview');
+    await fCtx.close();
 
     // ---------------- phones ----------------
     for (const vp of [{ width: 390, height: 844 }, { width: 360, height: 740 }]) {

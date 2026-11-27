@@ -125,7 +125,7 @@ async function init() {
   occupations = oc;
   drawTicks();
   await mapReady;
-  if (mapOk) { setupTravel(); map.setWarVisible(state.warOn); }
+  if (mapOk) { setupTravel(); map.setWarVisible(state.warOn); map.flagEmp = empires; map.setFillMode(fillMode()); }
   drawKey();
   await goToYear(state.year, { month: state.month, day: state.day, keepSel: false });
   if (state.modern) toggleModern(true);
@@ -421,6 +421,25 @@ function counts(events) {
 
 const listOpts = () => ({ onOpen: (e) => openEvent(e.i, { fly: true }), isToday, modernNames });
 
+/** The opening of the year panel: the year's own headline (the curated defining event of a famous year, else its
+ *  best-ranked event that is not a birth, death or long period) and the next few events dated in that same year.
+ *  A year with no event of its own says so; the overview below is never passed off as the year. */
+function yearHead(y, ranked) {
+  const own = ranked.filter((e) => e.y === y);
+  if (!own.length) return h('p.lead.yearhead.none', null, `No major recorded events for ${formatYear(y)} in this dataset.`);
+  const minor = (e) => e.t === 'birth' || e.t === 'death' || e.t === 'culture' || !!e.ya;   // (ya: an approximate date)
+  const top = own.find((e) => e.hl && (!state.month || isToday(e))) || own.find((e) => !minor(e) && (!state.month || isToday(e)))
+    || own.find((e) => !minor(e)) || own[0];
+  const rest = own.filter((e) => e !== top).sort((a, b) => minor(a) - minor(b)).slice(0, 3);
+  const open = (e) => () => openEvent(e.i, { fly: true });
+  return h('div.yearhead', null,
+    h('p.lead.century', null, h('button.link.yh-top', { type: 'button', onclick: open(top), 'data-y': top.y }, top.l), ' ', h('span.yh-date', null, eventDate(top)),
+      top.d && !['ruler', 'birth', 'death'].includes(top.t) ? h('span.yh-d', null, top.d.replace(/^./, (c) => c.toUpperCase()) + '.') : null),
+    rest.length ? h('p.lead.yh-also-h', null, `Also in ${formatYear(y)}`) : null,
+    rest.length ? h('ul.yh-also', null, rest.map((e) => h('li', null, h('button.link', { type: 'button', onclick: open(e) }, e.l),
+      e.m ? h('span.yh-date', null, ' ' + formatDate(null, e.m, e.dd).trim()) : null))) : null);
+}
+
 async function renderYear() {
   const token = state.token;
   const y = state.year;
@@ -447,12 +466,15 @@ async function renderYear() {
   nodes.push(h('p.note', null, `${all.length} ${all.length === 1 ? 'event' : 'events'} recorded · `,
     state.snap ? (state.snap.src === 'clio' ? `map borders in ${formatYear(state.year)}, approximate` : state.snap.cs ? `map borders on 1 July ${state.snap.y}` : `map borders as of ${formatYear(state.snap.y)}`) : 'no border map this early'));
 
+  // first what happened in this very year; the decade or century overview only after it, under its own heading
+  nodes.push(yearHead(y, shown.length ? shown : rank(all)));
   const cen = await getJSON('centuries.json').then((d) => d.centuries.find((c) => c.from <= y && c.to >= y)).catch(() => null);
   const dec = y >= 1500 ? await getJSON('decades.json').then((d) => d.decades.find((c) => c.from <= y && c.to >= y)).catch(() => null) : null;
-  if (dec) nodes.push(h('p.lead.century', null, h('b', null, `The ${dec.from}s. `), dec.text, h('span.unver', { title: dec.verified
+  if (dec) nodes.push(h('h2.context', null, `Context: the ${dec.from}s`), h('p.lead.century', null, dec.text, h('span.unver', { title: dec.verified
     ? 'Written for GeoHistory; every event it names is dated to this decade by Wikidata' : 'Written for GeoHistory; not every statement could be confirmed in Wikidata' },
   dec.verified ? 'curated' : 'curated, unverified')));
-  else if (cen) nodes.push(h('p.lead.century', null, cen.text, h('span.unver', { title: 'Curated summary, not checked against a dataset' }, 'curated')));
+  else if (cen) nodes.push(h('h2.context', null, `Context: ${cen.from >= 100 ? `the ${cen.from}s` : cen.to < 0 ? `${-cen.from} to ${-cen.to} BC` : `AD ${cen.from} to ${cen.to}`}`),
+    h('p.lead.century', null, cen.text, h('span.unver', { title: 'Curated summary, not checked against a dataset' }, 'curated')));
   for (const nt of await worldNotes(y)) {
     nodes.push(h('p.note.worldnote', null, h('span.unver', { title: 'A known limit of the border source, written for GeoHistory' }, 'map note'), ' ', nt.note, ' ',
       h('a', { href: nt.source, target: '_blank', rel: 'noopener' }, 'Source')));
@@ -587,10 +609,15 @@ async function updateFlags() {
   } catch (e) { console.warn('flags', e); return; }
   if (tok !== flagTok || y !== state.year || doc !== state.snapDoc) return;
   map.setBadges(badgeFeatures(doc, y, empires));
+  map.refreshFlags();
 }
+
+const fillMode = () => (getPref('fill', 'flag') === 'plain' ? 'plain' : 'flag');
 
 function drawKey() {
   renderKey(els.key, {
+    fill: fillMode(),
+    onFill: (mode) => { setPref('fill', mode); if (mapOk) map.setFillMode(mode); drawKey(); },
     doc: state.snapDoc, year: state.year, dark: isDark(), wars: state.wars, warOn: state.warOn,
     onWar: (on) => { state.warOn = on; setPref('wars', on); if (mapOk) map.setWarVisible(on); updateWar(state.year); if (state.view === 'year' && !state.sel) render(); },
     onOpenWar: (id) => openEvent(id, { fly: true, stay: true }),

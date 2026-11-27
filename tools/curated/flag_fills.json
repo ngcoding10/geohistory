@@ -1,0 +1,87 @@
+{
+ "about": "How the map's flag fill chooses a flag for a power (tools/build_flag_fills.py). A power with an obvious present-day successor is filled with that country's flag today (its colonies too); one without is filled with its own flag of the year shown (the badge flag), and with its plain colour when it had none. Rows here decide the debatable cases, each with its reason; the owner can move a power from one list to the other. Every other power follows the rules: its name is that of today's country, or at least 60% of the land it held (by area and years) lies in one of today's countries.",
+ "successor": {
+  "russia": [
+   "RU",
+   "The Russian Empire and the Soviet Union (one power on the map) are continued by the Russian Federation."
+  ],
+  "germany": [
+   "DE",
+   "Germany in every era (German Empire, Weimar, Nazi Germany): the same state, continued by today's Germany."
+  ],
+  "britain": [
+   "GB",
+   "England, Great Britain and the United Kingdom are one power on the map; its colonies take the UK flag."
+  ],
+  "ottoman": [
+   "TR",
+   "The Republic of Turkey is the Ottoman state's successor in law, though most Ottoman land lies elsewhere."
+  ],
+  "brandenburg-prussia": [
+   "DE",
+   "Prussia merged into Germany; most of its old land is Polish or Russian today, but Germany is its successor."
+  ],
+  "german confederation": [
+   "DE",
+   "A league of the German states, followed by the German Empire."
+  ],
+  "serbia and montenegro": [
+   "RS",
+   "Serbia is the legal successor of Serbia and Montenegro (the measured mapping picked Montenegro)."
+  ],
+  "spain": [
+   "ES",
+   "Spain (its empire takes the Spanish flag)."
+  ],
+  "portugal": [
+   "PT",
+   "Portugal (its empire takes the Portuguese flag)."
+  ],
+  "denmark": [
+   "DK",
+   "Denmark (with its North Atlantic lands)."
+  ],
+  "austria": [
+   "AT",
+   "Austria; its own flag is today's red-white-red, so the choice changes little."
+  ],
+  "tsardom of russia": [
+   "RU",
+   "Muscovy and the Tsardom are the direct forerunners of the Russian Empire and of Russia."
+  ]
+ },
+ "own": {
+  "holy roman empire": "A union of hundreds of states now in Germany, Austria, Czechia, Italy, the Low Countries and France: no single successor.",
+  "austria hungary": "A dual monarchy split among seven of today's countries in 1918.",
+  "habsburg austria": "The Habsburg monarchy's lands lie in many of today's countries.",
+  "mongols": "The Mongol Empire reached from Korea to Hungary; today's Mongolia holds a small part of it.",
+  "byzantium": "The Eastern Roman Empire is the forerunner of no one present-day state (Greece and Turkey both hold its core).",
+  "mughal": "The Mughal Empire covered today's India, Pakistan and Bangladesh.",
+  "venice": "The Republic of Venice ended in 1797; its lands are in Italy, Croatia, Greece, Cyprus and Montenegro.",
+  "republic of venice": "As Venice.",
+  "rome": "Rome ruled the whole Mediterranean; Italy is not its obvious successor.",
+  "macedonian empire": "Alexander's empire reached from Greece to India.",
+  "abbasid caliphate": "A caliphate across many of today's countries.",
+  "umayyad caliphate": "A caliphate from Spain to Central Asia.",
+  "seljuk dynasty": "A dynastic empire across Iran, Iraq, Anatolia and Central Asia.",
+  "timurid empire": "A dynastic empire across Iran and Central Asia.",
+  "golden horde": "A khanate now split among Russia, Ukraine and Kazakhstan.",
+  "khanate of the golden horde": "As the Golden Horde.",
+  "polish-lithuanian commonwealth": "A union now split among Poland, Lithuania, Belarus and Ukraine (the measured mapping picked Ukraine).",
+  "yugoslavia": "Split into seven states; none is its sole successor.",
+  "kingdom of serbs, croats and slovenes": "The first Yugoslavia: as Yugoslavia.",
+  "united provinces of central america": "A federation of five of today's countries.",
+  "kalmar union": "A union of Denmark, Norway and Sweden.",
+  "north sea empire": "Cnut's union of England, Denmark and Norway.",
+  "carolingian empire": "Charlemagne's empire is the forerunner of both France and Germany."
+ },
+ "own_names": {
+  "Austria-Hungary": "Drawn under the power 'austria' (also today's Austria), but the dual monarchy of 1867-1918 has no single successor: its own flag.",
+  "Austrian Empire": "The Habsburg empire of 1804-1867 spread over many of today's countries: its own flag.",
+  "Holy Roman Empire": "As the power of that name.",
+  "Byzantine Empire": "As 'byzantium'.",
+  "Mughal Empire": "As 'mughal'.",
+  "Mongol Empire": "As 'mongols'.",
+  "Republic of Venice": "As 'venice'."
+ }
+}

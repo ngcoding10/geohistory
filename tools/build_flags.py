@@ -35,7 +35,11 @@ import sys
 import urllib.parse
 from collections import Counter, defaultdict
 
+import common
 from common import DATA, TOOLS, read_json, write_json, sparql, qid, fetch, log
+
+# Commons asks scripts to describe themselves; a descriptive generic User-Agent (no names or contact details)
+common.UA = 'historical-map-build/1.0 (non-commercial; flag images)'
 
 CUR = os.path.join(TOOLS, 'curated', 'flags.json')
 OUT = os.path.join(DATA, 'flags')
@@ -177,8 +181,13 @@ def commons_info(files):
     return out
 
 
+CUR_REDRAWN = {}
+
+
 def lic_class(lic):
     l = (lic or '').lower()
+    if l.startswith('redrawn'):
+        return 'redrawn from description'
     if not l:
         return 'unknown'
     if 'public domain' in l or l.startswith('pd') or 'cc0' in l or 'cc-zero' in l:
@@ -198,7 +207,7 @@ def original(file):
     f = file.replace(' ', '_')
     h = hashlib.md5(f.encode()).hexdigest()
     url = f'https://upload.wikimedia.org/wikipedia/commons/{h[0]}/{h[:2]}/{urllib.parse.quote(f)}'
-    fetch(url, ext='.orig', min_gap=0.3, tries=3, max_wait=30)
+    fetch(url, ext='.orig', min_gap=1.0, tries=3, max_wait=30)
     from common import cache_path
     return cache_path(url, '.orig')
 
@@ -424,9 +433,28 @@ def thumb(file, width=330):
     h = hashlib.md5(f.encode()).hexdigest()
     ext = '.png' if f.lower().endswith('.svg') else ''
     url = f'https://upload.wikimedia.org/wikipedia/commons/thumb/{h[0]}/{h[:2]}/{urllib.parse.quote(f)}/{width}px-{urllib.parse.quote(f)}{ext}'
-    fetch(url, ext='.thumb', min_gap=0.5, tries=3, max_wait=30)
+    fetch(url, ext='.thumb', min_gap=1.0, tries=3, max_wait=30)
     from common import cache_path
     return cache_path(url, '.thumb')
+
+
+REDRAWN = os.path.join(TOOLS, 'curated', 'flags_redrawn')
+
+
+def redrawn_png(file):
+    """A flag redrawn here from its published description (tools/curated/flags_redrawn/, listed under 'redrawn'
+    in tools/curated/flags.json), rendered once with Chromium; None when there is no such drawing."""
+    svg = os.path.join(REDRAWN, file)
+    if not os.path.exists(svg):
+        return None
+    png = os.path.join(TOOLS, 'cache', 'redrawn_' + hashlib.sha1(file.encode()).hexdigest()[:12] + f'.r{RASTER_W}.png')
+    if not os.path.exists(png) or os.path.getmtime(png) < os.path.getmtime(svg):
+        import subprocess
+        lp = os.path.join(TOOLS, 'cache', 'rasterize_redrawn.json')
+        write_json(lp, [[svg, png, RASTER_W]])
+        root = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip()
+        subprocess.run(['node', os.path.join(TOOLS, 'rasterize_flags.cjs'), lp], env={**os.environ, 'NODE_PATH': root}, check=True)
+    return png
 
 
 def image(file):
@@ -435,10 +463,15 @@ def image(file):
     from PIL import Image
     path = None
     try:
+        if CUR_REDRAWN.get(file):
+            path = redrawn_png(file)
+            raise StopIteration
         src = original(file)
         path = src[:-5] + f'.r{RASTER_W}.png' if file.lower().endswith('.svg') else src
         if not os.path.exists(path):
             path = None
+    except StopIteration:
+        pass
     except Exception:                   # noqa: BLE001
         path = None
     if path is None:
@@ -584,7 +617,12 @@ def build_outputs(states, ent, claims, cur, flags):
     emb = emblems(states, ent, claims, flags)
     files = {r[2] for runs in flags.values() for r in runs} | {v[0] for v in emb.values()}
     info = commons_info(files)
-    rasterize([f for f in files if info.get(f) and not info[f]['missing']])
+    # flags Commons would not serve, redrawn here from their published description (simple geometric designs only)
+    CUR_REDRAWN.update(cur.get('redrawn', {}))
+    for f, r in CUR_REDRAWN.items():
+        if f in files:
+            info[f] = {'lic': r['source'], 'by': '', 'w': None, 'h': None, 'missing': False}
+    rasterize([f for f in files if info.get(f) and not info[f]['missing'] and f not in CUR_REDRAWN])
     imgs = {}
     for f in sorted(files):
         i = info.get(f)

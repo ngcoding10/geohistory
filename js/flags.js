@@ -117,8 +117,9 @@ export async function flagBlock(name, year, { label = null } = {}) {
         h('p.muted', null, `${label || name}, shown for ${formatYear(f.from)}${f.to !== f.from ? ` to ${formatYear(f.to)}` : ''}`),
         f.note ? h('p.note', null, f.note) : null,
         notes.length ? h('p.note.flagwarn', null, notes.join(' ')) : null,
-        h('p.note', null, h('a', { href: commonsUrl(f.file), target: '_blank', rel: 'noopener' }, 'Wikimedia Commons'),
-          ` · ${f.lic}${f.by ? ', ' + f.by : ''}`,
+        /^redrawn/.test(f.lic) ? h('p.note.flagwarn', null, 'Redrawn from description: Wikimedia Commons would not serve this image, so it was drawn here from the published description of its design (a simple geometric flag).') : null,
+        h('p.note', null, h('a', { href: commonsUrl(f.file), target: '_blank', rel: 'noopener' }, /^redrawn/.test(f.lic) ? 'The original on Wikimedia Commons' : 'Wikimedia Commons'),
+          /^redrawn/.test(f.lic) ? ' · redrawn from description' : ` · ${f.lic}${f.by ? ', ' + f.by : ''}`,
           /^Q\d+$/.test(f.item) ? [' · ', h('a', { href: `https://www.wikidata.org/wiki/${f.item}#P41`, target: '_blank', rel: 'noopener' }, 'Wikidata')] : ' · curated')));
     return box;
   }

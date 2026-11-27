@@ -1,7 +1,7 @@
 // Time travel. When the year runs (play, a step of several years, the timeline being dragged) the map passes
 // through every stored border map in between, in order, and each change is animated by the map (js/map.js
 // show(): only the land that changes hands moves; it switches to its new owner in a sweep from that owner's
-// side and flashes; unchanged land stays still and borders snap). What rests on the screen is always a stored
+// side and settles in calmly; unchanged land stays still and borders snap). What rests on the screen is always a stored
 // map for the year shown; nothing is morphed. While one change is shown, the next map is loaded in a third stack.
 //
 // Degrades: with prefers-reduced-motion there is no animation at all (the caller jumps). When frames come
@@ -58,7 +58,7 @@ export class Travel {
     if (wasPlay) { this._stopClock(); this._restYear = hist(Math.floor(this.clock)); }
     this.mode = null;
     if (this._running) return;     // the loop ends after the change on screen and calls onRest
-    if (wasPlay) { this.map.setTravel(false); this.onRest(this._restYear); }
+    if (wasPlay) { this.map.setTravel(false); this.map.setFlagHold?.(false); this.onRest(this._restYear); }
   }
 
   /** Stop without onRest (the caller goes elsewhere itself). */
@@ -136,7 +136,7 @@ export class Travel {
       const gap = after != null ? astro(after) - astro(stop) : 1;
       return Math.round(Math.max(140, Math.min(700, (850 * gap) / this.speed)));
     }
-    if (remaining <= 1) return this.scrub ? 300 : 520;
+    if (remaining <= 1) return this.scrub ? 300 : 900;
     return Math.round(Math.max(120, Math.min(this.scrub ? 260 : 420, 2600 / remaining)));
   }
 
@@ -165,6 +165,7 @@ export class Travel {
     this._restYear = null;
     this._key = this.keyNow();
     this.map.setTravel(true);
+    this.map.setFlagHold?.(this.mode === 'play' || this.scrub);
     let pending = null;
     let prevDoc = null;
     let restYear = this.cur;
@@ -192,7 +193,7 @@ export class Travel {
         if (this._silent || this.mode == null) { this.map.release(st.id); break; }
         const remaining = this.mode === 'to' ? this.stopsBetween(stop, this.target).length + 1 : 1;
         const dur = this._duration(stop, remaining);
-        const shown = this.map.show(st.id, st.doc, { dur });
+        const shown = this.map.show(st.id, st.doc, { dur, lite: this._degraded() });
         this.cur = stop;
         this._key = st.key;
         prevDoc = st.doc;
@@ -216,6 +217,7 @@ export class Travel {
         const end = this.mode === 'to' ? this.target : this._restYear ?? restYear;
         this.mode = null;
         this.map.setTravel(false);
+        this.map.setFlagHold?.(false);
         if (!silent) this.onRest(end);
       }
     }

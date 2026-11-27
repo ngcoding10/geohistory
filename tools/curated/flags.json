@@ -375,5 +375,17 @@
   "Flag of France (1976–2020).svg": "Flag of France.svg",
   "Flag of Italy (1946–2003).svg": "Flag of Italy.svg",
   "Flag of Togo (3-2).svg": "Flag of Togo.svg"
+ },
+ "redrawn": {
+  "Flag of Ethiopia (1991–1996).svg": {
+   "source": "redrawn from description",
+   "verified": "English Wikipedia, Flag of Ethiopia: 'Prior to 1996, the plain green, yellow and red banner was commonly used as a civil flag'; caption 'The civil flag of the Transitional Government of Ethiopia (1991–1996)'. Drawn as horizontal green, yellow and red bands, 1:2 (the ratio the article gives from 1987). Commons would not serve the file to the build script.",
+   "drawing": "tools/curated/flags_redrawn/Flag of Ethiopia (1991–1996).svg"
+  },
+  "Flag of Equatorial Guinea (without coat of arms).svg": {
+   "source": "redrawn from description",
+   "verified": "English Wikipedia, Flag of Equatorial Guinea: 'a horizontal tricolour with green, white, and red bands' with an isosceles blue triangle at the hoist, proportion 2:3; this file is that flag without the coat of arms on the white band. Commons would not serve the file to the build script.",
+   "drawing": "tools/curated/flags_redrawn/Flag of Equatorial Guinea (without coat of arms).svg"
+  }
  }
 }

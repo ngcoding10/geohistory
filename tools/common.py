@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOOLS = os.path.join(ROOT, 'tools')
 CACHE = os.path.join(TOOLS, 'cache')
 DATA = os.path.join(ROOT, 'data')
-UA = 'geohistory-data-builder/1.0'
+UA = 'historical-map-build/1.0 (non-commercial)'   # generic: no names or contact details in requests
 SPARQL = 'https://query.wikidata.org/sparql'
 
 _last = [0.0]

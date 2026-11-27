@@ -9,7 +9,7 @@ import { formatYear } from './year.js';
 
 const KEY_TYPES = ['war', 'battle', 'revolt', 'treaty', 'state', 'ruler', 'discovery', 'invention', 'other'];
 
-export function renderKey(el, { doc, year, dark, wars = [], warOn = true, onWar, onOpenWar }) {
+export function renderKey(el, { doc, year, dark, wars = [], warOn = true, onWar, onOpenWar, fill = 'flag', onFill }) {
   if (!el) return;
   const open = getPref('keyOpen', window.innerWidth >= 900);
   const groups = (doc?.groups || []).filter((g) => g.kind !== 'region').sort((a, b) => b.area - a.area);
@@ -27,9 +27,15 @@ export function renderKey(el, { doc, year, dark, wars = [], warOn = true, onWar,
   const sw = (bg, edge, extra = '') => h('span.ksw', { style: `background:${bg};border-color:${edge};${extra}` });
   const body = h('div.key-body', { id: 'keyBody', hidden: open ? null : true },
     h('h3', null, 'Land'),
+    h('div.kseg', { role: 'radiogroup', 'aria-label': 'How land is filled' },
+      [['flag', 'Flag fill'], ['plain', 'Plain colours']].map(([v, t]) => h('button', { type: 'button', role: 'radio', 'aria-checked': fill === v ? 'true' : 'false',
+        onclick: () => { if (fill !== v) onFill?.(v); } }, t))),
     h('ul', null,
-      row(h('span.ktrio', null, fills.map((t) => sw(t.fill, t.edge))),
-        'Colour = today\'s country\'s flag (the Russian Empire and the Soviet Union take Russia\'s). Neighbours with alike flags take a second colour.'),
+      fill === 'flag'
+        ? row(h('span.kffill', { 'aria-hidden': 'true' }),
+          'Fill = the flag of the state\'s present-day successor (the Russian Empire and the Soviet Union take Russia\'s; colonies take their ruler\'s). Where there is no obvious successor, its own flag of the time; with no flag, a plain colour.')
+        : row(h('span.ktrio', null, fills.map((t) => sw(t.fill, t.edge))),
+          'Colour = today\'s country\'s flag (the Russian Empire and the Soviet Union take Russia\'s). Neighbours with alike flags take a second colour.'),
       row(h('span.kflag', { 'aria-hidden': 'true' }, h('i'), h('i'), h('i')),
         'Badge = the flag at the time, beside the name (more as you zoom in). Click the land for it, larger, with its dates.'),
       row(h('span.ksw.kemp', { style: `--p1:${p1};--p2:${p2};border-color:${empT.edge}` }),
@@ -37,7 +43,7 @@ export function renderKey(el, { doc, year, dark, wars = [], warOn = true, onWar,
       row(h('span.ksw.kunder', { style: `background:${under}` }, h('i', null, 'Aa')),
         'Pale, italic name: peoples, or rough borders.'),
       row(h('span.ksw.khatch', { style: `--hc:${hc}` }), 'Occupied (lines in the occupier\'s colour).'),
-      row(h('span.kflash'), 'Flash: land that just changed hands.')),
+      row(h('span.kflash'), 'Lighter, outlined: land that just changed hands (it settles in).')),
     h('h3.kwar-h', null, 'War',
       h('label.kswitch', null, h('input', { type: 'checkbox', checked: warOn ? true : null, onchange: (e) => onWar?.(e.target.checked) }), h('span', null, 'Show'))),
     h('ul', { class: warOn ? '' : 'koff' },

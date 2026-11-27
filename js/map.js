@@ -1,11 +1,12 @@
 // The map: MapLibre GL with only our own data (no tile servers). Globe and flat views; territories filled by
 // ruling power; empires drawn as one at world zoom and as their parts when zoomed in; peoples without a state
 // as soft regional tints; a sea layer above the territories so that every coast is the same crisp line;
-// year changes that animate only the land that changed hands (no cross-fade: borders snap, gained land
-// flashes); US states and colonies; occupation hatching; war markers; event markers.
+// year changes that animate only the land that changed hands (no whole-map cross-fade: borders snap, each
+// changed piece settles in calmly, sweeping out from its new owner); flag fill (js/flagfill.js); US states and colonies; occupation hatching; war markers; event markers.
 import { typeColor, TYPES } from './types.js';
 import { tones, hexToLch, lchToHex } from './groups.js';
 import { makeAreaTest } from './geo.js';
+import { loadFills, fillsReady, fillsOf, ensureImages, extentFor, extentOk, paint } from './flagfill.js';
 
 const maplibregl = window.maplibregl;
 const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -119,9 +120,28 @@ export class HistoryMap extends EventTarget {
         paint: { 'line-color': ['get', 'ce'], 'line-opacity': 0, 'line-width': zoomIn(Z_SPLIT, 7, 0.6, 1.3), 'line-opacity-transition': { duration: 0 } } });
     }
 
+    // flag fill: one canvas per stack (js/flagfill.js), drawn over the plain fills, with dark borders on top
+    // (two neighbours under the same flag stay apart); a fourth canvas holds the leaving land during a change
+    this._fc = {};
+    const mkCanvas = (sid) => {
+      const cv = document.createElement('canvas');
+      cv.width = 16; cv.height = 16;
+      m.addSource('fsrc' + sid, { type: 'canvas', canvas: cv, animate: false, coordinates: [[-180, 85], [180, 85], [180, -85], [-180, -85]] });
+      m.addLayer({ id: 'flag' + sid, type: 'raster', source: 'fsrc' + sid,
+        paint: { 'raster-opacity': 0, 'raster-resampling': 'linear', 'raster-fade-duration': 0, 'raster-opacity-transition': { duration: 0 },
+          'raster-brightness-max': this.dark ? 0.8 : 1, 'raster-saturation': this.dark ? -0.15 : 0 } });   // evening reading: flags dimmed in dark mode
+      this._fc[sid] = { cv, ext: null, key: null };
+    };
+    for (const id of STACKS) mkCanvas(id);
+    for (const id of STACKS) {
+      m.addLayer({ id: 'fline' + id, type: 'line', source: 't' + id, filter: STATE, layout: { 'line-join': 'round' },
+        paint: { 'line-color': this.dark ? '#0b0906' : '#2a2219', 'line-opacity': 0, 'line-width': zoomIn(1, 6, 0.9, 1.8), 'line-opacity-transition': { duration: 0 } } });
+    }
+
     // land of the map being left that has not changed hands yet, over the new map during a change (show())
     m.addSource('leave', { type: 'geojson', data: EMPTY, tolerance: 0.2, buffer: 8 });
-    const gone = ['case', ['boolean', ['feature-state', 'gone'], false], 0, 1];
+    // per-feature opacity 'o' (1 until its moment, then easing to 0), stepped by show()
+    const gone = ['coalesce', ['feature-state', 'o'], 1];
     m.addLayer({ id: 'leave-line', type: 'line', source: 'leave', filter: ['!=', ['get', 'u'], 1], layout: { 'line-join': 'round' },
       paint: { 'line-color': ['get', 'ce'], 'line-opacity': gone, 'line-width': zoomIn(1, 6, 1.7, 3) } });
     m.addLayer({ id: 'leave-fill', type: 'fill', source: 'leave',
@@ -137,19 +157,19 @@ export class HistoryMap extends EventTarget {
     m.addLayer({ id: 'col-fill', type: 'fill', source: 'col', filter: NONE,
       paint: { 'fill-color': ['get', 'c'], 'fill-opacity': 0.85, 'fill-outline-color': this.dark ? 'rgba(0,0,0,0.3)' : 'rgba(60,50,40,0.22)' } });
 
-    // the flash on land that has just changed hands (js/map.js show()): a light fill and a bold outline,
-    // switched on and off by feature state, never faded
+    // the leaving land in flag fill (its old flags), over the new map during a change
+    mkCanvas('X');
+    // land that has just changed hands (show()): drawn a little lighter in its new colour (or over its new
+    // flag), settling to the final look, with a thin outline in the new owner's colour that eases in and out.
+    // Per-feature values stepped by show(); no white, no blinking.
     m.addSource('fx', { type: 'geojson', data: EMPTY });
-    const fxs = ['coalesce', ['feature-state', 'f'], 0];
-    m.addLayer({ id: 'fx-cover', type: 'fill', source: 'fx', paint: { 'fill-color': ['get', 'oc'], 'fill-opacity': ['match', fxs, 3, 1, 0] } });
-    m.addLayer({ id: 'fx-pop', type: 'fill', source: 'fx', paint: { 'fill-color': '#ffffff', 'fill-antialias': false,
-      'fill-opacity': ['match', fxs, 1, this.dark ? 0.32 : 0.5, 0] } });
-    m.addLayer({ id: 'fx-line', type: 'line', source: 'fx', layout: { 'line-join': 'round' },
-      paint: { 'line-color': this.dark ? '#fff6e0' : '#ffffff', 'line-width': zoomIn(1, 6, 2.6, 4.5), 'line-opacity': ['match', fxs, 1, 1, 2, 0.95, 0] } });
+    const fv = (k) => ['coalesce', ['feature-state', k], 0];
+    m.addLayer({ id: 'fx-cover', type: 'fill', source: 'fx', paint: { 'fill-color': ['get', 'oc'], 'fill-opacity': fv('c'), 'fill-antialias': false } });
+    m.addLayer({ id: 'fx-tint', type: 'fill', source: 'fx', paint: { 'fill-color': ['get', 'lc'], 'fill-opacity': fv('a'), 'fill-antialias': false } });
     m.addLayer({ id: 'fx-edge', type: 'line', source: 'fx', layout: { 'line-join': 'round' },
-      paint: { 'line-color': ['get', 'ce'], 'line-width': zoomIn(1, 6, 1, 1.6), 'line-opacity': ['match', fxs, 1, 1, 2, 1, 0] } });
+      paint: { 'line-color': ['get', 'ce'], 'line-width': zoomIn(1, 6, 1.4, 2.4), 'line-opacity': fv('e') } });
     m.addLayer({ id: 'us-flash', type: 'line', source: 'us', filter: NONE, layout: { 'line-join': 'round' },
-      paint: { 'line-color': '#ffffff', 'line-width': 3 } });
+      paint: { 'line-color': c.us, 'line-width': 2, 'line-opacity': 0, 'line-opacity-transition': { duration: 0 } } });
 
     // war: the land where this year's shown battles were fought, edged in red (a slow pulse at rest)
     this._warCol = this.dark ? '#ff6b57' : '#d9261c';
@@ -297,6 +317,7 @@ export class HistoryMap extends EventTarget {
       m.getCanvas().style.cursor = hit ? 'pointer' : '';
     });
     m.on('click', (e) => this._click(e));
+    m.on('moveend', () => this._flagsAfter());
   }
 
   /** setData that never overlaps another setData on the same source: when a second update arrives while the
@@ -384,7 +405,7 @@ export class HistoryMap extends EventTarget {
     const tok = (this._snapTok = (this._snapTok || 0) + 1);
     const id = await this.stage(doc);
     if (tok !== this._snapTok) { this.release(id); return; }   // a later call took over
-    await this.show(id, doc, { dur: reduceMotion() || this.snapshotYear == null || !fade ? 0 : 560 });
+    await this.show(id, doc, { dur: reduceMotion() || this.snapshotYear == null || !fade ? 0 : 900 * (this.durScale || 1) });
   }
 
   /** Load a document into a hidden stack and wait until its tiles are in. Resolves with the stack id, which is
@@ -405,6 +426,8 @@ export class HistoryMap extends EventTarget {
       const poll = () => (this.map.isSourceLoaded('t' + id) || performance.now() - t0 > 8000 ? res() : setTimeout(poll, 16));
       setTimeout(poll, 0);
     });
+    if (!this._flagHold && this._wantFlags()) await this._drawFlags(id, doc);
+    else Object.assign(this._fc[id], { doc, ok: false });
     return id;
   }
 
@@ -421,6 +444,11 @@ export class HistoryMap extends EventTarget {
     }
     m.setPaintProperty('ufill' + sid, 'fill-opacity', v(this.dark ? 0.85 : 0.9));
     m.setPaintProperty('inner' + sid, 'line-opacity', mode === 'on' ? ['interpolate', ['linear'], ['zoom'], Z_SPLIT - 0.5, 0, Z_SPLIT + 0.4, 0.6] : 0);
+    const fl = mode === 'on' && this._flagOn(sid);
+    m.setPaintProperty('flag' + sid, 'raster-opacity-transition', { duration: 0 });
+    m.setPaintProperty('flag' + sid, 'raster-opacity', fl ? 1 : 0);
+    m.setPaintProperty('fline' + sid, 'line-opacity', fl ? 0.8 : 0);
+    if (fl) this._upload(sid);
     m.setPaintProperty('uline' + sid, 'line-opacity', mode === 'on' ? ['interpolate', ['linear'], ['zoom'], Z_PEOPLES - 0.4, 0, Z_PEOPLES + 0.4, 0.45] : 0);
   }
 
@@ -500,54 +528,100 @@ export class HistoryMap extends EventTarget {
 
   /** Show a staged stack. Without `dur`, at once. With it, only the land that changed hands moves: the new map
    *  is laid under the old one at once, every unchanged part of the old map drops away in the same frame (the
-   *  two are identical there), and each changed part of the old map is taken away at its own moment, sweeping
-   *  out from the new owner; as it goes the land under it flashes (a light fill and a bold outline that switch
-   *  off in two steps). Borders snap; nothing is cross-faded. Resolves when the change is over. */
-  show(id, doc, { dur = 0 } = {}) {
+   *  two are identical there), and each changed part of the old map eases away at its own moment, sweeping out
+   *  from the new owner. The land under it is shown a little lighter in its new colour (or over its new flag)
+   *  and settles to its final look, with a thin outline in the new owner's colour that eases in and out.
+   *  Borders snap; nothing else moves. Each piece takes about 55% of `dur` (400-700 ms for a single change at
+   *  Normal speed). `lite` (a slow device): the old land just eases away. Resolves when the change is over. */
+  show(id, doc, { dur = 0, lite = false } = {}) {
     const m = this.map;
     this._held?.delete(id);
     this._finish();
     const prev = this.active;
     const oldDoc = this._docs?.[prev];
     (this._docs ||= {})[id] = doc;
-    const stats = { lost: 0, gained: 0 };
+    const stats = { lost: 0, gained: 0, eases: new Set(), fades: new Set() };   // eases/fades: in-between values stepped through (checks)
     if (prev !== id) {
       // the new map goes directly under the old one
       const order = ['ufill', 'uline'];
       for (let s = 0; s < SLOTS; s++) order.push('glow' + s, 'line' + s, 'fill' + s);
       order.push('inner');
       for (const l of order) m.moveLayer(l + id, 'ufill' + prev);
+      m.moveLayer('flag' + id, 'flag' + prev);
       this._mode(id, 'on');
       const d = dur ? this.diff(oldDoc, doc) : null;
       if (d && (d.lost.length || d.gained.length)) {
         stats.lost = d.lost.length; stats.gained = d.gained.length;
-        // the old map's changed land is copied to the 'leave' layers (drawn over the new map); the old stack
-        // goes once they are in, so no frame shows the new map there early
-        const leave = d.lost.map((i, j) => ({ type: 'Feature', id: j, geometry: oldDoc.features[i].geometry, properties: { ...oldDoc.features[i].properties } }));
-        const fx = d.gained.map((i, j) => ({ type: 'Feature', id: j, geometry: doc.features[i].geometry, properties: { ce: doc.features[i].properties.ce, oc: d.oc.get(i) || doc.features[i].properties.c } }));
+        // flags on both maps: the leaving land is drawn with its old flags into the 'X' canvas; else the old
+        // map's changed land is copied to the 'leave' layers. Either is drawn over the new map, and the old
+        // stack goes once they are in, so no frame shows the new map there early.
+        const flagged = this._flagOn(id) && this._flagOn(prev);
+        const ffx = flagged ? this._fc[prev] : null;
+        const leave = flagged ? [] : d.lost.map((i, j) => ({ type: 'Feature', id: j, geometry: oldDoc.features[i].geometry, properties: { ...oldDoc.features[i].properties } }));
+        const light = (hex) => { try { const [L, C, H] = hexToLch(hex); return lchToHex([Math.min(0.97, L + (1 - L) * 0.45), C * 0.7, H]); } catch { return hex; } };
+        const paper = this.dark ? '#3a352c' : '#f6f1e4';
+        const fx = d.gained.map((i, j) => {
+          const p = doc.features[i].properties;
+          return { type: 'Feature', id: j, geometry: doc.features[i].geometry,
+            properties: { ce: p.ce, oc: d.oc.get(i) || p.c, lc: flagged && this._fc[id].fills?.has(i) ? paper : light(p.c) } };
+        });
         m.removeFeatureState({ source: 'leave' });
         m.removeFeatureState({ source: 'fx' });
-        const span = dur * 0.6, flash = Math.max(110, Math.min(320, dur * 0.4));
-        const evs = [];
-        d.lost.forEach((i, j) => evs.push([d.t.get('o' + i) * span, () => m.setFeatureState({ source: 'leave', id: j }, { gone: true })]));
-        d.gained.forEach((i, j) => {
-          const t = d.t.get('n' + i) * span;
-          evs.push([t, () => m.setFeatureState({ source: 'fx', id: j }, { f: 1 })]);
-          evs.push([t + flash * 0.4, () => m.setFeatureState({ source: 'fx', id: j }, { f: 2 })]);
-          evs.push([Math.min(dur - 1, t + flash), () => m.setFeatureState({ source: 'fx', id: j }, { f: 0 })]);
-        });
-        evs.sort((a, b) => a[0] - b[0]);
-        const run = this._run = { evs, i: 0, t0: null, prev, nfx: fx.length };
-        Promise.all([this._load('leave', leave), this._load('fx', fx)]).then(() => {
+        const W = Math.round(Math.max(90, Math.min(700 * (this.durScale || 1), dur * 0.55)));
+        const span = Math.max(0, dur - W);
+        // items: [start, kind, j]; kinds: 'o' a leaving piece, 'n' a gained piece
+        const items = [];
+        d.lost.forEach((i, j) => items.push([d.t.get('o' + i) * span, 'o', j, i]));
+        // (with flags the leaving land is already in the 'X' canvas in its old flags: no plain-colour cover)
+        d.gained.forEach((i, j) => items.push([d.t.get('n' + i) * span, 'n', j, i, !flagged && d.oc.has(i) && d.t.get('n' + i) > 0]));
+        items.sort((a, b) => a[0] - b[0]);
+        const run = this._run = { items, i: 0, act: [], t0: null, prev, nfx: fx.length, nleave: leave.length, W, lite: lite || dur < 200, ffx, alpha: new Map(), dirty: false };
+        const loads = [this._load('leave', leave), this._load('fx', fx)];
+        if (ffx) {
+          // the leaving land, in its old flags (or its plain colour where it had none), at full strength
+          const X = this._fc.X;
+          X.ext = ffx.ext;
+          run.lostIdx = d.lost;
+          run.plain = new Map(d.lost.map((i) => [i, oldDoc.features[i].properties.c]));
+          run.paintX = () => paint(X.cv, oldDoc, ffx.fills, ffx.imgs, ffx.ext, { which: d.lost, alpha: run.alpha, plain: run.plain });
+          run.paintX();
+          m.getSource('fsrcX').setCoordinates(ffx.ext.coords);
+          m.getSource('fsrcX').play();
+          m.setPaintProperty('flagX', 'raster-opacity', 1);
+          loads.push(new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
+        }
+        Promise.all(loads).then(() => {
           if (this._run !== run) return;
-          d.gained.forEach((i, j) => { if (d.oc.has(i) && d.t.get('n' + i) > 0) m.setFeatureState({ source: 'fx', id: j }, { f: 3 }); });
+          if (!flagged) d.gained.forEach((i, j) => { if (d.oc.has(i) && d.t.get('n' + i) > 0) m.setFeatureState({ source: 'fx', id: j }, { c: 1 }); });
           this._mode(prev, 'off');
           run.t0 = performance.now();
+          const ease = (x) => (x <= 0 ? 0 : x >= 1 ? 1 : x * x * (3 - 2 * x));
+          const q = (v) => Math.round(v * 16) / 16;      // stepped: a feature state is set only when its step changes
           const tick = () => {
             if (this._run !== run) return;
             const now = performance.now() - run.t0;
-            while (run.i < run.evs.length && run.evs[run.i][0] <= now) run.evs[run.i++][1]();
-            if (run.i < run.evs.length) run.raf = requestAnimationFrame(tick);
+            while (run.i < run.items.length && run.items[run.i][0] <= now) run.act.push({ it: run.items[run.i++], last: {} });
+            run.act = run.act.filter((a) => {
+              const [t0, kind, j, i, covered] = a.it;
+              const u = Math.min(1, (now - t0) / run.W);
+              const out = q(1 - ease(u / 0.4));
+              let st;
+              if (kind === 'o') {
+                if (run.ffx) { if (run.alpha.get(i) !== out) { run.alpha.set(i, out); run.dirty = true; } }
+                else st = { o: out };
+                if (st && st.o !== a.last.o) m.setFeatureState({ source: 'leave', id: j }, st);
+                if (out > 0 && out < 1) stats.fades.add(out);
+                a.last = st || a.last;
+              } else {
+                const s2 = run.lite ? { c: covered ? out : 0, a: 0, e: 0 }
+                  : { c: covered ? out : 0, a: q(u < 0.3 ? 0.55 : 0.55 * (1 - ease((u - 0.3) / 0.7))), e: q(0.85 * Math.sin(Math.PI * u)) };
+                if (s2.c !== a.last.c || s2.a !== a.last.a || s2.e !== a.last.e) { m.setFeatureState({ source: 'fx', id: j }, s2); a.last = s2; if (s2.e > 0 && s2.e < 0.85) stats.eases.add(s2.e); }
+              }
+              return u < 1;
+            });
+            if (run.dirty) { run.dirty = false; run.paintX(); }
+            if (run.i < run.items.length || run.act.length) run.raf = requestAnimationFrame(tick);
+            else if (run.ffx) m.getSource('fsrcX').pause();
           };
           tick();
         });
@@ -563,7 +637,7 @@ export class HistoryMap extends EventTarget {
     if (dur) this._lblT = setTimeout(names, dur * 0.3); else names();
     this._sel();
     this._warLayers();
-    if (!this._run && prev !== id) { this._out = null; return Promise.resolve(); }
+    if (!this._run && prev !== id) { this._out = null; this._flagsAfter(); return Promise.resolve(); }
     // the change lasts `dur` from the moment the leaving land is drawn (at most 400 ms after this call)
     const run = this._run;
     return new Promise((res) => {
@@ -584,19 +658,129 @@ export class HistoryMap extends EventTarget {
     while (!this.map.isSourceLoaded(id) && performance.now() - t0 < 400) await new Promise((r) => setTimeout(r, 8));
   }
 
-  /** End the change on screen at once: the old map goes, the flashes switch off. */
+  /** End the change on screen at once: the old map goes, the overlays switch off. */
   _finish() {
     const r = this._run;
     if (r) {
       cancelAnimationFrame(r.raf);
       this._run = null;
       this._mode(r.prev, 'off');
-      for (let j = 0; j < r.nfx; j++) this.map.setFeatureState({ source: 'fx', id: j }, { f: 0 });
+      for (let j = 0; j < r.nfx; j++) this.map.setFeatureState({ source: 'fx', id: j }, { c: 0, a: 0, e: 0 });
       this.map.getSource('leave').setData(EMPTY);
       this.map.getSource('fx').setData(EMPTY);
+      if (r.ffx) { this.map.setPaintProperty('flagX', 'raster-opacity', 0); this.map.getSource('fsrcX').pause(); }
+      this._flagsAfter();
     }
     clearTimeout(this._endT);
     this._out = null;
+  }
+
+  // ---------------------------------------------------------------- flag fill
+  /** 'flag' (default) or 'plain' (round 9's colours). */
+  setFillMode(mode) {
+    this.fillMode = mode;
+    if (mode === 'flag') loadFills().then(() => this._redrawActive(true)).catch((e) => console.warn('flag fill', e));
+    this._fillStyle();
+    for (const s of STACKS) this._mode(s, s === this.active || s === this._out ? 'on' : 'off');
+  }
+
+  /** While the years play, flags are not drawn (each map would take a canvas redraw): plain colours, then flags
+   *  again when the map rests. */
+  setFlagHold(on) {
+    this._flagHold = on && !this.flagsInPlay;
+    if (!on) this._flagsAfter();
+  }
+
+  _wantFlags() { return this.fillMode !== 'plain' && fillsReady(); }
+
+  _flagOn(sid) {
+    const f = this._fc?.[sid];
+    return !!(f && this._wantFlags() && f.doc && f.doc === this._docs?.[sid] && f.ok);
+  }
+
+  /** Text halos a little wider over busy flags; US state and colony fills give way to the flags. */
+  _fillStyle() {
+    const m = this.map;
+    const on = this.fillMode !== 'plain';
+    for (const l of ['lbl-xs', 'lbl-s', 'lbl-part', 'lbl-m', 'lbl-l', 'lbl-l-fb', 'lbl-l-line', 'lbl-emp', 'lbl-emp-fb', 'lbl-emp-line']) {
+      if (!m.getLayer(l)) continue;
+      const base = /lbl-(l|emp)/.test(l) ? 1.4 : 1.2;
+      m.setPaintProperty(l, 'text-halo-width', on ? base + 0.8 : base);
+      m.setPaintProperty(l, 'text-halo-blur', on ? 0.3 : 0.6);
+    }
+    m.setPaintProperty('col-fill', 'fill-opacity', on ? 0 : 0.85);
+    this._usFlagHide = on;
+  }
+
+  /** A canvas source uploads its pixels only while it plays and its layer is drawn: play it for a few frames
+   *  from the moment its layer shows. */
+  _upload(sid) {
+    const src = this.map.getSource('fsrc' + sid);
+    if (!src) return;
+    src.play();
+    // count drawn frames, not time: a slow device may take longer than a timer to draw one
+    const f = this._fc[sid];
+    f.left = 3;
+    if (f.onRender) return;
+    f.onRender = () => {
+      if (--f.left > 0) return;
+      this.map.off('render', f.onRender);
+      f.onRender = null;
+      if (!(this._run?.ffx && sid === 'X')) src.pause();
+    };
+    this.map.on('render', f.onRender);
+  }
+
+  /** Draw a stack's flag canvas for its document (at the current view). */
+  async _drawFlags(sid, doc) {
+    const f = this._fc[sid];
+    if (!doc || !this._wantFlags()) { f.ok = false; f.doc = doc; return false; }
+    const year = doc.fy ?? doc.year;
+    const fills = fillsOf(doc, year, this.flagEmp);
+    const imgs = await ensureImages(fills);
+    const ext = extentFor(this.map);
+    const t0 = performance.now();
+    paint(f.cv, doc, fills, imgs, ext);
+    (this.flagStats ||= []).push(Math.round(performance.now() - t0));
+    Object.assign(f, { doc, ext, fills, imgs, ok: true, fy: year });
+    this.map.getSource('fsrc' + sid).setCoordinates(ext.coords);
+    if (sid === this.active || sid === this._out) this._upload(sid);
+    return true;
+  }
+
+  /** After a change or a pan: the shown stack gets flags drawn for its map and view if it lacks them. */
+  async _redrawActive(fade = false) {
+    const sid = this.active;
+    const doc = this._docs?.[sid];
+    if (!doc || !this._wantFlags() || this._flagHold || this._run) return;
+    const f = this._fc[sid];
+    if (f.doc === doc && f.ok && f.fy === (doc.fy ?? doc.year) && extentOk(f.ext, this.map)) return;
+    const tok = (this._flagTok = (this._flagTok || 0) + 1);
+    const had = this._flagOn(sid);
+    await this._drawFlags(sid, doc);
+    if (tok !== this._flagTok || this.active !== sid || this._run) return;
+    const m = this.map;
+    m.setPaintProperty('flag' + sid, 'raster-opacity-transition', { duration: fade && !had && !reduceMotion() ? 350 : 0 });
+    m.setPaintProperty('flag' + sid, 'raster-opacity', 1);
+    m.setPaintProperty('fline' + sid, 'line-opacity', 0.8);
+    this._upload(sid);
+  }
+
+  /** For checks: the flag fill drawn at a point of the shown map: {on, key ('m:RU' today's flag, 'h:<id>' the
+   *  state's own flag, null none), name}. */
+  fillAt(lon, lat) {
+    const sid = this.active, f = this._fc?.[sid], doc = this._docs?.[sid];
+    if (!doc) return null;
+    const i = doc.features.findIndex((ft) => ft.properties.u !== 1 && ft.properties.k >= 0 && makeAreaTest([ft.geometry])(lon, lat));
+    return { on: this._flagOn(sid) && this.map.getPaintProperty('flag' + sid, 'raster-opacity') === 1, key: f?.fills?.get(i)?.key || null,
+      name: i >= 0 ? doc.polities[doc.features[i].properties.k]?.n : null };
+  }
+
+  /** The year moved on over the same map (an own flag can change without a border change). */
+  refreshFlags() { this._flagsAfter(); }
+
+  _flagsAfter() {
+    if (this._wantFlags() && !this._flagHold) this._redrawActive(true);
   }
 
   /** While the years run (play, a step, the timeline being dragged): the names of small states and peoples
@@ -755,18 +939,25 @@ export class HistoryMap extends EventTarget {
     const op = (l, v, du = 0, delay = 0) => { m.setPaintProperty(l, 'fill-opacity-transition', { duration: du, delay }); m.setPaintProperty(l, 'fill-opacity', v); };
     const filled = this._usFill && !this._usFill.startsWith('null');
     clearTimeout(this._usT);
-    // the new date at once; states and territories that are new on it flash (outline on, then off)
+    // the new date at once; states and territories that are new on it get an outline that eases in and out
     m.setFilter('us-vis', vis(d));
     m.setFilter('us-old', NONE);
-    op('us-vis', filled ? 1 : 0);
+    op('us-vis', filled && !this._usFlagHide ? 1 : 0);
     if (dur && prev != null && d != null && prev !== d && filled && !reduceMotion() && this._usFC) {
       const was = new Set(this._usFC.features.filter((f) => f.properties.s <= prev && f.properties.e >= prev && f.properties.t !== 'Other').map((f) => f.properties.id + '|' + f.properties.t));
       const fresh = this._usFC.features.filter((f) => f.properties.s <= d && f.properties.e >= d && f.properties.t !== 'Other' && !was.has(f.properties.id + '|' + f.properties.t)).map((f) => f.properties.id);
       if (fresh.length && fresh.length < 40) {
+        // a thin outline that eases in and out (no blinking)
+        const t = Math.max(120, Math.min(350, dur * 0.4));
         m.setFilter('us-flash', ['all', at(d), ['in', ['get', 'id'], ['literal', fresh]]]);
-        this._usT = setTimeout(() => m.setFilter('us-flash', NONE), Math.max(160, Math.min(380, dur * 0.7)));
+        m.setPaintProperty('us-flash', 'line-opacity-transition', { duration: t });
+        m.setPaintProperty('us-flash', 'line-opacity', 0.75);
+        this._usT = setTimeout(() => {
+          m.setPaintProperty('us-flash', 'line-opacity-transition', { duration: t * 1.4 });
+          m.setPaintProperty('us-flash', 'line-opacity', 0);
+        }, t);
       }
-    } else m.setFilter('us-flash', NONE);
+    } else { m.setPaintProperty('us-flash', 'line-opacity-transition', { duration: 0 }); m.setPaintProperty('us-flash', 'line-opacity', 0); }
     m.setFilter('us-sel', d == null || !selId ? NONE : ['all', f, ['==', ['get', 'id'], selId]]);
     this.usDate = d;
   }
