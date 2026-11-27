@@ -1,417 +1,1592 @@
 {
  "_about": "Major discoveries and inventions with the place where they were made, written for GeoHistory from general knowledge (AI-written text, shown with that label). Each entry names its English Wikipedia article. 'place' is the town where the work was done or first shown; the state is never written here: tools/context/build_discoveries.py looks the place up on the map of that year, so Gutenberg's Mainz press of 1450 belongs to whatever the map shows at Mainz in 1450, not to today's Germany. 'state' is given only for voyages and works without one place (the sponsoring state). The year is checked against the article's Wikidata item (time of discovery or invention P575, inception P571, publication date P577, point in time P585 or start time P580; 1 year of slack, 25 for 'approx') and the result written to 'verified'.",
  "discoveries": [
-  {"id": "telephone", "name": "Telephone", "wiki": "Telephone", "year": 1876, "kind": "invention", "who": "Alexander Graham Bell",
-   "place": ["Boston", -71.06, 42.36],
+  {
+   "id": "telephone",
+   "name": "Telephone",
+   "wiki": "Telephone",
+   "year": 1876,
+   "kind": "invention",
+   "who": "Alexander Graham Bell",
+   "place": [
+    "Boston",
+    -71.06,
+    42.36
+   ],
    "text": "Bell was granted US patent 174,465 on 7 March 1876 and made the first call to his assistant Thomas Watson in Boston three days later.",
    "note": "Elisha Gray filed a caveat for a similar telephone at the patent office on the same day as Bell's application (14 February 1876); Antonio Meucci had demonstrated a 'telettrofono' and filed a caveat in 1871 but could not renew it.",
-   "source": "https://en.wikipedia.org/wiki/Invention_of_the_telephone"},
-  {"id": "printing-press", "name": "Movable-type printing press", "wiki": "Printing press", "year": 1450, "kind": "invention", "who": "Johannes Gutenberg", "approx": true,
-   "place": ["Mainz", 8.27, 50.0],
+   "source": "https://en.wikipedia.org/wiki/Invention_of_the_telephone",
+   "verified": true
+  },
+  {
+   "id": "printing-press",
+   "name": "Movable-type printing press",
+   "wiki": "Printing press",
+   "year": 1450,
+   "kind": "invention",
+   "who": "Johannes Gutenberg",
+   "approx": true,
+   "place": [
+    "Mainz",
+    8.27,
+    50.0
+   ],
    "text": "Gutenberg combined metal movable type, oil-based ink and a screw press in Mainz around 1450; his Bible was finished by about 1455.",
    "note": "Movable type itself was older: Bi Sheng's ceramic type in Song China (about 1040) and metal type in Goryeo Korea (Jikji, 1377).",
-   "source": "https://en.wikipedia.org/wiki/Printing_press"},
-  {"id": "penicillin", "name": "Penicillin", "wiki": "Penicillin", "year": 1928, "kind": "discovery", "who": "Alexander Fleming",
-   "place": ["London (St Mary's Hospital)", -0.174, 51.517],
+   "source": "https://en.wikipedia.org/wiki/Printing_press",
+   "verified": true
+  },
+  {
+   "id": "penicillin",
+   "name": "Penicillin",
+   "wiki": "Penicillin",
+   "year": 1928,
+   "kind": "discovery",
+   "who": "Alexander Fleming",
+   "place": [
+    "London (St Mary's Hospital)",
+    -0.174,
+    51.517
+   ],
    "text": "Fleming noticed in September 1928 that a Penicillium mould killed the bacteria around it; Florey and Chain's team in Oxford made it a usable drug from 1940.",
-   "source": "https://en.wikipedia.org/wiki/History_of_penicillin"},
-  {"id": "newcomen", "name": "Newcomen atmospheric engine", "wiki": "Newcomen atmospheric engine", "year": 1712, "kind": "invention", "who": "Thomas Newcomen",
-   "place": ["Dudley (Coneygree Coalworks)", -2.08, 52.52],
+   "source": "https://en.wikipedia.org/wiki/History_of_penicillin",
+   "verified": true
+  },
+  {
+   "id": "newcomen",
+   "name": "Newcomen atmospheric engine",
+   "wiki": "Newcomen atmospheric engine",
+   "year": 1712,
+   "kind": "invention",
+   "who": "Thomas Newcomen",
+   "place": [
+    "Dudley (Coneygree Coalworks)",
+    -2.08,
+    52.52
+   ],
    "text": "The first known working steam engine pumped water from a coal mine near Dudley Castle in 1712.",
-   "source": "https://en.wikipedia.org/wiki/Newcomen_atmospheric_engine"},
-  {"id": "watt-engine", "name": "Watt steam engine", "wiki": "Watt steam engine", "year": 1776, "kind": "invention", "who": "James Watt and Matthew Boulton",
-   "place": ["Tipton (Bloomfield Colliery)", -2.05, 52.53],
+   "source": "https://en.wikipedia.org/wiki/Newcomen_atmospheric_engine",
+   "verified": true
+  },
+  {
+   "id": "watt-engine",
+   "name": "Watt steam engine",
+   "wiki": "Watt steam engine",
+   "year": 1776,
+   "kind": "invention",
+   "who": "James Watt and Matthew Boulton",
+   "place": [
+    "Tipton (Bloomfield Colliery)",
+    -2.05,
+    52.53
+   ],
    "text": "Watt's separate condenser (patented 1769) cut the fuel a steam engine needed; the first Boulton and Watt engines went to work in 1776.",
-   "source": "https://en.wikipedia.org/wiki/Watt_steam_engine"},
-  {"id": "light-bulb", "name": "Incandescent light bulb (Edison)", "wiki": "Incandescent light bulb", "year": 1879, "kind": "invention", "who": "Thomas Edison",
-   "place": ["Menlo Park, New Jersey", -74.338, 40.565],
+   "source": "https://en.wikipedia.org/wiki/Watt_steam_engine",
+   "verified": true
+  },
+  {
+   "id": "light-bulb",
+   "name": "Incandescent light bulb (Edison)",
+   "wiki": "Incandescent light bulb",
+   "year": 1879,
+   "kind": "invention",
+   "who": "Thomas Edison",
+   "place": [
+    "Menlo Park, New Jersey",
+    -74.338,
+    40.565
+   ],
    "text": "Edison's team made a carbon-filament lamp that burned for hours in October 1879 and showed it publicly at Menlo Park that December.",
    "note": "Joseph Swan made working carbon lamps in Newcastle at the same time; the two later merged their British companies as Ediswan.",
-   "source": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"},
-  {"id": "x-rays", "name": "X-rays", "wiki": "X-ray", "year": 1895, "kind": "discovery", "who": "Wilhelm Röntgen",
-   "place": ["Würzburg", 9.93, 49.79],
+   "source": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+   "verified": true
+  },
+  {
+   "id": "x-rays",
+   "name": "X-rays",
+   "wiki": "X-ray",
+   "year": 1895,
+   "kind": "discovery",
+   "who": "Wilhelm Röntgen",
+   "place": [
+    "Würzburg",
+    9.93,
+    49.79
+   ],
    "text": "Röntgen found the new rays on 8 November 1895 and published in December, with an X-ray of his wife's hand.",
-   "source": "https://en.wikipedia.org/wiki/X-ray"},
-  {"id": "wright-flyer", "name": "First powered aeroplane flight (Wright Flyer)", "wiki": "Wright Flyer", "year": 1903, "kind": "invention", "who": "Orville and Wilbur Wright",
-   "place": ["Kill Devil Hills, North Carolina", -75.67, 36.02],
+   "source": "https://en.wikipedia.org/wiki/X-ray",
+   "verified": null
+  },
+  {
+   "id": "wright-flyer",
+   "name": "First powered aeroplane flight (Wright Flyer)",
+   "wiki": "Wright Flyer",
+   "year": 1903,
+   "kind": "invention",
+   "who": "Orville and Wilbur Wright",
+   "place": [
+    "Kill Devil Hills, North Carolina",
+    -75.67,
+    36.02
+   ],
    "text": "On 17 December 1903 the Wright Flyer made four controlled, powered flights, the longest 260 m in 59 seconds.",
-   "source": "https://en.wikipedia.org/wiki/Wright_Flyer"},
-  {"id": "papermaking", "name": "Papermaking (Cai Lun)", "wiki": "Cai Lun", "year": 105, "kind": "invention", "who": "Cai Lun",
-   "place": ["Luoyang", 112.45, 34.62],
+   "source": "https://en.wikipedia.org/wiki/Wright_Flyer",
+   "verified": null
+  },
+  {
+   "id": "papermaking",
+   "name": "Papermaking (Cai Lun)",
+   "wiki": "Cai Lun",
+   "year": 105,
+   "kind": "invention",
+   "who": "Cai Lun",
+   "place": [
+    "Luoyang",
+    112.45,
+    34.62
+   ],
    "text": "The court official Cai Lun presented a paper made of bark, hemp and rags to the Han emperor in 105.",
    "note": "Archaeology has found older paper in China (2nd century BC); Cai Lun improved and standardised the process.",
-   "source": "https://en.wikipedia.org/wiki/Cai_Lun"},
-  {"id": "telescope", "name": "Telescope", "wiki": "History of the telescope", "year": 1608, "kind": "invention", "who": "Hans Lipperhey",
-   "place": ["Middelburg", 3.61, 51.5],
+   "source": "https://en.wikipedia.org/wiki/Cai_Lun",
+   "verified": null
+  },
+  {
+   "id": "telescope",
+   "name": "Telescope",
+   "wiki": "History of the telescope",
+   "year": 1608,
+   "kind": "invention",
+   "who": "Hans Lipperhey",
+   "place": [
+    "Middelburg",
+    3.61,
+    51.5
+   ],
    "text": "The spectacle-maker Lipperhey applied for a patent on a telescope in The Hague in October 1608; it was refused because others made them too.",
-   "source": "https://en.wikipedia.org/wiki/History_of_the_telescope"},
-  {"id": "smallpox-vaccine", "name": "Smallpox vaccine", "wiki": "Smallpox vaccine", "year": 1796, "kind": "discovery", "who": "Edward Jenner",
-   "place": ["Berkeley, Gloucestershire", -2.46, 51.69],
+   "source": "https://en.wikipedia.org/wiki/History_of_the_telescope",
+   "verified": null
+  },
+  {
+   "id": "smallpox-vaccine",
+   "name": "Smallpox vaccine",
+   "wiki": "Smallpox vaccine",
+   "year": 1796,
+   "kind": "discovery",
+   "who": "Edward Jenner",
+   "place": [
+    "Berkeley, Gloucestershire",
+    -2.46,
+    51.69
+   ],
    "text": "Jenner inoculated James Phipps with cowpox in May 1796 and showed that it protected him from smallpox.",
-   "source": "https://en.wikipedia.org/wiki/Edward_Jenner"},
-  {"id": "dynamite", "name": "Dynamite", "wiki": "Dynamite", "year": 1867, "kind": "invention", "who": "Alfred Nobel",
-   "place": ["Krümmel, Geesthacht", 10.4, 53.41],
+   "source": "https://en.wikipedia.org/wiki/Edward_Jenner",
+   "verified": false
+  },
+  {
+   "id": "dynamite",
+   "name": "Dynamite",
+   "wiki": "Dynamite",
+   "year": 1867,
+   "kind": "invention",
+   "who": "Alfred Nobel",
+   "place": [
+    "Krümmel, Geesthacht",
+    10.4,
+    53.41
+   ],
    "text": "Nobel stabilised nitroglycerine in kieselguhr at his factory in Krümmel near Hamburg and patented the result as dynamite in 1867.",
-   "source": "https://en.wikipedia.org/wiki/Dynamite"},
-  {"id": "special-relativity", "name": "Special relativity", "wiki": "Special relativity", "year": 1905, "kind": "discovery", "who": "Albert Einstein",
-   "place": ["Bern", 7.45, 46.95],
+   "source": "https://en.wikipedia.org/wiki/Dynamite",
+   "verified": true
+  },
+  {
+   "id": "special-relativity",
+   "name": "Special relativity",
+   "wiki": "Special relativity",
+   "year": 1905,
+   "kind": "discovery",
+   "who": "Albert Einstein",
+   "place": [
+    "Bern",
+    7.45,
+    46.95
+   ],
    "text": "Einstein, then a patent clerk in Bern, published 'On the Electrodynamics of Moving Bodies' in 1905, his 'miracle year'.",
-   "source": "https://en.wikipedia.org/wiki/Special_relativity"},
-  {"id": "general-relativity", "name": "General relativity", "wiki": "General relativity", "year": 1915, "kind": "discovery", "who": "Albert Einstein",
-   "place": ["Berlin", 13.39, 52.52],
+   "source": "https://en.wikipedia.org/wiki/Special_relativity",
+   "verified": true
+  },
+  {
+   "id": "general-relativity",
+   "name": "General relativity",
+   "wiki": "General relativity",
+   "year": 1915,
+   "kind": "discovery",
+   "who": "Albert Einstein",
+   "place": [
+    "Berlin",
+    13.39,
+    52.52
+   ],
    "text": "Einstein presented the field equations of general relativity to the Prussian Academy in Berlin in November 1915.",
-   "source": "https://en.wikipedia.org/wiki/General_relativity"},
-  {"id": "dna-structure", "name": "Double-helix structure of DNA", "wiki": "Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid", "year": 1953, "kind": "discovery", "who": "James Watson and Francis Crick",
-   "place": ["Cambridge", 0.12, 52.2],
+   "source": "https://en.wikipedia.org/wiki/General_relativity",
+   "verified": true
+  },
+  {
+   "id": "dna-structure",
+   "name": "Double-helix structure of DNA",
+   "wiki": "Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid",
+   "year": 1953,
+   "kind": "discovery",
+   "who": "James Watson and Francis Crick",
+   "place": [
+    "Cambridge",
+    0.12,
+    52.2
+   ],
    "text": "Watson and Crick published the double helix in Nature in April 1953.",
    "note": "Their model rested on X-ray data from Rosalind Franklin and Maurice Wilkins at King's College London, published in the same issue.",
-   "source": "https://en.wikipedia.org/wiki/Molecular_Structure_of_Nucleic_Acids:_A_Structure_for_Deoxyribose_Nucleic_Acid"},
-  {"id": "sputnik", "name": "Sputnik 1", "wiki": "Sputnik 1", "year": 1957, "kind": "invention", "who": "Soviet space programme (Sergei Korolev)",
-   "place": ["Baikonur Cosmodrome", 63.34, 45.92],
+   "source": "https://en.wikipedia.org/wiki/Molecular_Structure_of_Nucleic_Acids:_A_Structure_for_Deoxyribose_Nucleic_Acid",
+   "verified": null
+  },
+  {
+   "id": "sputnik",
+   "name": "Sputnik 1",
+   "wiki": "Sputnik 1",
+   "year": 1957,
+   "kind": "invention",
+   "who": "Soviet space programme (Sergei Korolev)",
+   "place": [
+    "Baikonur Cosmodrome",
+    63.34,
+    45.92
+   ],
    "text": "The first artificial satellite was launched on 4 October 1957 and orbited for three weeks of radio signals.",
-   "source": "https://en.wikipedia.org/wiki/Sputnik_1"},
-  {"id": "nuclear-fission", "name": "Nuclear fission", "wiki": "Nuclear fission", "year": 1938, "kind": "discovery", "who": "Otto Hahn and Fritz Strassmann",
-   "place": ["Berlin-Dahlem", 13.28, 52.45],
+   "source": "https://en.wikipedia.org/wiki/Sputnik_1",
+   "verified": null
+  },
+  {
+   "id": "nuclear-fission",
+   "name": "Nuclear fission",
+   "wiki": "Nuclear fission",
+   "year": 1938,
+   "kind": "discovery",
+   "who": "Otto Hahn and Fritz Strassmann",
+   "place": [
+    "Berlin-Dahlem",
+    13.28,
+    52.45
+   ],
    "text": "Hahn and Strassmann found barium among the products of uranium bombarded with neutrons in December 1938.",
    "note": "Lise Meitner and Otto Frisch, in exile, explained it as the splitting of the nucleus in early 1939.",
-   "source": "https://en.wikipedia.org/wiki/Discovery_of_nuclear_fission"},
-  {"id": "transistor", "name": "Transistor", "wiki": "Transistor", "year": 1947, "kind": "invention", "who": "John Bardeen, Walter Brattain and William Shockley",
-   "place": ["Murray Hill, New Jersey (Bell Labs)", -74.4, 40.68],
+   "source": "https://en.wikipedia.org/wiki/Discovery_of_nuclear_fission",
+   "verified": null
+  },
+  {
+   "id": "transistor",
+   "name": "Transistor",
+   "wiki": "Transistor",
+   "year": 1947,
+   "kind": "invention",
+   "who": "John Bardeen, Walter Brattain and William Shockley",
+   "place": [
+    "Murray Hill, New Jersey (Bell Labs)",
+    -74.4,
+    40.68
+   ],
    "text": "The point-contact transistor was first shown working at Bell Labs on 16 December 1947.",
-   "source": "https://en.wikipedia.org/wiki/History_of_the_transistor"},
-  {"id": "insulin", "name": "Insulin as a treatment", "wiki": "Insulin", "year": 1921, "kind": "discovery", "who": "Frederick Banting and Charles Best",
-   "place": ["Toronto", -79.39, 43.66],
+   "source": "https://en.wikipedia.org/wiki/History_of_the_transistor",
+   "verified": true
+  },
+  {
+   "id": "insulin",
+   "name": "Insulin as a treatment",
+   "wiki": "Insulin",
+   "year": 1921,
+   "kind": "discovery",
+   "who": "Frederick Banting and Charles Best",
+   "place": [
+    "Toronto",
+    -79.39,
+    43.66
+   ],
    "text": "Banting and Best isolated insulin at the University of Toronto in 1921; the first patient was treated in January 1922.",
-   "source": "https://en.wikipedia.org/wiki/History_of_insulin"},
-  {"id": "phonograph", "name": "Phonograph", "wiki": "Phonograph", "year": 1877, "kind": "invention", "who": "Thomas Edison",
-   "place": ["Menlo Park, New Jersey", -74.338, 40.565],
+   "source": "https://en.wikipedia.org/wiki/History_of_insulin",
+   "verified": null
+  },
+  {
+   "id": "phonograph",
+   "name": "Phonograph",
+   "wiki": "Phonograph",
+   "year": 1877,
+   "kind": "invention",
+   "who": "Thomas Edison",
+   "place": [
+    "Menlo Park, New Jersey",
+    -74.338,
+    40.565
+   ],
    "text": "Edison's tinfoil phonograph, the first machine to record and play back sound, was built in late 1877.",
-   "source": "https://en.wikipedia.org/wiki/Phonograph"},
-  {"id": "motorwagen", "name": "Benz Patent-Motorwagen (first automobile)", "wiki": "Benz Patent-Motorwagen", "year": 1885, "kind": "invention", "who": "Carl Benz",
-   "place": ["Mannheim", 8.47, 49.49],
+   "source": "https://en.wikipedia.org/wiki/Phonograph",
+   "verified": true
+  },
+  {
+   "id": "motorwagen",
+   "name": "Benz Patent-Motorwagen (first automobile)",
+   "wiki": "Benz Patent-Motorwagen",
+   "year": 1885,
+   "kind": "invention",
+   "who": "Carl Benz",
+   "place": [
+    "Mannheim",
+    8.47,
+    49.49
+   ],
    "text": "Benz built his three-wheeled petrol car in 1885 and patented it in January 1886; Bertha Benz drove it to Pforzheim in 1888.",
-   "source": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"},
-  {"id": "www", "name": "World Wide Web", "wiki": "World Wide Web", "year": 1989, "kind": "invention", "who": "Tim Berners-Lee",
-   "place": ["CERN, Meyrin", 6.05, 46.23],
+   "source": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen",
+   "verified": true
+  },
+  {
+   "id": "www",
+   "name": "World Wide Web",
+   "wiki": "World Wide Web",
+   "year": 1989,
+   "kind": "invention",
+   "who": "Tim Berners-Lee",
+   "place": [
+    "CERN, Meyrin",
+    6.05,
+    46.23
+   ],
    "text": "Berners-Lee proposed a hypertext information system at CERN in March 1989; the first web server ran there in 1990.",
-   "source": "https://en.wikipedia.org/wiki/World_Wide_Web"},
-  {"id": "gunpowder-formula", "name": "First written gunpowder formula", "wiki": "Wujing Zongyao", "year": 1044, "kind": "invention",
-   "place": ["Kaifeng", 114.31, 34.8],
+   "source": "https://en.wikipedia.org/wiki/World_Wide_Web",
+   "verified": true
+  },
+  {
+   "id": "gunpowder-formula",
+   "name": "First written gunpowder formula",
+   "wiki": "Wujing Zongyao",
+   "year": 1044,
+   "kind": "invention",
+   "place": [
+    "Kaifeng",
+    114.31,
+    34.8
+   ],
    "text": "The military manual Wujing Zongyao, compiled for the Song court, gives the earliest known formulas for gunpowder.",
    "note": "Gunpowder itself was found by Chinese alchemists earlier, probably in the 9th century.",
-   "source": "https://en.wikipedia.org/wiki/Wujing_Zongyao"},
-  {"id": "trevithick", "name": "First steam railway locomotive journey", "wiki": "Penydarren locomotive", "year": 1804, "kind": "invention", "who": "Richard Trevithick",
-   "place": ["Merthyr Tydfil", -3.38, 51.75],
+   "source": "https://en.wikipedia.org/wiki/Wujing_Zongyao",
+   "verified": true
+  },
+  {
+   "id": "trevithick",
+   "name": "First steam railway locomotive journey",
+   "wiki": "Penydarren locomotive",
+   "year": 1804,
+   "kind": "invention",
+   "who": "Richard Trevithick",
+   "place": [
+    "Merthyr Tydfil",
+    -3.38,
+    51.75
+   ],
    "text": "Trevithick's locomotive hauled 10 tons of iron and 70 men along the Penydarren tramway on 21 February 1804.",
-   "source": "https://en.wikipedia.org/wiki/Penydarren_locomotive"},
-  {"id": "rocket", "name": "Stephenson's Rocket", "wiki": "Stephenson's Rocket", "year": 1829, "kind": "invention", "who": "George and Robert Stephenson",
-   "place": ["Rainhill", -2.76, 53.42],
+   "source": "https://en.wikipedia.org/wiki/Penydarren_locomotive",
+   "verified": null
+  },
+  {
+   "id": "rocket",
+   "name": "Stephenson's Rocket",
+   "wiki": "Stephenson's Rocket",
+   "year": 1829,
+   "kind": "invention",
+   "who": "George and Robert Stephenson",
+   "place": [
+    "Rainhill",
+    -2.76,
+    53.42
+   ],
    "text": "Rocket won the Rainhill Trials of October 1829 and set the pattern of later steam locomotives.",
-   "source": "https://en.wikipedia.org/wiki/Stephenson%27s_Rocket"},
-  {"id": "morse-telegraph", "name": "Morse telegraph line", "wiki": "Electrical telegraph", "year": 1844, "kind": "invention", "who": "Samuel Morse",
-   "place": ["Washington, D.C.", -77.01, 38.89],
+   "source": "https://en.wikipedia.org/wiki/Stephenson%27s_Rocket",
+   "verified": null
+  },
+  {
+   "id": "morse-telegraph",
+   "name": "Morse telegraph line",
+   "wiki": "Electrical telegraph",
+   "year": 1844,
+   "kind": "invention",
+   "who": "Samuel Morse",
+   "place": [
+    "Washington, D.C.",
+    -77.01,
+    38.89
+   ],
    "text": "Morse sent 'What hath God wrought' from the Capitol in Washington to Baltimore on 24 May 1844.",
    "note": "Cooke and Wheatstone had patented a working electrical telegraph in Britain in 1837.",
-   "source": "https://en.wikipedia.org/wiki/Electrical_telegraph"},
-  {"id": "photography", "name": "First photograph", "wiki": "View from the Window at Le Gras", "year": 1827, "kind": "invention", "who": "Nicéphore Niépce", "approx": true,
-   "place": ["Saint-Loup-de-Varennes", 4.85, 46.72],
+   "source": "https://en.wikipedia.org/wiki/Electrical_telegraph",
+   "verified": false
+  },
+  {
+   "id": "photography",
+   "name": "First photograph",
+   "wiki": "View from the Window at Le Gras",
+   "year": 1827,
+   "kind": "invention",
+   "who": "Nicéphore Niépce",
+   "approx": true,
+   "place": [
+    "Saint-Loup-de-Varennes",
+    4.85,
+    46.72
+   ],
    "text": "Niépce's 'View from the Window at Le Gras' (1826 or 1827) is the oldest surviving camera photograph.",
-   "source": "https://en.wikipedia.org/wiki/View_from_the_Window_at_Le_Gras"},
-  {"id": "daguerreotype", "name": "Daguerreotype", "wiki": "Daguerreotype", "year": 1839, "kind": "invention", "who": "Louis Daguerre",
-   "place": ["Paris", 2.35, 48.86],
+   "source": "https://en.wikipedia.org/wiki/View_from_the_Window_at_Le_Gras",
+   "verified": true
+  },
+  {
+   "id": "daguerreotype",
+   "name": "Daguerreotype",
+   "wiki": "Daguerreotype",
+   "year": 1839,
+   "kind": "invention",
+   "who": "Louis Daguerre",
+   "place": [
+    "Paris",
+    2.35,
+    48.86
+   ],
    "text": "The French Academy of Sciences announced Daguerre's process in January 1839; it was the first practical photography.",
-   "source": "https://en.wikipedia.org/wiki/Daguerreotype"},
-  {"id": "radio", "name": "Radio (wireless telegraphy)", "wiki": "Invention of radio", "year": 1895, "kind": "invention", "who": "Guglielmo Marconi",
-   "place": ["Pontecchio, near Bologna", 11.21, 44.43],
+   "source": "https://en.wikipedia.org/wiki/Daguerreotype",
+   "verified": true
+  },
+  {
+   "id": "radio",
+   "name": "Radio (wireless telegraphy)",
+   "wiki": "Invention of radio",
+   "year": 1895,
+   "kind": "invention",
+   "who": "Guglielmo Marconi",
+   "place": [
+    "Pontecchio, near Bologna",
+    11.21,
+    44.43
+   ],
    "text": "Marconi sent wireless signals over more than a kilometre at his family's estate in 1895, then patented his system in Britain in 1896.",
    "note": "Many contributed: Hertz (radio waves, 1886-1888), Lodge, Popov, Bose and Tesla.",
-   "source": "https://en.wikipedia.org/wiki/Invention_of_radio"},
-  {"id": "galilean-moons", "name": "Moons of Jupiter (Galileo)", "wiki": "Sidereus Nuncius", "year": 1610, "kind": "discovery", "who": "Galileo Galilei",
-   "place": ["Padua", 11.88, 45.41],
+   "source": "https://en.wikipedia.org/wiki/Invention_of_radio",
+   "verified": false
+  },
+  {
+   "id": "galilean-moons",
+   "name": "Moons of Jupiter (Galileo)",
+   "wiki": "Sidereus Nuncius",
+   "year": 1610,
+   "kind": "discovery",
+   "who": "Galileo Galilei",
+   "place": [
+    "Padua",
+    11.88,
+    45.41
+   ],
    "text": "With his own telescope Galileo saw four moons circling Jupiter in January 1610 and published them in Sidereus Nuncius that March.",
-   "source": "https://en.wikipedia.org/wiki/Sidereus_Nuncius"},
-  {"id": "heliocentrism", "name": "Copernican heliocentrism", "wiki": "De revolutionibus orbium coelestium", "year": 1543, "kind": "discovery", "who": "Nicolaus Copernicus",
-   "place": ["Frombork", 19.68, 54.36],
+   "source": "https://en.wikipedia.org/wiki/Sidereus_Nuncius",
+   "verified": true
+  },
+  {
+   "id": "heliocentrism",
+   "name": "Copernican heliocentrism",
+   "wiki": "De revolutionibus orbium coelestium",
+   "year": 1543,
+   "kind": "discovery",
+   "who": "Nicolaus Copernicus",
+   "place": [
+    "Frombork",
+    19.68,
+    54.36
+   ],
    "text": "Copernicus, a canon of Frombork, put the Sun at the centre of the planets' orbits in De revolutionibus, printed in Nuremberg in 1543.",
-   "source": "https://en.wikipedia.org/wiki/De_revolutionibus_orbium_coelestium"},
-  {"id": "principia", "name": "Newton's laws of motion and gravitation", "wiki": "Philosophiæ Naturalis Principia Mathematica", "year": 1687, "kind": "discovery", "who": "Isaac Newton",
-   "place": ["Cambridge", 0.12, 52.2],
+   "source": "https://en.wikipedia.org/wiki/De_revolutionibus_orbium_coelestium",
+   "verified": true
+  },
+  {
+   "id": "principia",
+   "name": "Newton's laws of motion and gravitation",
+   "wiki": "Philosophiæ Naturalis Principia Mathematica",
+   "year": 1687,
+   "kind": "discovery",
+   "who": "Isaac Newton",
+   "place": [
+    "Cambridge",
+    0.12,
+    52.2
+   ],
    "text": "Newton's Principia (1687) set out the laws of motion and universal gravitation.",
-   "source": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica"},
-  {"id": "origin-of-species", "name": "Evolution by natural selection", "wiki": "On the Origin of Species", "year": 1859, "kind": "discovery", "who": "Charles Darwin",
-   "place": ["Downe, Kent", 0.05, 51.33],
+   "source": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica",
+   "verified": true
+  },
+  {
+   "id": "origin-of-species",
+   "name": "Evolution by natural selection",
+   "wiki": "On the Origin of Species",
+   "year": 1859,
+   "kind": "discovery",
+   "who": "Charles Darwin",
+   "place": [
+    "Downe, Kent",
+    0.05,
+    51.33
+   ],
    "text": "Darwin published On the Origin of Species in November 1859, a year after he and Alfred Russel Wallace presented the theory jointly.",
-   "source": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species"},
-  {"id": "periodic-table", "name": "Periodic table", "wiki": "History of the periodic table", "year": 1869, "kind": "discovery", "who": "Dmitri Mendeleev",
-   "place": ["Saint Petersburg", 30.3, 59.94],
+   "source": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
+   "verified": true
+  },
+  {
+   "id": "periodic-table",
+   "name": "Periodic table",
+   "wiki": "History of the periodic table",
+   "year": 1869,
+   "kind": "discovery",
+   "who": "Dmitri Mendeleev",
+   "place": [
+    "Saint Petersburg",
+    30.3,
+    59.94
+   ],
    "text": "Mendeleev arranged the elements by atomic weight in 1869 and left gaps for elements not yet found.",
-   "source": "https://en.wikipedia.org/wiki/History_of_the_periodic_table"},
-  {"id": "rabies-vaccine", "name": "Rabies vaccine", "wiki": "Rabies vaccine", "year": 1885, "kind": "discovery", "who": "Louis Pasteur",
-   "place": ["Paris", 2.35, 48.86],
+   "source": "https://en.wikipedia.org/wiki/History_of_the_periodic_table",
+   "verified": null
+  },
+  {
+   "id": "rabies-vaccine",
+   "name": "Rabies vaccine",
+   "wiki": "Rabies vaccine",
+   "year": 1885,
+   "kind": "discovery",
+   "who": "Louis Pasteur",
+   "place": [
+    "Paris",
+    2.35,
+    48.86
+   ],
    "text": "Pasteur's team gave the vaccine to nine-year-old Joseph Meister, bitten by a rabid dog, in July 1885; he survived.",
-   "source": "https://en.wikipedia.org/wiki/Rabies_vaccine"},
-  {"id": "radioactivity", "name": "Radioactivity", "wiki": "Radioactive decay", "year": 1896, "kind": "discovery", "who": "Henri Becquerel",
-   "place": ["Paris", 2.35, 48.86],
+   "source": "https://en.wikipedia.org/wiki/Rabies_vaccine",
+   "verified": null
+  },
+  {
+   "id": "radioactivity",
+   "name": "Radioactivity",
+   "wiki": "Radioactive decay",
+   "year": 1896,
+   "kind": "discovery",
+   "who": "Henri Becquerel",
+   "place": [
+    "Paris",
+    2.35,
+    48.86
+   ],
    "text": "Becquerel found in 1896 that uranium salts fogged photographic plates without light.",
-   "source": "https://en.wikipedia.org/wiki/Radioactive_decay"},
-  {"id": "polonium-radium", "name": "Polonium and radium", "wiki": "Radium", "year": 1898, "kind": "discovery", "who": "Marie and Pierre Curie",
-   "place": ["Paris", 2.35, 48.86],
+   "source": "https://en.wikipedia.org/wiki/Radioactive_decay",
+   "verified": null
+  },
+  {
+   "id": "polonium-radium",
+   "name": "Polonium and radium",
+   "wiki": "Radium",
+   "year": 1898,
+   "kind": "discovery",
+   "who": "Marie and Pierre Curie",
+   "place": [
+    "Paris",
+    2.35,
+    48.86
+   ],
    "text": "The Curies announced polonium in July and radium in December 1898, found in pitchblende.",
-   "source": "https://en.wikipedia.org/wiki/Radium"},
-  {"id": "electron", "name": "Electron", "wiki": "Electron", "year": 1897, "kind": "discovery", "who": "J. J. Thomson",
-   "place": ["Cambridge (Cavendish Laboratory)", 0.12, 52.2],
+   "source": "https://en.wikipedia.org/wiki/Radium",
+   "verified": true
+  },
+  {
+   "id": "electron",
+   "name": "Electron",
+   "wiki": "Electron",
+   "year": 1897,
+   "kind": "discovery",
+   "who": "J. J. Thomson",
+   "place": [
+    "Cambridge (Cavendish Laboratory)",
+    0.12,
+    52.2
+   ],
    "text": "Thomson showed in 1897 that cathode rays are made of particles far lighter than atoms.",
-   "source": "https://en.wikipedia.org/wiki/Electron"},
-  {"id": "induction", "name": "Electromagnetic induction", "wiki": "Electromagnetic induction", "year": 1831, "kind": "discovery", "who": "Michael Faraday",
-   "place": ["London (Royal Institution)", -0.143, 51.51],
+   "source": "https://en.wikipedia.org/wiki/Electron",
+   "verified": true
+  },
+  {
+   "id": "induction",
+   "name": "Electromagnetic induction",
+   "wiki": "Electromagnetic induction",
+   "year": 1831,
+   "kind": "discovery",
+   "who": "Michael Faraday",
+   "place": [
+    "London (Royal Institution)",
+    -0.143,
+    51.51
+   ],
    "text": "Faraday showed in August 1831 that a changing magnetic field makes an electric current, the principle of the dynamo.",
    "note": "Joseph Henry found the same effect independently in the United States.",
-   "source": "https://en.wikipedia.org/wiki/Electromagnetic_induction"},
-  {"id": "voltaic-pile", "name": "Voltaic pile (electric battery)", "wiki": "Voltaic pile", "year": 1800, "kind": "invention", "who": "Alessandro Volta",
-   "place": ["Como", 9.09, 45.81],
+   "source": "https://en.wikipedia.org/wiki/Electromagnetic_induction",
+   "verified": true
+  },
+  {
+   "id": "voltaic-pile",
+   "name": "Voltaic pile (electric battery)",
+   "wiki": "Voltaic pile",
+   "year": 1800,
+   "kind": "invention",
+   "who": "Alessandro Volta",
+   "place": [
+    "Como",
+    9.09,
+    45.81
+   ],
    "text": "Volta described the first electric battery, a stack of zinc and copper discs, in a letter to the Royal Society in 1800.",
-   "source": "https://en.wikipedia.org/wiki/Voltaic_pile"},
-  {"id": "lightning-rod", "name": "Lightning rod and the kite experiment", "wiki": "Lightning rod", "year": 1752, "kind": "invention", "who": "Benjamin Franklin",
-   "place": ["Philadelphia", -75.16, 39.95],
+   "source": "https://en.wikipedia.org/wiki/Voltaic_pile",
+   "verified": true
+  },
+  {
+   "id": "lightning-rod",
+   "name": "Lightning rod and the kite experiment",
+   "wiki": "Lightning rod",
+   "year": 1752,
+   "kind": "invention",
+   "who": "Benjamin Franklin",
+   "place": [
+    "Philadelphia",
+    -75.16,
+    39.95
+   ],
    "text": "Franklin's kite experiment of 1752 supported his claim that lightning is electricity, and he promoted lightning rods.",
-   "source": "https://en.wikipedia.org/wiki/Lightning_rod"},
-  {"id": "cotton-gin", "name": "Cotton gin", "wiki": "Cotton gin", "year": 1793, "kind": "invention", "who": "Eli Whitney",
-   "place": ["Mulberry Grove Plantation, Georgia", -81.18, 32.17],
+   "source": "https://en.wikipedia.org/wiki/Lightning_rod",
+   "verified": true
+  },
+  {
+   "id": "cotton-gin",
+   "name": "Cotton gin",
+   "wiki": "Cotton gin",
+   "year": 1793,
+   "kind": "invention",
+   "who": "Eli Whitney",
+   "place": [
+    "Mulberry Grove Plantation, Georgia",
+    -81.18,
+    32.17
+   ],
    "text": "Whitney's gin (1793, patented 1794) separated cotton fibre from seed quickly, making short-staple cotton profitable and spreading slavery in the American South.",
-   "source": "https://en.wikipedia.org/wiki/Cotton_gin"},
-  {"id": "spinning-jenny", "name": "Spinning jenny", "wiki": "Spinning jenny", "year": 1764, "kind": "invention", "who": "James Hargreaves", "approx": true,
-   "place": ["Stanhill, Lancashire", -2.42, 53.74],
+   "source": "https://en.wikipedia.org/wiki/Cotton_gin",
+   "verified": true
+  },
+  {
+   "id": "spinning-jenny",
+   "name": "Spinning jenny",
+   "wiki": "Spinning jenny",
+   "year": 1764,
+   "kind": "invention",
+   "who": "James Hargreaves",
+   "approx": true,
+   "place": [
+    "Stanhill, Lancashire",
+    -2.42,
+    53.74
+   ],
    "text": "Hargreaves' multi-spindle spinning frame (about 1764) let one worker spin eight or more threads at once.",
-   "source": "https://en.wikipedia.org/wiki/Spinning_jenny"},
-  {"id": "flying-shuttle", "name": "Flying shuttle", "wiki": "Flying shuttle", "year": 1733, "kind": "invention", "who": "John Kay",
-   "place": ["Bury, Lancashire", -2.3, 53.59],
+   "source": "https://en.wikipedia.org/wiki/Spinning_jenny",
+   "verified": true
+  },
+  {
+   "id": "flying-shuttle",
+   "name": "Flying shuttle",
+   "wiki": "Flying shuttle",
+   "year": 1733,
+   "kind": "invention",
+   "who": "John Kay",
+   "place": [
+    "Bury, Lancashire",
+    -2.3,
+    53.59
+   ],
    "text": "Kay's flying shuttle (1733) doubled a weaver's output.",
-   "source": "https://en.wikipedia.org/wiki/Flying_shuttle"},
-  {"id": "montgolfier", "name": "First crewed balloon flight", "wiki": "Montgolfier brothers", "year": 1783, "kind": "invention", "who": "Montgolfier brothers; Pilâtre de Rozier and the Marquis d'Arlandes",
-   "place": ["Paris", 2.29, 48.86],
+   "source": "https://en.wikipedia.org/wiki/Flying_shuttle",
+   "verified": true
+  },
+  {
+   "id": "montgolfier",
+   "name": "First crewed balloon flight",
+   "wiki": "Montgolfier brothers",
+   "year": 1783,
+   "kind": "invention",
+   "who": "Montgolfier brothers; Pilâtre de Rozier and the Marquis d'Arlandes",
+   "place": [
+    "Paris",
+    2.29,
+    48.86
+   ],
    "text": "On 21 November 1783 a Montgolfier hot-air balloon carried two men over Paris for about 25 minutes.",
-   "source": "https://en.wikipedia.org/wiki/Montgolfier_brothers"},
-  {"id": "clermont", "name": "Commercial steamboat (Clermont)", "wiki": "North River Steamboat", "year": 1807, "kind": "invention", "who": "Robert Fulton",
-   "place": ["New York City", -74.0, 40.71],
+   "source": "https://en.wikipedia.org/wiki/Montgolfier_brothers",
+   "verified": null
+  },
+  {
+   "id": "clermont",
+   "name": "Commercial steamboat (Clermont)",
+   "wiki": "North River Steamboat",
+   "year": 1807,
+   "kind": "invention",
+   "who": "Robert Fulton",
+   "place": [
+    "New York City",
+    -74.0,
+    40.71
+   ],
    "text": "Fulton's steamboat ran from New York to Albany up the Hudson in August 1807, starting the first commercial steamboat service.",
-   "source": "https://en.wikipedia.org/wiki/North_River_Steamboat"},
-  {"id": "ether-anaesthesia", "name": "Surgical anaesthesia with ether", "wiki": "Ether Dome", "year": 1846, "kind": "discovery", "who": "William T. G. Morton",
-   "place": ["Boston (Massachusetts General Hospital)", -71.069, 42.363],
+   "source": "https://en.wikipedia.org/wiki/North_River_Steamboat",
+   "verified": null
+  },
+  {
+   "id": "ether-anaesthesia",
+   "name": "Surgical anaesthesia with ether",
+   "wiki": "Ether Dome",
+   "year": 1846,
+   "kind": "discovery",
+   "who": "William T. G. Morton",
+   "place": [
+    "Boston (Massachusetts General Hospital)",
+    -71.069,
+    42.363
+   ],
    "text": "Morton anaesthetised a patient with ether for an operation in public on 16 October 1846.",
-   "source": "https://en.wikipedia.org/wiki/Ether_Dome"},
-  {"id": "otto-engine", "name": "Four-stroke engine (Otto)", "wiki": "Otto engine", "year": 1876, "kind": "invention", "who": "Nicolaus Otto",
-   "place": ["Deutz, Cologne", 6.98, 50.94],
+   "source": "https://en.wikipedia.org/wiki/Ether_Dome",
+   "verified": null
+  },
+  {
+   "id": "otto-engine",
+   "name": "Four-stroke engine (Otto)",
+   "wiki": "Otto engine",
+   "year": 1876,
+   "kind": "invention",
+   "who": "Nicolaus Otto",
+   "place": [
+    "Deutz, Cologne",
+    6.98,
+    50.94
+   ],
    "text": "Otto built the first practical four-stroke internal combustion engine in 1876.",
-   "source": "https://en.wikipedia.org/wiki/Otto_engine"},
-  {"id": "cinematograph", "name": "Public film screening (Lumière Cinématographe)", "wiki": "Cinématographe", "year": 1895, "kind": "invention", "who": "Auguste and Louis Lumière",
-   "place": ["Paris (Salon Indien du Grand Café)", 2.33, 48.87],
+   "source": "https://en.wikipedia.org/wiki/Otto_engine",
+   "verified": null
+  },
+  {
+   "id": "cinematograph",
+   "name": "Public film screening (Lumière Cinématographe)",
+   "wiki": "Cinématographe",
+   "year": 1895,
+   "kind": "invention",
+   "who": "Auguste and Louis Lumière",
+   "place": [
+    "Paris (Salon Indien du Grand Café)",
+    2.33,
+    48.87
+   ],
    "text": "The Lumières showed ten short films to a paying audience in Paris on 28 December 1895.",
-   "source": "https://en.wikipedia.org/wiki/Cin%C3%A9matographe"},
-  {"id": "television", "name": "Television (Baird demonstration)", "wiki": "John Logie Baird", "year": 1926, "kind": "invention", "who": "John Logie Baird",
-   "place": ["London (Soho)", -0.132, 51.513],
+   "source": "https://en.wikipedia.org/wiki/Cin%C3%A9matographe",
+   "verified": null
+  },
+  {
+   "id": "television",
+   "name": "Television (Baird demonstration)",
+   "wiki": "John Logie Baird",
+   "year": 1926,
+   "kind": "invention",
+   "who": "John Logie Baird",
+   "place": [
+    "London (Soho)",
+    -0.132,
+    51.513
+   ],
    "text": "Baird gave the first public demonstration of moving television images in his Soho laboratory on 26 January 1926.",
-   "source": "https://en.wikipedia.org/wiki/John_Logie_Baird"},
-  {"id": "he178", "name": "First jet aircraft flight (Heinkel He 178)", "wiki": "Heinkel He 178", "year": 1939, "kind": "invention", "who": "Hans von Ohain and Erich Warsitz",
-   "place": ["Rostock-Marienehe", 12.1, 54.12],
+   "source": "https://en.wikipedia.org/wiki/John_Logie_Baird",
+   "verified": null
+  },
+  {
+   "id": "he178",
+   "name": "First jet aircraft flight (Heinkel He 178)",
+   "wiki": "Heinkel He 178",
+   "year": 1939,
+   "kind": "invention",
+   "who": "Hans von Ohain and Erich Warsitz",
+   "place": [
+    "Rostock-Marienehe",
+    12.1,
+    54.12
+   ],
    "text": "The He 178 made the first flight of a turbojet aircraft on 27 August 1939.",
    "note": "Frank Whittle in Britain had run a jet engine on a test bench in 1937.",
-   "source": "https://en.wikipedia.org/wiki/Heinkel_He_178"},
-  {"id": "eniac", "name": "ENIAC (electronic computer)", "wiki": "ENIAC", "year": 1945, "kind": "invention", "who": "John Mauchly and J. Presper Eckert",
-   "place": ["Philadelphia (University of Pennsylvania)", -75.19, 39.95],
+   "source": "https://en.wikipedia.org/wiki/Heinkel_He_178",
+   "verified": null
+  },
+  {
+   "id": "eniac",
+   "name": "ENIAC (electronic computer)",
+   "wiki": "ENIAC",
+   "year": 1945,
+   "kind": "invention",
+   "who": "John Mauchly and J. Presper Eckert",
+   "place": [
+    "Philadelphia (University of Pennsylvania)",
+    -75.19,
+    39.95
+   ],
    "text": "ENIAC, the first programmable general-purpose electronic computer, was completed in late 1945 and unveiled in February 1946.",
-   "source": "https://en.wikipedia.org/wiki/ENIAC"},
-  {"id": "trinity", "name": "First nuclear weapon test (Trinity)", "wiki": "Trinity (nuclear test)", "year": 1945, "kind": "invention", "who": "Manhattan Project",
-   "place": ["Jornada del Muerto, New Mexico", -106.47, 33.68],
+   "source": "https://en.wikipedia.org/wiki/ENIAC",
+   "verified": true
+  },
+  {
+   "id": "trinity",
+   "name": "First nuclear weapon test (Trinity)",
+   "wiki": "Trinity (nuclear test)",
+   "year": 1945,
+   "kind": "invention",
+   "who": "Manhattan Project",
+   "place": [
+    "Jornada del Muerto, New Mexico",
+    -106.47,
+    33.68
+   ],
    "text": "The Manhattan Project exploded the first atomic bomb on 16 July 1945.",
-   "source": "https://en.wikipedia.org/wiki/Trinity_(nuclear_test)"},
-  {"id": "polio-vaccine", "name": "Polio vaccine (Salk)", "wiki": "Polio vaccine", "year": 1955, "kind": "discovery", "who": "Jonas Salk",
-   "place": ["Pittsburgh", -79.96, 40.44],
+   "source": "https://en.wikipedia.org/wiki/Trinity_(nuclear_test)",
+   "verified": true
+  },
+  {
+   "id": "polio-vaccine",
+   "name": "Polio vaccine (Salk)",
+   "wiki": "Polio vaccine",
+   "year": 1955,
+   "kind": "discovery",
+   "who": "Jonas Salk",
+   "place": [
+    "Pittsburgh",
+    -79.96,
+    40.44
+   ],
    "text": "Salk's inactivated vaccine, developed at the University of Pittsburgh, was declared safe and effective on 12 April 1955 after a field trial of 1.8 million children.",
-   "source": "https://en.wikipedia.org/wiki/Polio_vaccine"},
-  {"id": "gagarin", "name": "First human spaceflight (Vostok 1)", "wiki": "Vostok 1", "year": 1961, "kind": "invention", "who": "Yuri Gagarin",
-   "place": ["Baikonur Cosmodrome", 63.34, 45.92],
+   "source": "https://en.wikipedia.org/wiki/Polio_vaccine",
+   "verified": true
+  },
+  {
+   "id": "gagarin",
+   "name": "First human spaceflight (Vostok 1)",
+   "wiki": "Vostok 1",
+   "year": 1961,
+   "kind": "invention",
+   "who": "Yuri Gagarin",
+   "place": [
+    "Baikonur Cosmodrome",
+    63.34,
+    45.92
+   ],
    "text": "Gagarin orbited the Earth once on 12 April 1961.",
-   "source": "https://en.wikipedia.org/wiki/Vostok_1"},
-  {"id": "apollo-11", "name": "First crewed Moon landing (Apollo 11)", "wiki": "Apollo 11", "year": 1969, "kind": "invention", "who": "Neil Armstrong, Buzz Aldrin, Michael Collins",
-   "place": ["Kennedy Space Center (launch)", -80.65, 28.57],
+   "source": "https://en.wikipedia.org/wiki/Vostok_1",
+   "verified": null
+  },
+  {
+   "id": "apollo-11",
+   "name": "First crewed Moon landing (Apollo 11)",
+   "wiki": "Apollo 11",
+   "year": 1969,
+   "kind": "invention",
+   "who": "Neil Armstrong, Buzz Aldrin, Michael Collins",
+   "place": [
+    "Kennedy Space Center (launch)",
+    -80.65,
+    28.57
+   ],
    "text": "Armstrong and Aldrin landed on the Moon on 20 July 1969 and walked on it for about two and a half hours.",
-   "source": "https://en.wikipedia.org/wiki/Apollo_11"},
-  {"id": "laser", "name": "Laser", "wiki": "Laser", "year": 1960, "kind": "invention", "who": "Theodore Maiman",
-   "place": ["Malibu (Hughes Research Laboratories)", -118.69, 34.04],
+   "source": "https://en.wikipedia.org/wiki/Apollo_11",
+   "verified": null
+  },
+  {
+   "id": "laser",
+   "name": "Laser",
+   "wiki": "Laser",
+   "year": 1960,
+   "kind": "invention",
+   "who": "Theodore Maiman",
+   "place": [
+    "Malibu (Hughes Research Laboratories)",
+    -118.69,
+    34.04
+   ],
    "text": "Maiman built the first working laser, a ruby laser, in May 1960.",
-   "source": "https://en.wikipedia.org/wiki/Laser"},
-  {"id": "integrated-circuit", "name": "Integrated circuit", "wiki": "Integrated circuit", "year": 1958, "kind": "invention", "who": "Jack Kilby",
-   "place": ["Dallas (Texas Instruments)", -96.75, 32.9],
+   "source": "https://en.wikipedia.org/wiki/Laser",
+   "verified": true
+  },
+  {
+   "id": "integrated-circuit",
+   "name": "Integrated circuit",
+   "wiki": "Integrated circuit",
+   "year": 1958,
+   "kind": "invention",
+   "who": "Jack Kilby",
+   "place": [
+    "Dallas (Texas Instruments)",
+    -96.75,
+    32.9
+   ],
    "text": "Kilby showed the first working integrated circuit on 12 September 1958.",
    "note": "Robert Noyce at Fairchild made the first practical silicon (planar) integrated circuit in 1959.",
-   "source": "https://en.wikipedia.org/wiki/Invention_of_the_integrated_circuit"},
-  {"id": "microprocessor", "name": "Microprocessor (Intel 4004)", "wiki": "Intel 4004", "year": 1971, "kind": "invention", "who": "Federico Faggin, Ted Hoff, Stanley Mazor, Masatoshi Shima",
-   "place": ["Santa Clara, California", -121.96, 37.39],
+   "source": "https://en.wikipedia.org/wiki/Invention_of_the_integrated_circuit",
+   "verified": true
+  },
+  {
+   "id": "microprocessor",
+   "name": "Microprocessor (Intel 4004)",
+   "wiki": "Intel 4004",
+   "year": 1971,
+   "kind": "invention",
+   "who": "Federico Faggin, Ted Hoff, Stanley Mazor, Masatoshi Shima",
+   "place": [
+    "Santa Clara, California",
+    -121.96,
+    37.39
+   ],
    "text": "The Intel 4004, the first commercial microprocessor, went on sale in November 1971.",
-   "source": "https://en.wikipedia.org/wiki/Intel_4004"},
-  {"id": "arpanet", "name": "ARPANET, forerunner of the Internet", "wiki": "ARPANET", "year": 1969, "kind": "invention",
-   "place": ["Los Angeles (UCLA)", -118.44, 34.07],
+   "source": "https://en.wikipedia.org/wiki/Intel_4004",
+   "verified": true
+  },
+  {
+   "id": "arpanet",
+   "name": "ARPANET, forerunner of the Internet",
+   "wiki": "ARPANET",
+   "year": 1969,
+   "kind": "invention",
+   "place": [
+    "Los Angeles (UCLA)",
+    -118.44,
+    34.07
+   ],
    "text": "The first message between two ARPANET computers went from UCLA to Stanford Research Institute on 29 October 1969.",
-   "source": "https://en.wikipedia.org/wiki/ARPANET"},
-  {"id": "aspirin", "name": "Aspirin", "wiki": "Aspirin", "year": 1897, "kind": "invention", "who": "Felix Hoffmann (Bayer)",
-   "place": ["Elberfeld (Wuppertal)", 7.15, 51.26],
+   "source": "https://en.wikipedia.org/wiki/ARPANET",
+   "verified": true
+  },
+  {
+   "id": "aspirin",
+   "name": "Aspirin",
+   "wiki": "Aspirin",
+   "year": 1897,
+   "kind": "invention",
+   "who": "Felix Hoffmann (Bayer)",
+   "place": [
+    "Elberfeld (Wuppertal)",
+    7.15,
+    51.26
+   ],
    "text": "Bayer chemists made pure acetylsalicylic acid in 1897 and sold it as Aspirin from 1899.",
-   "source": "https://en.wikipedia.org/wiki/Aspirin"},
-  {"id": "antiseptic", "name": "Antiseptic surgery", "wiki": "Joseph Lister", "year": 1867, "kind": "discovery", "who": "Joseph Lister",
-   "place": ["Glasgow", -4.24, 55.86],
+   "source": "https://en.wikipedia.org/wiki/Aspirin",
+   "verified": null
+  },
+  {
+   "id": "antiseptic",
+   "name": "Antiseptic surgery",
+   "wiki": "Joseph Lister",
+   "year": 1867,
+   "kind": "discovery",
+   "who": "Joseph Lister",
+   "place": [
+    "Glasgow",
+    -4.24,
+    55.86
+   ],
    "text": "Lister published his results with carbolic acid in 1867, sharply cutting deaths after surgery.",
-   "source": "https://en.wikipedia.org/wiki/Joseph_Lister"},
-  {"id": "blood-groups", "name": "ABO blood groups", "wiki": "Karl Landsteiner", "year": 1901, "kind": "discovery", "who": "Karl Landsteiner",
-   "place": ["Vienna", 16.36, 48.21],
+   "source": "https://en.wikipedia.org/wiki/Joseph_Lister",
+   "verified": null
+  },
+  {
+   "id": "blood-groups",
+   "name": "ABO blood groups",
+   "wiki": "Karl Landsteiner",
+   "year": 1901,
+   "kind": "discovery",
+   "who": "Karl Landsteiner",
+   "place": [
+    "Vienna",
+    16.36,
+    48.21
+   ],
    "text": "Landsteiner described the blood groups in 1901, which made safe transfusion possible.",
-   "source": "https://en.wikipedia.org/wiki/Karl_Landsteiner"},
-  {"id": "quantum", "name": "Quantum hypothesis (Planck)", "wiki": "Planck's law", "year": 1900, "kind": "discovery", "who": "Max Planck",
-   "place": ["Berlin", 13.39, 52.52],
+   "source": "https://en.wikipedia.org/wiki/Karl_Landsteiner",
+   "verified": null
+  },
+  {
+   "id": "quantum",
+   "name": "Quantum hypothesis (Planck)",
+   "wiki": "Planck's law",
+   "year": 1900,
+   "kind": "discovery",
+   "who": "Max Planck",
+   "place": [
+    "Berlin",
+    13.39,
+    52.52
+   ],
    "text": "Planck's law of black-body radiation (December 1900) assumed that energy comes in quanta, the start of quantum physics.",
-   "source": "https://en.wikipedia.org/wiki/Planck%27s_law"},
-  {"id": "microorganisms", "name": "Microorganisms (Leeuwenhoek)", "wiki": "Antonie van Leeuwenhoek", "year": 1676, "kind": "discovery", "who": "Antonie van Leeuwenhoek",
-   "place": ["Delft", 4.36, 52.01],
+   "source": "https://en.wikipedia.org/wiki/Planck%27s_law",
+   "verified": null
+  },
+  {
+   "id": "microorganisms",
+   "name": "Microorganisms (Leeuwenhoek)",
+   "wiki": "Antonie van Leeuwenhoek",
+   "year": 1676,
+   "kind": "discovery",
+   "who": "Antonie van Leeuwenhoek",
+   "place": [
+    "Delft",
+    4.36,
+    52.01
+   ],
    "text": "With his own microscopes Leeuwenhoek described bacteria and other 'animalcules' to the Royal Society in 1676.",
-   "source": "https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek"},
-  {"id": "blood-circulation", "name": "Circulation of the blood", "wiki": "De Motu Cordis", "year": 1628, "kind": "discovery", "who": "William Harvey",
-   "place": ["London", -0.1, 51.51],
+   "source": "https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek",
+   "verified": null
+  },
+  {
+   "id": "blood-circulation",
+   "name": "Circulation of the blood",
+   "wiki": "De Motu Cordis",
+   "year": 1628,
+   "kind": "discovery",
+   "who": "William Harvey",
+   "place": [
+    "London",
+    -0.1,
+    51.51
+   ],
    "text": "Harvey showed in De Motu Cordis (1628) that the heart pumps blood round the body in a circuit.",
-   "source": "https://en.wikipedia.org/wiki/De_Motu_Cordis"},
-  {"id": "pendulum-clock", "name": "Pendulum clock", "wiki": "Pendulum clock", "year": 1656, "kind": "invention", "who": "Christiaan Huygens",
-   "place": ["The Hague", 4.31, 52.08],
+   "source": "https://en.wikipedia.org/wiki/De_Motu_Cordis",
+   "verified": null
+  },
+  {
+   "id": "pendulum-clock",
+   "name": "Pendulum clock",
+   "wiki": "Pendulum clock",
+   "year": 1656,
+   "kind": "invention",
+   "who": "Christiaan Huygens",
+   "place": [
+    "The Hague",
+    4.31,
+    52.08
+   ],
    "text": "Huygens built the first pendulum clock in 1656, making clocks accurate to about a minute a day.",
-   "source": "https://en.wikipedia.org/wiki/Pendulum_clock"},
-  {"id": "barometer", "name": "Mercury barometer", "wiki": "Barometer", "year": 1643, "kind": "invention", "who": "Evangelista Torricelli",
-   "place": ["Florence", 11.25, 43.77],
+   "source": "https://en.wikipedia.org/wiki/Pendulum_clock",
+   "verified": true
+  },
+  {
+   "id": "barometer",
+   "name": "Mercury barometer",
+   "wiki": "Barometer",
+   "year": 1643,
+   "kind": "invention",
+   "who": "Evangelista Torricelli",
+   "place": [
+    "Florence",
+    11.25,
+    43.77
+   ],
    "text": "Torricelli's mercury tube of 1643 showed that air has weight and measured its pressure.",
-   "source": "https://en.wikipedia.org/wiki/Barometer"},
-  {"id": "logarithms", "name": "Logarithms", "wiki": "John Napier", "year": 1614, "kind": "discovery", "who": "John Napier",
-   "place": ["Edinburgh", -3.19, 55.95],
+   "source": "https://en.wikipedia.org/wiki/Barometer",
+   "verified": true
+  },
+  {
+   "id": "logarithms",
+   "name": "Logarithms",
+   "wiki": "John Napier",
+   "year": 1614,
+   "kind": "discovery",
+   "who": "John Napier",
+   "place": [
+    "Edinburgh",
+    -3.19,
+    55.95
+   ],
    "text": "Napier published his tables of logarithms in 1614, which made long calculations in astronomy and navigation far quicker.",
-   "source": "https://en.wikipedia.org/wiki/John_Napier"},
-  {"id": "brahmagupta", "name": "Rules for zero and negative numbers (Brahmagupta)", "wiki": "Brāhmasphuṭasiddhānta", "year": 628, "kind": "discovery", "who": "Brahmagupta",
-   "place": ["Bhinmal", 72.27, 25.0],
+   "source": "https://en.wikipedia.org/wiki/John_Napier",
+   "verified": null
+  },
+  {
+   "id": "brahmagupta",
+   "name": "Rules for zero and negative numbers (Brahmagupta)",
+   "wiki": "Brāhmasphuṭasiddhānta",
+   "year": 628,
+   "kind": "discovery",
+   "who": "Brahmagupta",
+   "place": [
+    "Bhinmal",
+    72.27,
+    25.0
+   ],
    "text": "Brahmagupta's treatise of 628 gives the first written rules for calculating with zero and negative numbers.",
-   "source": "https://en.wikipedia.org/wiki/Br%C4%81hmasphu%E1%B9%ADasiddh%C4%81nta"},
-  {"id": "paper-money", "name": "Paper money (jiaozi)", "wiki": "Jiaozi (currency)", "year": 1024, "kind": "invention",
-   "place": ["Chengdu", 104.06, 30.66],
+   "source": "https://en.wikipedia.org/wiki/Br%C4%81hmasphu%E1%B9%ADasiddh%C4%81nta",
+   "verified": true
+  },
+  {
+   "id": "paper-money",
+   "name": "Paper money (jiaozi)",
+   "wiki": "Jiaozi (currency)",
+   "year": 1024,
+   "kind": "invention",
+   "place": [
+    "Chengdu",
+    104.06,
+    30.66
+   ],
    "text": "The Song government took over the merchants' paper notes of Sichuan and issued the first government paper money in 1024.",
-   "source": "https://en.wikipedia.org/wiki/Jiaozi_(currency)"},
-  {"id": "algebra", "name": "Algebra (al-Khwarizmi)", "wiki": "The Compendious Book on Calculation by Completion and Balancing", "year": 820, "kind": "discovery", "who": "Muhammad ibn Musa al-Khwarizmi", "approx": true,
-   "place": ["Baghdad", 44.36, 33.31],
+   "source": "https://en.wikipedia.org/wiki/Jiaozi_(currency)",
+   "verified": null
+  },
+  {
+   "id": "algebra",
+   "name": "Algebra (al-Khwarizmi)",
+   "wiki": "The Compendious Book on Calculation by Completion and Balancing",
+   "year": 820,
+   "kind": "discovery",
+   "who": "Muhammad ibn Musa al-Khwarizmi",
+   "approx": true,
+   "place": [
+    "Baghdad",
+    44.36,
+    33.31
+   ],
    "text": "Al-Khwarizmi's book on 'completion and balancing' (al-jabr), written in Baghdad around 820, gave algebra its name.",
-   "source": "https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing"},
-  {"id": "book-of-optics", "name": "Book of Optics (Ibn al-Haytham)", "wiki": "Book of Optics", "year": 1021, "kind": "discovery", "who": "Ibn al-Haytham", "approx": true,
-   "place": ["Cairo", 31.24, 30.04],
+   "source": "https://en.wikipedia.org/wiki/The_Compendious_Book_on_Calculation_by_Completion_and_Balancing",
+   "verified": null
+  },
+  {
+   "id": "book-of-optics",
+   "name": "Book of Optics (Ibn al-Haytham)",
+   "wiki": "Book of Optics",
+   "year": 1021,
+   "kind": "discovery",
+   "who": "Ibn al-Haytham",
+   "approx": true,
+   "place": [
+    "Cairo",
+    31.24,
+    30.04
+   ],
    "text": "Ibn al-Haytham showed by experiment that we see by light entering the eye; written in Cairo between 1011 and 1021.",
-   "source": "https://en.wikipedia.org/wiki/Book_of_Optics"},
-  {"id": "eratosthenes", "name": "Measurement of the Earth (Eratosthenes)", "wiki": "Eratosthenes", "year": -240, "kind": "discovery", "who": "Eratosthenes", "approx": true,
-   "place": ["Alexandria", 29.92, 31.2],
+   "source": "https://en.wikipedia.org/wiki/Book_of_Optics",
+   "verified": true
+  },
+  {
+   "id": "eratosthenes",
+   "name": "Measurement of the Earth (Eratosthenes)",
+   "wiki": "Eratosthenes",
+   "year": -240,
+   "kind": "discovery",
+   "who": "Eratosthenes",
+   "approx": true,
+   "place": [
+    "Alexandria",
+    29.92,
+    31.2
+   ],
    "text": "The librarian of Alexandria measured the Earth's circumference from the Sun's angle at Syene and Alexandria, around 240 BC.",
-   "source": "https://en.wikipedia.org/wiki/Eratosthenes"},
-  {"id": "seismoscope", "name": "Seismoscope (Zhang Heng)", "wiki": "Zhang Heng", "year": 132, "kind": "invention", "who": "Zhang Heng",
-   "place": ["Luoyang", 112.45, 34.62],
+   "source": "https://en.wikipedia.org/wiki/Eratosthenes",
+   "verified": null
+  },
+  {
+   "id": "seismoscope",
+   "name": "Seismoscope (Zhang Heng)",
+   "wiki": "Zhang Heng",
+   "year": 132,
+   "kind": "invention",
+   "who": "Zhang Heng",
+   "place": [
+    "Luoyang",
+    112.45,
+    34.62
+   ],
    "text": "Zhang Heng presented a seismoscope to the Han court in 132 that showed the direction of a distant earthquake.",
-   "source": "https://en.wikipedia.org/wiki/Zhang_Heng"},
-  {"id": "columbus", "name": "Columbus reaches the Americas", "wiki": "Voyages of Christopher Columbus", "year": 1492, "kind": "exploration", "who": "Christopher Columbus",
+   "source": "https://en.wikipedia.org/wiki/Zhang_Heng",
+   "verified": null
+  },
+  {
+   "id": "columbus",
+   "name": "Columbus reaches the Americas",
+   "wiki": "Voyages of Christopher Columbus",
+   "year": 1492,
+   "kind": "exploration",
+   "who": "Christopher Columbus",
    "state": "Crown of Castile",
    "text": "Sailing for Castile, Columbus landed in the Bahamas on 12 October 1492, beginning lasting European contact with the Americas.",
    "note": "Norse Greenlanders had reached Newfoundland about 1000 (L'Anse aux Meadows).",
-   "source": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus"},
-  {"id": "da-gama", "name": "Sea route to India (Vasco da Gama)", "wiki": "Portuguese India Armadas", "year": 1498, "kind": "exploration", "who": "Vasco da Gama",
+   "source": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus",
+   "verified": true
+  },
+  {
+   "id": "da-gama",
+   "name": "Sea route to India (Vasco da Gama)",
+   "wiki": "Portuguese India Armadas",
+   "year": 1498,
+   "kind": "exploration",
+   "who": "Vasco da Gama",
    "state": "Kingdom of Portugal",
    "text": "Da Gama sailed round Africa and reached Calicut in May 1498, opening the sea route from Europe to India.",
-   "source": "https://en.wikipedia.org/wiki/Vasco_da_Gama"},
-  {"id": "magellan", "name": "First circumnavigation (Magellan-Elcano)", "wiki": "Magellan expedition", "year": 1522, "kind": "exploration", "who": "Ferdinand Magellan and Juan Sebastián Elcano",
+   "source": "https://en.wikipedia.org/wiki/Vasco_da_Gama",
+   "verified": null
+  },
+  {
+   "id": "magellan",
+   "name": "First circumnavigation (Magellan-Elcano)",
+   "wiki": "Magellan expedition",
+   "year": 1522,
+   "kind": "exploration",
+   "who": "Ferdinand Magellan and Juan Sebastián Elcano",
    "state": "Kingdom of Spain",
    "text": "Of five ships that left Spain in 1519, one returned in September 1522 under Elcano, having sailed round the world; Magellan was killed in the Philippines.",
-   "source": "https://en.wikipedia.org/wiki/Magellan_expedition"},
-  {"id": "cook-australia", "name": "Cook charts eastern Australia", "wiki": "First voyage of James Cook", "year": 1770, "kind": "exploration", "who": "James Cook",
+   "source": "https://en.wikipedia.org/wiki/Magellan_expedition",
+   "verified": true
+  },
+  {
+   "id": "cook-australia",
+   "name": "Cook charts eastern Australia",
+   "wiki": "First voyage of James Cook",
+   "year": 1770,
+   "kind": "exploration",
+   "who": "James Cook",
    "state": "Kingdom of Great Britain",
    "text": "Cook charted the east coast of Australia in 1770 and claimed it for Britain.",
-   "source": "https://en.wikipedia.org/wiki/First_voyage_of_James_Cook"},
-  {"id": "oxygen", "name": "Oxygen", "wiki": "Oxygen", "year": 1774, "kind": "discovery", "who": "Joseph Priestley",
-   "place": ["Calne, Wiltshire", -2.0, 51.44],
+   "source": "https://en.wikipedia.org/wiki/First_voyage_of_James_Cook",
+   "verified": true
+  },
+  {
+   "id": "oxygen",
+   "name": "Oxygen",
+   "wiki": "Oxygen",
+   "year": 1774,
+   "kind": "discovery",
+   "who": "Joseph Priestley",
+   "place": [
+    "Calne, Wiltshire",
+    -2.0,
+    51.44
+   ],
    "text": "Priestley made oxygen by heating mercuric oxide on 1 August 1774.",
    "note": "Carl Wilhelm Scheele had made it earlier (1771-1772) but published later; Lavoisier named it and explained its role in burning.",
-   "source": "https://en.wikipedia.org/wiki/Oxygen"},
-  {"id": "uranus", "name": "Uranus", "wiki": "Uranus", "year": 1781, "kind": "discovery", "who": "William Herschel",
-   "place": ["Bath", -2.36, 51.38],
+   "source": "https://en.wikipedia.org/wiki/Oxygen",
+   "verified": true
+  },
+  {
+   "id": "uranus",
+   "name": "Uranus",
+   "wiki": "Uranus",
+   "year": 1781,
+   "kind": "discovery",
+   "who": "William Herschel",
+   "place": [
+    "Bath",
+    -2.36,
+    51.38
+   ],
    "text": "Herschel saw Uranus from his garden in Bath on 13 March 1781, the first planet found with a telescope.",
-   "source": "https://en.wikipedia.org/wiki/Uranus"},
-  {"id": "neptune", "name": "Neptune", "wiki": "Discovery of Neptune", "year": 1846, "kind": "discovery", "who": "Johann Galle, from Urbain Le Verrier's prediction",
-   "place": ["Berlin Observatory", 13.39, 52.5],
+   "source": "https://en.wikipedia.org/wiki/Uranus",
+   "verified": true
+  },
+  {
+   "id": "neptune",
+   "name": "Neptune",
+   "wiki": "Discovery of Neptune",
+   "year": 1846,
+   "kind": "discovery",
+   "who": "Johann Galle, from Urbain Le Verrier's prediction",
+   "place": [
+    "Berlin Observatory",
+    13.39,
+    52.5
+   ],
    "text": "Galle found Neptune at the Berlin Observatory on 23 September 1846, within a degree of where Le Verrier had calculated it.",
    "note": "John Couch Adams in Cambridge had made a similar prediction.",
-   "source": "https://en.wikipedia.org/wiki/Discovery_of_Neptune"},
-  {"id": "mendel", "name": "Laws of inheritance (Mendel)", "wiki": "Experiments on Plant Hybridization", "year": 1865, "kind": "discovery", "who": "Gregor Mendel",
-   "place": ["Brno", 16.61, 49.19],
+   "source": "https://en.wikipedia.org/wiki/Discovery_of_Neptune",
+   "verified": true
+  },
+  {
+   "id": "mendel",
+   "name": "Laws of inheritance (Mendel)",
+   "wiki": "Experiments on Plant Hybridization",
+   "year": 1865,
+   "kind": "discovery",
+   "who": "Gregor Mendel",
+   "place": [
+    "Brno",
+    16.61,
+    49.19
+   ],
    "text": "The friar Mendel presented his pea-plant experiments in Brno in 1865; they were ignored until 1900.",
-   "source": "https://en.wikipedia.org/wiki/Experiments_on_Plant_Hybridization"},
-  {"id": "tuberculosis", "name": "Tuberculosis bacterium", "wiki": "Robert Koch", "year": 1882, "kind": "discovery", "who": "Robert Koch",
-   "place": ["Berlin", 13.39, 52.52],
+   "source": "https://en.wikipedia.org/wiki/Experiments_on_Plant_Hybridization",
+   "verified": null
+  },
+  {
+   "id": "tuberculosis",
+   "name": "Tuberculosis bacterium",
+   "wiki": "Robert Koch",
+   "year": 1882,
+   "kind": "discovery",
+   "who": "Robert Koch",
+   "place": [
+    "Berlin",
+    13.39,
+    52.52
+   ],
    "text": "Koch announced on 24 March 1882 that a bacterium causes tuberculosis.",
-   "source": "https://en.wikipedia.org/wiki/Robert_Koch"},
-  {"id": "rosetta-stone", "name": "Rosetta Stone", "wiki": "Rosetta Stone", "year": 1799, "kind": "discovery", "who": "French soldiers under Pierre-François Bouchard",
-   "place": ["Rashid (Rosetta)", 30.42, 31.4],
+   "source": "https://en.wikipedia.org/wiki/Robert_Koch",
+   "verified": null
+  },
+  {
+   "id": "rosetta-stone",
+   "name": "Rosetta Stone",
+   "wiki": "Rosetta Stone",
+   "year": 1799,
+   "kind": "discovery",
+   "who": "French soldiers under Pierre-François Bouchard",
+   "place": [
+    "Rashid (Rosetta)",
+    30.42,
+    31.4
+   ],
    "text": "French soldiers found the stone in July 1799; its Greek text was the key Champollion used to read hieroglyphs in 1822.",
-   "source": "https://en.wikipedia.org/wiki/Rosetta_Stone"},
-  {"id": "tutankhamun", "name": "Tomb of Tutankhamun", "wiki": "KV62", "year": 1922, "kind": "discovery", "who": "Howard Carter",
-   "place": ["Valley of the Kings", 32.6, 25.74],
+   "source": "https://en.wikipedia.org/wiki/Rosetta_Stone",
+   "verified": true
+  },
+  {
+   "id": "tutankhamun",
+   "name": "Tomb of Tutankhamun",
+   "wiki": "KV62",
+   "year": 1922,
+   "kind": "discovery",
+   "who": "Howard Carter",
+   "place": [
+    "Valley of the Kings",
+    32.6,
+    25.74
+   ],
    "text": "Carter found the nearly intact tomb in November 1922.",
-   "source": "https://en.wikipedia.org/wiki/KV62"},
-  {"id": "liquid-rocket", "name": "Liquid-fuelled rocket", "wiki": "Robert H. Goddard", "year": 1926, "kind": "invention", "who": "Robert Goddard",
-   "place": ["Auburn, Massachusetts", -71.84, 42.2],
+   "source": "https://en.wikipedia.org/wiki/KV62",
+   "verified": null
+  },
+  {
+   "id": "liquid-rocket",
+   "name": "Liquid-fuelled rocket",
+   "wiki": "Robert H. Goddard",
+   "year": 1926,
+   "kind": "invention",
+   "who": "Robert Goddard",
+   "place": [
+    "Auburn, Massachusetts",
+    -71.84,
+    42.2
+   ],
    "text": "Goddard launched the first liquid-fuelled rocket on 16 March 1926; it flew 12 m high.",
-   "source": "https://en.wikipedia.org/wiki/Robert_H._Goddard"},
-  {"id": "bakelite", "name": "Bakelite (first synthetic plastic)", "wiki": "Bakelite", "year": 1907, "kind": "invention", "who": "Leo Baekeland",
-   "place": ["Yonkers, New York", -73.9, 40.93],
+   "source": "https://en.wikipedia.org/wiki/Robert_H._Goddard",
+   "verified": null
+  },
+  {
+   "id": "bakelite",
+   "name": "Bakelite (first synthetic plastic)",
+   "wiki": "Bakelite",
+   "year": 1907,
+   "kind": "invention",
+   "who": "Leo Baekeland",
+   "place": [
+    "Yonkers, New York",
+    -73.9,
+    40.93
+   ],
    "text": "Baekeland made the first fully synthetic plastic in 1907.",
-   "source": "https://en.wikipedia.org/wiki/Bakelite"},
-  {"id": "haber", "name": "Ammonia synthesis (Haber process)", "wiki": "Haber process", "year": 1909, "kind": "invention", "who": "Fritz Haber",
-   "place": ["Karlsruhe", 8.4, 49.01],
+   "source": "https://en.wikipedia.org/wiki/Bakelite",
+   "verified": true
+  },
+  {
+   "id": "haber",
+   "name": "Ammonia synthesis (Haber process)",
+   "wiki": "Haber process",
+   "year": 1909,
+   "kind": "invention",
+   "who": "Fritz Haber",
+   "place": [
+    "Karlsruhe",
+    8.4,
+    49.01
+   ],
    "text": "Haber made ammonia from the nitrogen of the air in 1909; Carl Bosch scaled it up for fertiliser and explosives.",
-   "source": "https://en.wikipedia.org/wiki/Haber_process"},
-  {"id": "expanding-universe", "name": "Expanding universe (Hubble's law)", "wiki": "Hubble's law", "year": 1929, "kind": "discovery", "who": "Edwin Hubble",
-   "place": ["Mount Wilson Observatory", -118.06, 34.22],
+   "source": "https://en.wikipedia.org/wiki/Haber_process",
+   "verified": null
+  },
+  {
+   "id": "expanding-universe",
+   "name": "Expanding universe (Hubble's law)",
+   "wiki": "Hubble's law",
+   "year": 1929,
+   "kind": "discovery",
+   "who": "Edwin Hubble",
+   "place": [
+    "Mount Wilson Observatory",
+    -118.06,
+    34.22
+   ],
    "text": "Hubble showed in 1929 that the farther a galaxy is, the faster it moves away.",
    "note": "Georges Lemaître had published the relation in 1927.",
-   "source": "https://en.wikipedia.org/wiki/Hubble%27s_law"},
-  {"id": "cmb", "name": "Cosmic microwave background", "wiki": "Discovery of cosmic microwave background radiation", "year": 1964, "kind": "discovery", "who": "Arno Penzias and Robert Wilson",
-   "place": ["Holmdel, New Jersey", -74.18, 40.39],
+   "source": "https://en.wikipedia.org/wiki/Hubble%27s_law",
+   "verified": false
+  },
+  {
+   "id": "cmb",
+   "name": "Cosmic microwave background",
+   "wiki": "Discovery of cosmic microwave background radiation",
+   "year": 1964,
+   "kind": "discovery",
+   "who": "Arno Penzias and Robert Wilson",
+   "place": [
+    "Holmdel, New Jersey",
+    -74.18,
+    40.39
+   ],
    "text": "Penzias and Wilson found an unexplained microwave hiss from every direction in 1964, the afterglow of the Big Bang.",
-   "source": "https://en.wikipedia.org/wiki/Discovery_of_cosmic_microwave_background_radiation"},
-  {"id": "heart-transplant", "name": "First human heart transplant", "wiki": "Christiaan Barnard", "year": 1967, "kind": "discovery", "who": "Christiaan Barnard",
-   "place": ["Cape Town (Groote Schuur Hospital)", 18.46, -33.94],
+   "source": "https://en.wikipedia.org/wiki/Discovery_of_cosmic_microwave_background_radiation",
+   "verified": null
+  },
+  {
+   "id": "heart-transplant",
+   "name": "First human heart transplant",
+   "wiki": "Christiaan Barnard",
+   "year": 1967,
+   "kind": "discovery",
+   "who": "Christiaan Barnard",
+   "place": [
+    "Cape Town (Groote Schuur Hospital)",
+    18.46,
+    -33.94
+   ],
    "text": "Barnard transplanted a heart into Louis Washkansky on 3 December 1967; he lived 18 days.",
-   "source": "https://en.wikipedia.org/wiki/Christiaan_Barnard"},
-  {"id": "ivf", "name": "First IVF birth", "wiki": "Louise Brown", "year": 1978, "kind": "discovery", "who": "Robert Edwards and Patrick Steptoe",
-   "place": ["Oldham", -2.11, 53.54],
+   "source": "https://en.wikipedia.org/wiki/Christiaan_Barnard",
+   "verified": null
+  },
+  {
+   "id": "ivf",
+   "name": "First IVF birth",
+   "wiki": "Louise Brown",
+   "year": 1978,
+   "kind": "discovery",
+   "who": "Robert Edwards and Patrick Steptoe",
+   "place": [
+    "Oldham",
+    -2.11,
+    53.54
+   ],
    "text": "Louise Brown, the first baby conceived by in vitro fertilisation, was born on 25 July 1978.",
-   "source": "https://en.wikipedia.org/wiki/Louise_Brown"},
-  {"id": "dolly", "name": "Dolly the sheep (cloned mammal)", "wiki": "Dolly (sheep)", "year": 1996, "kind": "discovery", "who": "Ian Wilmut, Keith Campbell (Roslin Institute)",
-   "place": ["Roslin", -3.16, 55.86],
+   "source": "https://en.wikipedia.org/wiki/Louise_Brown",
+   "verified": null
+  },
+  {
+   "id": "dolly",
+   "name": "Dolly the sheep (cloned mammal)",
+   "wiki": "Dolly (sheep)",
+   "year": 1996,
+   "kind": "discovery",
+   "who": "Ian Wilmut, Keith Campbell (Roslin Institute)",
+   "place": [
+    "Roslin",
+    -3.16,
+    55.86
+   ],
    "text": "Dolly, the first mammal cloned from an adult cell, was born on 5 July 1996.",
-   "source": "https://en.wikipedia.org/wiki/Dolly_(sheep)"},
-  {"id": "higgs", "name": "Higgs boson", "wiki": "Higgs boson", "year": 2012, "kind": "discovery", "who": "ATLAS and CMS teams",
-   "place": ["CERN, Meyrin", 6.05, 46.23],
+   "source": "https://en.wikipedia.org/wiki/Dolly_(sheep)",
+   "verified": null
+  },
+  {
+   "id": "higgs",
+   "name": "Higgs boson",
+   "wiki": "Higgs boson",
+   "year": 2012,
+   "kind": "discovery",
+   "who": "ATLAS and CMS teams",
+   "place": [
+    "CERN, Meyrin",
+    6.05,
+    46.23
+   ],
    "text": "CERN announced on 4 July 2012 that the Large Hadron Collider had found the particle predicted by Higgs and others in 1964.",
-   "source": "https://en.wikipedia.org/wiki/Higgs_boson"},
-  {"id": "gravitational-waves", "name": "Gravitational waves detected", "wiki": "First observation of gravitational waves", "year": 2015, "kind": "discovery", "who": "LIGO and Virgo collaborations",
-   "place": ["Livingston, Louisiana (LIGO)", -90.77, 30.56],
+   "source": "https://en.wikipedia.org/wiki/Higgs_boson",
+   "verified": true
+  },
+  {
+   "id": "gravitational-waves",
+   "name": "Gravitational waves detected",
+   "wiki": "First observation of gravitational waves",
+   "year": 2015,
+   "kind": "discovery",
+   "who": "LIGO and Virgo collaborations",
+   "place": [
+    "Livingston, Louisiana (LIGO)",
+    -90.77,
+    30.56
+   ],
    "text": "LIGO detected waves from two merging black holes on 14 September 2015, as Einstein's theory predicted.",
-   "source": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves"},
-  {"id": "pulsar", "name": "Pulsars", "wiki": "Pulsar", "year": 1967, "kind": "discovery", "who": "Jocelyn Bell Burnell and Antony Hewish",
-   "place": ["Cambridge", 0.12, 52.2],
+   "source": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves",
+   "verified": true
+  },
+  {
+   "id": "pulsar",
+   "name": "Pulsars",
+   "wiki": "Pulsar",
+   "year": 1967,
+   "kind": "discovery",
+   "who": "Jocelyn Bell Burnell and Antony Hewish",
+   "place": [
+    "Cambridge",
+    0.12,
+    52.2
+   ],
    "text": "Bell Burnell noticed the regular radio pulses of the first pulsar in November 1967.",
-   "source": "https://en.wikipedia.org/wiki/Pulsar"},
-  {"id": "diesel", "name": "Diesel engine", "wiki": "Diesel engine", "year": 1897, "kind": "invention", "who": "Rudolf Diesel",
-   "place": ["Augsburg", 10.9, 48.37],
+   "source": "https://en.wikipedia.org/wiki/Pulsar",
+   "verified": true
+  },
+  {
+   "id": "diesel",
+   "name": "Diesel engine",
+   "wiki": "Diesel engine",
+   "year": 1897,
+   "kind": "invention",
+   "who": "Rudolf Diesel",
+   "place": [
+    "Augsburg",
+    10.9,
+    48.37
+   ],
    "text": "Diesel's compression-ignition engine (patented 1893) first ran efficiently at the Augsburg machine works in 1897.",
-   "source": "https://en.wikipedia.org/wiki/Diesel_engine"},
-  {"id": "germ-theory", "name": "Pasteurisation", "wiki": "Pasteurization", "year": 1864, "kind": "invention", "who": "Louis Pasteur",
-   "place": ["Paris", 2.35, 48.86],
+   "source": "https://en.wikipedia.org/wiki/Diesel_engine",
+   "verified": false
+  },
+  {
+   "id": "germ-theory",
+   "name": "Pasteurisation",
+   "wiki": "Pasteurization",
+   "year": 1864,
+   "kind": "invention",
+   "who": "Louis Pasteur",
+   "place": [
+    "Paris",
+    2.35,
+    48.86
+   ],
    "text": "Pasteur showed in 1864 that gentle heating kept wine from spoiling by killing microbes.",
-   "source": "https://en.wikipedia.org/wiki/Pasteurization"}
+   "source": "https://en.wikipedia.org/wiki/Pasteurization",
+   "verified": true
+  }
  ]
 }

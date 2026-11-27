@@ -105,8 +105,20 @@ def main():
         pt = point(r['c'])
         if pt:
             people.setdefault(qid(r['x']), {})['birth'] = [qid(r['b']), r.get('bl') or qid(r['b']), pt[0], pt[1]]
+    for r in batch(who, 200, lambda vals: f'''SELECT ?x ?b ?d WHERE {{ VALUES ?x {{ {vals} }} OPTIONAL {{ ?x wdt:P569 ?b }} OPTIONAL {{ ?x wdt:P570 ?d }} }}''', 'lifespans'):
+        p = people.setdefault(qid(r['x']), {})
+        if r.get('b'):
+            p['born'] = year_of(r['b'])
+        if r.get('d'):
+            p['died'] = year_of(r['d'])
+    # locations of discovery that are whole countries (their coordinates are a centre point, not a place)
+    locs = {l[0] for e in items.values() for l in e.get('loc', [])}
+    countries = set()
+    for r in batch(locs, 200, lambda vals: f'''SELECT DISTINCT ?x WHERE {{ VALUES ?x {{ {vals} }} VALUES ?c {{ wd:Q6256 wd:Q3624078 wd:Q7275 wd:Q3024240 wd:Q1048835 }}
+  ?x wdt:P31/wdt:P279? ?c }}''', 'country locations'):
+        countries.add(qid(r['x']))
     # the capitals of countries of origin and citizenship, for items with nothing more precise
-    cs = {c[0] for e in items.values() for c in e.get('origin', []) + e.get('country', [])} | {c[0] for p in people.values() for c in p.get('cit', [])}
+    cs = {c[0] for e in items.values() for c in e.get('origin', []) + e.get('country', [])} | {c[0] for p in people.values() for c in p.get('cit', [])} | countries
     caps = {}
     for r in batch(cs, 200, lambda vals: f'''SELECT ?x ?cap ?capl ?c ?s ?e WHERE {{ VALUES ?x {{ {vals} }} ?x p:P36 ?st . ?st ps:P36 ?cap .
   ?cap wdt:P625 ?c . OPTIONAL {{ ?st pq:P580 ?s }} OPTIONAL {{ ?st pq:P582 ?e }} OPTIONAL {{ ?cap rdfs:label ?capl FILTER(LANG(?capl) = "en") }} }}''', 'capitals'):
@@ -116,7 +128,7 @@ def main():
             lst = caps.setdefault(qid(r['x']), [])
             if not any(x[0] == row[0] for x in lst):
                 lst.append(row)
-    write_json(os.path.join(OUT, 'discoveries_raw.json'), {'items': items, 'people': people, 'capitals': caps})
+    write_json(os.path.join(OUT, 'discoveries_raw.json'), {'items': items, 'people': people, 'capitals': caps, 'countryLocs': sorted(countries)})
     log(f'  {len(items)} items, {len(people)} people, {len(caps)} countries with a capital')
 
 

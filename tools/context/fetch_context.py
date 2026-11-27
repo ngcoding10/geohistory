@@ -100,8 +100,9 @@ def main():
                 log(f'  regime not found on Wikidata: {title}')
                 out.append([a, b, None, title, False, 'no Wikidata item for this article'])
                 continue
-            ok_a = r['from'] is not None and abs(r['from'] - a) <= 2
-            ok_b = (r['to'] is not None and abs(r['to'] - b) <= 2) or (r['to'] is None and b >= 2019)
+            # the row must lie within the item's own years (a regime row may cover part of a longer-lived item)
+            ok_a = r['from'] is not None and r['from'] - 2 <= a
+            ok_b = (r['to'] is not None and b <= r['to'] + 2) or (r['to'] is None)
             note = f"Wikidata: {r['from'] if r['from'] is not None else '?'} to {r['to'] if r['to'] is not None else 'today'}"
             out.append([a, b, r['q'], title, ok_a and ok_b, note])
         regimes[name] = out
@@ -196,26 +197,38 @@ def main():
             e['ideo'].append(r['il'])
     log(f'  parties: {len(parties)}')
 
-    # movements: social, political, religious, cultural and artistic movements with a country and a start
+    # movements: social, political, religious, cultural and artistic movements with a country and a start.
+    # The classes are listed first (subclasses of six roots), then their members with 12+ sitelinks.
     movements = {}
-    roots = 'wd:Q49773 wd:Q2738074 wd:Q1062083 wd:Q2198855 wd:Q968159 wd:Q1144661'
-    for r in batch(items, 60, lambda vals: f'''SELECT ?m ?x ?ml ?md ?start ?end ?sl ?root WHERE {{ VALUES ?x {{ {vals} }} VALUES ?root {{ {roots} }}
+    roots = ['Q49773', 'Q2738074', 'Q1062083', 'Q2198855', 'Q968159', 'Q1144661']
+    classes = {}
+    for root in roots:
+        for r in sparql(f'SELECT DISTINCT ?c WHERE {{ ?c wdt:P279* wd:{root} }}'):
+            classes.setdefault(qid(r['c']), root)
+    log(f'  movement classes: {len(classes)}')
+    members = {}
+    for r in batch(set(classes), 150, lambda vals: f'''SELECT ?m ?c ?sl WHERE {{ VALUES ?c {{ {vals} }}
+  ?m wdt:P31 ?c ; wikibase:sitelinks ?sl . FILTER(?sl >= 12) }}''', 'movement members'):
+        members.setdefault(qid(r['m']), (int(r['sl']), classes[qid(r['c'])]))
+    log(f'  movement items: {len(members)}')
+    for r in batch(set(members), 150, lambda vals: f'''SELECT ?m ?x ?ml ?md ?s1 ?s2 ?e1 ?e2 WHERE {{ VALUES ?m {{ {vals} }}
   {{ ?m wdt:P17 ?x }} UNION {{ ?m wdt:P495 ?x }}
-  ?m wdt:P31/wdt:P279* ?root ; wikibase:sitelinks ?sl . FILTER(?sl >= 12)
-  OPTIONAL {{ ?m wdt:P571 ?s1 }} OPTIONAL {{ ?m wdt:P580 ?s2 }} BIND(COALESCE(?s1, ?s2) AS ?start) FILTER(BOUND(?start))
-  OPTIONAL {{ ?m wdt:P576 ?e1 }} OPTIONAL {{ ?m wdt:P582 ?e2 }} BIND(COALESCE(?e1, ?e2) AS ?end)
-  OPTIONAL {{ ?m rdfs:label ?ml FILTER(LANG(?ml) = "en") }} OPTIONAL {{ ?m schema:description ?md FILTER(LANG(?md) = "en") }} }}''', 'movements'):
+  OPTIONAL {{ ?m wdt:P571 ?s1 }} OPTIONAL {{ ?m wdt:P580 ?s2 }} OPTIONAL {{ ?m wdt:P576 ?e1 }} OPTIONAL {{ ?m wdt:P582 ?e2 }}
+  OPTIONAL {{ ?m rdfs:label ?ml FILTER(LANG(?ml) = "en") }} OPTIONAL {{ ?m schema:description ?md FILTER(LANG(?md) = "en") }} }}''', 'movement facts'):
         m = qid(r['m'])
-        e = movements.setdefault(m, {'n': r.get('ml') or m, 'd': r.get('md'), 'c': [], 'sl': int(r['sl']), 'cls': []})
+        a_ = year_of(r.get('s1')) if r.get('s1') else year_of(r.get('s2'))
+        if a_ is None:
+            continue
+        if qid(r['x']) not in items:
+            continue
+        sl, root = members[m]
+        e = movements.setdefault(m, {'n': r.get('ml') or m, 'd': r.get('md'), 'c': [], 'sl': sl, 'cls': [root]})
         if qid(r['x']) not in e['c']:
             e['c'].append(qid(r['x']))
-        if qid(r['root']) not in e['cls']:
-            e['cls'].append(qid(r['root']))
-        a, b = year_of(r.get('start')), year_of(r.get('end'))
-        if a is not None:
-            e['from'] = min(e.get('from', a), a)
-        if b is not None:
-            e['to'] = max(e.get('to', b), b)
+        e['from'] = min(e.get('from', a_), a_)
+        b_ = year_of(r.get('e1')) if r.get('e1') else year_of(r.get('e2'))
+        if b_ is not None:
+            e['to'] = max(e.get('to', b_), b_)
     log(f'  movements: {len(movements)}')
 
     write_json(os.path.join(OUT, 'wikidata.json'), {'items': info, 'regimes': regimes, 'persons': pm,

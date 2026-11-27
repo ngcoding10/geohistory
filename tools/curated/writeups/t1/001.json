@@ -89,5 +89,276 @@
   ],
   "disagree": "Month of the raid: June 1297 (Wikipedia, Raid on Scone; the event record) or May 1297, at the outbreak of the revolt (DNB; Wikipedia, William de Ormesby).",
   "checked": null
+ },
+ "Q83224": {
+  "title": "Battle of Hastings",
+  "y": 1066,
+  "place": "Near Hastings, Sussex (today Battle, East Sussex)",
+  "paras": [
+   "The battle was fought on 14 October 1066 between the English army of King Harold Godwinson and the invading army of William, Duke of Normandy, with contingents from Brittany and Flanders and commanders such as William fitzOsbern and Eustace II of Boulogne. Modern estimates put each army at somewhere between about 5,000 and 13,000 men; contemporary Norman figures are wildly exaggerated.",
+   "It was a war of succession. Edward the Confessor died childless on 5 January 1066 and Harold was crowned, but Duke William claimed that Edward had promised him the throne, and King Harald Hardrada of Norway also claimed it. Hardrada invaded the north with Harold's exiled brother Tostig; Harold destroyed their army at Stamford Bridge on 25 September. Three days later, on 28 September, William landed at Pevensey on the south coast and fortified Hastings, forcing Harold to march south again.",
+   "Fighting began in the morning and lasted until dusk. The English stood in a shield wall along a ridge; Norman archers shooting uphill and attacks by infantry and mounted knights failed to break it. When part of William's army fell back and a rumour spread that he was dead, William rode among his men to show himself and turned the retreat into a counter-attack against the English who had pursued them. Norman chroniclers say the Normans then used feigned flights to draw more men out of the line; most historians accept this, though some think it a later embellishment. Late in the day Harold was killed, and his brothers Gyrth and Leofwine also died.",
+   "How Harold died is uncertain. The famous arrow in the eye rests on a later tradition and an ambiguous scene of the Bayeux Tapestry, which was restored in the 19th century; the earliest written mention of the arrow dates from the 1080s, and other accounts say he was cut down by knights.",
+   "The victory did not end English resistance at once, but after William marched on London the English leaders submitted to him at Berkhamsted, and he was crowned in Westminster Abbey on Christmas Day 1066. Rebellions continued for years, answered by the Harrying of the North in 1069-1070. William founded Battle Abbey on the site."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Hastings",
+    "title": "Battle of Hastings",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-hastings",
+    "title": "Battle of Hastings",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     5,
+     6,
+     11,
+     12,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought on 14 October 1066 near Hastings.",
+   "Commanders: William of Normandy (with fitzOsbern, Eustace II of Boulogne) against King Harold Godwinson.",
+   "Modern estimates: 7,000-12,000 Normans and 5,000-13,000 English; Norman sources exaggerate.",
+   "Edward the Confessor died on 5 January 1066 without an heir; Harold was crowned.",
+   "William and Harald Hardrada also claimed the throne; Norman historians said Edward promised it to William.",
+   "Harold defeated Hardrada and Tostig at Stamford Bridge on 25 September 1066.",
+   "William landed at Pevensey on 28 September 1066 and fortified Hastings.",
+   "The fighting lasted from morning to dusk; the English formed a shield wall on a ridge.",
+   "Archery and attacks uphill failed to break the shield wall.",
+   "A Norman retreat and a rumour of William's death; William showed himself and counter-attacked the pursuers.",
+   "Feigned flights are reported; most historians accept them, some doubt them.",
+   "Harold and his brothers Gyrth and Leofwine were killed.",
+   "The arrow-in-the-eye story rests on a later tradition and the ambiguous, restored Bayeux Tapestry; first written mention in the 1080s.",
+   "English leaders submitted at Berkhamsted; resistance continued, with the Harrying of the North in 1069-1070; William founded Battle Abbey.",
+   "William was crowned in Westminster Abbey on Christmas Day 1066."
+  ],
+  "disagree": "Harold's death: the arrow in the eye is a later tradition; other accounts have him killed by knights. Some sources date William's landing to 29 September and place it at Hastings rather than Pevensey.",
+  "checked": null
+ },
+ "Q12519": {
+  "title": "Magna Carta",
+  "y": 1215,
+  "place": "Runnymede, between Windsor and Staines (Kingdom of England)",
+  "paras": [
+   "Magna Carta was the peace settlement between King John of England and a party of rebel barons. Its text is dated 15 June 1215 at the meadow of Runnymede, between Windsor and Staines; talks had begun there on 10 June, and on 19 June John announced to his officials that peace had been restored. Stephen Langton, Archbishop of Canterbury, mediated and helped turn the barons' written demands, the 'Articles of the Barons', into the charter.",
+   "The crisis grew out of John's failed wars to recover the lands in France he had lost to Philip II, ending in defeat at Bouvines in 1214. To pay for them John squeezed his barons with heavy feudal charges: records in the royal accounts show one baron paying 10,000 marks in inheritance tax in 1214 and another promising 20,000 marks for permission to marry. In May 1215 the rebels renounced their allegiance and took London, forcing John to negotiate.",
+   "The charter promised to protect the rights of the Church, to stop imprisonment without lawful judgement, to give swift justice and to limit the King's feudal payments, some of them only with the consent of the realm. Clause 61, the 'security clause', set up a council of 25 barons who could seize the King's castles and lands if he failed to put right a breach within 40 days; John ordered everyone to swear an oath to these 25.",
+   "The peace failed within weeks. Both sides had appealed to Pope Innocent III, John's overlord since 1213, and the Pope annulled the charter, which led to the First Barons' War. After John's death the regents of the young Henry III reissued a shortened charter in 1216 and again in 1217, when it first took the name Magna Carta; Henry III's reissue of 1225, granted in return for a tax, became the standard text, and Edward I confirmed it as statute in 1297.",
+   "Its fame came later. In the 17th century Sir Edward Coke used it against the claims of the Stuart kings, and the idea of ancient English liberties it came to stand for influenced the American colonists. Most historians now stress that in 1215 it dealt with the King and his barons rather than with the rights of ordinary people. Most of it has been repealed, but three clauses are still law in England and Wales."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Magna_Carta",
+    "title": "Magna Carta",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.nationalarchives.gov.uk/education/resources/magna-carta/",
+    "title": "Magna Carta 1214-1225 (education resource with documents)",
+    "publisher": "The National Archives (UK)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     5,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "The charter is dated 15 June 1215 at Runnymede, between Windsor and Staines.",
+   "On 19 June 1215 John announced that peace had been restored.",
+   "Talks at Runnymede began on 10 June 1215.",
+   "Stephen Langton mediated and helped turn the Articles of the Barons into the charter.",
+   "John's war to regain French lands ended in defeat at Bouvines in 1214 and was paid for with heavy charges on the barons.",
+   "Royal records show a baron paying 10,000 marks inheritance tax in 1214 and another promising 20,000 marks to marry.",
+   "In May 1215 the rebels renounced their allegiance and took London.",
+   "The charter protected church rights, forbade unlawful imprisonment, promised swift justice and limited feudal payments.",
+   "Clause 61 set up a council of 25 barons able to seize the King's castles if a breach was not corrected within 40 days; John ordered an oath to the 25.",
+   "Both sides appealed to Innocent III; John had been a papal vassal since 1213; the Pope annulled the charter, leading to the First Barons' War.",
+   "Reissued in 1216 and 1217 (when it took the name Magna Carta), and in 1225 by Henry III in return for a tax.",
+   "Edward I confirmed it as statute law in 1297.",
+   "Sir Edward Coke invoked it in the 17th century; it influenced the American colonists.",
+   "Historians see the 1215 charter as about the King and the barons; most has been repealed, three clauses remain in force."
+  ],
+  "disagree": "Its meaning: the later view of Magna Carta as a charter of everyone's liberties is now seen by most historians as a myth built on a text about the King and his barons.",
+  "checked": null
+ },
+ "Q160077": {
+  "title": "Fall of Constantinople",
+  "y": 1453,
+  "place": "Constantinople (Istanbul)",
+  "paras": [
+   "On 29 May 1453 the army of the Ottoman sultan Mehmed II took Constantinople, capital of the Byzantine Empire, after a siege that had begun on 6 April. The city was defended by Emperor Constantine XI Palaiologos with Greek troops and Italian volunteers, among them the Genoese commander Giovanni Giustiniani, who led the defence of the land walls. Numbers are uncertain: modern estimates put the defenders at about 7,000-8,000 against an Ottoman army of perhaps 50,000-80,000.",
+   "By 1453 the empire had shrunk to little more than the city and a few outlying territories, its population thinned by plague and economic decline. The city had fallen only once before, to the Fourth Crusade in 1204. In 1452 Mehmed built the fortress of Rumeli Hisarı on the Bosphorus to control shipping to the city, and the West sent only small groups of volunteers; no large relief fleet arrived in time.",
+   "Ottoman bombards, including the great cannon cast by the engineer Orban, battered the ancient land walls, which the defenders repaired after each bombardment. A chain across the Golden Horn kept the Ottoman fleet out of the harbour until Mehmed had ships dragged overland on greased logs into the Horn. Ottoman mines under the walls were destroyed by Byzantine counter-mines. Constantine refused an offer to surrender. The final assault began after midnight on 29 May; when Giustiniani was badly wounded and carried away, the defence broke and the Ottomans entered the city.",
+   "Constantine XI died that day; how he died is not known for certain, and most accounts say he fell fighting in the streets. The city was sacked, and many inhabitants were killed or enslaved. Mehmed entered Hagia Sophia, which was turned into the city's chief mosque, and made Constantinople the Ottoman capital in place of Adrianople (Edirne).",
+   "The fall ended the Byzantine Empire, the last remnant of the Roman state. Greek scholars who left for Italy, before and after 1453, carried manuscripts and learning that fed the Italian Renaissance, and many historians use the year as a marker for the end of the Middle Ages."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+    "title": "Fall of Constantinople",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/byzantine-empire",
+    "title": "Byzantine Empire",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     11,
+     12,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Mehmed II's army took Constantinople on 29 May 1453.",
+   "The siege began on 6 April 1453.",
+   "Constantine XI led the defence; the Genoese Giustiniani led the land walls' defence.",
+   "Modern estimates: about 7,000-8,000 defenders and 50,000-80,000 Ottomans.",
+   "The empire had shrunk to a few territories; plague and decline had depopulated the city.",
+   "The city had fallen only once before, in 1204 to the Fourth Crusade.",
+   "Mehmed built Rumeli Hisarı in 1452 to control the Bosphorus.",
+   "Western help was limited to volunteers; no relief fleet arrived in time.",
+   "Orban's cannon and other bombards damaged the walls, which defenders repaired.",
+   "A chain closed the Golden Horn; the Ottomans dragged ships overland on greased logs.",
+   "Constantine refused to surrender; the final assault began after midnight on 29 May; Giustiniani's wounding caused the defence to collapse.",
+   "Constantine XI died; his exact fate is uncertain (one account: died in battle).",
+   "The city was sacked; Hagia Sophia became a mosque; Mehmed made the city his capital in place of Adrianople.",
+   "The fall ended the Byzantine Empire; scholars fled to Italy; often taken as the end of the Middle Ages."
+  ],
+  "disagree": "Constantine XI's death: HISTORY.com says he died in battle; Wikipedia notes that his fate is not known for certain. Troop numbers vary widely between sources.",
+  "checked": null
+ },
+ "Q6539": {
+  "title": "Storming of the Bastille",
+  "y": 1789,
+  "place": "Paris (Kingdom of France)",
+  "paras": [
+   "On 14 July 1789 a crowd of armed Parisians, joined in the afternoon by mutinous soldiers of the French Guards, attacked and took the Bastille, a medieval fortress and state prison in eastern Paris. It was held by its governor, Bernard-René Jourdan de Launay, with about 82 invalides (veteran soldiers) and 32 Swiss grenadiers, while several thousand royal troops camped on the Champ de Mars did not intervene.",
+   "France was in financial crisis and the Estates-General, called in May 1789, had turned into a National Assembly in June. On 11 July Louis XVI dismissed his popular minister Jacques Necker, and Parisians feared that troops massing around the city would be used to crush the Assembly. On 13 July the electors of Paris formed a citizens' militia, and on the morning of the 14th a crowd seized tens of thousands of muskets at the Invalides but found no powder. Some 250 barrels of gunpowder had been moved to the Bastille, which is why the crowd went there.",
+   "Delegates from the city hall negotiated inside the fortress through the morning while the crowd grew. Around 1:30 p.m. attackers broke into the outer courtyard and cut the chains of a drawbridge, and shooting began. After 3 p.m. French Guards arrived with cannon. At about 5 p.m. de Launay stopped the firing and threatened to blow up the powder unless his men could leave; at about 5:30, short of food and water, he opened the gates. Around a hundred attackers and one defender were killed in the fighting; sources give slightly different totals.",
+   "De Launay was taken towards the Hôtel de Ville and killed by the crowd on the way, and the city's provost Jacques de Flesselles was also killed. Inside, the attackers freed only seven prisoners: four forgers, two men held as mentally ill and a count held at his family's request.",
+   "The King recalled Necker, and on 17 July in Paris accepted the revolutionary cockade; Lafayette took command of the new National Guard. Nobles began to emigrate and the 'Great Fear' spread through the countryside. The Bastille was demolished within months, and 14 July became France's national day. Historians debate whether it was the Revolution's real starting point, but it became its great symbol."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille",
+    "title": "Storming of the Bastille",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/july-14/french-revolutionaries-storm-bastille",
+    "title": "French revolutionaries storm the Bastille (July 14, 1789)",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     7,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "On 14 July 1789 Parisians and mutinous French Guards took the Bastille.",
+   "The garrison: governor de Launay, about 82 invalides and 32 Swiss grenadiers.",
+   "Royal troops on the Champ de Mars did not intervene.",
+   "The Estates-General met in May 1789; the Third Estate formed the National Assembly in June.",
+   "Louis XVI dismissed Necker on 11 July, raising fears of a royal coup.",
+   "On 13 July the electors formed a militia; on 14 July the crowd took muskets from the Invalides but no powder.",
+   "About 250 barrels of gunpowder had been moved to the Bastille, drawing the crowd.",
+   "Negotiators entered; around 1:30 p.m. attackers entered the outer courtyard and broke a drawbridge chain; firing began.",
+   "French Guards arrived with cannon after 3 p.m.; de Launay offered surrender and opened the gates around 5:30.",
+   "About a hundred attackers and one defender died; totals differ between sources.",
+   "De Launay was killed by the crowd on the way to the Hôtel de Ville; de Flesselles was also killed.",
+   "Only seven prisoners were held and freed.",
+   "Necker was recalled; on 17 July the King accepted the cockade in Paris; Lafayette commanded the National Guard.",
+   "Émigration and the Great Fear followed; the fortress was demolished; 14 July became the national day."
+  ],
+  "disagree": "Casualty figures differ (about 94 to 98 attackers killed). Some historians argue that the King's surrender to the Third Estate at Versailles, not the Bastille, was the Revolution's real beginning.",
+  "checked": null
  }
 }

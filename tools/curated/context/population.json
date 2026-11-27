@@ -1,0 +1,10 @@
+{
+ "_about": "Published population figures for major states where the HYDE model estimate (the sum of the HYDE grid over the map's outline) is the only other figure, written for GeoHistory from general knowledge (AI-written, labelled so in the app). Each row: year, value or low/high, the scholar or census, the English Wikipedia article that reports it, and a note on what territory it counts. tools/context/build_context.py adds a row to the population range of the same year (within 5 years; between two rows of one state the value is interpolated geometrically for ancient and medieval states).",
+ "rows": [
+  {"names": ["Roman Empire"], "year": 14, "value": 45500000, "who": "Frier", "source": "https://en.wikipedia.org/wiki/Demography_of_the_Roman_Empire"},
+  {"names": ["Roman Empire"], "year": 164, "value": 61400000, "who": "Frier", "source": "https://en.wikipedia.org/wiki/Demography_of_the_Roman_Empire", "note": "Just before the Antonine Plague."},
+  {"names": ["Han Dynasty"], "year": 2, "value": 57671400, "who": "census of AD 2", "source": "https://en.wikipedia.org/wiki/Han_dynasty", "note": "Registered population."},
+  {"names": ["Achaemenid Empire"], "year": -500, "low": 17000000, "high": 35000000, "who": "modern estimates", "source": "https://en.wikipedia.org/wiki/Achaemenid_Empire"},
+  {"names": ["India"], "year": 1901, "value": 294361056, "who": "Census of India 1901", "source": "https://en.wikipedia.org/wiki/1901_census_of_India", "note": "British India and the princely states, including Burma (about 10.5 million), which the map draws apart."}
+ ]
+}

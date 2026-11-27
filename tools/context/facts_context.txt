@@ -49,7 +49,8 @@ G|Kingdom of France|1700|absolute monarchy;monarchy
 G|Iran|1990|islamic republic;theocracy
 G|Switzerland|1900|federal;republic;directorial
 G|Dutch Republic|1700|republic
-G|Holy Roman Empire|1500|elective monarchy;monarchy
+# corrected after the first build: from 1260 the maps draw the Holy Roman Empire as a power of many members, so its context is the empire's (e:holy roman empire)
+G|Holy Roman Empire;e:holy roman empire|1500|elective monarchy;monarchy
 G|Polish-Lithuanian Commonwealth|1650|elective monarchy;monarchy
 # -- ruling party (25+ states; cross-checked against Wikipedia's lists of heads of government)
 Y|Soviet Union|1950|Communist Party of the Soviet Union;All-Union Communist Party
@@ -65,7 +66,8 @@ Y|United States of America|1863|Republican Party
 Y|India|1960|Indian National Congress
 Y|Japan|1970|Liberal Democratic Party
 Y|Mexico|1960|Institutional Revolutionary Party
-Y|Germany|1960|Christian Democratic Union
+# corrected after the first build: the map's name for the Federal Republic in 1949-1990 is West Germany
+Y|Germany;West Germany|1960|Christian Democratic Union
 Y|France|1982|Socialist Party
 Y|Spain|1985|Spanish Socialist Workers' Party
 Y|Cuba|1980|Communist Party of Cuba
@@ -93,7 +95,8 @@ L|Mughal Empire|1600|official|Islam
 L|Byzantine Empire|1000|official|Orthodox;Christianity
 L|Roman Empire|100|official|Roman;pagan;polytheism;imperial cult
 L|Roman Empire|390|official|Christianity;Nicene
-L|Kingdom of Sweden|1700|official|Lutheran
+# corrected after the first build: the map's name for Sweden in 1612-1720 is Swedish Empire
+L|Kingdom of Sweden;Swedish Empire|1700|official|Lutheran
 L|United States of America|1900|majority|Christian;Protestant
 L|Soviet Union|1950|any|atheism
 L|Saudi Arabia|1980|official|Islam
@@ -106,7 +109,8 @@ L|India|1960|majority|Hinduism
 L|Mali Empire|1330|any|Islam
 L|Tibet;Ganden Phodrang|1700|any|Buddhism
 # -- movements
-V|Holy Roman Empire|1530|Reformation;Protestant
+# corrected after the first build: the empire's context (e:holy roman empire), as above
+V|Holy Roman Empire;e:holy roman empire|1530|Reformation;Protestant
 V|Kingdom of France|1750|Enlightenment
 V|Kingdom of Great Britain|1790|abolition
 V|United States of America|1960|civil rights
@@ -138,7 +142,8 @@ D|Wright Flyer;airplane;aeroplane|1903|United States
 D|Paper;papermaking|105|Han
 D|Telescope|1608|Dutch Republic
 D|Smallpox vaccine|1796|Great Britain
-D|Dynamite|1867|Sweden
+# corrected after the first build: Nobel made and patented dynamite at his Krümmel works near Hamburg (Wikipedia: Dynamite), not in Sweden; the maps' state there in 1867
+D|Dynamite|1867|German Confederation;North German Confederation;Prussia
 D|Special relativity|1905|Switzerland
 D|DNA double helix;structure of DNA|1953|United Kingdom
 D|Sputnik 1|1957|Soviet Union
