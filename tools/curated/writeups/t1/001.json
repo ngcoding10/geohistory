@@ -2138,5 +2138,60 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q8736": {
+  "title": "Treaty of Versailles",
+  "y": 1919,
+  "place": "Palace of Versailles, near Paris (France)",
+  "paras": [
+   "The Treaty of Versailles, signed in the Palace of Versailles on 28 June 1919, exactly five years after the assassination of Archduke Franz Ferdinand, ended the state of war between Germany and most of the Allied powers. The other Central Powers signed separate treaties. It was drafted at the Paris Peace Conference, which opened in January 1919 with nearly thirty nations taking part but was dominated by the 'Big Four': Britain, France, the United States and Italy. Germany was not allowed to take part in the negotiations.",
+   "The treaty required Germany to disarm, to give up territory, to hand over alleged war criminals, to agree to the trial of the former Kaiser, to recognise the independence of states carved from lands of the German Empire and to pay reparations. Danzig and the Saarland were placed under the League of Nations, whose founding covenant was part of the treaty, and France was allowed to exploit the Saar's coal until 1935. In Article 231, the 'war guilt' clause, Germany accepted responsibility for the loss and damage caused by the war, the basis of the reparations.",
+   "It satisfied no one. John Maynard Keynes called it a 'Carthaginian peace', too harsh on Germany; Marshal Foch thought it far too lenient; historians still debate it. Germany was neither reconciled nor permanently weakened. In the United States, President Woodrow Wilson's League was opposed in the Senate, by 'irreconcilables' and by 'reservationists' under Henry Cabot Lodge, and on 19 March 1920 the treaty fell seven votes short of ratification; the United States made a separate peace with Germany and never joined the League.",
+   "Its problems led to the Locarno Treaties, which eased relations in Europe, and the reparations were rescheduled and reduced by the Dawes and Young Plans. Bitter resentment of the treaty in Germany fed the rise of the Nazi Party."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
+    "title": "Treaty of Versailles",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1914-1920/paris-peace",
+    "title": "The Paris Peace Conference and the Treaty of Versailles",
+    "publisher": "Office of the Historian, US Department of State",
+    "accessed": "2026-11-27",
+    "supports": [
+     3,
+     5,
+     6,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "The treaty was signed in the Palace of Versailles on 28 June 1919, five years after Franz Ferdinand's assassination.",
+   "It ended the war between Germany and most Allies; other Central Powers signed separate treaties.",
+   "The Paris Peace Conference from January 1919; nearly thirty nations; the Big Four dominated.",
+   "Germany was not allowed to take part in the negotiations.",
+   "Danzig and the Saarland under the League; France to exploit the Saar until 1935; the League Covenant in the treaty.",
+   "Article 231: Germany accepted responsibility (war guilt), the basis of reparations.",
+   "Terms: disarmament, territory, war criminals, trial of the Kaiser, independence of new states, reparations.",
+   "Keynes called it a Carthaginian peace; Foch thought it too lenient; Germany neither pacified nor weakened.",
+   "Senate opposition (irreconcilables and Lodge's reservationists); on 19 March 1920 it fell seven votes short; separate US-German peace; the US never joined the League.",
+   "Locarno; the Dawes and Young Plans reduced reparations; resentment fed the rise of the Nazis."
+  ],
+  "disagree": "Whether the treaty was too harsh (Keynes) or too lenient (Foch) has been debated ever since.",
+  "checked": null
  }
 }
