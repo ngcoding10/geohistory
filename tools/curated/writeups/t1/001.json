@@ -3009,5 +3009,430 @@
   ],
   "disagree": "HISTORY.com says the Charter was ratified by 51 members on 24 October 1945; Wikipedia says 50 states signed it on 26 June and it came into force on 24 October once the five permanent members and a majority of signatories had ratified it.",
   "checked": null
+ },
+ "Q10859": {
+  "title": "Spanish Civil War",
+  "y": 1936,
+  "place": "Spain",
+  "paras": [
+   "The Spanish Civil War, from July 1936 to April 1939, was fought between the Republicans, who defended the left-leaning Popular Front government of the Second Spanish Republic (socialists, communists, anarchists and Catalan and Basque autonomists, backed by the Soviet Union and Mexico), and the Nationalists, a rebellion of army officers joined by monarchists, Carlists, the fascist Falange and the Catholic right, backed by Fascist Italy and Nazi Germany. It ended with the dictatorship of General Francisco Franco.",
+   "The Republic had been proclaimed in 1931 when King Alfonso XIII went into exile. Its reforms divided the country: the Church, the landowners and much of the army opposed it, the right won the elections of 1933, and Franco put down a socialist rising in Asturias in 1934. When the Popular Front narrowly won the elections of February 1936, officers began plotting a coup, with General Emilio Mola as chief planner and the exiled General José Sanjurjo as its figurehead; Franco, sent away to the Canary Islands, joined late.",
+   "The rising began in Spanish Morocco on 17 July 1936 and spread to garrisons across the mainland the next day. The rebels took Morocco and the conservative heartland, but the Republic held about two-thirds of the country, including Madrid and most big cities, so the coup turned into a war. Sanjurjo died in a plane crash days later, and Franco, after ferrying his Army of Africa across the strait in German and Italian aircraft, became Nationalist commander-in-chief and head of state in October 1936. Both sides killed thousands of suspected opponents behind their lines. Madrid held out under siege from November 1936, helped by the foreign volunteers of the International Brigades, while the German Condor Legion gave the Nationalists command of the air; on 26 April 1937 it bombed the Basque town of Guernica. The Republicans were weakened by their own feuds, such as the street fighting in Barcelona in May 1937.",
+   "In 1938 the Nationalists drove through to the Mediterranean and cut the Republic in two; Barcelona fell in January 1939, and on 28 March Madrid surrendered. Franco declared victory on 1 April 1939. Hundreds of thousands of Republicans fled, mostly to camps in southern France, and many who stayed were persecuted. HISTORY.com puts the dead at up to a million, among them some 150,000 people killed by the Nationalists and about 49,000 by the Republicans away from the front. Franco ruled Spain until his death in 1975, and the war is often seen as a dress rehearsal for the Second World War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War",
+    "title": "Spanish Civil War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/july-17/spanish-civil-war-breaks-out",
+    "title": "Spanish Civil War breaks out",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     8,
+     9,
+     10,
+     12,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/7-things-you-may-not-know-about-the-spanish-civil-war",
+    "title": "7 Things You May Not Know About the Spanish Civil War",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     5,
+     6,
+     7,
+     11,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The war (1936-1939) was between the Republicans supporting the Popular Front government and the Nationalists; Franco became dictator.",
+   "Republicans included socialists, anarchists, communists and separatists, supported by the USSR and Mexico; Nationalists were backed by Italy and Germany (Condor Legion).",
+   "The Republic was proclaimed in 1931 after elections; Alfonso XIII went into exile; the Church, aristocracy and military opposed it; conservatives won in November 1933; Franco crushed the Asturias rising (1934).",
+   "The Popular Front narrowly won the February 1936 elections; officers plotted a coup; Mola was chief planner and Sanjurjo the figurehead.",
+   "Franco joined the plot at the final hour; he had been sent to the Canary Islands.",
+   "The rising began in Morocco on 17 July 1936 and spread to the mainland garrisons the next day; the Republic kept about two-thirds of Spain including most major cities.",
+   "Sanjurjo died in a plane crash (20 July); Franco ferried troops from Morocco with planes and boats from Mussolini and Hitler; he became commander-in-chief and head of the Nationalist government by October 1936.",
+   "Both sides executed thousands of suspected opponents.",
+   "Madrid was besieged from November 1936; the International Brigades helped defend it.",
+   "The Condor Legion gave the Nationalists air dominance; Guernica was bombed on 26 April 1937 (200-300 killed).",
+   "Republican infighting, including the Barcelona street fighting of May 1937.",
+   "In 1938 the Nationalists reached the Mediterranean, cutting the Republic in two; Barcelona fell in January 1939; Madrid surrendered on 28 March 1939.",
+   "Franco declared victory on 1 April 1939; hundreds of thousands of Republicans fled, mostly to camps in southern France; many who stayed were persecuted.",
+   "Up to a million lives were lost; the Nationalists murdered about 150,000 prisoners and civilians and the Republicans about 49,000; Franco ruled until his death in 1975.",
+   "The war is seen as a dress rehearsal for WWII."
+  ],
+  "disagree": "Death tolls vary: HISTORY.com says up to a million lives were lost; scholarly estimates are lower. The end is dated to Madrid's surrender on 28 March 1939 (HISTORY.com) or Franco's declaration of victory on 1 April 1939 (Wikipedia).",
+  "checked": null
+ },
+ "Q545449": {
+  "title": "Iraq War",
+  "y": 2003,
+  "place": "Iraq",
+  "paras": [
+   "The Iraq War was fought in Iraq from 2003 to 2011. It began with an invasion by a coalition led by the United States, with the United Kingdom, Australia and Poland also sending combat troops, which overthrew the Ba'athist government of Saddam Hussein, and went on as a long insurgency against the occupying forces and the new Iraqi government.",
+   "The main case made for the war was that Iraq possessed weapons of mass destruction and that Saddam supported al-Qaeda; both claims proved false, and no such weapons were found. France, Germany and Russia urged continued diplomacy and weapons inspections, and the United States and its allies withdrew a draft UN resolution authorising force when it faced defeat. President George W. Bush gave Saddam 48 hours to leave Iraq, and some 90 minutes after the deadline passed, on 19 March 2003 in Washington (20 March in Iraq), cruise missiles struck the first targets in a 'shock and awe' bombing campaign.",
+   "Coalition forces quickly overwhelmed the Iraqi army; three weeks after the invasion began, Iraqis and U.S. soldiers pulled down Saddam's statue in Baghdad's Firdos Square, and on 1 May Bush declared the end of major combat. The occupation went badly. The Coalition Provisional Authority under L. Paul Bremer disbanded the Iraqi army and purged Ba'athists from the state, and the power vacuum fed an insurgency and a sectarian civil war between Iraq's Shia majority and Sunni minority, in which al-Qaeda in Iraq staged suicide bombings. Saddam was captured near Tikrit in December 2003, sentenced to death for crimes against humanity and hanged on 30 December 2006. Power passed to an Iraqi interim government in June 2004, and elections, a new constitution and a government under Nouri al-Maliki followed. The prisoner abuse at Abu Ghraib, revealed in 2004, damaged the coalition's standing.",
+   "In 2007 Bush sent more troops (the 'surge'), which helped stabilise parts of the country, and in 2008 he agreed to withdraw. Under President Barack Obama the combat mission ended in 2010 and the last U.S. troops left in December 2011. Nearly 4,500 Americans were killed; estimates of the total dead range from about 150,000 to over a million, including well over 100,000 Iraqi civilians. The war's aftermath helped give rise to the Islamic State, which drew the United States back into Iraq in 2014."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Iraq_War",
+    "title": "Iraq War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     8,
+     9,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.cfr.org/articles/iraq-war-2",
+    "title": "The Iraq War (timeline)",
+    "publisher": "Council on Foreign Relations",
+    "accessed": "2026-11-27",
+    "supports": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/march-19/war-in-iraq-begins",
+    "title": "War in Iraq begins",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     3,
+     5,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/persian-gulf-war",
+    "title": "Persian Gulf War: Dates & Operation Desert Storm",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     5
+    ]
+   }
+  ],
+  "claims": [
+   "The Iraq War lasted from 2003 to 2011; a US-led coalition invaded and overthrew Saddam's Ba'athist government; an insurgency followed against the coalition and the new government.",
+   "The UK, Australia and Poland joined the US in the invasion.",
+   "The main rationale was false claims of WMDs and al-Qaeda links; no WMDs were found.",
+   "France, Germany and Russia urged continued diplomacy; the US and allies withdrew their draft resolution facing defeat.",
+   "Bush's ultimatum of 17 March 2003 gave Saddam 48 hours to leave; hostilities began about 90 minutes after the deadline (19 March US time); Tomahawk missiles hit the first targets.",
+   "The war began on 20 March 2003 with a shock-and-awe bombing campaign; coalition forces quickly overwhelmed the Iraqi army; the statue in Firdos Square was pulled down three weeks later.",
+   "Bush declared the end of major combat operations on 1 May 2003 (USS Abraham Lincoln).",
+   "Bremer's CPA disbanded the army and purged Ba'athists; the power vacuum fuelled insurgency and a Shia-Sunni sectarian civil war; al-Qaeda in Iraq suicide bombings.",
+   "Saddam was captured near Tikrit (December 2003), sentenced to death for crimes against humanity and executed on 30 December 2006.",
+   "Power passed to the Iraqi Interim Government in June 2004; elections, constitution; Maliki became prime minister in 2006; Abu Ghraib abuse revealed.",
+   "The 2007 troop surge helped stabilise parts; in 2008 Bush agreed to withdraw; the combat mission ended in 2010 and the last troops left in December 2011.",
+   "Nearly 4,500 Americans killed; estimates of 150,000 to over a million deaths, including over 100,000 civilians.",
+   "The war contributed to the emergence of the Islamic State; the US re-engaged in 2014."
+  ],
+  "disagree": "The start is dated 19 March 2003 (U.S. time, HISTORY.com) or 20 March (Iraqi time, Wikipedia). Death toll estimates differ widely, from about 150,000 to over a million. The coalition of the willing numbered about forty governments, but only the UK, Australia and Poland joined the U.S. in the invasion force.",
+  "checked": null
+ },
+ "Q466": {
+  "title": "World Wide Web proposed at CERN",
+  "y": 1989,
+  "place": "CERN, near Geneva",
+  "paras": [
+   "In March 1989 Tim Berners-Lee, a British scientist working at CERN, the European particle physics laboratory near Geneva, wrote the first proposal for what became the World Wide Web: a system linking documents on computers across a network by hypertext. CERN's research community of thousands of scientists, spread over universities and institutes in many countries, needed an easy way to share information, and the idea was to merge computers, data networks and hypertext into one simple global information system. Berners-Lee had already built a private hypertext system at CERN, ENQUIRE, in 1980.",
+   "The proposal, which did not yet name the system, was formalised with the Belgian engineer Robert Cailliau as a management proposal for a 'WorldWideWeb' hypertext project in November 1990. By the end of 1990 Berners-Lee had the first web server and browser working at CERN on a NeXT computer, which carried a hand-written label warning not to switch it off. In building it he defined the first versions of the three foundations of the Web: the HTTP protocol, the URL address and the HTML page format. The first website was at info.cern.ch.",
+   "The software was released to other research institutions from early 1991 and announced to the whole Internet in August 1991; the first web server in the United States came online at SLAC, the Stanford Linear Accelerator Center, in December 1991. On 30 April 1993 CERN put the Web's code in the public domain royalty-free. The same year the Mosaic browser, from the NCSA at the University of Illinois, made the Web easy to use on ordinary PCs and Macintoshes, and its growth exploded: by the end of 1994 there were some 10,000 web servers and 10 million users. Berners-Lee left CERN in 1994 for MIT, where he founded the World Wide Web Consortium (W3C) to keep the Web an open standard."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/World_Wide_Web",
+    "title": "World Wide Web",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     11
+    ]
+   },
+   {
+    "url": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/",
+    "title": "A short history of the Web",
+    "publisher": "CERN",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Tim Berners-Lee, a British scientist at CERN, wrote the first proposal for the World Wide Web in March 1989.",
+   "The Web was conceived for information sharing among scientists in universities and institutes worldwide; it merged computers, networks and hypertext into a global information system.",
+   "He had built the ENQUIRE system at CERN in 1980; the proposal did not name the system.",
+   "With Robert Cailliau it was formalised as a management proposal in November 1990 for a hypertext project called WorldWideWeb.",
+   "By the end of 1990 the first web server and browser ran at CERN on a NeXT computer with a 'DO NOT POWER IT DOWN' label; the first website was info.cern.ch.",
+   "He defined the first HTTP, the URL syntax and HTML.",
+   "Released to other research institutions from January 1991 and to the whole Internet on 23 August 1991.",
+   "On 30 April 1993 CERN made the code available royalty-free.",
+   "The NCSA's Mosaic browser (1993) drove rapid growth.",
+   "The first US web server came online at SLAC in December 1991; by end of 1994 10,000 servers and 10 million users.",
+   "Berners-Lee left CERN for MIT in 1994 and founded the W3C."
+  ],
+  "disagree": "CERN says Berners-Lee announced the software on Internet newsgroups in August 1991; Wikipedia dates the release to the whole Internet to 23 August 1991 (other accounts give 6 August).",
+  "checked": {
+   "by": "https://www.w3.org/2012/08/history-of-the-web/origins.htm",
+   "result": "7 claims checked against W3C's Web History Primer and https://www.w3.org/about/history/: the March 1989 proposal, ENQUIRE at CERN, the November 1990 proposal with Cailliau, the NeXT server and browser by the end of 1990, SLAC by the end of 1991, Mosaic in 1993 and the W3C at MIT in 1994 agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q33761": {
+  "title": "Arab Spring",
+  "y": 2010,
+  "place": "North Africa and the Middle East",
+  "paras": [
+   "The Arab Spring was a wave of loosely connected pro-democracy protests and uprisings that spread across the Arab world from Tunisia at the end of 2010 into 2011 and 2012. It brought down the rulers of Tunisia, Egypt, Libya and Yemen, but in several countries it turned into civil war or a return to authoritarian rule.",
+   "It began on 17 December 2010, when Mohamed Bouazizi, a street vendor in Tunisia whose vegetable stall had been seized by police, set himself on fire in protest. Demonstrations spread across the country, and on 14 January 2011 President Zine El Abidine Ben Ali, who had ruled for more than twenty years, fled to Saudi Arabia. Behind the anger lay corruption, unemployment, poverty and a large population of educated young people without prospects, and protesters used social media to get round state-controlled news.",
+   "The example spread fast. Mass protests filled Tahrir Square in Cairo from 25 January, and on 11 February Egypt's Hosni Mubarak stepped down. Uprisings followed in Libya, Yemen, Syria (from 15 March) and Bahrain, and sustained demonstrations in Morocco, Algeria, Iraq, Jordan and elsewhere. In Libya the revolt became a civil war, and Muammar Gaddafi was captured and killed by rebels on 20 October 2011; Yemen's Ali Abdullah Saleh signed a power-sharing deal in November and left office in February 2012. In Bahrain the protests were crushed with help from neighbouring states.",
+   "Only Tunisia, which held its first democratic elections in October 2011, kept a lasting democratic opening. In Egypt the elected president Mohamed Morsi was overthrown in a military coup in 2013 that brought Abdel Fattah el-Sisi to power; Syria, Libya and Yemen sank into long civil wars, in which the Islamic State seized territory, and millions fled as refugees. The turmoil that followed is sometimes called the Arab Winter; a new wave of protests from 2018 toppled the rulers of Sudan and Algeria in 2019."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Arab_Spring",
+    "title": "Arab Spring",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/arab-spring",
+    "title": "Arab Spring",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "A loosely related wave of protests from late 2010 led to regime changes (Tunisia, Egypt, Libya, Yemen) and in several countries to civil war.",
+   "On 17 December 2010 Mohamed Bouazizi, whose vegetable stall had been seized, set himself on fire in protest.",
+   "Ben Ali fled to Saudi Arabia on 14 January 2011 after more than 20 years in power.",
+   "Causes included corruption, unemployment, poverty and many educated, dissatisfied youth.",
+   "Social media helped protesters circumvent state media; protests spread from Tunisia to Libya, Egypt, Yemen, Syria and Bahrain, and to Morocco, Algeria, Iraq, Jordan and others.",
+   "Regional military intervention in Bahrain; civil wars in Syria, Libya and Yemen.",
+   "Tahrir Square protests from 25 January 2011; Mubarak stepped down on 11 February 2011; Syrian protests began 15 March 2011.",
+   "Gaddafi was captured and killed on 20 October 2011; Saleh signed a power-sharing deal in November 2011 and resigned in February 2012; Bahrain's protests were suppressed.",
+   "Tunisia held its first democratic elections in October 2011; Morsi was elected and removed in a 2013 coup that brought el-Sisi to power; ISIS declared a caliphate; refugees fled.",
+   "Syria, Libya and Yemen descended into civil war.",
+   "The aftermath is called the Arab Winter; a wave from 2018 brought the fall of Bashir (Sudan) and Bouteflika (Algeria) in 2019."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "vprinting-press": {
+  "title": "Gutenberg's movable-type printing press",
+  "y": 1450,
+  "place": "Mainz, Holy Roman Empire",
+  "paras": [
+   "By about 1450 Johannes Gutenberg, a goldsmith from a patrician family of Mainz on the Rhine, had a working printing press with movable metal type in operation in his home city, then part of the Holy Roman Empire. Printing from carved blocks and even movable type, first made of baked clay by Bi Sheng in 11th-century China, was long known in East Asia, but Gutenberg's combination of techniques made printing fast and cheap enough to transform Europe.",
+   "He had begun experimenting in Strasbourg, where he lived in exile from Mainz in the 1430s, and returned to Mainz in the 1440s. His system brought several inventions together: individual letters cast in large numbers in a hand mould from an alloy of lead, tin and antimony; an oil-based ink that stuck to metal; and a wooden screw press adapted from the presses used for wine and olives. To pay for the work he borrowed 800 guilders, and then another 800, from the Mainz moneylender Johann Fust, and Peter Schöffer, a former scribe, joined the business.",
+   "The press printed indulgences for the Church and smaller works, and its great project, begun in 1452, was the Bible in Latin with 42 lines to a column. Around 1455 some 180 copies were finished, most on paper and the rest on vellum; the future Pope Pius II, who saw pages in Frankfurt, praised how clear and easy to read the type was. In 1455 Fust sued Gutenberg for his money, and the equipment passed to Fust and Schöffer, who carried on printing. Gutenberg died in 1468.",
+   "Printing spread fast, carried by men who had worked with Gutenberg: to Italy by 1465 and to England with William Caxton in 1476. By the end of the 15th century some 270 European cities had presses, which had produced over 20 million copies by 1500. The flood of cheap books spread ideas across Europe as never before and helped bring about the Reformation and the Scientific Revolution."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Johannes_Gutenberg",
+    "title": "Johannes Gutenberg",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Printing_press",
+    "title": "Printing press",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/printing-press",
+    "title": "Printing Press - Invented, Gutenberg, Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "By 1450 Gutenberg's press was in operation (commercially ready) in Mainz, then in the Holy Roman Empire.",
+   "Gutenberg was a goldsmith; his family were patricians of Mainz.",
+   "Movable type of baked clay was developed by Bi Sheng (c. 970-1051) in China; woodblock printing was used in East Asia.",
+   "He was an exile from Mainz in Strasbourg (letter of 1434) and experimented with printing there; he returned to Mainz.",
+   "Type cast in a hand mould from a lead, tin and antimony alloy; oil-based ink; a wooden screw press like wine and agricultural presses.",
+   "He borrowed 800 guilders and then another 800 from Johann Fust; Peter Schöffer joined.",
+   "The press printed indulgences (1454-55); work on the 42-line Bible began in 1452.",
+   "About 180 copies of the Bible were printed, three quarters on paper and the rest on vellum, completed in 1455; Piccolomini (future Pius II) praised it after Frankfurt.",
+   "Fust sued in 1455; the equipment went to Fust and Schöffer; Gutenberg died in 1468.",
+   "Printing reached Italy in 1465 and England (Caxton) in 1476, spread by Gutenberg's former workers.",
+   "By the end of the 15th century about 270 European cities had printing; over 20 million copies by 1500.",
+   "Printing spread information across Europe and contributed to the Reformation and Scientific Revolution."
+  ],
+  "disagree": "HISTORY.com dates the start of the Bible and the Fust partnership to 1452 and Gutenberg's first experiments in Strasbourg to 1440; Wikipedia dates the Bible's completion to 1455 and the Fust lawsuit to 1455-56. HISTORY.com says 1,300 pages and up to 60 vellum copies; Wikipedia says about a quarter were on vellum.",
+  "checked": null
+ },
+ "cp02-07": {
+  "title": "Death of Muhammad; Abu Bakr becomes caliph",
+  "y": 632,
+  "place": "Medina",
+  "paras": [
+   "The Prophet Muhammad died in Medina on 8 June 632, ten years after his migration there from Mecca and soon after his followers had brought Mecca and much of Arabia under their rule. He left no agreed successor, and in the hours after his death the leaders of the community chose his close companion and father-in-law Abu Bakr to lead it, the first of the caliphs ('successors').",
+   "The community was stunned. Umar, one of the leading companions, at first refused to believe that Muhammad was dead and threatened anyone who said so. Abu Bakr, after seeing the body, addressed the people at the mosque: whoever worshipped Muhammad should know that Muhammad was dead, but whoever worshipped God should know that God lives and does not die.",
+   "Meanwhile the Ansar, the Muslims native to Medina, gathered in the courtyard (saqifa) of the Banu Sa'ida clan, apparently to choose a leader of their own. Abu Bakr and Umar hurried there. Abu Bakr argued that only a man of Muhammad's tribe, the Quraysh, would be accepted by the Arabs; when one of the Ansar proposed two leaders, one from each group, the meeting grew heated, and Umar took Abu Bakr's hand and swore allegiance to him, followed by the others. The choice was not unanimous: several companions, above all Muhammad's cousin and son-in-law Ali, held back their allegiance at first; Ali made peace with Abu Bakr only after six months.",
+   "Abu Bakr ruled for only about two years, until his death in 634. He put down the revolts of Arab tribes and rival prophets such as Musaylima in the Ridda ('apostasy') Wars, uniting the whole Arabian Peninsula under Medina, and sent Khalid ibn al-Walid against the Sasanian and Byzantine empires, opening the great Arab conquests continued by his successor Umar. The dispute over who should have succeeded Muhammad lies at the root of the division between Sunni Muslims, who honour Abu Bakr as the first rightly guided caliph, and Shia Muslims, who hold that leadership belonged to Ali."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Abu_Bakr",
+    "title": "Abu Bakr",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/islam",
+    "title": "Islam: Basics, Founder & Religion",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Muhammad",
+    "title": "Muhammad",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1
+    ]
+   }
+  ],
+  "claims": [
+   "Muhammad died on 8 June 632 (in Medina); he had migrated from Mecca to Medina in 622 and his followers later conquered Mecca.",
+   "Abu Bakr, Muhammad's close friend and father-in-law, became the first caliph after Muhammad's death in 632.",
+   "Umar refused to believe Muhammad was dead and threatened those who said so.",
+   "Abu Bakr showed Umar the body and told the people that whoever worshipped Muhammad should know he was dead, but God is alive and immortal.",
+   "The Ansar gathered in the Saqifa of the Banu Sa'ida; Abu Bakr and Umar hurried there.",
+   "Abu Bakr argued that only the Quraysh could command respect; al-Hubab proposed joint leaders; Umar swore allegiance to Abu Bakr and the others followed.",
+   "The choice was not unanimous; several companions, most prominently Ali, contested it.",
+   "Abu Bakr's reign lasted about two years (27 months) until his death in 634.",
+   "He crushed the tribal revolts and false prophets (Musaylima) in the Ridda Wars, consolidating Arabia, and sent Khalid ibn al-Walid against the Sasanian and Byzantine empires; Umar continued the conquests.",
+   "The succession dispute led to the Sunni-Shia split; Sunnis revere Abu Bakr as the first Rashidun caliph; Shia hold that Ali's rightful succession was bypassed."
+  ],
+  "disagree": "Sunni and Shia traditions differ sharply on whether Muhammad designated Ali as his successor; Wikipedia notes that the purpose of the Ansar's meeting at the Saqifa has itself been debated.",
+  "checked": null
  }
 }
