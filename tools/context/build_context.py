@@ -45,6 +45,7 @@ HOG = re.compile(r'prime minister|premier\b|taoiseach|head of government|preside
 LEADER = re.compile(r'general secretary|first secretary|leader of the|chairman of the (?:chinese )?communist party|'
                     r'chairman of the central committee|supreme leader|führer|duce', re.I)
 HOS = re.compile(r'president|king|queen|emperor|empress|monarch|sultan|shah|tsar|emir|head of state', re.I)
+NO_PARTY = re.compile(r'before the emergence|independent politician|nonpartisan|non-partisan|no party|unaffiliated', re.I)
 BAD_TITLE = re.compile(r'exchequer|duchy of lancaster|vice[- ]president|vice[- ]chancellor|deputy|speaker', re.I)
 
 
@@ -195,7 +196,9 @@ class Ctx:
             if dated:
                 return list(dict.fromkeys(r[1] for r in dated)), [], 'w'
             short = it.get('from') is not None and it.get('to') is not None and it['to'] - it['from'] <= 30
-            if len(undated) == 1 or (undated and short):
+            # a country of today: its undated forms describe its present constitution (used from 1946 on)
+            current = q in self.iso_of_q and it.get('to') is None and y >= 1946
+            if len(undated) == 1 or (undated and (short or current)):
                 return list(dict.fromkeys(r[1] for r in undated)), [], 'w'
             if undated:
                 return [], list(dict.fromkeys(r[1] for r in undated)), 'w'
@@ -238,6 +241,8 @@ class Ctx:
         out = []
         for r in cand:
             p = self.wd['parties'].get(r[0], {})
+            if NO_PARTY.search(p.get('n', '')):
+                continue
             f, t = p.get('from'), p.get('to')
             if (f is None or f <= y + 1) and (t is None or y <= t + 1):
                 out.append(r[0])
@@ -589,6 +594,8 @@ def main():
             os.remove(os.path.join(DEST, f))
     index, total = {}, 0
     cov = {}
+    major = {r['name'] for r in read_json(os.path.join(DATA, 'rulers', 'coverage.json'))}
+    cov_major = {}
     for name, s in sorted(c.st['states'].items()):
         doc = c.build(name, s)
         f = slug(name) + '.json'
@@ -596,6 +603,7 @@ def main():
         index[name] = f
         for p in doc['periods']:
             era = era_of(p['from'])
+            tally(cov_major, era, p) if name in major else None
             e = cov.setdefault(era, {'slices': 0, 'years': 0})
             e['slices'] += 1
             yrs = p['to'] - p['from'] + 1
@@ -632,6 +640,8 @@ def main():
         c.disc[label] = c.disc_pw.get(eid, [])
         doc = c.build(label, s)
         doc['empire'] = eid
+        for p in doc['periods']:
+            tally(cov_major, era_of(p['from']), p)
         doc['core'] = core
         f = 'e-' + slug(eid) + '.json'
         total += write_json(os.path.join(DEST, f), doc)
@@ -643,11 +653,31 @@ def main():
         for k in list(e):
             if k not in ('slices', 'years'):
                 e[k + '%'] = round(100 * e[k] / e['years'], 1)
-    write_json(os.path.join(OUT, 'coverage.json'), cov, pretty=True)
+    for era, e in cov_major.items():
+        for k in list(e):
+            if k not in ('slices', 'years'):
+                e[k + '%'] = round(100 * e[k] / e['years'], 1)
+    write_json(os.path.join(OUT, 'coverage.json'), {'all': cov, 'major': cov_major}, pretty=True)
+    log('  major states (the 150 of data/rulers/coverage.json) and empires:')
+    for era in sorted(cov_major, key=lambda e: ERAS.index(e)):
+        e = cov_major[era]
+        log(f"  {era:>14}: {e['slices']:5} slices; " + ', '.join(f"{k} {e.get(k + '%', 0)}%" for k in ('pop', 'gov', 'rel', 'relOfficial', 'party', 'parties', 'leaders', 'mov', 'disc')))
     log(f'context: {len(index)} states, {total // 1024} KB')
     for era in sorted(cov, key=lambda e: ERAS.index(e)):
         e = cov[era]
         log(f"  {era:>14}: {e['slices']:5} slices; " + ', '.join(f"{k} {e.get(k + '%', 0)}%" for k in ('pop', 'gov', 'rel', 'relOfficial', 'party', 'parties', 'leaders', 'mov', 'disc')))
+
+
+def tally(cov, era, p):
+    e = cov.setdefault(era, {'slices': 0, 'years': 0})
+    e['slices'] += 1
+    yrs = p['to'] - p['from'] + 1
+    e['years'] += yrs
+    for k in ('pop', 'popw', 'gov', 'rel', 'party', 'parties', 'leaders', 'mov', 'disc'):
+        if p.get(k):
+            e[k] = e.get(k, 0) + yrs
+    if any(r[1] == 'official' for r in p.get('rel', [])):
+        e['relOfficial'] = e.get('relOfficial', 0) + yrs
 
 
 ERAS = ['before 500 BC', '500 BC-499', '500-999', '1000-1499', '1500-1799', '1800-1899', '1900-1945', '1946-2019']
