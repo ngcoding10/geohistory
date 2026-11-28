@@ -892,5 +892,196 @@
   ],
   "disagree": "Wikipedia gives about 360,000 people excluded from the April 1938 vote; the USHMM gives 300,000 to 400,000. Historians disagree on how far the reported 99% approval reflected real support.",
   "checked": null
+ },
+ "Q150812": {
+  "title": "Invasion of Poland",
+  "y": 1939,
+  "place": "Poland",
+  "paras": [
+   "The invasion of Poland in September 1939, which began the Second World War in Europe, was a joint attack on the Polish Republic by Nazi Germany, with a small Slovak force, from the west, north and south, and by the Soviet Union from the east. A week earlier Germany and the Soviet Union had signed a non-aggression pact, the Molotov–Ribbentrop Pact, whose secret protocol divided Poland between them. Poland's allies Britain and France declared war on Germany on 3 September but gave it very little practical help.",
+   "To justify the attack, the SS staged a fake Polish assault on a German radio station at Gleiwitz on the night of 31 August, and Nazi propaganda claimed that Poland was persecuting its ethnic Germans. At dawn on 1 September German forces crossed the border: the USHMM counts nearly 1.5 million men, about 60 divisions and more than 2,000 tanks, with a large air force that destroyed most of Poland's roughly 300 aircraft in the first days. Poland, which had mobilised only part of its army of about a million men, could not hold its long borders. German troops reached the outskirts of Warsaw by 8–9 September, and the Polish defeat on the Bzura river in mid-September decided the campaign.",
+   "On 17 September the Red Army invaded eastern Poland, and the Polish government left the country for Romania. Warsaw surrendered on 28 September after heavy shelling and bombing, Germany and the Soviet Union fixed a new border between their zones at the end of September, and the last Polish units stopped fighting after the battle of Kock on 6 October. Wikipedia lists about 66,000 Polish soldiers killed and about 690,000 taken prisoner, against about 16,000 German and 1,500 Soviet dead.",
+   "Poland ceased to exist as a state. Germany annexed its western regions and Danzig on 8 October and placed the rest under a 'General Government'; the Soviet Union incorporated its share into its own republics. Germany's aim, in Wikipedia's words, was to end Poland as a sovereign country, with its citizens destined for extermination. Poles continued the war through an underground state at home and armed forces in the West under a government in exile."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Invasion_of_Poland",
+    "title": "Invasion of Poland",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://encyclopedia.ushmm.org/content/en/article/invasion-of-poland-fall-1939",
+    "title": "Invasion of Poland, Fall 1939",
+    "publisher": "United States Holocaust Memorial Museum, Holocaust Encyclopedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     7,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The invasion (1 September – 6 October 1939) was a joint attack by Germany, Slovakia and the Soviet Union and marked the beginning of the Second World War.",
+   "The Molotov–Ribbentrop Pact was signed one week before the invasion; its secret protocol assigned parts of Poland to the USSR.",
+   "Britain and France declared war on Germany on 3 September; their aid to Poland was very limited.",
+   "The pretext was a staged attack on a German radio station (Gleiwitz, night of 31 August).",
+   "Nazi propaganda claimed Poland was persecuting ethnic Germans; USHMM: Germany attacked at dawn with nearly 1.5 million men, 60 divisions and over 2,000 tanks; Poland had about 300 planes, most destroyed in the first days.",
+   "Poland had about 1,000,000 soldiers but mobilised only part of them; the Polish defeat at the Bzura in mid-September gave Germany a clear advantage.",
+   "German troops reached the outskirts of Warsaw on 8–9 September.",
+   "On 17 September the Soviet Union invaded, acting on the secret protocol.",
+   "The Polish government left for Romania after the Soviet invasion (USHMM: it fled on 17 September).",
+   "Warsaw surrendered on 28 September; Germany and the USSR divided Poland (USHMM: 29 September, along the Bug; Wikipedia: German–Soviet Frontier Treaty).",
+   "Resistance ended on 6 October after the battle of Kock.",
+   "Wikipedia casualties: Poland 66,000 killed, about 690,000 captured; Germany 16,343 killed; USSR 1,475 killed.",
+   "On 8 October Germany annexed western Poland and Danzig and created the General Government; the USSR incorporated its zone; the Polish Underground State and Polish Armed Forces in the West continued the fight; the aim of the invasion was to destroy Poland as a sovereign country."
+  ],
+  "disagree": "The USHMM dates the German–Soviet partition to 29 September 1939; Wikipedia names the German–Soviet Frontier Treaty without a date in the part read. The two sources also give somewhat different German strength figures (USHMM about 60 divisions; Wikipedia 66 divisions assigned to the campaign).",
+  "checked": null
+ },
+ "Q129053": {
+  "title": "Partition of India",
+  "y": 1947,
+  "place": "British India, above all the Punjab and Bengal",
+  "paras": [
+   "The partition of India in August 1947 divided British India into two independent dominions, India and Pakistan (whose eastern wing later became Bangladesh). It ended British rule and split the provinces of the Punjab and Bengal by district, according to whether Muslims or non-Muslims (mostly Hindus and Sikhs) were the majority. The main parties were the British government, represented in India by the viceroy Lord Mountbatten; the Indian National Congress; and the Muslim League, which since its Lahore Resolution of 1940 had demanded sovereign Muslim-majority states.",
+   "Communal tension had grown through the 1940s. After the British Cabinet Mission's plan for a loose federation failed in 1946, the Muslim League's 'Direct Action Day' on 16 August 1946 set off the Great Calcutta Killings, in which about 4,000 people died by official count. On 3 June 1947 Mountbatten announced a plan for partition and set independence for August; Indian leaders accepted it, and the British Parliament passed the Indian Independence Act on 18 July. In July Sir Cyril Radcliffe, a British lawyer who had never been to India, was given about five weeks to draw the new borders, using population figures and undefined 'other factors'. Pakistan came into being on 14 August and India became independent on 15 August 1947, but the Radcliffe Line was only published on 17 August.",
+   "The division set off one of the largest and most violent migrations in history. Some 12 to 20 million people crossed the new borders in both directions (the 1951 censuses of India and Pakistan counted about 7.3 and 7.2 million refugees), most in the Punjab, where Muslims fled west and Hindus and Sikhs east. Massacres killed between 200,000 and 2 million people; Wikipedia notes that most scholars accept a figure of about one million, and Al Jazeera puts it at more than one million. Tens of thousands of women were abducted on both sides.",
+   "Violence spread beyond the two provinces, to Jammu and Kashmir from September 1947, and partition reshaped the populations of the Punjab, Bengal and cities such as Delhi, which about 330,000 Muslims left and about 500,000 Hindu and Sikh refugees entered."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Partition_of_India",
+    "title": "Partition of India",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.aljazeera.com/news/2017/8/17/how-were-the-india-pakistan-partition-borders-drawn",
+    "title": "How were the India-Pakistan partition borders drawn?",
+    "publisher": "Al Jazeera",
+    "accessed": "2026-11-28",
+    "supports": [
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Partition in 1947 divided British India into the dominions of India and Pakistan (today India, Pakistan and Bangladesh), dividing Bengal and the Punjab by district-wide Muslim or non-Muslim majorities, and ended British rule.",
+   "The Muslim League's Lahore Resolution of March 1940 called for sovereign Muslim-majority states; Congress and the League were the main Indian parties.",
+   "The Cabinet Mission Plan of 1946 proposed a federal arrangement with groupings of provinces.",
+   "Direct Action Day, 16 August 1946, led to the Great Calcutta Killings, about 4,000 deaths by official accounts.",
+   "On 3 June 1947 Mountbatten announced the partition plan with independence in August; Indian leaders accepted it.",
+   "The Indian Independence Act was passed on 18 July 1947.",
+   "Pakistan came into being on 14 August 1947 and India became independent on 15 August 1947.",
+   "Radcliffe, a British lawyer who had never been to India, was commissioned in July 1947, about five weeks before the British left, to draw the borders using population figures and undefined 'other factors'.",
+   "The Radcliffe Line was announced on 17 August 1947.",
+   "Displacement: 12–20 million (Wikipedia; Al Jazeera about 14 million); the 1951 censuses counted 7,295,870 displaced in India and 7,226,600 in Pakistan.",
+   "Deaths: estimates 200,000 to 2 million, most scholars accept about 1 million (Wikipedia); Al Jazeera: more than one million.",
+   "In the Punjab about 6.5 million Muslims moved west and 4.7 million Hindus and Sikhs east; India claimed 33,000 Hindu and Sikh women abducted and Pakistan 50,000 Muslim women.",
+   "Violence also struck Jammu and Kashmir from September 1947; about 330,000 Muslims left Delhi and about 500,000 Hindus and Sikhs arrived."
+  ],
+  "disagree": "Estimates vary widely: 12 to 20 million displaced (Al Jazeera about 14 million) and 200,000 to 2 million killed (most scholars, per Wikipedia, about one million; Al Jazeera more than one million).",
+  "checked": null
+ },
+ "Q164348": {
+  "title": "Hungarian Revolution of 1956",
+  "y": 1956,
+  "place": "Budapest and the rest of Hungary",
+  "paras": [
+   "The Hungarian Revolution of 23 October to early November 1956 was a nationwide uprising against Hungary's communist government and the Soviet domination behind it. On one side were students, workers, armed insurgents and, for a few days, a reforming communist government under Imre Nagy; on the other the State Protection Authority (ÁVH, the security police), hard-line communists, and the Soviet army, which crushed the revolt.",
+   "Under Mátyás Rákosi Hungary had been a Stalinist police state. After Stalin's death Nagy was prime minister from 1953 until Rákosi ousted him in 1955, and in 1956 Khrushchev's criticism of Stalin and concessions won by Poland encouraged hopes of change. On 22 October students drew up demands that included the withdrawal of Soviet troops, free multi-party elections and the removal of Stalin's statue in Budapest. On 23 October a mass demonstration followed; when a delegation tried to broadcast the demands from the radio building, the ÁVH fired on the crowd, and fighting spread. The party named Nagy prime minister and called in Soviet troops already in Hungary, but this first intervention was limited. Insurgents formed militias and freed political prisoners, workers' councils took over local government, and some communist officials and ÁVH men were killed. By the end of October fighting had largely stopped: Nagy's government disbanded the ÁVH on 28 October, on 30 October announced a return to a multi-party system, and on 1 November declared Hungary neutral and leaving the Warsaw Pact, informing the UN.",
+   "But Soviet troops were entering Hungary rather than leaving it. On 4 November Soviet forces attacked Budapest in strength, and János Kádár, who had left Budapest for the Soviet side, was put at the head of a new government. Nagy took refuge in the Yugoslav embassy. The last organised resistance ended around 10–11 November, though fighting went on in places after that. About 2,000–3,000 Hungarians and about 700 Soviet soldiers were killed. The United States and the UN protested but did not intervene, their attention divided by the Suez crisis at the same time.",
+   "More than 200,000 Hungarians fled abroad, most to Austria. Thousands were arrested and many deported to the Soviet Union. Nagy left the embassy on 22 November and was arrested; he and was tried in secret and executed in 1958. Kádár stayed in power and later pursued a gradual reconciliation, including the economic reforms of 1968."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+    "title": "Hungarian Revolution of 1956",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://ebsco.com/research-starters/history/soviets-crush-hungarian-uprising",
+    "title": "Soviets Crush Hungarian Uprising",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The revolution (from 23 October 1956) was a countrywide revolt against the communist government and Soviet domination; the ÁVH was the security police.",
+   "Under Rákosi Hungary was a repressive Stalinist state; Nagy was prime minister 1953–1955 until ousted by Rákosi; Khrushchev's 1956 de-Stalinisation and the Polish concessions encouraged reform demands.",
+   "On 22 October students drew up demands including Soviet troop withdrawal, free multi-party elections and removal of Stalin's statue.",
+   "On 23 October a delegation tried to broadcast demands from the radio building; the ÁVH fired on the crowd.",
+   "Nagy was named premier and the government called on Soviet forces already in Hungary; EBSCO: the first intervention was limited.",
+   "Revolutionaries formed militias, freed political prisoners, local councils took over; some communist officials and ÁVH men were killed.",
+   "The Nagy government disbanded the ÁVH on 28 October and on 1 November announced withdrawal from the Warsaw Pact and neutrality (informing the UN Secretary-General); fighting had largely subsided by the end of October.",
+   "On 30 October Nagy announced restoration of a multi-party system (EBSCO); Wikipedia: he pledged free elections.",
+   "On 4 November the Soviet army launched a massive intervention; Kádár, who had disappeared from Budapest and gone over to the Soviet side, headed the new government; Nagy took refuge in the Yugoslav embassy.",
+   "Organised resistance ended around 10 November (EBSCO) or 7–11 November (Wikipedia), with fighting outside Budapest until at least 12 November; Hungarian deaths about 2,000–3,000 (Wikipedia 2,000–3,000; EBSCO about 3,000), Soviet about 700 (722).",
+   "About 200,000 Hungarians fled, mostly to Austria.",
+   "The US and UN protested but did not intervene, overshadowed by the Suez crisis; Nagy left the embassy on 22 November, was arrested and executed in 1958; thousands were arrested and deported to the USSR; Kádár later pursued gradual reconciliation (New Economic Mechanism, 1968)."
+  ],
+  "disagree": "Death tolls differ: Wikipedia gives about 2,000 (2,000–3,000 in its infobox) Hungarian dead, EBSCO about 3,000. The end of the fighting is dated variously from 7 to 11 November.",
+  "checked": null
  }
 }
