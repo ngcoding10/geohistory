@@ -1460,5 +1460,147 @@
   ],
   "disagree": "Date of the edict on moving the capital: 1009 in a Wikipedia caption, 1010 in Wikipedia's text and on the Vietnamese government's Hanoi portal. Stated in the text.",
   "checked": null
+ },
+ "Q14750447": {
+  "title": "Mongol conquest of Western Xia",
+  "y": 1205,
+  "place": "Western Xia (Ningxia and Gansu, China)",
+  "paras": [
+   "Western Xia, or Xi Xia, was a state ruled by the Tangut people in what is now north-western China, founded in 1038 and covering roughly today's Ningxia, Gansu and neighbouring regions; since the early twelfth century it had been a vassal of the Jin dynasty. As Temujin, the future Genghis Khan, united the Mongol tribes, Western Xia gave refuge to defeated rivals of his, among them the Kerait leader Nilqa Senggum. In 1205, using this as a pretext, the Mongols raided Western Xia for the first time, plundering border settlements and returning with much booty; H. H. Howorth's history of the Mongols says they razed a strong fort and sacked a town. A second raid followed in 1207.",
+   "In 1209 Genghis invaded in earnest. The Jin emperor refused to help his vassal. The Mongols defeated the Xia field army, Howorth says capturing one of its generals, forced the pass through the Helan Mountains and in May laid siege to the capital, Yinchuan. The city held out for months, and the attackers' attempt to use the Yellow River against it went wrong: according to Wikipedia the Mongols diverted the river to flood the city, but the dike broke and their own camp was flooded; Howorth says the defenders opened the dikes. Even so, with its crops ruined and no help coming from the Jin, the Xia ruler, Emperor Xiangzong, submitted in January 1210, accepting Mongol supremacy and giving Genghis one of his daughters in marriage, along with tribute.",
+   "For the next decade Western Xia was a Mongol vassal and fought alongside the Mongols against the Jin. But when Genghis asked for troops for his war on the Khwarazmian Empire in 1219, the Xia court refused, and it later sought alliances with the Jin and Song. Genghis returned in 1225 to punish it, destroying its cities one after another, defeating a large Xia army near the frozen Yellow River and besieging Yinchuan in 1227. He died in August 1227 while the siege was still going on, and his death was kept secret. In September the last Xia emperor surrendered and was executed, and the Mongols sacked the capital and massacred its people. Older accounts summarised by Howorth differ on the ruler's fate, one saying he was carried off in chains and another that his own people killed him, but agree that the Tangut state was destroyed."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Mongol_conquest_of_Western_Xia",
+    "title": "Mongol conquest of Western Xia (rev 1383913090)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapter on Jingis Khan, OCR text",
+    "publisher": "Internet Archive (Google Books scan, Harvard University Library copy)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     14,
+     15,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "Western Xia (Xi Xia), founded in 1038, a Tangut-led state in north-western China, controlling Ningxia, Gansu and neighbouring regions (Wikipedia; Howorth: Hia or Tangut).",
+   "Western Xia accepted vassal status to the Jin dynasty after 1115 (Wikipedia).",
+   "Western Xia welcomed deposed Kerait leaders; Nilqa Senggum took refuge there (Wikipedia).",
+   "In 1205, with Nilqa Senggum's refuge as pretext, the Mongols raided Western Xia, plundering border settlements (Wikipedia; Howorth: expedition made in 1205, returned with large booty).",
+   "Howorth: the Mongols captured a strong fort, razed it, and took a town with large booty (attributed).",
+   "In 1207 Genghis led another raid (Wikipedia).",
+   "In 1209 Genghis invaded to conquer Western Xia; the Jin emperor refused aid (Wikipedia; Howorth: 1209 campaign).",
+   "The Xia army was defeated; Howorth: the king's son's army was beaten and the lieutenant-general Kao-ling Kong taken prisoner (Wikipedia: force led by Gao Lianghui defeated; Howorth attributed).",
+   "The Mongols took the pass through the Helan Mountains and reached the capital Yinchuan in May (Wikipedia; Howorth: laid siege to Ninghia, then called Chung-hing, the capital of Hia).",
+   "Flooding: Wikipedia: Genghis diverted the river to flood the city, the dike broke and flooded the Mongol camp; Howorth: the inhabitants opened the dikes of the river and flooded the Mongol camp (both attributed).",
+   "With crops destroyed and no relief from Jin, Emperor Xiangzong submitted in January 1210, gave a daughter in marriage to Genghis and paid tribute (Wikipedia; Howorth: the king agreed to acknowledge Mongol supremacy and surrendered one of his daughters).",
+   "Western Xia was a Mongol vassal 1210-1224 and joined the war against Jin (Wikipedia).",
+   "In 1219 Western Xia refused troops for the Khwarazmian campaign and later sought alliances with Jin and Song (Wikipedia).",
+   "In 1225 Genghis attacked again, systematically destroying cities; a Xia army was destroyed along the banks of the frozen Yellow River; Yinchuan was besieged in 1227 (Wikipedia; Howorth: Jingis crossed the Hoang ho and beat the Tangut army).",
+   "Genghis died in August 1227 during the siege; his death was kept secret (Wikipedia, body; Howorth: died in August 1227, body secretly conveyed).",
+   "In September 1227 Emperor Mozhu surrendered and was executed; Yinchuan was pillaged and its population slaughtered; the state annihilated (Wikipedia).",
+   "Howorth: De Mailla says the king submitted and was carried away in chains; Gaubil that he was put to death by his own people; 'thus ended another empire' (attributed)."
+  ],
+  "disagree": "The flood at Yinchuan in 1209-10: Wikipedia says the Mongols' own diversion of the river broke its dike; Howorth says the defenders opened the dikes. The last ruler's fate: executed (Wikipedia), carried off in chains (De Mailla) or killed by his own people (Gaubil), as summarised by Howorth. Wikipedia's lead puts Genghis's death in December, its body in August 1227; the text uses August, which Howorth also gives. All stated in the text except the lead slip.",
+  "checked": null
+ },
+ "cp03-09": {
+  "title": "Death of Genghis Khan",
+  "y": 1227,
+  "place": "Liupan mountains, during the siege of the Western Xia capital",
+  "paras": [
+   "In 1225 Genghis Khan, back from his war against the Khwarazmian Empire, went to punish the Tangut state of Western Xia, his former vassal, for refusing him troops and turning to his enemies. His armies destroyed its cities one by one and in 1227 besieged its capital, Yinchuan. While the siege went on, Genghis campaigned in the Liupan mountains to the south and prepared to attack the Jin. The besieged emperor agreed to surrender but asked for a month to prepare gifts.",
+   "It was there, in August 1227, that Genghis died. H. H. Howorth's history says he fell ill in his summer camp in the Liupan mountains, with only his youngest son Tolui beside him, and that the Chinese and Persian historians seem agreed that he died a natural death. Other stories circulated: Marco Polo wrote that he died of an infected arrow wound, the Galician-Volhynian Chronicle that the Tanguts killed him in battle, the friar Carpini that he was struck by lightning, and later Mongol chronicles linked his death to a captured Tangut princess, one even saying she stabbed him. Wikipedia concludes that the cause remains uncertain.",
+   "Howorth reports that before he died Genghis divided his lands among his sons and named Ogedei to rule over them all, and urged that the Tanguts be wiped out. His death was kept secret so as not to endanger the campaign. In September the last Xia emperor surrendered and was killed, and the Mongols sacked Yinchuan and massacred its people. Genghis's body was carried back to Mongolia; according to Rashid al-Din, as reported by Howorth, the escort killed everyone it met on the way so that the news would not spread, and he was buried at Burkhan Khaldun. Tolui acted as regent until Ogedei was chosen Great Khan in 1229."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Mongol_conquest_of_Western_Xia",
+    "title": "Mongol conquest of Western Xia (rev 1383913090), section \"Death of Genghis Khan\"",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     9,
+     10,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapters on Jingis Khan and Ogotai, OCR text",
+    "publisher": "Internet Archive (Google Books scan, Harvard University Library copy)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     8,
+     9,
+     11,
+     12,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "After defeating Khwarazm Genghis prepared to punish Western Xia for refusing troops and seeking alliances with Jin and Song; he attacked in 1225 (Wikipedia; Howorth: the king of Hia had been coquetting with the Kin emperor).",
+   "Cities were systematically destroyed; Yinchuan was besieged in 1227 (Wikipedia).",
+   "Genghis campaigned around the Liupan mountains and prepared to invade the Jin; the Xia emperor agreed to capitulate but wanted a month to prepare gifts (Wikipedia).",
+   "Genghis died in August 1227 (Wikipedia; Howorth).",
+   "Howorth: he retired to summer in the mountains of Liupan, was seized with a fatal disease; of his sons only Tului was with him; the Chinese and Persian historians are apparently agreed on a natural death (attributed).",
+   "Marco Polo: arrow wound (Wikipedia: infection of an arrow wound; Howorth: shot with an arrow).",
+   "Galician-Volhynian Chronicle: killed by the Western Xia in battle (Wikipedia).",
+   "Carpini: killed by lightning (Howorth).",
+   "Later Mongol chronicles connect his death with a Western Xia princess, one saying she stabbed him (Wikipedia; Howorth: Ssanang Setzen's legend of Kurbeldshin Goa).",
+   "The exact cause remains a mystery (Wikipedia).",
+   "He divided his dominions among his sons and set Ogedei over the whole; he urged his people to exterminate the Tanguts (Howorth).",
+   "His death was kept secret so as not to jeopardise the campaign (Wikipedia; Howorth: body secretly conveyed to Mongolia).",
+   "In September 1227 Emperor Mozhu surrendered and was executed; Yinchuan was pillaged and its population slaughtered (Wikipedia).",
+   "Rashid: the escort killed all travellers on the way; buried at Burkan Kaldun (Howorth, attributed).",
+   "Tului acted as regent; Ogedei was elected at a kuriltai in the spring of 1229 (Howorth)."
+  ],
+  "disagree": "Cause of death: natural illness (Chinese and Persian historians, per Howorth), an arrow wound (Marco Polo), death in battle (Galician-Volhynian Chronicle), lightning (Carpini), or a Tangut princess (later Mongol chronicles). The text gives each with its source. The record's day (25 August) is not stated in either source's readable text; the write-up gives the month only.",
+  "checked": null
  }
 }
