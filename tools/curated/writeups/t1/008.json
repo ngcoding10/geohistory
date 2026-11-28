@@ -3774,5 +3774,185 @@
   ],
   "disagree": "Date of Hidalgo's execution: 30 July 1811 (Wikipedia) or 31 July or 1 August 1811 (1911 Britannica); both stated. The exact words of the Grito are unknown; the text quotes only Aldama's version as given by Wikipedia.",
   "checked": null
+ },
+ "Q5915169": {
+  "title": "Independence of Paraguay",
+  "y": 1811,
+  "place": "Asunción, Paraguay",
+  "paras": [
+   "Paraguay was a province of the Spanish Viceroyalty of the Río de la Plata, governed from Buenos Aires. After the May Revolution of 1810 in Buenos Aires, the new junta there claimed authority over the whole viceroyalty and sent an envoy to Asunción, but the Spanish governor, Bernardo de Velasco, called an assembly of local notables, which declared continued loyalty to King Ferdinand VII and rejected the junta's authority. Buenos Aires then sent an army under General Manuel Belgrano to bring Paraguay into line, but in early 1811 Paraguayan militia, led largely by local criollo officers, defeated it at Paraguarí and Tacuarí, while Velasco himself fled from the battlefield.",
+   "The victories strengthened the confidence of the Paraguayan-born officers, led by Fulgencio Yegros and Pedro Juan Caballero, and when Velasco began negotiating with the Portuguese in Brazil, Paraguay's old enemies, for military protection, they decided to act. On the evening of 14 May 1811 officers led by Caballero seized the barracks in Asunción and demanded that Velasco share power. When more troops arrived and trained cannon on the government house, Velasco gave in early on 15 May, a day now celebrated as Paraguay's Independence Day. A junta of three was formed: Velasco, the lawyer José Gaspar Rodríguez de Francia and the Spanish-born captain Juan Valeriano de Zeballos.",
+   "Velasco, suspected of continuing to conspire with the Portuguese, was put under house arrest in June, and a first national congress replaced the junta with a five-man governing junta under Yegros. Francia, who according to the 1911 Encyclopaedia Britannica served as secretary to the junta, had an influence far greater than his office. Paraguay refused to submit to Buenos Aires, proposing instead a confederation of independent states. A second congress in October 1813 proclaimed the Republic of Paraguay and entrusted power to two consuls, Yegros and Francia; a third, in October 1814, made Francia sole dictator, at first for three years and later for life.",
+   "Under Francia, who ruled until his death in 1840, Paraguay was kept almost entirely isolated from the outside world and avoided war with its neighbours. A formal act of independence was declared only on 25 November 1842, and recognition came slowly: Brazil recognised Paraguay in 1844, but Argentina did so in practice only in 1856."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Independence_of_Paraguay",
+    "title": "Independence of Paraguay (rev 1379727650, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Francia,_Jos%C3%A9_Gaspar_Rodriguez",
+    "title": "Francia, José Gaspar Rodriguez, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     9,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Paraguay",
+    "title": "Paraguay, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Paraguay",
+    "title": "Paraguay, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Paraguay an intendency of the Viceroyalty of the Rio de la Plata with Buenos Aires as capital (Wikipedia).",
+   "After the May Revolution 1810 the Primera Junta sent Espinola to Asuncion; Velasco organized a cabildo of local notables on 24 July declaring loyalty to Ferdinand VII and rejecting the junta (Wikipedia).",
+   "Belgrano's expedition defeated at Paraguari and Tacuari in early 1811; Velasco fled from these battles (Wikipedia).",
+   "Criollo officers led by Yegros and Caballero; Velasco's negotiations with the Portuguese, old enemies (Wikipedia).",
+   "14 May 1811 evening insurrection in Asuncion led by Caballero; demands that Velasco share power in a three-man junta; troops and cannon in front of the government house; Velasco yielded early on 15 May; Independence Day (Wikipedia; EB Paraguay and Catholic Encyclopedia: in 1811 Paraguay declared itself independent of Spain).",
+   "Junta: Velasco, Francia, Zeballos (Wikipedia); EB Francia: Francia a lawyer practising in Asuncion.",
+   "Velasco under house arrest 9 June (Wikipedia); First National Congress 17 June 1811 created a five-man Junta Superior Gubernativa led by Yegros (Wikipedia).",
+   "Paraguay proposed a confederation of independent countries (Wikipedia: letter of 20 July 1811).",
+   "EB Francia (attributed): on the declaration of independence in 1811 appointed secretary to the national junta, with influence out of proportion to his position.",
+   "Second Congress, 30 September - 12 October 1813, proclaimed the Republic (Wikipedia).",
+   "Two consuls Yegros and Francia (Wikipedia; EB Francia: duumvirate of Francia and Yegres).",
+   "Third Congress October 1814 made Francia sole ruler (Wikipedia); EB Francia: 1814 dictator for three years, then for life; EB Paraguay: by 1814 a despotism in Francia's hands.",
+   "Francia ruled until his death in 1840 (EB Paraguay; Catholic Encyclopedia: dictator to 1840); isolation, avoided conflicts with Argentina and Brazil (Wikipedia).",
+   "Act of Independence 25 November 1842; Brazil recognized 14 September 1844; Argentina's actual recognition 1856 (Wikipedia, Wikipedia-only)."
+  ],
+  "disagree": "Francia's role in the first government of 1811: member of the three-man junta (Wikipedia) or secretary to the national junta (1911 Britannica); both reported. Start of his dictatorship: 1814 (Wikipedia, 1911 Britannica) against 'dictator (1811-40)' in the Catholic Encyclopedia; the text follows 1814. The Wikipedia article misprints the date of the rising once as 14 May 1810; its lead and the rest of the article give 1811.",
+  "checked": null
+ },
+ "Q3382350": {
+  "title": "Venezuelan Declaration of Independence",
+  "y": 1811,
+  "place": "Caracas, Venezuela",
+  "paras": [
+   "In 1808 Napoleon forced the Spanish kings Charles IV and Ferdinand VII to abdicate at Bayonne and made his brother Joseph king of Spain. In the Spanish colonies the question arose of who now held authority. In Caracas, on 19 April 1810, an open meeting of the town council deposed the Spanish captain general, Vicente Emparán, and set up a Supreme Junta that governed in the name of Ferdinand VII. Most Venezuelan provinces followed, but Maracaibo, Coro and Guayana stayed loyal to the Spanish authorities, and fighting broke out between the two sides.",
+   "The junta called a congress of the provinces, which met from March 1811. The returned exile Francisco de Miranda, elected a deputy, and a group of radicals organised in a club modelled on the Jacobins pressed for a complete break with Spain. On 5 July 1811 the congress voted for independence, 40 votes to 4 according to Wikipedia. The declaration, written mainly by Juan Germán Roscio and Cristóbal Mendoza, was issued in the name of seven provinces: Caracas, Cumaná, Barinas, Margarita, Barcelona, Mérida and Trujillo, which formed an American Confederation of Venezuela. It argued that America had recovered its right to govern itself through the abdications at Bayonne, that it was absurd for a vast and populous continent to depend on a small corner of Europe, and that the Spanish governments had treated Venezuela as rebels despite its loyalty. It declared the united provinces free, sovereign and independent states, released from all submission to the Spanish Crown, with full power to choose their own form of government, make war and peace, and conclude alliances and treaties. Miranda was among the signatories.",
+   "Venezuela was thus the first Spanish American colony to declare independence. The 1911 Encyclopaedia Britannica dates the proclamation to 14 July 1811; the signed act itself is dated 5 July, which Venezuela celebrates as its Independence Day. A federal constitution followed in December 1811, but the new republic was weak: it was short of money, its paper currency lost value, and it failed to win over the poorer classes. In 1812 a Spanish naval officer, Domingo de Monteverde, raised a royalist army from Coro, and a severe earthquake on 26 March 1812, which struck mainly republican areas, was taken by many as a divine judgement. Miranda, made commander with dictatorial powers, capitulated to Monteverde on 25 July 1812, ending the First Republic. The war for independence went on under Simón Bolívar until the battle of Carabobo in 1821, and, according to the Britannica, Spain recognised Venezuela's independence only in 1845."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Venezuelan_Declaration_of_Independence",
+    "title": "Venezuelan Declaration of Independence (rev 1370625449, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/First_Republic_of_Venezuela",
+    "title": "First Republic of Venezuela (rev 1373960366, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://es.wikisource.org/wiki/Acta_de_la_Declaraci%C3%B3n_de_Independencia_de_Venezuela",
+    "title": "Acta de la Declaración de Independencia de Venezuela (5 July 1811), text",
+    "publisher": "Spanish Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Venezuela",
+    "title": "Venezuela, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     10,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Carabobo",
+    "title": "Battle of Carabobo (rev 1386730318, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "1808 abdications of Charles IV and Ferdinand VII at Bayonne; Joseph Bonaparte king of Spain (Wikipedia First Republic; Act refers to the abdications of Bayonne).",
+   "19 April 1810: open cabildo in Caracas deposed Captain General Vicente Emparan and set up the Supreme Junta to preserve the rights of Ferdinand VII (Wikipedia First Republic; EB: in 1810 Venezuela rose against the Spanish yoke; Act: rights recovered since 19 April 1810).",
+   "Most provinces set up juntas; Maracaibo, Guayana and Coro remained loyal; civil war (Wikipedia First Republic).",
+   "Congress of the provinces met from March 1811; Miranda returned, elected to Congress, with an association modelled on the Jacobin Club pressed for independence (Wikipedia First Republic).",
+   "5 July 1811 independence declared (Wikipedia Declaration; Wikipedia First Republic); vote 40-4 (Wikipedia Declaration, attributed).",
+   "Written mainly by Cristobal Mendoza and Juan German Roscio (Wikipedia Declaration); seven provinces Caracas, Cumana, Barinas, Margarita, Barcelona, Merida, Trujillo; American Confederation of Venezuela (Wikipedia Declaration; Act: 'provincias Unidas de Caracas, Cumana, Barinas, Margarita, Barcelona, Merida y Trujillo, que forman la Confederacion Americana de Venezuela').",
+   "Reasons: rights recovered after Bayonne; contrary to order that America, far larger and more populous, depend on a peninsular corner of Europe; declared in rebellion despite loyalty (Act; Wikipedia Declaration: baneful that a small European nation ruled the New World; right to self-government after the abdications at Bayonne).",
+   "Operative clause: United Provinces free, sovereign and independent States, absolved of all submission and dependence on the Crown of Spain; full power to choose form of government, declare war, make peace, form alliances, treaties (Act).",
+   "Miranda signed (Act: 'Francisco Miranda, diputado del Pao').",
+   "First Spanish American colony to declare independence (Wikipedia First Republic; Wikipedia Declaration: first independent republic of Spanish America). EB dates the proclamation 14 July 1811 (attributed); Act dated 5 July 1811 ('a cinco dias del mes de julio del ano de mil ochocientos once'); anniversary celebrated as Independence Day (Wikipedia Declaration).",
+   "Constitution ratified 21 December 1811 (Wikipedia First Republic); weaknesses: loss of cocoa market, specie, paper money lost value, failed to appeal to lower classes (Wikipedia First Republic).",
+   "Monteverde, Spanish frigate captain, arrived at Coro March 1812 and built an army; earthquake 26 March 1812 mainly in republican areas, interpreted as a sign from Providence (Wikipedia First Republic).",
+   "Miranda generalissimo with broad powers; capitulation 25 July 1812 ended the First Republic (Wikipedia First Republic).",
+   "War continued under Bolivar (EB: Bolivar the leading spirit of the revolt; Wikipedia Battle of Carabobo: 24 June 1821, Bolivar's decisive victory led to the independence of Venezuela); Spain recognized independence by the treaty of Madrid, 30 March 1845 (EB, attributed)."
+  ],
+  "disagree": "Date of the proclamation: 5 July 1811 (Wikipedia; the date on the signed act) or 14 July 1811 (1911 Britannica); both stated.",
+  "checked": null
  }
 }
