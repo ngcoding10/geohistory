@@ -732,5 +732,382 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q151349": {
+  "title": "Berlin Blockade",
+  "y": 1948,
+  "place": "Berlin",
+  "paras": [
+   "After the Second World War, defeated Germany and its capital Berlin were each divided into American, British, French and Soviet zones of occupation. Berlin lay deep inside the Soviet zone, and the Western sectors of the city depended on road, rail and canal links across it. By 1948 the wartime allies had fallen out over Germany's future. The United States and Britain had merged their zones into 'Bizonia' in 1947, the Marshall Plan was beginning, and in early 1948 the three Western powers began planning a West German state; in March the Soviets walked out of the Allied Control Council that coordinated the occupation. In June the Western powers introduced a new currency, the Deutsche Mark, in their zones and in West Berlin.",
+   "The Soviet Union replied with its own currency and, on 24 June 1948, cut all road, rail and canal access to West Berlin, cutting West Berlin off from its regular supplies of food, coal and electricity; it offered to lift the blockade if the Deutsche Mark was withdrawn from West Berlin. The American military governor, General Lucius Clay, argued that staying in Berlin had become a symbol of American resolve. Because a 1945 agreement guaranteed the Western Allies three air corridors into the city, the United States began an airlift, 'Operation Vittles', on 26 June, and Britain joined two days later with 'Operation Plainfare'. Crews from Canada, Australia, New Zealand and South Africa flew with the RAF.",
+   "The airlift became steadily larger and more efficient. By the time it officially ended on 30 September 1949 it had flown in about 2.3 million tons of supplies, nearly two-thirds of it coal, on more than 270,000 flights. Seventeen American and eight British aircraft crashed during the operation. In September 1948 some 300,000 West Berliners rallied at the Reichstag against Soviet domination. Facing an Allied counter-blockade of its own zone and seeing that the airlift could be kept up indefinitely, Moscow lifted the blockade in May 1949 (on 12 May by most accounts; the State Department historian's page gives both 11 and 12 May).",
+   "The crisis hardened the division of Germany and Europe. Shortly before the blockade ended, the Western Allies created the North Atlantic Treaty Organization (NATO); about two weeks after it ended the West German state, the Federal Republic of Germany, was established, soon followed by East Germany. West Berlin, once identified with Prussian militarism and Nazism, became a symbol of Western freedom in the Cold War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Berlin_Blockade",
+    "title": "Berlin Blockade",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1945-1952/berlin-airlift",
+    "title": "The Berlin Airlift, 1948–1949",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/berlin-blockade",
+    "title": "Berlin Blockade: Definition, Date & Airlift",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     7,
+     8,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Germany and Berlin were divided into four occupation zones; Berlin lay inside the Soviet zone.",
+   "The US and UK formed Bizonia on 1 January 1947; the Marshall Plan followed; in early 1948 the Western powers planned a West German state; in March 1948 the Soviets left the Allied Control Council.",
+   "In June 1948 the Western powers introduced the Deutsche Mark in their zones and West Berlin.",
+   "The Soviets issued their own currency.",
+   "On 24 June 1948 the Soviets blocked road, rail and canal access to West Berlin and offered to end the blockade if the Deutsche Mark was withdrawn.",
+   "Clay argued that remaining in Berlin was essential/symbolic of American intent.",
+   "Under 1945 agreements the Western Allies retained air corridors; the US began Operation Vittles on 26 June and Britain Operation Plainfare two days later.",
+   "Canadian, Australian, New Zealand and South African crews assisted the RAF.",
+   "The airlift officially ended on 30 September 1949, having delivered about 2.3 million tons (2,334,374 tons, nearly two-thirds coal) on 278,228 flights (HISTORY: more than 270,000 flights).",
+   "In September 1948 some 300,000 West Berliners rallied at the Reichstag.",
+   "Seventeen American and eight British aircraft crashed during the operation.",
+   "The Allied counter-blockade and the airlift's success led Moscow to lift the blockade in May 1949.",
+   "The blockade lasted until 12 May 1949 (Wikipedia; OoH gives 12 May in its summary and 11 May in its text).",
+   "NATO was created shortly before the end of the blockade, West Germany was established soon after, followed by East Germany; Berlin became a symbol of freedom against Communism."
+  ],
+  "disagree": "End of the blockade: 12 May 1949 (Wikipedia; the Office of the Historian's summary) or 11 May (the Office of the Historian's main text). HISTORY.com's airlift totals ('2.3 million tons on more than 270,000 flights over 11 months') differ slightly from Wikipedia's 2,334,374 tons on 278,228 flights by 30 September 1949.",
+  "checked": null
+ },
+ "Q877399": {
+  "title": "North Atlantic Treaty",
+  "y": 1949,
+  "place": "Washington, D.C.",
+  "paras": [
+   "The North Atlantic Treaty, also called the Washington Treaty, was signed in Washington, D.C., on 4 April 1949 by twelve countries: the United States, Canada, the United Kingdom, France, Belgium, the Netherlands, Luxembourg, Denmark, Norway, Iceland, Italy and Portugal. It created the North Atlantic Treaty Organization (NATO), a collective-defence alliance against the Soviet Union, and was the first peacetime military alliance the United States had entered outside the Western Hemisphere.",
+   "Western European governments had grown alarmed in 1947–1948: by the civil war in Greece and pressure on Turkey, the Communist coup in Czechoslovakia in 1948, Communist strength in the Italian elections, and the Soviet blockade of West Berlin from June 1948. In March 1948 Britain, France, Belgium, the Netherlands and Luxembourg signed the Brussels Treaty, a mutual-defence pact, and secret talks at the Pentagon that spring agreed in principle on a wider treaty. In May 1948 Senator Arthur Vandenberg proposed a resolution, which the Senate passed, backing a security treaty with Western Europe within the UN Charter but outside the Security Council, where the Soviets had a veto. Negotiations followed over how firm an American commitment could be, given that only Congress can declare war, and over whether to bring in North Atlantic countries beyond the Brussels powers.",
+   "The core of the treaty is Article 5: an armed attack on one member in Europe or North America is to be treated as an attack on all, and each will take 'such action as it deems necessary, including the use of armed force' to restore security. Article 6 limited this to members' territory in Europe and North America and certain North Atlantic areas, excluding colonial territories elsewhere.",
+   "Later in 1949 the US Congress passed the Mutual Defense Assistance Program to help rearm Western Europe, and after the Korean War began in 1950 the allies built an integrated military command. Greece and Turkey joined in 1952 and West Germany in 1955, after which the Soviet Union formed the Warsaw Pact. Article 5 was never invoked during the Cold War; its only invocation came after the September 11 attacks on the United States in 2001. By 2025 the treaty had 32 member states."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/North_Atlantic_Treaty",
+    "title": "North Atlantic Treaty",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     8,
+     9,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1945-1952/nato",
+    "title": "North Atlantic Treaty Organization (NATO), 1949",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The North Atlantic Treaty (Washington Treaty) was signed in Washington on 4 April 1949 by twelve countries (listed).",
+   "It is the legal basis of NATO, a collective-defence alliance created with a Soviet attack on Western Europe in mind.",
+   "It was the first peacetime US military alliance outside the Western Hemisphere (OoH).",
+   "Concerns in 1947–1948 included Greece and Turkey, the Czechoslovak coup, Communist gains in Italy and the Berlin blockade.",
+   "Britain, France, Belgium, the Netherlands and Luxembourg signed the Brussels Treaty in March 1948.",
+   "Secret talks at the Pentagon (22 March – 1 April 1948) secretly agreed there would be a treaty (Wikipedia); the Vandenberg Resolution backed a treaty within the UN Charter but outside the Security Council (OoH: proposed May 1948).",
+   "Negotiations concerned the automaticity of US commitment given Congress's war power, and widening membership beyond the Brussels powers.",
+   "Article 5: an armed attack on one member is an attack on all; each takes such action as it deems necessary including armed force.",
+   "Article 6 limits the area (Europe, North America, Turkey, North Atlantic islands north of the Tropic of Cancer); OoH: it did not include colonial territories.",
+   "Congress passed the Mutual Defense Assistance Program in October 1949; after the Korean War began the allies integrated their forces under a central headquarters; Greece and Turkey joined in 1952 and West Germany in 1955, after which the USSR formed the Warsaw Pact.",
+   "Article 5 was never invoked during the Cold War; it has been invoked only once, after the September 11 attacks in 2001.",
+   "The treaty has 32 members (12 founding, 4 more before 1991, 16 after)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q11264": {
+  "title": "Cuban Revolution",
+  "y": 1953,
+  "place": "Cuba",
+  "paras": [
+   "The Cuban Revolution was the armed movement that overthrew Fulgencio Batista, who had seized power in Cuba in a military coup in March 1952, ending the country's constitutional government. Among the coup's opponents was Fidel Castro, a young lawyer, who first challenged it in the courts. When that failed, he and his brother Raúl led an attack on the Moncada army barracks in Santiago de Cuba on 26 July 1953. The attack failed, many of the attackers were killed, and Castro was captured and imprisoned; his speech at the trial made him famous across Cuba, and the date gave its name to his 26th of July Movement.",
+   "Batista, seeking public approval, later amnestied the surviving attackers, and the Castros went into exile in Mexico, where they met the Argentine revolutionary Ernesto 'Che' Guevara. In late 1956 Castro and a small band of fighters sailed back to Cuba's eastern coast in the yacht Granma. Government troops attacked them on landing, and a small group of survivors, among them Fidel and Raúl Castro and Guevara, escaped into the Sierra Maestra mountains. From there the guerrillas grew into an army, while urban resistance groups such as the Revolutionary Directorate fought Batista in the cities.",
+   "Batista's support ebbed. In March 1958 the United States, which had been supplying his forces, imposed an arms embargo on his government. That summer a large army offensive into the mountains, Operation Verano, failed. The rebels then went on the attack, and on 31 December 1958 columns under Guevara and Camilo Cienfuegos, together with Revolutionary Directorate fighters, took the city of Santa Clara. Batista fled to the Dominican Republic in the early hours of 1 January 1959, and rebel forces entered Havana; Castro arrived there on 8 January.",
+   "Manuel Urrutia became president and Castro soon became prime minister, quickly concentrating power in his own hands. Revolutionary tribunals tried and executed members of the old regime. Castro's government moved towards the Soviet Union and Marxism–Leninism: the 26th of July Movement was later merged into the Communist Party of Cuba, founded in 1965, and Cuba became the first communist state in the Western Hemisphere. Relations with the United States broke down, leading to an American trade embargo, the failed CIA-backed Bay of Pigs invasion of 1961 and the Cuban Missile Crisis."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Cuban_Revolution",
+    "title": "Cuban Revolution",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/fidel-castro",
+    "title": "Fidel Castro",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "The Cuban Revolution overthrew Batista, who had seized power in a March 1952 coup.",
+   "Fidel Castro, a young lawyer, first challenged the coup in the courts.",
+   "Fidel and Raúl Castro led an attack on the Moncada Barracks in Santiago de Cuba on 26 July 1953.",
+   "The attack failed, many attackers were killed, and Castro was captured and imprisoned; his trial speech made him nationally famous; the 26th of July Movement was named after the date.",
+   "Batista amnestied the surviving attackers; the Castros went to Mexico and met Che Guevara.",
+   "In 1956 Castro and his followers sailed on the Granma and were attacked by government troops on landing.",
+   "Survivors including Fidel and Raúl Castro and Guevara escaped to the Sierra Maestra.",
+   "Urban resistance including the Revolutionary Directorate also fought Batista.",
+   "On 14 March 1958 the US, which had supplied Batista's forces, imposed an arms embargo.",
+   "Operation Verano, Batista's 1958 summer offensive into the mountains, failed.",
+   "On 31 December 1958 Santa Clara fell to Guevara, Cienfuegos and Revolutionary Directorate rebels.",
+   "Batista fled to the Dominican Republic on 1 January 1959.",
+   "Castro arrived in Havana on 8 January 1959 (HISTORY: a week later).",
+   "Urrutia became president; Castro became prime minister and consolidated power; revolutionary tribunals tried and executed members of the old regime.",
+   "The 26th of July Movement became the Communist Party of Cuba in 1965; Cuba became the first communist state in the Western Hemisphere.",
+   "The US imposed/tightened a trade embargo; the CIA-backed Bay of Pigs invasion failed in 1961; the Cuban Missile Crisis followed (1962)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q604897": {
+  "title": "Battle of Dien Bien Phu",
+  "y": 1954,
+  "place": "Điện Biên Phủ, north-western Vietnam",
+  "paras": [
+   "The Battle of Điện Biên Phủ (13 March – 7 May 1954) was the decisive battle of the First Indochina War, fought between the forces of the French Union and the Communist-led Viet Minh independence movement of Ho Chi Minh, whose army was commanded by General Võ Nguyên Giáp. Since 1946 France had been fighting to keep control of Vietnam, with growing financial help from the United States, which saw the war as part of the struggle against Communist expansion in Asia.",
+   "In 1953 the French commander, General Henri Navarre, decided to plant a heavily fortified base, supplied by air, in a remote valley at Điện Biên Phủ near the Laotian border, to block Viet Minh routes into Laos and to draw Giáp into a pitched battle where French firepower could destroy his army. French paratroopers seized the valley on 20 November 1953, and the garrison eventually reached nearly 16,000 men. The French assumed the Viet Minh could not bring heavy guns, especially anti-aircraft guns, through the surrounding mountains. Instead, Giáp's troops dragged artillery up the hills overlooking the valley and dug it into well-hidden emplacements.",
+   "On 13 March 1954 the Viet Minh opened a massive bombardment and stormed the strongpoint Béatrice that night; other outlying positions fell in the following days. The French artillery could not silence the hidden guns, and their artillery commander, Colonel Charles Piroth, killed himself. As the airstrip came under fire and aircraft were shot down, the garrison depended on parachute drops, while the perimeter shrank under trench-by-trench fighting. France appealed for American air strikes; President Eisenhower would not intervene without allies, and Britain refused to take part. On 7 May the last positions were overrun and the surviving defenders surrendered, after a siege that Wikipedia counts as two months and the State Department historian as four.",
+   "The defeat was a profound shock in France. At the Geneva Conference, which reached agreement ten weeks after the battle, the French agreed to leave Indochina. Vietnam was temporarily divided at the 17th parallel, with Ho Chi Minh's Democratic Republic of Vietnam in the North and the State of Vietnam in the South, with nationwide elections promised for 1956. The United States, which did not sign the final agreement, took France's place as the backer of South Vietnam, a commitment that drew it ever deeper into Vietnam for the next twenty years."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Dien_Bien_Phu",
+    "title": "Battle of Điện Biên Phủ",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1953-1960/dien-bien-phu",
+    "title": "Dien Bien Phu & the Fall of French Indochina, 1954",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The battle (13 March – 7 May 1954) was fought between French Union forces and the Viet Minh (Ho Chi Minh's movement; Giáp commanded) in the First Indochina War.",
+   "War between the Viet Minh and France broke out in 1946; the US gave France financial help to counter communism.",
+   "Navarre chose to build an air-supplied fortified base at Điện Biên Phủ near the Laotian border to cut Viet Minh routes into Laos and draw them into battle.",
+   "Operation Castor seized the valley on 20 November 1953; the garrison eventually totalled nearly 16,000.",
+   "The French believed the Viet Minh had no anti-aircraft capability; the Viet Minh moved heavy artillery and AA guns up the mountain slopes into concealed positions.",
+   "On 13 March the Viet Minh began a massive bombardment and took Béatrice that night; other strongpoints followed.",
+   "French counter-battery fire failed; Colonel Piroth committed suicide.",
+   "Air resupply failed as aircraft were shot down and runways destroyed; fighting resembled WWI trench warfare.",
+   "The US considered intervention; Eisenhower would not act without allies; Britain refused.",
+   "On 7 May the garrison was overrun and survivors surrendered.",
+   "The defeat shocked France; the Geneva Accords, ten weeks later, led to French withdrawal.",
+   "Vietnam was temporarily divided at the 17th parallel, North under Ho Chi Minh's DRV and South under the State of Vietnam, with elections promised for 1956.",
+   "The US did not sign the second agreement and backed South Vietnam, leading to its long involvement in Vietnam.",
+   "The State Department historian describes the siege as lasting four months (Wikipedia: two months)."
+  ],
+  "disagree": "Length of the siege: the Office of the Historian calls it a four-month siege; Wikipedia dates the battle to 13 March – 7 May 1954 and calls it a two-month siege.",
+  "checked": null
+ },
+ "Q389646": {
+  "title": "Baltic Way",
+  "y": 1989,
+  "place": "Estonia, Latvia and Lithuania",
+  "paras": [
+   "The Baltic Way was a peaceful protest on 23 August 1989 in which about two million people joined hands in a human chain running from Vilnius through Riga to Tallinn, across the three Baltic republics then ruled by the Soviet Union. It was organised by the three countries' popular independence movements, Lithuania's Sąjūdis, the Popular Front of Latvia and the Popular Front of Estonia, and it marked the 50th anniversary of the Molotov–Ribbentrop Pact of 1939.",
+   "That pact between Nazi Germany and the Soviet Union had contained secret protocols dividing Eastern Europe into spheres of influence, and in 1940 the Soviet Union occupied and annexed Estonia, Latvia and Lithuania. Moscow long denied that the secret protocols existed and held that the Baltic states had joined the Soviet Union voluntarily; for the independence movements, proof of the protocols meant that the annexation had been illegal. Tension with Moscow grew through the summer of 1989. The idea of a chain seems to have been put forward at a meeting of the three movements in Pärnu, Estonia, on 15 July. On 18 August Alexander Yakovlev, who headed a Soviet commission on the pact, admitted in Pravda that the secret protocols were genuine.",
+   "On the evening of 23 August people stood along the roads between the three capitals and linked hands for 15 minutes at 19:00 local time; buses and radio broadcasts helped fill gaps in the line. The length of the chain is given as about 675 km by Wikipedia and about 650 km by the Baltic military-heritage project's account. It was one of the longest unbroken human chains ever formed, and for a time Guinness listed it as the longest.",
+   "The protest put the case for Baltic independence before the world as a moral as well as a political issue. In December 1989 the Soviet Congress of People's Deputies accepted the Yakovlev commission's report condemning the secret protocols. On 11 March 1990 Lithuania became the first Soviet republic to declare independence, and all three Baltic states regained their independence in 1991. In 2009 the documents recording the Baltic Way were added to UNESCO's Memory of the World Register, and 23 August is now marked in Europe as a day of remembrance for the victims of Stalinism and Nazism."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Baltic_Way",
+    "title": "Baltic Way",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://militaryheritagetourism.info/en/military/stories/view/387",
+    "title": "The Baltic Way: for memory and study",
+    "publisher": "Military Heritage Tourism (Estonia–Latvia–Lithuania)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     9,
+     10,
+     14
+    ]
+   },
+   {
+    "url": "https://thenonviolenceproject.wisc.edu/2022/11/15/hands-across-the-baltics-the-story-of-the-baltic-way/",
+    "title": "Hands Across the Baltics: The Story of the Baltic Way",
+    "publisher": "The Nonviolence Project, University of Wisconsin–Madison",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "On 23 August 1989 about two million people formed a human chain across Estonia, Latvia and Lithuania.",
+   "The chain linked Vilnius, Riga and Tallinn.",
+   "It was organised by Sąjūdis, the Popular Front of Latvia and the Popular Front of Estonia and marked the 50th anniversary of the Molotov–Ribbentrop Pact.",
+   "The pact's secret protocols divided Eastern Europe into spheres of influence; the USSR occupied the Baltic states in 1940.",
+   "The USSR denied the secret protocols and claimed the Baltic states joined voluntarily; the protocols supported the claim that the occupation was illegal.",
+   "The idea seems to have been proposed at a trilateral meeting in Pärnu on 15 July 1989.",
+   "On 18 August Yakovlev, chairman of the commission on the pact, admitted in Pravda that the secret protocols were genuine.",
+   "Participants linked hands for 15 minutes at 19:00 local time.",
+   "Free buses and radio broadcasts helped coordinate the chain (Wisconsin page; Wikipedia mentions coordination).",
+   "The chain's length: about 675 km (Wikipedia) or about 650 km (military heritage page).",
+   "It was one of the longest unbroken human chains (Wikipedia; Wisconsin: longest contiguous on record); military heritage: listed for a time by Guinness as the longest.",
+   "The protest presented Baltic independence as a moral as well as political issue.",
+   "In December 1989 the Congress of People's Deputies accepted the Yakovlev report condemning the protocols.",
+   "On 11 March 1990 Lithuania was the first Soviet republic to declare independence; the Baltic states regained independence in 1991; UNESCO added the documents to the Memory of the World Register in 2009.",
+   "23 August is a European day of remembrance for victims of Stalinism and Nazism."
+  ],
+  "disagree": "Length of the chain: about 675 km (Wikipedia), about 650 km (military heritage project) or 430 miles (Wisconsin Nonviolence Project).",
+  "checked": null
  }
 }
