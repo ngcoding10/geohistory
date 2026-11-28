@@ -4464,7 +4464,7 @@
   "place": "Lima, Peru",
   "paras": [
    "Peru was the centre of Spanish power in South America. The viceroy kept his main forces at Lima, and while Chile and Buenos Aires broke away, Peru stayed largely royalist: risings at Tacna (1811), Huánuco (1812) and Cuzco (1814–1815) were put down. For the patriots of Chile and Argentina, destroying the viceroy's power was essential to their own survival, and a campaign on the Peruvian coast needed command of the sea.",
-   "A fleet fitted out in Chile under Lord Cochrane carried José de San Martín's army of Argentine and Chilean troops, which sailed from Valparaíso on 21 August 1820 and landed at Pisco in September; Wikipedia gives its strength as 4,118 soldiers. Talks with the viceroy broke down in October. General Juan Antonio Álvarez de Arenales campaigned in the highlands, Cochrane captured the Spanish frigate Esmeralda in November, and in January 1821 Viceroy Pezuela was ousted and replaced by José de la Serna. In June 1821 the royalist army left Lima for the highlands, leaving a garrison in the fortress of Callao. San Martín entered the city, independence was proclaimed on 28 July 1821, and he governed as Protector.",
+   "A fleet fitted out in Chile under Lord Cochrane carried José de San Martín's army of Argentine and Chilean troops, which sailed from Valparaíso in August 1820 (on the 20th according to the Argentine historian Bartolomé Mitre, the 21st according to Wikipedia) and landed at Pisco in September. Wikipedia gives its strength as 4,118 soldiers; Mitre gives 4,430 officers and men. Talks with the viceroy broke down in October. General Juan Antonio Álvarez de Arenales campaigned in the highlands, Cochrane captured the Spanish frigate Esmeralda in November, and in January 1821 Viceroy Pezuela was ousted and replaced by José de la Serna. In June 1821 the royalist army left Lima for the highlands, leaving a garrison in the fortress of Callao. San Martín entered the city, independence was proclaimed on 28 July 1821, and he governed as Protector.",
    "The war was far from over. The royalists still held the highlands and the south; they defeated patriot armies at Ica in 1822 and at Torata and Moquegua in January 1823, and General José de Canterac reoccupied Lima in June 1823. After meeting Simón Bolívar at Guayaquil in July 1822, San Martín resigned the protectorate to Peru's first congress in September 1822 and left the country. The president it elected in February 1823, José de la Riva Agüero, could not turn the war around, and Peru sought the help of Bolívar's Colombians.",
    "Bolívar reached Lima in 1823 (on 1 September, according to the 1911 Encyclopaedia Britannica and Wikipedia's article on Bolivian independence; Wikipedia's article on the Peruvian war gives 10 December). His army won the cavalry battle of Junín on 6 August 1824, and his second-in-command, Antonio José de Sucre, won the decisive battle of Ayacucho on 9 December 1824, where the viceroy and his officers were taken prisoner. That ended Spanish power in Peru; the royalist garrison of Callao held out until 1826. Bolívar ruled Peru with dictatorial powers until he left in September 1826, and the Colombian troops left in 1827, which Wikipedia notes is when Peru gained full sovereignty."
   ],
@@ -4543,14 +4543,24 @@
     "supports": [
      13
     ]
+   },
+   {
+    "url": "https://archive.org/download/emancipationofso00mitruoft/emancipationofso00mitruoft_djvu.txt",
+    "title": "Bartolomé Mitre, The Emancipation of South America (tr. William Pilling, London 1893), ch. XXV",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5
+    ]
    }
   ],
   "claims": [
    "Peru the centre of Spanish power, viceroy's strength concentrated at Lima; Chile and Buenos Aires declared independence first (EB); Peru remained strongly royalist (Wikipedia).",
    "Tacna rebellion 1811, Huanuco 1812, Cuzco rebellion 1814-1815 suppressed (Wikipedia).",
    "Destruction of the viceroy's power essential to their continued independence; conquest of the coast depends on command of the sea (EB); fleet under Cochrane fitted out at Valparaiso convoyed Argentine troops with some Chileans under San Martin (EB; Wikipedia: costs borne mostly by Chile, navy under Cochrane).",
-   "Expedition sailed from Valparaiso 21 August 1820 (Wikipedia; EB San Martin: set out in August 1820); landed at Pisco, September 1820 (Wikipedia 7 September; EB: September 1820).",
-   "4,118 soldiers (Wikipedia, attributed).",
+   "Expedition sailed from Valparaiso in August 1820: 20 August (Mitre) or 21 August (Wikipedia) - stated; EB San Martin: set out in August 1820; landed at Pisco, September 1820 (Wikipedia 7 September; EB: September 1820).",
+   "Strength: 4,118 soldiers (Wikipedia, attributed) or 4,430 officers and men (Mitre, attributed).",
    "Negotiations with the viceroy broke down on 14 October 1820 (Wikipedia; EB San Martin: tried to negotiate at Pisco).",
    "Arenales' Sierra campaign from 5 October 1820; Cochrane captured the frigate Esmeralda 9 November 1820; Pezuela ousted and replaced by La Serna 29 January 1821 (Wikipedia).",
    "La Serna left Lima in June 1821 leaving a garrison in Real Felipe fortress, Callao; royalist army to the highlands 25 June (Wikipedia; EB San Martin: in July 1821 the Spaniards evacuated Lima).",
@@ -4563,8 +4573,12 @@
    "Callao held out until 1826 (Wikipedia Ayacucho: siege of Callao ended 1826; Wikipedia war article: January 1826).",
    "Bolivar ruled with dictatorial powers, left 3 September 1826; Colombian troops left in 1827 (EB: March 1827; Wikipedia: last garrison returned the Real Felipe fortress 16 February 1827); full sovereignty only after that (Wikipedia)."
   ],
-  "disagree": "Bolivar's arrival in Lima: 1 September 1823 (1911 Britannica; Wikipedia, Bolivian Declaration of Independence) or 10 December 1823 (Wikipedia, Peruvian War of Independence). Last Colombian troops: March 1827 (Britannica) or the Real Felipe fortress handed back 16 February 1827 (Wikipedia); the text says 1827.",
-  "checked": null
+  "disagree": "Bolivar's arrival in Lima: 1 September 1823 (1911 Britannica; Wikipedia, Bolivian Declaration of Independence) or 10 December 1823 (Wikipedia, Peruvian War of Independence). Last Colombian troops: March 1827 (Britannica) or the Real Felipe fortress handed back 16 February 1827 (Wikipedia); the text says 1827. Sailing of the expedition: 20 August 1820 (Mitre) or 21 August (Wikipedia); strength 4,430 (Mitre) or 4,118 (Wikipedia).",
+  "checked": {
+   "by": "https://archive.org/download/emancipationofso00mitruoft/emancipationofso00mitruoft_djvu.txt",
+   "result": "5 claims checked against Mitre, The Emancipation of South America (1893): Esmeralda cut out by Cochrane, landing at Pisco in September 1820, independence proclaimed in Lima on 28 July 1821, San Martin's title of Protector confirmed; the sailing date (21 August 1820, from Wikipedia) is given by Mitre as 20 August, and Mitre puts the army at 4,430, not 4,118 - both now stated as disagreements.",
+   "errors": 1
+  }
  },
  "cp08-15": {
   "title": "Central America declares independence",
@@ -4573,7 +4587,7 @@
   "paras": [
    "In 1821 the Captaincy General of Guatemala, which took in Chiapas, Comayagua (Honduras), San Salvador, Nicaragua and Costa Rica as well as Guatemala itself, was still governed for Spain from Guatemala City. The restoration of Spain's liberal constitution in 1820 let the provinces revive their elected councils, which became centres of constitutional and separatist feeling, and during 1821 the provincial council of Guatemala began openly to discuss independence. In September, the Act itself records, the town councils of Ciudad Real, Comitán and Tuxtla in Chiapas reported that they had proclaimed and sworn independence and urged the capital to do the same.",
    "On 15 September 1821 the provincial council met at the National Palace in Guatemala City together with the archbishop, members of the Audiencia, the city council, the university and other bodies, while a crowd in the streets and in the palace itself kept shouting for independence. The meeting, chaired by the Spanish political chief, Brigadier Gabino Gaínza, declared independence from the Spanish government to be the general will of the people of Guatemala, to be published at once, the Act says, to forestall the consequences if the people proclaimed it themselves. The provinces were asked to elect deputies, one for every 15,000 inhabitants with people of African origin counted as citizens, to a congress due to meet on 1 March 1822 to decide on absolute independence and a form of government. Until then Gaínza kept the government, advised by a provisional junta, the existing authorities stayed in office, and the Catholic religion was to be preserved unchanged. Wikipedia credits the text to the Honduran José Cecilio del Valle.",
-   "San Salvador accepted the decision on 21 September, Comayagua on 28 September, and Nicaragua and Costa Rica on 11 October, but the provinces were wary of Guatemala's dominance and the congress never met. On 29 October 1821 Agustín de Iturbide, head of newly independent Mexico's provisional government, proposed that Central America join the Mexican Empire. Local councils were consulted, every province except El Salvador voted in favour, and on 5 January 1822 Gaínza accepted the annexation. It lasted until 1823: as Iturbide's empire fell, the provinces broke away and formed a federal republic, which lasted until 1839."
+   "According to Wikipedia, San Salvador accepted the decision on 21 September, Comayagua on 28 September, and Nicaragua and Costa Rica on 11 October, but the provinces were wary of Guatemala's dominance and the congress never met. In October 1821 Agustín de Iturbide, head of newly independent Mexico's provisional government, proposed that Central America join the Mexican Empire. Local councils were consulted, every province except El Salvador voted in favour, and in January 1822 Gaínza accepted the annexation. It lasted until 1823: as Iturbide's empire fell, the provinces broke away and formed a federal republic, which lasted until 1839."
   ],
   "sources": [
    {
@@ -4653,7 +4667,7 @@
   "place": "Mexico City",
   "paras": [
    "Ten years after Miguel Hidalgo began the insurgency in 1810, the remaining insurgents, led by Vicente Guerrero, still held out south-west of Mexico City. That year a military rising in Spain restored the liberal constitution of 1812. In New Spain, churchmen and Spaniards feared that a liberal government would force reforms on them, and, in the words of the 1911 Encyclopaedia Britannica, they induced the royalist officer Agustín de Iturbide to take the field for a 'reactionary revolution'. Viceroy Juan Ruiz de Apodaca had restored Iturbide to command in November 1820 to put down Guerrero.",
-   "Instead of destroying Guerrero, Iturbide allied with him; Wikipedia notes that historians now think the two were negotiating before the campaign began. The Plan of Iguala, made public on 24 February 1821, rested on three guarantees: independence from Spain, the Catholic religion, and union, with equal rights for Spaniards and Mexican-born under a constitutional monarchy. Royalist troops and insurgents combined into the Army of the Three Guarantees under Iturbide. The viceroy refused to join, and Ferdinand VII rejected the plan. Spain's new representative, Juan O'Donojú, who could get no further than Veracruz, signed the Treaty of Córdoba with Iturbide on 24 August 1821, recognizing an independent Mexican Empire whose crown was to be offered first to Ferdinand VII and then to members of his family.",
+   "Instead of destroying Guerrero, Iturbide allied with him; Wikipedia notes that historians now think the two were negotiating before the campaign began. The Plan of Iguala, made public on 24 February 1821, rested on three guarantees: independence from Spain, the Catholic religion, and union, with equal rights for Spaniards and Mexican-born under a constitutional monarchy. Royalist troops and insurgents combined into the Army of the Three Guarantees under Iturbide. The viceroy refused to join, and Ferdinand VII rejected the plan. Spain's new representative, Juan O'Donojú, who could get no further than Veracruz, signed the Treaty of Córdoba with Iturbide in August 1821, recognizing an independent Mexican Empire whose crown was to be offered first to Ferdinand VII and then to members of his family.",
    "After a last battle at Azcapotzalco opened the road, the Army of the Three Guarantees, led by Iturbide, entered Mexico City on 27 September 1821, his birthday. Wikipedia gives its strength then as 7,616 infantry, 7,755 cavalry and 763 artillerymen with 68 guns. A provisional junta headed by Iturbide issued the declaration of independence of the Mexican Empire, on 28 September according to Wikipedia (the 1911 Britannica says October 1821), and chose a regency of five, with Iturbide as its president.",
    "The Spanish government repudiated O'Donojú's treaty and recognized Mexico's independence only in 1836. Spanish troops held the island fortress of San Juan de Ulúa off Veracruz until November 1825, according to Wikipedia (until 1827, says the 1911 Britannica). With no Bourbon prince willing to take the throne, Iturbide himself was proclaimed emperor in May 1822; he abdicated in 1823."
   ],
@@ -4741,6 +4755,10 @@
    "No Bourbon accepted the throne; Iturbide proclaimed emperor May 1822 (Wikipedia Cordoba: 18 May; Mexican War of Independence: Congress declared him the day after the demonstration of the night of 18 May); abdicated 1823 (Wikipedia Iturbide)."
   ],
   "disagree": "Declaration of independence: 28 September 1821 (Wikipedia) or October 1821 (1911 Britannica). San Juan de Ulua: held by Spain until 23 November 1825 (Wikipedia) or 1827 (1911 Britannica). Iturbide's proclamation as emperor: 18 May 1822 (Wikipedia, Treaty of Cordoba) or the day after the demonstration of the night of 18 May (Wikipedia, Mexican War of Independence); the text says May 1822.",
-  "checked": null
+  "checked": {
+   "by": "https://archive.org/download/emancipationofso00mitruoft/emancipationofso00mitruoft_djvu.txt",
+   "result": "3 claims checked against Mitre ch. on Mexico: Plan of Iguala published on 24 February (Mitre misprints the year as 1820), its three guarantees (religion, independence under a constitutional monarchy, union of Americans and Europeans), Apodaca sending Iturbide against Guerrero: confirmed.",
+   "errors": 0
+  }
  }
 }

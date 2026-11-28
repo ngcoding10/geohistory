@@ -4,10 +4,10 @@
   "y": 1822,
   "place": "Slopes of the Pichincha volcano above Quito, Ecuador",
   "paras": [
-   "The war for the Presidency of Quito began when Guayaquil threw off Spanish rule on 9 October 1820. Its first campaigns into the highlands were beaten back, and twice the patriots were defeated at Huachi, near Ambato, the second time in September 1821 under Antonio José de Sucre, whom Simón Bolívar had sent to help. In January 1822 Sucre opened a new campaign with about 1,700 men: recruits from Guayaquil and the highlands, Colombians, Spanish soldiers who had changed sides, and a battalion of British volunteers, the Albión. At Saraguro in February he was joined by a Peruvian division of about 1,500 men under Andrés de Santa Cruz, sent by José de San Martín. Cuenca fell without a shot on 21 February, and the royalists withdrew north.",
+   "The war for the Presidency of Quito began when Guayaquil threw off Spanish rule in October 1820. Its first campaigns into the highlands were beaten back, and twice the patriots were defeated at Huachi, near Ambato, the second time in September 1821 under Antonio José de Sucre, whom Simón Bolívar had sent to help. In January 1822 Sucre opened a new campaign with about 1,700 men: recruits from Guayaquil and the highlands, Colombians, Spanish soldiers who had changed sides, and a battalion of British volunteers, the Albión. At Saraguro in February he was joined by a Peruvian division of about 1,500 men under Andrés de Santa Cruz, sent by José de San Martín. Cuenca fell without a shot in February, and the royalists withdrew north.",
    "The Spanish commander, Field Marshal Melchor Aymerich, fortified the passes leading to Quito. Sucre went round them along the slopes of Cotopaxi into the Chillos valley, and the royalists fell back into the city. On the night of 23–24 May 1822 the patriot army, 2,971 men according to Wikipedia, climbed the Pichincha volcano above Quito to get past the defences. Rain turned the trails to mud; by dawn the troops were only halfway up, exhausted and in view of the royalist sentries, and Aymerich sent his army of 1,894 men up the mountain to meet them.",
    "The two armies were thrown in piece by piece on steep slopes cut by gullies and thick undergrowth. Several patriot battalions, short of ammunition, fell back. In Wikipedia's account, Aymerich had sent his veteran Aragón battalion towards the summit to fall on the patriot rear, but it was stopped by the Albión, which arrived with the reserve ammunition on even higher ground; the Colombian Alto Magdalena battalion then charged and broke the royalist line. At midday Aymerich ordered a retreat. The fighting had lasted no more than three hours. Sucre's report counted 400 royalist and 200 patriot dead and 1,100 prisoners taken.",
-   "Aymerich capitulated and Sucre entered Quito on 25 May 1822. Quito was incorporated into the Republic of Colombia, which Bolívar entered on 16 June, and Guayaquil was joined to Colombia on 31 July. In 1830 Quito, Guayaquil and Cuenca broke away from Colombia to form the Republic of Ecuador. The 1911 Encyclopaedia Britannica dates the battle to 22 May and puts the field at 10,200 feet; Wikipedia gives 24 May and 3,500 metres."
+   "Sucre entered Quito on 25 May 1822, Wikipedia says, and accepted Aymerich's surrender. Quito was incorporated into the Republic of Colombia, which Bolívar entered in June, and Guayaquil was joined to Colombia in July. In 1830 Quito, Guayaquil and Cuenca broke away from Colombia to form the Republic of Ecuador. The 1911 Encyclopaedia Britannica dates the battle to 22 May and puts the field at 10,200 feet; Wikipedia gives 24 May and 3,500 metres."
   ],
   "sources": [
    {
@@ -82,7 +82,11 @@
    "1830 secession of Quito, Guayaquil and Cuenca as the Republic of Ecuador (Wikipedia; EB: early 1830 separation from the Colombian federation); battle date 22 May 1822 and height 10,200 ft (EB) against 24 May and 3,500 m (Wikipedia, also Wikipedia Sucre: 24 May) - disagreement stated."
   ],
   "disagree": "Date of the battle: 24 May 1822 (Wikipedia) or 22 May 1822 (1911 Britannica, which also puts Aymerich's capitulation two days later). Height: 3,500 m (Wikipedia) or 10,200 ft (Britannica).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Jos%C3%A9_de_San_Mart%C3%ADn",
+   "result": "1 claim checked (Bolivar sent Sucre to reinforce Guayaquil): confirmed.",
+   "errors": 0
+  }
  },
  "Q1441451": {
   "title": "Guayaquil Conference",
@@ -172,7 +176,11 @@
    "Letter: his presence the only obstacle keeping Bolivar from coming to Peru with his army (Mitre, attributed); Bolivar took over; Ayacucho December 1824 (Wikipedia, Peruvian War of Independence)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Jos%C3%A9_de_San_Mart%C3%ADn",
+   "result": "1 claim checked (closed-door meeting with Bolivar at Guayaquil on 26 July 1822): confirmed.",
+   "errors": 0
+  }
  },
  "cp08-19": {
   "title": "Brazil declares independence",
@@ -181,7 +189,7 @@
   "paras": [
    "When the French invaded Portugal in 1807, the Portuguese royal family fled to Brazil, and Rio de Janeiro became the seat of the monarchy; in 1815 Brazil was raised to a kingdom united with Portugal. The liberal revolution of 1820 in Portugal upset this arrangement. In February 1821 the Portuguese troops in Rio forced King John VI to accept the new constitutional system, and the king returned to Lisbon, leaving his heir, Pedro, as regent of Brazil. In Lisbon the Cortes began framing a constitution before Brazil's deputies arrived, and angry quarrels between Brazilian and Portuguese deputies followed.",
    "When the Cortes ordered Pedro back to Europe, Brazilians feared that their country would fall back to colonial status; Wikipedia adds that the Cortes meant to reduce him to a mere military governor. The provisional government of São Paulo, led by the Andrada brothers, and then the council of Rio de Janeiro asked him to disobey and remain, and he agreed. The Portuguese troops in Rio were forced to embark for Portugal. Pedro took the Andradas into his ministry, accepted the title of Perpetual Defender of Brazil, and went to Minas Gerais and São Paulo to rally the provinces. On 7 September 1822, beside the Ipiranga brook at São Paulo, he declared Brazil independent of Portugal, the declaration remembered as the Cry of Ipiranga.",
-   "Back in Rio de Janeiro, Pedro was acclaimed constitutional emperor on 12 October 1822 and crowned on 1 December. Portuguese forces still held Bahia, Piauí, Maranhão, Grão-Pará and the Cisplatine province, and a war followed. The Brazilians besieged Bahia until the Portuguese re-embarked on 2 July 1823, while a Brazilian squadron under Lord Cochrane attacked their ships, and by the end of 1823 the emperor's authority was accepted throughout the country.",
+   "Back in Rio de Janeiro, Pedro was acclaimed constitutional emperor on 12 October 1822 and crowned that December. Portuguese forces still held Bahia, Piauí, Maranhão, Grão-Pará and the Cisplatine province, and a war followed. The Brazilians besieged Bahia until the Portuguese re-embarked on 2 July 1823, while a Brazilian squadron under Lord Cochrane attacked their ships, and by the end of 1823 the emperor's authority was accepted throughout the country.",
    "Portugal recognized Brazil as an independent empire in a treaty of August 1825 (signed on the 25th, according to the 1911 Encyclopaedia Britannica; Wikipedia gives 29 August). In return Brazil agreed to pay Portugal a large compensation, given by the Britannica as the Portuguese debt of nearly two million pounds sterling, and, Wikipedia adds, signed treaties with Britain to ban the Atlantic slave trade and give British goods preferential tariffs."
   ],
   "sources": [
@@ -310,7 +318,11 @@
    "Bolivar returned to Lima/the coast leaving Sucre to follow the royalists (EB Bolivar; EB Peru); Ayacucho 9 December 1824 ended Spanish rule (EB Peru; Wikipedia)."
   ],
   "disagree": "Suarez's rank: captain (1911 Britannica) or lieutenant colonel (Wikipedia).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Ayacucho",
+   "result": "2 claims checked: Junin on 6 August 1824 and the royalist split caused by Olaneta: confirmed.",
+   "errors": 0
+  }
  },
  "Q2918225": {
   "title": "Bolivian Declaration of Independence",
@@ -318,8 +330,8 @@
   "place": "Chuquisaca (Sucre), Bolivia",
   "paras": [
    "Upper Peru, the future Bolivia, saw almost continuous war from 1809: armies from Buenos Aires invaded it and were driven back, while patriot guerrillas held out in the mountains. In 1824 the royalist camp split when General Pedro Antonio Olañeta, an absolutist, rebelled against the liberal-minded viceroy La Serna. After the patriot victory at Ayacucho on 9 December 1824, Antonio José de Sucre marched into Upper Peru with part of his army.",
-   "News of Ayacucho set off a general rising, and royalist garrisons went over to the patriots one after another. José Miguel Lanza took La Paz on 29 January 1825, and Sucre crossed the Desaguadero River and entered La Paz in February. Olañeta, left with about 2,000 men according to the 1911 Encyclopaedia Britannica, held out around Potosí until he was fatally wounded fighting some of his own troops who had turned against him: in March 1825, says the Britannica, and at Tumusla in early April, says Wikipedia, which adds that some sources deny there was a battle and say he shot himself. The last royalist force surrendered on 7 April.",
-   "Sucre had summoned the provinces on 9 February 1825 to send deputies to an assembly that would decide their future: union with the United Provinces of the Río de la Plata, union with Peru, or full independence. Bolívar reproached Sucre privately for the initiative, but the congress at Buenos Aires declared on 9 May that the provinces were at full liberty to decide their fate. The assembly met at Chuquisaca on 9 July and voted for complete independence as a republic. The Act of Independence, drafted by a commission under the assembly's president, José Mariano Serrano, bears the date 6 August 1825, the first anniversary of Bolívar's victory at Junín. The 1911 Britannica puts the deputies at 54; Wikipedia's count of the signatories by province (7 from Charcas, 14 from Potosí, 12 from La Paz, 13 from Cochabamba and 2 from Santa Cruz) gives 48.",
+   "News of Ayacucho set off a general rising, and royalist garrisons went over to the patriots one after another. Patriots under José Miguel Lanza took La Paz before Sucre arrived; Sucre crossed the Desaguadero River and entered La Paz in February. Olañeta, left with about 2,000 men according to the 1911 Encyclopaedia Britannica, held out around Potosí until he was fatally wounded fighting some of his own troops who had turned against him: in March 1825, says the Britannica, and at Tumusla in early April, says Wikipedia, which adds that some sources deny there was a battle and say he shot himself. The last royalist force surrendered in April, according to Wikipedia.",
+   "In February 1825 Sucre summoned the provinces to send deputies to an assembly that would decide their future: union with the United Provinces of the Río de la Plata, union with Peru, or full independence. Bolívar reproached Sucre privately for the initiative, but in May the congress at Buenos Aires declared that the provinces were at full liberty to decide their fate. The assembly met at Chuquisaca in July (on the 9th according to Wikipedia's article on the declaration, the 8th according to its article on Sucre) and voted for complete independence as a republic. The Act of Independence, drafted by a commission under the assembly's president, José Mariano Serrano, bears the date 6 August 1825, the first anniversary of Bolívar's victory at Junín. The 1911 Britannica puts the deputies at 54; Wikipedia's count of the signatories by province (7 from Charcas, 14 from Potosí, 12 from La Paz, 13 from Cochabamba and 2 from Santa Cruz) gives 48.",
    "The assembly named the new state the Republic of Bolívar, soon changed to Bolivia, and declared the Liberator Father of the Republic. Bolívar, who had doubted that the country could stand on its own, declined the presidency in favour of Sucre. The assembly dissolved itself in October 1825; Bolívar signed a decree in Lima on 18 May 1826 by which Peru recognized Bolivia's independence, and a new congress adopted the constitution he had drafted, with Sucre as president. 6 August is Bolivia's Independence Day."
   ],
   "sources": [
@@ -359,6 +371,24 @@
      12,
      13
     ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Peru",
+    "title": "Peru, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Antonio_Jos%C3%A9_de_Sucre",
+    "title": "Antonio José de Sucre (rev 1386951326, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     11
+    ]
    }
   ],
   "claims": [
@@ -372,19 +402,23 @@
    "Valdez surrendered 7 April 1825, end of the war in Upper Peru (Wikipedia).",
    "Sucre convened the provinces 9 February 1825; three options: Buenos Aires, Peru, absolute independence (Wikipedia; EB: question proposed by the Argentine government whether to remain separate).",
    "Bolivar reproached Sucre in a private letter; Buenos Aires congress decree 9 May 1825: full liberty to decide their fate (Wikipedia).",
-   "Assembly reconvened at Chuquisaca 9 July 1825, decided complete independence as a republic; Act drafted by a commission under president Jose Mariano Serrano, dated 6 August 1825, first anniversary of Junin (Wikipedia); EB: assembled at Chuquisaca, August 1825 declared a distinct and independent nation.",
+   "Assembly reconvened at Chuquisaca in July 1825 (9 July, Wikipedia Bolivian Declaration; 8 July, Wikipedia Sucre - stated), decided complete independence as a republic; Act drafted by a commission under president Jose Mariano Serrano, dated 6 August 1825, first anniversary of Junin (Wikipedia); EB: assembled at Chuquisaca, August 1825 declared a distinct and independent nation.",
    "Deputies: 54 (EB, attributed) against 7+14+12+13+2 = 48 representatives (Wikipedia, attributed).",
    "Named Republic of Bolivar, then Bolivia; Bolivar 'Father of the Republic'; Bolivar declined the presidency in favour of Sucre; Bolivar doubted the new nation's future (Wikipedia; EB: assembly gave the name of Bolivia); assembly dissolved 6 October 1825, new congress 1826 adopted Bolivar's constitution, Sucre president (EB); Bolivar's decree of recognition on behalf of Peru, Lima 18 May 1826; Independence Day 6 August (Wikipedia)."
   ],
-  "disagree": "Olaneta's death: March 1825 in an action with his own revolted troops (1911 Britannica) or the Battle of Tumusla, 1 or 2 April 1825, with some sources saying he shot himself (Wikipedia). Number of deputies: 54 (Britannica) or 48 by Wikipedia's count of signatories by province.",
-  "checked": null
+  "disagree": "Olaneta's death: March 1825 in an action with his own revolted troops (1911 Britannica) or the Battle of Tumusla, 1 or 2 April 1825, with some sources saying he shot himself (Wikipedia). Number of deputies: 54 (Britannica) or 48 by Wikipedia's count of signatories by province. Reconvening of the assembly: 9 July 1825 (Wikipedia, Bolivian Declaration of Independence) or 8 July (Wikipedia, Antonio Jose de Sucre).",
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Antonio_Jos%C3%A9_de_Sucre",
+   "result": "6 claims checked against Wikipedia's articles on Sucre and on the Battle of Ayacucho: Serrano's Act dated 6 August 1825 in honour of Junin, Bolivar declining the presidency for Sucre, Bolivar's doubts about the new state, Ayacucho on 9 December 1824 confirmed; the assembly's reconvening on 9 July 1825 is given as 8 July in the Sucre article - now stated as a disagreement.",
+   "errors": 1
+  }
  },
  "Q288251": {
   "title": "Cisplatine War",
   "y": 1825,
   "place": "Banda Oriental (Uruguay) and the Río de la Plata",
   "paras": [
-   "In 1816 Portuguese forces from Brazil invaded the Banda Oriental, the land east of the Uruguay River, defeated José Gervasio Artigas and annexed it as the province of Cisplatina, which stayed with Brazil after Brazil's independence in 1822. The United Provinces of the Río de la Plata wanted it back, and a mission to Brazil in 1823 failed. On 19 April 1825 the 'Thirty-Three Orientals' under Juan Antonio Lavalleja crossed from Buenos Aires and began a rising, and on 25 August a congress at Florida declared the province independent of Brazil and united with the United Provinces. After rebel victories at Rincón and Sarandí, the Argentine congress declared the province reincorporated on 25 October, and Brazil declared war on the United Provinces on 10 December 1825.",
+   "In 1816 Portuguese forces from Brazil invaded the Banda Oriental, the land east of the Uruguay River, defeated José Gervasio Artigas and annexed it as the province of Cisplatina, which stayed with Brazil after Brazil's independence in 1822. The United Provinces of the Río de la Plata wanted it back, and a mission to Brazil in 1823 failed. In April 1825 the 'Thirty-Three Orientals' under Juan Antonio Lavalleja crossed from Buenos Aires and began a rising, and on 25 August a congress at Florida declared the province independent of Brazil and united with the United Provinces. After rebel victories at Rincón and Sarandí, the Argentine congress declared the province reincorporated in October, and in December 1825 Brazil declared war on the United Provinces.",
    "Brazil blockaded the River Plate. On land, the Argentine army and the Oriental insurgents held the Uruguayan countryside but never took Montevideo or Colonia or got far into Brazil, while Brazil could neither win back the countryside nor gain a decisive victory. The largest battle was fought at Ituzaingó; the 1911 Encyclopaedia Britannica counts it as a Brazilian defeat, while Wikipedia describes the war on land as a stalemate. At sea the Brazilian navy had the better of it and destroyed most of the small Argentine fleet of the Irish-born admiral William Brown, although the Argentines beat a Brazilian flotilla on the Uruguay River at Juncal. The blockade weighed heavily on Buenos Aires, and Brazil's seizures of foreign merchant ships led to disputes with the United States, France and Britain that Brazil later settled by paying compensation.",
    "The cost of the war strained both countries. In 1827 the Argentine envoy Manuel José García, exceeding his instructions, signed a treaty giving up the province; President Bernardino Rivadavia rejected it, but the outcry helped bring about his resignation, and Manuel Dorrego, as governor of Buenos Aires, carried on the war. Under British mediation, and pressure on the emperor according to the Britannica, the two sides signed a Preliminary Peace Convention on 27 August 1828, by which the province became an independent state, the future Eastern Republic of Uruguay, formally constituted in 1830. (The Britannica's article on Argentina dates Uruguay's independence to 1827; its articles on Brazil and Uruguay give 1828.) In Buenos Aires the peace was followed by civil war: the Unitarian general Juan Lavalle overthrew Dorrego and had him shot in December 1828."
   ],
@@ -468,8 +502,8 @@
   "y": 1848,
   "place": "St Paul's Church (Paulskirche), Frankfurt am Main",
   "paras": [
-   "The revolutions of March 1848 shook every government in the German Confederation. Liberal deputies from several state assemblies, meeting at Heidelberg, invited present and former members of the German diets to Frankfurt, and on 30 March the federal diet itself, according to the 1911 Encyclopaedia Britannica, authorized a national parliament. The resulting Pre-Parliament sat in St Paul's Church in Frankfurt from 31 March to 3 April. Its moderate liberal majority chose to work with the federal diet, left a Committee of Fifty to represent it until a national assembly met, and fixed one deputy for every 50,000 inhabitants. Some radicals who wanted more left it, and a republican rising they called in Baden was put down.",
-   "The elections were held under each state's own rules. They were limited to 'independent' adult men, which Wikipedia estimates still let about 85% of men vote, and Czech-majority districts in Bohemia and Moravia boycotted them. The National Assembly opened in St Paul's Church on 18 May 1848, the first freely elected parliament for all the German states, including the German-speaking lands of the Austrian Empire, and the next day it chose Heinrich von Gagern as its president. Late in June it created a Provisional Central Power and elected Archduke John of Austria as imperial regent (Reichsverweser); on 12 July the old federal diet handed its responsibilities over to him.",
+   "The revolutions of March 1848 shook every government in the German Confederation. Liberal deputies from several state assemblies, meeting at Heidelberg, invited present and former members of the German diets to Frankfurt, and on 30 March the federal diet itself, according to the 1911 Encyclopaedia Britannica, authorized a national parliament. The resulting Pre-Parliament met in St Paul's Church in Frankfurt at the end of March. Its moderate liberal majority chose to work with the federal diet, left a Committee of Fifty to represent it until a national assembly met, and fixed one deputy for every 50,000 inhabitants. Some radicals who wanted more left it, and a republican rising they called in Baden was put down.",
+   "The elections were held under each state's own rules. They were limited to 'independent' adult men, which Wikipedia estimates still let about 85% of men vote, and Czech-majority districts in Bohemia and Moravia boycotted them. The National Assembly opened in St Paul's Church on 18 May 1848, the first freely elected parliament for all the German states, including the German-speaking lands of the Austrian Empire, and the next day it chose Heinrich von Gagern as its president. Late in June it created a Provisional Central Power and elected Archduke John of Austria as imperial regent (Reichsverweser); in July the old federal diet handed its responsibilities over to him.",
    "The assembly then set out to write a constitution, and its debates dragged on through the crises of 1848: the war over Schleswig-Holstein, the question of whether Austria belonged in the new Germany, and the recovery of the princes' power. The Britannica blames 'learned professors and talkative journalists' and their endless speeches for the lost time. In 1849 the assembly adopted a constitution for a German Empire with a hereditary emperor and offered the crown to King Frederick William IV of Prussia, who refused it; the Britannica quotes him as refusing 'to pick up a crown out of the gutter'. Austria and Prussia recalled their deputies, most of the rest resigned on 21 May 1849, and a radical rump that moved to Stuttgart was dispersed on 18 June 1849 by order of the Württemberg government."
   ],
   "sources": [
@@ -523,7 +557,11 @@
    "Austria and Prussia recalled their representatives; most deputies resigned 21 May 1849; rump transferred to Stuttgart, dispersed 18 June 1849 by order of the Wurttemberg ministry (EB; Wikipedia: Paulskirche sessions to 30 May 1849, Stuttgart rump to 18 June 1849)."
   ],
   "disagree": "Suffrage: the 1911 Britannica says the Pre-Parliament decided on universal suffrage; Wikipedia says the guidelines admitted only 'independent' adult men, about 85% of men, with rules varying by state. The text follows Wikipedia's fuller account.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Frankfort-on-Main",
+   "result": "1 claim checked (the Paulskirche as the seat of the national parliament of 1848-1849): confirmed.",
+   "errors": 0
+  }
  },
  "Q837787": {
   "title": "Battle of Novara",
@@ -662,7 +700,7 @@
   "place": "Montgomery, Alabama",
   "paras": [
    "Abraham Lincoln's election as president in 1860 led seven slave states of the Deep South (South Carolina, Mississippi, Florida, Alabama, Georgia, Louisiana and Texas) to declare their secession from the United States over the winter of 1860–1861. Their principal aim, Wikipedia says, was to safeguard slavery: they feared northern abolitionist influence and federal interference with slave property, and expected that Lincoln's refusal to let slavery spread into the western territories would bring in more free states and eventually end it.",
-   "Southern leaders met at Montgomery, Alabama, in February 1861, and on 8 February the seven states formed the Confederate States of America under a provisional constitution describing a confederation of 'sovereign and independent states'. Jefferson Davis of Mississippi, a former army officer, congressman and federal cabinet member, was chosen provisional president, and Alexander H. Stephens became vice-president. A permanent constitution followed in March 1861. Much of it copied the United States Constitution, but it stressed the rights of the states, explicitly protected slavery, let the president veto single items in appropriation bills, forbade bounties or taxes for the benefit of particular industries, and limited the president to one term: six years according to Wikipedia, seven according to the 1911 Encyclopaedia Britannica.",
+   "Southern leaders met at Montgomery, Alabama, in February 1861, and on 8 February, Wikipedia says, the seven states formed the Confederate States of America under a provisional constitution describing a confederation of 'sovereign and independent states'. Jefferson Davis of Mississippi, a former army officer, congressman and federal cabinet member, was chosen provisional president, and Alexander H. Stephens became vice-president. A permanent constitution followed in March 1861. Much of it copied the United States Constitution, but it stressed the rights of the states, explicitly protected slavery, let the president veto single items in appropriation bills, forbade bounties or taxes for the benefit of particular industries, and limited the president to one term: six years according to Wikipedia, seven according to the 1911 Encyclopaedia Britannica.",
    "The war began in April 1861, when Confederate forces attacked and took Fort Sumter in Charleston harbour. After Lincoln called up 75,000 militia, four states of the Upper South (Virginia, Arkansas, Tennessee and North Carolina) seceded and joined the Confederacy. No foreign government recognized it. Over four years of war its government at Richmond grew more centralized, provoking bitter states'-rights opposition, Stephens among the critics. The Confederacy collapsed in 1865: Robert E. Lee surrendered on 9 April, and most Confederate forces had ceased fighting by May."
   ],
   "sources": [
@@ -695,6 +733,15 @@
      6,
      7,
      11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/American_Civil_War",
+    "title": "American Civil War, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     12
     ]
    }
   ],
@@ -849,6 +896,10 @@
    "Worldwide attention; Britain and France halted construction of wooden-hulled ships; monitor type produced (Wikipedia); EB: opening of the era of the armoured warship."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Norfolk_(Virginia)",
+   "result": "1 claim checked (Confederates held Norfolk until May 1862): confirmed.",
+   "errors": 0
+  }
  }
 }
