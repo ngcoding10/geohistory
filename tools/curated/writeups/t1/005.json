@@ -2952,5 +2952,90 @@
   ],
   "disagree": "Austrian losses: about 25,000 killed and wounded plus 20,000 prisoners (EBSCO, Königgrätz) or about 43,000 including about half captured, with 1,500 Saxon losses besides (EBSCO, Könnigrätz). Army sizes are EBSCO's; the Wikipedia article (local extract) gives the Austrians 215,000 and the Prussian Army of the Elbe and First Army 39,000 and 85,000. The date of the Peace of Prague is left out: EBSCO gives 23 August 1866, which could not be confirmed in a second source.",
   "checked": null
+ },
+ "Q233219": {
+  "title": "Second Battle of Ypres",
+  "y": 1915,
+  "place": "Belgium",
+  "paras": [
+   "The Second Battle of Ypres, fought from 22 April to 25 May 1915 in the Ypres Salient in Flanders, Belgium, was the first battle in which poison gas was used on a large scale. By 1915 the Western Front had settled into trench warfare, and the German army looked to gas, promoted by the chemist Fritz Haber, to break the deadlock. The salient around Ypres bulged into the German lines, which held higher ground on three sides. It was held by French, British and Canadian troops: the French 45th (Algerian) Division and a territorial division on the northern face, the 1st Canadian Division, recently arrived and about to see its first major action, beside them, and British divisions to the right.",
+   "Late on 22 April, after the wind had delayed the attack for weeks and again that day, the Germans opened cylinders dug into their front line and released a cloud of chlorine over the French and Algerian trenches. Parks Canada and Veterans Affairs Canada put the gas at about 160 tons; EBSCO's account says over 400 tons. The French troops died or fled, leaving a gap in the Allied line that Veterans Affairs Canada puts at 6.5 kilometres. Warnings from aerial reconnaissance and German deserters had been ignored. The Germans, who had planned only a limited, experimental attack and had no reserves ready, advanced a few kilometres and dug in.",
+   "Through the night the Canadians fought to close the gap and counter-attacked at Kitchener's Wood near St. Julien, at heavy cost. On 24 April the Germans released gas again, this time against the Canadian line; the Canadians held on, breathing through wet cloths, despite rifles that jammed, until British reinforcements arrived and on 25 April allowed a fighting withdrawal. The breach was eventually sealed, and the rest of the battle became a contest of attrition. Later the Princess Patricia's Canadian Light Infantry held Bellewaarde Ridge at heavy cost, and the battle ended on 25 May.",
+   "In about 48 hours of fighting, 6,035 Canadians, one in three of the division, became casualties, and more than 2,000 died, according to Veterans Affairs Canada; Parks Canada gives about 6,000 casualties. Most of the battle's dead were killed by artillery and machine guns rather than gas, but gas had a heavy effect on morale, and the Allies soon developed gas weapons of their own. The Canadians' stand earned them a reputation as formidable soldiers, and in the battle's aftermath John McCrae wrote 'In Flanders Fields'."
+  ],
+  "sources": [
+   {
+    "url": "https://www.veterans.gc.ca/en/remembrance/military-history/first-world-war/2nd-battle-ypres",
+    "title": "2nd Battle of Ypres",
+    "publisher": "Veterans Affairs Canada",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.canada.ca/en/parks-canada/news/2017/11/the_second_battleofypres22april-25may1915.html",
+    "title": "The Second Battle of Ypres (22 April-25 May 1915)",
+    "publisher": "Parks Canada",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/germany-uses-poison-gas-against-allied-troops/",
+    "title": "Germany Uses Poison Gas Against Allied Troops (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The Second Battle of Ypres was fought from 22 April to 25 May 1915 in the Ypres Salient and saw the first large-scale use of poison gas.",
+   "Gas was adopted to break the trench deadlock; Fritz Haber recommended releasing chlorine from canisters and first proposed gas as a means of overwhelming the enemy.",
+   "The Germans held higher ground around the salient; the French 45th (Algerian) Division and a territorial (EBSCO: 18th) division held the sector where the gas was released, the 1st Canadian Division, in its first major engagement, was beside them, and British divisions were to the right.",
+   "On 22 April (EBSCO: at 5 p.m., after weather delays) the Germans released chlorine from cylinders over the French and Algerian lines.",
+   "The amount of gas: about 160 tons (Veterans Affairs Canada, Parks Canada) or over 400 tons (EBSCO).",
+   "The French defenders died or fled, leaving a gap in the Allied line (Veterans Affairs Canada: 6.5 km); warnings from air reconnaissance and German deserters had been discounted (EBSCO).",
+   "The Germans had planned only a limited offensive without adequate reserves; they advanced about 3.25 km and dug in (Veterans Affairs Canada; EBSCO: the attack was an experiment and reserves had been sent to Russia).",
+   "Through the night the Canadians fought to close the gap and counter-attacked at Kitcheners' Wood near St. Julien, suffering heavy casualties.",
+   "On 24 April the Germans made a second gas attack, against the Canadian line; the Canadians, with jamming Ross rifles and breathing through wet handkerchiefs, held on until reinforcements arrived.",
+   "On 25 April British reinforcements allowed the 1st Canadian Division to make a fighting retreat.",
+   "The breach was sealed (EBSCO: by 27 April) and the battle became one of attrition; the PPCLI later held Bellewaarde Ridge at heavy cost (Parks Canada: on 8 May); the battle ended on 25 May (Parks Canada; EBSCO).",
+   "In the battle's aftermath John McCrae wrote 'In Flanders Fields'.",
+   "Most deaths were caused by artillery and machine guns rather than gas; gas had a great effect on morale, and the Allies developed their own gas weapons (EBSCO). Veterans Affairs Canada: in 48 hours 6,035 Canadians, one in three, became casualties, more than 2,000 of whom died; Parks Canada: about 6,000 casualties.",
+   "The Canadians earned a reputation as a formidable fighting force."
+  ],
+  "disagree": "Quantity of chlorine released on 22 April: about 160 tons (Veterans Affairs Canada, Parks Canada) or over 400 tons (EBSCO). Canadian casualties: 6,035 (Veterans Affairs Canada) or about 6,000 (Parks Canada).",
+  "checked": null
  }
 }
