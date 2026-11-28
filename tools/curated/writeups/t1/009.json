@@ -1895,5 +1895,505 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "cp11-06": {
+  "title": "Fall of Khartoum",
+  "y": 1885,
+  "place": "Khartoum, Sudan",
+  "paras": [
+   "In 1881 Muhammad Ahmad, a holy man on the White Nile, proclaimed himself the Mahdi and led a revolt against Egyptian rule in the Sudan. Egypt, itself torn by Urabi's revolt and then occupied by Britain, could not stop it, and an Egyptian expedition under Hicks Pasha ended in disaster. In December 1883 the British government told Egypt to abandon the Sudan, and it sent General Charles Gordon, a former governor-general of the Sudan, to report on and carry out the evacuation of the Egyptian garrisons, soldiers, officials and their families.",
+   "Gordon reached Khartoum on 18 February 1884 as the khedive's governor-general and began sending women, children and the sick downriver; the 1911 Encyclopaedia Britannica says about two thousand five hundred left before the Mahdi's forces closed in. His request that the influential Zubayr Pasha be made ruler of the Sudan was refused because Zubayr had been a slave-trader, and wavering tribes went over to the Mahdi. When Berber surrendered, Khartoum was cut off. The siege began in March 1884 (on the 13th, according to Wikipedia; on the 18th, according to the Britannica). Wikipedia gives about 7,000 Egyptian troops and 27,000 civilians in the city.",
+   "Only in August, under the pressure of public opinion, did the British government decide to send a relief force under Lord Wolseley up the Nile. A column crossed the Bayuda desert and, after hard fighting, reached the Nile near Metemma in January 1885, where steamers sent by Gordon were waiting. Meanwhile Khartoum was starving.",
+   "On the night of 25-26 January 1885 the Mahdists, able to wade across the Nile at its seasonal low, broke into the city. The weakened garrison was killed, and Wikipedia gives 4,000 male civilians killed and many women and children enslaved. Gordon died in the attack; accounts of his death differ, and his head was taken to the Mahdi at Omdurman. Sir Charles Wilson reached Khartoum by steamer on 28 January and found it fallen two days before.",
+   "The relief force was withdrawn, and the Sudan was left to the Mahdi, who founded a religious state but died in June 1885. Gordon was mourned in Britain as a martyr, and the Sudan was retaken only by Kitchener's army, which defeated the Mahdists at Omdurman in 1898."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Khartoum",
+    "title": "Siege of Khartoum (rev 1382105848, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Gordon,_Charles_George",
+    "title": "Gordon, Charles George, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Wolseley,_Garnet_Joseph_Wolseley,_Viscount",
+    "title": "Wolseley, Garnet Joseph Wolseley, Viscount, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     7,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Mahdi",
+    "title": "Mahdi, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Mahommed Ahmed, a holy man, retired to Abba island on the White Nile and proclaimed himself mahdi; revolt spread (EB Gordon; Wikipedia) - 1881 from Wikipedia.",
+   "Egypt busy with Arabi's revolt; British troops entered Cairo; disaster to Hicks Pasha's expedition (EB Gordon).",
+   "December 1883 British government ordered Egypt to abandon the Sudan (EB Gordon).",
+   "Gordon asked to proceed to Khartum to report on evacuation of soldiers, civilian employees and families (EB Gordon; Wikipedia); former governor-general (EB Gordon: resignation of the post of governor-general).",
+   "Arrived 18 February (EB; Wikipedia 18 February 1884); appointed governor-general by the khedive; women, children, sick sent to Egypt, about 2,500 removed (EB, attributed).",
+   "Zobeir request refused 13 March as a notorious slave-hunter; tribes went over to the mahdi; Berber surrendered, Khartum isolated (EB Gordon); Wikipedia: Zubayr.",
+   "Siege began 13 March 1884 (Wikipedia) or 18 March (EB) - stated; 7,000 Egyptian troops and 27,000 civilians (Wikipedia, attributed).",
+   "Government decided in August under public pressure to relieve Gordon; relief under Wolseley up the Nile (EB Gordon; EB Wolseley: Nile expedition for the relief of Gordon).",
+   "Bayuda desert column, severe fighting, reached the river near Metemma 20 January; Gordon's steamers waiting (EB Gordon; Wikipedia) - given as January 1885.",
+   "Starvation in Khartoum (Wikipedia: many died of hunger; EB: insufficiently provided with food).",
+   "Night of 25-26 January attack, Nile low allowed fording; garrison killed; 4,000 male civilians killed, women and children enslaved (Wikipedia, attributed for figures).",
+   "Gordon killed; accounts differ; head taken to Omdurman (Wikipedia); Wilson reached Khartum on the 28th and found it captured and Gordon killed two days before (EB Gordon).",
+   "Mahdi established the Mahdiyah and died June 1885 (Wikipedia); Omdurman 1898 (Wikipedia: 2 September 1898, Kitchener; EB Mahdi: battle of Omdurman in 1898); expedition withdrawn (EB Wolseley); Gordon seen as a martyr and hero by the British public (Wikipedia)."
+  ],
+  "disagree": "Start of the siege: 13 March 1884 (Wikipedia) or 18 March (1911 Britannica, Gordon).",
+  "checked": null
+ },
+ "Q2993585": {
+  "title": "Panjdeh incident",
+  "y": 1885,
+  "place": "Panjdeh, on the Kushk and Murghab rivers (Afghan-Turkmen border)",
+  "paras": [
+   "After taking Geok Tepe in 1881 and annexing Merv in 1884, Russia held most of what is now Turkmenistan, and its frontier with Afghanistan south of Merv was undefined. Britain, which saw the route from Merv through Herat and Kandahar as a road to India, agreed with Russia in 1884 to send a joint commission to mark the northern border of Afghanistan. Before it could start work, both sides pushed forward: Russian troops under General Komarov occupied posts to the south, while the Afghans garrisoned Panjdeh, an oasis of the Sarik Turkmens on the Murghab river, whose people said they were subjects of the Amir of Kabul.",
+   "In March 1885, at Panjdeh, the Russians attacked the Afghan troops and drove them out with heavy loss, taking their guns. Wikipedia dates the clash to 30 March (18 March in the Russian calendar) and quotes Komarov's report claiming that the Afghans had provoked him and lost more than 500 men. British officers on the spot had tried in vain to calm the situation.",
+   "The news caused a war scare in Britain. Wikipedia says that Gladstone asked parliament for a war credit of £11 million, partly for the Sudan, where Khartoum had fallen a few months earlier. The amir, Abdur Rahman, was at Rawalpindi meeting the viceroy of India, Lord Dufferin, when he heard of it; he chose to treat it as a border skirmish, which helped to calm the crisis.",
+   "The affair was settled diplomatically, as both the 1911 Encyclopaedia Britannica and Wikipedia say: Russia kept Panjdeh and gave up Zulfikar, and the commission went on to mark the frontier up to the Oxus. A final protocol was signed in 1887. The incident largely ended Russia's southward advance in Central Asia, apart from the Pamirs, and fixed Afghanistan's north-western border."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Panjdeh_incident",
+    "title": "Panjdeh incident (rev 1386833999, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Afghanistan",
+    "title": "Afghanistan, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Geok Tepe January 1881, annexation of Merv March 1884; most of Turkmenistan Russian; border south of Merv undefined (Wikipedia).",
+   "Merv-Herat-Kandahar-Quetta line a natural invasion route to India, British concern (Wikipedia).",
+   "Joint Anglo-Russian commission to demarcate the northern boundary of Afghanistan, 1884 (EB; Wikipedia: summer 1884 Afghan Boundary Commission).",
+   "Russians pushed the border south (Komarov occupied Pul-i-Khatun, Zulfikar); Afghans garrisoned Panjdeh; Sarik Turkomans of Panjdeh said they were subjects of the Amir of Kabul (Wikipedia); Panjdeh a disputed place held by the Afghans (EB).",
+   "In March 1885 the Russians attacked and drove out the amir's troops with some loss (EB); took all the artillery and occupied Panjdeh (Wikipedia).",
+   "30 (18) March 1885 (Wikipedia, attributed); Komarov's report: Afghan insolence, more than 500 killed (Wikipedia, quoting the report - attributed).",
+   "Captain Yate and the British officers tried futilely to defuse the situation (Wikipedia).",
+   "News reached England, preparations for war; Gladstone asked for a credit of 11 million pounds, 4.5 million for the Sudan, where Khartoum had fallen a few months earlier (Wikipedia, attributed).",
+   "Abdur Rahman at Rawalpindi for a conference with the viceroy Lord Dufferin (EB; Wikipedia: at Rawalpindi in talks with the British); regarded it as a mere border skirmish (Wikipedia).",
+   "Arranged diplomatically; demarcation proceeded to near the Oxus (EB; Wikipedia: settled diplomatically, line run to the Oxus in 1886).",
+   "Russia kept Panjdeh, gave up Zulfikar; final protocol 22 July 1887 (given as 1887); halted Russian expansion except the Pamirs; north-western border defined (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp11-07": {
+  "title": "Congo Free State established",
+  "y": 1885,
+  "place": "Congo basin, Central Africa",
+  "paras": [
+   "In 1876 King Leopold II of the Belgians called a conference of geographers in Brussels, which created the International Association for the Exploration and Civilization of Africa. After Henry Morton Stanley's journey down the Congo, Leopold turned to that river: in 1878 a Committee for the Study of the Upper Congo was formed in Brussels, which became the International Association of the Congo. Working for it, and largely paid from the king's own purse, Stanley spent four years founding stations along the river and signing treaties with local chiefs.",
+   "Leopold then won the powers' recognition. The United States recognized the association as a state in April 1884 and Germany followed in November. At the Berlin Conference of 1884-85, according to Wikipedia, he persuaded the other European states that his work was humanitarian and that he would not tax trade. Treaties with France and Portugal in February 1885 fixed the borders on the lower Congo, with the north bank of the lower river going to the association and the south bank, as far as Noki, to Portugal.",
+   "In April 1885 the Belgian parliament allowed Leopold to become head of the new state, on condition that the union between Belgium and the Congo would be 'exclusively personal'. The state took the name Independent State of the Congo, known in English as the Congo Free State, and on 1 August 1885 Leopold informed the powers of its neutrality and its claimed borders. It belonged to the king himself, not to Belgium.",
+   "A decree of 1 July 1885 declared all 'vacant lands' the property of the state, and this was later read so as to leave the inhabitants only the land they lived on or farmed. Leopold's administration and the concession companies extracted ivory and rubber through forced labour, torture and killings; Wikipedia says the highest estimates put the deaths at half the population of the rubber districts. After an international outcry, the Belgian parliament annexed the Congo as a Belgian colony in 1908."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Congo_Free_State",
+    "title": "Congo Free State (rev 1386730953, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Congo_Free_State",
+    "title": "Congo Free State, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "1876 Brussels conference of geographical experts; International Association for the Exploration and Civilization of Africa (EB).",
+   "Stanley's return from the Congo; 25 November 1878 Comite d'etudes du Haut Congo, which became the International Association of the Congo (EB) - given as 1878.",
+   "Funds largely from the king's private purse; Stanley four years founding stations and making treaties with chiefs (EB).",
+   "US recognition 22 April 1884 (EB), Germany 8 November 1884 (EB) - given as months; Wikipedia: Berlin Conference recognized the International Congo Association.",
+   "At Berlin Leopold convinced the others he was doing humanitarian and philanthropic work and would not tax trade (Wikipedia, attributed).",
+   "France agreement 5 February and Portugal 14 February 1885 on the lower Congo; north bank to the Association (EB).",
+   "April 1885 Belgian chamber authorized Leopold to be chief of the state; union exclusively personal (EB; Wikipedia: personal union).",
+   "Name Congo Free State / Independent State of the Congo officially from 1 August 1885 (Wikipedia; EB: circular of 1 August 1885 declaring neutrality of the 'Independent State of the Congo' and its boundaries); personal control of Leopold (Wikipedia).",
+   "Decree of 1 July 1885 on vacant lands; later interpreted to confine natives' lands to those lived on or effectively cultivated (EB).",
+   "Extraction of ivory and rubber through concession companies, forced labour, torture and murder (Wikipedia); highest estimates 50 per cent deaths in rubber provinces (Wikipedia, attributed); annexed by Belgium 1908 after international pressure (Wikipedia; EB: annexed 1908)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q2604396": {
+  "title": "Witwatersrand Gold Rush",
+  "y": 1886,
+  "place": "Witwatersrand, South African Republic (Transvaal)",
+  "paras": [
+   "Gold had been found in the Transvaal (the South African Republic) before, in small amounts on the Witwatersrand in the 1850s and in the eastern goldfields of Barberton and Pilgrim's Rest, which attracted attention from 1884. In 1886 the main gold reef of the Witwatersrand was found. Wikipedia credits the discovery of the main reef to George Harrison on the farm Langlaagte in July 1886, while noting that the prospector Jan Bantjes had found a reef in 1884; after Harrison registered his claim the government declared the area open to diggers.",
+   "Prospectors and fortune-seekers poured in from abroad. A mining camp grew on the reef, and in September 1886 the town of Johannesburg was founded. The 1911 Encyclopaedia Britannica says it was named after Johannes Rissik, the Transvaal surveyor-general; Wikipedia notes that the origin of the name is disputed. In December 1886 the Boer government marked out the town, and plots were handed to their buyers on 1 January 1887.",
+   "The main reef could be traced for about 62 miles, but the gold lay in tiny particles, in many places deep underground. After a slump in 1890, when the surface ore ran out, better machinery and cheaper coal brought a revival. According to the Britannica the yield rose from 23,000 ounces in 1887 to 1,210,000 in 1892 and 4,295,000 in 1898, and the republic's revenue, about £150,000 before the discovery, passed two million pounds in 1894. Railways linked the Rand to the coast in 1892-1895, and Johannesburg became the largest town in South Africa within ten years.",
+   "Most of the newcomers were foreigners, called Uitlanders, and their grievances against the Boer government of President Paul Kruger grew. They were followed by the failed Jameson Raid and Uitlander rising of 1895-96 and, a few years later, by the South African War of 1899-1902."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Witwatersrand_Gold_Rush",
+    "title": "Witwatersrand Gold Rush (rev 1360654916, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Johannesburg",
+    "title": "Johannesburg, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Transvaal",
+    "title": "Transvaal, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Earlier finds on the Witwatersrand in the 1850s (Wikipedia: 1852 Davis, 1853 Marais, kept secret).",
+   "Barberton and Pilgrim's Rest alluvial mines (Wikipedia); De Kaap (Barberton) fields attracted much attention from 1884 (EB Transvaal).",
+   "1886 discovery; Rand reefs first mined in 1886 (EB Transvaal; Wikipedia).",
+   "Harrison at Langlaagte July 1886 credited with the main reef; Bantjes first discoverer of a reef June 1884 (Wikipedia, attributed); claim registered, area pronounced open (Wikipedia).",
+   "Prospectors arrived from abroad (Wikipedia); town founded September 1886 (EB Johannesburg); Ferreira's Camp (Wikipedia).",
+   "Named after Johannes Rissik, surveyor-general (EB, attributed); name origin disputed (Wikipedia).",
+   "December 1886 site marked out, plots given on 1 January 1887 (EB Johannesburg).",
+   "Main reef traced about 62 miles, gold in minute particles, great depth (EB Transvaal); 1890 depression after exhaustion of surface ore, revival with better machinery and cheaper coal in 1891 (EB Johannesburg).",
+   "Yields 23,000 oz 1887, 1,210,000 oz 1892, 4,295,000 oz 1898; revenue about £150,000 in 1883, over two millions in 1894 (EB Transvaal, attributed).",
+   "Railways to the seaports 1892-1895 (EB Johannesburg; Wikipedia: first railway lines); largest town in South Africa within 10 years (Wikipedia); Uitlanders' grievances led to the January 1896 rising (EB Johannesburg); Kruger's measures, Jameson Raid (Wikipedia); Anglo-Boer War 1899-1902 (Wikipedia)."
+  ],
+  "disagree": "Who found the main reef: Wikipedia credits George Harrison (Langlaagte, July 1886) and notes earlier finds by Jan Bantjes (1884).",
+  "checked": null
+ },
+ "Q705537": {
+  "title": "Heligoland–Zanzibar Treaty",
+  "y": 1890,
+  "place": "Berlin",
+  "paras": [
+   "In the 'Scramble for Africa' Britain and Germany were rivals in East Africa, where the Sultanate of Zanzibar, once ruling a long stretch of the mainland coast, had seen its lands divided by Britain, Germany and Italy. The German East Africa Company of Carl Peters held a strip of the Tanganyika coast, but Germany had no control over the sultan's islands. Germany's new chancellor, Leo von Caprivi, wanted a settlement with Britain.",
+   "The agreement, signed on 1 July 1890, settled several disputes at once. Germany gained Heligoland, a small island group in the North Sea that Britain had seized from Denmark in 1807 and kept since 1814; the strip of land later called the Caprivi Strip, which gave German South-West Africa access to the Zambezi; and a free hand on the coast opposite Zanzibar that became the heart of German East Africa. In return Germany gave up its protectorate over Witu on the Kenyan coast and lands the British needed for a railway to Lake Victoria, and accepted British authority over Zanzibar. The treaty also fixed borders in West Africa, between Togoland and the Gold Coast and between Kamerun and Nigeria.",
+   "For Germany Heligoland mattered because it commanded the approaches to its North Sea ports and to the Kiel Canal, then being built. On 4 November 1890 Britain proclaimed a protectorate over Zanzibar, which was reduced to the islands of Zanzibar and Pemba, nominal rights over a ten-mile coastal strip and a few ports. The 1911 Encyclopaedia Britannica adds that in a parallel arrangement Britain gave up its claims to Madagascar in favour of France.",
+   "Heligoland was joined to Prussia in 1892, and its people were given special rights. In Germany the treaty was attacked: Wikipedia says the misleading name 'Heligoland-Zanzibar' was coined by the former chancellor Otto von Bismarck to attack his successor, suggesting that Germany had swapped an African empire for a tiny island, and the outcry helped lead to the founding of the Pan-German League in 1891."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Heligoland%E2%80%93Zanzibar_Treaty",
+    "title": "Heligoland-Zanzibar Treaty (rev 1385040985, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Heligoland",
+    "title": "Heligoland, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Zanzibar",
+    "title": "Zanzibar, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     8,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Bargash saw his dominions dismembered by Britain, Germany and Italy (EB Zanzibar); scramble rivalry (Wikipedia: Germany losing out in the Scramble for Africa).",
+   "German East Africa Company under Carl Peters acquired a strip on the Tanganyikan coast, never controlled the islands (Wikipedia).",
+   "Caprivi's aim of a settlement with the British (Wikipedia).",
+   "Signed 1 July 1890 between Germany and the UK (Wikipedia; event's own date in the record).",
+   "Germany gained Heligoland, the Caprivi Strip with access to the Zambezi, a free hand on the coast of Dar es Salaam, core of German East Africa (Wikipedia).",
+   "Heligoland British since 1807, formally ceded 1814 (EB Heligoland: seized 1807 by the English, from the Danes - Dannebrog; Wikipedia: since 1814 a British possession).",
+   "Germany handed over the protectorate over Wituland and parts of East Africa needed for a railway to Lake Victoria; pledged not to interfere in Zanzibar (Wikipedia).",
+   "Germany recognized British authority in Zanzibar (Wikipedia); supremacy of British interests acknowledged by Germany (EB Zanzibar).",
+   "Togoland-Gold Coast and Kamerun-Nigeria borders (Wikipedia).",
+   "Heligoland needed to control the Kiel Canal (construction from 1887) and approaches to North Sea ports (Wikipedia).",
+   "Protectorate over Zanzibar proclaimed 4 November 1890 (EB Zanzibar; Wikipedia: immediately declared a protectorate); sultanate reduced to Zanzibar, Pemba, the ten-mile coastal strip and Benadir ports (EB Zanzibar); Madagascar renounced in favour of France (EB, attributed).",
+   "Incorporated with Prussia in 1892 (EB Heligoland); special rights for inhabitants (Wikipedia; EB: choice of nationality for natives born before 1880).",
+   "Bismarck coined the misleading name to attack Caprivi; 'trousers for a button'; Pan-German League founded 1891 (Wikipedia, attributed)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q857982": {
+  "title": "First Matabele War",
+  "y": 1893,
+  "place": "Matabeleland (western Zimbabwe), from Fort Victoria to Bulawayo",
+  "paras": [
+   "Under a royal charter, Cecil Rhodes's British South Africa Company sent a pioneer column in 1890 into Mashonaland, where it founded Fort Salisbury (now Harare). The Shona there had long been raided by the Ndebele (Matabele) kingdom of Lobengula, whose capital was Bulawayo. In July 1893 a large Ndebele force, sent to punish a Shona chief, raided Shona villages around the company's new town of Fort Victoria and entered its streets. The administrator of Mashonaland, Leander Starr Jameson, decided that only force would settle the matter.",
+   "Jameson's force was small: the 1911 Encyclopaedia Britannica gives about 700 volunteers and 225 Bechuanaland police with some 700 African allies. Columns from Fort Salisbury and Fort Victoria joined in October and marched on Bulawayo, while Khama's Bechuana (Tswana) men advanced from the south. The Ndebele regiments attacked the columns twice, near the Shangani river and on 1 November at Bembesi, but were cut down by rifles and machine guns (Maxims). The sources give different numbers: the Britannica says 4,000 to 5,000 Ndebele attacked at the Shangani and some 7,000 at the second fight; Wikipedia gives 3,500 at the Shangani with about 1,500 killed, against four company dead, and 2,000 riflemen and 4,000 warriors at Bembesi, of whom about 2,500 were killed.",
+   "Lobengula fled north and his capital was burned. On 3 November the columns entered Bulawayo. A column under Major Patrick Forbes pursued the king, and on 3-4 December Major Allan Wilson's advance party of 34 men crossed the Shangani river; the river rose behind them, and the Ndebele surrounded and killed them all, apart from three men sent back for help.",
+   "Lobengula died in January 1894, of fever or of a wound according to the Britannica, of smallpox according to Wikipedia. Matabeleland passed under the company's rule and, with Mashonaland, became the territory known as Rhodesia. The company's seizure of Ndebele cattle after the war was one of the grievances behind the later Ndebele rising."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/First_Matabele_War",
+    "title": "First Matabele War (rev 1378251136, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodesia",
+    "title": "Rhodesia, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodes,_Cecil_John",
+    "title": "Rhodes, Cecil John, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Royal charter; Pioneer Column 1890 to Fort Salisbury (Harare) (Wikipedia; EB Rhodes: pioneer party ordered across the frontier end of 1889).",
+   "Mashonas prey of the Matabele; Lobengula king, Bulawayo his headquarters (EB Rhodesia; Wikipedia).",
+   "July 1893 impi into Mashonaland, entered kraals and the streets of Victoria (EB Rhodesia); raid to extract tribute from a Mashona chief near Fort Victoria (Wikipedia).",
+   "Only superior force would settle it; Jameson's decision to risk an expedition (EB Rhodesia); Jameson Administrator of Mashonaland (Wikipedia).",
+   "About 700 volunteers, 225 police, some 700 natives (EB, attributed); Wikipedia: no more than 750 BSAP and 700 Tswana.",
+   "Columns from Salisbury/Charter and Victoria combined (Wikipedia: Iron Mine Hill 16 October 1893); Khama's column from the south (EB).",
+   "Two attacks: near the Shangani river (EB; Wikipedia 25 October) and 1 November (EB; Wikipedia: Bembesi, 1 November); machine guns / Maxims (EB; Wikipedia).",
+   "Numbers: EB 4,000-5,000 and 7,000; Wikipedia 3,500 with about 1,500 killed and four BSAP dead, 2,000 riflemen and 4,000 warriors with about 2,500 killed - attributed.",
+   "Lobengula fled, town burned (Wikipedia; EB: in full flight towards the Zambezi); Bulawayo entered 3 November (EB).",
+   "Forbes's pursuit; Allan Wilson's 34 troopers crossed the Shangani, river rose, killed except three messengers (EB; Wikipedia: Shangani Patrol, three sent back); 3 December (EB: came up with Lobengula on 3 December; Wikipedia: Forbes reached the Shangani on 3 December 1893) - given as 3-4 December.",
+   "Lobengula died January 1894: fever or wound (EB) or smallpox (Wikipedia) - stated.",
+   "Company's seizure of Matabele cattle after Lobengula's death a grievance of the Matabele, mentioned with the Jameson Raid and the later rising (EB Rhodesia); Rhodesia name (EB Rhodes: under the name of Rhodesia)."
+  ],
+  "disagree": "Numbers of Ndebele attackers and dead differ (Britannica: 4,000-5,000 at the Shangani and 7,000 on 1 November; Wikipedia: 3,500 and about 6,000, with about 1,500 and 2,500 killed). Cause of Lobengula's death: fever or a wound (Britannica) or smallpox (Wikipedia).",
+  "checked": null
+ },
+ "Q916340": {
+  "title": "Jameson Raid",
+  "y": 1895,
+  "place": "From Mafeking, on the Bechuanaland border, to Doornkop, near Johannesburg",
+  "paras": [
+   "After the gold discoveries of 1886 thousands of foreigners, the Uitlanders, came to the Transvaal (the South African Republic). They complained of their treatment by President Paul Kruger's Boer government. Cecil Rhodes, prime minister of Cape Colony and head of the British South Africa Company, backed a plan by Uitlander leaders in Johannesburg to rise in revolt, while a mounted force under Leander Starr Jameson, a colonial administrator in Rhodes's employ, waited on the border to ride in to their support.",
+   "The plot faltered. The Johannesburg leaders lacked arms, and they were divided, among other things over a hint from Cape Town that Rhodes wanted the revolt made under the British flag; on 25 December they decided to postpone it. Jameson nevertheless crossed into the Transvaal on 29 December 1895 with about 600 men, most of them from the Matabeleland Mounted Police, and cut the telegraph wires so he could not be recalled. In Johannesburg a reform committee hurriedly took charge, but no rising took place.",
+   "Boer forces shadowed the column and stopped it at Doornkop, near Johannesburg, where Jameson surrendered on the promise that his men's lives would be spared; Wikipedia dates the surrender to 2 January 1896 (the 1911 Encyclopaedia Britannica's Transvaal article says the end of January, but its Jameson article puts the surrender before Johannesburg laid down its arms on 7 January). Kruger handed the raiders to the British government, and in London Jameson was sentenced to fifteen months in prison. The reform leaders were tried in Pretoria; four were condemned to death, the sentences later commuted to fines of £25,000 each.",
+   "The raid had wide consequences. The German emperor William II sent Kruger a telegram congratulating him on repelling the raiders without the help of friendly powers, which angered Britain. Rhodes had to resign as prime minister of the Cape. With much of its police away, Rhodesia was left exposed, and the Ndebele rose in March 1896. Relations between Britain and the Transvaal grew worse, and Wikipedia counts the raid among the causes of the South African (Second Boer) War of 1899-1902."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Jameson_Raid",
+    "title": "Jameson Raid (rev 1381260114, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Transvaal",
+    "title": "Transvaal, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Jameson,_Leander_Starr",
+    "title": "Jameson, Sir Leander Starr, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     5,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Uitlanders after the gold discovery; grievances against Kruger's government (Wikipedia; EB Transvaal).",
+   "Rhodes Prime Minister of the Cape and head of the BSAC; Jameson employed by Rhodes (Wikipedia).",
+   "Projected rising in Johannesburg connived at by Rhodes; Jameson's force in support (EB Jameson; Wikipedia: Reform Committee's invitation, plan to seize the armoury).",
+   "Delay: difficulty obtaining arms; flag question; meeting 25 December, decision to postpone (EB Transvaal); differences within the Reform Committee (Wikipedia).",
+   "29 December 1895 crossed into the Transvaal (Wikipedia; EB Transvaal: on the 29th of December Jameson started; EB Jameson: last day of the year news, from Mafeking); about 600 men, about 400 from the Matabeleland Mounted Police (Wikipedia; EB Jameson: force of 600 men).",
+   "Telegraph wires cut, no way of recalling him (Wikipedia).",
+   "Reform committee formed in Johannesburg, Phillips chairman; arms distributed (EB Transvaal); no rising (Wikipedia: waited for the insurrection).",
+   "Boers tracked him; stopped at Doornkop; surrender with guarantee of lives (EB Jameson; EB Transvaal; Wikipedia); 2 January (Wikipedia) vs 'end of January 1896' (EB Transvaal), EB Jameson: surrender of Johannesburg 7 January after Jameson's surrender - stated.",
+   "Kruger handed the raiders to the British government; tried in London, fifteen months (EB Jameson; Wikipedia).",
+   "Reform committee tried; four leaders sentenced to death, commuted to fines of £25,000 each (EB Transvaal; Wikipedia: sentenced to death by hanging).",
+   "Kaiser's telegram congratulating Kruger 'without the help of friendly powers' (Wikipedia; EB Transvaal: 'without appealing to the help of friendly powers'); British reaction: flying squadron (EB Transvaal) - 'angered Britain' paraphrases the reaction.",
+   "Rhodes forced to resign as Prime Minister of the Cape in 1896 (Wikipedia).",
+   "Withdrawal left Rhodesia vulnerable; Ndebele revolt March 1896 (Wikipedia); contributory cause of the Second Boer War (Wikipedia, attributed)."
+  ],
+  "disagree": "Date of Jameson's surrender at Doornkop: 2 January 1896 (Wikipedia) or 'the end of January' (1911 Britannica, Transvaal; its Jameson article puts the surrender before 7 January).",
+  "checked": null
  }
 }

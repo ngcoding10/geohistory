@@ -186,6 +186,15 @@
    "note": "Wikidata gives two dates, 1 January and 18 January 1871; William I was proclaimed German Emperor at Versailles on 18 January 1871 (Wikipedia; 1911 Encyclopaedia Britannica).",
    "source": "https://en.wikipedia.org/wiki/Proclamation_of_the_German_Empire",
    "verified": true
+  },
+  {
+   "q": "Q2993585",
+   "set": {
+    "m": 3
+   },
+   "note": "Wikidata dates this February 1885; the Russian attack on the Afghans at Panjdeh came in March 1885 (30 March, 18 March Old Style, in Wikipedia; March in the 1911 Encyclopaedia Britannica, Afghanistan).",
+   "source": "https://en.wikipedia.org/wiki/Panjdeh_incident",
+   "verified": true
   }
  ]
 }
