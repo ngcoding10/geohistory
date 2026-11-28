@@ -2357,7 +2357,11 @@
    "Later (Livius: eleven years later) Octavian defeated Antony at Actium and became sole ruler as Augustus; the battle concerned the future of the republic, which became a monarchy."
   ],
   "disagree": "Date of the first battle: September 42 BC (EBSCO) or early October (Livius; Wikipedia, first week of October). Army sizes: nineteen legions on each side (Appian, via Livius) or twenty-eight against nineteen (EBSCO).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Philippi",
+   "result": "Wikipedia extract (rev 1381429349, local CirrusSearch dump): double battle west of Philippi in 42 BC; Brutus pushing back Octavian and entering his camp match. 2 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q159512": {
   "title": "Battle of Legnica",
@@ -2441,7 +2445,11 @@
    "The Mongols ravaged Silesia and Moravia; Batu turned back on hearing of the death of Ögedei; the chance to unite Poland under the Silesian Piasts was lost, and Henry's duchy was divided among his heirs."
   ],
   "disagree": "Army sizes: HistoryNet gives Henry about 30,000 men and the Mongols about 20,000; the Polish History portal says the Mongols were several times more numerous. Mongol commanders: Baidar and Kaidu (HistoryNet) or probably Baidar and Orda (Polish History). Wenceslas's distance: two days' march (HistoryNet) or one day's journey from Legnica (Polish History).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Legnica",
+   "result": "Wikipedia extract (rev 1374130078, local CirrusSearch dump): date 9 April 1241, Henry II the Pious commanding, Mohi two days later all match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q705874": {
   "title": "Battle of Mohi",
@@ -2531,7 +2539,11 @@
    "The Mongols withdrew from Hungary in 1242; many believe Batu had received news of the death of Ögedei."
   ],
   "disagree": "Army sizes: about 50,000 on each side (Medievalists.net), or 60,000-70,000 Hungarians against a larger Mongol army (HistoryNet). Hungarian dead: 40,000 to 65,000 depending on the source (HistoryNet).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Mohi",
+   "result": "Wikipedia extract (rev 1384069468, local CirrusSearch dump): date 11 April 1241, Batu and Béla IV, Hungarian royal army destroyed all match. 2 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q543165": {
   "title": "Battle of Fort Sumter",
@@ -2627,7 +2639,11 @@
    "The Confederates at Fort Sumter withstood a 22-month Union siege from 1863 to 1865, which reduced most of the fort to rubble."
   ],
   "disagree": "Length of the bombardment: 34 hours (National Archives) or nearly 36 hours (American Battlefield Trust). The date of the surrender demand is given as 10 April (National Archives) or as the day after a Confederate cabinet decision of 9 April (American Battlefield Trust).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Fort_Sumter",
+   "result": "Wikipedia extract (rev 1386335097, local CirrusSearch dump): bombardment 12-13 April 1861 ending in surrender; Anderson's move from the vulnerable Fort Moultrie; Star of the West fired on and turned back all match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q221469": {
   "title": "First Battle of Bull Run",
@@ -2778,7 +2794,11 @@
    "Britain and France did not recognise the Confederacy; the Republicans kept control of the House in November."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Antietam",
+   "result": "Wikipedia extract (rev 1386336299, local CirrusSearch dump): 17 September 1862 near Sharpsburg, Lee and McClellan, bloodiest day in American history with 22,726 casualties, Hooker's attack at dawn match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q745979": {
   "title": "Battle of Chancellorsville",
@@ -2786,7 +2806,7 @@
   "place": "Confederate States of America",
   "paras": [
    "The Battle of Chancellorsville, fought from 30 April to 6 May 1863 in the Wilderness of central Virginia, is considered General Robert E. Lee's greatest victory. After the Union defeat at Fredericksburg, Lincoln gave command of the Army of the Potomac to Major General Joseph Hooker, who rebuilt its morale and planned a spring campaign to turn the left flank of Lee's Army of Northern Virginia at Fredericksburg. Hooker had about 130,000 men; Lee, with James Longstreet's corps away on a supply mission, had about 60,000. At the end of April Hooker left John Sedgwick with some 40,000 men opposite Fredericksburg and led the rest across the Rappahannock River into the dense woods of the Wilderness, around the Chancellorsville crossroads.",
-   "Lee did not retreat. Leaving Jubal Early's division to watch Sedgwick, he moved the rest of his army west against Hooker. On 1 May the two sides clashed in the woods, and Hooker halted his advance and pulled back to a defensive position at Chancellorsville. That evening Lee and Stonewall Jackson planned a bold stroke: on 2 May Jackson led about 28,000-30,000 men on a long march across the front of the Union army to its open right flank, while Lee held Hooker's attention with some 15,000. Warnings of the flank march were ignored at Hooker's headquarters, where it was taken as a sign that Lee was retreating.",
+   "Lee did not retreat. Leaving Jubal Early's division to watch Sedgwick, he moved the rest of his army west against Hooker. On 1 May the two sides clashed in the woods, and Hooker halted his advance and pulled back to a defensive position at Chancellorsville. That evening Lee and Stonewall Jackson planned a bold stroke: on 2 May Jackson led about 28,000 men (nearly 30,000 according to the American Battlefield Trust) on a long march across the front of the Union army to its open right flank, while Lee held Hooker's attention with the rest, about 14,000 by the Oxford Companion's count and 15,000 by the Trust's. Warnings of the flank march were ignored at Hooker's headquarters, where it was taken as a sign that Lee was retreating.",
    "At about 5 p.m. Jackson's men burst out of the thickets, overran Oliver O. Howard's XI Corps and rolled up the Union line. That night, riding ahead of his lines in the dark, Jackson was mistaken for Union cavalry and shot by men of a North Carolina regiment; he was mortally wounded, and J. E. B. Stuart took over his corps. On 3 May the Confederates renewed the attack in heavy fighting around the crossroads; Hooker gave up key ground and was knocked senseless when a shell struck a pillar he was leaning on. The same day Sedgwick broke through Early at Fredericksburg, but Lee divided his army yet again, stopped Sedgwick at Salem Church and forced him back across the river.",
    "Although Hooker, after some 17,000 casualties by the Oxford Companion's count, still outnumbered Lee two to one, he decided to retreat, and the Army of the Potomac recrossed the Rappahannock on 5-6 May. The victory was costly for the South, above all in the loss of Jackson. Buoyed by it, Lee invaded Pennsylvania, leading to the Battle of Gettysburg in July 1863."
   ],
@@ -2854,7 +2874,11 @@
    "Buoyed by the victory, Lee launched an offensive into Pennsylvania, leading to Gettysburg in July 1863."
   ],
   "disagree": "Size of Jackson's flanking force: about 28,000 (Oxford Companion) or nearly 30,000 (American Battlefield Trust); the men left with Lee, 14,000 or about 15,000.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Chancellorsville",
+   "result": "Wikipedia extract (rev 1380654431, local CirrusSearch dump): Lee's 'perfect battle'; Hooker crossing the Rappahannock at the end of April; Jackson hit by friendly fire and dying of it all match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q154942": {
   "title": "Battle of Königgrätz",
@@ -3036,7 +3060,11 @@
    "The Canadians earned a reputation as a formidable fighting force."
   ],
   "disagree": "Quantity of chlorine released on 22 April: about 160 tons (Veterans Affairs Canada, Parks Canada) or over 400 tons (EBSCO). Canadian casualties: 6,035 (Veterans Affairs Canada) or about 6,000 (Parks Canada).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Second_Battle_of_Ypres",
+   "result": "Wikipedia extract (rev 1375345855, local CirrusSearch dump): 22 April-25 May 1915, first mass use of poison gas by Germany on the Western Front match. 1 claim, 0 errors.",
+   "errors": 0
+  }
  },
  "Q324916": {
   "title": "Battle of Solferino",
@@ -3044,7 +3072,7 @@
   "place": "Austrian Empire",
   "paras": [
    "The Battle of Solferino, fought on 24 June 1859 near the Mincio river in northern Italy, was the decisive battle of the Second Italian War of Independence between the Austrian Empire and the allied armies of France and Piedmont-Sardinia. Piedmont's prime minister Count Cavour had won French support for a war to drive Austria out of northern Italy; France's price was Nice and Savoy. When Austria sent Piedmont an ultimatum in April 1859, France came in on Piedmont's side. After their defeat at Magenta, the Austrians abandoned Lombardy and fell back towards their fortresses on the Mincio, and Emperor Franz Joseph took personal command of his army.",
-   "Three monarchs led their armies in person, which is why the battle was also called the Battle of the Three Sovereigns: Napoleon III and King Victor Emmanuel II on the allied side and Franz Joseph on the Austrian. Each side had roughly 100,000 to 120,000 men. Poor scouting on both sides made it a chance encounter: Napoleon III believed the Austrians were still retreating and ordered an attack, while the Austrians, who had no reserves, were surprised by the allied advance.",
+   "Three monarchs led their armies in person, which is why the battle was also called the Battle of the Three Sovereigns: Napoleon III and King Victor Emmanuel II on the allied side and Franz Joseph on the Austrian. Estimates of their strength differ: EBSCO gives the allies some 118,600 men and the Austrians about 120,000, while HistoryNet puts the Austrian army at 100,000. Poor scouting on both sides made it a chance encounter: Napoleon III believed the Austrians were still retreating and ordered an attack, while the Austrians, who had no reserves, were surprised by the allied advance.",
    "The allies advanced early in the morning, and through the long day the French made repeated, poorly coordinated attacks on the hills held by the Austrians, often carrying positions only with the bayonet, while the Austrians replied with costly counter-attacks. The French slowly pushed the Austrian centre and south back. In the north the Piedmontese attacked the corps of Ludwig von Benedek again and again but could not break it. In the late afternoon Franz Joseph ordered a retreat across the Mincio, covered by Benedek's corps.",
    "Losses were heavy: about 22,000 on the Austrian side and about 17,000 for the allies, some 5,500 of them Piedmontese, though the breakdown differs between sources. Napoleon III, shaken by the carnage, sought a separate peace, and at Villafranca in July he agreed to a settlement under which Austria ceded Lombardy, passed through France to Piedmont, but kept Venetia, to the anger of Cavour and other Italian patriots; France gained Nice and Savoy. A Swiss businessman, Henri Dunant, who saw the wounded after the battle and organised local people to help them, wrote 'A Memory of Solferino', which led to the founding of the International Committee of the Red Cross in Geneva in 1863 and the first Geneva Convention."
   ],
@@ -3105,8 +3133,12 @@
    "Henri Dunant, a Swiss businessman, organised help for the wounded and wrote 'A Memory of Solferino', proposing societies of trained volunteers.",
    "The International Committee of the Red Cross was founded in Geneva in 1863, followed by the first Geneva Convention."
   ],
-  "disagree": "Casualty breakdowns differ: EBSCO gives the Austrians 2,292 killed, 8,638 wounded and 10,807 missing or captured, HistoryNet some 3,000 killed, 10,897 wounded and 8,638 missing or captured; the allied totals are about 17,200-17,300 in both. Austrian strength: about 120,000 (EBSCO) or 100,000 (HistoryNet). EBSCO's text calls the earlier battle of 4 June 'Mantua'; HistoryNet names it Magenta.",
-  "checked": null
+  "disagree": "Casualty breakdowns differ: EBSCO gives the Austrians 2,292 killed, 8,638 wounded and 10,807 missing or captured, HistoryNet some 3,000 killed, 10,897 wounded and 8,638 missing or captured; the allied totals are about 17,200-17,300 in both. Austrian strength: about 120,000 (EBSCO) or 100,000 (HistoryNet). EBSCO's text calls the earlier battle of 4 June 'Mantua'; HistoryNet names it Magenta. The Wikipedia article (local extract, used for the re-check) gives larger armies: about 130,000 Austrians and 140,000 French and Piedmontese, not all of them engaged.",
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Solferino",
+   "result": "Wikipedia extract (rev 1379026770, local CirrusSearch dump): date 24 June 1859, the three monarchs in personal command, Dunant touring the field after the battle match; the unattributed strength range in the draft ('roughly 100,000 to 120,000 men' on each side) is contradicted by Wikipedia's 130,000 and 140,000 and was rewritten to attribute each figure. 4 claims, 1 error.",
+   "errors": 1
+  }
  },
  "Q722699": {
   "title": "Fashoda Incident",
@@ -3186,6 +3218,87 @@
    "Fashoda became part of the process that brought Britain and France together: the Entente Cordiale was signed six years later, and France went to war against Germany in 1914 as Britain's ally."
   ],
   "disagree": "Kitchener's arrival at Fashoda: 18 September (Oxford Companion to British History) or 19 September (Encyclopedia of the Modern Middle East and North Africa). The drink the commanders shared: whisky and soda (EBSCO) or Marchand's champagne (Oxford Companion).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Fashoda_Incident",
+   "result": "Wikipedia extract (rev 1380808201, local CirrusSearch dump): Fashoda on the White Nile, 10 July and 3 November 1898, brink of war, French withdrawal match. 4 claims, 0 errors.",
+   "errors": 0
+  }
+ },
+ "Q4411": {
+  "title": "Battle of Valmy",
+  "y": 1792,
+  "place": "French First Republic",
+  "paras": [
+   "The Battle of Valmy, fought on 20 September 1792 near the village of Valmy in the Argonne region of north-eastern France, was the first important engagement of the French Revolutionary Wars and stopped the Prussian-led invasion of France. Revolutionary France had gone to war with Austria earlier in 1792, and an Austrian and Prussian army under the Duke of Brunswick crossed the frontier and marched towards Paris; Brunswick issued a manifesto threatening Paris with destruction if the royal family were harmed. The fortresses of Longwy and Verdun fell with little resistance, and in Paris fears of treason fed the September Massacres of prisoners.",
+   "The French generals Charles-François Dumouriez and François Christophe Kellermann, recently appointed, had to fill out and equip armies made up of regular soldiers and new volunteers. Dumouriez first planned to hold the Argonne forest, but the Austrians forced a pass and outflanked him; he regrouped around Sainte-Menehould and called Kellermann to join him. Bad weather slowed Brunswick's advance and allowed the two French armies to unite. They took position on the plateau of Valmy, by a windmill, with the Prussians placed on the Paris side of them. Hérodote gives 47,000 French against 34,000 Prussians.",
+   "When the fog lifted in the early afternoon, Kellermann raised his hat on his sword and shouted 'Vive la Nation!', and his troops took up the cry. The Prussian infantry began an assault on the windmill but fell back under French artillery fire, and for the first time in the war the French stood their ground. Brunswick did not press the attack, and the day became mainly an exchange of artillery fire, halted inconclusively by heavy rain; it showed the superiority of the French artillery. According to Hérodote, fewer than 500 men were hit in all, about 300 French and 184 Prussians.",
+   "Brunswick, now outnumbered, withdrew towards the Rhine; the retreat began the next day, and Hérodote says the last invading troops left France in late October. The modest cannonade had an outsized effect across Europe, showing the unexpected strength of the revolutionaries, and in November Dumouriez went on to defeat the Austrians at Jemappes and take Brussels. The German poet Goethe, who witnessed the cannonade, wrote some thirty years later that he had said there and then that a new epoch of world history was beginning."
+  ],
+  "sources": [
+   {
+    "url": "https://www.herodote.net/20_septembre_1792-evenement-17920920.php",
+    "title": "20 septembre 1792 - Modeste canonnade à Valmy",
+    "publisher": "Herodote.net",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/early-wars-french-revolution/",
+    "title": "Early Wars of the French Revolution (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     6,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/reference/encyclopedias-almanacs-transcripts-and-maps/valmy",
+    "title": "Valmy (The Columbia Encyclopedia, 6th ed.)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The Battle (cannonade) of Valmy was fought on 20 September 1792 near Valmy in the Argonne region of north-eastern France and was the first important engagement of the French Revolutionary Wars.",
+   "An Austrian and Prussian army under the Duke of Brunswick (EBSCO: in July 1792) crossed the frontier and marched towards Paris; Brunswick issued a manifesto threatening to annihilate Paris if the royal family were harmed.",
+   "France and its king declared war on Austria in 1792; the Prussians invaded eastern France; Longwy and Verdun capitulated almost without resistance; in Paris cries of treason led to the September Massacres.",
+   "Dumouriez and Kellermann, newly appointed, had to complete and equip their units of professional soldiers and volunteers.",
+   "Dumouriez planned to defend the Argonne, but the Austrians forced the pass of the Croix-aux-Bois and outflanked him; he regrouped around Sainte-Menehould and called Kellermann.",
+   "Bad weather slowed Brunswick's movement and allowed Dumouriez and Kellermann to join forces.",
+   "The French took position on the plateau of Valmy by a windmill, the Prussians being on the Paris side.",
+   "Hérodote: 47,000 French against 34,000 Prussians under Brunswick.",
+   "About one in the afternoon the fog lifted; Kellermann raised his sword with his hat on it and cried 'Vive la Nation!', which his soldiers took up.",
+   "The Prussian infantry attacked the windmill but fell back under French cannon fire; Brunswick pursued the battle half-heartedly; the battle was inconclusive, halted by heavy rain, and revealed the superiority of the French artillery (Columbia Encyclopedia).",
+   "Hérodote: fewer than 500 casualties, 300 French and 184 Prussian.",
+   "Brunswick, outnumbered, withdrew towards the Rhine (EBSCO); the retreat began the day after the battle and the last invading soldier left France on 23 October (Hérodote).",
+   "Dumouriez defeated the Austrians at Jemappes (EBSCO: on 6 November, capturing Brussels); Goethe wrote, in his Campaign in France some thirty years later, that a new epoch of world history began at Valmy. Hérodote: the battle showed the unexpected vigour of the revolutionaries and had an outsized effect across Europe."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Valmy",
+   "result": "Wikipedia extract (rev 1383616436, local CirrusSearch dump): 20 September 1792, Brunswick's Prussians marching on Paris, stopped by Kellermann and Dumouriez near Valmy, an outsized psychological victory for the Revolution all match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  }
 }

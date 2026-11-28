@@ -81,6 +81,17 @@
    "source": "https://en.wikipedia.org/api/rest_v1/page/html/Berlin_Blockade",
    "source2": "https://history.state.gov/milestones/1945-1952/berlin-airlift",
    "verified": false
+  },
+  {
+   "q": "Q233219",
+   "set": {
+    "m": 4,
+    "dd": 22
+   },
+   "note": "Wikidata dates the start 21 April 1915; the battle began with the German gas attack of 22 April 1915.",
+   "source": "https://www.canada.ca/en/parks-canada/news/2017/11/the_second_battleofypres22april-25may1915.html",
+   "source2": "https://www.veterans.gc.ca/en/remembrance/military-history/first-world-war/2nd-battle-ypres",
+   "verified": false
   }
  ]
 }
