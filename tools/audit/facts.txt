@@ -1,5 +1,6 @@
 # Well-known facts checked against the built data by tools/audit.py.
 # E|event name|year            an event with this name is dated that year
+# ED|event name|yyyy-mm-dd     an event with this name starts on that day (year, month and day of the record)
 # R|person|year                 that person takes office or the throne that year (±1)
 # C|lon|lat|year|text           on the map shown for that year, the territory there (or its ruler) contains text
 E|Battle of Marathon|-490
@@ -87,7 +88,7 @@ E|Battle of Antietam|1862
 E|Battle of Königgrätz|1866
 E|Battle of Sedan|1870
 E|Paris Commune|1871
-E|Treaty of Frankfurt|1871
+ED|Treaty of Frankfurt|1871-05-10
 E|Battle of Little Bighorn|1876
 E|Battle of Isandlwana|1879
 E|Berlin Conference|1884
@@ -144,6 +145,9 @@ E|Potsdam Conference|1945
 E|Partition of India|1947
 E|1948 Arab–Israeli War|1948
 E|Berlin Blockade|1948
+ED|Berlin Blockade|1948-06-24
+ED|Assassination of Archduke Franz Ferdinand|1914-06-28
+ED|Second Battle of Ypres|1915-04-22
 E|Korean War|1950
 E|Battle of Dien Bien Phu|1954
 E|Hungarian Revolution of 1956|1956

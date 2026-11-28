@@ -93,6 +93,14 @@ def main():
             cands = by_name.get(key, []) + [e for k2, lst in by_name.items() if k2.startswith(key + ' ') and k2[len(key) + 1:].isdigit() for e in lst]
             ok = any(e['y'] == y or (e.get('y2') and e['y'] <= y <= e['y2']) for e in cands)
             got = sorted({e['y'] for e in cands})[:4] if cands else 'not found'
+        elif kind == 'ED':
+            # day-level date: an event with this name starts on that day (y, m, dd of the record)
+            name, ds = a[0], a[1]
+            y, m, d = (int(x) for x in re.fullmatch(r'(-?\d+)-(\d\d)-(\d\d)', ds).groups())   # -490-09-12 for BC
+            key = norm(name)
+            cands = by_name.get(key, []) + [e for k2, lst in by_name.items() if k2.startswith(key + ' ') and k2[len(key) + 1:].isdigit() for e in lst]
+            ok = any(e['y'] == y and e.get('m') == m and e.get('dd') == d for e in cands)
+            got = sorted({f"{e['y']}-{e.get('m') or 0:02d}-{e.get('dd') or 0:02d}" for e in cands})[:4] if cands else 'not found'
         elif kind == 'R':
             name, y = a[0], int(a[1])
             nm = norm(name)
