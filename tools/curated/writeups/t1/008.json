@@ -4466,7 +4466,7 @@
    "Peru was the centre of Spanish power in South America. The viceroy kept his main forces at Lima, and while Chile and Buenos Aires broke away, Peru stayed largely royalist: risings at Tacna (1811), Huánuco (1812) and Cuzco (1814–1815) were put down. For the patriots of Chile and Argentina, destroying the viceroy's power was essential to their own survival, and a campaign on the Peruvian coast needed command of the sea.",
    "A fleet fitted out in Chile under Lord Cochrane carried José de San Martín's army of Argentine and Chilean troops, which sailed from Valparaíso on 21 August 1820 and landed at Pisco in September; Wikipedia gives its strength as 4,118 soldiers. Talks with the viceroy broke down in October. General Juan Antonio Álvarez de Arenales campaigned in the highlands, Cochrane captured the Spanish frigate Esmeralda in November, and in January 1821 Viceroy Pezuela was ousted and replaced by José de la Serna. In June 1821 the royalist army left Lima for the highlands, leaving a garrison in the fortress of Callao. San Martín entered the city, independence was proclaimed on 28 July 1821, and he governed as Protector.",
    "The war was far from over. The royalists still held the highlands and the south; they defeated patriot armies at Ica in 1822 and at Torata and Moquegua in January 1823, and General José de Canterac reoccupied Lima in June 1823. After meeting Simón Bolívar at Guayaquil in July 1822, San Martín resigned the protectorate to Peru's first congress in September 1822 and left the country. The president it elected in February 1823, José de la Riva Agüero, could not turn the war around, and Peru sought the help of Bolívar's Colombians.",
-   "Bolívar reached Lima in 1823 (on 1 September, according to the 1911 Encyclopaedia Britannica; Wikipedia's article on the war gives 10 December). His army won the cavalry battle of Junín on 6 August 1824, and his second-in-command, Antonio José de Sucre, won the decisive battle of Ayacucho on 9 December 1824, where the viceroy and his officers were taken prisoner. That ended Spanish power in Peru; the royalist garrison of Callao held out until 1826. Bolívar ruled Peru with dictatorial powers until he left in September 1826, and the Colombian troops left in 1827, which Wikipedia notes is when Peru gained full sovereignty."
+   "Bolívar reached Lima in 1823 (on 1 September, according to the 1911 Encyclopaedia Britannica and Wikipedia's article on Bolivian independence; Wikipedia's article on the Peruvian war gives 10 December). His army won the cavalry battle of Junín on 6 August 1824, and his second-in-command, Antonio José de Sucre, won the decisive battle of Ayacucho on 9 December 1824, where the viceroy and his officers were taken prisoner. That ended Spanish power in Peru; the royalist garrison of Callao held out until 1826. Bolívar ruled Peru with dictatorial powers until he left in September 1826, and the Colombian troops left in 1827, which Wikipedia notes is when Peru gained full sovereignty."
   ],
   "sources": [
    {
@@ -4534,6 +4534,15 @@
     "supports": [
      7
     ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Bolivian_Declaration_of_Independence",
+    "title": "Bolivian Declaration of Independence (rev 1328274025, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     13
+    ]
    }
   ],
   "claims": [
@@ -4549,12 +4558,12 @@
    "Royalists held the rest of the country; defeats at Ica (April 1822), Torata and Moquegua (January 1823); Canterac reoccupied Lima 18 June 1823 (Wikipedia).",
    "Guayaquil meeting July 1822 (Wikipedia Guayaquil Conference: 26-27 July); San Martin resigned the protectorate to the first congress 20 September 1822 (EB) and left for Valparaiso 22 September 1822 (Wikipedia).",
    "Riva Aguero elected president 28 February 1823 (EB), unsuccessful; aid of Bolivar's Colombians sought (EB; Wikipedia: congress pleaded for Bolivar's help in 1823).",
-   "Bolivar arrived in Lima 1 September 1823 (EB) or 10 December 1823 (Wikipedia) - disagreement stated.",
+   "Bolivar arrived in Lima 1 September 1823 (EB; Wikipedia, Bolivian Declaration of Independence) or 10 December 1823 (Wikipedia, Peruvian War of Independence) - disagreement stated.",
    "Junin 6 August 1824; Ayacucho 9 December 1824 won by Sucre; viceroy and officers captured; Spanish power in Peru ended (EB; Wikipedia).",
    "Callao held out until 1826 (Wikipedia Ayacucho: siege of Callao ended 1826; Wikipedia war article: January 1826).",
    "Bolivar ruled with dictatorial powers, left 3 September 1826; Colombian troops left in 1827 (EB: March 1827; Wikipedia: last garrison returned the Real Felipe fortress 16 February 1827); full sovereignty only after that (Wikipedia)."
   ],
-  "disagree": "Bolivar's arrival in Lima: 1 September 1823 (1911 Britannica) or 10 December 1823 (Wikipedia). Last Colombian troops: March 1827 (Britannica) or the Real Felipe fortress handed back 16 February 1827 (Wikipedia); the text says 1827.",
+  "disagree": "Bolivar's arrival in Lima: 1 September 1823 (1911 Britannica; Wikipedia, Bolivian Declaration of Independence) or 10 December 1823 (Wikipedia, Peruvian War of Independence). Last Colombian troops: March 1827 (Britannica) or the Real Felipe fortress handed back 16 February 1827 (Wikipedia); the text says 1827.",
   "checked": null
  },
  "cp08-15": {
