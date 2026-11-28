@@ -442,31 +442,20 @@ function suggestBox(ctx) {
   } }, h('summary', null, 'Suggest something we missed'), slot);
 }
 
-// The owner's way in to admin.html: type "lavafoundry" three times in the search box (in one go, or as three
-// separate entries within 30 s), then triple-click "The" in the year heading. This is only a door, not a lock:
-// anyone can read it here. What protects the suggestions is the admin page's Google sign-in and the server's
-// allow-list of account ids (geoAdminSuggestions in the backend).
-const DOOR = 'lavafoundry';
-const door = { hits: [], was: false, armedUntil: 0, clicks: [] };
+// The owner's way in to admin.html: with the map on the year 2008, search "lavafoundry" and press Enter. This is
+// only a door, not a lock: anyone can read it here. What protects the suggestions is the admin page's Google
+// sign-in and the server's allow-list of account ids (geoAdminSuggestions in the backend).
+const DOOR = 'lavafoundry', DOOR_YEAR = 2008;
 function watchDoor(input) {
-  input.addEventListener('input', () => {
-    const v = input.value.toLowerCase().replace(/[^a-z]/g, '');
-    const now = Date.now();
-    if (v.split(DOOR).length - 1 >= 3) door.armedUntil = now + 120_000;
-    const is = v === DOOR;
-    if (is && !door.was) {
-      door.hits = [...door.hits.filter((t) => now - t < 30_000), now];
-      if (door.hits.length >= 3) { door.armedUntil = now + 120_000; door.hits = []; }
-    }
-    door.was = is;
-  });
+  input.addEventListener('keydown', (ev) => {
+    if (ev.key !== 'Enter') return;
+    if (input.value.trim().toLowerCase() !== DOOR || state.year !== DOOR_YEAR) return;
+    ev.preventDefault(); ev.stopImmediatePropagation();
+    location.assign('admin.html');
+  }, true);
 }
 function yearH1(y) {
-  return h('h1', null, h('span.the', { onclick: () => {
-    const now = Date.now();
-    door.clicks = [...door.clicks.filter((t) => now - t < 900), now];
-    if (door.clicks.length >= 3 && now < door.armedUntil) { door.armedUntil = 0; location.assign('admin.html'); }
-  } }, 'The'), ` world in ${formatYear(y)}`);
+  return h('h1', null, h('span.the', null, 'The'), ` world in ${formatYear(y)}`);
 }
 
 /** The opening of the year panel: the year's own headline (the curated defining event of a famous year, else its

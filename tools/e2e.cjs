@@ -829,25 +829,19 @@ async function waitEvents(page) {
           `the ${kind} panel's form is about "${about.replace(/^About: /, '')}" and sends subject ${d.subject?.kind}:${d.subject?.id}, date "${date}"`);
       }
 
-      // the hidden door: "lavafoundry" three times in the search box, then a triple-click on "The"
+      // the hidden door: on the year 2008, search "lavafoundry" and press Enter
       await sp.goto(BASE + '?y=1776');
       await waitH1(sp, 'The world in 1776');
-      await sp.waitForSelector('#panelBody > details.suggest', { timeout: 60000 });   // the panel's last render, so the heading stays put
-      await sp.locator('#panelBody h1 .the').click({ clickCount: 3 });
+      await sp.fill('#q', 'lavafoundry');
+      await sp.press('#q', 'Enter');
       await sp.waitForTimeout(800);
-      ok(!/admin\.html/.test(sp.url()), 'a triple-click on "The" does nothing until the search box has been given the word');
-      for (let i = 0; i < 3; i++) { await sp.fill('#q', ''); await sp.locator('#q').pressSequentially('lavafoundry', { delay: 5 }); }
-      await sp.fill('#q', '');
-      await sp.locator('#panelBody h1 .the').click({ clickCount: 3 });
+      ok(!/admin\.html/.test(sp.url()), 'searching "lavafoundry" on a year other than 2008 does not open admin');
+      await sp.goto(BASE + '?y=2008');
+      await waitH1(sp, 'The world in 2008');
+      await sp.fill('#q', 'lavafoundry');
+      await sp.press('#q', 'Enter');
       await sp.waitForURL(/admin\.html$/, { timeout: 15000 }).catch(() => {});
-      ok(/admin\.html$/.test(sp.url()), 'three separate "lavafoundry" entries, then a triple-click on "The", open admin.html');
-      await sp.goto(BASE + '?y=1914');
-      await waitH1(sp, 'The world in 1914');
-      await sp.waitForSelector('#panelBody > details.suggest', { timeout: 60000 });
-      await sp.fill('#q', 'lavafoundrylavafoundrylavafoundry');
-      await sp.locator('#panelBody h1 .the').click({ clickCount: 3 });
-      await sp.waitForURL(/admin\.html$/, { timeout: 15000 }).catch(() => {});
-      ok(/admin\.html$/.test(sp.url()), '"lavafoundrylavafoundrylavafoundry" typed in one go also arms it');
+      ok(/admin\.html$/.test(sp.url()), 'on 2008, searching "lavafoundry" and pressing Enter opens admin.html');
 
       // admin.html: a signed-in account that is not on the list sees only its own id
       await sp.waitForFunction(() => !document.querySelector('#signIn').disabled, null, { timeout: 20000 });
