@@ -220,7 +220,11 @@
    "Wikipedia: the declaration indirectly led to the emergence of the State of Israel."
   ],
   "disagree": "Allied approval: the Encyclopaedia Judaica says Russia, France, Italy and the United States approved the declaration beforehand; Wikipedia dates the first endorsement by a foreign government to 27 December 1917 (Serbia) and the French and Italian endorsements to 1918. McMahon pledge: Wikipedia notes that a November 1918 Cabinet document treated Palestine as included in the McMahon pledge, while the 1922 White Paper says it had always been regarded as excluded.",
-  "checked": null
+  "checked": {
+   "by": "https://www.history.com/articles/balfour-declaration",
+   "result": "HISTORY.com (not used for writing): letter from Balfour to Rothschild, publication a week later, Montagu as secretary of state for India leading the opposition, aims of winning Jewish support in the United States and Russia and Lloyd George's wish for British control of Palestine, approval sought from France, the United States and Italy, and Arab anger at the outcome match. 6 claims, 0 errors (HISTORY's own statement that the mandate came from the Treaty of Versailles is not used; the text follows Wikipedia and the White Paper on San Remo).",
+   "errors": 0
+  }
  },
  "Q659745": {
   "title": "Italian Front",
@@ -422,7 +426,7 @@
   "y": 1968,
   "place": "Czechoslovakia (Prague and other cities)",
   "paras": [
-   "On the night of 20–21 August 1968 the Soviet Union led an invasion of Czechoslovakia by forces of the Warsaw Pact to stop the reforms of the 'Prague Spring'. Wikipedia names the Soviet Union, Poland, Bulgaria and Hungary as the invading states and says that East German forces, apart from a few specialists, were ordered not to cross the border at the last moment; the State Department's historians list East German troops among the contingents. According to Wikipedia, about 250,000 troops took part in the operation, code-named Danube, later rising to about 500,000; Romania and Albania refused to take part.",
+   "On the night of 20–21 August 1968 the Soviet Union led an invasion of Czechoslovakia by forces of the Warsaw Pact to stop the reforms of the 'Prague Spring'. Wikipedia names the Soviet Union, Poland, Bulgaria and Hungary as the invading states and says that East German forces, apart from a few specialists, were ordered not to cross the border at the last moment; the State Department's historians list East German troops among the contingents. According to Wikipedia, about 250,000 troops took part in the operation, code-named Danube, later rising to about 500,000 (HISTORY.com gives nearly 200,000); Romania and Albania refused to take part.",
    "In January 1968 the reformer Alexander Dubček replaced Antonín Novotný as head of the Communist Party of Czechoslovakia. His leadership ended censorship, allowing open public debate, and in April issued a reform programme that stayed within the communist system. Leonid Brezhnev and other Warsaw Pact leaders feared that the reforms would spread to other states of the Eastern Bloc and that Czechoslovakia might drift out of it. Talks at Čierna nad Tisou and a meeting in Bratislava in the summer did not settle the dispute, and Moscow decided to intervene.",
    "The troops had been moved into position under the cover of announced Warsaw Pact exercises, and they quickly took Prague and other cities and the transport and communication links. The Czechoslovak army put up no effective resistance; people protested with signs, placards and graffiti and argued with the soldiers. Wikipedia counts 137 Czechoslovaks killed and 500 seriously wounded during the occupation. Dubček and several colleagues were arrested and taken to Moscow, where all but one of the Czechoslovak delegation signed the 'Moscow Protocol'; they returned to Prague on 27 August.",
    "Dubček remained party leader until he was forced out in April 1969 and replaced by Gustáv Husák, whose 'normalisation' reversed the reforms, restored censorship and purged liberals from the party. Western governments condemned the invasion, as did Romania, China and Albania, but the Soviet Union blocked efforts to pass a condemnation in the UN Security Council. Moscow's claim of a right to intervene where communist rule was threatened became known as the Brezhnev Doctrine. According to the State Department's historians, the invasion delayed détente with the United States by a few years and led President Lyndon B. Johnson to cancel a summit with Brezhnev."
@@ -471,12 +475,21 @@
      16,
      17
     ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/august-20/soviets-invade-czechoslovakia",
+    "title": "Soviets invade Czechoslovakia",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     3
+    ]
    }
   ],
   "claims": [
    "Invasion of 20–21 August 1968 led by the Soviet Union with Warsaw Pact forces, to halt Dubček's Prague Spring reforms (Wikipedia; State Dept: August 20, 1968 and invasion of August 20–21).",
    "Wikipedia: invaded by the Soviet Union, Poland, Bulgaria and Hungary; East German forces, except a small number of specialists, ordered by Moscow not to cross the border hours before; State Dept: troops from the Soviet Union with limited numbers from Hungary, Poland, East Germany and Bulgaria.",
-   "Wikipedia: about 250,000 troops, rising to about 500,000; code-named Operation Danube; Romania and Albania refused to participate.",
+   "Wikipedia: about 250,000 troops, rising to about 500,000; code-named Operation Danube; Romania and Albania refused to participate. HISTORY.com (re-check source): nearly 200,000 troops.",
    "Dubček replaced Novotný as party head in early 1968 (State Dept; Wikipedia: elected First Secretary on 5 January 1968).",
    "Censorship ended, allowing open public debate (State Dept; Wikipedia: ending of censorship, loosening of restrictions on the media).",
    "State Dept: in April a formal reform plan was issued that sought liberalisation within the existing Marxist-Leninist framework.",
@@ -492,15 +505,19 @@
    "Brezhnev Doctrine: Moscow's claimed right to intervene where a communist government was threatened (State Dept; Wikipedia).",
    "State Dept: the invasion forced Johnson to cancel a summit with Brezhnev and delayed détente and arms control by a few years."
   ],
-  "disagree": "Participants: Wikipedia says East German forces, except a few specialists, were ordered not to cross the border; the State Department's history lists East German troops among the invaders.",
-  "checked": null
+  "disagree": "Participants: Wikipedia says East German forces, except a few specialists, were ordered not to cross the border; the State Department's history lists East German troops among the invaders. Troop numbers: Wikipedia about 250,000 (later about 500,000); HISTORY.com nearly 200,000.",
+  "checked": {
+   "by": "https://www.history.com/this-day-in-history/august-20/soviets-invade-czechoslovakia",
+   "result": "HISTORY.com (not used for writing; added afterwards only for the troop figure it disagrees on): invasion on the night of 20 August 1968, Dubček replacing Novotný in January 1968, April Action Programme, Čierna and Bratislava meetings, negligible armed resistance and street protests, Dubček taken to Moscow and back on 27 August, replacement by Husák in April 1969, condemnation by China and Romania match. Troops: nearly 200,000 against Wikipedia's 250,000; the text now gives both. 9 claims, 0 errors, 1 disagreement stated.",
+   "errors": 0
+  }
  },
  "Q482456": {
   "title": "Fall of Saigon",
   "y": 1975,
   "place": "Saigon (today Ho Chi Minh City), South Vietnam",
   "paras": [
-   "Saigon, the capital of South Vietnam, was taken by the forces of North Vietnam and the Viet Cong on 30 April 1975, ending the Vietnam War. The Paris peace agreement of January 1973 had allowed the United States to withdraw its forces, but, as the State Department's historians note, neither Vietnamese side kept to it and the war went on. In March 1975 the North Vietnamese army under General Văn Tiến Dũng opened an offensive in the Central Highlands and took Buôn Ma Thuột; the South Vietnamese army fell back in a disorderly retreat. After an 11-day stand at Xuân Lộc, the last line of defence before Saigon, it withdrew on 20 April, and President Nguyễn Văn Thiệu resigned the next day.",
+   "Saigon, the capital of South Vietnam, was taken by the forces of North Vietnam and the Viet Cong on 30 April 1975, ending the Vietnam War. The Paris peace agreement of January 1973 had allowed the United States to withdraw its forces, but, as the State Department's historians note, neither Vietnamese side kept to it and the war went on. In March 1975 the North Vietnamese army under General Văn Tiến Dũng opened an offensive in the Central Highlands and took Buôn Ma Thuột; the South Vietnamese army fell back in a disorderly retreat. After an 11-day stand at Xuân Lộc, the last line of defence before Saigon, it withdrew on 20 April according to Wikipedia (HISTORY.com dates the withdrawal to 21 April), and President Nguyễn Văn Thiệu resigned on 21 April.",
    "Thiệu's successor, Trần Văn Hương, resigned on 28 April and was replaced by General Dương Văn Minh, who was expected to seek a ceasefire, but Hanoi would not negotiate. The final attack on Saigon began on 29 April with heavy shelling. That morning the United States ordered Operation Frequent Wind: with Tan Son Nhut airport's runways unusable, American helicopters flew Americans and South Vietnamese linked to the government from the Defense Attaché compound and the US embassy to ships of the Seventh Fleet. Crowds tried to climb the embassy walls to reach the helicopters, and on the ships aircraft were pushed into the sea to make room for more. It was the largest helicopter evacuation in history. The US ambassador, Graham Martin, left before 5 a.m. on 30 April, and the last Marines flew out from the embassy that morning; Wikipedia records that about 420 Vietnamese and South Koreans were left behind in the embassy compound.",
    "At 10:24 on 30 April, according to TIME, Minh announced the unconditional surrender of South Vietnam. Around midday North Vietnamese tanks broke through the gates of the Independence (Presidential) Palace, where Minh was waiting, and the Viet Cong flag was raised over it. The government of South Vietnam ceased to exist. On 2 July 1976 Vietnam was formally reunified as the Socialist Republic of Vietnam, with its capital at Hanoi, and Saigon was renamed Ho Chi Minh City. The Vietnamese government calls 30 April the day of the liberation of the South and national reunification; many overseas Vietnamese who fled the South call it 'Black April'."
   ],
@@ -567,13 +584,22 @@
      13,
      14
     ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/april-30/south-vietnam-surrenders",
+    "title": "Fall of Saigon: South Vietnam surrenders",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     4
+    ]
    }
   ],
   "claims": [
    "Saigon, capital of South Vietnam, was captured by North Vietnamese (PAVN) and Viet Cong forces on 30 April 1975, ending the Vietnam War (Wikipedia; NPR; TIME).",
    "The Paris agreement was signed on 27 January 1973 and enabled the US to withdraw; neither Vietnamese party abided by it and the war continued (State Dept; Wikipedia: 1973 Paris Peace Accords violated by both sides immediately).",
    "Wikipedia: Dũng's offensive in the Central Highlands began on 10 March 1975 and took Buôn Ma Thuột; the ARVN began a disorderly retreat.",
-   "Wikipedia: the ARVN 18th Division held Xuân Lộc, the last line of defence before Saigon, for 11 days, withdrawing on 20 April; Thiệu resigned on 21 April.",
+   "Wikipedia: the ARVN 18th Division held Xuân Lộc, the last line of defence before Saigon, for 11 days, withdrawing on 20 April; Thiệu resigned on 21 April (HISTORY.com, used only in the re-check: Xuan Loc abandoned on 21 April).",
    "Wikipedia: Hương resigned on 28 April and was succeeded by Dương Văn Minh, who it was hoped could negotiate a ceasefire; Hanoi was in no mood to negotiate (TIME: Minh was 'president for all of two days').",
    "Wikipedia: the final attack on Saigon began on 29 April 1975 with heavy artillery bombardment.",
    "Operation Frequent Wind was ordered on the morning of 29 April after the runways at Tan Son Nhut were judged unusable (Wikipedia: order given at 10:51; TIME: on 29 April helicopters began airlifting evacuees; NPR: Operation Frequent Wind).",
@@ -587,8 +613,12 @@
    "Wikipedia: reunification formalised on 2 July 1976 as the Socialist Republic of Vietnam with Hanoi as capital; Saigon renamed Ho Chi Minh City the same day.",
    "Wikipedia: names: Vietnam's government calls it the 'Day of the Liberation of the South and National Reunification'; many overseas Vietnamese refugees call it 'Black April' among other names."
   ],
-  "disagree": null,
-  "checked": null
+  "disagree": "Withdrawal from Xuân Lộc: Wikipedia 20 April 1975; HISTORY.com 21 April.",
+  "checked": {
+   "by": "https://www.history.com/this-day-in-history/april-30/south-vietnam-surrenders",
+   "result": "HISTORY.com (not used for writing; added afterwards only for the date it disagrees on): fall on 30 April 1975, North Vietnamese offensive from March 1975, last stand of the ARVN 18th Division at Xuan Loc, Huong then Minh as president, tanks through the palace gates and Minh's surrender match. It dates the abandonment of Xuan Loc to 21 April where Wikipedia has 20 April; the text now gives both. 5 claims, 0 errors, 1 disagreement stated.",
+   "errors": 0
+  }
  },
  "Q76986": {
   "title": "Belovezh Accords",
