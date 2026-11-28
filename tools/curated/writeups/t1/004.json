@@ -1367,5 +1367,233 @@
   ],
   "disagree": "Start of the uprising: protests began on 15 February 2011 (Wikipedia, Al Jazeera); 17 February was the announced 'day of revolt'.",
   "checked": null
+ },
+ "Q194378": {
+  "title": "Third Servile War",
+  "y": -73,
+  "place": "Southern and central Italy",
+  "paras": [
+   "The Third Servile War (73–71 BC), also called the War of Spartacus, was the last and most dangerous of the great slave revolts against the Roman Republic, and the only one fought in Italy itself. Rome's wars of conquest had flooded Italy with slaves, many of them working on large estates. In 73 BC a group of gladiators broke out of the gladiator school of Lentulus Batiatus at Capua; the ancient accounts put them at about 70 (Wikipedia, following Plutarch) or 78 (the Livius account). They chose leaders, the Thracian Spartacus, Crixus and Oenomaus, and took refuge on Mount Vesuvius, while runaway slaves flocked to join them.",
+   "Rome at first treated the revolt as banditry. The praetor Gaius Claudius Glaber besieged the rebels on Vesuvius with some 3,000 hastily raised militiamen, but the slaves climbed down the cliffs on ropes made of vines, took his camp by surprise and destroyed his force; a second praetorian army was also beaten. With much of Rome's strength tied up in wars in Spain and against Mithridates in the east, the slave army grew to tens of thousands and plundered southern Italy. In 72 BC the Senate sent both consuls, Lucius Gellius Publicola and Gnaeus Cornelius Lentulus Clodianus. Gellius destroyed a separate band under Crixus near Mount Garganus, but Spartacus defeated the consular armies, marched north and beat the governor of Cisalpine Gaul near Mutina (Modena). Instead of crossing the Alps, the rebels turned back south.",
+   "The Senate then gave the command to Marcus Licinius Crassus, with eight legions. Crassus restored discipline, reportedly by decimating units that had fled, and pursued Spartacus into Bruttium, the toe of Italy, where the rebels hoped to cross to Sicily with the help of Cilician pirates who never came. Crassus walled them in across the peninsula, but Spartacus broke out. With Pompey's army returning from Spain, Spartacus turned to fight, and in 71 BC his army was destroyed in a final battle in Lucania, by the Silarius river according to Wikipedia. Spartacus was killed, though his body was never found. Pompey's troops cut down some 5,000 fugitives, and about 6,000 captured rebels were crucified along the Appian Way between Capua and Rome.",
+   "Crassus and Pompey both used their victories to win the consulship for 70 BC, backed by the presence of their armies, an episode that historians see as a step in the decline of the Republic's institutions. In modern times Spartacus became a symbol of resistance to oppression."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Third_Servile_War",
+    "title": "Third Servile War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://www.livius.org/articles/person/spartacus/",
+    "title": "Spartacus",
+    "publisher": "Livius.org (Jona Lendering)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "The Third Servile War (73–71 BC), also called the War of Spartacus, was the last of the Servile Wars and the only one to threaten Italy itself.",
+   "Rome's conquests brought huge numbers of slaves into Italy, many working on agricultural estates.",
+   "In 73 BC gladiators escaped from Lentulus Batiatus's school at Capua: about 70 (Wikipedia) or 78 (Livius).",
+   "Leaders were Spartacus, Crixus and Oenomaus; they went to Mount Vesuvius.",
+   "Glaber besieged them with about 3,000 militia; the slaves descended by vine ropes and destroyed his force; a second praetorian army (Varinius) was defeated.",
+   "Rome was also fighting Sertorius in Spain and Mithridates in the east.",
+   "The rebels plundered and their numbers grew to tens of thousands (Appian: 70,000, later 120,000).",
+   "In 72 BC both consuls, Gellius and Lentulus, were sent; Gellius destroyed Crixus's band near Mount Garganus.",
+   "Spartacus defeated the consular armies, marched north and defeated the governor of Cisalpine Gaul at Mutina, then turned south instead of crossing the Alps.",
+   "Crassus received the command with eight legions.",
+   "Crassus restored discipline by decimation.",
+   "In Bruttium the rebels planned to cross to Sicily with Cilician pirates, who did not come; Crassus built a wall across the peninsula; Spartacus broke out.",
+   "With Pompey approaching, Spartacus fought Crassus in 71 BC and was defeated (Wikipedia: Battle of the Silarius River).",
+   "Spartacus was killed but his body never found.",
+   "Pompey's forces killed about 5,000 fugitives (Wikipedia); about 6,000 were crucified along the Appian Way between Capua and Rome.",
+   "Crassus and Pompey used their success to win the consulship of 70 BC, contributing to the subversion of Republican institutions.",
+   "Spartacus later became a symbol of emancipation."
+  ],
+  "disagree": "Number of gladiators who escaped: about 70 (Wikipedia, following Plutarch) or 78 (Livius). The size of Crixus's band is given as some 30,000 (Wikipedia) or 3,000 (Livius, citing Appian), so no figure is given here. Livius says Pompey and Crassus both destroyed fugitive groups after the battle; Wikipedia credits Pompey with killing some 5,000.",
+  "checked": null
+ },
+ "Q131386": {
+  "title": "Battle of Alesia",
+  "y": -52,
+  "place": "Alesia (Mont Auxois, near Alise-Sainte-Reine, France)",
+  "paras": [
+   "The siege of Alesia in 52 BC was the decisive battle of Julius Caesar's Gallic Wars. Caesar had been conquering Gaul since 58 BC. In 52 BC many Gallic tribes rose together under a young Arvernian nobleman, Vercingetorix, who tried to starve Caesar's legions by burning towns and supplies and harrying Roman foragers with his cavalry. Caesar took the stronghold of Avaricum (Bourges) but failed to take Gergovia, Vercingetorix's home town; then, after a defeat of the Gallic cavalry, Vercingetorix withdrew with a large army into Alesia, a hilltop town of the Mandubii, usually identified with Mont Auxois above Alise-Sainte-Reine in eastern France.",
+   "Rather than assault the strong position, Caesar besieged it. His troops built an inner ring of fortifications facing the town, about 16 km long by Caesar's figures as summarised by Wikipedia (about 15 km by the Livius account), with ditches, walls, towers and fields of hidden stakes and spikes. Knowing that a Gallic relief army was being raised, they then built a second, outer ring of about 21 km facing outwards, so that the Romans were themselves enclosed between two lines. As food in Alesia ran out, Vercingetorix expelled the town's civilians, but the Romans would not let them through their lines, and they were left trapped between the two sides.",
+   "The relief army arrived and, together with the defenders, attacked the Roman lines several times over a few days. The heaviest attack fell on a weak spot in the north-west, where a hill could not be included in the works; there a picked force under Vercassivellaunus, a relative of Vercingetorix, nearly broke through. Caesar sent Titus Labienus with reinforcements and then came himself, and the attack was beaten off. The relief army broke up, and the next day Vercingetorix surrendered.",
+   "Caesar handed most of the prisoners to his soldiers as slaves, sparing the Aedui and the Arverni to win them back. Vercingetorix was held in Rome for years, paraded in Caesar's triumph in 46 BC and then executed. Mopping-up campaigns continued, but Alesia ended organised Gallic resistance, and Gaul became Roman. The Senate voted Caesar 20 days of thanksgiving but, for political reasons, not a triumph at the time; political tension in Rome grew, and in 49 BC Caesar crossed the Rubicon and began a civil war."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Alesia",
+    "title": "Battle of Alesia",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://www.livius.org/articles/battle/alesia-52-bce/",
+    "title": "Alesia (52 BCE)",
+    "publisher": "Livius.org (Jona Lendering)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The siege of Alesia (52 BC) was the decisive battle of Caesar's Gallic Wars.",
+   "Caesar had campaigned in Gaul since 58 BC.",
+   "In 52 BC the Gauls rose under Vercingetorix of the Arverni, who used scorched-earth tactics and cavalry against Roman supply.",
+   "Caesar captured Avaricum (Bourges) and failed at Gergovia.",
+   "Vercingetorix withdrew into Alesia, town of the Mandubii, identified with Mont Auxois / Alise-Sainte-Reine.",
+   "Caesar built an inner line: 11 Roman miles (about 16 km; Wikipedia) or about 15 km (Livius), with trenches, palisade, towers and obstacles.",
+   "Caesar built an outer line facing outwards (14 Roman miles, about 21 km; Wikipedia) against the relief force.",
+   "Vercingetorix expelled the civilians, whom the Romans would not let through.",
+   "The relief army arrived; several attacks over a few days.",
+   "The key attack was on a weak point in the north-west where a hill could not be included; led by Vercassivellaunus, a relative of Vercingetorix.",
+   "Caesar sent Labienus and then intervened in person; the attack failed.",
+   "The relief army broke up and Vercingetorix surrendered the next day.",
+   "Captives were given to the soldiers except Aedui and Arverni.",
+   "Mopping-up continued but Alesia was decisive; Gaul became Roman.",
+   "Vercingetorix was held captive, paraded in Caesar's triumph and executed in 46 BC.",
+   "The Senate voted 20 days of thanksgiving but refused a triumph for political reasons; tension increased and Caesar crossed the Rubicon in 49 BC."
+  ],
+  "disagree": "Date: Wikipedia gives September 52 BC; Livius dates the decisive fight to 30 August on our calendar (23 September on the Roman calendar) and the surrender to 3 September 52 BC. Length of the inner siege line: 11 Roman miles, about 16 km (Wikipedia, from Caesar) or about 15 km (Livius). Livius notes Cassius Dio's version, in which Vercingetorix gave himself up in person rather than being handed over by the chiefs as Caesar says.",
+  "checked": null
+ },
+ "Q369560": {
+  "title": "Siege of Baghdad (1258)",
+  "y": 1258,
+  "place": "Baghdad, Abbasid Caliphate",
+  "paras": [
+   "In early 1258 a Mongol army under Hulegu (Hulagu), a grandson of Genghis Khan and brother of the Great Khan Möngke, besieged and sacked Baghdad, capital of the Abbasid Caliphate for five centuries and one of the great centres of learning of the Islamic world. Sent west to secure Persia, Hulegu had destroyed the Nizari Ismaili 'Assassins' and their fortress of Alamut in 1256. He demanded that the caliph al-Musta'sim submit; the caliph refused and boasted that an attack on Baghdad would rouse the whole Muslim world against the Mongols, and Hulegu decided at the end of 1257 to take the city by force.",
+   "The Mongol columns converged on Baghdad from several directions. On 17 January 1258 they routed the caliph's field army west of the city after flooding the plain behind it by breaking the dykes, and by 22 January they had surrounded Baghdad on both banks of the Tigris. The assault began on 29 January (some sources say 30 January). Siege engines breached the Ajami tower in the eastern wall, which fell on 1 February, and by 3–4 February the Mongols held the whole eastern wall. The caliph's embassies and offers of tribute were refused. On 10 February 1258 al-Musta'sim came out and surrendered the city.",
+   "The Mongols then sacked Baghdad for about a week. Christians, on whose behalf Hulegu's Christian wife Doquz Khatun interceded, and some other groups were spared; most of the rest of the population suffered killing and plunder. The number of dead is unknown: estimates range from nearly 80,000 (in the modern account excerpted by De Re Militari) to the 800,000 to two million of later Muslim writers, and Hulegu himself claimed two million in a letter to Louis IX of France, a figure historians regard as inflated; an epidemic after the sack added to the deaths. After the pillage ended, al-Musta'sim was put to death with his family, according to the usual account wrapped in a carpet and trampled by horses, since the Mongols avoided shedding royal blood (another account says he was strangled).",
+   "The fall of Baghdad ended the Abbasid Caliphate there after some 500 years; a member of the dynasty was later installed as caliph in Cairo by the Mamluks, but only as a figurehead. The sack has traditionally been seen as the end of the Islamic Golden Age, although historians now debate its long-term effects, and Baghdad recovered under Hulegu's Ilkhanate, though it was overshadowed by the new capital, Tabriz."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Siege_of_Baghdad",
+    "title": "Siege of Baghdad",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://deremilitari.org/RESOURCES/SOURCES/baghdad.htm",
+    "title": "The Mongols besiege and capture Baghdad in 1258 (excerpts including Rashid al-Din's chronicle in translation)",
+    "publisher": "De Re Militari: The Society for Medieval Military History",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "In early 1258 a Mongol army under Hulegu, grandson of Genghis Khan (brother of Möngke), besieged and sacked Baghdad, the Abbasid capital and a centre of learning.",
+   "Hulegu had destroyed the Nizari Ismailis/Alamut (1256).",
+   "Hulegu demanded submission; al-Musta'sim refused and claimed an attack would mobilise the Muslim world; Hulegu decided to attack in late 1257.",
+   "On 17 January 1258 the Mongols routed the caliph's army after flooding the plain by opening dykes.",
+   "By 22 January the Mongols surrounded Baghdad on both sides of the Tigris.",
+   "The assault began on 29 January (Wikipedia: 29 or 30 January); catapults breached the Ajami tower, destroyed on 1 February (Rashid al-Din).",
+   "By 3–4 February the Mongols held the eastern walls; embassies and tribute were refused.",
+   "On 10 February 1258 al-Musta'sim surrendered.",
+   "The sack lasted about a week; Christians were spared through Doquz Khatun's intercession.",
+   "Estimates of deaths range from nearly 80,000 (De Re Militari introduction) to 800,000–2 million (later Muslim writers); Hulegu claimed 2 million in a letter to Louis IX; historians consider it inflated; an epidemic followed.",
+   "After the pillage al-Musta'sim was executed with his family, reportedly rolled in a carpet and trampled by horses (Wikipedia); De Re Militari's introduction says he was strangled.",
+   "The fall ended the 500-year Abbasid Caliphate; a member of the dynasty became a Mamluk puppet caliph in Cairo.",
+   "The sack is traditionally seen as the end of the Islamic Golden Age, though its effects are debated; Baghdad prospered under the Ilkhanate but was overshadowed by Tabriz."
+  ],
+  "disagree": "Start of the assault: 29 or 30 January 1258 (Wikipedia); Rashid al-Din's chronicle gives 29 January. Deaths: the De Re Militari introduction gives nearly 80,000; later Muslim writers 800,000 to two million and Hulegu two million, figures Wikipedia describes as inflated. The De Re Militari introduction says the caliph was strangled a few days after his defeat; Wikipedia describes him being trampled in a carpet after the amnesty of 20 February.",
+  "checked": null
  }
 }
