@@ -114,6 +114,28 @@
    "source": "https://austria-forum.org/web-books/en/firstworldwar01en2014isds/000528",
    "source2": "https://www.history.com/this-day-in-history/june-4/brusilov-offensive-begins",
    "verified": false
+  },
+  {
+   "q": "Q12989672",
+   "set": {
+    "m": 7,
+    "dd": 27
+   },
+   "note": "Wikidata dates this 26 July 1794 (8 Thermidor, Robespierre's last speech); the Convention ordered his arrest on 9 Thermidor Year II, 27 July 1794.",
+   "source": "https://www.larousse.fr/encyclopedie/divers/journ%c3%a9es_des_9_et_10_thermidor_an_II/146561",
+   "source2": "https://www.herodote.net/27_juillet_1794-evenement-17940727.php",
+   "verified": false
+  },
+  {
+   "q": "Q193547",
+   "set": {
+    "m": 9,
+    "dd": 5
+   },
+   "note": "Wikidata dates the start 2 September 1793; EBSCO and Larousse both date the (second) Terror from 5 September 1793, when the Convention made terror 'the order of the day'.",
+   "source": "https://www.ebsco.com/research-starters/history/reign-terror",
+   "source2": "https://www.larousse.fr/encyclopedie/divers/la_Terreur/146370",
+   "verified": false
   }
  ]
 }

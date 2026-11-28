@@ -4174,5 +4174,84 @@
    "result": "German History in Documents and Images (GHI Washington), the 'blank cheque' telegram of 5 July 1914 with introduction: assassination of Franz Ferdinand by a Serbian nationalist on 28 June 1914 as the trigger of the July Crisis, and Wilhelm II's assurance of German support in early July (telegram of 5 July), match. 3 claims, 0 errors.",
    "errors": 0
   }
+ },
+ "Q12989672": {
+  "title": "Coup of 9 Thermidor",
+  "y": 1794,
+  "place": "Paris: the National Convention and the Hôtel de Ville",
+  "paras": [
+   "On 9 Thermidor Year II of the revolutionary calendar, 27 July 1794, the National Convention in Paris turned against Maximilien Robespierre, under whom, in EBSCO's account, the Committee of Public Safety had directed the Terror, and had him arrested with his closest allies; within two days he and scores of his followers had been guillotined, and the Reign of Terror came to an end. The men who brought him down were themselves members of the revolutionary government and deputies, among them Tallien, Fouché, Barras and Billaud-Varenne, acting together with the moderate deputies of the Convention.",
+   "By mid-1794 Robespierre had purged the Girondins, the Hébertists and Danton's followers, and the law of 22 Prairial (10 June 1794) let the Committee have any suspect arrested and executed. In a speech of about two hours to the Convention on 8 Thermidor (26 July) he threatened a league of 'rogues' without naming them. Every deputy who might feel threatened, especially those who had enriched themselves or committed atrocities as representatives on mission, had reason to strike first, and they organised during his absences from the Committee and the Convention.",
+   "When the session of 9 Thermidor opened, Tallien and Billaud-Varenne interrupted Saint-Just's speech with accusations, and Robespierre was shouted down when he tried to speak. The deputies Louchet and Loiseau obtained the arrest of Robespierre, his younger brother Augustin, Saint-Just, Couthon and Le Bas. The Paris Commune proclaimed an insurrection, and its supporters freed the prisoners, who gathered at the Hôtel de Ville; but Robespierre's side gave no clear orders, and the Convention outlawed the rebels and called on the moderate Paris sections. At about 2 a.m. troops led by Barras broke into the Hôtel de Ville. Robespierre was wounded in the jaw by a pistol shot; Larousse says he had tried to kill himself.",
+   "On the evening of 10 Thermidor (28 July) Robespierre was guillotined with Saint-Just, Couthon and his brother; Larousse counts 22 executed that day and 71 on the next, Hérodote about twenty and then some 80. The victors, called the Thermidorians, freed suspects and ended the Terror, beginning the 'Thermidorian reaction', which led in 1795 to a new constitution and the Directory."
+  ],
+  "sources": [
+   {
+    "url": "https://www.larousse.fr/encyclopedie/divers/journ%c3%a9es_des_9_et_10_thermidor_an_II/146561",
+    "title": "Journées des 9 et 10 thermidor an II (27-28 juillet 1794)",
+    "publisher": "Larousse (Encyclopédie Larousse)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.herodote.net/27_juillet_1794-evenement-17940727.php",
+    "title": "27 juillet 1794 - Arrestation de Robespierre",
+    "publisher": "Herodote.net",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/reign-terror",
+    "title": "Reign of Terror (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "On 9 Thermidor Year II (27 July 1794) the Convention turned against Robespierre and had him arrested (Larousse: journées of 9-10 Thermidor, 27-28 July 1794; Hérodote: 9 thermidor An II, 27 July 1794); EBSCO: the Reign of Terror lasted until 27 July 1794. EBSCO: the Terror was led by the Committee of Public Safety under Robespierre.",
+   "Larousse: terrorists such as Tallien, Fouché, Barras and Billaud-Varenne agreed with the moderate deputies to eliminate Robespierre quickly before being struck themselves.",
+   "Robespierre had purged the Girondins (1793), the Hébertists and the Dantonists (March-April 1794) (Larousse).",
+   "The law of 22 Prairial (10 June 1794) allowed the Committee of Public Safety to have any suspect arrested and executed (Hérodote; Larousse: the 'Great Terror').",
+   "On 8 Thermidor Robespierre spoke to the Convention, threatening to punish 'rogues' (fripons) without naming them (Larousse, Hérodote; Hérodote: a two-hour speech at noon).",
+   "Deputies who felt threatened, including those who had enriched themselves or committed massacres on mission (Hérodote: Barras, Fréron, Fouché, Carrier), turned on him; his absences from the Committee and Convention let his adversaries organise (Larousse).",
+   "At the session of 9 Thermidor Tallien and Billaud-Varenne interrupted Saint-Just's speech with accusations; Robespierre was prevented from speaking (Larousse: drowned out by the president's bell; Hérodote: shouted down).",
+   "Louchet and Loiseau (Larousse: 'Loseau') obtained the arrest of Robespierre, Couthon, Saint-Just, Robespierre the younger and Le Bas (Larousse; Hérodote names Louchet and the same prisoners).",
+   "The Commune proclaimed an insurrection; insurgents freed the arrested deputies, who met at the Hôtel de Ville; the Robespierrists gave no orders (Larousse; Hérodote: Robespierre asked 'in whose name?').",
+   "The Convention outlawed the Commune rebels and called on the moderate sections (Larousse).",
+   "At about 2 a.m. troops of the moderate sections led by Barras invaded the Hôtel de Ville (Larousse; Hérodote: Barras gathered troops and entered the Hôtel de Ville); Robespierre was wounded in the jaw by a pistol shot (Hérodote); Larousse: he had tried to kill himself.",
+   "On 10 Thermidor (28 July 1794) Robespierre was guillotined with Saint-Just, Couthon and his brother; Larousse: 22 that evening and 71 on the 11th; Hérodote: about twenty others, and some 80 more the following day.",
+   "The victors, the Thermidorians, freed suspects and ended the Terror (Hérodote); the Thermidorian reaction followed (Larousse); Hérodote: a new constitution in 1795 and the Directory; EBSCO: the Terror ended with Robespierre's execution."
+  ],
+  "disagree": "Executions: Larousse 22 on 10 Thermidor and 71 on 11 Thermidor; Hérodote 'about twenty' with Robespierre and some 80 the next day. The jaw wound: Larousse says Robespierre had tried to kill himself; Hérodote says only that he was wounded by a pistol shot. Hérodote names Cambon as the deputy who first accused Robespierre; Larousse names Tallien and Billaud-Varenne. Date: the event record's 26 July 1794 (8 Thermidor, the day of Robespierre's last speech) is corrected to 27 July (9 Thermidor), the date given by Larousse and Hérodote. Wikipedia (Fall of Maximilien Robespierre) refused automated requests (429) during this batch and was not used.",
+  "checked": null
  }
 }
