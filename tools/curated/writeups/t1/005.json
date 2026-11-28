@@ -2532,5 +2532,101 @@
   ],
   "disagree": "Army sizes: about 50,000 on each side (Medievalists.net), or 60,000-70,000 Hungarians against a larger Mongol army (HistoryNet). Hungarian dead: 40,000 to 65,000 depending on the source (HistoryNet).",
   "checked": null
+ },
+ "Q543165": {
+  "title": "Battle of Fort Sumter",
+  "y": 1861,
+  "place": "Confederate States of America",
+  "paras": [
+   "The bombardment of Fort Sumter, a federal fort in the harbour of Charleston, South Carolina, on 12-13 April 1861 was the opening engagement of the American Civil War. After Abraham Lincoln's election as president in 1860, South Carolina and six other Southern states seceded from the Union and formed the Confederate States of America. The seceding states seized most federal forts and property within their borders; Fort Sumter, held by a small U.S. Army garrison under Major Robert Anderson, was one of the few major posts the United States still held in the South.",
+   "Anderson had moved his men from Fort Moultrie, which could not be defended against attack by land, to the stronger Fort Sumter, but his supplies were running low, and a ship sent with reinforcements was driven off by fire from shore. Lincoln, who in his inaugural address had called secession unconstitutional, decided to try to resupply the fort. The Confederate government ordered Brigadier General P. G. T. Beauregard, commanding at Charleston, to demand the fort's evacuation and, if refused, to reduce it; Anderson refused.",
+   "At 4:30 a.m. on 12 April the Confederate batteries ringing the harbour opened fire. The garrison could not reply effectively. Fires broke out inside the fort, and at 2:30 p.m. on 13 April Anderson surrendered, after about 34 hours of bombardment (the American Battlefield Trust says nearly 36). He was allowed to leave with the honours of war and evacuated the fort the next day; according to the Trust, the only deaths came when a round exploded during his 100-gun salute to the flag, killing Private Daniel Hough and mortally wounding another soldier. Anderson's men sailed to New York, where they were greeted as heroes.",
+   "The North and the South at once called for volunteers to mobilise for war. The Confederates kept Fort Sumter for the rest of the war, withstanding a Union siege from 1863 to 1865 that reduced most of it to rubble."
+  ],
+  "sources": [
+   {
+    "url": "https://www.battlefields.org/learn/civil-war/battles/fort-sumter",
+    "title": "Fort Sumter Battle Facts and Summary",
+    "publisher": "American Battlefield Trust",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.archives.gov/milestone-documents/telegram-announcing-the-surrender-of-fort-sumter",
+    "title": "Telegram Announcing the Surrender of Fort Sumter (1861)",
+    "publisher": "U.S. National Archives",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     8,
+     9,
+     10,
+     15
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/fort-sumter-capture",
+    "title": "Fort Sumter, Capture of (The Oxford Companion to American Military History)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.nps.gov/fosu/learn/historyculture/index.htm",
+    "title": "History & Culture - Fort Sumter and Fort Moultrie National Historical Park",
+    "publisher": "U.S. National Park Service",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "The bombardment of Fort Sumter in Charleston Harbor, 12-13 April 1861, was the opening engagement of the American Civil War.",
+   "After Lincoln's election in 1860, seven Southern states, beginning with South Carolina, seceded and formed the Confederate States of America.",
+   "The seceding states seized most federal forts and property; Fort Sumter, under Major Robert Anderson, was one of the few major posts the United States still held.",
+   "In his inaugural address Lincoln declared secession unconstitutional.",
+   "Anderson had moved his garrison from Fort Moultrie, which could not be defended against a land attack, to Fort Sumter.",
+   "Anderson's supplies were running low; the Star of the West, sent with reinforcements and provisions, was fired on and turned back; Lincoln announced that he would try to resupply the fort.",
+   "The Confederate government ordered Beauregard to demand the evacuation of the fort and, if refused, to reduce it; Anderson refused.",
+   "The Confederate batteries opened fire at 4:30 a.m. on 12 April 1861.",
+   "The fort could not reply effectively; fires broke out inside it.",
+   "Anderson surrendered at 2:30 p.m. on 13 April after about 34 hours (American Battlefield Trust: nearly 36 hours) and evacuated the garrison the next day.",
+   "Anderson surrendered with the honours of war.",
+   "The fort's guns could not reply effectively (Oxford Companion; the American Battlefield Trust describes the garrison as outgunned).",
+   "The only deaths came when a round exploded during the 100-gun salute, killing Private Daniel Hough and mortally wounding another soldier; Anderson's men were greeted as heroes in New York.",
+   "Both North and South immediately called for volunteers to mobilise for war.",
+   "The Confederates at Fort Sumter withstood a 22-month Union siege from 1863 to 1865, which reduced most of the fort to rubble."
+  ],
+  "disagree": "Length of the bombardment: 34 hours (National Archives) or nearly 36 hours (American Battlefield Trust). The date of the surrender demand is given as 10 April (National Archives) or as the day after a Confederate cabinet decision of 9 April (American Battlefield Trust).",
+  "checked": null
  }
 }
