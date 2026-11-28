@@ -3862,5 +3862,82 @@
   ],
   "disagree": "Date of the first occupation (17 February 1510 in Wikipedia and Barros; 1 or 3 March in Correa and the Commentaries); date of the Bijapur reoccupation (11 or 17 May); length of the sack (four or three days); casualties (Albuquerque's estimate of some 6,800 enemy dead and 50 Portuguese dead in Wikipedia; at least 2,000 garrison dead and 40 Portuguese dead in Stephens). All stated in the text.",
   "checked": null
+ },
+ "Q4110453": {
+  "title": "Portuguese capture of Malacca",
+  "y": 1511,
+  "place": "Malacca, Malaysia",
+  "paras": [
+   "Malacca, ruled by Sultan Mahmud Shah, controlled the narrow strait through which the sea trade between India and China passed, and its harbour was crowded with merchants from Gujarat, Java, China and many other lands. In 1509 a Portuguese squadron under Diogo Lopes de Sequeira came to open trade. The powerful Gujarati and Javanese merchant communities, fearing Portuguese competition, persuaded the sultan to turn on the visitors: the ships were attacked, and the factor Rui de Araújo and some twenty men ashore were taken prisoner. Sequeira sailed away without them.",
+   "Afonso de Albuquerque, governor of Portuguese India, sailed from Cochin in April 1511 with 18 ships. Wikipedia gives about 1,000 men (the Italian Giovanni da Empoli, who sailed with the fleet, counted 1,500 Portuguese and 800 allies); H. Morse Stephens, in his Albuquerque (1892), gives 1,400 men. At Pedir in Sumatra he picked up nine prisoners who had escaped from Malacca. Before Malacca he demanded the captives' release while the sultan stalled; after Albuquerque had ships and waterfront houses set on fire, the prisoners were handed over. Convinced that Mahmud was playing for time until the monsoon would trap the fleet, Albuquerque attacked.",
+   "The first assault, on 25 July (St James's day) according to Stephens, was aimed at the bridge that joined the two halves of the city. The Portuguese took it and beat off a charge of the sultan's war elephants, but exhausted by counter-attacks they set fire to part of the city and withdrew to the ships. Albuquerque then persuaded his captains that Malacca must be held with a fortress, to cut off the spice trade that ran through it to Cairo and Mecca. A second landing retook the bridge, and after days of bombardment and street fighting Albuquerque took full control of the city on 24 August. The city was sacked for three days, but the property of the Chinese, Hindus and Peguans, who had sided with the Portuguese, was spared. Wikipedia reports 28 Portuguese killed in the operation.",
+   "Albuquerque built the fortress later known as A Famosa, put the Hindu merchant Nina Chatu, who had helped the captives, at the head of the Hindu community, and sent envoys to Ayutthaya and other neighbours. Mahmud Shah fled and ruled in exile from Kampar in Sumatra until his death in 1527; his son founded the Sultanate of Johor."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Malacca_%281511%29",
+    "title": "Capture of Malacca (1511) (rev 1383524817, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://archive.org/download/rulersofindiaalb31226gut/31226-8.txt",
+    "title": "H. Morse Stephens, Albuquerque (Rulers of India, Oxford, 1892), chapter on Malacca, Project Gutenberg text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Malacca controlled the strait through which sea trade between China and India passed; many merchant communities including Gujaratis, Javanese, Chinese (Wikipedia; Stephens).",
+   "Sultan Mahmud (Shah) ruled Malacca (Wikipedia; Stephens: the Sultan).",
+   "Sequeira's squadron reached Malacca in 1509 (Wikipedia: September 1509; Stephens).",
+   "Gujarati and Javanese merchants convinced the sultan to betray the Portuguese; ships attacked; Rui de Araújo and about twenty men captured; Sequeira sailed away (Wikipedia; Stephens).",
+   "Albuquerque left Cochin in April 1511 with 18 ships (Wikipedia; Stephens: eighteen ships).",
+   "Men: about 1,000 (Wikipedia); da Empoli 1,500 Portuguese and 800 allies (Wikipedia); Stephens 1400 (attributed).",
+   "Nine escaped prisoners found at Pedir in Sumatra (Wikipedia; Stephens).",
+   "Negotiations over the prisoners; after boats set fire to ships and waterfront houses the sultan released them (Stephens; Wikipedia: messages from the captives).",
+   "Albuquerque concluded the sultan was delaying until the monsoon change, and attacked (Stephens).",
+   "First assault on the bridge on 25 July, St James's day (Stephens, attributed); bridge taken; elephants (Wikipedia; Stephens).",
+   "War elephants charge repelled (Wikipedia); Portuguese withdrew to ships after setting fire to the city (Stephens; Wikipedia: first assault followed by second).",
+   "Albuquerque's council speech: fortress needed to cut the spice trade to Cairo and Mecca (Wikipedia: meeting of 8 August; Stephens: Commentaries' version of the speech).",
+   "Second assault retook the bridge; days of bombardment; full control on 24 August (Wikipedia; Stephens: second attack completely successful).",
+   "Orderly sack for three days; property of Chinese, Hindus and Peguans spared (Wikipedia); 28 Portuguese killed (Wikipedia, attributed).",
+   "Fortress A Famosa built (Wikipedia; Stephens: began building a fortress); Nina Chatu made head of the Hindus (Stephens; Wikipedia: Nina Chatu interceded for the Portuguese); envoys to Ayutthaya (Wikipedia).",
+   "Mahmud Shah retreated to Kampar, Sumatra, government in exile until his death in 1527; his son Alauddin founded the Sultanate of Johor (Wikipedia)."
+  ],
+  "disagree": "Size of Albuquerque's force: about 1,000 men (Wikipedia), 1,500 Portuguese and 800 allies (Giovanni da Empoli, cited by Wikipedia), 1,400 men (Stephens). Stated in the text.",
+  "checked": null
  }
 }
