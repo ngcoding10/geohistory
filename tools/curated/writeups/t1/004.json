@@ -1639,5 +1639,688 @@
    "result": "Claims 2, 3 and 7 checked: Hulagu destroyed Alamut; the caliph rejected the offer to surrender; most of the defences were destroyed by early February. Consistent.",
    "errors": 0
   }
+ },
+ "Q244356": {
+  "title": "Battle of Ain Jalut",
+  "y": 1260,
+  "place": "Mamluk Sultanate",
+  "paras": [
+   "On 3 September 1260 the army of the Mamluk Sultanate of Egypt, led by Sultan Qutuz with Baybars commanding the vanguard, defeated a Mongol army of Hulegu's Ilkhanate near the spring of Ain Jalut ('Goliath's spring') in the Jezreel Valley, below Mount Gilboa in present-day Israel. The Mongols were commanded by Kitbuqa, a Nestorian Christian general, and their army included contingents from the Kingdom of Georgia and Cilician Armenia, which had submitted to the Mongols, together with Syrian troops who had served the Ayyubids.",
+   "The battle followed the Mongol conquest of the Middle East: Hulegu had sacked Baghdad in 1258 and taken Aleppo and Damascus in 1260. He sent envoys to Cairo demanding that Qutuz surrender; Qutuz had them killed and their heads displayed on the Bab Zuweila gate. When news came that the Great Khan Möngke had died, Hulegu withdrew most of his army eastward for the succession, leaving Kitbuqa in Syria with a much smaller force, about one tumen of nominally 10,000 men according to Wikipedia's account, or 20,000 according to David Tschanz in AramcoWorld (the Mamluk chronicler al-Yunini's 100,000 is thought exaggerated).",
+   "Qutuz seized the chance to attack. His army left Cairo on 26 July 1260, and Baybars's vanguard drove a small Mongol force out of Gaza. The Franks of Acre, after long debate, stayed neutral but let the Mamluks pass and buy supplies. At Ain Jalut Baybars engaged the Mongols and then fell back in a feigned retreat, drawing them towards Mamluk troops hidden in the surrounding hills. A Mongol charge almost broke the Mamluk left wing, until Qutuz threw down his helmet so his men could see him and rallied them with cries for Islam. The Mongols were driven back towards Beisan (Bisan) and Kitbuqa was killed; AramcoWorld says his horse was shot, and he was captured and executed.",
+   "The victory was the first major defeat of the Mongol advance, and the Mongols never conquered Syria or Egypt. Within weeks the Mamluks took Damascus and Aleppo. On the march back to Cairo, Qutuz was murdered by emirs in a conspiracy led by Baybars, who became sultan. Hulegu, drawn into war with his cousin Berke of the Golden Horde, could not mount a full campaign of revenge, and the Mamluk state went on to dominate the region and, by 1291, to take the last Crusader strongholds in the Holy Land."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Ain_Jalut",
+    "title": "Battle of Ain Jalut",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://archive.aramcoworld.com/issue/200704/history.s.hinge.ain.jalut.htm",
+    "title": "History's Hinge: 'Ain Jalut (David W. Tschanz, July/August 2007)",
+    "publisher": "Saudi Aramco World",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "On 3 September 1260 the Mamluks under Qutuz, with Baybars leading the vanguard, defeated the Mongols near the spring of Ain Jalut ('Spring of Goliath') in the Jezreel Valley below Mount Gilboa.",
+   "Kitbuqa, a Nestorian Christian, commanded; the Mongol army included Georgian and Cilician Armenian contingents and Syrian Ayyubid-era troops.",
+   "Hulegu sacked Baghdad in 1258 and took Aleppo and Damascus.",
+   "Hulegu's envoys demanded Qutuz's surrender; Qutuz had them killed (Wikipedia: heads displayed on Bab Zuweila).",
+   "After Möngke's death Hulegu withdrew most of his army, leaving Kitbuqa with a smaller force: one tumen of nominally 10,000 (Wikipedia) or 20,000 (AramcoWorld); al-Yunini's 100,000 is thought exaggerated (Wikipedia).",
+   "Qutuz's army left Cairo on 26 July 1260.",
+   "Baybars's vanguard defeated a small Mongol force at Gaza.",
+   "The Franks of Acre after debate stayed neutral but allowed passage and the purchase of supplies.",
+   "Baybars engaged and then made a feigned retreat, drawing the Mongols towards Mamluk forces hidden in the hills.",
+   "A Mongol attack nearly broke the Mamluk left; Qutuz threw down his helmet and rallied his troops.",
+   "The Mongols were driven towards Beisan and Kitbuqa was killed (AramcoWorld: unhorsed, captured and executed).",
+   "The Mamluks then took Damascus and Aleppo.",
+   "On the way back to Cairo, Qutuz was killed by emirs in a plot led by Baybars, who became sultan; the battle was the first major halt to the Mongol advance.",
+   "Hulegu's conflict with Berke of the Golden Horde prevented full revenge; the Mamluks took the last Crusader states by 1291."
+  ],
+  "disagree": "Size of Kitbuqa's army: about one tumen, nominally 10,000 (10,000–12,000 in Wikipedia's account) against 20,000 in AramcoWorld; al-Yunini's 100,000 is regarded as exaggerated. Wikipedia says the Mongols reached Ain Jalut first and took up position; AramcoWorld has Qutuz establishing positions there first. Kitbuqa's death: killed in the battle (Wikipedia) or captured and executed (AramcoWorld).",
+  "checked": null
+ },
+ "Q154031": {
+  "title": "German Peasants' War",
+  "y": 1524,
+  "place": "Holy Roman Empire Minor States",
+  "paras": [
+   "The German Peasants' War of 1524–1525 was a series of uprisings by peasants, joined in places by townspeople, some clergy and a few knights, against the lords, princes and church landowners of the Holy Roman Empire. It began in the south-west of present-day Germany and in Alsace and spread to Franconia, Thuringia and Austria. It was the largest popular revolt in Europe before the French Revolution. On the other side stood the princes and the Swabian League, a union of princes and towns, whose army was led by Georg, Truchsess von Waldburg.",
+   "The first outbreak came in 1524 at Stühlingen, south of the Black Forest, where about 1,200 peasants gathered against their lords; on 24 August 1524 Hans Müller von Bulgenbach formed them into an 'Evangelical Brotherhood' (EBSCO's account dates the first rising to June 1524). By early 1525 revolts had broken out around Lake Constance, in Upper Swabia and in Württemberg. In March 1525 the Upper Swabian peasant bands met at Memmingen, formed a 'Christian Association' and adopted the Twelve Articles, which demanded that communities elect their own pastors, that tithes be reformed, that serfdom be abolished and that rights to woods, water, game and fish, limits on labour services and rents, and fair justice be restored. Printed more than 25,000 times in two months according to Wikipedia, the articles became the model programme for rebels elsewhere.",
+   "The causes were both economic and religious: heavy dues, tithes and taxes, the spread of serfdom and the lords' attempts to restrict common rights, combined with Reformation ideas that the peasants read as support for their claims. Radical preachers such as Thomas Müntzer backed the revolt, but Martin Luther, after first urging both sides to make peace, condemned it in May 1525 in his pamphlet against the 'murderous, thieving hordes' of peasants and called on the princes to crush them.",
+   "The poorly armed and loosely led peasant bands were no match for the mercenary armies of the princes, which grew as troops returned from Charles V's wars in Italy. The Truchsess's Swabian League forces defeated the rebels in a series of battles in spring 1525, including Leipheim in April and Böblingen in May. On 15 May 1525 the armies of Philip of Hesse and Duke George of Saxony destroyed Müntzer's peasant army at Frankenhausen in Thuringia; Müntzer was captured, tortured and executed. Fighting continued in the Tyrol under Michael Gaismair until 1526.",
+   "The aristocracy's forces killed up to 100,000 of the roughly 300,000 peasants who took part, according to Wikipedia's figures. The survivors were fined, the old order was restored, often in harsher form, and the peasants won few of their aims; only in a few districts did they obtain concessions."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/German_Peasants%27_War",
+    "title": "German Peasants' War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/german-peasants-war/",
+    "title": "German Peasants' War",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The war (1524–1525; EBSCO 1524–1526) was a series of uprisings by peasants, with some townspeople, clergy and knights, against lords and princes; the largest popular revolt in Europe before the French Revolution (Wikipedia) / one of the largest and most significant peasant revolts (EBSCO).",
+   "It began in south-western Germany and Alsace and spread to central Germany and Austria (Franconia, Thuringia, Tyrol).",
+   "The Swabian League, a union of princes and towns, opposed the peasants with an army under Georg Truchsess von Waldburg.",
+   "The first outbreak was at Stühlingen in the Black Forest region, with about 1,200 peasants.",
+   "Hans Müller von Bulgenbach formed an Evangelical Brotherhood (Wikipedia: 24 August 1524; EBSCO: first outbreak June 1524).",
+   "By early 1525 revolts spread around Lake Constance, Upper Swabia and Württemberg.",
+   "In March 1525 the Upper Swabian bands met at Memmingen, formed the Christian Association and adopted the Twelve Articles.",
+   "The Twelve Articles demanded election of pastors, tithe reform, abolition of serfdom, rights to woods, water, game and fish, limits on dues/labour and fair justice; they became the model for rebels elsewhere.",
+   "Wikipedia: the Twelve Articles were printed over 25,000 times in two months.",
+   "Causes: heavy dues, tithes and taxes, serfdom, restriction of common rights, and Reformation ideas.",
+   "Müntzer supported the revolt; Luther first urged peace, then in May 1525 condemned the peasants in a pamphlet against the murderous, thieving hordes and urged princes to crush them.",
+   "The princes' mercenary armies, reinforced by troops returning from Italy, defeated the poorly armed peasants; battles included Leipheim (April) and Böblingen (May 1525).",
+   "On 15 May 1525 the armies of Philip of Hesse and Duke George of Saxony defeated Müntzer's army at Frankenhausen; Müntzer was captured, tortured and executed.",
+   "Fighting continued in Tyrol under Michael Gaismair until 1526 (EBSCO).",
+   "Up to 100,000 of about 300,000 peasants were killed (Wikipedia); survivors were fined, the old order restored, often harsher; few gains, concessions in only a few districts (EBSCO)."
+  ],
+  "disagree": "Start: Wikipedia dates the Stühlingen rising to the 1524 harvest, with Hans Müller's Evangelical Brotherhood formed on 24 August 1524; EBSCO dates the first outbreak to June 1524. End: Wikipedia gives 1524–1525; EBSCO 1524–1526, counting Gaismair's fighting in the Tyrol. Frankenhausen: Wikipedia credits the joint armies of Philip of Hesse and George of Saxony; EBSCO names Philip. Deaths: Wikipedia up to 100,000; EBSCO gives no total ('thousands').",
+  "checked": null
+ },
+ "Q154483": {
+  "title": "Augsburg Confession",
+  "y": 1530,
+  "place": "Duchy of Bavaria",
+  "paras": [
+   "On 25 June 1530, at the Imperial Diet held in Augsburg, a group of Lutheran princes and free cities presented Emperor Charles V with the Augsburg Confession (Confessio Augustana), a statement of their faith that became the main confession of the Lutheran churches. Charles had summoned the diet to restore religious and political unity in the Empire and to rally support against the Ottoman threat after the siege of Vienna. Its signatories included Elector John of Saxony, Landgrave Philip of Hesse, Margrave George of Brandenburg-Ansbach, Duke Ernest of Lüneburg, Prince Wolfgang of Anhalt and the cities of Nuremberg and Reutlingen.",
+   "The text was drafted by Philipp Melanchthon, the Wittenberg professor and Luther's close colleague, building on the earlier Schwabach and Torgau Articles. Luther, an outlaw under the Edict of Worms, could not attend; he stayed at Coburg and approved the draft. Melanchthon's language was conciliatory and stressed agreement with Scripture and the ancient church. The confession has 28 articles: 21 set out the Lutherans' doctrine, including justification by faith alone, and seven describe abuses they wanted corrected, such as compulsory clerical celibacy, the Mass as a sacrifice and monastic vows. The Saxon chancellor Christian Beyer read the German text aloud to the diet; it took about two hours.",
+   "Reconciliation failed. Catholic theologians drew up a Confutation, which Charles declared had refuted the Lutherans, and he gave them until April 1531 to comply. Melanchthon answered with the Apology of the Augsburg Confession, which the emperor refused to accept. The Lutheran princes formed the Schmalkaldic League for their defence; the conflict led to the Schmalkaldic War of 1546–1547 and eventually to the Peace of Augsburg of 1555, which gave legal standing to those who held the Augsburg Confession. The unaltered confession was included in the Book of Concord of 1580 and remains the basic statement of Lutheran faith; an English translation of 1536 also influenced the Church of England's articles of faith."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Augsburg_Confession",
+    "title": "Augsburg Confession",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/literature-and-writing/augsburg-confession-faith-philipp-melanchthon/",
+    "title": "The Augsburg Confession of Faith by Philipp Melanchthon",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "On 25 June 1530 at the Diet of Augsburg Lutheran princes and free cities presented the Augsburg Confession to Charles V; it became the primary Lutheran confession.",
+   "Charles had called the diet to restore religious unity and gain support against the Ottomans/Turkish threat.",
+   "Signatories included John of Saxony, Philip of Hesse, George of Brandenburg, Ernest of Lüneburg, Wolfgang of Anhalt, Nuremberg and Reutlingen.",
+   "Melanchthon drafted it from the Schwabach and Torgau Articles (Wikipedia also names Luther and others as contributors).",
+   "Luther, an outlaw since Worms, could not attend; he stayed at Coburg and approved the draft.",
+   "Melanchthon's language was conciliatory and linked Lutheran teaching to Scripture and the ancient church.",
+   "28 articles: 21 of doctrine (including justification by faith alone) and 7 on abuses (celibacy, Mass as sacrifice, monastic vows).",
+   "Christian Beyer read the German text to the diet.",
+   "Catholic theologians wrote a Confutation; Charles declared it a refutation; Melanchthon answered with the Apology, which the emperor would not accept.",
+   "Charles gave the Lutherans until 15 April 1531; Wikipedia says the reading lasted two hours.",
+   "The Schmalkaldic League followed, then the Schmalkaldic War (1546–1547) and the Peace of Augsburg (1555) giving Lutheranism legal status.",
+   "The unaltered confession is in the Book of Concord (1580); an English translation appeared in 1536 and influenced the Anglican articles."
+  ],
+  "disagree": "Authorship: Wikipedia's lead says it was written by Luther, Melanchthon and two others; EBSCO and Wikipedia's narrative describe Melanchthon drafting it from the Schwabach and Torgau Articles, with Luther approving it from Coburg.",
+  "checked": null
+ },
+ "Q154577": {
+  "title": "Peace of Augsburg",
+  "y": 1555,
+  "place": "Duchy of Bavaria",
+  "paras": [
+   "The Peace of Augsburg, proclaimed on 25 September 1555 at the end of an Imperial Diet in the city of Augsburg, was the settlement between the Catholic and Lutheran estates of the Holy Roman Empire. It was negotiated and issued by Ferdinand, King of the Romans, acting for his brother Emperor Charles V, who stayed away from the diet because he could not bring himself to concede permanent rights to the Protestants. It followed the Schmalkaldic War of 1546–1547, which Charles won, the Augsburg Interim of 1548 that he imposed afterwards, and the revolt of the Protestant princes under Maurice of Saxony in 1552, which forced the emperor to agree at Passau to a truce until a diet could settle the religious question. That diet finally met in Augsburg in February 1555.",
+   "The Peace allowed each ruling prince of the Empire to choose either Catholicism or Lutheranism, the faith of the Augsburg Confession of 1530, for his territory, a rule later summed up by lawyers as cuius regio, eius religio ('whose realm, his religion'). Subjects who did not share their ruler's faith could emigrate with their property. Two exceptions softened the rule: under the 'ecclesiastical reservation' a bishop or other church prince who turned Protestant had to give up his office and lands, so his territory stayed Catholic; and under a separate declaration by Ferdinand, Lutheran knights and towns in church territories could keep their religion. All other confessions, including Zwinglians, Calvinists and Anabaptists, were excluded.",
+   "Both sides accepted the compromise reluctantly and regarded it as provisional until Christian unity was restored. It brought decades of relative peace, but disputes over church lands that passed to Protestant rulers and the spread of Calvinism, which the Peace did not recognise, undermined it in the early 17th century and fed into the Thirty Years' War. The Peace of Westphalia of 1648 restored it and extended it to the Reformed (Calvinist) confession."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Peace_of_Augsburg",
+    "title": "Peace of Augsburg",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/peace-augsburg/",
+    "title": "Peace of Augsburg",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     6,
+     7,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/ghdi:document-4386",
+    "title": "The Religious Peace of Augsburg (September 25, 1555), introduction and translated text",
+    "publisher": "German History in Documents and Images, German Historical Institute Washington",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The Peace of Augsburg was dated/proclaimed 25 September 1555 at the Diet in Augsburg.",
+   "It was negotiated and issued by Ferdinand, King of the Romans, on behalf of Charles V.",
+   "Charles did not attend; EBSCO: he recognised the need for accommodation but could not bring himself to grant it.",
+   "It followed the Schmalkaldic War of 1546–1547 and the Augsburg Interim of 1548.",
+   "The 1552 revolt of Maurice of Saxony and the Treaty/Peace of Passau led to a diet to settle religion.",
+   "The diet met in Augsburg in 1555 (EBSCO: February 1555; GHDI: transferred to Augsburg after an Ulm diet called for 1553 failed to meet).",
+   "Rulers could choose Catholicism or Lutheranism (the Augsburg Confession); later summed up as cuius regio, eius religio.",
+   "Dissenting subjects could emigrate with their property.",
+   "Ecclesiastical reservation: a spiritual prince who left the old religion had to give up his office; the territory stayed Catholic.",
+   "The Declaratio Ferdinandei protected Lutheran knights and towns; other confessions (Zwinglians, Calvinists, Anabaptists) were excluded.",
+   "Both sides accepted it as provisional pending restoration of religious unity.",
+   "Disputes over church properties passing to Protestants and the spread of Calvinism undermined it, leading towards the Thirty Years' War.",
+   "The Peace of Westphalia (1648) restored it and opened it to Calvinists."
+  ],
+  "disagree": "Wikipedia's lead calls it a treaty between Charles V and the Schmalkaldic League; GHDI's text and EBSCO describe it as the recess of the Imperial Diet issued by Ferdinand for the emperor, and the League had been defeated in 1547. Wikipedia says the requirement for a converting prelate to resign was not spelled out in the agreement, but § 18 of the text (GHDI translation) orders him to give up his office and benefices.",
+  "checked": null
+ },
+ "Q4373": {
+  "title": "Battle of White Mountain",
+  "y": 1620,
+  "place": "Holy Roman Empire",
+  "paras": [
+   "On 8 November 1620, on the White Mountain (Bílá hora), a low plateau on the western edge of Prague, the army of the rebel Bohemian estates and their elected king, Frederick V of the Palatinate, commanded by Prince Christian of Anhalt, was routed by the forces of Emperor Ferdinand II: imperial troops under the Count of Bucquoy and the army of the Catholic League under Count Tilly, with Spanish-sent reinforcements. It was the first decisive battle of the Thirty Years' War.",
+   "The war had begun with the Bohemian revolt of 1618. Bohemia was largely Protestant and had been promised religious freedom by Rudolf II's Letter of Majesty of 1609, but Ferdinand, named heir to the Bohemian crown in 1617, pressed re-Catholicisation. In May 1618 Protestant nobles threw two imperial representatives from a window of Prague Castle (the Defenestration of Prague). In 1619 the Bohemian estates deposed Ferdinand, who had meanwhile become emperor, and chose the Calvinist Frederick as king. Ferdinand found strong allies: Spain, Maximilian of Bavaria at the head of the Catholic League, and even Lutheran Saxony, while Frederick received little help from the Protestant Union or his father-in-law, James I of England.",
+   "In autumn 1620 the imperial and League armies, about 25,000 men, marched on Prague. Christian of Anhalt got ahead of them and took up position on the White Mountain with about 15,000 men, many of them poorly trained and unpaid. The imperial side attacked; the Bohemian flank gave way, a counter-charge by Anhalt's cavalry was beaten back, and the demoralised Bohemian infantry retreated, many units without fighting. The battle was over in an hour according to Wikipedia, or within two hours according to EBSCO; Wikipedia puts the Protestant losses at about 4,000 killed or captured against some 700 on the imperial side.",
+   "Imperial forces entered Prague the next day and the revolt collapsed. Frederick fled after a single winter on the throne, which earned him the nickname 'the Winter King', and lived out his life in exile in the Dutch Republic. Twenty-seven leaders of the rising were executed in Prague's Old Town Square, rebels' estates were confiscated and sold to Catholic loyalists, and Protestants were forced to convert or leave; much of the Protestant nobility and many scholars went into exile. Bohemia's autonomy was sharply curtailed and the Czech lands were re-Catholicised under Habsburg rule, while the wider war spread into Germany and lasted until 1648."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_White_Mountain",
+    "title": "Battle of White Mountain",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/battle-white-mountain",
+    "title": "Battle of White Mountain",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "On 8 November 1620 at White Mountain, a low plateau/hill on the western edge of Prague, the Bohemian army of Frederick V under Christian of Anhalt was defeated.",
+   "The victors were imperial troops under Bucquoy and the Catholic League army under Tilly, with Spanish support.",
+   "It was the first decisive battle of the Thirty Years' War (EBSCO); fought in the war's early stages (Wikipedia).",
+   "Bohemia was largely Protestant; the Letter of Majesty (1609) had guaranteed religious freedom; Ferdinand, named successor in 1617, pressed re-Catholicisation.",
+   "In May 1618 Protestant nobles threw imperial representatives from a window of Prague Castle (Defenestration).",
+   "In 1619 the Bohemians repudiated Ferdinand and chose the Calvinist Frederick V as king.",
+   "Ferdinand was supported by Spain, Maximilian of Bavaria/Catholic League and Saxony; Frederick got little help from the Protestant Union or James I.",
+   "The imperial/League armies numbered about 25,000; Anhalt had about 15,000, many poorly trained and unpaid.",
+   "Anhalt reached the White Mountain ahead of the imperial army; the Bohemian flank gave way, the cavalry was beaten back and the infantry retreated.",
+   "The battle lasted about an hour (Wikipedia) or under two hours (EBSCO); Wikipedia: about 4,000 Protestants killed or captured, about 700 imperial losses.",
+   "Imperial forces entered Prague the next day; Frederick fled (the 'Winter King') and lived in exile in the Netherlands.",
+   "Twenty-seven rebel leaders were executed in the Old Town Square; property was confiscated; Protestants had to convert or leave; much of the nobility went into exile.",
+   "Bohemian autonomy was curtailed and the Czech lands re-Catholicised; the war continued until 1648."
+  ],
+  "disagree": "Length of the battle: about an hour (Wikipedia) or within two hours (EBSCO). Wikipedia says Frederick first fled into Silesia; EBSCO that he went into exile in the Netherlands, where he lived for the rest of his life.",
+  "checked": null
+ },
+ "Q208156": {
+  "title": "Mongol invasions of Japan",
+  "y": 1274,
+  "place": "Kamakura Shogunate",
+  "paras": [
+   "In 1274 and again in 1281 Kublai Khan, Mongol Great Khan and founder of China's Yuan dynasty, sent invasion fleets from Korea and China against Japan, which was ruled by the Kamakura shogunate under the Hōjō regents, led by Hōjō Tokimune. The invading armies included Mongol, Chinese and Korean troops, Korea (Goryeo) having become a Mongol vassal that was made to build and man much of the fleet. Both attempts failed.",
+   "From the late 1260s Kublai sent letters and envoys demanding that Japan establish relations and submit, with a veiled threat of force; the Japanese court and shogunate gave no reply. In November 1274 a fleet of several hundred ships carrying about 30,000 men, by the usual figures, ravaged the islands of Tsushima and Iki and on 19 November entered Hakata Bay in northern Kyushu. Samurai used to individual combat were thrown back by the invaders' massed tactics, arrows and exploding bombs, which used gunpowder still unknown in Japan. Yet by the next morning the fleet had gone. Why is disputed: the traditional account blames a storm, and Chinese records say many ships were wrecked; other historians point to losses and divisions among the commanders, or argue the attack was meant only as a show of force or reconnaissance; the historian Hattori Hideo argues that the invaders stayed for several days before a storm drove them off.",
+   "When Kublai sent more envoys, Tokimune had them executed, and the shogunate built a stone defensive wall of some 20 km around Hakata Bay. The second invasion of 1281, launched after the Yuan had conquered the Southern Song, was far larger: the Yuan histories speak of about 140,000 soldiers and sailors in an eastern fleet from Korea and a southern fleet from China, though modern historians consider this exaggerated (estimates range from about 14,000 to 70,000). The wall and Japanese raids kept the invaders from establishing a beachhead for about two months, until a great typhoon in August 1281 (15 August in Wikipedia's dating; 23 August in Kawai Atsushi's article) wrecked most of the fleet. Many survivors stranded on the shore were killed or enslaved.",
+   "The storms were credited to divine intervention and named kamikaze, 'divine wind', a belief that Japan would be protected that was revived for the suicide pilots of the Second World War. The defensive victory brought no conquered land with which to reward the warriors who had fought at their own expense, which weakened the Kamakura shogunate, which fell in 1333. The invasions also marked a limit to Mongol expansion."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Mongol_invasions_of_Japan",
+    "title": "Mongol invasions of Japan",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.nippon.com/en/japan-topics/g01214/saved-by-the-wind-the-mongol-invasions-of-japan.html",
+    "title": "Saved by the Wind? The Mongol Invasions of Japan (Kawai Atsushi)",
+    "publisher": "Nippon.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.nippon.com/en/japan-topics/c13702/the-battle-of-bun%E2%80%99ei-the-first-mongol-invasion-of-japan.html",
+    "title": "The Battle of Bun'ei: The First Mongol Invasion of Japan",
+    "publisher": "Nippon.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Kublai Khan, founder of the Yuan, sent invasions of Japan in 1274 and 1281; both failed.",
+   "Japan was ruled by the Kamakura shogunate under the Hōjō regents (Tokimune).",
+   "The invaders included Mongol, Chinese and Korean troops; Goryeo was a vassal that built ships and supplied troops.",
+   "From the late 1260s Kublai sent letters/envoys demanding relations and submission with a veiled threat; Japan did not reply.",
+   "In November 1274 a fleet of several hundred (about 900) ships with about 30,000 men attacked Tsushima and Iki and entered Hakata Bay on 19 November.",
+   "Samurai used to single combat struggled against massed tactics, arrows and exploding gunpowder bombs (gunpowder unknown in Japan).",
+   "By the next morning the fleet was gone; reasons disputed: storm (traditional; History of Yuan reports ships wrecked), losses/divisions, reconnaissance or show of force; Hattori argues several days' stay before a storm.",
+   "Tokimune executed later envoys.",
+   "The shogunate built a defensive wall of about 20 km around Hakata Bay.",
+   "The 1281 invasion followed the Yuan conquest of the Southern Song (1279).",
+   "Yuan figures of about 140,000 for 1281 are considered exaggerated; modern estimates range from about 14,000 (Conlan) to 70,000 (Rossabi).",
+   "The 1281 invasion had an eastern fleet from Korea and a southern fleet from China; the wall prevented a beachhead for about two months.",
+   "A great typhoon in August 1281 (Wikipedia 15 August; Kawai 23 August) destroyed most of the fleet; stranded survivors were killed or enslaved (Wikipedia).",
+   "The storms were called kamikaze; the idea was revived for WWII suicide pilots.",
+   "Without land to reward warriors the shogunate was weakened (fell 1333); the invasions set a limit on Mongol expansion."
+  ],
+  "disagree": "Why the 1274 fleet left is disputed: a storm (traditional account and the History of Yuan), losses and quarrels among the commanders, a deliberate withdrawal after a reconnaissance or show of force, or, in Hattori Hideo's view, a storm after several days ashore. The size of the 1281 force (about 140,000 in the Yuan sources) is thought exaggerated; Conlan suggests about 14,000, Rossabi about 70,000. The 1281 typhoon is dated 15 August by Wikipedia and 23 August by Kawai Atsushi (nippon.com); the difference probably reflects calendar conversion but neither source says so.",
+  "checked": null
+ },
+ "Q620965": {
+  "title": "Coup of 18 Brumaire",
+  "y": 1799,
+  "place": "French Directory",
+  "paras": [
+   "On 18–19 Brumaire of the Year VIII in the revolutionary calendar (9–10 November 1799), General Napoleon Bonaparte and his allies overthrew the Directory, the five-man executive that had governed the French Republic since 1795, and replaced it with the Consulate. The plot was led by Emmanuel-Joseph Sieyès, himself one of the Directors, with his fellow Director Roger Ducos, Talleyrand, the police minister Fouché, Napoleon's brother Lucien, who presided over the Council of Five Hundred, and generals including Murat and Lannes. On the other side were the Directors Gohier, Moulin and Barras and, in the legislature, Jacobin deputies who resisted the coup.",
+   "The Directory had become unpopular, worn down by war, unfair taxes, rising prices and repeated purges and manipulated elections. Sieyès wanted a stronger constitution and needed a general to secure the army; his first choice, General Joubert, was killed at Novi in August 1799. Napoleon returned from Egypt in October 1799 with his reputation intact and agreed to join the plot.",
+   "On 9 November the Council of Ancients (Elders) was told of a supposed Jacobin conspiracy and voted to move both legislative councils to the château of Saint-Cloud outside Paris, while Napoleon was given command of the troops in and around the capital. Sieyès and Ducos resigned as Directors, Barras was pressed into resigning, and Gohier and Moulin were placed under guard. At Saint-Cloud the next day Napoleon gave a confused speech to the Ancients and was then jostled and threatened in the Council of Five Hundred, where deputies shouted for him to be outlawed. Lucien called on the soldiers to protect the assembly from 'brigands', and grenadiers led by Murat cleared the hall. That night a rump of deputies abolished the Directory and named Napoleon, Sieyès and Ducos provisional consuls.",
+   "The Constitution of the Year VIII, adopted in December 1799, made Napoleon First Consul with most of the power; Sieyès was sidelined, and a plebiscite with officially more than three million votes in favour, figures later shown to have been inflated, approved it. France, tired of a decade of upheaval, largely accepted the new regime. Most historians see the coup as the end of the French Revolution; it opened the way to Napoleon's coronation as emperor in 1804."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Coup_of_18_Brumaire",
+    "title": "Coup of 18 Brumaire",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/napoleon-rises-power-france/",
+    "title": "Napoleon Rises to Power in France",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "On 18–19 Brumaire Year VIII (9–10 November 1799) Napoleon overthrew the Directory and established the Consulate.",
+   "Sieyès, a Director, led the plot with Ducos, Talleyrand, Fouché (Wikipedia: inner circle; EBSCO: Fouché aware but not active), Lucien Bonaparte, Murat and Lannes.",
+   "The Directors Gohier and Barras (and Moulin) and Jacobin deputies opposed or were removed.",
+   "The Directory was unpopular: war, taxes, prices, purges and manipulated elections.",
+   "Sieyès wanted a stronger constitution and sought a general; Joubert (Wikipedia: first choice) died at Novi in August 1799 (EBSCO: one general died in battle).",
+   "Napoleon returned from Egypt in October 1799 and joined the plot.",
+   "On 9 November the Ancients were told of a Jacobin plot and moved the councils to Saint-Cloud; Napoleon was given command of troops in Paris.",
+   "Sieyès and Ducos resigned; Barras was pressed to resign; Gohier and Moulin were put under guard (Wikipedia).",
+   "At Saint-Cloud Napoleon gave a rambling speech to the Ancients and was jostled in the Five Hundred amid shouts to outlaw him.",
+   "Lucien called on the troops, and soldiers led by Murat cleared the hall.",
+   "That night a rump of deputies dissolved the Directory and named Napoleon, Sieyès and Ducos provisional consuls.",
+   "The Constitution of Year VIII (adopted December 1799) made Napoleon First Consul; Sieyès was sidelined; the plebiscite's 3 million yes votes were inflated/forged (Wikipedia).",
+   "France largely accepted the regime; the coup is seen as ending the Revolution and led to the 1804 coronation."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q112183": {
+  "title": "Treaty of Amiens",
+  "y": 1802,
+  "place": "French Consulate",
+  "paras": [
+   "The Treaty of Amiens, signed in the town hall of Amiens in March 1802, made peace between Britain on one side and the French Republic and its allies Spain and the Batavian (Dutch) Republic on the other. Joseph Bonaparte signed for France, Lord Cornwallis for Britain, José Nicolás de Azara for Spain and Rutger Jan Schimmelpenninck for the Batavian Republic. The final treaty is dated 25 March 1802 in the Fondation Napoléon's chronology and in the body of Wikipedia's account, while the English text of the treaty and Wikipedia's lead give 27 March.",
+   "After Austria made peace at Lunéville in 1801, Britain was the only major power still at war with France. In Britain William Pitt resigned in early 1801 and was succeeded by the more conciliatory Henry Addington, whose foreign secretary, Lord Hawkesbury, opened talks; preliminaries were signed in London on 1 October 1801 and greeted with enthusiasm. In the final negotiations Joseph Bonaparte and Talleyrand kept shifting their positions, and the status of Malta was the main sticking point until a British deadline forced an agreement.",
+   "Britain gave back most of the French, Spanish and Dutch colonies it had taken during the war but kept Trinidad, taken from Spain, and Ceylon, taken from the Dutch; the Cape of Good Hope went back to the Batavian Republic. Malta was to be returned to the Knights of St John (Knights Hospitaller) and Britain was to evacuate it. France agreed to withdraw from Naples, the Papal States and Egypt and recognised the Republic of the Seven Islands (the Ionian Islands). The treaty ended the War of the Second Coalition and, for France, a decade of war that had begun in 1792.",
+   "The peace lasted barely a year. Britain resented Napoleon's exclusion of British trade and the spread of French influence in Switzerland, Italy and Germany, while Napoleon demanded that Britain leave Malta, which it refused to do. Britain declared war on 18 May 1803, beginning the Napoleonic Wars."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Treaty_of_Amiens",
+    "title": "Treaty of Amiens",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/en/history-of-the-two-empires/timelines/the-peace-of-amiens/",
+    "title": "The Peace of Amiens (timeline)",
+    "publisher": "Fondation Napoléon, napoleon.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/en/history-of-the-two-empires/articles/peace-of-amiens/",
+    "title": "Peace of Amiens (text of the definitive treaty)",
+    "publisher": "Fondation Napoléon, napoleon.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     5,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "The treaty was signed at Amiens between Britain and France, Spain and the Batavian Republic; signatories Joseph Bonaparte, Cornwallis, Azara and Schimmelpenninck.",
+   "Date: 25 March 1802 (napoleon.org timeline; Wikipedia body) or 27 March (English treaty text; Wikipedia lead).",
+   "After Lunéville (1801) Britain was the only major power still at war with France.",
+   "Pitt resigned in 1801 and was replaced by Addington; Hawkesbury opened talks.",
+   "Preliminaries were signed in London on 1 October 1801 and greeted with enthusiasm in Britain.",
+   "Joseph Bonaparte and Talleyrand shifted positions; Malta was the main sticking point; a British deadline forced agreement.",
+   "Britain restored most French, Spanish and Dutch colonies but kept Trinidad and Ceylon.",
+   "The Cape of Good Hope stayed with/returned to the Batavian Republic.",
+   "Malta was to be restored to the Knights of St John and evacuated by Britain.",
+   "France was to evacuate Naples, the Papal States and Egypt and recognise the Ionian Islands' republic; the treaty ended a decade of war begun in 1792.",
+   "Britain resented French trade exclusion and expansion; Napoleon demanded the evacuation of Malta, which Britain refused.",
+   "Britain declared war on 18 May 1803, beginning the Napoleonic Wars."
+  ],
+  "disagree": "Date of signature: 25 March 1802 in the Fondation Napoléon's chronology and in Wikipedia's account of the negotiations; 27 March 1802 in the English text of the treaty published by the Fondation, and in Wikipedia's lead.",
+  "checked": null
+ },
+ "Q151060": {
+  "title": "Civil Code of the French (Napoleonic Code)",
+  "y": 1804,
+  "place": "French Consulate",
+  "paras": [
+   "On 21 March 1804 (30 Ventôse, Year XII) the Consulate under First Consul Napoleon Bonaparte promulgated the Civil Code of the French (Code civil des Français), renamed the Code Napoléon in 1807. It brought together in one text the laws governing persons, property and the ways of acquiring property, replacing the patchwork of local customary law, royal privileges and feudal rules that had governed private life in France before the Revolution.",
+   "The revolutionary assemblies had promised a single civil code from 1790–1791, but the drafts prepared under Jean-Jacques-Régis de Cambacérès in 1793, 1794 and 1796 were all rejected or shelved. After his victory at Marengo, Napoleon appointed on 12 August 1800 a commission of four jurists, Tronchet, Portalis, Bigot de Préameneu and Maleville, to draft a code; Cambacérès, now Second Consul, and Napoleon himself chaired many of the commission's plenary sessions. When the legislature rejected the first part of the bill in December 1801, Napoleon suspended the project and browbeat the assemblies into line, after which the code was passed as a series of 36 laws, combined into a single code in March 1804.",
+   "The code kept key principles of 1789: equality of citizens before the law, a secular state, freedom of contract and property as an absolute right. It required laws to be published before they applied and barred retroactive laws, and it obliged judges to decide cases even where the law was unclear while forbidding them to lay down general rules. In family law it was conservative: it gave the husband authority over his wife and children, and divorce by mutual consent was abolished in 1804.",
+   "It was followed by codes of civil procedure (1806), commerce (1807), criminal procedure (1808) and a penal code (1810). Spread by French conquest and imitation, the Civil Code shaped the law of many European countries and of places as far apart as Louisiana, Quebec and the Middle East. Napoleon himself, on St Helena, called it the achievement that would outlive his victories. Much amended, it is still in force in France."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Napoleonic_Code",
+    "title": "Napoleonic Code",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/histoire-des-2-empires/dossiers-thematiques/la-promulgation-du-code-civil-des-francais-21-mars-1804/",
+    "title": "La promulgation du Code civil des Français (21 mars 1804)",
+    "publisher": "Fondation Napoléon, napoleon.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/en/history-of-the-two-empires/articles/bullet-point-10-opinion-napoleons-proudest-achievement/",
+    "title": "Bullet Point #10: Which, in his own opinion, was Napoleon's proudest achievement?",
+    "publisher": "Fondation Napoléon, napoleon.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     7,
+     8,
+     10,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The Civil Code was promulgated on 21 March 1804 (30 Ventôse Year XII) under the Consulate.",
+   "It was renamed Code Napoléon in 1807.",
+   "It covered persons, property and relations/acquisition, replacing customary law (napoleon.org: civil life previously governed by custom).",
+   "Earlier revolutionary attempts (Cambacérès drafts of 1793, 1794, 1796) failed.",
+   "Napoleon appointed a commission (Tronchet, Portalis, Bigot de Préameneu, Maleville) on 12 August 1800; Cambacérès oversaw it.",
+   "Napoleon and Cambacérès chaired plenary sessions.",
+   "The legislature rejected the bill in December 1801; Napoleon suspended the project and cowed the legislature.",
+   "The code was made up of 36 laws (napoleon.org).",
+   "Principles: equality before the law, secular state, freedom of contract, property as absolute right (napoleon.org); laws published before application, no retroactive laws, judges must decide but not make general rules (Wikipedia).",
+   "It was followed by codes of civil procedure (1806), commerce (1807), criminal procedure (1808) and penal code (1810).",
+   "Husband's authority over wife and children; divorce by mutual consent abolished in 1804; the code influenced many countries, Louisiana, Quebec, the Middle East.",
+   "Napoleon on St Helena called the Code his lasting glory; it is still in force in France, much amended."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
