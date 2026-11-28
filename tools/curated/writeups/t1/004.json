@@ -153,5 +153,584 @@
    "result": "7 claims checked: Meade's command, the opening on 1 July, Longstreet's 2 July attack on the Union left at Little Round Top, the Wheatfield and the Peach Orchard, the failed evening attacks on Culp's Hill and East Cemetery Hill, about 12,000 men in Pickett's Charge on 3 July, Lee's retreat from 4 July and Lincoln's visit on 19 November agree",
    "errors": 0
   }
+ },
+ "Q12583": {
+  "title": "Spanish–American War",
+  "y": 1898,
+  "place": "Cuba, Puerto Rico, Guam and the Philippines",
+  "paras": [
+   "The Spanish–American War of 1898 was fought between the United States and Spain. It grew out of the Cuban War of Independence, which Cuban nationalists had begun against Spanish colonial rule in 1895 and which Spain met with harsh repression, including the forced 'reconcentration' of civilians under General Valeriano Weyler. Reports of Spanish brutality, amplified by the sensationalist American press, built public sympathy in the United States for the rebels; Presidents Grover Cleveland and William McKinley at first resisted calls to intervene.",
+   "In January 1898 the US Navy sent the armored cruiser USS Maine to Havana to protect American citizens, and on 15 February it was sunk by an explosion whose cause was never clear. On 20 April McKinley signed a joint resolution of Congress demanding that Spain give up Cuba; its Teller Amendment disclaimed any American intention to annex the island. Spain broke off diplomatic relations, the US Navy began blockading Cuba (on 21 April by Wikipedia's account, 22 April by the State Department historian's), and on 25 April Congress declared that a state of war had existed since 21 April.",
+   "The first battle came on 1 May, when Commodore George Dewey's Asiatic Squadron destroyed the Spanish squadron in Manila Bay in the Philippines. In Cuba, US Marines landed at Guantánamo Bay on 10 June, and an army under General William Shafter, including Theodore Roosevelt's volunteer cavalry, the 'Rough Riders', landed east of Santiago de Cuba later in June and fought the battles of El Caney and San Juan Hill on 1 July. On 3 July Admiral Pascual Cervera's squadron tried to break out of Santiago harbour and was destroyed, and Santiago surrendered on 17 July. Guam surrendered without resistance in June, and US troops landed on Puerto Rico on 25 July. American combat deaths were low, but disease, above all typhoid, killed far more soldiers than the fighting.",
+   "Hostilities were halted by a protocol of peace signed in Washington on 12 August, and the Treaty of Paris was signed on 10 December 1898. Spain gave up Cuba and ceded Puerto Rico, Guam and the Philippines to the United States, which paid $20 million for the Philippines; the State Department historian notes that the US Senate ratified the treaty in February 1899 by a single vote. The United States also annexed Hawaii during the war. Cuba became formally independent in 1902 but in practice a US protectorate, and American rule in the Philippines led to the Philippine–American War from 1899. The war ended almost four centuries of Spanish empire in the Americas and Asia, made the United States a power in the Pacific and the Caribbean, and in Spain prompted the national soul-searching of the 'Generation of '98'."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Spanish%E2%80%93American_War",
+    "title": "Spanish–American War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1866-1898/spanish-american-war",
+    "title": "The Spanish-American War, 1898",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/spanish-american-war",
+    "title": "Spanish-American War: Causes, Battles & Timeline",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     8,
+     10,
+     14,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "The Spanish–American War was fought in 1898 between the United States and Spain and grew out of the Cuban struggle for independence that began in 1895.",
+   "Spain's repression included Weyler's reconcentration policy; press sensationalism helped build US sympathy for the rebels; Cleveland and McKinley at first resisted intervention.",
+   "USS Maine was sent to Havana in January 1898 and sank after an explosion of unclear cause on 15 February 1898.",
+   "McKinley signed the joint resolution on 20 April 1898; the Teller Amendment disclaimed annexation of Cuba.",
+   "Spain severed diplomatic relations.",
+   "The blockade of Cuba began on 21 April (Wikipedia) or 22 April (Office of the Historian).",
+   "On 25 April Congress declared that war had existed since 21 April (Wikipedia; OoH: Congress voted for war on 25 April).",
+   "On 1 May Dewey's Asiatic Squadron destroyed the Spanish squadron in Manila Bay.",
+   "US Marines landed at Guantánamo Bay on 10 June.",
+   "Shafter's army including Roosevelt's Rough Riders landed near Santiago; El Caney and San Juan Hill were fought on 1 July.",
+   "Cervera's squadron was destroyed on 3 July trying to leave Santiago; Santiago surrendered on 17 July.",
+   "Guam surrendered without resistance in June (20 June); US troops landed on Puerto Rico on 25 July.",
+   "Combat deaths were low but disease, chiefly typhoid, killed more US soldiers than combat.",
+   "Hostilities were halted by a protocol signed in Washington on 12 August 1898; the Treaty of Paris was signed on 10 December 1898.",
+   "Spain gave up Cuba and ceded Puerto Rico, Guam and the Philippines; the US paid $20 million; (OoH) the Senate ratified on 6 February 1899 by one vote; Hawaii was annexed during the war.",
+   "Cuba became independent in 1902 but in practice a US protectorate; the Philippine–American War followed from 1899.",
+   "The war ended nearly four centuries of Spanish presence in the Americas and Asia, made the US a world/Pacific power, and in Spain led to the Generation of '98."
+  ],
+  "disagree": "Start of the blockade of Cuba: 21 April (Wikipedia) or 22 April (Office of the Historian). Wikipedia dates the war to 21 April – 13 August; the protocol halting hostilities was signed on 12 August. The single-vote Senate ratification is the Office of the Historian's statement only.",
+  "checked": null
+ },
+ "Q190712": {
+  "title": "First Battle of the Marne",
+  "y": 1914,
+  "place": "France",
+  "paras": [
+   "The First Battle of the Marne was fought in September 1914, in the first weeks of the First World War, between the invading German armies and the French armies under Joseph Joffre together with the British Expeditionary Force (BEF) under Sir John French. Germany's plan, a revised form of the Schlieffen Plan, was to sweep through neutral Belgium and northern France, take Paris and destroy the French army within about six weeks, before turning on Russia. After German victories at the Battles of the Frontiers and Mons in August, the French and British fell back in the 'Great Retreat', and by the start of September German cavalry had crossed the Marne about 40 km (25 miles) from Paris.",
+   "The German armies were by then exhausted and had outrun their supplies, while Joffre had moved troops from his eastern flank and from the reserves to his left. Alexander von Kluck's German First Army, instead of keeping level with Karl von Bülow's Second Army, turned south-east east of Paris in pursuit of the French Fifth Army, exposing its flank. On 3 September Joseph Gallieni, the military governor of Paris, saw the opening, and on 4 September Joffre ordered a counter-offensive along a front between Paris and Verdun.",
+   "From 5 September Michel-Joseph Maunoury's new French Sixth Army attacked Kluck's flank near the Ourcq river. To strengthen it, Gallieni sent reinforcements forward by rail, lorry and some 600 requisitioned Paris taxis. When Kluck turned his army west to meet this threat, a gap opened between the German First and Second Armies (some 20 miles wide by one account, 30 by another), and from 6 September the BEF and the French Fifth Army under Louis Franchet d'Espèrey pushed into it. Threatened with encirclement, the German First and Second Armies were ordered on 9 September to retreat to the Aisne river, where they dug in.",
+   "Sources date the battle to 5–12 September (Wikipedia) or 5–9 September (EBSCO's encyclopedia), the later days covering the German withdrawal. Casualties were heavy: Wikipedia cites estimates of about 250,000 French, 12,733 British and 298,000 German casualties. The battle, remembered in France as the 'miracle of the Marne', saved Paris and ended German hopes of defeating France quickly; Moltke, the German chief of staff, was replaced by Erich von Falkenhayn. Both sides then tried to outflank each other to the north in the 'Race to the Sea', and the Western Front settled into four years of trench warfare."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/First_Battle_of_the_Marne",
+    "title": "First Battle of the Marne",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/the-first-battle-of-the-marne-100-years-ago",
+    "title": "The First Battle of the Marne",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/first-battle-marne",
+    "title": "First Battle of the Marne",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     7,
+     10,
+     11,
+     12,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The First Battle of the Marne was fought in September 1914 between German armies and the French under Joffre with the BEF under John French.",
+   "German strategy (Schlieffen Plan revised by Moltke) was to go through Belgium, take Paris and defeat France in about six weeks before turning on Russia.",
+   "After German victories at the Frontiers and Mons, the Allies retreated in the Great Retreat.",
+   "By early September the Germans were about 40 km (25 miles) from Paris (HISTORY: German cavalry crossed the Marne near Meaux, 25 miles from Paris).",
+   "The Germans were exhausted and had outrun their supplies; Joffre reinforced his left from his eastern flank and reserves.",
+   "Kluck's First Army turned south-east east of Paris pursuing the French Fifth Army instead of keeping level with Bülow's Second Army.",
+   "On 3 September Gallieni saw the opportunity; on 4 September Joffre ordered the counter-offensive (HISTORY says Joffre's order on 5 September).",
+   "Maunoury's Sixth Army attacked Kluck's flank near the Ourcq from 5 September.",
+   "Gallieni sent reinforcements by rail, lorry and about 600 requisitioned taxis.",
+   "Kluck's turn opened a gap between the First and Second Armies: about 20 miles (EBSCO) or 30 miles (HISTORY).",
+   "From 6 September the BEF and Franchet d'Espèrey's Fifth Army advanced into the gap.",
+   "The German First and Second Armies were ordered on 9 September to retreat to the Aisne, where they dug in.",
+   "Wikipedia dates the battle 5–12 September, EBSCO 5–9 September; Wikipedia's casualty estimates are about 250,000 French, 12,733 British and 298,000 German.",
+   "The battle ended German hopes of a quick victory over France; Moltke was replaced by Falkenhayn; the Race to the Sea and trench warfare followed."
+  ],
+  "disagree": "Dates: 5–12 September 1914 (Wikipedia) or 5–9 September (EBSCO). Width of the gap between the German First and Second Armies: about 20 miles (EBSCO) or 30 miles (HISTORY.com). HISTORY.com puts Joffre's counterattack order on 5 September, Wikipedia and EBSCO on 4 September. HISTORY.com gives deaths as 'upwards of 100,000' on both sides; Wikipedia's casualty estimates (killed, wounded and missing) are far higher.",
+  "checked": null
+ },
+ "Q156554": {
+  "title": "Battle of Jutland",
+  "y": 1916,
+  "place": "North Sea, off Denmark's Jutland peninsula",
+  "paras": [
+   "The Battle of Jutland, fought on 31 May and 1 June 1916 in the North Sea off Denmark's Jutland peninsula, was the largest naval battle of the First World War and its only full-scale clash of battleships. It pitted the British Grand Fleet under Admiral Sir John Jellicoe, with Vice-Admiral Sir David Beatty commanding its battlecruisers, against the German High Seas Fleet under Vice-Admiral Reinhard Scheer, with Vice-Admiral Franz Hipper leading its scouting battlecruisers. The Germans call it the Battle of the Skagerrak.",
+   "Outnumbered in dreadnoughts, the Germans hoped to use Hipper's battlecruisers as bait to draw part of the British fleet onto the guns of their main fleet and destroy it, weakening the British blockade of Germany. But the Admiralty's code-breaking and signals intelligence unit, Room 40, warned of a major sortie, and on the night of 30 May Jellicoe sailed from Scapa Flow to join Beatty before the Germans put to sea.",
+   "On the afternoon of 31 May Beatty met Hipper and followed him south towards the High Seas Fleet. In this first phase the British battlecruisers Indefatigable and Queen Mary blew up when their magazines exploded, with almost all their crews. When Beatty sighted the main German fleet he turned north and in turn drew it towards Jellicoe's battleships. In the evening the two full fleets, about 250 ships in all, clashed twice; Jellicoe twice placed his line across the German line of advance, and twice Scheer turned away. The battlecruiser Invincible was sunk in the same phase, and Hipper's flagship Lützow was crippled and later scuttled. During the night Scheer slipped through the light forces behind the Grand Fleet and reached home, losing the old battleship Pommern to a torpedo attack before dawn.",
+   "Both sides claimed victory. Fourteen British and eleven German ships were sunk. Wikipedia gives 9,823 casualties in all; by EBSCO's figures more than 6,200 British sailors were killed or captured and about 2,500 Germans killed, so the British lost more ships and more than twice as many men. Yet the British fleet still controlled the North Sea and kept up its blockade. The High Seas Fleet never again sought a fleet battle, and Germany turned instead to its U-boats; its return to unrestricted submarine warfare in early 1917 helped bring the United States into the war that April. The conduct of the battle by Jellicoe and Beatty was argued over in Britain for decades."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Jutland",
+    "title": "Battle of Jutland",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/battle-of-jutland",
+    "title": "Battle of Jutland, greatest naval battle of WWI, begins",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/battle-jutland",
+    "title": "Battle of Jutland",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Jutland was fought on 31 May – 1 June 1916 in the North Sea off Jutland between the Grand Fleet (Jellicoe) and the High Seas Fleet (Scheer); Beatty led the British battlecruisers and Hipper the German scouting force.",
+   "It was the largest naval battle and only full-scale clash of battleships of WWI.",
+   "The Germans call it the Battle of the Skagerrak.",
+   "The Germans, outnumbered in dreadnoughts, planned to lure part of the British fleet onto their main fleet and break the blockade.",
+   "Room 40 signals intelligence warned of the sortie; Jellicoe sailed from Scapa Flow on 30 May (night).",
+   "On the afternoon of 31 May Beatty met Hipper; Indefatigable and Queen Mary blew up with nearly all their crews.",
+   "Beatty turned north on sighting the High Seas Fleet, drawing it towards Jellicoe.",
+   "The fleets, about 250 ships in total, engaged twice in the evening.",
+   "Jellicoe crossed the German T twice and Scheer turned away both times.",
+   "Invincible was sunk; Lützow was crippled and later scuttled.",
+   "Scheer escaped through the British rear in the night; Pommern was torpedoed and sank before dawn.",
+   "Both sides claimed victory; 14 British and 11 German ships were sunk.",
+   "Wikipedia: 9,823 casualties in total; EBSCO: more than 6,200 British killed or captured and 2,500 Germans killed; the British lost over twice as many men.",
+   "British naval control and the blockade remained; the High Seas Fleet did not seek another fleet battle and Germany turned to U-boats, unrestricted submarine warfare helping bring the US into the war in April 1917.",
+   "Jellicoe's and Beatty's conduct of the battle was long disputed."
+  ],
+  "disagree": "Casualty totals differ by source and by what is counted: Wikipedia 9,823 in all; HISTORY.com 6,784 British and 3,058 German casualties; EBSCO more than 6,200 British killed or captured and 2,500 German killed.",
+  "checked": null
+ },
+ "Q94916": {
+  "title": "Second Italo-Ethiopian War",
+  "y": 1935,
+  "place": "Ethiopia",
+  "paras": [
+   "The Second Italo-Ethiopian War was a war of conquest waged by Fascist Italy under Benito Mussolini against the Ethiopian Empire of Emperor Haile Selassie, from October 1935 to May 1936. Both countries were members of the League of Nations. Mussolini presented the war as revenge for Italy's defeat by Emperor Menelik II at Adwa in 1896. The pretext was the Walwal incident: Italy had built a fort at the Walwal wells in the Ogaden, well inside Ethiopian territory, and on 5 December 1934 Ethiopian and Italian-led troops there exchanged fire.",
+   "On 3 October 1935 Italian forces under Marshal Emilio De Bono crossed the Mareb river from Eritrea without a declaration of war, while a smaller army under General Rodolfo Graziani attacked from Italian Somaliland. Adwa was taken on 6 October. Mussolini, impatient with De Bono's slow progress, replaced him in November with Pietro Badoglio. After an Ethiopian counter-offensive in December, Italy used mustard gas from the air against soldiers and civilians, in breach of the 1925 Geneva Protocol that banned it. From February 1936 the Italians defeated the main Ethiopian armies at Amba Aradam, Tembien and Shire, and the emperor's own army at Maychew on 31 March.",
+   "Haile Selassie left the country on 2 May, Badoglio's forces entered Addis Ababa on 5 May, and on 9 May Mussolini proclaimed the annexation of Ethiopia and the founding of an Italian empire. The League of Nations condemned Italy as the aggressor and voted economic sanctions in October 1935 (taking effect in November), but they left out oil, coal and iron or steel, and Britain did not close the Suez Canal to Italian shipping. The League voted on 4 July 1936 to end them, and they were formally withdrawn on 15 July. A British–French compromise, the Hoare–Laval plan, collapsed when it leaked in December 1935.",
+   "The war killed hundreds of thousands of Ethiopians, many of them civilians, and guerrilla resistance to Italian rule continued until Ethiopia was liberated in 1941. Its diplomatic effects reached far beyond Africa: the League's failure to stop the invasion discredited it, and Italy drifted away from Britain and France towards Nazi Germany. Many historians see the crisis as one of the steps towards the Second World War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Second_Italo-Ethiopian_War",
+    "title": "Second Italo-Ethiopian War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/league-nations-applies-economic-sanctions-against-italy",
+    "title": "League of Nations Applies Economic Sanctions Against Italy",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.thecollector.com/second-italo-ethiopian-war/",
+    "title": "The Second Italo-Ethiopian War: A Step Toward Toppling the World Order",
+    "publisher": "TheCollector",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     7,
+     10,
+     12,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Fascist Italy under Mussolini fought Haile Selassie's Ethiopia; both were League of Nations members.",
+   "Mussolini presented the war as revenge for Adwa (1896), where Menelik II defeated Italy.",
+   "Italy built a fort at Walwal in the Ogaden inside Ethiopian territory; shots were exchanged there on 5 December 1934.",
+   "On 3 October 1935 Italian forces crossed the Mareb from Eritrea without a declaration of war.",
+   "De Bono commanded from Eritrea; Graziani attacked from Italian Somaliland.",
+   "Adwa was captured on 6 October 1935.",
+   "Mussolini replaced De Bono with Badoglio in November 1935.",
+   "After an Ethiopian counter-offensive in December 1935, Italy used mustard gas from the air against soldiers and civilians, breaching the 1925 Geneva Protocol.",
+   "In 1936 the Italians won at Amba Aradam, Tembien and Shire, and at Maychew on 31 March.",
+   "Haile Selassie left on 2 May; Italians entered Addis Ababa on 5 May; Mussolini proclaimed annexation and empire on 9 May 1936.",
+   "The League found Italy the aggressor and voted sanctions in October 1935 (EBSCO: 11 October; Wikipedia: approved sanctions hit Italy on 18 November).",
+   "Sanctions excluded oil, coal and iron/steel; Britain did not close the Suez Canal (Wikipedia); the League voted to end them on 4 July 1936 (Wikipedia) and they were formally withdrawn on 15 July 1936 (EBSCO).",
+   "The Hoare–Laval plan was leaked in December 1935 and collapsed; Hoare resigned.",
+   "Hundreds of thousands of Ethiopians, many civilians, died; guerrilla resistance continued until liberation in 1941.",
+   "The League was discredited, Italy moved towards Nazi Germany, and the crisis was a step towards WWII."
+  ],
+  "disagree": "EBSCO dates the League's sanctions to 11 October 1935 (the Assembly vote); Wikipedia says the sanctions approved by 50 states came into force against Italy on 18 November. The League voted to end sanctions on 4 July 1936 (Wikipedia); EBSCO dates their formal withdrawal to 15 July. Wikipedia dates the war October 1935 – May 1936; the event record runs to 1937, reflecting the continuing occupation and resistance.",
+  "checked": null
+ },
+ "Q127050": {
+  "title": "Manhattan Project",
+  "y": 1939,
+  "place": "United States (Los Alamos, Oak Ridge, Hanford and other sites)",
+  "paras": [
+   "The Manhattan Project was the Second World War programme that built the first nuclear weapons. It was led by the United States with the United Kingdom and Canada, and absorbed Britain's own bomb project, Tube Alloys. Its roots lay in the discovery of nuclear fission by Otto Hahn and Fritz Strassmann in Germany in 1938. In August 1939 Leo Szilard and Eugene Wigner drafted a letter, signed by Albert Einstein, warning President Franklin D. Roosevelt that a new kind of extremely powerful bomb might be possible; Roosevelt set up an Advisory Committee on Uranium, and early research went slowly until Britain's MAUD Committee reported in 1941 that a bomb was feasible.",
+   "In 1942 the US Army Corps of Engineers took over the work. The Manhattan District, named after its first headquarters in New York, was created on 13 August 1942, and from September General Leslie Groves directed the whole project; the physicist J. Robert Oppenheimer led the weapons laboratory at Los Alamos, New Mexico. On 2 December 1942 a team under Enrico Fermi achieved the first self-sustaining nuclear chain reaction in Chicago Pile-1. Most of the money went on making fissile material: uranium was enriched at Oak Ridge (the Clinton Engineer Works) in Tennessee, and plutonium was made in the first industrial-scale reactors at Hanford in Washington State. At its peak the project employed nearly 130,000 people, and it cost nearly $2 billion.",
+   "Los Alamos produced two designs: Little Boy, a gun-type bomb using enriched uranium, and Fat Man, a more complex implosion bomb using plutonium. The first nuclear explosion, of an implosion device, was the Trinity test in the New Mexico desert on 16 July 1945. On 6 August 1945 Little Boy was dropped on Hiroshima, and on 9 August Fat Man on Nagasaki; Japan announced its surrender on 15 August. After the war the project kept control of American nuclear research and production until the civilian Atomic Energy Commission took over in January 1947."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Manhattan_Project",
+    "title": "Manhattan Project",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://ahf.nuclearmuseum.org/ahf/history/manhattan-project/",
+    "title": "The Manhattan Project",
+    "publisher": "Atomic Heritage Foundation / National Museum of Nuclear Science & History",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     11
+    ]
+   },
+   {
+    "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/events.htm",
+    "title": "Manhattan Project: Events",
+    "publisher": "U.S. Department of Energy, Office of Scientific and Technical Information",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     7,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/the-manhattan-project",
+    "title": "Manhattan Project",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     6,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The Manhattan Project was the WWII programme that produced the first nuclear weapons, led by the US with the UK and Canada.",
+   "It absorbed the British Tube Alloys project.",
+   "Hahn and Strassmann discovered nuclear fission in 1938.",
+   "In August 1939 Szilard and Wigner drafted the Einstein–Szilard letter to Roosevelt warning of extremely powerful bombs; Roosevelt set up the Advisory Committee on Uranium.",
+   "Research was slow until the British MAUD Committee reported in 1941 that a bomb was possible.",
+   "In 1942 the Army Corps of Engineers took over; the Manhattan District was named after Manhattan and created on 13 August 1942.",
+   "Groves directed the project from September 1942 (assumed command 23 September); Oppenheimer led Los Alamos.",
+   "On 2 December 1942 Fermi's team achieved the first self-sustaining chain reaction in Chicago Pile-1.",
+   "Over 80% of the cost went on fissile material production; uranium was enriched at Oak Ridge/Clinton Engineer Works; plutonium was produced at Hanford in the first industrial-scale reactors.",
+   "The project employed nearly 130,000 people at its peak and cost nearly $2 billion.",
+   "Little Boy was a uranium gun-type bomb and Fat Man a plutonium implosion bomb; the Trinity test of an implosion device took place in New Mexico on 16 July 1945.",
+   "Little Boy was dropped on Hiroshima on 6 August 1945 and Fat Man on Nagasaki on 9 August 1945.",
+   "Japan announced its surrender on 15 August 1945.",
+   "The project controlled US atomic research until the Atomic Energy Commission was formed in January 1947."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q80130": {
+  "title": "Nuremberg trials",
+  "y": 1945,
+  "place": "Nuremberg, Germany",
+  "paras": [
+   "The Nuremberg trials were the trials of the surviving leaders of Nazi Germany held after the Second World War by the four main Allied powers: the United States, the Soviet Union, the United Kingdom and France. During the war the Allies had argued over what to do with the Nazi leaders, with proposals ranging from summary execution to a show trial. In the London (Nuremberg) Charter of 8 August 1945 they agreed on an International Military Tribunal and defined the crimes it would try: crimes against peace (planning and waging wars of aggression), war crimes, and crimes against humanity. The trial was held in the Palace of Justice in Nuremberg, which had survived the bombing and had a prison attached.",
+   "The main trial before the tribunal ran from 20 November 1945 to 1 October 1946. Hitler, Himmler and Goebbels were already dead by suicide. Of the 24 men indicted, 22 were tried, including Hermann Göring, Joachim von Ribbentrop, the military chiefs Wilhelm Keitel and Alfred Jodl, Rudolf Hess and Albert Speer; Martin Bormann was tried in absentia, since the Allies did not know he was dead. Six Nazi organisations were also charged. The US chief prosecutor was Supreme Court Justice Robert H. Jackson, who wanted the trial also to put an irrefutable record of Nazi crimes before the world; the Holocaust was a major focus of the evidence. The main defence argument was that the charges, especially that of aggressive war, were new law applied retroactively.",
+   "The tribunal convicted 19 defendants and acquitted three: Franz von Papen, Hjalmar Schacht and Hans Fritzsche. Twelve, including Bormann in absentia, were sentenced to death and the rest to prison terms from ten years to life. Ten were hanged on 16 October 1946; Göring killed himself the night before. Four organisations were declared criminal: the Nazi Party's Leadership Corps, the SS, the Gestapo and the SD.",
+   "Between 1946 and 1949 the United States held twelve further trials at Nuremberg of lower-ranking defendants such as doctors, judges and industrialists, which concentrated more on the Holocaust. Though criticised at the time as victors' justice and for punishing acts that had not been crimes when committed, the trials established that individuals can be held criminally responsible for breaking international law, and they are regarded as the start of modern international criminal law."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Nuremberg_trials",
+    "title": "Nuremberg trials",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/nuremberg-trials",
+    "title": "Nuremberg Trials: Dates, Summary & Outcomes",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The Nuremberg trials were held by the US, USSR, UK and France against surviving Nazi leaders after WWII.",
+   "Allied proposals ranged from summary execution to a show trial (HISTORY: Stalin proposed executing 50,000–100,000 officers).",
+   "The London Charter of 8 August 1945 set up the IMT and defined crimes against peace, war crimes and crimes against humanity.",
+   "The trial was held at the Palace of Justice in Nuremberg, relatively intact and with an attached prison.",
+   "The main trial ran from 20 November 1945 to 1 October 1946.",
+   "Hitler, Himmler and Goebbels had committed suicide.",
+   "Of 24 indicted, 22 were tried; Bormann was tried in absentia because the Allies did not know of his death; defendants included Göring, Ribbentrop, Keitel, Jodl, Hess and Speer.",
+   "Six organisations were charged.",
+   "Robert H. Jackson was US chief prosecutor and saw the trial's purpose as going beyond conviction; the Holocaust was a major focus.",
+   "The main defence argument was that the charges were ex post facto law.",
+   "Three were acquitted: Papen, Schacht and Fritzsche.",
+   "Twelve were sentenced to death including Bormann in absentia; the others received 10 years to life.",
+   "Ten were hanged on 16 October 1946; Göring killed himself the night before.",
+   "Four organisations were declared criminal: Leadership Corps, SS, Gestapo, SD.",
+   "Twelve subsequent US trials (1946–1949) tried doctors, judges, industrialists and others; the trials are seen as the beginning of international criminal law."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q171375": {
+  "title": "Truman Doctrine",
+  "y": 1947,
+  "place": "Washington, D.C.",
+  "paras": [
+   "The Truman Doctrine was the American foreign policy announced by President Harry S. Truman in a speech to a joint session of Congress on 12 March 1947, pledging US support to countries threatened by communist takeover from within or by Soviet pressure from outside. Its immediate occasions were Greece and Turkey. In Greece the government was fighting a civil war against Communist guerrillas, who were helped by Tito's Yugoslavia; in Turkey the Soviet Union was pressing for base and transit rights in the Turkish Straits. Britain, which had been supporting both countries, told Washington early in 1947 that because of its own economic troubles it would end its aid to Greece (from 31 March, according to the State Department historian).",
+   "By then relations between the wartime allies had soured over Soviet troops lingering in northern Iran, the Straits, and the Soviet rejection of the Baruch plan for international control of atomic energy, and George Kennan's 'Long Telegram' of February 1946 had argued for containing Soviet expansion. Washington believed, wrongly, that Moscow was behind the Greek Communists; in fact Stalin had held back from helping them. Truman, encouraged by the Republican Senator Arthur Vandenberg to make the threat plain to the American public, asked Congress for $400 million in aid to Greece and Turkey, together with American civilian and military personnel.",
+   "Truman declared that 'it must be the policy of the United States to support free peoples who are resisting attempted subjugation by armed minorities or by outside pressures', arguing that the spread of totalitarian rule threatened international peace and American security, and that if Greece fell, Turkey and the Middle East would be endangered. In May 1947 Congress approved the $400 million by a large majority.",
+   "The doctrine broke with the American tradition of avoiding peacetime commitments outside the Western Hemisphere and became the basis of US containment policy in the Cold War; historians often date the start of the Cold War from Truman's speech. It was followed by the Marshall Plan for Western Europe's economic recovery and by the creation of NATO in 1949."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Truman_Doctrine",
+    "title": "Truman Doctrine",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1945-1952/truman-doctrine",
+    "title": "The Truman Doctrine, 1947",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Truman announced the doctrine to a joint session of Congress on 12 March 1947, pledging support to nations threatened by authoritarian/communist forces.",
+   "Greece faced a civil war against Communist guerrillas helped by Yugoslavia; the Soviet Union pressed Turkey over the Straits.",
+   "Britain announced it would end aid to Greece (OoH: as of 31 March) because of its own economic decline.",
+   "Relations had worsened over Soviet troops in northern Iran, the Straits and the Soviet rejection of the Baruch plan.",
+   "Kennan's Long Telegram of February 1946 advocated containment.",
+   "The US believed the Soviets backed the Greek Communists, but Stalin withheld support.",
+   "Vandenberg advised Truman to make the threat plain to the public.",
+   "Truman asked for $400 million for Greece and Turkey and for American civilian and military personnel.",
+   "Truman's 'free peoples' formula and argument that totalitarian expansion threatened peace and US security, and that Greece's fall would endanger Turkey and the Middle East.",
+   "In May 1947 a large majority of Congress approved $400 million.",
+   "The doctrine broke with US avoidance of peacetime commitments beyond the Western Hemisphere and became the basis of containment; historians often date the Cold War's start to the speech.",
+   "It was followed by the Marshall Plan and NATO (1949)."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
