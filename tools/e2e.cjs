@@ -562,6 +562,34 @@ async function waitEvents(page) {
     await page.waitForTimeout(500);
     ok(await page.evaluate(() => [...document.querySelectorAll('.warwrap')].every((e) => getComputedStyle(e).display === 'none') && window.__geo.map.map.getLayoutProperty('war-edge', 'visibility') === 'none'), 'the key turns the war layer off');
     await page.locator('#key input[type=checkbox]').check();
+    // round 14: plain solid black borders (no pale casing, no coloured rim), bold black names with no halo,
+    // a small red war marker with a sword through it, white bars with blue buttons
+    const look = await page.evaluate(() => {
+      const M = window.__geo.map, m = M.map, sid = M.active, ids = m.getStyle().layers.map((l) => l.id);
+      const lbl = ['lbl-xs', 'lbl-s', 'lbl-part', 'lbl-m', 'lbl-l', 'lbl-l-fb', 'lbl-l-line', 'lbl-emp', 'lbl-emp-fb', 'lbl-emp-line'];
+      const r = (el) => el.getBoundingClientRect();
+      const mk = document.querySelector('.warwrap:not(.minor) .warmk');
+      return {
+        casing: ids.filter((id) => /^(fcase|glow)/.test(id)),
+        fline: [m.getPaintProperty('fline' + sid, 'line-color'), m.getPaintProperty('fline' + sid, 'line-opacity'), m.getLayoutProperty('fline' + sid, 'line-join')],
+        line: m.getPaintProperty('line0' + sid, 'line-color'),
+        halo: lbl.map((l) => m.getPaintProperty(l, 'text-halo-width')),
+        color: [...new Set(lbl.map((l) => m.getPaintProperty(l, 'text-color')))],
+        font: [...new Set(lbl.map((l) => m.getLayoutProperty(l, 'text-font').join()))],
+        peoples: m.getPaintProperty('lbl-people', 'text-halo-width'),
+        mk: mk ? [Math.round(r(mk).width), mk.querySelector('circle')?.getAttribute('fill'), !!mk.querySelector('g[transform^="rotate"]')] : null,
+        top: getComputedStyle(document.querySelector('.top')).backgroundColor, bar: getComputedStyle(document.querySelector('.timebar')).backgroundColor,
+        go: getComputedStyle(document.querySelector('.go')).backgroundColor, yearFont: getComputedStyle(document.querySelector('.year-input')).fontFamily,
+        eras: getComputedStyle(document.querySelector('.eras > span') || document.body).fontVariantCaps,
+      };
+    });
+    ok(look.casing.length === 0 && look.fline[0] === '#111111' && look.fline[1] === 1 && look.fline[2] === 'round' && look.line === '#111111',
+      `borders are one solid black line, no casing or rim layers (${look.casing.length} casing layers; flag border ${look.fline.join(' ')}; plain ${look.line})`);
+    ok(look.halo.every((w) => w === 0) && look.peoples === 0 && look.color.length === 1 && look.color[0] === '#111111' && look.font.length === 1 && look.font[0] === 'Atlas Sans Bold',
+      `state and empire names are bold black with halo width 0 (${look.font.join()} ${look.color.join()}, halos ${[...new Set(look.halo)].join()})`);
+    ok(look.mk && look.mk[0] <= 18 && /^#(d9261c|e0261b)$/.test(look.mk[1]) && look.mk[2], `war markers are small red discs with a sword through them (${look.mk && look.mk.join(' ')})`);
+    ok(look.top === 'rgb(255, 255, 255)' && look.bar === 'rgb(255, 255, 255)' && look.go === 'rgb(29, 111, 224)' && /Source Sans 3/.test(look.yearFont) && look.eras === 'normal',
+      `white top and time bars, a blue Go button, sans text in normal case (${look.top}, ${look.bar}, ${look.go}, ${look.yearFont.split(',')[0]}, caps ${look.eras})`);
     await page.click('#key .key-toggle');
     ok(await page.locator('#keyBody').isHidden(), 'the key collapses');
     await page.click('#key .key-toggle');

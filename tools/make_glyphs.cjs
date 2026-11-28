@@ -1,11 +1,12 @@
 // Builds the map label glyphs (fonts/<stack>/<range>.pbf, the signed-distance-field format MapLibre reads)
 // from the Source Sans 3 web fonts in fonts/src (Adobe, SIL Open Font License; the @fontsource/source-sans-3
-// files), by drawing every character in headless Chromium. Four stacks, one per role on the map:
-//   "Atlas Sans Semibold"      empires and major powers (set in capitals by the layer, modest letter-spacing)
-//   "Atlas Sans Medium"        ordinary states and the parts of empires (title case)
+// files), by drawing every character in headless Chromium. One stack per role on the map:
+//   "Atlas Sans Bold"          states, empires and the parts of empires (bold black, no halo)
+//   "Atlas Sans Semibold"      (earlier: empires and major powers; kept for older cached pages)
+//   "Atlas Sans Medium"        (earlier: ordinary states; kept for older cached pages)
 //   "Atlas Sans Italic"        peoples, sketch regions, US states and colonies
 //   "Atlas Sans Light Italic"  oceans and seas
-// Usage: NODE_PATH=$(npm root -g) node tools/make_glyphs.cjs
+// Usage: NODE_PATH=$(npm root -g) node tools/make_glyphs.cjs [stack name ...]   (no names: every stack)
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
@@ -20,12 +21,14 @@ const UR = {
   latin: 'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD',
 };
 const ss = (w, style) => (s) => `source-sans-3-${s}-${w}-${style}.woff2`;
-const STACKS = [
+const ALL = [
+  { name: 'Atlas Sans Bold', family: 'AtlasBd', file: ss(700, 'normal'), css: '700 24px AtlasBd', style: 'normal', weight: 700 },
   { name: 'Atlas Sans Semibold', family: 'AtlasSB', file: ss(600, 'normal'), css: '600 24px AtlasSB', style: 'normal', weight: 600 },
   { name: 'Atlas Sans Medium', family: 'AtlasMd', file: ss(500, 'normal'), css: '500 24px AtlasMd', style: 'normal', weight: 500 },
   { name: 'Atlas Sans Italic', family: 'AtlasIt', file: ss(400, 'italic'), css: 'italic 400 24px AtlasIt', style: 'italic', weight: 400 },
   { name: 'Atlas Sans Light Italic', family: 'AtlasLi', file: ss(300, 'italic'), css: 'italic 300 24px AtlasLi', style: 'italic', weight: 300 },
 ];
+const STACKS = process.argv.length > 2 ? ALL.filter((st) => process.argv.slice(2).includes(st.name)) : ALL;
 
 function varint(n, out) { n >>>= 0; while (n > 0x7f) { out.push((n & 0x7f) | 0x80); n >>>= 7; } out.push(n); }
 function field(num, type, out) { varint((num << 3) | type, out); }

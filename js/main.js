@@ -1933,7 +1933,7 @@ function sourcesContent(meta, audit) {
       h('li', null, h('a', { href: 'https://www.naturalearthdata.com/', target: '_blank', rel: 'noopener' }, 'Natural Earth'), ': coastlines and today\'s countries (public domain).'),
       h('li', null, h('a', { href: 'https://www.wikidata.org/', target: '_blank', rel: 'noopener' }, 'Wikidata'), ': events and descriptions (CC0). Links go to Wikipedia.'),
       h('li', null, h('a', { href: 'https://en.wikipedia.org/wiki/List_of_years', target: '_blank', rel: 'noopener' }, 'English Wikipedia year articles'), ': one-sentence descriptions of events, © Wikipedia contributors, ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/4.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 4.0'), '. The sentences are shortened and stripped of links; the same licence applies to them here.'),
-      h('li', null, h('a', { href: 'https://maplibre.org/', target: '_blank', rel: 'noopener' }, 'MapLibre GL JS'), ' (BSD licence) draws the map; map labels use Source Sans 3 and Noto Sans, headings Alegreya (all SIL Open Font License).')),
+      h('li', null, h('a', { href: 'https://maplibre.org/', target: '_blank', rel: 'noopener' }, 'MapLibre GL JS'), ' (BSD licence) draws the map; map labels and the interface use Source Sans 3, with Noto Sans (both SIL Open Font License).')),
     h('p', null, 'Full credits and licences: ', h('a', { href: 'https://github.com/ngcoding10/geohistory/blob/main/CREDITS.md', target: '_blank', rel: 'noopener' }, 'CREDITS.md'),
       '. Data built on ', meta?.built || '?', '.'),
     h('p', null, h('a', { href: 'privacy.html' }, 'Privacy'), ' · ', h('a', { href: 'terms.html' }, 'Terms'), ' · ',

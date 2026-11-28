@@ -14,16 +14,17 @@ export const isDark = () => document.documentElement.dataset.theme === 'dark'
   || (document.documentElement.dataset.theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
 const COLORS = {
-  light: { sea: '#c4dbe6', seaLine: '#86a8b8', lake: '#cfe2ea', land: '#ece6d8', line: '#5d4f3c', inner: '#3a3226',
-    text: '#2b241a', textPart: '#3a3024', textUnder: '#7b705f', textSea: '#7d9aa3', halo: 'rgba(255,252,244,0.82)', haloUnder: 'rgba(250,246,236,0.7)',
+  light: { sea: '#c4dbe6', seaLine: '#86a8b8', lake: '#cfe2ea', land: '#ece6d8', line: '#111111', inner: '#2b2b2b',
+    text: '#111111', textPart: '#111111', textUnder: '#444444', textSea: '#7d9aa3',
     us: '#4a3a2a', modern: '#2c4a6b', sel: '#1d1810', marker: '#fffdf8', cluster: '#2f2820', clusterText: '#fffdf8' },
-  dark: { sea: '#121a21', seaLine: '#3a4a52', lake: '#16202a', land: '#2b2822', line: '#0f0d0a', inner: '#0c0a08',
-    text: '#f1eadc', textPart: '#e4dccb', textUnder: '#a79d8b', textSea: '#55676f', halo: 'rgba(20,17,13,0.8)', haloUnder: 'rgba(20,17,13,0.6)',
+  dark: { sea: '#121a21', seaLine: '#3a4a52', lake: '#16202a', land: '#2b2822', line: '#000000', inner: '#0a0a0a',
+    text: '#f4f4f4', textPart: '#f4f4f4', textUnder: '#bdbdbd', textSea: '#55676f',
     us: '#f3e9d6', modern: '#9cc3ef', sel: '#fff6e0', marker: '#1b1916', cluster: '#efe8da', clusterText: '#2a241c' },
 };
-// map labels: Source Sans 3 (tools/make_glyphs.cjs), one weight per role
-const POWER = ['Atlas Sans Semibold'];      // empires and major powers, in capitals
-const STATE_F = ['Atlas Sans Medium'];      // ordinary states and the parts of empires
+// map labels: Source Sans 3 (tools/make_glyphs.cjs), one weight per role. State and empire names are bold and
+// plain black (light mode) with no halo: a cartoon-map look over the flags.
+const POWER = ['Atlas Sans Bold'];          // empires and major powers, in capitals
+const STATE_F = ['Atlas Sans Bold'];        // ordinary states and the parts of empires
 const ITALIC = ['Atlas Sans Italic'];       // peoples, sketch regions, US states and colonies
 const SEA_F = ['Atlas Sans Light Italic'];  // oceans and seas
 const SANS = ['Noto Sans Regular'];
@@ -107,23 +108,22 @@ export class HistoryMap extends EventTarget {
         paint: { 'fill-color': ['interpolate', ['linear'], ['zoom'], Z_PEOPLES - 0.5, ['to-color', ['get', 'c']], Z_PEOPLES + 0.3, ['to-color', ['get', 'c2']]],
           'fill-opacity': 0, 'fill-antialias': false, 'fill-opacity-transition': { duration: 0 } } });
       m.addLayer({ id: 'uline' + id, type: 'line', source: 't' + id, filter: UNDER, minzoom: Z_PEOPLES - 0.4,
-        paint: { 'line-color': c.inner, 'line-opacity': 0, 'line-width': 0.5, 'line-dasharray': [3, 2], 'line-opacity-transition': { duration: 0 } } });
+        paint: { 'line-color': c.inner, 'line-opacity': 0, 'line-width': 0.6, 'line-dasharray': [3, 2], 'line-opacity-transition': { duration: 0 } } });
       for (let s = 0; s < SLOTS; s++) {
         const f = ['all', STATE, ['==', ['get', 's'], s]];
-        // a flat rim just outside the border (half of it is under the group's own fill), then the border line
-        m.addLayer({ id: `glow${s}${id}`, type: 'line', source: 't' + id, filter: f, layout: { 'line-join': 'round' },
-          paint: { 'line-color': ['get', 'ce'], 'line-opacity': 0, 'line-width': zoomIn(1, 6, 3.6, 7), 'line-opacity-transition': { duration: 0 } } });
-        m.addLayer({ id: `line${s}${id}`, type: 'line', source: 't' + id, filter: f, layout: { 'line-join': 'round' },
-          paint: { 'line-color': ['get', 'ce'], 'line-opacity': 0, 'line-width': zoomIn(1, 6, 2.1, 3.6), 'line-opacity-transition': { duration: 0 } } });
+        // the border: one solid black line; half of it is under the group's own fill, so it is drawn twice as
+        // wide as it shows (about 2 px at world zoom, 3.75 px zoomed in)
+        m.addLayer({ id: `line${s}${id}`, type: 'line', source: 't' + id, filter: f, layout: { 'line-join': 'round', 'line-cap': 'round' },
+          paint: { 'line-color': c.line, 'line-opacity': 0, 'line-width': zoomIn(1, 6, 4, 7.5), 'line-opacity-transition': { duration: 0 } } });
         m.addLayer({ id: `fill${s}${id}`, type: 'fill', source: 't' + id, filter: f,
           paint: { 'fill-color': fillColor, 'fill-opacity': 0, 'fill-opacity-transition': { duration: 0 } } });
       }
       m.addLayer({ id: 'inner' + id, type: 'line', source: 't' + id, filter: ['all', STATE, ['==', ['get', 'in'], 1]], minzoom: Z_SPLIT - 0.6,
         layout: { 'line-join': 'round' },
-        paint: { 'line-color': ['get', 'ce'], 'line-opacity': 0, 'line-width': zoomIn(Z_SPLIT, 7, 0.6, 1.3), 'line-opacity-transition': { duration: 0 } } });
+        paint: { 'line-color': c.inner, 'line-opacity': 0, 'line-width': zoomIn(Z_SPLIT, 7, 0.8, 1.5), 'line-opacity-transition': { duration: 0 } } });
     }
 
-    // flag fill: one canvas per stack (js/flagfill.js), drawn over the plain fills, with dark borders on top
+    // flag fill: one canvas per stack (js/flagfill.js), drawn over the plain fills, with black borders on top
     // (two neighbours under the same flag stay apart); a fourth canvas holds the leaving land during a change
     this._fc = {};
     // how the flags reach the map: 'canvas' (above), or 'pattern', the fallback where a canvas source fails (some
@@ -156,11 +156,9 @@ export class HistoryMap extends EventTarget {
     m.addImage('pf-none', new ImageData(2, 2), { pixelRatio: 2 });
     for (const id of STACKS) mkCanvas(id);
     for (const id of STACKS) {
-      // over flags: a pale casing under a firm dark rule, so borders read as one crisp inked line, not a pencil stroke
-      m.addLayer({ id: 'fcase' + id, type: 'line', source: 't' + id, filter: STATE, layout: { 'line-join': 'round', 'line-cap': 'round' },
-        paint: { 'line-color': this.dark ? '#cdbfa8' : '#fbf7ef', 'line-opacity': 0, 'line-width': zoomIn(1, 6, 3.4, 6), 'line-opacity-transition': { duration: 0 } } });
+      // over flags: one solid black line, bold and a little cartoony (no casing, no glow)
       m.addLayer({ id: 'fline' + id, type: 'line', source: 't' + id, filter: STATE, layout: { 'line-join': 'round', 'line-cap': 'round' },
-        paint: { 'line-color': this.dark ? '#0b0906' : '#1f1912', 'line-opacity': 0, 'line-width': zoomIn(1, 6, 1.6, 3.2), 'line-opacity-transition': { duration: 0 } } });
+        paint: { 'line-color': c.line, 'line-opacity': 0, 'line-width': zoomIn(1, 6, 2, 3.75), 'line-opacity-transition': { duration: 0 } } });
     }
 
     // land of the map being left that has not changed hands yet, over the new map during a change (show())
@@ -168,7 +166,7 @@ export class HistoryMap extends EventTarget {
     // per-feature opacity 'o' (1 until its moment, then easing to 0), stepped by show()
     const gone = ['coalesce', ['feature-state', 'o'], 1];
     m.addLayer({ id: 'leave-line', type: 'line', source: 'leave', filter: ['!=', ['get', 'u'], 1], layout: { 'line-join': 'round' },
-      paint: { 'line-color': ['get', 'ce'], 'line-opacity': gone, 'line-width': zoomIn(1, 6, 1.7, 3) } });
+      paint: { 'line-color': c.line, 'line-opacity': gone, 'line-width': zoomIn(1, 6, 4, 7.5) } });
     m.addLayer({ id: 'leave-fill', type: 'fill', source: 'leave',
       paint: { 'fill-color': fillColor, 'fill-opacity': ['*', gone, ['case', ['==', ['get', 'u'], 1], this.dark ? 0.85 : 0.9, 1]] } });
 
@@ -199,7 +197,7 @@ export class HistoryMap extends EventTarget {
     // war: the land where this year's shown battles were fought, edged in red (a slow pulse at rest)
     this._warCol = this.dark ? '#ff6b57' : '#d9261c';
     m.addLayer({ id: 'war-glow', type: 'line', source: 'tA', filter: NONE, layout: { 'line-join': 'round', visibility: 'none' },
-      paint: { 'line-color': this._warCol, 'line-width': zoomIn(1, 6, 4, 9), 'line-blur': zoomIn(1, 6, 2, 4), 'line-opacity': 0.45,
+      paint: { 'line-color': this._warCol, 'line-width': zoomIn(1, 6, 3, 7), 'line-blur': zoomIn(1, 6, 2, 4), 'line-opacity': 0.25,
         'line-opacity-transition': { duration: 800 } } });
     m.addLayer({ id: 'war-edge', type: 'line', source: 'tA', filter: NONE, layout: { 'line-join': 'round', visibility: 'none' },
       paint: { 'line-color': this._warCol, 'line-width': zoomIn(1, 6, 1.6, 2.6), 'line-dasharray': [2, 1.2] } });
@@ -247,7 +245,7 @@ export class HistoryMap extends EventTarget {
     const kind = (k) => ['==', ['get', 't'], k];
     const sym = (id, filter, layout, paint, extra = {}) => m.addLayer({ id, type: 'symbol', source: extra.source || 'labels', filter, ...(extra.minzoom != null ? { minzoom: extra.minzoom } : {}), ...(extra.maxzoom != null ? { maxzoom: extra.maxzoom } : {}),
       layout: { 'text-field': ['get', 'n'], 'text-max-width': 7.5, 'symbol-sort-key': ['-', 0, ['get', 'a']], ...layout },
-      paint: { 'text-halo-blur': 0.6, ...paint } });
+      paint: { 'text-halo-width': 0, ...paint } });
     // flag badges (js/flags.js): beside the name, below it; placed after the names (lower in the stack), so a
     // badge never covers a name, and after the war markers' blocks, so it never sits under a marker. A badge
     // shows once its state covers about 50 by 50 pixels; at world zoom only the largest powers have one.
@@ -263,17 +261,17 @@ export class HistoryMap extends EventTarget {
     m.on('zoomend', () => this._badgeData());
     // war markers are HTML markers: an invisible symbol at each keeps badges off them
     m.addSource('warblk', { type: 'geojson', data: EMPTY });
-    const blk = new ImageData(22, 22);
+    const blk = new ImageData(16, 16);
     m.addImage('blk', blk, { pixelRatio: 1 });
     m.addLayer({ id: 'warblk', type: 'symbol', source: 'warblk', layout: { 'icon-image': 'blk', 'icon-allow-overlap': true, 'icon-ignore-placement': false } });
-    const under = { 'text-color': c.textUnder, 'text-halo-color': c.haloUnder, 'text-halo-width': 1 };
+    const under = { 'text-color': c.textUnder, 'text-halo-width': 0 };   // no halos anywhere: plain ink on the map
     // peoples: one by one when zoomed in ...
     sym('lbl-people-s', ['all', kind('u'), ['<', ['get', 'a'], 60000]], { 'text-font': ITALIC, 'text-size': 11, 'text-padding': 4 }, under, { minzoom: 3.8 });
     sym('lbl-people', ['all', kind('u'), ['>=', ['get', 'a'], 60000]], { 'text-font': ITALIC, 'text-size': zoomIn(3, 6, 11, 13), 'text-padding': 5 }, under, { minzoom: Z_PEOPLES });
     // ... and one name per region at world zoom
     sym('lbl-region', kind('r'), { 'text-font': ITALIC, 'text-size': zoomIn(1, 3.4, 11, 13.5), 'text-letter-spacing': 0.04, 'text-padding': 8 }, under, { maxzoom: Z_PEOPLES });
-    const st = { 'text-color': c.textPart, 'text-halo-color': c.halo, 'text-halo-width': 1.2 };
-    const big = { 'text-color': c.text, 'text-halo-color': c.halo, 'text-halo-width': 1.4 };
+    const st = { 'text-color': c.textPart, 'text-halo-width': 0 };
+    const big = { 'text-color': c.text, 'text-halo-width': 0 };
     const AREA = { s: 30000, m: 250000, l: 1300000 };
     const ar = (lo, hi) => [...(lo != null ? [['>=', ['get', 'a'], lo]] : []), ...(hi != null ? [['<', ['get', 'a'], hi]] : [])];
     const stOrPart = ['any', kind('s'), kind('p')];
@@ -305,10 +303,10 @@ export class HistoryMap extends EventTarget {
     m.addSource('us-lbl', { type: 'geojson', data: EMPTY });
     m.addLayer({ id: 'us-label', type: 'symbol', source: 'us-lbl', minzoom: 3.4, filter: NONE,
       layout: { 'text-field': ['get', 'n'], 'text-font': ITALIC, 'text-size': 11.5, 'text-max-width': 7, 'text-padding': 2 },
-      paint: { 'text-color': c.textPart, 'text-halo-color': c.halo, 'text-halo-width': 1.2 } });
+      paint: { 'text-color': c.textUnder, 'text-halo-width': 0 } });
     m.addLayer({ id: 'col-label', type: 'symbol', source: 'col-lbl', minzoom: 3,
       layout: { 'text-field': ['get', 'n'], 'text-font': ITALIC, 'text-size': 12, 'text-max-width': 7 },
-      paint: { 'text-color': c.textPart, 'text-halo-color': c.halo, 'text-halo-width': 1.4 } });
+      paint: { 'text-color': c.textUnder, 'text-halo-width': 0 } });
 
     // events
     m.addSource('ev', { type: 'geojson', data: EMPTY, cluster: true, clusterRadius: 34, clusterMaxZoom: 5 });
@@ -465,10 +463,9 @@ export class HistoryMap extends EventTarget {
     for (let s = 0; s < SLOTS; s++) {
       m.setPaintProperty(`fill${s}${sid}`, 'fill-opacity', v(1));
       m.setPaintProperty(`line${s}${sid}`, 'line-opacity', v(1));
-      m.setPaintProperty(`glow${s}${sid}`, 'line-opacity', v(this.dark ? 0.55 : 0.3));
     }
     m.setPaintProperty('ufill' + sid, 'fill-opacity', v(this.dark ? 0.85 : 0.9));
-    m.setPaintProperty('inner' + sid, 'line-opacity', mode === 'on' ? ['interpolate', ['linear'], ['zoom'], Z_SPLIT - 0.5, 0, Z_SPLIT + 0.4, 0.6] : 0);
+    m.setPaintProperty('inner' + sid, 'line-opacity', mode === 'on' ? ['interpolate', ['linear'], ['zoom'], Z_SPLIT - 0.5, 0, Z_SPLIT + 0.4, 0.7] : 0);
     const fl = mode === 'on' && this._flagOn(sid);
     const pat = mode === 'on' && this._patOn(sid);
     m.setPaintProperty('flag' + sid, 'raster-opacity-transition', { duration: 0 });
@@ -476,7 +473,7 @@ export class HistoryMap extends EventTarget {
     m.setPaintProperty('fpat' + sid, 'fill-opacity', pat ? (this.dark ? 0.85 : 1) : 0);
     this._fline(sid, fl || pat);
     if (fl) this._upload(sid);
-    m.setPaintProperty('uline' + sid, 'line-opacity', mode === 'on' ? ['interpolate', ['linear'], ['zoom'], Z_PEOPLES - 0.4, 0, Z_PEOPLES + 0.4, 0.45] : 0);
+    m.setPaintProperty('uline' + sid, 'line-opacity', mode === 'on' ? ['interpolate', ['linear'], ['zoom'], Z_PEOPLES - 0.4, 0, Z_PEOPLES + 0.4, 0.55] : 0);
   }
 
   /** What changed between two prepared documents. A feature is unchanged when the other map has the same
@@ -571,7 +568,7 @@ export class HistoryMap extends EventTarget {
     if (prev !== id) {
       // the new map goes directly under the old one
       const order = ['ufill', 'uline'];
-      for (let s = 0; s < SLOTS; s++) order.push('glow' + s, 'line' + s, 'fill' + s);
+      for (let s = 0; s < SLOTS; s++) order.push('line' + s, 'fill' + s);
       order.push('inner');
       for (const l of order) m.moveLayer(l + id, 'ufill' + prev);
       m.moveLayer('flag' + id, 'flag' + prev);
@@ -808,26 +805,18 @@ export class HistoryMap extends EventTarget {
     } catch { this._unreadable = true; return true; }
   }
 
-  /** Text halos a little wider over busy flags; US state and colony fills give way to the flags. */
+  /** US state and colony fills give way to the flags (names keep no halo either way). */
   _fillStyle() {
     const m = this.map;
     const on = this.fillMode !== 'plain';
-    for (const l of ['lbl-xs', 'lbl-s', 'lbl-part', 'lbl-m', 'lbl-l', 'lbl-l-fb', 'lbl-l-line', 'lbl-emp', 'lbl-emp-fb', 'lbl-emp-line']) {
-      if (!m.getLayer(l)) continue;
-      const base = /lbl-(l|emp)/.test(l) ? 1.4 : 1.2;
-      m.setPaintProperty(l, 'text-halo-width', on ? base + 0.8 : base);
-      m.setPaintProperty(l, 'text-halo-blur', on ? 0.3 : 0.6);
-    }
     m.setPaintProperty('col-fill', 'fill-opacity', on ? 0 : 0.85);
     this._usFlagHide = on;
   }
 
   /** A canvas source uploads its pixels only while it plays and its layer is drawn: play it for a few frames
    *  from the moment its layer shows. */
-  _fline(sid, on) {   // the border over flag fills: dark rule plus its pale casing
-    const m = this.map;
-    m.setPaintProperty('fline' + sid, 'line-opacity', on ? 0.95 : 0);
-    m.setPaintProperty('fcase' + sid, 'line-opacity', on ? (this.dark ? 0.35 : 0.6) : 0);
+  _fline(sid, on) {   // the border over flag fills: one solid black line
+    this.map.setPaintProperty('fline' + sid, 'line-opacity', on ? 1 : 0);
   }
   _upload(sid) {
     const src = this.map.getSource('fsrc' + sid);
@@ -972,7 +961,7 @@ export class HistoryMap extends EventTarget {
         const el = document.createElement('button');
         el.type = 'button';
         el.className = `warmk ${mk.kind}`;
-        el.innerHTML = mk.kind === 'war' ? SWORDS : '<i></i>';
+        el.innerHTML = mk.kind === 'war' ? WAR_SVG : BATTLE_SVG;
         el.addEventListener('click', (e) => { e.stopPropagation(); this.dispatchEvent(new CustomEvent('event', { detail: mk.id })); });
         wrap.append(el);
         w = new maplibregl.Marker({ element: wrap, anchor: 'center' }).setLngLat([mk.lo, mk.la]).addTo(m);
@@ -1015,12 +1004,12 @@ export class HistoryMap extends EventTarget {
       m.setFilter(id, gs.length ? ['in', ['get', 'k'], ['literal', gs]] : NONE);
       m.setLayoutProperty(id, 'visibility', gs.length ? 'visible' : 'none');
     }
-    // a slow pulse of the red glow, at rest only (it repaints the map)
+    // a slow, subtle pulse of the red glow, at rest only (it repaints the map)
     clearInterval(this._pulse);
     if (gs.length && !this._travel && !reduceMotion()) {
       let hi = false;
-      this._pulse = setInterval(() => { hi = !hi; if (m.getLayer('war-glow')) m.setPaintProperty('war-glow', 'line-opacity', hi ? 0.6 : 0.12); }, 900);
-    } else m.setPaintProperty('war-glow', 'line-opacity', 0.4);
+      this._pulse = setInterval(() => { hi = !hi; if (m.getLayer('war-glow')) m.setPaintProperty('war-glow', 'line-opacity', hi ? 0.35 : 0.15); }, 1200);
+    } else m.setPaintProperty('war-glow', 'line-opacity', 0.25);
   }
 
   selectPolity(k) { this.selK = k; this.selG = null; this._sel(); }
@@ -1226,7 +1215,11 @@ function gk(g) {
   GK.set(g, v);
   return v;
 }
-const SWORDS = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3l7.5 7.5-1.4 1.4L3 4.8V3zm16 0v1.8l-7.1 7.1-1.4-1.4L19 3zM6.3 14.3l3.4 3.4-1.4 1.4-1-1-2.2 2.2-1.4-1.4 2.2-2.2-1-1zm11.4 0l1.4 1.4-1 1 2.2 2.2-1.4 1.4-2.2-2.2-1 1-1.4-1.4 3.4-3.4zM12 13.4l1.4 1.4-1.4 1.4-1.4-1.4z"/></svg>';
+// war markers: a red disc with one sword through it, corner to corner (a war: larger, with a dark red ring; a
+// battle: smaller); the same drawings are the key's icons (css/style.css)
+const SWORD = '<g transform="rotate(45 12 12)" fill="#141414"><path d="M12 .6l1.7 2.6V15.1h-3.4V3.2z"/><rect x="7.4" y="14.9" width="9.2" height="2.4" rx="1.2"/><rect x="10.9" y="17" width="2.2" height="4.2"/><circle cx="12" cy="22.3" r="1.45"/></g>';
+const WAR_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.4" fill="#d9261c" stroke="#7a0f0a" stroke-width="1.4"/>' + SWORD + '</svg>';
+const BATTLE_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.4" fill="#e0261b"/>' + SWORD + '</svg>';
 const BB = new WeakMap(), TEST = new WeakMap();
 function bbOf(g) {
   if (!BB.has(g)) {
