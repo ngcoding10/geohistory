@@ -3531,5 +3531,179 @@
   ],
   "disagree": "Garrison left at La Navidad: 39 (Wikipedia) or 44 (Britannica 1911), stated in the text. Minor date differences (second voyage 24 or 25 September 1493; Jamaica 23 or 25 June 1503) avoided by giving the month.",
   "checked": null
+ },
+ "cp18-082": {
+  "title": "Askia Muhammad takes the Songhai throne",
+  "y": 1493,
+  "place": "Gao, Mali",
+  "paras": [
+   "Sonni Ali had built Songhai, ruled from Gao on the Niger, into the leading power of the western Sudan, but he treated the Muslim scholars of Timbuktu harshly. Muhammad Ture (Muhammad ibn Abi Bakr), one of his leading generals, often clashed with him. Sonni Ali died in November 1492, drowned in a flooded stream on the way back from a campaign, according to the Songhai chronicle followed by Flora Shaw in A Tropical Dependency (1905). His son Sonni Baru succeeded him.",
+   "Muhammad rose against Baru, arguing that he was not a true Muslim. He was backed by the scholars of Timbuktu, whom Sonni Ali had persecuted, and by the Muslim chief of Bara; Baru relied on Songhai traditional religious leaders and the governor of an eastern province. Shaw describes two great battles near Gao; Wikipedia names the decisive one as Anfao, outside Gao, in April 1493. Muhammad took the throne and the title Askia, which his dynasty kept for the next century. The chronicle tradition explains the title as coming from the cry of Sonni Ali's daughters at the news (Shaw renders it 'the usurper'; Wikipedia, 'it is not his'), which Muhammad chose to adopt; Wikipedia notes that the title in fact existed well before him.",
+   "To strengthen his claim, Askia Muhammad made the pilgrimage to Mecca, leaving a brother as regent and travelling with an escort of 500 cavalry and 1,000 infantry. Wikipedia dates it to 1496–1498; Shaw says he left after nearly three years of reforms and campaigns and spent two years in the East. In Cairo the Abbasid caliph invested him as his lieutenant in the Sudan, and he returned with the prestige of the titles al-hajj and caliph.",
+   "Askia Muhammad then organised a standing army, favoured the Muslim scholars, and campaigned against the Mossi, Agadez and the Hausa states, making Songhai the largest empire in West African history. In 1528, by then blind and old, he was deposed by his son Askia Musa; he died in 1538."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Askia_Muhammad_I",
+    "title": "Askia Muhammad I (rev 1379853381, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://archive.org/download/tropicaldependen00shaw/tropicaldependen00shaw_djvu.txt",
+    "title": "Flora L. Shaw (Lady Lugard), A Tropical Dependency (London, 1905), chapters XX-XXIV, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Sonni Ali, ruler of Songhai from Gao, harsh to the ulama of Timbuktu (Wikipedia; Shaw: Sonni Ali's conquests; the orthodox and pious unheard during his reign).",
+   "Muhammad Ture (Muhammad ibn Abi Bakr) was a powerful general under Sonni Ali who frequently clashed with him (Wikipedia).",
+   "Shaw (following the Tarikh): Sonni Ali died in November 1492, drowned in a sudden flood returning from a campaign (attributed).",
+   "Sonni Baru succeeded in 1492 (Wikipedia); Shaw: a minority upheld one of Sonni Ali's sons.",
+   "Muhammad rose against Baru claiming he was not a faithful Muslim; supported by the Timbuktu ulama and Mansa Kura of Bara; Baru by traditional religious leaders and the Dendi fara (Wikipedia).",
+   "Shaw: two great battles near Gago (Gao); Wikipedia: Battle of Anfao, April 1493, outside Gao (both attributed).",
+   "Took power and the title Askia (Wikipedia; Shaw); Askia remained the royal title until the Moroccan conquest, about a hundred years (Shaw).",
+   "Folk etymology from Sonni Ali's daughters' cry: Shaw 'the Usurper', Wikipedia (Tarikh al-Sudan) 'it is not his'; the title was in use since the early 13th century (Wikipedia).",
+   "Pilgrimage with 500 horsemen and 1000 infantry (Wikipedia; Shaw); a favourite brother left as regent (Shaw).",
+   "Wikipedia: hajj in 1496 / 1497-1498, away nearly two years; Shaw: left after nearly three years of reforms, remained two years in the East (both attributed).",
+   "In Cairo invested by the Abbasid caliph as his lieutenant in the Sudan (Shaw); returned with the titles al-hajj and khalifa (Wikipedia).",
+   "Standing army organised; scholars favoured (Shaw; Wikipedia: Islam a pillar of his rule).",
+   "Campaigns against the Mossi, Agadez and Hausa states; largest empire in West African history (Wikipedia; Shaw: fought perhaps as many campaigns as Sonni Ali).",
+   "Deposed in 1528 by his son Askia Musa; blind by then (Shaw; Wikipedia: ill, forced to abdicate August 1528).",
+   "Died 1538 (Wikipedia: 1443-1538; Shaw: died 1538)."
+  ],
+  "disagree": "Date and length of the pilgrimage (1496-1498 in Wikipedia; after nearly three years of rule, two years in the East, in Shaw); the battle (Anfao, April 1493, in Wikipedia; two battles near Gao in Shaw); the meaning given to 'Askia' in the chronicle tradition. All stated in the text.",
+  "checked": null
+ },
+ "cp18-097": {
+  "title": "Muhammad Shaybani and the Uzbeks take Samarkand",
+  "y": 1500,
+  "place": "Samarkand, Uzbekistan",
+  "paras": [
+   "At the end of the 15th century Transoxiana, the heartland of Timur's old empire, was split among quarrelling Timurid princes. Samarkand was held by the young Sultan Ali Mirza, and his rivals included his cousin Babur, the Timurid prince of Fergana. From the steppe to the north came Muhammad Shaybani, a grandson of the Uzbek ruler Abu'l-Khayr Khan, at the head of Uzbek nomad warriors.",
+   "In 1500 Shaybani took Bukhara and marched on Samarkand. In his memoirs, the Baburnama, Babur tells how Sultan Ali Mirza's mother, Zuhra Begi Agha, herself an Uzbek, had secretly written to Shaybani offering that if he married her, her son would hand him the city. Sultan Ali Mirza went out to Shaybani's camp, almost alone and without consulting his commanders, and gave up Samarkand; Shaybani received him coldly, and a few days later he was killed. Khwaja Yahya, who had followed the prince out, was sent away towards Khurasan and murdered on the road with his two sons. Babur, who had been waiting nearby at Kesh, withdrew.",
+   "The Uzbek hold was not yet secure. Late in the autumn of 1500 Babur, with only 240 men by his own account, took Samarkand back in a surprise attack by ladder. In spring 1501 Shaybani returned from Bukhara; Babur marched out to meet him and was crushingly defeated at Sar-i Pul. Besieged in Samarkand, with food running out and his men slipping over the walls, Babur agreed to terms and left the city by night, losing his sister Khanzada Begum to Shaybani.",
+   "Shaybani went on to take Tashkent, Fergana and, in 1507, Herat, ending Timurid rule in Central Asia, and his dynasty ruled the Khanate of Bukhara until 1598. He was killed in 1510 fighting Shah Ismail I of Persia. Driven from his homeland, Babur turned south to Kabul and then to India, where he founded the Mughal Empire."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Bukhara",
+    "title": "Khanate of Bukhara (rev 1384702415, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     10,
+     11,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Shaybanids",
+    "title": "Shaybanids (rev 1384516384, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Sar-e-Pul",
+    "title": "Battle of Sar-e-Pul (rev 1370588658, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://archive.org/download/thebburnmainengl44608gut/44608-0.txt",
+    "title": "The Babur-nama in English (Memoirs of Babur), tr. Annette S. Beveridge (1922), events of 905-907 AH, Project Gutenberg text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Baber",
+    "title": "Baber, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     10,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Transoxiana divided among quarrelling Timurid princes; Sultan Ali Mirza held Samarkand (Baburnama).",
+   "Babur, Timurid prince of Fergana, was a rival claimant to Samarkand (Wikipedia; EB: took Samarkand 1497, lost it; Baburnama).",
+   "Muhammad Shaybani, grandson of Abu'l-Khayr Khan (Wikipedia, both articles).",
+   "Shaybani took Bukhara and moved on Samarkand in 1500 (Baburnama: news that Shaibani Khan had taken Bukhara and was on his way to Samarkand; Wikipedia Shaybanids: ruled 1500-10, conquered Samarkand and Bukhara).",
+   "Zuhra Begi Agha, Sultan Ali Mirza's Uzbek mother, secretly offered Samarkand if Shaybani married her (Baburnama, attributed).",
+   "Sultan Ali Mirza went out almost alone without consulting his begs, received coldly, killed three or four days later (Baburnama, attributed).",
+   "Khwaja Yahya, who had gone out after the Mirza, was dismissed with his two sons towards Khurasan and killed by Uzbeks near Khwaja Kardzan (Baburnama, attributed).",
+   "Babur was at Kesh and moved away (Baburnama).",
+   "Babur retook Samarkand late in autumn with 240 men, by surprise, setting up ladders (Baburnama, attributed); Wikipedia: Uzbeks driven out of Samarkand in early 1501 (Sar-e-Pul article).",
+   "Shaybani returned from Bukhara in spring (April-May) 1501; Babur marched out and was decisively defeated at Sar-i Pul (Wikipedia, both; Baburnama; EB: defeated in 1501).",
+   "Babur besieged in Samarkand, starvation and desertion, made peace and left by night (Baburnama; Wikipedia Khanate of Bukhara: Babur's defeat and flight).",
+   "Khanzada Begum fell into Shaybani's hands (Baburnama).",
+   "Shaybani conquered Samarkand, Bukhara, Tashkent and Andijan (Fergana) 1500-1503 and Herat, ending the Timurid dynasty (Wikipedia, both articles); Shaybanids ruled Bukhara until 1598 (Wikipedia).",
+   "Shaybani died at the hands of Shah Ismail I; ruled until 1510 (Wikipedia, Shaybanids).",
+   "Babur fled to Kabul, turned to India and founded the Mughal Empire (Wikipedia, Khanate of Bukhara; EB)."
+  ],
+  "disagree": "Babur's recapture of Samarkand: late autumn of 1500 in the Baburnama (the year 906 AH ran from July 1500 to July 1501); 'early 1501' for the Uzbek expulsion in Wikipedia's Sar-e-Pul article. The text follows Babur's own account and attributes it.",
+  "checked": null
  }
 }
