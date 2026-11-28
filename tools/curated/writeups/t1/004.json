@@ -1711,7 +1711,11 @@
    "Hulegu's conflict with Berke of the Golden Horde prevented full revenge; the Mamluks took the last Crusader states by 1291."
   ],
   "disagree": "Size of Kitbuqa's army: about one tumen, nominally 10,000 (10,000–12,000 in Wikipedia's account) against 20,000 in AramcoWorld; al-Yunini's 100,000 is regarded as exaggerated. Wikipedia says the Mongols reached Ain Jalut first and took up position; AramcoWorld has Qutuz establishing positions there first. Kitbuqa's death: killed in the battle (Wikipedia) or captured and executed (AramcoWorld).",
-  "checked": null
+  "checked": {
+   "by": "https://www.warhistoryonline.com/instant-articles/the-battle-of-ayn-jalut.html",
+   "result": "Claims 1, 3, 5, 8, 9 and 11 checked: battle on 3 September 1260 with Mamluk forces concealed in the highlands; Aleppo and Damascus taken by the Mongols in 1260; Kitbuqa left with about 10,000 men (some estimates 20,000); Qutuz sent envoys to the Franks at Acre; Kitbuqa killed with most of his force. Consistent.",
+   "errors": 0
+  }
  },
  "Q154031": {
   "title": "German Peasants' War",
@@ -1789,7 +1793,11 @@
    "Up to 100,000 of about 300,000 peasants were killed (Wikipedia); survivors were fined, the old order restored, often harsher; few gains, concessions in only a few districts (EBSCO)."
   ],
   "disagree": "Start: Wikipedia dates the Stühlingen rising to the 1524 harvest, with Hans Müller's Evangelical Brotherhood formed on 24 August 1524; EBSCO dates the first outbreak to June 1524. End: Wikipedia gives 1524–1525; EBSCO 1524–1526, counting Gaismair's fighting in the Tyrol. Frankenhausen: Wikipedia credits the joint armies of Philip of Hesse and George of Saxony; EBSCO names Philip. Deaths: Wikipedia up to 100,000; EBSCO gives no total ('thousands').",
-  "checked": null
+  "checked": {
+   "by": "https://www.ebsco.com/research-starters/history/thomas-muntzer/",
+   "result": "Claim 13 checked: Müntzer's followers were defeated at Frankenhausen in May 1525 and he was tortured and beheaded on 27 May 1525. Consistent.",
+   "errors": 0
+  }
  },
  "Q154483": {
   "title": "Augsburg Confession",
@@ -1854,7 +1862,11 @@
    "The unaltered confession is in the Book of Concord (1580); an English translation appeared in 1536 and influenced the Anglican articles."
   ],
   "disagree": "Authorship: Wikipedia's lead says it was written by Luther, Melanchthon and two others; EBSCO and Wikipedia's narrative describe Melanchthon drafting it from the Schwabach and Torgau Articles, with Luther approving it from Coburg.",
-  "checked": null
+  "checked": {
+   "by": "https://www.ebsco.com/research-starters/history/philipp-melanchthon/",
+   "result": "Claims 4, 6 and 9 checked (a separate EBSCO article, not the one used for writing): Melanchthon was the author, wrote conciliatorily, and defended the confession in the Apology (1531). Consistent.",
+   "errors": 0
+  }
  },
  "Q154577": {
   "title": "Peace of Augsburg",
@@ -1935,7 +1947,11 @@
    "The Peace of Westphalia (1648) restored it and opened it to Calvinists."
   ],
   "disagree": "Wikipedia's lead calls it a treaty between Charles V and the Schmalkaldic League; GHDI's text and EBSCO describe it as the recess of the Imperial Diet issued by Ferdinand for the emperor, and the League had been defeated in 1547. Wikipedia says the requirement for a converting prelate to resign was not spelled out in the agreement, but § 18 of the text (GHDI translation) orders him to give up his office and benefices.",
-  "checked": null
+  "checked": {
+   "by": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/augsburg-religious-peace-1555",
+   "result": "Claims 1, 7, 9, 10 and 13 checked against Thomas A. Brady's article (Europe 1450 to 1789): enacted by the diet at Augsburg on 25 September 1555; the phrase cuius regio, eius religio was coined later (1586); ecclesiastical princes who converted had to resign; Ferdinandine Declaration; Calvinists and Anabaptists excluded; restored with Calvinists added in 1648. Consistent.",
+   "errors": 0
+  }
  },
  "Q4373": {
   "title": "Battle of White Mountain",
@@ -2096,7 +2112,11 @@
    "Without land to reward warriors the shogunate was weakened (fell 1333); the invasions set a limit on Mongol expansion."
   ],
   "disagree": "Why the 1274 fleet left is disputed: a storm (traditional account and the History of Yuan), losses and quarrels among the commanders, a deliberate withdrawal after a reconnaissance or show of force, or, in Hattori Hideo's view, a storm after several days ashore. The size of the 1281 force (about 140,000 in the Yuan sources) is thought exaggerated; Conlan suggests about 14,000, Rossabi about 70,000. The 1281 typhoon is dated 15 August by Wikipedia and 23 August by Kawai Atsushi (nippon.com); the difference probably reflects calendar conversion but neither source says so.",
-  "checked": null
+  "checked": {
+   "by": "https://www.ebsco.com/research-starters/history/kamakura-period/",
+   "result": "Claims 1, 14 and 15 checked: invasions of 1274 and 1281 repelled with the help of storms called kamikaze; the shogunate could not reward its warriors and was weakened. Consistent (EBSCO gives over 600 ships and over 20,000 troops for 1274).",
+   "errors": 0
+  }
  },
  "Q620965": {
   "title": "Coup of 18 Brumaire",
@@ -2166,7 +2186,11 @@
    "France largely accepted the regime; the coup is seen as ending the Revolution and led to the 1804 coronation."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://www.ebsco.com/research-starters/history/napoleon-i/",
+   "result": "Claims 1 and 13 checked: a coup in 1799 made Napoleon First Consul; crowned emperor in 1804. Consistent.",
+   "errors": 0
+  }
  },
  "Q112183": {
   "title": "Treaty of Amiens",
@@ -2246,7 +2270,11 @@
    "Britain declared war on 18 May 1803, beginning the Napoleonic Wars."
   ],
   "disagree": "Date of signature: 25 March 1802 in the Fondation Napoléon's chronology and in Wikipedia's account of the negotiations; 27 March 1802 in the English text of the treaty published by the Fondation, and in Wikipedia's lead.",
-  "checked": null
+  "checked": {
+   "by": "https://www.ebsco.com/research-starters/history/french-revolutionary-wars/",
+   "result": "Claims 2, 4 and 11 checked: Addington's government signed the treaty (dated 27 March 1802 by EBSCO, as noted under 'disagree'); Britain's failure to return Malta to the Knights was the pretext for renewed war. Consistent.",
+   "errors": 0
+  }
  },
  "Q151060": {
   "title": "Civil Code of the French (Napoleonic Code)",
@@ -2406,7 +2434,11 @@
    "Tilsit cemented Napoleon's control of central Europe with Russia and Prussia aligned against Britain and Sweden; in June 1812 Napoleon crossed the Neman to invade Russia."
   ],
   "disagree": "Wikipedia's lead says the Franco-Russian treaty was signed on the raft on the Neman; the Fondation Napoléon dates the raft meeting to 25 June and the signing to 7 July in the town of Tilsit. The armistice is dated 20 June (Fondation close-up), 21 June (Fondation timeline) or, in a local eyewitness diary quoted by the Fondation, 24 June.",
-  "checked": null
+  "checked": {
+   "by": "https://www.ebsco.com/research-starters/history/alexander-i/",
+   "result": "Claims 4 and 11 checked: Napoleon and Alexander met at Tilsit on 25 June 1807; the alliance was perceived as a humiliation and the trade restrictions hurt Russia's economy. Consistent.",
+   "errors": 0
+  }
  },
  "Q3699": {
   "title": "Revolutions of 1848 in the German states",
@@ -2415,10 +2447,29 @@
   "paras": [
    "In March 1848, inspired by the February revolution in Paris that overthrew King Louis Philippe, crowds across the 39 states of the German Confederation demanded civil liberties, an end to censorship, representative government and a united German nation. Their banner was the black, red and gold tricolour. Middle-class liberals, democrats, artisans hit by economic crisis and peasants all took part, though with different aims. Their opponents were the princes and their armies, above all in Prussia and Austria. In the Electorate of Hesse, for example, a People's Commission in the city of Hanau on 9 March pressed demands on the Prince-Elector, according to the Origins article cited here. In Berlin and Vienna the protests turned into street fighting.",
    "Shaken, the rulers gave way: censorship was lifted, liberal ministers were appointed, and they agreed to an all-German parliament. In Berlin, after fighting between crowds and troops on 18–19 March, King Frederick William IV withdrew the army from the city, promised a constitution and rode through the streets wearing the national colours. A preliminary parliament met in Frankfurt at the end of March, and on 18 May 1848 the elected German National Assembly opened in St Paul's Church in Frankfurt, with the liberal Heinrich von Gagern as its president.",
-   "The Assembly passed a catalogue of basic rights, including equality before the law, freedom of the press and of association and the abolition of class privileges, adopted on 21 December 1848 according to the Bundestag's history. In March 1849 it adopted a constitution for a federal German empire without Austria (the 'small German' solution) with a hereditary emperor and an elected parliament, and it chose the King of Prussia as emperor. In April 1849 Frederick William IV refused a crown offered by a parliament rather than by the princes.",
-   "By then the counter-revolution was under way. In Prussia the king had appointed the conservative Brandenburg ministry in November 1848, sent troops back into Berlin and later imposed a conservative constitution. The Frankfurt Assembly broke up in 1849; a rump of mostly left-wing members met in Stuttgart until it was dispersed, and uprisings to defend the constitution, especially in Baden, ended with the fall of the fortress of Rastatt in the summer of 1849. Many revolutionaries, the 'Forty-Eighters', emigrated, many to the United States. The revolution failed to unite Germany, but its basic rights and its colours influenced the Weimar Constitution and the Basic Law, and black, red and gold became the flag of Germany."
+   "The Assembly passed a catalogue of basic rights, including equality before the law, freedom of the press and of association and the abolition of class privileges, adopted on 21 December 1848 according to the Bundestag's history. In March 1849 (on 27 March according to the Bundestag, 28 March according to Wikipedia) it adopted a constitution for a federal German empire without Austria (the 'small German' solution) with a hereditary emperor and an elected parliament, and it chose the King of Prussia as emperor. In April 1849 Frederick William IV refused the crown, saying he could accept only with the consent of his fellow princes; privately he scorned a crown offered by a revolution.",
+   "By then the counter-revolution was under way. In Prussia the king had appointed the conservative Brandenburg ministry in November 1848, sent troops back into Berlin and later imposed a conservative constitution. The Frankfurt Assembly broke up at the end of May 1849; a rump of mostly left-wing members met in Stuttgart until it was dispersed, and uprisings to defend the constitution, especially in Baden, ended with the fall of the fortress of Rastatt in the summer of 1849. Many revolutionaries, the 'Forty-Eighters', emigrated, many to the United States. The revolution failed to unite Germany, but its basic rights and its colours influenced the Weimar Constitution and the Basic Law, and black, red and gold became the flag of Germany."
   ],
   "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/German_revolutions_of_1848%E2%80%931849",
+    "title": "German revolutions of 1848–1849",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     6,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
    {
     "url": "https://www.bundestag.de/en/parliament/history/parliamentarism/1848",
     "title": "Revolution and the National Assembly in Frankfurt am Main 1848/1849",
@@ -2492,14 +2543,14 @@
    "The National Assembly opened in St Paul's Church on 18 May 1848; Heinrich von Gagern was president (Bundestag).",
    "Street fighting in Berlin on 18–19 March 1848 (Bundestag; EBSCO: 18 to 22 March).",
    "Basic rights (equality, press and association freedom, abolition of class privilege) were adopted on 21 December 1848 (Bundestag).",
-   "In March 1849 a constitution for a federal empire without Austria with a hereditary emperor was adopted (Bundestag: 27 March).",
+   "In March 1849 a constitution for a federal empire without Austria with a hereditary emperor (the King of Prussia) was adopted (Bundestag: 27 March; Wikipedia: 28 March).",
    "In November 1848 the king appointed the Brandenburg ministry, brought troops back to Berlin, and later imposed a conservative constitution (in force from 1850).",
-   "In April 1849 Frederick William IV refused the imperial crown.",
-   "The Assembly dissolved in 1849; the Stuttgart rump and uprisings in Baden were crushed, ending with Rastatt in summer 1849 (Bundestag); revolutions fell to Prussian, Russian and Habsburg armies (EBSCO).",
+   "In April 1849 Frederick William IV refused the imperial crown, citing the need for his fellow princes' consent (Wikipedia), privately scorning a crown 'from the gutter'.",
+   "The Assembly dissolved at the end of May 1849 (Wikipedia: 31 May); the Stuttgart rump and uprisings in Baden were crushed, ending with Rastatt in summer 1849 (Bundestag); revolutions fell to Prussian, Russian and Habsburg armies (EBSCO).",
    "Many Forty-Eighters emigrated, especially to the United States.",
    "The basic rights influenced the Weimar Constitution and the Basic Law; black-red-gold became the flag of Germany."
   ],
-  "disagree": "The Origins article says the National Assembly disbanded in March 1849; the Bundestag's history says it dissolved itself at the end of May 1849, after which a rump met in Stuttgart. The Bundestag dates the Berlin street fighting to 18–19 March 1848; EBSCO says the fighting lasted from 18 to 22 March.",
+  "disagree": "Date of the constitution: 27 March 1849 (Bundestag) or 28 March 1849 (Wikipedia). End of the Assembly: the Origins article says it disbanded in March 1849; the Bundestag says it dissolved itself at the end of May and Wikipedia gives 31 May 1849, after which a rump met in Stuttgart. The Bundestag dates the Berlin street fighting to 18–19 March 1848; EBSCO says it lasted from 18 to 22 March.",
   "checked": null
  },
  "Q154981": {
@@ -2570,6 +2621,235 @@
    "By the Treaty of Vienna (30 October 1864) Denmark ceded Schleswig, Holstein and Lauenburg; disputes led to the war of 1866, Prussian takeover, unification in 1871; northern Schleswig returned to Denmark after the 1920 plebiscite."
   ],
   "disagree": "EBSCO says the Treaty of Vienna gave Schleswig to Prussia and Holstein to Austria; the Danish museum booklet says the three duchies were ceded to the victors. EBSCO's account of the prelude also differs from the museum's on several points (it calls Christian IX Frederick VII's son and says Denmark granted Holstein independence); the museum's account is followed here.",
+  "checked": null
+ },
+ "Q391358": {
+  "title": "Emancipation Proclamation",
+  "y": 1862,
+  "place": "United States of America",
+  "paras": [
+   "The Emancipation Proclamation was issued by President Abraham Lincoln during the American Civil War in two steps: a preliminary proclamation on 22 September 1862 and the final proclamation on 1 January 1863. Using his war powers as commander-in-chief, Lincoln declared that all people held as slaves in the states, and parts of states, still in rebellion against the United States 'are, and henceforward shall be free'.",
+   "Lincoln had long opposed slavery, but in the first year of the war he put preserving the Union first, partly so as not to drive the slave-holding border states that had stayed loyal (Delaware, Maryland, Kentucky and Missouri) into secession; abolitionists such as Senator Charles Sumner and Horace Greeley's New York Tribune pressed him to act. On 22 July 1862 he read a draft proclamation to his cabinet. Secretary of State William Seward advised waiting for a Union victory so that it would not look like an act of desperation after the army's defeats in Virginia. That victory came at Antietam in Maryland on 17 September 1862, after which Lee's Confederate army withdrew to Virginia; five days later Lincoln issued the preliminary proclamation, warning that slaves in any state still in rebellion on 1 January 1863 would be freed.",
+   "No Confederate state returned, and on 1 January 1863 Lincoln signed the final proclamation. It covered more than 3.5 million of the roughly 4 million people enslaved in the United States, but it applied only to areas in rebellion: the loyal border states and parts of the Confederacy already under Union control, such as much of Tennessee, were exempt, and in the areas it covered the federal government had no immediate power to enforce it. Freedom therefore depended on the advance of Union armies, and every advance after January 1863 freed more people, many of whom escaped to Union lines.",
+   "The proclamation turned the war for the Union into a war against slavery as well. It opened the Union army and navy to Black men, and by the war's end about 180,000 had served as United States Colored Troops (the National Park Service's figure; Wikipedia says nearly 200,000 Black men joined the Union Army, and the National Archives gives almost 200,000 Black soldiers and sailors). It also discouraged Britain and France from intervening on the Confederacy's side. Slavery was finally abolished throughout the United States by the Thirteenth Amendment, ratified in December 1865."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Emancipation_Proclamation",
+    "title": "Emancipation Proclamation",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.archives.gov/exhibits/featured-documents/emancipation-proclamation",
+    "title": "The Emancipation Proclamation",
+    "publisher": "U.S. National Archives",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.nps.gov/articles/the-emancipation-proclamation.htm",
+    "title": "The Emancipation Proclamation",
+    "publisher": "U.S. National Park Service",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/emancipation-proclamation/",
+    "title": "Emancipation Proclamation",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Lincoln issued a preliminary proclamation on 22 September 1862 and the final proclamation on 1 January 1863.",
+   "It declared slaves in the states/areas in rebellion free (quoted wording), based on his war powers.",
+   "Lincoln opposed slavery but put the Union first, partly to keep the loyal slave states (Delaware, Maryland, Kentucky, Missouri); Sumner and Greeley's Tribune pressed him.",
+   "On 22 July 1862 Lincoln read a draft to his cabinet.",
+   "Seward advised waiting for a victory so it would not look desperate.",
+   "Antietam (17 September 1862) was followed by Lee's withdrawal; five days later Lincoln issued the preliminary proclamation, effective 1 January 1863 for states still in rebellion.",
+   "No Confederate state returned; Lincoln signed the final proclamation on 1 January 1863.",
+   "It exempted the border states and Union-controlled parts of the Confederacy; freedom depended on Union military advance.",
+   "It transformed the war into a war against slavery and opened the army and navy to Black men.",
+   "About 180,000 served as USCT (NPS); almost 200,000 Black soldiers and sailors (National Archives); many enslaved people escaped to Union lines.",
+   "It influenced Britain and France not to intervene (NPS); slavery was abolished by the 13th Amendment in December 1865.",
+   "Wikipedia: it applied to more than 3.5 million of the 4 million enslaved; Tennessee was under Union control and exempt."
+  ],
+  "disagree": "Number of Black servicemen: about 180,000 United States Colored Troops (National Park Service), nearly 200,000 Black men in the Union Army (Wikipedia), or almost 200,000 Black soldiers and sailors (National Archives).",
+  "checked": null
+ },
+ "Q133132": {
+  "title": "Paris Commune",
+  "y": 1871,
+  "place": "French Third Republic",
+  "paras": [
+   "The Paris Commune was the revolutionary government that held Paris for 72 days, from 18 March to 28 May 1871, in defiance of the French national government of Adolphe Thiers, which sat at Versailles. Its supporters, the Communards, were mostly Parisian workers and artisans organised in the city's National Guard, some 180,000 strong, led by republicans, Jacobins, Blanquists, followers of Proudhon and members of the First International. Against them stood the National Assembly elected in February 1871, which had a monarchist majority, and the regular army.",
+   "The revolt grew out of France's defeat in the Franco-Prussian War. Paris had held out through a four-month German siege and resented the armistice signed by Jules Favre with Bismarck in January 1871 and the peace terms Thiers accepted, including a German victory parade on the Champs-Élysées on 1 March. The new Assembly, mainly provincial and monarchist, moved from Bordeaux to Versailles rather than Paris, ended the National Guard's pay and the wartime moratorium on rents and debts, which threatened many Parisians with ruin.",
+   "On the night of 17–18 March Thiers sent troops to take back the cannons, 227 by the City of Paris's count, that the National Guard had moved to Montmartre and Belleville. Crowds, many of them women, and guardsmen surrounded the soldiers, who fraternised with them; generals Lecomte and Thomas were shot. The attempt to disarm Paris had failed, and the insurrection had begun. Elections on 26 March produced the Commune's council. Divided between a Jacobin majority and a socialist minority, it introduced measures including secular education, the separation of church and state and steps towards equal pay for women, but it did not take the offensive against Versailles. Short-lived communes in Lyon, Marseille, Saint-Étienne and other towns were quickly suppressed.",
+   "Thiers's army, now much stronger, entered Paris and during the 'Bloody Week' of 21–28 May crushed the Commune; many Communards were shot after surrendering. The number killed is uncertain: about 20,000 according to the City of Paris, and possibly as many as 30,000 according to scholars cited by EBSCO. Karl Marx wrote a defence of the Commune soon after its fall, and its memory has remained powerful in France and abroad."
+  ],
+  "sources": [
+   {
+    "url": "https://www.paris.fr/pages/les-150-ans-de-la-commune-l-origine-1-5-16961",
+    "title": "Les 150 ans de la Commune : l'origine (1/5)",
+    "publisher": "Ville de Paris (paris.fr)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/paris-commune/",
+    "title": "Paris Commune",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The Commune held Paris for 72 days from 18 March 1871 until the Bloody Week ended on 28 May, in defiance of Thiers's government at Versailles.",
+   "The National Guard numbered about 180,000 (paris.fr); Communards included republicans, Jacobins, Blanquists, Proudhonists and Internationalists.",
+   "The National Assembly elected on 8 February 1871 had a monarchist majority.",
+   "The revolt followed the Franco-Prussian War and the four-month siege; Parisians resented the armistice and Thiers's peace concessions.",
+   "Favre signed an armistice with Bismarck on 28 January 1871; the Germans paraded on the Champs-Élysées on 1 March (paris.fr).",
+   "The Assembly moved from Bordeaux to Versailles, ended National Guard pay and the rent/debt moratorium.",
+   "On 17–18 March troops were sent to seize the National Guard's cannons (paris.fr: 227) at Montmartre and Belleville; the attempt failed.",
+   "Crowds, many of them women, surrounded the soldiers, who fraternised; generals Lecomte and Thomas were shot (paris.fr).",
+   "Elections to the Commune were held on 26 March; it was divided between a Jacobin majority and a socialist minority and did not take the offensive (EBSCO).",
+   "The Commune introduced secular education, separation of church and state, steps towards women's professional equality (paris.fr); social experimentation (EBSCO).",
+   "Communes in Lyon, Marseille and Saint-Étienne were quickly suppressed.",
+   "Bloody Week 21–28 May: about 20,000 Communards killed (paris.fr).",
+   "EBSCO: scholars estimate up to 30,000 killed, many summarily executed after surrender; Marx wrote a defence of the Commune (EBSCO bibliography: The Civil War in France); paris.fr: it still marks memories in France and abroad."
+  ],
+  "disagree": "Deaths in the Bloody Week: about 20,000 Communards according to the City of Paris; scholars cited by EBSCO estimate as many as 30,000.",
+  "checked": null
+ },
+ "Q153858": {
+  "title": "Battle of Tannenberg (1914)",
+  "y": 1914,
+  "place": "German Empire",
+  "paras": [
+   "The Battle of Tannenberg was fought in East Prussia in the last days of August 1914, at the start of the First World War, between the German Eighth Army, commanded by Paul von Hindenburg with Erich Ludendorff as his chief of staff, and the Russian Second Army of General Aleksandr Samsonov. It ended with the encirclement and destruction of most of Samsonov's army, the most complete German victory of the war.",
+   "Russia invaded East Prussia sooner than Germany expected, with two armies: the First Army under Pavel Rennenkampf from the east and Samsonov's Second Army from the south, intended to trap the outnumbered Germans between them. After Rennenkampf beat the Germans at Gumbinnen on 20 August, the German commander Maximilian von Prittwitz proposed abandoning East Prussia and was replaced by Hindenburg and Ludendorff. They adopted a plan prepared by Prittwitz's operations officer Max Hoffmann: leaving only a cavalry screen facing Rennenkampf, who had paused, they moved almost the whole army south against Samsonov, part of it by rail.",
+   "The Russian armies were poorly coordinated, and many of their radio messages were sent uncoded, so the Germans could read their plans; Samsonov advanced without knowing either the German strength or that Rennenkampf had halted. From 26 August German corps under Hermann von François and August von Mackensen attacked both of Samsonov's flanks, and by 29 August they had closed the ring around the Russian centre. Samsonov ordered a retreat too late and, after the defeat, is believed to have taken his own life.",
+   "Russian losses were enormous, though figures differ: History Hit gives about 95,000 captured and 78,000 killed or wounded out of some 150,000 men, while EBSCO gives 122,000 prisoners and 500 guns, against German losses of about 15,000. Hindenburg and Ludendorff became national heroes, and the battle was named after the medieval Tannenberg (Grunwald), where the Teutonic Knights had been defeated in 1410, about 30 km away. The Russian invasion had nonetheless made Germany move troops east, which may have helped the French at the Battle of the Marne in September 1914."
+  ],
+  "sources": [
+   {
+    "url": "https://www.historyhit.com/how-the-german-army-won-its-greatest-victory-of-the-first-world-war-at-the-battle-of-tannenberg/",
+    "title": "How the German Army Won Its Greatest Victory of the First World War at the Battle of Tannenberg",
+    "publisher": "History Hit",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/battle-tannenberg-1914/",
+    "title": "Battle of Tannenberg (1914)",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "In late August 1914 in East Prussia the German Eighth Army under Hindenburg and Ludendorff destroyed Samsonov's Russian Second Army by encirclement (History Hit: most complete German victory of the war).",
+   "Russia invaded with two armies, Rennenkampf's First and Samsonov's Second, in a pincer movement; Russia mobilised faster than Germany expected.",
+   "Rennenkampf defeated the Germans at Gumbinnen (EBSCO: 20 August).",
+   "Prittwitz was replaced by Hindenburg and Ludendorff (EBSCO: he had proposed abandoning East Prussia).",
+   "EBSCO: the plan was Max Hoffmann's; the I Corps under François was moved by rail.",
+   "The Germans left a cavalry screen against Rennenkampf, who had paused, and turned against Samsonov.",
+   "Poor Russian communications; uncoded radio messages read by the Germans (History Hit); Samsonov ignorant of German strength and of Rennenkampf's halt.",
+   "Attacks began on 26 August on Samsonov's flanks (François, Mackensen); the encirclement was completed by 29 August.",
+   "Samsonov ordered a retreat too late and is thought to have committed suicide.",
+   "History Hit: 95,000 captured, 78,000 killed or wounded, of 150,000; Hindenburg and Ludendorff hailed as heroes; named after the 1410 battle about 30 km away.",
+   "EBSCO: 122,000 prisoners, 500 guns; German losses 15,000.",
+   "The battle was named after Tannenberg/Grunwald 1410, where the Teutonic Knights were defeated.",
+   "The diversion of German units east may have aided the French at the Marne (EBSCO)."
+  ],
+  "disagree": "Russian losses: about 95,000 captured and 78,000 killed or wounded (History Hit) against 122,000 prisoners and 500 guns (EBSCO). EBSCO's overview dates the battle 23–26 August 1914, while its narrative and History Hit put the main fighting from 26 August to the completion of the encirclement on 29 August.",
   "checked": null
  }
 }
