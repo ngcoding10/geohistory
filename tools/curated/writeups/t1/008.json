@@ -3326,5 +3326,276 @@
   ],
   "disagree": "Losses: the Austrians admitted 696 killed, wounded and missing; Digby Smith, Rothenberg and Chandler give about 2,500 (all as reported by Wikipedia); both stated. Date of the Armistice of Cherasco: 28 April (Wikipedia) or 27 April (1911 Britannica); both stated. Timing of the fighting on 12 April differs (Wikipedia: over by 9:30 AM; Britannica: mists cleared about 9 and heavy fighting began); left out of the text.",
   "checked": null
+ },
+ "Q17502440": {
+  "title": "Haitian Declaration of Independence",
+  "y": 1804,
+  "place": "Gonaïves, Haiti",
+  "paras": [
+   "The French colony of Saint-Domingue, on the western part of the island of Hispaniola, was worked by enslaved Africans. In August 1791 the slaves rose in revolt, and in 1793 French commissioners proclaimed the abolition of slavery. By 1801 the former slave Toussaint Louverture controlled the colony and issued a constitution that made him governor for life. Napoleon Bonaparte, then First Consul of France, sent an expedition under his brother-in-law General Charles Leclerc in 1802 to restore French rule; Wikipedia and the 1911 Encyclopaedia Britannica say the aim included restoring slavery. Toussaint laid down his arms on French guarantees, was seized and sent to France, and died in prison there in 1803.",
+   "The struggle was renewed under Jean-Jacques Dessalines, one of Toussaint's generals and himself a former slave. His Indigenous Army defeated the French under Rochambeau at Vertières, near Cap-Français, on 18 November 1803, and the French evacuated the colony that month.",
+   "On 1 January 1804, at Gonaïves, Dessalines and his generals proclaimed independence and gave the country the name Hayti, after the island's indigenous Taíno name. The printed act, drafted by Dessalines's secretary Louis Boisrond-Tonnerre, has three parts. In the first, the assembled generals swore to renounce France forever and to die rather than live under its rule. The second, Dessalines's proclamation to the people, declares that it is not enough to have expelled the 'barbarians' who had bloodied the land for two centuries, and that the people must 'live independent or die'. It recalls French cruelties and calls for vengeance on the French, but also asks Haitians to leave the neighbouring islands in peace and not to act as revolutionary firebrands there. In the third, seventeen generals proclaimed Dessalines governor-general for life, swore to obey his laws blindly, and gave him the right to make peace and war and to name his successor.",
+   "Haiti thus became the first independent state of Latin America and the Caribbean, and the second in the Americas after the United States, born from a successful slave revolt. Between February and April 1804 Dessalines had the remaining white French population massacred; Wikipedia puts the dead at between 3,000 and 5,000. In September 1804 he was proclaimed emperor, and he was crowned in October; he was assassinated in 1806. France did not recognise Haiti's independence until 1825, and the United States not until 1862."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Haitian_Declaration_of_Independence",
+    "title": "Haitian Declaration of Independence (rev 1382136265, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Jean-Jacques_Dessalines",
+    "title": "Jean-Jacques Dessalines (rev 1386007494, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Verti%C3%A8res",
+    "title": "Battle of Vertières (rev 1386007299, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     6
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Haiti",
+    "title": "Haiti, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://fr.wikisource.org/wiki/Acte_de_l%27Ind%C3%A9pendance_de_la_R%C3%A9publique_d%27Ha%C3%AFti",
+    "title": "Acte de l'Indépendance de la République d'Haïti (Port-au-Prince, 1804), text",
+    "publisher": "French Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     7,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Saint-Domingue a French colony on Hispaniola worked by enslaved Africans; August 1791 slave revolt (Wikipedia: 21 August 1791 slaves of Saint Domingue rose in revolt; EB: August 1791 plantation slaves broke out into insurrection).",
+   "1793 commissioners proclaimed abolition of slavery (EB; Wikipedia: abolition of slavery in 1793).",
+   "By 1801 Toussaint Louverture restored order and published a constitution making him governor for life (EB; Wikipedia Dessalines: Louverture named himself governor-for-life).",
+   "Bonaparte, first consul, sent his brother-in-law Leclerc (EB); expeditionary force in 1802 to restore French rule (Wikipedia Dessalines); aim to restore slavery (EB: determined to reduce the colony and restore slavery; Wikipedia Declaration: re-establishment of slavery in 1802 by Napoleon Bonaparte).",
+   "Toussaint laid down arms on French guarantees, was seized and sent to France (EB; Wikipedia Dessalines: arrested 7 June 1802 and deported to France), died in prison in 1803 (EB; Wikipedia Dessalines: died at Fort-de-Joux on 7 April 1803).",
+   "Struggle renewed under Dessalines (EB); Indigenous Army defeated French under Rochambeau at Vertieres near Cap-Francais, 18 November 1803 (Wikipedia Vertieres; Wikipedia Dessalines); French evacuated in November 1803 (EB).",
+   "1 January 1804, Gonaives: independence proclaimed by Dessalines and generals (Wikipedia; Wikipedia Dessalines; Act: 'Fait aux Gonaives, ce 1er Janvier 1804').",
+   "Name Hayti after the indigenous Taino name (Wikipedia Dessalines: renamed Ayiti after the indigenous Taino name; EB: restoration of the aboriginal name of Haiti; Act spells 'Hayti'); Dessalines a former slave (Wikipedia Declaration).",
+   "Drafted by secretary Louis Boisrond-Tonnerre (Wikipedia: written by the latter; Act: signed 'Boisrond Tonnerre, Secretaire'); three-part document (Wikipedia; Act text shows three parts).",
+   "First part: generals swore to renounce France forever and to die rather than live under its domination (Act: 'renoncer a jamais a la France et de mourir plutot que de vivre sous sa domination').",
+   "Proclamation: not enough to have expelled the barbarians who bloodied the land for two centuries; live independent or die (Act; Wikipedia quotation).",
+   "Proclamation recalls French cruelties and calls for vengeance, 'commencons par les francais' (Act; Wikipedia: demands vengeance); asks to leave neighbours in peace, not act as revolutionary firebrands (Act: 'laissons en paix respirer nos voisins... boutes-feu revolutionnaires'; Wikipedia).",
+   "Third part: generals proclaim Dessalines Governor-General for life, swear to obey blindly the laws of his authority, give him the right to make peace and war and to name his successor (Act); 17 signatories (Wikipedia: 17 senior officials signed the third section; Act lists 17 names).",
+   "First independent nation of Latin America and the Caribbean, second in the Americas after the US; culmination of the only successful slave revolution (Wikipedia). Massacre February to 22 April 1804 (Wikipedia Declaration); 3,000-5,000 killed (Wikipedia Dessalines, attributed); EB: massacre of all the whites.",
+   "Proclaimed emperor 22 September 1804, crowned 6 October 1804 (Wikipedia Dessalines); EB: in October 1804 proclaimed himself emperor and was crowned; assassinated 1806 (EB; Wikipedia Dessalines 17 October 1806).",
+   "France recognised Haiti only in 1825; the United States in 1862 (Wikipedia, Wikipedia-only)."
+  ],
+  "disagree": "Scale of the 1804 massacre: Wikipedia (Jean-Jacques Dessalines) gives 3,000 to 5,000 killed, the 1911 Britannica 'a bloodthirsty massacre of all the whites'; the text gives Wikipedia's figure attributed and says 'most'. Imperial title: proclaimed 22 September and crowned 6 October 1804 (Wikipedia) against 'in October 1804 he proclaimed himself emperor and was crowned' (Britannica); the text gives September and October. Wikipedia's claim that Dessalines could not speak French is not used.",
+  "checked": null
+ },
+ "cp07-20": {
+  "title": "Coronation of Napoleon",
+  "y": 1804,
+  "place": "Notre-Dame de Paris, Paris, France",
+  "paras": [
+   "On 18 May 1804 the French Senate vested the government of the Republic in an emperor, Napoleon Bonaparte, until then First Consul, and a popular vote approved the new Empire by a large majority. Napoleon wanted a coronation that would give his new dynasty legitimacy and prestige, above all among royalists and Catholics; the historian J. Holland Rose argues that receiving the holy oil and the pope's blessing was his best hope of drawing royalists away from the exiled Bourbon king. He therefore insisted that Pope Pius VII come to Paris. According to Rose, the pope was troubled at crowning the man responsible for the execution of the Duc d'Enghien, but was persuaded that religion would gain from his presence.",
+   "Napoleon met the pope on the road between Fontainebleau and Nemours, staged as a chance encounter during a hunt, so as to avoid awkward questions of ceremony. Napoleon and Josephine had been married only in a civil ceremony; on the pope's insistence, Cardinal Fesch, Napoleon's uncle, married them privately in a religious rite shortly before the coronation (on the evening before, according to the 1911 Encyclopaedia Britannica; two days before, according to Rose).",
+   "The coronation took place in the cathedral of Notre-Dame in Paris on 2 December 1804. Instead of the old rite of the French kings at Reims, Napoleon had a new ceremony arranged that combined the Roman liturgy with French royal elements. The pope anointed both the Emperor and Josephine and blessed the regalia, including a new crown made to look medieval and called the Crown of Charlemagne, since the old royal crown had been destroyed in the Revolution. When the moment of crowning came, Napoleon waved the pope aside and placed the crown on his own head.",
+   "The ceremony was meant to proclaim a new imperial monarchy: its symbols, such as the golden bees on the coronation mantles, looked back past the Bourbons to the early Frankish kings, and Rose sees in it Napoleon's ambition to appear as the successor of Charlemagne. Wikipedia describes it as a deliberate piece of modern propaganda. In May 1805 Napoleon was crowned again, this time with the Iron Crown of Lombardy as King of Italy, in Milan Cathedral."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Coronation_of_Napoleon",
+    "title": "Coronation of Napoleon (rev 1382782388, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Napoleon_I.",
+    "title": "Napoleon I., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     7,
+     11,
+     14
+    ]
+   },
+   {
+    "url": "https://archive.org/download/lifeofnapoleonii01roseuoft/lifeofnapoleonii01roseuoft_djvu.txt",
+    "title": "J. Holland Rose, The Life of Napoleon I, vol. 1 (London, 1910 printing of the 1902 2nd ed.), chapter XX, pp. 474-481, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "18 May 1804: the Senate vested the government in an emperor (Wikipedia: Senat conservateur on May 18, 1804; Rose: senatus consultum of May 18th).",
+   "Popular vote approved (Wikipedia: overwhelmingly approved in the 1804 referendum; Rose: more than three and a half million votes cast for the new arrangement).",
+   "Motives: legitimacy and prestige among royalists and Catholics, foundation of a dynasty (Wikipedia); Rose (attributed): holy oil and papal blessing needed to wean royalists from the exiled king; Napoleon required the presence of the Pope (Rose; Wikipedia: Pius VII agreed to come to Paris).",
+   "Rose (attributed): Pius VII troubled at crowning the murderer of the Duc d'Enghien; hints that religion would benefit overcame his scruples.",
+   "Rose (attributed): meeting arranged on the road between Fontainebleau and Nemours as a chance incident during a day's hunting, to avoid awkward ceremony.",
+   "Civil marriage only; Pope required religious solemnization; performed secretly by Cardinal Fesch (Rose: Napoleon's uncle; two days before the coronation) / EB: religious ceremony by Fesch on the evening before the coronation, the pope having refused to appear unless the civil contract was replaced by the religious rite. Timing disagreement stated.",
+   "Coronation at Notre-Dame, Paris, on 2 December 1804 (Wikipedia; EB; Rose: the venerable cathedral, Notre Dame).",
+   "New ceremony rather than the Reims rite of the French kings; Roman and French elements combined (Wikipedia, Wikipedia-only).",
+   "The Pope anointed Emperor and Empress (Wikipedia: both anointed on head and hands with chrism; Rose: anointed Emperor and Empress with the holy oil).",
+   "Regalia blessed (Wikipedia: articles of regalia individually blessed; Rose: blessed their crowns, rings and mantles).",
+   "Napoleon waved the pope aside and crowned himself (EB; Rose).",
+   "New crown made to look medieval, called the Crown of Charlemagne, as the traditional crown had been destroyed in the Revolution (Wikipedia, Wikipedia-only); Rose: insignia of Charlemagne brought to Paris.",
+   "Golden bees on the mantles linking the dynasty to the Merovingians beyond the Bourbon past (Wikipedia; Rose: cloak adorned with bees); Rose (attributed): Napoleon sought to figure as the successor of Charlemagne; Wikipedia (attributed): 'transparently masterminded piece of modern propaganda'.",
+   "1805: crowned with the Iron Crown as King of Italy in Milan Cathedral (Wikipedia; EB: 26 May 1805, crowned himself in the cathedral at Milan with the iron crown of the old Lombard kings)."
+  ],
+  "disagree": "The religious marriage of Napoleon and Josephine by Cardinal Fesch: on the evening before the coronation (1911 Britannica) or two days before (Rose, citing Mme de Remusat); both stated. Whether the pope or Napoleon crowned Josephine is not stated in the fetched texts and is left out.",
+  "checked": null
+ },
+ "Q19902208": {
+  "title": "Dissolution of the Holy Roman Empire",
+  "y": 1806,
+  "place": "Vienna, Austria",
+  "paras": [
+   "The Holy Roman Empire traced its origin to the crowning of Charlemagne by Pope Leo III on Christmas Day 800, and for a thousand years its emperors claimed to be the first rulers of Christendom. By the 18th century it had no standing army or treasury of its own, and its elected emperors could not exercise effective central control over the German princes. The wars with revolutionary and Napoleonic France proved fatal to it. When Napoleon made himself Emperor of the French in 1804, Francis II answered by taking the additional title of Emperor of Austria for his hereditary lands. After Austria's defeat at Austerlitz in December 1805 and the Peace of Pressburg, the Empire existed little more than in name.",
+   "In July 1806 Bavaria, Baden, Württemberg and a number of smaller German princes, under pressure from Napoleon, formed the Confederation of the Rhine, an alliance under his protection outside the Empire (Wikipedia dates its founding treaty to 12 July; the historian J. Holland Rose says the Act was signed in Paris on 17 July). On 22 July, according to Wikipedia, Napoleon demanded that Francis abdicate by 10 August. On 1 August a French envoy informed the Imperial Diet at Regensburg (Ratisbon) that Napoleon no longer recognised the existence of the Empire.",
+   "Francis had already decided in June to abdicate when it best suited Austria. His government concluded that the abdication must be combined with the dissolution of the whole Empire: otherwise, Wikipedia explains, the imperial vicars Saxony and Bavaria, both aligned with Napoleon, would govern during the vacancy, and Napoleon might take the imperial title himself, leaving Francis as his vassal. On the morning of 6 August 1806 the imperial herald read Francis's proclamation from the balcony of the Church of the Nine Choirs of Angels in Vienna. Francis laid down the imperial crown and released the electors, princes and estates of the Empire from all their duties and obligations to it. The proclamation did not mention the French ultimatum; it said that the way the German states interpreted the Peace of Pressburg had made it impossible for him to carry out his duties as emperor.",
+   "Earlier emperors had abdicated, but this abdication also ended the Empire itself, so that no successor could be elected. In Vienna the news was received with dismay, and lawyers of the time held that, while the emperor could lawfully resign, he had no right to dissolve the Empire. Francis went on ruling his hereditary lands as Emperor Francis I of Austria, while Napoleon, as protector of the Confederation of the Rhine, dominated much of central and southern Germany. After Napoleon's fall the Congress of Vienna did not restore the Empire, but replaced it in 1815 with a looser German Confederation led by Austria."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Holy_Roman_Empire",
+    "title": "Dissolution of the Holy Roman Empire (rev 1380007310, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Confederation_of_the_Rhine",
+    "title": "Confederation of the Rhine (rev 1378701913, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://archive.org/download/lifeofnapoleonii02rose/lifeofnapoleonii02rose_djvu.txt",
+    "title": "J. Holland Rose, The Life of Napoleon I, vol. 2 (London, 1907 printing of the 1902 2nd ed.), pp. 2-3 and 75-76, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     10,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Empire traced to Charlemagne's coronation by Pope Leo on Christmas Day 800 (Rose: kindled in St Peter's on Christmas Day 800 by the blessing of Pope Leo on Karl the Great; Wikipedia: resurrection in 800 AD); emperors claimed pre-eminence in Christendom (Wikipedia); thousand years (Rose: after a thousand years of life; Wikipedia: just over a thousand years).",
+   "18th century: no central standing army or treasury; monarchs formally elective could not exercise effective central control (Wikipedia).",
+   "1804: Napoleon proclaimed Emperor of the French; Francis II responded by proclaiming himself Emperor of Austria (Wikipedia; Rose: Francis saw in Napoleon's need of recognition of his imperial title a means of a corresponding change of title for the Habsburg dominions).",
+   "Austerlitz December 1805 (Wikipedia); Rose: stricken unto death at Austerlitz; the term Germanic Confederation in the Treaty of Pressburg sounded its death knell.",
+   "July 1806: Bavaria, Baden, Wurttemberg and minor princes formed the Confederation of the Rhine, a French satellite (Wikipedia; Wikipedia Confederation of the Rhine; Rose: Act of the Confederation of the Rhine); Napoleon's pressure (Wikipedia: June 1806 Napoleon began pressuring). Date: 12 July (Wikipedia) vs 17 July signed at Paris (Rose) - both stated.",
+   "22 July: Napoleon's ultimatum to abdicate by 10 August (Wikipedia, attributed).",
+   "1 August: French envoy informed the Reichstag (Diet at Ratisbon) that Napoleon no longer recognized the Empire (Wikipedia; Rose: on August 1st, 1806 notified to the Diet at Ratisbon that neither he nor the States of South and Central Germany any longer recognized the old Empire).",
+   "17 June: Francis decided to abdicate at the moment best for Austria (Wikipedia).",
+   "Austrian government: abdication combined with dissolution; imperial vicars Saxony and Bavaria aligned with Napoleon would exercise authority in an interregnum; Napoleon might acquire the title making Francis his vassal (Wikipedia, attributed).",
+   "6 August 1806 morning: herald read the proclamation from the balcony of the Church of the Nine Choirs of Angels, Vienna (Wikipedia); Francis laid down his crown and released/absolved electors, princes and estates from their duties and obligations (Wikipedia; Rose: laid down his crown, absolved all the electors and princes from their allegiance).",
+   "Proclamation did not acknowledge the ultimatum; stressed that the interpretation of the Peace of Pressburg by the imperial estates made it impossible to fulfil his obligations (Wikipedia).",
+   "Earlier abdications (Charles V 1556) returned the crown to the electors; Francis's dissolved the Empire so there were no electors (Wikipedia).",
+   "Vienna reaction horror; contemporary legal commentators: abdication legal, dissolution beyond his authority (Wikipedia). Rose: the Diet itself uttered no audible sound (not used).",
+   "Francis continued as Emperor Francis I of Austria (Wikipedia; Rose: retired within the bounds of the Austrian Empire); Napoleon as Protector of the Rhenish Confederation controlled most of the German lands (Rose: most of the German lands that acknowledged Charlemagne; Wikipedia Confederation of the Rhine: members located in central and southern Germany).",
+   "Congress of Vienna did not restore the Empire; created the German Confederation led by the Austrian emperors (Wikipedia; Confederation of the Rhine article: replaced by the German Confederation in 1815)."
+  ],
+  "disagree": "Date of the founding act of the Confederation of the Rhine: 12 July 1806 (Wikipedia) or 17 July (Rose, signed at Paris); both stated. Number of founding princes: Wikipedia three states and thirteen minor princes, Rose 'the fifteen Princes'; no number given in the text.",
+  "checked": null
  }
 }
