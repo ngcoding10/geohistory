@@ -114,7 +114,7 @@ export class HistoryMap extends EventTarget {
         m.addLayer({ id: `glow${s}${id}`, type: 'line', source: 't' + id, filter: f, layout: { 'line-join': 'round' },
           paint: { 'line-color': ['get', 'ce'], 'line-opacity': 0, 'line-width': zoomIn(1, 6, 3.6, 7), 'line-opacity-transition': { duration: 0 } } });
         m.addLayer({ id: `line${s}${id}`, type: 'line', source: 't' + id, filter: f, layout: { 'line-join': 'round' },
-          paint: { 'line-color': ['get', 'ce'], 'line-opacity': 0, 'line-width': zoomIn(1, 6, 1.7, 3), 'line-opacity-transition': { duration: 0 } } });
+          paint: { 'line-color': ['get', 'ce'], 'line-opacity': 0, 'line-width': zoomIn(1, 6, 2.1, 3.6), 'line-opacity-transition': { duration: 0 } } });
         m.addLayer({ id: `fill${s}${id}`, type: 'fill', source: 't' + id, filter: f,
           paint: { 'fill-color': fillColor, 'fill-opacity': 0, 'fill-opacity-transition': { duration: 0 } } });
       }
@@ -156,8 +156,11 @@ export class HistoryMap extends EventTarget {
     m.addImage('pf-none', new ImageData(2, 2), { pixelRatio: 2 });
     for (const id of STACKS) mkCanvas(id);
     for (const id of STACKS) {
-      m.addLayer({ id: 'fline' + id, type: 'line', source: 't' + id, filter: STATE, layout: { 'line-join': 'round' },
-        paint: { 'line-color': this.dark ? '#0b0906' : '#2a2219', 'line-opacity': 0, 'line-width': zoomIn(1, 6, 0.9, 1.8), 'line-opacity-transition': { duration: 0 } } });
+      // over flags: a pale casing under a firm dark rule, so borders read as one crisp inked line, not a pencil stroke
+      m.addLayer({ id: 'fcase' + id, type: 'line', source: 't' + id, filter: STATE, layout: { 'line-join': 'round', 'line-cap': 'round' },
+        paint: { 'line-color': this.dark ? '#cdbfa8' : '#fbf7ef', 'line-opacity': 0, 'line-width': zoomIn(1, 6, 3.4, 6), 'line-opacity-transition': { duration: 0 } } });
+      m.addLayer({ id: 'fline' + id, type: 'line', source: 't' + id, filter: STATE, layout: { 'line-join': 'round', 'line-cap': 'round' },
+        paint: { 'line-color': this.dark ? '#0b0906' : '#1f1912', 'line-opacity': 0, 'line-width': zoomIn(1, 6, 1.6, 3.2), 'line-opacity-transition': { duration: 0 } } });
     }
 
     // land of the map being left that has not changed hands yet, over the new map during a change (show())
@@ -471,7 +474,7 @@ export class HistoryMap extends EventTarget {
     m.setPaintProperty('flag' + sid, 'raster-opacity-transition', { duration: 0 });
     m.setPaintProperty('flag' + sid, 'raster-opacity', fl ? 1 : 0);
     m.setPaintProperty('fpat' + sid, 'fill-opacity', pat ? (this.dark ? 0.85 : 1) : 0);
-    m.setPaintProperty('fline' + sid, 'line-opacity', fl || pat ? 0.8 : 0);
+    this._fline(sid, fl || pat);
     if (fl) this._upload(sid);
     m.setPaintProperty('uline' + sid, 'line-opacity', mode === 'on' ? ['interpolate', ['linear'], ['zoom'], Z_PEOPLES - 0.4, 0, Z_PEOPLES + 0.4, 0.45] : 0);
   }
@@ -821,6 +824,11 @@ export class HistoryMap extends EventTarget {
 
   /** A canvas source uploads its pixels only while it plays and its layer is drawn: play it for a few frames
    *  from the moment its layer shows. */
+  _fline(sid, on) {   // the border over flag fills: dark rule plus its pale casing
+    const m = this.map;
+    m.setPaintProperty('fline' + sid, 'line-opacity', on ? 0.95 : 0);
+    m.setPaintProperty('fcase' + sid, 'line-opacity', on ? (this.dark ? 0.35 : 0.6) : 0);
+  }
   _upload(sid) {
     const src = this.map.getSource('fsrc' + sid);
     if (!src || this.fillImpl !== 'canvas') return;
@@ -900,7 +908,7 @@ export class HistoryMap extends EventTarget {
         if (tok !== this._flagTok || this.active !== sid || this._run) return;
       }
       m.setPaintProperty('fpat' + sid, 'fill-opacity', this._patOn(sid) ? (this.dark ? 0.85 : 1) : 0);
-      m.setPaintProperty('fline' + sid, 'line-opacity', this._patOn(sid) ? 0.8 : 0);
+      this._fline(sid, this._patOn(sid));
       return;
     }
     if (f.doc === doc && f.ok && f.fy === (doc.fy ?? doc.year) && extentOk(f.ext, this.map)) return;
@@ -910,7 +918,7 @@ export class HistoryMap extends EventTarget {
     if (tok !== this._flagTok || this.active !== sid || this._run || this.fillImpl !== 'canvas') return;
     m.setPaintProperty('flag' + sid, 'raster-opacity-transition', { duration: fade && !had && !reduceMotion() ? 350 : 0 });
     m.setPaintProperty('flag' + sid, 'raster-opacity', 1);
-    m.setPaintProperty('fline' + sid, 'line-opacity', 0.8);
+    this._fline(sid, true);
     this._upload(sid);
   }
 
