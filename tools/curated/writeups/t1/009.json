@@ -1,0 +1,87 @@
+{
+ "Q1402751": {
+  "title": "Battle of Pichincha",
+  "y": 1822,
+  "place": "Slopes of the Pichincha volcano above Quito, Ecuador",
+  "paras": [
+   "The war for the Presidency of Quito began when Guayaquil threw off Spanish rule on 9 October 1820. Its first campaigns into the highlands were beaten back, and twice the patriots were defeated at Huachi, near Ambato, the second time in September 1821 under Antonio José de Sucre, whom Simón Bolívar had sent to help. In January 1822 Sucre opened a new campaign with about 1,700 men: recruits from Guayaquil and the highlands, Colombians, Spanish soldiers who had changed sides, and a battalion of British volunteers, the Albión. At Saraguro in February he was joined by a Peruvian division of about 1,500 men under Andrés de Santa Cruz, sent by José de San Martín. Cuenca fell without a shot on 21 February, and the royalists withdrew north.",
+   "The Spanish commander, Field Marshal Melchor Aymerich, fortified the passes leading to Quito. Sucre went round them along the slopes of Cotopaxi into the Chillos valley, and the royalists fell back into the city. On the night of 23–24 May 1822 the patriot army, 2,971 men according to Wikipedia, climbed the Pichincha volcano above Quito to get past the defences. Rain turned the trails to mud; by dawn the troops were only halfway up, exhausted and in view of the royalist sentries, and Aymerich sent his army of 1,894 men up the mountain to meet them.",
+   "The two armies were thrown in piece by piece on steep slopes cut by gullies and thick undergrowth. Several patriot battalions, short of ammunition, fell back. In Wikipedia's account, Aymerich had sent his veteran Aragón battalion towards the summit to fall on the patriot rear, but it was stopped by the Albión, which arrived with the reserve ammunition on even higher ground; the Colombian Alto Magdalena battalion then charged and broke the royalist line. At midday Aymerich ordered a retreat. The fighting had lasted no more than three hours. Sucre's report counted 400 royalist and 200 patriot dead and 1,100 prisoners taken.",
+   "Aymerich capitulated and Sucre entered Quito on 25 May 1822. Quito was incorporated into the Republic of Colombia, which Bolívar entered on 16 June, and Guayaquil was joined to Colombia on 31 July. In 1830 Quito, Guayaquil and Cuenca broke away from Colombia to form the Republic of Ecuador. The 1911 Encyclopaedia Britannica dates the battle to 22 May and puts the field at 10,200 feet; Wikipedia gives 24 May and 3,500 metres."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Pichincha",
+    "title": "Battle of Pichincha (rev 1383630061, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Ecuador",
+    "title": "Ecuador, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Antonio_Jos%C3%A9_de_Sucre",
+    "title": "Antonio José de Sucre (rev 1386951326, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bolivar,_Simon",
+    "title": "Bolivar, Simon, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Guayaquil proclaimed independence 9 October 1820 (Wikipedia; EB: in 1820 the people of Guayaquil took up the cry of liberty).",
+   "First Battle of Huachi 22 November 1820 near Ambato; Sucre defeated at the second, 12 September 1821 (Wikipedia); Sucre sent to their assistance by Bolivar, after several defeats (EB).",
+   "January 1822 new campaign, about 1,700 men: Guayaquil lowlanders and highland volunteers, Colombians, Spanish-born officers and men who changed sides, the British Albion battalion (Wikipedia).",
+   "At Saraguro 9 February 1822 joined by the Peruvian Division of 1,500 under Andres de Santa Cruz promised by San Martin (Wikipedia; EB: reinforced by a Peruvian contingent under Santa Cruz).",
+   "Cuenca retaken 21 February 1822 without a shot; royalists marched north (Wikipedia).",
+   "Aymerich set up strong points on the passes; Sucre outflanked along the slopes of Cotopaxi to the Chillos valley; royalists fell back to Quito 16 May (Wikipedia).",
+   "Night of 23-24 May 1822, 2,971 men climbed Pichincha (Wikipedia, attributed).",
+   "Rain turned trails to quagmires; at dawn halfway, exhausted, in view of the royalist sentries; Aymerich ordered his army of 1,894 up the mountain (Wikipedia).",
+   "Piecemeal engagement, steep slopes, gullies, undergrowth; Paya, Barrezueta and Yaguachi short of ammunition fell back (Wikipedia).",
+   "Aragon battalion sent towards the summit to strike the patriot rear, stopped by the Albion bringing the reserve ammunition from higher ground; Magdalena battalion charged and broke the royalist line (Wikipedia, attributed); EB Bolivar: by the prowess of Sucre the Spaniards were routed.",
+   "Retreat ordered at midday; no more than three hours (Wikipedia).",
+   "Sucre's report: 400 enemy and 200 patriot dead, 1,100 prisoners (Wikipedia quoting Sucre, attributed); EB: complete victory.",
+   "Aymerich capitulated (EB: two days after the battle); Sucre entered Quito 25 May 1822 and accepted the surrender (Wikipedia); Quito incorporated into Colombia, Bolivar entered 16 June 1822; Guayaquil proclaimed part of Colombia 31 July 1822 (Wikipedia); union with Colombia at once (EB).",
+   "1830 secession of Quito, Guayaquil and Cuenca as the Republic of Ecuador (Wikipedia; EB: early 1830 separation from the Colombian federation); battle date 22 May 1822 and height 10,200 ft (EB) against 24 May and 3,500 m (Wikipedia, also Wikipedia Sucre: 24 May) - disagreement stated."
+  ],
+  "disagree": "Date of the battle: 24 May 1822 (Wikipedia) or 22 May 1822 (1911 Britannica, which also puts Aymerich's capitulation two days later). Height: 3,500 m (Wikipedia) or 10,200 ft (Britannica).",
+  "checked": null
+ }
+}
