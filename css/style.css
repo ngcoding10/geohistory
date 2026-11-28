@@ -266,7 +266,8 @@ h2.context { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; c
   .panel[data-size="full"] { height: calc(100% - var(--time-h) - var(--safe-b) - var(--top-h) - 8px); }
   .panel.dragging { transition: none; }
   .sheet-bar { display: flex; align-items: stretch; flex: none; height: 50px; touch-action: none; user-select: none; -webkit-user-select: none; border-bottom: 1px solid transparent; }
-  .panel:not([data-size="collapsed"]) .sheet-bar { border-bottom-color: var(--line); }
+  .panel:not([data-size="collapsed"]) .sheet-bar { height: 34px; }
+  .panel:not([data-size="collapsed"]) .sheet-title { visibility: hidden; }   /* the panel's own heading shows below */
   .sheet-handle { position: relative; flex: 1; min-width: 0; display: flex; align-items: center; padding: 10px 0 0 16px; border: 0; background: none; color: var(--ink); text-align: left; cursor: grab; touch-action: none; }
   .sheet-handle .grip { position: absolute; top: 6px; left: 50%; width: 40px; height: 4px; margin-left: 2px; border-radius: 2px; background: var(--line-2); }
   .sheet-title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font: 500 17px/1.2 var(--serif); font-variant-numeric: lining-nums tabular-nums; }
