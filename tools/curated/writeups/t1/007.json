@@ -366,5 +366,539 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "cp01-20": {
+  "title": "Octavian receives the name Augustus",
+  "y": -27,
+  "place": "Rome",
+  "paras": [
+   "Octavian, the great-nephew and heir of Julius Caesar, had become the master of the Roman world after his commander Marcus Agrippa defeated Mark Antony at Actium in 31 BC and Antony and Cleopatra killed themselves during Octavian's invasion of Egypt. Years of civil war had left Rome close to lawlessness, but Roman tradition was hostile to one-man rule, and Octavian could not give up his power without risking a new war. He looked for a form of rule that kept real control in his hands while avoiding the look of a monarchy or a dictatorship.",
+   "In January 27 BC, on 13 January according to Wikipedia, he announced to the Senate that he was handing the state, its armies and its provinces back to the Senate and the Roman people. The historian Cassius Dio, writing two centuries later, says a few senators knew his real intention and applauded, while the house as a whole shouted for him to keep control. The Senate asked him to take back charge of provinces, and he accepted them for ten years, saying he would pacify them. They were the provinces that were insecure or had enemies on their borders, among them the Gallic provinces, most of Spain, Syria, Cilicia, Cyprus and Egypt, and they held most of the legions; the peaceful ones, such as Africa, Asia and Greece, went to the Senate.",
+   "On 16 January 27 BC the Senate gave him the name Augustus, 'the revered', a word used of sacred things. Dio says Octavian had wanted to be called Romulus, after the founder of Rome, but dropped the idea when it made people suspect he wanted to be king. In his own record of his deeds, the Res Gestae, Augustus wrote that in return for transferring the republic to the Senate and people he was named Augustus by a decree of the Senate, the doorposts of his house were wreathed with laurel by public decree, a civic crown was fixed above his door, and a golden shield set up in the Senate house praised his valour, clemency, justice and piety. Dio explains the laurels and the oak crown as signs that he always defeated his enemies and saved the lives of citizens.",
+   "Augustus wrote that from then on he stood above everyone in rank but had no more power than his colleagues in each office. Dio judged instead that from this time Rome was really a monarchy, because Augustus controlled both the money and the soldiers, and his ten-year command was renewed again and again until he ruled for life. Wikipedia counts him as the first Roman emperor from 27 BC; augustus became the main title of later emperors. By the summer of 27 BC he had left Rome for Gaul, and from 26 to 24 BC he governed from Tarraco in Spain while his armies fought in the north of the peninsula."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Augustus",
+    "title": "Augustus (rev 1387028741)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     7,
+     9,
+     10,
+     11,
+     13,
+     14,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/6*.html",
+    "title": "Res Gestae Divi Augusti, section VI, ch. 34-35 with notes (Loeb Classical Library, trans. F. W. Shipley, 1924)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     11,
+     14,
+     16
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/53*.html",
+    "title": "Cassius Dio, Roman History, book 53 (Loeb Classical Library, trans. E. Cary, 1917)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     15,
+     17,
+     18
+    ]
+   }
+  ],
+  "claims": [
+   "Octavian was Julius Caesar's great-nephew and principal heir (Wikipedia).",
+   "Agrippa, Octavian's naval commander, defeated Antony at Actium in 31 BC; Antony and Cleopatra killed themselves during Octavian's invasion of Egypt (Wikipedia).",
+   "Years of civil war had left Rome in near lawlessness; republican tradition opposed autocracy; Octavian could not give up his authority without risking war; he sought to avoid the appearance of dictatorship or monarchy (Wikipedia).",
+   "On 13 January 27 BC Octavian publicly returned power to the Senate and relinquished his provinces and armies (Wikipedia; date stated as Wikipedia's).",
+   "His speech offered to restore the army, the laws and the provinces to the Senate (Dio 53.4-9; Res Gestae 34: transferred the republic to the will of the Senate and Roman people).",
+   "Dio: a few senators knew his real intention and applauded; the senators shouted for monarchical government until they forced him, as it was made to appear, to take autocratic power (Dio 53.11).",
+   "The Senate proposed that he retake provinces; he accepted them for ten years, promising to pacify them (Wikipedia: 16 January, ten-year responsibility; Dio 53.13: ten years, promised to reduce them to order).",
+   "He took the provinces said to be insecure or with enemies on their borders and returned the weaker, peaceful ones to the Senate (Dio 53.12).",
+   "His provinces included the rest of Spain, the Gauls, Syria, Cilicia, Cyprus and Egypt; the Senate's included Africa, Asia and Greece (Dio 53.12; Wikipedia: Hispania, Gaul, Syria, Cilicia, Cyprus and Egypt).",
+   "Command of these provinces gave him the majority of the legions (Wikipedia; Dio: he alone had arms and maintained soldiers).",
+   "On 16 January 27 BC the Senate gave him the title augustus, 'revered' (Wikipedia; Res Gestae note 140: January 16, 27 BC).",
+   "Augusta is used of sacred objects (Dio 53.16: all the most precious and sacred objects are termed augusta).",
+   "Dio says Caesar wanted to be called Romulus but desisted when it made him suspected of wanting kingship (Dio 53.16; Wikipedia: the title Romulus was too strongly associated with monarchy).",
+   "Res Gestae 34: for this service he was named Augustus by decree of the Senate; doorposts covered with laurels by public act; civic crown fixed above his door; golden shield in the Curia Julia for valour, clemency, justice and piety (Res Gestae; Wikipedia).",
+   "Dio: laurels and oak crown voted to symbolise that he was always victor over his enemies and saviour of the citizens (Dio 53.16).",
+   "Res Gestae 34: after that he excelled all in rank/authority but had no more power than his colleagues in any magistracy (Res Gestae).",
+   "Dio: from this time there was strictly a monarchy; he was master of the funds and commanded the soldiers (Dio 53.16-17).",
+   "Dio: the ten-year term was renewed (five, five, ten, ten, ten) so that he was sole ruler for life (Dio 53.16).",
+   "Augustus was the first Roman emperor from 27 BC; the honorific augustus became the main title of later emperors (Wikipedia).",
+   "By the summer of 27 BC he left Rome for Gaul; from 26 to 24 BC he governed from Tarraco, overseeing campaigns in the Iberian peninsula (Wikipedia)."
+  ],
+  "disagree": "Why the name Romulus was dropped: Cassius Dio says Octavian himself wanted it and gave it up because it suggested kingship; Wikipedia says only that it was too closely tied to monarchy. Stated with Dio's name in the text.",
+  "checked": null
+ },
+ "cp02-13": {
+  "title": "Uthman becomes caliph",
+  "y": 644,
+  "place": "Medina",
+  "paras": [
+   "In 644 the second caliph, Umar, was fatally wounded by an assassin, Abu Lulu; Ameer Ali describes him as a foreigner with a grudge against the caliph, said by some to be a Zoroastrian and by others a Christian craftsman from Kufa. Rather than name a successor himself, the dying Umar handed the choice to six senior companions of the Prophet, all early emigrants from Mecca, who were to pick one of their own number: Uthman ibn Affan, Ali ibn Abi Talib, Abd al-Rahman ibn Awf, Sa'd ibn Abi Waqqas, Zubayr ibn al-Awwam and Talha ibn Ubayd Allah.",
+   "William Muir's account says Umar gave the electors three days and ordered that a minority still holding out should be put to death; Wikipedia quotes a similar order from the history of al-Ya'qubi. After Umar's burial the electors met in a room beside Aisha's house, with Abu Talha guarding the door. Two days went by in argument. Abd al-Rahman ibn Awf then offered to give up his own claim if the others would accept his choice, and they all agreed, Ali last. Abd al-Rahman spent the following nights sounding out the leading men of Medina, the provincial officers who were in the city for the pilgrimage, and each elector in private. The contest narrowed to two men: Ali, the Prophet's cousin and son-in-law, of the clan of Hashim, and Uthman, of the clan of Umayya.",
+   "According to al-Ya'qubi, as given by Wikipedia, Abd al-Rahman asked Ali whether, as caliph, he would follow the Quran, the example of the Prophet and the practice of the two previous caliphs, Abu Bakr and Umar. Ali promised only the Quran and the Prophet's example. Uthman accepted all the conditions and was chosen. Ameer Ali writes that Ali pledged his loyalty to Uthman as soon as he was elected. Uthman was then close to seventy. A successful merchant who had been brought to Islam by Abu Bakr, he had married two of Muhammad's daughters in turn, Ruqayya and then Umm Kulthum.",
+   "Uthman reigned until 656. He handed much military authority to kinsmen such as Abd Allah ibn Amir, Mu'awiya and Abd Allah ibn Sa'd, and the conquests went on in North Africa, Iran and as far as Sindh, while Mu'awiya's new navy defeated the Byzantines at the Battle of the Masts in 655. Around 650 he had a committee led by Zayd ibn Thabit prepare a standard text of the Quran and ordered other versions burnt. Ameer Ali, a hostile witness, blames him for replacing most of Umar's governors with members of his own family. Discontent grew in the provinces, and in 656 rebels besieged Uthman in his house in Medina and killed him."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Uthman",
+    "title": "Uthman (rev 1386799430)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     7,
+     9,
+     10,
+     12,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     22
+    ]
+   },
+   {
+    "url": "https://archive.org/download/caliphateitsrise00muiruoft/caliphateitsrise00muiruoft_djvu.txt",
+    "title": "William Muir, The Caliphate: its Rise, Decline and Fall, third edition (preface dated 1898), chapters on Omar's death and the election of Othman, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan, public domain)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     14,
+     15,
+     16,
+     18
+    ]
+   },
+   {
+    "url": "https://archive.org/download/shorthistoryofsa00amra/shorthistoryofsa00amra_djvu.txt",
+    "title": "Syed Ameer Ali, A Short History of the Saracens, chapters IV-V, OCR text",
+    "publisher": "Internet Archive (public-domain scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     13,
+     21,
+     22
+    ]
+   }
+  ],
+  "claims": [
+   "Umar was fatally wounded by an assassin, Abu Lulu (Muir: told that it was Abu Lulu who wounded him; Ameer Ali: a foreigner with a grudge inflicted a fatal wound).",
+   "Ameer Ali: some say the assassin was a Magian (Zoroastrian), others (Dozy) a Christian artisan of Kufa (attributed).",
+   "Umar did not nominate a successor but entrusted the election to six notables (Ameer Ali; Muir; Wikipedia: committee of six to choose from amongst themselves).",
+   "The six were all Muhajirun (early Meccan emigrants): Uthman, Ali, Abd al-Rahman ibn Awf, Sa'd ibn Abi Waqqas, Zubayr ibn al-Awwam, Talha ibn Ubayd Allah (Wikipedia; Muir names Talha, Zobeir, Sad, Aly, Othman, Abd al Rahman).",
+   "Umar ordered the choice within three days and that a resisting minority be beheaded (Muir; Wikipedia quoting al-Ya'qubi: three days, behead those who disagree).",
+   "After the burial the electors met in the treasury chamber adjoining Aisha's house, Abu Talha guarding the door (Muir).",
+   "Two days passed in wrangling (Muir; Wikipedia: negotiations over three days).",
+   "Abd al-Rahman offered to forgo his own claim if the rest would abide by his choice; all agreed, Ali last (Muir).",
+   "Abd al-Rahman consulted the leading citizens, the provincial officers present for the pilgrimage, and each elector separately (Muir; Wikipedia: consulting men of wisdom).",
+   "The contest narrowed to Ali (house of Hashim) and Uthman (house of Umayya) (Muir; Wikipedia: stalled between Ali and Uthman).",
+   "Ali was the son of the Prophet's uncle and husband of the Prophet's daughter Fatima (Muir).",
+   "Al-Ya'qubi (Wikipedia): Ibn Awf asked Ali to follow the Book of God, the Sunnah of the Prophet and the manner of the two previous caliphs; Ali answered he would follow only the Book and the Sunnah; Uthman accepted all conditions and was chosen.",
+   "Ali gave his adhesion to Uthman as soon as he was elected (Ameer Ali).",
+   "Uthman was close on seventy (Muir).",
+   "Uthman was a businessman and successful trader (Wikipedia) and an early convert (Wikipedia: converted through Abu Bakr; Muir).",
+   "Uthman married the Prophet's daughter Ruqayya and after her death her sister Umm Kulthum (Muir: Rockeya, Omm Kolthum; Wikipedia: son-in-law).",
+   "Uthman ruled from 644 until his assassination in 656 (Wikipedia).",
+   "He delegated military authority to kinsmen Abd Allah ibn Amir, Mu'awiya and Abd Allah ibn Sa'd; expansion reached Sindh; campaigns in North Africa and Iran (Wikipedia; Muir: Ibn Aamir's campaigns in Fars, Khorasan, Oxus).",
+   "Mu'awiya's navy defeated the Byzantine navy at the Battle of the Masts in 655 (Wikipedia).",
+   "In about 650 a committee headed by Zayd ibn Thabit prepared a standardised Quran; other versions were ordered burnt (Wikipedia).",
+   "Ameer Ali: Uthman displaced most of Umar's lieutenants and appointed members of his own family (attributed).",
+   "Discontent grew; in 656 rebels besieged Uthman in his residence in Medina and killed him (Wikipedia: Revolt, Siege of Uthman's residence, Assassination; Ameer Ali: besiegers scaled the wall)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp02-23": {
+  "title": "Abbasid Caliphate founded",
+  "y": 750,
+  "place": "Kufa and the Great Zab, Iraq",
+  "paras": [
+   "The Abbasids descended from Abbas, an uncle of the Prophet Muhammad, and belonged to his clan of Hashim. That link made them attractive to Muslims who resented the Umayyad caliphs, who did not come from the Prophet's family. From 718 Muhammad ibn Ali, a great-grandson of Abbas, sent agents into Persia to campaign for the return of power to the Prophet's house; the Abbasids also courted the mawali, non-Arab converts who were treated as second-class Muslims under the Umayyads. Their base was Khurasan in north-eastern Iran, far from the Umayyad heartland in Syria and full of Arab settlers and local converts who resented Umayyad rule. The family's agent there was Abu Muslim, a man of slave origin whom Muir describes as having been bought for the cause as a youth.",
+   "The revolt broke out in Khurasan in Ramadan 129 AH (June 747), when Abu Muslim raised the Abbasids' black banner at Merv; Wikipedia gives the date as 9 June and puts his force at close to 10,000 men. He drove the Umayyad governor, Nasr ibn Sayyar, out of Merv, and his general Qahtaba ibn Shabib chased the Umayyad forces west, beating them at Gorgan and Nahavand in 748. The caliph Marwan II intercepted a letter from the head of the Abbasid family, Ibrahim, to Abu Muslim and had Ibrahim arrested at Humayma, the family's village; he died in prison at Harran, whether by murder or naturally is not known. His brothers Abu al-Abbas and Abu Ja'far fled to Kufa in Iraq and hid there.",
+   "The rebels took Kufa in 749, though Qahtaba died on the way. According to Muir, Abu Salama, a leader of the movement, governed the city as 'vizier of the house of Muhammad' and kept the Abbasid brothers hidden for weeks, and some suspected that he favoured the descendants of Ali instead. To forestall a candidate from Ali's line, the Abbasid party brought Abu al-Abbas out and proclaimed him caliph in Kufa. In the Great Mosque he praised the claims of the Prophet's family, condemned the Umayyads and promised the Kufans higher pay. He became known as al-Saffah, which Muir renders 'the shedder of blood'; Muir thinks the name may have been put into the account of the speech afterwards.",
+   "Early in 750 an Abbasid army under Abu al-Abbas's uncle Abdallah ibn Ali defeated Marwan near the Great Zab river, ending Umayyad power. Marwan fled to Egypt and was killed there, and the Abbasids hunted down his family; Muir tells of about ninety Umayyads who were offered an amnesty, invited to a feast in Palestine and killed there. One prince, Abd al-Rahman, escaped and in 756 founded an independent Umayyad state in al-Andalus, which never accepted Abbasid rule. The centre of the caliphate moved from Syria to Iraq, nearer the Persian supporters on whom the new dynasty relied; Kufa served as the first capital, and in 762 the second Abbasid caliph, al-Mansur, founded Baghdad on the Tigris, a round city with the palace and great mosque at its centre. Abbasid caliphs ruled from Iraq, mostly from Baghdad, until the Mongols sacked it in 1258."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Abbasid_Caliphate",
+    "title": "Abbasid Caliphate (rev 1388458355)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15,
+     17,
+     20,
+     21,
+     23,
+     24,
+     25,
+     26,
+     28
+    ]
+   },
+   {
+    "url": "https://archive.org/download/caliphateitsrise00muiruoft/caliphateitsrise00muiruoft_djvu.txt",
+    "title": "William Muir, The Caliphate: its Rise, Decline and Fall, third edition (preface dated 1898), chapters LVIII-LXI, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan, public domain)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     7,
+     8,
+     10,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27
+    ]
+   }
+  ],
+  "claims": [
+   "The Abbasids descended from Abbas ibn Abd al-Muttalib, an uncle of Muhammad, of the Banu Hashim (Wikipedia; Muir: house of Hashim).",
+   "The family relation appealed to those discontented with the Umayyads, who were not of the same family (Wikipedia).",
+   "Muhammad ibn Ali, great-grandson of Abbas, began to campaign in Persia for the return of power to the Hashemites from 718 (Wikipedia).",
+   "The Abbasids appealed to the mawali, non-Arab Muslims perceived as a lower class (Wikipedia).",
+   "Khurasan, distant from the Syrian centre, with Arab settlers and local converts who resented Umayyad rule, was the launching point (Wikipedia).",
+   "Abu Muslim was the family's agent; Muir: born a slave, purchased (by Muhammad, in 743) when not yet twenty as an agent for the house; Wikipedia: a freedman of Ibrahim (text attributes the purchase to Muir).",
+   "The revolt began in Ramadan 129 AH; Wikipedia: 9 June 747 (15 Ramadan 129 AH); Muir: Abu Muslim raised the standard in the month of Ramadan, towards the end of 129 AH.",
+   "The black standard of the Abbasids (Muir: the great black standard unfurled in Khorasan).",
+   "Close to 10,000 soldiers under Abu Muslim at Merv when hostilities began (Wikipedia; stated as Wikipedia's figure).",
+   "Abu Muslim drove Nasr ibn Sayyar out of Merv (Muir; Wikipedia: Qahtaba defeated Nasr ibn Sayyar).",
+   "Qahtaba ibn Shabib pursued west and defeated the Umayyads at Gorgan and Nahavand (and Karbala) in 748 (Wikipedia).",
+   "Marwan II intercepted a letter from Ibrahim to Abu Muslim and had Ibrahim arrested at Humayma (Muir; Wikipedia: Marwan had Ibrahim arrested and imprisoned).",
+   "Ibrahim died at Harran, whether by violence or naturally is uncertain (Muir; Wikipedia: died or was executed in prison in 749).",
+   "Ibrahim's brothers Abu al-Abbas and Abu Ja'far fled to Kufa and stayed in concealment (Muir).",
+   "The rebels captured Kufa in 749; Qahtaba died on the way (Wikipedia; Muir: Kufa occupied, Abbasid family brought in, 749).",
+   "Abu Salama took possession of Kufa and governed as 'Wazeer of the house of Mahomet', keeping the family in strict privacy for several weeks; some suspected him of favouring Ali's line (Muir).",
+   "To pre-empt the Alids, the Abbasids declared Abu al-Abbas al-Saffah caliph in Kufa (Wikipedia; Muir: brought him out openly, homage in Kufa).",
+   "In the Great Mosque he praised the claims of the Prophet's descendants, denounced the Umayyads and promised the Kufans increased stipends (Muir).",
+   "Muir: the name Saffah, 'Shedder of Blood', may have been imported into the speech by anticipation (Muir footnote).",
+   "Early 750, battle near the Great Zab; Marwan defeated, end of Umayyad power; Abdallah ibn Ali, al-Saffah's uncle, was the commander (Wikipedia).",
+   "Marwan fled to Egypt and was killed; the rest of his family was eliminated except one male, the future Abd al-Rahman I (Wikipedia; Muir: Umayyad race to be swept away).",
+   "Muir: some ninety members of the family were offered an amnesty, invited to a feast in Palestine and killed (attributed to Muir).",
+   "Abd al-Rahman established independent rule in al-Andalus in 756 (Wikipedia); the Abbasids' authority was never acknowledged in Spain (Muir).",
+   "The centre of power moved from Syria to Iraq, closer to the Persian supporters (Wikipedia; Muir: brought to the throne by levies from Persia and Khorasan).",
+   "Kufa generally served as the first administrative capital (Wikipedia; Muir: establishment of the new caliphate at Kufa).",
+   "In 762 al-Mansur, the second caliph, founded Baghdad on the Tigris (Wikipedia; Muir: foundation of Bagdad on the west bank of the Tigris).",
+   "Baghdad's walls were circular with the palace and great mosque in the centre (Muir).",
+   "The Abbasids ruled from Iraq, with Baghdad as capital for most of their history, until the Mongol sack of 1258 (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp18-047": {
+  "title": "Khmer Empire founded",
+  "y": 802,
+  "place": "Mahendraparvata (Phnom Kulen), Cambodia",
+  "paras": [
+   "The Khmer Empire grew out of Chenla, a set of Khmer kingdoms in what is now Cambodia. Its founder, Jayavarman II, left no inscriptions of his own; what is known of him comes from later inscriptions, above all the Sdok Kak Thom inscription of about 1052, which tells the history of a family of royal priests who served the kings' cult from 802 to 1052. Later inscriptions say he 'came from Java'. Lawrence Palmer Briggs, writing in 1951, followed the older view that he had spent time at the court of a Javanese overlord; Wikipedia notes that some historians took 'Java' to mean the Chams of Champa, and that Arlo Griffiths argued in 2013 that such inscriptions almost always mean the island of Java.",
+   "Jayavarman first ruled at Indrapura, which Wikipedia, citing the Sdok Kak Thom inscription, says he made his capital around 781 and places at Banteay Prey Nokor near Kampong Cham, in the east. He made a priest, Sivakaivalya, his chaplain and extended his power by defeating rival rulers; according to Briggs, a general named Prithivinarendra subdued the region of Malyang south-west of the Great Lake and made its people pay a perpetual tribute. He then moved his court several times, among other places to Hariharalaya near modern Roluos and to Amarendrapura, before settling on Mahendraparvata, the mountain now called Phnom Kulen, north-east of the later Angkor.",
+   "In 802, on Mahendraparvata, Jayavarman held the ceremony that historians treat as the start of the Angkor period. The Sdok Kak Thom inscription, as translated by Briggs, says he invited a Brahman skilled in magic, Hiranyadama, to perform a rite so that the Khmer country would no longer owe allegiance to Java and would have a single sovereign, a chakravartin or 'universal ruler'. Jayavarman also took the title devaraja, 'god-king', and a royal linga, the emblem of Shiva and of royal power, was installed as the centre of a state cult; Briggs identifies the pyramid temple of Rong Chen on the Kulen plateau as its first home. Hiranyadama taught the ritual to Sivakaivalya, whose family kept the cult for two and a half centuries.",
+   "Jayavarman later moved back to Hariharalaya and died there. Wikipedia gives his death as 835; Briggs cites an inscription from Tuol Ta Pec that places it in 850. His successors kept enlarging the kingdom, and Yasovarman I (reigned 889 to 915) founded Yasodharapura, the first city on the site of Angkor. For more than six hundred years the Khmer capital stayed in this region; the empire is usually said to have lasted until the fall of Angkor to the Siamese kingdom of Ayutthaya in 1431."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Khmer_Empire",
+    "title": "Khmer Empire (rev 1386610712)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     16,
+     17,
+     18,
+     20
+    ]
+   },
+   {
+    "url": "https://archive.org/download/the-ancient-khmer-empire/The%20Ancient%20Khmer%20Empire_djvu.txt",
+    "title": "Lawrence Palmer Briggs, The Ancient Khmer Empire, Transactions of the American Philosophical Society 41, part 1 (1951), chapters on Jayavarman II, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     19
+    ]
+   }
+  ],
+  "claims": [
+   "The Khmer Empire grew out of the former civilisation of Chenla (Wikipedia; Briggs: Chenla period, Lower and Upper Chenla).",
+   "No inscription of Jayavarman II's reign survives; information comes from later inscriptions, particularly Sdok Kak Thom, dated about 1052, recording a priestly family that served the devaraja from 802 to 1052 (Briggs).",
+   "Inscriptions say he came from Java (Briggs: 'came from Java'; Wikipedia: declared independence from a place inscriptions call 'Java').",
+   "Briggs (1951) holds that he paid homage at the Maharaja's court in Java; Wikipedia: older interpretation that he lived at the Sailendra court in Java; Jacques and Vickery took 'Java' as the Chams; Griffiths in 2013 argued the inscriptions almost always mean the island of Java (attributed).",
+   "According to the Sdok Kak Thom inscription, around 781 Jayavarman II established Indrapura as his capital, at Banteay Prey Nokor near Kampong Cham (Wikipedia, stated as Wikipedia's; Briggs: reigned first at Indrapura, which Coedès places east of the Mekong and links to Banteay Prei Nokor).",
+   "He took the guru Sivakaivalya as hotar (chaplain) (Briggs).",
+   "He defeated a series of competing kings (Wikipedia; Briggs: conquest of Lower Chenla).",
+   "Prithivinarendra reduced Malyang, south-west of the Great Lake, whose people were made to pay perpetual tribute (Briggs; attributed).",
+   "He moved his court several times, including to Hariharalaya (near Roluos) and Amarendrapura, before Mahendraparvata (Briggs; Wikipedia: moved court to Mahendraparvata; Hariharalaya near Roluos).",
+   "Mahendraparvata is Phnom Kulen, to the north-east of Angkor (Wikipedia: Mount Mahendraparvata, now known as Phnom Kulen; Briggs: Phnom Kulen, a little to the north-east of Angkor Thom).",
+   "In 802 the consecration on Mahendraparvata marks the start of the Angkor period (Wikipedia; Briggs: Kambuja or Angkor period 802-1432).",
+   "The Brahman Hiranyadama, skilled in magic, was invited to perform a ceremony so that the country would pay no allegiance to Java and have one sole sovereign, a cakravartin (Briggs quoting Sdok Kak Thom st. 70-77; Wikipedia: chakravartin, universal ruler, independence from Java).",
+   "Jayavarman proclaimed himself devaraja, 'god king' (Wikipedia; Briggs: cult of the devaraja established as official religion).",
+   "A royal linga, symbol of sovereignty, was installed in a pyramid temple; Briggs identifies Rong Chen on the Kulen plateau as the temple (Briggs).",
+   "Hiranyadama taught the ritual to Sivakaivalya, appointed purohita of the devaraja; his family held the post for two and a half centuries (Briggs).",
+   "Jayavarman II died at Hariharalaya (Briggs quoting Sdok Kak Thom; Wikipedia: established a new capital at Hariharalaya).",
+   "Death date: Wikipedia 835; Briggs: inscription of Tuol Ta Pec, 850 (stated as each source's).",
+   "His successors kept extending the territory; Yasovarman I (reigned 889-915) established Yasodharapura, the first city of the Angkor area (Wikipedia).",
+   "The capital remained in the Angkor region for more than six hundred years (Briggs).",
+   "The end of the empire is traditionally marked by the fall of Angkor to Ayutthaya in 1431 (Wikipedia)."
+  ],
+  "disagree": "Death of Jayavarman II: Wikipedia 835, Briggs (1951) 850 from the Tuol Ta Pec inscription. Meaning of 'Java': Briggs follows the older view (the Javanese court); Wikipedia reports the Champa reading and Griffiths's 2013 argument for the island of Java. Both stated in the text.",
+  "checked": null
+ },
+ "cp18-089": {
+  "title": "Samanid dynasty begins to rule Transoxiana",
+  "y": 819,
+  "place": "Samarkand, Ferghana, Shash and Herat",
+  "paras": [
+   "The Samanid family took its name from Saman-khuda, the lord of the village of Saman in the province of Balkh, in what is now northern Afghanistan; the family claimed descent from Bahram Chobin, a Sasanian general of the late sixth century. Saman-khuda gave up Zoroastrianism for Islam under the Arab governor of Khurasan, Asad ibn Abdallah, and named his son Asad after him.",
+   "Asad's four sons, Nuh, Ahmad, Yahya and Ilyas, helped to put down the revolt of Rafi ibn al-Layth, which had broken out at Samarkand in 806, and then served the future caliph al-Ma'mun while he was in Khurasan. In 819, at the caliph's wish, the governor of Khurasan, Ghassan ibn Abbad, rewarded them with governorships: Nuh received Samarkand, Ahmad the Ferghana valley, Yahya Shash (the Tashkent region) and Ilyas Herat. The brothers ruled as Abbasid governors under the authority of the governor of Khurasan, a post held from 821 by the Tahirid family.",
+   "The family soon lost Herat, but in Transoxiana its rule became hereditary. Nuh took Isfijab from the steppe Turks in about 840, and after the deaths of his brothers Ahmad held most of the region; Barthold notes that Bukhara came under Samanid rule only in 874, and that in 875 Ahmad's son Nasr received a diploma from the caliph for the whole of Transoxiana. Nasr's brother Ismail, who had won a struggle with him and united the family under his rule after Nasr's death in 892, made Bukhara his capital, defeated the Saffarid ruler Amr ibn al-Layth near Balkh in 900, and was then recognised by the caliph as ruler of all Khurasan and Transoxiana; under him the Samanids became in effect independent of the Abbasids.",
+   "The Samanids ruled until 999 from Bukhara, which was said to rival Baghdad. They wrote their science and religion in Arabic but revived Persian language and literature, patronising poets and scholars such as Rudaki, Ferdowsi and Avicenna, and Wikipedia counts their state as part of the 'Iranian Intermezzo', a Persian renaissance within the Islamic world."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Samanid_Empire",
+    "title": "Samanid Empire (rev 1387111336)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     8,
+     10,
+     11,
+     12,
+     13,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   },
+   {
+    "url": "https://archive.org/download/turkestan-down-to-the-mongol-invasion/Barthold%201928%20Turkestan%20down%20to%20the%20Mongol%20Invasion_djvu.txt",
+    "title": "W. Barthold, Turkestan down to the Mongol Invasion (E. J. W. Gibb Memorial series, 1928), chapter II and chronological summary, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The dynasty descended from Saman Khuda (Saman-Khudat), ruler of the village of Saman in Balkh province (Wikipedia; Barthold, Turkestan p. 209).",
+   "Balkh province is in present-day northern Afghanistan (Wikipedia).",
+   "The family was considered to descend from the Sasanian leader Bahram Chobin (Barthold: Bahram-Chubin, who fled to the Turks in 591; Wikipedia: House of Mihran of Bahram Chobin).",
+   "Saman Khuda, originally a Zoroastrian, converted to Islam under the governor Asad ibn Abdallah and named his son Asad after him (Wikipedia; Barthold).",
+   "Asad's sons Nuh, Ahmad, Yahya and Ilyas took part in suppressing the revolt of Rafi ibn al-Layth and served under al-Ma'mun (Barthold; Wikipedia: reward for aid against Rafi ibn al-Layth).",
+   "Rafi's revolt broke out at Samarkand in 806 (Barthold, chronology: 806-810 revolt of Rafi b. Layth in Samarqand; text p. 6914: 806).",
+   "Ma'mun was in Khurasan 809-818 (Barthold chronology).",
+   "In 819 Ghassan ibn Abbad, governor of Khurasan, at the caliph's desire appointed Nuh to Samarkand, Ahmad to Ferghana, Yahya to Shash and Ilyas to Herat (Barthold: Ghassan 819-21, at the Caliph's desire; Wikipedia: in 819, Yahya received Tashkent).",
+   "The Samanids were rulers of Transoxania subordinate to the governor of Khurasan (Barthold).",
+   "Tahir was sent to Khurasan as governor in 821 (Barthold); the Tahirid governors of Khurasan (Wikipedia).",
+   "The Samanids could not keep Herat; in Transoxiana they became hereditary rulers (Barthold; Wikipedia: Samanids in Herat 819-857).",
+   "Nuh seized Isfijab from the pagan Turks in 839/40 (Wikipedia; Barthold chronology: 840 conquest of Isfijab by the Samanids).",
+   "Ahmad, surviving his brothers, became ruler of most of Transoxiana (Barthold; Wikipedia: after Yahya died in 855 Ahmad took control of Chach, becoming ruler of most of Transoxiana).",
+   "Barthold: Bukhara came under Samanid rule only in 874; Nasr b. Ahmad received in 875 a diploma from the Caliph Mu'tamid for the whole of Transoxania (attributed to Barthold).",
+   "Ismail took control of the Samanid state; after Nasr's death in 892 he moved the capital to Bukhara (Wikipedia: Nasr powerless until his death in August 892; Ismail moved the capital from Samarkand to Bukhara; Barthold, Turkestan: Ismail).",
+   "In 900 Ismail defeated Amr ibn al-Layth near Balkh and was recognised by the caliph as ruler of all Khurasan and Transoxiana (Wikipedia).",
+   "Under Ismail the Samanids became effectively independent of the Abbasids (Wikipedia).",
+   "The empire lasted from 819 to 999 (Wikipedia).",
+   "Under Samanid rule Bukhara was said to rival Baghdad (Wikipedia).",
+   "The Samanids revived Persian language and culture while using Arabic for science and religion, and attracted Rudaki, Ferdowsi and Avicenna (Wikipedia).",
+   "The Samanid Empire is part of the Iranian Intermezzo (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp18-090": {
+  "title": "Karakhanids take Bukhara; the Samanid state ends",
+  "y": 999,
+  "place": "Bukhara",
+  "paras": [
+   "By the late tenth century the Samanid amirs of Bukhara had lost most of their power to their own Turkish slave commanders, the ghulams. One of them, Alp Tigin, seized Ghazna in 962, and his successor Sabuktigin took over the Samanid provinces south of the Oxus, the core of what became the Ghaznavid state. From the north-east came the Karakhanids, Turkic rulers of the Semirechye who had recently become Muslims. In 992 the Karakhanid Harun Bughra Khan took Bukhara, but he died soon after and the Samanids returned.",
+   "In February 999, according to W. Barthold, the commanders Faiq and Begtuzun deposed and blinded the amir Mansur II and set up his younger brother Abd al-Malik II. Sabuktigin's son Mahmud then defeated them and took all of Khurasan, and Abd al-Malik and Faiq fled to Bukhara. The Karakhanid Nasr ibn Ali, known as the Ilak, now decided to finish off the dynasty. Barthold writes that the government ordered the preachers of Bukhara's mosques to call the people to arms, but the townspeople took the advice of religious scholars who said that Muslims were not obliged to get themselves killed in a fight over worldly goods. Nasr announced that he came as a friend and protector of the Samanids; Begtuzun and another commander went over to his camp and were arrested.",
+   "On 23 October 999, by Barthold's date, Nasr entered Bukhara without opposition and seized the Samanid treasury. Abd al-Malik and the other members of the family were sent as prisoners to Uzgen in the Ferghana valley, and Nasr left his own governors in Bukhara and Samarkand. Barthold remarks that the fall of the famous dynasty passed amid general indifference.",
+   "The Samanid lands were divided: Mahmud's Ghaznavids kept Khurasan and the Karakhanids took Transoxiana, with the Oxus as the border between them. One prince, Ismail al-Muntasir, escaped from prison, according to Barthold in women's clothes, and fought for several years to restore the state, briefly retaking Bukhara and Samarkand, until an Arab chief near Merv killed him in 1005. Barthold saw the event as the end of rule by the native Iranian population in Central Asia; from then on Turkic dynasties ruled Transoxiana."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Samanid_Empire",
+    "title": "Samanid Empire (rev 1387111336)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     10,
+     13,
+     14,
+     15,
+     17
+    ]
+   },
+   {
+    "url": "https://archive.org/download/turkestan-down-to-the-mongol-invasion/Barthold%201928%20Turkestan%20down%20to%20the%20Mongol%20Invasion_djvu.txt",
+    "title": "W. Barthold, Turkestan down to the Mongol Invasion (E. J. W. Gibb Memorial series, 1928), chapter II and chronological summary, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "The power of the Samanids crumbled in the latter half of the 10th century; ghulams (Turkish military slaves) took control (Wikipedia: by 945 de facto control of the Turkic military slave faction; ghulams).",
+   "In 962 the ghulam Alp Tigin seized Ghazna; Sabuktigin later took all the provinces south of the Oxus and established the Ghaznavid Empire (Wikipedia; Barthold: Alptagin in Ghazna, Sabuktagin in Ghazna).",
+   "The Karakhanids, Muslim Turks, attacked from the Semirechye in the north-east (Barthold, Turkestan and chronology: conversion of the Turks of Semiryechye; Wikipedia: Karakhanid, Karluk confederation).",
+   "In 992 Harun Bughra Khan captured Bukhara, died shortly afterwards, and the Samanids returned (Wikipedia; Barthold chronology 992: Bughra-Khan at Bukhara, his retreat and Nuh's return, death of Bughra-Khan).",
+   "In February 999 Faiq and Begtuzun deposed Mansur, who was blinded a week later; his younger brother Abd al-Malik was proclaimed (Barthold; Wikipedia list: Mansur II 997-999, Abd al-Malik II 999-1000).",
+   "Mahmud won a victory that gave him all Khurasan; Abd al-Malik and Faiq fled to Bukhara (Barthold; Wikipedia: Ghaznavids gained Khorasan).",
+   "The Ilak Nasr decided to end Samanid rule in Transoxania (Barthold; Wikipedia: Nasr b. Ali took Bukhara in 999).",
+   "The khatibs of Bukhara's mosques, by government order, urged the people to arm; the people followed faqihs who said Muslims were not obliged to be killed in a struggle for worldly goods (Barthold).",
+   "The Ilak announced he came as friend and protector of the Samanids; Begtuzun and Yanaltagin went to his camp and were arrested (Barthold).",
+   "On 23 October 999 the Ilak occupied Bukhara without opposition and seized the treasury (Barthold, date stated as his; Wikipedia: 999, meeting little resistance).",
+   "Abd al-Malik and the other members of the dynasty were sent to Ozgand (Uzgen); Nasr left governors in Bukhara and Samarqand (Barthold).",
+   "Barthold: the downfall was accomplished amid general indifference (attributed).",
+   "The domains were split: Ghaznavids gained Khorasan, Karakhanids Transoxiana; the Oxus became the boundary (Wikipedia).",
+   "Isma'il Muntasir escaped from Karakhanid imprisonment (Wikipedia; Barthold: escaped from Ozgand in woman's clothes, attributed).",
+   "He fought to restore the state, at times driving the Karakhanids out of Bukhara and taking Samarkand, until an Arab tribal chief near Merv killed him in 1005 (Wikipedia; Barthold chronology 1000-1005).",
+   "Barthold: the event put an end for ever to the dominion of the native 'Aryan' element (paraphrased as native Iranian rule, attributed).",
+   "Turkic dynasties ruled Transoxiana thereafter (Wikipedia: Karakhanids received Transoxiana; Barthold: Qara-Khanid rule in Transoxania)."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
