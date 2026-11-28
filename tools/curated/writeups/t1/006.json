@@ -654,5 +654,79 @@
   ],
   "disagree": "Place: TASS and Wikipedia place the signing at Viskuli in the Belovezhskaya Pushcha; the State Department's history says the leaders 'met in Brest'. Wikipedia could not be fetched (429); its local dump extract was used only to confirm the date, place and 10 December ratification.",
   "checked": null
+ },
+ "Q133331": {
+  "title": "First Council of Nicaea",
+  "y": 325,
+  "place": "Nicaea, Bithynia (today İznik, Turkey)",
+  "paras": [
+   "The First Council of Nicaea was an assembly of Christian bishops called by the Roman emperor Constantine I to the city of Nicaea in Bithynia (today İznik, Turkey) in 325. It is counted as the first ecumenical council of the Church. Almost all the bishops came from the eastern half of the empire. Their number is uncertain: Wikipedia says at least 200; the Catholic Encyclopedia notes that Eusebius spoke of more than 250 and Athanasius of 318, while the surviving lists of signatories give about 220 names.",
+   "The council was called to settle a dispute that had begun in Alexandria a few years earlier. The presbyter Arius taught that the Father alone was eternal and that the Son had been begotten or created by the Father and so had a beginning; his bishop, Alexander of Alexandria, held that the Son was eternally begotten. A council of bishops from Egypt and Libya condemned Arius, but he found supporters elsewhere, among them Eusebius of Nicomedia. When Constantine became sole emperor in 324 after defeating Licinius, he wrote to both men urging reconciliation and sent his adviser Hosius of Corduba to Alexandria; when that failed, he summoned a general council. He opened it in person, and Hosius probably presided over the discussions.",
+   "The bishops adopted a creed declaring the Son 'of the same substance' (homoousios) as the Father and condemning Arius's teachings. All but two bishops signed it; Arius and the two who refused, Theonas and Secundus, were excommunicated and exiled to Illyria, and Arius's writings were ordered burned. The council also settled how the date of Easter was to be calculated, adopting the practice of Rome and Alexandria rather than relying on the Jewish calendar, dealt with the Melitian schism in Egypt, and issued twenty canons. The sources differ on when it ended: Wikipedia says it closed in the first weeks of July, with the bishops invited to Constantine's celebration of his twentieth year on the throne on 25 July, while the Catholic Encyclopedia dates the end of the sessions to 25 August.",
+   "The decision did not end the controversy. According to Wikipedia, Arius's supporters soon regained influence at court: Eustathius of Antioch was exiled in 330 and Athanasius, Alexander's successor at Alexandria, was deposed in 335, and the dispute continued through the rest of the fourth century."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/First_Council_of_Nicaea",
+    "title": "First Council of Nicaea (rev 1384021780)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.newadvent.org/cathen/11044a.htm",
+    "title": "First Council of Nicaea (Catholic Encyclopedia, 1911)",
+    "publisher": "New Advent",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Council of Christian bishops convened by Constantine I at Nicaea in Bithynia (today İznik, Turkey) in 325 (Wikipedia; Catholic Encyclopedia: held in 325, bishops summoned to Nicaea by the emperor).",
+   "First ecumenical council (Wikipedia; Catholic Encyclopedia).",
+   "Attendance almost entirely from the eastern half of the empire (Wikipedia; Catholic Encyclopedia: Nicaea easily accessible especially to bishops of Asia, Syria, Palestine, Egypt, Greece and Thrace).",
+   "Numbers: Wikipedia, at least 200 bishops; Catholic Encyclopedia: Eusebius more than 250, Athanasius 300 and 318; reconstructed lists give 220 and 218 names.",
+   "The dispute began in Alexandria between Arius and Bishop Alexander; Arius held that the Father alone was eternal and the Son was created/begotten with a point of origin; Alexander that the Son was eternally generated (Wikipedia; Catholic Encyclopedia: the heresy of Arius, anathema on the view that 'there was a time when He was not').",
+   "A council of bishops of Egypt and Libya condemned Arius (Wikipedia; Catholic Encyclopedia: more than one hundred bishops from Egypt and Libya anathematized Arius); Eusebius of Nicomedia supported him (Wikipedia; Catholic Encyclopedia: Arius went to Nicomedia).",
+   "Constantine defeated Licinius in 324 and became sole emperor (Wikipedia; Catholic Encyclopedia: having conquered Licinius and become sole emperor), wrote to Alexander and Arius urging agreement, and sent Hosius of Corduba with the letter to Alexandria, which failed (Wikipedia; Catholic Encyclopedia).",
+   "Constantine opened the council; Hosius probably presided (Wikipedia: 'may have presided'; Catholic Encyclopedia: Constantine opened the session; the actual president seems to have been Hosius).",
+   "Creed with 'of the same substance' (homoousios) and anathemas against Arius's teachings (Catholic Encyclopedia text of the creed; Wikipedia: settlement of the Christological issue; homoousios supported by Constantine and Hosius).",
+   "All but two bishops subscribed; Arius, Theonas and Secundus were exiled to Illyria and excommunicated; Arius's works were to be burned (Wikipedia; Catholic Encyclopedia).",
+   "The council settled the Easter computation, adopting the Roman and Alexandrian method independent of the Jewish calendar (Wikipedia; Catholic Encyclopedia: the Easter controversy was dealt with).",
+   "The council dealt with the Melitian schism and issued twenty canons (Wikipedia; Catholic Encyclopedia: twenty canons; Meletian schism).",
+   "End: Wikipedia, closed in the first weeks of July, with bishops invited to Constantine's twentieth-anniversary celebration on 25 July (lead: met until the end of July); Catholic Encyclopedia, sessions ended 25 August, followed by Constantine's anniversary banquet.",
+   "Wikipedia: Arians soon regained influence; Eustathius of Antioch exiled in 330; Athanasius deposed by the Synod of Tyre in 335; Arianism continued to be debated through the 4th century."
+  ],
+  "disagree": "Number of bishops: Wikipedia at least 200; Catholic Encyclopedia cites Eusebius (more than 250) and Athanasius (318), with surviving lists of about 220. End of the council: Wikipedia first weeks of July (celebration on 25 July); Catholic Encyclopedia 25 August.",
+  "checked": null
  }
 }
