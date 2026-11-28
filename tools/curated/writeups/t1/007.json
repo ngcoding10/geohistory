@@ -2915,5 +2915,143 @@
   ],
   "disagree": "Date and place of death: 17 February 1405 at Otrar (Markham, 1911 Britannica) or 17 or 18 February at Farab (Wikipedia). Start of the campaign: December 1404 (Wikipedia) or departure from Samarkand on 8 January 1405 (Markham). Shah Rukh's ascendancy: 1409 (Wikipedia) or 1408 (Markham). All stated in the text.",
   "checked": null
+ },
+ "Q2888296": {
+  "title": "Conquest of Ceuta",
+  "y": 1415,
+  "place": "Ceuta",
+  "paras": [
+   "Ceuta, on the African shore of the Strait of Gibraltar, was a rich Marinid port, an outlet of the Saharan gold trade and a haven for Barbary corsairs, although by the 15th century it had declined and Morocco was weakened by civil war. King John I of Portugal planned to attack it in secret. C. R. Beazley's life of Prince Henry the Navigator says the idea came up when John's three eldest sons, Edward (Duarte), Peter and Henry, asked to be knighted, and the royal treasurer suggested a crusade in Africa in place of a year of tournaments. John sent an embassy to Sicily that stopped to spy out Ceuta's defences, and staged a quarrel with the Count of Holland so that Europe would think the fleet was meant for Holland. Queen Philippa died of plague just before the fleet sailed; according to Beazley she gave each of her sons a sword on her deathbed.",
+   "The fleet left Lisbon on 25 July 1415. Wikipedia counts about 200 ships carrying up to 50,000 men, about 19,295 of them soldiers, including English, French and German volunteers; Beazley gives 50,000 soldiers and 30,000 sailors. Only at Lagos was the target announced. Wikipedia describes how the governor, Salah ben Salah, gathered many tribesmen to defend the city when the first galleys appeared, but sent them home when storms scattered the Portuguese fleet and the attack seemed to have been abandoned.",
+   "The assault came on 21 August, the date Wikipedia gives; Beazley's account puts the fleet before Ceuta on the night of the 15th and the landing at the next dawn. Ruy Gonçalves was the first ashore, followed by Henry and Edward, who drove the defenders back through the gate of the landing place; resistance in the streets broke when a very large African warrior who had been hurling stones was killed. Henry and Peter were cut off in the town and for a time reported dead, but by evening the lower town was taken. That night Salah ben Salah abandoned the citadel, and when the Portuguese began to hack down its gates, two men left inside opened them. The flag of Lisbon was raised on the highest tower.",
+   "The main mosque was consecrated as a cathedral, and there the three princes were knighted in order of birth. The city was thoroughly plundered. Against the wishes of many of his men John decided to keep it, with Pedro de Meneses as governor and a garrison of 2,700 men. The capture is seen as the beginning of the Portuguese Empire, and Beazley argues that what Henry learned at Ceuta about the gold trade of the interior encouraged his voyages along the African coast. Ceuta stayed Portuguese until it passed to Spain in 1668."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Portuguese_conquest_of_Ceuta",
+    "title": "Portuguese conquest of Ceuta (rev 1383567392, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://archive.org/download/princehenrynavi00beazgoog/princehenrynavi00beazgoog_djvu.txt",
+    "title": "C. Raymond Beazley, Prince Henry the Navigator (Putnam, 1894), chapter \"Prince Henry and the Capture of Ceuta\", OCR text",
+    "publisher": "Internet Archive (Google Books scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "Ceuta on the Strait of Gibraltar traded richly, controlled an outlet of the Sudanese gold trade, was a pirate haven; by the 15th century it had declined; the Maghreb was in disorder (Wikipedia; Beazley: chief port of Morocco, centre of commerce and of piracy for the Barbary corsairs).",
+   "Preparations were kept secret (Wikipedia; Beazley).",
+   "Beazley: the three princes asked for knighthood; at the suggestion of the Treasurer John Affonso de Alemquer, John chose the African crusade instead of a year of tournaments (attributed).",
+   "A faux embassy to Sicily scouted Ceuta; a faux embassy to Holland suggested Holland was the target (Wikipedia; Beazley: lulled suspicions by a pretence of declaring war against the Count of Holland).",
+   "Queen Philippa died of plague (19 July) shortly before departure (Wikipedia; Beazley); Beazley: each prince held the sword the Queen had given him on her deathbed (attributed).",
+   "The fleet departed from Lisbon on 25 July 1415 (Wikipedia; Beazley).",
+   "Wikipedia: about 200 ships, up to 50,000 men of whom about 19,295 soldiers; English, French and German mercenaries; Beazley: 50,000 soldiers and 30,000 mariners; nobles from England, France and Germany (attributed).",
+   "The objective was disclosed at Lagos (Wikipedia).",
+   "Wikipedia: Salah ben Salah was reinforced by tribesmen; when the fleet scattered he dismissed the volunteers (attributed in substance; Beazley: the Moors dismissed all but their own garrison when the fleet seemed scattered).",
+   "Wikipedia: assault on 21 August 1415; Beazley: the armada brought up on the night of 15 August, assault at daybreak (both attributed).",
+   "Ruy Gonsalves was first to land; Henry and Edward followed and drove the Muslims back through the gate; a very large African who hurled stones was killed and the defenders fled (Wikipedia; Beazley).",
+   "Henry and Peter lost contact and were reported dead; by evening the lower city was secured (Wikipedia; Beazley).",
+   "Salah ben Salah fled the citadel after sunset; the Portuguese hewed at the gates; two Muslims opened them; the flag of Lisbon (St Vincent) was hoisted (Wikipedia; Beazley).",
+   "The main mosque was consecrated as cathedral; the princes were knighted in order of birth there; the city was looted (Wikipedia; Beazley).",
+   "John decided to keep the city against the wishes of many; Pedro de Meneses governor; garrison of 2,700 (Wikipedia; Beazley: Pedro de Menezes was left in command).",
+   "The capture marked the beginning of the Portuguese Empire; Ceuta was transferred to Spain in 1668 (Wikipedia).",
+   "Beazley: Henry gained in Ceuta a knowledge of inland Africa, its trade routes and the Gold Coast, encouraging his coasting voyages (attributed)."
+  ],
+  "disagree": "Date of the assault: 21 August 1415 (Wikipedia) or the dawn after the night of 15 August (Beazley, whose account omits the scattering of the fleet). Size of the force: about 200 ships and up to 50,000 men, about 19,295 of them soldiers (Wikipedia) or 50,000 soldiers and 30,000 sailors (Beazley). Both stated in the text.",
+  "checked": null
+ },
+ "Q24945556": {
+  "title": "Siege of Angkor",
+  "y": 1431,
+  "place": "Angkor, Cambodia",
+  "paras": [
+   "By the 14th century the Khmer Empire, ruled from Angkor since the period that began with the empire's founding in 802, faced the rising Thai kingdom of Ayutthaya, founded around 1350 on its western flank. Wikipedia, drawing on the Cambodian chronicles, describes earlier Siamese captures of Angkor in 1352 and 1393, each followed by a Khmer recovery. The historian Lawrence Palmer Briggs, in The Ancient Khmer Empire (1951), doubts this: in his view there had been much fighting in the border provinces, but Angkor itself was taken only once.",
+   "In 1430 King Borommarachathirat II of Ayutthaya invaded Cambodia and laid siege to Angkor Thom. Thai chronicle tradition says the siege lasted about seven months; the city was taken and plundered in 1431. According to Briggs, the Cambodian king Dharmasoka died during the siege, and two mandarins and two Buddhist monks went over to the besiegers. The Siamese carried off statues and many prisoners to Ayutthaya, and their king placed his own son on the Cambodian throne.",
+   "The Siamese did not stay to occupy the country. Briggs writes that the Khmer prince Ponhea Yat had the Siamese puppet killed and was crowned at Angkor, but found the old capital impossible to defend. Wikipedia says he fled the indefensible capital. Either way, he moved the court south-east to Basan (Srey Santhor) and then, according to Briggs in 1434, to Chaktomuk, the site of modern Phnom Penh at the junction of the Mekong and the Tonle Sap.",
+   "The move is conventionally taken as the end of the Angkor period and the start of the Post-Angkor period, though the temples of Angkor continued to be used for religious purposes. Historians debate how far the Siamese attack caused the decline: Briggs argued that the sack was a raid rather than a conquest and that Cambodia remained an independent and important state, while others point to the burden of maintaining the great monuments, the spread of Theravada Buddhism, or the breakdown of Angkor's water system as deeper causes."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Angkor",
+    "title": "Fall of Angkor (rev 1378421534, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     6,
+     7,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://archive.org/download/the-ancient-khmer-empire/The%20Ancient%20Khmer%20Empire_djvu.txt",
+    "title": "L. P. Briggs, The Ancient Khmer Empire (Transactions of the American Philosophical Society, 1951), sections on the capture and fall of Angkor, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The Angkor period began with the founding of the Khmer Empire in 802 (Briggs); Ayutthaya was established around 1350/1351 (Wikipedia: Uthong established Ayutthaya in 1351; Briggs: foundation of Ayuthia in 1350).",
+   "Wikipedia (Cambodian chronicle traditions): Angkor captured by the Siamese in 1352 and 1393 and recovered by the Khmer (attributed).",
+   "Briggs: much fighting in the border provinces; Angkor captured but once, in 1430-1431 (attributed).",
+   "In 1430 Boroma-raja II (Borommarachathirat II) of Ayutthaya invaded and invested Angkor; siege of seven months; city taken and plundered in 1431 (Wikipedia: Thai chronicle tradition of a siege of around seven months beginning 1430, capture 1431; Briggs).",
+   "Briggs: the Cambodian king Dharmasoka died during the siege; two mandarins and two monks went over to the besiegers; statues and many prisoners taken to Ayutthaya; the Siamese king crowned his son (attributed).",
+   "Briggs: the Siamese did not occupy the country; Ponha Yat had the puppet assassinated, was crowned at Angkor, found it untenable (attributed); Wikipedia: Ponhea Yat was forced to flee Yasodharapura as it was indefensible.",
+   "The court moved to Basan (Srey Santhor) and then to Chaktomuk (Phnom Penh) (Wikipedia; Briggs: Basan, then in 1434 to Catur Mukha at the junction of the Mekong and Tonle Sap).",
+   "The transition marks the start of the Post-Angkor period; Angkorian temples continued in religious use (Wikipedia).",
+   "Briggs: a successful raid, not a conquest; Cambodia remained an important independent state (attributed).",
+   "Other factors: burden of monuments and Hinayana (Theravada) Buddhism (Briggs); collapse of the hydraulic system (Wikipedia)."
+  ],
+  "disagree": "Whether Angkor was taken before 1431 (1352 and 1393 in the Cambodian chronicle traditions used by Wikipedia; only once, in 1431, according to Briggs). Ponhea Yat: crowned at Angkor after killing the Siamese puppet king (Briggs) or forced to flee the indefensible capital (Wikipedia). Both stated in the text.",
+  "checked": null
  }
 }
