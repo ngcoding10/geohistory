@@ -4253,5 +4253,89 @@
   ],
   "disagree": "Executions: Larousse 22 on 10 Thermidor and 71 on 11 Thermidor; Hérodote 'about twenty' with Robespierre and some 80 the next day. The jaw wound: Larousse says Robespierre had tried to kill himself; Hérodote says only that he was wounded by a pistol shot. Hérodote names Cambon as the deputy who first accused Robespierre; Larousse names Tallien and Billaud-Varenne. Date: the event record's 26 July 1794 (8 Thermidor, the day of Robespierre's last speech) is corrected to 27 July (9 Thermidor), the date given by Larousse and Hérodote. Wikipedia (Fall of Maximilien Robespierre) refused automated requests (429) during this batch and was not used.",
   "checked": null
+ },
+ "Q750567": {
+  "title": "Spring Offensive",
+  "y": 1918,
+  "place": "Western Front in northern France and Flanders",
+  "paras": [
+   "The German Spring Offensive of 1918, also called the Kaiserschlacht ('Kaiser's Battle'), was Germany's last great attempt to win the First World War on the Western Front, launched against the British and French armies from 21 March 1918. Russia's withdrawal from the war had freed large numbers of German troops for the west, and the German command, under General Erich Ludendorff, knew that submarine warfare had failed to defeat Britain and that American troops would soon arrive in strength. It aimed to break through, split the British from the French and take the railway centre of Amiens; the Australian War Memorial notes the view that Ludendorff no longer expected outright victory but wanted a stronger position for peace talks.",
+   "The first blow, Operation Michael, fell south of Arras around St Quentin on the British Third Army under Byng and Fifth Army under Gough. The Fifth Army held a long front with few divisions and weak defences in depth. After a five-hour 'hurricane' bombardment (the National Army Museum counts around 10,000 guns firing over a million shells; National Records of Scotland 6,500 guns and 3,500 heavy mortars), storm troops helped by fog infiltrated the weak points and broke through. National Records of Scotland puts British losses on the first day at 38,500, of whom 21,000 were captured. The figures given for the attackers differ: the NAM says 47 German divisions attacked, the AWM 63 divisions against 26 British.",
+   "Within five days, the Australian War Memorial says, the Germans retook all the ground lost on the Somme in the two previous years and came within a few miles of Amiens. On 26 March the Allies placed the French Marshal Foch in overall command, and Australian divisions were rushed in to block the road to Amiens at Villers-Bretonneux. Exhausted and short of transport, the Germans called off Michael on 5 April. A second attack, Georgette, began south of Ypres (NAM: 7 April; National Records of Scotland: 9 April), retook the Messines ridge and much of the Passchendaele salient, and prompted Haig's 'backs to the wall' order before it too lost momentum.",
+   "Further offensives against the French followed from 27 May to 17 July, but Germany had exhausted its army. On 18 July the French counter-attacked on the Marne, and on 8 August the British attack at Amiens, which Ludendorff called 'the black day of the German Army', began the Allies' 'Hundred Days', a series of offensives that drove the Germans back until the ceasefire ended the war. The National Army Museum says the mobile fighting since March had cost each side over a million men."
+  ],
+  "sources": [
+   {
+    "url": "https://www.nam.ac.uk/explore/1918-victory",
+    "title": "1918: Year of victory",
+    "publisher": "National Army Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://awm.gov.au/exhibitions/1918/battles/michael",
+    "title": "Operation Michael: The German Offensive of March 21 1918",
+    "publisher": "Australian War Memorial",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://nrscotland.gov.uk/learning-and-events/first-world-war/german-spring-offensive-1918",
+    "title": "German Spring Offensive 1918",
+    "publisher": "National Records of Scotland",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The German Spring Offensive / Kaiserschlacht began with Operation Michael on 21 March 1918 against the British (NAM, AWM, NRS).",
+   "NAM: Russia's withdrawal released German troops; the Germans knew submarine warfare had failed and that large numbers of American troops would soon arrive (AWM: US forces about to arrive).",
+   "Aims: AWM, Ludendorff planned to divide the French and British, capture Amiens and weaken the Allies; it is generally accepted Ludendorff did not by then expect to win the war and aimed at a stronger position at peace negotiations; NRS: to separate the British from the French and force the British back to the Channel.",
+   "Michael fell south of Arras in the St Quentin sector (AWM) on Byng's Third and Gough's Fifth Armies (NAM, NRS).",
+   "The Fifth Army held a long front with few divisions (NAM: 14 divisions for 67 km) and weak defences in depth (NRS); bombardment of five hours (NAM: around 10,000 guns, over a million shells; NRS: 6,500 guns and 3,500 heavy mortars); storm troops infiltrated weak points (NAM, NRS; NRS: helped by fog).",
+   "NRS: British first-day casualties of 38,500, of whom 7,000 killed and 21,000 captured.",
+   "Attacking forces: NAM 47 German divisions; AWM 63 German divisions against 26 British; NRS 43 divisions against the Fifth Army and 19 against the Third.",
+   "AWM: in five days the Germans retook all the ground lost on the Somme in the previous two years and came close to Amiens; NRS: the Germans were only five miles from Amiens by the end of March.",
+   "NAM: on 26 March Haig agreed to Foch's appointment as supreme commander; AWM: Australian divisions were sent from 25 March to stop the advance before Amiens at Villers-Bretonneux.",
+   "The Germans, exhausted and short of transport, halted (NAM: by 5 April held east of Amiens; NRS: called off Michael on 5 April).",
+   "Operation Georgette, south of Ypres: NAM 7 April, captured the Messines ridge and much of the Passchendaele salient; NRS 9 April (Battles of the Lys); NAM quotes Haig's 'backs to the wall' order.",
+   "NAM: offensives against the French between 27 May and 17 July; on 18 July the French counter-attacked on the Marne; Germany had exhausted its army.",
+   "NAM: on 8 August Rawlinson's Fourth Army attacked at Amiens; Ludendorff called it 'the black day of the German Army'; it began the Hundred Days, a series of offensives that drove the Germans back, until the ceasefire came into effect and ended the war.",
+   "NAM: the mobile warfare since March cost each side over a million men."
+  ],
+  "disagree": "Artillery on 21 March: NAM around 10,000 guns; NRS 6,500 guns and 3,500 heavy mortars. Attacking divisions: NAM 47; AWM 63 against 26 British; NRS 43 against the Fifth Army plus 19 against the Third. Start of Operation Georgette: NAM 7 April, NRS 9 April. Wikipedia refused automated requests (429) for this article during the batch and was not used.",
+  "checked": null
  }
 }
