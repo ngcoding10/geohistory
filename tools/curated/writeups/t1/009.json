@@ -901,5 +901,637 @@
    "result": "1 claim checked (Confederates held Norfolk until May 1862): confirmed.",
    "errors": 0
   }
+ },
+ "Q1066253": {
+  "title": "Siege of Vicksburg",
+  "y": 1863,
+  "place": "Vicksburg, Mississippi",
+  "paras": [
+   "Vicksburg, a fortress city on high bluffs above the Mississippi, was the last major Confederate stronghold on the river. In the spring of 1863 the Union general Ulysses S. Grant, with the Army of the Tennessee, set out to take it from the Confederate army of Lieutenant-General John C. Pemberton. Attempts to reach the high ground north of the city through the swamps and waterways had failed.",
+   "Grant then marched his troops overland, through a network of lakes and streams, to a point south of Vicksburg, while on 16 April Admiral David Porter's gunboats and the transports ran past the city's batteries. At the end of April the army crossed to the east bank below Grand Gulf, drove off the Confederates at Port Gibson and, in early May, cut loose from its base of supplies. Grant struck east, fought at Raymond on 12 May and took Jackson, keeping Pemberton apart from the relief force of General Joseph E. Johnston. On 16 May he defeated Pemberton at Champion Hill and drove him back into Vicksburg's lines.",
+   "By 19 May the city was invested by land and water. Assaults on 19 and 22 May were thrown back with heavy losses, and Grant settled into a siege, digging approaches and mines towards the Confederate works while Johnston's force was held off to the east. Under heavy bombardment from the gunboats and the army's artillery, the townspeople sheltered in caves dug into the clay hills.",
+   "With supplies nearly gone, Pemberton opened talks. Grant at first demanded unconditional surrender, then agreed to parole the prisoners rather than ship them north, and the garrison surrendered on 4 July 1863, the day after the Union victory at Gettysburg. The 1911 Encyclopaedia Britannica puts the surrendered garrison at 37,000; Wikipedia gives 29,495 surrendered out of 32,697 Confederate casualties, against 4,835 Union casualties for the battle and siege.",
+   "Port Hudson, downriver, surrendered to General Nathaniel Banks a few days later, giving the Union control of the whole Mississippi and cutting off Arkansas, Texas and part of Louisiana from the rest of the Confederacy. Lincoln, as Wikipedia quotes him, said that 'the Father of Waters again goes unvexed to the sea'. The Britannica calls the capture perhaps the greatest Union success of the war."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Vicksburg",
+    "title": "Siege of Vicksburg (rev 1384930909, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Vicksburg",
+    "title": "Vicksburg, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/American_Civil_War",
+    "title": "American Civil War, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     11,
+     12,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Vicksburg the last major Confederate stronghold on the Mississippi (Wikipedia); fortress on high bluffs (EB ACW).",
+   "Grant and the Army of the Tennessee against Pemberton's Confederate army (Wikipedia).",
+   "Earlier attempts to gain the high ground failed amid swamps and waterways (EB Vicksburg, EB ACW).",
+   "Troops marched to a point south of Vicksburg; Porter's gunboats and transports ran the batteries on 16 April (EB Vicksburg; ACW without the day).",
+   "30 April crossing below Grand Gulf, Confederates driven back at Port Gibson; cut loose from base 7 May (EB Vicksburg; given as end of April and early May).",
+   "Raymond 12 May, Jackson captured before Johnston's reinforcements arrived (EB Vicksburg).",
+   "Champion Hill 16 May, Pemberton driven into Vicksburg (EB Vicksburg).",
+   "Invested by land and water by 19 May; assaults of 19 and 22 May repulsed (EB Vicksburg; Wikipedia: assaults May 19 and 22 repulsed with heavy casualties).",
+   "Siege begun, approaches and mines dug (Wikipedia: Special Orders No. 140, regular approaches, mines, crater); Johnston held off (EB Vicksburg: covering corps under Blair, then Sherman).",
+   "Heavy bombardment by gunboats and artillery; townspeople sheltered in more than 500 caves dug into the clay hills; supplies nearly gone (Wikipedia; EB Vicksburg: resistance almost at an end).",
+   "Grant first demanded unconditional surrender, then offered parole rather than shipping prisoners north (Wikipedia); surrender 4 July 1863, the day after Gettysburg (EB Vicksburg, EB ACW, Wikipedia).",
+   "Garrison 37,000 (EB Vicksburg and EB ACW) vs 29,495 surrendered of 32,697 Confederate casualties and 4,835 Union casualties (Wikipedia) - stated with sources.",
+   "Port Hudson surrendered to Banks days later (EB ACW: four days after; Wikipedia: July 9), giving the Union the Mississippi (Wikipedia; EB ACW: last serious fight on the river).",
+   "Cut off Arkansas, Texas and part of Louisiana (Trans-Mississippi) from the rest of the Confederacy; Lincoln's 'Father of Waters' words (Wikipedia, attributed).",
+   "Perhaps the greatest success of the war (EB ACW, attributed)."
+  ],
+  "disagree": "Size of the surrendered garrison: 37,000 (1911 Britannica) or 29,495 surrendered out of 32,697 Confederate casualties (Wikipedia).",
+  "checked": null
+ },
+ "Q756118": {
+  "title": "Atlanta campaign",
+  "y": 1864,
+  "place": "Northwest Georgia and Atlanta",
+  "paras": [
+   "In the spring of 1864 Ulysses S. Grant, now general-in-chief of the Union armies, left William T. Sherman in command in the west. Sherman gathered three armies near Chattanooga, the Army of the Tennessee under McPherson, the Army of the Cumberland under Thomas and the Army of the Ohio under Schofield, and in early May invaded Georgia, aiming at Atlanta. Facing him was the Confederate Army of Tennessee under General Joseph E. Johnston, which was much smaller: Wikipedia gives 98,500 Union troops on paper against 50,000, and the 1911 Encyclopaedia Britannica puts Sherman's three armies at 100,000 men.",
+   "For two months the campaign was one of manoeuvre. Each time Sherman worked round a flank, at Rocky Face Ridge, Resaca and Adairsville, Johnston fell back to a prepared line, and heavy fighting followed around Dallas and New Hope Church in late May. Near Marietta Sherman tried frontal attacks instead, and his assault on Kennesaw Mountain on 27 June was thrown back. He returned to flanking moves, turned Johnston's line on the Chattahoochee in early July, and Johnston withdrew into the Atlanta defences.",
+   "Jefferson Davis, impatient with the retreats, replaced Johnston in mid-July with General John B. Hood, who was expected to fight. Hood attacked at once, at Peachtree Creek on 20 July and in the Battle of Atlanta a few days later, in which the Union general McPherson was killed, and again at Ezra Church on 28 July; each attack was beaten off. With the city nearly surrounded, the fighting around Jonesboro to the south settled the campaign.",
+   "Hood evacuated Atlanta, and Union troops entered it: the Britannica says Sherman took the city on 1 September; Wikipedia says Hood left on the night of 1 September, destroying the ammunition trains, and General Henry Slocum's troops occupied the city on 2 September. Losses were heavy on both sides; Wikipedia gives 31,687 Union and 34,979 Confederate casualties, and the Britannica a Union loss of 30,000.",
+   "Hood's army escaped, which Wikipedia notes left the campaign's first aim unmet, but the fall of Atlanta lifted Northern morale and, according to Wikipedia, helped to re-elect President Abraham Lincoln. Sherman ordered the remaining civilians out of the city and, in November, set out from Atlanta on his March to the Sea."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Atlanta_campaign",
+    "title": "Atlanta campaign (rev 1380714010, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/American_Civil_War",
+    "title": "American Civil War, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Sherman,_William_Tecumseh",
+    "title": "Sherman, William Tecumseh, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     10,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sherman%27s_March_to_the_Sea",
+    "title": "Sherman's March to the Sea (rev 1380704945, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Grant general-in-chief (March 1864) left Sherman in command of the western armies (Wikipedia; EB Sherman).",
+   "Three armies near Chattanooga: Tennessee under McPherson, Cumberland under Thomas, Ohio under Schofield; invasion of Georgia began early May 1864 (EB ACW, EB Sherman; Wikipedia: beginning in May 1864).",
+   "Johnston's forces sensibly inferior (EB ACW).",
+   "98,500 to 50,000 on paper (Wikipedia) and 100,000 men (EB Sherman), attributed.",
+   "Flanking manoeuvres at Rocky Face, Resaca, Adairsville; Johnston fell back; heavy fighting near Dallas and New Hope Church, 25-27 May (EB ACW; Wikipedia sections).",
+   "Near Marietta frontal attacks; Kennesaw 27 June repulsed (EB ACW 'Kenesaw on the 27th'; Wikipedia June 27).",
+   "Chattahoochee line turned (EB ACW: 7 July; Wikipedia: Johnston fell back to the Chattahoochee in early July); Johnston fell back into the Atlanta position (EB ACW).",
+   "Davis replaced Johnston with Hood (Wikipedia July 17; EB ACW: put in command on the understanding he would fight) - given as mid-July.",
+   "Peachtree Creek 20 July (Wikipedia; EB names it) and battle of Atlanta a few days later, McPherson killed (EB ACW; Wikipedia map: July 22); Ezra Church 28 July (EB ACW; Wikipedia).",
+   "Atlanta nearly surrounded; fighting near Jonesboro concluded the campaign (EB ACW; Wikipedia section Jonesborough).",
+   "EB Sherman: Atlanta wrested 1 September; Wikipedia: Hood evacuated night of 1 September, destroyed ammunition rail cars, Slocum occupied 2 September - both stated.",
+   "Casualties 31,687 Union / 34,979 Confederate (Wikipedia), Union loss 30,000 (EB ACW), attributed; Hood's army escaped, original mission unfulfilled (Wikipedia, attributed).",
+   "Union morale and Lincoln's re-election (Wikipedia, attributed); civilians ordered out (Wikipedia: Special Field Orders No. 67; EB ACW: clearing the city of non-combatants; EB Sherman: cleared Atlanta of its civil population); March to the Sea followed (Wikipedia; EB ACW; EB Sherman). March began from Atlanta on 15 November (Wikipedia, Sherman's March to the Sea) - given as November."
+  ],
+  "disagree": "Fall of Atlanta: 1 September 1864 (1911 Britannica, Sherman) or evacuated on the night of 1 September and occupied on 2 September (Wikipedia). Army sizes and losses differ between Wikipedia and the Britannica; each is attributed.",
+  "checked": null
+ },
+ "Q1052780": {
+  "title": "Sherman's March to the Sea",
+  "y": 1864,
+  "place": "Georgia, from Atlanta to Savannah",
+  "paras": [
+   "After taking Atlanta in September 1864, the Union general William T. Sherman faced the Confederate Army of Tennessee under John B. Hood, which moved north to strike at his supply line and then into Tennessee. Sherman sent George H. Thomas back to defend Tennessee and resolved instead to march through Georgia to the sea, destroying everything of military value on the way. Lincoln and Grant had doubts, but Grant approved the plan in early November.",
+   "Sherman cut his railway link with the north, wrecked Atlanta as a military base and set out on 15 November with picked troops: 62,000 men according to Wikipedia, 60,000 or 50,000 in two articles of the 1911 Encyclopaedia Britannica. The army moved in two wings, under Oliver O. Howard and Henry Slocum, with Judson Kilpatrick's cavalry, and lived off the country by organized foraging. Little stood in its way: Hood had taken most Confederate forces to Tennessee, leaving William J. Hardee with militia and Joseph Wheeler's cavalry.",
+   "The columns feinted towards Macon and Augusta, beat off a Georgia militia attack at Griswoldville and took the state capital, Milledgeville, while tearing up railways and stripping a belt of country some 60 miles wide, in the Britannica's figure. On 10 December the army reached the defences of Savannah, and on 13 December a division stormed Fort McAllister, opening contact with the Union fleet.",
+   "Hardee chose not to surrender and slipped his troops out across the Savannah River on 20 December. The Britannica dates the occupation of Savannah to that day; Wikipedia says the mayor surrendered the city the next morning, 21 December. Sherman then telegraphed Lincoln, as Wikipedia quotes him, offering the city 'as a Christmas gift'.",
+   "The march cut the Confederacy's railways and supplies and, the Britannica says, severed its government from the western states. Wikipedia notes that some historians see Sherman's 'hard war' against property as an early form of total war. In January 1865 Sherman turned north through the Carolinas."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Sherman%27s_March_to_the_Sea",
+    "title": "Sherman's March to the Sea (rev 1380704945, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/American_Civil_War",
+    "title": "American Civil War, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Sherman,_William_Tecumseh",
+    "title": "Sherman, William Tecumseh, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     5,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Atlanta taken September 1864 (EB Sherman 1 September; Wikipedia lead: Atlanta recently taken); Hood's move north into Tennessee (EB Sherman: early October vigorous movement to carry the war back into Tennessee; Wikipedia: Hood's campaign to Tennessee).",
+   "Thomas sent back to guard Tennessee; plan to march through Georgia to the sea destroying everything of military value (EB ACW; EB Sherman: Thomas and Schofield left to deal with Hood).",
+   "Lincoln and Grant had serious reservations; Grant's telegram 'Go as you propose' of 2 November (Wikipedia; given as early November).",
+   "Sherman broke up his railway communication and destroyed Atlanta as a place of arms (EB ACW).",
+   "March began 15 November (Wikipedia; event's own date also in the record); 62,000 men (Wikipedia), 60,000 picked men (EB Sherman), fifty thousand picked men (EB ACW) - attributed.",
+   "Two wings under Howard (right) and Slocum (left), Kilpatrick's cavalry division (Wikipedia); forage liberally, Special Field Orders No. 120 (Wikipedia); EB ACW: supply-finding.",
+   "Opposition meagre: Hood had taken the bulk of forces to Tennessee; Hardee's department, Georgia militia, Wheeler's cavalry (Wikipedia; EB ACW: no force to oppose, little in his path).",
+   "Initial movements left Confederates unsure whether Macon, Augusta or Savannah (Wikipedia); Griswoldville (Wikipedia); Milledgeville captured (Wikipedia; EB ACW: skirmishes at Macon and Milledgeville).",
+   "Railway-breaking and a belt 60 miles wide cleared (EB ACW, attributed).",
+   "Reached Savannah's defences 10 December; Fort McAllister stormed 13 December, contact with the fleet (EB ACW and Wikipedia).",
+   "Hardee decided not to surrender but escaped across the Savannah River on 20 December (Wikipedia); EB ACW: occupation of Savannah on the 20th; Wikipedia: mayor's surrender the next morning (21 December) - both stated.",
+   "Christmas-gift telegram to Lincoln (Wikipedia, attributed); EB Sherman: Confederate government severed from its western states (attributed); railways and material destroyed, country cleared of supplies (EB Sherman).",
+   "Some historians regard the 'hard war' as early total war (Wikipedia, attributed); in January 1865 Sherman marched north through the Carolinas (EB Sherman; Wikipedia: Carolinas campaign followed; EB ACW section 33)."
+  ],
+  "disagree": "Size of the army: 62,000 (Wikipedia), 60,000 (1911 Britannica, Sherman) or 50,000 (1911 Britannica, American Civil War). Fall of Savannah: occupied on 20 December (1911 Britannica) or surrendered by the mayor on the morning of 21 December after Hardee's escape on the 20th (Wikipedia).",
+  "checked": null
+ },
+ "Q1355391": {
+  "title": "Battle of Appomattox Court House and Lee's surrender",
+  "y": 1865,
+  "place": "Appomattox Court House, Virginia",
+  "paras": [
+   "Through the winter of 1864-65 General Robert E. Lee's Confederate Army of Northern Virginia held the trenches around Petersburg and Richmond against the Union armies of Ulysses S. Grant. At the start of April 1865 Philip Sheridan's victory at Five Forks turned Lee's flank and the Union infantry broke through the Petersburg lines. Lee abandoned Petersburg and Richmond and retreated west, hoping to join General Joseph E. Johnston's army in North Carolina.",
+   "The retreat went badly. Lee's starving men found no rations waiting at Amelia Court House, and at Sailor's Creek a large part of the army, including Richard Ewell's corps, was cut off and captured. Grant wrote to Lee suggesting surrender, and Lee asked what terms he had in mind. Sheridan's cavalry got ahead of the Confederates at Appomattox Station, seized the supply trains waiting there and blocked the road west, while Union infantry hurried up behind.",
+   "At dawn on 9 April John B. Gordon's corps attacked Sheridan's cavalry and pushed it back, but from the ridge his men saw two Union infantry corps drawn up in front of them. With his way out closed, Lee asked for a truce and rode to meet Grant. That afternoon, in the parlour of Wilmer McLean's house in the village of Appomattox Court House, he surrendered his army.",
+   "Under the terms the Confederates gave up their arms and military stores and signed paroles not to fight again; Wikipedia adds that they could keep their horses and officers their sidearms. At a formal ceremony three days later (12 April, according to Wikipedia) the army stacked its arms and was disbanded, and Wikipedia gives nearly 28,000 officers and men paroled. The 1911 Encyclopaedia Britannica notes that the victors made no show of triumph and made the lot of the vanquished as easy as possible.",
+   "Lee's surrender did not formally end the war, but other commanders followed: Johnston surrendered to William T. Sherman near Durham, North Carolina, on 26 April, and the remaining Confederate forces soon after. For the Britannica, the Confederacy came to an end at Appomattox; the formal end of the war came with the president's general amnesty of 29 May 1865."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Appomattox_Court_House",
+    "title": "Battle of Appomattox Court House (rev 1378752752, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/American_Civil_War",
+    "title": "American Civil War, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Appomattox_campaign",
+    "title": "Appomattox campaign (rev 1381306911, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "Siege of Petersburg from June 1864; Lee's Army of Northern Virginia held the lines against Grant (Wikipedia battle and campaign articles).",
+   "Five Forks, Sheridan, turned Lee's flank; the Petersburg lines carried (Wikipedia: April 1 and next day; EB ACW: Five Forks, VI Corps carried the lines) - given as the start of April.",
+   "Lee evacuated Petersburg and Richmond and retreated west to join Johnston in North Carolina (Wikipedia; EB ACW: escape to the south-west to join Johnston).",
+   "No provisions at Amelia Court House (Wikipedia battle article; campaign article: inadequate stockpile); men starving (EB ACW).",
+   "Sailor's Creek: nearly a quarter of the army cut off, Ewell captured (Wikipedia; EB ACW: remnant of Ewell's corps cut off).",
+   "Grant's note suggesting surrender, Lee asked about terms (Wikipedia).",
+   "Sheridan got ahead; supply trains at Appomattox Station captured (Wikipedia: Custer's cavalry; EB ACW: Sheridan got ahead while Grant pressed the rear).",
+   "Dawn 9 April Gordon attacked Sheridan's cavalry, took the ridge and saw the XXIV and V Corps (Wikipedia); Lee requested a truce and rode to meet Grant (Wikipedia).",
+   "Surrender signed in the parlour of Wilmer McLean's house on the afternoon of 9 April (Wikipedia battle lead; campaign article: McLean House); EB ACW: laid down its arms at Appomattox Court House on the 9th.",
+   "Terms: give up all material and sign a parole (EB ACW); horses and officers' sidearms (Wikipedia, attributed).",
+   "Ceremony on 12 April, stacking of arms, nearly 28,000 paroled (Wikipedia, attributed); no manifestations of triumph, lot of the vanquished made easy (EB ACW, attributed).",
+   "Johnston surrendered to Sherman at Durham on 26 April (EB ACW: Durham Station on the 26th; Wikipedia: Bennett Place, Durham, April 26, 1865); remaining forces followed (EB ACW; Wikipedia); EB: the Confederacy came to an end at Appomattox; general amnesty of 29 May the formal ending (EB ACW, attributed)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp10-07": {
+  "title": "Bismarck becomes Minister President of Prussia",
+  "y": 1862,
+  "place": "Berlin",
+  "paras": [
+   "King William I of Prussia, who had governed for his ailing brother since 1857 and reigned as king since 1861, wanted to enlarge and reorganize the army, a reform carried through with his war minister Albrecht von Roon. The Liberal majority in the Prussian parliament refused to vote the money. In March 1862 the king dissolved the chamber, but the elections returned an even larger Liberal majority, and in September the lower house threw out the budget by a large majority. The king even thought of abdicating.",
+   "Otto von Bismarck, a Junker and former ultra-conservative deputy, had been Prussia's delegate to the German diet at Frankfurt and then ambassador in St Petersburg. The king had hesitated to appoint him because Bismarck wanted a free hand in foreign affairs, and in 1862 sent him as ambassador to Paris instead (in May, according to Wikipedia; in June, according to the 1911 Encyclopaedia Britannica). In September 1862, on Roon's advice, the king summoned Bismarck to Berlin and made him minister-president and foreign minister; Wikipedia dates the appointment to 23 September.",
+   "A week later, on 30 September, Bismarck told the budget committee of the chamber that the great questions of the day would be decided not by speeches and majority votes but by 'blood and iron'. His appointment caused intense indignation and his early fall was widely predicted. Instead he governed without an approved budget for four years, arguing that the constitution did not say what should happen when the king and parliament failed to agree and collecting taxes on the basis of the last budget.",
+   "The reorganized army won the wars against Denmark, which lost Schleswig and Holstein in 1864, and against Austria in 1866, after which the chamber passed a bill of indemnity for the government's breaches of the constitution. Bismarck remained minister-president of Prussia, with one short break, until 1890, and became the first chancellor of the German Empire in 1871."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Otto_von_Bismarck",
+    "title": "Otto von Bismarck (rev 1386614243, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bismarck,_Otto_Eduard_Leopold_von",
+    "title": "Bismarck, Otto Eduard Leopold von, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Germany/History",
+    "title": "Germany: History, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     8,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Wilhelm_I",
+    "title": "Wilhelm I (rev 1386846530, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3
+    ]
+   }
+  ],
+  "claims": [
+   "William governed as regent from 1857 (Wikipedia: took over as Regent after the October 1857 stroke; EB Bismarck: regency of 1857) and king 1861 (Wikipedia; EB Germany: Frederick William IV died 2 January 1861); army reorganization by the king and Roon (EB Bismarck; Wikipedia).",
+   "Parliament refused the money for the army reorganization in 1862 (EB Bismarck; Wikipedia; Wilhelm I).",
+   "EB Germany: diet dissolved 11 March 1862, elections of 6 May returned a larger Liberal majority, army estimates thrown out 22 August; given as March and the elections (no days). EB Bismarck: in September parliament threw out the budget by a large majority; Wikipedia: September 1862 House of Representatives overwhelmingly rejected the budget.",
+   "William threatened to abdicate (Wikipedia, Wilhelm I article and Bismarck article).",
+   "Bismarck: Junker origins, Frankfurt delegate, St Petersburg ambassador (Wikipedia; EB Bismarck; EB Germany: nine years delegate at Frankfort); reputation as violent ultra-Conservative (EB Bismarck).",
+   "King hesitated because Bismarck required a free hand in foreign affairs (EB Bismarck; Wikipedia).",
+   "Sent to Paris as ambassador: May 1862 (Wikipedia) or June (EB Bismarck) - both stated.",
+   "In September 1862, on Roon's advice, summoned to Berlin and appointed minister-president and foreign minister (EB Bismarck; Wikipedia; EB Germany); 23 September from Wikipedia only - attributed.",
+   "Blood and iron speech to the budget committee on 30 September 1862 (Wikipedia; EB Germany: 30th of September 1862); wording 'speeches and majority decisions' (Wikipedia) / 'speeches and parliamentary decrees' (EB Bismarck).",
+   "Intense indignation, early fall predicted (EB Bismarck, attributed implicitly as reaction); ruled four years without a budget (EB Bismarck; Wikipedia: 1861 budget applied, tax collection continued for four years, 'legal loophole').",
+   "Wars with Denmark (territories seized from the king of Denmark in 1864) and Austria 1866 (Wikipedia); bill of indemnity after 1866 (EB Germany).",
+   "Minister President 1862-1890 (Wikipedia lead), office separated in 1873 when Roon held it until he resigned at the end of the year (Wikipedia); first chancellor of the German Empire 1871 (Wikipedia; EB Bismarck)."
+  ],
+  "disagree": "Bismarck's posting to Paris in 1862: May (Wikipedia) or June (1911 Britannica). The day of his appointment, 23 September 1862, is from Wikipedia; the Britannica gives September.",
+  "checked": null
+ },
+ "cp10-11": {
+  "title": "North German Confederation formed",
+  "y": 1867,
+  "place": "Berlin",
+  "paras": [
+   "Prussia's victory over Austria in the war of 1866 ended the old German Confederation. In the peace signed at Prague on 23 August 1866 Austria accepted a new organization of Germany without itself, with a closer union to be founded by the king of Prussia north of the river Main, while the states south of the Main were left to form their own union. Prussia annexed outright Hanover, Hesse-Kassel, Nassau and the free city of Frankfurt, as well as Schleswig and Holstein.",
+   "Prussia and the other north German states had already agreed, in August 1866, on an alliance that was to become a federal state under a constitution. A constituent parliament, elected by universal manhood suffrage, met in Berlin on 24 February 1867 and accepted, with some changes, a draft drawn up on the lines laid down by Prussia's minister-president, Otto von Bismarck. Wikipedia gives the final vote, on 16 April 1867, as 230 to 53, and dates the constitution's coming into force to 1 July 1867, with Bismarck appointed federal chancellor soon afterwards.",
+   "The king of Prussia held the presidency of the confederation by hereditary right and commanded its army and navy. Laws needed the approval of a federal council (Bundesrat) of the states' governments and of a Reichstag elected by all adult men. Prussia had about four-fifths of the territory and people; according to Wikipedia it held 17 of the 43 votes in the Bundesrat but could easily build a majority with the small states.",
+   "The new parliament worked to unify the north legally and administratively, with laws on free movement, a common postal system, weights and measures and a penal code. A treaty of 1867 with Bavaria, Württemberg, Baden and Hesse-Darmstadt joined them in a customs parliament, but the southern elections of 1868 returned many opponents of union with Prussia. The southern states joined only after fighting beside the confederation against France in 1870, and the enlarged federation became the German Empire in 1871."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/North_German_Confederation",
+    "title": "North German Confederation (rev 1382327186, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Germany/History",
+    "title": "Germany: History, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     7,
+     8,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "1866 war ended the German Confederation (Wikipedia: Bismarck declared it dissolved; Prussian victory).",
+   "Treaty of Prague 23 August 1866 (EB; Wikipedia: Peace of Prague): Austria consented to a new organization of Germany without Austria and a closer union under the king of Prussia north of the Main; south German states to form a union (EB Article II).",
+   "Annexation of Hanover, Hesse-Cassel, Nassau and Frankfort (EB decree of 20 September; Wikipedia); Schleswig and Holstein (Wikipedia; EB: Austria transferred her rights to Prussia).",
+   "North German Confederation Treaty of August 1866 (Wikipedia: 18 August, Prussia and fifteen states) - alliance to be followed by a federal constitution.",
+   "Constituent diet elected by universal suffrage met in Berlin on 24 February 1867 and accepted the constitution in its essential features (EB; Wikipedia: convened 24 February, modified Bismarck's draft).",
+   "Passed 16 April 1867 by 230 to 53; in force 1 July 1867; Bismarck appointed chancellor two weeks later (Wikipedia, attributed).",
+   "Hereditary headship belonging to the king of Prussia (EB); commander-in-chief of army and navy (Wikipedia).",
+   "Bundesrat representing the governments and a diet elected by the whole people (EB; Wikipedia: universal manhood suffrage, laws need both houses).",
+   "Prussia four-fifths of territory and population; 17 of 43 Bundesrat votes, majority by alliances (Wikipedia, attributed).",
+   "Unifying legislation: free movement, postal system, measures and weights, penal code (Wikipedia; EB: new penal code in 1869-70).",
+   "1867 treaty with the southern states for a customs parliament; 1868 elections returned anti-national majorities in the south (EB; Wikipedia: Zollparlament, south German members mostly opposed to Bismarck); the four southern states named (Wikipedia).",
+   "Southern states fought with the confederation against France and joined by treaties of November 1870; the German Empire in 1871 (Wikipedia; EB: proclamation 18 January 1871)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q2604547": {
+  "title": "Capture of Rome",
+  "y": 1870,
+  "place": "Rome (Porta Pia)",
+  "paras": [
+   "After 1861 the new Kingdom of Italy still lacked Rome, which Pope Pius IX ruled as the last remnant of the Papal States under the protection of a French garrison. In July 1870 France went to war with Prussia and withdrew its troops. On 18 July the Vatican Council, sitting in Rome, proclaimed papal infallibility. When Napoleon III fell after his defeat at Sedan in early September, the agreement by which Italy had promised France to respect papal Rome lost its force.",
+   "King Victor Emmanuel II wrote to the pope offering Italian protection in place of his temporal power, with guarantees for his independence, carried by Count Gustavo Ponza di San Martino. Pius refused and said he would yield only to force. On 11 September General Raffaele Cadorna led Italian troops into papal territory, and Civitavecchia surrendered. The sources give the forces differently: about 50,000 Italians against 13,157 papal troops in Wikipedia, 60,000 against 10,000 in the 1911 Encyclopaedia Britannica. The papal army under General Hermann Kanzler included the Swiss Guard and the volunteer Papal Zouaves from many countries.",
+   "The pope decided on enough resistance to show that he was yielding to force. Early on 20 September 1870 the Italian artillery opened fire on the Aurelian Walls, and after a few hours a breach was made near the Porta Pia. The pope ordered his troops to cease fire, Italian soldiers poured into the city, and Kanzler signed a capitulation. Wikipedia gives 49 Italian and 19 papal soldiers killed. The Leonine City around the Vatican was left out of the capitulation; according to the Britannica, Italian troops occupied it the next day at the pope's request.",
+   "A plebiscite held in Rome on 2 October gave 133,681 votes for union with Italy and 1,507 against. A royal decree then joined Rome and Lazio to the kingdom. Pius denounced the vote and excommunicated the invaders, the king among them. Rome became the capital of Italy, officially in February 1871 according to Wikipedia; the Britannica dates the declaration to the king's solemn entry in July 1872. The capture ended the Papal States and the popes' temporal rule, and completed the unification of Italy."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Rome",
+    "title": "Capture of Rome (rev 1383363045, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Italy",
+    "title": "Italy, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Kingdom of Italy proclaimed 1861 without Rome and Lazio; papal Rome guarded by French forces (Wikipedia).",
+   "France declared war on Prussia in July 1870 and withdrew the garrison (Wikipedia: by early August; EB: immediately afterwards withdrew troops from Civitavecchia).",
+   "Council proclaimed infallibility on 18 July 1870 (EB; Wikipedia: affirmed on 13 and 18 July).",
+   "Sedan, Napoleon's fall: September convention ceased to have any value (EB: news reached Florence 3 September; Wikipedia: Sedan 2 September, situation changed radically) - given as early September.",
+   "Victor Emmanuel's letter asking the pope to accept Italian protection instead of temporal power (EB); carried by Ponza di San Martino with guarantees (Wikipedia).",
+   "Pope replied he would only yield to force (EB); Wikipedia: refusal, predicted they would never enter Rome.",
+   "11 September Cadorna entered papal territory (EB and Wikipedia); Civitavecchia surrendered/occupied (EB: to Bixio; Wikipedia: occupied 16 September).",
+   "Forces: ~50,000 Italians vs 13,157 defenders (Wikipedia); 60,000 men vs 10,000 (EB) - attributed. Papal force under Kanzler with Swiss Guard and Papal Zouaves (Wikipedia; EB: mostly French, Belgians, Swiss and Bavarians).",
+   "Pope decided on a sufficient show of resistance to prove he yielded to force (EB; Wikipedia).",
+   "20 September: artillery from 5 a.m. (Wikipedia: given as early), breach near Porta Pia after a few hours (Wikipedia; EB breach in the Porta Pia); pope ordered cease-fire, Italians poured in (EB); capitulation signed by Kanzler (Wikipedia).",
+   "49 Italian and 19 papal soldiers died (Wikipedia, attributed).",
+   "Leonine City excluded from capitulation (Wikipedia); occupied next day at the pope's request (EB, attributed).",
+   "Plebiscite in Rome 2 October (Wikipedia): 133,681 for, 1,507 against (Wikipedia and EB); royal decree incorporating Rome and Lazio (Wikipedia, 9 October); Pius denounced the plebiscite and excommunicated the invaders including Victor Emmanuel (Wikipedia: Respicientes).",
+   "Capital: officially 3 February 1871 (Wikipedia, given as February) or declared at the king's solemn entry in July 1872 (EB) - both stated; end of the Papal States and temporal power, completion of unification (Wikipedia; EB: unity of Italy accomplished)."
+  ],
+  "disagree": "Forces: about 50,000 Italians against 13,157 papal troops (Wikipedia) or 60,000 against 10,000 (1911 Britannica). Rome as capital: officially from 3 February 1871 (Wikipedia) or declared on the king's entry in July 1872 (Britannica). The Leonine City: excluded from the capitulation (Wikipedia), occupied the next day at the pope's request (Britannica).",
+  "checked": null
+ },
+ "Q4497452": {
+  "title": "Russian conquest of Khiva (1873)",
+  "y": 1873,
+  "place": "Khanate of Khiva (Khorezm), on the lower Amu Darya",
+  "paras": [
+   "Russia had twice failed to subdue the Khanate of Khiva, an oasis state on the lower Oxus (Amu Darya) surrounded by desert: in 1717 the force of Prince Bekovich-Cherkassky was destroyed, and in 1839 Count Perovsky's march from Orenburg was turned back by a cold winter. By 1868 Russia had taken Tashkent and Samarkand and controlled Kokand and Bukhara, and in 1869 it founded Krasnovodsk on the eastern shore of the Caspian. In 1871 and 1872 the desert routes to Khiva were explored and surveyed.",
+   "In 1873 a carefully organized expedition under the governor-general of Turkestan, General Konstantin von Kaufmann, set out from several bases at once: from Tashkent and Fort Aralsk in the east, from Orenburg in the north, and from the Caspian shore in the west. The 1911 Encyclopaedia Britannica puts the army at 10,000 men, and Wikipedia's article on the khanate at 13,000. The marches in spring through waterless desert cost many camels; the column from the south-eastern Caspian shore ran out of water and had to turn back.",
+   "Kaufmann reached the Oxus in late May and crossed it, while the Orenburg and Caspian columns joined in the north of the oasis and advanced on the capital. The khan fled and Khiva was occupied with little resistance: Wikipedia dates the city's fall to 10 June 1873, after a bombardment by the northern column, when Kaufmann entered peacefully.",
+   "Under the peace treaty of August 1873 (on the 12th, according to one Wikipedia article, the 24th according to another) the khan, restored to his throne, became a Russian protectorate: he gave up independent foreign relations, abolished slavery and the slave trade, and agreed to pay a heavy war indemnity. The Britannica says that all the khanate's land on the right bank of the Oxus was annexed to Russia, and that many thousands of slaves, mostly Persians, were set free. Khiva remained under Russian protection until the revolution of 1917."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Khivan_campaign_of_1873",
+    "title": "Khivan campaign of 1873 (rev 1370625716, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Khiva_(khanate)",
+    "title": "Khiva (khanate), Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva",
+    "title": "Khanate of Khiva (rev 1386650488, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Bekovich-Cherkassky 1717 army slaughtered; Perovsky 1839 from Orenburg turned back by cold winter (Wikipedia campaign; Khanate of Khiva).",
+   "By 1868 Tashkent and Samarkand taken, Kokand and Bukhara controlled (Wikipedia; EB: Tashkent 1865).",
+   "Krasnovodsk founded 1869 on the east shore of the Caspian (EB; Wikipedia).",
+   "1871-1872 routes explored and surveyed (EB; Wikipedia: mapping by Skobelev, Markozov, Lomakin).",
+   "1873 expedition organized on a large scale under Kaufmann (EB; Wikipedia: Kaufmann in supreme command, governor of newly conquered Turkestan Province); bases Tashkent, Fort Aralsk, Orenburg, Caspian (Wikipedia: five directions; EB: Krasnovodsk, Orenburg and Tashkent).",
+   "10,000 men (EB) / 13,000 infantry and cavalry (Wikipedia Khanate of Khiva) - attributed.",
+   "Desert march, camels dying; Markozov's column (from Chikishlyar on the Caspian) ran out of water and retreated (Wikipedia campaign).",
+   "Kaufmann reached the Oxus in late May (Wikipedia: May 23) and crossed it; Veryovkin and Lomakin joined in the north and advanced on Khiva (Wikipedia); occupied almost without opposition (EB).",
+   "Khan fled the bombardment; city fell 10 June 1873 (Wikipedia Khanate of Khiva; campaign article: surrender message on 9 June, Kaufmann entered next day) - attributed to Wikipedia.",
+   "Treaty: 12 August (Wikipedia Khanate of Khiva) or 24 August (Wikipedia campaign) - stated; khan reinstated, renounced foreign relations without Russian consent, abolished slavery and slave trade, indemnity (Wikipedia campaign; EB: heavy war indemnity); EB: right-bank territory annexed, slaves set free (29,300 Persian slaves) - attributed.",
+   "Protectorate until the revolution (Wikipedia campaign; Khanate of Khiva: until 1917, replaced 1920)."
+  ],
+  "disagree": "Size of the Russian force: 10,000 (1911 Britannica) or 13,000 (Wikipedia, Khanate of Khiva). Date of the peace treaty: 12 August 1873 (Wikipedia, Khanate of Khiva) or 24 August (Wikipedia, Khivan campaign of 1873).",
+  "checked": null
  }
 }
