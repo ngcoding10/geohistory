@@ -1693,5 +1693,81 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q1154330": {
+  "title": "10 August insurrection",
+  "y": 1792,
+  "place": "Tuileries palace and the Legislative Assembly (Salle du Manège), Paris",
+  "paras": [
+   "The insurrection of 10 August 1792 was the armed rising in Paris that brought down the French monarchy. Since 1789 Louis XVI and his family had lived in the Tuileries palace in Paris; their attempted flight in June 1791, stopped at Varennes, convinced many that the King opposed the Revolution. In the summer of 1792 France was at war with Austria, soon with Prussia as well, and the King was refusing to sign decrees of the Legislative Assembly. On 1 August Paris learned that the Duke of Brunswick, commander of the enemy armies, threatened to destroy the city if the royal family were harmed, and fédérés, volunteers from the provinces such as the battalion from Marseille, were arriving in the capital.",
+   "In the night of 9 to 10 August the tocsin rang and an insurrectionary Commune took over the city government. The palace was defended by the Swiss Guards, 800 to 900 men according to the Historisches Lexikon der Schweiz, with some noblemen and National Guards. Early in the morning the King left with his family to take refuge with the Assembly in its hall, the Salle du Manège. The insurgents, sans-culottes and fédérés, attacked the palace in the morning (at 9.30 according to swissinfo, around ten according to the City of Paris) and fought the Swiss, who had been ordered to hold out. During the fighting the King sent the Swiss an order to lay down their arms, which left them at the mercy of the crowd, and many were killed during and after the battle.",
+   "Figures for the Swiss dead vary: the colonel of the regiment, d'Affry, reported about 300 in November 1792, and the historian Alain-Jacques Czouz-Tornare gives fewer than 400, plus about 70 killed in the executions of September, while older works give 630 or 760; the revolutionaries counted 300 dead of their own, according to the Swiss historical lexicon. The Assembly suspended the King, who was then arrested and imprisoned in the Temple; the rising ended the monarchy in France. In Switzerland the Guards' death is commemorated by the Lion Monument in Lucerne, unveiled in 1821."
+  ],
+  "sources": [
+   {
+    "url": "https://hls-dhs-dss.ch/de/articles/008916/2014-02-25/",
+    "title": "Tuileriensturm (Alain-Jacques Czouz-Tornare)",
+    "publisher": "Historisches Lexikon der Schweiz",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     6,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://parcoursrevolution.paris.fr/en/points-of-interest/62-the-king-s-return-to-the-tuileries-and-the-fall-of-the-monarchy",
+    "title": "The King's Return to the Tuileries and the Fall of the Monarchy",
+    "publisher": "Parcours Révolution, City of Paris",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     7,
+     8,
+     12
+    ]
+   },
+   {
+    "url": "https://www.swissinfo.ch/fre/l-horreur-aux-tuileries/242998",
+    "title": "L'horreur aux Tuileries",
+    "publisher": "SWI swissinfo.ch",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "10 August 1792: insurrection in Paris against the Tuileries that ended the monarchy (Parcours Révolution; swissinfo; HLS: revolutionaries wanted to abolish the monarchy definitively).",
+   "The royal family moved to the Tuileries in October 1789; their escape on the night of 20-21 June 1791 was stopped at Varennes and they were brought back (Parcours Révolution); the King had shown he no longer supported the Revolution (Parcours Révolution).",
+   "France had been at war with Austria since April 1792 and would soon be at war with Prussia; the King refused decrees of the Legislative Assembly (swissinfo; HLS: Austrian and Prussian armies were overrunning French lines).",
+   "On 1 August Paris learned of the Duke of Brunswick's threat to destroy the city if the royal family were harmed; fédérés arrived from the provinces, among them the Marseillais (swissinfo).",
+   "The tocsin sounded in the night of 9-10 August and the insurrectionary Commune of Paris was formed (swissinfo).",
+   "The palace was defended by the Swiss Guards (all three), 800 to 900 of them (HLS), with some gentlemen and National Guards (swissinfo).",
+   "The King left the palace with his family for the Assembly (swissinfo: at 8.30 a.m.; Parcours Révolution: found refuge with his family in the Assembly's Salle du Manège).",
+   "Sans-culottes and fédérés attacked the palace (Parcours Révolution: around ten o'clock, battalions of fédérés attacked the Swiss Guards; swissinfo: first assault at 9.30); the Swiss had received an order to hold out (HLS).",
+   "The King ordered the Swiss to lay down their arms, which sacrificed them (HLS; swissinfo).",
+   "Swiss dead: about 300 according to d'Affry's report of 12 November 1792 (HLS); swissinfo: figures vary between works (760, 630); Czouz-Tornare: fewer than 400, plus about 70 in the September executions.",
+   "HLS: the revolutionaries recorded 300 dead.",
+   "The Assembly suspended the King (swissinfo); he was arrested and imprisoned in the Temple keep; end of the monarchy (Parcours Révolution).",
+   "The Lion Monument of Lucerne, by Thorvaldsen, inaugurated in 1821 (HLS)."
+  ],
+  "disagree": "Time of the first assault: 9.30 (swissinfo) or around ten (City of Paris). Swiss dead: about 300 (d'Affry's report, in the Historisches Lexikon der Schweiz); under 400 plus about 70 in September (Czouz-Tornare, in swissinfo); 630 or 760 in older works (swissinfo).",
+  "checked": null
  }
 }
