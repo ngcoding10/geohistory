@@ -2072,5 +2072,120 @@
   ],
   "disagree": "Wikipedia gives about 16,594 official death sentences in one place and about 17,000 executions in another; the total including deaths without trial or in prison is put at 35,000 to 45,000.",
   "checked": null
+ },
+ "Q184320": {
+  "title": "Battle of Borodino",
+  "y": 1812,
+  "place": "Borodino, west of Moscow, Russian Empire",
+  "paras": [
+   "The Battle of Borodino, fought on 7 September 1812 near the village of Borodino west of Moscow, was the bloodiest single day of the Napoleonic Wars. Napoleon's Grande Armée, about 130,000 strong according to HistoryOfWar.org, attacked the Russian army of General Mikhail Kutuzov, about 155,000 men including militia and Cossacks, with the 1st Western Army under Barclay de Tolly on the northern wing and Pyotr Bagration's 2nd Western Army on the southern.",
+   "Kutuzov, who had replaced Barclay as commander-in-chief after the retreat from Smolensk, decided to make a stand before Moscow. His line was anchored on the Raevsky redoubt (the 'Great Redoubt') in the centre and three earthworks on the left, the 'Bagration flèches'. On 5 September the French took the outlying Shevardino redoubt, with heavy losses on both sides. The main battle began with an artillery duel at about 6 a.m. on the 7th. The flèches changed hands several times before falling, around 10 a.m. by recent research; Bagration was badly wounded in the leg and died later that month. In the afternoon, after a huge bombardment, the French stormed the Great Redoubt, a charge of cuirassiers playing a leading part. Napoleon refused requests to commit his Imperial Guard to finish the Russian army, a decision many historians have criticised.",
+   "The French held the field but had not destroyed the Russian army. Losses were enormous: by HistoryOfWar.org's figures about 28,000 French on 7 September and 45,000 to 50,000 Russians including Shevardino, with dozens of generals killed or wounded on each side. Kutuzov at first claimed victory but retreated on 8 September; a council of war decided not to fight again before Moscow, and the French entered the city on 14 September. Historians have long debated who won."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Borodino",
+    "title": "Battle of Borodino",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.historyofwar.org/articles/battles_borodino.html",
+    "title": "Battle of Borodino, 7 September 1812",
+    "publisher": "HistoryOfWar.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Borodino was fought on 7 September 1812 between the Grande Armée and the Russian army under Kutuzov; it was the bloodiest single day of the Napoleonic Wars (Wikipedia).",
+   "HistoryOfWar.org: about 128,000–133,819 French (about 110,000 engaged); about 155,000 Russians including militia and Cossacks; Barclay led the 1st Western Army in the north and Bagration the 2nd in the south.",
+   "Kutuzov had replaced Barclay after the retreat from Smolensk and chose a defensive line at Borodino with the Raevsky redoubt and three Bagration flèches.",
+   "The French took the Shevardino redoubt on 5 September (HistoryOfWar.org: at least 5,000 lost on each side).",
+   "The flèches changed hands several times before falling (HistoryOfWar.org: around 10 a.m.); Bagration was wounded in the leg (died 24 September).",
+   "The Raevsky (Great) redoubt fell in the afternoon after a heavy bombardment, taken by cuirassiers.",
+   "The artillery duel began around 6 a.m. (HistoryOfWar.org).",
+   "Napoleon refused to commit the Imperial Guard, widely criticised by historians.",
+   "Losses: Wikipedia, very heavy, up to 50 French and 29 Russian generals killed or wounded; HistoryOfWar.org, about 28,000 French on 7 September and 45,000–50,000 Russians including Shevardino.",
+   "Kutuzov claimed victory, then retreated on 8 September; a council of war decided against another battle before Moscow; the French entered Moscow on 14 September.",
+   "Historians have long debated the result."
+  ],
+  "disagree": "Strengths and losses vary between accounts; early French estimates of their own losses ranged from 15,000 to 30,000. HistoryOfWar.org dates the fall of the flèches to around 10 a.m. and credits the capture of the Great Redoubt to Latour-Maubourg's cuirassiers rather than the commonly named Caulaincourt.",
+  "checked": null
+ },
+ "Q122371": {
+  "title": "Treaty of Brest-Litovsk",
+  "y": 1918,
+  "place": "Brest-Litovsk (today Brest, Belarus)",
+  "paras": [
+   "The Treaty of Brest-Litovsk, signed on 3 March 1918, was the separate peace by which Soviet Russia left the First World War. Lenin's Bolshevik government signed it with the Central Powers: Germany, Austria-Hungary, Bulgaria and the Ottoman Empire.",
+   "An armistice on the Eastern Front was agreed on 15 December 1917 and peace talks opened at Brest-Litovsk on 22 December. Leon Trotsky, leading the Soviet delegation, tried to stall with his formula of 'no war, no peace', refusing either to fight or to sign. On 9 February 1918 the Central Powers made a separate treaty with the Ukrainian People's Republic, and on 18 February they resumed their offensive, Operation Faustschlag. The Soviet government then agreed to sign.",
+   "Under the treaty Russia gave up sovereignty over the former imperial territories west of an agreed line, losing control of Poland, Belarus, Lithuania, Latvia and Estonia; it had to withdraw its forces from Ukraine, Estonia, Livonia Finland and the Åland Islands, recognise the Ukrainian treaty and Finnish independence, and evacuate the districts of Kars, Ardahan and Batum in the Caucasus for the Ottoman Empire. It had to demobilise its army and disarm or lay up its warships. By Wikipedia's figures the lost lands held about 34% of the old empire's population, 54% of its industrial land, 89% of its coalfields and 26% of its railways. A supplementary agreement of August 1918 added a payment of six billion marks to Germany.",
+   "The treaty did not outlast Germany's defeat: the Armistice of 11 November 1918 required its abrogation, and the Soviet government formally annulled it on 13 November 1918."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk",
+    "title": "Treaty of Brest-Litovsk",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://wwi.lib.byu.edu/index.php/The_Peace_Treaty_of_Brest-Litovsk",
+    "title": "The Peace Treaty of Brest-Litovsk (text)",
+    "publisher": "World War I Document Archive, Brigham Young University Library",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     6
+    ]
+   }
+  ],
+  "claims": [
+   "The treaty was signed on 3 March 1918 at Brest-Litovsk between Soviet Russia and Germany, Austria-Hungary, Bulgaria and the Ottoman Empire, taking Russia out of the war.",
+   "An armistice was concluded on 15 December 1917 and talks began on 22 December.",
+   "Trotsky stalled with the 'no war, no peace' formula.",
+   "The Central Powers signed a separate treaty with the Ukrainian People's Republic on 9 February 1918 and resumed the offensive on 18 February (Operation Faustschlag); the Soviets then agreed to sign.",
+   "Russia gave up sovereignty west of an agreed line (Wikipedia: Ukraine, Poland, Belarus, Lithuania, Latvia, Estonia; confirmed Finnish independence); Article VI required Russian forces to leave Ukraine, Estonia, Livonia, Finland and the Åland Islands and Russia to make peace with Ukraine; Article IV required evacuation of Ardahan, Kars and Batum.",
+   "Article V required Russia to demobilise its army and bring its warships into port and hold them or disarm them.",
+   "The ceded lands held about 34% of the population, 54% of industrial land, 89% of coalfields and 26% of railways.",
+   "An August 1918 supplementary agreement required Russia to pay Germany six billion marks.",
+   "The Armistice of 11 November 1918 abrogated the treaty; the VTsIK annulled it on 13 November 1918."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
