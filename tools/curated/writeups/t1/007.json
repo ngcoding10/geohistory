@@ -1025,5 +1025,288 @@
   ],
   "disagree": "Accession date: Harvey (1925) and Wikipedia give 1044; Phayre (1883) placed the reign earlier, ending it about the middle of the eleventh century; Wikipedia says the chronicles disagree and scholars follow Zatadawbon Yazawin. Thaton: the chronicles' scripture story versus Wikipedia's 'demand for submission' and Aung-Thwin's view that Thaton's influence is a later legend. All stated in the text.",
   "checked": null
+ },
+ "cp02-16": {
+  "title": "Umayyad Caliphate founded",
+  "y": 661,
+  "place": "Kufa and Damascus",
+  "paras": [
+   "When the caliph Uthman was murdered in 656, Ali was recognised as caliph in Medina, but Mu'awiya ibn Abi Sufyan, the long-serving governor of Syria and a kinsman of Uthman from the Umayyad clan, refused to accept him and demanded revenge for Uthman's death. Their armies fought to a stalemate at Siffin in 657, and Ali's agreement to settle the dispute by arbitration split his own camp: the Kharijites broke away from him, Iraqi nobles began to go over to Mu'awiya, and Mu'awiya's ally Amr ibn al-As took Egypt in 658. In July 660 Mu'awiya's Syrian allies recognised him as caliph in Jerusalem.",
+   "In January 661 a Kharijite, Abd al-Rahman ibn Muljam, struck Ali down at the mosque in Kufa, and Ali's eldest son Hasan was proclaimed caliph there. Mu'awiya marched on Kufa with a large army. William Muir's account says the Kufans raised 40,000 men and Hasan sent ahead a vanguard of 12,000 under Qays ibn Sa'd, but when a rumour spread at al-Mada'in that Qays had been killed, Hasan's troops mutinied and plundered his tent; Wikipedia adds that many of his commanders and tribal chiefs had been won over by Mu'awiya's promises of money and pardon, and that Hasan was wounded in an attempt on his life.",
+   "Hasan then made peace and handed the caliphate to Mu'awiya. According to Wikipedia, the treaty promised a general amnesty and said that a council would choose the caliph after Mu'awiya's death, while Syed Ameer Ali wrote that it gave the succession to Hasan's brother Husayn; Muir says Hasan also kept the Kufan treasury and retired to Medina. Mu'awiya entered Kufa and received the allegiance of the Iraqis, an event Muslim tradition called the 'year of unification' of the community and usually counted as the start of his reign. He went back to Syria as sole caliph, and Damascus became the capital of the empire, with Syria and its Arab tribes as the base of the new dynasty.",
+   "Mu'awiya ruled for about twenty years, until 680, governing Iraq through powerful governors such as al-Mughira at Kufa and Ziyad ibn Abihi, and continuing the wars against Byzantium. In 676, in a step without precedent, he had his son Yazid recognised as his successor, which made the caliphate hereditary in his family. The Umayyads ruled from Damascus until the Abbasid revolution of 750; opposition to their rule, above all from Ali's supporters, fed later civil wars, and Shia tradition remembers Mu'awiya for fighting Ali at Siffin and for naming Yazid, whose forces killed Ali's son Husayn at Karbala."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Umayyad_Caliphate",
+    "title": "Umayyad Caliphate (rev 1388099605)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     8,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/First_Fitna",
+    "title": "First Fitna (rev 1386435013)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://archive.org/download/caliphateitsrise00muiruoft/caliphateitsrise00muiruoft_djvu.txt",
+    "title": "William Muir, The Caliphate: its Rise, Decline and Fall, third edition (preface dated 1898), chapters XLIII-XLVI, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan, public domain)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     14,
+     15,
+     16,
+     18,
+     19,
+     21,
+     23
+    ]
+   },
+   {
+    "url": "https://archive.org/download/shorthistoryofsa00amra/shorthistoryofsa00amra_djvu.txt",
+    "title": "Syed Ameer Ali, A Short History of the Saracens, chapter VII, OCR text",
+    "publisher": "Internet Archive (public-domain scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "After Uthman's assassination Ali was recognised as caliph in Medina (Wikipedia, Umayyad Caliphate; First Fitna).",
+   "Mu'awiya, long-time governor of Syria and kinsman of Uthman, refused to recognise Ali and sought revenge for Uthman (Wikipedia; Muir: independent ruler of the West from Uthman's death).",
+   "Siffin (657) ended in stalemate and arbitration; the Kharijites broke away (Wikipedia, both articles).",
+   "Iraqi tribal nobles defected to Mu'awiya; Amr ibn al-As conquered Egypt in July 658 (Wikipedia).",
+   "In July 660 Mu'awiya was recognised as caliph in Jerusalem by his Syrian allies (Wikipedia; Muir: already recognised as caliph throughout Syria and Egypt).",
+   "In January 661 Ali was assassinated at the Great Mosque of Kufa by the Kharijite Abd al-Rahman ibn Muljam (Wikipedia, First Fitna; Muir: Ibn Muljam wounded him at the mosque).",
+   "Hasan, his eldest son, was proclaimed caliph in Kufa (Wikipedia; Muir: Kufa did homage to Hasan, his eldest son).",
+   "Mu'awiya marched on Kufa with a large army (Wikipedia; Muir: gathered a powerful army and marched against Kufa).",
+   "Muir: the Kufans raised an army 40,000 strong; Hasan sent forward a vanguard of 12,000 under Cays (Qays); at Medain a report that Cays had been slain led to a mutiny in which Hasan's pavilion was plundered (Muir, figures attributed).",
+   "Hasan's forces suffered defections facilitated by promises of money and amnesty; Hasan was wounded in a failed attempt on his life (Wikipedia, First Fitna).",
+   "Hasan concluded a peace treaty ceding the caliphate to Mu'awiya (Wikipedia; Muir: agreed to abdicate).",
+   "The treaty provided a general amnesty and that a council would choose the caliph after Mu'awiya's death (Wikipedia, First Fitna).",
+   "Ameer Ali: the treaty assigned the caliphate to Mu'awiya for life, to devolve on Husayn at his death (attributed).",
+   "Muir: Hasan retained the contents of the treasury and retired to Medina (Muir, attributed); Wikipedia: abdicated in return for compensation.",
+   "Mu'awiya entered Kufa and received the allegiance of the Iraqis; the 'year of unification of the community' is generally considered the start of his caliphate (Wikipedia; Muir: triumphal entry into Kufa).",
+   "He returned to Syria as sole caliph; Damascus became the capital (Muir; Wikipedia: capital and treasury transferred to Damascus).",
+   "Syria and its Arab tribes formed the base of Umayyad power (Wikipedia).",
+   "Mu'awiya was caliph for nearly twenty years, 661-680 (Muir; Wikipedia: accession after Mu'awiya's death in 680).",
+   "He governed Iraq through al-Mughira (Kufa) and Ziyad ibn Abihi (Wikipedia; Muir: Moghira at Kufa, Ziad).",
+   "He raided Byzantium nearly every year (Wikipedia).",
+   "In 676 Mu'awiya nominated his son Yazid, an unprecedented move introducing hereditary rule (Wikipedia; Muir: Yezid appointed heir-apparent, 56 AH / 676 AD, hereditary nomination becomes a precedent).",
+   "The Umayyads ruled from 661 to 750, when the Abbasids overthrew Marwan II (Wikipedia).",
+   "Opposition from Ali's partisans and others led to later civil wars (Wikipedia: Second Fitna, Husayn; Muir: Kerbala and Alyite faction used to overthrow the Umayyads); Shia sources condemn Mu'awiya for Siffin and for naming Yazid, whose forces killed Husayn at Karbala (Wikipedia, Shi'as section)."
+  ],
+  "disagree": "Terms of the Hasan-Mu'awiya treaty: Wikipedia (First Fitna) says a council was to choose the next caliph; Ameer Ali says the succession was to pass to Husayn. Both stated in the text.",
+  "checked": {
+   "by": "https://archive.org/download/shorthistoryofsa00amra/shorthistoryofsa00amra_djvu.txt",
+   "result": "4 claims re-checked against Ameer Ali, A Short History of the Saracens, ch. VII: Hasan, Ali's eldest son, chosen at Kufa; the false report of Qays's death at al-Mada'in and the mutiny in which Hasan's camp was plundered; Hasan's retirement to Medina; the seat of government moved to Damascus. 0 errors; the re-check found a different account of the treaty's succession clause (Husayn), added to the text and 'disagree' with Ameer Ali cited for that claim only.",
+   "errors": 0
+  }
+ },
+ "Q110970851": {
+  "title": "Siege of Bukhara (1220)",
+  "y": 1220,
+  "place": "Bukhara",
+  "paras": [
+   "In 1218 the governor of Otrar, with the consent of the Khwarazm-shah Muhammad II, seized a Mongol trade caravan, and when Genghis Khan sent envoys to the shah one of them was executed. In 1219 Genghis left the war against the Jin in China and invaded the Khwarazmian Empire. The shah chose not to risk open battle and spread his troops among the garrisons of his main cities. At Otrar Genghis divided his army: one force stayed to besiege the town, his son Jochi went down the Syr Darya, a small detachment went up the river towards Khujand, and Genghis himself, with his youngest son Tolui and the main army, struck west towards Bukhara, far from the frontier. Wikipedia gives modern estimates of 30,000 to 50,000 men for this force.",
+   "The Mongols crossed the Kyzylkum desert, which contemporaries thought impassable for a large army. On the way, according to W. Barthold, the fortress of Zarnuq surrendered on a promise of safety and had its walls pulled down, and the people of Nur, who at first took the Mongols for a trading caravan, had to leave their town while it was plundered and then pay 1,500 dinars. Barthold dates the arrival at Bukhara to February 1220, following the contemporary writers Ibn al-Athir and Juzjani; Wikipedia gives 7 February. The size of the garrison is uncertain: Barthold reports 12,000 horsemen in Juzjani, 30,000 men in Nasawi and 20,000 for the field force alone in Juvaini, while Wikipedia cites a modern estimate of only 2,000 to 5,000.",
+   "On the third day of the siege the troops of the garrison tried to break out and cut their way through the Mongol lines, but they were pursued and destroyed; Barthold says their commander, Inanch Khan, got across the Amu Darya with only a few men. Abandoned by its defenders, the town surrendered, sending a deputation led by its qadi. The Mongols entered on 10 February according to Ibn al-Athir, a date Wikipedia follows, or on 16 February according to Juzjani. About 400 horsemen held out in the citadel for another twelve days; the townspeople were made to fill in its moat, and when it fell every defender was killed.",
+   "The inhabitants were then driven out with nothing but the clothes they wore, while the Mongols plundered the town and killed anyone who stayed behind. Craftsmen were taken for the Mongols' service and men of fighting age were forced to march with the army; Barthold notes that prisoners who could not keep up on the road to Samarkand were killed. Most of Bukhara burned. Wikipedia says the Mongols set the fire to drive out the last defenders, while Barthold thought it the near-inevitable result of plundering a crowded town, with only the great mosque and some brick palaces left standing. Barthold also rejected as unbelievable the story, told by Juvaini and quoted in Wikipedia, that Genghis spoke from the pulpit calling himself the punishment of God. Bukhara recovered: within about two decades it was again a centre of trade and learning."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Siege_of_Bukhara",
+    "title": "Siege of Bukhara (rev 1382470514)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     17,
+     19,
+     20,
+     21
+    ]
+   },
+   {
+    "url": "https://archive.org/download/turkestan-down-to-the-mongol-invasion/Barthold%201928%20Turkestan%20down%20to%20the%20Mongol%20Invasion_djvu.txt",
+    "title": "W. Barthold, Turkestan down to the Mongol Invasion (E. J. W. Gibb Memorial series, 1928), chapter IV, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "claims": [
+   "In 1218 the Shah allowed Inalchuq, governor of Otrar, to arrest a Mongol caravan; Genghis's envoys were humiliated and one executed (Wikipedia; Barthold: catastrophe at Utrar).",
+   "In 1219 Genghis left the war against the Jin and rode west (Wikipedia).",
+   "The Shah distributed his forces as garrisons in the main cities rather than seek open battle (Wikipedia).",
+   "At Otrar the army was divided: part besieged the town, Jochi went down the Syr Darya, a small division (5,000) up the river to Banakath and Khojend, while Genghis and Tolui marched on Bukhara with the main forces (Barthold; Wikipedia).",
+   "Bukhara was far from the presumed theatre of war (Wikipedia).",
+   "Modern estimates of the Mongol force under Genghis: 30,000-50,000 (Wikipedia, attributed).",
+   "The Mongols crossed the Kyzylkum, thought impassable by large armies (Wikipedia; Barthold: crossed the steppe in January via 'the Khan's road').",
+   "Zarnuq surrendered on a pledge of safety; its fortifications were destroyed (Barthold).",
+   "At Nur the inhabitants took the Mongols for a trading caravan; they evacuated the town, which was plundered, and paid 1,500 dinars (Barthold, attributed).",
+   "Ibn al-Athir and Juzjani put the arrival at Bukhara in February 1220 (Barthold); Wikipedia: 7 February 1220.",
+   "Garrison: Juzjani 12,000 cavalry, Juwayni 20,000 in the exterior army, Nasawi 30,000 (Barthold); Juvaini at least 20,000, Sverdrup 2,000-5,000 (Wikipedia) (each attributed).",
+   "On the third day the army under Inanch Khan tried to cut its way out and was pursued and destroyed; Inanch Khan crossed the Amu Darya with a small part (Barthold; Wikipedia: sortie on the second or third day annihilated).",
+   "The inhabitants surrendered, sending a deputation headed by the qadi Badr ad-Din (Barthold; Wikipedia: the town surrendered).",
+   "The Mongols entered on 10 February (Ibn al-Athir) or 16 February (Juzjani) (Barthold); Wikipedia: 10 February.",
+   "The citadel held for another twelve days with 400 cavalry; inhabitants filled in the citadel trench; all defenders were massacred (Barthold; Wikipedia: citadel fell on the twelfth day, everyone inside killed).",
+   "Inhabitants had to leave with only their clothes; property plundered; anyone remaining was killed (Barthold).",
+   "Craftsmen were sent to produce for the Mongols and men of fighting age were conscripted (Wikipedia).",
+   "Prisoners on the march to Samarkand who gave out from exhaustion were killed (Barthold citing Ibn al-Athir).",
+   "The town was burnt; Wikipedia: set on fire to flush out the holdouts; Barthold: fire almost unavoidable in pillage, only the cathedral mosque and some brick palaces escaped (each attributed).",
+   "Barthold rejects as beyond belief Juwayni's story of Genghis's pulpit speech calling himself the scourge of God (Barthold; Wikipedia quotes Juvaini's speech).",
+   "The city was again a centre of trade within two decades (Wikipedia)."
+  ],
+  "disagree": "Date of the Mongol entry: 10 February (Ibn al-Athir, followed by Wikipedia) or 16 February (Juzjani), as given by Barthold. Garrison size: 12,000 (Juzjani), 20,000 field force (Juvaini), 30,000 (Nasawi), 2,000-5,000 (Sverdrup, in Wikipedia). The fire: deliberate (Wikipedia) or a by-product of the plundering (Barthold). Genghis's pulpit speech: quoted from Juvaini by Wikipedia, rejected by Barthold. All stated in the text.",
+  "checked": {
+   "by": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+   "result": "4 claims re-checked against H. H. Howorth, History of the Mongols, part I (1876), ch. on Jingis Khan: the garrison forced its way through the Mongol lines and was almost destroyed; the inhabitants were sent out with only their clothes while the town was pillaged; only the great mosque and some brick palaces survived the fire; the young men were taken for siege work at Samarkand. 0 errors. Howorth's date for Genghis's arrival (June 1219) is an older reckoning superseded by the February 1220 date that Barthold takes from Ibn al-Athir and Juzjani.",
+   "errors": 0
+  }
+ },
+ "Q7510363": {
+  "title": "Siege of Samarkand",
+  "y": 1220,
+  "place": "Samarkand",
+  "paras": [
+   "Samarkand, the chief city of Transoxiana, was the centre of the Khwarazm-shah Muhammad II's defence against Genghis Khan's invasion, and he gave it a larger garrison than any other town. Its commander was Tughay Khan, a brother of the shah's mother Terken Khatun. The garrison's size is uncertain: W. Barthold lists 110,000 men with twenty elephants in Juvaini, 40,000 in Nasawi, 50,000 in Ibn al-Athir and 60,000 in Juzjani, while Wikipedia gives about 30,000 Qanqli Turks and 50,000 local troops with twenty elephants.",
+   "After taking Bukhara in February 1220, Genghis marched up the Zarafshan valley, leaving small detachments to besiege the forts he passed. He reached Samarkand in March and was joined by his sons Chagatai and Ogedei, who brought crowds of captives from the fall of Otrar. Barthold, following Juvaini, says the Mongols drew up their prisoners in battle order, with a standard for every ten men, so that the besieging army looked enormous.",
+   "On the third day the defenders made a sortie and were caught in an ambush. The contemporary writers Ibn al-Athir and Juzjani say it was made by the townspeople and destroyed to the last man, with losses of 70,000 and 50,000 respectively; Juvaini says it was made by the Turkish troops, who lost 1,000 men, the figure Wikipedia gives. Soon afterwards the Turks and the townspeople decided to give in: on the fifth day of the siege according to Juvaini, on 17 March according to Juzjani, and on 16 March in Wikipedia's account. A deputation led by the qadi and the shaykh al-Islam surrendered the town, the Mongols pulled down its fortifications, and the inhabitants were driven out while the town was sacked, except for the clergy and the people under their protection.",
+   "The citadel held out a little longer. Barthold says the Mongols took it by storm after breaking a canal known as the 'leaden watercourse', whose water probably undermined part of the walls, that the night before about 1,000 men broke out under Alp Khan and escaped, and that the last 1,000 defenders were killed in the great mosque, which was burnt; Wikipedia says the citadel held for about a month, that 1,000 men escaped across the Amu Darya and that about 3,000 were executed. The Turkish troops who had gone over to the Mongols were then surrounded and massacred with Tughay Khan. According to Barthold, 30,000 craftsmen were handed out to Genghis's sons and relatives and as many men taken for siege work, and the remaining inhabitants were allowed back after paying a ransom of 200,000 dinars. Genghis left Yelu Ahai to govern Samarkand and Bukhara; the city recovered only slowly, until Timur made it his capital in 1370."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Siege_of_Samarkand_%281220%29",
+    "title": "Siege of Samarkand (1220) (rev 1382470633)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     12,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://archive.org/download/turkestan-down-to-the-mongol-invasion/Barthold%201928%20Turkestan%20down%20to%20the%20Mongol%20Invasion_djvu.txt",
+    "title": "W. Barthold, Turkestan down to the Mongol Invasion (E. J. W. Gibb Memorial series, 1928), chapter IV, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Samarkand was the chief town of Transoxania and the Shah attached special importance to its defence, concentrating a larger army there than elsewhere (Barthold; Wikipedia: pivot of his defence, large garrison).",
+   "The governor was Tughay Khan, brother of Terken Khatun (Barthold citing Nasawi; Wikipedia: Taghday Khan, brother of Turkan Khatun).",
+   "Garrison figures: Juwayni 110,000 (60,000 Turks, 50,000 Tajiks) with 20 elephants, Nasawi 40,000, Ibn al-Athir 50,000, Juzjani 60,000 (Barthold); Wikipedia: about 30,000 Qanquli Turkmen and 50,000 local forces, 20 war elephants (all attributed).",
+   "After Bukhara (February 1220) Genghis advanced along the Zarafshan valley, leaving small divisions to besiege fortresses on the way (Barthold; Wikipedia: advanced along the Zarafshan valley).",
+   "Genghis reached Samarkand in March 1220 (Barthold; Wikipedia).",
+   "He was joined by Chagatai and Ogedei with crowds of captives from Utrar (Barthold; Wikipedia: joined by his sons after the capture of Otrar).",
+   "The Mongols drew up the prisoners in battle formation with a standard for every ten men to look like an immense army (Barthold, attributed).",
+   "On the third day a sortie was ambushed; Ibn al-Athir and Juzjani: made by the townspeople, destroyed to the last man, losses 70,000 (Ibn al-Athir) and 50,000 (Juzjani); Juwayni: made by the Turks, who lost 1,000 (Barthold); Wikipedia: roughly 1,000 defenders killed (all attributed).",
+   "Surrender: fifth day (Juwayni); the town taken on 10 Muharram = 17 March (Juzjani) (Barthold); Wikipedia: a large part of the garrison surrendered on 16 March (attributed).",
+   "A deputation headed by the qadi and the shaykh al-Islam; the Mongols destroyed the fortifications, drove out the inhabitants and sacked the town, except the qadi, shaykh al-Islam and those under their protection (Barthold; Wikipedia: surrendered at the instigation of the Muslim clergy).",
+   "Barthold: the citadel was taken by assault after the Mongols destroyed the 'leaden watercourse'; the night before Alp Khan broke out with 1,000 men; the remaining 1,000 defenders were killed in the cathedral mosque, which was burnt (attributed).",
+   "Wikipedia: the citadel, defended by about 2,000, held about a month; 1,000 escaped across the Amu Darya; about 3,000 were executed (attributed).",
+   "The Turkish troops first taken into Mongol service were surrounded and massacred with their leaders, including Tughay Khan (Barthold).",
+   "30,000 artisans were given to Genghis's sons and relatives, as many put to siege works, and the rest allowed to return after paying a ransom of 200,000 dinars (Barthold, attributed).",
+   "Genghis left Yelu Ahai to administer Samarkand and Bukhara (Wikipedia).",
+   "The city revived slowly; Timur made it his capital in 1370 (Wikipedia)."
+  ],
+  "disagree": "Garrison size (Juvaini 110,000; Nasawi 40,000; Ibn al-Athir 50,000; Juzjani 60,000; Wikipedia about 80,000 in all); the sortie (townspeople with 50,000-70,000 killed in Ibn al-Athir and Juzjani, Turks losing 1,000 in Juvaini and Wikipedia); the day of surrender (fifth day, 17 March, 16 March); and the citadel (stormed soon after in Barthold, held a month in Wikipedia). All given in the text with their sources.",
+  "checked": {
+   "by": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+   "result": "3 claims re-checked against H. H. Howorth, History of the Mongols, part I (1876): a garrison of 110,000 (60,000 Turks, 50,000 Tajiks) with twenty elephants (the figure the text attributes to Juvaini); 30,000 artisans given to Genghis's sons, as many taken for military work, and a ransom of 200,000 pieces of gold; the Turkish troops who went over to the Mongols massacred with their chiefs, among them Togai Khan. 0 errors.",
+   "errors": 0
+  }
  }
 }
