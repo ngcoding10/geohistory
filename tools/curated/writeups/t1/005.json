@@ -883,5 +883,723 @@
   ],
   "disagree": "Royal Museums Greenwich puts Aboukir Bay 15 miles east of Alexandria; Wikipedia says 20 miles north-east, so no distance is given. Wikipedia says Brueys was struck by a cannonball and died before L'Orient exploded; Royal Museums Greenwich says the explosion killed him.",
   "checked": null
+ },
+ "Q154426": {
+  "title": "Battle of Jena–Auerstedt",
+  "y": 1806,
+  "place": "Saxe-Altenburg",
+  "paras": [
+   "On 14 October 1806 Napoleon's Grande Armée destroyed the army of Prussia and its Saxon allies in two battles fought the same day, at Jena and at Auerstedt, some 19 kilometres apart in today's Thuringia and Saxony-Anhalt. They were the decisive battles of the War of the Fourth Coalition, which Prussia had begun by declaring war on France. Napoleon pushed some 180,000 men through the Franconian Forest towards Saxony and Berlin; the Prussians waited with about 130,000 of their own men and 20,000 Saxons. Their command was divided and slow: key posts were shared among several officers, the main army under the Duke of Brunswick was separated from Prince Hohenlohe's force, and there was little coordination between them.",
+   "At Jena, Napoleon attacked Hohenlohe in the morning fog, believing he faced the main Prussian army. The French built up their strength through the day until they far outnumbered the Prussians (Encyclopedia of Modern Europe: 96,000 against 38,000). Marshal Ney attacked without orders and was nearly surrounded; Napoleon sent Lannes to his aid, holding the weakened centre with the Imperial Guard. In the early afternoon Napoleon ordered his flanks forward; the Prussian line broke, and reinforcements under General Rüchel arriving from Weimar were swept away in the rout. The Prussians lost about 10,000 to 11,000 killed and wounded and 15,000 prisoners, the French about 5,000.",
+   "The real Prussian main army, about 63,000–64,000 men with King Frederick William III and Brunswick, was meanwhile further north and ran into Marshal Davout's single corps of about 26,000 near Auerstedt. Davout's divisions formed squares, beat off the Prussian cavalry under Blücher and held the village of Hassenhausen against repeated attacks. Brunswick was mortally wounded, and when Davout's last division came up he went over to the attack. Shortly after noon the Prussian army broke. Davout's corps lost about a quarter of its men killed and wounded; the Prussians lost some 12,000–13,000. Marshal Bernadotte, close enough to hear both battles, did not come to Davout's help, which caused lasting controversy.",
+   "Napoleon at first refused to believe that Davout had beaten the main Prussian army alone, but later made him Duke of Auerstedt. The beaten Prussians collapsed under a ruthless French pursuit; fortresses surrendered, often without a fight, Davout's corps entered Berlin on 25 October, and Napoleon overran Prussia in a matter of weeks. The disaster showed the need for change: officers present at the battle, among them Scharnhorst, Gneisenau and Clausewitz, led the reforms that began Prussia's transformation into a modern state."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Jena%E2%80%93Auerstedt",
+    "title": "Battle of Jena–Auerstedt (rev 1386635445)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/jena-battle",
+    "title": "Jena, Battle of (Encyclopedia of Modern Europe: Europe 1789-1914)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     5,
+     6,
+     7,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     17,
+     18
+    ]
+   }
+  ],
+  "claims": [
+   "On 14 October 1806 Napoleon defeated the Prussian (and Saxon) army at Jena and Auerstedt; Encyclopedia.com: Auerstedt was 19 km north of Jena.",
+   "These were the decisive battles of the War of the Fourth Coalition (Wikipedia); Prussia had declared war.",
+   "Napoleon advanced 180,000 men through the Franconian Forest towards Saxony and Berlin.",
+   "The Prussians had about 130,000 Prussians and 20,000 Saxons.",
+   "Prussian command was divided, with posts shared by several officers; Brunswick's and Hohenlohe's armies were separated with little coordination (Encyclopedia.com).",
+   "At Jena Napoleon attacked Hohenlohe in the morning, using fog (Wikipedia), believing he faced the main army.",
+   "Encyclopedia.com: the French outnumbered the Prussians at Jena 96,000 to 38,000; Wikipedia: Napoleon's force grew to 96,000, of whom about 40,000 fought.",
+   "Ney attacked without orders and was enveloped; Napoleon sent Lannes to help him and held the centre with the Imperial Guard.",
+   "Around 1 p.m. Napoleon ordered his flanks to push; the Prussian army broke.",
+   "Rüchel's 15,000 from Weimar arrived and were routed.",
+   "Prussian losses at Jena: 10,000 (Wikipedia) or 11,000 (Encyclopedia.com) killed and wounded, 15,000 captured; French about 5,000.",
+   "The Prussian main army (Wikipedia 64,000; Encyclopedia.com 63,000) with the King and Brunswick met Davout's single corps (26,000, Encyclopedia.com) at Auerstedt.",
+   "French squares beat off Prussian cavalry (Blücher's); Hassenhausen was held against attacks.",
+   "Brunswick was mortally wounded; Davout's last division arrived and the French counter-attacked.",
+   "The Prussian army broke shortly after noon (Encyclopedia.com; Wikipedia: by noon the centre was broken and the King ordered a withdrawal).",
+   "Davout lost more than 25 percent killed and wounded (Encyclopedia.com; Wikipedia: 7,052); Prussians 12,000 killed or wounded plus 3,000 captured (Encyclopedia.com) or 13,000 (Wikipedia).",
+   "Bernadotte, within earshot, did not aid Davout; this was controversial.",
+   "Napoleon at first did not believe Davout's victory; Davout was made Duke of Auerstedt (Wikipedia).",
+   "The Prussian army collapsed under the pursuit; fortresses surrendered mostly without a fight; Davout entered Berlin on 25 October; Napoleon overran Prussia in weeks (Encyclopedia.com: three weeks).",
+   "Reformers Scharnhorst, Gneisenau and Clausewitz served at the battle and their reforms began Prussia's transformation into a modern state."
+  ],
+  "disagree": "Figures differ: Encyclopedia.com gives 96,000 French against 38,000 Prussians at Jena, while Wikipedia says Napoleon's force grew to 96,000 but only about 40,000 fought; Prussian losses at Jena are 10,000 (Wikipedia) or 11,000 (Encyclopedia.com) killed and wounded, and at Auerstedt 13,000 (Wikipedia) or 12,000 killed and wounded plus 3,000 captured (Encyclopedia.com). After Brunswick fell, Wikipedia says the Prussian command broke down, while Encyclopedia.com says the King took command and the Prussian position briefly improved.",
+  "checked": null
+ },
+ "Q838980": {
+  "title": "May Revolution",
+  "y": 1810,
+  "place": "Spanish Empire",
+  "paras": [
+   "The May Revolution was a week of events in Buenos Aires, capital of the Spanish Viceroyalty of the Río de la Plata (roughly today's Argentina, Bolivia, Paraguay and Uruguay), that ended on 25 May 1810 with the removal of the viceroy and the creation of a local government, the Primera Junta. It was a direct result of Napoleon's invasion of Spain. In 1808 King Ferdinand VII had been forced to give up the throne, and a Supreme Central Junta governed in his name; in 1810 the French overran Andalusia, and the Junta fell and was replaced by a Council of Regency in Cádiz. When the news reached Buenos Aires in May, criollos (Spaniards born in the Americas) argued that the authority which had appointed Viceroy Baltasar Hidalgo de Cisneros no longer existed.",
+   "On 18 May Cisneros issued a proclamation calling for loyalty to Ferdinand VII, but it only fed the unrest. Criollo leaders meeting at the house of Nicolás Rodríguez Peña sent Juan José Castelli and Martín Rodríguez to demand an open cabildo, a special assembly of leading citizens. When Cisneros called the military commanders to the fort, Colonel Cornelio Saavedra of the Patricios regiment refused him support, and the viceroy gave way. On 21 May some 600 armed men led by Domingo French and Antonio Beruti filled the main square, the Plaza de la Victoria (today's Plaza de Mayo), demanding the assembly; they carried portraits of Ferdinand and wore white ribbons as a sign of unity.",
+   "The open cabildo met on 22 May. The bishop of Buenos Aires argued that Spaniards should rule as long as a single one remained in America; Castelli answered that with the king's government gone, sovereignty returned to the people, who could form their own government until Ferdinand returned. Juan José Paso argued that Buenos Aires, as an 'elder sister', should act first and invite the other cities to join. The vote went against the viceroy, 155 to 69, and the town council took provisional power. But on 24 May the council named a junta with Cisneros himself as president. Protest grew, and that night Saavedra and Castelli resigned from it and told Cisneros he must step down.",
+   "On 25 May, as a crowd gathered in the square and the military commanders refused to act against it, the council gave way. A petition proposing a new junta was accepted, and the Primera Junta took office, with Saavedra as president, Mariano Moreno and Juan José Paso as secretaries, and Manuel Belgrano, Castelli and others as members. It governed in the name of Ferdinand VII, and historians still debate whether that loyalty was sincere or a cover for independence. The revolution began the Argentine War of Independence, and fighting soon broke out with the regions that stayed loyal to Spain; independence was formally declared at the Congress of Tucumán on 9 July 1816. 25 May is a national holiday in Argentina."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/May_Revolution",
+    "title": "May Revolution (rev 1383242756)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ]
+   },
+   {
+    "url": "https://www.casarosada.gob.ar/international/latest-news/50973-may-week-begins",
+    "title": "May Week",
+    "publisher": "Casa Rosada (Presidency of Argentina)",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://www.casarosada.gob.ar/international/latest-news/50516-25-may-1810-214-years-after-the-may-revolution",
+    "title": "25 May 1810: 214 years after the May Revolution",
+    "publisher": "Casa Rosada (Presidency of Argentina)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     11,
+     12,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://www.infobae.com/historia/2025/05/25/la-revolucion-de-mayo-cronica-de-un-virrey-acorralado-criollos-decididos-y-otros-indecisos/",
+    "title": "La Revolución de Mayo: crónica de un virrey acorralado, criollos decididos y otros indecisos",
+    "publisher": "Infobae",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     17,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "claims": [
+   "The May Revolution was a week of events in Buenos Aires, capital of the Viceroyalty of the Río de la Plata, ending 25 May 1810 with the removal of the viceroy and the creation of the Primera Junta.",
+   "The viceroyalty included roughly present-day Argentina, Bolivia, Paraguay and Uruguay.",
+   "It was a reaction to Napoleon's invasion of Spain; in 1808 Ferdinand VII abdicated / was forced to abdicate.",
+   "A Supreme Central Junta led resistance; in 1810 the French took Andalusia and the Junta was replaced by a Council of Regency in Cádiz.",
+   "When the news reached Buenos Aires in May, criollos argued that the authority that had appointed Cisneros no longer existed.",
+   "On 18 May Cisneros issued a proclamation asking for loyalty to Ferdinand VII, which increased the unrest.",
+   "Criollos met at Rodríguez Peña's house and sent Castelli and Martín Rodríguez to demand an open cabildo.",
+   "An open cabildo was a special meeting of notables of the city.",
+   "Cisneros summoned the military commanders to the fort; Saavedra, head of the Patricios, refused support, and Cisneros gave way.",
+   "On 21 May some 600 armed men led by French and Beruti occupied the Plaza de la Victoria demanding the open cabildo.",
+   "They carried portraits of Ferdinand VII and white ribbons symbolising unity; the Plaza de la Victoria is today's Plaza de Mayo.",
+   "The open cabildo met on 22 May.",
+   "Bishop Lué y Riega argued that Americans should rule only when no Spaniard remained in America.",
+   "Castelli argued that sovereignty returned to the people, who should govern until Ferdinand VII returned.",
+   "Paso argued that Buenos Aires, as 'elder sister', should act and invite the other cities.",
+   "The vote removed the viceroy, 155 to 69; the Cabildo took provisional command.",
+   "On 24 May the Cabildo formed a junta presided over by Cisneros.",
+   "That night Saavedra and Castelli resigned from the junta and told Cisneros he must resign.",
+   "On 25 May, with a crowd in the square and the commanders refusing to repress it, the Cabildo yielded; a petition proposing a new junta was accepted.",
+   "The Primera Junta: president Saavedra; secretaries Moreno and Paso; members included Belgrano and Castelli.",
+   "The Junta governed in the name of Ferdinand VII; historians debate whether this loyalty was a ruse for independence.",
+   "The revolution began the Argentine War of Independence and a war with regions loyal to Spain; independence was declared at Tucumán on 9 July 1816.",
+   "25 May is a national public holiday in Argentina."
+  ],
+  "disagree": "Wikipedia says the news of the Junta's fall reached Buenos Aires on 18 May on British ships; Infobae says it arrived on 14 May. The Casa Rosada account dates Castelli and Rodríguez's first demand for an open cabildo to 19 May and says 476 residents signed the petition for a new junta on 24 May; Wikipedia gives the decisive interview with Cisneros on 20 May and 411 signatures on a document delivered on 25 May. No exact dates or counts for these are given in the text.",
+  "checked": null
+ },
+ "Q156681": {
+  "title": "Battle of Sedan",
+  "y": 1870,
+  "place": "Second French Empire",
+  "paras": [
+   "On 1–2 September 1870, early in the Franco-Prussian War, German armies surrounded a French army at the fortress town of Sedan, near the Belgian border, and forced it to surrender together with Emperor Napoleon III. France had declared war on 19 July, after Bismarck's deliberately provocative Ems Dispatch, and the other states of the North German Confederation and the south German states joined Prussia. In August the Prussians won a string of battles, and after Gravelotte on 18 August Marshal Bazaine's Army of the Rhine was shut up in the fortress of Metz.",
+   "A new French army, the Army of Châlons, about 130,000 strong under Marshal MacMahon and accompanied by Napoleon III, set out to relieve Metz by a northern route. The chief of the Prussian general staff, Helmuth von Moltke, kept Metz under siege and sent two armies north against it. After a defeat at Beaumont on 30 August, MacMahon fell back to Sedan to rest his tired troops and did not entrench, which gave the Germans time to close the ring. More than 200,000 German soldiers of the Third Army and the Meuse (Fourth) Army surrounded the French. 'Now we have them in the mousetrap,' Moltke is reported to have said.",
+   "Fighting began early on 1 September at the village of Bazeilles, where Bavarian troops met fierce resistance. MacMahon was wounded, and command passed first to General Ducrot, who ordered a retreat, and then to General Wimpffen, who held a commission from Paris to succeed MacMahon and cancelled it. The French made one uncoordinated attempt after another to break out, including three charges by General Margueritte's cavalry, but the Germans held the high ground around the town, where their breech-loading guns, firing from beyond the range of the French artillery, pounded the trapped army. In the afternoon French units began to fall apart, and Napoleon III, who had ridden about the field seemingly looking for death, had a white flag raised and sent a letter of surrender to King Wilhelm I.",
+   "On 2 September Wimpffen signed the capitulation. About 104,000 French soldiers went into captivity, along with 558 guns; some 17,000 French had been killed or wounded, against about 9,000–10,000 German casualties. The capture of the emperor brought down the Second Empire: on 4 September Paris proclaimed a Government of National Defence, which became the Third Republic and fought on for five months. German armies went on to besiege Paris, and the war ended with German unification under the Prussian king and France's loss of Alsace and part of Lorraine. Germans celebrated 2 September as 'Sedan Day' until it was officially abolished in 1919."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Sedan_(1870)",
+    "title": "Battle of Sedan (1870) (rev 1387754357)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     20
+    ]
+   },
+   {
+    "url": "https://ebsco.com/research-starters/history/battle-sedan",
+    "title": "Battle of Sedan (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   },
+   {
+    "url": "https://www.dhm.de/lemo/rueckblick/lemo-rueckblick-die-schlacht-bei-sedan",
+    "title": "Die Schlacht bei Sedan 1870 (LeMO Rückblick)",
+    "publisher": "Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     7,
+     14,
+     17,
+     19,
+     20
+    ]
+   }
+  ],
+  "claims": [
+   "On 1-2 September 1870 German armies encircled a French army at Sedan and it surrendered with Napoleon III.",
+   "France declared war on 19 July 1870 after Bismarck's provocative Ems Dispatch; the North German Confederation and south German states joined Prussia. (date confirmed in the Wikipedia 'Franco-Prussian War' extract: war from 19 July 1870)",
+   "Prussians won a series of battles in August; after Gravelotte (18 August) Bazaine's Army of the Rhine was surrounded at Metz.",
+   "The Army of Châlons, about 130,000 under MacMahon and with Napoleon III, marched to relieve Metz by a northern route.",
+   "Moltke kept the siege of Metz and moved two armies (Third and Fourth) against MacMahon.",
+   "After defeat at Beaumont on 30 August MacMahon withdrew to Sedan to rest the army.",
+   "More than 200,000 German troops of the Third and Meuse (Fourth) Armies encircled about 130,000 French (DHM).",
+   "MacMahon refused to dig trenches / gave the troops rest, allowing the Prussians to encircle the city.",
+   "Moltke: 'Now we have them in the mousetrap.'",
+   "Fighting began early on 1 September at Bazeilles, with Bavarian troops facing fierce resistance.",
+   "MacMahon was wounded; Ducrot took command and ordered retreat; Wimpffen, commissioned from Paris to succeed MacMahon, overruled him.",
+   "French breakout attempts were uncoordinated; Margueritte led three cavalry charges (Wikipedia).",
+   "The Prussians held the high ground; their breech-loading artillery outranged French guns (EBSCO) and pounded the French.",
+   "In the afternoon French units disintegrated; Napoleon III, courting death on the field (EBSCO), raised a white flag and sent a letter of surrender to King Wilhelm.",
+   "Wimpffen signed the capitulation on 2 September; 104,000 French captured with 558 guns (EBSCO: 21,000 in battle plus 83,000 by the surrender; DHM about 100,000).",
+   "French killed and wounded about 17,000 (Wikipedia 3,220 killed and 14,811 wounded; EBSCO more than 17,000); German casualties about 9,000 (EBSCO) or 9,860 (Wikipedia).",
+   "The Second Empire fell; on 4 September a Government of National Defence was proclaimed, which became the Third Republic and fought on for five more months.",
+   "German armies went on to besiege Paris (Wikipedia: from 19 September; the Deutsches Historisches Museum's war overview: from 13 September).",
+   "The war led to German unification under the Prussian king and France's loss of Alsace and part of Lorraine.",
+   "Sedan Day (2 September) was celebrated in Germany until it was officially ended in 1919."
+  ],
+  "disagree": "The number of prisoners is given as 104,000 by Wikipedia and EBSCO (21,000 taken in the battle and 83,000 at the surrender) and as about 100,000 by the Deutsches Historisches Museum; German casualties as about 9,000 (EBSCO) or 9,860 (Wikipedia). The siege of Paris began on 19 September according to Wikipedia and on 13 September according to the Deutsches Historisches Museum, so no date is given.",
+  "checked": null
+ },
+ "Q158021": {
+  "title": "Treaty of Frankfurt",
+  "y": 1871,
+  "place": "German Empire",
+  "paras": [
+   "The Treaty of Frankfurt, signed at Frankfurt am Main on 10 May 1871 between the new German Empire and the French Third Republic, ended the Franco-Prussian War. France had declared war on Prussia on 19 July 1870 and had been defeated: its emperor, Napoleon III, was captured at Sedan in September, the republic that replaced him could not break the siege of Paris, and the city capitulated on 28 January 1871, when an armistice was signed. On 18 January, in the Hall of Mirrors at Versailles, the Prussian king Wilhelm I had been proclaimed emperor of a united Germany. A preliminary peace was signed at Versailles on 26 February by Otto von Bismarck and the French leader Adolphe Thiers, and the Frankfurt treaty confirmed it.",
+   "Under the treaty France gave up Alsace, except the city of Belfort and its territory, and most of the department of Moselle and other parts of Lorraine, including the city of Metz. France lost about 1.6 million inhabitants and some 1,694 towns and villages. People in the annexed lands could choose to keep French nationality and move to France, and about a tenth of the population did so. France also had to pay a war indemnity of five billion francs, and German troops occupied parts of the country until it was paid; France paid ahead of schedule, and the last troops left in September 1873. The treaty also recognised Wilhelm I as German Emperor.",
+   "The German army wanted the new border for security, above all the route between Thionville and Metz, while nationalists argued that the region had once belonged to the Holy Roman Empire and mostly spoke German dialects. The loss of French-speaking areas such as Metz caused outrage in France. The annexed lands became the 'Reichsland' of Alsace-Lorraine, governed directly under the Kaiser. Recovering the 'lost provinces' became a central aim of French policy for the next forty years and one of the strongest French motives in the First World War; Alsace-Lorraine was returned to France by the Treaty of Versailles in 1919."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Treaty_of_Frankfurt_(1871)",
+    "title": "Treaty of Frankfurt (1871) (rev 1358350277)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Treaty_of_Versailles_(1871)",
+    "title": "Treaty of Versailles (1871) (rev 1358335893)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     11
+    ]
+   },
+   {
+    "url": "https://www.dhm.de/lemo/kapitel/kaiserreich/das-reich/deutsch-franzoesischer-krieg-187071.html",
+    "title": "Deutsch-Französischer Krieg 1870/71 (LeMO)",
+    "publisher": "Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     15
+    ]
+   },
+   {
+    "url": "https://www.dhm.de/lemo/kapitel/kaiserreich/das-reich/elsass-lothringen.html",
+    "title": "Elsass-Lothringen (LeMO)",
+    "publisher": "Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     9,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/may-10/treaty-of-frankfurt-am-main-ends-franco-prussian-war",
+    "title": "Treaty of Frankfurt ends Franco-Prussian War",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     8,
+     10,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The Treaty of Frankfurt was signed in Frankfurt on 10 May 1871 between the German Empire and the French Third Republic, ending the Franco-Prussian War.",
+   "France declared war on 19 July 1870.",
+   "Napoleon III was captured at Sedan in September 1870 and replaced by a republican government.",
+   "The republican government could not break the siege of Paris; Paris capitulated and an armistice was signed on 28 January 1871.",
+   "On 18 January 1871 Wilhelm I was proclaimed German Emperor in the Hall of Mirrors at Versailles.",
+   "A preliminary peace was signed at Versailles on 26 February 1871 by Bismarck and Thiers and was confirmed (ratified) by the Frankfurt treaty.",
+   "France ceded Alsace except Belfort and its territory, and most of Moselle and other parts of Lorraine, including Metz.",
+   "France had to cede Alsace and parts of Lorraine (DHM, HISTORY.com).",
+   "Residents could keep French nationality and emigrate; about 10 percent opted for France (DHM).",
+   "France lost about 1,597,000 inhabitants and 1,694 villages and towns.",
+   "France had to pay an indemnity of five billion francs, with German occupation until payment.",
+   "France paid early and German forces withdrew in September 1873 (also HISTORY.com).",
+   "The treaty recognised Wilhelm I as German Emperor; the German military wanted the border for security, especially the Thionville-Metz route.",
+   "The region had been part of the Holy Roman Empire and mostly spoke Germanic dialects, which was used to justify annexation; annexing French-speaking areas such as Metz caused outrage in France.",
+   "The annexed lands became the Reichsland Alsace-Lorraine, directly under the Kaiser (DHM); recovering them became a central French aim until the First World War.",
+   "Revanche was a powerful motive for France in the First World War; Alsace-Lorraine was returned to France by the 1919 Treaty of Versailles."
+  ],
+  "disagree": "Wikipedia gives 1 October 1872 as the deadline for residents to opt for French nationality; the Deutsches Historisches Museum gives 1 October 1871, so no date is given.",
+  "checked": null
+ },
+ "Q302519": {
+  "title": "Battle of Adwa",
+  "y": 1896,
+  "place": "Ethiopia",
+  "paras": [
+   "On 1 March 1896, near the town of Adwa in northern Ethiopia, the army of Emperor Menelik II destroyed an Italian colonial army under General Oreste Baratieri, the decisive battle of the First Italo-Ethiopian War. The quarrel went back to the Treaty of Wuchale (Wichale), signed in 1889. Its Italian text said that Ethiopia must conduct its foreign affairs through Italy, which made it in effect an Italian protectorate; the Amharic text said only that the emperor could use Italy's good offices if he wished. Italy's prime minister, Francesco Crispi, declared a protectorate, Menelik rejected it, and Italy turned to force.",
+   "Italian troops from the colony of Eritrea advanced into Tigray in 1895, but Menelik called his whole country to arms, and his vanguard wiped out an Italian unit at Amba Alagi in December. His army, largely armed with modern rifles bought from abroad, numbered somewhere between 73,000 and over 100,000 men; the Italian force at Adwa was much smaller, about 15,000 to 20,000 men. By late February both sides were short of supplies. Baratieri thought of retreating, but Rome was pressing him to act and his brigadiers argued for an attack, so on the night of 29 February he sent three brigades forward with a fourth in reserve, hoping to surprise the Ethiopians in their camp.",
+   "The plan fell apart in the dark, over rough ground and with poor maps. General Albertone's brigade, of Eritrean askaris, went the wrong way and found itself cut off well ahead of the others, and General Dabormida's brigade, sent to help it, drifted into a separate valley, leaving a wide gap. The Ethiopians attacked each column in turn. Albertone's brigade was overrun; Menelik committed his reserve, and the Italian centre under General Arimondi, outflanked on both sides, broke around midday. Baratieri ordered a retreat that turned into a rout, pursued by Oromo cavalry, and Dabormida's isolated brigade was surrounded and destroyed later in the day.",
+   "Italian losses were heavy: Wikipedia's figures give some 6,000 dead and about 3,800 taken prisoner, while EBSCO gives about 7,000 dead, 1,500 wounded and some 3,000 prisoners. Ethiopian losses were also high, estimated at roughly 4,000 to 7,000 killed. The Italians left behind all their artillery and thousands of rifles. Menelik did not pursue them into Eritrea, but the defeat brought down Crispi's government, and in the Treaty of Addis Ababa Italy recognised Ethiopia's full independence. Ethiopia remained one of the very few independent states in Africa, and Adwa became a symbol of resistance for Africans under colonial rule; for many Italians it became a humiliation to be avenged, which Mussolini's invasion of 1935 claimed to do."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Adwa",
+    "title": "Battle of Adwa (rev 1387346483)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/battle-adowa",
+    "title": "Battle of Adowa (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     7,
+     10,
+     11,
+     12,
+     16,
+     19
+    ]
+   },
+   {
+    "url": "https://ebsco.com/research-starters/history/ethiopia-repels-italian-invasion",
+    "title": "Ethiopia Repels Italian Invasion (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     9,
+     19,
+     20,
+     21
+    ]
+   }
+  ],
+  "claims": [
+   "On 1 March 1896 near Adwa Menelik II's army defeated the Italian force under Baratieri; it was the decisive battle of the First Italo-Ethiopian War.",
+   "The dispute arose from the Treaty of Wuchale (Wichale), signed in 1889.",
+   "Article 17: the Italian text made Ethiopia conduct foreign affairs through Italy (a protectorate); the Amharic text said the emperor could use Italy's offices if he wished.",
+   "Crispi proclaimed a protectorate; Menelik rejected/abrogated the article.",
+   "Italy decided on a military solution.",
+   "Italian forces from Eritrea advanced into Tigray in 1895.",
+   "Menelik issued a general call to arms (Wikipedia: September 1895) and his vanguard destroyed an Italian unit at Amba Alagi (Wikipedia: 7 December 1895).",
+   "Menelik's army was mostly armed with modern imported rifles (Wikipedia: from France and Russia; EBSCO: imported through Djibouti).",
+   "Estimates of Menelik's army range from 73,000 to over 100,000 (EBSCO: about 100,000).",
+   "The Italian force at Adwa was much smaller: Wikipedia cites estimates of 14,519 and 17,770; EBSCO about 20,000.",
+   "By late February supplies were running low on both sides; Baratieri suggested retreat, but Rome pressed him to act and his brigadiers urged attack.",
+   "On the night of 29 February Baratieri sent three columns forward with a reserve, hoping to surprise the Ethiopians.",
+   "The Italians had poor maps and the terrain was difficult.",
+   "Albertone's native (askari) brigade took a wrong route and was cut off.",
+   "Dabormida's brigade, sent to support Albertone, moved into the Mariam Shewito valley, opening a gap of about two miles.",
+   "The Ethiopians attacked the isolated columns separately; Albertone's brigade was overrun.",
+   "Menelik committed his reserve; Arimondi's centre brigade, outflanked, gave way around noon.",
+   "Baratieri ordered a retreat that became a rout, with Oromo cavalry pursuing; Dabormida's brigade was surrounded and destroyed.",
+   "Italian losses: Wikipedia over 6,000 killed and about 3,800 captured; EBSCO about 7,000 dead, 1,500 wounded, about 3,000 prisoners. Ethiopian losses estimated 4,000-7,000 killed.",
+   "The Italians abandoned all their artillery and many rifles; Menelik did not pursue into Eritrea; Crispi's government fell; by the Treaty of Addis Ababa Italy recognised Ethiopian independence.",
+   "Ethiopia remained one of the few independent African states and Adwa became a symbol for Africans; Italians saw it as a humiliation to avenge, a motive for the 1935 invasion (Mussolini)."
+  ],
+  "disagree": "Italian losses are given by Wikipedia as over 6,000 killed and about 3,800 captured (Berkeley's figures), by EBSCO's 'Battle of Adowa' as about 7,000 dead, 1,500 wounded and some 3,000 prisoners, and by EBSCO's 'Ethiopia Repels Italian Invasion' as over 7,000 dead, 10,000 wounded and about 2,000 prisoners. The size of the Italian army at Adwa is estimated at 14,519 (Marcus) or 17,770 (Lewis) in Wikipedia and about 20,000 by EBSCO.",
+  "checked": null
+ },
+ "Q164771": {
+  "title": "Agadir Crisis",
+  "y": 1911,
+  "place": "Morocco",
+  "paras": [
+   "The Agadir Crisis, or Second Moroccan Crisis, of 1911 began when Germany sent the gunboat Panther to the Moroccan Atlantic port of Agadir on 1 July 1911. After the first Moroccan crisis, the Algeciras conference of 1906 and a Franco-German agreement of 9 February 1909 had recognised France's political lead in Morocco while protecting Germany's economic interests. In the spring of 1911, with Sultan Abd al-Hafid facing a revolt, France sent troops deep into the country, occupying Fez on the pretext of protecting Europeans. Germany saw this as a breach of the earlier agreements.",
+   "The German foreign secretary, Alfred von Kiderlen-Wächter, was prepared to let France have Morocco, but only in return for territorial compensation, above all the French Congo. The Panther, officially sent to protect German trade, was meant to force France to negotiate. In mid-July Germany formally demanded the French Congo, and the German nationalist press stirred up a warlike mood. Britain, tied to France by the Entente Cordiale and alarmed at the prospect of a German naval base on the Atlantic, took France's side. On 21 July David Lloyd George, the Chancellor of the Exchequer, warned in his Mansion House speech that peace bought by letting Britain be treated as of no account would be an intolerable humiliation. Germany took the speech as a warning, and it caused anger there.",
+   "Germany's leaders were ready to threaten war but did not want one, and a financial panic in Germany added to the pressure on Berlin to settle. In an agreement signed on 4 November 1911, Germany accepted French control of Morocco, keeping only guarantees for its economic interests, and in return received about 275,000 square kilometres of the French Congo, added to its colony of Kamerun, while ceding a smaller area to France. Many in Germany saw the result as a diplomatic defeat, and nationalists complained that Germany had gained too little.",
+   "The crisis drew Britain and France closer and deepened Anglo-German hostility; it led to an Anglo-French naval agreement, under which the Royal Navy was to guard France's northern coast while the French fleet concentrated in the Mediterranean. In Germany calls for a preventive war grew, and in France anti-German feeling revived. In March 1912 the Treaty of Fes made Morocco a French protectorate, which lasted until 1956."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Agadir_Crisis",
+    "title": "Agadir Crisis (rev 1378824776)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     19
+    ]
+   },
+   {
+    "url": "https://www.dhm.de/lemo/kapitel/kaiserreich/aussenpolitik/marokko-krise-1911.html",
+    "title": "Marokko-Krise 1911 (LeMO)",
+    "publisher": "Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     12,
+     13,
+     14,
+     18
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/moroccan-crises",
+    "title": "Moroccan Crises (Encyclopedia of Modern Europe: Europe 1789-1914)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     15,
+     16,
+     18
+    ]
+   }
+  ],
+  "claims": [
+   "The Agadir (Second Moroccan) Crisis began when Germany sent the gunboat Panther to Agadir on 1 July 1911.",
+   "The 1906 Algeciras conference and a Franco-German agreement of 9 February 1909 recognised France's political primacy while protecting economic interests.",
+   "In spring 1911, with the sultan facing revolt, France sent troops into the interior, occupying Fez, on the pretext of protecting Europeans.",
+   "Germany saw this as a breach of the earlier agreements.",
+   "Kiderlen-Wächter would accept French control of Morocco in return for territorial compensation, chiefly the French Congo.",
+   "The Panther was officially sent to protect German trade interests; it was meant to force France to negotiate.",
+   "In mid-July (15 July, Wikipedia; two weeks later, DHM) Germany formally demanded the French Congo.",
+   "The German nationalist press stirred up war fever.",
+   "Britain, linked by the Entente Cordiale, supported France; the prospect of a German Atlantic port concerned Britain.",
+   "On 21 July Lloyd George, Chancellor of the Exchequer, gave the Mansion House speech: peace at the price of Britain being treated as of no account would be an intolerable humiliation.",
+   "Germany read the speech as a warning; it caused indignation in Germany.",
+   "Germany's leaders threatened war but did not want it; a financial panic in Germany pressured Berlin to back down.",
+   "In an agreement of 4 November 1911 Germany accepted French control of Morocco with economic guarantees and received part of the French Congo, ceding territory to France in return.",
+   "The ceded territory was about 275,000 km² (Neukamerun), added to Kamerun.",
+   "The outcome was seen as a diplomatic defeat for Germany; nationalist press criticised it for giving too little.",
+   "The crisis strengthened Anglo-French ties and Anglo-German hostility, and led to an Anglo-French naval agreement.",
+   "Under the naval agreement the Royal Navy would protect France's northern coast and France concentrated in the Mediterranean.",
+   "Calls for preventive war grew in Germany; anti-German feeling revived in France.",
+   "The Treaty of Fes (30 March 1912) made Morocco a French protectorate, which lasted until 1956."
+  ],
+  "disagree": "Wikipedia gives both 20 and 21 July 1911 for Lloyd George's Mansion House speech; its body and Encyclopedia.com give 21 July, which is used here. The Deutsches Historisches Museum says France received parts of Togo and Kamerun in exchange; Wikipedia mentions only a small area ceded to the French colony of Chad.",
+  "checked": null
+ },
+ "Q468823": {
+  "title": "March on Rome",
+  "y": 1922,
+  "place": "Italy",
+  "paras": [
+   "The March on Rome of 27–28 October 1922 was the Fascist mobilisation that brought Benito Mussolini to power in Italy. Mussolini had founded his Fasci di Combattimento in Milan in 1919, during the 'Red Biennium' of strikes and factory and land occupations. His armed squads, the Blackshirts, attacked socialists, trade unions, cooperatives and left-wing newspapers, often with the backing of landowners and industrialists and with little interference from the police. In 1921 the Fascists won 35 seats in parliament on Giovanni Giolitti's lists, and the movement became the National Fascist Party; in August 1922 its squads broke an anti-fascist general strike and drove the socialist administration out of Milan's town hall.",
+   "Mussolini combined threats of insurrection with talks with liberal leaders about joining a government. On 24 October, at a rally in Naples, he declared that the Fascist programme was simply to rule Italy, and four leaders, the 'quadrumvirs' Emilio De Bono, Italo Balbo, Michele Bianchi and Cesare Maria De Vecchi, were put in charge of the march while he stayed in Milan. Fascist squads occupied prefectures, post offices and stations in towns of northern and central Italy, and columns of poorly armed Blackshirts gathered outside Rome.",
+   "On the morning of 28 October the government of Luigi Facta, which had already resigned, approved a state of siege, but King Victor Emmanuel III refused to sign the decree. His reasons have never been fully explained; doubts about the army's loyalty, fear of civil war and the ambitions of his pro-Fascist cousin, the Duke of Aosta, have all been suggested. The army in Rome could easily have stopped the squads, but no clash took place. On 29 October the king invited Mussolini to form a government; Mussolini took the night train from Milan, arrived on the 30th, and on 31 October formed a coalition cabinet while the Blackshirts paraded through the city.",
+   "Mussolini thus came to power legally, under the constitution, through the surrender of the authorities to Fascist intimidation rather than by a seizure of power, although the Fascists later celebrated the march as a conquest of power. Fascist squads attacked opponents in Rome's working-class districts, and about 22 people died in the following days. Over the next few years, especially after the murder of the socialist deputy Giacomo Matteotti in 1924, Mussolini turned his government into a dictatorship."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/March_on_Rome",
+    "title": "March on Rome (rev 1387059200)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     19
+    ]
+   },
+   {
+    "url": "https://www.ilpost.it/2022/10/28/marcia-su-roma/",
+    "title": "Cosa rese possibile la marcia su Roma",
+    "publisher": "Il Post",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   }
+  ],
+  "claims": [
+   "The March on Rome (27-28 October 1922, Il Post) brought Mussolini to power.",
+   "Mussolini founded the Fasci di Combattimento (in Milan) in 1919, during the Red Biennium of strikes and occupations.",
+   "Fascist squads (Blackshirts) attacked socialists, unions, cooperatives and left-wing newspapers, backed by landowners and industrialists.",
+   "Police often failed to intervene (Wikipedia).",
+   "In 1921 Fascists won 35 seats on Giolitti's National Blocs lists; the movement became the National Fascist Party (Wikipedia, November 1921).",
+   "In August 1922 the Fascists broke the anti-fascist general strike and ousted the socialist administration from Milan's town hall (Palazzo Marino).",
+   "Mussolini combined insurrectionary threats with negotiations with liberal leaders.",
+   "On 24 October in Naples Mussolini declared 'we want to rule Italy'.",
+   "The quadrumvirs De Bono, Balbo, Bianchi and De Vecchi were put at the head of the march; Mussolini went to / stayed in Milan.",
+   "Fascists occupied prefectures, post offices and stations in northern and central cities.",
+   "Poorly armed columns of Blackshirts gathered outside Rome (Il Post about 16,000; Wikipedia fewer than 30,000).",
+   "On the morning of 28 October the resigned Facta government approved a state of siege; the king refused to sign it.",
+   "The king's motives are unclear; suggestions include doubts about the army, fear of civil war and the Duke of Aosta's ambitions.",
+   "The army in Rome could have stopped the squads but there was no clash (Il Post).",
+   "On 29 October the king invited Mussolini to form a government; Mussolini took a night train from Milan and arrived on 30 October.",
+   "On 31 October Mussolini formed a coalition government while Blackshirts paraded in Rome.",
+   "Mussolini reached power legally under the constitution, through the surrender of authorities to Fascist intimidation, not the seizure Fascism later celebrated.",
+   "Fascist squads attacked opponents in Rome's popular districts; about 22 people died in a few days (Il Post).",
+   "Mussolini established a dictatorship over the following years, after the murder of Matteotti in 1924."
+  ],
+  "disagree": "Wikipedia's lead dates the king's appointment of Mussolini to 30 October and its body says he was asked to form a cabinet on 29 October; Il Post says he received the king's offer by telegram on 29 October and arrived in Rome on the 30th. The marchers are put at fewer than 30,000 by Wikipedia and at about 16,000 by Il Post.",
+  "checked": null
  }
 }
