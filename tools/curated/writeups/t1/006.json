@@ -1120,7 +1120,7 @@
   "paras": [
    "The Magellan–Elcano expedition (1519–1522) was a Spanish voyage planned and led by the Portuguese navigator Ferdinand Magellan and completed by the Spaniard Juan Sebastián Elcano; it made the first circumnavigation of the Earth. Magellan had fought for Portugal in the Indian Ocean and in Morocco, but King Manuel I would not back him, so he moved to Seville in 1517 and offered his plan to King Charles I of Spain: to reach the Spice Islands (the Moluccas) by sailing west, since the 1494 Treaty of Tordesillas left the eastern route around Africa to Portugal. Charles named Magellan and his partner Rui Faleiro captains-general on 22 March 1518 and the Crown paid for most of the fleet.",
    "Five ships, the Trinidad, San Antonio, Concepción, Victoria and Santiago, left Seville on 10 August 1519 and put to sea from Sanlúcar de Barrameda on 20 September. Wikipedia gives the crew as about 270 men, the Mariners' Museum as roughly 200. At the Canary Islands Magellan was warned that his Spanish captains were plotting against him. The fleet reached Rio de Janeiro in December, mistook the estuary of the Río de la Plata for the hoped-for strait, and on 31 March 1520 stopped for the winter at Port St Julian in Patagonia. There, on Easter Day, 1 April, the captains Juan de Cartagena, Gaspar de Quesada and Luis de Mendoza led a mutiny; Magellan crushed it, Mendoza was killed, Quesada beheaded and Cartagena marooned. The Santiago was wrecked while scouting to the south.",
-   "On 21 October 1520 the fleet reached a cape at 52°S, and beyond it they found the passage now called the Strait of Magellan. In the strait the San Antonio deserted and sailed back to Spain. The other three ships reached the ocean Magellan named the Pacific on 28 November, according to Wikipedia (the Mariners' Museum gives 8 November). The crossing was far longer than expected: the crews suffered scurvy and, as the chronicler Antonio Pigafetta recorded, ate rotten biscuit, ox hides and rats. They reached Guam in March 1521 and then the Philippines, where Magellan won over and had baptised Rajah Humabon of Cebu. When Lapu-Lapu of Mactan refused to submit, Magellan attacked him with about 60 men against a force Pigafetta put at 1,500, and was killed with several companions, on 27 April 1521 according to the Mariners' Museum.",
+   "On 21 October 1520 the fleet reached a cape at 52°S, and beyond it they found the passage now called the Strait of Magellan. In the strait the San Antonio deserted and sailed back to Spain. The other three ships reached the ocean Magellan named the Pacific on 28 November, according to Wikipedia (the Mariners' Museum gives 8 November). The crossing was far longer than expected: the crews suffered scurvy and, as the chronicler Antonio Pigafetta recorded, ate rotten biscuit, ox hides and rats. They reached the Mariana Islands on 6 March 1521, landing on Guam according to Wikipedia (Guampedia notes that the landing place is still debated), and then the Philippines, where Magellan won over and had baptised Rajah Humabon of Cebu. When Lapu-Lapu of Mactan refused to submit, Magellan attacked him with about 60 men against a force Pigafetta put at 1,500, and was killed with several companions, on 27 April 1521 according to the Mariners' Museum.",
    "On 1 May about 27 men, including one of the two newly elected commanders, were killed at a feast given by Humabon on Cebu and the other was left behind, and with too few men left, the crew burned the Concepción. The Trinidad and Victoria reached Tidore in the Moluccas in November 1521 and loaded cloves, but the leaking Trinidad stayed behind and was later taken by the Portuguese. Elcano sailed the Victoria west across the Indian Ocean from 21 December 1521, round the Cape of Good Hope and past Portuguese Cape Verde, where part of the crew was detained; she reached Sanlúcar on 6 September 1522 with only 18 men. The voyage revealed the vast size of the Pacific and showed that ships could sail round the world, but the western route was too long to be commercially useful, and in 1529 the Treaty of Zaragoza assigned the Moluccas to Portugal and the Philippines to Spain."
   ],
   "sources": [
@@ -1193,6 +1193,15 @@
      26,
      27
     ]
+   },
+   {
+    "url": "https://www.guampedia.com/ferdinand-magellan/",
+    "title": "Ferdinand Magellan",
+    "publisher": "Guampedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     18
+    ]
    }
   ],
   "claims": [
@@ -1213,7 +1222,7 @@
    "The San Antonio deserted and sailed back to Spain (Wikipedia; Mariners' Museum: deserted the mission).",
    "The remaining three ships reached the Pacific by 28 November 1520 and Magellan named it Mar Pacifico (Wikipedia); Mariners' Museum: on November 8, 1520 Trinidad, Concepción and Victoria reached the 'Sea of the South'.",
    "The Pacific crossing was much longer than Magellan expected; most men suffered scurvy; Pigafetta wrote that they ate powdered biscuit full of grubs, ox hides and rats (Wikipedia; Mariners' Museum: Pigafetta kept a first-hand account).",
-   "Reached Guam in March 1521 (Wikipedia: Marianas on 6 March, anchored at Guam; Mariners' Museum: in March reached Guam) and then the Philippines (both).",
+   "Reached the Marianas on 6 March 1521 (Wikipedia; Guampedia: three islands sighted on 6 March 1521 according to Pigafetta, 17 March according to Ginés de Mafra); Wikipedia: anchored on Guam; Mariners' Museum: in March reached Guam; Guampedia: the landing site is debated, possibly north of Guam or on Saipan; then the Philippines (Wikipedia; Mariners' Museum).",
    "At Cebu, Rajah Humabon and his family were baptised (Wikipedia: 14 April; Mariners' Museum: the native chief and his wife baptised).",
    "Lapu-Lapu of Mactan resisted; Magellan mustered 60 armed men; Pigafetta estimated the enemy at 1,500; Magellan died in battle with several comrades (Wikipedia; Mariners' Museum: about 60 men, about 1500 Mactan men).",
    "Mariners' Museum: Magellan was killed on April 27, 1521 (Wikipedia: he died in battle in April 1521; on 26 April he told his council he would bring an armed contingent to Mactan).",
@@ -1225,8 +1234,12 @@
    "The expedition revealed the vast scale of the Pacific and proved ships could sail around the world on a western route; the route was too long and arduous to be commercially useful (Wikipedia; Mariners' Museum: gave Europeans a much better understanding of the extent of the Earth's size).",
    "Treaty of Zaragoza, 1529, assigned the Moluccas to Portugal and the Philippines to Spain (Wikipedia)."
   ],
-  "disagree": "Crew size: about 270 in Wikipedia, roughly 200 in the Mariners' Museum. Reaching the Pacific: 28 November 1520 in Wikipedia, 8 November in the Mariners' Museum. The date of Magellan's death, 27 April 1521, is the Mariners' Museum's; Wikipedia gives April 1521.",
-  "checked": null
+  "disagree": "Crew size: about 270 in Wikipedia, roughly 200 in the Mariners' Museum. Reaching the Pacific: 28 November 1520 in Wikipedia, 8 November in the Mariners' Museum. The date of Magellan's death, 27 April 1521, is the Mariners' Museum's; Wikipedia gives April 1521. Landing in the Marianas: Guam in Wikipedia and the Mariners' Museum; Guampedia says the site is debated.",
+  "checked": {
+   "by": "https://origins.osu.edu/milestones/magellan-circumnavigation-earth",
+   "result": "Claims 4, 6, 7, 8, 12, 13, 15, 16 and 19 checked against Origins (Ohio State University): all agree (Tordesillas reason for the western route; the five ships; departure from Sanlúcar on 20 September 1519 with about 270 men; Cartagena-led mutiny and his marooning; Santiago wrecked scouting south; San Antonio turned back to Spain; Magellan named the Pacific; friendship with Raja Humabon at Cebu). 9 claims, 0 errors. Guampedia, read for the re-check, disputes the Guam landing site; that disagreement is now stated in the text with Guampedia cited.",
+   "errors": 0
+  }
  },
  "Q536822": {
   "title": "Diet of Worms",
@@ -1382,7 +1395,11 @@
    "At Worms Charles made his brother Ferdinand imperial lieutenant, regent of the Austrian hereditary lands and his representative in Germany (Wikipedia)."
   ],
   "disagree": "Date of the Edict of Worms: dated 8 May 1521 (City of Worms, Deutsche Nationalbibliothek, Lex.dk) and proclaimed on 26 May (City of Worms, Lex.dk, Christian History Institute); Wikipedia says issued on 25 May. Opening of the diet: Wikipedia gives 28 January in its lead and 23 January in its background section; the event record has 27 January; not changed, as no two sources agree on the day.",
-  "checked": null
+  "checked": {
+   "by": "https://www.evangelisch.de/inhalte/184367/16-04-2021/luther-beim-reichstag-worms",
+   "result": "Claims 5, 8, 9, 10, 11, 12, 13, 15, 18 and the Wartburg timing in 14 checked against evangelisch.de (epd, 2021): all agree (arrival 16 April with crowds; two questions in the bishop's palace; one night's reflection; refusal on 18 April citing Scripture and conscience; 'Here I stand' not said literally; Charles's 'single monk' reply; the edict banned his writings and outlawed him; Luther already at the Wartburg when it was published in May; not enforceable in parts of the Empire). evangelisch.de dates the excommunication loosely to spring 1521; January is given by four fetched sources. 10 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q205379": {
   "title": "Battle of Breitenfeld",
@@ -1472,7 +1489,11 @@
    "First major Catholic defeat of the war (Wikipedia); victory allowed the Swedes to campaign into southern Germany (Wikipedia); HistoryNet: Gustavus hailed as the father of modern warfare, Breitenfeld called the first battle of the modern age."
   ],
   "disagree": "Landing in 1630: nearly 18,000 men in June (Wikipedia) or 13,000 in July (HistoryNet). Swedish losses: 3,550 (Wikipedia) or under 3,000 (HistoryNet). Banners taken: 120 (Wikipedia) or nearly 100 (HistoryNet).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/John_George_I.",
+   "result": "Claims 2 and 11 checked against the 1911 Encyclopaedia Britannica article on John George I: Saxony allied with Gustavus Adolphus in September 1631 after Tilly's troops ravaged Saxony; the Saxons at Breitenfeld were routed and the Elector fled. 2 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q617333": {
   "title": "Franco-Spanish War (1635)",
