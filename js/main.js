@@ -1708,17 +1708,22 @@ function setupPanel() {
     const avail = els.panel.getBoundingClientRect().bottom - (document.querySelector('.top')?.getBoundingClientRect().bottom || 56) - 8;
     return { collapsed: bar.offsetHeight, half: Math.min(avail, Math.round(window.innerHeight * 0.46)), full: avail };
   };
-  const start = (y, id) => {
-    drag = { y0: y, h0: els.panel.offsetHeight, y, t: performance.now(), v: 0, id, moved: false, snaps: snapH() };
+  const start = (y, id, t) => {
+    drag = { y0: y, h0: els.panel.offsetHeight, id, moved: false, snaps: snapH(), pts: [[t, y]] };
   };
-  const move = (y) => {
+  // the speed at release: over the last 100 ms of the gesture, from the events' own times (not when they were run)
+  const speed = (d) => {
+    const [t1, y1] = d.pts[d.pts.length - 1];
+    const p0 = d.pts.find(([t]) => t >= t1 - 100) || d.pts[0];
+    return t1 > p0[0] ? (y1 - p0[1]) / (t1 - p0[0]) : 0;
+  };
+  const move = (y, t) => {
     if (!drag) return false;
     const dy = y - drag.y0;
     if (!drag.moved && Math.abs(dy) < 6) return false;
     if (!drag.moved) { drag.moved = true; els.panel.classList.add('dragging'); }
-    const now = performance.now();
-    drag.v = 0.7 * drag.v + 0.3 * ((y - drag.y) / Math.max(1, now - drag.t));   // px per ms, + is downwards
-    drag.y = y; drag.t = now;
+    drag.pts.push([t, y]);
+    if (drag.pts.length > 30) drag.pts.shift();
     const hgt = Math.max(drag.snaps.collapsed, Math.min(drag.snaps.full, drag.h0 - dy));
     els.panel.style.height = hgt + 'px';
     return true;
@@ -1728,6 +1733,7 @@ function setupPanel() {
     const d = drag;
     drag = null;
     if (!d.moved) return;
+    d.v = speed(d);   // px per ms, + is downwards
     justDragged = true;
     setTimeout(() => { justDragged = false; }, 0);
     const hgt = els.panel.offsetHeight;
@@ -1746,29 +1752,29 @@ function setupPanel() {
   // the bar: pointer events (mouse, pen and touch), with touch-action: none so the page never scrolls instead
   bar.addEventListener('pointerdown', (e) => {
     if (!isPhone() || (e.pointerType === 'mouse' && e.button !== 0)) return;
-    start(e.clientY, e.pointerId);
+    start(e.clientY, e.pointerId, e.timeStamp);
   });
   // the pointer is captured only once it moves: a plain tap stays a click on the button under it
   bar.addEventListener('pointermove', (e) => {
     if (!drag || e.pointerId !== drag.id) return;
     const was = drag.moved;
-    if (move(e.clientY) && !was) { try { bar.setPointerCapture(e.pointerId); } catch { /* not capturable */ } }
+    if (move(e.clientY, e.timeStamp) && !was) { try { bar.setPointerCapture(e.pointerId); } catch { /* not capturable */ } }
   });
   bar.addEventListener('pointerup', end);
   bar.addEventListener('pointercancel', end);
   // the text: pulled down from its top, the sheet follows (a swipe down collapses it); otherwise it scrolls
   let pull = null;
   els.body.addEventListener('touchstart', (e) => {
-    pull = isPhone() && e.touches.length === 1 && els.body.scrollTop <= 0 ? { y: e.touches[0].clientY, on: false } : null;
+    pull = isPhone() && e.touches.length === 1 && els.body.scrollTop <= 0 ? { y: e.touches[0].clientY, t: e.timeStamp, on: false } : null;
   }, { passive: true });
   els.body.addEventListener('touchmove', (e) => {
     if (!pull) return;
     const y = e.touches[0].clientY;
     if (!pull.on) {
-      if (y - pull.y > 8 && els.body.scrollTop <= 0) { pull.on = true; start(pull.y, 'touch'); } else if (y < pull.y - 4) { pull = null; return; } else return;
+      if (y - pull.y > 8 && els.body.scrollTop <= 0) { pull.on = true; start(pull.y, 'touch', pull.t); } else if (y < pull.y - 4) { pull = null; return; } else return;
     }
     if (e.cancelable) e.preventDefault();
-    move(y);
+    move(y, e.timeStamp);
   }, { passive: false });
   const pullEnd = () => { if (pull?.on) end(); pull = null; };
   els.body.addEventListener('touchend', pullEnd);

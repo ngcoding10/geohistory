@@ -765,10 +765,14 @@ async function waitEvents(page) {
       ok(g1.size === 'half' && g1.mapVisible < g0.mapVisible - 200, `tapping the handle opens the sheet half way (map ${g0.mapVisible} -> ${g1.mapVisible}px)`);
       // drags by touch (CDP touch events: the phone's own path)
       const cdp = await ctx.newCDPSession(pg);
-      const touch = (type, x, y) => cdp.send('Input.dispatchTouchEvent', { type, touchPoints: type === 'touchEnd' ? [] : [{ x, y }] });
+      // each event carries its own time, `pause` ms apart (a slow software renderer then does not turn a swipe into a drag)
+      let clock = Date.now() / 1000;
+      const touch = (type, x, y) => cdp.send('Input.dispatchTouchEvent', { type, timestamp: clock, touchPoints: type === 'touchEnd' ? [] : [{ x, y }] });
       const drag = async (from, to, steps, pause) => {
+        clock = Date.now() / 1000;
         await touch('touchStart', from.x, from.y);
-        for (let i = 1; i <= steps; i++) { await touch('touchMove', from.x + (to.x - from.x) * i / steps, from.y + (to.y - from.y) * i / steps); if (pause) await pg.waitForTimeout(pause); }
+        for (let i = 1; i <= steps; i++) { clock += (pause || 12) / 1000; await touch('touchMove', from.x + (to.x - from.x) * i / steps, from.y + (to.y - from.y) * i / steps); if (pause) await pg.waitForTimeout(pause); }
+        clock += 0.005;
         await touch('touchEnd');
         await settle();
       };
