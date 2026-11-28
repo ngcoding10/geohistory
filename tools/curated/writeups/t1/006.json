@@ -728,5 +728,82 @@
   ],
   "disagree": "Number of bishops: Wikipedia at least 200; Catholic Encyclopedia cites Eusebius (more than 250) and Athanasius (318), with reconstructed signatory lists of 220 and 218 names. End of the council: Wikipedia first weeks of July (celebration on 25 July); Catholic Encyclopedia 25 August.",
   "checked": null
+ },
+ "Q1348630": {
+  "title": "Ridda Wars",
+  "y": 632,
+  "place": "Arabian Peninsula (Najd, al-Yamama, Bahrain, Oman, Mahra, Yemen and Hadhramaut)",
+  "paras": [
+   "The Ridda Wars ('wars of apostasy') were the campaigns fought in 632–633 by Abu Bakr, the first caliph, against Arabian tribes that rejected the authority of Medina after the death of the Prophet Muhammad in June 632. Many tribes stopped paying the zakat tax or renounced Islam, and several rebel movements were led by men who claimed to be prophets themselves: notably Tulayha of the Banu Asad and Musaylima of the Banu Hanifa in al-Yamama; in Yemen, another claimant, al-Aswad al-Ansi, had already risen in revolt before Muhammad's death. Wikipedia cautions that the events are hard to reconstruct in detail because the early Arabic accounts are often contradictory and partisan.",
+   "Abu Bakr first sent an army under the young Usama ibn Zayd north towards the Byzantine frontier, as Muhammad had planned, while rebels gathered at Dhu al-Qassah, about 30 miles from Medina. With the forces left in the city he drove them back, and after Usama's return defeated them again at Abraq. He then divided his army into eleven corps, each with its own commander and region. The strongest, under Khalid ibn al-Walid, defeated Tulayha at Buzakha and subdued the tribes of Najd. In al-Yamama, Musaylima defeated first Ikrimah ibn Abi Jahl and then Shurahbil ibn Hasana, who had attacked before Khalid arrived; Khalid then joined Shurahbil's remnants and, with about 13,000 men, defeated Musaylima, who was killed in the battle (Wikipedia dates it to December 632).",
+   "Other corps restored Medina's authority in Bahrain, Oman, Mahra and Yemen. The last major revolt, of the Kinda tribe in Hadhramaut under al-Ash'ath ibn Qays, ended when the Muslim forces took the fortress of al-Nujayr after a siege; al-Ash'ath was sent to Medina and pardoned. By early 633 the peninsula was united under the caliph: TheCollector says the wars were over by March 633, while the lead of Wikipedia's article gives June 633. Freed from the rebellions, Abu Bakr turned his armies against the Sasanian and Byzantine empires, sending Khalid to Iraq, which began the early Muslim conquests. TheCollector notes that the deaths of many men who knew the Qur'an by heart in the fighting at al-Yamama led Abu Bakr to have it written down."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Ridda_Wars",
+    "title": "Ridda Wars (rev 1388075964)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.thecollector.com/ridda-wars-arabia-wars-explained/",
+    "title": "The Ridda Wars (632-633 CE): Arabia's Apostasy Wars Explained",
+    "publisher": "TheCollector",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "Campaigns of 632–633 by the first caliph Abu Bakr against rebellious Arabian tribes after Muhammad's death in 632 (Wikipedia: Muhammad died in June 632; TheCollector).",
+   "Tribes withheld zakat and/or renounced Islam (Wikipedia; TheCollector: most tribes apostatized and revolted).",
+   "Rebel leaders claiming prophethood: Tulayha of the Banu Asad, Musaylima of the Banu Hanifa at Yamama (TheCollector; Wikipedia); al-Aswad al-Ansi in Yemen, a rival prophet claimant whose revolt came first and who was killed by Fayruz, sent by Muhammad (Wikipedia; TheCollector: Yemen was the first region to revolt).",
+   "Wikipedia: detailed reconstruction is complicated by contradictory and tendentious primary sources.",
+   "Abu Bakr sent Usama ibn Zayd's army north (towards the Byzantine frontier/Mu'tah), as Muhammad had ordered (Wikipedia; TheCollector).",
+   "Rebels under Tulayha's coalition gathered at Dhu al-Qassah (Zhu Qissa), about 30 miles from Medina; Abu Bakr drove them back; after Usama's return he defeated them at Abraq (Wikipedia; TheCollector).",
+   "The army was divided into eleven corps, each with its own commander and area (TheCollector; Wikipedia: 11 main corps).",
+   "Khalid ibn al-Walid commanded the strongest corps, defeated Tulayha at Buzakha and subdued Najd (Wikipedia; TheCollector).",
+   "Ikrimah attacked Musaylima and was defeated; Shurahbil also attacked before Khalid's arrival and was defeated (Wikipedia; TheCollector).",
+   "Khalid joined Shurahbil's remnants; the combined force of 13,000 defeated Musaylima at Yamama (Wikipedia; TheCollector); Wikipedia: third week of December 632.",
+   "Musaylima was killed at Yamama (Wikipedia lead: killed in the Battle of Yamama).",
+   "Other corps restored control of Bahrain, Oman, Mahra and Yemen (Wikipedia; TheCollector).",
+   "The Kinda revolt in Hadhramaut under al-Ash'ath ibn Qays ended with the siege and capture of al-Nujayr (Nujair) (Wikipedia; TheCollector); al-Ash'ath was sent to Abu Bakr and released after he repented (Wikipedia).",
+   "End: TheCollector, by March 633; Wikipedia lead, June 633 (body: completed in AH 11, i.e. before 16 March 633).",
+   "Afterwards Abu Bakr turned to expansion against the Sasanian and Byzantine empires, sending Khalid to Iraq (Wikipedia; TheCollector: armies poised for invasions of the Byzantine and Sasanian empires).",
+   "TheCollector: many who had memorised the Qur'an fell at Yamamah, and Abu Bakr ordered it written down."
+  ],
+  "disagree": "End of the wars: TheCollector, by March 633; Wikipedia's lead, June 633 (its body places the end within AH 11, before 16 March 633).",
+  "checked": null
  }
 }
