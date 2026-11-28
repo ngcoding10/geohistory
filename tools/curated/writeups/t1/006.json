@@ -1,0 +1,87 @@
+{
+ "Q221967": {
+  "title": "Brusilov Offensive",
+  "y": 1916,
+  "place": "Eastern Front: Volhynia, eastern Galicia and Bukovina (today north-western Ukraine)",
+  "paras": [
+   "The Brusilov Offensive was the great Russian attack on the Eastern Front of the First World War that began on 4 June 1916 and lasted into the autumn (HISTORY says it was shut down on 20 September; Wikipedia says late September). It was led by General Aleksei Brusilov, commander of Russia's South-Western Front, against the armies of Austria-Hungary and, increasingly, Germany, in the region that is now north-western Ukraine. Wikipedia calls it the Russian Empire's greatest feat of arms in the war.",
+   "Under the Chantilly agreement of December 1915 the Allies had promised simultaneous offensives in 1916. The Germans were attacking at Verdun, and in May the Austro-Hungarians struck the Italians in South Tyrol (the Trentino), so Italy pressed urgently for a relief offensive in the east. Brusilov insisted on attacking along a broad front rather than at a single point; according to Manfried Rauchensteiner's history of Austria-Hungary in the war, the Russian chief of staff Mikhail Alekseev begged him on the evening of 3 June to postpone and narrow the attack, and Brusilov refused.",
+   "The offensive opened with a carefully prepared barrage that tore gaps in the Austro-Hungarian wire and buried defenders in their dugouts, and the infantry then stormed the first lines from close range. Kaledin's 8th Army broke the Austro-Hungarian 4th Army of Archduke Joseph Ferdinand around Lutsk, which the Russians occupied within days; Wikipedia says the 4th Army fell from 117,800 men to 35,000 in four days. Further south the Austro-Hungarian 7th Army was also driven back, and Russian forces went on to take cities including Brody, Kolomyia and Chernivtsi and reach the Carpathian foothills. Austria-Hungary had to halt its Italian offensive, and Germany sent divisions from the west to shore up its ally.",
+   "The cost was enormous on both sides, and the figures differ widely. Wikipedia gives 500,000 to 1,000,000 Russian casualties, about 616,000 Austro-Hungarian and 148,000 to 350,000 German, while HISTORY puts Austro-Hungarian losses at 1.5 million, including 400,000 prisoners. The offensive eased pressure on the French at Verdun and on the Italians, inflicted losses on the Austro-Hungarian army from which it never recovered, and brought Romania into the war on the Allied side. But Russia's own losses were so heavy that, as Wikipedia notes, many historians see them as contributing to the collapse of the Russian army and the revolution of 1917."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Brusilov_offensive",
+    "title": "Brusilov offensive (rev 1386498845)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://austria-forum.org/web-books/en/firstworldwar01en2014isds/000526",
+    "title": "Manfried Rauchensteiner, The First World War and the End of the Habsburg Monarchy, 1914-1918 (Böhlau, 2014), p. 524: 'Lutsk: The End of an Illusion (II)'",
+    "publisher": "Austria-Forum web-books",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5
+    ]
+   },
+   {
+    "url": "https://austria-forum.org/web-books/en/firstworldwar01en2014isds/000528",
+    "title": "Manfried Rauchensteiner, The First World War and the End of the Habsburg Monarchy, 1914-1918 (Böhlau, 2014), p. 526",
+    "publisher": "Austria-Forum web-books",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/june-4/brusilov-offensive-begins",
+    "title": "Brusilov Offensive, one of the most successful ground operations of WWI, begins",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     7,
+     9,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The Brusilov Offensive began on 4 June 1916 (Wikipedia, Rauchensteiner, HISTORY) and lasted until late September (Wikipedia; HISTORY: shut down on 20 September 1916).",
+   "It was led by Aleksei Brusilov, commander of the South-Western Front (Wikipedia; Rauchensteiner: Brusilov had commanded the 8th Army earlier in the war), against Austria-Hungary and Germany, in present-day north-western Ukraine (Wikipedia).",
+   "Wikipedia: the Russian Empire's greatest feat of arms during the war.",
+   "Under the Chantilly Agreement of December 1915 Russia, France, Britain and Italy committed to simultaneous attacks in summer 1916 (Wikipedia); Germans were storming Verdun and Austria-Hungary attacked in South Tyrol in May 1916; the Italian High Command urgently requested a relief offensive (Rauchensteiner).",
+   "Brusilov planned an attack on a broad front; Alekseev doubted the method and on the evening of 3 June asked him to postpone and attack with a narrow spearhead; Brusilov refused (Rauchensteiner).",
+   "A barrage of unforeseen strength destroyed wire obstacles and buried defenders in dugouts; Russian storm troops attacking from close range took the first Austro-Hungarian line (Rauchensteiner; Wikipedia: artillery opened breaches, creeping barrage).",
+   "Kaledin's 8th Army broke the Austro-Hungarian 4th Army of Archduke Joseph Ferdinand around Lutsk, which the Russians occupied by 7 June (Wikipedia; HISTORY: the 4th Army was broken within two days).",
+   "Wikipedia: within four days the 4th Army's strength fell from 117,800 to 35,000.",
+   "The Austro-Hungarian 7th Army was driven back (Wikipedia); Russians took Brody, Kolomyia, Chernivtsi and reached the Carpathian foothills (Wikipedia); Conrad had to close down the Trentino offensive and Germany moved divisions from the west (HISTORY).",
+   "Wikipedia casualties: Russian 500,000-1,000,000; Austro-Hungarian about 616,000; German 148,000-350,000.",
+   "HISTORY: Austro-Hungarian losses of 1.5 million men including 400,000 prisoners.",
+   "It relieved pressure on the French at Verdun and on the Italians, inflicted irreparable losses on the Austro-Hungarian Army, and induced Romania to join the Entente (Wikipedia; HISTORY: Austria-Hungary never again played a significant role).",
+   "Wikipedia: many historians contend Russia's casualties contributed significantly to the army's collapse in 1917 / the onset of the Russian Revolution."
+  ],
+  "disagree": "End: Wikipedia late September 1916; HISTORY 20 September. Losses: Wikipedia 500,000-1,000,000 Russian, about 616,000 Austro-Hungarian and 148,000-350,000 German (and 1-1.5 million Central Powers losses June-December 1916 from Russian archives); HISTORY 1.5 million Austro-Hungarian including 400,000 prisoners. Start: the event record's 22 May 1916 was the Julian (Old Style) date; it is corrected to 4 June 1916, given by Wikipedia, Rauchensteiner and HISTORY.",
+  "checked": null
+ }
+}
