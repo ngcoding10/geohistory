@@ -4337,5 +4337,141 @@
   ],
   "disagree": "Artillery on 21 March: NAM around 10,000 guns; NRS 6,500 guns and 3,500 heavy mortars. Attacking divisions: NAM 47; AWM 63 against 26 British; NRS 43 against the Fifth Army plus 19 against the Third. Start of Operation Georgette: NAM 7 April, NRS 9 April. Wikipedia refused automated requests (429) for this article during the batch and was not used.",
   "checked": null
+ },
+ "Q170360": {
+  "title": "Armistice of 22 June 1940",
+  "y": 1940,
+  "place": "Rethondes clearing, Forest of Compiègne (France)",
+  "paras": [
+   "On 22 June 1940, six weeks after the German invasion of France began on 10 May, the French government of Marshal Philippe Pétain signed an armistice with Nazi Germany in the Forest of Compiègne. The agreement was signed at 6.50 p.m. by General Wilhelm Keitel, chief of the German armed forces high command, and by a French delegation led by General Charles Huntziger that included the former ambassador Léon Noël. According to Hérodote, Hitler insisted on holding the ceremony at Rethondes in the very railway carriage in which the German delegates had signed the armistice of 11 November 1918, in order to wipe out that humiliation, and he sat in the place Marshal Foch had occupied before leaving the negotiators to their work.",
+   "The terms cut France in two. German troops would occupy the north and west of the country, including the Atlantic coast, while a zone south of a line from the Swiss border near Geneva to the Spanish border was left unoccupied; the French government could sit there or in Paris. In the occupied zone Germany held all the rights of an occupying power, and French officials had to cooperate with the German commanders. The French army, navy and air force were to be demobilised and disarmed, apart from forces needed to keep order, and the fleet was to be laid up in its ports under German or Italian control, Germany declaring that it would not use the ships for its own war. France also had to pay the costs of the German occupation.",
+   "Other articles bound France to hand over on demand any Germans in its territory named by the German government, a clause that, according to Hérodote, General Weygand protested in vain as a betrayal of the word given to political refugees and German Jews; French citizens who fought on for another country against Germany were to be treated as insurgents; and French prisoners of war were to stay in captivity until a peace treaty. Hérodote counts about 60,000 French soldiers killed in the campaign and 1.85 million taken prisoner, more than a million of whom remained in Germany for four years.",
+   "The agreement could take effect only once France had also made an armistice with Italy, and fighting was to stop six hours after Italy notified Germany of it; Hérodote gives the moment as 0.35 a.m. on 25 June 1940. Hérodote adds that leaving part of the country unoccupied was meant to dissuade the French leaders from setting up a government in exile. The armistice was to last until a peace treaty, and Germany could end it at any time if France failed in its obligations."
+  ],
+  "sources": [
+   {
+    "url": "https://avalon.law.yale.edu/wwii/frgearm.asp",
+    "title": "Armistice Agreement between the German High Command of the Armed Forces and French Plenipotentiaries, Compiègne, June 22, 1940",
+    "publisher": "The Avalon Project, Yale Law School",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://www.herodote.net/22_juin_1940-evenement-19400622.php",
+    "title": "22 juin 1940 - Armistice entre le IIIe Reich et la France",
+    "publisher": "Herodote.net",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The armistice was signed on 22 June 1940 in the Forest of Compiègne (Avalon: at 6:50 p.m., German summer time; Hérodote: 18h50).",
+   "Hérodote: six weeks after the invasion of France (begun 10 May 1940); the French side was the government of Marshal Pétain.",
+   "Signatories: Colonel General Wilhelm Keitel for the German High Command; French plenipotentiaries led by General Huntziger, with Ambassador Léon Noël, a rear admiral and an air force general (Avalon; Hérodote).",
+   "Hérodote: Hitler demanded that it be signed at Rethondes in the railway carriage of the 11 November 1918 armistice, to wash out the humiliation of 1918; he sat in Foch's place (citing William Shirer) and left after the preamble was read.",
+   "France north and west of the demarcation line was to be occupied; the line ran from the Swiss border at Geneva to the Spanish border (Avalon); the south was left unoccupied ('zone libre', Hérodote).",
+   "The French government could choose its seat in unoccupied territory or move to Paris (Avalon).",
+   "In occupied France Germany exercised all rights of an occupying power and French officials were to comply with and cooperate with German commanders (Avalon).",
+   "French armed forces were to be demobilised and disarmed except units needed for domestic order (Avalon).",
+   "The French fleet was to be collected in ports and laid up under German and/or Italian control; Germany declared it did not intend to use it in the war (Avalon; Hérodote: the text excluded claims on the fleet and colonies).",
+   "France bore the costs of maintaining the German occupation troops (Avalon).",
+   "France was obliged to surrender on demand all Germans named by the German government (Avalon); Hérodote: Weygand protested this article 19 as a betrayal of political refugees and German Jews, but Keitel refused to drop it.",
+   "French citizens fighting against Germany for other states were to be treated as insurgents (Avalon; Hérodote: as 'francs-tireurs', i.e. shot).",
+   "French prisoners of war were to remain prisoners until a peace was concluded (Avalon, Hérodote).",
+   "Hérodote: about 60,000 French soldiers died between 10 May and 25 June; 1,850,000 were captured; of 1.85 million prisoners, 1.6 million were sent to the Reich and more than a million stayed four years in Germany.",
+   "The agreement took effect once France had reached an armistice with Italy, with fighting stopping six hours after Italy notified Germany (Avalon); Hérodote: in force from 0.35 a.m. on 25 June 1940; Hérodote: the unoccupied zone was a German device to dissuade French leaders from a government in exile; the agreement was valid until a peace treaty and Germany could end it at any time if France defaulted (Avalon)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q665554": {
+  "title": "Japanese Instrument of Surrender",
+  "y": 1945,
+  "place": "USS Missouri, Tokyo Bay (Japan)",
+  "paras": [
+   "On 2 September 1945 Japan formally surrendered to the Allies in Tokyo Bay, ending the Pacific war and with it the Second World War; Germany had surrendered four months earlier. The Instrument of Surrender was signed, according to Hérodote on the deck of the American battleship Missouri, by Foreign Minister Mamoru Shigemitsu on behalf of the Emperor and the Japanese government and by General Yoshijiro Umezu, chief of the army general staff, on behalf of the Imperial General Headquarters. It was accepted by General Douglas MacArthur as Supreme Commander for the Allied Powers, and by representatives of the United States (Admiral Chester Nimitz), China, the United Kingdom, the Soviet Union, Australia, Canada, France (General Leclerc) and other Allied nations.",
+   "In the document Japan accepted the terms of the Potsdam Declaration, issued on 26 July 1945 by the United States, China and Britain and later joined by the Soviet Union, and proclaimed the unconditional surrender of the Imperial General Headquarters and of all Japanese armed forces wherever they were. Japanese forces and people were ordered to stop fighting at once and to preserve ships, aircraft and property; Allied prisoners of war and civilian internees were to be freed and cared for; and the authority of the Emperor and the Japanese government to rule was placed under the Supreme Commander.",
+   "The surrender followed months of defeat after the destruction of Japan's fleet at Midway, the dropping of atomic bombs on Hiroshima and Nagasaki on 6 and 9 August 1945, and the Soviet declaration of war and invasion of Manchuria on 9 August. Hérodote argues that the collapse of the Japanese army in Manchuria and the fear of a Soviet invasion weighed more with Japan's leaders than the atomic bombs. On 15 August Emperor Hirohito announced his decision to end the war, heard over loudspeakers in the streets; it was the first time his subjects had heard his voice.",
+   "A formal peace treaty was signed only on 8 September 1951 in San Francisco, by Japan with the United States and 47 other Allied nations; the Soviet Union and the People's Republic of China did not sign. Under it, Hérodote notes, Japan recognised the independence of Korea and gave up its claims to the Kurile Islands, Sakhalin and Taiwan."
+  ],
+  "sources": [
+   {
+    "url": "https://avalon.law.yale.edu/wwii/j4.asp",
+    "title": "Japanese Surrender Documents - WWII: Instrument of Surrender, 2 September 1945",
+    "publisher": "The Avalon Project, Yale Law School",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://www.herodote.net/2_septembre_1945-evenement-19450902.php",
+    "title": "2 septembre 1945 - Le Japon capitule, fin de la Seconde Guerre mondiale",
+    "publisher": "Herodote.net",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Japan signed the surrender in Tokyo Bay on 2 September 1945 (Avalon: signed at Tokyo Bay on the second day of September 1945; Hérodote: 2 September 1945, ending the Pacific war and the Second World War).",
+   "Hérodote: Germany had capitulated four months earlier; the act was signed on the deck of the US warship Missouri.",
+   "Signed by Mamoru Shigemitsu for the Emperor and the Japanese Government and Yoshijiro Umezu for the Imperial General Headquarters (Avalon); Hérodote: the new foreign minister Shigemitsu and the army chief of staff General Umezu.",
+   "Accepted by Douglas MacArthur as Supreme Commander for the Allied Powers and by representatives of the US (Nimitz), China, UK, USSR, Australia, Canada, France (Leclerc) and others (Avalon; Hérodote: France represented by General Leclerc).",
+   "Japan accepted the Potsdam Declaration issued on 26 July 1945 by the US, China and Great Britain and later adhered to by the USSR, and proclaimed the unconditional surrender of the Imperial General Headquarters and all Japanese armed forces wherever situated (Avalon).",
+   "All Japanese forces and people were commanded to cease hostilities and preserve ships, aircraft and property (Avalon).",
+   "Allied prisoners of war and civilian internees were to be liberated and cared for (Avalon).",
+   "The authority of the Emperor and government to rule was made subject to the Supreme Commander (Avalon).",
+   "Hérodote: Japan had kept losing ground after the destruction of its fleet at Midway; atomic bombs were dropped on Hiroshima and Nagasaki on 6 and 9 August 1945.",
+   "Hérodote: the USSR declared war on Japan the day before Nagasaki and invaded Manchuria on 9 August; Hérodote argues the collapse of the Kwantung army and fear of the Soviets did more than the bombs to persuade Japan's leaders.",
+   "Hérodote: on 15 August the Japanese heard the Emperor's voice for the first time over loudspeakers as he announced his decision to end the war.",
+   "Hérodote: the peace treaty was signed in San Francisco on 8 September 1951 by Japan and the US and 47 other Allied nations; the USSR and the People's Republic of China did not sign.",
+   "Hérodote: by the treaty Japan recognised Korea's independence and renounced claims to the Kuriles and Sakhalin and to Taiwan."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
