@@ -1294,5 +1294,144 @@
   ],
   "disagree": "Al Jazeera says about 90% of Africa was colonised by 1890; Wikipedia gives about 90% by 1914, which is the figure used here.",
   "checked": null
+ },
+ "Q130847": {
+  "title": "Battle of Verdun",
+  "y": 1916,
+  "place": "The hills north of Verdun, on both banks of the Meuse, France",
+  "paras": [
+   "The Battle of Verdun, from 21 February to 18 December 1916, was fought between the German and French armies around the fortress city of Verdun in northeastern France. At about 300 days it was the longest battle of the First World War. The German chief of staff Erich von Falkenhayn planned it; on the French side Philippe Pétain and later Robert Nivelle led the defence.",
+   "Falkenhayn's plan was to take the Meuse heights and destroy the French reserves that would be sent to win them back with massed artillery. Historians still debate whether he meant to capture Verdun or to 'bleed' the French army. After delays caused by fog and rain the attack opened on the morning of 21 February with a huge bombardment (the Mémorial de Verdun gives about 1,200 guns and 350,000 shells that day; Wikipedia gives 808 guns and about a million shells in ten hours). On 25 February the Germans took Fort Douaumont, defended by only a small garrison. Pétain, put in charge that night or the next day, ordered no retreat and kept the defence supplied by a single road from Bar-le-Duc, later called the Voie Sacrée ('Sacred Way'), along which, by the Mémorial's figures, some 90,000 men and 50,000 tonnes of material moved each week. He rotated division after division through the battle.",
+   "In June the Germans made their last big push: Fort Vaux surrendered on 7 June after a siege, and on 23 June they took most of the village of Fleury, about 5 km from the citadel. Nivelle's order that day was 'You will not let them pass'. The Allied offensive on the Somme from 1 July drew German troops and guns away, and the French then counter-attacked, retaking Fort Douaumont on 24 October with 6,000 prisoners, Fort Vaux in early November, and more ground on 15–18 December.",
+   "Losses on the two sides were almost equal: about 700,000 killed, wounded or missing in total, with French dead put at 148,000–163,000 and German dead at up to 143,000. Nine villages were destroyed and never rebuilt, and the Douaumont ossuary holds the remains of some 130,000 soldiers. For France Verdun became the symbol of the army's determination and of the destructiveness of the war."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Verdun",
+    "title": "Battle of Verdun",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://memorial-verdun.fr/en/ressources/la-bataille-de-verdun",
+    "title": "The Battle of Verdun",
+    "publisher": "Mémorial de Verdun",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The battle lasted from 21 February to 18 December 1916, about 302 days, the longest of the First World War, north of Verdun.",
+   "Falkenhayn planned to take the Meuse heights and destroy French reserves sent to recapture them by artillery.",
+   "Historians debate whether the aim was to bleed the French army or to take Verdun.",
+   "The attack was delayed by fog and rain and opened on 21 February with a massive bombardment (Wikipedia 808 guns, about 1,000,000 shells in ten hours; Mémorial about 1,200 guns, 350,000 shells that day).",
+   "Fort Douaumont fell on 25 February, defended by a small garrison (Mémorial about 50 men).",
+   "Pétain took command of the defence (Wikipedia: that night; Mémorial: 26 February) and ordered no retreat.",
+   "Mémorial: the Voie Sacrée from Bar-le-Duc carried about 90,000 men and 50,000 tonnes a week; Pétain rotated the reserve divisions.",
+   "Fort Vaux surrendered on 7 June after a siege from 2 June; on 23 June the Germans took most of Fleury, about 5 km from the citadel.",
+   "Nivelle's order of 23 June: 'You will not let them pass'.",
+   "The Somme offensive from 1 July drew German resources away; the French retook Douaumont on 24 October (6,000 prisoners), Vaux in early November and ground on 15–18 December.",
+   "Casualties: about 700,000 in total (Heer and Naumann 714,231; Mémorial almost 700,000); French dead 148,000–160,000 (Wikipedia) or 163,000 (Mémorial); German dead 71,000–143,000 (Wikipedia) or 143,000 (Mémorial).",
+   "Nine villages were destroyed and never rebuilt; the Douaumont ossuary holds about 130,000 soldiers' remains.",
+   "Verdun came to symbolise French determination and the destructiveness of the war."
+  ],
+  "disagree": "Figures differ between the sources: the opening bombardment (808 guns and about a million shells over ten hours in Wikipedia; about 1,200 guns and 350,000 shells that day in the Mémorial), the day Pétain took command (night of 25 February or 26 February), and the dead (Wikipedia 148,000–160,000 French and 71,000–143,000 German; the Mémorial 163,000 and 143,000).",
+  "checked": null
+ },
+ "Q193258": {
+  "title": "Treaty of Lausanne",
+  "y": 1923,
+  "place": "Lausanne, Switzerland",
+  "paras": [
+   "The Treaty of Lausanne, signed on 24 July 1923, was the peace treaty between Turkey, represented by the nationalist government of the Grand National Assembly in Ankara, and the British Empire, France, Italy, Japan, Greece, Romania and the Kingdom of the Serbs, Croats and Slovenes. It replaced the Treaty of Sèvres of 1920, which the Turkish National Movement had rejected and which was never ratified.",
+   "After Greece's defeat in the Greco-Turkish War, the Armistice of Mudanya in October 1922 ended the fighting, and a peace conference opened at Lausanne on 20 November 1922. İsmet Pasha (later İnönü) led the Turkish delegation, Lord Curzon the British and Eleftherios Venizelos the Greek. The talks lasted about eight months and were broken off more than once. On 30 January 1923 Greece and Turkey signed a separate convention for a compulsory exchange of populations from 1 May 1923: Turkish citizens of the Greek Orthodox faith were to go to Greece and Greek citizens of the Muslim faith to Turkey, except for the Greeks of Constantinople and the Muslims of Western Thrace.",
+   "The treaty, of 143 articles, fixed Turkey's frontier in Thrace along the Maritsa river and recognised Greek sovereignty over most of the Aegean islands, Italian possession of the Dodecanese and Britain's annexation of Cyprus; Turkey gave up its claims to Egypt, Sudan, Syria and Iraq. The border with British-held Iraq, and so the fate of Mosul, was left to later negotiation and if necessary the League of Nations. Turkey accepted protections for its non-Muslim minorities, the Ottoman public debt was divided among the successor states, and a separate convention opened the Straits to free navigation. The capitulations, the old privileges of foreigners in Turkey, were abolished completely.",
+   "Turkey ratified the treaty in August 1923 and it came into force on 6 August 1924. The United States, which was not a party, rejected a separate treaty with Turkey in the Senate in 1927. A declaration of amnesty attached to the treaty covered acts from 1914 to 1922, which critics say ended efforts to prosecute Ottoman crimes such as the Armenian genocide. The Straits regime was replaced by the Montreux Convention in 1936."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Lausanne",
+    "title": "Treaty of Lausanne",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://wwi.lib.byu.edu/index.php/Treaty_of_Lausanne",
+    "title": "Treaty of Lausanne (text)",
+    "publisher": "World War I Document Archive, Brigham Young University Library",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.mfa.gov.tr/lausanne-peace-treaty-vi_-convention-concerning-the-exchange-of-greek-and-turkish-populations-signed-at-lausanne_.en.mfa",
+    "title": "Convention Concerning the Exchange of Greek and Turkish Populations, Lausanne, 30 January 1923",
+    "publisher": "Republic of Türkiye, Ministry of Foreign Affairs",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6
+    ]
+   }
+  ],
+  "claims": [
+   "The treaty was signed at Lausanne on 24 July 1923 by Turkey (Government of the Grand National Assembly) and the British Empire, France, Italy, Japan, Greece, Romania and the Serb-Croat-Slovene State.",
+   "It replaced the unratified 1920 Treaty of Sèvres, rejected by the Turkish National Movement.",
+   "After Greece's defeat in the Greco-Turkish War, the Armistice of Mudanya was signed in October 1922; the conference opened on 20 November 1922.",
+   "İsmet İnönü, Lord Curzon and Venizelos were the chief negotiators; talks lasted about eight months with several Turkish withdrawals.",
+   "On 30 January 1923 Greece and Turkey signed a convention on the compulsory exchange of populations from 1 May 1923: Turkish nationals of Greek Orthodox religion and Greek nationals of Muslim religion.",
+   "Excluded: the Greek inhabitants of Constantinople and the Muslim inhabitants of Western Thrace.",
+   "The Thracian frontier with Greece follows the Maritza; Greek sovereignty over most Aegean islands (except Imbros, Tenedos and the Rabbit Islands); the Dodecanese to Italy; Britain's annexation of Cyprus recognised; claims to Egypt and Sudan renounced; Iraq frontier to be settled with Britain or by the League Council; minority protections (Articles 38–44).",
+   "The treaty has 143 articles; Turkey renounced claims to Syria and Iraq; the fate of Mosul was left to the League; the Ottoman debt was divided among successor states.",
+   "A Straits convention provided freedom of navigation; Article 28 accepted the complete abolition of the capitulations.",
+   "Turkey ratified on 23 August 1923; the treaty took effect on 6 August 1924; the US Senate refused to ratify a treaty with Turkey in 1927 (50–34).",
+   "A Declaration of Amnesty covered acts from 1914 to 1922, which critics say ended efforts to prosecute Ottoman war crimes including the Armenian genocide.",
+   "The Straits convention lasted until it was replaced by the Montreux Convention in 1936."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
