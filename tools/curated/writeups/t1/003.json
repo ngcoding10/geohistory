@@ -1650,5 +1650,188 @@
   ],
   "disagree": "Encyclopedia.com says the accords were signed on 19 March 1962, with the joint declarations dated 18 March; the ceasefire took effect on 19 March. Death tolls vary widely: Algerian deaths from about 400,000 to 1.5 million, French military deaths from about 23,000 to 25,600.",
   "checked": null
+ },
+ "Q466087": {
+  "title": "Convention on the Rights of the Child",
+  "y": 1989,
+  "place": "United Nations General Assembly, New York",
+  "paras": [
+   "The Convention on the Rights of the Child is the United Nations treaty that sets out the civil, political, economic, social and cultural rights of children, defined as everyone under eighteen unless the age of majority comes earlier under national law. The UN General Assembly adopted it on 20 November 1989, the thirtieth anniversary of the 1959 Declaration of the Rights of the Child. It binds the states that ratify it, and is monitored by the Committee on the Rights of the Child, a body of eighteen independent experts.",
+   "It grew out of a long line of earlier statements. In 1924 the League of Nations adopted the Geneva Declaration of the Rights of the Child, drafted by Eglantyne Jebb of Save the Children; in 1946 the UN set up UNICEF, and in 1959 the General Assembly adopted a non-binding Declaration of the Rights of the Child. In 1978 a draft convention was put forward in the UN Commission on Human Rights, and 1979 was declared the International Year of the Child.",
+   "The convention came into force on 2 September 1990, once twenty states had ratified it, and a World Summit for Children met in New York that year. Two Optional Protocols added in 2000 deal with children in armed conflict and with the sale and sexual exploitation of children, and a third, of 2011, lets the Committee hear complaints from individuals.",
+   "With the ratifications of Somalia and South Sudan in 2015 the convention reached 196 states parties, every UN member except the United States, which has not ratified it."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Convention_on_the_Rights_of_the_Child",
+    "title": "Convention on the Rights of the Child",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.unicef.org/child-rights-convention/history-child-rights",
+    "title": "History of child rights",
+    "publisher": "UNICEF",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "A child under the convention is any human being under eighteen unless majority is reached earlier under national law.",
+   "The UN General Assembly adopted the convention on 20 November 1989, the 30th anniversary of the 1959 Declaration of the Rights of the Child.",
+   "It is monitored by the Committee on the Rights of the Child of eighteen independent experts.",
+   "1924: the League of Nations adopted the Geneva Declaration on the Rights of the Child, drafted by Eglantyne Jebb of Save the Children; 1946: the UN established UNICEF.",
+   "1959: the UN General Assembly adopted the Declaration of the Rights of the Child.",
+   "1978: a draft convention was put forward in the Commission on Human Rights; 1979 was the International Year of the Child.",
+   "The convention entered into force on 2 September 1990 after 20 ratifications; the World Summit for Children met in New York in 1990.",
+   "Two Optional Protocols (armed conflict; sale and sexual exploitation) were adopted in 2000; a communications protocol in 2011 lets the Committee receive complaints.",
+   "Somalia and South Sudan ratified in 2015, bringing parties to 196; the United States is the only UN member that has not ratified."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q160387": {
+  "title": "Battle of Actium",
+  "y": -31,
+  "place": "Off Actium, at the mouth of the Ambracian Gulf, western Greece",
+  "paras": [
+   "The Battle of Actium, fought at sea on 2 September 31 BC off western Greece, decided the last civil war of the Roman Republic. Octavian, Julius Caesar's heir and later the emperor Augustus, whose fleet was commanded by Marcus Agrippa, defeated Mark Antony and his ally and partner Cleopatra VII, queen of Egypt.",
+   "After Caesar's murder in 44 BC Octavian and Antony had shared power, but their alliance broke down. Antony openly attached himself to Cleopatra and repudiated his wife, Octavian's sister, and Octavian's supporters published what was claimed to be Antony's will, which gave eastern territories to Cleopatra and her children. In 32 BC the two consuls and some 300 senators joined Antony in the east, and Rome declared war on Cleopatra, in effect on Antony. Antony gathered his fleet in the Ambracian Gulf with his army camped on the Actium promontory. From early 31 BC Agrippa crossed the Ionian Sea, took strongpoints on the Greek coast, among them Methone, and then sealed the gulf, while Octavian's army cut Antony's communications by land. Antony's forces suffered hunger, disease and desertion.",
+   "On 2 September Antony's fleet of large, heavy warships came out of the narrow mouth of the gulf, with Cleopatra's squadron of sixty ships, carrying the treasure, in the rear. Agrippa's lighter, more manoeuvrable ships blocked the way. After hours of waiting and indecisive fighting, Cleopatra's squadron broke through the line and sailed south; Antony transferred to a smaller ship and followed her with part of his fleet. The rest was trapped: more than 5,000 of Antony's men were killed, and within about a week his remaining ships and his army surrendered. The sources disagree widely on the size of the fleets.",
+   "Antony and Cleopatra escaped to Egypt. When Octavian invaded the next year, Antony was defeated at Alexandria in 30 BC and killed himself, and Cleopatra died soon after. Egypt became a Roman province, and Octavian, left as the sole ruler of the Roman world, received the title Augustus in 27 BC, the date usually taken as the beginning of the Roman Empire."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Actium",
+    "title": "Battle of Actium",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/battle-actium/",
+    "title": "Battle of Actium",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought on 2 September 31 BC near Actium; Octavian's fleet under Agrippa defeated Antony and Cleopatra.",
+   "Caesar was assassinated in 44 BC; a decade of rivalry between Antony and Octavian followed (Second Triumvirate broke down).",
+   "Antony attached himself to Cleopatra and repudiated his wife, Octavian's sister; Octavian's supporters published a purported will giving eastern territories to Cleopatra and her children.",
+   "In 32 BC the two consuls and 300 senators went east to Antony; war was declared on Cleopatra, effectively targeting Antony.",
+   "Antony's fleet lay in the Ambracian Gulf and his army on the Actium promontory; Agrippa captured Methone (Wikipedia).",
+   "EBSCO: in midwinter 31 BC Agrippa crossed the Ionian Sea from Italy and seized strong points on the Greek coast; his fleet sealed the gulf; Octavian cut Antony's land communications.",
+   "Antony's army suffered desertion, disease (and hunger).",
+   "Antony's ships were larger and heavier; Octavian's (Agrippa's) smaller and more manoeuvrable; fighting was inconclusive for hours.",
+   "EBSCO: Cleopatra's squadron of sixty ships carried the treasure in the rear.",
+   "Cleopatra's squadron withdrew/fled; Antony followed with part of his fleet (EBSCO: after transferring to a smaller ship).",
+   "More than 5,000 of Antony's men were killed; the remaining ships and army surrendered (EBSCO: within about a week); fleet sizes differ widely in the sources.",
+   "Antony was defeated at Alexandria in 30 BC and killed himself; Cleopatra died soon after; Egypt became a Roman province; Octavian received the title Augustus in 27 BC, often taken as the start of the Roman Empire."
+  ],
+  "disagree": "The ancient and modern figures for the fleets differ widely: Wikipedia cites both about 500 against 400 ships and about 140 against 260 for Antony and Octavian; EBSCO says only that Antony's fleet may at first have been slightly larger. Whether Cleopatra's and Antony's breakout was a planned escape or a flight is also debated.",
+  "checked": null
+ },
+ "Q488278": {
+  "title": "Battle of Uhud",
+  "y": 625,
+  "place": "Below Mount Uhud, north of Medina (Hejaz)",
+  "paras": [
+   "The Battle of Uhud was fought on 7 Shawwal in the third year of the Islamic calendar, usually given as 23 March 625, in a valley below Mount Uhud just north of Medina. A Meccan army of about 3,000 men led by Abu Sufyan fought the Muslims of Medina led by the Prophet Muhammad.",
+   "About 1,000 Muslims set out from Medina, but on the way Abd Allah ibn Ubayy turned back with some 300 men, leaving about 700. Muhammad posted fifty archers on a small hill under Abdullah ibn Jubayr to guard the army's rear and ordered them not to leave it whatever happened.",
+   "In the fighting most of the archers, about forty of the fifty in Sirah Atlas's account, left the hill to join in taking the spoils. Khalid ibn al-Walid, then still fighting for Mecca and commanding cavalry on its right wing, rode around the hill, overwhelmed the few archers who remained and fell on the Muslims from behind. The Muslim lines broke. Hamza ibn Abd al-Muttalib was killed by Wahshi ibn Harb, and Muhammad himself was wounded in the face by stones, which started a rumour that he had been killed.",
+   "About 70 Muslims died, against roughly 22 to 37 Meccans. Yet the Meccans did not press their advantage or attack Medina; they went home. Historians differ on whether Uhud should be called a Muslim defeat or a Meccan failure to achieve its aims. The war continued, and two years later, in 627, came the Battle of the Trench."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Uhud",
+    "title": "Battle of Uhud",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://sirah-atlas.com/en/battles/uhud",
+    "title": "The Battle of Uhud (625)",
+    "publisher": "Sirah Atlas (after Ibn Ishaq, al-Waqidi and Ibn Sa'd)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought on 7 Shawwal 3 AH, 23 March 625, near Mount Uhud north of Medina.",
+   "The Meccan army numbered about 3,000 under Abu Sufyan (Wikipedia: 100 cavalry; Sirah Atlas: 200 horsemen).",
+   "About 1,000 Muslims set out; Abd Allah ibn Ubayy withdrew with about 300, leaving about 700.",
+   "Fifty archers were posted on a hill under Abdullah ibn Jubayr and ordered not to leave their posts.",
+   "Many archers (Sirah Atlas: about 40 of 50) left the hill to take spoils from the Meccan camp.",
+   "Khalid ibn al-Walid's cavalry attacked from the rear and overran the Muslim lines.",
+   "Hamza was killed by Wahshi ibn Harb; Muhammad was wounded in the face by stones and rumours spread that he had died.",
+   "About 70 Muslims were killed (Wikipedia 62–75); Meccan dead 22–35 (Wikipedia) or 22/37 (Sirah Atlas); the Meccans withdrew without attacking Medina.",
+   "Historians differ on whether it was a Muslim defeat or a Meccan failure to achieve its aims.",
+   "The Battle of the Trench followed in 627."
+  ],
+  "disagree": "Figures differ: the Meccan cavalry is 100 in Wikipedia and 200 in Sirah Atlas; Meccan dead are put at 22–35 (Wikipedia) or 22 to 37 (Sirah Atlas); Muslim dead at 62–75, traditionally about 70.",
+  "checked": null
  }
 }
