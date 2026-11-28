@@ -148,6 +148,10 @@
    "The battle is considered a turning point; Lincoln gave the Gettysburg Address on 19 November 1863 at the cemetery dedication."
   ],
   "disagree": "Union casualties are 23,049 in the Official Records figure used by the American Battlefield Trust and 23,055 in Wikipedia's text; Confederate casualties range from 23,231 (Busey and Martin) to as many as 28,000. Wikipedia puts Pickett's Charge at about 12,000 men, the American Battlefield Trust at 12,500.",
-  "checked": null
+  "checked": {
+   "by": "https://www.nps.gov/gett/learn/historyculture/gettysburg-overview.htm",
+   "result": "7 claims checked: Meade's command, the opening on 1 July, Longstreet's 2 July attack on the Union left at Little Round Top, the Wheatfield and the Peach Orchard, the failed evening attacks on Culp's Hill and East Cemetery Hill, about 12,000 men in Pickett's Charge on 3 July, Lee's retreat from 4 July and Lincoln's visit on 19 November agree",
+   "errors": 0
+  }
  }
 }

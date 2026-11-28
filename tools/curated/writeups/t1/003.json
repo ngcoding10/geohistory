@@ -2554,8 +2554,12 @@
    "The republics became the Transvaal and Orange River colonies and in 1910 joined the Cape and Natal in the Union of South Africa.",
    "Emily Hobhouse exposed camp conditions; international opinion was hostile to Britain and there was significant opposition in the UK."
   ],
-  "disagree": "Wikipedia gives 26,000 deaths in the Boer camps (26,370 in its infobox); Fransjohan Pretorius gives 28,000 white and 20,000 black deaths. Wikipedia dates the relief of Mafeking to 18 May 1900, against the 17 May often given, so the text gives no day for it.",
-  "checked": null
+  "disagree": "Wikipedia gives 26,000 deaths in the Boer camps (26,370 in its infobox); Fransjohan Pretorius gives 28,000 white and 20,000 black deaths. Wikipedia dates the relief of Mafeking to 18 May 1900, against the 17 May often given, so the text gives no day for it. The National Army Museum puts Black African deaths in the camps at around half the Boer toll, lower than the 20,000 given by Wikipedia and Pretorius.",
+  "checked": {
+   "by": "https://www.nam.ac.uk/explore/boer-war",
+   "result": "5 claims checked: the SAR ultimatum of 9 October and war from 11 October 1899, the sieges of Kimberley, Mafeking and Ladysmith, the Black Week defeats at Stormberg, Magersfontein and Colenso, separate camps for Boer families and Black Africans, and 28,000 Boer deaths, mainly women and children, agree. The National Army Museum puts Black African camp deaths at around half the Boer figure (about 14,000), lower than the 20,000 given by Wikipedia and Pretorius; the difference is noted",
+   "errors": 0
+  }
  },
  "Q170314": {
   "title": "Second Sino-Japanese War",
@@ -2766,7 +2770,11 @@
    "The defeat allowed the pro-Soviet administration rather than the London government to take control of Poland; historians agree Stalin halted his forces deliberately; the uprising's meaning is debated."
   ],
   "disagree": "German losses are about 16,000 in Wikipedia and about 10,000 in the Hoover Institution's account; Wikipedia gives 150,000–200,000 civilian dead, Hoover 150,000. Hoover says more than 40,000 people were killed in Wola on 5–6 August alone; Wikipedia gives a range of 20,000–50,000 for Wola and Ochota, 40,000 in Wola by 8 August, or up to 100,000.",
-  "checked": null
+  "checked": {
+   "by": "https://www.history.com/this-day-in-history/August-1/warsaw-revolt-begins",
+   "result": "5 claims checked: the Home Army's ties to the London government, the Red Army's halt on the Vistula without aiding the rising, surrender on 2 October 1944 after 63 days, about 200,000 civilian dead (within the text's 150,000–200,000) and the deliberate razing of the city agree",
+   "errors": 0
+  }
  },
  "Q371394": {
   "title": "Bangladesh Liberation War",
@@ -2935,7 +2943,11 @@
    "25 April is a national holiday in Portugal."
   ],
   "disagree": "Wikipedia dates the shooting at the PIDE/DGS headquarters to 20:15 on 25 April; the Museu do Aljube's timeline places it in the late morning. Both give four dead.",
-  "checked": null
+  "checked": {
+   "by": "https://politicsabroad.com/article-carnation-revolution-portugal-1974.html",
+   "result": "5 claims checked: 'E Depois do Adeus' at 22:55 on 24 April, the banned 'Grândola, Vila Morena' at 00:20 on 25 April, Caetano's refuge at the GNR headquarters at Carmo, his handover of power to Spínola, and the failed coup of 25 November 1975 agree",
+   "errors": 0
+  }
  },
  "Q116691303": {
   "title": "2023 Turkey–Syria earthquakes",
