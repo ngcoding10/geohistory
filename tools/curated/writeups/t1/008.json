@@ -2115,5 +2115,312 @@
   ],
   "disagree": "Population and losses: Wikipedia gives about 25,000 inhabitants, about 20,000 dead and 1,700 of 1,900 buildings destroyed; the 1911 Britannica gives 36,000 inhabitants and about 140 houses left besides the cathedral. Recovery: 'with wonderful rapidity' (Britannica) against a census of 449 inhabitants in 1632 and ruins until 1720 (Wikipedia). Arrival of Falkenberg: September 1630 (Catholic Encyclopedia) or November 1630 (Wikipedia). Origin of the fire: attackers (Wikipedia) or the Swedes, as accused (Catholic Encyclopedia). Date: 20 May 1631 (Wikipedia, Catholic Encyclopedia) or 10 May in the Britannica, which uses the Old Style here. All stated and attributed in the text.",
   "checked": null
+ },
+ "cp06-12": {
+  "title": "Wallenstein is assassinated",
+  "y": 1634,
+  "place": "Eger (Cheb), Czech Republic",
+  "paras": [
+   "Albrecht von Wallenstein was a Bohemian nobleman, raised a Protestant, who had turned Catholic and made his fortune on the emperor's side in the Bohemian Revolt, acquiring confiscated rebel estates that became his duchy of Friedland. From 1625 he raised and commanded huge armies for Emperor Ferdinand II, paid for by levies on the territories they occupied. His power and his armies' exactions made him many enemies among the German princes, Catholic and Protestant alike, and in 1630 Ferdinand dismissed him. After Gustavus Adolphus of Sweden had beaten Tilly and occupied Munich, the emperor recalled him in 1632 with almost unlimited powers. Wallenstein drove the Saxons out of Bohemia, held off Gustavus at the Alte Veste near Nuremberg and fought the battle of Lützen, where the Swedish king was killed.",
+   "In 1633 he did little fighting, apart from a victory over the Swedes at Steinau on the Oder in October, and instead negotiated with Saxony, Brandenburg, Sweden and France. What he intended is unclear. The 1911 Encyclopaedia Britannica, followed by Wikipedia, says he wanted to 'force a just peace' on the emperor, including the revocation of the Edict of Restitution; the Catholic Encyclopedia calls the negotiations treason and suggests he was driven largely by a desire for revenge. Spain's envoys pressed the emperor to remove him, and his inactivity alarmed Vienna. On 12 January 1634, at Pilsen, his senior officers signed a declaration of loyalty to him. On 24 January Ferdinand signed a secret patent removing him from command, and on 18 February a patent charging him with high treason was published in Prague. The garrisons of Prague and Pilsen went over to the emperor.",
+   "With his command collapsing, Wallenstein left Pilsen on 23 February with a few close followers and, according to the Britannica, about 1,000 men, for Eger (Cheb), hoping to join the Swedes under Bernhard of Saxe-Weimar. At Eger the commandant, Colonel Gordon, and Colonels Butler and Leslie decided to kill him; the Catholic Encyclopedia describes the killers as two Protestant Scottish officers and one Catholic Irish officer of his own army. On the evening of 25 February his chief supporters, Illo, Kinsky, Terzky and Neumann, were received at a banquet by the three colonels and murdered, and soldiers then broke into Wallenstein's lodgings, where, as the Britannica relates, Captain Devereux killed him with a partisan. Most sources date the killing to 25 February 1634; the Catholic Encyclopedia's biography of Wallenstein gives 24 February.",
+   "According to the Britannica no direct order for the murder had been given, but it was well understood that his death would be welcome at court, and the killers were richly rewarded. Command of the imperial army passed to the emperor's son Ferdinand, King of Hungary, with Matthias Gallas as its real commander. Without Wallenstein's organisation the emperor came to rely on Spanish help, and in September 1634 the combined imperial and Spanish armies defeated the Swedes at Nördlingen."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Wallenstein,_Albrecht_Wenzel_Eusebius_von",
+    "title": "Wallenstein, Albrecht Wenzel Eusebius von, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Albrecht_von_Wallenstein",
+    "title": "Albrecht von Wallenstein, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     6,
+     7,
+     10,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Albrecht_von_Wallenstein",
+    "title": "Albrecht von Wallenstein (rev 1386428638, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Thirty_Years_War",
+    "title": "Thirty Years War, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     6,
+     12,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thirty_Years%27_War",
+    "title": "Thirty Years' War, by C. F. Atkinson, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     6,
+     12,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+    "title": "Thirty Years' War (rev 1386262455, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     12,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Wallenstein belonged to a Czech/Bohemian noble family of the Bohemian Brethren (CE Wallenstein); converted to Catholicism (Wikipedia: in 1606; CE: became a Catholic at the Jesuit college at Olmutz); fought for the emperor against the Bohemian rebels and received confiscated estates after the White Mountain, which formed Friedland (CE; Wikipedia).",
+   "From 1625 he raised armies for Ferdinand II (Wikipedia: 1625, 50,000 men; CE: appointed 7 April 1625; EB Wallenstein), supported by assigning territories / living on the country (CE; EB Thirty Years' War: an army that lived on the country, its exactions systematic).",
+   "His ambitions and the abuses of his forces earned him a host of enemies, Catholic and Protestant (Wikipedia; EB Wallenstein: a host of enemies; CE Thirty Years' War: League's demand for his dismissal); dismissed in 1630 (Wikipedia: decision at Regensburg 13 August 1630, envoys in September; EB Wallenstein: September 1630 envoys; CE Thirty Years' War: 13 August 1630).",
+   "After Tilly's defeats at Breitenfeld and on the Lech and the advance to Munich, the emperor recalled him (EB Wallenstein; Wikipedia; EB Thirty Years' War; CE Thirty Years' War: contract 13 April 1632); with powers that made him an independent prince (EB Wallenstein: placed absolutely under his control; CE Thirty Years' War: powers so great as to raise suspicion).",
+   "Drove the Saxons from Bohemia, opposed Gustavus near Nuremberg and dislodged him after the Alte Veste; Lützen in November 1632, Gustavus killed (EB Wallenstein; Wikipedia).",
+   "1633: little fighting; victory at Steinau on the Oder in October (EB Wallenstein; Wikipedia; CE Wallenstein: Steinau in Silesia in October; EB Thirty Years' War: 11 October 1633); negotiations with Saxony, Brandenburg, Sweden and France (EB Wallenstein; Wikipedia; CE Wallenstein: Swedes, Saxony, France; CE Thirty Years' War).",
+   "Intentions: 'force a just peace on the emperor in the interests of united Germany', revocation of the Edict (EB Wallenstein; Wikipedia, same wording), attributed; CE Wallenstein: negotiations finally led him into treason, the impelling force probably largely the desire for revenge (attributed).",
+   "The Spanish ambassador at Vienna urged his removal (CE Wallenstein); EB Wallenstein: the emperor encouraged by the Spaniards at his court; his inactivity alarmed Vienna (EB Wallenstein: much astonishment; Wikipedia: caused much concern in Vienna and in Spain).",
+   "Banquet of officers on 12 January 1634 and signed declaration of loyalty (EB Wallenstein, attributed); at Pilsen, his headquarters since December (EB Wallenstein; Wikipedia: December, Pilsen).",
+   "Secret patent of 24 January 1634 removing him (EB Wallenstein; Wikipedia); patent for high treason signed 18 February and published in Prague (EB Wallenstein; Wikipedia: open patent 18 February published in Prague).",
+   "Prague and Pilsen deserted him and went over to the emperor (CE Wallenstein; EB Wallenstein: refusal of the garrison of Prague to take his orders).",
+   "On 23 February he went from Pilsen to Eger with his intimate friends and about 1,000 men, hoping to meet the Swedes under Duke Bernhard (EB Wallenstein, attributed for the number); murdered at Eger (CE Wallenstein; CE Thirty Years' War; EB Thirty Years' War; Wikipedia Thirty Years' War: Cheb; Wikipedia Wallenstein: assassinated at Eger in Bohemia).",
+   "Gordon (commandant), Butler and Leslie agreed to kill him (EB Wallenstein); CE Wallenstein: murdered by two Protestant Scotch officers and one Catholic Irish officer of his own army (attributed).",
+   "Evening of 25 February: Illo, Kinsky, Terzky and Neumann murdered at a banquet; Butler, Devereux and soldiers broke into his room; killed by a thrust of Devereux's partisan (EB Wallenstein, attributed).",
+   "Date: 25 February 1634 (EB Wallenstein; EB Thirty Years' War: 15/25 February; CE Thirty Years' War: 25 February 1634; Wikipedia Thirty Years' War: Cheb on the 25th); CE Wallenstein: died at Eger 24 February 1634 (attributed); no direct orders, deed welcome at court, murderers handsomely rewarded (EB Wallenstein, attributed); command under the king of Hungary, Ferdinand's heir, really Gallas (EB Thirty Years' War; CE Thirty Years' War: Ferdinand's son assumed command); reliance on Spain, Nördlingen September 1634 (Wikipedia Thirty Years' War; CE Thirty Years' War: 6 September 1634; EB Thirty Years' War)."
+  ],
+  "disagree": "Date of death: 25 February 1634 (1911 Britannica, Catholic Encyclopedia's Thirty Years War article, Wikipedia) or 24 February (Catholic Encyclopedia's biography of Wallenstein); stated in the text. His aims: a 'just peace' in the interests of a united Germany (1911 Britannica, followed by Wikipedia) or treason driven by revenge (Catholic Encyclopedia); both attributed. Wikipedia's account of 1633-1634 follows the Britannica's wording closely, so the Catholic Encyclopedia is the independent check.",
+  "checked": null
+ },
+ "Q312212": {
+  "title": "Battle of Nördlingen",
+  "y": 1634,
+  "place": "Nördlingen, Bavaria, Germany",
+  "paras": [
+   "After the death of Gustavus Adolphus at Lützen in 1632, Sweden and its German allies of the League of Heilbronn still held much of southern Germany, which cut the Spanish Road, the overland route by which Spain supplied its war against the Dutch. With Wallenstein murdered in February 1634, Emperor Ferdinand II relied more on Spain. His son Ferdinand, King of Hungary, took command of the imperial army, with Matthias Gallas in real command, retook Regensburg and Donauwörth, and laid siege to the Swedish-held town of Nördlingen. On 2 September a Spanish army under the Cardinal-Infante Ferdinand, on its way from Italy to the Netherlands, joined him there.",
+   "The Swedish commanders, Marshal Gustav Horn and Bernhard of Saxe-Weimar, marched to relieve the town. Horn wanted to wait for reinforcements, but Bernhard pressed for an immediate attack, and they badly underestimated the Spanish force. Wikipedia, drawing on modern studies, puts the Protestant army at about 26,000, including 8,000 poorly trained Württemberg militia, against more than 33,000 Spanish and imperial troops; the 1911 Encyclopaedia Britannica calls the Catholic army only 'somewhat superior'.",
+   "The battle was fought on 5 and 6 September 1634. On the 5th the Protestant army moved onto a line of hills south of the town and fought for them into the night. Early on the 6th Horn's troops repeatedly attacked the Albuch hill, held by veteran Spanish infantry; according to Wikipedia they briefly drove back its defenders, but a Spanish counter-attack restored the line, and assault after assault failed while Gallas and the Spanish commanders kept feeding in fresh troops. When Horn began to pull back, the Spanish and imperial troops advanced, routed Bernhard's cavalry and fell on Horn's men from two sides, and the Swedish army broke up.",
+   "Losses are given differently. Wikipedia gives 12,000 to 14,000 Protestant casualties (some sources, it notes, say up to 16,000), including 4,000 prisoners, against 3,500 on the other side; the 1911 Britannica's article on the war gives 17,000 Swedish and allied losses against 2,000, and its article on Nördlingen says Horn was captured with 3,000 men. Bernhard escaped with the survivors to Heilbronn.",
+   "Nördlingen ended Swedish power in southern Germany; the Britannica says the model army of Gustavus perished there. The imperial army retook Württemberg, and the Cardinal-Infante went on to the Netherlands. Saxony made peace with the emperor, formalised in the Peace of Prague of May 1635, which most of the German princes accepted. The collapse of Sweden's German alliance brought France openly into the war: in 1635 it made a new alliance with Sweden, paid for an army under Bernhard of Saxe-Weimar, and in May declared war on Spain."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_N%C3%B6rdlingen_%281634%29",
+    "title": "Battle of Nördlingen (1634) (rev 1385582598, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/N%C3%B6rdlingen",
+    "title": "Nördlingen, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thirty_Years%27_War",
+    "title": "Thirty Years' War, by C. F. Atkinson, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     7,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Thirty_Years_War",
+    "title": "Thirty Years War, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+    "title": "Thirty Years' War (rev 1386262455, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Sweden and allies (Heilbronn League, 1633) occupied much of southern Germany, blocking the Spanish Road used to support Spain's war against the Dutch (Wikipedia Nördlingen; Wikipedia Thirty Years' War; CE: in southwestern Germany the Swedes had the strongest army).",
+   "Wallenstein's removal/murder in February 1634 made the emperor more reliant on Spain (Wikipedia Nördlingen; Wikipedia Thirty Years' War; EB Thirty Years' War: the emperor decided to continue the war in alliance with Spain).",
+   "Command under the king of Hungary, Ferdinand's heir, really Gallas; recaptured Regensburg and Donauwörth (EB Thirty Years' War; CE: Ferdinand's son assumed command; Maximilian drove the Swedes out of Ratisbon).",
+   "The Cardinal-Infante joined with an army from Italy on his way to the Netherlands; the armies linked up on 2 September (Wikipedia Nördlingen; Wikipedia Thirty Years' War: met at Donauwörth on 2 September; EB Thirty Years' War: Cardinal Infante on his way from Italy to the Netherlands; CE: imperial and Bavarian armies united at Nördlingen); Nördlingen was held by a Swedish garrison and besieged (Wikipedia Nördlingen; CE: which the Swedes under Horn had wished to capture).",
+   "Commanders Horn and Bernhard of Saxe-Weimar (Wikipedia Nördlingen; EB Nördlingen; CE: Swedes under Horn); Horn wanted to wait, Bernhard urged an immediate attack, underestimating the Spanish (Wikipedia Nördlingen).",
+   "Strengths: about 26,000 Protestants including 8,000 Württemberg militia, against over 33,000 (Wikipedia Nördlingen, attributed); EB Nördlingen: a somewhat superior army of Imperialists and Spaniards (attributed).",
+   "Fought on 5 and 6 September 1634 (Wikipedia Nördlingen; EB Nördlingen: 5th and 6th of September 1634; EB Thirty Years' War: 27 August/6 September; CE: 6 September 1634).",
+   "5 September: Protestant army seized hills south of Nördlingen; fighting until near midnight; 6 September: repeated assaults on the Albuch held by Spanish veterans, initial success, Spanish counter-attack, reinforcements fed in by Leganés and Gallas; Horn's withdrawal turned into a rout, Bernhard's cavalry routed, Horn's men attacked from two sides (Wikipedia Nördlingen, attributed for the initial success).",
+   "Wikipedia: 12,000-14,000 casualties, other sources up to 16,000; 4,000 prisoners; 3,500 on the other side (attributed).",
+   "EB Thirty Years' War: loss of 17,000 men to 2,000 of the defenders; EB Nördlingen: Horn and 3,000 men made prisoner (attributed); Wikipedia: Horn captured, held until 1642.",
+   "Bernhard reached Heilbronn with the survivors (Wikipedia Nördlingen); Nördlingen destroyed Swedish power in southern Germany (Wikipedia Nördlingen; Wikipedia Thirty Years' War: cost Sweden control of southern Germany); the model army of Gustavus perished there (EB Thirty Years' War, attributed); CE: destroyed the remainder of the finely disciplined troops to which Gustavus owed his successes.",
+   "Imperial army retook most of Württemberg; Cardinal-Infante continued to the Netherlands (Wikipedia Nördlingen; EB Thirty Years' War: Gallas reconquered the towns of southern Franconia); Saxony made peace, Peace of Prague May 1635 (Wikipedia Nördlingen; CE: 30 May 1635, most German rulers agreed; EB Thirty Years' War: 20/30 May 1635).",
+   "France made a new alliance with Sweden (April 1635) and financed an army under Bernhard in the Rhineland; formally declared war on Spain in May 1635 (Wikipedia Nördlingen; CE: Richelieu had to declare war, May 1635; Wikipedia Thirty Years' War: Richelieu provided the Swedes with new subsidies, hired Bernard's mercenaries, May 1635)."
+  ],
+  "disagree": "Losses: 12,000-14,000 Protestant casualties (some sources up to 16,000) and 4,000 prisoners against 3,500 (Wikipedia); 17,000 against 2,000 (1911 Britannica, Thirty Years' War) and 3,000 prisoners with Horn (Britannica, Nördlingen). Strength: over 33,000 against about 26,000 (Wikipedia) or a 'somewhat superior' Catholic army (Britannica). All attributed in the text. The battle is dated 5-6 September 1634 by Wikipedia and the Britannica's Nördlingen article; the Catholic Encyclopedia and the Britannica's war article give 6 September, the main day.",
+  "checked": null
+ },
+ "cp18-099": {
+  "title": "Khanate of Kokand founded",
+  "y": 1709,
+  "place": "Fergana Valley (Kokand), Uzbekistan",
+  "paras": [
+   "In the early 18th century the Uzbek Khanate of Bukhara, ruled by the Ashtarkhanid (Astrakhanid) dynasty, was losing its hold over the valley of the Syr Darya. In the west, Kazakhs held Tashkent and Turkestan; in the east, in the fertile Fergana Valley, power passed to local rulers, among them heads of Khoja (Sufi) families who governed individual towns, while Kyrgyz, Kazakh and Oirat (Dzungar) nomads raided the region.",
+   "Wikipedia dates the founding of the Khanate of Kokand to 1709, when Shahrukh Biy, leader of the Ming tribe of Uzbeks, built the fortress of Koktonliq Ata near Kokand and became ruler of the area; he reigned until 1722. The early history is poorly recorded, as the 1911 Encyclopaedia Britannica notes. The 19th-century historian Henry Howorth, relying on traditions preserved by Mahsum Khoja, which he calls unsatisfactory but the only material available, says that Shah Rukh, a man of noble but not royal birth, arrived in Fergana at the beginning of the century, married the daughter of the Khoja ruler of the town of Khurram Serai, settled at Kurkan a few miles west of Kokand, then killed his father-in-law and made himself master of the district.",
+   "Shahrukh was succeeded by his eldest son Abd al-Rahim and then by another son, Abd al-Karim. Abd al-Rahim occupied Khujand and Ura-Tyube and, for six months, Samarkand, and Abd al-Karim built the present city of Kokand and made it the capital; Wikipedia dates the new fortress and capital to 1740, while the Britannica says the town was founded by Abd al-Rahim in 1732 under the name of Iski-kurgan. Under Abd al-Karim, Kokand survived invasions by the Dzungars in the 1740s, and his successor Irdana Biy (Erdeni) submitted to the Chinese Qing emperor after the Qing conquest of Dzungaria and East Turkestan in 1758–1759.",
+   "Kokand's rulers used the title biy (a form of beg) through the 18th century. In the early 19th century Alim brought the other towns of Fergana under his rule and conquered Tashkent, and under his successors, styled khans, Kokand became a powerful state, which later fought Bukhara and the advancing Russians. Russia annexed the khanate after taking Kokand and Andijan in February 1876, and turned it into the province of Fergana."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Kokand",
+    "title": "Khanate of Kokand (rev 1382464740, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Khokand",
+    "title": "Khokand, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     8,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://archive.org/download/p2historyofmongo02howouoft/p2historyofmongo02howouoft_djvu.txt",
+    "title": "Henry H. Howorth, History of the Mongols, part II, division II (London, 1880), chapter IX, Khokand and Tashkend, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "In the early 18th century Bukhara's authority over Fergana was weakening (Wikipedia); Howorth: at the beginning of the last century, when the power of the Astrakhanids was growing feeble, the greater part of the valley of the Jaxartes passed out of their control.",
+   "Kazakhs masters of Tashkent and Turkestan in the western part until 1740 (Howorth); in Ferghana heads of Khoja or Seyid families appointed rulers of towns (Howorth); Sufi Khojas' authority increasing (Wikipedia).",
+   "Invasions by nomadic Kyrgyz, Kazakhs and Oirats (Wikipedia); Kazaks owning allegiance to the Sungar Kalmuks (Howorth).",
+   "1709: Shahrukh Biy, leader of the Ming tribe, established the Koktonliq Ata fortress near Kokand, becoming its ruler; r. 1709–1722 (Wikipedia, attributed).",
+   "Early history not well known (EB Khokand); Howorth: early history obscure; traditions of Mahsum Khoja, unsatisfactory but the only materials available.",
+   "Howorth (attributed): Shah Rukh bek, of noble but not royal birth, came to Ferghana at the beginning of the last century, married the daughter of Yadigar Khoja, ruler of Khurram Serai, settled at Kurkan twelve miles west of Khokand, murdered his father-in-law and made himself master of the district; the Ming tribe dominated Khokand (Howorth; Wikipedia: Ming tribe).",
+   "Succession: eldest son Rahim (Abd al-Rahim), then his brother Abdul Kerim (Abd al-Karim) (Howorth; Wikipedia).",
+   "Abd al-Rahim briefly occupied Khujand, Urateppe and Samarkand (Wikipedia); Abd al-Karim built the present city of Khokand and moved his residence there (Howorth); Wikipedia: in 1740 Abd al-Karim had the Kokand fortress built, the new capital; EB: town (fort) founded in 1732 by Abd-ur-Rahim under the name of Iski-kurgan (attributed); both dates attributed.",
+   "Dzungar invasions in 1742 and 1745 resisted under Abd al-Karim (Wikipedia); text says 'in the 1740s'.",
+   "Irdana Biy (Erdeni) entered relations with / submitted to the Qing emperor Qianlong (Wikipedia; Howorth: Erdeni sent an official to tender his submission to the emperor Kien Lung in 1759); the Chinese conquered Dzungaria and East Turkestan in 1758–1759 and the begs of Ferghana recognised Chinese suzerainty (EB).",
+   "Rulers used the title biy through the 18th century (Wikipedia); in the early 19th century Alim brought the begs of Ferghana under his authority and conquered Tashkent (EB: 1807 or 1808, Tashkent and Chimkent; Wikipedia: Alim conquered the western half of the valley including Khujand and Tashkent).",
+   "Kokand became a powerful state, fought Bukhara and Russia (EB; Wikipedia: Urateppe fighting with Bukhara for 140 years; Russian Empire abolished the khanate).",
+   "Russia annexed the khanate in 1876 (Wikipedia: abolished in 1876; EB: ended in February 1876 by the capture of Andijan and Khokand and annexation; made into the Russian province of Ferghana)."
+  ],
+  "disagree": "Founding of the city of Kokand: 1740 by Abd al-Karim (Wikipedia; Howorth also credits Abdul Kerim with building the present city) or 1732 by Abd al-Rahim under the name Iski-kurgan (1911 Britannica, which adds that this can refer only to the fort). Both stated. The 1709 founding date is Wikipedia's; Howorth gives only 'the beginning of the last century' and calls his sources unsatisfactory, so the date is attributed.",
+  "checked": null
  }
 }
