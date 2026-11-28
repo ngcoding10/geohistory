@@ -327,7 +327,11 @@
    "The battle ended German hopes of a quick victory over France; Moltke was replaced by Falkenhayn; the Race to the Sea and trench warfare followed."
   ],
   "disagree": "Dates: 5–12 September 1914 (Wikipedia) or 5–9 September (EBSCO). Width of the gap between the German First and Second Armies: about 20 miles (EBSCO) or 30 miles (HISTORY.com). HISTORY.com puts Joffre's counterattack order on 5 September, Wikipedia and EBSCO on 4 September. HISTORY.com gives deaths as 'upwards of 100,000' on both sides; Wikipedia's casualty estimates (killed, wounded and missing) are far higher.",
-  "checked": null
+  "checked": {
+   "by": "https://www.history.com/this-day-in-history/first-battle-of-the-marne-begins",
+   "result": "Claims 6 and 8 checked: Kluck pursued the French Fifth Army across the Marne instead of staying level with Bülow; Maunoury's Sixth Army attacked his flank. Confirmed.",
+   "errors": 0
+  }
  },
  "Q156554": {
   "title": "Battle of Jutland",
@@ -590,7 +594,11 @@
    "The project controlled US atomic research until the Atomic Energy Commission was formed in January 1947."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://www.osti.gov/opennet/manhattan-project-history/Events/1942-1944_pu/cp-1_critical.htm",
+   "result": "Claim 8 checked: Fermi's CP-1 achieved the first self-sustaining chain reaction on 2 December 1942. Confirmed.",
+   "errors": 0
+  }
  },
  "Q80130": {
   "title": "Nuremberg trials",
@@ -665,7 +673,11 @@
    "Twelve subsequent US trials (1946–1949) tried doctors, judges, industrialists and others; the trials are seen as the beginning of international criminal law."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://avalon.law.yale.edu/imt/judsent.asp",
+   "result": "Claims 7 and 12 checked against the tribunal's sentences: twelve death sentences including Bormann in absentia; prison terms from ten years (Dönitz) to life; Göring, Ribbentrop, Keitel, Jodl, Hess and Speer among the defendants. Confirmed.",
+   "errors": 0
+  }
  },
  "Q171375": {
   "title": "Truman Doctrine",
@@ -731,7 +743,11 @@
    "It was followed by the Marshall Plan and NATO (1949)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://www.archives.gov/milestone-documents/truman-doctrine",
+   "result": "Claims 1 and 8 checked: message to a joint session on 12 March 1947 asking $400 million for Greece and Turkey. Confirmed.",
+   "errors": 0
+  }
  },
  "Q151349": {
   "title": "Berlin Blockade",
@@ -879,7 +895,11 @@
    "The treaty has 32 members (12 founding, 4 more before 1991, 16 after)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://www.nato.int/cps/en/natohq/topics_67656.htm",
+   "result": "Claims 1 and 8 checked: signed 4 April 1949 by 12 founding members; collective defence in Article 5. Confirmed.",
+   "errors": 0
+  }
  },
  "Q11264": {
   "title": "Cuban Revolution",
@@ -956,7 +976,11 @@
    "The US imposed/tightened a trade embargo; the CIA-backed Bay of Pigs invasion failed in 1961; the Cuban Missile Crisis followed (1962)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://history.blog.gov.uk/2017/01/08/whats-the-context-8-january-1959-fidel-castro-enters-havana-in-triumph/",
+   "result": "Claims 12-13 checked: Batista fled on the night of New Year's Eve 1958 (consistent with the early hours of 1 January 1959); Castro entered Havana on 8 January 1959. Both confirmed.",
+   "errors": 0
+  }
  },
  "Q604897": {
   "title": "Battle of Dien Bien Phu",
@@ -1108,7 +1132,11 @@
    "23 August is a European day of remembrance for victims of Stalinism and Nazism."
   ],
   "disagree": "Length of the chain: about 675 km (Wikipedia), about 650 km (military heritage project) or 430 miles (Wisconsin Nonviolence Project).",
-  "checked": null
+  "checked": {
+   "by": "https://www.vaticannews.va/en/world/news/2019-08/estonia-latvia-lithuania-30th-baltic-way-protest.print.html",
+   "result": "Claims 1 and 10 checked: 23 August 1989, nearly two million people, chain of more than 600 km. Consistent.",
+   "errors": 0
+  }
  },
  "Q221382": {
   "title": "1991 Soviet coup attempt",
@@ -1189,7 +1217,11 @@
    "Gorbachev resigned on 25 December 1991 and the Soviet Union was voted out of existence on 26 December."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://www.history.com/this-day-in-history/coup-attempt-against-gorbachev-collapses",
+   "result": "Claims 10 and 14 checked: the coup began 18 August and collapsed on 21 August; Gorbachev resigned in December 1991. Confirmed.",
+   "errors": 0
+  }
  },
  "Q131297": {
   "title": "1994 Genocide against the Tutsi",
@@ -1280,7 +1312,11 @@
    "The UN set up the ICTR on 8 November 1994 in Arusha; it indicted 93 people and sentenced interim prime minister Jean Kambanda to life (UN)."
   ],
   "disagree": "Death toll: more than one million (UN outreach programme; Rwanda's constitution), up to 800,000 (HISTORY.com), most scholarly estimates 500,000–662,000 Tutsi (as summarised by Wikipedia). Rapes: 250,000–500,000 (Wikipedia) or 150,000–250,000 women (UN). Founding of the ICTR: 8 November 1994 (UN) or October 1994 (HISTORY.com).",
-  "checked": null
+  "checked": {
+   "by": "https://unictr.irmct.org/en/tribunal",
+   "result": "Claim 14 checked: the ICTR sat in Arusha and indicted 93 individuals. Confirmed.",
+   "errors": 0
+  }
  },
  "Q81545": {
   "title": "Libyan Civil War (2011)",
@@ -1366,7 +1402,11 @@
    "The NTC struggled to control militias, leading to instability and a second civil war."
   ],
   "disagree": "Start of the uprising: protests began on 15 February 2011 (Wikipedia, Al Jazeera); 17 February was the announced 'day of revolt'.",
-  "checked": null
+  "checked": {
+   "by": "https://globalnews.ca/news/168180/timeline-libyan-civil-war-february-15-october-20-2011",
+   "result": "Claims 2, 4 and 13 checked: protests began in Benghazi on 15 February after a lawyer's arrest; 17 February was the planned 'day of rage'; Gaddafi was captured and killed on 20 October 2011. Confirmed.",
+   "errors": 0
+  }
  },
  "Q194378": {
   "title": "Third Servile War",
@@ -1594,6 +1634,10 @@
    "The sack is traditionally seen as the end of the Islamic Golden Age, though its effects are debated; Baghdad prospered under the Ilkhanate but was overshadowed by Tabriz."
   ],
   "disagree": "Start of the assault: 29 or 30 January 1258 (Wikipedia); Rashid al-Din's chronicle gives 29 January. Deaths: the De Re Militari introduction gives nearly 80,000; later Muslim writers 800,000 to two million and Hulegu two million, figures Wikipedia describes as inflated. The De Re Militari introduction says the caliph was strangled a few days after his defeat; Wikipedia describes him being trampled in a carpet after the amnesty of 20 February.",
-  "checked": null
+  "checked": {
+   "by": "https://www.warhistoryonline.com/medieval/the-sack-of-baghdad-in-1258.html",
+   "result": "Claims 2, 3 and 7 checked: Hulagu destroyed Alamut; the caliph rejected the offer to surrender; most of the defences were destroyed by early February. Consistent.",
+   "errors": 0
+  }
  }
 }
