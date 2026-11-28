@@ -92,6 +92,28 @@
    "source": "https://www.canada.ca/en/parks-canada/news/2017/11/the_second_battleofypres22april-25may1915.html",
    "source2": "https://www.veterans.gc.ca/en/remembrance/military-history/first-world-war/2nd-battle-ypres",
    "verified": false
+  },
+  {
+   "q": "Q190712",
+   "set": {
+    "m": 9,
+    "dd": 5
+   },
+   "note": "Wikidata dates this 8 September 1914, in the middle of the battle; the battle began on 5 September 1914 (Wikipedia: 5-12 September; EBSCO: 5-9 September).",
+   "source": "https://en.wikipedia.org/api/rest_v1/page/html/First_Battle_of_the_Marne",
+   "source2": "https://www.ebsco.com/research-starters/military-history-and-science/first-battle-marne",
+   "verified": false
+  },
+  {
+   "q": "Q221967",
+   "set": {
+    "m": 6,
+    "dd": 4
+   },
+   "note": "Wikidata dates the start 22 May 1916, the Julian (Old Style) date; the offensive began on 4 June 1916 in the Gregorian calendar.",
+   "source": "https://austria-forum.org/web-books/en/firstworldwar01en2014isds/000528",
+   "source2": "https://www.history.com/this-day-in-history/june-4/brusilov-offensive-begins",
+   "verified": false
   }
  ]
 }

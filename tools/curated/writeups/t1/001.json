@@ -504,7 +504,7 @@
   "place": "The English Channel and the coast of Flanders",
   "paras": [
    "In 1588 Philip II of Spain sent a great fleet, the Armada, to sweep the English Channel and escort the Duke of Parma's army from Flanders across to invade England. He meant to overthrow the Protestant Elizabeth I, end English support for the Dutch rebels and stop English privateers raiding Spanish ships and colonies. The execution of the Catholic Mary, Queen of Scots, in February 1587 hardened his resolve, and Francis Drake's raid on Cádiz in April 1587 set the preparations back by about a year.",
-   "The fleet was commanded by the Duke of Medina Sidonia, a capable administrator with no experience at sea, appointed after the death of the admiral Santa Cruz. It left Lisbon with about 130 ships and close to 30,000 sailors and soldiers. The English fleet, under Lord Howard of Effingham with Drake and John Hawkins, had more ships but they were smaller and handier.",
+   "The fleet was commanded by the Duke of Medina Sidonia, a capable administrator with no experience at sea, appointed after the death of the admiral Santa Cruz. It left Lisbon (in late May 1588 according to Wikipedia; Historic UK says it set sail in July, after a false start in April) with about 130 ships and close to 30,000 sailors and soldiers. The English fleet, under Lord Howard of Effingham with Drake and John Hawkins, had more ships but they were smaller and handier.",
    "The Armada was sighted off the Lizard in Cornwall on 29 July (New Style). In a week of running fights off Plymouth, Portland and the Isle of Wight neither side did much damage, though the Spanish lost the flagship Nuestra Señora del Rosario, captured with its commander Pedro de Valdés. On 7 August the Armada anchored off Calais to wait for Parma, whose army was not ready. That night the English sent in eight fireships; none set a Spanish ship alight, but the Spanish cut their cables and scattered. The next day, 8 August, the English attacked the broken formation off Gravelines and sank or captured several ships.",
    "A wind change saved the fleet from running onto the Flemish banks, but it could not return through the Channel and sailed home round Scotland and Ireland, where storms wrecked many ships. Estimates of the losses differ: Wikipedia gives about 44 ships lost and 11,000-20,000 dead, many from disease; other accounts say as many as half the fleet. Elizabeth's victory became a national legend, but the Anglo-Spanish War went on until 1604, and an English counter-armada in 1589 failed as badly."
   ],
@@ -526,7 +526,8 @@
      9,
      10,
      11,
-     12
+     12,
+     13
     ]
    },
    {
@@ -539,7 +540,8 @@
      3,
      4,
      5,
-     8
+     8,
+     13
     ]
    }
   ],
@@ -555,9 +557,10 @@
    "Eight English fireships scattered the fleet though no ship caught fire.",
    "Battle of Gravelines on 8 August; Spanish ships sunk or captured.",
    "The Armada returned round Scotland and Ireland and many ships were wrecked; estimates of losses vary (about 44 ships; 11,000-20,000 dead).",
-   "The war lasted to 1604; the English counter-armada of 1589 failed; Nuestra Señora del Rosario captured with Pedro de Valdés."
+   "The war lasted to 1604; the English counter-armada of 1589 failed; Nuestra Señora del Rosario captured with Pedro de Valdés.",
+   "Departure: Wikipedia, the fleet sailed from Lisbon in late May 1588; Historic UK, after a false start in April when storm damage forced a return to port, the fleet finally set sail in July 1588."
   ],
-  "disagree": "English accounts of the time used the Julian (Old Style) calendar, ten days behind: the anchorage off Calais is 27 July in Old Style and 7 August in New Style. Ship and men lost are given very differently in different sources.",
+  "disagree": "English accounts of the time used the Julian (Old Style) calendar, ten days behind: the anchorage off Calais is 27 July in Old Style and 7 August in New Style. Ship and men lost are given very differently in different sources. Departure of the fleet: late May 1588 (Wikipedia) or July 1588 after an April false start (Historic UK); the event record's 25 April 1588 is not confirmed by either and is left unchanged, since the two sources do not agree on a start date.",
   "checked": null
  },
  "cp05-01": {
