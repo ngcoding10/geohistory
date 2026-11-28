@@ -2187,5 +2187,184 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q182515": {
+  "title": "Treaty of Sèvres",
+  "y": 1920,
+  "place": "Sèvres, near Paris, France",
+  "paras": [
+   "The Treaty of Sèvres, signed on 10 August 1920 in the porcelain factory at Sèvres outside Paris, was the peace settlement imposed by the Allied powers of the First World War on the defeated Ottoman Empire. Three delegates of the Sultan's government in Constantinople signed it. It was never ratified and never took effect, because the Turkish nationalist movement based in Ankara rejected it and fought on.",
+   "The Sultan kept Constantinople, but the Straits (the Dardanelles, the Sea of Marmara and the Bosphorus) were to be open to all ships in peace and war under an international commission. Eastern Thrace and the islands of Imbros and Tenedos went to Greece, and Smyrna (İzmir) and its hinterland were placed under Greek administration, with the possibility of joining Greece after five years. Armenia was recognised as an independent state, its border with Turkey to be decided by the President of the United States, and a commission was to draft autonomy for the Kurdish areas, which could ask the League of Nations for independence within a year. Turkey renounced the Arab provinces, which became League mandates (Syria and Lebanon under France, Mesopotamia and Palestine under Britain), recognised the independence of the Hejaz, gave up its rights in Egypt and Cyprus, and confirmed Italy's hold on the Dodecanese.",
+   "The army was limited to 50,000 men plus a 700-man bodyguard for the Sultan, the Allies took control of Ottoman finances, and the capitulations, the privileges of foreigners, were restored. On the same day Britain, France and Italy signed a separate agreement dividing much of Anatolia into their zones of influence.",
+   "The Grand National Assembly in Ankara had already declared on 7 June 1920 that treaties signed by the Constantinople government were invalid. The rejection fed the Turkish War of Independence, and after it the treaty was replaced by the Treaty of Lausanne in 1923, which returned large parts of Anatolia and Thrace to Turkey."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_S%C3%A8vres",
+    "title": "Treaty of Sèvres",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://wwi.lib.byu.edu/index.php/Section_I,_Articles_1_-_260",
+    "title": "Treaty of Sèvres, Section I, Articles 1–260 (text)",
+    "publisher": "World War I Document Archive, Brigham Young University Library",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "The treaty was signed on 10 August 1920 at Sèvres between the Allies and the Ottoman government (Wikipedia: at the porcelain factory, by three Ottoman delegates).",
+   "It was never ratified.",
+   "Turkey kept Constantinople; the Straits were opened to all vessels in peace and war under an international Commission of the Straits.",
+   "Eastern Thrace, Imbros and Tenedos went to Greece; Smyrna was placed under Greek administration with a local parliament and could join Greece after five years (possibly by plebiscite).",
+   "Armenia was recognised as independent, with the frontier submitted to arbitration by the US President.",
+   "A commission was to draft local autonomy for Kurdish areas; the Kurds could petition the League within a year for independence.",
+   "Syria and Lebanon were mandates for France, Mesopotamia and Palestine for Britain; the Hejaz was recognised as independent; Turkey renounced rights in Egypt and Cyprus; the Dodecanese were given to Italy.",
+   "The armed forces were limited to 50,000 men plus the Sultan's 700-man bodyguard (Wikipedia: 50,700).",
+   "The Allies took control of Ottoman finances and the capitulations were restored.",
+   "Britain, France and Italy signed a Tripartite Agreement on zones of influence in Anatolia on the same date.",
+   "On 7 June 1920 the Grand National Assembly in Ankara declared treaties of the Istanbul government since March 1920 invalid; this fed the Turkish War of Independence; Lausanne (1923) superseded Sèvres and restored large territory in Anatolia and Thrace to Turkey."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q199955": {
+  "title": "Hundred Days",
+  "y": 1815,
+  "place": "France and Belgium (Waterloo campaign)",
+  "paras": [
+   "The Hundred Days was Napoleon's return to power in France in 1815, between his escape from exile on the island of Elba and the second restoration of King Louis XVIII. It set Napoleon and the French army that rallied to him against the restored Bourbon monarchy and then against the Seventh Coalition of the European great powers.",
+   "Napoleon left Elba on 26 February 1815 with about 1,000 men and landed at Golfe-Juan on the south coast of France on 1 March. Instead of fighting him, the troops sent to stop him went over to his side: a regiment at Grenoble on 5 March, and on 14 March Marshal Ney joined him with some 6,000 men. Louis fled, and Napoleon entered Paris on 20 March. Meanwhile, on 13 March, the powers at the Congress of Vienna declared him an outlaw, and on 25 March they agreed to field 150,000 men each.",
+   "Napoleon took the offensive in Belgium. His army crossed the Sambre at Charleroi on 15 June; the battles of Ligny and Quatre Bras were fought on 16 June; and on 18 June he was defeated at Waterloo. He abdicated on 22 June, and Louis XVIII returned to Paris on 8 July, about 110 days after he had fled.",
+   "Napoleon was sent into exile on the island of Saint Helena, and the Second Treaty of Paris between France and the Coalition followed on 20 November 1815."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Hundred_Days",
+    "title": "Hundred Days",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://digital.library.mcgill.ca/napoleon/english/timeline.htm",
+    "title": "Napoleon timeline",
+    "publisher": "McGill University Library, Napoleon Collection",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     7,
+     8,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The Hundred Days ran from Napoleon's escape from Elba to Louis XVIII's restoration; the War of the Seventh Coalition followed.",
+   "Napoleon left Elba on 26 February 1815 (with about 1,000 men) and landed at Golfe-Juan on 1 March.",
+   "The 5th Infantry Regiment at Grenoble joined him on 5 March; Ney joined him on 14 March at Lons-le-Saunier with about 6,000 men.",
+   "Louis XVIII fled and Napoleon entered Paris on 20 March.",
+   "The Congress of Vienna declared Napoleon an outlaw on 13 March; on 25 March the Great Powers agreed to field 150,000 men each.",
+   "The French crossed the Sambre at Charleroi on 15 June; Ligny and Quatre Bras were fought on 16 June.",
+   "Waterloo was fought on 18 June 1815, a defeat for Napoleon.",
+   "Napoleon abdicated on 22 June.",
+   "Louis XVIII was restored on 8 July, ending a period of 110 days.",
+   "Napoleon went into exile on Saint Helena; the Second Treaty of Paris was signed on 20 November 1815."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q182817": {
+  "title": "Velvet Revolution",
+  "y": 1989,
+  "place": "Prague and other cities of Czechoslovakia",
+  "paras": [
+   "The Velvet Revolution was the peaceful overthrow of communist rule in Czechoslovakia in November and December 1989. Students, actors and other citizens, organised in the Civic Forum in the Czech lands under the playwright Václav Havel and in Public Against Violence in Slovakia, faced the Communist Party leadership of Miloš Jakeš and President Gustáv Husák.",
+   "On 17 November 1989 students held an officially permitted march in Prague to mark the 50th anniversary of the Nazi closure of Czech universities; tens of thousands took part. That evening riot police broke it up violently on Národní Street. A false report that a student had been killed added to the anger. The students went on strike the next day, joined by theatre actors, and on 19 November Civic Forum was founded in a Prague theatre, with Public Against Violence formed in Slovakia. Demonstrations grew day by day; on 24 November Jakeš and the rest of the party leadership resigned, and on 25–26 November huge crowds, about 750,000 in ENRS's account, rallied on Letná plain, addressed by Havel and Alexander Dubček. On 27 November most workers joined a two-hour general strike.",
+   "The party gave way. Parliament removed the constitutional article guaranteeing the Communist Party's 'leading role' (on 28 November according to Wikipedia, 29 November according to ENRS). On 10 December Husák swore in a largely non-communist federal government and then resigned. Dubček became chairman of the Federal Assembly on 28 December, and on 29 December it elected Havel president.",
+   "Czechoslovakia held its first free elections since 1946 in June 1990. The 'velvet' transfer of power, without bloodshed, was followed by an equally peaceful separation: at the end of 1992 the federation was dissolved into the Czech Republic and Slovakia."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Velvet_Revolution",
+    "title": "Velvet Revolution",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://enrs.eu/article/velvet-revolution-day-by-day",
+    "title": "Velvet Revolution day by day",
+    "publisher": "European Network Remembrance and Solidarity",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "The Velvet Revolution was a non-violent transfer of power in Czechoslovakia in November–December 1989; Civic Forum (Havel) and Public Against Violence (Slovakia) were founded on 19 November.",
+   "On 17 November 1989 a student march of tens of thousands marking the 50th anniversary of the Nazi closure of Czech universities was broken up by riot police on Národní Street.",
+   "A false report that a student (Martin Šmíd) had been killed heightened anger; students went on strike on 18 November, joined by actors.",
+   "On 24 November Jakeš and the party leadership resigned.",
+   "ENRS: about 750,000 attended rallies on Letná on 25–26 November, with Havel and Dubček speaking.",
+   "On 27 November a two-hour general strike was held (ENRS: most workers joined).",
+   "Parliament removed the Communist Party's constitutional leading role (Wikipedia: 28 November; ENRS: 29 November).",
+   "On 10 December Husák appointed a largely non-Communist government and resigned; Dubček became chairman of the Federal Assembly on 28 December; Havel was elected president on 29 December.",
+   "Czechoslovakia held its first free elections since 1946 in June 1990.",
+   "The country peacefully split into the Czech Republic and Slovakia (31 December 1992)."
+  ],
+  "disagree": "Wikipedia dates the removal of the Communist Party's constitutional leading role to 28 November 1989 (when the party agreed to give it up), ENRS to the Federal Assembly vote of 29 November.",
+  "checked": null
  }
 }
