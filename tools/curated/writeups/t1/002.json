@@ -2240,5 +2240,1362 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q110999040": {
+  "title": "Russian full-scale invasion of Ukraine",
+  "y": 2022,
+  "place": "Ukraine",
+  "paras": [
+   "On 24 February 2022 Russia, under President Vladimir Putin, launched a full-scale invasion of Ukraine, led by President Volodymyr Zelenskyy, turning the war that Russia and its proxies had fought in Crimea and the Donbas since 2014 into the largest conflict in Europe since the Second World War. Putin called it a 'special military operation' to 'demilitarise and denazify' Ukraine; its aim was to topple Ukraine's Western-aligned government. Russian forces attacked on three fronts: from Belarus towards Kyiv in the north, from occupied Crimea in the south and from the Donbas towards Kharkiv in the east. Belarus let Russia use its territory and airspace, and in 2024 North Korean soldiers were sent to help Russia in the Kursk region.",
+   "Analysts concluded that Putin had expected to take Kyiv within days, but Ukrainian resistance was fierce: Russia was repulsed at Irpin, Hostomel and Bucha and gave up its attempt on the capital in early April, after which the Bucha massacre came to light. Russia then concentrated on the Donbas and took Mariupol after a destructive siege. From late August Ukraine counter-attacked and retook thousands of square miles in the Kharkiv and Kherson regions; amid the retreat Putin ordered the mobilisation of some 300,000 more men and in September declared four partly occupied Ukrainian provinces annexed, a step condemned internationally. After that the front moved little: Russian offensives and Ukrainian counter-offensives gained only small areas, Russia struck cities and civilian infrastructure far from the front, and in August 2024 Ukraine launched a cross-border offensive into Russia's Kursk region.",
+   "Putin had demanded that Ukraine be barred from ever joining NATO, voiced expansionist views and challenged Ukraine's right to exist as a state. A Russian military build-up around Ukraine through 2021, including in Belarus, preceded the attack, and in early 2022 Russia recognised the separatist Donetsk and Luhansk republics.",
+   "The invasion was widely condemned; many countries imposed sanctions on Russia and sent aid and weapons to Ukraine. It caused the largest refugee crisis in Europe since the Second World War: by February 2025, 6.9 million Ukrainians were refugees and 3.7 million internally displaced. On 17 March 2023 the International Criminal Court issued an arrest warrant for Putin, and one for his children's rights commissioner Maria Lvova-Belova, over the unlawful deportation of children. Deaths number in the hundreds of thousands; in February 2026 the BBC reported Zelenskyy's figure of some 55,000 Ukrainian soldiers killed and said it had confirmed the names of almost 160,000 people killed fighting on Russia's side, while US-led talks on a settlement had not ended the war."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine",
+    "title": "Russo-Ukrainian war (2022–present)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     7,
+     9
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Russo-Ukrainian_war",
+    "title": "Russo-Ukrainian war",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://www.cfr.org/backgrounder/ukraine-conflict-crossroads-europe-and-russia",
+    "title": "Ukraine: Conflict at the Crossroads of Europe and Russia",
+    "publisher": "Council on Foreign Relations",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     6
+    ]
+   },
+   {
+    "url": "https://www.icc-cpi.int/news/situation-ukraine-icc-judges-issue-arrest-warrants-against-vladimir-vladimirovich-putin-and",
+    "title": "Situation in Ukraine: ICC judges issue arrest warrants against Vladimir Vladimirovich Putin and Maria Alekseyevna Lvova-Belova",
+    "publisher": "International Criminal Court",
+    "accessed": "2026-11-28",
+    "supports": [
+     10
+    ]
+   },
+   {
+    "url": "https://www.bbc.com/news/world-europe-60506682",
+    "title": "Ukraine in maps: Tracking the war with Russia",
+    "publisher": "BBC News",
+    "accessed": "2026-11-28",
+    "supports": [
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "On 24 February 2022 Russia launched a full-scale invasion, escalating the conflict that began in 2014, the largest conflict in Europe since WWII; the aim was to topple the Western-aligned government of Zelenskyy.",
+   "Putin announced a 'special military operation' to 'demilitarize and denazify' Ukraine; northern front from Belarus towards Kyiv, southern from Crimea, eastern from the Donbas towards Kharkiv; Belarus allowed use of its territory and airspace; North Korean soldiers were sent to help Russia in Kursk in 2024.",
+   "Analysts assessed that Putin believed Kyiv could be seized within days; Russia was repulsed at Irpin, Hostomel and Bucha.",
+   "Russia abandoned the attempt on Kyiv in early April 2022; the Bucha massacre was uncovered after the withdrawal; Mariupol was captured after a destructive siege.",
+   "From August 2022 Ukraine's counteroffensive retook thousands of square miles in the Kharkiv and Kherson regions; Putin mobilised some 300,000 troops and in September 2022 declared four partially occupied provinces annexed, which was internationally condemned.",
+   "Since then offensives and counteroffensives gained little territory; Russia attacked civilians and civilian infrastructure far from the front; in August 2024 Ukraine launched a cross-border offensive into the Kursk region.",
+   "Putin demanded that Ukraine be barred from NATO, voiced expansionist views and challenged Ukraine's right to exist; a Russian build-up from 2021 including in Belarus; Russia recognised the DPR and LPR in early 2022.",
+   "The invasion was internationally condemned; many countries imposed sanctions and sent humanitarian and military aid.",
+   "The largest refugee crisis in Europe since WWII; as of February 2025, 6.9 million refugees and 3.7 million internally displaced.",
+   "On 17 March 2023 the ICC issued arrest warrants for Putin and Maria Lvova-Belova over the unlawful deportation of children.",
+   "BBC (February 2026): about 55,000 Ukrainian soldiers killed according to Zelensky; almost 160,000 people killed on Russia's side confirmed by name by the BBC; a US-backed peace plan was put forward in November 2025."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q131482": {
+  "title": "Hijrah",
+  "y": 622,
+  "place": "From Mecca to Medina (Yathrib), Arabia",
+  "paras": [
+   "The Hijrah ('migration') was the move of the Prophet Muhammad and his followers from Mecca to the oasis town of Yathrib, afterwards known as Medina, in 622. On one side stood the small Muslim community of Mecca; on the other the leaders of Mecca's ruling Quraysh tribe, who opposed Muhammad's preaching. The people who received him in Medina were members of its two main Arab tribes, the Aws and the Khazraj.",
+   "Muhammad began preaching in Mecca after the first revelations of around 610, denouncing the worship of idols and criticising the greed of rich merchants. As his following grew, Meccan leaders turned against him: his clan was boycotted and his followers persecuted. After the death, towards the end of the 610s, of his uncle Abu Talib, who had protected him, Muhammad looked for support outside the city. Men from Medina met him at al-Aqabah near Mecca and pledged themselves to him, the second time, at the pilgrimage of 622, promising to defend him as they would their own families. Muhammad then had his followers leave for Medina in small groups over about three months. When the Meccan leaders learned of the exodus they plotted to kill him; he slipped away with his companion Abu Bakr, hid for three days in a cave on Mount Thawr and then travelled to Medina by little-used paths. The day of his arrival is uncertain: HISTORY.com gives both 24 and 27 September 622, while Wikipedia notes that early historians disagreed on the exact day.",
+   "The migration was driven by the persecution in Mecca and by the invitation of the Medinans, whose Aws and Khazraj tribes had fought each other for many years and hoped that Muhammad could unite them.",
+   "In Medina Muhammad became the leader of an organised community; the agreement known as the Constitution of Medina made him the chief arbiter of disputes among its groups, including the Jewish tribes. From 623 he led raids on Meccan caravans, and within ten years of the Hijrah he was strong enough to return to Mecca and take the city. The Hijrah came to mark the beginning of Islamic history: in 638, the 17th year after it, the caliph Umar made the year of the Hijrah the first year of the Islamic calendar, whose first day corresponds to 16 July 622 in the Julian calendar."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Hijrah",
+    "title": "Hijrah",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/september-27/muhammad-completes-hegira",
+    "title": "Muhammad completes Hegira",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.bbc.co.uk/religion/religions/islam/history/muhammad_1.shtml",
+    "title": "Prophet Muhammad (570-632)",
+    "publisher": "BBC Religions (archived)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     9,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/ethnic-and-cultural-studies/start-islamic-calendar",
+    "title": "Start of the Islamic Calendar",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The Hijrah was the journey of Muhammad and his followers from Mecca to Medina (Yathrib) in 622.",
+   "The Medinan supporters came from the Aws and Khazraj tribes; Meccan (Quraysh) leaders opposed Muhammad.",
+   "First revelation around 610; Muhammad denounced idol worship and criticised rich merchants; Meccan leaders became hostile.",
+   "Muslims faced a boycott of Muhammad's clan and persecution; Abu Talib, his protector uncle, died toward the end of the 610s (619 according to HISTORY.com).",
+   "The pledges at al-Aqabah; the second in the pilgrimage season of 622, a promise to protect him as their own families.",
+   "Muhammad sent his followers to Medina (departure spanning about three months; in small groups per HISTORY.com).",
+   "The Meccan leaders plotted to kill him; he left with Abu Bakr, hid three days in a cave on Mount Thawr, then travelled to Medina (by unfrequented paths per HISTORY.com).",
+   "The arrival date: HISTORY.com gives 27 September 622 in its heading and 24 September 622 in its text; Wikipedia says historians do not agree on the precise day.",
+   "The migration escaped persecution (BBC: his popularity was seen as threatening by those in power in Mecca).",
+   "The Aws and Khazraj had been fighting for many years and hoped Muhammad would unite them.",
+   "In Medina he organised a community; the Constitution of Medina made him the foremost judicial authority, unifying tribal groups including Jewish tribes; raids on Meccan caravans from January 623 (Wikipedia; HISTORY.com mentions raids); return to and conquest of Mecca within ten years (BBC; HISTORY.com: January 630).",
+   "Umar made the year of the Hijrah year one of the Islamic calendar in 638 (17 AH); its first day is 16 July 622 (Julian)."
+  ],
+  "disagree": "The date of Muhammad's arrival in Medina: HISTORY.com gives both 24 and 27 September 622; Wikipedia says early historians disagree on the exact day; the event record gives 13 September 622.",
+  "checked": null
+ },
+ "Q134949": {
+  "title": "Winter War",
+  "y": 1939,
+  "place": "Finland (Karelian Isthmus, Ladoga Karelia, Kainuu, Lapland)",
+  "paras": [
+   "The Winter War was fought between the Soviet Union under Joseph Stalin and Finland, whose army was commanded by Marshal Carl Gustaf Emil Mannerheim. The Soviet Union invaded on 30 November 1939, three months after the start of the Second World War, and the war ended with the Moscow Peace Treaty in March 1940.",
+   "Stalin, free to act in the east after the Molotov–Ribbentrop Pact with Germany in August 1939, demanded that Finland give up border territory, including land on the Karelian Isthmus and islands, in exchange for land elsewhere, arguing that Leningrad, about 32 km from the border, needed protection. Finland refused. On 26 November 1939 Soviet reports claimed that a border post at Mainila had been shelled; historians later concluded that the shelling was a false-flag action by an NKVD unit on the Soviet side, and four days later the Red Army attacked. Most sources conclude that the Soviet Union meant to conquer all of Finland, pointing to the puppet Finnish communist government it set up, though some historians disagree.",
+   "The Red Army was far stronger, especially in tanks and aircraft, but its officer corps had been weakened by Stalin's purges, and it fared badly in temperatures as low as −43 °C against Finns who moved fast on skis. For more than two months the Finns held the Mannerheim Line on the Karelian Isthmus and inflicted heavy losses in battles at Taipale, Kollaa and the Raate Road. The League of Nations declared the attack illegal and expelled the Soviet Union. Britain and France planned to help Finland, but no help arrived. In February 1940, after reorganising and changing tactics, the Soviets broke through on the Karelian Isthmus, and Mannerheim urged peace while Finland could still bargain. The treaty was signed in Moscow late on 12 March, and the fighting ended on 13 March 1940.",
+   "Finland kept its independence but gave up about a tenth of its territory, including much of Karelia and the city of Viipuri (Vyborg); the share is given as 9 percent by Wikipedia, 10 percent by History UK and 11 percent by The Moscow Times. Some 422,000 to 450,000 Karelians, about 12 per cent of Finland's population, were evacuated from the ceded lands (History UK says around half a million). About 26,000 Finns were dead or missing, against roughly 127,000 to 168,000 Soviet soldiers. The Red Army's poor performance encouraged Hitler to believe that an invasion of the Soviet Union would succeed, and when Germany attacked in June 1941 Finland renewed the fight in the Continuation War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Winter_War",
+    "title": "Winter War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.history.co.uk/articles/how-finland-protected-its-ww2-independence-during-the-winter-war",
+    "title": "How Finland protected its WW2 independence during the Winter War",
+    "publisher": "History UK (A+E Networks UK)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.themoscowtimes.com/2020/03/13/on-this-day-in-1940-the-winter-war-ended-a69614",
+    "title": "On This Day in 1940, the Winter War Ended",
+    "publisher": "The Moscow Times",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The Soviet Union invaded Finland on 30 November 1939, three months after WWII began; the war ended with the Moscow Peace Treaty in March 1940; Mannerheim was Finnish commander-in-chief.",
+   "The Soviets demanded Finnish border territories (including islands) in exchange for land elsewhere, citing Leningrad's security, 32 km (20 miles) from the border; Finland refused; the Molotov–Ribbentrop Pact of August 1939 preceded it.",
+   "The Mainila shelling of 26 November 1939 was reported by the Soviets; historians concluded it was a false-flag operation by an NKVD unit.",
+   "Most sources conclude the Soviets intended to conquer all of Finland, citing the puppet communist government; other sources argue against.",
+   "Soviet superiority in tanks and aircraft; temperatures as low as −43 °C; Red Army weakened by purges; Finns on skis.",
+   "Finland repelled attacks for more than two months; battles at Taipale, Kollaa and Raate Road; the Mannerheim Line on the Karelian Isthmus.",
+   "The League of Nations deemed the attack illegal and expelled the Soviet Union.",
+   "Britain and France did not come to Finland's aid (plans for intervention).",
+   "In February 1940 the reorganised Soviets broke through the Karelian Isthmus defences; Mannerheim urged peace while Finland retained bargaining power.",
+   "The Moscow Peace Treaty was signed on 12 March 1940 and the ceasefire took effect on 13 March.",
+   "Finland ceded 9% (Wikipedia), 10% (History UK) or 11% (Moscow Times) of its territory, including Karelian land and Viipuri/Vyborg; Finland retained its sovereignty.",
+   "422,000–450,000 Karelians (12% of the population) evacuated (Wikipedia; History UK: around half a million); 25,904 Finns dead or missing (about 25,000 killed per History UK); Soviet 126,875–167,976 dead or missing (120,000–160,000 per History UK).",
+   "The Red Army's poor performance encouraged Hitler; Operation Barbarossa in June 1941 and the Continuation War followed."
+  ],
+  "disagree": "The share of territory ceded: 9% (Wikipedia), 10% (History UK), 11% (The Moscow Times). People evacuated: 422,000 to 450,000 (Wikipedia), around half a million (History UK).",
+  "checked": {
+   "by": "https://www.worldatlas.com/articles/what-was-the-winter-war.html",
+   "result": "8 claims checked: the invasion of 30 November 1939, the Nazi-Soviet pact, Leningrad and the land-swap demand, Mannerheim, the artillery breach of the Mannerheim Line, no Franco-British help, the treaty signed in Moscow on 12 March 1940 and the effect on Hitler and the Continuation War agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q154255": {
+  "title": "Munich Agreement",
+  "y": 1938,
+  "place": "Munich, Germany",
+  "paras": [
+   "The Munich Agreement was concluded in Munich in the night of 29–30 September 1938 by the leaders of four powers: Adolf Hitler for Germany, Neville Chamberlain for Britain, Édouard Daladier for France and Benito Mussolini for Italy. It handed Germany the Sudetenland, the border regions of Czechoslovakia where about three million people, mostly ethnic Germans, lived. Czechoslovakia itself was not a party to the talks, although its representatives were waiting in the town, and nor was the Soviet Union, an ally of France and Czechoslovakia.",
+   "From 17 September 1938 Germany waged a low-level undeclared war along the border. Chamberlain flew to meet Hitler twice, at Berchtesgaden and at Bad Godesberg, and on 20 September Britain and France formally asked Czechoslovakia to give up the Sudetenland; Poland and Hungary pressed claims of their own. At an emergency conference on 29–30 September the four powers quickly agreed on Hitler's terms. The text, dated 29 September in the Avalon Project's copy, set out that German troops would occupy four zones in stages from 1 October, that the evacuation would be completed by 10 October, and that an international commission would draw the final frontier and decide where plebiscites should be held. On 30 September President Edvard Beneš gave in to the combined pressure and accepted the terms.",
+   "Britain and France hoped to avoid a major war by giving way to Hitler, a policy of appeasement; Hitler declared that the Sudetenland was his last territorial demand in Europe. Much of Europe welcomed the agreement, and Chamberlain, back in London on 30 September, spoke of 'peace for our time'. Others saw it differently: Winston Churchill told the House of Commons on 5 October that Britain had 'sustained a total and unmitigated defeat'. In Czech and Slovak it is still called the 'Munich Betrayal', because France had been bound to Czechoslovakia by an alliance of 1924 and a military pact of 1925. Today the agreement is generally regarded as a failed act of appeasement.",
+   "Czechoslovakia lost its mountain frontier and border fortifications. In November 1938 the First Vienna Award gave southern Slovakia and Subcarpathian Ruthenia's southern part to Hungary, and Poland took further small areas. In March 1939 Slovakia declared independence under German protection and Hitler, breaking his promise, occupied the rest of the Czech lands as the Protectorate of Bohemia and Moravia, taking over the Czechoslovak army's weapons and the country's arms industry."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Munich_Agreement",
+    "title": "Munich Agreement",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://avalon.law.yale.edu/imt/munich1.asp",
+    "title": "Munich Pact, September 29, 1938",
+    "publisher": "The Avalon Project, Yale Law School",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     7
+    ]
+   },
+   {
+    "url": "https://winstonchurchill.org/resources/speeches/1930-1938-the-wilderness/the-munich-agreement/",
+    "title": "The Munich Agreement (speech in the House of Commons, 5 October 1938)",
+    "publisher": "International Churchill Society",
+    "accessed": "2026-11-28",
+    "supports": [
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The agreement was concluded in Munich on 29–30 September 1938 (Wikipedia: reached on 30 September; Avalon: dated 29 September) between Germany, the UK, France and Italy, signed by Hitler, Chamberlain, Daladier and Mussolini.",
+   "It provided for German annexation of the Sudetenland, home to three million people, mainly ethnic Germans.",
+   "Czechoslovakia (whose representatives were in the town) and the Soviet Union were not included in the meeting.",
+   "Germany started a low-intensity undeclared war on 17 September 1938.",
+   "Chamberlain met Hitler at Berchtesgaden and Bad Godesberg (24 September); Britain and France asked Czechoslovakia on 20 September to cede the Sudetenland; Polish and Hungarian demands on 21 and 22 September.",
+   "An agreement was quickly reached on Hitler's terms at the emergency meeting.",
+   "Terms: occupation in four zones from 1 October; evacuation completed by 10 October; an international commission to fix the frontier and plebiscite areas.",
+   "On 30 September Beneš submitted to military and diplomatic pressure and accepted.",
+   "Much of Europe celebrated the agreement; Hitler announced it was his last territorial claim; Chamberlain's 'peace for our time' speech on 30 September. Today regarded as a failed act of appeasement.",
+   "Churchill told the Commons on 5 October 1938 that Britain had sustained 'a total and unmitigated defeat'.",
+   "Known as the Munich Betrayal because of the 1924 alliance and the 1925 military pact between France and Czechoslovakia; the borderland's fortifications were of strategic importance.",
+   "The First Vienna Award (2 November 1938) gave southern Slovakia and southern Subcarpathian Rus' to Hungary; Poland received small areas (30 November); in March 1939 Slovakia proclaimed independence and Hitler occupied the rest, creating the Protectorate of Bohemia and Moravia; Germany gained Czechoslovak armaments."
+  ],
+  "disagree": "The date: Wikipedia says the agreement was reached on 30 September 1938 (the conference ran over the night of 29–30 September); the text in the Avalon Project is dated 29 September 1938.",
+  "checked": null
+ },
+ "Q15860072": {
+  "title": "Russo-Ukrainian war",
+  "y": 2014,
+  "place": "Ukraine (Crimea and the Donbas, then much of the country)",
+  "paras": [
+   "The Russo-Ukrainian war is fought between Ukraine and Russia, together with the armed groups Russia backed in eastern Ukraine. It began in February 2014 and, in its first eight years, centred on Crimea and the Donbas region of the south-east; in February 2022 Russia widened it into a full-scale invasion, and it was still going on in late 2026.",
+   "In late 2013 Ukraine's president Viktor Yanukovych, under pressure from Moscow, dropped plans for a closer economic agreement with the European Union. The decision set off the Euromaidan protests, and in February 2014 Yanukovych fled. Unmarked Russian troops then occupied Crimea; after a referendum held under occupation on 16 March, Russia annexed the peninsula on 18 March 2014, the first annexation of one European country's territory by another since the Second World War. In April Russian-backed militants seized towns in the Donbas and proclaimed the Donetsk and Luhansk 'People's Republics', and Russia supported them covertly with its own troops, tanks and artillery. The Minsk Protocol of September 2014 and the Minsk II agreements of February 2015 did not end the fighting; the front froze into trench warfare with frequent ceasefire breaches.",
+   "Behind the war lay a long contest over Ukraine's direction since independence in 1991: a largely Ukrainian-speaking west favoured ties with Europe, much of the Russian-speaking east closer ties with Russia, and Moscow sought to keep its influence in Ukraine, all the more after the Orange Revolution of 2004. Vladimir Putin presented the fall of Yanukovych as a Western-backed coup threatening Russians in Crimea, a claim Western leaders rejected as propaganda.",
+   "The Council on Foreign Relations counts more than fourteen thousand people killed in the Donbas between 2014 and 2021. Ukraine, officially neutral when the war began, revived plans to join NATO. After a large Russian build-up around Ukraine's borders in 2021, Russia recognised the two separatist republics in early 2022 and on 24 February launched the full-scale invasion, turning the conflict into the largest war in Europe since 1945 and causing hundreds of thousands of deaths and a refugee crisis."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Russo-Ukrainian_war",
+    "title": "Russo-Ukrainian war",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.cfr.org/backgrounder/ukraine-conflict-crossroads-europe-and-russia",
+    "title": "Ukraine: Conflict at the Crossroads of Europe and Russia",
+    "publisher": "Council on Foreign Relations",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "The war began in February 2014 between Russia (with Russian-backed separatists) and Ukraine; it centred on Crimea and the Donbas until 2022; the full-scale invasion began in February 2022; it was ongoing (Wikipedia revision of November 2026).",
+   "In late 2013 Yanukovych, under pressure from Moscow, scrapped plans for a closer economic relationship with the EU, setting off the Euromaidan protests, which forced him from power (February 2014).",
+   "Unmarked Russian troops occupied Crimea; the referendum under occupation on 16 March 2014; annexation on 18 March 2014; the first annexation of a European state's territory by another since World War II.",
+   "In April 2014 Russian-backed militants seized towns in the Donbas and proclaimed the DPR and LPR; Russia covertly supported them with troops, tanks and artillery.",
+   "The Minsk Protocol (September 2014) and Minsk II (February 2015) did not end the fighting; static trench-like conflict with broken ceasefires.",
+   "Since independence in 1991 Ukraine was divided between a more nationalist, Ukrainian-speaking west favouring Europe and a mostly Russian-speaking east favouring Russia; Russia sought to keep its influence, especially after the 2004 Orange Revolution.",
+   "Putin framed Euromaidan as a Western-backed 'fascist coup' endangering Russians in Crimea; Western leaders dismissed this as propaganda.",
+   "More than fourteen thousand people died in the Donbas fighting between 2014 and 2021 (CFR).",
+   "Ukraine, neutral in 2014, revived plans to join NATO; a Russian build-up from 2021; Russia recognised the DPR and LPR in early 2022 and invaded on 24 February 2022, the largest conflict in Europe since WWII, with hundreds of thousands of deaths and a refugee crisis."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q178810": {
+  "title": "Syrian Civil War",
+  "y": 2011,
+  "place": "Syria",
+  "paras": [
+   "The Syrian Civil War lasted from March 2011 to December 2024. On one side stood the government of President Bashar al-Assad, backed by Russia, Iran and Shia militias armed by Iran, above all Lebanon's Hezbollah. Against it fought a fragmented opposition: the Free Syrian Army, formed by army defectors in July 2011, and a growing number of Islamist brigades, supported to varying degrees by Turkey, Western powers and Gulf Arab states. Jihadist groups, al-Qaeda's Syrian branch Jabhat al-Nusra and the Islamic State, pursued their own aims, while Kurdish-led forces, later the Syrian Democratic Forces, fought the Islamic State with the help of a US-led coalition.",
+   "In March 2011, as uprisings spread across the Arab world, teenagers in the southern city of Deraa wrote 'The people want the fall of the regime' on a school wall and were arrested and tortured. Protests followed and spread to Damascus, Homs and Hama; the government answered with shooting, mass arrests and, from late April, a siege of Deraa by tanks, and some opponents took up arms. Jabhat al-Nusra announced itself in January 2012, and in 2013 the Islamic State seized territory across eastern Syria and western Iraq. In 2013 a chemical attack in Ghouta, near Damascus, was the deadliest use of chemical weapons since the Iran–Iraq War. From 2014 a US-led coalition struck the Islamic State, and in September 2015 Russia's air force entered the war, helping Assad regain the upper hand; government forces retook eastern Aleppo in December 2016 after a long siege, and the rebels were pushed back mainly to Idlib in the north-west. In late 2024 rebels led by Hayat Tahrir al-Sham (HTS) launched a rapid offensive, took the main cities in days, and on 8 December 2024 Assad fled to Moscow as rebels entered Damascus.",
+   "The uprising grew out of four decades of autocratic rule by the Assad family, which had brutally crushed a revolt in Hama in 1982, together with corruption, unemployment and lack of political freedom, made worse by economic reforms that favoured regime insiders and by a record drought from 2006 to 2010. Assad met the protests with force rather than reform, and outside powers then turned the war into a contest between themselves. The regime's final collapse came when its allies were weakened: Hezbollah by Israel's campaign in Lebanon in 2024, Iran by Israeli strikes, and Russia by its war in Ukraine.",
+   "The toll is disputed. The UN Human Rights Office estimated that 306,887 civilians were killed between March 2011 and March 2021; the Syrian Observatory for Human Rights had documented 503,064 deaths by March 2023 and estimated more than 613,400 (both as reported by the BBC). Nearly fourteen million people, more than half of the pre-war population, were driven from their homes, many of them as refugees to Turkey, Lebanon and Jordan. After Assad's fall a transitional government was formed and HTS's former leader Ahmed al-Sharaa became president, but clashes in parts of the country continued."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Syrian_civil_war",
+    "title": "Syrian civil war",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     7,
+     8,
+     9,
+     12
+    ]
+   },
+   {
+    "url": "https://www.cfr.org/article/syrias-civil-war",
+    "title": "Syria's Civil War",
+    "publisher": "Council on Foreign Relations",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.bbc.com/news/world-middle-east-35806229",
+    "title": "Why has the Syrian war lasted so long?",
+    "publisher": "BBC News",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The war lasted from (15) March 2011 to 8 December 2024.",
+   "Government backers: Russia, Iran, Iranian-armed Shia militias, mostly Hezbollah; Turkey, Western powers and Gulf Arab states backed the opposition to varying degrees.",
+   "The Free Syrian Army was formed by army defectors in July 2011; fighters drifted to Islamist brigades.",
+   "Jihadist groups (Jabhat al-Nusra, Islamic State) had their own aims; the US-led coalition helped the Kurdish-led SDF against IS.",
+   "Deraa: boys arrested and tortured for graffiti 'The people want the fall of the regime'; protests spread to Damascus, Hama and Homs; firing on protesters, mass arrests; late April 2011 tank siege of Deraa; opponents took up arms.",
+   "Jabhat al-Nusra announced in January 2012; the Islamic State took territory across eastern Syria and western Iraq from 2013.",
+   "The 2013 Ghouta chemical attack was the deadliest chemical attack since the Iran–Iraq War (CFR: some 1,400 civilians killed by chemical weapons in summer 2013).",
+   "The US-led coalition from 2014; Russian air force from September 2015, strengthening Assad.",
+   "Eastern Aleppo retaken in December 2016; rebels confined mainly to Idlib; HTS-led offensive in late 2024; Assad fled to Moscow on 8 December 2024.",
+   "Causes: four decades of Assad rule; Hama 1982 crushed; corruption, unemployment, lack of freedom; reforms favouring the well-connected; the 2006–2010 drought; Assad responded with force.",
+   "Casualties: OHCHR 306,887 civilians killed March 2011–March 2021; SOHR 503,064 documented by March 2023, estimated over 613,400 (BBC); nearly fourteen million displaced, more than half the pre-war population (CFR); refugees hosted by Lebanon, Jordan and Turkey (BBC).",
+   "Allies weakened in 2024 (Hezbollah by Israel's Lebanon campaign, Iran by Israeli strikes, Russia); a transitional government; Ahmed al-Sharaa became president; clashes continued."
+  ],
+  "disagree": "Death tolls differ widely: the UN Human Rights Office estimated 306,887 civilian deaths to March 2021; the Syrian Observatory for Human Rights documented 503,064 deaths and estimated over 613,400 by March 2023; the BBC (2023) speaks of half a million dead.",
+  "checked": null
+ },
+ "Q182524": {
+  "title": "Vostok 1: the first human spaceflight",
+  "y": 1961,
+  "place": "Baikonur, Kazakh SSR, Soviet Union, and Earth orbit",
+  "paras": [
+   "On 12 April 1961 the Soviet Union launched Vostok 1, the first spaceflight to carry a human being. Its pilot was Yuri Gagarin, a young Soviet air force officer who had been chosen in 1960, with about twenty others, for cosmonaut training; Gherman Titov and Grigori Nelyubov were his backups. The flight was part of the space race between the Soviet Union and the United States, whose Project Mercury was preparing its own first crewed flights.",
+   "Vostok 1 lifted off from the Baikonur Cosmodrome at 9:07 a.m. Moscow time on a rocket adapted from the R-7, the world's first intercontinental ballistic missile, which had launched Sputnik in 1957. The spherical Vostok 3KA capsule made a single orbit of the Earth at a height of between about 181 and 327 km. On the way down Gagarin ejected from the capsule at about 7,000 m and landed separately by parachute, as the design required; early Soviet reports left this detail out. He came down in the Saratov region, south-west of the town of Engels. The flight took 108 minutes; NASA's StarChild page describes this as time in orbit, the other sources as the time from launch to landing.",
+   "The Soviet programme had been pursued in secret, and a series of uncrewed test flights between May 1960 and March 1961, the last two fully successful, cleared the way for a crewed launch. Both Cold War superpowers wanted to develop spaceflight quickly, and above all to be first to launch a human successfully.",
+   "Gagarin became an international hero. Less than a month later, on 5 May 1961, Alan Shepard became the first American in space with a 15-minute suborbital flight, and John Glenn made the first American orbital flight on 20 February 1962."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Vostok_1",
+    "title": "Vostok 1",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   },
+   {
+    "url": "https://airandspace.si.edu/explore/stories/gagarin-vs-shepard",
+    "title": "Racing to Space: Yuri Gagarin and Alan Shepard",
+    "publisher": "Smithsonian National Air and Space Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://starchild.gsfc.nasa.gov/docs/StarChild/space_level2/vostok1.html",
+    "title": "The launch of Vostok 1",
+    "publisher": "NASA Goddard Space Flight Center (StarChild)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6
+    ]
+   },
+   {
+    "url": "https://science.nasa.gov/resource/yuri-gagarin-first-human-in-space/",
+    "title": "Yuri Gagarin: First Human in Space",
+    "publisher": "NASA Science",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6
+    ]
+   }
+  ],
+  "claims": [
+   "On 12 April 1961 Vostok 1 carried Yuri Gagarin, the first human in (orbital) space.",
+   "Gagarin was a Soviet air force pilot selected with 20 others in 1960 (NASM); backups Titov and Nelyubov (Wikipedia).",
+   "Launched from Baikonur at 9:07 a.m. Moscow time (StarChild; Wikipedia 06:07 UTC).",
+   "The launcher was a modified R-7 ICBM, which had launched Sputnik in 1957; the Vostok 3KA capsule; one orbit at 181–327 km altitude.",
+   "Gagarin ejected at about 7 km/7,000 m and parachuted separately; early Soviet reports omitted this (NASM); landed in the Saratov region south-west of Engels (StarChild).",
+   "The flight lasted 108 minutes (launch to landing: Wikipedia, NASM; 'in orbit': StarChild; NASA Science: the flight lasted 108 minutes).",
+   "The Space Race context; the programme pursued secretly; uncrewed tests May 1960 – March 1961, the last two successful.",
+   "Gagarin became an international hero.",
+   "Shepard on 5 May 1961 made a 15-minute suborbital flight; Glenn's orbital flight on 20 February 1962."
+  ],
+  "disagree": "NASA's StarChild page says Gagarin spent 108 minutes in orbit; Wikipedia and the National Air and Space Museum give 108 minutes as the time from launch to landing. Launch time: 9:07 a.m. Moscow time (StarChild; 06:07 UTC in Wikipedia), 9.06 a.m. according to ESA.",
+  "checked": {
+   "by": "https://www.esa.int/About_Us/Corporate_news/Forty_years_on",
+   "result": "5 claims checked: the date, the launch from Baikonur on an R-7 that had launched the first satellite, the single orbit, the parachute landing and the 108 minutes from lift-off to landing agree; none contradicted. ESA gives the launch time as 9.06 am Moscow time, against 9:07 in the sources used; added to the disagreements",
+   "errors": 0
+  }
+ },
+ "Q201684": {
+  "title": "Wall Street crash of 1929",
+  "y": 1929,
+  "place": "New York Stock Exchange, New York City, United States",
+  "paras": [
+   "The Wall Street crash of 1929 was the collapse of share prices on the New York Stock Exchange in the last week of October 1929. Those involved were the millions of American investors, many of them ordinary men and women, the brokers and banks who had lent them money to buy shares, and the Federal Reserve, which had tried to curb the speculation.",
+   "Share prices had soared through the 1920s: the Dow Jones Industrial Average rose about six-fold from 63 in August 1921 to a peak of 381 on 3 September 1929. After a nervous September the market broke on Thursday 24 October, 'Black Thursday', when a record 12.9 million shares changed hands; leading bankers bought large blocks of shares above market prices to restore confidence, but the effort failed. On 'Black Monday', 28 October, the Dow fell nearly 13 percent, and on 'Black Tuesday', 29 October, it dropped nearly 12 percent more as some 16 million shares were traded. By mid-November the Dow had lost almost half its value. The New York Federal Reserve Bank bought government securities, lent freely and cut its discount rate, so that the commercial banks at the centre of the storm stayed open.",
+   "The boom had been fed by easy credit: buyers typically put down about 10 percent of a share's price and borrowed the rest, using the shares as collateral, so falling prices forced sales that drove prices lower still. The Federal Reserve, worried that speculation was draining credit from industry and trade, raised the New York discount rate to 6 percent in August 1929; under the gold standard this pushed other countries to raise their rates and helped slow economies around the world.",
+   "The crash wiped out the savings of many investors and frightened consumers into cutting spending on goods such as cars, so firms cut production and unemployment rose. The decline went on until July 1932, when the Dow closed at 41.22, 89 percent below its peak; it did not regain its 1929 level until November 1954. The crash marked the start of the Great Depression, though economists debate how far it caused it: the Federal Reserve's historians argue that its effects alone might have faded and that the banking panics of 1930 to 1933 turned a sharp recession into the longest and deepest depression in American history."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Wall_Street_crash_of_1929",
+    "title": "Wall Street crash of 1929",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     10
+    ]
+   },
+   {
+    "url": "https://www.federalreservehistory.org/essays/stock-market-crash-of-1929",
+    "title": "Stock Market Crash of 1929",
+    "publisher": "Federal Reserve History (Federal Reserve Bank of Richmond and others)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.federalreservehistory.org/essays/great-depression",
+    "title": "The Great Depression",
+    "publisher": "Federal Reserve History",
+    "accessed": "2026-11-28",
+    "supports": [
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The crash on the NYSE in late October 1929 (Wikipedia: 24–29 October); ordinary men and women invested in stocks; brokers and margin accounts.",
+   "The Dow rose six-fold from 63 in August 1921 to 381 (peak 3 September 1929, closing 381.17).",
+   "Black Thursday, 24 October: a record 12.9 million shares (Wikipedia); bankers bought blocks of shares at high prices to restore confidence, which failed.",
+   "Black Monday, 28 October: the Dow fell nearly 13% (Wikipedia: 12.82%); Black Tuesday, 29 October: nearly 12% (FRH), some 16 million shares traded (Wikipedia).",
+   "By mid-November the Dow had lost almost half its value (FRH); Wikipedia associates the crash with the start of the Great Depression.",
+   "The New York Fed bought securities, expedited discount lending, lowered its rate; banks remained open.",
+   "Margin buying: typically 10 percent down, the rest borrowed, stocks as collateral.",
+   "The Fed believed speculation diverted resources; New York's discount rate reached 6 percent in August 1929; under the gold standard foreign central banks raised rates, tipping economies into recession.",
+   "The crash frightened investors and consumers; purchases of cars fell; firms cut production; unemployment rose; the Dow bottomed at 41.22 in July 1932 (89% below peak) and regained the 1929 high in November 1954.",
+   "The crash marked the start of the Great Depression; debate over its role; FRH: its impact faded and banking problems (panics 1930–31, crises to 1933) turned it into the longest, deepest depression."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://www.history.com/articles/1929-stock-market-crash",
+   "result": "1 claim checked: Black Tuesday, 29 October 1929, with some 16 million shares traded, agrees; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q21479779": {
+  "title": "November 2015 Paris attacks",
+  "y": 2015,
+  "place": "Paris and Saint-Denis, France",
+  "paras": [
+   "On the evening of Friday 13 November 2015 a team of ten Islamic State militants, organised from a terrorist cell based in Brussels, attacked Paris and its northern suburb of Saint-Denis. Most of the attackers had been born and raised in France or Belgium. The Islamic State group claimed the attacks, which are considered the deadliest in peacetime French history.",
+   "From 21:16, three suicide bombers blew themselves up outside the Stade de France in Saint-Denis during an international football match, having failed to get into the stadium. A second group fired on crowded cafés and restaurants in central Paris, and one of them detonated his explosive vest. A third group opened fire at an Eagles of Death Metal concert attended by about 1,500 people at the Bataclan theatre and took hostages; when police stormed the building the attackers were shot or set off their vests. In all 130 people were killed, 90 of them at the Bataclan, and 416 were physically injured. On 18 November the suspected ringleader, Abdelhamid Abaaoud, was killed in a police raid in Saint-Denis. Accounts of the attackers' fate differ slightly: Wikipedia says seven died at the scenes and two in the Saint-Denis raid, while the Associated Press, as published by NPR, says the nine others all died that night. The tenth, Salah Abdeslam, who had driven the stadium bombers, escaped.",
+   "The attackers were motivated by Islamist extremism, and their stated aim was retaliation for French air strikes on the Islamic State in Syria and Iraq; France had been on high alert since the Charlie Hebdo shooting and related attacks in January 2015.",
+   "France declared a state of emergency, which lasted until 2017, when many of its measures were written into ordinary law; armed patrols became a permanent sight in public places. On 15 November France carried out its biggest air strike yet against the Islamic State. After a nine-month trial, a special terrorism court on 29 June 2022 convicted Abdeslam, the only surviving attacker, of murder and sentenced him to life without parole, France's most severe sentence; nineteen other men were convicted of helping the attackers."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/November_2015_Paris_attacks",
+    "title": "November 2015 Paris attacks",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.npr.org/2022/06/29/1108715478/paris-attacks-2015-conviction-life-sentence",
+    "title": "20 men are convicted in the 2015 Paris terror attacks; one sentenced to life in prison",
+    "publisher": "NPR (Associated Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     5,
+     6,
+     7,
+     11
+    ]
+   },
+   {
+    "url": "https://www.pbs.org/newshour/world/lone-surviving-attacker-in-2015-paris-attacks-gets-life-in-prison-no-parole",
+    "title": "Lone surviving attacker in 2015 Paris attacks gets life in prison, no parole",
+    "publisher": "PBS NewsHour (Associated Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Ten participants; the Brussels terror cell of the Islamic State; most attackers were born and raised in France or Belgium; the IS group claimed the attacks.",
+   "The attacks were the deadliest peacetime attacks in French history.",
+   "Beginning at 21:16 on 13 November 2015, three suicide bombers struck outside the Stade de France during an international football match; a second group fired on cafés and restaurants and one detonated a vest; a third group attacked the Eagles of Death Metal concert at the Bataclan (about 1,500 people) and took hostages; attackers shot or blew themselves up when police raided.",
+   "130 killed, 90 at the Bataclan; 416 physically injured.",
+   "Abaaoud was killed in the Saint-Denis raid on 18 November; Wikipedia: seven perpetrators died at the scenes and two in the raid; NPR/AP: the other nine died that night.",
+   "Salah Abdeslam drove the Stade de France bombers and survived.",
+   "Motive: Islamic extremism and retaliation against French airstrikes on ISIL; France on high alert since the January 2015 Charlie Hebdo attacks.",
+   "A state of emergency was declared.",
+   "France emerged from the state of emergency in 2017 after incorporating many measures into law; armed officers patrol public spaces.",
+   "On 15 November France launched the biggest airstrike of Opération Chammal.",
+   "On 29 June 2022, after a nine-month trial, Abdeslam was convicted of murder and sentenced to life without parole; 19 other men were convicted (18 terrorism-related, one fraud)."
+  ],
+  "disagree": "Wikipedia says seven attackers died at the scenes and two in the Saint-Denis raid five days later; the AP report published by NPR says the nine attackers other than Abdeslam died that night. AP reports also give the number of co-defendants convicted as 19 or 20 with Abdeslam.",
+  "checked": {
+   "by": "https://www.aljazeera.com/news/2022/6/29/french-court-convicts-19-men-in-2015-paris-attacks-trial",
+   "result": "3 claims checked: Abdeslam's murder conviction and life sentence without parole on 29 June 2022 after a nine-month trial, and the state of emergency lifted in 2017, agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q21707860": {
+  "title": "Paris Agreement",
+  "y": 2015,
+  "place": "Paris (Le Bourget), France",
+  "paras": [
+   "The Paris Agreement is a treaty on climate change adopted on 12 December 2015 at the UN Climate Change Conference (COP21) held at Le Bourget near Paris, under the French presidency of Foreign Minister Laurent Fabius. Unlike the Kyoto Protocol, which bound only developed countries, it asks every country to commit to cutting its emissions; almost all the world's states have joined it.",
+   "The agreement was negotiated by the parties to the UN Framework Convention on Climate Change between 30 November and 12 December 2015, after the Copenhagen conference of 2009 had failed to produce a binding successor to Kyoto. It was opened for signature on 22 April 2016 and entered into force on 4 November 2016. Its goal is to hold the rise in global average temperature to well below 2 °C above pre-industrial levels and to pursue efforts to limit it to 1.5 °C. Each country sets its own targets, its 'nationally determined contribution', and is expected to submit a new, stronger one every five years; richer countries are to help poorer ones with finance, and progress is reviewed in a 'global stocktake', the first of which ended at COP28 in 2023. The detailed rules were agreed at Katowice in 2018 and completed at Glasgow in 2021.",
+   "Behind the agreement lay the scientific warnings that warming beyond these limits would bring far greater risks, and the lesson of Kyoto, which had left out the developing countries that had become major emitters. A system of national pledges, set from the bottom up, made it possible for all to take part.",
+   "The agreement is legally binding, but the national targets themselves are not; only the duty to prepare and report them is. The United States, the second-largest emitter, is the only country to have left it: President Donald Trump announced its withdrawal in 2017, which took effect in 2020; President Joe Biden rejoined in 2021; and Trump withdrew again at the start of his second term in January 2025, with effect from 2026. Global temperatures kept rising: the World Meteorological Organization reported that 2024 was about 1.55 °C above pre-industrial levels, according to the Council on Foreign Relations."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Paris_Agreement",
+    "title": "Paris Agreement",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.un.org/en/climatechange/paris-agreement",
+    "title": "The Paris Agreement",
+    "publisher": "United Nations",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9
+    ]
+   },
+   {
+    "url": "https://www.cfr.org/backgrounder/paris-global-climate-change-agreements",
+    "title": "Paris Global Climate Change Agreements",
+    "publisher": "Council on Foreign Relations",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     8,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Adopted on 12 December 2015 at COP21 in Paris (Le Bourget); Fabius presided.",
+   "Kyoto did not compel developing countries; the Paris Agreement requires all countries to set emissions-reduction pledges.",
+   "Drafted 30 November – 12 December 2015; signed 22 April 2016; entered into force 4 November 2016.",
+   "The goal: well below 2 °C above pre-industrial levels, pursuing 1.5 °C.",
+   "Nationally determined contributions, updated every five years; finance for developing countries.",
+   "The first global stocktake concluded at COP28 in 2023; Katowice rulebook (2018) finalised at Glasgow (2021).",
+   "Parties: 195 (194 states plus the EU) per the UN; 194 UNFCCC members as of January 2026 per Wikipedia; legally binding treaty. The NDCs themselves are not binding, but the procedures (prepare, communicate) are (Wikipedia).",
+   "Warming beyond 1.5 °C brings catastrophic consequences (scientists' warnings, CFR); the UN says the limit significantly reduces risks.",
+   "Copenhagen 2009 failed to produce a binding successor; bottom-up approach.",
+   "US withdrawal: Wikipedia — withdrew 2020, rejoined 2021, withdrew again 2026; CFR — Trump's move in 2017, Biden rejoined, Trump withdrew again on the first day of his second term in 2025; the US is the only country to withdraw.",
+   "WMO: 2024 about 1.55 °C above pre-industrial levels (as reported by CFR)."
+  ],
+  "disagree": "The dates of the US withdrawals differ between announcement and effect: CFR gives 2017 and January 2025 (the decisions), Wikipedia 2020 and 2026 (when they took effect). The UN counts 195 parties (194 states and the EU); Wikipedia says 194 UNFCCC members were parties as of January 2026.",
+  "checked": null
+ },
+ "Q36204": {
+  "title": "2011 Tōhoku earthquake and tsunami",
+  "y": 2011,
+  "place": "Pacific coast of north-eastern Japan (Tōhoku)",
+  "paras": [
+   "At 14:46 local time on 11 March 2011 an undersea megathrust earthquake struck about 72 km east of the Oshika Peninsula in the Tōhoku region of north-eastern Honshu, Japan. Its magnitude is given as 9.0–9.1 by Wikipedia and 9.1 by the US National Oceanic and Atmospheric Administration (NOAA): the largest ever recorded in Japan and, according to NOAA, the third-largest in the world since 1900. The disaster is known in Japan as the Great East Japan Earthquake.",
+   "The shaking lasted about six minutes. Within 30 minutes a tsunami reached the coast, overtopping sea walls along some 2,000 km of Japan's Pacific shore; waves reached about 40 m (40.5 m at Miyako in Iwate Prefecture, according to Wikipedia). Whole towns were swept away: more than 123,000 houses were completely destroyed and almost a million damaged, and NOAA attributes 98 percent of the damage to the tsunami. At the Fukushima Daiichi nuclear power plant the tsunami knocked out the power supply and cooling, and the cores of three reactors largely melted down in the first three days, releasing radioactivity and forcing the evacuation of hundreds of thousands of residents from the surrounding zones.",
+   "The earthquake was caused by thrust faulting on the boundary where the Pacific plate slides beneath the plate carrying northern Japan, a zone that had produced deadly tsunamis before, in 1611, 1896 and 1933. The quake moved Honshu about 2.4 metres to the east and shifted the Earth's axis by an estimated 10 to 25 cm.",
+   "The tolls differ by source. Japan's National Police Agency counted 15,901 deaths and 2,519 people missing as of March 2026 (as reported by NOAA), while Wikipedia gives official figures released in 2021 of 19,759 deaths and 2,553 missing. NOAA puts the cost in Japan at 220 billion US dollars, Wikipedia at over 300 billion; either way it was the costliest natural disaster in history. The tsunami was measured across the Pacific, killing one person in Indonesia and one in California, where warning systems helped limit the loss of life. Four years later, in 2015, almost 229,000 people were still living away from their homes."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/2011_T%C5%8Dhoku_earthquake_and_tsunami",
+    "title": "2011 Tōhoku earthquake and tsunami",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.ncei.noaa.gov/news/day-2011-japan-earthquake-and-tsunami",
+    "title": "On This Day: 2011 Tohoku Earthquake and Tsunami",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "11 March 2011, 14:46 local time; undersea megathrust earthquake 72 km east of the Oshika Peninsula, Tōhoku (NOAA: off the northeast coast of Honshu on the Japan Trench).",
+   "Magnitude 9.0–9.1 (Wikipedia) / Mw 9.1 (NOAA); the largest ever recorded in Japan; third largest in the world since 1900 (NOAA).",
+   "The shaking lasted about six minutes.",
+   "The tsunami arrived within 30 minutes (NOAA), overtopping seawalls; about 2,000 km of coast affected; maximum almost 40 m (NOAA) / 40.5 m at Miyako, Iwate (Wikipedia).",
+   "More than 123,000 houses destroyed and almost a million damaged; 98% of damage attributed to the tsunami (NOAA).",
+   "The tsunami disabled power and cooling at Fukushima Daiichi; three cores largely melted in the first three days; evacuation zones affecting hundreds of thousands of residents.",
+   "Thrust faulting on the subduction boundary between the Pacific and North America (Okhotsk) plates; earlier tsunamis 1611, 1896, 1933 (NOAA); Honshu moved 2.4 m east; axis shifted 10–25 cm (Wikipedia).",
+   "Deaths: NPA 15,901 dead and 2,519 missing as of March 2026 (NOAA); official figures released in 2021: 19,759 deaths and 2,553 missing (Wikipedia).",
+   "Cost: 220 billion USD (NOAA) / over 300 billion (Wikipedia; infobox US$360 billion); the costliest natural disaster in history (both).",
+   "In 2015, 228,863 people were still living away from home.",
+   "The tsunami was observed in over 25 Pacific Rim countries; one death in Indonesia and one in California; warning systems limited loss of life."
+  ],
+  "disagree": "Magnitude: 9.0–9.1 (Wikipedia), 9.1 (NOAA). Deaths: 15,901 dead and 2,519 missing per Japan's police (NOAA, March 2026) against 19,759 deaths and 2,553 missing in the official figures of 2021 cited by Wikipedia. Cost: 220 billion US dollars (NOAA) against over 300 billion (Wikipedia). Highest wave: almost 40 m (NOAA), 40.5 m (Wikipedia).",
+  "checked": {
+   "by": "https://world-nuclear.org/information-library/safety-and-security/safety-of-plants/fukushima-daiichi-accident",
+   "result": "3 claims checked against World Nuclear Association: the time 14:46 on 11 March 2011, magnitude 9.0 (within the 9.0-9.1 given), and three reactor cores largely melted in the first three days agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q46362": {
+  "title": "Congress of Vienna",
+  "y": 1814,
+  "place": "Vienna, Austrian Empire",
+  "paras": [
+   "The Congress of Vienna met from September 1814 to June 1815 to settle Europe after the defeat of Napoleon. It was chaired by the Austrian foreign minister Prince Klemens von Metternich. The leading parts were played by the four victorious allies, represented by Metternich for Austria, Viscount Castlereagh for Britain, Tsar Alexander I for Russia and Prince Karl August von Hardenberg for Prussia, and by defeated France, represented by Talleyrand; monarchs and envoys from across Europe came to press their own claims.",
+   "The four allies first meant to decide everything themselves, but Talleyrand and the Spanish envoy Pedro Gómez Labrador protested, and France was admitted to the inner circle of great powers. The hardest dispute was the Polish-Saxon question: Russia wanted most of the Duchy of Warsaw and Prussia all of Saxony, whose king had sided with Napoleon, while Austria, Britain and France resisted. A compromise was reached by early 1815: Russia received most of Poland as a kingdom under the tsar, and Prussia a large part of Saxony (60 percent according to Wikipedia, a third according to the Encyclopedia of Modern Europe) and new lands on the Rhine. The congress was nearly finished when Napoleon escaped from Elba in March 1815; the Final Act, which gathered all the separate treaties, was signed on 9 June 1815, nine days before his final defeat at Waterloo.",
+   "The peacemakers wanted a lasting balance of power in which no state, France above all, could dominate Europe again, and the conservative monarchies also wanted to hold back revolutionary and liberal movements. To contain France, Belgium was joined to an enlarged Kingdom of the Netherlands; Austria took Lombardy–Venetia in northern Italy, and Habsburg relatives were placed in Modena, Parma and Tuscany. A German Confederation of the German states was created, with Austria presiding. The congress also guaranteed Swiss neutrality, condemned the slave trade and declared freedom of navigation on rivers such as the Rhine and the Danube.",
+   "The settlement gave rise to the Concert of Europe, under which the great powers met to keep the peace, and it shaped Europe's political order for decades without a general war. Historians judge it differently: some credit it with a long peace, others blame it for suppressing national, democratic and liberal movements in the interest of the old monarchies. Sources also disagree on the signatories: Wikipedia says Spain refused to sign in 1815, in protest at the Italian settlement among other reasons, and signed only in 1817, while UNESCO's description of the Austrian copy and the Encyclopedia of Modern Europe list Spain among the eight signing powers."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Congress_of_Vienna",
+    "title": "Congress of Vienna",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/congress-vienna",
+    "title": "Congress of Vienna (Encyclopedia of Modern Europe: Europe 1789-1914)",
+    "publisher": "Encyclopedia.com (Gale)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.unesco.at/en/communication/documentary-heritage/memory-of-the-world-in-austria/final-document-of-the-congress-of-vienna-1815",
+    "title": "Final Document of the Congress of Vienna 1815",
+    "publisher": "Austrian Commission for UNESCO",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     7,
+     8,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The Congress met in Vienna from September 1814 to June 1815, chaired by Metternich, after Napoleon's defeat.",
+   "Delegates: Metternich (Austria), Castlereagh (Britain), Alexander I (Russia), Hardenberg (Prussia), Talleyrand (France).",
+   "Talleyrand and Labrador opposed the allies deciding alone; France was admitted to the decision-making process.",
+   "The Polish-Saxon question: Russia wanted the Duchy of Warsaw/most of Poland, Prussia all of Saxony (whose king had allied with Napoleon); Austria, Britain and France resisted; resolved by January 1815.",
+   "Russia received most of the Duchy as a kingdom; Prussia part of Saxony (60 percent per Wikipedia, a third per Encyclopedia.com) and Rhineland territory.",
+   "Napoleon's escape from Elba postponed the final act; the Final Act was signed on 9 June 1815, nine days before Waterloo (18 June).",
+   "The aim was a balance of power and long-term peace; the conservative powers sought to suppress revolutionary and liberal movements.",
+   "Belgium joined to an enlarged Kingdom of the Netherlands; Austria gained Lombardy–Venetia; Habsburgs placed in Modena, Parma and Tuscany; the German Confederation created under Austria's presidency.",
+   "Swiss neutrality guaranteed; slave trade condemned; freedom of navigation on the Rhine and Danube.",
+   "The settlement gave birth to the Concert of Europe and shaped Europe's order for decades; historians both praise the peace and criticise suppression of national and liberal movements.",
+   "Signatories: Wikipedia says Spain did not sign and signed in 1817; UNESCO and Encyclopedia.com list Spain among eight signing powers."
+  ],
+  "disagree": "Prussia's share of Saxony: 60 percent in Wikipedia, a third in the Encyclopedia of Modern Europe. Spain: Wikipedia says it refused to sign the Final Act in 1815 and signed in 1817; UNESCO Austria and the Encyclopedia of Modern Europe list Spain among the eight signatories.",
+  "checked": null
+ },
+ "Q47359": {
+  "title": "Kyoto Protocol",
+  "y": 1997,
+  "place": "Kyoto, Japan",
+  "paras": [
+   "The Kyoto Protocol was an international treaty adopted in Kyoto, Japan, on 11 December 1997 by the parties to the 1992 United Nations Framework Convention on Climate Change (UNFCCC). It was the first legally binding climate treaty: it set binding limits on greenhouse gas emissions for developed countries, while developing countries, including major emitters such as China and India, had no obligation to cut theirs.",
+   "The protocol covered carbon dioxide, methane, nitrous oxide and other greenhouse gases. Developed countries were to reduce emissions by an average of about 5 percent below 1990 levels, in the Council on Foreign Relations' summary, each with its own target; they could also meet part of their targets through 'flexibility mechanisms': emissions trading, joint implementation and the clean development mechanism, which earned credits for projects that cut emissions in other countries. The treaty needed ratification by at least 55 states; it came into force on 16 February 2005, after Russia and Canada had ratified it in 2004. The United States signed it in 1998 under President Clinton but never ratified it: the Senate had already voted in 1997, in the non-binding Byrd–Hagel resolution, against any agreement of that kind, and the US later withdrew its signature.",
+   "The treaty rested on the scientific consensus that the world is warming and that human emissions of carbon dioxide are driving it, and on the principle of 'common but differentiated responsibilities': developed countries, historically responsible for most of the gases already in the atmosphere, should act first.",
+   "In the first commitment period, 2008 to 2012, all 36 fully participating countries met their targets, helped by the 2008 financial crisis and by the collapse of industry in the former Eastern Bloc after 1990; yet global emissions rose by 32 percent from 1990 to 2010. Canada withdrew with effect from December 2012. The Doha Amendment extended the protocol to 2020 with binding targets for 37 countries, and the Paris Agreement of 2015, which requires pledges from all countries, took its place."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Kyoto_Protocol",
+    "title": "Kyoto Protocol",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.cfr.org/backgrounder/paris-global-climate-change-agreements",
+    "title": "Paris Global Climate Change Agreements",
+    "publisher": "Council on Foreign Relations",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Adopted in Kyoto on 11 December 1997 under the 1992 UNFCCC (CFR: adopted 1997).",
+   "The first legally binding climate treaty; obligations on developed countries; developing countries including China and India not compelled.",
+   "Developed countries to reduce emissions by an average of 5 percent below 1990 levels (CFR); individual targets per country.",
+   "Seven greenhouse gases (CO2, methane, nitrous oxide etc.); flexibility mechanisms: joint implementation, the clean development mechanism and emissions trading.",
+   "Condition of ratification by at least 55 states; entry into force on 16 February 2005 after Russia and Canada ratified in 2004 (CFR: entered into force 2005).",
+   "The US signed in (November) 1998 under Clinton but never ratified; the Senate's 1997 Byrd–Hagel Resolution; the US later withdrew its signature (CFR).",
+   "Based on the scientific consensus on human-driven warming; the principle of common but differentiated responsibilities.",
+   "First commitment period 2008–2012: all 36 fully participating countries complied; the 2008 financial crisis and Eastern Bloc reductions; global emissions rose 32% from 1990 to 2010.",
+   "Canada withdrew effective December 2012; the Doha Amendment extended it to 2020 with 37 countries having binding targets.",
+   "The Paris Agreement (2015) requires all countries to set pledges."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q48249": {
+  "title": "Falklands War",
+  "y": 1982,
+  "place": "Falkland Islands and South Georgia, South Atlantic",
+  "paras": [
+   "The Falklands War of April to June 1982 was fought between Argentina, ruled by a military junta under General Leopoldo Galtieri, and the United Kingdom under Prime Minister Margaret Thatcher, over the Falkland Islands, a small British overseas territory about 300 miles (almost 500 km) off Argentina's coast, and its dependencies of South Georgia and the South Sandwich Islands.",
+   "On 2 April 1982 Argentine forces seized the islands in a surprise invasion. Britain assembled a task force of about 100 ships, whose first elements sailed on 5 April for the South Atlantic, some 8,000 miles from home. Special forces and Royal Marines recaptured South Georgia between 21 and 25 April. On 2 May the British submarine HMS Conqueror's torpedoes sank the Argentine cruiser General Belgrano, killing 321 of her crew and two civilians, and Argentine air attacks sank several British ships, among them the Atlantic Conveyor, hit by an Exocet missile on 25 May with the loss of most of the heavy-lift helicopters. British troops landed at San Carlos Water on East Falkland on 21 May, won the first major land battle at Goose Green on 28 May and, after night battles for the mountains around Stanley, received the surrender of the Argentine commander, Mario Menéndez, on 14 June 1982.",
+   "The war grew out of a long dispute over sovereignty. Argentina claims the islands, which it calls Las Malvinas, as its own and called its action the recovery of its territory; Britain regarded the islands as a Crown colony since 1841, and the islanders, mostly descended from British settlers, strongly wanted to remain British. Years of talks, urged by the United Nations since 1965, had not settled the question, and the junta hoped to bring the islands under Buenos Aires at last.",
+   "In the 74 days of fighting, 649 Argentine servicemen, 255 British servicemen and three Falkland Islanders were killed. In Argentina the defeat set off large protests against the military government, hastening its fall and the return of democracy; in Britain Thatcher's government gained in popularity and was re-elected with a larger majority in 1983. Diplomatic relations between the two countries were restored in 1989, but Argentina still claims the islands."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Falklands_War",
+    "title": "Falklands War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.nam.ac.uk/explore/british-army-and-falklands-war",
+    "title": "The British Army and the Falklands War",
+    "publisher": "National Army Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "The war was between Argentina (junta; Galtieri) and the UK (Thatcher) over the Falklands and dependencies, a territory about 300 miles (almost 500 km) off Argentina.",
+   "Argentina launched a surprise invasion on 2 April 1982; the junta hoped to bring Las Malvinas under Buenos Aires.",
+   "The task force of 100 ships; first elements sailed on 5 April 1982; some 8,000 miles from the UK; South Georgia recaptured 21–25 April.",
+   "General Belgrano sunk by two torpedoes on 2 May (by HMS Conqueror); 321 crew and two civilians died.",
+   "Argentine air attacks sank several British ships; the Atlantic Conveyor was hit by an Exocet on 25 May and all but one heavy-lift Chinook lost.",
+   "Landings at San Carlos Water on 21 May; Goose Green attack began 28 May.",
+   "Battles for the mountains around Stanley; Menéndez surrendered; ceasefire/surrender on 14 June 1982 after 74 days.",
+   "649 Argentine military, 255 British military and 3 Falkland Islanders killed (NAM: 255 British servicemen and three female civilians; 649 Argentines).",
+   "Sovereignty dispute: Argentina's claim; Crown colony since 1841; islanders favour British sovereignty; UN called for a settlement in 1965.",
+   "Protests in Argentina hastened the junta's downfall and democratisation; the Conservative government re-elected with an increased majority the following year; relations restored in 1989."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q79911": {
+  "title": "Russian Civil War",
+  "y": 1917,
+  "place": "Former Russian Empire",
+  "paras": [
+   "The Russian Civil War was fought across the former Russian Empire after the Bolsheviks under Vladimir Lenin seized power in the October Revolution of 1917. On one side stood the Bolsheviks' Red Army; on the other the Whites, led mainly by former imperial officers such as Alexander Kolchak in Siberia, Anton Denikin and later Pyotr Wrangel in the south and Nikolai Yudenich in the north-west. Anarchists such as Nestor Makhno's army in Ukraine, Left Socialist-Revolutionaries, peasant 'green armies' and national independence movements fought as well, and foreign states intervened, most of them against the Reds.",
+   "Resistance to the Bolsheviks grew into full-scale war in May–June 1918, when the Czechoslovak Legion, formed from captured Austro-Hungarian soldiers, revolted in Siberia; the Allies then landed forces in northern Russia and Siberia, hoping to restore the Eastern Front against Germany, which Russia had left by the Treaty of Brest-Litovsk. Leon Trotsky reorganised the Red Guards into the Workers' and Peasants' Red Army. In November 1918 Kolchak was named 'Supreme Ruler' of the anti-Bolshevik government at Omsk. In 1919 the Whites attacked from the east in March, the south in July and the west in October, but each offensive was beaten back, and by early 1920 they had been defeated on all three fronts; Kolchak was handed over by the Czechoslovaks and executed. The remnants of Denikin's armies under Wrangel were evacuated from Crimea in November 1920. Sporadic fighting went on in the Far East until the capture of Vladivostok in October 1922.",
+   "The war arose because the seizure of power by one party was not accepted by many groups: landowners and factory owners who lost their property, officers, liberals and other socialists, and many opponents of the harsh Brest-Litovsk peace, which cost Russia about a third of its population and a third of its factories. The Whites never united politically or co-ordinated their armies, while the Bolsheviks held the industrial heartland, had more men and a single ideology.",
+   "The Bolshevik victory produced the Russian Soviet republic and later the Soviet Union, though Estonia, Latvia, Lithuania and Poland kept their independence and the Peace of Riga of March 1921 divided Ukraine and Belarus with Poland. The human cost was enormous: Wikipedia gives an estimated 7 to 12 million casualties, mostly civilians, while David Bullock, author of The Russian Civil War (2008), as quoted by Spartacus Educational, put the deaths at 7 to 14 million, including about 5 million in the famines of 1921–22 caused by the war's economic disruption. Sources also differ on the end date: 1920, 1921 or October 1922."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Russian_Civil_War",
+    "title": "Russian Civil War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://ebsco.com/research-starters/history/russian-civil-war",
+    "title": "Russian Civil War",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     7,
+     8,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://spartacus-educational.com/RUScivilwar.htm",
+    "title": "Russian Civil War",
+    "publisher": "Spartacus Educational",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     5,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The civil war followed the Bolshevik seizure of power under Lenin in the October Revolution of 1917.",
+   "The Whites were led mainly by former imperial officers: Kolchak in Siberia, Denikin and Wrangel in the south, Yudenich in the north-west.",
+   "Makhno's anarchists, Left SRs, green armies and national movements also fought; foreign states intervened, mostly against the Reds.",
+   "Full-scale war began in May–June 1918 with the revolt of the Czechoslovak Legion (recruited from captured Austro-Hungarian soldiers) in Siberia; Allied North Russian and Siberian interventions followed, aiming to restore the Eastern Front; Brest-Litovsk peace with Germany.",
+   "Kolchak was named Supreme Ruler at Omsk in November 1918.",
+   "Trotsky reorganised the Red Guards into the Workers' and Peasants' Red Army.",
+   "White offensives in 1919 from the east (March), south (July) and west (October) were checked; by early 1920 the Whites were defeated on all three fronts; the Czechoslovaks handed Kolchak over and he was executed.",
+   "Wrangel took over the remnants of Denikin's armies in Crimea; evacuation from Crimea in November 1920.",
+   "Sporadic fighting until the capture of Vladivostok in October 1922.",
+   "Opponents included landowners and factory owners who lost property and opponents of the Brest-Litovsk terms (a third of the population and a third of factories lost).",
+   "The Whites never united politically or co-ordinated militarily; the Bolsheviks prevailed through superior manpower, control of industrial resources and a unified ideology.",
+   "Outcome: the Russian SFSR and later the Soviet Union; Baltic states repelled Soviet invasions; the Peace of Riga of March 1921 divided Ukraine and Belarus; 7–12 million casualties, mostly civilians (Wikipedia); David Bullock: 7–14 million deaths including about 5 million in the 1921–22 famines (Spartacus); end dates 1920–1922 differ (EBSCO dates the war 1918–1921 and 1917–1922)."
+  ],
+  "disagree": "Deaths: Wikipedia gives 7 to 12 million casualties; Spartacus Educational quotes David Bullock's 7 to 14 million dead. End date: Wikipedia ends the war with the capture of Vladivostok in October 1922; EBSCO's entry gives both 1918–1921 and 1917–1922 and says the Soviet victory was secure by 1920.",
+  "checked": {
+   "by": "https://www.historyhit.com/facts-about-the-russian-civil-war/",
+   "result": "3 claims checked: the Bolshevik seizure of power in November 1917, Trotsky's Red Army, and the White commanders (Kolchak, Denikin, Wrangel, Yudenich) and their failure to co-ordinate agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q81068910": {
+  "title": "COVID-19 pandemic",
+  "y": 2019,
+  "place": "China (Wuhan, Hubei), then worldwide",
+  "paras": [
+   "The COVID-19 pandemic was the worldwide spread of a new coronavirus, SARS-CoV-2, and of the disease it causes, COVID-19. The first known cases were in Wuhan, in Hubei province, China, in late 2019; molecular-clock studies place the first infections between October and November 2019, and many early patients were linked to the Huanan Seafood Wholesale Market, which also sold live animals. On 31 December 2019 the Wuhan Municipal Health Commission reported a cluster of pneumonia cases, and this is the date the World Health Organization (WHO) gives for first learning of the virus.",
+   "The genetic sequence of the virus was shared publicly in January 2020 (on 10 January according to Wikipedia, on 12 January according to WHO's timeline), and WHO's timeline records the first confirmed case outside China, in Thailand, on 13 January. A WHO mission reported evidence of human-to-human transmission in Wuhan on 22 January. On 30 January WHO declared a public health emergency of international concern, when 7,818 cases had been confirmed, 82 of them in 18 countries outside China, and on 11 March 2020 it described the outbreak as a pandemic. Governments answered with travel restrictions, lockdowns, closures of businesses, mask mandates, quarantines, testing and contact tracing. Vaccines, developed at unusual speed, were given to the public from December 2020, while new variants such as Delta and Omicron spread in waves.",
+   "The scientific consensus is that the virus most likely passed to humans from bats or a closely related mammal; the alternative that it escaped from a laboratory has been proposed but is not the majority view. It spread easily between people, and Wuhan, a transport hub, was busy with travel around the Chinese New Year.",
+   "More than seven million deaths were officially attributed to COVID-19 (7,116,673 by 6 September 2026, according to Wikipedia's figures), but deaths above the normal level were far higher: WHO estimated 14.9 million excess deaths by the end of 2021, against 5.4 million reported. The pandemic caused the deepest global recession since the Great Depression and widespread supply shortages. After 13.3 billion vaccine doses had been given, WHO declared on 5 May 2023 that COVID-19 was an established, ongoing health issue and no longer a public health emergency of international concern."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/COVID-19_pandemic",
+    "title": "COVID-19 pandemic",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.who.int/news/item/27-04-2020-who-timeline---covid-19",
+    "title": "WHO Timeline - COVID-19",
+    "publisher": "World Health Organization",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   {
+    "url": "https://www.who.int/news-room/questions-and-answers/item/coronavirus-disease-covid-19",
+    "title": "Coronavirus disease (COVID-19)",
+    "publisher": "World Health Organization",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3
+    ]
+   },
+   {
+    "url": "https://www.who.int/news/item/05-05-2023-statement-on-the-fifteenth-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-coronavirus-disease-(covid-19)-pandemic",
+    "title": "Statement on the fifteenth meeting of the IHR (2005) Emergency Committee regarding the COVID-19 pandemic",
+    "publisher": "World Health Organization",
+    "accessed": "2026-11-28",
+    "supports": [
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "COVID-19 is the disease caused by the coronavirus SARS-CoV-2.",
+   "The first cases were in Wuhan, Hubei, in late 2019; molecular clock analysis suggests first cases between October and November 2019; many early cases were linked to the Huanan Seafood Wholesale Market, which sold live animals.",
+   "WHO first learned of the virus on 31 December 2019, after the Wuhan Municipal Health Commission reported a cluster of pneumonia cases.",
+   "The genome was shared publicly on 10 January (Wikipedia) or 12 January 2020 (WHO timeline).",
+   "The first recorded case outside China was confirmed in Thailand on 13 January 2020 (WHO timeline); a WHO mission said on 22 January there was evidence of human-to-human transmission in Wuhan.",
+   "WHO declared a PHEIC on 30 January 2020, with 7,818 confirmed cases worldwide and 82 in 18 countries outside China, and characterised COVID-19 as a pandemic on 11 March 2020.",
+   "Measures included travel restrictions, lockdowns, business closures, mask mandates, quarantines, testing and contact tracing; vaccines were deployed to the public from December 2020; variants included Delta and Omicron.",
+   "The scientific consensus is a most likely zoonotic origin from bats or a closely related mammal; a laboratory release has been proposed.",
+   "Wuhan was a transport hub, and spread was helped by the Chinese New Year migration.",
+   "7,116,673 deaths attributed to COVID-19 as of 6 September 2026; WHO estimated 14.9 million excess deaths by the end of 2021 against 5.4 million reported; the largest global recession since the Great Depression and supply shortages.",
+   "On 5 May 2023 WHO declared COVID-19 no longer a PHEIC but an established and ongoing health issue; 13.3 billion vaccine doses had been administered."
+  ],
+  "disagree": "The date the genome was shared: 10 January 2020 in Wikipedia, 12 January in WHO's timeline. Reported deaths (about 7.1 million) are far below excess-death estimates (14.9 million by the end of 2021, WHO).",
+  "checked": null
+ },
+ "Q93304": {
+  "title": "Code of Hammurabi",
+  "y": -1752,
+  "place": "Babylon (Babylonia), Mesopotamia",
+  "paras": [
+   "The Code of Hammurabi is a collection of laws issued in the name of Hammurabi, the sixth king of the First Dynasty of Babylon, who ruled from about 1792 to about 1750 BC. It was composed around 1753 BC, near the end of a reign in which Hammurabi had made Babylon the dominant power of the Mesopotamian plain by war and diplomacy, at times turning on former allies such as Eshnunna, Elam and Mari.",
+   "The best-known copy is a basalt stele 2.25 m tall. At the top a relief shows Hammurabi before Shamash, the sun god and god of justice, who sits on a throne; below, about 4,130 lines of cuneiform text in the Old Babylonian dialect of Akkadian set out a poetic prologue and epilogue and, in between, some 282 laws. The laws are written as cases, 'if ... then', and cover crimes, family life, property, trade, wages and slaves. Many punishments follow the principle of retaliation: law 196 orders that a man who puts out another man's eye shall lose his own eye, and the penalty often depended on the social class of the victim.",
+   "In the prologue Hammurabi says the gods gave him his rule so that the strong should not oppress the weak, and the relief presents his justice as sanctioned by Shamash. Scholars still debate what the text was for: whether it was legislation actually applied in court, a record of the king's decisions, or a work of jurisprudence and royal self-presentation.",
+   "Scribes copied and studied the text for more than a thousand years. About six centuries after it was made, the stele was carried off as plunder, probably from Sippar, to the Elamite city of Susa in present-day Iran, where a French archaeological mission led by Jacques de Morgan found it in 1901–1902. It is now in the Louvre in Paris. Since then it has become one of the most famous legal texts of the ancient world, discussed for its links with the Mosaic law of the Bible, and replicas stand in institutions such as the headquarters of the United Nations."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
+    "title": "Code of Hammurabi",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://collections.louvre.fr/en/ark:/53355/cl010174436",
+    "title": "Code de Hammurabi (SB 8)",
+    "publisher": "Musée du Louvre, Collections",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     8,
+     11
+    ]
+   },
+   {
+    "url": "https://avalon.law.yale.edu/ancient/hamcode.asp",
+    "title": "The Code of Hammurabi (trans. L. W. King)",
+    "publisher": "The Avalon Project, Yale Law School",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "Hammurabi, sixth king of the First Dynasty of Babylon, ruled c. 1792–1750 BC (Wikipedia, middle chronology; the Louvre gives 1792–1750 BC for the reign and the stele).",
+   "The Code was composed c. 1753 BC.",
+   "Hammurabi secured Babylonian dominance of the Mesopotamian plain; betrayed allies in Eshnunna, Elam and Mari.",
+   "The basalt stele is 2.25 m tall (Louvre: 225 cm); the relief shows Hammurabi with Shamash, the sun god and god of justice, seated on a throne.",
+   "About 4,130 lines of cuneiform in Old Babylonian Akkadian; a prologue and epilogue around the laws; 282 laws (numbering in Wikipedia and Avalon).",
+   "The laws are casuistic ('if ... then'), covering criminal, family, property and commercial law, wages and slaves.",
+   "Law 196: if a man put out the eye of another man, his eye shall be put out; lex talionis; penalties varied by class (awīlum, muškēnum, slave).",
+   "Prologue: rule granted by the gods so that the strong should not harm/oppress the weak; the relief legitimises the king's sovereignty and justice.",
+   "The purpose is debated: legislation, law report or jurisprudence.",
+   "The text was copied by scribes for over a millennium; the stele was taken as plunder about 600 years after its creation, probably from Sippar (Roth), to Susa.",
+   "Found at Susa in 1901 (Wikipedia) / 1901–1902 (Louvre) by the mission of Jacques de Morgan; now in the Louvre.",
+   "Discussion of its influence on the Mosaic Law; replicas including at UN headquarters."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://www.history.com/articles/hammurabi",
+   "result": "6 claims checked: the reign 1792-1750 BC, the sixth king, 282 laws, rediscovery in 1901, the seated Shamash as god of justice and the eye-for-an-eye principle agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q944": {
+  "title": "Quantum mechanics",
+  "y": 1900,
+  "place": "Europe (Berlin, Copenhagen, Göttingen, Zurich and elsewhere)",
+  "paras": [
+   "Quantum mechanics, the physics of atoms and their parts, grew out of the work of many physicists over about three decades, mostly in Germany, Denmark, Austria, Switzerland, France and Britain: Max Planck, Albert Einstein, Niels Bohr, Louis de Broglie, Werner Heisenberg, Max Born, Pascual Jordan, Erwin Schrödinger and Paul Dirac among them. Its starting point, the year the map uses, is 1900, when Planck in Berlin found a formula for the radiation given off by a heated 'black body'.",
+   "Classical physics predicted that a hot body should give off unlimited energy at short wavelengths, an obviously wrong result later called the ultraviolet catastrophe. Planck solved the problem in 1900 by assuming that radiation comes in 'quanta' whose energy is set by a new constant, now called Planck's constant. In 1905 Einstein explained the photoelectric effect by treating light itself as made of quanta, and in 1913 Bohr built a quantum model of the hydrogen atom that accounted for its spectral lines. In his doctoral thesis of 1924 de Broglie proposed that matter, too, has wave properties.",
+   "These piecemeal ideas, the 'old quantum theory', were replaced by a full theory in 1925 to 1927. Heisenberg wrote his first paper on quantum mechanics in 1925, which he, Born and Jordan developed into matrix mechanics; in 1926 Schrödinger published his wave equation, and he later showed that the two approaches were equivalent. Born concluded that the theory gives only probabilities for the outcome of an individual event, and in 1927 Heisenberg stated the uncertainty principle: measuring a particle's position disturbs its momentum. From about 1927 Dirac worked to unify the approaches and bring quantum theory into line with special relativity.",
+   "The theory was the answer to experiments that classical mechanics could not explain: black-body radiation, the photoelectric effect and the spectra of atoms. Planck received the Nobel Prize in Physics for 1918 for his discovery of energy quanta, and Heisenberg the prize for 1932 for the creation of quantum mechanics. The theory went on to explain chemical bonding and, through Dirac's work, led towards quantum electrodynamics. What it says about reality is still disputed: physicists and philosophers continue to argue over the 'measurement problem' and offer competing interpretations, including the Copenhagen, Everettian and Bohmian ones."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/History_of_quantum_mechanics",
+    "title": "History of quantum mechanics",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/The_Quantum_age_begins/",
+    "title": "The quantum age begins",
+    "publisher": "MacTutor History of Mathematics, University of St Andrews",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.nobelprize.org/prizes/physics/1918/planck/facts/",
+    "title": "Max Planck – Facts",
+    "publisher": "NobelPrize.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     12
+    ]
+   },
+   {
+    "url": "https://www.nobelprize.org/prizes/physics/1932/heisenberg/facts/",
+    "title": "Werner Heisenberg – Facts",
+    "publisher": "NobelPrize.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     12
+    ]
+   },
+   {
+    "url": "https://plato.stanford.edu/entries/qm/",
+    "title": "Quantum Mechanics",
+    "publisher": "Stanford Encyclopedia of Philosophy",
+    "accessed": "2026-11-28",
+    "supports": [
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Major figures: Planck, Einstein, Bohr, de Broglie, Born, Dirac, Heisenberg, Pauli, Schrödinger.",
+   "In October 1900 Planck, in Berlin, found the correct formula for black-body radiation after Rubens told him his results.",
+   "Classical physics predicted infinite emission at short wavelengths (the ultraviolet catastrophe); Planck solved this in 1900 with quanta whose energies are set by a new constant, Planck's constant.",
+   "In 1905 Einstein explained the photoelectric effect with light quanta.",
+   "In 1913 Bohr published a quantum model of the hydrogen atom explaining its spectral lines.",
+   "De Broglie proposed in his 1924 thesis that matter has wave properties.",
+   "Heisenberg wrote his first paper on quantum mechanics in 1925; Heisenberg, Born and Jordan developed matrix mechanics.",
+   "Schrödinger published his wave equation in 1926 and showed matrix and wave mechanics to be equivalent.",
+   "Heisenberg stated the uncertainty principle in 1927 (measuring position disturbs momentum).",
+   "Born abandoned causality (MacTutor dates this to 1926; the year is not in the text): the theory gives the probability of an effect, not the effect, in an individual collision.",
+   "Dirac from about 1927 unified the formal methods and (1928) made quantum theory invariant under Lorentz transformations, leading to quantum electrodynamics.",
+   "Planck received the 1918 Nobel Prize in Physics for the discovery of energy quanta; Heisenberg the 1932 prize for the creation of quantum mechanics.",
+   "Quantum mechanics was applied to chemistry (Pauling, Slater; molecular orbital and valence theories).",
+   "The measurement problem and competing interpretations (Copenhagen, Everettian, Bohmian, collapse theories) remain debated."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
