@@ -156,5 +156,144 @@
   ],
   "disagree": "First proscription list: about 40 senators and 1,600 knights in Appian, some 80 names in Wikipedia. Resignation of the dictatorship: at the start of 80 BC in Wikipedia's article on Sulla, near the end of 81 BC in its article on the civil war. Both stated in the text.",
   "checked": null
+ },
+ "Q1051202": {
+  "title": "Second Catilinarian conspiracy",
+  "y": -63,
+  "place": "Rome; Catiline's army in Etruria (Faesulae); final battle near Pistoria (Pistoia)",
+  "paras": [
+   "The Catilinarian conspiracy was an attempted coup in 63 BC by Lucius Sergius Catilina (Catiline), a patrician who had been rejected by the voters for the consulship three times. After losing the elections for 62 BC he planned to seize the consulship by force from the consuls of 63, Marcus Tullius Cicero and Gaius Antonius Hybrida. Around him gathered senators thrown out of the Senate or blocked in their careers, debtors, and men ruined by Sulla's civil war, including Sullan veterans who had fallen into debt. A former centurion, Gaius Manlius, raised an army in Etruria near Faesulae.",
+   "Cicero learned of the plot through Fulvia, the mistress of one of the conspirators. In October Crassus handed him letters warning of planned killings, and the Senate passed its emergency decree; Manlius took up arms on 27 October. An attempt on Cicero's life failed, and on 7 November, according to Wikipedia, he denounced Catiline in the Senate in the first of his Catilinarian speeches. Catiline left Rome, joined Manlius and took the insignia of a consul, and the Senate declared both men public enemies and sent Antonius against them.",
+   "In the city the praetor Publius Lentulus Sura tried to win over envoys of the Allobroges, a Gallic people. They told Cicero, who used them to obtain written proof and had them stopped at the Mulvian Bridge. Five conspirators, Lentulus, Cethegus, Statilius, Gabinius and Caeparius, were arrested and confessed. In the Senate's debate of 5 December, Julius Caesar argued against death without trial, but Cato's speech won the house over. The five were strangled in the Tullianum prison, on the Senate's advice and without trial.",
+   "Support for Catiline then fell away. In early January 62 BC his remaining force, at least 3,000 men according to Wikipedia, was caught near Pistoria by the army of Antonius, commanded by his lieutenant Marcus Petreius because Antonius was ill, and Catiline died fighting. Cicero was hailed as 'father of the fatherland', but the executions without trial were later used against him, and in 58 BC Clodius's law drove him into exile. Wikipedia notes that both main sources, Cicero's speeches and Sallust's history, are hostile to Catiline, and that modern scholars think the danger was exaggerated, though the plot was real."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Catilinarian_conspiracy",
+    "title": "Catilinarian conspiracy (rev 1383641597)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Sallust/Bellum_Catilinae*.html",
+    "title": "Sallust, The War with Catiline (Loeb Classical Library, trans. J. C. Rolfe, 1921)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Attempted coup by Catiline, a patrician, against the consuls of 63 BC, Cicero and Antonius Hybrida (Wikipedia).",
+   "Catiline had stood for the consulship three times and was rejected; after defeat for 62 BC he planned a coup (Wikipedia; Sallust on his candidacy for the following year).",
+   "Members: senators expelled or blocked, debtors, men displaced by Sulla's civil war and indebted Sullan veterans (Wikipedia; Sallust on the conspirators and Etruria's poor since Sulla).",
+   "Gaius Manlius, a former centurion, raised an army in Etruria near Faesulae (Wikipedia; Sallust).",
+   "Cicero learned of the plot through Fulvia (Wikipedia; Sallust: Fulvia, through Quintus Curius).",
+   "Crassus handed over letters on 18 or 19 October; the Senate passed the senatus consultum ultimum (Wikipedia).",
+   "Manlius took up arms on 27 October (Wikipedia; Sallust: took the field on the twenty-seventh day of October).",
+   "The attempt on Cicero's life failed (Wikipedia; Sallust: Curius warned Cicero through Fulvia).",
+   "On 7 November Cicero denounced Catiline in the Senate, the first Catilinarian oration (Wikipedia, attributed; Sallust on Cicero's speech).",
+   "Catiline left for Manlius's camp, assumed consular insignia; the Senate declared Catiline and Manlius public enemies; Antonius sent against him (Wikipedia; Sallust).",
+   "Lentulus Sura, a praetor, approached the envoys of the Allobroges, who revealed the plot; Cicero had them arrested at the Mulvian Bridge (Sallust; Wikipedia).",
+   "Lentulus, Cethegus, Statilius, Gabinius and Caeparius arrested and confessed (Wikipedia; Sallust).",
+   "Debate on 5 December: Caesar proposed imprisonment; Cato's speech carried the day (Wikipedia; Sallust gives the speeches).",
+   "Executed without trial, on the Senate's advice; strangled in the Tullianum (Sallust; Wikipedia).",
+   "In early 62 BC, near Pistoria, Catiline's men, at least three thousand (Wikipedia), were defeated by Antonius's army under Petreius, Antonius pleading illness/gout; Catiline killed (Wikipedia; Sallust).",
+   "Cicero hailed pater patriae (Wikipedia).",
+   "Clodius's law in 58 BC banished anyone who executed a citizen without trial; Cicero fled (Wikipedia).",
+   "The main sources, Sallust and Cicero, are hostile; scholars believe the threat was exaggerated though the conspiracy occurred more or less as described (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q16957926": {
+  "title": "Chola invasion of Srivijaya",
+  "y": 1025,
+  "place": "Srivijaya: Palembang (Sumatra), Kadaram (Kedah, Malay Peninsula) and other ports of the Malacca Strait",
+  "paras": [
+   "In 1025 the Chola emperor Rajendra I of southern India sent a naval expedition against Srivijaya, the trading empire of Sumatra and the Malay Peninsula that controlled the Malacca and Sunda Straits. Relations had been friendly under his father Rajaraja I, when a Srivijayan king built a Buddhist monastery at the Chola port of Nagapattinam. Why Rajendra attacked is unclear. The historian Nilakanta Sastri suggested that Srivijaya was obstructing Chola trade with China, or that Rajendra wanted to carry his conquests overseas; another theory links the war to an appeal from the Khmer king against Tambralinga, which had turned to Srivijaya for help.",
+   "Rajendra's own inscription in the great temple at Thanjavur (Tanjore) says that he despatched many ships across the sea and caught Sangrama-vijayottungavarman, the king of Kadaram, with his war elephants, and took his accumulated treasure and the jewelled Vidyadhara-torana, the arch at the war-gate of the enemy's city. It then lists the places taken, among them Pannai, Malaiyur, Ilangasogam, Talaittakkolam, Ilamuri-desam and Kadaram itself. Wikipedia reconstructs the campaign as a fast series of raids: the fleet sailed down the west coast of Sumatra and came in through the Sunda Strait, surprising a Srivijayan navy based at Kedah, then sacked the capital Palembang and its palace before striking other ports.",
+   "The Cholas did not hold most of what they plundered, but Srivijaya never recovered its old power. With its king captured, the Sailendra dynasty came to an end, and Wikipedia says no Srivijayan envoys reached China between 1028 and 1077. A Srivijayan princess who escaped became queen of Airlangga of Java, and the war opened the way for Javanese kingdoms such as Kahuripan and Kediri. Chola influence lasted for decades around Kedah, where Tamil merchant guilds also expanded."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Chola_invasion_of_Srivijaya",
+    "title": "Chola invasion of Srivijaya (rev 1383342096)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://rarebooksocietyofindia.org/book_archive/ID-1605804526.pdf",
+    "title": "E. Hultzsch (ed. and trans.), South-Indian Inscriptions vol. II part I (Madras, 1891), no. 20: inscription of Rajendra-Chola on the south wall of the Rajarajesvara temple, Tanjore",
+    "publisher": "Rare Book Society of India (scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     7
+    ]
+   }
+  ],
+  "claims": [
+   "In 1025 Rajendra I launched naval invasions of Srivijaya (Wikipedia).",
+   "Srivijaya controlled the Malacca and Sunda Straits and was a major trading empire (Wikipedia).",
+   "Relations were cordial under Rajaraja I; in 1006 King Maravijayattungavarman built the Chudamani Vihara at Nagapattinam (Wikipedia).",
+   "Reasons unclear; Nilakanta Sastri suggested obstruction of Chola trade with China or digvijaya (Wikipedia).",
+   "Another theory: Suryavarman I of the Khmer sought Rajendra's help against Tambralinga, which sought aid from Srivijaya (Wikipedia).",
+   "The Thanjavur inscription records that he despatched many ships and caught Sangramavijayottungavarman, king of Kadaram, with his rutting elephants, took his treasures and the Vidyadhara-torana at the war-gate of the enemy's city (Hultzsch translation of SII II no. 20; Wikipedia).",
+   "The inscription lists places taken including Pannai, Malaiyur, Ilangasogam, Talaittakkolam, Ilamuri-desam and Kadaram (Hultzsch translation).",
+   "Wikipedia's reconstruction: fleet along Sumatra's west coast into the Sunda Strait; the Srivijayan navy at Kedah unaware; Palembang sacked, palace plundered; fast raids (Wikipedia, attributed).",
+   "The Cholas did not establish lasting control; Srivijaya was gravely weakened; end of the Sailendra dynasty (Wikipedia).",
+   "No Srivijayan envoys to China between 1028 and 1077 (Wikipedia, attributed).",
+   "A Srivijayan princess escaped and became queen of Airlangga; the invasion enabled regional kingdoms like Kahuripan and Kediri (Wikipedia).",
+   "Chola influence over Kedah lasted several decades; Tamil merchant associations expanded (Wikipedia)."
+  ],
+  "disagree": "Hultzsch (1891) identified Kadaram with a place in the Madura district of India; the expedition by sea that the inscription describes, and Wikipedia, place it in Southeast Asia (Kedah). The text follows the later identification.",
+  "checked": null
  }
 }
