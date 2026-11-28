@@ -494,5 +494,100 @@
   ],
   "disagree": "Participants: Wikipedia says East German forces, except a few specialists, were ordered not to cross the border; the State Department's history lists East German troops among the invaders.",
   "checked": null
+ },
+ "Q482456": {
+  "title": "Fall of Saigon",
+  "y": 1975,
+  "place": "Saigon (today Ho Chi Minh City), South Vietnam",
+  "paras": [
+   "Saigon, the capital of South Vietnam, was taken by the forces of North Vietnam and the Viet Cong on 30 April 1975, ending the Vietnam War. The Paris peace agreement of January 1973 had allowed the United States to withdraw its forces, but, as the State Department's historians note, neither Vietnamese side kept to it and the war went on. In March 1975 the North Vietnamese army under General Văn Tiến Dũng opened an offensive in the Central Highlands and took Buôn Ma Thuột; the South Vietnamese army fell back in a disorderly retreat. After an 11-day stand at Xuân Lộc, the last line of defence before Saigon, it withdrew on 20 April, and President Nguyễn Văn Thiệu resigned the next day.",
+   "Thiệu's successor, Trần Văn Hương, resigned on 28 April and was replaced by General Dương Văn Minh, who was expected to seek a ceasefire, but Hanoi would not negotiate. The final attack on Saigon began on 29 April with heavy shelling. That morning the United States ordered Operation Frequent Wind: with Tan Son Nhut airport's runways unusable, American helicopters flew Americans and South Vietnamese linked to the government from the Defense Attaché compound and the US embassy to ships of the Seventh Fleet. Crowds tried to climb the embassy walls to reach the helicopters, and on the ships aircraft were pushed into the sea to make room for more. It was the largest helicopter evacuation in history. The US ambassador, Graham Martin, left before 5 a.m. on 30 April, and the last Marines flew out from the embassy that morning; Wikipedia records that about 420 Vietnamese and South Koreans were left behind in the embassy compound.",
+   "At 10:24 on 30 April, according to TIME, Minh announced the unconditional surrender of South Vietnam. Around midday North Vietnamese tanks broke through the gates of the Independence (Presidential) Palace, where Minh was waiting, and the Viet Cong flag was raised over it. The government of South Vietnam ceased to exist. On 2 July 1976 Vietnam was formally reunified as the Socialist Republic of Vietnam, with its capital at Hanoi, and Saigon was renamed Ho Chi Minh City. The Vietnamese government calls 30 April the day of the liberation of the South and national reunification; many overseas Vietnamese who fled the South call it 'Black April'."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Fall_of_Saigon",
+    "title": "Fall of Saigon (rev 1387878864)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1969-1976/ending-vietnam",
+    "title": "Ending the Vietnam War, 1969–1973 (Milestones in the History of U.S. Foreign Relations)",
+    "publisher": "U.S. Department of State, Office of the Historian",
+    "accessed": "2026-11-28",
+    "supports": [
+     2
+    ]
+   },
+   {
+    "url": "https://time.com/3825170/vietnam-war-last-48-hours/",
+    "title": "Photos: The Last 48 Hours of the Vietnam War",
+    "publisher": "TIME",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     7,
+     8,
+     9,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.npr.org/sections/the-picture-show/2025/04/30/g-s1-63099/fall-of-saigon-photos-50-years-later",
+    "title": "Photos: A look back at the fall of Saigon and the final days of the Vietnam War",
+    "publisher": "NPR",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     7,
+     8,
+     9,
+     10,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Saigon, capital of South Vietnam, was captured by North Vietnamese (PAVN) and Viet Cong forces on 30 April 1975, ending the Vietnam War (Wikipedia; NPR; TIME).",
+   "The Paris agreement was signed on 27 January 1973 and enabled the US to withdraw; neither Vietnamese party abided by it and the war continued (State Dept; Wikipedia: 1973 Paris Peace Accords violated by both sides immediately).",
+   "Wikipedia: Dũng's offensive in the Central Highlands began on 10 March 1975 and took Buôn Ma Thuột; the ARVN began a disorderly retreat.",
+   "Wikipedia: the ARVN 18th Division held Xuân Lộc, the last line of defence before Saigon, for 11 days, withdrawing on 20 April; Thiệu resigned on 21 April.",
+   "Wikipedia: Hương resigned on 28 April and was succeeded by Dương Văn Minh, who it was hoped could negotiate a ceasefire; Hanoi was in no mood to negotiate (TIME: Minh was 'president for all of two days').",
+   "Wikipedia: the final attack on Saigon began on 29 April 1975 with heavy artillery bombardment.",
+   "Operation Frequent Wind was ordered on the morning of 29 April after the runways at Tan Son Nhut were judged unusable (Wikipedia: order given at 10:51; TIME: on 29 April helicopters began airlifting evacuees; NPR: Operation Frequent Wind).",
+   "Helicopters flew Americans and South Vietnamese associated with the government from the DAO compound and the embassy to ships including the Seventh Fleet (Wikipedia; NPR: evacuees arriving on USS Midway; TIME: USS Blue Ridge).",
+   "Crowds scaled the embassy walls; helicopters pushed off carrier decks to make room (NPR; TIME; Wikipedia).",
+   "Largest helicopter evacuation in history (Wikipedia; NPR).",
+   "Wikipedia: Ambassador Martin's helicopter took off at 04:58 on 30 April; the last Marines left the embassy at 07:53; 420 Vietnamese and South Koreans left behind in the compound.",
+   "TIME: at 10:24 on the morning of 30 April Minh announced the unconditional surrender of South Vietnam (Wikipedia: by 30 April President Minh had surrendered).",
+   "Around midday tanks broke through the gates of the Presidential (Independence) Palace where Minh waited (TIME: at midday; Wikipedia: around noon), and the VC flag was raised over it (Wikipedia; NPR: communist flags fly from the palace).",
+   "Wikipedia: the existence of South Vietnam ended (NPR: end of the South Vietnamese government).",
+   "Wikipedia: reunification formalised on 2 July 1976 as the Socialist Republic of Vietnam with Hanoi as capital; Saigon renamed Ho Chi Minh City the same day.",
+   "Wikipedia: names: Vietnam's government calls it the 'Day of the Liberation of the South and National Reunification'; many overseas Vietnamese refugees call it 'Black April' among other names."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
