@@ -1591,5 +1591,86 @@
   ],
   "disagree": "Date of the Treaty of the Pyrenees: 7 November 1659 (Larousse) or 5 November (Wikipedia).",
   "checked": null
+ },
+ "Q1455240": {
+  "title": "Peace of Prague",
+  "y": 1635,
+  "place": "Prague, Kingdom of Bohemia (today Czech Republic)",
+  "paras": [
+   "The Peace of Prague was a treaty signed in Prague on 30 May 1635 by Emperor Ferdinand II and Elector John George I of Saxony during the Thirty Years' War. Saxony had allied with Sweden in 1631, but after King Gustavus Adolphus was killed at Lützen in 1632 and Wallenstein was murdered in 1634, John George turned away from the Protestant camp and negotiated with the Emperor. The aim was to restore peace inside the Empire so that it could defend itself together against its outside enemies, Sweden and France.",
+   "The treaty suspended the Edict of Restitution of 1629, which had ordered the return of all church lands secularised by Protestants since 1552; Christian History magazine says it was suspended for 40 years. It forbade the estates of the Empire to form alliances among themselves or with foreign powers, and it created a single imperial army of the Emperor's troops and contingents of the estates under imperial command. To settle his war debts, the Emperor gave Upper and Lower Lusatia to Saxony, and John George's son Augustus kept the archbishopric of Magdeburg.",
+   "Almost all the estates of the Empire joined the peace, the main exceptions being Hesse-Kassel and Saxe-Weimar, and for a time the German civil war seemed over on terms favourable to the Emperor. But Sweden and France remained his enemies, and the longest and deadliest phase of the war followed. Saxony soon turned against the Swedes and was beaten at Wittstock in October 1636. The war ended only thirteen years later, with the Peace of Westphalia, which for Saxony largely confirmed the Prague terms."
+  ],
+  "sources": [
+   {
+    "url": "https://www.wissenschaft.de/zeitpunkte/prager-frieden/",
+    "title": "Prager Frieden (Zeitpunkte)",
+    "publisher": "DAMALS / wissenschaft.de",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     11,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://christianhistoryinstitute.org/magazine/article/reasons-of-state",
+    "title": "Reasons of state",
+    "publisher": "Christian History Institute (Christian History magazine)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     6,
+     7,
+     8,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/John_George_I.",
+    "title": "John George I. (Encyclopaedia Britannica, 11th edition, 1911, on Wikisource)",
+    "publisher": "Encyclopaedia Britannica 1911 (public domain), Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     9,
+     10,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Signed in Prague on 30 May 1635 by Emperor Ferdinand II and Elector John George I of Saxony (DAMALS; EB1911 and Christian History: May 1635).",
+   "John George allied with Gustavus Adolphus in September 1631 (EB1911); the king died at Lützen in 1632 (EB1911).",
+   "After Wallenstein's murder and John George's turning away from the Protestant camp, peace seemed possible (DAMALS); John George negotiated for peace (EB1911).",
+   "Aim: only together, after restoring internal peace, could the Empire defend itself against the outside enemies Sweden and France (DAMALS).",
+   "Suspension of the Edict of Restitution of 1629, which declared void all secularisations of church property by Protestants since 1552 (DAMALS; Christian History: Edict of 1629 demanding return of lands taken from the Church since 1552; EB1911: concessions regarding the edict).",
+   "Christian History: the Edict was suspended for 40 years.",
+   "Christian History: forbade states to form alliances among themselves or with foreign powers (DAMALS: forbade leagues).",
+   "A united imperial army from imperial troops and contingents of the estates under imperial command (DAMALS; Christian History: enlisted all in a united imperial army).",
+   "To settle war debts the Emperor transferred Upper and Lower Lusatia to Saxony (DAMALS; EB1911: his reward was Lusatia).",
+   "John George's son Augustus kept the archbishopric of Magdeburg (EB1911).",
+   "All estates except Hesse-Kassel and Saxe-Weimar joined (DAMALS: bis auf Hessen-Kassel und Sachsen-Weimar alle Reichsstände; Christian History: John George acted for the majority of the Protestant princes).",
+   "Christian History: the German civil war seemed over, on terms favourable to Ferdinand II.",
+   "The war did not end, as Sweden and France remained bitter opponents (DAMALS; Christian History: the longest and deadliest phase of the war was about to begin).",
+   "Saxony declared war on the Swedes almost at once and was beaten at Wittstock in October 1636 (EB1911).",
+   "The final peace came 13 years later (DAMALS); the Peace of Westphalia did little more than confirm the treaty of Prague with regard to Saxony (EB1911)."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
