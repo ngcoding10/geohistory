@@ -1533,5 +1533,367 @@
   ],
   "disagree": "Size of the Russian force: 10,000 (1911 Britannica) or 13,000 (Wikipedia, Khanate of Khiva). Date of the peace treaty: 12 August 1873 (Wikipedia, Khanate of Khiva) or 24 August (Wikipedia, Khivan campaign of 1873).",
   "checked": null
+ },
+ "cp18-102": {
+  "title": "Russian Turkestan created",
+  "y": 1867,
+  "place": "Tashkent",
+  "paras": [
+   "Russia had been pushing into the Central Asian steppe for decades, taking forts of the Khanate of Kokand in the 1850s. In 1864 columns from Siberia and Orenburg advanced to close the gap between their lines, and in 1865 General Mikhail Chernyayev took the city of Tashkent, going beyond his orders; the government in St Petersburg accepted the conquest. Khujand (Hodjent) and other towns followed, after a Russian victory over the Emir of Bukhara.",
+   "The new territory was at first a province under the governor-general of Orenburg. A special commission sent to study the country, known as the Steppe Commission, travelled through it for two years and in the spring of 1867 produced a plan for its government. A committee of the ministries of war, the interior and foreign affairs, chaired by the minister of war, accepted it with changes: Turkestan was detached from Orenburg, joined with Semirechye, taken from the Siberian province of Semipalatinsk, and put under a governor-general of its own, reporting directly to the emperor. The governor-general of Orenburg protested in vain.",
+   "The governor-general, appointed by the emperor, also commanded the troops and had full power to conduct relations with the neighbouring states. The first holder was General Konstantin von Kaufmann, who arrived in Tashkent, the capital, in late 1867. The province at first had two regions, Syr Darya and Semirechye. The traveller Eugene Schuyler, in his book Turkistan, judged that experience had proved the Orenburg governor-general's objections sound.",
+   "Turkestan grew as the conquest went on: the Zeravshan district around Samarkand, taken from Bukhara in 1868, the land on the right bank of the Amu Darya taken from Khiva in 1873, and the Fergana region formed from the Khanate of Kokand in 1876. Bukhara and Khiva survived as Russian protectorates, with internal autonomy but under Russian control of their foreign affairs. The governor-generalship lasted until the Russian Revolution."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Russian_Turkestan",
+    "title": "Russian Turkestan (rev 1385535035, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://archive.org/download/turkistannotes02schu/turkistannotes02schu_djvu.txt",
+    "title": "Eugene Schuyler, Turkistan: Notes of a Journey in Russian Turkistan, Khokand, Bukhara, and Kuldja, vol. 2 (1876), OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Khokand",
+    "title": "Khokand, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Russia pushing into the steppes; Kokandi forts including Ak-Mechet taken in 1853 (Wikipedia).",
+   "1864 movement from Siberia and Orenburg to close the gap, unforeseen result the capture of Tashkent (Schuyler); Tashkent taken 1865 by Chernyayev, who exceeded his orders; St Petersburg recognized it (Wikipedia; EB Khokand: Alim-kul killed fighting the Russians at Tashkent in 1865).",
+   "Khodzhent and other towns followed (Wikipedia: Khodzhent, Dzhizak, Ura-Tyube); Bukhara defeated by Romanovsky at Irdjar, one result the loss of Hodjent (Schuyler).",
+   "Province under the orders of the Governor-General of Orenburg (Schuyler; Wikipedia: Turkestan Oblast part of Orenburg Governorate-General).",
+   "Steppe Commission (Giers, Dandeville, Geins, Protsenko) two years of travel; ready with a report and project in spring 1867 (Schuyler).",
+   "Committee of the ministries of War, Interior and Foreign Affairs under the Minister of War accepted it with modifications: Turkestan detached from Orenburg, part of Semipalatinsk (Semiretch) added, separate governor-general reporting only to the emperor; Kryzhanovsky's protest (Schuyler); Wikipedia: separate Governor-General in 1867 with two oblasts, Syr-Darya and Semirechye.",
+   "Governor-general appointed by the emperor, commander-in-chief, full powers for diplomatic relations (Schuyler; Wikipedia: managed as Turkestan Military District).",
+   "First governor-general Kaufmann (Wikipedia); his letter of 19 November/1 December 1867 on arrival in Tashkent announcing his appointment (Schuyler, citing Terentief) - given as late 1867; capital Tashkent, two oblasts (Wikipedia).",
+   "Schuyler's judgment that Kryzhanovsky's reasoning was sound (Schuyler, attributed).",
+   "Zeravshan Okrug 1868, Amu Darya Division 1873 from Khiva, Fergana Oblast 1876 from Kokand (Wikipedia; EB Khokand: annexed 1876 as Fergana); Bukhara and Khiva protectorates with nominal independence (Wikipedia); lasted to the revolution/Soviet rule (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp18-104": {
+  "title": "Russia annexes Kokand",
+  "y": 1876,
+  "place": "Kokand, Fergana Valley",
+  "paras": [
+   "By the 1870s the Khanate of Kokand, in the Fergana Valley, had lost Tashkent and its northern lands to Russia, and its ruler Khudayar Khan was dependent on the Russians, with whom he had made a commercial treaty in 1868. Khudayar was unpopular at home: Wikipedia and the traveller Eugene Schuyler both point to his oppressive rule and taxes. In 1875 a revolt against him and against Russian influence spread through the khanate; his eldest son Nasreddin and much of his army went over to the rebels, led by Abdurrahman Aftobatcha. Khudayar fled with Russian envoys to Hodjent (Khujand) in Russian territory.",
+   "The rebels raised a holy war against Russia, and the governor-general of Turkestan, Konstantin von Kaufmann, invaded. He stormed the frontier fortress of Makhram and occupied the city of Kokand. The new khan, Nasreddin, made peace: according to Schuyler he agreed to pay an indemnity of 3,000,000 rubles over six years and ceded the part of the khanate north of the Syr Darya, around Namangan (the 1911 Encyclopaedia Britannica says the land north of the Naryn).",
+   "The peace did not hold. The people of Kokand drove out Nasreddin, a pretender calling himself Pulat Bek was proclaimed khan, and fighting went on through the winter, with heavy destruction at Andijan and in the countryside, led on the Russian side by Mikhail Skobelev. In early 1876 Andijan was taken, Abdurrahman surrendered and Skobelev occupied Kokand.",
+   "In February 1876 (the Britannica's date) the khanate came to an end: the emperor ordered its annexation, and it became the Russian province of Fergana, the land's ancient name, under Skobelev as its first governor, according to Schuyler. Nasreddin and other leaders were sent as prisoners to Tashkent, and Pulat Bek was later captured and hanged."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Kokand",
+    "title": "Khanate of Kokand (rev 1382464740, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     7,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Khokand",
+    "title": "Khokand, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://archive.org/download/turkistannotes02schu/turkistannotes02schu_djvu.txt",
+    "title": "Eugene Schuyler, Turkistan: Notes of a Journey in Russian Turkistan, Khokand, Bukhara, and Kuldja, vol. 2, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Kokand lost Tashkent (1865) and northern lands (Wikipedia; EB); commercial treaty with the Russians 1868 (EB).",
+   "Khudayar powerless, dependent on Russia (Wikipedia: now powerless; EB: Khudayar-khan).",
+   "Khudayar's tyranny/oppressive taxes (Wikipedia: insurrections against Russian rule and oppressive taxes; Schuyler: tyranny, index 'Tyranny of Khudayar Khan') - attributed to both.",
+   "1875 insurrection; forced into exile 1875 (Wikipedia; EB: compelled to flee 1875); Nasreddin, eldest son, went over to the rebels; Abdurrahman Aftobatcha real head; army deserted; fled with the Russian envoys to Hodjent (Schuyler).",
+   "New holy war against Russia proclaimed 1875 (EB); Kaufmann the commander (Schuyler; Wikipedia: annexation by Kaufman and Skobelev).",
+   "Capture of the strong fort of Makhram, occupation of Khokand (EB; Schuyler: Makhram, advanced on Khokand).",
+   "Nasreddin new khan, treaty: indemnity 3,000,000 rubles in six years, cession north of the Syr Darya around Namangan (Schuyler, attributed); EB: territory north of the Naryn - both stated (EB attributes the concession to the amir of Bokhara; not repeated).",
+   "Inhabitants drove Nasreddin out; Pulad Bek (a pretender, really Mullah Iskak) proclaimed khan (Schuyler).",
+   "Winter fighting, Andijan and countryside ravaged; Skobelev; Andijan taken, Abdurrahman surrendered, Skobelev occupied Khokand (Schuyler); EB: ended in February 1876 by capture of Andijan and Khokand.",
+   "February 1876 annexation (EB, attributed); province of Ferghana (EB; Wikipedia: Fergana Oblast); emperor signed the order of annexation, district named Ferghana, its ancient name, placed under Scobelef (Schuyler, attributed); khanate abolished 1876 (Wikipedia).",
+   "Nasreddin and others sent prisoners to Tashkent; Pulad Bek captured and hanged (Schuyler)."
+  ],
+  "disagree": "The land ceded in the peace of 1875: north of the Syr Darya, around Namangan (Schuyler) or north of the Naryn (1911 Britannica).",
+  "checked": null
+ },
+ "Q10354157": {
+  "title": "Proclamation of the German Empire",
+  "y": 1871,
+  "place": "Hall of Mirrors, Palace of Versailles",
+  "paras": [
+   "After Prussia's victory over Austria in 1866, Otto von Bismarck united the German states north of the Main in the North German Confederation under the king of Prussia, while Bavaria, Württemberg, Baden and Hesse-Darmstadt stayed outside. In July 1870 France declared war on Prussia, and the southern states, bound by defensive alliances, fought on Prussia's side. The German victories of August and September 1870 made the southern princes willing to join a united Germany.",
+   "In November 1870 the southern states signed treaties joining the confederation. In December the federal council and the Reichstag voted to rename it the German Empire (Deutsches Reich) and to give the king of Prussia the title of German Emperor, and the new constitution took effect on 1 January 1871. The 1911 Encyclopaedia Britannica notes that the proclamation came on the initiative of the king of Bavaria, the most powerful of the southern rulers.",
+   "On 18 January 1871, while German armies were besieging Paris, King William I of Prussia was proclaimed German Emperor in the Hall of Mirrors of the Palace of Versailles, the seat of the German headquarters. Wikipedia describes the ceremony: delegations of the regiments filled the hall with their banners, a religious service was held, Bismarck read out the proclamation, and the Grand Duke of Baden called for cheers for 'Emperor William', avoiding the exact title 'German Emperor', to which William objected. Wikipedia adds that the day was chosen as the anniversary of the coronation of the first king in Prussia in 1701.",
+   "Paris capitulated ten days later. In the Treaty of Frankfurt of 10 May 1871 France ceded Alsace and most of Lorraine to the new empire. Bismarck became its first chancellor, and the states of the North German Confederation formed the core of the German Empire."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Proclamation_of_the_German_Empire",
+    "title": "Proclamation of the German Empire (rev 1377299279, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Germany/History",
+    "title": "Germany: History, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     6,
+     7,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/North_German_Confederation",
+    "title": "North German Confederation (rev 1382327186, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Otto_von_Bismarck",
+    "title": "Otto von Bismarck (rev 1386614243, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "After 1866 Bismarck formed the North German Confederation under Prussia (Wikipedia proclamation; NGC; EB Germany).",
+   "Four southern states outside (NGC: Bavaria, Württemberg, Baden, Hesse-Darmstadt).",
+   "France declared war 19 July 1870 (Wikipedia proclamation; EB Germany: Napoleon signed the declaration of war 14 July) - given as July 1870; southern states took Prussia's side under defensive alliances (Wikipedia proclamation; NGC: secret treaties of 1866).",
+   "Victories in August and September 1870 led to the southern princes' willingness to join (Wikipedia proclamation).",
+   "November 1870 treaties bringing the southern states in (NGC); December 1870 votes: Bundesrat 8 December, Reichstag 10 December (NGC), Reichstag 9-10 December (Wikipedia proclamation) - given as December; renamed German Reich, king of Prussia German Emperor (both); constitution effective 1 January 1871 (both).",
+   "Initiative of the king of Bavaria, most powerful of the South German sovereigns (EB, attributed).",
+   "18 January 1871 William I proclaimed German emperor in the great hall of Versailles (EB; Wikipedia: Hall of Mirrors) while Paris besieged; Versailles seat of headquarters (Wikipedia).",
+   "Ceremony: regimental delegations with banners, service, Bismarck read the proclamation (Wikipedia, attributed).",
+   "Grand Duke of Baden's cheer 'Kaiser Wilhelm' avoiding the title German Emperor which Wilhelm would not accept (Wikipedia, attributed).",
+   "Date chosen for the 1701 coronation of Frederick I (Wikipedia, attributed).",
+   "Ten days before the capitulation of Paris (EB).",
+   "Treaty of Frankfort, May 10, 1871: cession of Alsace and the greater part of Lorraine (EB).",
+   "Bismarck first Imperial Chancellor 1871 (Wikipedia Bismarck); North German Confederation states the core of the German Empire (NGC lead)."
+  ],
+  "disagree": "The French declaration of war: 19 July 1870 (Wikipedia) or signed by Napoleon III on 14 July (1911 Britannica); given here as July 1870.",
+  "checked": null
+ },
+ "Q808027": {
+  "title": "Treaty of Bardo: French protectorate over Tunisia",
+  "y": 1881,
+  "place": "Ksar Saïd palace, Le Bardo, near Tunis",
+  "paras": [
+   "Tunisia, ruled by its own beys under nominal Ottoman suzerainty, went bankrupt in 1869 and its finances were put under British, French and Italian controllers. At the Congress of Berlin in 1878 the British foreign secretary, Lord Salisbury, agreed to give France a free hand in Tunisia in return for French acceptance of Britain's lease of Cyprus. France held back until Italian activity in Tunisia, such as the purchase of the British-owned railway from Tunis to Goletta (La Goulette) in 1880, pushed it to act.",
+   "In April 1881 a French force crossed the frontier from Algeria, with raids by the Khroumir (Kroumir) tribes into Algeria as the pretext. Wikipedia puts the expedition at about 36,000 men. Meeting little resistance, the French advanced on Tunis, and on 12 May 1881 the bey, Muhammad as-Sadiq, signed the treaty at his Ksar Saïd palace at Le Bardo.",
+   "The treaty made Tunisia a French protectorate. France took charge of its foreign relations and could occupy points in the country, presented as a temporary measure to restore order and protect the bey. The conquest was not completed without a serious struggle, the 1911 Encyclopaedia Britannica notes, especially at Sfax. The Conventions of La Marsa of 8 June 1883 extended French control to internal affairs, under a French resident-general.",
+   "For Italy, which had taken a deep interest in Tunisia's future, the affair began a long period of tension with France. The Ottoman Empire, which still claimed Tunisia, refused to recognize the protectorate, but its protests were ignored. Britain gave up its consular courts in Tunisia in 1883, and the other powers followed, Italy only in 1896."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Bardo",
+    "title": "Treaty of Bardo (rev 1356987229, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tunisia",
+    "title": "Tunisia, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Bankruptcy 1869 and triple control by British, French and Italian controllers (EB); Ottoman suzerainty claim (EB: Turkey claimed the regency).",
+   "Berlin Congress 1878: Salisbury allowed France a free hand in Tunisia in return for acquiescence in the British lease of Cyprus (EB; Wikipedia: assurances of Salisbury and Bismarck).",
+   "Italian activity precipitated it (Wikipedia, EB); Italians bought the British railway from Tunis to Goletta in 1880 (EB).",
+   "French force crossed from Algeria in 1881 under pretext of the Khmir/Kroumir tribes (EB; Wikipedia: Khroumir raid on Algeria, invasion April 1881) - April from Wikipedia only, given with the pretext.",
+   "About 36,000 troops (Wikipedia, attributed); little resistance (Wikipedia); advanced on the capital (EB).",
+   "Signed 12 May 1881 by the bey (EB: signed by the Bey at Bardo on the 12th of May 1881; Wikipedia: 12 May 1881, bey Muhammed as-Sadiq); Ksar Said palace in Le Bardo (Wikipedia).",
+   "Protectorate; France responsible for foreign policy; control of areas under the guise of restoring order and protecting the bey; military occupation stated to be temporary (Wikipedia).",
+   "Serious struggle especially at Sfax (EB, attributed).",
+   "La Marsa conventions/treaty of 8 June 1883 (Wikipedia; EB: June 8, 1883); intervention in domestic affairs; Resident-General (Wikipedia; EB: residents-general).",
+   "Italy's deep interest in Tunisia's future (EB); long Franco-Italian tension (Wikipedia, quoting the Encyclopedia of World History); Turkey did not recognize, protests ignored (EB); Britain withdrew consular jurisdiction 1883, other powers followed, Italy only in 1896 (EB)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q1420382": {
+  "title": "Battle of Tel el-Kebir",
+  "y": 1882,
+  "place": "Tel el-Kebir, between Ismailia and Cairo, Egypt",
+  "paras": [
+   "In 1881 an army movement led by Ahmed Urabi (Arabi Pasha) forced the khedive Tawfiq to enlarge the army, change his prime minister and summon an assembly of notables. In 1882 Urabi became minister of war, and the new government clashed with the European controllers of Egypt's debts. British and French warships came to Alexandria, and in June riots there cost many European lives. When Urabi went on arming the harbour forts and France refused to take part, the British fleet bombarded Alexandria on 11 July 1882, and British troops landed and occupied the city.",
+   "Sir Garnet Wolseley was given command of an expedition to crush Urabi's government and restore the khedive's authority; Wikipedia gives 24,000 British troops and 7,000 from India. Urabi's lines at Kafr el-Dawwar blocked the direct road from Alexandria to Cairo, so Wolseley moved his army through the Suez Canal, which Urabi had not blocked, and occupied Ismailia in August. Advancing west along the railway and the Sweet Water Canal, his troops beat off Egyptian attacks at Kassassin.",
+   "Urabi's main army had dug in at Tel el-Kebir. Wolseley found that the Egyptians kept no outposts at night, and on the night of 12 September his infantry marched across the flat desert to make a frontal attack at dawn. On 13 September 1882, as day broke, they were close to the entrenchments before being seen, and stormed them with the bayonet; Wikipedia says the fighting was over within an hour. Official British figures gave 57 British dead; Wikipedia gives about two thousand Egyptian dead.",
+   "British cavalry rode on to Cairo, which was undefended, and Urabi surrendered there. He was tried for rebellion, pleaded guilty and was exiled to Ceylon, as the 1911 Encyclopaedia Britannica records, until 1901. The khedive's power was restored, but under British occupation: most of the army went home from November, leaving an army of occupation behind. Wolseley was made a peer as Baron Wolseley of Cairo."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Tell_El_Kebir",
+    "title": "Battle of Tell El Kebir (rev 1370786056, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Arabi_Pasha",
+    "title": "Arabi Pasha, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Wolseley,_Garnet_Joseph_Wolseley,_Viscount",
+    "title": "Wolseley, Garnet Joseph Wolseley, Viscount, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     8,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Military demonstration of 8 September 1881 led by Arabi forced the khedive to increase the army, replace Riaz by Sherif as prime minister and convene an assembly of notables; Arabi minister of war in 1882; conflict with the foreign controllers over the budget (EB Arabi); Khedive Tawfiq (Wikipedia).",
+   "British and French warships at Alexandria (EB: beginning of June; Wikipedia: Franco-British fleet arrived May 20 - month left out); riots of June with European deaths (EB: 11th of June, many European lives; Wikipedia: rioting with loss of life on both sides) - given as June.",
+   "Arming of the forts; France refused to co-operate; bombardment 11 July 1882 (EB; Wikipedia July 11).",
+   "British troops landed and the Egyptians withdrew from the city (Wikipedia; EB: British force under Wolseley).",
+   "Wolseley in command (EB Wolseley: August 1882 command of British forces in Egypt; Wikipedia); aim to destroy Urabi's regime and restore the khedive (Wikipedia); 24,000 British and 7,000 Indian troops (Wikipedia, attributed).",
+   "Kafr el-Dawwar defences repelled the direct approach (Wikipedia); Wolseley used the canal, Urabi did not block it (Wikipedia; EB Wolseley: seized the Suez Canal, disembarked at Ismailia); Ismailia occupied in August (Wikipedia: 20 August).",
+   "Advance along railway and Sweet Water Canal; Egyptian attacks at Kassassin repulsed (Wikipedia).",
+   "Tel el-Kebir entrenchments; no night outposts; night march of 12 September; dawn frontal attack (Wikipedia); defeated Arabi on 13 September at Tel-el-Kebir (EB Arabi; EB Wolseley; Wikipedia).",
+   "Seen at about 600 yards at dawn, bayonet charge, over within an hour (Wikipedia, attributed for the hour).",
+   "57 British killed (official figures) and about 2,000 Egyptians (Wikipedia, attributed).",
+   "Cavalry pursued to undefended Cairo (Wikipedia); Arabi fled to Cairo and surrendered, tried, pleaded guilty, death sentence commuted to banishment to Ceylon, returned May 1901 (EB Arabi, attributed).",
+   "Khedive's power restored; most of the army left from November, army of occupation (Wikipedia); Wolseley raised to the peerage as Baron Wolseley of Cairo (EB Wolseley)."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
