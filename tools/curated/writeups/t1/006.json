@@ -3945,5 +3945,189 @@
   ],
   "disagree": "Numbers of the proscribed differ between ancient sources: Appian gives 17, then 130 and 150 more, and about 300 senators and 2,000 knights in all (a total Wikipedia says covers everyone killed or deprived of property up to 39 BC); Plutarch gives 200 to 300 and Livy 130 senators besides many knights (both as reported by Wikipedia). Stated in the text with their sources.",
   "checked": null
+ },
+ "Q202311": {
+  "title": "Roman Egypt",
+  "y": -30,
+  "place": "Egypt except Sinai; capital Alexandria",
+  "paras": [
+   "Roman Egypt was the province of Aegyptus, which covered most of modern Egypt except Sinai from the Roman conquest in 30 BC until AD 642. The last Ptolemaic ruler, Cleopatra VII, had backed Julius Caesar and then Mark Antony. After Octavian won the naval battle of Actium he invaded Egypt, and at Alexandria in 30 BC Antony, then Cleopatra, killed themselves. Octavian took Egypt as his own possession; in his Res Gestae he wrote simply, 'Egypt I added to the empire of the Roman people.' According to Wikipedia its legal status was settled in 27 BC, when he received the name Augustus and Egypt became an imperial province.",
+   "Egypt was run differently from other provinces. Its governor, the prefect, was chosen by the emperor from the equestrian order rather than the Senate, and its legions were also commanded by equestrians, so that no governor could build up a rival power base as Antony had. Strabo, describing the province in his own day, says the prefect held the rank of the old kings, with a chief judge and an official who claimed ownerless property for Caesar under him, and that three legions and nine cohorts guarded the country, three of the cohorts at Syene on the Ethiopian border. The garrison was cut to two legions under Tiberius. Egypt paid considerable tribute and became a major grain producer for the empire, by far its richest province outside Italy, and Alexandria was its largest port and second city.",
+   "Most Egyptians were village farmers who spoke Egyptian, while the citizens of the nome capitals spoke Greek and lived a Hellenistic life; in AD 212 the Constitutio Antoniniana made all free Egyptians Roman citizens. In 269 the Palmyrene queen Zenobia took Egypt, and Aurelian won it back. Diocletian, who recovered the province from usurpers in 297-298, reformed its government and drew the southern frontier back to the First Cataract at Syene (Aswan). In the early 4th century Egypt was divided into smaller provinces. After Constantine took Egypt in 324 the emperors promoted Christianity, and Coptic emerged as the language of Egypt's Christians.",
+   "The Justinianic plague first appeared at Pelusium in Egypt in 541. The Sasanian Persians conquered Egypt in 618 and held it for a decade until it returned to the Eastern Roman Empire in 628. Roman rule ended in 642, when Egypt passed to the Rashidun Caliphate after the Muslim conquest."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Roman_Egypt",
+    "title": "Roman Egypt (rev 1385490491)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/5*.html",
+    "title": "Res Gestae Divi Augusti, chapters 25-35 (Loeb Classical Library, trans. F. W. Shipley, 1924)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html",
+    "title": "Plutarch, Life of Antony (Loeb Classical Library, trans. B. Perrin, 1920)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/17A2*.html",
+    "title": "Strabo, Geography, book 17, chapter 1, second part including 17.1.12 (Loeb Classical Library, trans. H. L. Jones, 1932)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Egypt except Sinai was the Roman province of Aegyptus from its conquest in 30 BC to AD 642 (Wikipedia; Res Gestae note: annexed in 30 BC after Actium).",
+   "Cleopatra VII sided with Caesar, then with Antony (Wikipedia; Plutarch on Antony and Cleopatra).",
+   "After Actium Octavian invaded Egypt; Antony and Cleopatra killed themselves at Alexandria in 30 BC (Wikipedia; Plutarch: Antony ran himself through, Cleopatra died after him).",
+   "Egypt was seized by Octavian as his personal possession (Wikipedia; Res Gestae note: treated as the personal domain of the emperor).",
+   "Augustus: 'Egypt I added to the empire of the Roman people' (Res Gestae 27; Wikipedia).",
+   "Legal status settled in 27 BC when Octavian was named Augustus and Egypt became an imperial province (Wikipedia, attributed in text).",
+   "Governor (prefect) and legion commanders of equestrian rank, appointed by the emperor, so the governor could not build a rival power base as Antony had (Wikipedia).",
+   "Strabo: the prefect has the rank of the king; under him the administrator of justice and the Idiologus, who claims ownerless property for Caesar (Strabo 17.1.12; Wikipedia on the iuridicus and Idios Logos).",
+   "Strabo: three legions and nine cohorts, three cohorts at Syene on the Ethiopian border (Strabo; Wikipedia: three legions initially).",
+   "Garrison reduced to two legions under Tiberius (Wikipedia).",
+   "Major grain producer for the empire; by far the wealthiest province outside Italy; Alexandria largest port and second-largest city (Wikipedia; Strabo: pays considerable tribute).",
+   "Most inhabitants Egyptian-speaking village farmers; citizens of each metropolis spoke Koine Greek and followed Hellenistic culture (Wikipedia).",
+   "AD 212 Constitutio Antoniniana gave citizenship to all free Egyptians (Wikipedia).",
+   "Zenobia's invasion in 269 brought Egypt under the Palmyrene Empire; Aurelian recovered it (Wikipedia).",
+   "Diocletian recovered Egypt from usurpers in 297-298, introduced reforms, moved the frontier to the First Cataract at Syene (Aswan); the early-4th-century reforms subdivided Aegyptus into smaller provinces (Wikipedia).",
+   "After Constantine took Egypt in 324 emperors promoted Christianity; Coptic emerged among Egypt's Christians (Wikipedia).",
+   "The Justinianic Plague emerged at Pelusium in 541 (Wikipedia).",
+   "Sasanian conquest in 618, returned in 628; became part of the Rashidun Caliphate in 642 after the Muslim conquest (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q4817850": {
+  "title": "Muslim conquest of Transoxiana",
+  "y": 673,
+  "place": "Transoxiana, the lands beyond the Oxus (Amu Darya): Tokharistan, Sogdia (Bukhara, Samarkand), Khwarazm and the Jaxartes valley; base at Merv in Khorasan",
+  "paras": [
+   "The Arab conquest of Transoxiana, 'the land beyond the river' Oxus (today parts of Uzbekistan, Tajikistan, Kazakhstan and Kyrgyzstan), took about a century, from the first raids after Merv fell in 651 to the battle of Talas in 751. Wikipedia calls it the longest and hardest-fought of the early Muslim conquests. The region was split into many small principalities, in Tokharistan on the upper Oxus, in Sogdia around Bukhara and Samarkand, in Khwarazm and along the Jaxartes, with Iranian-speaking townspeople and mostly nomadic Turks.",
+   "At first the Arabs only raided for booty and tribute. The Umayyad governor Ziyad ibn Abi Sufyan turned Khorasan into a base: he settled 50,000 warriors from Basra and Kufa with their families there (50,000 families in Gibb's account). His son Ubayd Allah reached Merv as governor in the autumn of 673 and the next spring crossed the Oxus, beat the Bukharans near Paykand and made Bukhara tributary, taking Bukharan archers back as his guard. In 676 Sa'id ibn Uthman defeated the Sogdians and took young nobles as hostages (50 in Gibb; Wikipedia says 40, 50 or 80). Then the Second Fitna, a new Muslim civil war, halted expansion for a generation while the Arab tribes of Khorasan fought each other.",
+   "The real conquest was the work of Qutayba ibn Muslim, governor from 705 under al-Hajjaj. He recovered Balkh and Lower Tokharistan in 705 and fought for Bukhara from 706 to 709, punishing rebellious Paykand by killing its men and enslaving its women and children. He then subdued Khwarazm and Samarkand, whose ruler Ghurak had to accept an Arab garrison and a mosque, and from 713 campaigned along the Jaxartes. Unlike earlier governors he enlisted large numbers of local troops. After the caliph al-Walid died in 715 Qutayba lost his life: Gibb says he was killed in a mutiny of his own army in Ferghana, while Wikipedia says the new caliph Sulayman most likely had him executed. A story that he reached Kashgar is rejected by Gibb and by the modern historians Wikipedia cites.",
+   "From 720 the Turgesh Turks, together with Sogdian uprisings, drove the Arabs back. On the 'Day of Thirst' in 724 only a handful of an Arab army reached Samarkand, and the Turgesh khagan Suluk took Bukhara in 728. Costly expeditions restored Arab authority at Samarkand by 732, Suluk was defeated at Kharistan in 737, and the governor Nasr ibn Sayyar had recovered most of Transoxiana by 743.",
+   "In July 751, by Gibb's dating, an Abbasid army under Ziyad ibn Salih defeated the Tang Chinese general Gao Xianzhi on the Talas after the Karluk Turks deserted the Chinese. This ended the Tang advance in the region, though Gibb argues that the real blow to Chinese prestige came in 757, when Central Asian contingents helped restore the Tang emperor to his capital and saw China's weakness. Islam spread slowly under the Umayyads, who did not encourage conversion, and much faster under the Abbasids, when converts gained equal status."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Muslim_conquest_of_Transoxiana",
+    "title": "Muslim conquest of Transoxiana (rev 1388079600)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   },
+   {
+    "url": "https://archive.org/download/arabconquestsinc00gibbuoft/arabconquestsinc00gibbuoft_djvu.txt",
+    "title": "H. A. R. Gibb, The Arab Conquests in Central Asia (London: Royal Asiatic Society, 1923), OCR text",
+    "publisher": "Internet Archive (public-domain scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     20,
+     21
+    ]
+   }
+  ],
+  "claims": [
+   "Transoxiana, 'the land beyond the river' (ma wara al-nahr), today all or parts of Uzbekistan, Tajikistan, Kazakhstan and Kyrgyzstan; conquered between 651 and 751; Merv fell in 651 (Wikipedia).",
+   "Wikipedia (quoting Kennedy): the longest and hardest-fought of the early Muslim conquests, completed by the Battle of Talas in 751 (Wikipedia).",
+   "Divided into many small principalities: Tokharistan, Sogdia, Khwarizm, the Jaxartes lands; Iranian-speaking urban population and mostly nomadic Turks (Wikipedia).",
+   "Early warfare was mostly raids for booty and tribute (Wikipedia; Gibb: no ordered progress until Ziyad).",
+   "Ziyad ibn Abi Sufyan settled 50,000 warriors from Basra and Kufa with their families in Khorasan (Wikipedia, 671); Gibb: fifty thousand families from Basra and Kufa (stated).",
+   "Ubayd Allah ibn Ziyad arrived at Merv in autumn 673 (Wikipedia; Gibb: autumn of 53/673).",
+   "In spring 674 Ubayd Allah crossed the Oxus, had success near Paykand/Baykand and defeated the Bukharans (Wikipedia; Gibb: spring of 54/674, Paykand, defeated the army of the Bukhar Khudah).",
+   "Bukhara became tributary; captive archers taken as his personal guard (Wikipedia: 2000 captives, skilful archers; Gibb: men of Bukhara, skilful archers, his personal guard at Basra; tributary treaty inferred).",
+   "In 676 Sa'id ibn Uthman defeated the Sogdians and took young nobles as hostages: 50 (Gibb); 40, 50 or 80 (Wikipedia) (stated).",
+   "The Second Fitna ended expansion for a generation; intertribal warfare in Khorasan (Wikipedia; Gibb on the following years of turmoil).",
+   "Qutayba ibn Muslim, appointed by al-Hajjaj, governor from 705; recovered Balkh / Lower Tokharistan in 705 (Wikipedia; Gibb: 86/705).",
+   "Conquest of Bukhara 706-709 (Wikipedia; Gibb: 87/706 to 90/709).",
+   "Paykand/Baykand rebelled and was punished: men executed, women and children enslaved (Wikipedia; Gibb: severity to Paykand).",
+   "Khwarazm and Samarkand subdued; Ghurak of Samarkand sued for peace; Arab garrison in the citadel and a mosque (Gibb; Wikipedia: Samarkand capitulated, construction of a mosque).",
+   "From 713 expeditions into the Jaxartes provinces (Gibb: 94/713 to 96/715; Wikipedia: Ferghana, Khojand and Chach fell to Qutayba).",
+   "Qutayba recruited native troops on a large scale (Wikipedia; Gibb: Persian/Iranian contingents).",
+   "After al-Walid's death in 715, Qutayba died: Gibb, killed in a mutiny he roused in Ferghana (August or September); Wikipedia, Sulayman most likely executed him (stated).",
+   "Turgesh attacks from 720 with Sogdian uprisings; 'Day of Thirst' 724; Suluk took Bukhara in 728 (Wikipedia).",
+   "By 732 two expeditions restored caliphal authority at Samarkand with heavy losses; Suluk defeated at Kharistan in 737; Nasr recovered most of Transoxiana by 743 (Wikipedia).",
+   "Talas: Abbasid army under Ziyad ibn Salih defeated the Tang army of Gao Xianzhi (Kao-hsien-shih) (Wikipedia; Gibb: near Taraz, July 751, the Karluks deserted); ended Tang westward expansion (Wikipedia); Gibb: the deathblow to Chinese prestige came with Central Asian contingents restoring the emperor in 757.",
+   "The Kashgar expedition is dismissed by modern historians (Wikipedia) and rejected by Gibb. Islamization slow under the Umayyads, who did not encourage conversion; faster under the Abbasids when non-Arab converts gained equal status (Wikipedia)."
+  ],
+  "disagree": "Qutayba's death: Gibb (1923) says he was killed in a mutiny of his army in Ferghana after al-Walid's death in 715; Wikipedia says the new caliph Sulayman most likely had him executed. Hostages taken by Sa'id ibn Uthman in 676: 50 in Gibb, 40, 50 or 80 in Wikipedia. Arab settlers under Ziyad: 50,000 warriors with families (Wikipedia) or 50,000 families (Gibb). All stated in the text with their sources. The event record dates the conquest from 673, the year Ubayd Allah ibn Ziyad reached Merv before his crossing of 674; the sources date the first raids from 651.",
+  "checked": null
  }
 }
