@@ -11,6 +11,8 @@ const PORT = 8765 + Math.floor(Math.random() * 200);
 const BASE = `http://127.0.0.1:${PORT}/`;
 const SHOTS = path.join(__dirname, 'screens');
 let failures = 0;
+const ONLY = process.env.E2E_ONLY || '';   // 'phone': only the phone, sheet, fill fallback and asset checks
+const crypto = require('crypto');
 const ok = (cond, msg) => { console.log((cond ? 'PASS ' : 'FAIL ') + msg); if (!cond) failures++; };
 
 async function waitServer() {
@@ -57,6 +59,7 @@ async function waitEvents(page) {
     browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
 
     // ---------------- desktop ----------------
+    if (!ONLY) {   // E2E_ONLY=phone runs only the phone checks (round 12) below
     const { page, errors } = await newPage(browser, { width: 1280, height: 800 });
     await page.goto(BASE + '?y=1700');
     await waitH1(page, 'The world in 1700');
@@ -688,13 +691,14 @@ async function waitEvents(page) {
     ok(/No major recorded events for 5,000 BC in this dataset/.test(await fp.locator('#panelBody .yearhead').innerText()), 'a year with no events of its own says so plainly before any overview');
     await fCtx.close();
 
+    }   // end of the desktop checks
     // ---------------- phones ----------------
     for (const vp of [{ width: 390, height: 844 }, { width: 360, height: 740 }]) {
       const p = await newPage(browser, vp);
       await p.page.goto(BASE + '?y=1776');
       await waitH1(p.page, 'The world in 1776');
       await p.page.waitForFunction(() => window.__geo?.state.snapDoc, null, { timeout: 60000 });
-      await waitEvents(p.page);
+      await p.page.waitForSelector('#panelBody .events li, #panelBody .empty', { state: 'attached', timeout: 60000 });   // the sheet starts collapsed
       await p.page.waitForTimeout(2500);
       const sw = await p.page.evaluate(() => [document.documentElement.scrollWidth, window.innerWidth, document.body.scrollWidth]);
       ok(sw[0] <= sw[1] && sw[2] <= sw[1], `no horizontal scroll at ${vp.width}px (${sw.join('/')})`);
@@ -708,6 +712,114 @@ async function waitEvents(page) {
       }
       ok(p.errors.length === 0, `no console errors at ${vp.width}px${p.errors.length ? ': ' + p.errors.slice(0, 5).join(' | ') : ''}`);
       await p.ctx.close();
+    }
+
+    // ---------------- round 12: fresh code on phones, flag fill that cannot fail silently, the bottom sheet ----------------
+    {
+      // every script and stylesheet URL carries the hash of its file; the modules are versioned by an import map
+      const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+      const hash = (rel) => crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT, rel))).digest('hex').slice(0, 10);
+      const refs = [...html.matchAll(/(?:src|href)="((?:js|css|vendor)\/[^"]+)"/g)].map((m) => m[1]);
+      const badRef = refs.filter((u) => { const [f, q] = u.split('?v='); return !q || q !== hash(f); });
+      const imap = JSON.parse((html.match(/<script type="importmap">([\s\S]*?)<\/script>/) || [])[1] || '{"imports":{}}').imports;
+      const mods = fs.readdirSync(path.join(ROOT, 'js')).filter((f) => f.endsWith('.js'));
+      const badMod = mods.filter((f) => imap[`./js/${f}`] !== `./js/${f}?v=${hash('js/' + f)}`);
+      ok(refs.length >= 4 && !badRef.length && !badMod.length && /<meta name="build" content="[0-9a-f]{10}">/.test(html),
+        `asset URLs are versioned by content (${refs.length} script/style URLs, ${mods.length} modules in the import map${badRef.length || badMod.length ? '; stale: ' + [...badRef, ...badMod].join(', ') + ' (run python3 tools/build_assets.py)' : ''})`);
+      const phone = { viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true };
+      // an old "Plain colours" choice (before round 12) does not turn the flags off
+      const ctx = await browser.newContext(phone);
+      await ctx.addInitScript(() => { try { if (!sessionStorage.getItem('seeded')) { localStorage.setItem('geohistory.fill', '"plain"'); sessionStorage.setItem('seeded', '1'); } } catch {} });
+      const pg = await ctx.newPage();
+      const perr = [];
+      pg.on('pageerror', (e) => perr.push(String(e)));
+      pg.on('console', (m) => { if (m.type() === 'error') perr.push(m.text()); });
+      await pg.goto(BASE + '?y=1914&debug=1');
+      await waitH1(pg, 'The world in 1914');
+      await pg.waitForFunction(() => window.__geo?.state.snapDoc && window.__geo.map?.ready, null, { timeout: 60000 });
+      await pg.waitForFunction(() => window.__geo.map.fillDiag().on, null, { timeout: 30000 }).catch(() => {});
+      const d0 = await pg.evaluate(() => ({ ...window.__geo.map.fillDiag(), at: window.__geo.map.fillAt(37.6, 55.75), diag: document.querySelector('.diag')?.textContent || '' }));
+      ok(d0.mode === 'flag' && d0.impl === 'canvas' && d0.at?.on && d0.at.key === 'm:RU', `phone: flag fill is on despite an old stored "plain" (${d0.mode} via ${d0.impl}; Moscow ${d0.at?.key}, ${d0.check})`);
+      ok(/fill flag via canvas/.test(d0.diag) && /max texture \d+/.test(d0.diag) && d0.cap <= Math.min(1536, d0.maxTex), `?debug=1 shows the renderer, texture size, canvases and fill mode (canvas cap ${d0.cap}, ${d0.canvasMB} MB)`);
+      const js = await pg.evaluate(() => performance.getEntriesByType('resource').map((r) => r.name).filter((n) => /\/js\/[^/]+\.js/.test(n)));
+      ok(js.length >= 10 && js.every((n) => /\?v=[0-9a-f]{10}$/.test(n)), `every module is fetched with its version (${js.length} modules${js.filter((n) => !/\?v=/.test(n)).map((n) => ' unversioned: ' + n).join('')})`);
+      // the bottom sheet
+      const geo = () => pg.evaluate(() => {
+        const p = document.querySelector('#panel').getBoundingClientRect(), st = document.querySelector('.stage').getBoundingClientRect();
+        return { size: document.querySelector('#panel').dataset.size, top: Math.round(p.top), mapVisible: Math.round(p.top - st.top), title: document.querySelector('#sheetTitle').textContent };
+      });
+      // the sheet has stopped moving (software WebGL makes the transition slow)
+      const settle = async () => {
+        let last = -1;
+        for (let i = 0; i < 40; i++) {
+          await pg.waitForTimeout(150);
+          const t = await pg.evaluate(() => Math.round(document.querySelector('#panel').getBoundingClientRect().top));
+          if (t === last) return;
+          last = t;
+        }
+      };
+      const g0 = await geo();
+      ok(g0.size === 'collapsed' && g0.mapVisible > 844 * 0.7 && g0.title === 'The world in 1914', `phone: the sheet starts collapsed with the year as its title; the map shows ${g0.mapVisible}px of 844`);
+      await pg.tap('#sheetHandle'); await settle();
+      const g1 = await geo();
+      ok(g1.size === 'half' && g1.mapVisible < g0.mapVisible - 200, `tapping the handle opens the sheet half way (map ${g0.mapVisible} -> ${g1.mapVisible}px)`);
+      // drags by touch (CDP touch events: the phone's own path)
+      const cdp = await ctx.newCDPSession(pg);
+      const touch = (type, x, y) => cdp.send('Input.dispatchTouchEvent', { type, touchPoints: type === 'touchEnd' ? [] : [{ x, y }] });
+      const drag = async (from, to, steps, pause) => {
+        await touch('touchStart', from.x, from.y);
+        for (let i = 1; i <= steps; i++) { await touch('touchMove', from.x + (to.x - from.x) * i / steps, from.y + (to.y - from.y) * i / steps); if (pause) await pg.waitForTimeout(pause); }
+        await touch('touchEnd');
+        await settle();
+      };
+      const barAt = async () => { const b = await pg.locator('#sheetBar').boundingBox(); return { x: b.x + 60, y: b.y + 22 }; };
+      await drag(await barAt(), { x: 60, y: 120 }, 12, 40);
+      const g2 = await geo();
+      ok(g2.size === 'full' && g2.top < g1.top, `dragging the handle up opens it fully (top ${g1.top} -> ${g2.top})`);
+      const b2 = await barAt();
+      await drag(b2, { x: b2.x, y: b2.y + 300 }, 3, 0);
+      const g3 = await geo();
+      ok(g3.size === 'collapsed' && g3.mapVisible >= g0.mapVisible - 2, `a swipe down collapses it and the map gets its room back (${g3.size}, map ${g3.mapVisible}px)`);
+      await pg.tap('#sheetChev'); await settle();
+      const c1 = (await geo()).size;
+      await pg.tap('#sheetChev'); await settle();
+      const c2 = (await geo()).size;
+      await pg.tap('#sheetChev'); await settle();
+      const c3 = (await geo()).size;
+      ok(c1 === 'half' && c2 === 'full' && c3 === 'collapsed', `the chevron button steps the sheet: ${c1}, ${c2}, ${c3}`);
+      await pg.tap('#sheetChev'); await settle();
+      // a pan on the map leaves the sheet alone; scrolling the panel leaves the map alone
+      const c0 = await pg.evaluate(() => window.__geo.map.map.getCenter().lng);
+      await pg.evaluate(() => { const b = document.querySelector('#panelBody'); b.scrollTop = 200; });
+      const c0b = await pg.evaluate(() => window.__geo.map.map.getCenter().lng);
+      const st0 = (await geo()).size;
+      await drag({ x: 200, y: 200 }, { x: 120, y: 260 }, 6, 30);
+      const st1 = await geo();
+      const c1m = await pg.evaluate(() => window.__geo.map.map.getCenter().lng);
+      ok(c0 === c0b && c1m !== c0 && st0 === 'half' && st1.size === 'half', `a pan on the map leaves the sheet alone, the panel's scroll leaves the map alone (${st0} -> ${st1.size}; map moved ${Math.abs(c1m - c0).toFixed(1)} degrees)`);
+      await pg.reload();
+      await waitH1(pg, 'The world in 1914');
+      ok((await geo()).size === 'half', 'the sheet comes back at the height last chosen');
+      const sw = await pg.evaluate(() => [document.documentElement.scrollWidth, window.innerWidth]);
+      const row = await pg.evaluate(() => { const r = document.querySelector('.timebar').getBoundingClientRect(); return Math.round(r.height); });
+      ok(sw[0] <= sw[1] && row <= 110, `the time bar is one compact row over the timeline (${row}px), no sideways scroll`);
+      ok(perr.length === 0, `no console errors on the phone checks${perr.length ? ': ' + perr.slice(0, 3).join(' | ') : ''}`);
+      await ctx.close();
+      // the canvas path made to fail: the flags come in as a tiled pattern instead of not at all
+      const ctxF = await browser.newContext(phone);
+      const pf = await ctxF.newPage();
+      await pf.goto(BASE + '?y=1914&fill=fail');
+      await waitH1(pf, 'The world in 1914');
+      await pf.waitForFunction(() => window.__geo?.map?.ready && window.__geo.map.fillImpl === 'pattern' && window.__geo.map.fillDiag().on, null, { timeout: 60000 }).catch(() => {});
+      const fb = await pf.evaluate(() => ({ d: window.__geo.map.fillDiag(), at: window.__geo.map.fillAt(37.6, 55.75), pat: window.__geo.map.map.getPaintProperty('fpat' + window.__geo.map.active, 'fill-pattern') }));
+      ok(fb.d.impl === 'pattern' && fb.at?.on && fb.at.key === 'm:RU' && Array.isArray(fb.pat) && fb.d.canvasMB < 0.1,
+        `when the canvas check fails the pattern fill takes over (${fb.d.impl}, ${fb.d.why}; Moscow ${fb.at?.key} ${fb.at?.on ? 'shown' : 'not shown'}; canvases freed: ${fb.d.canvasMB} MB)`);
+      await pf.evaluate(() => window.__geo.goToYear(1950));
+      await waitH1(pf, 'The world in 1950');
+      await pf.waitForFunction(() => window.__geo.state.snapDoc?.year === 1950 && window.__geo.map.fillAt(37.6, 55.75)?.on, null, { timeout: 60000 }).catch(() => {});
+      const fb2 = await pf.evaluate(() => window.__geo.map.fillAt(37.6, 55.75));
+      ok(fb2?.on && fb2.impl === 'pattern', `the pattern fill follows a change of year (1950: ${fb2?.key})`);
+      await ctxF.close();
     }
   } catch (e) {
     console.error(e);

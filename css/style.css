@@ -130,7 +130,7 @@ a { color: var(--accent); }
 }
 /* the double rule of an atlas plate */
 .panel::before { content: ""; position: absolute; inset: 4px; border: 1px solid var(--line); border-radius: 7px; pointer-events: none; z-index: 1; }
-.sheet-handle { display: none; }
+.sheet-bar { display: none; }
 .panel-body { overflow: auto; padding: 20px 22px 26px; flex: 1; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; }
 .panel h1, .panel h2, .panel h3 { font-family: var(--serif); font-weight: 500; margin: 0; }
 .panel h1 { font-size: 31px; line-height: 1.1; letter-spacing: -.01em; text-wrap: balance; }
@@ -250,40 +250,58 @@ h2.context { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; c
 
 /* ---------- phones ---------- */
 @media (max-width: 899px) {
-  :root { --top-h: 56px; --time-h: 166px; }
+  /* phones: a compact time bar (one row of controls over the timeline) and the panel as a bottom sheet */
+  :root { --top-h: 56px; --time-h: 96px; --safe-b: env(safe-area-inset-bottom, 0px); }
+  html, body { overscroll-behavior: none; }
   .top { padding: 0 10px; gap: 8px; }
   .brand span { display: none; }
   .tools .chip { padding: 0 10px; font-size: 13px; }
   #modernBtn { display: none; }
+  .stage { bottom: calc(var(--time-h) + var(--safe-b)); }
   .panel {
-    left: 0; right: 0; width: auto; top: auto; bottom: var(--time-h); border-radius: 14px 14px 0 0; border-bottom: 0;
-    height: 34vh; transition: height .25s ease;
+    left: 0; right: 0; width: auto; top: auto; bottom: calc(var(--time-h) + var(--safe-b)); border-radius: 14px 14px 0 0; border-bottom: 0;
+    height: 50px; transition: height .28s cubic-bezier(.2, .8, .2, 1); box-shadow: 0 -6px 24px rgba(52, 40, 22, .16);
   }
-  .panel[data-size="half"] { height: 58vh; }
-  .panel[data-size="full"] { height: calc(100% - var(--time-h) - var(--top-h) - 8px); }
-  .sheet-handle { display: flex; justify-content: center; align-items: center; height: 26px; border: 0; background: none; flex: none; }
-  .sheet-handle span { width: 44px; height: 5px; border-radius: 3px; background: var(--line); }
-  .panel-body { padding-top: 2px; }
+  .panel[data-size="half"] { height: min(46vh, calc(100% - var(--time-h) - var(--safe-b) - var(--top-h) - 8px)); }
+  .panel[data-size="full"] { height: calc(100% - var(--time-h) - var(--safe-b) - var(--top-h) - 8px); }
+  .panel.dragging { transition: none; }
+  .sheet-bar { display: flex; align-items: stretch; flex: none; height: 50px; touch-action: none; user-select: none; -webkit-user-select: none; border-bottom: 1px solid transparent; }
+  .panel:not([data-size="collapsed"]) .sheet-bar { border-bottom-color: var(--line); }
+  .sheet-handle { position: relative; flex: 1; min-width: 0; display: flex; align-items: center; padding: 10px 0 0 16px; border: 0; background: none; color: var(--ink); text-align: left; cursor: grab; touch-action: none; }
+  .sheet-handle .grip { position: absolute; top: 6px; left: 50%; width: 40px; height: 4px; margin-left: 2px; border-radius: 2px; background: var(--line-2); }
+  .sheet-title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font: 500 17px/1.2 var(--serif); font-variant-numeric: lining-nums tabular-nums; }
+  .sheet-chev { flex: none; width: 50px; display: flex; align-items: center; justify-content: center; padding-top: 6px; border: 0; background: none; color: var(--ink-2); touch-action: none; }
+  .sheet-chev svg { fill: currentColor; transition: transform .2s; }
+  .sheet-chev[data-dir="down"] svg { transform: rotate(180deg); }
+  .panel[data-size="collapsed"] .panel-body { visibility: hidden; }
+  .panel-body { padding-top: 6px; touch-action: pan-y; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
   .panel h1 { font-size: 24px; }
   .panel::before { display: none; }
   .panel-body { padding-left: 16px; padding-right: 16px; }
   .stage::after { box-shadow: none; }
-  .timebar { padding: 8px 12px calc(6px + env(safe-area-inset-bottom)); }
-  .timebar-row { flex-wrap: wrap; gap: 6px 8px; }
-  .year-form { flex: 1 1 auto; }
-  .year-input { width: 100%; flex: 1; min-width: 0; font-size: 18px; height: 36px; }
-  .go { height: 36px; }
-  .year-hint { order: 3; flex-basis: 100%; display: none; }
-  .year-hint.err { display: block; }
-  .transport { order: 2; flex: 1 1 100%; justify-content: space-between; gap: 6px; }
-  .tbtn { height: 40px; padding: 0 14px; }
+  .timebar { height: calc(var(--time-h) + var(--safe-b)); padding: 7px 12px calc(4px + var(--safe-b)); }
+  .timebar-row { flex-wrap: nowrap; gap: 8px; }
+  .year-form { flex: 0 1 auto; gap: 4px; min-width: 0; }
+  .year-input { width: 84px; min-width: 0; font-size: 18px; height: 36px; padding: 0 8px; }
+  .go { height: 36px; padding: 0 9px; }
+  .year-hint { display: none; }
+  .year-hint.err { display: block; position: absolute; left: 12px; right: 12px; bottom: calc(100% + 4px); padding: 4px 8px; background: var(--card); border: 1px solid var(--line-2); border-radius: 4px; white-space: normal; }
+  .transport { flex: 1 1 auto; justify-content: space-between; gap: 6px; min-width: 0; }
+  .tbtn { height: 36px; padding: 0 10px; }
   .tbtn .tl { display: none; }
-  .speed { margin-left: auto; }
+  .speed { margin-left: auto; min-width: 0; }
   .speed-lbl { display: none; }
-  .speed select { max-width: 150px; }
-  .timeline { margin-top: 8px; }
+  .speed select { max-width: 96px; padding: 0 4px; font-size: 16px; }   /* 16px: iOS does not zoom in on it */
+  .timeline { margin-top: 6px; }
   .slider { height: 34px; top: 6px; }
   .slider::-webkit-slider-thumb { width: 22px; height: 30px; margin-top: -13.5px; }
+}
+@media (max-width: 599px) {
+  /* small phones: no era names over the timeline, the track right under the controls */
+  .eras { display: none; }
+  .timeline { height: 40px; margin-top: 4px; }
+  .slider { top: -2px; }
+  .ticks { top: 17px; }
 }
 @media (max-width: 400px) {
   .tools .chip { padding: 0 8px; }
@@ -539,5 +557,9 @@ h2.context { margin-top: 22px; }
   .panel { border-radius: var(--radius) var(--radius) 0 0; }
   .panel h1 { font-size: 23px; }
   .year-input { font-size: 18px; }
-  .tbtn { height: 38px; }
+  .tbtn { height: 36px; }
+  .play { width: 36px; height: 36px; flex: none; }
 }
+
+/* ?debug=1: what the device does with the flag fill, for a screenshot */
+.diag { position: fixed; z-index: 60; left: 8px; top: calc(var(--top-h) + 6px); max-width: calc(100% - 16px); margin: 0; padding: 6px 8px; font: 11px/1.35 ui-monospace, Menlo, monospace; white-space: pre-wrap; color: #f6f1e6; background: rgba(20, 16, 10, .82); border-radius: 4px; pointer-events: none; }

@@ -6,7 +6,7 @@
 import { typeColor, TYPES } from './types.js';
 import { tones, hexToLch, lchToHex } from './groups.js';
 import { makeAreaTest } from './geo.js';
-import { loadFills, fillsReady, fillsOf, ensureImages, extentFor, extentOk, paint } from './flagfill.js';
+import { loadFills, fillsReady, fillsOf, ensureImages, extentFor, extentOk, paint, flagTile, setCanvasCap, canvasCap } from './flagfill.js';
 
 const maplibregl = window.maplibregl;
 const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -21,8 +21,11 @@ const COLORS = {
     text: '#f1eadc', textPart: '#e4dccb', textUnder: '#a79d8b', textSea: '#55676f', halo: 'rgba(20,17,13,0.8)', haloUnder: 'rgba(20,17,13,0.6)',
     us: '#f3e9d6', modern: '#9cc3ef', sel: '#fff6e0', marker: '#1b1916', cluster: '#efe8da', clusterText: '#2a241c' },
 };
-const SERIF = ['Atlas Serif Regular'];        // small capitals in place of lower case: for powers
-const SERIF_IT = ['Atlas Serif Italic'];
+// map labels: Source Sans 3 (tools/make_glyphs.cjs), one weight per role
+const POWER = ['Atlas Sans Semibold'];      // empires and major powers, in capitals
+const STATE_F = ['Atlas Sans Medium'];      // ordinary states and the parts of empires
+const ITALIC = ['Atlas Sans Italic'];       // peoples, sketch regions, US states and colonies
+const SEA_F = ['Atlas Sans Light Italic'];  // oceans and seas
 const SANS = ['Noto Sans Regular'];
 const NONE = ['==', ['get', 'id'], '__none'];
 const EMPTY = { type: 'FeatureCollection', features: [] };
@@ -123,6 +126,20 @@ export class HistoryMap extends EventTarget {
     // flag fill: one canvas per stack (js/flagfill.js), drawn over the plain fills, with dark borders on top
     // (two neighbours under the same flag stay apart); a fourth canvas holds the leaving land during a change
     this._fc = {};
+    // how the flags reach the map: 'canvas' (above), or 'pattern', the fallback where a canvas source fails (some
+    // phones): each state tiled with its flag by MapLibre's fill-pattern, which every WebGL device draws.
+    // ?fill=pattern starts with the fallback; ?fill=fail makes the canvas check fail (for tests).
+    const q = new URLSearchParams(location.search);
+    this.fillImpl = q.get('fill') === 'pattern' ? 'pattern' : 'canvas';
+    this.fillWhy = this.fillImpl === 'pattern' ? 'asked for in the address' : '';
+    this._forceFail = q.get('fill') === 'fail';
+    try {
+      const gl = m.painter.context.gl;
+      this.maxTex = gl.getParameter(gl.MAX_TEXTURE_SIZE);
+      const ri = gl.getExtension('WEBGL_debug_renderer_info');
+      this.renderer = (ri && gl.getParameter(ri.UNMASKED_RENDERER_WEBGL)) || gl.getParameter(gl.RENDERER);
+    } catch { this.maxTex = 4096; }
+    setCanvasCap(this.maxTex);
     const mkCanvas = (sid) => {
       const cv = document.createElement('canvas');
       cv.width = 16; cv.height = 16;
@@ -130,8 +147,13 @@ export class HistoryMap extends EventTarget {
       m.addLayer({ id: 'flag' + sid, type: 'raster', source: 'fsrc' + sid,
         paint: { 'raster-opacity': 0, 'raster-resampling': 'linear', 'raster-fade-duration': 0, 'raster-opacity-transition': { duration: 0 },
           'raster-brightness-max': this.dark ? 0.8 : 1, 'raster-saturation': this.dark ? -0.15 : 0 } });   // evening reading: flags dimmed in dark mode
+      if (sid !== 'X') {
+        m.addLayer({ id: 'fpat' + sid, type: 'fill', source: 't' + sid, filter: NONE,
+          paint: { 'fill-pattern': 'pf-none', 'fill-opacity': 0, 'fill-antialias': false, 'fill-opacity-transition': { duration: 0 } } });
+      }
       this._fc[sid] = { cv, ext: null, key: null };
     };
+    m.addImage('pf-none', new ImageData(2, 2), { pixelRatio: 2 });
     for (const id of STACKS) mkCanvas(id);
     for (const id of STACKS) {
       m.addLayer({ id: 'fline' + id, type: 'line', source: 't' + id, filter: STATE, layout: { 'line-join': 'round' },
@@ -213,8 +235,8 @@ export class HistoryMap extends EventTarget {
     // ---- labels. Added from least to most important: MapLibre places the upper layers first.
     m.addSource('seas', { type: 'geojson', data: { type: 'FeatureCollection', features: SEAS.map(([n, x, y, z]) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: [x, y] }, properties: { n, z } })) } });
     m.addLayer({ id: 'sea-lbl', type: 'symbol', source: 'seas', filter: ['<=', ['get', 'z'], ['zoom']],
-      layout: { 'text-field': ['get', 'n'], 'text-font': SERIF_IT, 'text-size': ['interpolate', ['linear'], ['zoom'], 1, ['case', ['==', ['get', 'z'], 0], 12, 10], 6, ['case', ['==', ['get', 'z'], 0], 18, 13.5]],
-        'text-letter-spacing': ['case', ['==', ['get', 'z'], 0], 0.3, 0.12], 'text-max-width': 6, 'text-padding': 6 },
+      layout: { 'text-field': ['get', 'n'], 'text-font': SEA_F, 'text-size': ['interpolate', ['linear'], ['zoom'], 1, ['case', ['==', ['get', 'z'], 0], 12.5, 10.5], 6, ['case', ['==', ['get', 'z'], 0], 18, 14]],
+        'text-letter-spacing': ['case', ['==', ['get', 'z'], 0], 0.22, 0.08], 'text-max-width': 6, 'text-padding': 6 },
       paint: { 'text-color': c.textSea, 'text-opacity': 0.9 } });
 
     m.addSource('labels', { type: 'geojson', data: EMPTY });
@@ -243,28 +265,28 @@ export class HistoryMap extends EventTarget {
     m.addLayer({ id: 'warblk', type: 'symbol', source: 'warblk', layout: { 'icon-image': 'blk', 'icon-allow-overlap': true, 'icon-ignore-placement': false } });
     const under = { 'text-color': c.textUnder, 'text-halo-color': c.haloUnder, 'text-halo-width': 1 };
     // peoples: one by one when zoomed in ...
-    sym('lbl-people-s', ['all', kind('u'), ['<', ['get', 'a'], 60000]], { 'text-font': SERIF_IT, 'text-size': 11, 'text-padding': 4 }, under, { minzoom: 3.8 });
-    sym('lbl-people', ['all', kind('u'), ['>=', ['get', 'a'], 60000]], { 'text-font': SERIF_IT, 'text-size': zoomIn(3, 6, 11, 13), 'text-padding': 5 }, under, { minzoom: Z_PEOPLES });
+    sym('lbl-people-s', ['all', kind('u'), ['<', ['get', 'a'], 60000]], { 'text-font': ITALIC, 'text-size': 11, 'text-padding': 4 }, under, { minzoom: 3.8 });
+    sym('lbl-people', ['all', kind('u'), ['>=', ['get', 'a'], 60000]], { 'text-font': ITALIC, 'text-size': zoomIn(3, 6, 11, 13), 'text-padding': 5 }, under, { minzoom: Z_PEOPLES });
     // ... and one name per region at world zoom
-    sym('lbl-region', kind('r'), { 'text-font': SERIF_IT, 'text-size': zoomIn(1, 3.4, 11, 13.5), 'text-letter-spacing': 0.08, 'text-padding': 8 }, under, { maxzoom: Z_PEOPLES });
+    sym('lbl-region', kind('r'), { 'text-font': ITALIC, 'text-size': zoomIn(1, 3.4, 11, 13.5), 'text-letter-spacing': 0.04, 'text-padding': 8 }, under, { maxzoom: Z_PEOPLES });
     const st = { 'text-color': c.textPart, 'text-halo-color': c.halo, 'text-halo-width': 1.2 };
     const big = { 'text-color': c.text, 'text-halo-color': c.halo, 'text-halo-width': 1.4 };
     const AREA = { s: 30000, m: 250000, l: 1300000 };
     const ar = (lo, hi) => [...(lo != null ? [['>=', ['get', 'a'], lo]] : []), ...(hi != null ? [['<', ['get', 'a'], hi]] : [])];
     const stOrPart = ['any', kind('s'), kind('p')];
     // minor states and the parts of empires: upright, smaller
-    sym('lbl-xs', ['all', stOrPart, ...ar(null, AREA.s)], { 'text-font': SANS, 'text-size': 10.5, 'text-padding': 2 }, st, { minzoom: 4.4 });
-    sym('lbl-s', ['all', stOrPart, ...ar(AREA.s, AREA.m)], { 'text-font': SANS, 'text-size': zoomIn(3, 6, 10.5, 12.5), 'text-padding': 2 }, st, { minzoom: 3.2 });
-    sym('lbl-part', ['all', kind('p'), ...ar(AREA.m, null)], { 'text-font': SERIF, 'text-size': zoomIn(3, 6, 12, 15), 'text-letter-spacing': 0.04, 'text-padding': 3,
+    sym('lbl-xs', ['all', stOrPart, ...ar(null, AREA.s)], { 'text-font': STATE_F, 'text-size': 10.5, 'text-padding': 2 }, st, { minzoom: 4.4 });
+    sym('lbl-s', ['all', stOrPart, ...ar(AREA.s, AREA.m)], { 'text-font': STATE_F, 'text-size': zoomIn(3, 6, 10.5, 12.5), 'text-padding': 2 }, st, { minzoom: 3.2 });
+    sym('lbl-part', ['all', kind('p'), ...ar(AREA.m, null)], { 'text-font': STATE_F, 'text-size': zoomIn(3, 6, 12, 15), 'text-letter-spacing': 0.01, 'text-padding': 3,
       'text-variable-anchor': ['center', 'top', 'bottom'], 'text-radial-offset': 0.8 }, st, { minzoom: Z_SPLIT });
-    sym('lbl-m', ['all', kind('s'), ...ar(AREA.m, AREA.l)], { 'text-font': SERIF, 'text-size': zoomIn(1.5, 5, 10.5, 14.5), 'text-letter-spacing': 0.04, 'text-padding': 3,
+    sym('lbl-m', ['all', kind('s'), ...ar(AREA.m, AREA.l)], { 'text-font': STATE_F, 'text-size': zoomIn(1.5, 5, 11, 14.5), 'text-letter-spacing': 0.01, 'text-padding': 3,
       'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'], 'text-radial-offset': 0.8, 'text-justify': 'center' }, st, { minzoom: 1.6 });
-    // major powers and empires: serif small capitals, sized by area; along a line across the state when it fits
-    const bigSize = ['interpolate', ['linear'], ['zoom'], 1, ['interpolate', ['linear'], ['get', 'a'], 1300000, 10.5, 12000000, 13.5], 5, ['interpolate', ['linear'], ['get', 'a'], 1300000, 14, 12000000, 19]];
+    // major powers and empires: semibold capitals with modest letter-spacing, sized by area; along a line across the state when it fits
+    const bigSize = ['interpolate', ['linear'], ['zoom'], 1, ['interpolate', ['linear'], ['get', 'a'], 1300000, 10.5, 12000000, 13], 5, ['interpolate', ['linear'], ['get', 'a'], 1300000, 13.5, 12000000, 17]];
     const fits = ['>=', ['zoom'], ['get', 'zf']];
-    const bigPt = { 'text-font': SERIF, 'text-size': bigSize, 'text-letter-spacing': 0.12, 'text-padding': 3, 'text-max-width': 6.5, 'text-line-height': 1.05,
+    const bigPt = { 'text-font': POWER, 'text-transform': 'uppercase', 'text-size': bigSize, 'text-letter-spacing': 0.07, 'text-padding': 3, 'text-max-width': 6.5, 'text-line-height': 1.05,
       'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'], 'text-radial-offset': 0.9, 'text-justify': 'center' };
-    const bigLine = { 'text-font': SERIF, 'text-size': bigSize, 'symbol-placement': 'line-center', 'text-max-angle': 28, 'text-padding': 2, 'text-max-width': 100,
+    const bigLine = { 'text-font': POWER, 'text-transform': 'uppercase', 'text-size': bigSize, 'symbol-placement': 'line-center', 'text-max-angle': 28, 'text-padding': 2, 'text-max-width': 100,
       'text-letter-spacing': ['interpolate', ['linear'], ['zoom'], 1, ['get', 's1'], 2, ['get', 's2'], 3, ['get', 's3'], 4, ['get', 's4'], 5, ['get', 's5'], 6, ['get', 's6'], 7, ['get', 's7'], 8, ['get', 's8']] };
     // the point label stays as a fallback: where the spaced name along the line is blocked (an event marker on
     // its path) the compact name is placed instead; where the line name is placed, the point name collides with it
@@ -279,10 +301,10 @@ export class HistoryMap extends EventTarget {
 
     m.addSource('us-lbl', { type: 'geojson', data: EMPTY });
     m.addLayer({ id: 'us-label', type: 'symbol', source: 'us-lbl', minzoom: 3.4, filter: NONE,
-      layout: { 'text-field': ['get', 'n'], 'text-font': SERIF_IT, 'text-size': 11.5, 'text-max-width': 7, 'text-padding': 2 },
+      layout: { 'text-field': ['get', 'n'], 'text-font': ITALIC, 'text-size': 11.5, 'text-max-width': 7, 'text-padding': 2 },
       paint: { 'text-color': c.textPart, 'text-halo-color': c.halo, 'text-halo-width': 1.2 } });
     m.addLayer({ id: 'col-label', type: 'symbol', source: 'col-lbl', minzoom: 3,
-      layout: { 'text-field': ['get', 'n'], 'text-font': SERIF_IT, 'text-size': 12, 'text-max-width': 7 },
+      layout: { 'text-field': ['get', 'n'], 'text-font': ITALIC, 'text-size': 12, 'text-max-width': 7 },
       paint: { 'text-color': c.textPart, 'text-halo-color': c.halo, 'text-halo-width': 1.4 } });
 
     // events
@@ -445,9 +467,11 @@ export class HistoryMap extends EventTarget {
     m.setPaintProperty('ufill' + sid, 'fill-opacity', v(this.dark ? 0.85 : 0.9));
     m.setPaintProperty('inner' + sid, 'line-opacity', mode === 'on' ? ['interpolate', ['linear'], ['zoom'], Z_SPLIT - 0.5, 0, Z_SPLIT + 0.4, 0.6] : 0);
     const fl = mode === 'on' && this._flagOn(sid);
+    const pat = mode === 'on' && this._patOn(sid);
     m.setPaintProperty('flag' + sid, 'raster-opacity-transition', { duration: 0 });
     m.setPaintProperty('flag' + sid, 'raster-opacity', fl ? 1 : 0);
-    m.setPaintProperty('fline' + sid, 'line-opacity', fl ? 0.8 : 0);
+    m.setPaintProperty('fpat' + sid, 'fill-opacity', pat ? (this.dark ? 0.85 : 1) : 0);
+    m.setPaintProperty('fline' + sid, 'line-opacity', fl || pat ? 0.8 : 0);
     if (fl) this._upload(sid);
     m.setPaintProperty('uline' + sid, 'line-opacity', mode === 'on' ? ['interpolate', ['linear'], ['zoom'], Z_PEOPLES - 0.4, 0, Z_PEOPLES + 0.4, 0.45] : 0);
   }
@@ -583,7 +607,7 @@ export class HistoryMap extends EventTarget {
           X.ext = ffx.ext;
           run.lostIdx = d.lost;
           run.plain = new Map(d.lost.map((i) => [i, oldDoc.features[i].properties.c]));
-          run.paintX = () => paint(X.cv, oldDoc, ffx.fills, ffx.imgs, ffx.ext, { which: d.lost, alpha: run.alpha, plain: run.plain });
+          run.paintX = () => { try { paint(X.cv, oldDoc, ffx.fills, ffx.imgs, ffx.ext, { which: d.lost, alpha: run.alpha, plain: run.plain }); } catch { /* no canvas: the change shows without the old flags */ } };
           run.paintX();
           m.getSource('fsrcX').setCoordinates(ffx.ext.coords);
           m.getSource('fsrcX').play();
@@ -668,7 +692,11 @@ export class HistoryMap extends EventTarget {
       for (let j = 0; j < r.nfx; j++) this.map.setFeatureState({ source: 'fx', id: j }, { c: 0, a: 0, e: 0 });
       this.map.getSource('leave').setData(EMPTY);
       this.map.getSource('fx').setData(EMPTY);
-      if (r.ffx) { this.map.setPaintProperty('flagX', 'raster-opacity', 0); this.map.getSource('fsrcX').pause(); }
+      if (r.ffx) {
+        this.map.setPaintProperty('flagX', 'raster-opacity', 0);
+        this.map.getSource('fsrcX').pause();
+        this._fc.X.cv.width = this._fc.X.cv.height = 1;   // the leaving land's canvas is not needed until the next change
+      }
       this._flagsAfter();
     }
     clearTimeout(this._endT);
@@ -695,7 +723,86 @@ export class HistoryMap extends EventTarget {
 
   _flagOn(sid) {
     const f = this._fc?.[sid];
-    return !!(f && this._wantFlags() && f.doc && f.doc === this._docs?.[sid] && f.ok);
+    return !!(f && this.fillImpl === 'canvas' && this._wantFlags() && f.doc && f.doc === this._docs?.[sid] && f.ok);
+  }
+
+  /** The fallback fill is drawn for a stack's map. */
+  _patOn(sid) {
+    const f = this._fc?.[sid];
+    return !!(f && this.fillImpl === 'pattern' && this._wantFlags() && f.pat && f.pat.doc === this._docs?.[sid]);
+  }
+
+  /** The canvas path failed on this device: switch to the fallback for good (this page), free the canvases. */
+  _flagFail(why) {
+    if (this.fillImpl === 'pattern') return;
+    console.warn('flag fill: canvas path failed (' + why + '); using the pattern fill');
+    this.fillImpl = 'pattern';
+    this.fillWhy = why;
+    for (const sid of [...STACKS, 'X']) {
+      const f = this._fc[sid];
+      if (f.onRender) { this.map.off('render', f.onRender); f.onRender = null; }
+      this.map.setPaintProperty('flag' + sid, 'raster-opacity', 0);
+      this.map.getSource('fsrc' + sid)?.pause();
+      f.cv.width = f.cv.height = 1;
+      Object.assign(f, { ok: false, ext: null, probe: null });
+    }
+    this._redrawActive(true);
+  }
+
+  /** The fallback: each state of a stack's map tiled with its flag (fill-pattern). */
+  _drawPattern(sid, doc, fills, imgs, year) {
+    const m = this.map;
+    const byK = new Map();
+    for (const [i, fl] of fills) {
+      const id = 'pf:' + fl.key;
+      if (!m.hasImage(id)) { const t = flagTile(fl, imgs); if (!t) continue; m.addImage(id, t, { pixelRatio: 2 }); }
+      byK.set(doc.features[i].properties.k, id);
+    }
+    const f = this._fc[sid];
+    if (!byK.size) { m.setFilter('fpat' + sid, NONE); f.pat = { doc, fy: year }; return; }
+    const ks = [...byK.keys()];
+    const match = ['match', ['get', 'k']];
+    for (const [k, id] of byK) match.push(k, id);
+    match.push('pf-none');
+    m.setFilter('fpat' + sid, ['all', ['!=', ['get', 'u'], 1], ['in', ['get', 'k'], ['literal', ks]]]);
+    m.setPaintProperty('fpat' + sid, 'fill-pattern', match);
+    f.pat = { doc, fy: year, n: byK.size };
+  }
+
+  /** For ?debug=1 and the checks: how the flags are drawn on this device. */
+  fillDiag() {
+    const cvs = Object.values(this._fc || {}).map((f) => f.cv);
+    const px = cvs.reduce((a, c) => a + c.width * c.height, 0);
+    return { mode: this.fillMode, impl: this.fillImpl, why: this.fillWhy || '', renderer: this.renderer || '?', maxTex: this.maxTex, cap: canvasCap(),
+      canvases: cvs.length, canvasMB: Math.round((px * 4) / 1e5) / 10, sizes: cvs.map((c) => c.width + 'x' + c.height).join(' '),
+      check: this._checkLog || '', dpr: window.devicePixelRatio, on: this._flagOn(this.active) || this._patOn(this.active) };
+  }
+
+  /** Did the GPU get the canvas? Reads, from the source's texture itself, the pixel that paint() found opaque.
+   *  true / false, or null when it cannot tell yet (no texture, or no probe pixel). */
+  _texOk(sid) {
+    const f = this._fc[sid], src = this.map.getSource('fsrc' + sid), tex = src?.texture;
+    if (this._forceFail) return false;
+    if (!f.probe) return true;   // nothing large enough was drawn to check
+    if (!tex || !tex.texture) return null;
+    if (tex.size && (tex.size[0] !== f.cv.width || tex.size[1] !== f.cv.height)) return false;
+    try {
+      const gl = this.map.painter.context.gl;
+      const prev = gl.getParameter(gl.FRAMEBUFFER_BINDING);
+      const fb = gl.createFramebuffer();
+      gl.bindFramebuffer(gl.FRAMEBUFFER, fb);
+      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, tex.texture, 0);
+      let px = null;
+      if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) === gl.FRAMEBUFFER_COMPLETE) {
+        px = new Uint8Array(4);
+        gl.readPixels(f.probe.x, f.probe.y, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, px);
+      }
+      gl.bindFramebuffer(gl.FRAMEBUFFER, prev);
+      gl.deleteFramebuffer(fb);
+      if (!px) { this._unreadable = true; return true; }   // cannot read this texture back here: no verdict
+      const want = f.probe.rgba;
+      return px[3] > 200 && Math.abs(px[0] - want[0]) < 48 && Math.abs(px[1] - want[1]) < 48 && Math.abs(px[2] - want[2]) < 48;
+    } catch { this._unreadable = true; return true; }
   }
 
   /** Text halos a little wider over busy flags; US state and colony fills give way to the flags. */
@@ -716,14 +823,33 @@ export class HistoryMap extends EventTarget {
    *  from the moment its layer shows. */
   _upload(sid) {
     const src = this.map.getSource('fsrc' + sid);
-    if (!src) return;
+    if (!src || this.fillImpl !== 'canvas') return;
     src.play();
-    // count drawn frames, not time: a slow device may take longer than a timer to draw one
+    this.map.triggerRepaint();
+    // count drawn frames, not time: a slow device may take longer than a timer to draw one. Then check that the
+    // texture holds the new picture (MapLibre skips the upload while the source has no tile yet, and a resize
+    // seen in that frame is lost); keep uploading until it does, and fall back to the pattern fill if it never
+    // does.
     const f = this._fc[sid];
     f.left = 3;
+    f.tries = 0;
+    f.t0 = performance.now();
     if (f.onRender) return;
     f.onRender = () => {
       if (--f.left > 0) return;
+      const check = STACKS.includes(sid) && f.ok;
+      const v = check ? this._texOk(sid) : true;
+      if (v !== true) {
+        f.tries++;
+        this._checkLog = `${sid}: try ${f.tries} ${v === null ? 'no texture yet' : 'texture differs'}`;
+        // give up after 2 s and a few frames (a slow GPU draws a frame a second), or 120 frames
+        if (f.tries < 120 && !(f.tries >= 5 && performance.now() - f.t0 > 2000)) { f.left = 1; this.map.triggerRepaint(); return; }
+        this.map.off('render', f.onRender);
+        f.onRender = null;
+        this._flagFail(v === null ? 'no texture' : 'texture check');
+        return;
+      }
+      if (check) this._checkLog = `${sid}: ${this._unreadable ? 'texture not readable' : 'texture ok'} after ${f.tries} retries`;
       this.map.off('render', f.onRender);
       f.onRender = null;
       if (!(this._run?.ffx && sid === 'X')) src.pause();
@@ -738,11 +864,23 @@ export class HistoryMap extends EventTarget {
     const year = doc.fy ?? doc.year;
     const fills = fillsOf(doc, year, this.flagEmp);
     const imgs = await ensureImages(fills);
+    if (this.fillImpl === 'pattern') {
+      try { this._drawPattern(sid, doc, fills, imgs, year); } catch (e) { console.warn('pattern fill', e); }
+      Object.assign(f, { doc, fills, imgs, ok: false, fy: year });
+      return false;
+    }
     const ext = extentFor(this.map);
     const t0 = performance.now();
-    paint(f.cv, doc, fills, imgs, ext);
+    let probe;
+    try {
+      probe = paint(f.cv, doc, fills, imgs, ext, { probe: true });
+    } catch (e) {
+      Object.assign(f, { doc, ok: false });
+      this._flagFail('canvas: ' + (e?.message || e));
+      return false;
+    }
     (this.flagStats ||= []).push(Math.round(performance.now() - t0));
-    Object.assign(f, { doc, ext, fills, imgs, ok: true, fy: year });
+    Object.assign(f, { doc, ext, fills, imgs, ok: true, fy: year, probe });
     this.map.getSource('fsrc' + sid).setCoordinates(ext.coords);
     if (sid === this.active || sid === this._out) this._upload(sid);
     return true;
@@ -754,12 +892,22 @@ export class HistoryMap extends EventTarget {
     const doc = this._docs?.[sid];
     if (!doc || !this._wantFlags() || this._flagHold || this._run) return;
     const f = this._fc[sid];
+    const m = this.map;
+    if (this.fillImpl === 'pattern') {
+      if (!(f.pat?.doc === doc && f.fy === (doc.fy ?? doc.year))) {
+        const tok = (this._flagTok = (this._flagTok || 0) + 1);
+        await this._drawFlags(sid, doc);
+        if (tok !== this._flagTok || this.active !== sid || this._run) return;
+      }
+      m.setPaintProperty('fpat' + sid, 'fill-opacity', this._patOn(sid) ? (this.dark ? 0.85 : 1) : 0);
+      m.setPaintProperty('fline' + sid, 'line-opacity', this._patOn(sid) ? 0.8 : 0);
+      return;
+    }
     if (f.doc === doc && f.ok && f.fy === (doc.fy ?? doc.year) && extentOk(f.ext, this.map)) return;
     const tok = (this._flagTok = (this._flagTok || 0) + 1);
     const had = this._flagOn(sid);
-    await this._drawFlags(sid, doc);
-    if (tok !== this._flagTok || this.active !== sid || this._run) return;
-    const m = this.map;
+    if (!(await this._drawFlags(sid, doc))) return;
+    if (tok !== this._flagTok || this.active !== sid || this._run || this.fillImpl !== 'canvas') return;
     m.setPaintProperty('flag' + sid, 'raster-opacity-transition', { duration: fade && !had && !reduceMotion() ? 350 : 0 });
     m.setPaintProperty('flag' + sid, 'raster-opacity', 1);
     m.setPaintProperty('fline' + sid, 'line-opacity', 0.8);
@@ -772,7 +920,9 @@ export class HistoryMap extends EventTarget {
     const sid = this.active, f = this._fc?.[sid], doc = this._docs?.[sid];
     if (!doc) return null;
     const i = doc.features.findIndex((ft) => ft.properties.u !== 1 && ft.properties.k >= 0 && makeAreaTest([ft.geometry])(lon, lat));
-    return { on: this._flagOn(sid) && this.map.getPaintProperty('flag' + sid, 'raster-opacity') === 1, key: f?.fills?.get(i)?.key || null,
+    const on = this.fillImpl === 'pattern' ? this._patOn(sid) && this.map.getPaintProperty('fpat' + sid, 'fill-opacity') > 0
+      : this._flagOn(sid) && this.map.getPaintProperty('flag' + sid, 'raster-opacity') === 1;
+    return { on, impl: this.fillImpl, key: f?.fills?.get(i)?.key || null,
       name: i >= 0 ? doc.polities[doc.features[i].properties.k]?.n : null };
   }
 

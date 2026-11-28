@@ -1,7 +1,10 @@
 // Builds the map label glyphs (fonts/<stack>/<range>.pbf, the signed-distance-field format MapLibre reads)
-// from the Alegreya web fonts in fonts/src (SIL Open Font License), by drawing every character in headless
-// Chromium. "Atlas Serif Regular" is Alegreya SC Medium: lower-case letters are small capitals.
-// "Atlas Serif Italic" is Alegreya Italic.
+// from the Source Sans 3 web fonts in fonts/src (Adobe, SIL Open Font License; the @fontsource/source-sans-3
+// files), by drawing every character in headless Chromium. Four stacks, one per role on the map:
+//   "Atlas Sans Semibold"      empires and major powers (set in capitals by the layer, modest letter-spacing)
+//   "Atlas Sans Medium"        ordinary states and the parts of empires (title case)
+//   "Atlas Sans Italic"        peoples, sketch regions, US states and colonies
+//   "Atlas Sans Light Italic"  oceans and seas
 // Usage: NODE_PATH=$(npm root -g) node tools/make_glyphs.cjs
 const { chromium } = require('playwright');
 const fs = require('fs');
@@ -13,11 +16,15 @@ const UR = {
   cyrillic: 'U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116',
   vietnamese: 'U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB',
   'latin-ext': 'U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF',
+  greek: 'U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF',
   latin: 'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD',
 };
+const ss = (w, style) => (s) => `source-sans-3-${s}-${w}-${style}.woff2`;
 const STACKS = [
-  { name: 'Atlas Serif Regular', family: 'AtlasSC', file: (s) => `alegreya-sc-${s}-500-normal.woff2`, css: '500 24px AtlasSC', style: 'normal', weight: 500 },
-  { name: 'Atlas Serif Italic', family: 'AtlasIt', file: (s) => `alegreya-${s}-400-italic.woff2`, css: 'italic 400 24px AtlasIt', style: 'italic', weight: 400 },
+  { name: 'Atlas Sans Semibold', family: 'AtlasSB', file: ss(600, 'normal'), css: '600 24px AtlasSB', style: 'normal', weight: 600 },
+  { name: 'Atlas Sans Medium', family: 'AtlasMd', file: ss(500, 'normal'), css: '500 24px AtlasMd', style: 'normal', weight: 500 },
+  { name: 'Atlas Sans Italic', family: 'AtlasIt', file: ss(400, 'italic'), css: 'italic 400 24px AtlasIt', style: 'italic', weight: 400 },
+  { name: 'Atlas Sans Light Italic', family: 'AtlasLi', file: ss(300, 'italic'), css: 'italic 300 24px AtlasLi', style: 'italic', weight: 300 },
 ];
 
 function varint(n, out) { n >>>= 0; while (n > 0x7f) { out.push((n & 0x7f) | 0x80); n >>>= 7; } out.push(n); }
