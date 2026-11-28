@@ -3855,5 +3855,478 @@
   ],
   "disagree": "HISTORY.com says Operation Dynamo was named after a room in the Dover tunnels that had held a dynamo; English Heritage says there is no evidence for this. HISTORY.com gives about 7,500 men lifted on the first full day, English Heritage 8,000 on the first day.",
   "checked": null
+ },
+ "Q110413718": {
+  "title": "2022 Kazakh unrest",
+  "y": 2022,
+  "place": "Kazakhstan",
+  "paras": [
+   "At the start of 2022 Kazakhstan ended state regulation of the price of liquefied petroleum gas, the fuel that runs most cars in the oil-producing west of the country, and in the Mangystau region its price quickly doubled. Residents of the oil town of Zhanaozen, where a strike had been crushed with deadly force in 2011, took to the streets; Civicus and the Associated Press date the first protests to 2 January, Carnegie to New Year's Day. Within days protests spread across the country, fed by anger over inequality, corruption, low wages and the closed political system built by the former president Nursultan Nazarbayev, who still held power behind the scenes as head of the Security Council.",
+   "President Kassym-Jomart Tokayev first made concessions: he dismissed the government, restored a cap on fuel prices and removed Nazarbayev from the Security Council. But from 4-5 January the protests turned violent, above all in Almaty, the largest city, where crowds stormed and burned the mayor's office and other government buildings and briefly seized the airport, amid widespread looting. The authorities declared a nationwide state of emergency, cut off the internet and launched an 'anti-terrorist operation' against what they called a foreign-backed terrorist threat, for which they offered no evidence.",
+   "Tokayev asked the Russian-led Collective Security Treaty Organization (CSTO) for help, and troops, mostly Russian, arrived on 6 January. On 7 January he said he had ordered the security forces to fire without warning. Human-rights groups reported that security forces had shot at unarmed protesters and bystanders, including children. By the weekend the unrest had been crushed.",
+   "According to official figures 227 people were killed, among them 19 members of the security forces, and more than 4,000 were injured; the interior ministry reported some 9,900 people detained. Tokayev blamed foreign-backed 'terrorists', appointed a new government, and announced on 11 January that the CSTO troops would leave; their withdrawal was completed by 19 January. He rejected calls for an international investigation, and human-rights groups documented torture of detainees and prosecutions of peaceful protesters and journalists."
+  ],
+  "sources": [
+   {
+    "url": "https://monitor.civicus.org/explore/watchlist-widespread-violations-reported-during-bloody-january/",
+    "title": "On the Watchlist: Widespread violations reported during 'Bloody January'",
+    "publisher": "CIVICUS Monitor (IPHR and KIBHR)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://carnegieendowment.org/russia-eurasia/posts/2022/01/kazakhstans-unprecedented-crisis",
+    "title": "Kazakhstan's Unprecedented Crisis",
+    "publisher": "Carnegie Endowment for International Peace",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8
+    ]
+   },
+   {
+    "url": "https://www.aljazeera.com/news/2022/1/6/kazakh-police-eliminates-protesters-as-csto-deploys-troops",
+    "title": "Kazakh police kill dozens of protesters as CSTO deploys troops",
+    "publisher": "Al Jazeera",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://komonews.com/news/nation-world/kazakh-leader-russia-led-security-group-to-pull-out-troops",
+    "title": "Kazakh leader: Russia-led security group to pull out troops (AP)",
+    "publisher": "Associated Press, via KOMO News",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     5,
+     6,
+     8,
+     9,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The switch to market pricing of LPG made its price double in Mangystau / the region where protests began.",
+   "Protests began in Zhanaozen: on 2 January (Civicus, AP) or New Year's Day (Carnegie).",
+   "Zhanaozen had seen a 2011 strike crushed with at least 16 dead (Carnegie); protests spread over grievances about inequality, corruption and Nazarbayev's system.",
+   "Nazarbayev remained an informal power, heading the Security Council (Carnegie).",
+   "Tokayev dismissed the government, reversed the price rise / capped fuel prices, and removed Nazarbayev as head of the Security Council.",
+   "The protests turned violent around 4-5 January, especially in Almaty, where government buildings were stormed and burned and the airport seized, with looting.",
+   "A state of emergency was declared and the internet shut down.",
+   "Authorities launched an anti-terrorist operation against an alleged foreign-backed threat without evidence (Civicus); Tokayev requested CSTO help and troops arrived on 6 January.",
+   "On 7 January Tokayev said he had ordered forces to fire without warning (Civicus); the unrest was largely quelled by the weekend (AP).",
+   "Human-rights groups reported shootings of unarmed protesters and bystanders, including children (Civicus).",
+   "Official figures: 227 killed including 19 law-enforcement officers, 4,353 injured (Civicus).",
+   "The Interior Ministry reported 9,900 detained (AP).",
+   "On 11 January Tokayev blamed foreign-backed 'terrorists', named a new government and announced the CSTO withdrawal (AP), completed on 19 January (Civicus).",
+   "Tokayev rejected an international investigation; rights groups reported torture and prosecutions of peaceful protesters and journalists (Civicus)."
+  ],
+  "disagree": "Carnegie dates the first protests in Zhanaozen to New Year's Day; Civicus and the Associated Press give 2 January. Al Jazeera reports Tokayev's appeal to the CSTO late on 5 January; Civicus dates the request to 6 January.",
+  "checked": null
+ },
+ "Q79967": {
+  "title": "2011 Norway attacks",
+  "y": 2011,
+  "place": "Norway",
+  "paras": [
+   "On Friday 22 July 2011 Norway suffered two terrorist attacks carried out by one man, Anders Behring Breivik, a 32-year-old Norwegian right-wing extremist. His target was the governing Labour Party and its youth organisation, the AUF, whom he blamed for immigration to Norway; two hours before the first attack he posted online a manifesto of more than 1,500 pages built around the 'Eurabia' conspiracy theory that elites were working to replace Europe's population with Muslims.",
+   "At 15:17 Breivik parked a van loaded with a fertiliser bomb in the government quarter in central Oslo. It exploded at 15:25, killing eight people, injuring many more and badly damaging the government buildings. While attention was fixed on Oslo, he drove to the island of Utøya in Hole municipality, where the AUF was holding its annual summer camp with 564 people on the island. Wearing a fake police uniform, he told the camp's guard that he had come to check security after the bombing and was taken across on the camp ferry.",
+   "He landed at 17:17 and began shooting a few minutes later, moving around the island and luring young people to him by posing as a police officer. Many hid or swam for the mainland more than 550 metres away through cold water, and civilians in small boats pulled over 200 of them from the lake. Police special forces arrested Breivik at 18:34, after he had laid down his weapons. Sixty-nine people were killed on or around Utøya, bringing the day's toll to 77, the worst violence in Norway since the Second World War.",
+   "Prime Minister Jens Stoltenberg declared that the attacks would be met with more democracy and openness, and some 200,000 people filled the streets of Oslo with roses on 25 July. In August 2012 an independent commission sharply criticised the police and authorities for the slow response and poor coordination. Breivik admitted the acts; the Oslo court found him criminally sane and on 24 August 2012 sentenced him to 21 years of preventive detention, with a minimum term of ten years."
+  ],
+  "sources": [
+   {
+    "url": "https://snl.no/Massedrapet_på_Utøya",
+    "title": "Massedrapet på Utøya",
+    "publisher": "Store norske leksikon",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://lex.dk/terrorangrebene_i_Norge_22._juli_2011",
+    "title": "terrorangrebene i Norge 22. juli 2011",
+    "publisher": "Lex (Den Store Danske)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "On 22 July 2011 Norway was hit by two terrorist attacks, both carried out by Anders Behring Breivik.",
+   "Breivik, 32, targeted the Labour Party and AUF; two hours before the bombing he posted a 1,500-page manifesto based on the Eurabia conspiracy theory (Lex).",
+   "At 15:17 he parked a van with a fertiliser bomb in the Oslo government quarter; it exploded at 15:25 (SNL).",
+   "The bomb killed eight people, injured many and caused great damage.",
+   "He then drove to Utøya, where the AUF held its annual summer camp.",
+   "He wore a fake police uniform and claimed to be checking security after the bombing.",
+   "He crossed on the AUF ferry; 564 people were on the island (SNL).",
+   "He landed at 17:17 and began shooting shortly after, posing as a police officer to lure victims.",
+   "Many fled by swimming more than 550 m; over 200 were rescued by small civilian boats (SNL); he was arrested by the police emergency unit at 18:34 after laying down his weapons.",
+   "69 people were killed at Utøya.",
+   "77 died in total, the worst attacks in Norway since the Second World War (Lex).",
+   "Stoltenberg said the attacks should be met with more democracy and openness; about 200,000 marched with roses in Oslo on 25 July (Lex).",
+   "The 22 July Commission (report 13 August 2012) criticised police coordination and the slow response.",
+   "Breivik admitted the facts (SNL); on 24 August 2012 the Oslo court found him accountable and sentenced him to 21 years' preventive detention with a ten-year minimum (Lex)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q570204": {
+  "title": "Battle of the Kalka River",
+  "y": 1223,
+  "place": "Halych-Volhynia occupation",
+  "paras": [
+   "After conquering the Khwarezmian Empire, Genghis Khan sent two of his best generals, Subutai and Jebe, on a long reconnaissance in force to the west. Their army crossed the Caucasus, defeated the Georgians and the Alans, and then routed several tribes of the Polovtsians (Cumans), the Turkic nomads of the steppe north of the Black Sea. The Polovtsian khan Kotyan fled west and appealed to the princes of Rus', among them his son-in-law Mstislav Mstislavich of Galicia, warning that if the Mongols beat the Polovtsians today, Rus' would be next.",
+   "At a council in Kiev in 1223 the princes, despite their old enmity with the Polovtsians, agreed to join them. The Rus' coalition, led jointly and quarrelsomely by Grand Prince Mstislav Romanovich of Kiev and Mstislav of Galicia, gathered on the Dnieper in April and May. Mongol envoys asked the Rus' to stay neutral; Mstislav of Kiev had the first embassy put to death. Crossing the river, the coalition defeated a Mongol advance guard and then followed the retreating Mongols east across the steppe for about eight days to the Kalka, a small river flowing towards the Sea of Azov.",
+   "The Mongol retreat was a trap. The Polovtsians and Mstislav of Galicia attacked without waiting for the rest of the army, ran into the main Mongol force hidden behind the hills, and fled back in panic through the Rus' columns, which were overwhelmed one after another; the survivors were pursued back towards the Dnieper. Mstislav of Kiev, who had stayed with his men in a fortified camp on a rocky hill, held out for three days and then surrendered on a promise of safe conduct. The promise was broken: his men were massacred, and he and two other princes were crushed to death beneath boards on which the Mongol commanders feasted.",
+   "The sources differ on the dates: the Danish encyclopedia Lex places the first attack on 28 May and the Kievan surrender on 31 May, while the account by Victor Kamenir for Warfare History Network puts the main battle on 31 May, with the siege of the camp lasting into June. According to Warfare History Network, fewer than one in ten of the Rus' soldiers came home and a dozen princes died. The Mongols then withdrew east, but in the later 1230s they returned under Batu Khan, with Subutai, to conquer the Rus' principalities."
+  ],
+  "sources": [
+   {
+    "url": "https://lex.dk/Slaget_ved_floden_Kalka_1223",
+    "title": "Slaget ved Kalka-floden",
+    "publisher": "Lex (Den Store Danske)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://warfarehistorynetwork.com/article/russian-disaster-at-the-kalkha-river/",
+    "title": "The Battle of Kalka River: A Russian Disaster (Victor Kamenir)",
+    "publisher": "Warfare History Network",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Subutai and Jebe were sent west by Genghis Khan after the Khwarezm campaign.",
+   "They crossed the Caucasus, defeated the Georgians (WHN) and the Alans (Lex), and routed Polovtsian tribes.",
+   "Khan Kotyan appealed to the Rus' princes, including his son-in-law Mstislav of Galicia, warning that Rus' would be next (Lex).",
+   "A council of princes in Kiev agreed to join the Polovtsians despite old enmity.",
+   "The coalition gathered on the Dnieper in spring 1223; Mstislav Romanovich of Kiev and Mstislav of Galicia shared command and quarrelled (WHN).",
+   "Mongol envoys asked the Rus' to remain neutral; Mstislav Romanovich had the first embassy executed (WHN).",
+   "The coalition defeated a Mongol vanguard and pursued the retreating Mongols for 8 or 9 days to the Kalka, a river flowing towards the Sea of Azov.",
+   "The Polovtsians attacked without coordination, met the main Mongol force, and fled back through the Rus' troops, causing a rout.",
+   "Mstislav Romanovich held a fortified hill camp for three days and surrendered on a promise of safe passage.",
+   "The promise was broken; the princes were crushed under boards while the Mongols feasted (Lex: three princes; WHN: Mstislav and his two sons-in-law; WHN: his men were massacred).",
+   "Lex: first attack on 28 May, the Kievan surrender on 31 May 1223; WHN: main battle on 31 May.",
+   "Less than a tenth of the army returned and a dozen princes died (WHN).",
+   "Subutai returned with Batu Khan in 1237 (WHN; Lex says Batu's campaigns began in 1236)."
+  ],
+  "disagree": "Lex dates the Polovtsian attack to 28 May and the Kievan surrender to 31 May 1223; Warfare History Network puts the main battle on 31 May and the siege of the Kievan camp in the following days. Lex dates the start of Batu Khan's campaigns to 1236; Warfare History Network says Subutai returned with Batu in 1237.",
+  "checked": null
+ },
+ "Q60022": {
+  "title": "Tennis Court Oath",
+  "y": 1789,
+  "place": "Kingdom of France",
+  "paras": [
+   "In the spring of 1789 King Louis XVI, facing a severe financial crisis, summoned the Estates-General, an assembly of the three orders of the realm (clergy, nobility and commoners) that had not met since 1614. It opened at Versailles on 5 May, but debate soon stalled over whether votes would be counted by order or by individual deputy. The deputies of the Third Estate, the commoners, wanted reform and refused to sit as a separate order; on 17 June, joined by some members of the clergy and nobility, they proclaimed themselves the National Assembly.",
+   "On 20 June 1789 the deputies arrived to find their meeting hall, the Salle des Menus-Plaisirs in Versailles, locked and guarded by soldiers. They moved to a nearby indoor court used for jeu de paume, or real tennis, a game the royal family itself played there. In that room, with the assembly's president Jean-Sylvain Bailly reading the text, they swore never to separate, and to meet wherever circumstances required, until a constitution for the kingdom had been established on solid foundations. All the deputies signed except one.",
+   "The oath was a direct challenge to royal authority: it asserted that sovereignty lay with the nation's representatives rather than the king. Louis at first seemed to give way and recognised the National Assembly, but he then massed troops around Versailles and dismissed his reforming minister Jacques Necker, which helped provoke the storming of the Bastille in Paris on 14 July. The assembly, now the National Constituent Assembly, went on in August 1789 to abolish feudal privileges and adopt the Declaration of the Rights of Man and of the Citizen. Jacques-Louis David later set out to paint the scene; the painting was never finished."
+  ],
+  "sources": [
+   {
+    "url": "https://en.chateauversailles.fr/discover/history/key-dates/jeu-paume-oath-1789",
+    "title": "Jeu de Paume Oath, 1789",
+    "publisher": "Château de Versailles",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     11
+    ]
+   },
+   {
+    "url": "https://www.carnavalet.paris.fr/en/collections/tennis-court-oath-june-20-1789-sketch",
+    "title": "The Tennis Court Oath, June 20, 1789. Sketch",
+    "publisher": "Musée Carnavalet - Histoire de Paris",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     6,
+     7,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/june-20/third-estate-makes-tennis-court-oath",
+    "title": "Third Estate makes Tennis Court Oath",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Louis XVI summoned the Estates-General in 1789 to deal with a severe financial crisis; it consisted of clergy, nobility and commoners and had not met since 1614 (HISTORY).",
+   "The Estates-General met at Versailles from 5 May; debate stalled on voting by order or by head (Carnavalet).",
+   "The Third Estate deputies, joined by some clergy and nobles, formed the National Assembly (17 June 1789, Château de Versailles).",
+   "On 20 June 1789 they found their hall (the Menus-Plaisirs) locked and guarded and moved to the nearby real-tennis court, where the royal family played (Château de Versailles).",
+   "They swore never to separate until a constitution was established.",
+   "The oath took place at the Jeu de Paume in Versailles on 20 June 1789.",
+   "The oath was read by Bailly, president of the Assembly, and signed by all but one deputy (Carnavalet).",
+   "The event was a founding act of French democracy and of national sovereignty (Château de Versailles).",
+   "The assembly became the National Constituent Assembly, which in August 1789 abolished feudalism and adopted the Declaration of the Rights of Man (Château de Versailles).",
+   "Louis appeared to yield and legalised the Assembly, then surrounded Versailles with troops and dismissed Necker; Parisians stormed the Bastille on 14 July (HISTORY).",
+   "David's painting of the scene remained unfinished (Carnavalet; the Château de Versailles mentions his 1791 drawing)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q749811": {
+  "title": "Mutiny on the Bounty",
+  "y": 1789,
+  "place": null,
+  "paras": [
+   "In December 1787 the small Royal Navy ship Bounty, commanded by Lieutenant William Bligh, left England for Tahiti to collect breadfruit saplings, which were to be carried to the West Indies as cheap food for enslaved people. The ship was overcrowded and had no marines to back the captain's authority, and there was friction between Bligh and his master's mate, Fletcher Christian, from early in the voyage. After ten months at sea the Bounty reached Tahiti in October 1788 and, because it was the wrong season for the breadfruit, stayed about five months; many of the crew lived ashore and formed relationships with Tahitian women.",
+   "The Bounty sailed from Tahiti on 4 April 1789. Early on 28 April, near Tonga in the Pacific, Christian and his followers woke Bligh, held him at bayonet point and seized the ship without bloodshed. Bligh and 18 loyal men were forced into the ship's open launch and set adrift. Royal Museums Greenwich counts 18 mutineers; HISTORY.com says Christian was joined by 25 petty officers and seamen.",
+   "Bligh, an expert navigator, took the overloaded boat first to the island of Tofua for supplies and then west across the Pacific and past Australia, reaching Timor in the East Indies on 14 June 1789 after a voyage of some 3,600 miles. From there the survivors returned to England to report the mutiny.",
+   "The mutineers went back to Tahiti, where most of them stayed. Christian, eight other mutineers and a group of Tahitian men and women sailed on to remote Pitcairn Island, which they reached in January 1790, and burned the ship to avoid discovery. The mutineers left on Tahiti were later captured and taken to England, where three were hanged. On Pitcairn the settlers fell to fighting; Christian and all the Tahitian men were among those killed, and when an American ship found the island in 1808 only one mutineer, John Adams, was left alive. Descendants of the mutineers still live on Pitcairn and Norfolk Island."
+  ],
+  "sources": [
+   {
+    "url": "https://www.rmg.co.uk/stories/topics/mutiny-on-bounty",
+    "title": "Mutiny on the Bounty",
+    "publisher": "Royal Museums Greenwich",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/april-28/mutiny-on-the-hms-bounty",
+    "title": "Mutiny on the HMS Bounty",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The Bounty under Bligh sailed for Tahiti in 1787 (HISTORY: December 1787) to collect breadfruit for the West Indies (as food for enslaved people, HISTORY).",
+   "The ship was overcrowded, had no marines, and Bligh and Christian were at odds (RMG).",
+   "After ten months the Bounty reached Tahiti (HISTORY: October 1788).",
+   "It stayed about five months (RMG: wrong season for breadfruit); the crew enjoyed life ashore and took Tahitian partners.",
+   "The Bounty left Tahiti on 4 April 1789 (HISTORY); on 28 April 1789 Christian led the mutiny.",
+   "The mutiny took place near Tonga (HISTORY).",
+   "Bligh was woken at night and held at bayonet point; no blood was shed (RMG); Bligh and 18 loyal men were set adrift in the launch.",
+   "RMG: 18 mutineers; HISTORY: Christian and 25 petty officers and seamen seized the ship.",
+   "Bligh sailed to Tofua, then on to Timor (RMG); he reached Timor on 14 June 1789 (HISTORY) after about 3,600 miles (HISTORY; RMG: 3,618 nautical miles).",
+   "Bligh and his men returned to England to report the mutiny.",
+   "The mutineers returned to Tahiti; Christian, eight mutineers and Tahitians went to Pitcairn and burned the Bounty.",
+   "They reached Pitcairn in January 1790; mutineers captured on Tahiti were taken to England, where three were hanged (HISTORY).",
+   "Strife on Pitcairn killed Christian and all the Tahitian men (RMG); in 1808 an American ship found John Adams the sole surviving mutineer (HISTORY).",
+   "Descendants of the mutineers still live on Pitcairn (and Norfolk Island, HISTORY)."
+  ],
+  "disagree": "Royal Museums Greenwich says 18 men joined the mutiny (with two passive and 22 loyal to Bligh); HISTORY.com says Christian and 25 petty officers and seamen seized the ship.",
+  "checked": null
+ },
+ "Q1025404": {
+  "title": "Assassination of Abraham Lincoln",
+  "y": 1865,
+  "place": "United States of America",
+  "paras": [
+   "In April 1865 the American Civil War was ending: Richmond, the Confederate capital, fell at the beginning of the month, and on 9 April General Robert E. Lee surrendered his army at Appomattox Court House. John Wilkes Booth, a well-known actor from Maryland and a Confederate sympathiser, had earlier plotted with associates to kidnap President Abraham Lincoln, but the attempt of 20 March failed when Lincoln did not appear. Now he planned to kill Lincoln, and to have accomplices kill Vice President Andrew Johnson and Secretary of State William H. Seward at the same time, to throw the government into chaos.",
+   "On the evening of Good Friday, 14 April 1865, Lincoln, his wife Mary and their guests, Major Henry Rathbone and his fiancée Clara Harris, watched the comedy Our American Cousin from the presidential box at Ford's Theatre in Washington. At about 10:15 p.m. Booth slipped into the box and shot Lincoln in the back of the head with a single-shot derringer, stabbed Rathbone, and leapt down to the stage, shouting 'Sic semper tyrannis' ('thus always to tyrants'). He broke his leg in the fall but escaped on horseback.",
+   "Soldiers carried the unconscious president across the street to the Petersen House, a boarding house, where he was laid diagonally across a bed too short for him. Secretary of War Edwin Stanton set up an office in the back parlour and began the hunt for the conspirators. Lincoln died there at 7:22 a.m. on 15 April 1865, aged 56, and within hours Andrew Johnson was sworn in as president. Seward was attacked in his house the same night but survived.",
+   "Booth and an accomplice, David Herold, fled into southern Maryland and then Virginia. On 26 April troops surrounded the barn where they were hiding and set it on fire; Herold surrendered, and Booth was shot and died a few hours later (HISTORY.com says a sergeant shot him; the Miller Center leaves open whether he shot himself). Four conspirators, among them Mary Surratt, were hanged on 7 July 1865. Lincoln's body lay in state in the Capitol and was then carried by funeral train to Springfield, Illinois, watched by huge crowds along the way; he was buried there on 4 May."
+  ],
+  "sources": [
+   {
+    "url": "https://www.history.com/articles/abraham-lincoln-assassination",
+    "title": "Abraham Lincoln's Assassination",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.nps.gov/foth/the-petersen-house.htm",
+    "title": "The Petersen House",
+    "publisher": "U.S. National Park Service, Ford's Theatre National Historic Site",
+    "accessed": "2026-11-28",
+    "supports": [
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://millercenter.org/node/56941",
+    "title": "Abraham Lincoln dies",
+    "publisher": "Miller Center, University of Virginia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     9,
+     10,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.fords.org/lincolns-assassination/",
+    "title": "Lincoln's Assassination",
+    "publisher": "Ford's Theatre",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6
+    ]
+   },
+   {
+    "url": "https://www.americanheritage.com/assassination",
+    "title": "ASSASSINATION! (American Heritage, April 1965, vol. 16, no. 3)",
+    "publisher": "American Heritage",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Lee surrendered at Appomattox on 9 April 1865, after the fall of Richmond.",
+   "Booth, an actor from Maryland and Confederate sympathiser, had plotted to kidnap Lincoln; the 20 March attempt failed (HISTORY).",
+   "Booth planned to kill Lincoln while accomplices killed Johnson and Seward (HISTORY; Miller Center adds Grant).",
+   "On 14 April 1865 Lincoln was shot by Booth at Ford's Theatre in Washington.",
+   "Lincoln was watching Our American Cousin with Mary Lincoln, Henry Rathbone and Clara Harris (Good Friday, Ford's Theatre).",
+   "At about 10:15 p.m. Booth entered the box (Ford's Theatre: by 10:15 the play was in its last act; HISTORY: shot at 10:15).",
+   "Booth shot Lincoln in the back of the head, stabbed Rathbone, and leapt to the stage shouting 'Sic semper tyrannis'.",
+   "Booth broke his leg but escaped on horseback; soldiers carried Lincoln across the street to a boarding house (Petersen House).",
+   "Lincoln lay diagonally on the bed; Stanton set up an office and began the manhunt; Lincoln died at 7:22 a.m. on 15 April aged 56 (NPS).",
+   "Johnson was sworn in as president hours later (Miller Center); Seward was attacked in his house the same night and survived (American Heritage).",
+   "Booth and Herold fled through southern Maryland to Virginia (HISTORY).",
+   "On 26 April the barn was surrounded and set on fire; Herold surrendered and Booth was shot and died (HISTORY: shot by a sergeant; Miller Center: shot himself or was killed).",
+   "Four conspirators, including Mary Surratt, were hanged on 7 July 1865 (HISTORY; Miller Center: four hanged).",
+   "Lincoln lay in state in the Capitol and was carried by funeral train to Springfield, where he was buried on 4 May 1865."
+  ],
+  "disagree": "HISTORY.com says a sergeant shot Booth when he appeared to raise his gun; the Miller Center says Booth either shot himself or was killed in a shoot-out. The Miller Center says the plotters also meant to kill General Grant.",
+  "checked": null
  }
 }
