@@ -2049,5 +2049,488 @@
   ],
   "disagree": "Whether Ariq Boke's kurultai at Karakorum came before Kublai's election (Wikipedia, Kublai Khan) or a month after it (Wikipedia, Toluid Civil War; Howorth). Who attended Kublai's kurultai: all lines except Jochi's (Wikipedia, Kublai Khan) or without the Jochi and Chagatai lines (Howorth). The order of the kurultais is stated in the text, Howorth's list of attendees is attributed.",
   "checked": null
+ },
+ "Q1319855": {
+  "title": "Battle of Kirina",
+  "y": 1235,
+  "place": "Kirina, Koulikoro Region, Mali",
+  "paras": [
+   "After the collapse of the old Ghana Empire, weakened by internal strife and by the intervention of the Almoravids in the 11th century, smaller states in the western Sahel competed to replace it. Among them were the Sosso of the Kaniaga kingdom and the Mandinka of the Upper Niger. Under their king Soumaoro (Sumanguru) Kanté the Sosso took Koumbi Saleh, the former Ghana capital, and conquered the Mandinka among others. The French colonial scholar Maurice Delafosse, writing in 1922, dated the Sosso capture of Ghana to 1203 and their annexation of the Manding to about 1224, but Wikipedia notes that later scholars have rejected much of Delafosse's reconstruction of this period.",
+   "The battle is known mainly from the Epic of Sundiata, the oral tradition handed down by Mandinka griots. In it Sundiata, a Mandinka prince who was crippled as a child, had gone into exile with his mother Sogolon to escape his half-brother, and found refuge and high office with the king of Mema. When Soumaoro conquered the Mandinka, messengers found Sundiata and persuaded him to return. He came back with an army given by the king of Mema, and on the plain of Siby he and the young war leaders of the Mandinka, among them Tiramakhan Traore, swore a pact to free their country. Sundiata built a coalition of smaller kingdoms against the Sosso.",
+   "The two armies met at Kirina, in what is now the Koulikoro Region of Mali, in about 1235, and Sundiata's forces won a complete victory. In the epic, Soumaoro is a sorcerer-king; Sundiata discovers that his protective animal is the rooster and wounds him with an arrow tipped with a cock's spur, and Soumaoro flees the field and disappears into the Koulikoro mountains. Delafosse, by contrast, wrote that Sundiata defeated and killed him not far from Koulikoro. After the battle Sundiata marched on and razed Sosso.",
+   "Kirina is often taken as the beginning of the Mali Empire, which controlled much of West Africa for the next two centuries. Sundiata took over the states the Sosso had conquered, was the first Mandinka ruler to take the title mansa, and set up his capital at Niani; his generals conquered the lands of old Ghana and, under Tiramakhan, the kingdom of Jolof and much of Senegambia. Delafosse dated the destruction of Ghana by Sundiata to 1240. Arab writers of the following century, among them Ibn Khaldun, knew Sundiata as Mari Djata; Flora Shaw's 1905 history, drawing on them, says he overthrew the Sosso, conquered Ghana and reigned for 25 years. Sundiata died in about 1255."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Kirina",
+    "title": "Battle of Kirina (rev 1388234746)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     7,
+     8,
+     9,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Sundiata_Keita",
+    "title": "Sundiata Keita (rev 1385625236)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     8,
+     13,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://archive.org/download/lesnoirsdelafriq00delauoft/lesnoirsdelafriq00delauoft_djvu.txt",
+    "title": "Maurice Delafosse, Les Noirs de l'Afrique (Paris: Payot, 1922), chapter on medieval Black Africa, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     8,
+     10,
+     11,
+     14
+    ]
+   },
+   {
+    "url": "https://archive.org/download/tropicaldependen00shaw/tropicaldependen00shaw_djvu.txt",
+    "title": "Flora L. Shaw, A Tropical Dependency (London, 1905), chapter on the Mellestine, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "By the late 12th century the Ghana Empire had collapsed following internal strife and Almoravid intervention in the 11th century; smaller states including the Sosso of Kaniaga and the Mandinka of the Upper Niger filled the void (Wikipedia, Kirina; Shaw: Ghana weakened and conquered first by the Su-Su, then by Melle).",
+   "Under Soumaro Kanté the Sosso seized Koumbi Saleh and conquered the Mandinka among others (Wikipedia, Kirina; Delafosse: Soumangourou took Ghana and then annexed the Manding).",
+   "Delafosse (1922): Soumangourou took Ghana in 1203 and annexed the Manding about 1224 (attributed); Wikipedia (Sundiata Keita): Delafosse's work has been refuted and discarded by many scholars.",
+   "The story is retold in the Epic of Sundiata, transmitted by Maninka griots (Wikipedia, Kirina and Sundiata).",
+   "Epic: Sundiata was crippled from childhood; Sogolon took him into exile to escape his half-brother Dankaran Touman; the king of Mema gave him asylum and a senior position (Wikipedia, Sundiata).",
+   "Epic: when Soumaoro conquered the Mandinka, messengers persuaded him to return; he came with an army from Mema; on the plain of Siby he and warlords including Tiramakhan Traore formed a pact (Wikipedia, Sundiata).",
+   "Sundiata organised a coalition of smaller kingdoms against the Sosso (Wikipedia, Kirina).",
+   "The armies met in the Koulikoro Region about 1235; Sundiata's forces roundly defeated Sumanguru's (Wikipedia, Kirina and Sundiata; Delafosse: about 1235 near Koulikoro).",
+   "Epic: Sumanguru a sorcerer-king; his sacred animal the rooster; wounded with an arrow tipped by a cock's spur; fled and disappeared into the Koulikoro mountains (Wikipedia, Kirina).",
+   "Delafosse: Soundiata beat and killed Soumangourou not far from Koulikoro (attributed).",
+   "Sundiata's forces marched on to raze Sosso (Wikipedia, Kirina; Delafosse: annexed Sosso).",
+   "Kirina is often cited as the beginning of the Mali Empire, which would control most of West Africa for the next two centuries (Wikipedia, Kirina).",
+   "After Kirina Sundiata took control of the states conquered by the Sosso; he was the first Mandinka king to take the title Mansa; capital at Niani; the lands of old Ghana conquered; Tiramakhan defeated Jolof and conquered Senegambia (Wikipedia, Sundiata).",
+   "Delafosse: Soundiata destroyed Ghana in 1240 (attributed).",
+   "Ibn Khaldun calls him Mari Djata (Wikipedia, Sundiata); Shaw: Mari Djata overthrew the Su-Su and conquered Ghana in the early 13th century and reigned 25 years (attributed).",
+   "Sundiata's generally accepted death year is c. 1255 (Wikipedia, Sundiata)."
+  ],
+  "disagree": "Soumaoro's fate: in the epic (Wikipedia) he flees and vanishes into the Koulikoro mountains; Delafosse (1922) says Sundiata killed him. Delafosse's dates (1203, about 1224, 1240) are his own reconstruction, much of which later scholars reject (Wikipedia). Both stated in the text.",
+  "checked": null
+ },
+ "cp18-074": {
+  "title": "Solomonic dynasty restored",
+  "y": 1270,
+  "place": "Ethiopian highlands (Bete Amhara)",
+  "paras": [
+   "For several generations before 1270 the Christian highlands of Ethiopia were ruled by the Zagwe kings, from an Agaw people, who had replaced the royal house of Aksum. Yekuno Amlak was a ruler from Bete Amhara, lord of Geshen and Ambassel near Lake Hayq, where he was educated at the monastery of Istifanos. Later texts written to support his dynasty said that he descended in the male line from the kings of Aksum, and through them from Menelik I, the son of King Solomon and the Queen of Sheba, and they portrayed the Zagwe as usurpers who were not of the line of Israel.",
+   "Traditional history says Yekuno Amlak escaped from imprisonment by the Zagwe king on Mount Malot, gathered support in Amhara and Shewa, and, with considerable help from the Muslim Sultanate of Shewa, defeated the Zagwe king at the Battle of Ansata. Wikipedia dates his seizure of power to 1270; Budge gives 1268 or 1270. Which king he overthrew is disputed: the historian Taddesse Tamrat argued it was Yetbarak, whose name was later struck from the records, while other accounts name Na'akueto La'ab. The Church's part is told in different ways. Later hagiographies credit the saint Tekle Haymanot with raising Yekuno Amlak and helping him to the throne; earlier ones give that role to Iyasus Mo'a, abbot of Istifanos. One tradition, reported by E. A. Wallis Budge, says the Zagwe king abdicated peacefully under a treaty arranged by Tekle Haymanot, receiving lands and royal honours in Lasta. Budge preferred another text, published by Carlo Conti Rossini, in which Yekuno Amlak won the throne in battle with soldiers raised through Tekle Haymanot and in return gave the Church a third of the kingdom.",
+   "Yekuno Amlak reigned until his death in 1285. He campaigned against the kingdom of Damot, intervened in the affairs of the Sultanate of Shewa, wrote to the Mamluk sultan Baybars asking for a new bishop from Egypt, and, according to Budge, exchanged letters and gifts with the Byzantine emperor. Budge calls his accession the point at which Ethiopian history, as distinct from legend, begins. His descendants ruled Ethiopia until 1974, when the last emperor, Haile Selassie, was overthrown in the Ethiopian Revolution, and the claim of descent from Solomon was written into the Ethiopian constitution of 1955. Modern historians regard that descent as a myth created to legitimise Yekuno Amlak's seizure of power."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Yekuno_Amlak",
+    "title": "Yekuno Amlak (rev 1386332541, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     10,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Solomonic_dynasty",
+    "title": "Solomonic dynasty (rev 1385613851, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://archive.org/download/india.history.resource.106145/106145_djvu.txt",
+    "title": "E. A. Wallis Budge, A History of Ethiopia, Nubia and Abyssinia (1928), chapters on the Zagwe kings, OCR text",
+    "publisher": "Internet Archive (Digital Library of India scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     8,
+     9,
+     10,
+     13,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The Zagwe dynasty replaced the Aksumite royal house; the Aksumite kings ruled from the 1st to the 10th centuries when replaced by the Zagwe (Wikipedia, Solomonic; Budge: the Zagwe, a section of the Agaws, Christians, reigning from about A.D. 950).",
+   "Yekuno Amlak was a ruler from Bete Amhara, local ruler of Geshen and Ambassel around Lake Hayq, educated at Istifanos Monastery (Wikipedia, Yekuno Amlak).",
+   "Later medieval texts claimed his male-line descent from the Aksumite royal house and so from Solomon, through Menelik I, son of Solomon and the Queen of Sheba; the Zagwe were depicted as 'non-Israelite' usurpers (Wikipedia, Yekuno Amlak and Solomonic; Budge: tradition calls him the restorer of the Solomonic dynasty; the Zagwe were not Israelites).",
+   "Traditional history: imprisoned by the Zagwe king on Mount Malot, escaped, gathered support in Amhara and Shewa, with considerable aid from the Sultanate of Shewa defeated the Zagwe king at the Battle of Ansata (Wikipedia, Yekuno Amlak).",
+   "The dynasty was founded in 1270 (Wikipedia, Solomonic and Yekuno Amlak; Budge: accession in 1268 or 1270; restoration under Yekuno Amlak in 1270).",
+   "Taddesse Tamrat argued the last king was Yetbarak, removed from records; Getatchew Mekonnen Hasen names Na'akueto La'ab (Wikipedia, Yekuno Amlak; Budge: tradition names Na'akueto La'ab as the king who abdicated).",
+   "Later hagiographies say Tekle Haymanot raised him and helped depose the Zagwe; earlier ones credit Iyasus Mo'a, abbot of Istifanos (Wikipedia, Yekuno Amlak).",
+   "Budge, following Bruce: Takla Haymanot proposed that Na'akueto La'ab abdicate; a treaty gave him estates in Lasta and royal honours (attributed).",
+   "Budge: a text published by Conti Rossini says Yekuno Amlak, through Takla Haymanot, obtained soldiers, fought and conquered his adversary, and gave Takla Haymanot a third of the kingdom; Budge thinks this version correct (attributed).",
+   "Yekuno Amlak reigned 1270-1285 and died in 1285 (Wikipedia, Yekuno Amlak; Budge: reigned fifteen years).",
+   "He campaigned against Damot; a deposed ruler of the Sultanate of Shewa appealed to him in 1279; he wrote to Baibars for a new Abuna in 1273 (Wikipedia, Yekuno Amlak).",
+   "Budge states he exchanged letters with Michael VIII and sent giraffes (Wikipedia, Yekuno Amlak, citing Budge; attributed).",
+   "Budge: Abyssinian history only begins with the accession of Yekuno Amlak (attributed).",
+   "The dynasty ruled until 1974, when Haile Selassie was overthrown by the Derg in the 1974 revolution; the claimed descent was enshrined in the 1955 constitution (Wikipedia, Solomonic and Yekuno Amlak).",
+   "Marcus and Northrup: the Kebra Nagast descent is a myth/pastiche of legends to legitimise Yekuno Amlak's seizure of power (Wikipedia, Solomonic; Budge: Conti Rossini regards the dynasty as founded by Yekuno Amlak in the 13th century)."
+  ],
+  "disagree": "How Yekuno Amlak took the throne: a negotiated abdication arranged by Tekle Haymanot (tradition reported by Budge) or a military victory (Wikipedia; the Conti Rossini text preferred by Budge). Which Zagwe king was overthrown: Yetbarak (Taddesse Tamrat) or Na'akueto La'ab. Budge gives 1268 or 1270 for the accession. All stated in the text.",
+  "checked": null
+ },
+ "cp03-19": {
+  "title": "Kublai Khan proclaims the Yuan dynasty",
+  "y": 1271,
+  "place": "Dadu (Khanbaliq, Beijing), China",
+  "paras": [
+   "Kublai had been Great Khan of the Mongols since 1260, but after the civil war with his brother Ariq Boke his real power was limited to his own realm centred on China, while the western khanates went their own way. From the start of his reign he relied heavily on Chinese advisers and adopted Chinese models of government. He prepared to move the Mongol capital from Karakorum to China in 1264 and from 1266 built a new city near the old Jurchen capital Zhongdu, on the site of modern Beijing.",
+   "In 1271, the eighth year of his Zhiyuan era, Kublai issued an edict proclaiming the dynastic name Great Yuan (Da Yuan), in the manner of a traditional Chinese dynasty. The name comes from the Classic of Changes (I Ching), where it describes the origin of the universe or a primal force; H. H. Howorth's history translates it as 'original' or 'chief'. The edict claimed succession from earlier Chinese dynasties, back to the legendary Three Sovereigns and Five Emperors and through to the Tang. In Mongolian the state was called Dai Ön Ulus, often together with or replaced by 'Great Mongol State'. The following year Kublai made the new city, known to the Mongols as Khanbaliq, the capital, Dadu ('Great Capital'), while Shangdu remained his summer capital. Howorth adds that Kublai founded an academy for scholars and schools in the provinces and had Chinese classics translated into Mongolian.",
+   "The proclamation was a claim to rule all of China, much of which still belonged to the Southern Song. Kublai launched a massive offensive against the Song in 1274 and completed the conquest in 1279, when the last Song emperor died at the Battle of Yamen, making Kublai the first non-Han ruler of all of China proper. The Yuan dynasty ruled China until 1368, when the last Yuan emperor fled from Khanbaliq to Shangdu ahead of the armies of the Ming; his successors carried on the name Great Yuan in Mongolia as the Northern Yuan."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Yuan_dynasty",
+    "title": "Yuan dynasty (rev 1385341836, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Kublai_Khan",
+    "title": "Kublai Khan (rev 1380829269, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapter on Khubilai Khan, OCR text",
+    "publisher": "Internet Archive (Google Books scan, Harvard University Library copy)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Kublai was khagan from 1260; after the civil war with Ariq Boke his real power was limited to the Yuan Empire (Wikipedia, Kublai; Howorth: elected Khakan; war with Arikbuka).",
+   "From the beginning of his reign he adopted Chinese political and cultural models and relied heavily on Chinese advisers (Wikipedia, Kublai; Howorth: surrounded himself with learned men).",
+   "Kublai readied the move of the capital from Karakorum to Khanbaliq in 1264, constructing a new city near Zhongdu, modern Beijing, in 1266 (Wikipedia, Yuan).",
+   "In the eighth year of Zhiyuan (1271) Kublai officially created the Yuan dynasty; the edict Proclamation of the Dynastic Name of 1271 announced Great Yuan (Wikipedia, Yuan and Kublai; Howorth: in 1271 Khubilai gave his dynasty the Chinese name of Yuen).",
+   "The name is first attested in the I Ching and describes the 'origin of the universe' or a 'primal force' (Wikipedia, Yuan); Howorth: Yuen, that is, original or chief (attributed).",
+   "The edict claimed succession from the Three Sovereigns and Five Emperors to the Tang dynasty (Wikipedia, Yuan).",
+   "Mongolian counterpart Dai Ön Ulus, often used with or replaced by Yeqe Mongghul Ulus, 'Great Mongol State' (Wikipedia, Yuan).",
+   "The following year he proclaimed the capital as Dadu ('Grand Capital', Khanbaliq or Daidu to the Mongols); summer capital Shangdu (Wikipedia, Kublai and Yuan).",
+   "Howorth: founded a central academy and schools in all provinces; had Chinese classics translated into Mongol (attributed).",
+   "Kublai began a massive offensive against the Southern Song in 1274 and destroyed the Song in 1279 at the Battle of Yamen, where the last Song emperor died; he became the first non-Han emperor to rule all China proper (Wikipedia, Kublai and Yuan; Howorth: campaign against the Sung).",
+   "The Yuan lasted until 1368, when the last emperor fled from Khanbaliq to Shangdu before the Ming; the remnants carried on the name Great Yuan in Mongolia as the Northern Yuan (Wikipedia, Yuan)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q531916": {
+  "title": "First Mongol invasion of Burma",
+  "y": 1277,
+  "place": "Northern Burma and the Yunnan frontier",
+  "paras": [
+   "After conquering the kingdom of Dali (Yunnan) in the 1250s, the Mongols bordered the Pagan Empire of Burma. In 1271-1272, as part of their drive to encircle the Song dynasty of China, they demanded tribute from King Narathihapate, and in 1273 Kublai Khan himself sent an embassy with the same demand. G. E. Harvey's History of Burma (1925) says the envoys were executed because they would not take off their shoes in the king's presence, against the advice of a minister who warned that earlier kings had never killed ambassadors. In 1275 Kublai ordered the Yunnan government to secure the borderlands and allowed it a limited frontier war if Pagan resisted.",
+   "In 1277 the Burmese attacked Kanngai, a small state on the Taping River whose chief had submitted to the Mongols, and were defeated by the Yunnan garrison at the battle the Burmese call Ngasaunggyan. Marco Polo, who described the battle, gives the Burmese 60,000 men and 2,000 elephants carrying wooden towers, and the Mongols 12,000 horsemen; the Yuan chronicle says 700 men beat a Burmese army of 40,000 to 50,000. In Polo's account the Mongol horses shied at the elephants, so the commander had his men dismount and shoot from the cover of the trees until the wounded elephants stampeded; Polo, as quoted by Harvey, names this commander Nasr al-Din, while Wikipedia calls him Huthukh and has Nasr al-Din lead a raid on Kaungsin late in 1277, which took the fort and then withdrew because of the heat.",
+   "In 1281 Kublai again demanded submission and, when Narathihapate refused, ordered the conquest of northern Burma, though not of Pagan itself. The invasion began on 22 September 1283. The Burmese fort at Ngasaunggyan fell on 3 December after a siege of over two months and Kaungsin six days later, with 10,000 Burmese losses according to the Mongol sources. The Mongols took the old capital Tagaung in February 1284 and, after a pause in the hot season, defeated another Burmese army near Hanlin in January 1285. Narathihapate panicked and fled to Lower Burma, which earned him the name Tarokpyemin, 'the king who fled from the Chinese'; Harvey says he had pulled down hundreds of pagodas to strengthen the capital's defences.",
+   "With his vassals in revolt, the king sued for peace. In June 1286 he sent an embassy led by the monk Shin Ditha Pamauk, and in January 1287 the envoys accepted Mongol overlordship and an annual tribute in Beijing in return for the withdrawal of Mongol troops. On 1 July 1287, however, Narathihapate was murdered by his son Thihathu. The Yunnan command then sent an army south under Kublai's grandson, named Ye-sin Timour in Wikipedia; older histories say it took Pagan, but recent research suggests it was held off by Burmese commanders well short of the capital and withdrew to Tagaung after heavy losses. The Pagan Empire, which had lasted some 250 years, broke apart, the Mongols kept northern Burma down to Tagaung as the province of Zhengmian, and Burma entered 250 years of political fragmentation in which Tai-Shan states rose across the region."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/First_Mongol_invasion_of_Burma",
+    "title": "First Mongol invasion of Burma (rev 1380633204, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historyofburmafr00harv/historyofburmafr00harv_djvu.txt",
+    "title": "G. E. Harvey, History of Burma (London, 1925), chapter on the kingdom of Pagan, OCR text",
+    "publisher": "Internet Archive (Princeton Theological Seminary Library scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "The Mongols conquered Dali/Yunnan (Wikipedia; Harvey: in 1253 the Tartars annexed Yunnan).",
+   "The Mongols first demanded tribute in 1271-1272 as part of encircling the Song; Kublai sent another mission in 1273; it was rejected (Wikipedia; Harvey: in 1271 the Yunnan government sent envoys; in 1273 an imperial ambassador came with a letter from Kubla Khan).",
+   "Harvey: the ambassadors refused to take off their shoes; Narathihapate ordered their execution despite the minister Anantapyissi's warning that kings of old never slew ambassadors (attributed).",
+   "In 1275 the emperor ordered the Yunnan government to secure the borderlands and permitted a limited border war (Wikipedia).",
+   "In 1277 a Burmese army 'invaded' Gold Teeth territory and was defeated at the battle the Burmese call Ngasaunggyan (Wikipedia; Harvey: in 1277 the Burmese invaded the Gold Tooth state of Kanngai on the Taping river, whose chief had submitted to China; the Yunnan garrison cleared them out at Ngasaunggyan).",
+   "Marco Polo: Burmese 60,000 men and 2,000 elephants with timber towers; Mongols 12,000 horsemen (Wikipedia and Harvey, quoting Polo); Yuan chronicle: 700 men against 40,000-50,000 (Wikipedia) (attributed).",
+   "Polo: the horses took fright at the elephants; the commander ordered his men to dismount and shoot from the trees; the elephants fled (Wikipedia and Harvey).",
+   "Polo's commander: Nasr-uddin in Harvey's quotation of Yule's Polo; Huthukh in Wikipedia; Wikipedia: Nasr al-Din led 3,800 men to Kaungsin c. December 1277, destroyed stockades and returned because of the heat (Harvey: 3,800 men to Kaungsin, found the heat excessive and returned) (attributed).",
+   "In 1281 Kublai again demanded tribute; Narathihapate refused; the emperor ordered an invasion of northern Burma but not of Pagan (Wikipedia; Harvey: the emperor consistently refused to sanction an invasion of Pagan).",
+   "The invasion began on 22 September 1283; Ngasaunggyan fell on 3 December 1283 after over two months; Kaungsin fell six days later; Mongol sources: 10,000 Burmese lost at Kaungsin (Wikipedia; Harvey: in 1283 smashed a Burmese army at Kaungsin, inflicting 10,000 casualties).",
+   "Tagaung taken 5 February 1284; evacuated in the heat; Burmese defeated near Hanlin on 26 January 1285 (Wikipedia).",
+   "The king panicked and fled to Lower Burma (Wikipedia; Harvey: he fled in panic and is known as Tarokpyemin, 'the king who fled from the Chinese'; he had pulled down hundreds of pagodas to build defences).",
+   "In June 1286 he sent an embassy led by Shin Ditha Pamauk; in January 1287 at Beijing it acknowledged Mongol suzerainty and annual tribute in exchange for withdrawal (Wikipedia; Harvey: sent a celebrated monk offering humble submission).",
+   "On 1 July 1287 Narathihapate was assassinated by his second son Thihathu (Wikipedia).",
+   "The Mongol army under Kublai's grandson Ye-sin Timour marched toward Pagan; traditional scholarship says it took Pagan; recent research says it was held off by Athinkhaya, Yazathingyan and Thihathu and retreated to Tagaung after heavy casualties (Wikipedia).",
+   "The invasions toppled the 250-year-old Pagan Empire; the Mongols held northern Burma to Tagaung as Zhengmian; 250 years of fragmentation and the rise of Tai-Shan states followed (Wikipedia; Harvey: Shan dominion 1287-1531)."
+  ],
+  "disagree": "Army sizes at Ngasaunggyan 1277: Marco Polo 60,000 Burmese and 2,000 elephants against 12,000 Mongol horsemen; Yuan chronicle 40,000-50,000 Burmese against 700. The Mongol commander in Polo's account: Nasr al-Din (Harvey quoting Yule's Polo) or Huthukh (Wikipedia). Whether the 1287 Mongol army reached Pagan: traditional scholarship yes, recent research probably not (Wikipedia). All stated and attributed in the text.",
+  "checked": null
+ },
+ "Q1369379": {
+  "title": "Battle of Bạch Đằng (1288)",
+  "y": 1288,
+  "place": "Bạch Đằng River, Quảng Ninh, Vietnam",
+  "paras": [
+   "In late 1287 Kublai Khan sent a third army against Đại Việt, the Vietnamese kingdom of the Trần dynasty, after his earlier invasion of 1285 had ended in a costly retreat. Prince Toghon (Thoát Hoan) led the land forces, while the admiral Omar (Ô Mã Nhi) commanded the fleet with Fan Yi (Phàn Tiếp). The Yuan took the capital Thăng Long (Hanoi) early in 1288, but King Trần Nhân Tông and the court escaped by sea; the Vietnamese commander-in-chief was Prince Trần Hưng Đạo (Trần Quốc Tuấn). The invaders depended on a supply fleet under Zhang Wenhu (Trương Văn Hổ). Prince Trần Khánh Dư ambushed it near Vân Đồn and destroyed or captured its grain ships, and Zhang escaped in a small boat.",
+   "Without supplies, and with the hot season coming, Toghon decided to withdraw: he would go overland towards Lạng Sơn while Omar's fleet returned by the Bạch Đằng River, the way it had come. Trần Hưng Đạo repeated the tactic Ngô Quyền had used on the same river against the Southern Han in 938. He had iron-tipped wooden stakes driven into the riverbed, according to Trần Trọng Kim's history Việt Nam sử lược by the general Nguyễn Khoái, and hid boats and troops along the banks. When the Yuan fleet came down the river at high tide, a small Vietnamese flotilla attacked and then fled, drawing the Yuan ships upstream past the stakes, hidden under the water.",
+   "As the tide went out, the Vietnamese turned back to fight, and Trần Hưng Đạo's main force joined them. The Yuan ships, trying to escape, ran onto the exposed stakes, where many were stuck, overturned or wrecked. The fighting lasted from sunrise to sunset; the Vietnamese took about 400 warships, and thousands of Yuan soldiers were killed or drowned. Wikipedia dates the battle to 9 April 1288; Trần Trọng Kim places it in the third lunar month of that year. Omar was captured. Wikipedia says Fan Yi was killed in the river, while Trần Trọng Kim says he too was captured and later died of illness in captivity.",
+   "Toghon's land army was ambushed on its retreat through the mountain passes and lost much of its strength before he escaped into China; Kublai banished him to Yangzhou. The victory ended Kublai's plans to conquer Đại Việt and Champa and is counted among the greatest in Vietnamese history. King Nhân Tông nevertheless sent envoys to the Yuan court offering tribute, and in 1289 he returned the prisoners; Omar's ship, by a plan of Trần Hưng Đạo, was sunk at sea on the way home. Relations remained strained until Kublai's successor Temür settled for a nominal tributary relationship."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_B%E1%BA%A1ch_%C4%90%E1%BA%B1ng_%281288%29",
+    "title": "Battle of Bạch Đằng (1288) (rev 1375665094, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://vi.wikisource.org/wiki/Vi%E1%BB%87t_Nam_s%E1%BB%AD_l%C6%B0%E1%BB%A3c/Quy%E1%BB%83n_I/Ph%E1%BA%A7n_III/Ch%C6%B0%C6%A1ng_VIII",
+    "title": "Trần Trọng Kim, Việt Nam sử lược, book I, part III, chapter VIII (Giặc nhà Nguyên, II)",
+    "publisher": "Wikisource (Vietnamese)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "In late 1287 the third invasion began; Toghon commanded the land forces and Omar the navy with Fan Yi; the 1285 invasion had ended in retreat (Wikipedia; Kim: Thoát Hoan, Ô mã Nhi, Phàn Tiếp).",
+   "The Yuan captured Thăng Long on 3 February (1288); the king was driven to the sea (Wikipedia; Kim: the Thượng hoàng and Nhân Tông took to boats; Thoát Hoan besieged Thăng Long).",
+   "The Yuan depended on Zhang Wenhu's supply fleet; Hưng Đạo and Trần Khánh Dư attacked it at Vân Đồn, damaged it and forced it back (Wikipedia; Kim: Khánh Dư destroyed and seized the grain ships at Lục Thủy Dương; Trương Văn Hổ fled on a small boat).",
+   "Short of food, Toghon withdrew; Omar's fleet retreated via the Bạch Đằng, the route it had entered by; Toghon by land (Wikipedia; Kim: hot season coming; Ô mã Nhi and Phàn Tiếp sent by the Bạch Đằng river; land forces by Lạng Sơn).",
+   "Hưng Đạo used the tactic of Ngô Quyền against the Southern Han in 938: iron-headed poles planted in the river bed and ambushes (Wikipedia; Kim: sharpened iron-tipped stakes planted across the river).",
+   "Kim: Nguyễn Khoái was sent to plant the stakes (attributed).",
+   "The Yuan fleet entered the trap at high tide; a small Vietnamese fleet attacked and retreated; the Yuan pursued (Wikipedia; Kim: Nguyễn Khoái challenged and fled at high tide, luring the Yuan past the stakes).",
+   "When the tide receded the Vietnamese returned; the Yuan ships were stuck on the stakes and destroyed (Wikipedia; Kim: the ships caught on the stakes, overturned and broke; Hưng Đạo's main army arrived).",
+   "The battle lasted from sunrise to sundown; 400 Yuan warships captured; thousands drowned or killed (Wikipedia; Kim: over 400 warships taken).",
+   "Wikipedia: 9 April; Kim: third month of mậu tí (1288) (both attributed).",
+   "Omar was captured (Wikipedia and Kim); Fan Yi was killed in the river (Wikipedia); Kim: Phàn Tiếp was captured and died of illness (attributed).",
+   "Toghon's retreating forces were ambushed and largely killed or captured; he escaped to China (Wikipedia; Kim: Phạm Ngũ Lão's ambush at Nội Bàng, five or six tenths lost); Kublai banished Toghon to Yangzhou (Wikipedia).",
+   "The battle ended Kublai's intention to conquer Đại Việt and Champa; one of the greatest victories in Vietnamese military history (Wikipedia).",
+   "Nhân Tông sent envoys offering tribute (Kim: tenth month of 1288); in 1289 prisoners were returned; Omar's ship was sunk at sea by Hưng Đạo's plan (Wikipedia; Kim).",
+   "Relations foundered; Temür Khan settled for a nominal tributary relationship (Wikipedia)."
+  ],
+  "disagree": "Date: 9 April 1288 (Wikipedia) or the third lunar month of 1288 (Trần Trọng Kim). Fan Yi: killed in the river (Wikipedia) or captured and later died of illness (Trần Trọng Kim). Both stated in the text.",
+  "checked": null
+ },
+ "cp03-22": {
+  "title": "Second Mongol invasion of Japan",
+  "y": 1281,
+  "place": "Hakata Bay, Kyūshū, Japan",
+  "paras": [
+   "After the failure of his first invasion of Japan in 1274, Kublai Khan kept sending envoys to demand submission, and the Kamakura shogunate, led by the regent Hōjō Tokimune, had them beheaded in 1275 and again in 1279. The Japanese expected another attack. They organised the warriors of Kyūshū, built a stone wall along Hakata Bay, two metres high according to Wikipedia and some 20 km long according to the historian Kawai Atsushi, and drove stakes into likely landing places. Having completed the conquest of the Song in 1279, Kublai could now attack from two directions.",
+   "Two fleets set out in 1281. The Eastern Route army from Korea, of Mongol, Korean and northern Chinese troops, sailed first and attacked Tsushima and Iki in June; the much larger Southern Route fleet from southern China, many of its soldiers former Song troops, was delayed. The figures in the sources are large: Wikipedia gives 900 ships from Korea and 3,500 from southern China carrying 142,000 men, and Kawai 140,000 men, of whom 100,000 came from southern China. Modern historians think these numbers are exaggerated; estimates by Thomas Conlan and Morris Rossabi run from about 14,000 to about 70,000.",
+   "Without waiting for the southern fleet, the Eastern Route commanders attacked Hakata Bay and Nagato in late June. They could not get past the wall at Hakata, and the invaders occupied the islands of Shika and Noko. From there they were harried by Japanese night raids in small boats, in which warriors such as Kōno (Kawano) Michiari boarded and burned enemy ships, and the Mongols took to lashing their ships together for defence. When the southern fleet arrived, the combined force seized Taka Island off northern Hizen and pressed on towards Hakata, but some two months of fighting brought it no decisive gain.",
+   "Then a great typhoon struck the fleet at anchor: on 15 August 1281 according to Wikipedia, on 14-15 August according to James Murdoch's History of Japan, and on 23 August according to Kawai. Ships crowded at the mouth of Imari Bay were smashed against each other. Wikipedia reports a Chinese survivor's account that the commander Fan Wenhu sailed away in the best remaining ships, leaving the troops to their fate. The Japanese killed or captured the men stranded on Taka Island; the southern Chinese were spared and enslaved. A Korean source says 7,592 of the 26,989 Koreans who sailed did not return. The storm became known as the kamikaze, the 'divine wind', and fed the belief that Japan was protected by the gods. Murdoch writes that Kublai at once began planning a third expedition, but it was put off because Korea was exhausted and his ministers objected. In Japan the defensive war brought no conquered land with which the shogunate could reward its warriors, and its authority declined."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Mongol_invasions_of_Japan",
+    "title": "Mongol invasions of Japan (rev 1386549324)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://archive.org/download/murdoch-a-history-of-japan-v-1/Murdoch%20A%20history%20of%20Japan%20%20v%201_djvu.txt",
+    "title": "James Murdoch, A History of Japan, vol. 1, chapter on the Mongol invasions, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14,
+     16
+    ]
+   },
+   {
+    "url": "https://www.nippon.com/en/japan-topics/g01214/saved-by-the-wind-the-mongol-invasions-of-japan.html",
+    "title": "Kawai Atsushi, \"Saved by the Wind? The Mongol Invasions of Japan\" (23 December 2021)",
+    "publisher": "Nippon.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     5,
+     7,
+     9,
+     10,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "After 1274 Kublai sent emissaries; Tokimune had five beheaded in 1275 and five more in 1279 (Wikipedia; Murdoch: a mission arrived at Hakata in summer 1280 and the Bakufu ordered the envoys' execution).",
+   "The shogunate organised the Kyūshū samurai and built a stone wall at Hakata Bay (two metres high, 1276) and drove stakes at landing sites (Wikipedia; Murdoch: Hakozaki Haven strongly fortified since 1275 behind stone ramparts); Kawai: fortifications stretching some 20 km (attributed).",
+   "The Yuan had finished conquering the Song in 1279 and could launch a two-pronged attack (Wikipedia; Murdoch: the Zayton armament and the Koryu fleet).",
+   "The Eastern Route army sailed from Korea first and attacked Tsushima on 9 June and Iki on 14 June; the Southern Route fleet was delayed (Wikipedia; Murdoch: the Koryu fleet did not wait; Iki attacked on June 10).",
+   "Wikipedia: 900 ships in Korea and 3,500 in southern China, 142,000 soldiers and sailors; Kawai: 140,000, including 30,000 from eastern Yuan mainly from Goryeo and 100,000 from southern China including former Song troops (attributed; Murdoch: a force given at 100,000 at Zayton, 3,500 vessels said).",
+   "Modern historians think the figures exaggerated; Conlan implies about 14,000, Rossabi proposes 70,000 (Wikipedia).",
+   "The Eastern Route commanders set out on 23 June without waiting; attacked Hakata Bay and Nagato (25 June); unable to pass the wall at Hakata (Wikipedia; Murdoch: landing on June 23; Kawai: fortifications prevented the army from coming ashore).",
+   "The invasion force occupied Shika and Noko; Japanese night raids in small ships; Kawano Michiari boarded an enemy ship; the Mongols fastened their ships together (Wikipedia; Murdoch: the Kono captains cut out and fired Mongol ships; the invaders lashed their ships together with cables and planks).",
+   "The combined fleets took Taka island and advanced on Hakata; stalemate (Wikipedia; Murdoch: Takashima (Hawk Island) in northern Hizen occupied; invaders made little headway in fifty-two days); Kawai: held on for around two months.",
+   "Typhoon: 15 August (Wikipedia); 14-15 August (Murdoch); 23 August (Kawai) (attributed).",
+   "Ships at Imari Bay were destroyed (Wikipedia; Murdoch, quoting Korean accounts: vessels jammed together at the mouth of the harbour, probably Imari Gulf).",
+   "A Chinese survivor said Fan Wenhu sailed off in the best ships, leaving the troops (Wikipedia, attributed).",
+   "The Japanese attacked and captured those stranded on Taka island; the southern Chinese were spared but made slaves (Wikipedia; Murdoch: Shoni Kagesuke assailed the Chinese on the island; Chinese annals say 10,000-12,000 made slaves).",
+   "Korean source: of 26,989 Koreans, 7,592 did not return (Wikipedia; Murdoch: the Koryu contingent lost 8,000 men).",
+   "The typhoon gave rise to the belief in kamikaze, 'divine wind' (Wikipedia; Kawai).",
+   "Murdoch: Kublai began to concert measures for a third armament; Koryu was exhausted and his ministers protested, so it was postponed (attributed).",
+   "There was no newly acquired land, so the shogunate could not reward the gokenin and its authority declined (Wikipedia)."
+  ],
+  "disagree": "Date of the typhoon: 15 August (Wikipedia), 14-15 August (Murdoch), 23 August (Kawai, Nippon.com). Size of the invasion force: 142,000 or 140,000 in the traditional figures; modern estimates from about 14,000 (Conlan) to 70,000 (Rossabi). Height and length of the Hakata wall from different sources. All stated and attributed in the text.",
+  "checked": null
  }
 }
