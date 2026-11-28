@@ -2201,5 +2201,64 @@
   ],
   "disagree": "Fate of the US defence site: shut down months after activation in October 1975 (Arms Control Association); construction stopped by the end of the decade (Office of the Historian).",
   "checked": null
+ },
+ "Q697659": {
+  "title": "Remilitarization of the Rhineland",
+  "y": 1936,
+  "place": "Demilitarised Rhineland zone: Cologne, Düsseldorf, Mainz, Aachen, Trier, Saarbrücken",
+  "paras": [
+   "The remilitarisation of the Rhineland was Nazi Germany's move of troops into the demilitarised zone along the Rhine on 7 March 1936. The Treaty of Versailles of 1919 had made the whole of Germany west of the Rhine and a 50-kilometre strip east of it permanently demilitarised, with no fortifications or troops, to protect France; the Rhine Pact at the heart of the Locarno treaties of 1925 confirmed the zone. For Hitler the zone was an obstacle, since France could answer any German move against the post-war order by marching into the unfortified area.",
+   "On the morning of 7 March German forces marched into the zone in several columns. While Hitler told the Reichstag in Berlin that Germany was ending the Locarno Pact and the demilitarised zone, troops crossed the Rhine on the Hohenzollern Bridge in Cologne to cheering crowds. LeMO gives 30,000 Wehrmacht soldiers; the Rhineland history portal of the LVR gives 19 infantry battalions and 13 artillery detachments, backed by 30,000 men of the state police, of which only three battalions, just under 3,000 men, went on west of the Rhine to Aachen, Trier and Saarbrücken. Hitler justified the breach by German self-determination and by the Franco-Soviet mutual assistance pact of May 1935, which he called a breach of Locarno, and he offered the Western powers non-aggression pacts and a return to the League of Nations.",
+   "The move was a great risk: a military response by the Western powers would have forced the Germans to withdraw at once, and Hitler later called the 48 hours after the march the most nerve-racking of his life. But Italy had promised in advance not to take part in any international action, and France did not act without British support, so the other powers limited themselves to sharp words and a condemnation by the Council of the League of Nations. The success brought Hitler great prestige at home, strengthened his belief that Europe would tolerate his expansion, and secured Germany's western border; the LVR portal calls it the last chance to stop him without a major war."
+  ],
+  "sources": [
+   {
+    "url": "https://www.dhm.de/lemo/kapitel/ns-regime/aussenpolitik/einmarsch-ins-rheinland-1936",
+    "title": "Einmarsch ins Rheinland 1936 (LeMO)",
+    "publisher": "Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.rheinische-geschichte.lvr.de/Epochen-und-Themen/Themen/die-remilitarisierung-des-rheinlands-am-7.-maerz-1936/DE-2086/lido/642bcedc0af097.30828046",
+    "title": "Die Remilitarisierung des Rheinlands am 7. März 1936",
+    "publisher": "Portal Rheinische Geschichte, Landschaftsverband Rheinland",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     8,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "On 7 March 1936 German troops entered the demilitarised Rhineland (both).",
+   "The Treaty of Versailles of 28 June 1919 permanently demilitarised the left bank of the Rhine and a 50 km strip on the right bank, forbidding fortifications and troops, to meet French security needs (LVR; LeMO: the 50-kilometre-wide zone, breach of Versailles and Locarno).",
+   "The Rhine Pact of Locarno, signed in autumn 1925, confirmed the demilitarised zone (LVR; LeMO: Locarno Pact of 1925).",
+   "The demilitarisation was an obstacle to Hitler's foreign policy, as any German move could be answered by a French invasion of the unfortified area (LeMO).",
+   "In the morning troops marched into the zone in several columns; as Hitler announced the annulment of Locarno and the end of the zone in the Reichstag, troops crossed the Hohenzollern Bridge in Cologne and were received by the mayor (LVR; LeMO: Wehrmacht crossed the Rhine bridges).",
+   "LeMO: 30,000 Wehrmacht soldiers, garrisons in Aachen, Trier and Saarbrücken; LVR: 19 infantry battalions and 13 artillery detachments supported by 30,000 Landespolizei; only three battalions, just under 3,000 men, went west of the Rhine to Aachen, Trier and Saarbrücken.",
+   "Hitler justified the breach with German self-determination and the Franco-Soviet pact of May 1935, which he called a breach of Locarno; he offered non-aggression pacts, an air pact and Germany's return to the League of Nations (LeMO).",
+   "The occupation was extremely risky; a military counter-action would have forced an immediate withdrawal (LeMO; LVR: Hitler reportedly said Germany would have had to withdraw in disgrace); Hitler called the 48 hours after the march the most exciting of his life (LVR).",
+   "Italy had promised not to join international action; France did not invade without British support; the powers confined themselves to verbal criticism and a condemnation before the League Council (LeMO).",
+   "Enormous prestige for Hitler at home; strengthened his belief that Europe would tolerate his expansion (LeMO); Germany's western border secured; LVR: the last chance to stop Hitler without a great war was missed."
+  ],
+  "disagree": "Forces involved: 30,000 Wehrmacht soldiers (LeMO); 19 infantry battalions and 13 artillery detachments with 30,000 state police, of which about 3,000 men crossed to the west bank (LVR portal).",
+  "checked": null
  }
 }
