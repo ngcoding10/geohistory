@@ -155,7 +155,11 @@
    "Many laws (courts, Senate qualification, governorships) remained long in force; his example inspired Pompey and Caesar (Wikipedia)."
   ],
   "disagree": "First proscription list: about 40 senators and 1,600 knights in Appian, some 80 names in Wikipedia. Resignation of the dictatorship: at the start of 80 BC in Wikipedia's article on Sulla, near the end of 81 BC in its article on the civil war. Both stated in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Sulla*.html",
+   "result": "2 claims re-checked against Plutarch, Life of Sulla 31: proscription lists with death for anyone sheltering the proscribed and rewards for killers; first list of 80 names (agrees with Wikipedia against Appian, already stated). 0 errors.",
+   "errors": 0
+  }
  },
  "Q1051202": {
   "title": "Second Catilinarian conspiracy",
@@ -236,7 +240,11 @@
    "The main sources, Sallust and Cicero, are hostile; scholars believe the threat was exaggerated though the conspiracy occurred more or less as described (Wikipedia)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Caesar*.html",
+   "result": "4 claims re-checked against Plutarch, Life of Caesar 7-8: Catiline driven from the city, Lentulus and Cethegus left behind, Caesar speaking against execution without trial, Cato's opposition leading to the executions. 0 errors.",
+   "errors": 0
+  }
  },
  "Q16957926": {
   "title": "Chola invasion of Srivijaya",
@@ -294,6 +302,69 @@
    "Chola influence over Kedah lasted several decades; Tamil merchant associations expanded (Wikipedia)."
   ],
   "disagree": "Hultzsch (1891) identified Kadaram with a place in the Madura district of India; the expedition by sea that the inscription describes, and Wikipedia, place it in Southeast Asia (Kedah). The text follows the later identification.",
+  "checked": null
+ },
+ "cp02-11": {
+  "title": "Arab conquest of Egypt completed",
+  "y": 642,
+  "place": "Egypt: Pelusium, the Babylon fortress (Old Cairo), Heliopolis and Alexandria",
+  "paras": [
+   "Between 639 and 642 an army of the Rashidun Caliphate under Amr ibn al-As took Egypt from the Byzantine Empire, ending about seven centuries of Roman rule. Egypt had only recently been recovered from a Sasanian Persian occupation, and its government was divided: Cyrus, the Chalcedonian patriarch of Alexandria, was in effect its governor, while Theodore commanded the army. Amr entered Egypt in December 639 with about 4,000 men and took Pelusium after a siege of about a month.",
+   "Reinforced to some 12,000 men, the Arabs reached Heliopolis in July 640 and defeated the Byzantines there, and besieged the great fortress of Babylon, near modern Cairo, which fell in April 641. Cyrus then negotiated the surrender of the whole country. The chronicle of John, bishop of Nikiu in Egypt, records the terms: a fixed tribute, an armistice of eleven months, the Roman troops in Alexandria to leave by sea with their property and never return, 150 soldiers and 50 civilians given as hostages, churches left alone, and the Jews allowed to stay in Alexandria. When Arab troops came to collect the tribute before the city had been told, the Alexandrians tried to stone Cyrus, who wept and said he had made the treaty to save them and their children.",
+   "Wikipedia dates the armistice's end to 28 September 642. John of Nikiu says that Theodore and the last troops then sailed for Cyprus, and that Amr entered Alexandria without a fight and was received with respect by its people, who were in great hardship. He also complains that the new rulers trebled the taxes and kept hated Byzantine officials in office. The loss of the prosperous province badly weakened the Byzantine Empire."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Muslim_conquest_of_Egypt",
+    "title": "Muslim conquest of Egypt (rev 1386924749)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "http://www.tertullian.org/fathers/nikiu2_chronicle.htm",
+    "title": "The Chronicle of John, Bishop of Nikiu, trans. R. H. Charles (1916), chapters CXI-CXXI",
+    "publisher": "Tertullian Project (public-domain translation)",
+    "accessed": "2026-11-28",
+    "supports": [
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Conquest by Amr ibn al-As's army under the Rashidun Caliphate between 639 and 642; ended the Roman period that began in 30 BC (Wikipedia).",
+   "Egypt had been occupied by the Sasanians for about a decade before Heraclius recovered it (Wikipedia).",
+   "Cyrus of Alexandria was Chalcedonian patriarch and de facto governor; Theodore commander-in-chief; divided accountability (Wikipedia).",
+   "In December 639 Amr left for Egypt with 4,000 troops; Pelusium taken after a month-long siege (Wikipedia).",
+   "Reinforcements brought the force to 12,000 (Wikipedia).",
+   "Muslim army reached Heliopolis in July 640 and defeated the Byzantines (Wikipedia).",
+   "Babylon fortress fell in April 641 (final assault on 6 April 641, evacuation by Easter Monday) (Wikipedia).",
+   "Cyrus negotiated the surrender (Wikipedia; John of Nikiu).",
+   "Terms: fixed tribute; armistice of eleven months; Roman troops in Alexandria to leave by sea with possessions, no Roman army to return; 150 soldiers and 50 civilians as hostages; churches not seized; Jews to remain in Alexandria (John of Nikiu; Wikipedia on the treaty's terms).",
+   "When Muslims came to receive the tribute before the Alexandrians were told, a mob sought to stone Cyrus, who wept and said 'I have made this treaty in order to save you and your children' (John of Nikiu; Wikipedia).",
+   "The armistice was to expire on 28 September 642 (Wikipedia, attributed).",
+   "John of Nikiu: the Muslims trebled taxes; Menas and other officials kept in office (John of Nikiu, attributed).",
+   "Theodore and his troops sailed for Cyprus and abandoned Alexandria; Amr entered the city without effort and was received with respect (John of Nikiu); the loss of Egypt severely weakened the Byzantine Empire (Wikipedia)."
+  ],
+  "disagree": null,
   "checked": null
  }
 }

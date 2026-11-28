@@ -3778,7 +3778,11 @@
    "In July 2025 Knossos joined the UNESCO World Heritage List with Phaistos, Malia, Zakros, Zominthos and Kydonia (British School at Athens, news of 17 July 2025; attributed in the text)."
   ],
   "disagree": "The event record starts the civilization in 3300 BC; Wikipedia dates its development from the Neolithic to around 3100 BC, and the Dartmouth course places the start of the Early Bronze Age in the later 4th millennium BC. The text gives Wikipedia's date. Period dates differ between Wikipedia and Rutter's Dartmouth course (first palaces c. 1925-1875 vs ca. 2000/1950-1900/1850 BC; Neopalatial from c. 1750-1700 vs ca. 1750/1720 BC; Thera eruption about 1600 BC by carbon dating, or a century later by Egyptian synchronisms, vs ca. 1625 BC; end of LM IB c. 1470 vs ca. 1490/1470 BC); each is given with its source.",
-  "checked": null
+  "checked": {
+   "by": "https://sites.dartmouth.edu/aegean-prehistory/lessons/lesson-13-narrative/",
+   "result": "1 claim re-checked against Dartmouth lesson 13 (not used for writing): all palatial centres except Knossos destroyed in LM IB. 0 errors.",
+   "errors": 0
+  }
  },
  "Q715380": {
   "title": "First Triumvirate",
@@ -3872,7 +3876,7 @@
   "place": "Agreed on an island in a river near Mutina (Modena); made law in Rome",
   "paras": [
    "The Second Triumvirate was a legal commission that gave three Caesarian leaders, Mark Antony, Lepidus and Caesar's adopted heir Octavian, almost absolute power over the Roman state. After Julius Caesar's murder on 15 March 44 BC, Antony and Octavian fell out. Urged on by Cicero, the Senate turned against Antony, whose forces were put to flight at Mutina on 21 April 43 BC, and he was declared a public enemy. With both consuls dead, Octavian marched on Rome, became consul in August 43 BC, had the decree against Antony repealed, and moved north to make terms with him under Lepidus's protection.",
-   "The three men met on a small island in a river near Mutina; Appian says Octavian and Antony each brought five legions, which faced each other across the river, and the three conferred for two days. They agreed on a new office, to be held for five years with powers above the consuls', and split the western provinces: Antony took Cisalpine and Transalpine Gaul, Lepidus Narbonese Gaul and Spain, and Octavian Africa, Sardinia and Sicily. They promised their soldiers the land of eighteen rich Italian towns. In Rome a tribune, Publius Titius, carried the law at once (the lex Titia), and Wikipedia dates its formal creation to 27 November 43 BC. The triumvirs could issue binding edicts, overrule governors, punish without right of appeal and appoint the magistrates.",
+   "The three men met on a small island in a river near Mutina; Appian says Octavian and Antony each brought five legions, which faced each other across the river, and the three conferred for two days (three in Plutarch). They agreed on a new office, to be held for five years with powers above the consuls', and split the western provinces: Antony took Cisalpine and Transalpine Gaul, Lepidus Narbonese Gaul and Spain, and Octavian Africa, Sardinia and Sicily. They promised their soldiers the land of eighteen rich Italian towns. In Rome a tribune, Publius Titius, carried the law at once (the lex Titia), and Wikipedia dates its formal creation to 27 November 43 BC. The triumvirs could issue binding edicts, overrule governors, punish without right of appeal and appoint the magistrates.",
    "They began with proscriptions: lists of men to be killed and their property sold, with rewards for killers and informers. Cicero, who had attacked Antony in his speeches, was among the victims, and his head and hand were put on show in the Forum. The ancient numbers differ. Appian names 17 first and then 130 and 150 more, and gives about 300 senators and 2,000 knights condemned; Wikipedia notes that this total covers everyone killed or stripped of property up to 39 BC, while Plutarch gives between 200 and 300 and Livy 130 senators besides many knights.",
    "In 42 BC Antony and Octavian took their armies to Macedonia against Caesar's assassins. In two battles at Philippi they defeated Brutus and Cassius, both of whom took their own lives, the second battle being fought on 23 October 42 BC. Afterwards Antony took charge of the East and Octavian of the West, and Lepidus was left with Africa. The triumvirate was renewed in 37 BC for five more years; in 36 BC Octavian forced Lepidus out, and the two remaining triumvirs fought a final war, from which Octavian emerged the victor."
   ],
@@ -3921,6 +3925,15 @@
      15,
      16
     ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html",
+    "title": "Plutarch, Life of Antony (Loeb Classical Library, trans. B. Perrin, 1920)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     6
+    ]
    }
   ],
   "claims": [
@@ -3929,7 +3942,7 @@
    "Cicero induced the Senate to oppose Antony; Antony put to flight at the Battle of Mutina on 21 April 43 BC; declared a public enemy (Wikipedia).",
    "With both consuls dead Octavian marched on Rome, reached it on 19 August 43 BC and secured election as consul with Quintus Pedius; the public-enemy declaration was repealed (Wikipedia).",
    "Octavian moved north to treat with Antony under Lepidus's protection (Wikipedia).",
-   "They met on a small islet in a river near Mutina (Appian: river Lavinius; Wikipedia: they reconciled); each with five legions stationed opposite; the three conferred for two days (Appian, attributed in text).",
+   "They met on a small islet in a river near Mutina (Appian: river Lavinius; Wikipedia: they reconciled); each with five legions stationed opposite; the three conferred for two days (Appian, attributed in text). Plutarch (Antony 19): three days (stated).",
    "A new magistracy for five years with consular power (Appian); triumviri rei publicae constituendae for five years, powers above the consuls (Wikipedia: listed above the consuls on the Capitoline Fasti).",
    "Provinces: Antony Cisalpine and Transalpine Gaul / all Gaul except 'Old Gaul'; Lepidus Narbonese Gaul and Spain; Octavian Africa, Sardinia and Sicily (Wikipedia; Appian).",
    "Soldiers promised eighteen cities of Italy (Appian); the triumvirs seized eighteen rich Italian towns for their veterans (Wikipedia).",
@@ -3943,8 +3956,12 @@
    "Second battle on 23 October 42 BC (Wikipedia, attributed in text); afterwards Antony east, Octavian west, Lepidus Africa (Wikipedia).",
    "Wikipedia: Appian's total covers all killed or with property confiscated between 43 and Misenum (39 BC); Plutarch 200 to 300; Livy 130 senators and many equites. Renewed in 37 BC for five years; Octavian forced Lepidus out in 36 BC; final war won by Octavian (Wikipedia)."
   ],
-  "disagree": "Numbers of the proscribed differ between ancient sources: Appian gives 17, then 130 and 150 more, and about 300 senators and 2,000 knights in all (a total Wikipedia says covers everyone killed or deprived of property up to 39 BC); Plutarch gives 200 to 300 and Livy 130 senators besides many knights (both as reported by Wikipedia). Stated in the text with their sources.",
-  "checked": null
+  "disagree": "Numbers of the proscribed differ between ancient sources: Appian gives 17, then 130 and 150 more, and about 300 senators and 2,000 knights in all (a total Wikipedia says covers everyone killed or deprived of property up to 39 BC); Plutarch gives 200 to 300 and Livy 130 senators besides many knights (both as reported by Wikipedia). Stated in the text with their sources. Length of the conference near Mutina: two days in Appian, three in Plutarch (stated).",
+  "checked": {
+   "by": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony*.html",
+   "result": "6 claims re-checked against Plutarch, Life of Antony 19-22: island meeting in a river, Cicero proscribed and his head and hand put on the rostra, about 300 proscribed (within the stated 200-300), property sold, march into Macedonia against Brutus and Cassius, Brutus killing himself after the second battle at Philippi. 0 errors; added Plutarch's three days for the conference beside Appian's two.",
+   "errors": 0
+  }
  },
  "Q202311": {
   "title": "Roman Egypt",
@@ -4046,7 +4063,7 @@
   "paras": [
    "The Arab conquest of Transoxiana, 'the land beyond the river' Oxus (today parts of Uzbekistan, Tajikistan, Kazakhstan and Kyrgyzstan), took about a century, from the first raids after Merv fell in 651 to the battle of Talas in 751. Wikipedia calls it the longest and hardest-fought of the early Muslim conquests. The region was split into many small principalities, in Tokharistan on the upper Oxus, in Sogdia around Bukhara and Samarkand, in Khwarazm and along the Jaxartes, with Iranian-speaking townspeople and mostly nomadic Turks.",
    "At first the Arabs only raided for booty and tribute. The Umayyad governor Ziyad ibn Abi Sufyan turned Khorasan into a base: he settled 50,000 warriors from Basra and Kufa with their families there (50,000 families in Gibb's account). His son Ubayd Allah reached Merv as governor in the autumn of 673 and the next spring crossed the Oxus, beat the Bukharans near Paykand and made Bukhara tributary, taking Bukharan archers back as his guard. In 676 Sa'id ibn Uthman defeated the Sogdians and took young nobles as hostages (50 in Gibb; Wikipedia says 40, 50 or 80). Then the Second Fitna, a new Muslim civil war, halted expansion for a generation while the Arab tribes of Khorasan fought each other.",
-   "The real conquest was the work of Qutayba ibn Muslim, governor from 705 under al-Hajjaj. He recovered Balkh and Lower Tokharistan in 705 and fought for Bukhara from 706 to 709, punishing rebellious Paykand by killing its men and enslaving its women and children. He then subdued Khwarazm and Samarkand, whose ruler Ghurak had to accept an Arab garrison and a mosque, and from 713 campaigned along the Jaxartes. Unlike earlier governors he enlisted large numbers of local troops. After the caliph al-Walid died in 715 Qutayba lost his life: Gibb says he was killed in a mutiny of his own army in Ferghana, while Wikipedia says the new caliph Sulayman most likely had him executed. A story that he reached Kashgar is rejected by Gibb and by the modern historians Wikipedia cites.",
+   "The real conquest was the work of Qutayba ibn Muslim, governor from 705 under al-Hajjaj. He recovered Balkh and Lower Tokharistan in 705 and fought for Bukhara from 706 to 709, punishing rebellious Paykand by killing its men and enslaving its women and children. He then subdued Khwarazm and Samarkand, whose ruler Ghurak had to accept an Arab garrison and a mosque, and from 713 campaigned along the Jaxartes. Unlike earlier governors he enlisted large numbers of local troops. After the caliph al-Walid died in 715 Qutayba lost his life: Gibb says he was killed in a mutiny of his own army in Ferghana, while Wikipedia says the new caliph Sulayman most likely had him executed. A story that he reached Kashgar is rejected by Gibb and by the modern historians Wikipedia cites, though Barthold wrote that Arab campaigns reached Kashgar, a claim his translator Minorsky doubted.",
    "From 720 the Turgesh Turks, together with Sogdian uprisings, drove the Arabs back. On the 'Day of Thirst' in 724 only a handful of an Arab army reached Samarkand, and the Turgesh khagan Suluk took Bukhara in 728. Costly expeditions restored Arab authority at Samarkand by 732, Suluk was defeated at Kharistan in 737, and the governor Nasr ibn Sayyar had recovered most of Transoxiana by 743.",
    "In July 751, by Gibb's dating, an Abbasid army under Ziyad ibn Salih defeated the Tang Chinese general Gao Xianzhi on the Talas after the Karluk Turks deserted the Chinese. This ended the Tang advance in the region, though Gibb argues that the real blow to Chinese prestige came in 757, when Central Asian contingents helped restore the Tang emperor to his capital and saw China's weakness. Islam spread slowly under the Umayyads, who did not encourage conversion, and much faster under the Abbasids, when converts gained equal status."
   ],
@@ -4102,6 +4119,15 @@
      20,
      21
     ]
+   },
+   {
+    "url": "https://archive.org/download/in.ernet.dli.2015.57651/2015.57651.Four-Studies-On-The-History-Of-Central-Asia-Vol1_text.pdf",
+    "title": "V. V. Barthold, Four Studies on the History of Central Asia, vol. 1 (trans. V. and T. Minorsky, 1956): A Short History of Turkestan",
+    "publisher": "Internet Archive (Digital Library of India scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     21
+    ]
    }
   ],
   "claims": [
@@ -4125,10 +4151,14 @@
    "Turgesh attacks from 720 with Sogdian uprisings; 'Day of Thirst' 724; Suluk took Bukhara in 728 (Wikipedia).",
    "By 732 two expeditions restored caliphal authority at Samarkand with heavy losses; Suluk defeated at Kharistan in 737; Nasr recovered most of Transoxiana by 743 (Wikipedia).",
    "Talas: Abbasid army under Ziyad ibn Salih defeated the Tang army of Gao Xianzhi (Kao-hsien-shih) (Wikipedia; Gibb: near Taraz, July 751, the Karluks deserted); ended Tang westward expansion (Wikipedia); Gibb: the deathblow to Chinese prestige came with Central Asian contingents restoring the emperor in 757.",
-   "The Kashgar expedition is dismissed by modern historians (Wikipedia) and rejected by Gibb. Islamization slow under the Umayyads, who did not encourage conversion; faster under the Abbasids when non-Arab converts gained equal status (Wikipedia)."
+   "The Kashgar expedition is dismissed by modern historians (Wikipedia) and rejected by Gibb. Islamization slow under the Umayyads, who did not encourage conversion; faster under the Abbasids when non-Arab converts gained equal status (Wikipedia). Barthold: the Arabs reached Kashghar (translator V. Minorsky: doubtful)."
   ],
-  "disagree": "Qutayba's death: Gibb (1923) says he was killed in a mutiny of his army in Ferghana after al-Walid's death in 715; Wikipedia says the new caliph Sulayman most likely had him executed. Hostages taken by Sa'id ibn Uthman in 676: 50 in Gibb, 40, 50 or 80 in Wikipedia. Arab settlers under Ziyad: 50,000 warriors with families (Wikipedia) or 50,000 families (Gibb). All stated in the text with their sources. The event record dates the conquest from 673, the year Ubayd Allah ibn Ziyad reached Merv before his crossing of 674; the sources date the first raids from 651.",
-  "checked": null
+  "disagree": "Qutayba's death: Gibb (1923) says he was killed in a mutiny of his army in Ferghana after al-Walid's death in 715; Wikipedia says the new caliph Sulayman most likely had him executed. Hostages taken by Sa'id ibn Uthman in 676: 50 in Gibb, 40, 50 or 80 in Wikipedia. Arab settlers under Ziyad: 50,000 warriors with families (Wikipedia) or 50,000 families (Gibb). All stated in the text with their sources. The event record dates the conquest from 673, the year Ubayd Allah ibn Ziyad reached Merv before his crossing of 674; the sources date the first raids from 651. Kashgar: rejected by Gibb and by the historians Wikipedia cites; asserted by Barthold, doubted by his translator Minorsky (stated).",
+  "checked": {
+   "by": "https://archive.org/download/in.ernet.dli.2015.57651/2015.57651.Four-Studies-On-The-History-Of-Central-Asia-Vol1_text.pdf",
+   "result": "5 claims re-checked against Barthold, A Short History of Turkestan (Four Studies vol. 1): Mawarannahr meaning the land beyond the river, Merv as capital of Khorasan, Qutayba governor 705-715, Arab victories over the Turks in the late 730s, the victory over the Chinese at Talas in 751. 0 errors; added Barthold's view that Arab raids reached Kashgar, which his translator Minorsky doubts.",
+   "errors": 0
+  }
  },
  "Q2734925": {
   "title": "Sulla's First Civil War",
@@ -4257,7 +4287,11 @@
    "Cinna and Marius consuls for 86 BC, Marius for the seventh time; Marius died 17 days after entering office (Plutarch) / in the first month (Appian) / a fortnight after (Wikipedia, 'Sulla's civil war'); Cinna's regime controlled Rome until Sulla's return; the second civil war of 83-82 BC (Wikipedia)."
   ],
   "disagree": "The event record, 88-86 BC, is the conflict of Sulla's first consulship and the Cinna-Marius takeover; Wikipedia's 'Sulla's first civil war' now redirects to an article on the war of 83-82 BC, so the text is built from the Wikipedia article on Sulla, Appian's Civil Wars book I and Plutarch's Marius. Marius's death: 17 days into his seventh consulship (Plutarch), in its first month (Appian), a fortnight after (Wikipedia); Plutarch's figure is given with Appian's. Sulla's army: six legions (Appian), at least 35,000 legionaries (Plutarch). Slaves answering Marius's call in 88 BC: none (Appian), only three (Plutarch).",
-  "checked": null
+  "checked": {
+   "by": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Sulla*.html",
+   "result": "3 claims re-checked against Plutarch, Life of Sulla 8-10: Sulla consul with Quintus Pompeius, his soldiers killing the tribunes Marius sent to take over the army at Nola, the seizure of the Esquiline gate, Marius and Sulpicius condemned. 0 errors.",
+   "errors": 0
+  }
  },
  "Q3950956": {
   "title": "Battle of Qatwan",
