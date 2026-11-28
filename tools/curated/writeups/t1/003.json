@@ -1589,7 +1589,11 @@
    "Overlord was later set for June 1944; Stalin's tentative gains on Eastern Europe were confirmed at later conferences (Yalta, Potsdam)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://avalon.law.yale.edu/wwii/tehran.asp",
+   "result": "5 claims checked against the conference documents in the Avalon Project (Yale Law School): the dates 28 November – 1 December 1943, the three signatories, the Declaration regarding Iran (economic aid; independence, sovereignty and territorial integrity), support for the Yugoslav Partisans and Turkey's entry as 'most desirable', and Overlord in May 1944 with a Soviet offensive at about the same time agree; none contradicted",
+   "errors": 0
+  }
  },
  "Q200790": {
   "title": "Algerian War",
@@ -1705,7 +1709,11 @@
    "Somalia and South Sudan ratified in 2015, bringing parties to 196; the United States is the only UN member that has not ratified."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-11&chapter=4&clang=_en",
+   "result": "4 claims checked against the UN Treaty Collection: adoption on 20 November 1989 (resolution 44/25), entry into force on 2 September 1990, 196 parties, and the United States not having ratified (it signed on 16 February 1995) agree; none contradicted",
+   "errors": 0
+  }
  },
  "Q160387": {
   "title": "Battle of Actium",
@@ -1955,7 +1963,7 @@
   "place": "Nantes, Kingdom of France",
   "paras": [
    "The Edict of Nantes, issued by King Henry IV of France at Nantes in April 1598, gave the Huguenots, France's Calvinist Protestant minority, legal rights and a measure of religious freedom in a kingdom that stayed officially Catholic. It ended the French Wars of Religion, some 36 years of civil war between Catholics and Protestants.",
-   "The settlement, a compromise, was made up of four texts: the edict proper of 92 articles, which declared itself permanent and irrevocable; 56 secret articles on local matters; and two royal warrants (brevets). It granted freedom of conscience, but allowed Protestant worship only in specified places, and banned it at court, in the army, and in Paris and within five leagues of it. Protestants were made equal before the law, with access to public offices and schools, and lawsuits involving them could go to courts with both Catholic and Protestant judges. They still had to pay tithes to the Catholic Church, and Catholic worship was restored everywhere. One warrant paid the Protestant pastors; the other gave the Huguenots about 150 places of refuge for eight years, 51 of them fortified strongholds with their own garrisons.",
+   "The settlement, a compromise, was made up of four texts: the edict proper of 92 articles, which declared itself permanent and irrevocable; 56 secret articles on local matters; and two royal warrants (brevets). It granted freedom of conscience, but allowed Protestant worship only in specified places, and banned it at court, in the army, and in Paris and within five leagues of it. Protestants were made equal before the law, with access to public offices and schools, and lawsuits involving them could go to courts with both Catholic and Protestant judges. They still had to pay tithes to the Catholic Church, and Catholic worship was restored everywhere. One warrant paid the Protestant pastors; the other gave the Huguenots places of refuge for eight years, about 150 by the Musée protestant's count (51 of them fortified strongholds with their own garrisons), though some accounts give 100.",
    "Some of the regional parlements opposed the edict. Henry had to force the Parlement of Paris to register it in 1599, and the Parlement of Rouen held out until 1609. After the siege of La Rochelle, the Peace of Alès of 1629 took away their strongholds, leaving them dependent on the king's goodwill.",
    "Louis XIV applied the edict ever more narrowly and from 1680 persecuted Protestants, including by quartering dragoons on their households. In October 1685 he revoked it by the Edict of Fontainebleau, banning Protestant worship and banishing the pastors. Although emigration was forbidden, as many as 400,000 Huguenots fled abroad in Wikipedia's estimate. Toleration was restored only by Louis XVI's Edict of Versailles in 1787."
   ],
@@ -2012,8 +2020,12 @@
    "The Edict of Fontainebleau banned Protestant worship and emigration and banished pastors.",
    "As many as 400,000 Huguenots fled France (Wikipedia); Louis XVI's Edict of Versailles (1787) restored worship and civil rights for non-Catholics."
   ],
-  "disagree": "Sources give different days in April 1598 for the edict; the text uses the month only.",
-  "checked": null
+  "disagree": "Sources give different days in April 1598 for the edict; the text uses the month only. The number of Huguenot security towns is given as about 150 places of refuge, 51 of them fortified (Musée protestant), or 100 (New Catholic Encyclopedia, via Encyclopedia.com).",
+  "checked": {
+   "by": "https://www.encyclopedia.com/history/modern-europe/french-history/edict-nantes",
+   "result": "6 claims checked: April 1598 (13 April there), freedom of conscience with worship only in designated places and not within five leagues of Paris, fortified towns, access to public office, revocation by the Edict of Fontainebleau in October 1685, and the loss of military privileges at Alès in 1629 agree; none contradicted. The New Catholic Encyclopedia entry there counts 100 security towns, against the Musée protestant's 150 places of refuge (51 strongholds); noted under 'disagree'",
+   "errors": 0
+  }
  },
  "Q193547": {
   "title": "Reign of Terror",
@@ -2256,7 +2268,7 @@
   "place": "France and Belgium (Waterloo campaign)",
   "paras": [
    "The Hundred Days was Napoleon's return to power in France in 1815, between his escape from exile on the island of Elba and the second restoration of King Louis XVIII. It set Napoleon and the French army that rallied to him against the restored Bourbon monarchy and then against the Seventh Coalition of the European great powers.",
-   "Napoleon left Elba on 26 February 1815 with about 1,000 men and landed at Golfe-Juan on the south coast of France on 1 March. Instead of fighting him, the troops sent to stop him went over to his side: a regiment at Grenoble on 5 March, and on 14 March Marshal Ney joined him with some 6,000 men. Louis fled, and Napoleon entered Paris on 20 March. Meanwhile, on 13 March, the powers at the Congress of Vienna declared him an outlaw, and on 25 March they agreed to field 150,000 men each.",
+   "Napoleon left Elba on 26 February 1815 with about 1,000 men and landed at Golfe-Juan on the south coast of France on 1 March. Instead of fighting him, the troops sent to stop him went over to his side: a regiment at Grenoble on 5 March, and on 14 March Marshal Ney joined him with some 6,000 men. Louis fled, and Napoleon entered Paris on 20 March. Meanwhile, on 13 March (one French chronology gives 11 March), the powers at the Congress of Vienna declared him an outlaw, and on 25 March they agreed to field 150,000 men each.",
    "Napoleon took the offensive in Belgium. His army crossed the Sambre at Charleroi on 15 June; the battles of Ligny and Quatre Bras were fought on 16 June; and on 18 June he was defeated at Waterloo. He abdicated on 22 June, and Louis XVIII returned to Paris on 8 July, about 110 days after he had fled.",
    "Napoleon was sent into exile on the island of Saint Helena, and the Second Treaty of Paris between France and the Coalition followed on 20 November 1815."
   ],
@@ -2303,8 +2315,12 @@
    "Louis XVIII was restored on 8 July, ending a period of 110 days.",
    "Napoleon went into exile on Saint Helena; the Second Treaty of Paris was signed on 20 November 1815."
   ],
-  "disagree": null,
-  "checked": null
+  "disagree": "The chronology at napoleon-empire.org dates the Congress of Vienna's declaration against Napoleon to 11 March 1815; Wikipedia and the Hansard text of the declaration give 13 March.",
+  "checked": {
+   "by": "https://www.napoleon-empire.org/en/chronology/chronology-1815.php",
+   "result": "8 claims checked: leaving Elba 26 February, landing 1 March, Paris 20 March, Ligny 16 June, Waterloo 18 June, abdication 22 June and Louis XVIII back in Paris 8 July agree. The chronology dates the Vienna declaration against Napoleon to 11 March, not 13 March; the Hansard record of 7 April 1815 (https://api.parliament.uk/historic-hansard/commons/1815/apr/07/declaration-of-the-allies-dated-vienna) gives 'Vienna, March 13th, 1815', so the text's date stands and the difference is noted",
+   "errors": 0
+  }
  },
  "Q182817": {
   "title": "Velvet Revolution",
@@ -2365,6 +2381,10 @@
    "The country peacefully split into the Czech Republic and Slovakia (31 December 1992)."
   ],
   "disagree": "Wikipedia dates the removal of the Communist Party's constitutional leading role to 28 November 1989 (when the party agreed to give it up), ENRS to the Federal Assembly vote of 29 November.",
-  "checked": null
+  "checked": {
+   "by": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/velvet-revolution",
+   "result": "6 claims checked: the 17 November 1989 march broken up by police, Civic Forum under Havel and Public Against Violence in Slovakia, the two-hour general strike on 27 November, Husák's resignation after appointing a new government on 10 December, Havel's election on 29 December (Dubček speaker on 28 December) and the June 1990 elections agree; none contradicted",
+   "errors": 0
+  }
  }
 }
