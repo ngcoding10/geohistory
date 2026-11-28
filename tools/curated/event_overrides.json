@@ -176,6 +176,16 @@
    "note": "Name corrected: the Wikidata item's English label (\"Battle of Six Seven\") is not the battle's name; Wikipedia and the 1911 Encyclopaedia Britannica call it the fight at Mactan.",
    "source": "https://en.wikipedia.org/wiki/Battle_of_Mactan",
    "verified": true
+  },
+  {
+   "q": "Q10354157",
+   "set": {
+    "m": 1,
+    "dd": 18
+   },
+   "note": "Wikidata gives two dates, 1 January and 18 January 1871; William I was proclaimed German Emperor at Versailles on 18 January 1871 (Wikipedia; 1911 Encyclopaedia Britannica).",
+   "source": "https://en.wikipedia.org/wiki/Proclamation_of_the_German_Empire",
+   "verified": true
   }
  ]
 }
