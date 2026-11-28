@@ -3338,5 +3338,148 @@
   ],
   "disagree": "Death toll: 1.5 million (Sarah Cameron); estimates from 1 million (Conquest) to over 2.1 million (Tatimov), most often 1.75 million (listed by Nurtazina); 1.3 to 2.3 million (local Wikipedia extract). Refugees: more than a million (Cameron) against Kazakh estimates of about 616,000 leaving permanently (Tatimov, cited by Nurtazina).",
   "checked": null
+ },
+ "Q25238182": {
+  "title": "Caesar crosses the Rubicon",
+  "y": -49,
+  "place": "River Rubicon (Rubico), between Ravenna and Ariminum (Rimini), Italy",
+  "paras": [
+   "In January 49 BC Julius Caesar led soldiers across the Rubicon (Latin Rubico), a small river in north-eastern Italy that marked the border between his province of Cisalpine Gaul and Italy proper. A governor who brought an army across it was in effect invading his own country, so the crossing opened civil war between Caesar and the Senate, which looked to Pompey the Great for military leadership.",
+   "Caesar and Pompey had been allies with Marcus Crassus in the so-called First Triumvirate, but after the death of Caesar's daughter Julia, Pompey's wife, and of Crassus, the partnership fell apart. While Caesar conquered Gaul and won wealth and popularity, Pompey drew closer to the conservative senators who opposed Caesar. Caesar wanted to stand for a second consulship while keeping his army, and the tribunes on his side vetoed the attempts to make him give up his command. On 7 January 49 BC the Senate passed its emergency decree, the senatus consultum ultimum, against him, and the tribunes loyal to him fled Rome.",
+   "Caesar was waiting at Ravenna. According to Suetonius he sent a few cohorts ahead in secret, spent the day at a public show and a banquet to avoid suspicion, and left after sunset with a small party, catching up with his troops at the river. Ancient writers dramatised the moment. Suetonius describes Caesar hesitating until a supernatural figure seized a trumpet and crossed first, and Appian says he crossed 'like one inspired' with the words 'the die is cast', a line from Caesar's favourite poet, Menander. Appian adds that Caesar took Ariminum (Rimini) around daybreak. The Origins essay notes that these accounts were written long after the event and that Caesar had in fact already decided, since troops had been sent ahead to take Ariminum. It places the crossing three days after the Senate's decree.",
+   "Pompey and much of the Senate abandoned Rome as Caesar marched south. Caesar first defeated Pompey's forces in Spain, then crossed to Greece and beat Pompey himself at Pharsalus in August 48 BC. The war left Caesar effectively sole ruler of Rome and opened the way for his adopted son Octavian to become the first emperor. The exact site of the river is uncertain; Livius notes that the stream at Savignano long known as the Fiumicino was renamed after the Rubicon in 1933, following the distance given on the Peutinger map."
+  ],
+  "sources": [
+   {
+    "url": "https://livius.org/articles/battle/rubico-49-bce",
+    "title": "Rubico (49 BCE)",
+    "publisher": "Livius.org (Jona Lendering)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     6,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://origins.osu.edu/read/julius-caesar-crosses-rubicon",
+    "title": "Julius Caesar Crosses the Rubicon",
+    "publisher": "Origins: Current Events in Historical Perspective, Ohio State University and Miami University",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Julius*.html",
+    "title": "Suetonius, Life of Julius Caesar (Loeb translation, J. C. Rolfe)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     6,
+     7
+    ]
+   }
+  ],
+  "claims": [
+   "In January 49 BC Caesar crossed the Rubicon, the boundary between his province of Cisalpine Gaul and Italy (Livius; Origins: a January night in 49 BCE).",
+   "Crossing with an army amounted to invading one's own country/treason (Livius; Suetonius: the boundary of his province); it began the civil war against the Senate and Pompey (Livius; Origins).",
+   "Caesar, Pompey and Crassus were allies (Origins: the 'Great Triumvirate'); after Crassus died, shortly after the death of Julia, Caesar's daughter and Pompey's wife, the pact was finished (Origins).",
+   "Caesar conquered Gaul gaining prestige; Pompey aligned with Senate conservatives; Caesar wanted to run for consul while keeping his command; tribunes vetoed measures against him (Origins; Suetonius: second consulship without coming to Rome, tribunes' vetoes).",
+   "On 7 January 49 BC the Senate issued the senatus consultum ultimum; the pro-Caesar tribunes fled (Origins).",
+   "Caesar was at Ravenna; he sent cohorts ahead secretly, attended a show and banquet, left after sunset with a small party and overtook his cohorts at the Rubicon; the apparition with the trumpet; 'The die is cast' (Suetonius; Origins: Suetonius' apparition; Livius: Appian's account).",
+   "Appian: crossed 'with a rush like one inspired', 'The die is cast', took Ariminum about daybreak (Livius quoting Appian 2.35; Origins: 'like a man possessed'); the phrase from Menander (Livius).",
+   "Origins: accounts written well after the events; Caesar had already decided and sent forces ahead to Ariminum; the crossing three days after the decree.",
+   "Pompey and much of the Senate fled Rome (Origins); Caesar struck first at Pompey's army in Spain, then crossed the Adriatic and defeated Pompey at Pharsalus in August 48 (Livius).",
+   "The war made Caesar essentially sole ruler and enabled Octavian to become first emperor (Origins); the identification of the Rubico is contested; the Fiumicino at Savignano was renamed in 1933 after the Peutinger Map (Livius)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q179975": {
+  "title": "Chinese Civil War",
+  "y": 1927,
+  "place": "China",
+  "paras": [
+   "The Chinese Civil War was fought, with long pauses, between the Nationalist government of the Republic of China, led by the Kuomintang (KMT) and Chiang Kai-shek, and the Chinese Communist Party (CCP), from 1 August 1927 until the Communist victory of 1949. The two parties had first worked together in the First United Front: with Soviet help they fought the warlords who divided China, and in 1926–27 they carried out the Northern Expedition. But the alliance broke apart. On 12 April 1927 Communists were purged in Shanghai with hundreds of arrests and executions, the start of what the CCP calls the White Terror, and on 1 August 1927 the Communists rose at Nanchang, the founding act of their Red Army.",
+   "In the first phase the Nationalists, who took Beijing in 1928 and ruled most of eastern China from Nanjing, tried to destroy the Communist bases in the south in five encirclement campaigns. In October 1934 the Communists broke out and began the Long March, a year-long retreat of thousands of kilometres to Shaanxi in the north-west, during which Mao Zedong rose to lead the movement. Chiang kept fighting the Communists even after Japan invaded Manchuria in 1931. Then generals frustrated with this policy seized him in the Xi'an Incident and forced him to accept a Second United Front against Japan. Wikipedia places the incident in late 1936, while the US Office of the Historian gives 1937. During the war with Japan from 1937 to 1945 the truce was largely nominal and clashes continued. The Communists waged guerrilla war and built up their rural base and popular support, while corruption and repression weakened the Nationalist government.",
+   "After Japan's surrender both sides raced to take over the occupied areas. The United States flew Nationalist troops into them, while the Soviet Union, occupying Manchuria, let Communist forces move in behind it. Talks between Chiang and Mao at Chongqing in autumn 1945, and the mediation of the American general George Marshall, failed, and by 1946 full-scale war had resumed. The Communists drew landless peasants to their side with land reform and were helped by mass defections of Nationalist troops. In the three great campaigns of 1948–49, Liaoshen in Manchuria, Huaihai in east-central China and Pingjin around Beijing and Tianjin, they destroyed the Nationalist field armies; Wikipedia puts Nationalist losses through capture, surrender or defection at about 1.54 million men.",
+   "Communist troops took the Nationalist capital Nanjing on 23 April 1949, and on 1 October 1949 Mao proclaimed the People's Republic of China in Beijing. The Nationalist government retreated to Taiwan on 7 December 1949, and the Communists completed their control of the mainland in 1950–51. Both sides committed mass atrocities: Wikipedia cites estimates that the Nationalists killed between 300,000 and one million people in the anti-communist campaigns after 1927. The war never formally ended. No armistice or peace treaty was signed, and the Republic of China on Taiwan and the People's Republic on the mainland both long claimed to be the legitimate government of all China. The 'loss' of China and the Korean War then kept the United States and the People's Republic apart for decades."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Chinese_Civil_War",
+    "title": "Chinese Civil War (rev 1388356640)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1945-1952/chinese-rev",
+    "title": "The Chinese Revolution of 1949",
+    "publisher": "Office of the Historian, US Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The war was between the ROC government led by the KMT and the CCP; intermittent from 1 August 1927 until Communist victory in 1949 (Wikipedia; Office of the Historian: on and off conflict since the 1920s, full-scale civil war after WWII).",
+   "The CCP and KMT in the First United Front fought the warlords in the Northern Expedition of 1926-27 (both); Soviet assistance (Wikipedia).",
+   "The collaboration ended with the White Terror of 1927 (Office of the Historian); 12 April 1927 Shanghai purge with hundreds of arrests and executions (Wikipedia).",
+   "Nanchang uprising on 1 August 1927 created the Chinese Red Army (Wikipedia).",
+   "The KMT captured Beijing in June 1928; the Nanjing government controlled most of eastern China; five encirclement campaigns (Wikipedia).",
+   "October 1934 breakout and the Long March of about a year (Mao's estimate 12,500 km) to northern Shaanxi; Mao took over leadership (Wikipedia; Office of the Historian: Communist uprising among threats to the ROC).",
+   "Japan invaded Manchuria in 1931; Chiang focused on internal threats; generals abducted Chiang and forced cooperation with the Communists (Office of the Historian: in 1937; Wikipedia: Xi'an Incident, late 1936).",
+   "The Second United Front was short-lived/nominal; clashes continued; Communists waged guerrilla war and expanded their base (Wikipedia; Office of the Historian: Communists strengthened influence in rural society).",
+   "Corruption and repression weakened the Nationalists; land reform won peasant support (Office of the Historian; Wikipedia: land reform drew landless peasants).",
+   "After Japan's surrender, US forces flew Nationalist troops into Japanese-held territory; the Soviet Union occupied Manchuria and left when Communist forces were in place (Office of the Historian; Wikipedia: Malinovsky let CCP forces move in behind).",
+   "Chongqing talks between Chiang and Mao, 28 August-10 October 1945 (Wikipedia; Office of the Historian: 1945 talks); Marshall's mediation failed; all-out civil war by 1946 (Office of the Historian; Wikipedia).",
+   "Liaoshen, Huaihai and Pingjin campaigns of 1948-49 were decisive; mass defections; Nationalist losses about 1.54 million through capture, surrender or defection (Wikipedia).",
+   "Nanjing captured 23 April 1949; PRC proclaimed 1 October 1949 (Wikipedia; Office of the Historian: 1 October 1949); retreat to Taiwan on 7 December 1949 (Wikipedia; Office of the Historian: Chiang fled to Taiwan).",
+   "Communists controlled the mainland by 1950-51; Nationalists killed 300,000 to one million in the White Terror campaigns (Wikipedia); no armistice or peace treaty; both governments claimed to represent all China (Wikipedia).",
+   "The 'loss' of China and the Korean War ended any opportunity for US-PRC accommodation (Office of the Historian)."
+  ],
+  "disagree": "Date of the Xi'an Incident, when Chiang Kai-shek was seized by his generals: late 1936 (Wikipedia) or 1937 (US Office of the Historian).",
+  "checked": null
  }
 }
