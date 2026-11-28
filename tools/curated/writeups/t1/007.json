@@ -3103,5 +3103,242 @@
    "result": "2 claims re-checked: Thai offensives captured Angkor Thom (repeatedly, per the Cambodian royal chronicles, which the write-up attributes to Wikipedia's chronicle-based account); the capital was abandoned in the 15th century. Both consistent.",
    "errors": 0
   }
+ },
+ "cp18-061": {
+  "title": "Lê Lợi founds the Lê dynasty",
+  "y": 1428,
+  "place": "Đông Kinh (Hanoi), Vietnam",
+  "paras": [
+   "In 1407 Ming China conquered the short-lived Hồ state in what is now northern Vietnam and ruled it as the province of Jiaozhi. Ming rule, with its policy of assimilation, provoked a string of revolts. The one that succeeded began in early 1418 at Lam Sơn, a mountainous rural district of Thanh Hóa, where Lê Lợi, a wealthy landowner who had refused office under the Ming, raised an army and took the title Bình Định Vương (Pacifying King).",
+   "The first years went badly. Driven again and again into the Chí Linh mountains, the rebels were at one point reduced to eating vegetables and slaughtering their elephants and horses, and in 1423 Lê Lợi agreed a truce. From 1424 he struck south instead, took Nghệ An as a base and won control of most of the land from Thanh Hóa south to Thuận Hóa. In 1426 his armies moved north, and on 7 November 1426 they ambushed the Ming commander Wang Tong at Tốt Động and Chúc Động, near modern Hanoi. Wang Tong escaped wounded and was besieged in Đông Quan, the Ming seat of government. The Vietnamese chronicles claim more than 50,000 Ming dead in this battle; the historian Trần Trọng Kim, in his history Việt Nam sử lược, doubted the figure but accepted that it was a major defeat.",
+   "In 1427 the Xuande Emperor sent two relief armies, under Liu Sheng from Guangxi and Mu Sheng from Yunnan. Wikipedia gives them 110,000 men in all; Trần Trọng Kim gives Liu Sheng's column alone 100,000 men and 20,000 horses. Lê Lợi chose not to storm Đông Quan but to wait for the relief. Liu Sheng, pursuing a feigned retreat with some hundred horsemen, was ambushed and killed near the Chi Lăng pass; the rest of his army was destroyed at Xương Giang, and Mu Sheng withdrew. Wang Tong then made peace. At a ceremony south of Đông Quan on 16 December 1427 both sides swore an oath, and the Ming army began its march home on 29 December, Wang Tong himself following on 3 January 1428. Lê Lợi let the defeated troops go home and supplied them with boats and provisions.",
+   "During the war Lê Lợi had set up Trần Cảo, said to be a descendant of the old Trần kings, as a nominal ruler to satisfy the Ming. Early in 1428 Trần Cảo fled to Ngọc Ma, was caught and was made to drink poison; some historians think Lê Lợi arranged his death. On 29 April 1428 Lê Lợi took the throne, with the era name Thuận Thiên, restoring the country's name of Đại Việt. The scholar Nguyễn Trãi wrote the Bình Ngô đại cáo, a proclamation of victory and independence.",
+   "The Ming at first refused to recognise the new king and demanded a Trần heir; only after repeated assurances that the line had died out did the Xuande Emperor grant Lê Lợi a provisional title in 1431. Lê Lợi, known as Lê Thái Tổ, reigned until 1433. His dynasty became the longest-ruling in Vietnamese history, lasting until 1789 apart from the Mạc usurpation of 1527–1533."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Lam_S%C6%A1n_uprising",
+    "title": "Lam Sơn uprising (rev 1384629968, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://vi.wikisource.org/wiki/Vi%E1%BB%87t_Nam_s%E1%BB%AD_l%C6%B0%E1%BB%A3c/Quy%E1%BB%83n_I/Ph%E1%BA%A7n_III/Ch%C6%B0%C6%A1ng_XIV",
+    "title": "Trần Trọng Kim, Việt Nam sử lược, book I, part III, chapter XIV: Mười năm đánh quân Tàu (1418–1427)",
+    "publisher": "Wikisource (Vietnamese)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://vi.wikisource.org/wiki/Vi%E1%BB%87t_Nam_s%E1%BB%AD_l%C6%B0%E1%BB%A3c/Quy%E1%BB%83n_I/Ph%E1%BA%A7n_III/Ch%C6%B0%C6%A1ng_XV",
+    "title": "Trần Trọng Kim, Việt Nam sử lược, book I, part III, chapter XV: Nhà Lê (1428–1788)",
+    "publisher": "Wikisource (Vietnamese)",
+    "accessed": "2026-11-28",
+    "supports": [
+     15,
+     16,
+     17,
+     18
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/L%C3%AA_dynasty",
+    "title": "Lê dynasty (rev 1384515807, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     18,
+     19
+    ]
+   }
+  ],
+  "claims": [
+   "In 1407 the Ming annexed Đại Ngu, the Hồ dynasty state, and made it the province of Jiaozhi; Sinicization policy caused widespread uprisings (Wikipedia).",
+   "The uprising began in early 1418 (Wikipedia) / spring of mậu-tuất 1418 (Trần Trọng Kim) at Lam Sơn, a rural mountainous area of Thanh Hóa.",
+   "Lê Lợi came from a wealthy farming family, refused Ming office, and took the title Bình Định Vương (Trần Trọng Kim).",
+   "Repeated retreats to Chí Linh; troops ate vegetables and slaughtered elephants and horses (Wikipedia; Trần Trọng Kim).",
+   "Truce in 1423 (Wikipedia: envoys sent in May 1423; Trần Trọng Kim: 1423).",
+   "From 1424, on Nguyễn Chích's plan, Lê Lợi advanced to Nghệ An as a base and won control from Thanh Hóa to Thuận Hóa (Wikipedia; Trần Trọng Kim: Nghệ An attacked, Tân Bình and Thuận Hóa taken).",
+   "In 1426 the Lam Sơn army moved north (Wikipedia; Trần Trọng Kim).",
+   "On 7 November 1426 the Ming army was ambushed at Tốt Động and Chúc Động (Wikipedia; Trần Trọng Kim: Tụy-động, 10th month of bính-ngọ 1426).",
+   "Wang Tong escaped wounded (Wikipedia) and withdrew into Đông Quan, where he was besieged (Wikipedia; Trần Trọng Kim).",
+   "Vietnamese chronicles: more than 50,000 Ming dead at Tụy-động; Trần Trọng Kim doubts the figure but accepts a major Ming defeat (attributed).",
+   "In 1427 the Xuande Emperor sent Liu Sheng (via Guangxi) and Mu Sheng (via Yunnan); Wikipedia: 110,000 troops in two routes; Trần Trọng Kim: Liu Sheng 100,000 men and 20,000 horses (both attributed).",
+   "Lê Lợi declined to storm Đông Quan and waited for the relief army (Trần Trọng Kim); Liu Sheng, pursuing a feigned retreat with over 100 cavalry, was ambushed and killed near Chi Lăng (Wikipedia; Trần Trọng Kim).",
+   "The remaining Ming force was destroyed at Xương Giang; Mu Sheng withdrew (Wikipedia; Trần Trọng Kim). Wang Tong made peace; oath ceremony south of Đông Quan (Trần Trọng Kim) on 16 December 1427 (Wikipedia).",
+   "Ming army began leaving on 29 December 1427, Wang Tong on 3 January 1428 (Wikipedia); Lê Lợi spared the Ming and provided boats and supplies (Trần Trọng Kim; Wikipedia: gathered surrendered and captured soldiers after the oath).",
+   "Trần Cảo, purported Trần descendant, was installed as a puppet; he fled to Ngọc Ma, was captured and forced to drink poison (Wikipedia: February 1428; Trần Trọng Kim); some historians suspect Lê Lợi orchestrated his death (Wikipedia).",
+   "On 29 April 1428 Lê Lợi ascended the throne, era name Thuận Thiên, restoring the name Đại Việt (Wikipedia; Trần Trọng Kim: 1428, Thuận Thiên, Đại Việt); Nguyễn Trãi wrote the Bình Ngô đại cáo (Wikipedia; Trần Trọng Kim).",
+   "The Ming first refused recognition and demanded a Trần descendant; after repeated assertions granted a provisional title in 1431 (Wikipedia; Trần Trọng Kim: Ming eventually agreed to enfeoff him).",
+   "Lê Thái Tổ reigned 1428–1433 (Trần Trọng Kim; Wikipedia: Lê Thái Tông ruled from 1433).",
+   "Longest-ruling Vietnamese dynasty, 1428–1789 with an interregnum 1527–1533 (Mạc usurpation) (Wikipedia)."
+  ],
+  "disagree": "Size of the 1427 Ming relief: 110,000 men in two columns (Wikipedia) or 100,000 men and 20,000 horses in Liu Sheng's column alone (Trần Trọng Kim). Ming losses at Tốt Động: over 50,000 dead in the Vietnamese chronicles, a figure Trần Trọng Kim doubted. Both stated in the text.",
+  "checked": null
+ },
+ "cp18-025": {
+  "title": "Pachacuti begins the Inca expansion",
+  "y": 1438,
+  "place": "Cusco, Peru",
+  "paras": [
+   "In the early 15th century the Incas were one of many small chiefdoms in the southern Andes, ruling a confederation that reached about 40 kilometres around Cusco. According to the Spanish chroniclers, their aged ruler Viracocha Inca had chosen as heir his son Inca Urco, passing over a younger son, Cusi Yupanqui, whom leading Inca captains favoured. The crisis came when the Chankas of Andahuaylas, a people thirty leagues west of Cusco, marched on the city.",
+   "In the account written by Pedro Sarmiento de Gamboa in 1572 from the testimony of Inca nobles (and, historians note, partly to justify Spanish rule), Viracocha and Urco abandoned Cusco for a fortified refuge, while Cusi Yupanqui, then a youth of about 20, stayed with a handful of captains to defend it. The Chankas attacked the city from several sides and were driven back with heavy losses; later tradition said even the stones rose up to fight for the defenders. Cusi Yupanqui then defeated the Chankas a second time in the field, where their two war leaders were killed. When Viracocha wanted Urco to have the honour of treading on the captured spoils, the victor broke with his father, had himself crowned in Cusco's temple of the Sun and took the name Pachacuti, 'overturner of the world'. Urco died in a short civil war.",
+   "Pachacuti then turned Cusco's victory into an empire. He bound neighbouring chiefs to him through feasts, gifts and marriages, rebuilt Cusco and its temple of the Sun, and campaigned first against the Chankas' former allies and the peoples around Cusco, reaching the Soras some 40 leagues to the west. In the south he defeated and captured the Colla lord of the Lake Titicaca basin and occupied his seat at Hatun Colla. He moved loyal colonists (mitimaes) into unstable provinces, built roads, terraces and irrigation works, and is believed by most archaeologists to have had Machu Picchu built as an estate.",
+   "The date usually given, 1438, comes from the chronology that John Howland Rowe based on the chronicler Miguel Cabello de Balboa, in which Pachacuti reigned from 1438 to 1471. The Incas did not count years, and other reckonings differ: Philip Ainsworth Means placed his reign in 1400–1448, José Antonio del Busto put the defence of Cusco in 1424, and radiocarbon dates point to the early 15th century. Since the 1980s most scholars have treated the Chanka war itself as largely legendary. Pachacuti was succeeded by his son Tupac Inca Yupanqui, and within three generations the Inca realm spread over a large part of western South America."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Pachacuti",
+    "title": "Pachacuti (rev 1383046923, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historyoftheinca20218gut/20218-8.txt",
+    "title": "Pedro Sarmiento de Gamboa, History of the Incas (1572), translated by Clements Markham (Hakluyt Society, 1907), chapters XXV-XXXVII, Project Gutenberg text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "In the early 15th century the Cusco confederation stretched about 40 km around Cusco (Wikipedia).",
+   "Viracocha Inca, old, named Inca Urco his successor; captains (Apu Mayta, Vicaquirau) favoured Cusi Inca Yupanqui (Sarmiento; Wikipedia: Urco the appointed co-ruler and heir, generals conspired to replace him).",
+   "The Chankas (Chancas) of Andahuaylas, thirty leagues west of Cusco, marched on the city (Sarmiento; Wikipedia: Chanka invasion).",
+   "Viracocha and Urco left Cusco; Cusi Yupanqui stayed with a few captains to defend it (Sarmiento; Wikipedia).",
+   "Sarmiento: Inca Yupanqui was a lad of 20 or 22 years (attributed). Sarmiento wrote his History in 1572, collecting information from Inca nobles and witnesses, partly to justify Spanish colonial rule (Wikipedia; Sarmiento's covering letter of 1 March 1572 in Markham's introduction).",
+   "The Chankas attacked from several (four) directions and were repulsed; legend says stones rose to fight for Yupanqui (Sarmiento; Wikipedia).",
+   "Second victory over the Chankas in the field (Ichu-pampa), where both Chanka leaders were killed (Sarmiento; Wikipedia: decisive victory at Yahuar Pampa).",
+   "Viracocha wanted Urco to tread on the spoils; break between father and son (Sarmiento; Wikipedia).",
+   "Crowned in the House of the Sun and named Pachacuti, 'overturner of the earth' (Sarmiento; Wikipedia: crowned Sapa Inca and renamed himself Pachacuti; pachakutiy 'the turn of the world').",
+   "Urco died in a short civil war (Wikipedia; Sarmiento: killed in a fight at Yucay).",
+   "Pachacuti rebuilt Cusco and the House of the Sun (Sarmiento; Wikipedia); first campaign against the Chankas' former allies and chiefdoms around Cusco, reaching the Soras, 40 leagues west (Sarmiento; Wikipedia).",
+   "Feasts, gifts and women given to local chiefs to bind them (Wikipedia: reciprocity, feasts, gifts, Cusco women as main wives). Colla chief captured, Hatunqulla occupied (Wikipedia; Sarmiento: Chuchi Ccapac captured, Hatun-colla).",
+   "Mitimaes, roads, terraces, irrigation; most archaeologists believe Machu Picchu was built as his estate (Wikipedia).",
+   "Rowe's chronology from Cabello de Balboa: 1438-1471; Means 1400-1448; del Busto: defence of Cusco 1424; radiocarbon dates point earlier; Incas did not count years (Wikipedia).",
+   "Since the early 1980s the academic consensus (after Duviols) treats the Chanka attack as largely mythical; succeeded by Tupac Inca Yupanqui; within three generations expansion to a sizeable part of western South America (Wikipedia)."
+  ],
+  "disagree": "Date of Pachacuti's accession: 1438 in Rowe's chronology (from Cabello de Balboa); 1400 (Means), about 1425 (del Busto) and an early-15th-century date from radiocarbon. Historicity of the Chanka war: told as history by Sarmiento, largely legendary for most scholars since the 1980s. Both stated in the text.",
+  "checked": null
+ },
+ "cp18-096": {
+  "title": "Kazakh Khanate founded",
+  "y": 1465,
+  "place": "Chu valley, western Moghulistan (southern Kazakhstan)",
+  "paras": [
+   "In the 15th century the descendants of Jochi, Genghis Khan's eldest son, fought for control of the nomads of the Dasht-i Qipchaq steppe, who were then known as Uzbeks. Abu'l-Khayr Khan of the Shibanid line, backed by the Manghit nobles, came out on top and also took over the Syr Darya lands of the rival line of Urus Khan. Two sons of Barak Khan, Urus Khan's grandson, Kerei (Girai) and Janibek, refused to accept his authority.",
+   "According to Mirza Muhammad Haidar Dughlat's Tarikh-i Rashidi, written in Kashmir around 1541–42, Kerei and Janibek, seeing that Abu'l-Khayr meant to remove Jochid princes he suspected of disloyalty, fled with a few other princes and their followers to Moghulistan. Its ruler, Esen Buqa (Isan Bugha) Khan, received them with honour and gave them land at Kozy Bashi near the Chu river, on the western edge of his realm. Living there as exiles on the frontier, after the practice called qazaqliq, in which defeated claimants withdrew to the margins and lived by hunting and raiding, they came to be known as Qazaq or Uzbek-Qazaq, a political label that later became the name of a people.",
+   "After Abu'l-Khayr's death his realm fell into strife, and many of his subjects joined Kerei and Janibek; the Tarikh-i Rashidi puts their following at about 200,000 people and says that the Kazakh sultans began to reign in 870 AH (1465–66), adding 'but God knows best'. That date, 1465, is the one generally accepted in Kazakh historiography. Russian historiography, following Tursun Sultanov, instead dates the khanate's formation to Abu'l-Khayr's death in 875 AH (1470–71).",
+   "Kerei was succeeded by his son Burunduk, and then by Janibek's son Kasym, under whom the Kazakhs came to dominate almost the whole steppe; Haidar Dughlat called him the most powerful ruler there since Jochi himself. The khanate later split into three hordes (zhuz) and lasted until the Russian Empire abolished the khans' office in 1822–1824."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Kazakh_Khanate",
+    "title": "Kazakh Khanate (rev 1381048517, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://archive.org/download/tarikhirashidia00rossgoog/tarikhirashidia00rossgoog_djvu.txt",
+    "title": "Mirza Muhammad Haidar Dughlat, Tarikh-i-Rashidi, ed. N. Elias, tr. E. Denison Ross (London, 1895), part I ch. on Isan Bugha Khan and ch. XXXIII (the Kazak and their sultans), OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "15th-century struggle among the Jochid branches for the nomads of Dasht-i Qipchaq, known as Uzbeks; Abu'l-Khayr of the Shibanids won with Manghit support and took the hereditary Syr Darya domains of Urus Khan's descendants (Wikipedia).",
+   "Kerei and Janibek rejected Abu'l-Khayr's authority (Wikipedia; Tarikh-i Rashidi: Karai Khan and Jani Beg Khan); they were sons of Borak (Barak) (Elias's table in the Tarikh-i Rashidi), Barak being Urus Khan's grandson (Wikipedia).",
+   "They fled with a few other Jochid sultans to Moghulistan because Abu'l-Khayr meant to remove sultans he suspected of sedition (Tarikh-i Rashidi; Wikipedia: migrated to Moghulistan). Haidar wrote about 1541-42 (Elias's note: the passage apparently written in 948 AH, 1541-2).",
+   "Isan Bugha (Esen Buqa) Khan received them with honour and gave them Kuzi Bashi near the Chu on the western limit of Moghulistan (Tarikh-i Rashidi).",
+   "After Abu'l-Khayr's death his ulus fell into strife and most joined Karai and Jani Beg, about 200,000 persons, called Uzbeg-Kazak (Tarikh-i Rashidi, attributed).",
+   "Qazaqliq: unsuccessful claimants withdrew to the frontiers and lived by hunting and raiding; the term qazaq, originally sociopolitical, became ethnic (Wikipedia; Tarikh-i Rashidi: named Kazak because they had separated from their people and lived in an indigent, wandering state).",
+   "Tarikh-i Rashidi: the Kazak sultans began to reign in 870 (1465-66), 'but God knows best' (attributed); 1465 is commonly accepted in Kazakh historiography (Wikipedia).",
+   "Russian historiography, following Tursun Sultanov, dates the formation to Abu'l-Khayr's death in 875 AH (1470-1471) (Wikipedia, attributed).",
+   "Kerei succeeded by Burunduk, then Kasym son of Janibek, who controlled nearly the entire steppe; Haidar: no greater khan there since Juji (Wikipedia; Tarikh-i Rashidi).",
+   "Three zhuz emerged in the 17th century; the institution of the khan was abolished in 1822-1824 by the Russian statutes (Wikipedia)."
+  ],
+  "disagree": "Date of the khanate's founding: 870 AH (1465-66) in the Tarikh-i Rashidi, accepted in Kazakh historiography; 875 AH (1470-71), Abu'l-Khayr's death, in Russian historiography after Tursun Sultanov. Stated in the text.",
+  "checked": null
  }
 }
