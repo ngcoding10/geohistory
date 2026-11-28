@@ -1266,5 +1266,854 @@
    "result": "3 claims re-checked (start of Uzbek rule, Urgench as the chief town, Russian capture of Khiva in 1873): no errors; the Britannica's 1512 for the start of Uzbek rule was added to the text as a stated disagreement",
    "errors": 0
   }
+ },
+ "Q1785022": {
+  "title": "Bohemian Revolt",
+  "y": 1618,
+  "place": "Prague and the lands of the Bohemian Crown, Czech Republic",
+  "paras": [
+   "The Kingdom of Bohemia had been ruled by Habsburg kings since 1526, but its estates (the nobles and towns represented in the diet) were overwhelmingly Protestant: mostly Utraquist Hussites, with many Lutherans among the German population. In 1609 Emperor Rudolf II had granted them freedom of worship in his Letter of Majesty. His childless brother and successor Matthias had his cousin Ferdinand, Duke of Styria, a fervent Catholic who had suppressed Protestantism in Styria, accepted by the estates in 1617 as the next king of Bohemia. Protestant leaders feared that Ferdinand would take away the Letter's protections, and a dispute broke out over Protestant churches built on the lands of Catholic church lords, which the Catholic authorities ordered closed and the Protestants held were covered by the Letter.",
+   "In May 1618 the Protestant members of the diet gathered in Prague. On 23 May a group of them, led by Count Jindřich Matyáš Thurn, went up to the royal chancellery in Prague Castle, accused two of the king's Catholic regents, Jaroslav Bořita of Martinice and Vilém Slavata of Chlum, of having turned the emperor against them, and threw both men and their secretary Philip Fabricius out of the windows. All three survived the fall. This Defenestration of Prague began the revolt. The estates set up a provisional government of thirty 'directors' (ten from each estate, according to the 1911 Encyclopaedia Britannica) and raised an army under Thurn; fighting with imperial troops began that summer, and a mercenary force under Ernst von Mansfeld, sent with the backing of Frederick V, the Calvinist Elector Palatine, took Pilsen in November 1618.",
+   "Matthias died in March 1619. Moravia, Silesia and the Lusatias joined the Bohemians, and in June Thurn advanced to the walls of Vienna, though he soon withdrew. At the end of July the lands of the Bohemian Crown formed a confederation, and Ferdinand was declared deposed as king of Bohemia (on 31 July according to the Britannica's Bohemia article; in August according to Wikipedia and the Britannica's article on Frederick V). On 26 August 1619 the estates elected Frederick V as their king; two days later Ferdinand was elected Holy Roman Emperor at Frankfurt.",
+   "The rebels found few friends. The Protestant Union of German princes stayed out, and the Lutheran Elector of Saxony sided with Ferdinand in return for Lusatia. Ferdinand also won Maximilian of Bavaria, leader of the Catholic League, and help from Spain, whose troops under Ambrogio Spinola invaded Frederick's own lands on the Rhine. In the autumn of 1620 an imperial and League army under Maximilian, Count Tilly and Count Bucquoy entered Bohemia, and on 8 November 1620 it routed the Bohemian army in a few hours at the White Mountain outside Prague. Frederick, mocked as the 'Winter King', fled the city.",
+   "Bohemia submitted almost without resistance. Twenty-seven rebel leaders were executed in Prague's Old Town Square on 21 June 1621, the lands of those who had joined the revolt were confiscated, much of the old Protestant nobility went into exile, and Protestants were forced to convert or leave. A decree of Ferdinand (dated 1627 by the Britannica) made the Bohemian crown hereditary in the Habsburg house and gave German equal standing with Czech in government offices and courts. Frederick was put under the imperial ban and his electoral title passed to Maximilian. The fighting did not end there: the revolt became the first phase of the Thirty Years' War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Bohemian_Revolt",
+    "title": "Bohemian Revolt (rev 1386964018, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     13,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Defenestrations_of_Prague",
+    "title": "Defenestrations of Prague (rev 1385082465, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     19
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Frederick_V_of_the_Palatinate",
+    "title": "Frederick V of the Palatinate (rev 1386310708, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     6,
+     9,
+     10,
+     11,
+     12,
+     14,
+     15,
+     16,
+     18,
+     19
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bohemia",
+    "title": "Bohemia (history), Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Frederick_V.",
+    "title": "Frederick V., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     11,
+     14,
+     17,
+     18,
+     20
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thirty_Years%27_War",
+    "title": "Thirty Years' War, by C. F. Atkinson, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     8,
+     10,
+     13,
+     17,
+     18,
+     20
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Thirty_Years_War",
+    "title": "Thirty Years War, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     6,
+     9,
+     11,
+     12,
+     13,
+     15,
+     16,
+     17,
+     18,
+     20
+    ]
+   }
+  ],
+  "claims": [
+   "Bohemia had been governed by Habsburg kings since 1526 (Wikipedia, Defenestrations; Frederick V).",
+   "The estates were almost entirely Protestant, mostly Utraquist Hussite with a substantial German Lutheran population (Wikipedia, Bohemian Revolt).",
+   "In 1609 Rudolf II issued the Letter of Majesty granting religious liberty (Wikipedia; EB Bohemia: the Letter of Majesty signed by King Rudolph; CE: the charter granted by Rudolph).",
+   "Childless Matthias had Ferdinand of Styria, a fierce Catholic, accepted as heir by the Bohemian estates in 1617 (Wikipedia; CE: head of the Styrian branch, had restored Catholicism in Styria, accepted 1617; EB Bohemia: fanatical adherent and persecutor of the Protestants of Styria, coronation 17 June 1617).",
+   "Protestants feared loss of the Letter's protections; dispute over Protestant churches on lands of ecclesiastical lords, the Protestants claiming the Letter covered them (Wikipedia Frederick V: imperial officials ordered Protestants to stop erecting churches on the Stifts; EB Bohemia: in December 1617 the archbishop of Prague and the abbot of Brevnov ordered the suppression of Protestant services in churches built on their domains, an infringement of the agreement made with the Letter).",
+   "In May 1618 Protestant members of the diet assembled in Prague (EB Bohemia: 21 May; Wikipedia Defenestrations: congress due 21-22 May, meeting of leaders on 22 May; CE: May 1618 revolt under Thurn); on 23 May, led by Count Thurn, they went to Prague Castle and threw the regents Martinic (Borita of Martinice) and Slavata and the secretary Fabricius from the windows (Wikipedia Bohemian Revolt, Defenestrations, Frederick V; EB Bohemia).",
+   "The two regents were accused of responsibility for the emperor's letter / of advising the king against the Bohemians; all three survived (Wikipedia Defenestrations; Bohemian Revolt: although injured, they survived; EB Bohemia: little injured, escaped).",
+   "The estates established a provisional government of thirty directors, ten chosen by each estate, and raised an army under Thurn (EB Bohemia; attributed for the composition); Thurn led the Bohemian forces (EB Thirty Years' War).",
+   "Hostilities began in July 1618 when an imperial force entered Bohemia (EB Bohemia: July; text says 'that summer'); Wikipedia Frederick V: in August 1618 Mansfeld's forces entered Bohemia; CE: the dynasty was not yet ready for war.",
+   "Mansfeld's force, authorised behind the scenes by Frederick, took Pilsen on 21 November 1618 (Wikipedia Frederick V); EB Thirty Years' War: Mansfeld's mercenary corps had entered the service of the Union and was the only coherent force.",
+   "Matthias died in March 1619 (CE: March 1619; EB Bohemia: in the following March; Wikipedia Frederick V: 20 March 1619; EB Frederick V: a few months before August 1619).",
+   "Moravia (and the Hungarians) joined the revolt in 1619; in June Thurn advanced on Vienna and withdrew (CE); Wikipedia Frederick V: Silesia, Lusatia, Moravia formed the Bohemian Confederacy with Bohemia.",
+   "Moravia and Silesia supported the Bohemians; Thurn appeared before Vienna (EB Thirty Years' War; Wikipedia Bohemian Revolt: in 1619 Thurn led an army to the walls of Vienna; CE: Thurn withdrew).",
+   "On 31 July 1619 the Bohemian Confederacy was formed (Wikipedia Frederick V); Ferdinand declared deposed: 31 July (EB Bohemia), August 1619 (Wikipedia Frederick V; EB Frederick V); stated as a disagreement.",
+   "On 26 August 1619 the estates elected Frederick king (Wikipedia Frederick V; EB Bohemia; CE: two days before 28 August); Ferdinand elected emperor at Frankfurt on 28 August, two days later (CE; Wikipedia Frederick V: two days later).",
+   "The Protestant Union stayed out / was broken up; Saxony sided with Ferdinand for Lusatia (Wikipedia Bohemian Revolt: Saxony intervened in exchange for Lusatia; Wikipedia Frederick V: Treaty of Ulm, Union neutral; EB Bohemia: Lutheran elector of Saxony espoused his cause; CE: Protestant Elector of Saxony, the Union broken up).",
+   "Ferdinand obtained Maximilian of Bavaria, leader of the Catholic League, and Spanish help; Spinola invaded the Palatinate (Wikipedia Bohemian Revolt; EB Bohemia; EB Thirty Years' War; EB Frederick V: Palatinate overrun by Spaniards and Bavarians; CE: October 1619 Maximilian, Spain sent troops).",
+   "In autumn 1620 an imperial army under Maximilian, Tilly and Bucquoy entered Bohemia (EB Bohemia: September 1620; Wikipedia Frederick V: Maximilian crossed on 26 September; Wikipedia Bohemian Revolt: Tilly and Bucquoy's armies united and moved into Bohemia); the Bohemians were defeated at the White Mountain on 8 November 1620 after a struggle of only a few hours (EB Bohemia; Wikipedia Bohemian Revolt and Frederick V: 8 November 1620; EB Frederick V: 8 November); Frederick, the 'Winter King', fled (CE; EB Bohemia; EB Frederick V: called in derision the Winter King).",
+   "Bohemia submitted almost without resistance (EB Bohemia); twenty-seven nobles executed in the Old Town Square on 21 June 1621 (Wikipedia Frederick V; EB Bohemia: execution of the principal leaders, 21 June 1621; Wikipedia Defenestrations: twenty-seven nobles and citizens); confiscations, exile of the nobility, forced conversion or expulsion of Protestants (EB Bohemia; Wikipedia Bohemian Revolt).",
+   "A decree of 1627 (EB Bohemia, attributed) made the crown hereditary in the Habsburg house and gave German equal rights (EB Bohemia; Wikipedia Bohemian Revolt: elective monarchy abolished in favour of hereditary succession); Frederick placed under the imperial ban, his electoral title given to Maximilian (Wikipedia Bohemian Revolt; EB Thirty Years' War; EB Frederick V; CE); the revolt began the Thirty Years' War (Wikipedia; EB Thirty Years' War: the war arose in Bohemia)."
+  ],
+  "disagree": "Date of Ferdinand's deposition: 31 July 1619 in the 1911 Britannica's Bohemia article; August 1619 in Wikipedia (which dates the forming of the confederation to 31 July) and in the Britannica's Frederick V article. Stated in the text. The height of the fall is given variously in Wikipedia's articles (17 m; 16-20 m; 21 m) and is left out.",
+  "checked": null
+ },
+ "cp06-02": {
+  "title": "Bohemian estates elect Frederick V king",
+  "y": 1619,
+  "place": "Prague, Czech Republic",
+  "paras": [
+   "After the Defenestration of Prague in May 1618 the rebel Bohemian estates still had to settle who would be their king. Emperor Matthias died in March 1619, and the estates refused to accept his designated heir, the Catholic Ferdinand of Styria, whom they had recognised in 1617. At the end of July Bohemia, Moravia, Silesia and the Lusatias joined in a confederation, and Ferdinand was declared deposed. The Elector of Saxony, the estates' preferred Protestant candidate, let it be known that he would not take the crown. That left Frederick V, the 23-year-old Calvinist Elector Palatine: head of the Protestant Union of German princes founded by his father, son-in-law of James I of England through his marriage to Elizabeth Stuart in 1613, and already in touch with the rebels, whom he had helped by sending a mercenary force under Ernst von Mansfeld.",
+   "On 26 August 1619 the estates of the confederation elected Frederick king of Bohemia. Two days later, at Frankfurt, the electors chose Ferdinand as Holy Roman Emperor; according to Wikipedia, Frederick's was the only vote against him. Frederick hesitated. The Protestant Union, meeting at Rothenburg on 12 September, urged him not to intervene, his father-in-law James was against it, and other possible allies told him not to expect help; only Gabriel Bethlen, the Prince of Transylvania, who had risen against the Habsburgs in Hungary, encouraged him. Pressed by his chief adviser Christian of Anhalt, he decided at the end of September to accept. He left Heidelberg on 29 September, entered Prague on 31 October and was crowned in St Vitus Cathedral on 4 November 1619, by Utraquist and Protestant clergy rather than the Catholic archbishop.",
+   "His reign was short and troubled. The kingdom's finances were in disorder, neither he nor his queen spoke Czech, and in December 1619 his Calvinist court preacher Abraham Scultetus had images stripped from St Vitus Cathedral, which offended the Utraquist majority. Meanwhile Ferdinand gathered allies: on 21 October 1619 he agreed with Maximilian of Bavaria, leader of the Catholic League, that Maximilian would command against Frederick and receive his electoral title, and the Lutheran Elector of Saxony joined the emperor in return for Lusatia. James I sent no troops, and on 3 July 1620 the Protestant Union declared itself neutral in the Treaty of Ulm, while Spanish troops overran Frederick's own Palatinate on the Rhine.",
+   "On 8 November 1620 the imperial and League army destroyed the Bohemian army at the White Mountain outside Prague, and the next day Frederick fled with his family to Breslau, eventually settling at The Hague. Ferdinand declared his lands and titles forfeit in January 1621 (on the 21st according to Wikipedia; the Catholic Encyclopedia gives 22 January for the imperial ban), and in 1623 his electoral dignity was given to Maximilian. Mocked from early in his reign as the 'Winter King' for the brevity of his rule, Frederick spent the rest of his life in exile and died at Mainz on 29 November 1632."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Frederick_V_of_the_Palatinate",
+    "title": "Frederick V of the Palatinate (rev 1386310708, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Frederick_V.",
+    "title": "Frederick V., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     10,
+     11,
+     12,
+     14,
+     16,
+     17,
+     18,
+     19
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bohemia",
+    "title": "Bohemia (history), Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     7,
+     8,
+     13,
+     14,
+     16,
+     18
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Thirty_Years_War",
+    "title": "Thirty Years War, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     8,
+     16,
+     17,
+     18,
+     19
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Bohemian_Revolt",
+    "title": "Bohemian Revolt (rev 1386964018, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     9,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "Matthias died in March 1619 (Wikipedia: 20 March; CE: March 1619; EB Bohemia: the following March); the estates refused to recognise Ferdinand, who had been made heir/accepted in 1617 (Wikipedia; EB Bohemia: coronation 17 June 1617; CE: 1617).",
+   "On 31 July 1619 Bohemia, Silesia, Lusatia and Moravia formed the Bohemian Confederacy; Ferdinand declared to have forfeited the throne (Wikipedia: August 1619; EB Frederick V: August 1619; EB Bohemia: 31 July); text says 'at the end of July ... declared deposed' without a day.",
+   "The Elector of Saxony was the preferred candidate but would not accept (Wikipedia).",
+   "Frederick born 26 August 1596, hence 23 at the election (Wikipedia lead; EB Frederick V: born 26 August 1596).",
+   "Frederick was a Calvinist (Wikipedia Frederick V and Bohemian Revolt); head of the Evangelical (Protestant) Union founded by his father (EB Frederick V; Wikipedia Bohemian Revolt: successor of Frederick IV, creator of the Protestant Union).",
+   "Married Elizabeth, daughter of James I, in February 1613 (EB Frederick V; Wikipedia: marriage to Elizabeth Stuart; Bohemian Revolt: his wife was James's daughter).",
+   "Frederick had been in communication with the estates (EB Frederick V; EB Bohemia); authorised a force under Mansfeld to support the rebels (Wikipedia).",
+   "On 26 August 1619 the estates elected Frederick king (Wikipedia; EB Bohemia; CE: two days before 28 August); Ferdinand elected emperor at Frankfurt two days later (Wikipedia; CE: 28 August, Frankfort).",
+   "Frederick was the only elector who voted against Ferdinand (Wikipedia, attributed in text); Wikipedia Bohemian Revolt: Ferdinand had no difficulty securing election.",
+   "Frederick hesitated (EB Frederick V: after some hesitation); Protestant Union at Rothenburg on 12 September 1619 called on him not to intervene (Wikipedia).",
+   "James I reacted negatively/refused; Dutch, Savoy and Venice wrote that they could not help; only Gabriel Bethlen encouraged him; Bethlen had launched an anti-Habsburg revolt in Royal Hungary (Wikipedia); EB Frederick V: no assistance from England or the Union; EB Bohemia: Bethlen not named.",
+   "Christian of Anhalt pressed him (EB Frederick V: yielded to the entreaties of Christian I, prince of Anhalt; Wikipedia: Anhalt urged commercial advantages, Frederick's chancellor); decided between 24 and 28 September to accept (Wikipedia).",
+   "Left Heidelberg 29 September 1619, entered Prague 31 October 1619 (Wikipedia; EB Bohemia: arrived in Bohemia in October).",
+   "Crowned in St Vitus Cathedral on 4 November 1619 (Wikipedia; EB Frederick V: crowned at Prague 4 November 1619; EB Bohemia: crowned at St Vitus's cathedral); by the Utraquist administrator Dicastus and a Protestant elder, not the archbishop (Wikipedia).",
+   "Finances disrupted; neither Frederick nor his wife spoke Czech; Scultetus's iconoclasm from 21 December 1619 at St Vitus deeply unpopular (Wikipedia).",
+   "21 October 1619 treaty with Maximilian of Bavaria, leader of the Catholic League: Maximilian to command and to receive Frederick's electoral title (Wikipedia; CE: in October 1619 Ferdinand obtained the help of Maximilian); John George of Saxony given Lusatia (Wikipedia; Wikipedia Bohemian Revolt; CE: Elector of Saxony helped; EB Bohemia: elector of Saxony espoused his cause).",
+   "James refused military support; Protestant Union signed the Treaty of Ulm on 3 July 1620 declaring neutrality (Wikipedia; EB Frederick V: no assistance from England or the Union); Spanish troops occupied the Palatinate (Wikipedia; EB Frederick V: overrun by the Spaniards and Bavarians; CE: Spanish troops established in these districts as early as 1620).",
+   "White Mountain, 8 November 1620 (Wikipedia; EB Frederick V; EB Bohemia); on 9 November Frederick fled to Breslau with his family, later to The Hague (Wikipedia; EB Frederick V: sought refuge in the Netherlands; CE: fled); decree of forfeiture 21 January 1621 (Wikipedia) / ban 22 January 1621 (CE), both stated; electorate given to Maximilian in 1623 (EB Frederick V; CE: 21-25 February 1623).",
+   "'Winter King', called in derision (EB Frederick V; CE: on account of the brief duration of his rule; Wikipedia: nickname appeared shortly after the beginning of his reign); died at Mainz 29 November 1632 (EB Frederick V; Wikipedia lead: 29 November 1632)."
+  ],
+  "disagree": "Date of the imperial decree against Frederick: 21 January 1621 (Wikipedia) or 22 January 1621 for the ban (Catholic Encyclopedia). Stated in the text. The 1911 Britannica's Frederick V article puts the battle of the White Mountain 'four days after his coronation', which conflates 4 November 1619 with 8 November 1620; the year-apart dates of Wikipedia and the Britannica's Bohemia article are followed.",
+  "checked": null
+ },
+ "Q629302": {
+  "title": "Battle of Lutter",
+  "y": 1626,
+  "place": "Lutter am Barenberge, south of Salzgitter, Lower Saxony, Germany",
+  "paras": [
+   "After the Bohemian Revolt was crushed, the Protestant princes of northern Germany feared that Emperor Ferdinand II and the Catholic League would take back the church lands they had secularised. King Christian IV of Denmark was also Duke of Holstein, and so a member of the Lower Saxon Circle of the Empire; in 1625 the Circle chose him to command its forces. He had his own aims too: control of the Elbe and Weser and the secularised bishoprics of Bremen and Verden for his sons, according to the 1911 Encyclopaedia Britannica. With English and Dutch subsidies he took the field against the army of the Catholic League under Count Tilly and a new imperial army raised by Albrecht von Wallenstein.",
+   "Christian's plan for 1626 went wrong from the start. His ally Ernst von Mansfeld was beaten by Wallenstein at the Dessau Bridge on the Elbe in April and marched off towards Silesia and Hungary, and Christian of Brunswick's attack failed. In late July the king marched south from Wolfenbüttel to seek battle with Tilly, not knowing, according to Wikipedia, that Wallenstein had sent Tilly more than 4,000 reinforcements. Heavy rain slowed his army while Tilly took the Protestant-held towns of Münden, Northeim and Göttingen. Christian turned back, his rearguard harried by Tilly's cavalry, and on 27 August 1626 he decided to stand and fight at Lutter am Barenberge, behind two small streams, with woods on both flanks.",
+   "Wikipedia's account, based on modern military histories, describes the battle as follows. Around midday Tilly's artillery opened fire while his troops seized the bridge in front of the Danish line. When a Danish counter-attack pushed them back, the young commander of Christian's right, Philipp of Hesse-Kassel, took it as the signal for a general advance and charged without orders; the king then committed the rest of his army, but the attack broke down under close-range artillery fire. Both wing commanders, Philipp and Fuchs von Bimbach, were killed. In the late afternoon Tilly attacked across the stream while part of his army came round through the woods into the Danish rear, and the Danish front gave way; cavalry charges covered the escape of the rest, and Christian fled to Wolfenbüttel. The same account puts Danish losses at 3,000 dead or wounded, with another 2,500 who surrendered the next day, against about 700 on Tilly's side, and notes that the 1908 Kriegs-Lexikon of Gaston Bodart gives 7,000 and 2,000. Tilly took all the Danish guns and much of the baggage.",
+   "Lutter was a turning point of the Danish phase of the war. Many of Christian's German allies abandoned him, Mansfeld, who had marched on into Hungary, died before the end of 1626, and in 1627 the armies of Tilly and Wallenstein occupied Holstein and the whole of Jutland. Denmark's fleet and an alliance with Sweden kept the war going, but in 1629 Christian made peace at Lübeck, keeping his territory but giving up his involvement in the affairs of the Empire."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Lutter",
+    "title": "Battle of Lutter (rev 1384566972, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thirty_Years%27_War",
+    "title": "Thirty Years' War, by C. F. Atkinson, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Christian_IV.",
+    "title": "Christian IV., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     9,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Thirty_Years_War",
+    "title": "Thirty Years War, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     9,
+     10,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_L%C3%BCbeck",
+    "title": "Treaty of Lübeck (rev 1355481706, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     7,
+     15,
+     16,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "North German Protestants feared the emperor would reclaim former Catholic properties (Wikipedia Lutter; CE: Lower Saxon estates demanded guarantee for former church lands, fear that Protestant changes would be done away with).",
+   "Christian IV, as Duke of Holstein, was a member of the Lower Saxon Circle (Wikipedia Lutter; EB Thirty Years' War; CE: as Count of Holstein).",
+   "In (May) 1625 Christian was appointed/elected commander of the Circle's forces (Wikipedia Lutter; CE: elected commander of their forces).",
+   "Christian's aims: control of the Elbe and Weser, the bishoprics of Bremen and Verden for his younger sons (EB Christian IV, attributed); EB Thirty Years' War: as king of Denmark anxious to extend his influence over the North Sea ports.",
+   "English and Dutch subsidies (Wikipedia Lutter: Treaty of The Hague, December 1625; CE: England and Holland negotiated with Christian; EB Thirty Years' War: English subsidies).",
+   "Opponents: Tilly with the Catholic League army and Wallenstein's imperial army raised in 1625 (Wikipedia Lutter; EB Thirty Years' War; CE: Wallenstein appointed general in 1625; Wikipedia Treaty of Lübeck).",
+   "Mansfeld was defeated by Wallenstein at Dessau Bridge in April 1626 (Wikipedia Lutter; EB Thirty Years' War: 15/25 April 1626; CE: 25 April at the bridge over the Elbe at Dessau); he moved into Silesia and joined Bethlen (EB Thirty Years' War; Wikipedia Treaty of Lübeck: toward Silesia and Hungary; CE: marched to Transylvania); Christian of Brunswick's attack failed (Wikipedia Lutter).",
+   "The Danish army left Wolfenbüttel in late July 1626 seeking battle; Tilly had received over 4,000 reinforcements from Wallenstein (Wikipedia Lutter, attributed for the number; EB Thirty Years' War: Tilly, with whom Wallenstein had left a part of his army; EB Christian IV: no number).",
+   "Rain; Tilly took Münden, Northeim and Göttingen; Christian withdrew; rearguard attacked for three days; on 27 August 1626 he stood at Lutter am Barenberge (Wikipedia Lutter; date also EB Thirty Years' War 17/27 August, EB Christian IV 27 August 1626, CE 27 August 1626); position behind the Neile and Hummecke with woods on the flanks (Wikipedia Lutter).",
+   "Course of the battle: artillery at midday, bridge seized, Danish counter-attack, unauthorised advance by Philipp of Hesse-Kassel, attack shattered by artillery at close range, Fuchs and Hesse killed, Tilly's advance across the river and attack on the rear after 17:00, collapse, cavalry charges covering the escape, Christian fled to Wolfenbüttel (Wikipedia Lutter, attributed as Wikipedia's account; CE: a hotly-contested battle).",
+   "Losses: 3,000 Danish dead or wounded and 2,500 surrendered next day, about 700 on Tilly's side (Wikipedia Lutter); Bodart gives 7,000 and 2,000 (Wikipedia Lutter footnote citing Bodart 1908); attributed in the text.",
+   "Tilly captured the entire Danish artillery train and much of the baggage (Wikipedia Lutter).",
+   "Philipp von Hesse-Kassel was 20 years old and led the right (Wikipedia Lutter; text says 'young').",
+   "Christian was abandoned by most of his German allies (Wikipedia Lutter).",
+   "Mansfeld died in November 1626 (Wikipedia Lutter; EB Thirty Years' War: died soon afterwards in Hungary; CE: died of fever after arriving in Transylvania; Wikipedia Treaty of Lübeck); text says he had marched into Hungary and died before the end of 1626.",
+   "In the summer of 1627 Tilly and Wallenstein occupied the duchies and the whole of Jutland (EB Christian IV; Wikipedia Treaty of Lübeck: invaded Holstein in September and advanced through Jutland as far as Limfjord).",
+   "Sea power and an alliance with Sweden sustained Denmark; peace at Lübeck in 1629, without loss of territory, but giving up interference in imperial affairs (EB Christian IV: May 1629, no diminution of territory; Wikipedia Treaty of Lübeck: pre-war territory restored, not to interfere in imperial affairs)."
+  ],
+  "disagree": "Losses: Wikipedia gives 3,000 Danish dead or wounded plus 2,500 who surrendered, and about 700 on Tilly's side; Bodart (1908), cited by Wikipedia, gives 7,000 and 2,000. Both stated and attributed.",
+  "checked": null
+ },
+ "Q703097": {
+  "title": "Edict of Restitution",
+  "y": 1629,
+  "place": "Vienna (applied across the Holy Roman Empire)",
+  "paras": [
+   "The Peace of Augsburg of 1555 had let each German ruler decide the religion of his lands, but its 'Ecclesiastical Reservation' forbade the further secularisation of Catholic church lands. Protestant princes read the settlement differently, and in the following decades many bishoprics and religious houses, especially in northern Germany, passed under Protestant control, often through noble families who placed younger sons in them; the emperors were too weak to stop this. By 1628 the Catholic armies of Count Tilly and Albrecht von Wallenstein had beaten the Bohemians, the Palatinate and Denmark, and Catholic claims to lost church property were pouring in to Emperor Ferdinand II. According to the Catholic Encyclopedia he passed them in September 1628 to his Aulic Council, the imperial court, for investigation.",
+   "On 6 March 1629 Ferdinand issued the Edict of Restitution in Vienna. It enforced the emperor's reading of the Ecclesiastical Reservation retroactively. The Catholic Encyclopedia summarises it in three parts: it laid down the meaning of the disputed clauses of the religious peace, ordered that pending lawsuits under the peace be settled summarily according to the edict, and appointed three commissions to find and undo breaches of the peace across the Empire. Its reach is measured differently: Wikipedia says that if fully carried out it would have changed the rulers of the archbishoprics of Bremen and Magdeburg, 12 bishoprics and more than 100 religious houses, while the 1911 Encyclopaedia Britannica says it gave back 150 northern ecclesiastical foundations to the Catholics.",
+   "Imperial commissioners began enforcing it at once, backed by Wallenstein's army. The Catholic Encyclopedia gives examples: the Guelph dukes had to surrender most of what they had taken of the diocese of Hildesheim, commissioners took possession of Magdeburg in March 1630, a Catholic bishop installed himself at Verden and Minden, and Württemberg in the south was forced to make restitution. Wikipedia adds that tens of thousands of Protestants fled to Protestant-ruled states.",
+   "The edict sharpened the religious side of the war and alienated all the Protestant princes, including the Lutheran electors of Saxony and Brandenburg, who had stood by the emperor during the Bohemian revolt; they stayed away from the Electoral Diet at Regensburg in 1630 in protest. The Catholic princes, for their part, resented Wallenstein, and at Regensburg Ferdinand had to dismiss him in August 1630. Meanwhile Gustavus Adolphus of Sweden had landed in Pomerania. When Ferdinand rejected Saxony's appeal to revoke the edict, the Elector of Saxony took up arms and allied with the Swedes in 1631. The edict was in effect abandoned in the Peace of Prague of 1635, which Wikipedia says set aside its terms."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Edict_of_Restitution",
+    "title": "Edict of Restitution (rev 1285679503, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     7,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Thirty_Years_War",
+    "title": "Thirty Years War, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     8,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thirty_Years%27_War",
+    "title": "Thirty Years' War, by C. F. Atkinson, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     7,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Wallenstein,_Albrecht_Wenzel_Eusebius_von",
+    "title": "Wallenstein, Albrecht Wenzel Eusebius von, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Magdeburg",
+    "title": "Magdeburg, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+    "title": "Thirty Years' War (rev 1386262455, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Peace of Augsburg 1555 confirmed cuius regio, eius religio; its Ecclesiastical Reservation prohibited further secularisation of Catholic church lands after 1555; Protestant princes interpreted it otherwise and lands continued to be secularised; noble families placed younger sons as prince-bishops; emperors unable to enforce (Wikipedia).",
+   "Catholic military successes preceded the edict (Wikipedia: following Catholic military successes).",
+   "Tilly's and Wallenstein's armies had defeated the Bohemians, the Palatinate's champions and Denmark (EB Thirty Years' War; CE: success of the imperial and Bavarian armies in Northern Germany enabled the Catholics to reclaim church lands).",
+   "Catholic demands sent to the emperor from all sides, turned over in September 1628 to the Aulic Council for judicial investigation (CE, attributed).",
+   "Edict issued 6 March 1629 in Vienna (Wikipedia; CE: March 1629; EB Magdeburg: issued by Ferdinand II in 1629).",
+   "Contents per CE: first part settled the meaning of the disputed ordinances of the Religious Peace; pending suits to be settled summarily; three commissions appointed (CE, attributed; rule 5: Wikipedia's account, that it retroactively enforced Ferdinand's interpretation of the Ecclesiastical Reservation, agrees in substance and is stated separately).",
+   "Reach: if fully effected, would have changed the rulers of the archbishoprics of Bremen and Magdeburg, 12 bishoprics and over 100 religious houses (Wikipedia, attributed); EB Thirty Years' War: gave back one hundred and fifty northern ecclesiastical foundations to the Catholics (attributed); stated as a disagreement.",
+   "Examples of enforcement: Guelphs to surrender what they had taken of Hildesheim in 1523 except a small part; imperial commissioners took possession of Magdeburg in March 1630; Francis William of Wartenberg established himself at Verden and Minden in May and July 1630; Württemberg forced to make restitution (CE, attributed).",
+   "Tens of thousands of Protestants fled to Protestant-controlled states; Wallenstein kept an army in the field to enforce imperial authority (Wikipedia, attributed for the refugees).",
+   "The edict alienated all the Protestant rulers and nobles; Saxony and Brandenburg had held to the emperor at the time of the Bohemian revolt (CE).",
+   "John George of Saxony and George William of Brandenburg did not attend the Regensburg meeting of 1630 in protest against the edict (Wikipedia; CE: the two Protestant Electors not attending); the Catholic princes resented Wallenstein (Wikipedia; EB Thirty Years' War: resentment of the princes of the League; EB Wallenstein; CE).",
+   "Ferdinand dismissed Wallenstein in August 1630 (Wikipedia: August 1630; CE: announced his resignation 13 August 1630; EB Wallenstein: envoys sent in September to announce his removal); Gustavus Adolphus had landed in Pomerania (Wikipedia; EB Thirty Years' War: just as Gustavus landed; CE: landing in June).",
+   "Ferdinand rejected John George's appeal against the edict and Saxony took up arms and allied with the Swedes (EB Thirty Years' War; CE: forming a temporary alliance with Sweden, 1631; Wikipedia: Saxony did not attend in protest).",
+   "The edict sharpened the religious conflict: men were convinced that one ruler meant one religion (EB Thirty Years' War); Wikipedia: compounding a divisive religious struggle.",
+   "The edict was effectively revoked by the terms of the Peace of Prague (1635) (Wikipedia, Edict of Restitution; Wikipedia, Thirty Years' War)."
+  ],
+  "disagree": "Scale of the edict: Wikipedia gives the archbishoprics of Bremen and Magdeburg, 12 bishoprics and over 100 religious houses (if fully carried out); the 1911 Britannica says it gave back 150 northern ecclesiastical foundations. Both attributed in the text. Date of Wallenstein's dismissal: August 1630 (Wikipedia; the Catholic Encyclopedia gives 13 August for its announcement), while the Britannica's Wallenstein article says envoys were sent in September; the text says August.",
+  "checked": null
+ },
+ "Q708862": {
+  "title": "Treaty of Lübeck",
+  "y": 1629,
+  "place": "Lübeck, Schleswig-Holstein, Germany",
+  "paras": [
+   "The Treaty of Lübeck ended the Danish phase of the Thirty Years' War, which King Christian IV of Denmark had entered in 1625 as leader of the Protestant princes of the Lower Saxon Circle. After his defeat by Count Tilly at Lutter in August 1626, the armies of Tilly and of the imperial general Albrecht von Wallenstein overran northern Germany and in 1627 occupied Holstein and the whole Jutland peninsula. Wallenstein, rewarded with the confiscated duchy of Mecklenburg, then turned to the Baltic coast, planning a fleet to challenge Danish sea power.",
+   "Denmark's navy kept the Danish islands safe, and in 1628 Christian struck back from the sea, raiding the occupied coasts and destroying Wallenstein's naval works. Christian allied with Gustavus Adolphus of Sweden (on 1 January 1628 according to the 1911 Encyclopaedia Britannica; Wikipedia puts the alliance in April), and Danish and Swedish help enabled the port of Stralsund to hold out against Wallenstein's siege, which was abandoned in August. Christian's own attempt to land on the southern Baltic shore ended in defeat at Wolgast later that month, and both sides were now ready to talk. Wallenstein feared a joint Danish–Swedish war, and Emperor Ferdinand II's resources were stretched by a new war in northern Italy over the succession to Mantua.",
+   "Envoys met at Lübeck in January 1629. According to Wikipedia, an earlier imperial draft had demanded that Christian give up his bishoprics and imperial offices and buy back his occupied provinces, and Christian met Gustavus Adolphus in February 1629 but refused his proposal of a joint invasion under Swedish command. The final terms were settled largely in secret talks with Wallenstein. The treaty was signed on 22 May 1629 by Wallenstein and Christian IV and ratified by Ferdinand on 7 June; the Catholic League was included as a party.",
+   "Christian got back all the territory he had lost, including Holstein, Schleswig and Jutland, without paying any war costs; the 1911 Britannica and the Catholic Encyclopedia both note that he lost no land. In return, according to Wikipedia, he gave up his claims to the bishoprics of Lower Saxony (including Bremen and Verden, which he had sought for his sons), ended his alliances with the north German states and promised not to interfere in the affairs of the Empire again. The lenient peace left the north German Protestants unprotected just as Ferdinand issued the Edict of Restitution in March 1629, and Denmark's place as the leading Protestant power of the north passed to Sweden, whose king landed in Pomerania the following year."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_L%C3%BCbeck",
+    "title": "Treaty of Lübeck (rev 1355481706, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+    "title": "Thirty Years' War (rev 1386262455, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     8,
+     9,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Christian_IV.",
+    "title": "Christian IV., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     5,
+     6,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Thirty_Years_War",
+    "title": "Thirty Years War, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     6,
+     7,
+     9,
+     11,
+     12,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thirty_Years%27_War",
+    "title": "Thirty Years' War, by C. F. Atkinson, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     6,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The treaty ended the Danish intervention, which began in 1625 (Wikipedia Lübeck; Wikipedia Thirty Years' War: Lower Saxon kreis elected Christian in May 1625; CE: Christian elected commander by the Lower Saxon estates).",
+   "After Lutter in August 1626 (Wikipedia Lübeck; Wikipedia Thirty Years' War: August; EB Christian IV: 27 August 1626; EB Thirty Years' War), Tilly and Wallenstein gained northern Germany and in 1627 occupied Holstein and Jutland (Wikipedia Lübeck: invaded Holstein in September, through Jutland to Limfjord; EB Christian IV: summer 1627, the duchies and the whole peninsula of Jutland; Wikipedia Thirty Years' War: by the end of 1627 Jutland).",
+   "Wallenstein received the duchy of Mecklenburg, whose duke had been deposed (Wikipedia Lübeck; Wikipedia Thirty Years' War; EB Thirty Years' War: on its rightful lord being put to the ban; CE: in 1627 the dukes of Mecklenburg were deprived of their possessions); planned a fleet (Wikipedia Lübeck; Wikipedia Thirty Years' War; CE: Wallenstein attempted to build a fleet).",
+   "EB Thirty Years' War: Wallenstein spread along the coasts because Danish and Swedish invasions had to be removed (supports the motive).",
+   "Christian's control of the western Baltic and the Danish isles unchallenged (Wikipedia Lübeck); EB Christian IV: the possession of superior sea-power enabled Denmark to tide over its worst difficulties. Wikipedia Lübeck: amphibious campaign in 1628 destroying the naval facilities in Ålborg, Wismar and Greifswald.",
+   "Alliance with Sweden: 1 January 1628 (EB Christian IV, attributed) / April (Wikipedia Lübeck, attributed); Stralsund resisted Wallenstein's siege with Danish and Swedish help (Wikipedia Lübeck; EB Christian IV: a Swedo-Danish army and fleet compelled Wallenstein to raise the siege; CE: Danish and Swedish troops came to its aid; Wikipedia Thirty Years' War: siege abandoned 4 August 1628; EB Thirty Years' War: February to August 1628).",
+   "Christian defeated at Wolgast in August 1628 in an attempt to secure a bridgehead on the southern Baltic shore (Wikipedia Lübeck; CE: August 1628 victory over a Danish army at Wolgast; Wikipedia Thirty Years' War: three weeks after 4 August).",
+   "Both sides ready to negotiate; Wallenstein seriously threatened by / concerned about a Scandinavian alliance (Wikipedia Lübeck; Wikipedia Thirty Years' War).",
+   "Ferdinand's resources stretched by the War of the Mantuan Succession (Wikipedia Thirty Years' War; Wikipedia Lübeck not); CE: Ferdinand's troops besieged Mantua.",
+   "Emissaries sent to Lübeck in January 1629; the 1627 draft (Tilly and Wallenstein) demanded surrender of imperial offices and bishoprics and buying out Holstein, Schleswig and Jutland; Christian met Gustavus Adolphus in February 1629 at Ulvsbäck and refused a joint invasion under Swedish command; secret negotiations at Güstrow (Wikipedia Lübeck, attributed).",
+   "Signed 22 May 1629 by Wallenstein and Christian IV (Wikipedia Lübeck; CE: Denmark signed the Peace of Lubeck, 22 May 1629; EB Christian IV: May 1629); ratified by Ferdinand 7 June (Wikipedia Lübeck; Wikipedia Thirty Years' War: June 1629 treaty); Catholic League formally included (Wikipedia Lübeck).",
+   "Christian's pre-war possessions restored (Wikipedia Lübeck; CE: on condition that all conquered territories should be restored; EB Christian IV: without any diminution of territory; Wikipedia Thirty Years' War: retained Schleswig and Holstein); no war costs imposed (Wikipedia Lübeck: Tilly had not succeeded in implementing compensation of war costs).",
+   "In return: cede claims to Lower Saxon bishoprics (Wikipedia Lübeck; Wikipedia Thirty Years' War: relinquishing Bremen and Verden), discontinue alliances with North German states, not interfere in imperial affairs (Wikipedia Lübeck; Wikipedia Thirty Years' War: abandoning support for the German Protestants); attributed to Wikipedia (rule 5); EB Christian IV: Christian had sought Bremen and Verden as appanages for his younger sons.",
+   "North German states, deprived of Danish protection, faced the Edict of Restitution issued during the negotiations (Wikipedia Lübeck; Wikipedia Thirty Years' War: March 1629; CE: March 1629; EB Thirty Years' War: Peace of Lübeck and the Edict of Restitution (1629)).",
+   "Denmark reduced from a major power; Sweden the new Nordic power, landing in Pomerania in 1630 (Wikipedia Lübeck; Wikipedia Thirty Years' War: ended Denmark's period as a major power in the Baltic; CE: this brought Gustavus Adolphus on the scene; landing in 1630)."
+  ],
+  "disagree": "Date of the Danish–Swedish alliance of 1628: 1 January (1911 Britannica, Christian IV) or April (Wikipedia, Treaty of Lübeck); both stated. The treaty is dated 22 May 1629 (signature) in Wikipedia's treaty article and the Catholic Encyclopedia and June 1629 (ratification on 7 June) in Wikipedia's Thirty Years' War article; both dates are given in the text.",
+  "checked": null
+ },
+ "Q7655000": {
+  "title": "Swedish intervention in the Thirty Years' War",
+  "y": 1630,
+  "place": "Northern and southern Germany, from Pomerania to Bavaria",
+  "paras": [
+   "By 1629 Emperor Ferdinand II and the Catholic League seemed to have won the war in Germany: Denmark had made peace at Lübeck, Wallenstein's imperial army held the Baltic coast, and the Edict of Restitution threatened to return a large share of the Protestant-held church lands to Catholic hands. King Gustavus Adolphus of Sweden saw the danger both to his fellow Protestants and to Sweden itself. The Catholic Encyclopedia stresses the economic motives: Ferdinand's plans for the Baltic threatened Sweden's copper trade and the customs revenues it drew from its conquests across the sea. Gustavus had been fighting Poland–Lithuania, whose king Sigismund, his Catholic cousin, claimed the Swedish throne with Ferdinand's backing; in September 1629 France helped arrange the Truce of Altmark, which freed him to turn to Germany.",
+   "Gustavus landed in Pomerania in the summer of 1630 (in June according to the Catholic Encyclopedia, the 1911 Encyclopaedia Britannica and Wikipedia's Thirty Years' War article; in July according to Wikipedia's article on the intervention). He forced the old Duke Bogislav XIV of Pomerania and then, reluctantly, the Elector of Brandenburg into alliance, and in January 1631, short of money, he made the Treaty of Bärwalde with France, pledging to carry on the war against the emperor. At first few German princes joined him, and he could not prevent Tilly from storming and sacking Magdeburg in May 1631. But when Ferdinand refused to revoke the Edict and Tilly invaded Saxony, the Lutheran Elector John George allied with Sweden, and on 17 September 1631 the Swedes and Saxons destroyed Tilly's army at Breitenfeld near Leipzig.",
+   "Gustavus then marched not on Vienna but into southern and western Germany, wintering at Mainz among the Catholic bishoprics of the Main and Rhine. In April 1632 he forced the crossing of the Lech against Tilly, who was mortally wounded, and occupied Munich and much of Bavaria, while the Saxons took Prague. Ferdinand recalled Wallenstein, who raised a new army, drove the Saxons from Bohemia and entrenched himself near Nuremberg; Gustavus's assault on his camp at the Alte Veste was repulsed with heavy losses (3 September 1632; the Britannica also gives the Old Style date, 24 August). Wallenstein moved into Saxony, Gustavus followed, and on 16 November 1632 the two armies fought at Lützen near Leipzig. The Swedes held the field, but Gustavus was killed.",
+   "Sweden's chancellor Axel Oxenstierna took over the direction of the war, with Bernhard of Saxe-Weimar and Gustav Horn as its generals, and in 1633 formed the League of Heilbronn with the Protestant states of south-western and central Germany. Wallenstein, suspected of treating with the enemy, was murdered at Eger on 25 February 1634. In September 1634 the imperial army under the emperor's son, joined by a Spanish army from Italy under the Cardinal-Infante Ferdinand, crushed Horn and Bernhard at Nördlingen; the Britannica says the model army of Gustavus perished there. Saxony made peace with the emperor in the Peace of Prague of 30 May 1635, which most of the German princes accepted and which in effect abandoned the Edict of Restitution. The war did not end: in May 1635 France went openly to war with Spain, and Sweden fought on as France's ally until the Peace of Westphalia in 1648, which gave it Western Pomerania."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Swedish_intervention_in_the_Thirty_Years%27_War",
+    "title": "Swedish intervention in the Thirty Years' War (rev 1379631827, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     5,
+     11,
+     17,
+     18
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+    "title": "Thirty Years' War (rev 1386262455, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thirty_Years%27_War",
+    "title": "Thirty Years' War, by C. F. Atkinson, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Thirty_Years_War",
+    "title": "Thirty Years War, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "By 1629 the imperial and League side dominated: Treaty of Lübeck, Wallenstein on the Baltic, Edict of Restitution (Wikipedia, both articles; EB; CE).",
+   "Protestantism seriously threatened; Gustavus intervened in favour of the German Protestants (Wikipedia Swedish intervention).",
+   "Economic motives: emperor's plans threatened Sweden's trade in copper; Wallenstein's troops threatened the Swedish forces and customs revenues beyond the Baltic (CE, attributed).",
+   "War with Poland–Lithuania 1626–1629; Sigismund, his Catholic cousin, claimed the Swedish throne and was backed by Ferdinand II; Truce of Altmark, September 1629, negotiated with French help (Wikipedia Thirty Years' War; CE: truce brought about by France at Altmark in September 1629).",
+   "Landing in Pomerania in 1630: June (CE: 6 June; EB: landing at Peenemünde in June; Wikipedia Thirty Years' War: June 1630) or July (Wikipedia Swedish intervention); stated as a disagreement.",
+   "Bogislav of Pomerania and then George William of Brandenburg joined him very unwillingly (EB); Wikipedia Thirty Years' War: coerced Bogislaw XIV into an alliance; CE: Gustavus wrung Küstrin and Spandau from the Elector of Brandenburg.",
+   "Treaty of Bärwalde with France, January 1631 (EB: January 1631; CE: 23 January 1631, Gustavus pledged to carry on war against the emperor for four years; French subsidies, CE: need of money).",
+   "Gustavus was not welcomed even by Protestants at first (CE; Wikipedia Thirty Years' War: by the end of 1630 the only new ally was the Administrator of Magdeburg); Tilly stormed Magdeburg in May 1631 (CE: 20 May 1631; EB: 10 May, the Old Style date) and Gustavus was accused of leaving it to its fate (EB).",
+   "Ferdinand rejected John George's appeal against the Edict; Tilly invaded Saxony; the elector allied with the Swedes (EB; CE: Tilly tried to terrify the elector, who formed a temporary alliance with Sweden).",
+   "Breitenfeld near Leipzig, 17 September 1631 (CE: 17 September 1631; EB: 7/17 September; Wikipedia Thirty Years' War: September 1631); Tilly's army destroyed (CE; EB).",
+   "Gustavus did not march on Vienna but into South Germany; wintered at Mainz in the 'Pfaffengasse' of bishoprics along the Main and Rhine (EB; CE: went towards the dioceses on the Main and the Rhine; Wikipedia Swedish intervention not).",
+   "April 1632, crossing of the Lech forced, Tilly mortally wounded (EB: 4/14 April; CE: 15 April, Rain on the Lech; Wikipedia Thirty Years' War: Rain in April 1632, Tilly killed); Munich and Bavaria south of the Danube occupied; Saxons entered Prague (EB; CE: road to Munich open; the Saxons had taken Prague).",
+   "Wallenstein reinstated in April 1632 with a new army; expelled the Saxons from Bohemia; entrenched near Fürth/Nuremberg (EB; CE: in June Wallenstein conquered Bohemia, kept Gustavus inactive at Nuremberg; Wikipedia Thirty Years' War: established himself at Fürth).",
+   "Alte Veste: Gustavus attacked the entrenchments and was repulsed with heavy losses (EB: 24 August/3 September 1632; CE: 3 September; Wikipedia Thirty Years' War: late August, bloodily repulsed).",
+   "Wallenstein marched into Saxony, Gustavus followed; battle of Lützen near Leipzig, 16 November 1632 (CE; EB: 6/16 November; Wikipedia Thirty Years' War: two months later); Gustavus killed; Wallenstein retreated, Swedish victory (EB: Lützen was a victory; CE: the Swedes gained the victory; Wikipedia: most consider it a Swedish victory).",
+   "Oxenstierna continued Gustavus's policies with Bernhard of Saxe-Weimar and Gustav Horn; League of Heilbronn 1633 (Wikipedia Thirty Years' War: April 1633; EB: April 1633; CE: Heilbron, March 1633; text says 1633); Wallenstein murdered at Eger on 25 February 1634 (CE; EB: 15/25 February 1634; Wikipedia: Cheb on the 25th).",
+   "Nördlingen, September 1634: imperial army under the king of Hungary (the emperor's son) and the Cardinal-Infante's army from Italy defeated Horn and Bernhard (EB; CE: Ferdinand's son assumed command, 6 September 1634; Wikipedia Thirty Years' War: Cardinal-Infante with an army raised in Italy, cost Sweden control of southern Germany); the model army of Gustavus perished there (EB, attributed); Peace of Prague 30 May 1635 (CE; EB: 20/30 May 1635), followed by most German rulers (CE), effectively withdrawing the Edict (Wikipedia, both articles; EB: compromise on the Edict); France declared war on Spain, May 1635 (CE; Wikipedia Thirty Years' War).",
+   "Sweden fought on until the Peace of Westphalia in 1648 and obtained Western Pomerania (Wikipedia Swedish intervention); Sweden as France's ally (Wikipedia Thirty Years' War: March 1636 France joined the war as an ally of Sweden)."
+  ],
+  "disagree": "Month of the landing in Pomerania in 1630: June (Catholic Encyclopedia, 1911 Britannica, Wikipedia's Thirty Years' War article) or July (Wikipedia's Swedish intervention article); stated in the text. Battle dates in the 1911 Britannica are given in both Old and New Style; the text uses the New Style dates, which agree with the Catholic Encyclopedia (Breitenfeld 17 September 1631, Lützen 16 November 1632, Nördlingen 6 September 1634). The crossing of the Lech is dated 14 April (Britannica, New Style) or 15 April 1632 (Catholic Encyclopedia), so the text says April. The League of Heilbronn is dated April 1633 (Wikipedia, Britannica) or March 1633 (Catholic Encyclopedia); the text says 1633.",
+  "checked": null
+ },
+ "Q698045": {
+  "title": "Sack of Magdeburg",
+  "y": 1631,
+  "place": "Magdeburg, Saxony-Anhalt, Germany",
+  "paras": [
+   "Magdeburg on the Elbe, the seat of a Protestant-ruled archbishopric and one of the largest towns in Germany, had been Lutheran since 1524. The Edict of Restitution of 1629 made its archbishopric one of the chief prizes to be returned to the Catholic Church; Wallenstein had already tried and failed to force a garrison on the city that year. Gustavus Adolphus of Sweden's landing in Pomerania in 1630 emboldened the city council. Its deposed Protestant administrator, Christian William of Brandenburg, who had fled to the Swedish king, came back, becoming by the end of the year Sweden's only new German ally, according to Wikipedia, and the Swedish officer Dietrich von Falkenberg arrived to direct its defence (in September 1630 according to the Catholic Encyclopedia, in November according to Wikipedia).",
+   "The army of the Catholic League under Count Tilly laid siege to Magdeburg in the spring of 1631, with Gottfried Heinrich zu Pappenheim conducting the siege. Gustavus, unable to march on without the support of Brandenburg and Saxony, could not relieve it. On 20 May 1631 the besiegers stormed the walls after an artillery bombardment, broke in through the defences and killed Falkenberg; that is the date in Wikipedia and the Catholic Encyclopedia, while the 1911 Encyclopaedia Britannica, which elsewhere gives this war's dates in two styles ten days apart, has 10 May. The soldiers, long unpaid, plundered the city, and contemporary reports quoted by Wikipedia describe rape, torture and killing. A fire spread through the town and burned almost all of it. Who started it is disputed: Wikipedia says attackers set fire to houses to drive out defenders and that the spread was probably unintended, while the Catholic Encyclopedia says the Swedes were accused of starting it when they saw the city was lost. The cathedral, where about a thousand people had taken refuge, was saved on Tilly's orders, and Tilly ended the looting on 24 May.",
+   "The numbers differ by source. Wikipedia counts about 20,000 dead, with only some 5,000 of about 25,000 inhabitants surviving and 1,700 of 1,900 buildings destroyed; the 1911 Britannica says the town had 36,000 inhabitants, the greater part of whom were butchered, and that apart from the cathedral only about 140 houses were left standing. It was the worst massacre of the war, and 'to magdeburgise' became a byword for total destruction.",
+   "According to the Britannica the sack paralysed the Protestants, while Catholics rejoiced; Pope Urban VIII and Maximilian of Bavaria sent Tilly letters of congratulation. Gustavus was blamed on all sides for leaving the city to its fate, and the Catholic Encyclopedia judges that the fire cost Tilly the advantage he had won. Within months, the emperor's refusal to drop the Edict and Tilly's invasion of Saxony drove the Elector of Saxony into alliance with Sweden, and in September Tilly was crushed at Breitenfeld. The 1911 Britannica says the city recovered with remarkable speed, while Wikipedia records only 449 inhabitants in a census of 1632 and much of the town still in ruins in 1720."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Sack_of_Magdeburg",
+    "title": "Sack of Magdeburg (rev 1384567041, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Magdeburg",
+    "title": "Magdeburg, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     10,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thirty_Years%27_War",
+    "title": "Thirty Years' War, by C. F. Atkinson, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     5,
+     6,
+     7,
+     8,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Thirty_Years_War",
+    "title": "Thirty Years War, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     9,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+    "title": "Thirty Years' War (rev 1386262455, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     4
+    ]
+   }
+  ],
+  "claims": [
+   "Magdeburg turned Protestant/embraced the Reformation in 1524 (Wikipedia; EB Magdeburg); one of the largest cities in modern Germany (Wikipedia); seat of an archbishopric governed by Protestant titular archbishops/administrators (Wikipedia; EB Magdeburg).",
+   "The Edict of Restitution (1629) targeted Magdeburg: Bremen and Magdeburg the biggest examples (Wikipedia; CE: in March 1630 imperial commissioners took possession of Magdeburg; EB Magdeburg: three rival candidates after the edict).",
+   "Magdeburg resisted Wallenstein in 1629 (EB Magdeburg: for seven months in 1629; EB Thirty Years' War: twice defied Wallenstein's attempts to introduce a garrison; Wikipedia: Edict section).",
+   "Gustavus landed in Pomerania in 1630; by the end of 1630 his only new ally was the Administrator of Magdeburg (Wikipedia Thirty Years' War; CE; Wikipedia Sack: the councillors emboldened by the landing).",
+   "Christian William returned and Falkenberg came to direct the defence: November 1630 (Wikipedia) / September 1630 (CE: a Swedish detachment under Falkenberg had thrown itself into Magdeburg in September 1630); EB Thirty Years' War: citizens directed by Swedish officers.",
+   "Siege by Tilly's League army with Pappenheim in command of the siege, from (20 March) 1631 (Wikipedia; EB Thirty Years' War: his lieutenant Pappenheim was besieging Magdeburg; CE: Tilly determined to take it).",
+   "Gustavus could not relieve it without Brandenburg and Saxony (EB Thirty Years' War: John George had not decided to join; Gustavus thought it impossible to go forward alone; CE: Brandenburg and Saxony refused to let him pass; Wikipedia: hoped in vain for a Swedish relief).",
+   "Stormed on 20 May 1631 (Wikipedia; CE: 20 May 1631); EB Thirty Years' War: night of the 10th of May 1631 (the Britannica's Old Style date, its other battle dates being given as Old/New pairs); artillery bombardment, fortifications breached, Falkenberg shot dead (Wikipedia).",
+   "Plunder by unpaid soldiers, reports of rape and torture (Wikipedia, citing Guericke); fire: attackers set fire to houses, spread probably unintended (Wikipedia); the Swedes accused of starting the fire when they saw the city was lost (CE); both attributed.",
+   "Cathedral saved on Tilly's orders with about 1,000 survivors inside (Wikipedia; EB Magdeburg: whole town burned except the cathedral and about 140 houses); Tilly ordered an end to looting on 24 May (Wikipedia).",
+   "Casualty and damage figures: about 20,000 dead, 5,000 of 25,000 survived, 1,700 of 1,900 buildings destroyed (Wikipedia, attributed); 36,000 inhabitants, the greater part butchered, all burnt except the cathedral and about 140 houses (EB Magdeburg, attributed).",
+   "Considered the worst massacre of the war; 'Magdeburgisieren' a byword for total destruction (Wikipedia).",
+   "Congratulatory letters from Maximilian of Bavaria (1 June) and Pope Urban VIII (18 June) (Wikipedia); EB Thirty Years' War: the Catholics rejoiced as for another St Bartholomew's day, the Protestants were paralysed.",
+   "Gustavus accused on all hands of having let the Magdeburgers perish (EB Thirty Years' War); the fire took from Tilly the advantage he had gained (CE); Ferdinand rejected Saxony's appeal against the Edict, Tilly invaded Saxony, the elector allied with Sweden; Breitenfeld in September 1631 (EB Thirty Years' War; CE: 17 September 1631).",
+   "Recovery: EB Magdeburg: recovered from this deadly blow with wonderful rapidity (attributed); Wikipedia: census of 1632 listed only 449 inhabitants; much of the city rubble until at least 1720; did not recover its importance until well into the 18th century (attributed)."
+  ],
+  "disagree": "Population and losses: Wikipedia gives about 25,000 inhabitants, about 20,000 dead and 1,700 of 1,900 buildings destroyed; the 1911 Britannica gives 36,000 inhabitants and about 140 houses left besides the cathedral. Recovery: 'with wonderful rapidity' (Britannica) against a census of 449 inhabitants in 1632 and ruins until 1720 (Wikipedia). Arrival of Falkenberg: September 1630 (Catholic Encyclopedia) or November 1630 (Wikipedia). Origin of the fire: attackers (Wikipedia) or the Swedes, as accused (Catholic Encyclopedia). Date: 20 May 1631 (Wikipedia, Catholic Encyclopedia) or 10 May in the Britannica, which uses the Old Style here. All stated and attributed in the text.",
+  "checked": null
  }
 }
