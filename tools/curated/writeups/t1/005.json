@@ -3607,7 +3607,11 @@
    "The Crusaders called it Templum Domini and (Wikipedia) gave it to the Augustinians as a church; Saladin, who retook Jerusalem in 1187, had it rededicated; the Ottoman sultan Suleiman replaced the exterior mosaics with tiles in the sixteenth century."
   ],
   "disagree": "Date: the inscription's 72 AH (691/2 CE) is read by most historians as the completion year (Wikipedia); the Encyclopedia of Islam and the Muslim World says it was commissioned in 692; later Muslim authors date the start to 685/6 or 688. The dome's collapse: Wikipedia 1015, the Encyclopedia 1016.",
-  "checked": null
+  "checked": {
+   "by": "https://courses.lumenlearning.com/suny-arthistory1/chapter/dome-of-the-rock/",
+   "result": "Lumen Learning Art History I (Smarthistory text): built between 685 and 691/2 by Abd al-Malik; form references the Church of the Holy Sepulchre. 2 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q465627": {
   "title": "Sack of Rome, 1527",
@@ -3693,8 +3697,12 @@
    "Deaths: Wikipedia an estimated 6,000 to 12,000 murdered and population from over 55,000 to 10,000; EHNE at least 12,000 deaths, a number that grew with hunger and epidemics.",
    "The sack is often cited as the end of the Italian High Renaissance; artists left Rome (Encyclopedia: Rosso Fiorentino, Serlio, diffusing Roman culture); Clement made peace with Charles V (Encyclopedia: in 1529) and crowned him in Bologna in February 1530; Luther and Protestants saw it as punishment of the papal Antichrist and many Catholics as punishment for the Church's corruption (EHNE)."
   ],
-  "disagree": "Clement VII's capitulation: Wikipedia 6 June 1527, the Encyclopedia of the Early Modern World 5 June. Deaths: Wikipedia an estimated 6,000 to 12,000 murdered; EHNE at least 12,000. Wikipedia's figures for the imperial army are themselves inconsistent (14,000 Germans and 6,000 Spaniards plus Italians, and elsewhere 34,000), so no total is given.",
-  "checked": null
+  "disagree": "Clement VII's capitulation: Wikipedia 6 June 1527, the Encyclopedia of the Early Modern World 5 June. Deaths: Wikipedia an estimated 6,000 to 12,000 murdered; EHNE at least 12,000. Wikipedia's figures for the imperial army are themselves inconsistent (14,000 Germans and 6,000 Spaniards plus Italians, and elsewhere 34,000), so no total is given. Size of the Swiss Guard: Wikipedia 189; HistoryNet ('Rome Ravaged') 2,000 (with Roman militia); the text gives Wikipedia's figure with attribution.",
+  "checked": {
+   "by": "https://www.historynet.com/rome-ravaged.htm",
+   "result": "HistoryNet: Bourbon killed by an arquebus shot during the assault, the Swiss Guard and militia overwhelmed in close combat, citizens tortured to reveal hidden wealth or pay ransom, all match; its Swiss Guard figure (2,000) differs from Wikipedia's 189, which the text attributes, now noted in 'disagree'. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q51649": {
   "title": "First Crusade",
@@ -3911,6 +3919,260 @@
    "Antiquity: the battle proved decisive for the Islamic conquest of Mesopotamia, Persia and beyond and holds huge cultural significance in the Arab world; in 2024 Durham University and University of al-Qadisiyyah researchers identified the likely site using declassified 1970s US satellite imagery (KH9, 1973; Archaeology: 1970s spy satellites) and historical texts on the Darb Zubaydah; further archaeological investigation is needed to confirm the date of the sites."
   ],
   "disagree": "Date: Wikipedia November 636 (from 16 November); Antiquity AD 636/637 in its text and c. 637/8 in its abstract; Archaeology magazine 636 or 637; The Past (also fetched) AD 637/638. Army sizes: Wikipedia reports modern estimates of about 30,000 a side but says most scholars think the Sasanians were considerably more numerous (its article elsewhere gives about 60,000 Sasanians). The event record keeps 16 November 636 (Wikipedia).",
-  "checked": null
+  "checked": {
+   "by": "https://the-past.com/news/site/",
+   "result": "The Past (Military History Matters): Arab Muslim victory that took Arab rule beyond Arabia into Persia; site located from 1970s US spy-satellite images while researching the Darb Zubaydah, by Durham University's William Deadman and colleagues; date AD 637/638, already listed in 'disagree'. 3 claims, 0 errors.",
+   "errors": 0
+  }
+ },
+ "Q467777": {
+  "title": "Battle of Wagram",
+  "y": 1809,
+  "place": "Marchfeld plain north-east of Vienna (Austrian Empire)",
+  "paras": [
+   "The Battle of Wagram was fought on 5 and 6 July 1809 on the Marchfeld, the flat plain north of the Danube opposite Vienna, between Napoleon's French army, with its German and Italian allies, and the Austrian army of Archduke Charles. It was the decisive battle of the War of the Fifth Coalition, which Austria had begun that spring, and with some 300,000 men engaged it was the largest battle fought up to that time.",
+   "Napoleon had taken Vienna, but his first attempt to cross the Danube had ended in defeat at Aspern-Essling in late May. He spent six weeks preparing a second crossing, this time with well-built bridges from the island of Lobau, and fooled Charles into expecting him to land where he had landed before. On the stormy night of 4 July the French crossed further east and spread out across the plain. Charles held a strong position behind the Russbach stream and the low Wagram escarpment, and called on his brother Archduke John to march in from Pressburg to join his left. Napoleon's evening attacks on 5 July gained ground at first but were thrown back, amid confused fighting at the village of Deutsch-Wagram in which Saxon troops fired on each other in the dark.",
+   "At dawn on 6 July Charles attacked along the whole line, hoping to envelop the French. The attack on the French right failed, but on the left the Austrians retook Aderklaa and advanced almost to the Danube bridges. Napoleon sent heavy cavalry against the Austrian centre, moved Masséna's corps south to block the threat to his left, formed a great battery of guns, and sent Macdonald forward in a huge column that suffered terrible losses. The decisive blow came from Davout on the French right, who took Markgrafneusiedl and turned the Austrian left. With Archduke John still hours away, Charles ordered a disciplined retreat in the early afternoon, and the exhausted French could not pursue at once.",
+   "Losses were very heavy on both sides and are counted differently. Ian Castle, writing for the Fondation Napoléon, gives about 23,750 Austrian killed and wounded, 7,500 prisoners and some 10,000 missing, against about 27,500 French killed and wounded and 10,000 prisoners and missing; Wikipedia gives the official French figure as 6,901 dead and 26,757 wounded, and notes that an Austrian count found 51,626 men missing by 11 July, a figure that includes later actions. Among the dead was the French cavalry general Lasalle. Charles retreated north and, after the French caught him at Znaim, asked for an armistice. The Treaty of Schönbrunn that followed cost Austria about a sixth of its subjects and its access to the sea."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Wagram",
+    "title": "Battle of Wagram (rev 1385515355)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/en/history-of-the-two-empires/articles/the-battle-of-wagram/",
+    "title": "The Battle of Wagram (Ian Castle)",
+    "publisher": "Fondation Napoléon (napoleon.org)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought on 5-6 July 1809 on the Marchfeld north of the Danube near Vienna between Napoleon's army (French, German and Italian troops) and Archduke Charles's Austrians.",
+   "It was the decisive battle of the War of the Fifth Coalition (Wikipedia: Charles then asked for an armistice, effectively ending the war).",
+   "About 300,000 men fought (Wikipedia: some 300,000; Castle: more than 300,000); Castle: the largest battle in history at that time.",
+   "Austria had invaded Bavaria, a French ally; Napoleon occupied Vienna at the beginning of May 1809 (Wikipedia). Napoleon's first crossing led to defeat at Aspern-Essling (Wikipedia: from 21 May); he took six weeks to prepare the next offensive (Wikipedia).",
+   "The second crossing used well-built bridges from Lobau; Napoleon deceived Charles into expecting a crossing in the same area as before (Castle; Wikipedia: Charles expected landfall at the same location as at Aspern-Essling).",
+   "The French crossed during the night of 4 July in a thunderstorm (Castle: from 9 p.m., heavy rain) and fanned out across the Marchfeld.",
+   "The Austrians held a strong position behind the Russbach stream and the Wagram escarpment; Charles ordered Archduke John to march from Pressburg to join his left (Castle).",
+   "Napoleon's evening attacks on 5 July had initial success but failed; at Deutsch-Wagram Saxon troops fired on each other in the darkness (Castle).",
+   "At dawn on 6 July Charles attacked along the whole line seeking a double envelopment; it failed against the French right but nearly broke the French left; Aderklaa was retaken by the Austrians (Castle) and Klenau advanced to Aspern/Essling.",
+   "Napoleon launched a cavalry charge, redeployed IV Corps (Masséna) to stabilise the left, set up a grand battery; Macdonald's attack failed (Castle: of 8,000 men barely 1,500 remained on their feet within an hour).",
+   "Davout's offensive took Markgrafneusiedl and turned the Austrian left; Charles admitted defeat (Castle: retreat ordered about 2.30 p.m., John not expected until 5 p.m.) and retreated in good order; the French were too exhausted to pursue at once.",
+   "Casualties: Castle, Austrians 23,750 killed and wounded, 7,500 prisoners, about 10,000 missing; French 27,500 killed and wounded and 10,000 prisoners and missing. Wikipedia, French officially 6,901 dead and 26,757 wounded; an Austrian tabulation of 51,626 missing on 11 July includes later engagements.",
+   "Lasalle was killed (Castle: in a rearguard action; Wikipedia lists him among the generals killed).",
+   "Wikipedia: Charles retreated, was caught at Znaim, and asked for an armistice (the Armistice of Znaim).",
+   "Wikipedia: the Treaty of Schönbrunn cost Austria one sixth of its subjects and some territories, rendering it landlocked."
+  ],
+  "disagree": "Casualties: Castle (Fondation Napoléon) gives 23,750 Austrian killed and wounded plus 7,500 prisoners and about 10,000 missing, and 27,500 French killed and wounded plus 10,000 prisoners and missing; Wikipedia gives the official French figure of 6,901 dead and 26,757 wounded, others' 17,000 killed and 25,000 wounded, and an Austrian count of 51,626 missing that includes later fighting. Army sizes: Wikipedia over 150,000 French and allies and over 130,000 Austrians; Castle about 182,000 French (plus 8,500 in reserve) and 137,700 Austrians by the second day. Start: the French crossing began on the night of 4 July (Castle dates the start of the battle from then); the main fighting was on 5-6 July, and the record keeps 5 July.",
+  "checked": {
+   "by": "https://www.historyofwar.org/articles/battles_wagram.html",
+   "result": "HistoryOfWar.org (John Rickard): crossing from Lobau on 4 July, Austrian corps on the Russbach heights, failed and poorly coordinated evening attacks with Saxons in disorder at Deutsch-Wagram, the 4 a.m. Austrian attack on 6 July with Rosenberg pulled back, Bernadotte abandoning Aderklaa, Davout's attack on Markgrafneusiedl, and casualty figures (23,750 Austrian killed and wounded, 10,000 missing, 7,500 prisoners; 27,500 French killed and wounded) all match. 6 claims, 0 errors.",
+   "errors": 0
+  }
+ },
+ "Q312492": {
+  "title": "Herero and Nama genocide",
+  "y": 1904,
+  "place": "German South West Africa (today Namibia)",
+  "paras": [
+   "Between 1904 and 1908 the German Empire destroyed much of the Herero and Nama peoples of its colony German South West Africa, today Namibia. Most historians now class it as genocide. German rule had brought forced land clearances and the loss of the grazing land and water on which the cattle-herding Herero depended, and the settlers treated Africans as second-class people with almost no rights; a cattle plague in 1896-97 had deepened their poverty.",
+   "On 12 January 1904 the Herero, led by Samuel Maharero, rose against the colonists, attacking farms and settlements, cutting railway lines and besieging German posts; Wikipedia puts the Germans killed at 123 to 160, and the Deutsches Historisches Museum's LeMO at over 120, most of them farmers and traders. The small colonial force was at first outmatched, but Germany sent about 14,000 troops, and in May 1904 General Lothar von Trotha took command, intending a war of annihilation.",
+   "In August 1904 Trotha's forces surrounded the Herero at the Waterberg (LeMO: battle on 11 August). Most of the Herero, largely women and children, fled into the Omaheke desert; German troops shot many, held or poisoned waterholes and sealed the desert edge with a cordon that the bpb puts at 250 km long, and thousands died of thirst and hunger. On 2 October Trotha proclaimed that every Herero found within the colony's borders, armed or not, would be shot, and that he would no longer take in women and children. After protests in Germany, from missionaries and from Chancellor Bernhard von Bülow, the order was withdrawn in December. Survivors were then held in concentration camps and used for forced labour; Wikipedia says around half of the prisoners died there. The Nama, who rose against the Germans in the autumn of 1904 (Wikipedia: September; bpb: October), were also crushed. The camps were closed in 1908.",
+   "The death toll is uncertain. Wikipedia gives 40,000 to 80,000 Herero (about 80 percent of the people) and 10,000 Nama (about half); the bpb says only about 16,000 of 60,000 to 80,000 Herero survived and about half of some 20,000 Nama died; LeMO says between a third and two thirds of the Herero died by the end of the state of war in March 1907. In 2004 the German development minister Heidemarie Wieczorek-Zeul asked the descendants for forgiveness at Okakarara, and in 2015 the German Foreign Office called the war a genocide. Wikipedia reports that a 2021 agreement with Namibia offered 1.1 billion euros in development aid while denying legal responsibility, a deal rejected by most Herero and Nama organisations."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Herero_and_Nama_genocide",
+    "title": "Herero and Nama genocide (rev 1388351316)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://www.dhm.de/lemo/kapitel/kaiserreich/aussenpolitik/herero-krieg-1904.html",
+    "title": "Herero-Krieg 1904 (LeMO)",
+    "publisher": "Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/176142/januar-1904-herero-aufstand-in-deutsch-suedwestafrika/",
+    "title": "Januar 1904: Herero-Aufstand in Deutsch-Südwestafrika",
+    "publisher": "Bundeszentrale für politische Bildung (bpb)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Between 1904 and 1908 the German Empire carried out the extermination of the Herero and Nama in German South West Africa (now Namibia) (Wikipedia); historians mostly classify it as genocide (bpb, LeMO).",
+   "Colonial rule brought forced land clearances and loss of grazing land and water vital to the cattle-herding Herero (bpb, LeMO); settlers treated locals as second-class people practically without rights (bpb); LeMO: the rinderpest of 1896/97 brought famine and impoverishment.",
+   "The Herero under Samuel Maharero rose on 12 January 1904, attacking farms and settlements, cutting railway lines and besieging German posts (LeMO: Windhoek, Okahandja, Omaruru; bpb: military stations, railways, trading posts).",
+   "Germans killed: Wikipedia 123 or as many as 160, most of them farmers and traders; LeMO over 120.",
+   "The German colonial troops (bpb, LeMO: about 2,000) were at first outmatched; Germany sent about 14,000 soldiers (bpb, LeMO).",
+   "In May 1904 Lothar von Trotha took command (bpb) and conducted the war as a war of annihilation (bpb: Vernichtungskrieg; LeMO: planned as a battle of annihilation).",
+   "In August 1904 the Herero were surrounded at the Waterberg (LeMO: 11 August 1904); most, largely women and children (LeMO), fled into the Omaheke desert.",
+   "Many fleeing Herero were shot; waterholes were occupied (LeMO; Wikipedia: guarded or poisoned); the desert was sealed by a cordon (bpb: 250 km long; Wikipedia: posts 155 miles / 249 km long); thousands died of thirst and starvation.",
+   "On 2 October 1904 Trotha proclaimed that every Herero within the German borders, with or without a gun, would be shot, and that he would take in no more women and children (bpb quotes the proclamation; Wikipedia, LeMO).",
+   "The order was withdrawn: Wikipedia, Bülow appealed to the Kaiser, who withdrew it on 6 December 1904; LeMO, mediation by German missionaries and interventions from Berlin ended the campaign of annihilation in December 1904.",
+   "Survivors were interned in concentration camps and used for forced labour (bpb, LeMO; LeMO: Bülow first used the term on 11 December 1904); Wikipedia: around half the prisoners died; camps closed 27 January 1908.",
+   "The Nama rose against the Germans (Wikipedia: September 1904; bpb: October 1904) and were crushed / half of them fell victim (bpb).",
+   "Death toll: Wikipedia 40,000-80,000 Herero (80 percent) and 10,000 Nama (half); bpb about 16,000 of originally 60,000-80,000 Herero survived, and half of about 20,000 Nama died; LeMO, between an estimated one and two thirds of the Herero died between 1904 and the end of the state of war on 31 March 1907.",
+   "In 2004 at the Waterberg commemoration at Okakarara the German development minister Heidemarie Wieczorek-Zeul asked descendants of the Herero and Nama for forgiveness (bpb, 14 August 2004); LeMO: in 2015 the Foreign Office called the war a genocide, and in 2016 the government said the term reflected its position (Wikipedia: in 2015 Germany acknowledged a genocide).",
+   "Wikipedia: a 2021 deal with Namibia offered 1.1 billion euros of ex gratia development aid while rejecting legal responsibility, and was rejected by most Herero and Nama organisations."
+  ],
+  "disagree": "Death toll: Wikipedia 40,000-80,000 Herero and 10,000 Nama; bpb about 16,000 Herero survivors of 60,000-80,000 and half of about 20,000 Nama dead; LeMO one to two thirds of the Herero dead by March 1907. Start of the Nama rising: Wikipedia September 1904, bpb October 1904. Germans killed in the first attacks: Wikipedia 123-160, LeMO over 120. Germany's official position: the bpb text (2014) says the federal government rejected calling it genocide; LeMO says the Foreign Office used the word in 2015 and the government endorsed it in 2016; Wikipedia says Germany acknowledged a genocide in 2015. Length of the desert cordon: bpb 250 km, Wikipedia 155 miles (249 km), BlackPast 200 miles. BlackPast also estimates that only 15,000 of about 100,000 Herero survived and that 45 percent of Herero prisoners had died by 1908.",
+  "checked": {
+   "by": "https://blackpast.org/gah/battle-waterberg-1904",
+   "result": "BlackPast (Birgit Schinke): Waterberg encirclement on 11 August 1904, flight into the Omaheke with deaths from pursuit and thirst, concentration camps with forced labour, the 2004 apology by Heidemarie Wieczorek-Zeul, all match; its cordon length (200 miles) and survivor estimate differ and are now recorded in 'disagree' (the text attributes the 250 km figure to the bpb). 5 claims, 0 errors.",
+   "errors": 0
+  }
+ },
+ "Q917435": {
+  "title": "July Crisis",
+  "y": 1914,
+  "place": "Vienna, Berlin, Belgrade, St Petersburg, Paris and London",
+  "paras": [
+   "The July Crisis was the month of diplomatic and military escalation among the great powers of Europe in the summer of 1914 that turned a quarrel between Austria-Hungary and Serbia into the First World War. Wikipedia dates its beginning to 28 June 1914, when the Bosnian Serb nationalist Gavrilo Princip assassinated the Austro-Hungarian heir, Archduke Franz Ferdinand, and his wife Sophie in Sarajevo; the event is placed here at 23 July, the day of Austria-Hungary's ultimatum to Serbia.",
+   "There were grounds to suspect that Serbian officers were behind the plot, and leaders in Vienna wanted a military blow against Serbia, both to show Austria-Hungary's strength and to weaken the Yugoslav nationalism that threatened its multi-national empire. Fearing that Russia would defend Serbia, Vienna first sought German backing. In early July Emperor Wilhelm II and Chancellor Theobald von Bethmann Hollweg promised to stand by their ally in a war against Serbia; this promise became known as the 'blank cheque' (Wikipedia gives both 5 and 6 July as its date). According to LeMO, Germany did not want to lose its last ally, and its leaders also saw the conflict as a test of the alliance system.",
+   "After weeks of deliberation, Austria-Hungary, in close agreement with Germany, handed Serbia a 48-hour ultimatum on 23 July with demands meant to be unacceptable, including Austro-Hungarian involvement in investigations on Serbian soil. Serbia's reply, which historians judge differently, did not accept every demand, and Austria-Hungary declared war on 28 July, rejecting further mediation by the other powers. Russia began mobilising in support of Serbia; Wikipedia says the Tsar ordered general mobilisation on 30 July, while LeMO dates Russia's mobilisation against Austria-Hungary to 29 July. On 31 July Germany demanded that Russia stop within 12 hours.",
+   "When Russia did not, Germany declared war on Russia on 1 August and on France on 3 August. Its war plan required a rapid advance through neutral Belgium, and Britain, citing the invasion of Belgium, declared war on Germany on 4 August. Within a few days a local Balkan conflict had become a general European war; LeMO notes that in every country most people believed the war had been forced upon them by their enemies."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/July_Crisis",
+    "title": "July Crisis (rev 1386863079)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.dhm.de/lemo/kapitel/erster-weltkrieg/kriegsverlauf/julikrise",
+    "title": "Juli-Krise 1914 (LeMO)",
+    "publisher": "Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The July Crisis was a series of diplomatic and military escalations among the major European powers in mid-1914 that led to the First World War; Wikipedia: it began on 28 June 1914.",
+   "Gavrilo Princip, a Bosnian Serb nationalist, assassinated Archduke Franz Ferdinand, heir to the Austro-Hungarian throne, and his wife Sophie on 28 June 1914 in Sarajevo (LeMO: 28 June 1914 in Sarajevo).",
+   "There were grounded indications of Serbian (intelligence) involvement in the plot (LeMO; Wikipedia: Potiorek reported on 5 July that Serbian Major Tankosić had directed the assassins); Austro-Hungarian politicians and military pressed for a military strike against Serbia.",
+   "Wikipedia: Austria-Hungary wanted to demonstrate its strength and dampen Serbian support for Yugoslav nationalism, a threat to its multi-national empire; fearing Russia, it sought German support.",
+   "Bethmann Hollweg and Wilhelm II promised in early July to support Austria-Hungary in a war against Serbia (LeMO); this was the 'blank cheque' (Wikipedia, which dates it 6 July in one passage and 5 July in another).",
+   "LeMO: Germany did not want to lose Austria-Hungary as its last ally; the war was to be a test case for the alliance system.",
+   "On 23 July Austria-Hungary, in close agreement with Germany (LeMO), gave Serbia a two-day ultimatum (Wikipedia: reply due by 6 p.m. on 25 July) whose demands were deliberately unacceptable (LeMO; Wikipedia: a harsh ultimatum Serbia was certain to reject), including freedom for investigations in Serbia.",
+   "Historians disagree on how far Serbia's reply compromised (Wikipedia); Austria-Hungary declared war on Serbia on 28 July after rejecting further mediation by the other powers (LeMO).",
+   "Russian mobilisation: Wikipedia, partial mobilisation ordered on 28 July and general mobilisation on 30 July; LeMO, Russia mobilised against Austria-Hungary on 29 July.",
+   "On 31 July Germany demanded that Russia halt its mobilisation within 12 hours (LeMO; Wikipedia: ultimatum delivered near midnight).",
+   "Germany declared war on Russia on 1 August and on France on 3 August (Wikipedia, LeMO).",
+   "Germany's plan required an advance through neutral Belgium; Britain entered the war on 4 August, citing the invasion of Belgium (LeMO; Wikipedia: Germany declared war on Belgium on 4 August; Britain entered the war on 4 August).",
+   "LeMO: within days the conflict became a general European war; because of nationalism and propaganda most people in all states believed the war had been forced on them by enemy states."
+  ],
+  "disagree": "Start: Wikipedia dates the crisis from the assassination of 28 June 1914; the event record keeps 23 July (the ultimatum), since no second fetched source gives a start date for the crisis as such. Blank cheque: 5 or 6 July (both in Wikipedia; LeMO 'early July'). Russian mobilisation: Wikipedia partial on 28 July and general on 30 July; LeMO 29 July.",
+  "checked": {
+   "by": "https://germanhistorydocs.org/de/das-wilhelminische-kaiserreich-und-der-erste-weltkrieg-1890-1918/der-blankoscheck-ladislaus-graf-von-szoegyeny-marich-berlin-an-leopold-graf-von-berchtold-5-juli-1914",
+   "result": "German History in Documents and Images (GHI Washington), the 'blank cheque' telegram of 5 July 1914 with introduction: assassination of Franz Ferdinand by a Serbian nationalist on 28 June 1914 as the trigger of the July Crisis, and Wilhelm II's assurance of German support in early July (telegram of 5 July), match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  }
 }
