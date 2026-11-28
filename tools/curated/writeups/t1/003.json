@@ -1948,5 +1948,129 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q179788": {
+  "title": "Edict of Nantes",
+  "y": 1598,
+  "place": "Nantes, Kingdom of France",
+  "paras": [
+   "The Edict of Nantes, issued by King Henry IV of France at Nantes in April 1598, gave the Huguenots, France's Calvinist Protestant minority, legal rights and a measure of religious freedom in a kingdom that stayed officially Catholic. It ended the French Wars of Religion, some 36 years of civil war between Catholics and Protestants.",
+   "The settlement, a compromise, was made up of four texts: the edict proper of 92 articles, which declared itself permanent and irrevocable; 56 secret articles on local matters; and two royal warrants (brevets). It granted freedom of conscience, but allowed Protestant worship only in specified places, and banned it at court, in the army, and in Paris and within five leagues of it. Protestants were made equal before the law, with access to public offices and schools, and lawsuits involving them could go to courts with both Catholic and Protestant judges. They still had to pay tithes to the Catholic Church, and Catholic worship was restored everywhere. One warrant paid the Protestant pastors; the other gave the Huguenots about 150 places of refuge for eight years, 51 of them fortified strongholds with their own garrisons.",
+   "Some of the regional parlements opposed the edict. Henry had to force the Parlement of Paris to register it in 1599, and the Parlement of Rouen held out until 1609. After the siege of La Rochelle, the Peace of Alès of 1629 took away their strongholds, leaving them dependent on the king's goodwill.",
+   "Louis XIV applied the edict ever more narrowly and from 1680 persecuted Protestants, including by quartering dragoons on their households. In October 1685 he revoked it by the Edict of Fontainebleau, banning Protestant worship and banishing the pastors. Although emigration was forbidden, as many as 400,000 Huguenots fled abroad in Wikipedia's estimate. Toleration was restored only by Louis XVI's Edict of Versailles in 1787."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Edict_of_Nantes",
+    "title": "Edict of Nantes",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://museeprotestant.org/en/notice/the-edict-of-nantes-1598/",
+    "title": "The Edict of Nantes (1598)",
+    "publisher": "Musée protestant (Fondation pasteur Eugène Bersier)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Henry IV signed/promulgated the edict in April 1598, giving the Huguenots substantial rights while Catholicism remained the state religion.",
+   "It ended the Wars of Religion (Musée protestant: 36 years of civil war).",
+   "It consisted of four texts: the edict of 92 articles declaring itself permanent and irrevocable, 56 secret articles, and two warrants (brevets).",
+   "It granted freedom of conscience; Protestant worship was allowed only in specified places and banned at court, in the armed forces, in Paris and within five leagues of it.",
+   "Protestants gained civil equality, access to public offices and schools, and courts with Catholic and Protestant officers.",
+   "Protestants still paid tithes; Catholic worship was restored throughout the kingdom.",
+   "One warrant funded Protestant pastors; the other granted 150 places of refuge for 8 years, 51 of them fortified strongholds.",
+   "The Parlement of Paris registered the edict in 1599 (Henry had to force it); Rouen not until 1609.",
+   "In 1629, after the siege of La Rochelle, the strongholds were withdrawn (Peace of Alès), leaving Protestants dependent on the king's goodwill.",
+   "Louis XIV applied the edict restrictively; from 1680 persecution resumed (dragonnades); in October 1685 the Edict of Fontainebleau revoked it.",
+   "The Edict of Fontainebleau banned Protestant worship and emigration and banished pastors.",
+   "As many as 400,000 Huguenots fled France (Wikipedia); Louis XVI's Edict of Versailles (1787) restored worship and civil rights for non-Catholics."
+  ],
+  "disagree": "Sources give different days in April 1598 for the edict; the text uses the month only.",
+  "checked": null
+ },
+ "Q193547": {
+  "title": "Reign of Terror",
+  "y": 1793,
+  "place": "France, above all Paris, the Vendée, Lyon and Nantes",
+  "paras": [
+   "The Reign of Terror was the period of the French Revolution, from September 1793 to July 1794, when the revolutionary government of the First Republic used mass arrests and executions against people it considered enemies of the Revolution. Power lay with the National Convention and its Committee of Public Safety, set up in April 1793, in which Maximilien Robespierre became the leading figure; the Revolutionary Tribunal, created in March 1793, tried the accused.",
+   "France was at war with the First Coalition of European monarchies and faced internal revolts, the rising in the Vendée and the 'Federalist' revolts in cities such as Lyon, while the Paris sans-culottes demanded harsh measures against hoarders and opponents. On 5 September 1793 the Convention heard the call to make terror 'the order of the day', and on 17 September it passed the Law of Suspects, which ordered the immediate arrest of broad categories of 'suspects', among them people whose conduct or words showed them to be 'partisans of tyranny or federalism', those refused certificates of civic loyalty, and former nobles who had not shown constant devotion to the Revolution.",
+   "Queen Marie Antoinette was guillotined on 16 October 1793 and the leading Girondin deputies on 31 October. The revolts were crushed. In spring 1794 the Revolution turned on its own: the radical Hébertists were executed on 24 March and Danton and his allies on 5 April. The Law of 22 Prairial (10 June 1794) sped up trials before the Tribunal and began the 'Great Terror' in Paris. The Convention turned on Robespierre on 9 Thermidor (27 July 1794); he was arrested and guillotined the next day, and the Terror ended.",
+   "At least 300,000 people were arrested. About 16,600 were sentenced to death by official courts, some 2,600 of them in Paris, and perhaps 10,000 to 20,000 more died without trial or in prison, giving a total, in Wikipedia's figures, of some 35,000 to 45,000 deaths. Robespierre had justified it by linking 'virtue' and 'terror' as both necessary to a republic."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Reign_of_Terror",
+    "title": "Reign of Terror",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://revolution.chnm.org/d/417",
+    "title": "The Law of Suspects (17 September 1793)",
+    "publisher": "Liberty, Equality, Fraternity: Exploring the French Revolution (Roy Rosenzweig Center for History and New Media, George Mason University)",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6
+    ]
+   }
+  ],
+  "claims": [
+   "The Terror (September 1793 – July 1794) used mass arrests and executions against perceived enemies of the Revolution.",
+   "The Revolutionary Tribunal was set up on 10 March 1793 and the Committee of Public Safety on 6 April 1793; Robespierre was the leading figure.",
+   "Causes included foreign war (First Coalition), the Vendée and Federalist revolts, and sans-culotte pressure for harsher measures.",
+   "On 5 September 1793 Barère called for terror to be 'the order of the day'.",
+   "The Law of Suspects was passed on 17 September 1793.",
+   "It ordered the immediate custody of suspects, defined to include partisans of tyranny or federalism, people refused certificates of patriotism, and former nobles who had not consistently shown devotion to the Revolution.",
+   "Marie Antoinette was executed on 16 October 1793 and the Girondins on 31 October; the revolts were crushed.",
+   "The Hébertists were executed on 24 March and the Dantonists on 5 April 1794.",
+   "The Law of 22 Prairial (10 June 1794) sped up the Tribunal and began the Great Terror.",
+   "Robespierre fell on 27 July 1794 and was executed the next day, ending the Terror.",
+   "At least 300,000 suspects were arrested; about 16,594 official death sentences (2,639 in Paris); 10,000–20,000 unofficial deaths; at least 35,000–45,000 deaths in total.",
+   "Robespierre linked virtue and terror as necessary for a republic."
+  ],
+  "disagree": "Wikipedia gives about 16,594 official death sentences in one place and about 17,000 executions in another; the total including deaths without trial or in prison is put at 35,000 to 45,000.",
+  "checked": null
  }
 }
