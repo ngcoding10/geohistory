@@ -2322,5 +2322,254 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q154596": {
+  "title": "Treaties of Tilsit",
+  "y": 1807,
+  "place": "Russian Empire",
+  "paras": [
+   "The Treaties of Tilsit were two peace treaties that Napoleon concluded in July 1807 in the small East Prussian town of Tilsit on the Neman (Niemen) river (today Sovetsk in Russia's Kaliningrad region): with Tsar Alexander I of Russia on 7 July and with King Frederick William III of Prussia on 9 July. They ended the War of the Fourth Coalition, which Napoleon had won by crushing Prussia in 1806 and defeating the Russian army at Friedland on 14 June 1807.",
+   "After Friedland the French reached the Neman and the two sides agreed an armistice. On 25 June 1807 Napoleon and Alexander met on a specially built raft-pavilion anchored in the middle of the river, a setting that let them meet as equals; Frederick William joined later talks, and from 28 June to 6 July the three rulers met daily in Tilsit and Napoleon also received Queen Louise of Prussia. Talleyrand signed the treaties for France.",
+   "Russia lost little: it recognised Napoleon's brothers as kings of Naples and Holland, Jérôme as king of a new Kingdom of Westphalia, and the Confederation of the Rhine, accepted French mediation with the Ottoman Empire, and gained the Białystok district. In return Napoleon accepted Russian mediation with Britain, and in secret articles the two emperors became allies, Russia undertaking to join Napoleon's Continental System against British trade. Prussia paid the price: it lost about half its territory. Its lands west of the Elbe went to Westphalia, most of its Polish lands of the partitions became the Duchy of Warsaw under the King of Saxony, and Danzig became a free city; its army was limited and it was later charged heavy war indemnities.",
+   "Tilsit left Napoleon dominant in central Europe, with Russia and a truncated Prussia aligned with him against Britain and Sweden. In Prussia and Russia many saw the treaties as a national humiliation. The Franco-Russian alliance broke down after the tsar began admitting neutral ships to Russian ports in 1810, and in June 1812 Napoleon crossed the Neman to invade Russia."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Treaties_of_Tilsit",
+    "title": "Treaties of Tilsit",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/en/history-of-the-two-empires/close-up/a-close-up-on-tilsit-july-1807/",
+    "title": "A close-up on: Tilsit (July 1807)",
+    "publisher": "Fondation Napoléon, napoleon.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/en/history-of-the-two-empires/timelines/from-friedland-to-tilsit-june-to-july-1807/",
+    "title": "From Friedland to Tilsit (June to July 1807)",
+    "publisher": "Fondation Napoléon, napoleon.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/en/history-of-the-two-empires/articles/treaty-between-france-and-russia-tilsit-7-july-1807/",
+    "title": "Treaty between France and Russia, Tilsit, 7 July, 1807 (text)",
+    "publisher": "Fondation Napoléon, napoleon.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Napoleon concluded two treaties at Tilsit in July 1807: with Alexander I on 7 July and with Prussia (Frederick William III) on 9 July.",
+   "They ended the War of the Fourth Coalition after Napoleon's victory at Friedland (14 June 1807).",
+   "After Friedland an armistice was agreed.",
+   "On 25 June 1807 Napoleon and Alexander met on a raft/pavilion in the middle of the Neman, symbolising equality.",
+   "From 28 June to 6 July the three rulers met daily in Tilsit; Napoleon met Queen Louise.",
+   "Talleyrand signed for France (napoleon.org: Russian treaty and Prussian treaty).",
+   "Russia recognised Joseph (Naples), Louis (Holland), Jérôme (Westphalia) and the Confederation of the Rhine; accepted French mediation with the Ottomans; gained Białystok.",
+   "Napoleon accepted Russian mediation with Britain; secretly the two became allies and Russia agreed to join the Continental System.",
+   "Prussia lost about half its territory; lands west of the Elbe went to Westphalia; most Polish lands formed the Duchy of Warsaw under the King of Saxony; Danzig became a free city.",
+   "Prussia's army was limited (43,000) and heavy indemnities were imposed.",
+   "Tilsit was felt as a national humiliation in Prussia and Russia; cooperation broke down in 1810 when the tsar let neutral ships into Russian ports.",
+   "Tilsit cemented Napoleon's control of central Europe with Russia and Prussia aligned against Britain and Sweden; in June 1812 Napoleon crossed the Neman to invade Russia."
+  ],
+  "disagree": "Wikipedia's lead says the Franco-Russian treaty was signed on the raft on the Neman; the Fondation Napoléon dates the raft meeting to 25 June and the signing to 7 July in the town of Tilsit. The armistice is dated 20 June (Fondation close-up), 21 June (Fondation timeline) or, in a local eyewitness diary quoted by the Fondation, 24 June.",
+  "checked": null
+ },
+ "Q3699": {
+  "title": "Revolutions of 1848 in the German states",
+  "y": 1848,
+  "place": "Electorate of Hesse",
+  "paras": [
+   "In March 1848, inspired by the February revolution in Paris that overthrew King Louis Philippe, crowds across the 39 states of the German Confederation demanded civil liberties, an end to censorship, representative government and a united German nation. Their banner was the black, red and gold tricolour. Middle-class liberals, democrats, artisans hit by economic crisis and peasants all took part, though with different aims. Their opponents were the princes and their armies, above all in Prussia and Austria. In the Electorate of Hesse, for example, a People's Commission in the city of Hanau on 9 March pressed demands on the Prince-Elector, according to the Origins article cited here. In Berlin and Vienna the protests turned into street fighting.",
+   "Shaken, the rulers gave way: censorship was lifted, liberal ministers were appointed, and they agreed to an all-German parliament. In Berlin, after fighting between crowds and troops on 18–19 March, King Frederick William IV withdrew the army from the city, promised a constitution and rode through the streets wearing the national colours. A preliminary parliament met in Frankfurt at the end of March, and on 18 May 1848 the elected German National Assembly opened in St Paul's Church in Frankfurt, with the liberal Heinrich von Gagern as its president.",
+   "The Assembly passed a catalogue of basic rights, including equality before the law, freedom of the press and of association and the abolition of class privileges, adopted on 21 December 1848 according to the Bundestag's history. In March 1849 it adopted a constitution for a federal German empire without Austria (the 'small German' solution) with a hereditary emperor and an elected parliament, and it chose the King of Prussia as emperor. In April 1849 Frederick William IV refused a crown offered by a parliament rather than by the princes.",
+   "By then the counter-revolution was under way. In Prussia the king had appointed the conservative Brandenburg ministry in November 1848, sent troops back into Berlin and later imposed a conservative constitution. The Frankfurt Assembly broke up in 1849; a rump of mostly left-wing members met in Stuttgart until it was dispersed, and uprisings to defend the constitution, especially in Baden, ended with the fall of the fortress of Rastatt in the summer of 1849. Many revolutionaries, the 'Forty-Eighters', emigrated, many to the United States. The revolution failed to unite Germany, but its basic rights and its colours influenced the Weimar Constitution and the Basic Law, and black, red and gold became the flag of Germany."
+  ],
+  "sources": [
+   {
+    "url": "https://www.bundestag.de/en/parliament/history/parliamentarism/1848",
+    "title": "Revolution and the National Assembly in Frankfurt am Main 1848/1849",
+    "publisher": "German Bundestag",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://origins.osu.edu/read/march-1848-german-revolutions",
+    "title": "March 1848: The German Revolutions",
+    "publisher": "Origins: Current Events in Historical Perspective (Ohio State University and Miami University)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     7,
+     8,
+     11,
+     16
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/prussian-revolution-1848/",
+    "title": "Prussian Revolution of 1848",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     5,
+     6,
+     9,
+     12
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/european-revolutions-1848/",
+    "title": "European Revolutions of 1848",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "In 1848, inspired by the February revolution in Paris (Louis Philippe's abdication), Germans demanded liberties, an end to censorship, representative government and unification.",
+   "The German Confederation had 39 states; protesters used the black-red-gold tricolour.",
+   "Participants included middle-class liberals, democrats, artisans and peasants with differing aims.",
+   "Origins: on 9 March 1848 the Hanau People's Commission made demands on the Prince-Elector of Hesse.",
+   "In Berlin and Vienna protests turned violent.",
+   "Rulers lifted censorship, appointed liberal ministers and agreed to a national parliament; in Berlin, after fighting, Frederick William IV withdrew troops, promised a constitution and wore the national colours.",
+   "A preliminary parliament met in Frankfurt at the end of March 1848 (Origins: 31 March).",
+   "The National Assembly opened in St Paul's Church on 18 May 1848; Heinrich von Gagern was president (Bundestag).",
+   "Street fighting in Berlin on 18–19 March 1848 (Bundestag; EBSCO: 18 to 22 March).",
+   "Basic rights (equality, press and association freedom, abolition of class privilege) were adopted on 21 December 1848 (Bundestag).",
+   "In March 1849 a constitution for a federal empire without Austria with a hereditary emperor was adopted (Bundestag: 27 March).",
+   "In November 1848 the king appointed the Brandenburg ministry, brought troops back to Berlin, and later imposed a conservative constitution (in force from 1850).",
+   "In April 1849 Frederick William IV refused the imperial crown.",
+   "The Assembly dissolved in 1849; the Stuttgart rump and uprisings in Baden were crushed, ending with Rastatt in summer 1849 (Bundestag); revolutions fell to Prussian, Russian and Habsburg armies (EBSCO).",
+   "Many Forty-Eighters emigrated, especially to the United States.",
+   "The basic rights influenced the Weimar Constitution and the Basic Law; black-red-gold became the flag of Germany."
+  ],
+  "disagree": "The Origins article says the National Assembly disbanded in March 1849; the Bundestag's history says it dissolved itself at the end of May 1849, after which a rump met in Stuttgart. The Bundestag dates the Berlin street fighting to 18–19 March 1848; EBSCO says the fighting lasted from 18 to 22 March.",
+  "checked": null
+ },
+ "Q154981": {
+  "title": "Second Schleswig War",
+  "y": 1864,
+  "place": "German Confederation",
+  "paras": [
+   "The Second Schleswig War of 1864 was fought between Denmark on one side and Prussia and Austria on the other over the duchies of Schleswig, Holstein and Lauenburg, which the Danish king ruled but which were not part of the Kingdom of Denmark; Holstein and Lauenburg belonged to the German Confederation. The population of southern Schleswig and of Holstein and Lauenburg felt German, while northern Schleswig was Danish-speaking, and both Danish and German nationalists claimed Schleswig.",
+   "In 1863 Denmark's governing National Liberals pushed through a constitution, passed on 13 November, that bound Schleswig more closely to the kingdom while leaving out Holstein and Lauenburg, in breach of the international agreements of 1851–1852 that had ended the First Schleswig War. King Frederick VII died on 15 November, and his successor Christian IX signed it under heavy public pressure. Prussia, led by Otto von Bismarck, and Austria demanded in January 1864 that it be withdrawn. When Denmark refused, Prussian and Austrian troops crossed the River Eider into Schleswig on 1 February 1864.",
+   "The Danish army abandoned its main defensive line, the Danevirke, on the evening of 5 February and fell back to Dybbøl and Fredericia. After a long bombardment the Prussians stormed the Dybbøl position on 18 April 1864: according to the Danish National Museum's account, Denmark lost about 4,700 men, including some 3,000 taken prisoner, and Prussia about 1,200. Fredericia was given up at the end of April. A peace conference of the great powers opened in London on 20 April, with an armistice from 12 May, but it collapsed when Denmark rejected a partition of Schleswig, and fighting resumed on 26 June. On 29 June Prussian troops crossed to the island of Als, and the Danes were forced to evacuate it and then the rest of Jutland.",
+   "By the Treaty of Vienna of 30 October 1864 Denmark ceded Schleswig, Holstein and Lauenburg to Prussia and Austria, losing about 40 percent of its territory according to EBSCO's figures. Disputes over the duchies led to the Austro-Prussian War of 1866, after which Prussia took them over, a step on the way to German unification under Prussia in 1871. A plebiscite after the First World War returned northern Schleswig to Denmark in 1920."
+  ],
+  "sources": [
+   {
+    "url": "https://natmus.dk/fileadmin/user_upload/Editor/natmus/Toejhusmuseet/Undervisning/pop-up_1864/inspiration/anden_slesvigske_krig_1864_engelsk.pdf",
+    "title": "The Second Schleswig War 1864: prelude, events and consequences (Inge Adriansen and Jens Ole Christensen)",
+    "publisher": "Sønderborg Castle / Museum of Danish Military History, hosted by the National Museum of Denmark",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/danish-prussian-war/",
+    "title": "Danish-Prussian War",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     8,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The war was fought in 1864 between Denmark and Prussia and Austria over Schleswig, Holstein and Lauenburg.",
+   "Southern Schleswig, Holstein and Lauenburg felt German; northern Schleswig was Danish-speaking; both nationalisms claimed Schleswig.",
+   "In 1863 Denmark adopted a constitution tying Schleswig to the kingdom, excluding Holstein/Lauenburg, in breach of the 1851–1852 agreements.",
+   "The constitution was passed on 13 November 1863; Frederick VII died on 15 November.",
+   "Christian IX signed it under public pressure; Prussia under Bismarck and Austria demanded its withdrawal in January 1864.",
+   "Prussian and Austrian troops crossed the Eider into Schleswig on 1 February 1864.",
+   "The Danes withdrew from the Danevirke (decided 4 February for the following evening) to Dybbøl and Fredericia.",
+   "The Prussians stormed Dybbøl on 18 April 1864 after a bombardment/siege.",
+   "Natmus: Danish losses about 4,700 (about 1,700 dead and wounded, 3,000 prisoners), Prussian about 1,200.",
+   "Fredericia was given up at the end of April.",
+   "A London conference opened on 20 April with an armistice from 12 May; it broke down over the partition of Schleswig; fighting resumed on 26 June (Natmus); EBSCO: British attempt at negotiation failed.",
+   "On 29 June the Prussians crossed to Als; the Danes evacuated it and Jutland was occupied.",
+   "EBSCO: Denmark lost about 40 percent of its territory.",
+   "By the Treaty of Vienna (30 October 1864) Denmark ceded Schleswig, Holstein and Lauenburg; disputes led to the war of 1866, Prussian takeover, unification in 1871; northern Schleswig returned to Denmark after the 1920 plebiscite."
+  ],
+  "disagree": "EBSCO says the Treaty of Vienna gave Schleswig to Prussia and Holstein to Austria; the Danish museum booklet says the three duchies were ceded to the victors. EBSCO's account of the prelude also differs from the museum's on several points (it calls Christian IX Frederick VII's son and says Denmark granted Holstein independence); the museum's account is followed here.",
+  "checked": null
  }
 }
