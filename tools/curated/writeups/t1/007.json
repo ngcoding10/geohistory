@@ -3340,5 +3340,196 @@
   ],
   "disagree": "Date of the khanate's founding: 870 AH (1465-66) in the Tarikh-i Rashidi, accepted in Kazakh historiography; 875 AH (1470-71), Abu'l-Khayr's death, in Russian historiography after Tursun Sultanov. Stated in the text.",
   "checked": null
+ },
+ "cp18-080": {
+  "title": "Portuguese build São Jorge da Mina (Elmina Castle)",
+  "y": 1482,
+  "place": "Elmina, Ghana",
+  "paras": [
+   "Portuguese ships working their way down the West African coast reached what became the Gold Coast around 1471, at a time when the Crown had handed oversight of the Guinea trade to the merchant Fernão Gomes (A. B. Ellis's History of the Gold Coast, 1893, credits João de Santarém and Pedro Escobar and dates the visit to 1470). They found gold already being traded there and named the place A Mina, 'the mine'. The coast was home to many small Fante states, and Elmina lay between two of them, Fetu and Eguafo. When John II came to the throne in 1481, he made the gold trade a royal monopoly again and decided to protect it with a fortress.",
+   "The expedition, under Diogo de Azambuja, carried the fort ready-cut from Portugal, from foundation stones to roof tiles. Wikipedia describes ten caravels and two transports with provisions for 600 men; Ellis gives eight caravels and two transports carrying 500 soldiers and 200 craftsmen and labourers, one of the captains being Bartolomeu Dias. The fleet left in December 1481 (on the 11th according to Ellis, the 12th according to Wikipedia) and arrived on 19 January 1482. Christopher Columbus may have sailed with it; the 1911 Encyclopaedia Britannica calls this probable.",
+   "Through a Portuguese trader who knew the language, Azambuja met the local ruler, recorded as Caramansa and probably Kwamin Ansah, in a formal ceremony. The chief was reluctant to allow a permanent settlement, saying that disputes were bound to follow, but gave way to gifts, promises and a hint that the Portuguese would build anyway. When the workmen began quarrying a rock that the townspeople held sacred to a local god, they were attacked. Ellis says the people were calmed with presents and apologies; Wikipedia says several Portuguese were killed, and that continued opposition led the Portuguese to burn the village. Thanks to the prefabricated materials, the first storey of the tower stood after only twenty days.",
+   "Named São Jorge da Mina, the fort was the first European trading post on the Gulf of Guinea and is the oldest European building still standing in sub-Saharan Africa. Azambuja stayed on as governor, with a garrison Ellis puts at 60 men, and John II added 'Lord of Guinea' to his titles. The fort guarded the gold trade and later became a major station of the Atlantic slave trade. The Dutch took it in 1637, the rest of the Portuguese Gold Coast in 1642, and made it their headquarters; it passed to Britain in 1872."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Elmina_Castle",
+    "title": "Elmina Castle (rev 1386978991, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://archive.org/download/cu31924097557395/cu31924097557395_djvu.txt",
+    "title": "A. B. Ellis, A History of the Gold Coast of West Africa (London, 1893), chapter I, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Gold_Coast",
+    "title": "Gold Coast, Encyclopaedia Britannica (11th ed., 1911), History section",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     7,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Portuguese reached the Gold Coast in 1471, when the Guinea trade was under the oversight of Fernão Gomes (Wikipedia); Ellis: João de Santarém and Pedro Escobar, 1470 (attributed).",
+   "Gold trade already established; place called A Mina (the Mine) for its gold (Wikipedia; Ellis: named La Mina for the quantity of gold).",
+   "Elmina lay between two Fante kingdoms, Fetu and Eguafo; more than twenty kingdom-states on the Gold Coast (Wikipedia).",
+   "In 1481 the newly crowned John II decided to build a fort to protect the trade, again a royal monopoly (Wikipedia; Ellis: accession of John II in 1481, orders for a fort and church).",
+   "Materials sent prefabricated, from foundation stones to roof tiles (Wikipedia; Ellis: all materials shipped from Lisbon).",
+   "Wikipedia: ten caravels and two transports, provisions for six hundred men; Ellis: eight caravels, two transports, 500 soldiers and 200 artificers and labourers; Bartholomew Diaz among the caravel commanders (both attributed).",
+   "Sailed 11 December 1481 (Ellis) / 12 December 1481 (Wikipedia); arrived 19 January 1482 (both). Columbus possibly aboard (Wikipedia: some historians; EB 1911: accompanied probably by Columbus).",
+   "Azambuja used a Portuguese trader living at Elmina as interpreter to arrange the meeting with the chief, Caramansa, probably Kwamin(a) Ansa(h) (Wikipedia; Ellis).",
+   "Formal ceremony; the chief was wary of a permanent settlement (Wikipedia: peace ritual with feast and musicians; Ellis: state reception, chief argued disputes would arise).",
+   "Agreement obtained through gifts, promises and hints of the consequences of refusal (Wikipedia; Ellis).",
+   "Quarrying of a rock held sacred as the home of a god led to an attack (Wikipedia: god of the river Benya; Ellis: sacred habitation of a local god).",
+   "Ellis: natives appeased by presents and apologies; Wikipedia: several Portuguese deaths, village burned after continued opposition (both attributed).",
+   "First storey of the tower completed after twenty days, owing to the prefabricated materials (Wikipedia; Ellis: after twenty days the fort began to assume a formidable appearance).",
+   "Named São Jorge da Mina; first trading post on the Gulf of Guinea, oldest extant European building in sub-Saharan Africa; Azambuja governor (Ellis: garrison of sixty men); John II took the title 'Lord of Guinea' (Wikipedia; Ellis).",
+   "Later a major stop of the Atlantic slave trade; Dutch seized it in 1637 and took the rest of the Portuguese Gold Coast in 1642; Dutch headquarters (EB 1911); passed to the United Kingdom in 1872 (Wikipedia; Ellis: capture July 1637, Portuguese occupation 1482-1642)."
+  ],
+  "disagree": "First Portuguese visit: 1471 under Fernão Gomes (Wikipedia) or 1470, by Santarém and Escobar (Ellis). Size of the 1481 fleet: ten caravels and two transports with provisions for 600 (Wikipedia) or eight caravels and two transports with 500 soldiers and 200 workmen (Ellis). Sailing date 11 (Ellis) or 12 (Wikipedia) December 1481. Outcome of the quarry clash: settled with presents (Ellis) or Portuguese deaths and a burnt village (Wikipedia). All stated in the text.",
+  "checked": null
+ },
+ "Q18578423": {
+  "title": "The voyages of Christopher Columbus",
+  "y": 1492,
+  "place": "Bahamas and Caribbean",
+  "paras": [
+   "Christopher Columbus, a navigator from Genoa, believed he could reach China, Japan and the Spice Islands by sailing west. Portugal's experts rejected the plan around 1484, and a Castilian committee judged that he had greatly underestimated the distance to Asia, which he had. After the fall of Granada in January 1492, King Ferdinand and Queen Isabella were persuaded to back him, finally by the king's clerk Luis de Santángel, and in April 1492 the Capitulations of Santa Fe promised Columbus the title of Admiral of the Ocean Sea and the governorship of any lands he found.",
+   "With the help of the shipowner Martín Alonso Pinzón, who brought in crews from Palos and Moguer, Columbus sailed from Palos on 3 August 1492 with the Santa María, the Pinta and the Niña. Early on 12 October, after a lookout on the Pinta sighted land, he landed on an island in the Bahamas that its people called Guanahani and he named San Salvador, believing he had reached the Indies. He went on to Cuba and Hispaniola. When the Santa María ran aground on Christmas Day 1492 he built a fort, La Navidad, from her timbers and left part of the crew there (39 men according to Wikipedia, 44 according to the 1911 Encyclopaedia Britannica). He returned to Palos on 15 March 1493.",
+   "The second voyage, which left Cádiz in late September 1493, was a colonising expedition of 17 ships and about 1,500 men. Columbus found La Navidad burnt and its garrison dead, founded the settlement of La Isabela on Hispaniola, and explored the Lesser Antilles, Puerto Rico, Jamaica and the south coast of Cuba. In 1495 he rounded up some 1,500 Arawaks in a slave raid. On the third voyage, which sailed on 30 May 1498 with six ships, he reached Trinidad and the coast of South America at the Gulf of Paria. Complaints about his harsh rule of Hispaniola led the monarchs to send Francisco de Bobadilla, who in 1500 had Columbus and his brothers put in chains and shipped to Spain; the monarchs freed him but did not restore his governorship.",
+   "On the fourth voyage, which left Cádiz on 9 May 1502 with four ships, Columbus searched the coasts of Honduras, Nicaragua, Costa Rica and Panama for a passage west. After abandoning two of his worm-eaten ships, in June 1503 he ran the remaining two aground in Jamaica, where he and his men were stranded for a year; he famously secured food from the islanders by predicting the lunar eclipse of 29 February 1504. Rescued on 28 June 1504, he reached Sanlúcar in Spain on 7 November 1504 and died in 1506.",
+   "Columbus believed he had reached the Indies; the year after his death the new lands were named America after Amerigo Vespucci, who realised that they were a separate landmass. His voyages nonetheless opened the Americas to European colonisation, the exchange of plants, animals and diseases between the hemispheres, and transatlantic trade, and are often taken as the beginning of the modern era."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus",
+    "title": "Voyages of Christopher Columbus (rev 1385976559, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14,
+     15,
+     16,
+     17,
+     20,
+     21
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Christopher_Columbus",
+    "title": "Christopher Columbus (rev 1386978322, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     8,
+     10,
+     11,
+     12,
+     14,
+     15,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Columbus,_Christopher",
+    "title": "Columbus, Christopher, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   }
+  ],
+  "claims": [
+   "Columbus, born in Genoa, sought a westward route to India, China, Japan and the Spice Islands (Wikipedia).",
+   "Around 1484 John II's experts rejected the proposal; a committee advised Isabella that he had grossly underestimated the distance (Wikipedia).",
+   "After the conquest of Granada in January 1492, Isabella was convinced by Luis de Santángel (Wikipedia).",
+   "April 1492 Capitulations of Santa Fe: Admiral of the Ocean Sea, viceroy and governor of new lands (Wikipedia; EB: agreement of 17 April 1492).",
+   "Martín Alonso Pinzón enlisted crews from Palos, Moguer and the district (Wikipedia; EB: Palos 'magnates' Martin Alonso Pinzon and Vicente Yañez).",
+   "Departed Palos on 3 August 1492 with three ships, Santa María, Pinta, Niña (Wikipedia; EB).",
+   "Land sighted from the Pinta; landing on the morning of 12 October (Wikipedia; EB: 12 October 1492, Rodrigo de Triana).",
+   "Island called Guanahani by its inhabitants, named San Salvador, in the Bahamas; Columbus thought he was in the Indies (Wikipedia; EB).",
+   "Explored Cuba and Hispaniola (Wikipedia; EB).",
+   "Santa María ran aground and was abandoned on 25 December 1492 (Wikipedia; EB); fort La Navidad built from its materials (EB); Wikipedia: 39 men left; EB: 44 Europeans (attributed).",
+   "Returned to Palos on 15 March 1493 (Wikipedia, Christopher Columbus; EB).",
+   "Second voyage sailed from Cádiz in late September 1493 (24 September: Wikipedia, Christopher Columbus, and EB; 25 September: Wikipedia, Voyages) with 17 ships (Wikipedia: two carracks and 15 caravels; EB: three carracks and fourteen caravels) and nearly 1,500 men (Wikipedia, Christopher Columbus; EB: over 1500).",
+   "La Navidad found burnt and its men killed; La Isabela founded (Wikipedia; EB: fort burned, colony dispersed; city of Isabella).",
+   "Second voyage explored the Lesser Antilles, Puerto Rico, Jamaica and Cuba (Wikipedia; EB); February 1495 about 1,500 Arawaks (Taíno) rounded up in a slave raid (Wikipedia, both articles).",
+   "Third voyage sailed 30 May 1498 with six ships (Wikipedia; EB).",
+   "Reached Trinidad (31 July) and the mainland at the Gulf of Paria (Wikipedia: landed 5 August; EB: saw mainland 1 August).",
+   "Bobadilla sent to investigate; in 1500 Columbus and his brothers put in irons/chains and shipped to Spain (Wikipedia, Christopher Columbus; EB); sovereigns indignant, Ovando appointed governor instead (Wikipedia, Christopher Columbus; EB: repudiated Bobadilla).",
+   "Fourth voyage left Cádiz 9 May 1502 with four ships, searching for a strait; coasts of Honduras, Nicaragua, Costa Rica, Panama (Wikipedia; EB: four caravels; one caravel abandoned at Belem and a second at Puerto Bello, worm-eaten ships).",
+   "Ships grounded in Jamaica in June 1503 (EB: 23 June 1503; Wikipedia: St Ann's Bay, 25 June); stranded about a year; eclipse of 29 February 1504 predicted (Wikipedia; EB).",
+   "Rescued 28 June 1504; reached Sanlúcar 7 November 1504 (Wikipedia, Christopher Columbus; EB); died 1506 (Wikipedia).",
+   "New World named America in 1507 after Amerigo Vespucci; voyages led to colonisation, biological exchange, trans-Atlantic trade; often cited as the beginning of the modern era (Wikipedia, Voyages); Columbus's initial belief that he had reached the Indies (Wikipedia)."
+  ],
+  "disagree": "Garrison left at La Navidad: 39 (Wikipedia) or 44 (Britannica 1911), stated in the text. Minor date differences (second voyage 24 or 25 September 1493; Jamaica 23 or 25 June 1503) avoided by giving the month.",
+  "checked": null
  }
 }
