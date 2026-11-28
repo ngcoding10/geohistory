@@ -87,6 +87,7 @@ async function init() {
   setupPanel();
   setupTools();
   new Search($('#q'), $('#results'), chooseSearch);
+  watchDoor($('#q'));
   document.addEventListener('keydown', globalKeys);
   showYearInput();
   updateSlider();
@@ -424,6 +425,50 @@ function counts(events) {
 
 const listOpts = () => ({ onOpen: (e) => openEvent(e.i, { fly: true }), isToday, modernNames });
 
+// ---------------------------------------------------------------- reader suggestions
+// A closed "Suggest something we missed" box at the bottom of every panel. Opening it loads js/suggest.js, which
+// loads the Firebase code (js/cloud.js) only then: the map itself never downloads any of it.
+function subjectOf(s) {
+  const id = { polity: s.name, empire: s.id, us: s.id, colony: s.st, modern: s.iso }[s.kind];
+  return id ? { kind: s.kind, id: String(id), name: s.name || '' } : null;
+}
+function suggestBox(ctx) {
+  const slot = h('div.sg-slot');
+  return h('details.suggest', { ontoggle: (ev) => {
+    if (!ev.target.open || slot.firstChild) return;
+    slot.append(h('p.note', null, 'Loading the form…'));
+    import('./suggest.js').then((m) => m.mountSuggest(slot, ctx))
+      .catch(() => slot.replaceChildren(h('p.empty', null, 'The form did not load. Check your connection, close this and try again.')));
+  } }, h('summary', null, 'Suggest something we missed'), slot);
+}
+
+// The owner's way in to admin.html: type "lavafoundry" three times in the search box (in one go, or as three
+// separate entries within 30 s), then triple-click "The" in the year heading. This is only a door, not a lock:
+// anyone can read it here. What protects the suggestions is the admin page's Google sign-in and the server's
+// allow-list of account ids (geoAdminSuggestions in the backend).
+const DOOR = 'lavafoundry';
+const door = { hits: [], was: false, armedUntil: 0, clicks: [] };
+function watchDoor(input) {
+  input.addEventListener('input', () => {
+    const v = input.value.toLowerCase().replace(/[^a-z]/g, '');
+    const now = Date.now();
+    if (v.split(DOOR).length - 1 >= 3) door.armedUntil = now + 120_000;
+    const is = v === DOOR;
+    if (is && !door.was) {
+      door.hits = [...door.hits.filter((t) => now - t < 30_000), now];
+      if (door.hits.length >= 3) { door.armedUntil = now + 120_000; door.hits = []; }
+    }
+    door.was = is;
+  });
+}
+function yearH1(y) {
+  return h('h1', null, h('span.the', { onclick: () => {
+    const now = Date.now();
+    door.clicks = [...door.clicks.filter((t) => now - t < 900), now];
+    if (door.clicks.length >= 3 && now < door.armedUntil) { door.armedUntil = 0; location.assign('admin.html'); }
+  } }, 'The'), ` world in ${formatYear(y)}`);
+}
+
 /** The opening of the year panel: the year's own headline (the curated defining event of a famous year, else its
  *  best-ranked event that is not a birth, death or long period) and the next few events dated in that same year.
  *  A year with no event of its own says so; the overview below is never passed off as the year. */
@@ -446,14 +491,14 @@ function yearHead(y, ranked) {
 async function renderYear() {
   const token = state.token;
   const y = state.year;
-  setBody(h('p.kicker', null, 'Year'), h('h1', null, `The world in ${formatYear(y)}`), skeleton());
+  setBody(h('p.kicker', null, 'Year'), yearH1(y), skeleton());
   let data;
   try {
     data = await eventsBetween(y, y);
   } catch (e) {
     console.warn(e);
     if (token !== state.token) return;
-    setBody(h('h1', null, `The world in ${formatYear(y)}`),
+    setBody(yearH1(y),
       h('p.empty', null, 'The events for this year did not load.'),
       h('button.more', { type: 'button', onclick: () => render() }, 'Try again'));
     return;
@@ -464,7 +509,7 @@ async function renderYear() {
   await updateWar(y, data);
   if (token !== state.token || state.view !== 'year' || state.sel) return;
   if (mapOk) map.setEvents(shown.filter((e) => !state.warIds.has(e.i)));
-  const nodes = [h('p.kicker', null, 'Year'), h('h1', null, `The world in ${formatYear(y)}`)];
+  const nodes = [h('p.kicker', null, 'Year'), yearH1(y)];
   if (state.month) nodes.push(h('p.lead', null, `Highlighting ${dayLabel(state.month, state.day)}.`));
   nodes.push(h('p.note', null, `${all.length} ${all.length === 1 ? 'event' : 'events'} recorded · `,
     state.snap ? (state.snap.src === 'clio' ? `map borders in ${formatYear(state.year)}, approximate` : state.snap.cs ? `map borders on 1 July ${state.snap.y}` : `map borders as of ${formatYear(state.snap.y)}`) : 'no border map this early'));
@@ -540,6 +585,7 @@ async function renderYear() {
       if (ch.gone.length) nodes.push(h('h3', null, 'Gone from the map'), pills(ch.gone, (n) => selectGone(n, ch.since)));
     }
   }
+  nodes.push(suggestBox({ year: y, dateLabel: state.month ? formatDate(y, state.month, state.day) : formatYear(y), about: `The world in ${formatYear(y)}`, subject: null }));
   setBody(nodes);
 }
 
@@ -890,6 +936,7 @@ async function renderSelection() {
       h('p.note', null, state.snap && !state.snap.cs ? `The map shows ${formatYear(state.snap.y)} borders; these dated changes happened within 30 years of ${formatYear(y)}.` : `Within 30 years of ${formatYear(y)}.`),
       h('ul.changes-list', null, chg.map(changeRow)));
   }
+  nodes.push(suggestBox({ year: y, dateLabel: state.month ? formatDate(y, state.month, state.day) : formatYear(y), about: s.name, subject: subjectOf(s) }));
   setBody(nodes);
 }
 
@@ -1330,6 +1377,7 @@ async function renderEvent() {
     ? ' Written for GeoHistory from general knowledge. Its date could not be confirmed in Wikidata.'
     : ' Written for GeoHistory; its year matches the Wikidata item of the linked article.'));
   if (e.lo != null) nodes.push(h('p', null, h('button.more', { type: 'button', onclick: () => mapOk && map.flyTo(e.lo, e.la, 6) }, 'Show on map')));
+  nodes.push(suggestBox({ year: e.y, dateLabel: formatDate(e.y, e.m, e.dd), about: e.l, subject: { kind: 'event', id: e.i, name: e.l } }));
   setBody(nodes);
   els.body.scrollTop = 0;
 }

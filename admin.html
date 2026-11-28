@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="build" content="53611ae922">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Reader suggestions · GeoHistory</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <link rel="preload" href="fonts/web/alegreya-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="importmap">
+{
+ "imports": {
+  "./js/admin.js": "./js/admin.js?v=b426e361ef",
+  "./js/cloud.js": "./js/cloud.js?v=5862be3b31",
+  "./js/config.js": "./js/config.js?v=eca19fa497",
+  "./js/context.js": "./js/context.js?v=e25f9f1548",
+  "./js/core.js": "./js/core.js?v=067514af01",
+  "./js/data-version.js": "./js/data-version.js?v=3fb51bb3d7",
+  "./js/data.js": "./js/data.js?v=2aeec11306",
+  "./js/flagfill.js": "./js/flagfill.js?v=a7fd037979",
+  "./js/flags.js": "./js/flags.js?v=af2176a628",
+  "./js/fuzzy.js": "./js/fuzzy.js?v=1aa6d4655d",
+  "./js/geo.js": "./js/geo.js?v=f016475afd",
+  "./js/groups.js": "./js/groups.js?v=3d2cf08998",
+  "./js/key.js": "./js/key.js?v=4e173ffd37",
+  "./js/main.js": "./js/main.js?v=83006ea5d1",
+  "./js/map.js": "./js/map.js?v=b68bb58c28",
+  "./js/prepare.js": "./js/prepare.js?v=e5e27d2fa7",
+  "./js/search.js": "./js/search.js?v=cfe92c2124",
+  "./js/store.js": "./js/store.js?v=7581abfcbe",
+  "./js/suggest.js": "./js/suggest.js?v=da53049ff1",
+  "./js/travel.js": "./js/travel.js?v=26f966973c",
+  "./js/types.js": "./js/types.js?v=cbfdcca893",
+  "./js/ui.js": "./js/ui.js?v=6f04cca640",
+  "./js/year.js": "./js/year.js?v=5484306e43"
+ }
+}
+  </script>
+  <link rel="modulepreload" href="js/admin.js?v=b426e361ef">
+  <link rel="stylesheet" href="css/admin.css?v=c5b54cb545">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="./"><img src="assets/icon.svg" alt="" width="24" height="24">GeoHistory</a>
+    <span class="crumb">Reader suggestions</span>
+    <div id="who" class="who" hidden><span id="whoName"></span><button id="signOut" class="btn quiet" type="button">Sign out</button></div>
+  </header>
+
+  <main class="wrap">
+    <section id="gate" class="gate" aria-labelledby="gateTitle">
+      <h1 id="gateTitle">Reader suggestions</h1>
+      <p class="lead">What readers think the map is missing. Only accounts on GeoHistory's admin list can open them.</p>
+      <button id="signIn" class="btn primary" type="button" disabled>Sign in with Google</button>
+      <p id="gateStatus" class="status" role="status" aria-live="polite">Loading…</p>
+    </section>
+
+    <section id="denied" class="gate" hidden aria-labelledby="deniedTitle">
+      <h1 id="deniedTitle">Not an admin</h1>
+      <p class="lead">Not an admin. Your account id is <code id="myUid"></code></p>
+      <p><button id="copyUid" class="btn" type="button">Copy the id</button> <span id="copied" class="status" role="status" aria-live="polite"></span></p>
+      <p class="note">An account id is not a secret. To let this account in, its id goes on the admin list in the backend (<code>functions/admins.json</code>).</p>
+    </section>
+
+    <section id="app" hidden aria-labelledby="appTitle">
+      <div class="head">
+        <h1 id="appTitle">Reader suggestions</h1>
+        <p id="countLine" class="count-line" aria-live="polite"></p>
+      </div>
+      <form id="filters" class="filters" role="search" aria-label="Filter suggestions">
+        <div class="seg" role="group" aria-label="Status" id="statusSeg"></div>
+        <div class="fl">
+          <label for="yFrom">From year</label>
+          <input id="yFrom" type="text" inputmode="text" placeholder="e.g. 1500" autocomplete="off">
+        </div>
+        <div class="fl">
+          <label for="yTo">To year</label>
+          <input id="yTo" type="text" inputmode="text" placeholder="e.g. 44 BC" autocomplete="off">
+        </div>
+        <div class="fl grow">
+          <label for="q">Search</label>
+          <input id="q" type="search" placeholder="Words in the text, place, note or email" autocomplete="off">
+        </div>
+      </form>
+      <p id="listStatus" class="status" role="status" aria-live="polite"></p>
+      <ol id="list" class="list"></ol>
+      <button id="more" class="btn" type="button" hidden>Load more</button>
+    </section>
+  </main>
+  <script type="module" src="js/admin.js?v=b426e361ef"></script>
+</body>
+</html>

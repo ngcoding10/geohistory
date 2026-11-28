@@ -17,7 +17,8 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PAGES = ['index.html', '404.html', 'privacy.html', 'terms.html']
+PAGES = ['index.html', '404.html', 'privacy.html', 'terms.html', 'admin.html']
+MODULE_PAGES = ('index.html', 'admin.html')   # pages whose ES modules are versioned by an import map
 
 
 def fhash(rel):
@@ -56,7 +57,7 @@ def main(check=False):
             continue
         with open(p, encoding='utf-8') as f:
             old = f.read()
-        new = stamp(old, modules if page == 'index.html' else None)
+        new = stamp(old, modules if page in MODULE_PAGES else None)
         if new != old:
             stale.append(page)
             if not check:

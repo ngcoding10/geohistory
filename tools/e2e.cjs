@@ -11,7 +11,7 @@ const PORT = 8765 + Math.floor(Math.random() * 200);
 const BASE = `http://127.0.0.1:${PORT}/`;
 const SHOTS = path.join(__dirname, 'screens');
 let failures = 0;
-const ONLY = process.env.E2E_ONLY || '';   // 'phone': only the phone, sheet, fill fallback and asset checks
+const ONLY = process.env.E2E_ONLY || '';   // 'phone': only the phone, sheet, fill fallback and asset checks; 'suggest': only the suggestion form and admin page
 const crypto = require('crypto');
 const ok = (cond, msg) => { console.log((cond ? 'PASS ' : 'FAIL ') + msg); if (!cond) failures++; };
 
@@ -692,6 +692,228 @@ async function waitEvents(page) {
     await fCtx.close();
 
     }   // end of the desktop checks
+    // ---------------- reader suggestions and the hidden admin page (E2E_ONLY=suggest runs only these) ----------------
+    // Firebase is replaced by small fake modules served in place of Google's CDN files, so the real js/cloud.js and
+    // js/core.js run, and the two callables answer like the backend does (see functions/src/geo.js in backend-combination).
+    if (!ONLY || ONLY === 'suggest') {
+      const FAKE_SDK = {
+        'firebase-app.js': 'export function initializeApp(o, name) { return { options: o, name: name || "[DEFAULT]" }; }',
+        'firebase-app-check.js': 'export function initializeAppCheck() { window.__fake.appCheck = true; return {}; } export class ReCaptchaEnterpriseProvider { constructor(k) { window.__fake.siteKey = k; } }',
+        'firebase-firestore.js': 'export const initializeFirestore = () => ({}); export const getFirestore = () => ({}); export const persistentLocalCache = () => ({}); export const persistentMultipleTabManager = () => ({}); export const connectFirestoreEmulator = () => {};',
+        'firebase-functions.js': 'export const getFunctions = () => ({}); export const connectFunctionsEmulator = () => {}; export function httpsCallable(_f, name) { return async (data) => ({ data: await window.__fake.call(name, data) }); }',
+        'firebase-auth.js': `const L = new Set();
+          const wrap = (u) => u && { uid: u.uid, displayName: u.name || '', email: u.email || '', photoURL: '', emailVerified: true, providerData: [{ providerId: 'google.com' }] };
+          const tell = () => { for (const cb of [...L]) cb(wrap(window.__fake.user)); };
+          export const getAuth = () => ({});
+          export function onAuthStateChanged(_a, cb) { L.add(cb); setTimeout(() => cb(wrap(window.__fake.user)), 0); return () => L.delete(cb); }
+          export const getRedirectResult = async () => null;
+          export class GoogleAuthProvider { setCustomParameters() {} }
+          export async function signInWithPopup() { window.__fake.user = window.__fake.nextUser; tell(); return { user: wrap(window.__fake.user) }; }
+          export async function signInWithRedirect() {}
+          export async function signOut() { window.__fake.user = null; tell(); }
+          export const connectAuthEmulator = () => {};`,
+      };
+      const fakeInit = () => {
+        const err = (code, message) => Object.assign(new Error(message), { code: 'functions/' + code });
+        const day = 86400e3, t0 = Date.parse('2026-11-20T10:00:00Z');
+        window.__fake = {
+          calls: [], user: null, fail: null, admins: ['ownerUid12345'], nextUser: { uid: 'readerUid987', email: 'reader@example.com' },
+          store: [
+            { id: 'aaaaaaaaaaaa1', text: 'The Battle of Long Island (27 August 1776) is missing from the year.', place: 'Brooklyn', date: '27 August 1776', year: 1776, subject: { kind: 'polity', id: 'United States', name: 'United States' }, sourceUrl: 'https://en.wikipedia.org/wiki/Battle_of_Long_Island', email: 'reader@example.com', status: 'new', note: '', createdAt: t0 + 3 * day },
+            { id: 'aaaaaaaaaaaa2', text: 'Tupac Amaru II led a great revolt in Peru.', place: 'Cusco', date: '1780', year: 1780, subject: null, sourceUrl: '', email: '', status: 'added', note: 'Added 28 Nov.', createdAt: t0 + 2 * day },
+            { id: 'aaaaaaaaaaaa3', text: 'The Library of Alexandria burned in 48 BC.', place: 'Alexandria', date: '48 BC', year: -48, subject: { kind: 'event', id: 'Q435', name: 'Library of Alexandria' }, sourceUrl: '', email: '', status: 'reviewing', note: '', createdAt: t0 + day },
+          ],
+          async call(name, data) {
+            this.calls.push({ name, data: JSON.parse(JSON.stringify(data)) });
+            if (name === 'geoSuggest') { if (this.fail) throw err('resource-exhausted', this.fail); return { ok: true }; }
+            if (!this.user) throw err('unauthenticated', 'Sign in first.');
+            if (!this.admins.includes(this.user.uid)) throw err('permission-denied', 'Not an admin.');
+            const s = this.store.find((x) => x.id === data.id);
+            if (data.action === 'update') { if (data.status) s.status = data.status; if (data.note !== undefined) s.note = data.note; return { ok: true, id: s.id, status: s.status, note: s.note }; }
+            if (data.action === 'delete') { this.store = this.store.filter((x) => x !== s); return { ok: true, id: data.id }; }
+            const q = (data.q || '').toLowerCase();
+            const items = this.store.filter((x) => (!data.status || x.status === data.status) && (data.yearFrom == null || x.year >= data.yearFrom)
+              && (data.yearTo == null || x.year <= data.yearTo) && (!q || (x.text + ' ' + x.place).toLowerCase().includes(q))).sort((a, b) => b.createdAt - a.createdAt);
+            const counts = { all: this.store.length };
+            for (const k of ['new', 'reviewing', 'added', 'rejected']) counts[k] = this.store.filter((x) => x.status === k).length;
+            return { items: JSON.parse(JSON.stringify(items)), cursor: null, counts };
+          },
+        };
+      };
+      const sctx = await browser.newContext({ viewport: { width: 1280, height: 800 }, deviceScaleFactor: 1 });
+      await sctx.addInitScript(fakeInit);
+      await sctx.route('https://www.gstatic.com/firebasejs/**', (r) => r.fulfill({ status: 200, contentType: 'application/javascript',
+        headers: { 'Access-Control-Allow-Origin': '*' }, body: FAKE_SDK[r.request().url().split('/').pop()] || 'export {};' }));
+      const sp = await sctx.newPage();
+      const sErr = [], reqs = [];
+      sp.on('console', (m) => { if (m.type() === 'error') sErr.push(m.text()); });
+      sp.on('pageerror', (e) => sErr.push(String(e)));
+      sp.on('request', (r) => reqs.push(r.url()));
+      const cloudish = () => reqs.filter((u) => /\/js\/(cloud|core|config|suggest|admin)\.js|gstatic\.com/.test(u));
+      const fake = (fn) => sp.evaluate(fn);
+      await sp.goto(BASE + '?y=1776');
+      await waitH1(sp, 'The world in 1776');
+      await waitEvents(sp);
+      await sp.waitForSelector('#panelBody > details.suggest', { timeout: 60000 });
+      const last = await sp.evaluate(() => document.querySelector('#panelBody').lastElementChild?.matches('details.suggest:not([open])'));
+      ok(last && cloudish().length === 0, `the 1776 panel ends with a closed "Suggest something we missed" box, and the page has loaded no Firebase code (${cloudish().length} requests)`);
+
+      // open it: the form, prefilled with the year, and only now the Firebase code
+      await sp.click('#panelBody details.suggest > summary');
+      await sp.waitForSelector('#panelBody .sg-form', { timeout: 20000 });
+      const f0 = await sp.evaluate(() => {
+        const f = document.querySelector('#panelBody .sg-form');
+        const hp = f.querySelector('.sg-hp'), r = hp.getBoundingClientRect();
+        return { date: f.querySelector('input[name=date]').value, about: f.querySelector('.sg-about').textContent, labels: [...f.querySelectorAll('label')].map((l) => l.textContent),
+          hpHidden: hp.getAttribute('aria-hidden') === 'true' && r.right < 0 && f.querySelector('input[name=website]').tabIndex === -1, privacy: f.querySelector('.sg-privacy').textContent };
+      });
+      ok(f0.date === '1776' && /The world in 1776/.test(f0.about), `the form is prefilled with the year shown (${f0.date}) and says what it is about ("${f0.about}")`);
+      ok(f0.labels.some((l) => /What happened\? \(required\)/.test(l)) && f0.labels.filter((l) => /\(optional\)/.test(l)).length === 4 && f0.labels.some((l) => /email.*\(optional\)/i.test(l)),
+        'it has the required "what happened" field and four optional ones (place, date, source link, email marked optional)');
+      ok(f0.hpHidden && /address on the internet is not stored/.test(f0.privacy) && /Privacy policy/.test(f0.privacy), 'the honeypot field is off screen and out of the tab order; a plain privacy note sits above the button');
+      await sp.waitForFunction(() => window.__fake && performance.getEntriesByType('resource').some((r) => /gstatic\.com\/firebasejs/.test(r.name)), null, { timeout: 20000 }).catch(() => {});
+      ok(cloudish().some((u) => /suggest\.js/.test(u)) && cloudish().some((u) => /cloud\.js/.test(u)) && cloudish().some((u) => /gstatic\.com\/firebasejs/.test(u)), 'opening the form loads js/suggest.js, then js/cloud.js and the Firebase SDK');
+
+      // validation: nothing is sent while it is wrong
+      const sg = (sel) => sp.locator('#panelBody .sg-form ' + sel);
+      await sg('.sg-send').click();
+      const e1 = await sg('.sg-err:not([hidden])').allInnerTexts();
+      await sg('textarea').fill('too short');
+      await sg('.sg-send').click();
+      const e2 = await sg('.sg-err:not([hidden])').allInnerTexts();
+      await sg('textarea').fill('  The Battle of Long Island, fought on 27 August 1776, is not on the map.  ');
+      await sg('input[name=sourceUrl]').fill('not a link');
+      await sg('input[name=email]').fill('nobody@');
+      await sg('.sg-send').click();
+      const e3 = await sg('.sg-err:not([hidden])').allInnerTexts();
+      const sent0 = await fake(() => window.__fake.calls.filter((c) => c.name === 'geoSuggest').length);
+      ok(/at least 10 characters/.test(e1.join()) && /at least 10 characters/.test(e2.join()) && e3.some((t) => /web address/.test(t)) && e3.some((t) => /email address/.test(t)) && sent0 === 0,
+        `empty, too short, a bad link and a bad email are each refused before sending (${e3.length} messages on the last try, ${sent0} sent)`);
+      // a good one is sent, once, and thanked
+      await sg('input[name=sourceUrl]').fill('https://en.wikipedia.org/wiki/Battle_of_Long_Island');
+      await sg('input[name=email]').fill('');
+      await sg('input[name=place]').fill('Brooklyn');
+      await sp.screenshot({ path: path.join(SHOTS, 'suggest-form.png') });
+      await sg('.sg-send').click();
+      await sp.waitForSelector('#panelBody .sg-done', { timeout: 20000 });
+      const c1 = await fake(() => window.__fake.calls.filter((c) => c.name === 'geoSuggest'));
+      const d1 = c1[0]?.data || {};
+      ok(c1.length === 1 && d1.text === 'The Battle of Long Island, fought on 27 August 1776, is not on the map.' && d1.year === 1776 && d1.subject === null && d1.place === 'Brooklyn'
+        && d1.sourceUrl === 'https://en.wikipedia.org/wiki/Battle_of_Long_Island' && d1.hp === '' && d1.email === '' && d1.ms >= 3000,
+      `a good suggestion goes to geoSuggest once, with the year, place, link, an empty honeypot and the time on the form (${d1.ms} ms)`);
+      ok(/Thank you\. Your suggestion has been sent\./.test(await sp.locator('#panelBody .sg-done').innerText()), 'the reader sees a thank-you message');
+      // a refusal from the server is shown, and the form stays filled
+      await sp.click('#panelBody .sg-done button');
+      await fake(() => { window.__fake.fail = 'We cannot take more suggestions from here today. Thank you, and please try again tomorrow.'; });
+      await sg('textarea').fill('Another missing event, the Siege of Boston ended in March.');
+      await sg('.sg-send').click();
+      await sp.waitForSelector('#panelBody .sg-status.err', { timeout: 20000 });
+      ok(/try again tomorrow/.test(await sg('.sg-status').innerText()) && (await sg('textarea').inputValue()).startsWith('Another'), 'a refusal from the server (daily limit) is shown and what was typed is kept');
+      await fake(() => { window.__fake.fail = null; });
+
+      // a state panel and an event panel send their subject
+      for (const [url, h1t, kind, id] of [['?y=1700&c=' + encodeURIComponent('Qing Dynasty'), 'Qing Dynasty', 'polity', 'Qing Dynasty'],
+        ['?y=1776&e=Q127912', null, 'event', 'Q127912']]) {
+        await sp.goto(BASE + url);
+        if (h1t) await waitH1(sp, h1t); else await sp.waitForFunction(() => /Declaration/.test(document.querySelector('#panelBody h1')?.textContent || ''), null, { timeout: 60000 });
+        await sp.waitForSelector('#panelBody > details.suggest', { timeout: 60000 });
+        await sp.click('#panelBody details.suggest > summary');
+        await sp.waitForSelector('#panelBody .sg-form', { timeout: 20000 });
+        const about = await sg('.sg-about').innerText();
+        const date = await sg('input[name=date]').inputValue();
+        await sg('textarea').fill(`Something missing about ${id}, written by the end-to-end test.`);
+        await sg('.sg-send').click();
+        await sp.waitForSelector('#panelBody .sg-done', { timeout: 20000 });
+        const d = (await fake(() => window.__fake.calls.filter((c) => c.name === 'geoSuggest'))).at(-1).data;
+        ok(d.subject?.kind === kind && d.subject?.id === id && (kind === 'event' ? /4 July 1776/.test(date) && d.year === 1776 : date === '1700' && d.year === 1700),
+          `the ${kind} panel's form is about "${about.replace(/^About: /, '')}" and sends subject ${d.subject?.kind}:${d.subject?.id}, date "${date}"`);
+      }
+
+      // the hidden door: "lavafoundry" three times in the search box, then a triple-click on "The"
+      await sp.goto(BASE + '?y=1776');
+      await waitH1(sp, 'The world in 1776');
+      await sp.locator('#panelBody h1 .the').click({ clickCount: 3 });
+      await sp.waitForTimeout(800);
+      ok(!/admin\.html/.test(sp.url()), 'a triple-click on "The" does nothing until the search box has been given the word');
+      for (let i = 0; i < 3; i++) { await sp.fill('#q', ''); await sp.locator('#q').pressSequentially('lavafoundry', { delay: 5 }); }
+      await sp.fill('#q', '');
+      await sp.locator('#panelBody h1 .the').click({ clickCount: 3 });
+      await sp.waitForURL(/admin\.html$/, { timeout: 15000 }).catch(() => {});
+      ok(/admin\.html$/.test(sp.url()), 'three separate "lavafoundry" entries, then a triple-click on "The", open admin.html');
+      await sp.goto(BASE + '?y=1914');
+      await waitH1(sp, 'The world in 1914');
+      await sp.fill('#q', 'lavafoundrylavafoundrylavafoundry');
+      await sp.locator('#panelBody h1 .the').click({ clickCount: 3 });
+      await sp.waitForURL(/admin\.html$/, { timeout: 15000 }).catch(() => {});
+      ok(/admin\.html$/.test(sp.url()), '"lavafoundrylavafoundrylavafoundry" typed in one go also arms it');
+
+      // admin.html: a signed-in account that is not on the list sees only its own id
+      await sp.waitForFunction(() => !document.querySelector('#signIn').disabled, null, { timeout: 20000 });
+      await sp.click('#signIn');
+      await sp.waitForSelector('#denied:not([hidden])', { timeout: 20000 });
+      const den = await sp.locator('#denied').innerText();
+      ok(/Not an admin\. Your account id is readerUid987/.test(den) && await sp.locator('#app').isHidden() && !(await sp.locator('.card').count()),
+        'a signed-in account that is not an admin sees "Not an admin. Your account id is readerUid987" and no suggestions');
+      // the owner: list, counts, filters, status, note, map link
+      await fake(() => { window.__fake.nextUser = { uid: 'ownerUid12345', email: 'owner@example.com' }; });
+      await sp.click('#signOut');
+      await sp.waitForSelector('#gate:not([hidden])');
+      await sp.click('#signIn');
+      await sp.waitForSelector('#app:not([hidden]) .card', { timeout: 20000 });
+      const cards = await sp.locator('.card .txt').allInnerTexts();
+      const cl = await sp.locator('#countLine').innerText();
+      ok(cards.length === 3 && /Long Island/.test(cards[0]) && /Alexandria/.test(cards[2]) && /3 in all · 1 new · 1 reviewing · 1 added · 0 rejected/.test(cl), `the owner sees every suggestion, newest first, with counts ("${cl}")`);
+      const first = sp.locator('.card').first();
+      const href = await first.locator('a.map').getAttribute('href');
+      const src = await first.locator('dd a[href^="https://en.wikipedia"]').count();
+      const mail = await first.locator('a[href="mailto:reader@example.com"]').count();
+      ok(href === './?y=1776&c=United+States' && src === 1 && mail === 1, `each item shows its links: source, reply email, and "View on map" (${href})`);
+      const ev = await sp.locator('.card').nth(2).locator('a.map').getAttribute('href');
+      ok(ev === './?y=-48&e=Q435', `an event suggestion's map link opens that event (${ev})`);
+      await sp.click('#statusSeg button[data-status="added"]');
+      await sp.waitForFunction(() => document.querySelectorAll('.card').length === 1, null, { timeout: 10000 }).catch(() => {});
+      const added = await sp.locator('.card .txt').allInnerTexts();
+      await sp.click('#statusSeg button[data-status="all"]');
+      await sp.waitForFunction(() => document.querySelectorAll('.card').length === 3, null, { timeout: 10000 }).catch(() => {});
+      await sp.fill('#yFrom', '1700'); await sp.fill('#yTo', '1800');
+      await sp.waitForFunction(() => document.querySelectorAll('.card').length === 2, null, { timeout: 10000 }).catch(() => {});
+      const ranged = await sp.locator('.card').count();
+      await sp.fill('#yFrom', ''); await sp.fill('#yTo', ''); await sp.fill('#q', 'cusco');
+      await sp.waitForFunction(() => document.querySelectorAll('.card').length === 1, null, { timeout: 10000 }).catch(() => {});
+      const found = await sp.locator('.card .txt').allInnerTexts();
+      ok(added.length === 1 && /Tupac/.test(added[0]) && ranged === 2 && found.length === 1 && /Tupac/.test(found[0]), 'filters work: by status (Added), by year range (1700-1800: 2) and by text ("cusco")');
+      await sp.fill('#q', '');
+      await sp.waitForFunction(() => document.querySelectorAll('.card').length === 3, null, { timeout: 10000 }).catch(() => {});
+      await first.locator('.seg.small button', { hasText: 'Reviewing' }).click();
+      await sp.waitForFunction(() => document.querySelector('.card .pill')?.textContent === 'Reviewing', null, { timeout: 10000 }).catch(() => {});
+      await first.locator('textarea').fill('Check the date against two sources.');
+      await first.locator('button', { hasText: 'Save note' }).click();
+      await first.locator('.notebox .status', { hasText: 'Saved' }).waitFor({ timeout: 10000 }).catch(() => {});
+      const st = await fake(() => window.__fake.store.find((x) => x.id === 'aaaaaaaaaaaa1'));
+      const cl2 = await sp.locator('#countLine').innerText();
+      ok(st.status === 'reviewing' && st.note === 'Check the date against two sources.' && /0 new · 2 reviewing/.test(cl2), `status buttons and the note are saved through the admin function (counts now "${cl2}")`);
+      await sp.screenshot({ path: path.join(SHOTS, 'admin-desktop.png'), fullPage: true });
+      ok(sErr.length === 0, `no console errors in the suggestion and admin checks${sErr.length ? ': ' + sErr.slice(0, 3).join(' | ') : ''}`);
+
+      // phones: the admin page and the form fit a 360 px screen
+      await sp.setViewportSize({ width: 360, height: 740 });
+      await sp.waitForTimeout(300);
+      const aw = await sp.evaluate(() => [document.documentElement.scrollWidth, window.innerWidth]);
+      ok(aw[0] <= aw[1] && await sp.locator('.card').first().isVisible(), `admin.html fits a 360 px phone with no sideways scroll (${aw.join('/')})`);
+      await sp.screenshot({ path: path.join(SHOTS, 'admin-phone.png'), fullPage: true });
+      await sp.goto(BASE + '?y=1776');
+      await waitH1(sp, 'The world in 1776');
+      await sp.click('#sheetHandle').catch(() => {});
+      await sp.waitForSelector('#panelBody > details.suggest', { state: 'attached', timeout: 60000 });
+      await sp.evaluate(() => { const d = document.querySelector('#panelBody > details.suggest'); d.scrollIntoView(); d.querySelector('summary').click(); });
+      await sp.waitForSelector('#panelBody .sg-form', { state: 'attached', timeout: 20000 });
+      await sp.waitForTimeout(400);
+      const pw = await sp.evaluate(() => { const b = document.querySelector('#panelBody'); const f = b.querySelector('.sg-form').getBoundingClientRect(); return [b.scrollWidth, b.clientWidth, Math.round(f.right), document.documentElement.scrollWidth, window.innerWidth]; });
+      ok(pw[0] <= pw[1] && pw[2] <= pw[4] && pw[3] <= pw[4], `the form fits the phone panel (${pw.join('/')})`);
+      await sctx.close();
+    }
+
+    if (ONLY !== 'suggest') {   // the phone checks (E2E_ONLY=phone runs only these)
     // ---------------- phones ----------------
     for (const vp of [{ width: 390, height: 844 }, { width: 360, height: 740 }]) {
       const p = await newPage(browser, vp);
@@ -825,6 +1047,7 @@ async function waitEvents(page) {
       ok(fb2?.on && fb2.impl === 'pattern', `the pattern fill follows a change of year (1950: ${fb2?.key})`);
       await ctxF.close();
     }
+    }   // end of the phone checks
   } catch (e) {
     console.error(e);
     failures++;

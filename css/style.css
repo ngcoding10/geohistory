@@ -564,3 +564,39 @@ h2.context { margin-top: 22px; }
 
 /* ?debug=1: what the device does with the flag fill, for a screenshot */
 .diag { position: fixed; z-index: 60; left: 8px; top: calc(var(--top-h) + 6px); max-width: calc(100% - 16px); margin: 0; padding: 6px 8px; font: 11px/1.35 ui-monospace, Menlo, monospace; white-space: pre-wrap; color: #f6f1e6; background: rgba(20, 16, 10, .82); border-radius: 4px; pointer-events: none; }
+
+/* ---------- "Suggest something we missed" (the form itself is built by js/suggest.js when opened) ---------- */
+.suggest { margin: 28px 0 4px; border-top: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); }
+.suggest > summary { list-style: none; cursor: pointer; padding: 11px 0; display: flex; align-items: baseline; gap: 8px; font: 500 16px/1.3 var(--serif); font-variant-caps: all-small-caps; letter-spacing: .06em; color: var(--ink-2); }
+.suggest > summary::-webkit-details-marker { display: none; }
+.suggest > summary::after { content: "+"; margin-left: auto; font: 400 16px/1 var(--sans); color: var(--ink-3); }
+.suggest[open] > summary::after { content: "–"; }
+.suggest > summary:hover { color: var(--accent); }
+.sg-slot { padding: 0 0 14px; }
+.sg-form { display: grid; gap: 12px; font-size: 14px; }
+.sg-about { margin: 0; color: var(--ink-3); font-size: 13px; }
+.sg-about b { color: var(--ink-2); font-weight: 600; }
+.sg-field { display: grid; gap: 4px; min-width: 0; }
+.sg-field label { font-weight: 600; color: var(--ink-2); font-size: 13.5px; }
+.sg-opt, .sg-req { font-weight: 400; color: var(--ink-3); }
+.sg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sg-form input, .sg-form textarea { width: 100%; min-width: 0; font: inherit; font-size: 15px; color: var(--ink); background: var(--card); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 7px 9px; }
+.sg-form textarea { resize: vertical; min-height: 110px; line-height: 1.45; }
+.sg-form input:focus, .sg-form textarea:focus { outline: 2px solid var(--focus); outline-offset: 0; border-color: transparent; }
+.sg-form [aria-invalid] { border-color: #a33a2a; }
+.sg-count { margin: 0; font-size: 12px; color: var(--ink-3); text-align: right; font-variant-numeric: tabular-nums; }
+.sg-count.low { color: #a33a2a; }
+.sg-hint { margin: 0; font-size: 12.5px; color: var(--ink-3); }
+.sg-err { margin: 0; font-size: 13px; color: #a33a2a; }
+.sg-hp { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.sg-privacy { margin: 0; font-size: 12.5px; line-height: 1.5; color: var(--ink-3); }
+.sg-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.sg-send { border: 1px solid var(--ink-2); background: var(--ink-2); color: var(--paper); border-radius: var(--radius); padding: 7px 16px; font-weight: 600; font-size: 14px; }
+.sg-send:hover { background: var(--ink); }
+.sg-send:disabled { opacity: .6; }
+.sg-status { margin: 0; font-size: 13px; color: var(--ink-3); }
+.sg-status.err { color: #a33a2a; }
+.sg-done:focus { outline: none; }
+.sg-thanks { margin: 0; font: 500 17px/1.4 var(--serif); color: var(--ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sg-err, :root:not([data-theme="light"]) .sg-status.err, :root:not([data-theme="light"]) .sg-count.low { color: #f0a08e; } }
+@media (max-width: 420px) { .sg-row { grid-template-columns: 1fr; } }
