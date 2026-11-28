@@ -1473,5 +1473,123 @@
   ],
   "disagree": "Landing in 1630: nearly 18,000 men in June (Wikipedia) or 13,000 in July (HistoryNet). Swedish losses: 3,550 (Wikipedia) or under 3,000 (HistoryNet). Banners taken: 120 (Wikipedia) or nearly 100 (HistoryNet).",
   "checked": null
+ },
+ "Q617333": {
+  "title": "Franco-Spanish War (1635)",
+  "y": 1635,
+  "place": "Spanish Netherlands, northern France, the Rhineland, northern Italy, Catalonia and the Pyrenees; declared at Brussels",
+  "paras": [
+   "The Franco-Spanish War was fought from May 1635 to November 1659 between France, under Louis XIII and his chief minister Cardinal Richelieu and later Cardinal Mazarin, and the Spain of Philip IV, each with changing allies. Until then France had opposed the Habsburgs indirectly, paying the Dutch Republic and Sweden to fight them. After the Imperial-Spanish victory at Nördlingen in 1634, when most of Sweden's German allies were making peace with the Emperor, Louis XIII and Richelieu chose open war; the French justified it as a just war against a king who had seized the Archbishop-Elector of Trier, an ally of France. On 19 May 1635 a French herald of arms, Jean Gratiollet, came to Brussels to declare war on the Cardinal-Infante Ferdinand, Spain's governor of the Netherlands, in the old ceremonial form; when nobody would receive the document, he threw it down in the Place du Sablon that evening.",
+   "The war was fought mainly in the Spanish Netherlands, the Rhineland and northern Italy. In 1635 a French army won at Les Avins but its siege of Leuven failed, and in August 1636 a Spanish raid into northern France reached Corbie and caused panic in Paris. Troops of Bernard of Saxe-Weimar in French pay took Breisach on the Rhine in 1638, cutting Spain's overland route to Flanders. From 1640 France backed revolts against Spain in Catalonia and Portugal. In May 1643, days after Louis XIII's death, the young Duke of Enghien destroyed the Spanish infantry at Rocroi, and he won again at Lens in 1648.",
+   "The Peace of Westphalia of 1648 ended the Thirty Years' War but not the war between France and Spain. Spain, now at peace with the Dutch, profited from the Fronde revolts in France and backed the rebels; Enghien, by then Prince of Condé, went over to the Spanish side. In 1652 Spain retook Dunkirk and Barcelona, and for years neither side could win. Mazarin then allied France with Cromwell's England in 1657, and in 1658 Turenne won the Battle of the Dunes and Dunkirk was taken.",
+   "Both kingdoms were exhausted, and the Treaty of the Pyrenees was signed on the Pheasant Island in the Bidassoa river by Mazarin and Luis de Haro, on 7 November 1659 according to Larousse (Wikipedia gives 5 November). Spain gave France Roussillon and upper Cerdagne, which set the border on the Pyrenees, most of Artois and several places on the border of the Spanish Netherlands; Condé was pardoned; and Louis XIV was to marry the Infanta Maria Theresa, who renounced the Spanish crown in return for a dowry. Later French claims on Spanish lands rested on this marriage. The treaty has traditionally been seen as the end of Spain's predominance in Europe and the start of France's bid for hegemony under Louis XIV, though Wikipedia notes that many modern historians see the war as militarily indecisive."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Franco-Spanish_War_(1635%E2%80%931659)",
+    "title": "Franco-Spanish War (1635–1659) (rev 1383008644)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   },
+   {
+    "url": "https://richelieuletters.hypotheses.org/49111",
+    "title": "Gratiollet de Daubas (Jean) (Marie-Catherine Vignal Souleyreau, 2024)",
+    "publisher": "Correspondance et papiers d'État du cardinal de Richelieu (Hypotheses)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     5,
+     6,
+     7
+    ]
+   },
+   {
+    "url": "https://www.iilj.org/publications/defensive-warfare-prevention-and-hegemony-the-justifications-for-the-franco-spanish-war-of-1635/",
+    "title": "Defensive Warfare, Prevention and Hegemony: The Justifications for the Franco-Spanish War of 1635 (abstract)",
+    "publisher": "Institute for International Law and Justice, NYU",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     6,
+     22
+    ]
+   },
+   {
+    "url": "https://www.larousse.fr/encyclopedie/divers/trait%C3%A9_des_Pyr%C3%A9n%C3%A9es/139898",
+    "title": "traité des Pyrénées (7 novembre 1659)",
+    "publisher": "Larousse encyclopédie",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   },
+   {
+    "url": "https://www.champsdebataille.fr/batailles/bataille-de-rocroi",
+    "title": "Bataille de Rocroi (1643)",
+    "publisher": "Champs de bataille",
+    "accessed": "2026-11-28",
+    "supports": [
+     11,
+     12,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The Franco-Spanish War lasted from May 1635 to November 1659 between France and Spain, each with various allies (Wikipedia; IILJ: war of 1635 lasting 24 years; Larousse: the 1659 treaty ended 24 years of war).",
+   "France was led by Louis XIII and Richelieu, then Mazarin; Spain by Philip IV (Wikipedia; Richelieu letters: commissioned by Louis XIII and Richelieu; Larousse: Mazarin signed the treaty).",
+   "France had avoided direct involvement, financing the Dutch Republic and Sweden (Wikipedia).",
+   "Imperial-Spanish victory at Nördlingen in September 1634; most Swedish German allies made peace with Ferdinand II at Prague (Wikipedia); Louis XIII and Richelieu decided on direct intervention (Wikipedia).",
+   "France presented the war as a just war against a Catholic king who had abducted the Archbishop of Trier (Richelieu letters); IILJ: each belligerent justified its war as just and defensive.",
+   "On 19 May 1635 a French herald declared war at Brussels (IILJ; Richelieu letters: Jean Gratiollet arrived in Brussels on 19 May, sent to the Cardinal-Infante, governor of the Spanish Netherlands; Wikipedia: France declared war on Spain in May 1635).",
+   "The declaration followed the ritual of the medieval challenge; nobody would accept it and at about 7 pm Gratiollet threw it on the ground in the Place du Sablon (Richelieu letters).",
+   "Major areas of conflict: northern Italy, the Spanish Netherlands and the Rhineland (Wikipedia).",
+   "In May 1635 a French army defeated the Spanish at Les Avins and besieged Leuven, without success; in August 1636 a Spanish incursion reached Corbie, causing panic in Paris (Wikipedia).",
+   "Bernard of Saxe-Weimar's troops, paid by France, captured Breisach in December 1638; the loss of Alsace forced Spain to supply Flanders by sea (Wikipedia).",
+   "France supported revolts in Catalonia and Portugal from 1640 (Wikipedia; Champs de bataille: revolts of Portugal (1640) and Catalonia).",
+   "Rocroi 1643, a victory of the Duke of Enghien over the Spanish tercios, five days after Louis XIII's death on 14 May 1643 (Champs de bataille; Wikipedia: troops captured at Rocroi); Lens in August 1648 (Wikipedia; Champs de bataille).",
+   "The 1648 Peace of Westphalia ended the Thirty Years' War but allowed fighting between France and Spain to continue; the Dutch war ended in 1648 (Wikipedia).",
+   "Spain backed rebels in the Fronde; Condé went into exile in the Spanish Netherlands and became a Spanish ally (Wikipedia; Champs de bataille: during the Fronde he commanded Spanish armies).",
+   "During 1652 Spain recaptured Dunkirk and Barcelona; neither side could gain a significant advantage (Wikipedia).",
+   "Mazarin's 1657 Treaty of Paris with Cromwell's England; capture of Dunkirk in June 1658 (Wikipedia); Larousse: Turenne's victory at the Dunes in 1658.",
+   "Both sides were exhausted (Wikipedia); the Treaty of the Pyrenees was signed on the Pheasant Island in the Bidassoa by Mazarin and Luis Méndez de Haro (Larousse).",
+   "Date: 7 November 1659 (Larousse); 5 November 1659 (Wikipedia).",
+   "Spain ceded Roussillon, upper Cerdagne, almost all of Artois and several places on the border of the Netherlands (Larousse; Wikipedia: Artois, Hainaut and Roussillon; Roussillon established the border along the Pyrenees).",
+   "Condé was pardoned and restored to his possessions and titles (Larousse; Wikipedia).",
+   "Louis XIV was to marry the Infanta Maria Theresa, who renounced the Spanish crown in return for a dowry of 500,000 écus d'or (Larousse; Wikipedia: marriage contract, basis of French claims for 50 years and of the War of Devolution).",
+   "Traditionally viewed as the end of Spain's position as predominant European power; most historians now view the war as militarily indecisive (Wikipedia); IILJ: the war changed the balance of power and opened the way for France's bid for European hegemony under Louis XIV."
+  ],
+  "disagree": "Date of the Treaty of the Pyrenees: 7 November 1659 (Larousse) or 5 November (Wikipedia).",
+  "checked": null
  }
 }
