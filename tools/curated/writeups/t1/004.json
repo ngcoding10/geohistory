@@ -79,5 +79,75 @@
   ],
   "disagree": "MacTutor says the four equations first appeared in fully developed form in Maxwell's Treatise of 1873; Wikipedia credits Oliver Heaviside with grouping Maxwell's twenty component equations into four in 1884. Wikipedia's history article dates Hertz's confirmation both to 1887 and to 'the 1890s'; its article on Hertz gives experiments from 1886 to 1889, which the text follows.",
   "checked": null
+ },
+ "Q33132": {
+  "title": "Battle of Gettysburg",
+  "y": 1863,
+  "place": "Gettysburg, Pennsylvania",
+  "paras": [
+   "The Battle of Gettysburg (1–3 July 1863) was fought in the American Civil War between the Union Army of the Potomac under Major General George G. Meade and the Confederate Army of Northern Virginia under General Robert E. Lee. Some 94,000 Union and 72,000 Confederate soldiers were engaged, by the American Battlefield Trust's count. After his victory at Chancellorsville in May, Lee had marched north in June through the Shenandoah Valley into Pennsylvania, his second invasion of the North, hoping a victory on Union soil would push Northern politicians towards ending the war. Lincoln replaced the hesitant Joseph Hooker with Meade three days before the battle.",
+   "On 1 July a Confederate division approaching Gettysburg met Union cavalry under John Buford west of the town. Union infantry came up, and their commander John F. Reynolds was killed; then larger Confederate forces attacking from the northwest and north broke the Union lines, which fell back through the streets to the hills south of the town. On 2 July the Union army held a fishhook-shaped line along Cemetery Ridge and the hills at either end. In the afternoon James Longstreet's corps struck the Union left, with savage fighting at Little Round Top, Devil's Den, the Wheatfield and the Peach Orchard, while attacks on Culp's Hill and Cemetery Hill on the Union right also failed to break through.",
+   "On 3 July, after renewed fighting on Culp's Hill, Lee sent about 12,000 men in Pickett's Charge across nearly a mile of open ground against the centre of the Union line on Cemetery Ridge. Union artillery and rifle fire cut them down, and the few who reached the ridge were driven back. On 4 July, the day Vicksburg surrendered to Ulysses S. Grant in the west, Lee began his retreat to Virginia.",
+   "With between 46,000 and 51,000 men killed, wounded, captured or missing, Gettysburg was the bloodiest battle of the war. Union losses were about 23,000; Confederate estimates run from about 23,000 to 28,000. Lee never again invaded the North, and the battle is widely seen as a turning point of the war. On 19 November 1863 Lincoln delivered the Gettysburg Address at the dedication of the soldiers' cemetery there."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Gettysburg",
+    "title": "Battle of Gettysburg",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.battlefields.org/learn/civil-war/battles/gettysburg",
+    "title": "Gettysburg Battle Facts and Summary",
+    "publisher": "American Battlefield Trust",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The Battle of Gettysburg was fought on 1–3 July 1863 between Meade's Army of the Potomac and Lee's Army of Northern Virginia.",
+   "Engaged strengths were 93,921 Union and 71,699 Confederate (ABT; Wikipedia gives these as engaged strengths in its notes).",
+   "After Chancellorsville (May 1863) Lee invaded the North a second time, hoping to induce Northern politicians to end the war.",
+   "Lincoln replaced Hooker with Meade three days before the battle (ABT: late June).",
+   "On 1 July a Confederate division (Heth) met Buford's Union cavalry; Union infantry arrived and Reynolds was killed.",
+   "Confederate corps attacking from the northwest and north broke the Union lines, which retreated through Gettysburg to the hills south of town.",
+   "On 2 July the Union held a fishhook-shaped line; Longstreet's assault on the Union left brought fighting at Little Round Top, Devil's Den, the Wheatfield and the Peach Orchard; attacks on Culp's Hill and Cemetery Hill failed.",
+   "On 3 July fighting resumed at Culp's Hill and about 12,000 Confederates (ABT: 12,500) made Pickett's Charge against the Union centre on Cemetery Ridge and were repulsed.",
+   "On 4 July Lee began his retreat.",
+   "Vicksburg surrendered to Grant on 4 July 1863.",
+   "Total casualties were 46,000–51,000, the most of any battle of the war.",
+   "Union casualties were about 23,000 (23,049–23,055); Confederate estimates range from 23,231 to 28,000.",
+   "The battle is considered a turning point; Lincoln gave the Gettysburg Address on 19 November 1863 at the cemetery dedication."
+  ],
+  "disagree": "Union casualties are 23,049 in the Official Records figure used by the American Battlefield Trust and 23,055 in Wikipedia's text; Confederate casualties range from 23,231 (Busey and Martin) to as many as 28,000. Wikipedia puts Pickett's Charge at about 12,000 men, the American Battlefield Trust at 12,500.",
+  "checked": null
  }
 }
