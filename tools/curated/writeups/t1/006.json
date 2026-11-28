@@ -2004,5 +2004,80 @@
   ],
   "disagree": "Confederate strength on 7 April: about 30,000 (American Battlefield Trust) or barely 34,000 (National Park Service); Union strength nearly 54,000 (ABT) or over 54,500 (NPS).",
   "checked": null
+ },
+ "Q751186": {
+  "title": "Battle of Fredericksburg",
+  "y": 1862,
+  "place": "Fredericksburg, Virginia, on the Rappahannock River: the town, Marye's Heights and Prospect Hill",
+  "paras": [
+   "The Battle of Fredericksburg was fought from 11 to 13 December 1862 at Fredericksburg, Virginia, on the Rappahannock River halfway between Washington and Richmond, during the American Civil War. After George B. McClellan failed to pursue Robert E. Lee's army after Antietam, he was replaced in command of the Army of the Potomac by Ambrose E. Burnside, who planned to cross the Rappahannock at Fredericksburg and race Lee to the Confederate capital, Richmond. In mid-November Burnside's Army of the Potomac, about 100,000 men, marched quickly to Falmouth opposite the town, but the pontoon bridges he needed were delayed, and Lee had time to bring up James Longstreet's corps onto the heights behind the town and Thomas J. 'Stonewall' Jackson's corps onto the hills to the south.",
+   "On 11 December Union engineers began laying pontoon bridges before dawn, but Confederate riflemen in riverside buildings shot them down. Burnside had more than 150 guns shell the town, and when that failed, infantry rowed across, drove the riflemen out in the first street fighting of the war and secured the town. The Union army crossed on 12 December and looted the town. On 13 December Burnside attacked twice. To the south, Major General George G. Meade's division found a gap in Jackson's line and broke into it, but a Confederate counterattack drove it back. At Marye's Heights, Confederate infantry stood behind a stone wall along a sunken road, with artillery on the heights above. From noon until after dark, wave after wave of Union brigades crossed open ground under their fire; none reached the wall. Watching, Lee said: 'It is well that war is so terrible. We should grow too fond of it.'",
+   "Burnside wanted to renew the attack the next day but his officers talked him out of it, and on the night of 15–16 December he withdrew across the river. Union losses were about 12,600 according to the National Park Service (over 12,500 according to the American Battlefield Trust), almost two-thirds of them in front of the stone wall; the Park Service puts Lee's losses at 5,300 and the Trust at about 6,000. The defeat caused a political crisis in Washington, Lincoln replaced Burnside with Joseph Hooker six weeks later, and Lee's army, its confidence restored, won again at Chancellorsville in May 1863."
+  ],
+  "sources": [
+   {
+    "url": "https://www.battlefields.org/learn/civil-war/battles/fredericksburg",
+    "title": "Fredericksburg Battle Facts and Summary",
+    "publisher": "American Battlefield Trust",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.nps.gov/frsp/learn/historyculture/fburg-hist-maryesh.htm",
+    "title": "Battle of Fredericksburg History: Marye's Heights",
+    "publisher": "U.S. National Park Service, Fredericksburg & Spotsylvania National Military Park",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.nps.gov/frsp/learn/historyculture/hist-fburg-prospect.htm",
+    "title": "Battle of Fredericksburg History: Prospect Hill",
+    "publisher": "U.S. National Park Service, Fredericksburg & Spotsylvania National Military Park",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     6,
+     7
+    ]
+   }
+  ],
+  "claims": [
+   "Battle of Fredericksburg, December 1862 (ABT: 11-13 December; NPS: bridges on 11 December, battle 13 December, withdrawal 15-16 December), at Fredericksburg on the Rappahannock, halfway between Richmond and Washington (ABT).",
+   "McClellan was removed after failing to pursue Lee after Antietam and replaced by Burnside, who planned to beat Lee to Richmond (ABT).",
+   "Burnside left Warrenton on 15 November and moved his 100,000-man army to Falmouth in two days; pontoon bridges were delayed by bureaucratic and logistical tie-ups (ABT).",
+   "Lee brought Longstreet's wing to Marye's Heights and Jackson's men to a line over Prospect Hill to Hamilton's Crossing (ABT; NPS Prospect Hill page: Longstreet defended Marye's Heights and other hills, Jackson's command post at Prospect Hill).",
+   "11 December: engineers began the pontoon bridges before dawn; Confederate riflemen in buildings slowed them; over 150 Union guns on Stafford Heights shelled the town; Norman Hall's brigade crossed in boats and, after house-to-house fighting, the Confederates withdrew (ABT); the Civil War's first instance of urban combat (ABT).",
+   "12 December: the Union army crossed and occupied Fredericksburg (ABT) and looted homes and shops (NPS Prospect Hill page).",
+   "13 December: Meade's division found a 600-yard gap in Jackson's line and broke in; Jackson's counterattack drove it back (NPS Prospect Hill page; ABT).",
+   "Confederates in the Sunken Road behind a stone wall at the foot of Marye's Heights, with artillery on the heights (NPS Marye's Heights page; ABT).",
+   "Attacks from noon until dark, one after another (NPS Marye's Heights page: Sumner's first assault at noon; Hawkins' brigade, the fifteenth, after sunset); not a single Union soldier reached the stone wall (NPS Marye's Heights page; ABT: each wave met by devastating fire).",
+   "Lee: 'It is well that war is so terrible. We should grow too fond of it.' (NPS Marye's Heights page; ABT).",
+   "Burnside wanted to renew the assaults on 14 December but his subordinates dissuaded him; on the evening of 15-16 December he withdrew to Stafford Heights, dismantling the bridges (NPS Marye's Heights page; ABT: withdrew across the Rappahannock).",
+   "Union losses 12,600, almost two-thirds in front of the stone wall; Lee lost 5,300 (NPS Marye's Heights page); ABT: Union more than 12,500, Confederate approximately 6,000.",
+   "The defeat caused a crisis in Lincoln's cabinet; six weeks later Lincoln replaced Burnside with Hooker; Lee's army went on to win at Chancellorsville in May 1863 (ABT)."
+  ],
+  "disagree": "Casualties: Union about 12,600 and Confederate 5,300 (National Park Service) or more than 12,500 and about 6,000 (American Battlefield Trust).",
+  "checked": null
  }
 }
