@@ -6,7 +6,7 @@
 import { typeColor, TYPES } from './types.js';
 import { tones, hexToLch, lchToHex } from './groups.js';
 import { makeAreaTest } from './geo.js';
-import { loadFills, fillsReady, fillsOf, ensureImages, extentFor, extentOk, paint, flagTile, setCanvasCap, canvasCap } from './flagfill.js';
+import { loadFills, fillsReady, fillsOf, ensureImages, extentFor, extentOk, paint, flagTile, setCanvasCap, canvasCap, mx, my } from './flagfill.js';
 
 const maplibregl = window.maplibregl;
 const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -258,7 +258,7 @@ export class HistoryMap extends EventTarget {
     badge('badge-hi', ['s', 'p'], { minzoom: Z_SPLIT });
     // which badges may show depends on the zoom (the state's size on screen, and at world zoom a cap on the
     // count): the source is given those when a zoom ends
-    m.on('zoomend', () => this._badgeData());
+    m.on('zoomend', () => { this._badgeData(); this._toneSoon(); });
     // war markers are HTML markers: an invisible symbol at each keeps badges off them
     m.addSource('warblk', { type: 'geojson', data: EMPTY });
     const blk = new ImageData(16, 16);
@@ -270,8 +270,10 @@ export class HistoryMap extends EventTarget {
     sym('lbl-people', ['all', kind('u'), ['>=', ['get', 'a'], 60000]], { 'text-font': ITALIC, 'text-size': zoomIn(3, 6, 11, 13), 'text-padding': 5 }, under, { minzoom: Z_PEOPLES });
     // ... and one name per region at world zoom
     sym('lbl-region', kind('r'), { 'text-font': ITALIC, 'text-size': zoomIn(1, 3.4, 11, 13.5), 'text-letter-spacing': 0.04, 'text-padding': 8 }, under, { maxzoom: Z_PEOPLES });
-    const st = { 'text-color': c.textPart, 'text-halo-width': 0 };
-    const big = { 'text-color': c.text, 'text-halo-width': 0 };
+    // black names on light land, white on dark land (flag or plain colour under the name: 'lc', set by _labelTones)
+    const tone = ['match', ['get', 'lc'], 'dark', '#ffffff', 'light', '#111111', c.text];
+    const st = { 'text-color': tone, 'text-halo-width': 0 };
+    const big = { 'text-color': tone, 'text-halo-width': 0 };
     const AREA = { s: 30000, m: 250000, l: 1300000 };
     const ar = (lo, hi) => [...(lo != null ? [['>=', ['get', 'a'], lo]] : []), ...(hi != null ? [['<', ['get', 'a'], hi]] : [])];
     const stOrPart = ['any', kind('s'), kind('p')];
@@ -657,7 +659,7 @@ export class HistoryMap extends EventTarget {
     this.snapshotYear = doc ? doc.year : null;
     // names change when about a third of the land has moved
     clearTimeout(this._lblT);
-    const names = () => { this._setData('labels', doc?.labels || EMPTY); this._setData('label-lines', doc?.labelLines || EMPTY); };
+    const names = () => { this._labelTones(true); this._setData('labels', doc?.labels || EMPTY); this._setData('label-lines', doc?.labelLines || EMPTY); };
     if (dur) this._lblT = setTimeout(names, dur * 0.3); else names();
     this._sel();
     this._warLayers();
@@ -710,6 +712,84 @@ export class HistoryMap extends EventTarget {
     if (mode === 'flag') loadFills().then(() => this._redrawActive(true)).catch((e) => console.warn('flag fill', e));
     this._fillStyle();
     for (const s of STACKS) this._mode(s, s === this.active || s === this._out ? 'on' : 'off');
+    this._toneSoon();
+  }
+
+  /** Flags held while the years play: names follow the plain colours shown meanwhile. */
+  _toneSoon() { clearTimeout(this._toneT); this._toneT = setTimeout(() => this._labelTones(), 60); }
+
+  /** Each state, part and empire name is black on light land and white on dark land: 'lc' = 'light' | 'dark'
+   *  from the luma of what is drawn under the name: the flag canvas (sampled across the name), the flag
+   *  tile's average (the pattern fallback), or the plain colour. `quiet`: only set the properties. */
+  _labelTones(quiet = false) {
+    const sid = this.active, doc = this._docs?.[sid];
+    if (!doc?.labels || !this.map) return;
+    const m = this.map, f = this._fc?.[sid], z = m.getZoom();
+    const flag = this._flagOn(sid) && f.ext && f.cv.width > 1 && !this._flagHold;
+    const pat = !flag && this._patOn(sid) && f.fills;
+    const luma = (r, g, b) => (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    const hex = (h) => { const n = parseInt(String(h || '#888888').slice(1, 7), 16); return luma(n >> 16 & 255, n >> 8 & 255, n & 255); };
+    const byK = new Map();
+    doc.features.forEach((ft, i) => { const p = ft.properties; if (p.u !== 1 && p.k >= 0 && !byK.has(p.k)) byK.set(p.k, i); });
+    const plain = (k) => { const i = byK.get(k); if (i == null) return null; const p = doc.features[i].properties; return hex(z < Z_SPLIT ? p.c : p.c2); };
+    let cx = null, sx = 0, sy = 0;
+    if (flag) {
+      try { cx = f.cv.getContext('2d'); } catch { cx = null; }
+      sx = f.ext.W / (f.ext.x1 - f.ext.x0); sy = f.ext.H / (f.ext.y1 - f.ext.y0);
+    }
+    const perPx = 1 / (512 * 2 ** z);   // one screen pixel in mercator units
+    // mean luma of the drawn flag in a box of (w x h) screen pixels round a point; null where nothing is drawn
+    const sample = (lon, lat, w, h) => {
+      const hw = Math.max(1, Math.round(w / 2 * perPx * sx)), hh = Math.max(1, Math.round(h / 2 * perPx * sy));
+      const x = Math.round((mx(lon) - f.ext.x0) * sx), y = Math.round((my(lat) - f.ext.y0) * sy);
+      const x0 = Math.max(0, x - hw), y0 = Math.max(0, y - hh), x1 = Math.min(f.ext.W, x + hw), y1 = Math.min(f.ext.H, y + hh);
+      if (x1 <= x0 || y1 <= y0) return null;
+      const step = Math.max(1, Math.floor(Math.sqrt(((x1 - x0) * (y1 - y0)) / 400)));
+      let d;
+      try { d = cx.getImageData(x0, y0, x1 - x0, y1 - y0).data; } catch { return null; }
+      const W = x1 - x0, H = y1 - y0;
+      let sum = 0, n = 0, all = 0;
+      for (let yy = 0; yy < H; yy += step) for (let xx = 0; xx < W; xx += step) {
+        const o = (yy * W + xx) * 4; all++;
+        if (d[o + 3] < 128) continue;
+        sum += luma(d[o], d[o + 1], d[o + 2]); n++;
+      }
+      return n >= all / 2 && n ? sum / n : null;
+    };
+    const patTone = new Map();
+    const patLuma = (k) => {
+      const i = byK.get(k), fl = i != null ? f.fills.get(i) : null;
+      if (!fl) return null;
+      if (!patTone.has(fl.key)) {
+        let v = null;
+        try { const t = flagTile(fl, f.imgs, 12, 8); if (t) { let s2 = 0; for (let o = 0; o < t.data.length; o += 4) s2 += luma(t.data[o], t.data[o + 1], t.data[o + 2]); v = s2 / (t.data.length / 4); } } catch { v = null; }
+        patTone.set(fl.key, v);
+      }
+      return patTone.get(fl.key);
+    };
+    const size = (p) => (p.t === 'e' || p.a >= 1300000 ? 14 : 12);
+    const toneOf = (p, pts) => {
+      if (p.t === 'u' || p.t === 'r' || p.k == null || p.k < 0) return null;
+      let v = null;
+      if (cx) {
+        const w = Math.min(260, (p.n || '').length * size(p) * (p.t === 'e' || p.a >= 1300000 ? 0.9 : 0.6));
+        const vs = pts.map(([lon, lat]) => sample(lon, lat, pts.length > 1 ? w / pts.length : w, size(p))).filter((x) => x != null);
+        if (vs.length) v = vs.reduce((a, b) => a + b, 0) / vs.length;
+      } else if (pat) v = patLuma(p.k);
+      if (v == null) v = plain(p.k);
+      if (v == null) return null;
+      if (this.dark && cx) v *= 0.8;   // dark mode dims the flags
+      return v < 0.42 ? 'dark' : 'light';
+    };
+    let changed = false;
+    const set = (ft, lc) => { if (ft.properties.lc !== lc) { if (lc == null) delete ft.properties.lc; else ft.properties.lc = lc; changed = true; } };
+    for (const ft of doc.labels.features) set(ft, toneOf(ft.properties, [ft.geometry.coordinates]));
+    for (const ft of doc.labelLines?.features || []) {
+      const cs = ft.geometry.coordinates, n = Math.min(5, cs.length);
+      const pts = Array.from({ length: n }, (_, i) => cs[Math.round((i * (cs.length - 1)) / Math.max(1, n - 1))]);
+      set(ft, toneOf(ft.properties, pts));
+    }
+    if (changed && !quiet) { this._setData('labels', doc.labels); this._setData('label-lines', doc.labelLines || EMPTY); }
   }
 
   /** While the years play, flags are not drawn (each map would take a canvas redraw): plain colours, then flags
@@ -864,6 +944,7 @@ export class HistoryMap extends EventTarget {
     if (this.fillImpl === 'pattern') {
       try { this._drawPattern(sid, doc, fills, imgs, year); } catch (e) { console.warn('pattern fill', e); }
       Object.assign(f, { doc, fills, imgs, ok: false, fy: year });
+      if (sid === this.active) this._toneSoon();
       return false;
     }
     const ext = extentFor(this.map);
@@ -880,6 +961,7 @@ export class HistoryMap extends EventTarget {
     Object.assign(f, { doc, ext, fills, imgs, ok: true, fy: year, probe });
     this.map.getSource('fsrc' + sid).setCoordinates(ext.coords);
     if (sid === this.active || sid === this._out) this._upload(sid);
+    if (sid === this.active) this._toneSoon();
     return true;
   }
 

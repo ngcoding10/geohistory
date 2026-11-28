@@ -127,7 +127,8 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
   const labels = [], lines = [];
   const placed = new Map();
   const text = (p) => p.ln || p.n;
-  const point = (t, n, a, p, extra = {}, at = p.l) => labels.push({ type: 'Feature', geometry: { type: 'Point', coordinates: at }, properties: { t, n, a, ...extra } });
+  const kOf = new Map(pols.map((p, k) => [p, k]));   // a label's polity: the map picks a black or white name from the land under it
+  const point = (t, n, a, p, extra = {}, at = p.l) => labels.push({ type: 'Feature', geometry: { type: 'Point', coordinates: at }, properties: { t, n, a, k: kOf.get(p) ?? -1, ...extra } });
   const big = (t, n, a, p) => {
     const geoms = (featsOf.get(pols.indexOf(p)) || []).map((f) => f.geometry);
     let key = t + '|' + n;
@@ -140,7 +141,7 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
       if (test(pv.at[0], pv.at[1])) at = pv.at;
       if (pv.line && at === pv.at && pv.line.every((q) => test(q[0], q[1]))) {
         // the same name along the same line as on the map before
-        lines.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: pv.line }, properties: { ...pv.props, a } });
+        lines.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: pv.line }, properties: { ...pv.props, a, k: kOf.get(p) ?? -1 } });
         placed.set(key, pv);
         point(t, n, a, p, { zf: pv.props.zf }, at);
         return at;
@@ -149,7 +150,7 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
     const ll = a >= BIG ? labelLine(geoms, at) : null;
     const chars = n.length;
     let zf = 99;
-    const props = { t, n, a };
+    const props = { t, n, a, k: kOf.get(p) ?? -1 };
     placed.set(key, { at, line: ll && ll.len >= 6 ? ll.line : null, props });
     if (ll && ll.len >= 6) {
       const pxAt = (z) => (ll.len * 512 * 2 ** z) / 360;
