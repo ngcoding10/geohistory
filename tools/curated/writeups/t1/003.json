@@ -694,5 +694,203 @@
   ],
   "disagree": "The two sources differ on details: the Neman crossing began on 24 June (Wikipedia) or 23 June (McGill timeline); Wikipedia calls Borodino inconclusive and Maloyaroslavets a French loss, while the McGill timeline lists both as French wins (the French held the field at each but had to give up their aims). Casualty figures vary widely between sources.",
   "checked": null
+ },
+ "Q199820": {
+  "title": "Paris Peace Conference",
+  "y": 1919,
+  "place": "Paris (Quai d'Orsay), with the German treaty signed at Versailles",
+  "paras": [
+   "The Paris Peace Conference was the meeting at which the victorious Allies of the First World War settled the terms of peace for the defeated Central Powers: Germany, Austria, Hungary, Bulgaria and the Ottoman Empire. It opened on 18 January 1919 at the French foreign ministry on the Quai d'Orsay. Delegates of some thirty countries took part, but the decisions were made by the 'Big Four': Georges Clemenceau of France, David Lloyd George of Britain, Woodrow Wilson of the United States and Vittorio Orlando of Italy. The defeated states were given no voice in the talks, and Soviet Russia was not represented.",
+   "The Allies arrived with clashing aims. Wilson wanted a peace built on his Fourteen Points of 1918 and a League of Nations to keep it; France sought security against Germany and compensation; Italy pressed claims on the Adriatic that Wilson opposed. The League's Covenant was written into the treaties. Japan's proposal of 13 February 1919 to add a clause on racial equality won 11 of 17 votes but was ruled to need unanimity and failed. Germany's rights in Shandong were transferred to Japan rather than returned to China, which set off the May Fourth Movement in China and led China to refuse to sign.",
+   "The conference produced five treaties: Versailles with Germany (28 June 1919), Saint-Germain with Austria (10 September 1919), Neuilly with Bulgaria (27 November 1919), Trianon with Hungary (4 June 1920) and Sèvres with the Ottoman Empire (10 August 1920). By the Treaty of Versailles Germany accepted, in Article 231, responsibility for the war and liability for reparations, which were set in 1921 at 132 billion gold marks; it lost about a tenth of its European territory and all its colonies, and its army and navy were limited. German and Ottoman overseas possessions became League 'mandates', mostly under Britain and France.",
+   "Wikipedia dates the end of the conference to 21 January 1920, though the historian Michael Neiberg notes that the process did not really end until July 1923. The US Senate refused to ratify the Versailles treaty, falling seven votes short on 19 March 1920, so the United States never joined the League and made a separate peace with Germany in 1921. The treaties redrew the map of Europe and the Middle East, and the resentment they caused, above all in Germany, is widely seen as one of the roads to the Second World War. The Treaty of Sèvres was later replaced by the Treaty of Lausanne of 24 July 1923."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Paris_Peace_Conference_(1919%E2%80%931920)",
+    "title": "Paris Peace Conference (1919–1920)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1914-1920/paris-peace",
+    "title": "The Paris Peace Conference and the Treaty of Versailles",
+    "publisher": "Office of the Historian, US Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The conference set peace terms for the defeated Central Powers; it opened on 18 January 1919 at the Quai d'Orsay.",
+   "The defeated states were not given a voice; Russia's actual government was not represented.",
+   "Delegates came from about thirty nations (Wikipedia: 27 nations, 32 countries and nationalities; State Department: nearly thirty).",
+   "The Big Four (Clemenceau, Lloyd George, Wilson, Orlando) dominated the conference.",
+   "Italian demands on the Adriatic, which Wilson opposed, caused disagreement; Wilson strongly supported the League.",
+   "Wilson's Fourteen Points (1918) were the basis for the armistice; the League of Nations was created by the conference.",
+   "Japan's racial equality proposal of 13 February 1919 had 11 of 17 votes but failed because unanimity was required.",
+   "German concessions in Shandong went to Japan; China refused to sign Versailles; the May Fourth Movement followed.",
+   "Five treaties: Versailles 28 June 1919, Saint-Germain 10 September 1919, Neuilly 27 November 1919, Trianon 4 June 1920, Sèvres 10 August 1920.",
+   "Under Article 231 Germany accepted responsibility for the war and liability for reparations; reparations were set in 1921 at 132 billion gold marks.",
+   "Germany lost about 10% of its European territory and all overseas possessions; its army and navy were limited.",
+   "Former German and Ottoman possessions became mandates, mainly under Britain and France; the US Senate did not ratify (falling seven votes short on 19 March 1920), the US never joined the League and signed a separate peace with Germany in 1921.",
+   "Wikipedia ends the conference on 21 January 1920 (Neiberg: the process did not really end until July 1923); its settlement is considered a watershed leading to the Second World War.",
+   "Sèvres was later revised by the Treaty of Lausanne (24 July 1923)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q165058": {
+  "title": "Holodomor",
+  "y": 1932,
+  "place": "Soviet Ukraine (and the Kuban region of the North Caucasus)",
+  "paras": [
+   "The Holodomor ('death by hunger' in Ukrainian) was the man-made famine of 1932–1933 in Soviet Ukraine, part of a wider famine in the grain-growing regions of the Soviet Union. It was caused by the policies of Joseph Stalin's government, which forced Ukraine's peasants into collective farms and then seized their grain; its victims were overwhelmingly Ukrainian villagers.",
+   "From late 1929 the regime collectivised agriculture by force and 'dekulakised' better-off farmers, whose property was confiscated and who were shot, imprisoned or deported. Harvests fell, but Ukraine was still set very high grain-delivery quotas. A law of 7 August 1932 made the taking of collective-farm grain, even gleaning ears from the fields, punishable by labour camp or death. In November 1932 the Ukrainian party, under Vyacheslav Molotov's direction, ordered villages and farms that failed their quotas to be blacklisted: they were cut off from trade and fined in meat and potatoes, and homes were searched for hidden grain. On 22 January 1933 a directive sealed the borders of Ukraine and the Kuban to stop starving peasants leaving to look for food.",
+   "Deaths peaked in the spring and early summer of 1933. The Encyclopedia of Ukraine cites demographers' estimate of just under four million deaths in Ukraine for 1932–1934, the best estimate to date, with about 3.5 million in the first half of 1933 alone; Wikipedia gives 3.5 to 5 million in recent scholarship and notes that higher figures have also been cited, such as the 7 to 10 million in a 2003 joint statement at the UN. The state rejected foreign relief, and the famine eased with the better harvest of 1933.",
+   "The Soviet Union denied the famine and banned discussion of it until the late 1980s. Historians agree that it was man-made, but disagree on whether it was deliberately aimed at Ukrainians: some argue that Stalin used starvation to crush Ukrainian resistance and national feeling, others that it was the result of collectivisation and forced industrialisation. Ukraine recognised the Holodomor as genocide in 2006, and Wikipedia counts more than 30 other UN member states and the European Parliament that have done the same."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Holodomor",
+    "title": "Holodomor",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CF%5CA%5CFamine6Genocideof1932hD73.htm",
+    "title": "Famine-Genocide of 1932–3",
+    "publisher": "Internet Encyclopedia of Ukraine, Canadian Institute of Ukrainian Studies",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The Holodomor ('death by hunger') was a man-made famine in Soviet Ukraine in 1932–1933, part of a wider Soviet famine in grain-producing areas.",
+   "Its causes lay in collectivisation and high grain procurement quotas under Stalin.",
+   "From 1929 collectivisation was carried out by coercion and dekulakisation confiscated property and executed, imprisoned or deported 'kulaks'.",
+   "Harvests fell but Ukraine's grain quotas stayed very high (described as unrealistic).",
+   "The 7 August 1932 law ('Law of Spikelets'/'Five Ears of Grain') punished theft of collective-farm property, including gleaning, with heavy penalties including death.",
+   "On 18 November 1932, under Molotov's direction, the CP(B)U ordered blacklisting of villages and farms that missed quotas, with fines in kind (meat, potatoes) and economic blockades; grain searches were made.",
+   "On 22 January 1933 a directive sealed the borders of Ukraine and the Kuban to stop peasants leaving in search of food.",
+   "Deaths peaked in spring and early summer 1933.",
+   "Encyclopedia of Ukraine: just under four million deaths for 1932–1934 (Institute of Demography), about 3.5 million in the first half of 1933; Wikipedia: 3.5–5 million in recent scholarship; a 2003 UN joint statement cited 7–10 million.",
+   "The Soviet state rejected foreign relief; a good 1933 harvest helped conditions subside.",
+   "The famine was denied in the USSR until the late 1980s (1987); historians agree it was man-made but dispute whether it was intentional and targeted at Ukrainians.",
+   "Ukraine recognised it as genocide in 2006; Wikipedia: 33 other UN member states and the European Parliament have also recognised it."
+  ],
+  "disagree": "Death-toll estimates differ widely: demographic reconstructions give just under four million (Encyclopedia of Ukraine) or 3.5–5 million (Wikipedia's summary of recent scholarship), while some statements have cited 7–10 million. Historians also disagree over whether the famine was intended and whether it was genocide.",
+  "checked": null
+ },
+ "Q154681": {
+  "title": "Anschluss",
+  "y": 1938,
+  "place": "Austria (Vienna, Linz and the German border)",
+  "paras": [
+   "The Anschluss ('joining') was the annexation of Austria by Nazi Germany in March 1938. It set Adolf Hitler and the Austrian Nazis against the government of Chancellor Kurt Schuschnigg, which tried to keep Austria independent but had lost the protection of Mussolini's Italy. Union with Germany had been popular in Austria after 1918, but the peace treaties of Saint-Germain and Versailles forbade it; in July 1934 Austrian Nazis had murdered Chancellor Engelbert Dollfuss in a failed coup.",
+   "At Berchtesgaden on 12 February 1938 Hitler forced Schuschnigg, under threat and in the presence of German generals, to give the Austrian Nazi Arthur Seyss-Inquart control of the police and security and to amnesty jailed Nazis. On 9 March Schuschnigg called a referendum on Austrian independence for 13 March. Hitler answered on 11 March with an ultimatum: cancel the vote and resign, or Germany would invade. That evening Schuschnigg resigned in a radio address and told Austrians not to resist; Seyss-Inquart was made chancellor after midnight. German troops crossed the border early on 12 March without meeting armed resistance, and on 13 March a law declared Austria part of the German Reich. On 15 March Hitler spoke to a huge crowd on Vienna's Heldenplatz.",
+   "Repression began at once. Wikipedia reports about 70,000 arrests within days; the Gestapo hunted down Social Democrats, Communists and other opponents, and Schuschnigg was placed under arrest. Austria's roughly 200,000 Jews faced weeks of violence and humiliation, such as being forced to scrub the streets, and then all of Germany's anti-Jewish laws; many tried to emigrate. A plebiscite on 10 April 1938 reported about 99% approval, after 300,000 to 400,000 people, among them Jews, Roma and political opponents, had been barred from voting.",
+   "No foreign power intervened: Britain and France had largely accepted a union as inevitable, and the Anschluss became an early example of appeasement, followed in September 1938 by the Munich agreement on the Sudetenland."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Anschluss",
+    "title": "Anschluss",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://encyclopedia.ushmm.org/content/en/article/nazi-territorial-aggression-the-anschluss",
+    "title": "Nazi Territorial Aggression: The Anschluss",
+    "publisher": "United States Holocaust Memorial Museum, Holocaust Encyclopedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The Anschluss was the annexation of Austria into Nazi Germany in March 1938 (Wikipedia: 12 March).",
+   "Union had support after 1918 but the 1919 treaties of Saint-Germain and Versailles forbade it; Austrian Nazis assassinated Dollfuss in a failed coup in July 1934.",
+   "Mussolini had backed Austrian independence but by 1938 no longer guaranteed it.",
+   "At Berchtesgaden on 12 February 1938 Hitler pressured Schuschnigg into giving Seyss-Inquart control of policing and security (USHMM: and an amnesty for imprisoned Nazis, signed under pressure from generals present).",
+   "On 9 March Schuschnigg announced a referendum on independence for 13 March.",
+   "On 11 March Hitler issued an ultimatum to cancel the vote and resign; Schuschnigg resigned by radio that evening and told Austrians not to resist.",
+   "Seyss-Inquart was appointed chancellor just after midnight; German troops entered on 12 March and met no armed resistance.",
+   "On 13 March a law incorporated Austria into Germany; on 15 March Hitler addressed a large crowd at the Heldenplatz.",
+   "Wikipedia: about 70,000 people arrested within days; Social Democrats, Communists and Jews imprisoned; USHMM: Gestapo offices set up, Schuschnigg under house arrest.",
+   "About 200,000 Jews lived in Austria (USHMM); violence and 'scrubbing parties' began on 11 March; German anti-Jewish laws applied; many tried to emigrate.",
+   "The 10 April 1938 plebiscite showed about 99% approval (Wikipedia 99.7%); 300,000–400,000 were barred from voting (Wikipedia about 360,000).",
+   "No outside power intervened; Britain and France had largely accepted union as inevitable; it was an early example of appeasement, followed by the Munich agreement in September 1938."
+  ],
+  "disagree": "Wikipedia gives about 360,000 people excluded from the April 1938 vote; the USHMM gives 300,000 to 400,000. Historians disagree on how far the reported 99% approval reflected real support.",
+  "checked": null
  }
 }
