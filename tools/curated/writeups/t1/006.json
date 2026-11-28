@@ -2344,7 +2344,7 @@
    "By 1940 the Union had grown to 16 republics (Wikipedia); from 1956 it had 15 (Calend.ru; TASS).",
    "Belovezha Accords of 8 December 1991; Ukraine and Belarus denounced the treaty on 10 December (TASS; Wikipedia: ratified the accord on 10 December); the Russian parliament on 12 December (Wikipedia); the USSR dissolved on 26 December 1991 (Wikipedia; Calend.ru)."
   ],
-  "disagree": "The event record dates the treaty 29 December 1922; the fetched sources date the congress's approval and the signed documents 30 December 1922 (Wikipedia, the congress resolution, Calend.ru, TASS). No fetched source gives 29 December, so the record is left unchanged and the text uses 30 December.",
+  "disagree": "Wikidata dates the treaty 29 December 1922; the fetched sources date the congress's approval and the signed documents 30 December 1922 (Wikipedia, the congress resolution, Calend.ru, TASS), and no fetched source gives 29 December, so the event record was corrected to 30 December 1922 (tools/curated/event_overrides.json).",
   "checked": null
  },
  "Q168268": {
