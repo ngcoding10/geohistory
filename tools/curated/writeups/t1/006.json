@@ -1383,5 +1383,95 @@
   ],
   "disagree": "Date of the Edict of Worms: dated 8 May 1521 (City of Worms, Deutsche Nationalbibliothek, Lex.dk) and proclaimed on 26 May (City of Worms, Lex.dk, Christian History Institute); Wikipedia says issued on 25 May. Opening of the diet: Wikipedia gives 28 January in its lead and 23 January in its background section; the event record has 27 January; not changed, as no two sources agree on the day.",
   "checked": null
+ },
+ "Q205379": {
+  "title": "Battle of Breitenfeld",
+  "y": 1631,
+  "place": "Breitenfeld, north of Leipzig, Electorate of Saxony (Germany)",
+  "paras": [
+   "The Battle of Breitenfeld was fought on 17 September 1631, in the Thirty Years' War, on the open plain at Breitenfeld just north of Leipzig in Saxony. A Swedish army under King Gustavus Adolphus and the army of his new ally, Elector John George I of Saxony, faced the Imperial and Catholic League army of Johann Tserclaes, Count of Tilly, with Gottfried Heinrich zu Pappenheim commanding his cavalry. Gustavus had landed in Pomerania in 1630 (Wikipedia: nearly 18,000 men in June; HistoryNet: 13,000 in July) but at first found few German allies; the sack of Magdeburg by Tilly's army in May 1631 and French subsidies under the Treaty of Bärwalde changed that. When Tilly's troops invaded Saxony and occupied Leipzig, the Swedes and Saxons marched on the city.",
+   "The battle opened around midday with an artillery duel in which the Swedish guns under Lennart Torstensson fired much faster than the Imperial guns and tore into Tilly's deep infantry squares (tercios). Pappenheim then charged the Swedish right with his cuirassiers without orders from Tilly. Using the caracole, in which each rank fired pistols and wheeled away, they were met by volleys from Swedish musketeers placed among the cavalry and by counter-charges, and were driven off after repeated attempts (HistoryNet and Wikipedia both count seven).",
+   "On the other wing Imperial cavalry and infantry attacked the Saxons, who broke and fled with the Elector, losing their artillery to the Imperialists. Tilly then wheeled his tercios to roll up the exposed Swedish left. Gustav Horn turned the Swedish left wing to face them along the Düben road, and reserve brigades under the Scottish colonel Hepburn came to his aid, so the slow Imperial squares were held by musket volleys and light regimental guns. Gustavus himself led cavalry against the Imperial guns on the hill, captured them and turned them on Tilly's infantry, which was caught in a crossfire and collapsed by early evening. Tilly, wounded, escaped, and Pappenheim covered the retreat.",
+   "The Imperial-League army lost about 7,000 to 8,000 killed and about 6,000 prisoners (HistoryNet gives 7,000 and 6,000), along with all its artillery and many banners; many prisoners joined the Swedish army. Wikipedia puts Swedish losses at 3,550 men, HistoryNet at under 3,000, and the Saxons lost between 2,000 and 3,000. It was the first major Catholic defeat of the war; it established Gustavus's military reputation and opened the way for a Swedish campaign into southern Germany."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Breitenfeld_(1631)",
+    "title": "Battle of Breitenfeld (1631) (rev 1388440533)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   },
+   {
+    "url": "https://historynet.com/thirty-years-war-battle-of-breitenfeld/",
+    "title": "Thirty Years' War: Battle of Breitenfeld",
+    "publisher": "HistoryNet",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   }
+  ],
+  "claims": [
+   "Battle of Breitenfeld, 17 September 1631, Thirty Years' War, outside Breitenfeld near Leipzig, Saxony (Wikipedia; HistoryNet: between Seehausen and Breitenfeld on the Leipzig plain).",
+   "A Swedish-Saxon force under Gustavus Adolphus and Elector John George I of Saxony against the Imperial and Catholic League army of Tilly; Pappenheim commanded cavalry (Wikipedia; HistoryNet).",
+   "Gustavus landed in Pomerania in June 1630 with nearly 18,000 (Wikipedia); HistoryNet: crossed the Baltic in July with 13,000 men.",
+   "Swedish hopes of German support largely failed at first (Wikipedia; HistoryNet: Saxons and Brandenburgers stayed suspicious).",
+   "The sack of Magdeburg in May 1631 (Wikipedia; HistoryNet: 20 May 1631, by Tilly and Pappenheim's forces) and French subsidies under the Treaty of Bärwalde (Wikipedia; HistoryNet: Richelieu's financial backing) changed the situation.",
+   "Tilly's Imperial troops invaded Saxony and were based at Leipzig; the Swedish-Saxon force marched on Leipzig (Wikipedia; HistoryNet: Leipzig surrendered to Tilly).",
+   "The battle began around twelve o'clock with an artillery exchange (Wikipedia; HistoryNet: by noon the Swedish guns replied); the Swedish guns under Torstensson fired much faster (Wikipedia: three to five volleys to one; HistoryNet: three times more quickly) and the tercios were easy targets (both).",
+   "Pappenheim attacked the Swedish right with his cuirassiers without orders from Tilly (Wikipedia; HistoryNet).",
+   "The cuirassiers used the caracole; Swedish musketeers among the cavalry fired volleys and Swedish cavalry counter-charged; Pappenheim was repulsed (Wikipedia; HistoryNet).",
+   "Seven attempts: Wikipedia 'Pappenheim's seventh repulse'; HistoryNet: carried through with the caracole seven times.",
+   "Imperial cavalry and infantry attacked the Saxons, who fled, the Elector with them; the Saxon artillery was captured (Wikipedia; HistoryNet: broke with barely a shot fired, captured Saxon cannons).",
+   "Tilly pivoted his tercios to attack the open Swedish left; Horn re-aligned the left at a right angle along the road between Düben and Leipzig (Wikipedia; HistoryNet: new line at right angles along the Düben road).",
+   "Hepburn's brigades of the second line were sent to Horn's aid; musket volleys and regimental guns stopped the Imperial infantry (Wikipedia; HistoryNet: reserves of musketeers and cavalry).",
+   "Gustavus led cavalry against the Imperial artillery on the Galgenberg, captured the guns and turned them on Tilly's infantry, which was caught in a crossfire and collapsed (Wikipedia; HistoryNet: guns turned on their former owners; by 6 p.m. it was over).",
+   "Tilly was wounded and escaped; Pappenheim protected the retreat (Wikipedia; HistoryNet: Tilly with a shattered arm and chest and neck wounds escaped; linked up with Pappenheim).",
+   "Imperial-League losses: between 7,000 and 8,000 killed and around 6,000 captured (Wikipedia); HistoryNet: 7,000 dead and 6,000 captured.",
+   "Tilly lost his entire artillery and 120 banners (Wikipedia; HistoryNet: all their cannons and nearly 100 battle flags); prisoners were recruited into the Swedish army (both).",
+   "Swedish losses 3,550 (Wikipedia); HistoryNet: less than 3,000; Saxons lost between 2,000 and 3,000 (Wikipedia).",
+   "First major Catholic defeat of the war (Wikipedia); victory allowed the Swedes to campaign into southern Germany (Wikipedia); HistoryNet: Gustavus hailed as the father of modern warfare, Breitenfeld called the first battle of the modern age."
+  ],
+  "disagree": "Landing in 1630: nearly 18,000 men in June (Wikipedia) or 13,000 in July (HistoryNet). Swedish losses: 3,550 (Wikipedia) or under 3,000 (HistoryNet). Banners taken: 120 (Wikipedia) or nearly 100 (HistoryNet).",
+  "checked": null
  }
 }
