@@ -3553,5 +3553,397 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q7968690": {
+  "title": "War of the Heavenly Horses",
+  "y": -104,
+  "place": "Ferghana Valley (Dayuan), reached from Dunhuang across the Tarim Basin",
+  "paras": [
+   "The War of the Heavenly Horses was fought between Han China under Emperor Wu and Dayuan, a kingdom in the Ferghana Valley of Central Asia. Emperor Wu had heard of Dayuan's 'heavenly horses' from his envoy Zhang Qian and wanted them for the cavalry with which the Han fought the Xiongnu. He sent a mission with 1,000 pieces of gold and a golden horse to buy the best horses, which were kept at Ershi. Dayuan, already well stocked with Chinese goods and sure that China was too far away to send an army, refused. The envoys smashed the golden horse and left in anger, and the nobles of Dayuan had them killed and robbed at Yucheng on their eastern border.",
+   "In 104 BC the emperor sent Li Guangli, brother of his favourite concubine Lady Li, against Dayuan with the title 'Ershi General'. Wikipedia gives his army as 6,000 cavalry and 20,000 infantry; Friedrich Hirth's 1917 translation of the Han account gives 6,000 cavalry and 'several hundred thousand' recruits. Crossing the Tarim Basin, the army had to besiege oasis towns that refused it supplies, and it was worn down by hunger. Defeated at Yucheng, Li judged that he could not take Dayuan's capital and fell back to Dunhuang. The Han account says only one or two in ten of his soldiers were left, and that the angry emperor closed the Yumen Gate to the returning army, so Li stayed at Dunhuang.",
+   "Court officials wanted to give up the war and turn on the Xiongnu, but Emperor Wu feared losing prestige among the western states. Li set out again in 102 BC with 60,000 men, many of them convicts and young toughs, 30,000 horses and 100,000 oxen, this time well supplied. Most oasis states gave in; Luntai resisted and was destroyed. With about half his army left (30,000 men in the Han account), Li beat Dayuan's army in the field with his archers and crossbowmen, diverted the river that supplied the capital, which had no wells, and after a siege of more than forty days broke through the outer wall and captured the general Jianmi. A Wusun force of 2,000 horsemen, sent at the emperor's request, stayed out of the fighting.",
+   "The nobles in the inner city then killed their king, Wugua, sent his head to Li and offered horses and supplies if the Han withdrew, threatening to kill the horses otherwise. Li accepted. Hirth's translation says the Han took several dozen of the best horses and more than 3,000 lesser ones; Wikipedia says some 3,000 horses. Li made a noble friendly to the Han, Meicai, king and turned back. On the way home a detachment that attacked Yucheng was beaten, but Shangguan Jie then took the town, and its king, who had fled to Kangju, was handed over and killed. Only about 10,000 men and 1,000 horses came back through the Yumen Gate, mostly because officers had abused their men, yet the emperor rewarded the army and made Li Guangli Marquis of Haixi. The Han account says the whole campaign took four years.",
+   "The small states along the route sent princes to the Han court as hostages. More than a year after the war Dayuan's nobles killed Meicai and made Wugua's brother Chanfeng king; he sent a son to China as a hostage and the Han made peace with him. The Han guarded the road west towards Lop Nur with military posts and stationed soldier-farmers at Luntai, and Wikipedia says the war led smaller oasis states to turn from the Xiongnu to the Han, preparing the later Protectorate of the Western Regions."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/War_of_the_Heavenly_Horses",
+    "title": "War of the Heavenly Horses (rev 1383608759)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     24,
+     25,
+     27
+    ]
+   },
+   {
+    "url": "https://depts.washington.edu/silkroad/texts/hantxt1.html",
+    "title": "Selections from the Han Narrative Histories, part III: the mission of Zhang Qian, in Friedrich Hirth's translation (Journal of the American Oriental Society 37, 1917)",
+    "publisher": "Silk Road Seattle, University of Washington (ed. Daniel C. Waugh)",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ]
+   }
+  ],
+  "claims": [
+   "War between the Han dynasty and Dayuan, in the Ferghana Valley (Wikipedia).",
+   "Emperor Wu learned of Dayuan's heavenly horses through Zhang Qian and wanted them for cavalry against the Xiongnu (Wikipedia).",
+   "A mission with 1,000 pieces of gold and a golden horse was sent to buy the horses, kept at Ershi (Wikipedia: horses of Ershi; Hirth: 'a thousand pieces of gold and a golden horse', superior horses in the city of Ir-shi).",
+   "Dayuan, overstocked with Chinese goods and reasoning that China was too far to send a large army, refused (Wikipedia; Hirth).",
+   "The envoys smashed the golden horse; the nobles had them killed and robbed at Yucheng on the eastern border (Wikipedia; Hirth: Yu-ch'ong on the eastern frontier).",
+   "In 104 BC Li Guangli, brother of Lady Li, the emperor's favourite concubine, was appointed Ershi General and sent against Dayuan (Wikipedia: autumn 104 BC; Hirth: Madam Li, 'General Ir-shi', 104 BCE).",
+   "Army size: Wikipedia 6,000 cavalry and 20,000 infantry; Hirth: six thousand cavalry and 'several hundred thousand men' recruited from the riffraff (stated as each source's figure).",
+   "The army attacked oasis towns that refused supplies, could not always take them, and was exhausted by hunger (Wikipedia; Hirth).",
+   "Defeated at Yucheng, Li judged he could not take the capital and fell back to Dunhuang (Wikipedia; Hirth).",
+   "Only one or two in ten soldiers were left at Dunhuang; the emperor closed the Yumen Gate on pain of death and Li stayed at Dunhuang (Hirth; attributed to the Han account in the text).",
+   "Officials wanted to stop the war and fight the Xiongnu; Emperor Wu feared loss of prestige with the western states (Wikipedia; Hirth: Ta-hia and others would feel contempt for China).",
+   "Second expedition (Wikipedia: autumn 102 BC) with 60,000 men (penal recruits/ticket-of-leave men and young riffraff), 30,000 horses and 100,000 oxen, well provisioned (Wikipedia; Hirth: sixty thousand men, a hundred thousand oxen, more than thirty thousand horses).",
+   "Most oasis states submitted or supplied the army; Luntai resisted and was destroyed (Wikipedia: besieged and populace massacred; Hirth: Lun-t'ou laid in ruins after a siege of a few days).",
+   "Li reached Dayuan with about half his army (Wikipedia) - 30,000 men (Hirth).",
+   "Dayuan's army gave battle and was defeated by Han archery/crossbowmen (Wikipedia: crossbowmen; Hirth: Chinese archery).",
+   "The Han diverted the river supplying the capital, which had no wells; after more than forty days they broke the outer wall and captured Jianmi (Wikipedia: forty-day siege; Hirth: more than forty days, Tsien-mi).",
+   "A Wusun force of 2,000 cavalry, requested by the emperor, did not take part (Wikipedia; Hirth).",
+   "The nobles killed King Wugua (Mu-kua), sent his head to Li, offered horses and provisions for a withdrawal, and threatened to kill the horses otherwise; Li accepted (Wikipedia; Hirth).",
+   "Horses taken: Hirth, several dozen superior horses and more than 3,000 of inferior quality; Wikipedia, some 3,000 horses (stated as each source's figure).",
+   "Li installed Meicai, who had treated Han envoys well, as king (Wikipedia; Hirth: Mei-ts'ai).",
+   "On the return a detachment under Wang Shensheng attacked Yucheng and was routed; Shangguan Jie then took Yucheng; its king fled to Kangju, was handed over and killed (Wikipedia; Hirth).",
+   "About 10,000 men and 1,000 horses returned, losses being due mainly to officers' abuse/graft; the emperor rewarded the army and made Li Guangli Marquis of Haixi (Wikipedia; Hirth: scarcely more than ten thousand men and a thousand horses, Marquis of Hai-si).",
+   "The Han account says the whole campaign took four years (Hirth: 'Four years were required to finish the entire campaign'), matching the event record's 104-101 BC.",
+   "The small states on the return route sent sons and younger brothers of their rulers to the Han court as hostages (Wikipedia; Hirth).",
+   "More than a year later Dayuan's nobles killed Meicai and made Chanfeng, Wugua's brother, king; he sent his son as hostage and the Han sent a conciliatory mission with gifts / made peace (Wikipedia; Hirth).",
+   "The road west to Lop Nur (the Salt Lake) was protected by military stations and several hundred soldiers farmed at Luntai (Lun-t'ou) (Hirth).",
+   "The war led smaller oasis states to switch from the Xiongnu to the Han and paved the way for the Protectorate of the Western Regions (Wikipedia)."
+  ],
+  "disagree": "Army of the first expedition: Wikipedia gives 6,000 cavalry and 20,000 infantry, Hirth's 1917 translation of the Han account 6,000 cavalry and 'several hundred thousand men'. Horses taken: Hirth 'several dozens' of superior horses and more than 3,000 lesser ones, Wikipedia some 3,000 horses. Both are stated in the text with their sources.",
+  "checked": null
+ },
+ "Q134178": {
+  "title": "Minoan civilization",
+  "y": -3300,
+  "place": "Crete (Knossos, Phaistos, Malia, Zakros and other sites), with settlements and influence across the southern Aegean",
+  "paras": [
+   "The Minoan civilization was the Bronze Age culture of Crete. Its name is modern: Arthur Evans popularised it from Minos, the mythical king whom the Classical Greeks placed at Knossos. What the Minoans called themselves is unknown; the Egyptians called them Keftiu. Wikipedia dates the culture's growth out of the island's Neolithic farming communities to about 3100 BC, at the start of the Early Bronze Age. Crete is poor in metals, and the Minoans traded farm produce and luxury crafts for them; by the Early Minoan II period their ships were reaching Egypt and Syria.",
+   "From about 2100 BC the populations of Knossos, Phaistos and Malia grew sharply, and the first palaces were built there in the period archaeologists call Middle Minoan IB (c. 1925-1875 BC in Wikipedia; ca. 2000/1950-1900/1850 BC in Jeremy Rutter's Dartmouth course, which counts only Knossos and Phaistos as certain palaces of that time). These large complexes held stores of farm produce and craft workshops, and are now thought to have had religious and economic roles rather than being royal homes. The Minoans developed two scripts, Cretan hieroglyphic and Linear A, neither of which has been fully deciphered. After destructions at the end of the next period, new palaces were built at Knossos, Malia, Zakros and Kommos, opening the Neopalatial or 'New Palace' period (from c. 1750-1700 BC in Wikipedia, ca. 1750/1720 BC in the Dartmouth course).",
+   "In the Neopalatial age Minoan influence spread through the southern Aegean: its mark grew strong at island towns such as Akrotiri on Thera, Phylakopi on Melos and Ayia Irini on Keos, and Kastri on Kythera was a Minoan colony. The eruption of the Thera volcano, dated by carbon dating to around 1600 BC (Egyptian synchronisms put it about a century later; the Dartmouth course gives ca. 1625 BC), destroyed Akrotiri, but Knossos went on prospering. Then, at the end of Late Minoan IB (c. 1470 BC in Wikipedia, ca. 1490/1470 BC in the Dartmouth course), almost every Minoan site of note was destroyed, and the palaces of Phaistos, Malia and Zakros were never rebuilt as palaces. The cause is still argued over: Mycenaean invaders, internal unrest, earthquakes or the after-effects of the eruption have all been proposed.",
+   "Knossos alone stayed in use as a palace. Who ruled it is debated: the Dartmouth course lists a Mycenaean conqueror, his viceroy, or a Minoan ruler backed by Mycenaean soldiers. The palace's records came to be kept in Linear B, a script adapted from Linear A to write Mycenaean Greek, which shows that a Greek-speaking elite now ran the administration; Linear B was deciphered in 1952. The Dartmouth course dates a great fire at Knossos to ca. 1385/1375 BC, after which Crete split among regional centres such as Ayia Triadha and Chania. From about 1200 BC, during the wider Late Bronze Age collapse, coastal settlements were abandoned for defensible hilltops, and this hybrid Minoan-Mycenaean culture faded out around 1100 BC.",
+   "The Minoans were then largely forgotten until excavations in the early 20th century, led at Knossos by Arthur Evans, brought them back to light. In July 2025 the British School at Athens reported that Knossos had joined the UNESCO World Heritage List together with the palaces of Phaistos, Malia, Zakros, Zominthos and Kydonia."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Minoan_civilization",
+    "title": "Minoan civilization (rev 1384473218)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     21
+    ]
+   },
+   {
+    "url": "https://sites.dartmouth.edu/aegean-prehistory/lessons/lesson-10-narrative/",
+    "title": "Lesson 10: Narrative (Middle Minoan Crete)",
+    "publisher": "Aegean Prehistoric Archaeology (J. B. Rutter, Dartmouth College)",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://sites.dartmouth.edu/aegean-prehistory/lessons/lesson-11-narrative/",
+    "title": "Lesson 11: Narrative (The First Palaces in the Aegean)",
+    "publisher": "Aegean Prehistoric Archaeology (J. B. Rutter, Dartmouth College)",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     7
+    ]
+   },
+   {
+    "url": "https://sites.dartmouth.edu/aegean-prehistory/lessons/lesson-18-narrative/",
+    "title": "Lesson 18: Narrative (Neopalatial Minoan influence; the LM IB destructions; Mycenaeans at Knossos)",
+    "publisher": "Aegean Prehistoric Archaeology (J. B. Rutter, Dartmouth College)",
+    "accessed": "2026-11-28",
+    "supports": [
+     10,
+     11,
+     12,
+     13,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://www.bsa.ac.uk/2025/07/17/knossos-a-new-unesco-world-heritage-site/",
+    "title": "Knossos - a new UNESCO World Heritage site (17 July 2025)",
+    "publisher": "British School at Athens",
+    "accessed": "2026-11-28",
+    "supports": [
+     21,
+     22
+    ]
+   }
+  ],
+  "claims": [
+   "A Bronze Age culture centred on Crete (Wikipedia).",
+   "'Minoan' is a modern term from the mythical King Minos, whom the Classical Greeks believed ruled Knossos, popularised by Arthur Evans; the Minoans' own name is unknown; Egyptians called them kftjw/Keftiu (Wikipedia).",
+   "Developed from the local Neolithic culture around 3100 BC (Wikipedia; the Dartmouth course puts the beginning of the Early Bronze Age in the later 4th millennium BC).",
+   "Crete is poor in metals; Minoans exported agricultural products and luxury crafts in exchange for raw metals (Wikipedia).",
+   "In EM II Minoan ships began sailing to Egypt and Syria (Wikipedia).",
+   "Populations increased dramatically at Knossos, Phaistos and Malia in MM IA, c. 2100-1925 BC (Wikipedia); first palaces built in MM IB: Wikipedia c. 1925-1875 BC, Dartmouth ca. 2000/1950-1900/1850 BC, first certain palaces at Knossos and Phaistos, a Protopalatial palace at Malia not certain (stated as each source's dates).",
+   "First palaces emphasised storage of agricultural produce and workshops for specialised artisans (Dartmouth lesson 11); research shows the 'palaces' served religious and economic purposes rather than being royal residences (Wikipedia).",
+   "Two scripts, Cretan hieroglyphs and Linear A, neither fully deciphered (Wikipedia).",
+   "MM II ended with mass destructions (Wikipedia; Dartmouth: Old Palaces destroyed at end of MM IIB).",
+   "New palaces built at Knossos, Kommos, Malia and Zakros in MM III, beginning the Neopalatial period: Wikipedia MM III c. 1750-1700 BC; Dartmouth ca. 1750/1720 BC (stated as each source's dates).",
+   "Neopalatial Minoan influence became even more marked at Phylakopi (Melos), Ayia Irini (Keos) and Akrotiri (Thera) (Dartmouth); cultural influence reached the Aegean (Wikipedia).",
+   "Kastri on Kythera was a Minoan colony (Dartmouth).",
+   "Thera eruption: carbon dating around 1600 BC, Egyptian synchronism about a century later (Wikipedia); Dartmouth ca. 1625 BC (stated).",
+   "The eruption destroyed Akrotiri; Knossos continued to prosper (Wikipedia).",
+   "LM IB ended with destructions across Crete: Wikipedia c. 1470 BC; Dartmouth ca. 1490/1470 BC, affecting virtually every Minoan residential site of consequence (stated as each source's dates).",
+   "Phaistos, Malia and Zakros were destroyed and never rebuilt as palaces; Knossos continued as a palace (Dartmouth; Wikipedia: only Knossos remained in use).",
+   "Causes debated: Mycenaean conquerors, internal upheavals, earthquakes, Thera after-effects (Wikipedia; Dartmouth).",
+   "Who ruled Knossos is unclear: Mycenaean conqueror, viceroy, or Minoan dynast with Mycenaean mercenaries (Dartmouth); Wikipedia: Mycenaean cultural and perhaps political domination.",
+   "Linear B, adapted from Linear A to write Mycenaean Greek, became the language of administration; Greek-speaking elite; deciphered 1952 (Wikipedia; Dartmouth: Linear B deciphered as an early form of Greek, used at Knossos and Chania).",
+   "Fire destroyed Knossos ca. 1385/1375 BC; afterwards independent polities such as Ayia Triadha and Chania arose (Dartmouth, attributed in the text).",
+   "LM IIIC (c. 1200-1075 BC), with the Late Bronze Age collapse: coastal settlements abandoned for defensible higher ground; hybrid culture lasted until around 1100 BC; largely forgotten, rediscovered by excavation in the early 20th century (Wikipedia); Arthur Evans was the excavator of Knossos (British School at Athens).",
+   "In July 2025 Knossos joined the UNESCO World Heritage List with Phaistos, Malia, Zakros, Zominthos and Kydonia (British School at Athens, news of 17 July 2025; attributed in the text)."
+  ],
+  "disagree": "The event record starts the civilization in 3300 BC; Wikipedia dates its development from the Neolithic to around 3100 BC, and the Dartmouth course places the start of the Early Bronze Age in the later 4th millennium BC. The text gives Wikipedia's date. Period dates differ between Wikipedia and Rutter's Dartmouth course (first palaces c. 1925-1875 vs ca. 2000/1950-1900/1850 BC; Neopalatial from c. 1750-1700 vs ca. 1750/1720 BC; Thera eruption about 1600 BC by carbon dating, or a century later by Egyptian synchronisms, vs ca. 1625 BC; end of LM IB c. 1470 vs ca. 1490/1470 BC); each is given with its source.",
+  "checked": null
+ },
+ "Q715380": {
+  "title": "First Triumvirate",
+  "y": -60,
+  "place": "Rome; renewed in 56 BC at Ravenna and Luca (Lucca) in Cisalpine Gaul",
+  "paras": [
+   "The 'First Triumvirate' was an informal and at first secret alliance of three leading Roman politicians: Pompey, Marcus Licinius Crassus and Julius Caesar. The name is modern. It was not an office, and contemporaries described it in other ways: Cicero wrote of 'three men' holding a kind of kingship, and Varro called it a 'three-headed monster'. Each man had been blocked by opponents in the Senate, led by Cato and Metellus Celer. Pompey wanted his settlement of the East after the Third Mithridatic War ratified and land for his veterans. Crassus wanted relief for the tax-farming companies of Asia, which had bid too much for their contracts. Caesar, back from Spain in 60 BC, gave up his claim to a triumph in order to stand for the consulship of 59, and his opponents secured the election of a hostile colleague, Bibulus.",
+   "Caesar brought together the old rivals Pompey and Crassus. The ancient writers disagree on whether the pact came before or after his election, and Wikipedia places it between July 60 and January 59 BC. As consul in 59, Caesar proposed a land law that would settle Pompey's veterans. When Cato obstructed it in the Senate, Caesar took it to the people, with Pompey and Crassus at his side; Pompey promised to answer swords with a shield. Bibulus was driven from the forum and later shut himself up at home. Laws followed that ratified Pompey's eastern settlement and cut the tax farmers' debts by a third. Pompey married Caesar's daughter Julia, and Caesar received Cisalpine Gaul and Illyricum for five years, to which the Senate added Transalpine Gaul.",
+   "The alliance's strong-arm methods made it unpopular, and it frayed while Caesar campaigned in Gaul and the tribune Clodius turned against Pompey. In 56 BC Caesar met Crassus at Ravenna and Pompey at Luca, where some two hundred senators came to pay court. The pact was renewed: Pompey and Crassus were elected consuls again for 55 BC after violence and bribery, Caesar's command was extended for another five years, and a law of the tribune Trebonius gave Crassus Syria and Pompey the Spanish provinces for five years.",
+   "Julia died in childbirth in 54 BC, and in 53 BC Crassus was killed by the Parthians at Carrhae. Wikipedia notes that modern scholars no longer simply accept the ancient view that Julia's death made a clash inevitable, but Crassus's death turned the three-way alliance into a rivalry between two men. Pompey built ties with Caesar's opponents and became sole consul in 52 BC, and in January 49 BC Caesar went into open rebellion. Plutarch judged that it was not the quarrel between Caesar and Pompey that brought on the civil wars, but their friendship."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/First_Triumvirate",
+    "title": "First Triumvirate (rev 1381886020)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Caesar*.html",
+    "title": "Plutarch, Life of Caesar (Loeb Classical Library, trans. B. Perrin, 1919)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14,
+     15,
+     17,
+     18,
+     20,
+     21
+    ]
+   }
+  ],
+  "claims": [
+   "An informal, initially secret political alliance of Pompey, Crassus and Caesar; not a formal magistracy (Wikipedia).",
+   "The term is modern; Cicero wrote of 'three men' exercising a regnum, Varro of a 'three-headed monster' (Wikipedia).",
+   "Opposition in the Senate led by Cato and Metellus Celer (Wikipedia).",
+   "Pompey wanted ratification of his eastern settlement after the Third Mithridatic War and land for his veterans (Wikipedia).",
+   "Crassus sought renegotiation of the tax contracts of Asia, over-bid by the publicani (Wikipedia).",
+   "Caesar returned from Spain in 60 BC and gave up his triumph to stand for the consulship (Wikipedia; Plutarch).",
+   "Cato and his allies secured the election of Bibulus, an enemy of Caesar, as co-consul (Wikipedia).",
+   "Caesar reconciled Pompey and Crassus / acted as intermediary between the rivals (Plutarch; Wikipedia).",
+   "Ancient sources disagree on timing (Plutarch, Livy, Appian before the election; Velleius, Suetonius, Dio after); Wikipedia places formation between July 60 and January 59 BC (Wikipedia; Plutarch places the reconciliation on Caesar's entry into the city to canvass).",
+   "As consul in 59 Caesar proposed an agrarian law including land for Pompey's veterans; Cato filibustered in the Senate; Caesar took it to the people (Wikipedia; Plutarch).",
+   "Pompey and Crassus stood with Caesar; Pompey said he would bring a shield against swords (Wikipedia: 'provide a shield'; Plutarch: 'sword and buckler').",
+   "Bibulus was thrown from the rostra / driven off, and later shut himself up at home (Wikipedia; Plutarch).",
+   "Laws ratified Pompey's eastern settlement and a one-third write-down of the publicani's tax bills (Wikipedia); Plutarch: Caesar's laws enacted with Pompey's help.",
+   "Pompey married Julia, Caesar's daughter (Wikipedia; Plutarch).",
+   "Caesar received Cisalpine Gaul and Illyricum for five years (law of Vatinius), and the Senate added Transalpine Gaul (Wikipedia; Plutarch: Gaul on both sides of the Alps with Illyricum for five years).",
+   "The alliance became unpopular; it frayed; Clodius turned against Pompey (Wikipedia).",
+   "In 56 BC Caesar met Crassus at Ravenna and Pompey at Luca; some two hundred senators attended (Wikipedia: some two hundred; Plutarch: more than two hundred senators at Luca).",
+   "Pompey and Crassus elected consuls for 55 BC using force and bribes; Caesar's command extended five years (Wikipedia; Plutarch: consuls for the ensuing year and another five years for Caesar).",
+   "Lex Trebonia gave Crassus and Pompey Syria and Hispania for five years (Wikipedia).",
+   "Julia died in childbirth (54 BC); Crassus killed by the Parthians at Carrhae in 53 BC; modern scholars no longer uncritically accept that Julia's death made confrontation inevitable; Crassus's death turned the alliance into a two-man rivalry; Pompey sole consul 52 BC; Caesar's open rebellion January 49 BC (Wikipedia; Plutarch: Julia died in childbirth at Pompey's house; Crassus perished among the Parthians).",
+   "Plutarch: not the quarrel but the friendship of Caesar and Pompey brought on the civil wars (Plutarch)."
+  ],
+  "disagree": "The ancient writers disagree on when the pact was made: Plutarch, Livy and Appian put it before Caesar's election as consul, Velleius, Suetonius and Cassius Dio after it (Wikipedia, which itself places it between July 60 and January 59 BC). Stated in the text.",
+  "checked": null
+ },
+ "Q212079": {
+  "title": "Second Triumvirate",
+  "y": -43,
+  "place": "Agreed on an island in a river near Mutina (Modena); made law in Rome",
+  "paras": [
+   "The Second Triumvirate was a legal commission that gave three Caesarian leaders, Mark Antony, Lepidus and Caesar's adopted heir Octavian, almost absolute power over the Roman state. After Julius Caesar's murder on 15 March 44 BC, Antony and Octavian fell out. Urged on by Cicero, the Senate turned against Antony, whose forces were put to flight at Mutina on 21 April 43 BC, and he was declared a public enemy. With both consuls dead, Octavian marched on Rome, became consul in August 43 BC, had the decree against Antony repealed, and moved north to make terms with him under Lepidus's protection.",
+   "The three men met on a small island in a river near Mutina; Appian says Octavian and Antony each brought five legions, which faced each other across the river, and the three conferred for two days. They agreed on a new office, to be held for five years with powers above the consuls', and split the western provinces: Antony took Cisalpine and Transalpine Gaul, Lepidus Narbonese Gaul and Spain, and Octavian Africa, Sardinia and Sicily. They promised their soldiers the land of eighteen rich Italian towns. In Rome a tribune, Publius Titius, carried the law at once (the lex Titia), and Wikipedia dates its formal creation to 27 November 43 BC. The triumvirs could issue binding edicts, overrule governors, punish without right of appeal and appoint the magistrates.",
+   "They began with proscriptions: lists of men to be killed and their property sold, with rewards for killers and informers. Cicero, who had attacked Antony in his speeches, was among the victims, and his head and hand were put on show in the Forum. The ancient numbers differ. Appian names 17 first and then 130 and 150 more, and gives about 300 senators and 2,000 knights condemned; Wikipedia notes that this total covers everyone killed or stripped of property up to 39 BC, while Plutarch gives between 200 and 300 and Livy 130 senators besides many knights.",
+   "In 42 BC Antony and Octavian took their armies to Macedonia against Caesar's assassins. In two battles at Philippi they defeated Brutus and Cassius, both of whom took their own lives, the second battle being fought on 23 October 42 BC. Afterwards Antony took charge of the East and Octavian of the West, and Lepidus was left with Africa. The triumvirate was renewed in 37 BC for five more years; in 36 BC Octavian forced Lepidus out, and the two remaining triumvirs fought a final war, from which Octavian emerged the victor."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Second_Triumvirate",
+    "title": "Second Triumvirate (rev 1382450005)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/4*.html",
+    "title": "Appian, The Civil Wars, book IV (Loeb Classical Library, trans. H. White, 1913)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "An extraordinary commission and magistracy giving Antony, Lepidus and Octavian practically absolute power (Wikipedia).",
+   "Caesar assassinated on 15 March 44 BC; Antony and Octavian fell out (Wikipedia).",
+   "Cicero induced the Senate to oppose Antony; Antony put to flight at the Battle of Mutina on 21 April 43 BC; declared a public enemy (Wikipedia).",
+   "With both consuls dead Octavian marched on Rome, reached it on 19 August 43 BC and secured election as consul with Quintus Pedius; the public-enemy declaration was repealed (Wikipedia).",
+   "Octavian moved north to treat with Antony under Lepidus's protection (Wikipedia).",
+   "They met on a small islet in a river near Mutina (Appian: river Lavinius; Wikipedia: they reconciled); each with five legions stationed opposite; the three conferred for two days (Appian, attributed in text).",
+   "A new magistracy for five years with consular power (Appian); triumviri rei publicae constituendae for five years, powers above the consuls (Wikipedia: listed above the consuls on the Capitoline Fasti).",
+   "Provinces: Antony Cisalpine and Transalpine Gaul / all Gaul except 'Old Gaul'; Lepidus Narbonese Gaul and Spain; Octavian Africa, Sardinia and Sicily (Wikipedia; Appian).",
+   "Soldiers promised eighteen cities of Italy (Appian); the triumvirs seized eighteen rich Italian towns for their veterans (Wikipedia).",
+   "Tribune Publius Titius proposed the law, passed forthwith (Appian); confirmed by the lex Titia proposed by a friendly tribune (Wikipedia).",
+   "Formally constituted by law on 27 November 43 BC (Wikipedia, attributed in text).",
+   "Powers: binding edicts, imperium maius over governors, action without right of appeal, appointment of magistrates (Wikipedia; Appian: they were to designate the yearly magistrates).",
+   "Proscription lists; property confiscated and sold; cash rewards for killers and informers (Wikipedia; Appian: rewards for heads, informers rewarded).",
+   "Cicero, who had spoken against Antony (Philippics), was proscribed and killed; his head and hand displayed on the rostra (Appian; Wikipedia: proscribed for his activism in the Philippicae).",
+   "Appian: 17 first, then 130 and 150 more; about 300 senators and 2,000 knights (Appian; Wikipedia).",
+   "In 42 BC the triumvirs went to Macedonia; two battles at Philippi; Cassius killed himself after the first, Brutus after the second (Wikipedia; Appian).",
+   "Second battle on 23 October 42 BC (Wikipedia, attributed in text); afterwards Antony east, Octavian west, Lepidus Africa (Wikipedia).",
+   "Wikipedia: Appian's total covers all killed or with property confiscated between 43 and Misenum (39 BC); Plutarch 200 to 300; Livy 130 senators and many equites. Renewed in 37 BC for five years; Octavian forced Lepidus out in 36 BC; final war won by Octavian (Wikipedia)."
+  ],
+  "disagree": "Numbers of the proscribed differ between ancient sources: Appian gives 17, then 130 and 150 more, and about 300 senators and 2,000 knights in all (a total Wikipedia says covers everyone killed or deprived of property up to 39 BC); Plutarch gives 200 to 300 and Livy 130 senators besides many knights (both as reported by Wikipedia). Stated in the text with their sources.",
+  "checked": null
  }
 }
