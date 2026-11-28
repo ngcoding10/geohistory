@@ -2422,5 +2422,478 @@
   ],
   "disagree": "Founding of the city of Kokand: 1740 by Abd al-Karim (Wikipedia; Howorth also credits Abdul Kerim with building the present city) or 1732 by Abd al-Rahim under the name Iski-kurgan (1911 Britannica, which adds that this can refer only to the fort). Both stated. The 1709 founding date is Wikipedia's; Howorth gives only 'the beginning of the last century' and calls his sources unsatisfactory, so the date is attributed.",
   "checked": null
+ },
+ "Q3178839": {
+  "title": "First voyage of James Cook",
+  "y": 1768,
+  "place": "Pacific Ocean: Tahiti, New Zealand and the east coast of Australia (Botany Bay)",
+  "paras": [
+   "In 1768 the Royal Society asked King George III to fund an expedition to the Pacific to observe the transit of Venus across the Sun, expected on 3 June 1769, which would help astronomers calculate the distance from the Earth to the Sun. The Admiralty combined the scientific mission with a confidential one: to search the South Pacific for the supposed great southern continent, Terra Australis. Command went to James Cook, a former merchant seaman who had made his name as a naval surveyor of the St Lawrence River and Newfoundland and was promoted lieutenant for the voyage. His ship was the Endeavour, a 'North-Country cat' bought by the government, and with him went the astronomer Charles Green and the wealthy naturalist Joseph Banks, who brought the Swedish botanist Daniel Solander and the artists Sydney Parkinson and Alexander Buchan.",
+   "The Endeavour left Plymouth in August 1768 (on the 26th according to Wikipedia, the 25th according to the 1911 Encyclopaedia Britannica), rounded Cape Horn and reached Tahiti on 13 April 1769. The transit was observed from a small fort at Point Venus on 3 June, but the timings of Cook, Green and Solander differed more than expected and the results proved less exact than hoped. Cook then opened his sealed orders, visited and claimed the neighbouring Society Islands, guided by the Tahitian priest and navigator Tupaia, and sailed south and west. He reached New Zealand in October 1769, the first Europeans there since Abel Tasman in 1642, and spent six months charting both islands and the strait between them, now Cook Strait. Several Māori were killed in the first encounters, which Cook regretted.",
+   "Turning west, he sighted the south-east coast of Australia on 19 April 1770 (20 April by today's local calendar) and became the first known European to reach its eastern coast. Near the end of April the ship entered a broad inlet, and Cook's party landed at what is now Botany Bay, on the land of the Gweagal people of the Dharawal. Two Gweagal men tried to drive them off; Cook fired small shot, wounding one, and the men threw spears. The expedition stayed a week, and Banks and Solander's plant collections gave the bay its name. Sailing north along the coast, the Endeavour struck the Great Barrier Reef on 11 June 1770 and was saved only by jettisoning her guns and other weight and patching the hull; repairs took weeks. On 22 August, at Possession Island off Cape York, Cook claimed the whole eastern coast for Great Britain, and by passing through Torres Strait he confirmed that New Guinea was separate from Australia.",
+   "Cook had lost no men to scurvy, but at Batavia (Jakarta), where the ship was repaired, malaria and dysentery killed many of the company, among them Tupaia, Green and Parkinson; Wikipedia counts seven dead at Batavia and 23 more on the voyage home. The Endeavour returned by the Cape of Good Hope and anchored in the Downs off Deal on 12 July 1771, according to Wikipedia (the Britannica gives 12 June). The voyage disproved a southern continent north of 40° South, charted New Zealand and eastern Australia with a new accuracy, and led to Cook's second voyage of 1772–1775; Banks later promoted Botany Bay as a place for a British settlement."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/First_voyage_of_James_Cook",
+    "title": "First voyage of James Cook (rev 1369795522, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Cook,_James",
+    "title": "Cook, James, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     10,
+     12,
+     13,
+     16,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "The Royal Society petitioned George III on 16 February 1768 for an expedition to observe the 1769 transit of Venus, to measure the distance from the Earth to the Sun (Wikipedia); EB: expedition resolved on by the admiralty at the instance of the Royal Society for observing the transit of Venus.",
+   "The Admiralty combined it with a confidential search for Terra Australis (Wikipedia); EB: prosecuting geographical researches in the South Pacific; sailed in quest of the great continent then supposed to exist.",
+   "Cook: apprenticed in the Whitby shipping trade, surveyed the St Lawrence and Newfoundland; commission as lieutenant (EB: 25 May 1768; Wikipedia: Lieutenant James Cook; chosen for his cartography and mathematics).",
+   "Ship Endeavour (EB: of 370 tons; Wikipedia: purchased by the government, a 'North-Country Cat'); men of science including Banks (EB; Wikipedia: Green, Banks, Solander, Spöring, Buchan, Parkinson).",
+   "Departure from Plymouth: 26 August 1768 (Wikipedia) / 25 August (EB), both attributed.",
+   "Rounded Cape Horn (Wikipedia).",
+   "Reached Tahiti 13 April 1769; transit observed 3 June (Wikipedia; EB: 13 April 1769, 3 June).",
+   "Fort and observatory at Point Venus; measurements of Green, Cook and Solander varied more than expected; results less conclusive than hoped (Wikipedia); EB: observed the transit.",
+   "Opened sealed orders; Tupaia, priest and navigator, joined; claimed Raiatea and adjacent islands as the Society Islands (Wikipedia; EB: explored the Society Islands).",
+   "Reached New Zealand in October 1769 (Wikipedia: 6 October); Tasman in 1642 (Wikipedia); EB: circumnavigated and examined its coasts for six months, Cook Strait (Wikipedia: six months charting).",
+   "First encounters with Māori resulted in deaths, which Cook regretted (Wikipedia); EB: attempts to penetrate the interior thwarted by native hostility.",
+   "Land sighted 19 April 1770, now called 20 April; first recorded Europeans on the eastern coast (Wikipedia); EB: proceeded to New Holland and surveyed the whole east coast.",
+   "First landfall at Botany Bay on 29 April (Wikipedia); EB: Botany Bay sighted on 28 April 1770, named by the naturalists; text says 'near the end of April'.",
+   "Two Gweagal men of the Dharawal/Eora opposed the landing; warning shot, rock thrown, small shot wounding one in the leg, spears thrown; stay of a week; named Botany Bay after the botanists' specimens (Wikipedia; EB: so called by the naturalists of the expedition).",
+   "Ran aground on the Great Barrier Reef on 11 June 1770; guns and surplus weight jettisoned; sail fothered over the hull; repairs until 3 August (Wikipedia).",
+   "22 August 1770, Possession Island near Cape York, claim of the eastern coastline (Wikipedia; EB: took possession for Great Britain); Torres Strait passage confirmed New Holland and New Guinea separate (Wikipedia; EB: satisfying himself that New Guinea was no part of the land mass to the south).",
+   "No man lost to scurvy; at Batavia malaria and dysentery killed many including Tupaia, Spöring, Green and Parkinson; seven died at Batavia and 23 on the passage home (Wikipedia, attributed for the counts); anchored in the Downs and Cook went ashore at Deal on 12 July 1771 (Wikipedia); EB: arriving in England by way of the Cape of Good Hope on the 12th of June (attributed); Cook's journal of 31 March 1770 on setting aside a southern continent north of 40 degrees S (Wikipedia); second voyage 1772 (Wikipedia: 1772 to 1775; EB: sailed 13 July 1772); Banks promoted Botany Bay for a settlement (Wikipedia)."
+  ],
+  "disagree": "Departure from Plymouth: 26 August 1768 (Wikipedia) or 25 August (1911 Britannica). Return: anchored in the Downs on 12 July 1771 (Wikipedia, with a day-by-day account) or 12 June (Britannica). Botany Bay: sighted 28 April (Britannica), first landing 29 April (Wikipedia). All stated or covered in the text.",
+  "checked": null
+ },
+ "cp07-04": {
+  "title": "Declaration of the Rights of Man and of the Citizen",
+  "y": 1789,
+  "place": "Versailles, France",
+  "paras": [
+   "In the summer of 1789 the deputies of the Estates-General, now the National Constituent Assembly, set out to give France a written constitution. On the night of 4 August they voted to abolish privileges and feudal rights. They decided to begin with a declaration of principles that would stand as the constitution's preamble; the constitutional committee elected on 14 July was told to start by drafting it. The Marquis de Lafayette had prepared a draft in consultation with Thomas Jefferson, then the American envoy in Paris, and the Abbé Sieyès and Mirabeau shaped the final version, which the Assembly debated article by article from a 24-article draft prepared by one of its committees.",
+   "The official record printed with the text gives the sessions of 20 to 26 August 1789, and the last article was adopted on 26 August. The preamble declares, 'in the presence and under the auspices of the Supreme Being', that ignorance, neglect or contempt of the rights of man are the sole causes of public misfortune and corrupt government. Its seventeen articles state that men are born and remain free and equal in rights; that the natural rights of man are liberty, property, security and resistance to oppression; that sovereignty resides in the nation; and that law is the expression of the general will, equal for all, with all citizens equally eligible for public office according to their abilities. It forbids arbitrary arrest and retroactive punishment, presumes innocence until guilt is declared, protects opinions, 'even religious ones', as long as they do not disturb public order, and guarantees free speech and printing subject to the law. Taxes must be shared according to means and consented to by the citizens or their representatives; a society without a guarantee of rights or a separation of powers has no constitution; and property is an inviolable and sacred right.",
+   "The Catholic Encyclopedia notes that the clergy's proposals for articles guaranteeing respect for religion were rejected, leaving only the article on freedom of opinion. On 1 October the Assembly sent its president to present the declaration to Louis XVI for his acceptance; his refusal to promulgate it was one of the grievances behind the march on Versailles that brought the royal family to Paris on 6 October 1789.",
+   "The declaration became the preamble of the Constitution of 1791. Its rights were in practice limited: that constitution distinguished 'active' from 'passive' citizens, its rights were given to men only, and it did not abolish slavery in the colonies, though it inspired the slave risings in Saint-Domingue. It had a wide influence on ideas of individual liberty and democracy in Europe and beyond, and it remains part of French constitutional law through the preambles of the constitutions of 1946 and 1958."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen",
+    "title": "Declaration of the Rights of Man and of the Citizen (rev 1375474466, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://fr.wikisource.org/wiki/D%C3%A9claration_des_Droits_de_l%E2%80%99Homme_et_du_Citoyen_de_1789",
+    "title": "Déclaration des Droits de l'Homme et du Citoyen de 1789, text with the extract of the Assembly's record (French)",
+    "publisher": "Wikisource (French)",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/French_Revolution",
+    "title": "French Revolution, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     7,
+     9,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/French_Revolution,_The",
+    "title": "French Revolution, The, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Louis_XVI._of_France",
+    "title": "Louis XVI., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Night of 4 August 1789: the Assembly voted the abolition of all privileges and feudal rights (CE).",
+   "The Assembly judged it necessary to draw up a declaration forming a preamble to the constitution (CE); EB: the first Constitutional Committee, elected on 14 July, was instructed to begin with drafting a Declaration of the Rights of Man; six weeks spent discussing it.",
+   "Lafayette prepared drafts in consultation with Jefferson, the American diplomat in France; Sieyès and Mirabeau central in the final declaration; debated from a 24-article draft by the sixth bureau (Wikipedia). EB French Revolution: Lafayette 'imagined himself to be copying the American constitution' (context only).",
+   "The last article adopted on 26 August 1789 (Wikipedia; published on 26 August).",
+   "Record heading: procès-verbaux of the Assembly of 20, 21, 22, 23, 24, 26 August and 1 October 1789 (French text); Wikipedia: 26 August.",
+   "Preamble: in the presence and under the auspices of the Supreme Being; ignorance, neglect or contempt of the rights of man the sole causes of public misfortunes and corruption of governments (French text; Wikipedia: preamble, 'natural, unalienable and sacred').",
+   "Contents (rule 5, compared article by article between the French text and Wikipedia's English rendering): 17 articles (French text, I-XVII); art. 1 free and equal; art. 2 liberty, property, security (sûreté) and resistance to oppression; art. 3 sovereignty in the nation; art. 6 law the expression of the general will, equal admissibility to offices according to capacity; art. 7 no arbitrary arrest; art. 8 no retroactive penalties; art. 9 presumption of innocence; art. 10 opinions, even religious, not to be disturbed (also quoted by CE); art. 11 free communication of thoughts, speaking, writing and printing, answerable for abuse; art. 13 common contribution shared according to means; art. 14 citizens to consent to taxation; art. 16 no constitution without guarantee of rights or separation of powers; art. 17 property inviolable and sacred.",
+   "Same contents in Wikipedia's 'Articles' section (Articles I-XI quoted; Substance section).",
+   "Clergy's proposed articles on respect for religion: two of three rejected, leaving the one on opinions (CE, attributed); Wikipedia: Article X.",
+   "1 October 1789: the Assembly decided its president should present the declaration to the king for acceptance (French text, extract of the record).",
+   "The king's refusal to promulgate the Declaration and rumours of flight brought about the march on Versailles; king and queen brought to Paris on 6 October 1789 (CE; EB Louis XVI: 6 October capture of the royal family at Versailles by a mob from Paris; EB French Revolution).",
+   "Preamble to the Constitution of 1791; active and passive citizens; rights awarded only to men; did not revoke slavery in the colonies but inspired the Saint-Domingue uprisings; significant impact on conceptions of individual liberty and democracy in Europe and worldwide (Wikipedia).",
+   "Included at the beginning of the constitutions of the Fourth (1946) and Fifth (1958) Republics and valid as constitutional law (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q1192894": {
+  "title": "Flight to Varennes",
+  "y": 1791,
+  "place": "Paris to Varennes-en-Argonne (Meuse), France",
+  "paras": [
+   "Since October 1789, when a Paris crowd brought them from Versailles, Louis XVI and his family had lived in the Tuileries Palace in Paris under close watch. The king had accepted much of the Revolution, but the Civil Constitution of the Clergy troubled his conscience, and at Easter 1791 the National Guard stopped him from leaving for Saint-Cloud to spend Easter. Urged on by Marie Antoinette, he resolved to escape to Montmédy near the eastern frontier, where the Marquis de Bouillé commanded troops thought loyal to the crown, and from there to wait for foreign help or a reaction in France. The escape was planned largely by the queen's Swedish friend Count Axel von Fersen and the Baron de Breteuil.",
+   "On the night of 20–21 June 1791 the king, the queen, their two children and the king's sister Madame Élisabeth left the Tuileries in disguise: the children's governess, Madame de Tourzel, posed as a Russian baroness and the king as her valet. Louis left behind a declaration complaining of his treatment and disowning the measures he had accepted under constraint. According to Wikipedia, the family refused to split up into light carriages, as Fersen advised, and travelled in a single heavy coach; delays, broken harness and a lack of secrecy put them behind schedule, and the cavalry detachments posted along the road had withdrawn or been neutralised by suspicious crowds. At Sainte-Menehould the postmaster, Jean-Baptiste Drouet, recognised the king, and on 21 June the party was stopped and arrested at Varennes-en-Argonne, about 50 km short of Montmédy. The king's brother, the Count of Provence, who fled the same night by another route, escaped to Brussels.",
+   "The family was brought back to Paris on 25 June, met by silent crowds. The Assembly suspended the king from his functions, and the Cordeliers club and others demanded his deposition and trial; a petition at the Champ de Mars on 17 July ended with the National Guard firing on the crowd. The Assembly preferred to keep Louis as a constitutional monarch, and he swore to the new constitution in September 1791 (on the 13th according to the Catholic Encyclopedia and the 1911 Britannica's Louis XVI article, the 14th according to its French Revolution article). But the flight had shown that he did not accept the Revolution, and republicanism grew. When war with Austria went badly, the monarchy fell on 10 August 1792 and was abolished on 21 September; Louis was tried for treason and guillotined in January 1793."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Flight_to_Varennes",
+    "title": "Flight to Varennes (rev 1384787424, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/French_Revolution,_The",
+    "title": "French Revolution, The, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     7,
+     9,
+     10,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Marie_Antoinette",
+    "title": "Marie Antoinette, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     9
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Louis_XVI._of_France",
+    "title": "Louis XVI., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     9,
+     11,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/French_Revolution",
+    "title": "French Revolution, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     6,
+     7,
+     9,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Royal family brought from Versailles to the Tuileries in October 1789 (Wikipedia; CE: 6 October 1789; EB Louis XVI: 6 October).",
+   "The Civil Constitution of the Clergy wounded his conscience (EB French Revolution; CE: the king's tormenting conscience the chief reason for the flight); prevented from leaving for Saint-Cloud at Easter 1791 (Wikipedia; EB French Revolution: National Guards would not let him budge).",
+   "Objective Montmédy, Bouillé's troops considered loyal (Wikipedia; EB French Revolution: fly to the army of the East which Bouillé had kept under discipline, await foreign succour or a reaction at home).",
+   "Spurred on by Marie Antoinette (EB French Revolution); plan arranged by Fersen and Breteuil (Wikipedia; EB Marie Antoinette: Fersen and Breteuil; the plan of escaping to Montmédy).",
+   "Night of 20–21 June 1791 (Wikipedia; EB French Revolution: evening of 20 June escaped, captured the following day; EB Marie Antoinette: flight to Varennes, June 21, 1791; CE: 20-21 June 1791); family members; disguises: Tourzel as a Russian baroness, the king as valet (Wikipedia).",
+   "Louis left behind a declaration complaining of his treatment and revoking his assent to measures accepted under restraint (EB French Revolution; Wikipedia: Declaration to the French People; CE: declaration of dissatisfaction with the Civil Constitution; EB Louis XVI: left documents which proved his opposition).",
+   "Single heavy coach; delays; broken traces; lack of secrecy; cavalry detachments withdrawn or neutralised (Wikipedia, attributed).",
+   "Drouet, postmaster of Sainte-Menehould, recognised the king (Wikipedia).",
+   "Stopped and arrested at Varennes-en-Argonne on 21 June (Wikipedia; EB French Revolution: following day captured at Varennes; CE: halted at Varennes; EB Louis XVI: arrested at Varennes; EB Marie Antoinette), 50 km from Montmédy (Wikipedia).",
+   "Count of Provence fled the same night by another route and escaped (Wikipedia; EB French Revolution: escaped to Brussels and joined the émigrés).",
+   "Brought back on 25 June (CE); suspended from his functions (CE; EB French Revolution); Cordeliers demanded deposition and trial; Champ de Mars petition and firing (EB French Revolution; Wikipedia; EB Louis XVI: affair of the Champ de Mars on 17 July 1791).",
+   "Oath to the constitution: 13 September 1791 (CE; EB Louis XVI) / 14 September (EB French Revolution), attributed; silent crowds on return (Wikipedia).",
+   "The flight showed he had repudiated the Revolution; republicanism grew (Wikipedia; EB Louis XVI: documents proving his opposition to the whole Revolution; EB French Revolution: no longer possible to pretend the Revolution had the king's consent).",
+   "War with Austria (April 1792), 10 August 1792, abolition 21 September, execution January 1793 (Wikipedia; EB Louis XVI; EB French Revolution)."
+  ],
+  "disagree": "Date of the king's oath to the constitution: 13 September 1791 (Catholic Encyclopedia; 1911 Britannica, Louis XVI) or 14 September (1911 Britannica, French Revolution); stated in the text.",
+  "checked": null
+ },
+ "cp07-09": {
+  "title": "French First Republic proclaimed",
+  "y": 1792,
+  "place": "Paris, France",
+  "paras": [
+   "By the summer of 1792 France's constitutional monarchy was collapsing. Louis XVI's flight to Varennes in June 1791 had destroyed trust in him, and the war against Austria and Prussia begun in April 1792 went badly. In July the Prussian-Austrian commander, the Duke of Brunswick, threatened Paris with destruction if the royal family were harmed. On 10 August 1792 an insurrection stormed the Tuileries Palace, and the Legislative Assembly suspended the king and called elections for a National Convention; the royal family was imprisoned in the Temple. As Prussian troops advanced and took Longwy, prisoners were massacred in Paris in the first days of September; the 1911 Encyclopaedia Britannica puts the victims at 1,400.",
+   "The Convention, elected by almost universal suffrage though with few voters, met in Paris (on 20 September according to the Britannica and Wikipedia's article on the abolition, on 21 September according to the Catholic Encyclopedia), just as the French army under Dumouriez halted the Prussians at Valmy on 20 September. At its session of 21 September, when the deputy Jean-Marie Collot d'Herbois proposed abolishing the monarchy, Abbé Henri Grégoire, the constitutional bishop of Blois, answered a call for debate by asking what need there was of discussion when everyone agreed, and declaring that the history of kings was the martyrology of nations. The abolition of royalty was voted unanimously.",
+   "Accounts differ over when the republic itself was proclaimed. The Catholic Encyclopedia says Grégoire proclaimed it at the first session; Wikipedia says it was never formally proclaimed, but that from 22 September the Convention dated its acts from Year I of the Republic and on 25 September declared the Republic 'one and indivisible'; the Britannica's article on the Republican calendar says the republic was proclaimed on 22 September 1792, the day chosen as the start of the new era because it was also that year's autumn equinox.",
+   "The new Republic tried and executed Louis XVI in January 1793, fought most of Europe, put down risings such as the one in the Vendée, and passed through the Terror and the Directory. It lasted, in changing forms, until Napoleon was declared Emperor of the French on 18 May 1804."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/French_First_Republic",
+    "title": "French First Republic (rev 1380426553, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     7,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Proclamation_of_the_abolition_of_the_monarchy",
+    "title": "Proclamation of the abolition of the monarchy (rev 1373171129, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/French_Revolution,_The",
+    "title": "French Revolution, The, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Louis_XVI._of_France",
+    "title": "Louis XVI., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     8
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/French_Revolution",
+    "title": "French Revolution, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     8,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Flight to Varennes June 1791 (Wikipedia abolition; EB Louis XVI; EB French Revolution: no longer possible to pretend the Revolution had the king's consent).",
+   "War with Austria and Prussia under the Legislative Assembly; Brunswick Manifesto of July 1792 threatened Paris (Wikipedia First Republic); EB Louis XVI: the failure of the war.",
+   "10 August 1792: Tuileries stormed; king suspended by the Legislative Assembly until a national convention (EB Louis XVI; Wikipedia First Republic; EB French Revolution).",
+   "Royal family imprisoned in the Temple (EB French Revolution: the Commune got the custody of the king and his family imprisoned in the Temple); September Massacres in the first week of September (Wikipedia First Republic; EB French Revolution).",
+   "Brunswick crossed the frontier 19 August, Longwy surrendered 22 August; the butchery lasted four days with 1,400 victims (EB French Revolution, attributed for the number).",
+   "Convention elected by almost universal suffrage, few voters (EB French Revolution); met on 20 September (EB French Revolution; Wikipedia abolition: Valmy on the same day as their meeting) / opening on 21 September, the day after Valmy (CE); attributed.",
+   "Valmy, 20 September 1792, Dumouriez (Wikipedia abolition; EB French Revolution: Dumouriez, Valmy on the 20th; CE: Dumouriez's victory at Valmy over the Prussians); Wikipedia First Republic: deputies gathered for the first time on 21 September.",
+   "Collot d'Herbois proposed abolition; Grégoire's reply ('What need do we have of discussion when everyone is in agreement? ... The history of kings is the martyrology of nations'); unanimous (Wikipedia abolition; Wikipedia First Republic: unanimously decided the abolition on 21 September; EB French Revolution: decreed the abolition of monarchy on the 21st of September; EB Louis XVI: on 21 September 1792 the Convention declared royalty abolished; CE: Grégoire proclaimed the republic at the first session, constitutional bishop).",
+   "Grégoire constitutional bishop of Blois (Wikipedia abolition); CE: the constitutional bishop Grégoire.",
+   "When the republic was proclaimed: CE: Grégoire proclaimed the republic at the first session (attributed); Wikipedia First Republic: never officially proclaimed; acts dated from Year I from 22 September; 25 September 'one and indivisible' (attributed).",
+   "EB French Revolution (calendar section): the new calendar regarded as beginning on 22 September 1792, chosen because on it the republic was proclaimed and it was the autumnal equinox (attributed); Wikipedia abolition: Republican calendar counted from 22 September 1792, the first day of Year I.",
+   "Louis XVI executed 21 January 1793; wars with Europe, Vendée; Terror; Directory (Wikipedia First Republic; CE: Vendée insurrections, Reign of Terror, Directory 1795; EB French Revolution); the First Republic lasted until the declaration of the First Empire on 18 May 1804 (Wikipedia First Republic)."
+  ],
+  "disagree": "Day the Convention first met: 20 September 1792 (1911 Britannica; Wikipedia's article on the abolition) or 21 September (Catholic Encyclopedia). Proclamation of the republic: at the first session by Grégoire (Catholic Encyclopedia), 22 September (Britannica, calendar section), or never formally proclaimed, with acts dated from Year I from 22 September and the Republic declared 'one and indivisible' on 25 September (Wikipedia). All stated and attributed. The abolition of the monarchy on 21 September is agreed by all.",
+  "checked": null
+ },
+ "Q3062714": {
+  "title": "Execution of Louis XVI",
+  "y": 1793,
+  "place": "Place de la Révolution (now Place de la Concorde), Paris, France",
+  "paras": [
+   "Louis XVI had reigned since 1774. After his failed flight to Varennes in June 1791 he remained king under the new constitution, but the war against Austria declared in 1792 went badly and turned popular anger against him and Queen Marie Antoinette. On 10 August 1792 an insurrection captured the Tuileries Palace and the Legislative Assembly suspended the monarchy; the royal family was imprisoned in the Temple in Paris. On 21 September the newly elected National Convention abolished the monarchy, leaving the question of what to do with the former king.",
+   "The Jacobins of the Mountain wanted his death; Robespierre argued that Louis should be condemned without any trial, as a public enemy. The discovery in November of a hidden iron chest of the king's secret papers, which showed that many public men had dealt with the court, turned opinion further against him. The Convention decided on 3 December to try him itself. He was brought before it on 11 December to hear the charges, essentially of plotting against the constitution and the safety of the nation, and his defence was heard on 26 December. In January 1793 no deputy voted that he was not guilty; the Girondins' proposal to put the sentence to the people was defeated by 424 votes to 287 according to Wikipedia (424 to 283 according to the 1911 Encyclopaedia Britannica), and death was voted by 361 deputies, a majority of one; the Britannica gives 360 against.",
+   "Louis was executed on the morning of 21 January 1793. According to Wikipedia's detailed account, he left the Temple in a carriage with his Irish confessor, Henry Essex Edgeworth, through streets lined with tens of thousands of armed men, and reached the Place de la Révolution, the present Place de la Concorde, at about 10:15. At the scaffold he began to declare his innocence to the crowd, but a drum roll drowned his words; the executioner Charles-Henri Sanson worked the guillotine at 10:22, and his head was shown to the crowd, some of whom cheered for the nation and the republic.",
+   "The Britannica says the Jacobins wanted the king's death partly to defy Europe and to compromise their more moderate colleagues. The struggle between Jacobins and Girondins went on, and in 1793 the Revolutionary Tribunal began the Reign of Terror. Marie Antoinette was guillotined at the same place on 16 October 1793. Their son, Louis Charles, became 'Louis XVII' to royalists, but the Bourbon monarchy returned only in 1814."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Execution_of_Louis_XVI",
+    "title": "Execution of Louis XVI (rev 1382024514, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/French_Revolution,_The",
+    "title": "French Revolution, The, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Louis_XVI._of_France",
+    "title": "Louis XVI., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     10,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/French_Revolution",
+    "title": "French Revolution, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Louis XVI came to the throne on 10 May 1774; flight in June 1791, arrested at Varennes, maintained as constitutional king (EB Louis XVI).",
+   "The war against the emperor failed and intensified hatred of the queen, involving the king; on 10 August 1792 the palace was captured and royalty 'suspended' by the Legislative Assembly (EB Louis XVI; EB French Revolution: deposition; Wikipedia: attack on the Tuileries, insurrection of 10 August 1792).",
+   "The royal family was imprisoned in the Temple (Wikipedia; EB Louis XVI: 'orphan of the Temple'; EB French Revolution: not stated).",
+   "On 21 September 1792 the Convention abolished the monarchy (Wikipedia; EB French Revolution; EB Louis XVI; CE: Grégoire proclaimed the republic at the first session).",
+   "The Mountain/Jacobins desired his death; Robespierre demanded that Louis be put to death as a public enemy without form of trial (EB French Revolution; Wikipedia: Robespierre argued for judgment without trial, 'Louis must die so that the nation may live').",
+   "Discovery of the iron chest / a secret cache of 726 documents on 20 November turned opinion against Louis (EB French Revolution: famous iron chest, papers showing many public men had intrigued with the court; Wikipedia: 20 November).",
+   "3 December: Convention decreed to try Louis (EB French Revolution); Wikipedia: Montagnards met on 3 December.",
+   "11 December: brought to the bar to hear the charges; plotting against the Constitution and the safety of the kingdom (EB French Revolution); 26 December second appearance / last hearing (EB French Revolution; Wikipedia).",
+   "No one voted not guilty (Wikipedia: unanimously guilty on 14 January, several abstained; EB: none ventured a negative vote); appeal to the people rejected 424 to 287 (Wikipedia) / 424 to 283 (EB), attributed.",
+   "Death adopted by 361 votes, a majority of one (Wikipedia: 361 of 721; EB French Revolution: 361 against 360); executed 21 January 1793 at the Place de la Révolution, now the Place de la Concorde (Wikipedia; EB French Revolution; EB Louis XVI).",
+   "Left the Temple in a carriage with Edgeworth; streets occupied by 80,000 men-at-arms; arrived about 10:15 a.m. (Wikipedia, attributed).",
+   "Louis proclaimed his innocence; drum roll ordered; Sanson; guillotine at 10:22 a.m.; head shown to the crowd; cries of 'Long live the Nation', 'Long live the Republic' (Wikipedia, attributed).",
+   "The Jacobins desired his death partly because they hated kings, partly to envenom the Revolution, defy Europe and compromise their more temperate colleagues (EB French Revolution, attributed); Revolutionary Tribunal and Reign of Terror in 1793 (CE: Tribunal instituted 9 March 1793, inaugurated the Reign of Terror; EB French Revolution: Jacobin-Girondin quarrel).",
+   "Marie Antoinette guillotined at the same location nine months later (Wikipedia); 16 October 1793 (CE); Louis Charles 'Louis XVII' (EB Louis XVI); Bourbon Restoration by 1814 (Wikipedia)."
+  ],
+  "disagree": "Vote on the appeal to the people: 424 to 287 (Wikipedia) or 424 to 283 (1911 Britannica); both stated. The Catholic Encyclopedia's French Revolution article misprints the date of execution as '2 January, 1799' and is not used for it.",
+  "checked": null
  }
 }
