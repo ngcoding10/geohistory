@@ -2532,5 +2532,388 @@
   ],
   "disagree": "Date of the typhoon: 15 August (Wikipedia), 14-15 August (Murdoch), 23 August (Kawai, Nippon.com). Size of the invasion force: 142,000 or 140,000 in the traditional figures; modern estimates from about 14,000 (Conlan) to 70,000 (Rossabi). Height and length of the Hakata wall from different sources. All stated and attributed in the text.",
   "checked": null
+ },
+ "Q2672432": {
+  "title": "Mongol invasion of Java",
+  "y": 1293,
+  "place": "East Java, Indonesia",
+  "paras": [
+   "Kublai Khan sent envoys to many states of Southeast Asia demanding tribute. His envoy to Java, Meng Qi, was received with contempt by Kertanegara, king of Singhasari, who had his face branded like a common thief's and sent him home. In 1292 Kublai ordered a punitive expedition, which was also meant to bring the surrounding states and the sea trade routes under Yuan control. The History of Yuan records 20,000 to 30,000 men from southern China, 500 to 1,000 ships and provisions for a year; H. H. Howorth's history, following the Chinese annals, gives 1,000 ships and 30,000 soldiers. The commanders were Shi Bi, the Uyghur Yighmish and Gao Xing.",
+   "By the time the fleet arrived, early in 1293, Kertanegara was dead. In 1292, while much of his army was away in Sumatra, his vassal Jayakatwang of Kediri had rebelled, taken the capital and killed him. Kertanegara's son-in-law Raden Wijaya had submitted to Jayakatwang and been allowed to found a new settlement, Majapahit. When the Yuan forces landed, Wijaya offered to submit to the emperor and promised tribute if they helped him destroy Kediri. The allies defeated a Kediri army on the Kali Mas river and beat off an attack on Majapahit in April, and on 26 April they stormed Kediri's capital, Daha, after a battle lasting from morning to afternoon. Jayakatwang surrendered and was taken prisoner with his family.",
+   "Wijaya then turned on his allies. He went home, supposedly to prepare his tribute and the promised princesses, and asked for an unarmed escort; on 26 May his men ambushed the 200 Yuan soldiers sent with it and then attacked the main Yuan camp, driving the troops back to their ships. With the monsoon about to end, the Yuan forces withdrew, killing Jayakatwang and his son before they sailed on 31 May. The voyage home took 68 days. The losses of Shi Bi's troops were more than 3,000 men, the figure Howorth also gives, while a modern estimate cited by Wikipedia puts them far higher. They brought back prisoners, maps and loot.",
+   "In China Shi Bi was flogged and Shi Bi and Yighmish each lost a third of their property, though both were later pardoned, while Gao Xing was rewarded for saving the army from complete disaster. The expedition was the last of Kublai's reign; a further invasion planned with 100,000 men was cancelled after his death in 1294. Raden Wijaya's Majapahit became the most powerful state in the region."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Java",
+    "title": "Mongol invasion of Java (rev 1370859328, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapter on Khubilai Khan, OCR text",
+    "publisher": "Internet Archive (Google Books scan, Harvard University Library copy)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Kublai sent envoys demanding tribute; his envoy Meng Qi was badly received by Kertanegara of Singhasari, who branded his face as was done to common thieves and cut his ears (Wikipedia; Howorth: his envoy Mengki returned with his face branded, the punishment for highwaymen).",
+   "In 1292 Kublai ordered a punitive expedition; other objectives included the submission of nearby countries and control of sea trade routes (Wikipedia).",
+   "History of Yuan: 20,000-30,000 men from Fujian, Jiangxi and Huguang, 500-1,000 ships, provisions for a year (Wikipedia); Howorth: 1,000 ships, 30,000 soldiers, provisions for a year (attributed).",
+   "Officers: Shi Bi, the Uyghur Yighmish and Gao Xing (Wikipedia).",
+   "In 1292 Jayakatwang of Kediri, a vassal, revolted while the army was in Sumatra, sacked the capital and killed Kertanegara (Wikipedia).",
+   "Raden Wijaya, Kertanegara's son-in-law, submitted to Jayakatwang, was pardoned and founded Majapahit (Wikipedia).",
+   "Yighmish departed on 22 January 1293 (Wikipedia; Howorth: set out in January 1293).",
+   "Wijaya allied with the Yuan army, submitted to the emperor and promised tribute including two princesses if Kediri was destroyed (Wikipedia; Howorth: the Javanese king sent in his submission acknowledging Khubilai).",
+   "Battle of the Kali Mas (22 March); Kediri attack on Majapahit repelled (14-15 April); Daha taken on 26 April after a battle from 6 am to 2 pm; Jayakatwang surrendered and was captured with his family (Wikipedia; Howorth: the king of Kolang defeated in a battle from sunrise to midday, submitted).",
+   "Wijaya returned to Majapahit to prepare tribute, asked for an unarmed escort; on 26 May he ambushed 200 unarmed soldiers and attacked the main camp, driving the rest to the ships (Wikipedia; Howorth: the king marched against the Mongols and planted an ambuscade, causing much loss in their retreat to the coast).",
+   "The monsoon was ending; the Mongols killed Jayakatwang and his son before departing; sailed on 31 May; 68 days to Quanzhou (Wikipedia; Howorth: sixty-eight days on the way; Howorth: the king of Kolang was put to death with his family).",
+   "Shi Bi's troops lost more than 3,000 soldiers (Wikipedia; Howorth: returned after losing 3,000 men); Nugroho estimates 60% killed (Wikipedia).",
+   "They brought back prisoners, the map, population registers and loot (Wikipedia; Howorth: immense booty).",
+   "Shi Bi received seventy lashes and lost a third of his property; Yighmish lost a third; both later restored; Gao Xing rewarded 50 taels of gold (Wikipedia; Howorth: Khubilai dissatisfied with the officers).",
+   "It was the last expedition of Kublai's reign; a 100,000-strong invasion planned with Liu Guojie was cancelled after his death; Majapahit became the most powerful state of its era in the region (Wikipedia)."
+  ],
+  "disagree": "Size of the expedition: 20,000-30,000 men and 500-1,000 ships (History of Yuan, via Wikipedia) or 30,000 soldiers and 1,000 ships (Howorth). Yuan losses: more than 3,000 (Wikipedia, Howorth) or about 60 per cent of the army in a modern estimate (Nugroho, via Wikipedia). Both stated in the text.",
+  "checked": null
+ },
+ "cp03-23": {
+  "title": "Death of Kublai Khan",
+  "y": 1294,
+  "place": "Yuan China",
+  "paras": [
+   "Kublai Khan, founder of the Yuan dynasty and Great Khan of the Mongols since 1260, had by the 1280s completed the conquest of the Song and ruled all of China, but his last years were overshadowed by losses. His favourite wife Chabi died in 1281, and his chosen heir, his son Zhenjin, died in 1286. His expeditions against Japan, Vietnam and Java had failed, and in the north he faced a long war with his cousin Kaidu. Kublai ate and drank heavily, grew very fat and suffered from gout; at the end of 1293 he refused to take part in the New Year ceremonies.",
+   "Before he died Kublai passed the seal of the crown prince to Zhenjin's son Temür. He died on 18 February 1294, aged 78; H. H. Howorth's history puts his death early in 1294, in the eightieth year of his age and the thirty-fifth of his reign. His body was taken to the burial place of the khans in Mongolia, and in the hall of ancestors he was given the temple name Shizu. Howorth notes that Chinese historians blamed him for favouring Tibetan lamas, for wasteful expeditions to Japan and Vietnam and for employing too many foreigners, while Mongol and Western writers judged his reign the most glorious in Mongol history.",
+   "At the assembly held after his death Temür was chosen over his brother Kamala; Howorth says Kublai's general Bayan stood sword in hand and declared he would accept no one but the heir the late khan had named. Temür ruled as Great Khan and second emperor of the Yuan. In name Kublai had headed the largest empire ever controlled by one man, but in practice the Mongol world had broken up after his war with Ariq Boke: the Golden Horde, the Chagatai Khanate and the Ilkhanate were functionally independent states, and the Ogedeid Kaidu had been in revolt since 1269. Some of the western khanates still asked Kublai to confirm their new khans, and the Ilkhanate of Iran remained his close ally."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Kublai_Khan",
+    "title": "Kublai Khan (rev 1380829269, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Toluid_Civil_War",
+    "title": "Toluid Civil War (rev 1382115757, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     12
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapters on Khubilai Khan and Timur Khan, OCR text",
+    "publisher": "Internet Archive (Google Books scan, Harvard University Library copy)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Kublai founded the Yuan dynasty and was khagan from 1260; by 1279 the conquest of the Song was complete and he ruled all of China proper (Wikipedia, Kublai; Howorth).",
+   "Chabi died in 1281; Zhenjin, his chosen successor, died in 1286 (Wikipedia, Kublai).",
+   "The failures in Vietnam and Japan haunted him; the Java expedition failed (Wikipedia, Kublai; Howorth: Java expedition of partial success); the struggle with Kaidu continued on the northern frontier (Howorth; Wikipedia, Toluid Civil War: Kaidu rebelled from 1269).",
+   "He turned to food and drink, became grossly overweight, suffered gout; at the end of 1293 refused to take part in the New Year ceremony (Wikipedia, Kublai).",
+   "Before his death he passed the seal of crown prince to Zhenjin's son Temür (Wikipedia, Kublai; Howorth: his grandson and heir Timur).",
+   "He died on 18 February 1294 at 78 (Wikipedia, Kublai); Howorth: early in 1294, in the eightieth year of his age and the thirty-fifth of his reign (attributed).",
+   "His body was taken to the burial place of the khans in Mongolia (Wikipedia, Kublai); temple name Shizu (Wikipedia, Kublai; Howorth: styled Chi tsu in the hall of the ancestors).",
+   "Howorth: the Chinese accused him of devotion to the Lamas, wasted expeditions to Japan and Cochin China and employing too many strangers; Mongol and western writers judged his reign the most glorious epoch in Mongol history (attributed).",
+   "Howorth: at the diet after his death Timur was chosen over his brother Kamala; Bayan, sword in hand, declared he would permit no one but the late Khakan's nominee (attributed).",
+   "Temür became the next khagan and second ruler of the Yuan (Wikipedia, Kublai).",
+   "Howorth: Khubilai was sovereign of the largest empire ever controlled by one man (attributed).",
+   "After the Toluid Civil War the four khanates were functionally independent; Kaidu's insurrection from 1269; some still asked Kublai to confirm their regional khans; the Ilkhanate and Yuan had close relations (Wikipedia, Toluid Civil War)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp18-024": {
+  "title": "Tenochtitlan founded",
+  "y": 1325,
+  "place": "Lake Texcoco (Mexico City), Mexico",
+  "paras": [
+   "The Mexica were one of the peoples who, in their own migration stories, had come south from Aztlan, a legendary homeland in the north; their god Huitzilopochtli told them to part from the other tribes and take the name Mexica. When they reached the Valley of Mexico, which W. H. Prescott's History of the Conquest of Mexico (1843) dates to the early 13th century, the land was already held by city-states, the strongest being Culhuacan in the south and Azcapotzalco in the west. The Mexica moved from place to place: the Tepanecs of Azcapotzalco drove them from Chapultepec, and in 1299 the ruler of Culhuacan let them settle on barren land at Tizapan, where they married into Culhua families, but in the end they were expelled again.",
+   "Their tradition told of a prophecy that they would find the site of their city where an eagle perched on a prickly-pear cactus, holding a snake. According to the legend they saw this sign on a small, swampy island near the western shore of Lake Texcoco, and there they founded Tenochtitlan. Prescott describes them sinking piles into the shallows and building huts of reeds and rushes, and living by fishing, hunting water birds and growing crops on chinampas, the so-called floating gardens. The date usually given is 1325, the year Prescott also accepts from the colonial-era historians Clavigero and Veytia, while Wikipedia notes that the exact date is unclear and that 13 March 1325 was chosen in 1925 for the city's 600th anniversary. The eagle on the cactus is still the emblem on the arms and flag of Mexico.",
+   "The early city was poor and divided; Prescott writes that a group of its people broke away to form a separate community on the neighbouring marshes, and Tlatelolco became a second Mexica city-state on the island. For about fifty years after their first king, Acamapichtli, was chosen in 1376, the Mexica were tributaries of Azcapotzalco and fought in its wars. Later they and their allies overthrew the Tepanecs of Azcapotzalco, and the Triple Alliance of Tenochtitlan, Texcoco and Tlacopan grew into the Aztec Empire, with Tenochtitlan as its capital and the largest city of the pre-Columbian Americas until the Spanish and their Tlaxcalan allies took it in 1521."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Tenochtitlan",
+    "title": "Tenochtitlan (rev 1386409949, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     7,
+     8,
+     9,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Aztecs",
+    "title": "Aztecs (rev 1384965599, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historyconquest45presgoog/historyconquest45presgoog_djvu.txt",
+    "title": "W. H. Prescott, History of the Conquest of Mexico, vol. 1 (Philadelphia: Lippincott, 1873 edition), book I, chapter 1, OCR text",
+    "publisher": "Internet Archive (Google Books scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The ethnonym Aztec means 'people from Aztlan', a mythical place of origin in the north; Huitzilopochtli told the Mexica to split from the other tribes and take the name Mexica (Wikipedia, Aztecs).",
+   "Prescott: the Aztecs arrived on the borders of Anahuac towards the beginning of the thirteenth century (attributed).",
+   "On arrival the most powerful city-states were Colhuacan to the south and Azcapotzalco to the west; the Tepanecs expelled the Mexica from Chapultepec; in 1299 Cocoxtli of Colhuacan let them settle in Tizapan; they married into Colhua families; they were expelled again (Wikipedia, Aztecs; Prescott: they shifted their quarters, were enslaved by a more powerful tribe).",
+   "The prophecy: an eagle with a snake perched on a cactus would mark the site; the Mexica saw it on a small swampy island in Lake Texcoco (Wikipedia, Tenochtitlan and Aztecs; Prescott: royal eagle with a serpent on a prickly pear on the south-western borders of the lake).",
+   "Prescott: they laid foundations by sinking piles into the shallows, built fabrics of reeds and rushes, lived by fishing, wild fowl and floating gardens (attributed); Wikipedia: chinampa system ('floating gardens').",
+   "The year of foundation is usually given as 1325 (Wikipedia, Aztecs; Prescott: 1325; Clavigero's date, confirmed by Veytia).",
+   "The exact date is unclear; 13 March 1325 was chosen in 1925 for the 600th anniversary (Wikipedia, Tenochtitlan).",
+   "The vision is commemorated on Mexico's coat of arms and flag (Wikipedia, Tenochtitlan; Prescott: the device of the eagle and the cactus forms the arms of the Mexican republic).",
+   "Prescott: domestic feuds; a part of the citizens seceded and formed a separate community on the neighbouring marshes (attributed); Wikipedia: Tlatelolco was the other Mexica altepetl on the island (Tenochtitlan).",
+   "In 1376 Acamapichtli was elected first Huey Tlatoani; for the first 50 years the Mexica were tributaries of Azcapotzalco and supplied warriors (Wikipedia, Aztecs).",
+   "The Triple Alliance of Tenochtitlan, Texcoco and Tlacopan defeated Azcapotzalco; Tenochtitlan was the capital of the Aztec Empire and the largest city in the pre-Columbian Americas until captured by the Tlaxcaltec and the Spanish in 1521 (Wikipedia, Tenochtitlan and Aztecs; Prescott: Nezahualcoyotl's revolt against the Tepanecs)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp18-093": {
+  "title": "Timur takes power",
+  "y": 1370,
+  "place": "Balkh and Samarkand",
+  "paras": [
+   "Timur was born near Kesh (Shahrisabz), south of Samarkand, in the Chagatai Khanate. He belonged to the Barlas, a Turkicised Mongol tribe; Wikipedia describes his father Taraghai as a minor noble of the tribe, the 1911 Encyclopaedia Britannica as its head. Later dynastic histories gave his birth as 8 April 1336, but most sources from his lifetime suggest the late 1320s. Wounds to his right leg and hand, received in about 1363, lamed him for life and gave him the Persian nickname Timur-i Lang, 'Timur the Lame', the origin of 'Tamerlane'. By about 1360 he was leading troops in Transoxiana, the land between the Oxus and the Jaxartes, which was then divided among quarrelling chiefs.",
+   "When Tughlugh Timur, the Chagatai khan of the east and a descendant of Genghis Khan, invaded Transoxiana, Timur was sent to negotiate with him and instead joined him, and was rewarded with the government of the country. After his father's death he also became head of the Barlas. Tughlugh later tried to set his own son Ilyas Khoja over Transoxiana, and Timur turned against him. Clements Markham's account of Timur's life, written for the Hakluyt Society's edition of Clavijo and following the Memoirs attributed to Timur, tells of a time as a fugitive in the deserts of Khwarazm with his brother-in-law, Amir Husayn, in 1362, when the two had only a handful of followers left; Timur's troops eventually drove the eastern Chagatai forces out.",
+   "The two allies then became rivals for Transoxiana. Wikipedia says Timur won over followers in Balkh, Husayn's base, with his generosity, while Husayn alienated people with heavy taxes. Around 1370 Husayn surrendered and was then killed; Markham writes that Timur gave way to his chiefs' demands, and that three chiefs dragged Husayn from a minaret where he had taken refuge. Timur was then formally proclaimed sovereign at Balkh, according to Markham by four revered descendants of the Prophet, and made Samarkand his capital. The 1911 Encyclopaedia Britannica places Husayn's death at the close of 1369, and Markham dates Timur's rule over Samarkand from 1369.",
+   "Because he did not descend from Genghis Khan, Timur could not take the title of khan. He married Husayn's widow Saray Mulk Khanum, a Chinggisid, and took the title güregen, 'royal son-in-law'; he called himself only amir and ruled in the name of a puppet khan, Suyurghatmish. He also styled himself Sahib Qiran, 'Lord of the Conjunction'. From Samarkand he spent the next thirty years in conquests that stretched from the Volga and Anatolia to Delhi."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Timur",
+    "title": "Timur (rev 1382450655, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://archive.org/download/dli.ministry.04673/216.61%2520B%2520275%2520%2528I%2529%25209_djvu.txt",
+    "title": "Clements R. Markham, introductory life of Timour Beg, in Narrative of the Embassy of Ruy Gonzalez de Clavijo to the Court of Timour (Hakluyt Society, 1859), OCR text",
+    "publisher": "Internet Archive (Digital Library of India scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     8,
+     9,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tim%C5%ABr",
+    "title": "\"Timūr\", Encyclopaedia Britannica, 11th edition (1911), vol. 26",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     11,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Timur was born near Kesh (Shahrisabz) south of Samarkand, in the Chagatai Khanate (Wikipedia; EB1911: born at Kesh, some 50 m. south of Samarkand).",
+   "He was of the Barlas, a turkified Mongol tribe; Wikipedia: his father Taraghai a minor noble; EB1911: his father Teragai was head of the tribe of Berlas (both attributed).",
+   "Later Timurid histories claim 8 April 1336; most sources from his lifetime are consistent with the late 1320s (Wikipedia; EB1911: born in 1336).",
+   "Around 1363 he was shot in the right leg and right hand, disabling him for life; nickname Temur-i Lang, origin of Tamerlane (Wikipedia; EB1911: Timur i Leng, the lame Timur, commonly known as Tamerlane).",
+   "By about 1360 he was a military leader in Transoxiana (Wikipedia; EB1911: about 1358 he came before the world as a leader of armies).",
+   "Tughlugh Timur of Kashgar, Khan of the Eastern Chagatai, a descendant of Genghis Khan, invaded; Timur, sent to negotiate, joined him and was rewarded with Transoxiana; his father died and he became chief of the Barlas (Wikipedia; EB1911; Markham: the envoy received the command of the whole country; at this time his father died).",
+   "Tughlugh tried to set his son Ilyas Khoja over Transoxiana; Timur opposed him (Wikipedia; EB1911: Mawara'lnahr entrusted to a son of Toghluk, who was defeated by Timur).",
+   "Markham, following the Memoirs: Timur fled with his brother-in-law Ameer Hosein, both fugitives, with sixty followers; after the fight at Orgunge only seven were left; this took place in 1362; later he drove the Jetes across the frontier (attributed).",
+   "Timur and Husayn became rivals (Wikipedia; EB1911; Markham).",
+   "Wikipedia: Timur gained followers in Balkh by sharing his belongings; Husayn alienated people with heavy taxes (attributed).",
+   "Around 1370 Husayn surrendered and was assassinated; Timur was formally proclaimed sovereign at Balkh (Wikipedia; EB1911: at the close of 1369 Hosain was assassinated and Timur, proclaimed sovereign at Balkh, mounted the throne at Samarkand).",
+   "Markham: Timur yielded to his officers; three chiefs dragged Hosein out of a minaret and killed him; enthroned at Balkh by four Syuds; from 1369 he held the sovereignty of Samarcand, which he made his capital (attributed).",
+   "Timur could not claim the title of khan as he was not a descendant of Genghis Khan; he married Saray Mulk Khanum, Husayn's wife and a Chinggisid; title güregen; used the title Amir; set up the puppet khan Suyurghatmish (Wikipedia; Markham: only took the title of Ameer; affairs conducted in the name of a puppet descendant of Zengis Khan).",
+   "Timur's most famous title was Sahib Qiran, 'Lord of Conjunction' (Wikipedia; Markham: Sahib Keraun, 'lord of the grand conjunctions').",
+   "The next thirty years were spent in wars and expeditions, from the Volga to Persia, India and Anatolia (EB1911; Markham: Delhi 1398-99, Angora 1402)."
+  ],
+  "disagree": "Timur's birth: 8 April 1336 in later Timurid histories (and 1336 in the 1911 Britannica) against the late 1320s implied by contemporary sources (Wikipedia). Husayn's death and Timur's enthronement: around 1370 (Wikipedia) or the close of 1369 (Britannica; Markham dates Timur's rule from 1369). Taraghai: a minor noble (Wikipedia) or head of the Barlas (Britannica). All stated in the text.",
+  "checked": null
+ },
+ "cp18-094": {
+  "title": "Death of Timur",
+  "y": 1405,
+  "place": "Otrar (Farab), Kazakhstan",
+  "paras": [
+   "By 1404 Timur had conquered an empire from Transoxiana across Iran to the Caucasus, sacked Delhi in 1398-1399, and in 1402 defeated and captured the Ottoman sultan Bayezid I at Ankara. Back in Samarkand he held great festivities, at which the Castilian envoy Ruy González de Clavijo was present, and then turned against Ming China. Clements Markham, introducing Clavijo's narrative, says Timur was angered by an insolent message from Chinese envoys; Wikipedia says he detained a Ming envoy when he began the campaign in December 1404. Markham dates his departure from Samarkand to 8 January 1405, in heavy snow.",
+   "It was an unusual winter campaign for a commander who preferred to fight in spring. The army crossed the frozen Jaxartes (Syr Darya) and camped near Otrar, and there Timur fell ill with fever; Markham, who follows the traditional birth year of 1336, gives his age as sixty-nine. He died on 17 February 1405 according to Markham and the 1911 Encyclopaedia Britannica; Wikipedia gives 17 or 18 February and places his death at Farab, near Otrar. His body was embalmed with musk and rose water, laid in an ebony coffin and taken to Samarkand, where his tomb, the Gur-e-Amir, still stands.",
+   "Timur had outlived both heirs he had named, his son Jahangir and his grandson Muhammad Sultan, and only on his deathbed did he choose Muhammad Sultan's brother Pir Muhammad. Pir Muhammad could not win enough support, and Timur's descendants fought one another for the succession; another grandson, Khalil Sultan, seized Samarkand, where Markham says he was crowned in March 1405. Timur's youngest son, Shah Rukh, ruler of Khorasan, overcame his rivals in 1409 according to Wikipedia (Markham says he was called to Samarkand in 1408) and ruled from Herat, but many provinces broke away and the Timurid state never regained Timur's extent. The Ming envoys detained by Timur were released, and the war against China was abandoned."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Timur",
+    "title": "Timur (rev 1382450655, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Timurid_Empire",
+    "title": "Timurid Empire (rev 1386955428, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     11
+    ]
+   },
+   {
+    "url": "https://archive.org/download/narrativeembass00markgoog/narrativeembass00markgoog_djvu.txt",
+    "title": "Clements R. Markham, introductory life of Timour Beg and notes, in Narrative of the Embassy of Ruy Gonzalez de Clavijo to the Court of Timour (Hakluyt Society, 1859), OCR text",
+    "publisher": "Internet Archive (Google Books scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Tim%C5%ABr",
+    "title": "\"Timūr\", Encyclopaedia Britannica, 11th edition (1911), vol. 26",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     6,
+     7,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "Timur's wars extended over Persia and the Caucasus; Delhi was taken in 1398-1399; Bayezid I was defeated and captured at Angora (Ankara) on 20 July 1402 (EB1911; Markham; Wikipedia: Capture of Delhi (1398), Invasion of Anatolia).",
+   "Clavijo was present at the festivities in Samarkand (Markham).",
+   "Markham: Clavijo reports the insolent message of the Chinese envoys, which excited Timur's wrath; he marched out of Samarkand on 8 January 1405 in heavy snow (attributed); Wikipedia: in December 1404 Timur began campaigns against Ming China and detained a Ming envoy.",
+   "Timur preferred to fight in spring and died during an uncharacteristic winter campaign (Wikipedia).",
+   "He crossed the Jaxartes/Syr Darya and was attacked by fever while encamped near Otrar (Wikipedia; EB1911; Markham: crossed the Jaxartes upon the ice, encamped at Otrar, attacked by fever and ague).",
+   "Markham: aged sixty-nine (attributed); EB1911: born 1336.",
+   "Died on 17 February 1405 at Otrar (EB1911; Markham); Wikipedia: at Farab on 17 or 18 February 1405 (both attributed).",
+   "His body was embalmed with musk and rose water, wrapped in linen, laid in an ebony coffin and sent to Samarkand (Markham; EB1911 and Wikipedia quoting Markham); his tomb is the Gur-e-Amir (Wikipedia).",
+   "Timur had outlived his heirs Jahangir (d. 1376) and Muhammad Sultan (d. 1403); on his deathbed he named Pir Muhammad, who could not gain support; civil war followed (Wikipedia).",
+   "Khalil Sultan, a grandson, was in Samarkand at Timur's death; Markham: crowned at Samarkand in March 1405 (attributed).",
+   "Shah Rukh overcame his rivals in 1409 (Wikipedia, Timur); Markham: Shah Rokh, ruler of Khorassan, called to Samarcand in 1408 (attributed); ruled from Herat; after 1405 the dynasty fell into civil wars and many governors became independent (Wikipedia, Timur and Timurid Empire).",
+   "The Ming envoys were released by Khalil Sultan after Timur's death (Wikipedia)."
+  ],
+  "disagree": "Date and place of death: 17 February 1405 at Otrar (Markham, 1911 Britannica) or 17 or 18 February at Farab (Wikipedia). Start of the campaign: December 1404 (Wikipedia) or departure from Samarkand on 8 January 1405 (Markham). Shah Rukh's ascendancy: 1409 (Wikipedia) or 1408 (Markham). All stated in the text.",
+  "checked": null
  }
 }
