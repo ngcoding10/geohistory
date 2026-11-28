@@ -3107,5 +3107,85 @@
   ],
   "disagree": "Casualty breakdowns differ: EBSCO gives the Austrians 2,292 killed, 8,638 wounded and 10,807 missing or captured, HistoryNet some 3,000 killed, 10,897 wounded and 8,638 missing or captured; the allied totals are about 17,200-17,300 in both. Austrian strength: about 120,000 (EBSCO) or 100,000 (HistoryNet). EBSCO's text calls the earlier battle of 4 June 'Mantua'; HistoryNet names it Magenta.",
   "checked": null
+ },
+ "Q722699": {
+  "title": "Fashoda Incident",
+  "y": 1898,
+  "place": "Fashoda, on the White Nile in the Sudan",
+  "paras": [
+   "The Fashoda Incident of 1898 was a confrontation between Britain and France at Fashoda, a derelict fort on the White Nile in the Sudan, that brought the two countries to the brink of war. It grew out of their rivalry in Africa. Britain controlled Egypt and wanted the Sudan, then held by the followers of the Mahdi's successor, the khalifa, to link its territories along the Nile; France, still resentful of the British hold on Egypt, hoped for a belt of territory across Africa from west to east and, by seizing the upper Nile, a hand on Egypt's water.",
+   "A small French expedition under Captain Jean-Baptiste Marchand, made up of French officers and Senegalese soldiers, set out eastward from the French Congo, carrying even the parts of a steamboat across central Africa, and reached Fashoda on 10 July 1898. Meanwhile the British general Herbert Kitchener led an Anglo-Egyptian army up the Nile to reconquer the Sudan. After defeating the khalifa's forces at Omdurman, he went on to Fashoda on the orders of the prime minister, Lord Salisbury, with gunboats and a far stronger force, arriving on 18 or 19 September. The two commanders met courteously, raised their flags over different parts of the fort, and left the decision to their governments; Kitchener claimed the whole Nile valley for Britain.",
+   "In both countries the press and public opinion called for a firm stand. The French foreign minister, Théophile Delcassé, saw that France's position was hopeless: Kitchener was far stronger on the spot, Britain's navy dominated the Mediterranean, and France wanted British support against Germany. Under steady British pressure, France ordered Marchand to withdraw on 3 November 1898. According to EBSCO, in March 1899 France gave up all claims along the Nile in return for territory in the Sahara; one encyclopedia speaks of a guarantee of its position in West Africa.",
+   "Fashoda marked the high point of Anglo-French tension in Africa. Instead of war, it became part of the process that brought the two countries together: in 1904 they signed the Entente Cordiale, and in 1914 France went to war against Germany as Britain's ally."
+  ],
+  "sources": [
+   {
+    "url": "https://www.ebsco.com/research-starters/history/fashoda-incident/",
+    "title": "Fashoda Incident (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/fashoda-crisis",
+    "title": "Fashoda crisis (The Oxford Companion to British History)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     10
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/asia-and-africa/african-history/fashoda-incident",
+    "title": "Fashoda Incident (Encyclopedia of the Modern Middle East and North Africa)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The Fashoda Incident of 1898 was a British-French confrontation at Fashoda on the (White) Nile in the Sudan.",
+   "It brought Britain and France to the brink of war.",
+   "Britain controlled Egypt and sought the Sudan, then held by the Mahdi's successors; France, irritated by Britain's hold over Egypt, envisaged a strip of territory across Africa and sought to control the Nile headwaters.",
+   "Marchand's expedition, of French officers and Senegalese soldiers, moved east from the French Congo and arrived at Fashoda on 10 July 1898 (EBSCO: after carrying the parts of a steamboat across central Africa).",
+   "Kitchener reconquered the Sudan with an Anglo-Egyptian army; after his victory at Omdurman (2 September, Encyclopedia of the Modern Middle East and North Africa) he went to Fashoda on Salisbury's orders.",
+   "Kitchener arrived with a superior force (EBSCO: five gunboats) on 18 September (Oxford Companion to British History) or 19 September (Encyclopedia of the Modern Middle East and North Africa).",
+   "The two commanders met amicably and awaited their governments' decisions (accounts differ: whisky and soda, EBSCO; champagne, Oxford Companion); Kitchener claimed the whole Nile valley for Britain.",
+   "The two flew their flags over different parts of the fort.",
+   "Public opinion, inflamed by the press, demanded a decision by force.",
+   "Delcassé, the French foreign minister, judged the French position hopeless; France ordered Marchand to withdraw on 3 November 1898.",
+   "Reasons: Kitchener's local superiority, Britain's naval superiority in the Mediterranean, and France's wish for British support against Germany.",
+   "French claims were settled in March 1899: France renounced the Nile in return for districts in the Sahara (EBSCO).",
+   "The Encyclopedia of the Modern Middle East and North Africa says France renounced the Nile basin and the Sudan in return for a guarantee of its position in West Africa, and calls Fashoda the high point of Anglo-French tension in Africa.",
+   "Fashoda became part of the process that brought Britain and France together: the Entente Cordiale was signed six years later, and France went to war against Germany in 1914 as Britain's ally."
+  ],
+  "disagree": "Kitchener's arrival at Fashoda: 18 September (Oxford Companion to British History) or 19 September (Encyclopedia of the Modern Middle East and North Africa). The drink the commanders shared: whisky and soda (EBSCO) or Marchand's champagne (Oxford Companion).",
+  "checked": null
  }
 }
