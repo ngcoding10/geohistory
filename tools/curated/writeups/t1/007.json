@@ -1602,5 +1602,71 @@
   ],
   "disagree": "Cause of death: natural illness (Chinese and Persian historians, per Howorth), an arrow wound (Marco Polo), death in battle (Galician-Volhynian Chronicle), lightning (Carpini), or a Tangut princess (later Mongol chronicles). The text gives each with its source. The record's day (25 August) is not stated in either source's readable text; the write-up gives the month only.",
   "checked": null
+ },
+ "cp03-10": {
+  "title": "Ögedei becomes Great Khan",
+  "y": 1229,
+  "place": "Khodoe Aral, Kherlen River, Mongolia",
+  "paras": [
+   "Ogedei was the third son of Genghis Khan. During the war against the Khwarazmian Empire his elder brothers Jochi and Chagatai quarrelled so badly over the siege of Gurganj that Genghis gave Ogedei the command, and after further quarrels between the two elder sons Ogedei was chosen as heir, a choice his father confirmed. When Genghis died in 1227 (Jochi had died a year or two earlier), the princes returned to their own lands, and for two years the youngest son, Tolui, who by Mongol custom held his father's home territory, governed as regent.",
+   "In 1229 a kurultai, an assembly of the Mongol princes and chiefs, met at Khodoe Aral on the Kherlen River to choose the new Great Khan. According to H. H. Howorth's history, many favoured Tolui, and Chagatai as the eldest surviving son had a claim under Mongol rules of inheritance, but Genghis's wish was decisive. Ogedei held back, for forty days in Howorth's account, while Wikipedia says he declined three times as the ritual required; he was proclaimed on 13 September 1229, the date Wikipedia gives. Howorth describes Chagatai and their uncle leading him to the throne, Tolui handing him the cup, and the assembly bowing nine times and hailing him as Kaan, while the princes swore never to put a ruler from any other branch of the family on the throne. Chagatai continued to support him.",
+   "Ogedei distributed his father's treasure among the nobles and, according to Howorth, sent forty young women to serve Genghis in the next world. With the help of his father's Khitan adviser Yelu Chucai, who told him that an empire conquered on horseback could not be governed on horseback, he set fixed taxes and began to organise a civil administration. He then turned the Mongols' strength back on the Jin: by 1232 the Jin emperor was besieged in Kaifeng, and the Jin dynasty was destroyed in 1234. Ogedei ruled until his death in December 1241, a reign in which the Mongol armies also invaded Korea, renewed the war in Iran, subdued the western steppes and penetrated deep into Europe."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/%C3%96gedei_Khan",
+    "title": "Ögedei Khan (rev 1382028068)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     9,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapter on Ogotai Khan, OCR text",
+    "publisher": "Internet Archive (Google Books scan, Harvard University Library copy)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Ogedei was a son of Genghis Khan; Jochi and Chagatai quarrelled over the siege of Gurganj and Genghis appointed Ogedei sole commander (Wikipedia; Howorth: Juji supplanted as commander by his younger brother Ogotai before Khuarezm).",
+   "After a brawl between Jochi and Chagatai, Ogedei was agreed as heir and Genghis confirmed it (Wikipedia; Howorth: Ogotai had been named for the post by his father).",
+   "Genghis died in 1227; Jochi had died a year or two earlier (Wikipedia).",
+   "After the burial the sons dispersed to their governments; for two years there was no supreme ruler; Tului, the youngest, retaining his father's portion by Mongol custom, acted as regent (Howorth; Wikipedia: Tolui held the regency until 1229).",
+   "In 1229 a kurultai met at Khodoe Aral on the Kherlen (Wikipedia; Howorth: in the spring of 1229 a Kuriltai was summoned by Tului).",
+   "Howorth: Tului was pointed out by many; Jagatai as oldest surviving son was heir by Mongol rules; the will of Jingis was paramount (attributed).",
+   "Howorth: forty days' hesitation; Wikipedia: ritually declined three times; proclaimed 13 September 1229 (Wikipedia) (each attributed).",
+   "Howorth: conducted to the throne by Jagatai and his uncle Utjuken; Tului presented the cup; nine prostrations; saluted as Kaan; princes swore not to place a prince of another branch on the throne (attributed).",
+   "Chagatai continued to support his younger brother (Wikipedia).",
+   "Ogotai distributed his father's treasures among the grandees; chose forty daughters of his subjects to wait upon Jingis in the other world (Howorth, attributed).",
+   "Yelu Chutsai urged that an empire conquered on horseback could not be so governed; annual taxes were fixed (Howorth; Wikipedia: Yelu Chucai administered North China 1229-1240, ten routes on his suggestion).",
+   "By 1232 the Jin emperor was besieged in Kaifeng; the Jin dynasty was destroyed in 1234 (Wikipedia).",
+   "Ogedei died on 11 December 1241 (Wikipedia).",
+   "His reign saw the invasions of Korea (1231), a second invasion of Persia, the subjugation of the steppes and armies deep in Europe (Wikipedia)."
+  ],
+  "disagree": "Ogedei's reluctance: forty days of hesitation in Howorth, a ritual refusal three times in Wikipedia. Both stated in the text.",
+  "checked": null
  }
 }
