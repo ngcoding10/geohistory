@@ -3705,5 +3705,162 @@
   ],
   "disagree": "Babur's recapture of Samarkand: late autumn of 1500 in the Baburnama (the year 906 AH ran from July 1500 to July 1501); 'early 1501' for the Uzbek expulsion in Wikipedia's Sar-e-Pul article. The text follows Babur's own account and attributes it.",
   "checked": null
+ },
+ "cp04-09": {
+  "title": "The Waldseemüller map names America",
+  "y": 1507,
+  "place": "Saint-Dié-des-Vosges, Lorraine, France",
+  "paras": [
+   "In 1507 a small circle of scholars at Saint-Dié in the Vosges, then part of the Holy Roman Empire, known as the Gymnasium Vosagense, set out to bring the classical geography of Ptolemy up to date with the recent discoveries across the Atlantic. Its cartographer, Martin Waldseemüller, drew a large world map, the Universalis Cosmographia, together with a set of globe gores (printed segments to be pasted onto a sphere), and the group published a short explanatory book, the Cosmographiae Introductio, which included a Latin version of the voyages of Amerigo Vespucci. The book appeared on 25 April 1507.",
+   "In the book Waldseemüller proposed a name for the newly found 'fourth part' of the world. Since Europe and Asia had received their names from women, he wrote, he saw no reason why it should not be called Amerige, the land of Americus, or America, after Amerigo Vespucci, whom he took to be its discoverer. The map carried the name 'America' on the land now called South America. It was the first map to use the name, and the first to show the new lands as a separate landmass divided from Asia by an ocean. It was printed from woodcuts on twelve sheets and was drawn on a modified Ptolemaic projection.",
+   "Waldseemüller later came to doubt Vespucci's claim to be the discoverer; on his Carta Marina of 1516 he identified the land found by Columbus as part of Asia, and he dropped the name. By then it was too late. As the 1907 editors of the Cosmographiae Introductio, Joseph Fischer and Franz von Wieser, put it, his 1507 works had spread far and wide in prints and copies. The name was at first applied only to the southern continent; about three decades later the cartographer Gerhard Mercator extended it to the northern part of the hemisphere.",
+   "Wikipedia says that about 1,000 copies of the map were printed. Only one is known to survive, itself a later printer's proof made after 1516. Once owned by the Nuremberg cartographer Johannes Schöner, it was rediscovered in 1901 by Fischer at Wolfegg Castle in Württemberg, bought by the Library of Congress in 2001 and formally handed over by the German chancellor Angela Merkel in 2007."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Waldseem%C3%BCller_map",
+    "title": "Waldseemüller map (rev 1383527935, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://archive.org/download/cosmographiintr00waldgoog/cosmographiintr00waldgoog_djvu.txt",
+    "title": "The Cosmographiae Introductio of Martin Waldseemüller in facsimile, with an introduction by Joseph Fischer and Franz von Wieser, ed. C. G. Herbermann (New York, 1907), OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Waldseemüller worked with the Vosgean Gymnasium (Gymnasium Vosagense) at Saint-Dié in Lorraine, then in the Holy Roman Empire (Wikipedia; Fischer and Wieser).",
+   "He made a wall map, the Universalis Cosmographia, and globe gores (Wikipedia; Fischer and Wieser: two world maps, one for a globe, one flat).",
+   "The maps were accompanied by the Cosmographiae Introductio, which included a Latin version of Vespucci's four voyages (Wikipedia; Fischer and Wieser).",
+   "The book appeared on 25 April 1507 (Fischer and Wieser); Wikipedia: map originally published in April 1507.",
+   "Naming passage: the fourth part found by Americus may be called Amerige or America, since Europe and Asia got their names from women (Fischer and Wieser, Latin text; Wikipedia: name in honour of Amerigo Vespucci, explained in the Cosmographiae Introductio).",
+   "First map to use the name America, placed on South America (Wikipedia; Fischer and Wieser).",
+   "First to depict the Americas as a distinct landmass separated from Asia by the Pacific (Wikipedia).",
+   "Twelve sections printed from woodcuts (Wikipedia; Fischer and Wieser: twelve sections); modified Ptolemaic projection (Wikipedia; Fischer and Wieser: did not follow Ptolemy in every respect).",
+   "Waldseemüller later ceased to regard Vespucci as the discoverer and tried to withdraw the name (Fischer and Wieser); Carta Marina 1516 identified Columbus's land as part of Asia (Wikipedia; Fischer and Wieser: Carta Marina 1516).",
+   "Fischer and Wieser: the 1507 works had spread far and wide in prints and copies; the name was first restricted to the southern part; after three decades Mercator applied it to the northern part (attributed).",
+   "Wikipedia: one thousand copies printed (attributed); only one survives, a printer's proof from after 1516; owned by Johannes Schöner; rediscovered 1901 by Joseph Fischer at Schloss Wolfegg, Württemberg (Wikipedia).",
+   "Library of Congress bought it in 2001; Merkel symbolically handed it over on 30 April 2007 (Wikipedia); the map belonged to the princely house of Waldburg (Fischer and Wieser)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q2357384": {
+  "title": "Portuguese conquest of Goa",
+  "y": 1510,
+  "place": "Goa, India",
+  "paras": [
+   "Afonso de Albuquerque became governor of Portuguese India in November 1509. He wanted more than trading posts held by favour of friendly rulers such as Cochin: he aimed to control the sea routes of the Indian Ocean and needed a base under direct Portuguese rule. Goa, an island port on the west coast belonging to the Muslim Sultanate of Bijapur, was not on King Manuel's list of targets. The Malabar privateer Timoji (Timoja), who knew of local discontent with Bijapur's rule and warned that the sultan was building ships there, urged Albuquerque to take it and offered his own men.",
+   "The Portuguese and Timoji's boats stormed the fort of Panjim at the river mouth, and the city then gave itself up without a fight. Wikipedia, like the chroniclers Barros and Castanheda, dates the occupation to 17 February 1510; the historian H. Morse Stephens, in his Albuquerque (1892), notes that Albuquerque's Commentaries give 3 March and Correa 1 March. Albuquerque offered the townspeople religious freedom and lower taxes and began repairing the walls. In May the Bijapur army forced its way onto the island (on 11 May according to Wikipedia, 17 May according to Stephens) and the Portuguese fell back to their ships, putting to death the Muslims held in the citadel as they left. Held in the river mouth by the monsoon for nearly three months, under fire and short of food, with men deserting, they could only sail out on 15 August.",
+   "Reinforced by fresh squadrons from Portugal, Albuquerque returned in November with, by Stephens's count, 28 ships and 1,700 soldiers, besides Timoji's men and other Hindu allies. On 25 November 1510, the feast of Saint Catherine, the Portuguese stormed the city in three columns, forced the riverside gates before they could be shut and routed the garrison of Turkish and Persian mercenaries. Albuquerque had the Muslims who had not fled killed and let his soldiers sack the city (for four days according to Wikipedia, three according to Stephens). Wikipedia cites Albuquerque's own estimate of about 800 'Turks' and more than 6,000 Muslims dead, for 50 Portuguese dead and 300 wounded; Stephens gives at least 2,000 of the garrison killed and 40 Portuguese killed and 150 wounded.",
+   "Albuquerque rebuilt the citadel and made Goa the capital of Portuguese India; a church to Saint Catherine marked the gate where the city was won. It remained in Portuguese hands until 1961."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Portuguese_conquest_of_Goa",
+    "title": "Portuguese conquest of Goa (rev 1379862472, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://archive.org/download/rulersofindiaalb31226gut/31226-8.txt",
+    "title": "H. Morse Stephens, Albuquerque (Rulers of India, Oxford, 1892), chapter on Goa, Project Gutenberg text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Albuquerque,_Alphonso_d%27",
+    "title": "Albuquerque, Alphonso d', Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     9,
+     11,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "Albuquerque succeeded Almeida as governor in November 1509 (Wikipedia: 4 November; Stephens: 5 November).",
+   "Aim to control chokepoints and to have a base under direct Portuguese rule, not only allied territory like Cochin and Cannanore (Wikipedia).",
+   "Goa was not among the places Manuel I ordered him to conquer (Wikipedia).",
+   "Timoji (Timoja) urged the attack, citing Hindu discontent with Bijapur and Bijapur's shipbuilding at Goa, and offered support (Wikipedia; Stephens).",
+   "Panjim fort stormed with Timoji's support; the city surrendered without resistance (Wikipedia; Stephens).",
+   "Date of first occupation: 17 February 1510 (Wikipedia; Stephens: Barros, Castanheda, Faria e Sousa); Commentaries 3 March, Correa 1 March (Stephens, attributed); EB: capture of Goa followed the January 1510 attack on Calicut.",
+   "Albuquerque offered religious freedom and lower taxes; repaired walls (Wikipedia; Stephens: walls and citadel built).",
+   "Bijapur army crossed onto the island in May: 11 May (Wikipedia), 17 May (Stephens) (both attributed).",
+   "Portuguese withdrew to their ships; Wikipedia: Timoji's men executed Muslim captives before leaving; Stephens: 150 principal Muslim prisoners beheaded; EB: abandoned the town.",
+   "Trapped in the river mouth by the monsoon nearly three months, bombarded, starving, desertions (Wikipedia; Stephens).",
+   "Sailed out on 15 August 1510 (Wikipedia; Stephens; EB: abandoned it in August).",
+   "Reinforcements from Portugal (Wikipedia; Stephens); Stephens: 28 ships and 1700 soldiers plus Timoja's and the Raja of Gersoppa's troops (attributed).",
+   "Assault on 25 November 1510, St Catherine's day, in three columns/squadrons; gates forced; garrison of Turkish and Persian mercenaries routed (Wikipedia; Stephens).",
+   "Muslims who had not fled were killed on Albuquerque's orders; sack of four days (Wikipedia) or three days (Stephens) (attributed).",
+   "Casualties: Wikipedia (Albuquerque's estimate) about 800 Turks and over 6,000 Moors dead, 50 Portuguese dead, 300 wounded; Stephens: at least 2000 killed, Portuguese 40 killed, 150 wounded (attributed).",
+   "Citadel rebuilt; Goa capital of Portuguese India; church of St Catherine promised at the gate (Wikipedia; Stephens).",
+   "Portuguese control until 1961 (Wikipedia); EB: became the most flourishing Portuguese settlement in India."
+  ],
+  "disagree": "Date of the first occupation (17 February 1510 in Wikipedia and Barros; 1 or 3 March in Correa and the Commentaries); date of the Bijapur reoccupation (11 or 17 May); length of the sack (four or three days); casualties (Albuquerque's estimate of some 6,800 enemy dead and 50 Portuguese dead in Wikipedia; at least 2,000 garrison dead and 40 Portuguese dead in Stephens). All stated in the text.",
+  "checked": null
  }
 }
