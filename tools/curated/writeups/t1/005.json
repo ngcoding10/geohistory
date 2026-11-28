@@ -4,7 +4,7 @@
   "y": -48,
   "place": "Roman Republic",
   "paras": [
-   "Civil war broke out in early 49 BC when Julius Caesar, the conqueror of Gaul, who had been refused permission to stand for the consulship, crossed the Rubicon into Italy. His rival Pompey the Great took the side of the Senate but withdrew to the east. In January 48 Caesar crossed the Adriatic with seven legions, and for months the two armies faced each other in fortified lines around Dyrrhachium (Durrës, in modern Albania). In July Caesar's army was defeated there, and he marched inland into Thessaly in Greece; Pompey followed, and many senators in his camp pressed him to fight.",
+   "Civil war broke out in early 49 BC when Julius Caesar, the conqueror of Gaul, who had been refused permission to stand for the consulship, crossed the Rubicon into Italy. His rival Pompey the Great took the side of the Senate but withdrew to the east. In January 48 Caesar crossed the Adriatic with seven legions, and for months the two armies faced each other in fortified lines around Dyrrhachium (Durrës, in modern Albania). In July Caesar's army was defeated there, and he marched inland across the Pindus mountains into Greece; Pompey followed, and many senators in his camp pressed him to fight.",
    "The armies met near Pharsalus on 9 August 48 BC. In Caesar's own account Pompey had 110 cohorts, about 45,000 men, and a large cavalry force under Titus Labienus massed on his left wing; Caesar had 80 cohorts, about 22,000 men. Foreseeing that Pompey's cavalry would try to ride round his right flank, Caesar took one cohort from each legion of his third line and formed a fourth line behind his right. Pompey ordered his infantry to stand and receive the charge, hoping Caesar's men would arrive exhausted; Caesar's veterans halted halfway to regain their breath before attacking.",
    "When Pompey's cavalry charged and pushed back Caesar's horsemen, the hidden fourth line rushed out and put it to flight, cut down the archers and slingers, and fell on the rear of Pompey's left wing. Caesar then sent in his fresh third line and Pompey's army broke. Pompey left the field for his camp in despair, and when Caesar's troops stormed it he fled to the coast with a few companions. The next day the remnants of his army surrendered and Caesar pardoned them.",
    "The losses are disputed. Caesar claimed that about 15,000 of Pompey's men fell and more than 24,000 were captured, against his own loss of 200 soldiers and some 30 centurions; Plutarch cites Asinius Pollio, who fought for Caesar, for only 6,000 dead. Pompey fled to Egypt, where he was murdered as he came ashore. Pharsalus broke the senatorial cause and opened the way to Caesar's sole rule, which historians such as Jona Lendering see as the end of the Roman Republic."
@@ -62,7 +62,11 @@
    "Lendering: the battle marked the end of the Roman republic and the beginning of Caesar's autocracy."
   ],
   "disagree": "Caesar's own account puts Pompey's dead at about 15,000 with over 24,000 captured; Plutarch cites Asinius Pollio, who fought for Caesar, for 6,000 dead, and Livius's introduction gives almost 6,000 Roman soldiers killed.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_Pharsalus",
+   "result": "Wikipedia extract (rev 1379786111): Pompey killed on arrival in Egypt; Appian gives 6,000 Pompeian dead, consistent with the Pollio figure. 2 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q169401": {
   "title": "Intermediate-Range Nuclear Forces Treaty",
@@ -128,7 +132,11 @@
    "The treaty ended on 2 August 2019 (NATO)."
   ],
   "disagree": "NATO dates the U.S. suspension of its treaty obligations to 1 February 2019; the Arms Control Association gives 2 February.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Intermediate-Range_Nuclear_Forces_Treaty",
+   "result": "Wikipedia extract (rev 1383942293): 2,692 missiles eliminated, entry into force 1 June 1988, U.S. withdrawal 2 August 2019 all match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q541191": {
   "title": "Anglo-Irish Treaty",
@@ -196,7 +204,11 @@
    "The split led to the Civil War, which began about six months later (RTÉ)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Anglo-Irish_Treaty",
+   "result": "Wikipedia extract (rev 1384889032): signed 6 December 1921; Dáil approval 64 to 57 on 7 January 1922 match. 2 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q130754": {
   "title": "2004 Indian Ocean earthquake and tsunami",

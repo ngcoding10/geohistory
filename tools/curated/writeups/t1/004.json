@@ -3341,7 +3341,11 @@
    "In 2019 Iliescu was put on trial accused of fomenting the bloodshed to legitimise his power; he denied it."
   ],
   "disagree": "Death tolls differ slightly: the official figure given by the bpb is 1,165 dead (895 of them after 22 December); the 2019 commemoration organisers cited by Al Jazeera gave 1,142; Radio Romania International says over 1,100. Whether December 1989 was a popular revolution or a coup is still debated.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Romanian_revolution",
+   "result": "Wikipedia extract (rev 1385318128, local CirrusSearch dump): Tőkés eviction protest in Timișoara, flight by helicopter on 22 December, trial and execution on 25 December all match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q208191": {
   "title": "Asian–African Conference",
@@ -3426,7 +3430,7 @@
   "place": "Italy",
   "paras": [
    "After Axis forces in North Africa surrendered in May 1943, the United States and Britain decided to keep up the pressure in the Mediterranean rather than wait for the invasion of France. Meeting at Casablanca, Allied leaders chose Sicily as the next target: taking it could knock Fascist Italy out of the war, secure the sea lanes of the central Mediterranean and draw German divisions away from other fronts. To hide the target, British intelligence carried out Operation Mincemeat, planting false invasion plans on a corpse washed ashore in Spain, which led Hitler to reinforce Sardinia and Corsica instead.",
-   "Operation Husky, under the overall command of General Dwight D. Eisenhower, began on the night of 9-10 July 1943. A storm scattered the American paratroopers and British glider troops, but the seaborne landings that followed at dawn, after heavy naval and air bombardment, succeeded. The U.S. Seventh Army under General George S. Patton came ashore on the left and the British Eighth Army under General Bernard Montgomery on the right, along the south-eastern coast of the island. The figures for the armada differ: the Oxford Companion to American Military History gives 2,500 ships and 180,000 men landed on the first day, HISTORY.com about 3,000 ships and 150,000 troops.",
+   "Operation Husky, under the overall command of General Dwight D. Eisenhower, began on the night of 9-10 July 1943. A storm scattered the American paratroopers and British glider troops, but the seaborne landings that followed before dawn on 10 July, after heavy naval and air bombardment, succeeded. The U.S. Seventh Army under General George S. Patton came ashore on the left and the British Eighth Army under General Bernard Montgomery on the right, along the south-eastern coast of the island. The figures for the armada differ: the Oxford Companion to American Military History gives 2,500 ships and 180,000 men landed on the first day, HISTORY.com about 3,000 ships and 150,000 troops.",
    "Italian defenders offered little resistance at first, but German armour counter-attacked the next morning and nearly drove the Americans back into the sea at Gela; within two days the beachheads were secure. Over the following weeks Montgomery pushed up the east coast while Patton swung north-west and then east along the north coast towards Messina. The invasion shook the Fascist regime: in late July 1943 Mussolini was deposed and arrested, and the new government under Marshal Pietro Badoglio began secret armistice talks with the Allies.",
    "When American troops entered Messina on 17 August 1943 the campaign was over, but most of the German forces, with much of their equipment, had already escaped across the Strait of Messina to the mainland (HISTORY.com puts the number of Germans and Italians who crossed at 100,000). The capture of Sicily and its airfields opened the way for the Allied landings on the Italian mainland in September 1943."
   ],
@@ -3577,7 +3581,7 @@
   "y": 1948,
   "place": "West Bank",
   "paras": [
-   "Britain governed Palestine under a mandate from the League of Nations that was due to end in May 1948. On 29 November 1947 the United Nations General Assembly adopted Resolution 181, which proposed dividing the mandate into a Jewish state and an Arab state when British rule ended in May 1948, with Jerusalem and its surroundings under international administration. The Palestinian Arabs rejected the plan as unfair, and fighting broke out at once between Arab irregulars and the Jewish forces of the Haganah and the smaller Irgun and LEHI groups.",
+   "Britain governed Palestine under a mandate from the League of Nations that was due to end in May 1948. On 29 November 1947 the United Nations General Assembly adopted Resolution 181, which proposed dividing the mandate into a Jewish state and an Arab state when British rule ended in May 1948, with Jerusalem and its surroundings under international administration. The Palestinian Arabs rejected the plan as unfair, and fighting broke out between Arab irregulars and the Jewish forces of the Haganah and the smaller Irgun and LEHI groups.",
    "On 14 May 1948, the day the British Mandate ended, David Ben-Gurion, head of the Jewish Agency, proclaimed in Tel Aviv, at a session of the People's Council, 'the establishment of a Jewish State in Eretz-Israel, to be known as the State of Israel', with effect from the end of the mandate that night. The text based the claim on the Jewish people's historic bond with the land, the Balfour Declaration of 1917, the League of Nations mandate, the murder of millions of Jews in Europe and the UN resolution.",
    "The declaration promised a state open to Jewish immigration, based on 'freedom, justice and peace' and guaranteeing equal social and political rights to all inhabitants regardless of religion, race or sex. It made the People's Council a provisional council of state until an elected constituent assembly adopted a constitution, appealed to the Arab inhabitants to take part in building the state as equal citizens, and offered peace to neighbouring states. U.S. President Harry S. Truman recognised the new state the same day, against the advice of his State Department.",
    "War followed immediately. Arab aircraft attacked Tel Aviv, and the armies of Egypt, Syria, Lebanon and Iraq invaded the former mandate, with Transjordan's forces fighting in the areas assigned to the Arab state and in Jerusalem. Israeli forces went on to the offensive, and armistice agreements signed in 1949 left Israel with more territory than the UN plan had allotted it, while Egypt held the Gaza Strip and Jordan the West Bank."
@@ -3639,15 +3643,19 @@
    "Israel took the offensive; 1949 armistice agreements left Israel with more territory than allotted, Egypt with Gaza and Jordan with the West Bank."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence",
+   "result": "Wikipedia extract (rev 1381291994): proclamation in Tel Aviv on 14 May 1948 led by Ben-Gurion, U.S. recognition the same day, equal rights irrespective of religion, race or sex all match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q2305266": {
   "title": "Soviet invasion of Poland",
   "y": 1939,
   "place": "Poland",
   "paras": [
-   "On 17 September 1939, sixteen days after Nazi Germany had invaded Poland from the west, the Soviet Red Army crossed Poland's eastern border. The attack followed from the Molotov–Ribbentrop Pact of August 1939, whose secret protocol had divided Poland between Germany and the Soviet Union. In the early hours the Polish ambassador in Moscow, Wacław Grzybowski, was handed a note justifying the attack; he refused to accept it. Moscow claimed that the Polish state had ceased to exist and that it was protecting the Ukrainians and Belarusians of eastern Poland.",
-   "The Polish army, already broken by the German offensive, was retreating east and south-east. Facing a second enemy, the commander-in-chief, Marshal Edward Rydz-Śmigły, ordered his troops not to fight the Red Army except in self-defence and to withdraw towards Romania and Hungary. Border guards and scattered units still resisted at places such as Grodno, Wilno (Vilnius) and Szack. According to Poland's Institute of National Remembrance (IPN), the Soviets committed more than 600,000 soldiers, 4,700 tanks and 3,300 aircraft. Where Soviet and German forces met, the Germans pulled back and handed over their Polish prisoners.",
+   "On 17 September 1939, sixteen days after Nazi Germany had invaded Poland from the west, the Soviet Red Army crossed Poland's eastern border. The attack followed from the Molotov–Ribbentrop Pact of August 1939, whose secret protocol had divided Poland between Germany and the Soviet Union. In the early hours the Polish ambassador in Moscow, Wacław Grzybowski, was handed a note justifying the attack; he refused to accept it. Moscow claimed that the Polish government had ceased to exist and that it was protecting the Ukrainians and Belarusians of eastern Poland.",
+   "The Polish army, already broken by the German offensive, was retreating east. Facing a second enemy, the commander-in-chief, Edward Rydz-Śmigły, ordered his troops not to fight the Red Army except in self-defence and to withdraw towards Romania and Hungary. Border guards and scattered units still resisted at places such as Grodno, Wilno (Vilnius) and Szack. According to Poland's Institute of National Remembrance (IPN), the Soviets committed more than 600,000 soldiers, 4,700 tanks and 3,300 aircraft. Where Soviet and German forces met, the Germans pulled back and handed over their Polish prisoners.",
    "On 28 September Germany and the Soviet Union signed a treaty in Moscow fixing their new border. The Soviet Union took about three-fifths of Poland's territory and some 13 million of its people; the Vilnius region was handed to Lithuania, and the rest was annexed in November 1939 as 'Western Belarus' and 'Western Ukraine'.",
    "Soviet troops shot prisoners from the start: the IPN cites historians' estimates of some 2,500 prisoners and several hundred civilians murdered in September 1939 alone. Nearly two years of occupation followed, with arrests, deportations to the interior of the Soviet Union and the Katyn massacre, until Germany attacked the Soviet Union in June 1941."
   ],
@@ -4016,7 +4024,11 @@
    "Breivik admitted the facts (SNL); on 24 August 2012 the Oslo court found him accountable and sentenced him to 21 years' preventive detention with a ten-year minimum (Lex)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/2011_Norway_attacks",
+   "result": "Wikipedia extract (rev 1386848482): eight killed by the Oslo bomb, 69 killed on Utøya, 564 people on the island, 21 years of preventive detention on 24 August 2012 all match. 4 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q570204": {
   "title": "Battle of the Kalka River",
@@ -4085,7 +4097,11 @@
    "Subutai returned with Batu Khan in 1237 (WHN; Lex says Batu's campaigns began in 1236)."
   ],
   "disagree": "Lex dates the Polovtsian attack to 28 May and the Kievan surrender to 31 May 1223; Warfare History Network puts the main battle on 31 May and the siege of the Kievan camp in the following days. Lex dates the start of Batu Khan's campaigns to 1236; Warfare History Network says Subutai returned with Batu in 1237.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Battle_of_the_Kalka_River",
+   "result": "Wikipedia extract (rev 1382834688): Mstislav of Kiev had the Mongol envoys executed; battle dated 31 May 1223 (matches Warfare History Network; Lex dates differ, as stated). 2 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q60022": {
   "title": "Tennis Court Oath",
@@ -4155,16 +4171,20 @@
    "David's painting of the scene remained unfinished (Carnavalet; the Château de Versailles mentions his 1791 drawing)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Tennis_Court_Oath",
+   "result": "Wikipedia extract (rev 1386168248): National Assembly declared on 17 June with members of the other estates; hall locked and guarded on 20 June; Bailly signed first and one deputy (Martin-Dauch) refused. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q749811": {
   "title": "Mutiny on the Bounty",
   "y": 1789,
   "place": null,
   "paras": [
-   "In December 1787 the small Royal Navy ship Bounty, commanded by Lieutenant William Bligh, left England for Tahiti to collect breadfruit saplings, which were to be carried to the West Indies as cheap food for enslaved people. The ship was overcrowded and had no marines to back the captain's authority, and there was friction between Bligh and his master's mate, Fletcher Christian, from early in the voyage. After ten months at sea the Bounty reached Tahiti in October 1788 and, because it was the wrong season for the breadfruit, stayed about five months; many of the crew lived ashore and formed relationships with Tahitian women.",
-   "The Bounty sailed from Tahiti on 4 April 1789. Early on 28 April, near Tonga in the Pacific, Christian and his followers woke Bligh, held him at bayonet point and seized the ship without bloodshed. Bligh and 18 loyal men were forced into the ship's open launch and set adrift. Royal Museums Greenwich counts 18 mutineers; HISTORY.com says Christian was joined by 25 petty officers and seamen.",
-   "Bligh, an expert navigator, took the overloaded boat first to the island of Tofua for supplies and then west across the Pacific and past Australia, reaching Timor in the East Indies on 14 June 1789 after a voyage of some 3,600 miles. From there the survivors returned to England to report the mutiny.",
+   "In 1787 the small Royal Navy ship Bounty, commanded by Lieutenant William Bligh, left England for Tahiti to collect breadfruit saplings, which were to be carried to the West Indies as cheap food for enslaved people. The ship was overcrowded and had no marines to back the captain's authority, and there was friction between Bligh and his master's mate, Fletcher Christian, from early in the voyage. After ten months at sea the Bounty reached Tahiti in October 1788 and, because it was the wrong season for the breadfruit, stayed about five months; many of the crew lived ashore and formed relationships with Tahitian women.",
+   "The Bounty sailed from Tahiti in early April 1789. Early on 28 April, near Tonga in the Pacific, Christian and his followers woke Bligh, held him at bayonet point and seized the ship without bloodshed. Bligh and 18 loyal men were forced into the ship's open launch and set adrift. Royal Museums Greenwich counts 18 mutineers; HISTORY.com says Christian was joined by 25 petty officers and seamen.",
+   "Bligh, an expert navigator, took the overloaded boat first to the island of Tofua for supplies and then west across the Pacific, reaching Timor in the East Indies in June 1789 (on 14 June, according to HISTORY.com) after a voyage of some 3,600 miles. From there the survivors returned to England to report the mutiny.",
    "The mutineers went back to Tahiti, where most of them stayed. Christian, eight other mutineers and a group of Tahitian men and women sailed on to remote Pitcairn Island, which they reached in January 1790, and burned the ship to avoid discovery. The mutineers left on Tahiti were later captured and taken to England, where three were hanged. On Pitcairn the settlers fell to fighting; Christian and all the Tahitian men were among those killed, and when an American ship found the island in 1808 only one mutineer, John Adams, was left alive. Descendants of the mutineers still live on Pitcairn and Norfolk Island."
   ],
   "sources": [
@@ -4211,15 +4231,15 @@
    }
   ],
   "claims": [
-   "The Bounty under Bligh sailed for Tahiti in 1787 (HISTORY: December 1787) to collect breadfruit for the West Indies (as food for enslaved people, HISTORY).",
+   "The Bounty under Bligh sailed for Tahiti in 1787 to collect breadfruit for the West Indies (as food for enslaved people, HISTORY).",
    "The ship was overcrowded, had no marines, and Bligh and Christian were at odds (RMG).",
    "After ten months the Bounty reached Tahiti (HISTORY: October 1788).",
    "It stayed about five months (RMG: wrong season for breadfruit); the crew enjoyed life ashore and took Tahitian partners.",
-   "The Bounty left Tahiti on 4 April 1789 (HISTORY); on 28 April 1789 Christian led the mutiny.",
+   "The Bounty left Tahiti in early April 1789 (HISTORY: 4 April; RMG: the mutiny came 23 days out); on 28 April 1789 Christian led the mutiny.",
    "The mutiny took place near Tonga (HISTORY).",
    "Bligh was woken at night and held at bayonet point; no blood was shed (RMG); Bligh and 18 loyal men were set adrift in the launch.",
    "RMG: 18 mutineers; HISTORY: Christian and 25 petty officers and seamen seized the ship.",
-   "Bligh sailed to Tofua, then on to Timor (RMG); he reached Timor on 14 June 1789 (HISTORY) after about 3,600 miles (HISTORY; RMG: 3,618 nautical miles).",
+   "Bligh sailed to Tofua, then on to Timor (RMG: 47 days further); HISTORY gives arrival on 14 June 1789 after about 3,600 miles (RMG: 3,618 nautical miles).",
    "Bligh and his men returned to England to report the mutiny.",
    "The mutineers returned to Tahiti; Christian, eight mutineers and Tahitians went to Pitcairn and burned the Bounty.",
    "They reached Pitcairn in January 1790; mutineers captured on Tahiti were taken to England, where three were hanged (HISTORY).",
@@ -4227,7 +4247,11 @@
    "Descendants of the mutineers still live on Pitcairn (and Norfolk Island, HISTORY)."
   ],
   "disagree": "Royal Museums Greenwich says 18 men joined the mutiny (with two passive and 22 loyal to Bligh); HISTORY.com says Christian and 25 petty officers and seamen seized the ship.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Mutiny_on_the_Bounty",
+   "result": "Wikipedia extract (rev 1383105552): Bligh and 18 loyalists set adrift; Pitcairn reached in January 1790; three mutineers hanged; John Adams the sole survivor by 1808 all match. HISTORY.com dates not found in the extract (December 1787, 4 April, 14 June 1789) were generalised or attributed. 4 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q1025404": {
   "title": "Assassination of Abraham Lincoln",
@@ -4327,6 +4351,10 @@
    "Lincoln lay in state in the Capitol and was carried by funeral train to Springfield, where he was buried on 4 May 1865."
   ],
   "disagree": "HISTORY.com says a sergeant shot Booth when he appeared to raise his gun; the Miller Center says Booth either shot himself or was killed in a shoot-out. The Miller Center says the plotters also meant to kill General Grant.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Assassination_of_Abraham_Lincoln",
+   "result": "Wikipedia extract (rev 1385654687): death at 7:22 a.m. on 15 April; Booth shot by Sergeant Boston Corbett; four conspirators hanged in July 1865 all match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  }
 }
