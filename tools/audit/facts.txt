@@ -87,6 +87,7 @@ E|Battle of Antietam|1862
 E|Battle of Königgrätz|1866
 E|Battle of Sedan|1870
 E|Paris Commune|1871
+E|Treaty of Frankfurt|1871
 E|Battle of Little Bighorn|1876
 E|Battle of Isandlwana|1879
 E|Berlin Conference|1884

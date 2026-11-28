@@ -48,6 +48,39 @@
    "note": "Wikidata also lists 1945 as a start. The usual starting point is the Truman Doctrine of 12 March 1947.",
    "source": "https://en.wikipedia.org/wiki/Cold_War",
    "verified": false
+  },
+  {
+   "q": "Q158021",
+   "set": {
+    "m": 5,
+    "dd": 10
+   },
+   "note": "Wikidata dates this 7 November 1871; the treaty was signed at Frankfurt on 10 May 1871.",
+   "source": "https://en.wikipedia.org/api/rest_v1/page/html/Treaty_of_Frankfurt_(1871)",
+   "source2": "https://www.dhm.de/lemo/kapitel/kaiserreich/das-reich/elsass-lothringen.html",
+   "verified": false
+  },
+  {
+   "q": "Q192050",
+   "set": {
+    "m": 6,
+    "dd": 28
+   },
+   "note": "Wikidata dates this 29 June 1914; the archduke and his wife were shot in Sarajevo on 28 June 1914.",
+   "source": "https://en.wikipedia.org/api/rest_v1/page/html/Assassination_of_Archduke_Franz_Ferdinand",
+   "source2": "https://www.theworldwar.org/learn/about-wwi/june-28-1914",
+   "verified": false
+  },
+  {
+   "q": "Q151349",
+   "set": {
+    "m": 6,
+    "dd": 24
+   },
+   "note": "Wikidata dates the start 23 June 1948; the Soviet blockade of West Berlin began on 24 June 1948.",
+   "source": "https://en.wikipedia.org/api/rest_v1/page/html/Berlin_Blockade",
+   "source2": "https://history.state.gov/milestones/1945-1952/berlin-airlift",
+   "verified": false
   }
  ]
 }
