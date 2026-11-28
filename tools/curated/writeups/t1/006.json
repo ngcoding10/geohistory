@@ -1769,5 +1769,89 @@
   ],
   "disagree": "Time of the first assault: 9.30 (swissinfo) or around ten (City of Paris). Swiss dead: about 300 (d'Affry's report, in the Historisches Lexikon der Schweiz); under 400 plus about 70 in September (Czouz-Tornare, in swissinfo); 630 or 760 in older works (swissinfo).",
   "checked": null
+ },
+ "Q728480": {
+  "title": "Battle of Rocroi",
+  "y": 1643,
+  "place": "Plain before Rocroi, Ardennes (France)",
+  "paras": [
+   "The Battle of Rocroi was fought on 19 May 1643 near Rocroi, a small fortified town in the French Ardennes, during France's war with Spain within the Thirty Years' War. A French army under the 21-year-old Louis de Bourbon, Duke of Enghien, later known as the Great Condé, faced the Spanish Army of Flanders under Francisco de Melo, governor of the Spanish Netherlands. France seemed vulnerable: Cardinal Richelieu had died in December 1642 and King Louis XIII on 14 May 1643, leaving a child king, Louis XIV. A Spanish army of about 26,000 men crossed the border and besieged Rocroi, which opened the road into Champagne and towards Paris.",
+   "Enghien kept the news of the King's death from his troops and marched to relieve the town with an army of roughly equal size; Histoire pour tous puts each side at about 25,000 men. Learning on 18 May that about 6,000 Spanish reinforcements under General Beck could arrive the next day, he decided to attack at dawn, against the advice of older commanders such as Marshal de L'Hôpital. Melo, confident in his Spanish and Italian tercios, the dense formations of pikemen and musketeers that had dominated European battlefields for about a century, accepted battle on the plain before the town.",
+   "At dawn on 19 May Enghien led the cavalry of the French right, broke the Spanish left wing and drove its horsemen off. On the other side of the field the French left was pushed back by the Spanish cavalry of the Duke of Albuquerque, and in the centre the tercios pressed the French infantry, which held only thanks to the reserve under Baron de Sirot. Instead of pursuing, Enghien re-formed his cavalry, rode across behind the Spanish army and fell on Albuquerque's cavalry from the rear. The tercios were left alone in the centre. They beat off three French cavalry charges while Enghien surrounded them; their commander, the elderly Count of Fuentes, carried in a litter, was killed. As they prepared to surrender, a misunderstanding led to more firing (Histoire pour tous says the Spanish fired at Enghien as he rode forward to accept their surrender; Champs de bataille that French soldiers fired, thinking the fight had resumed), and the French then broke the squares.",
+   "The Spanish infantry was destroyed, though figures differ: Histoire pour tous gives 6,000 dead and as many prisoners; Champs de bataille says that of 8,000 tercio veterans only about 1,000 survived and puts French losses at about 2,000 killed and wounded. Melo's cavalry escaped. The defeat ended the tercios' reputation for invincibility and made Enghien's name. It did not end the war, which went on for about fifteen more years until the Treaty of the Pyrenees; Enghien beat the Army of Flanders again at Lens in 1648, and Rocroi came to be seen as the moment military supremacy in Europe began to pass from Spain to France."
+  ],
+  "sources": [
+   {
+    "url": "https://www.histoire-pour-tous.fr/batailles/5622-bataille-de-rocroi-1643.html",
+    "title": "Bataille de Rocroi (18-19 mai 1643)",
+    "publisher": "Histoire pour tous",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   },
+   {
+    "url": "https://www.champsdebataille.fr/batailles/bataille-de-rocroi",
+    "title": "Bataille de Rocroi (1643)",
+    "publisher": "Champs de bataille",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   }
+  ],
+  "claims": [
+   "Battle of Rocroi, 19 May 1643 (Histoire pour tous: 18-19 May; Champs de bataille), near the fortified town of Rocroi in the Ardennes, in the Thirty Years' War, France being at war with Spain since 1635 (both).",
+   "French commander Louis II de Bourbon, Duke of Enghien, future Great Condé, aged 21 (Champs de bataille; Histoire pour tous gives 21 in one place and 23 in another; the local Wikipedia extract, rev 1384692878, confirms 21).",
+   "Spanish Army of Flanders under Francisco de Melo (both), governor of the Spanish Netherlands (Champs de bataille).",
+   "Richelieu died in December 1642 and Louis XIII on 14 May 1643; Louis XIV was a child (both; Champs de bataille: four years old; Histoire pour tous: five).",
+   "A Spanish army of 26,000 besieged Rocroi (both; Histoire pour tous: siege began 10 May); the road to Paris was open, Champagne threatened (Champs de bataille; Histoire pour tous: before marching on Paris).",
+   "Enghien hid the King's death from his troops (both).",
+   "Armies roughly equal: about 25,000 each (Histoire pour tous).",
+   "On the evening of 18 May Enghien learned that about 6,000 Spanish reinforcements under General Beck could arrive the next day and decided to attack at dawn; Marshal de L'Hôpital judged the attack imprudent (Champs de bataille; the local Wikipedia extract confirms 6,000 reinforcements and an attack against the advice of older subordinates).",
+   "Melo trusted his Spanish and Italian tercios, dominant on battlefields for a century, and accepted battle on the plain (Histoire pour tous; Champs de bataille: tercios almost a century unbeaten).",
+   "At dawn on 19 May Enghien led the cavalry charge on the French right and broke the Spanish left (both).",
+   "The French left was pushed back by the Spanish right-wing cavalry under the Duke of Albuquerque (Champs de bataille); in the centre the tercios pushed back the French lines, held by Baron de Sirot's reserve (Histoire pour tous).",
+   "Enghien did not pursue but re-formed his cavalry, crossed behind the Spanish army and charged Albuquerque's cavalry from behind (Champs de bataille; Histoire pour tous: went round to take the Spanish right wing from behind).",
+   "The tercios, isolated, repulsed three cavalry charges (both); their commander, the old Count of Fuentes, carried in a litter, was killed (Histoire pour tous; local Wikipedia extract: de Fontaines/de Fuentes carried into battle and killed).",
+   "At the surrender, Histoire pour tous: the Spanish, thinking a new charge was coming as Enghien advanced to receive their surrender, opened fire (the local Wikipedia extract says the same); Champs de bataille: French soldiers, believing the fight had resumed, opened fire.",
+   "The French then broke the Spanish squares (Histoire pour tous; Champs de bataille: carnage).",
+   "Losses: Histoire pour tous: 6,000 dead and as many prisoners in the Spanish infantry; Champs de bataille: of 8,000 tercio veterans only about 1,000 survived; French about 2,000 killed and wounded (Champs de bataille). Histoire pour tous: the remains of Melo's cavalry escaped.",
+   "The battle ended the tercios' reputation for invincibility and established Enghien's reputation (both).",
+   "The war continued until the Treaty of the Pyrenees (Histoire pour tous: about fifteen more years); Enghien won at Lens in 1648 (both); seen as the transfer of military supremacy from Spain to France (both)."
+  ],
+  "disagree": "How firing resumed at the surrender: the Spanish fired on the approaching French (Histoire pour tous) or French soldiers fired (Champs de bataille). Losses: 6,000 Spanish infantry dead and 6,000 prisoners (Histoire pour tous) against about 1,000 survivors out of 8,000 tercio veterans and about 2,000 French killed and wounded (Champs de bataille). Army sizes: 26,000 Spanish (both); about 25,000 on each side (Histoire pour tous). Wikipedia could not be fetched (429); the local Wikipedia extract was used only to confirm points as noted in the claims.",
+  "checked": null
  }
 }
