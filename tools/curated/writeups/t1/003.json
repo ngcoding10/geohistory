@@ -2936,5 +2936,218 @@
   ],
   "disagree": "Wikipedia dates the shooting at the PIDE/DGS headquarters to 20:15 on 25 April; the Museu do Aljube's timeline places it in the late morning. Both give four dead.",
   "checked": null
+ },
+ "Q116691303": {
+  "title": "2023 Turkey–Syria earthquakes",
+  "y": 2023,
+  "place": "South-central Turkey and northern Syria",
+  "paras": [
+   "In the early hours of 6 February 2023 a magnitude 7.8 earthquake struck south-central Turkey near the Syrian border, at 04:17 local time (01:17 UTC), with its epicentre west-northwest of Gaziantep. About nine hours later a second great earthquake, centred some 95 km to the north-northeast, followed: the US Geological Survey measured it at 7.5, Turkish and other estimates at 7.7. The region lies near the junction of the Anatolian, Arabian and African plates, and the shocks ruptured the East Anatolian Fault over roughly 350 km and the Çardak fault over some 160 km. They were the largest earthquakes in Turkey since the Erzincan earthquake of 1939, and tens of thousands of aftershocks followed.",
+   "Damage stretched over some 350,000 square kilometres, an area about the size of Germany, and affected an estimated 14 million people in Turkey. Tens of thousands of buildings collapsed, many of them in Hatay province and its capital Antakya. Turkey's disaster agency, AFAD, led a rescue effort hampered by damaged roads and winter storms, and after Turkey appealed for help more than 141,000 people from 94 countries joined it. In Syria, already worn down by civil war, most of the deaths were in the rebel-held northwest.",
+   "The confirmed death toll in Turkey was 53,537, with between about 6,000 and 8,500 dead in Syria; a USGS summary citing ReliefWeb gave more than 57,000 by the end of March 2023. It was the deadliest natural disaster in modern Turkey's history and the deadliest earthquake worldwide since the 2010 Haiti earthquake. UN experts estimated that about 1.5 million people were left homeless, and Wikipedia cites damage estimates of about US$150 billion in Turkey and US$9 billion in Syria."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquakes",
+    "title": "2023 Turkey–Syria earthquakes",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.usgs.gov/programs/earthquake-hazards/science/frequently-asked-questions-about-2023-earthquakes-turkiye",
+    "title": "Frequently Asked Questions about 2023 Earthquakes in Türkiye",
+    "publisher": "U.S. Geological Survey",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "A magnitude 7.8 earthquake struck on 6 February 2023 at 01:17 UTC (04:17 TRT) in south-central Turkey near the Syrian border, its epicentre west-northwest of Gaziantep.",
+   "A second earthquake followed about nine hours later, about 95 km from the first; USGS gives M7.5, Wikipedia (local reports) M7.7.",
+   "The area is near the triple junction of the Anatolian, Arabian and African plates; the M7.8 ruptured about 354 km of the East Anatolian Fault and the second about 161 km of the Çardak fault.",
+   "The M7.8 was the largest earthquake in Turkey since the 1939 Erzincan earthquake; tens of thousands of aftershocks followed (Wikipedia: more than 30,000 in three months).",
+   "Damage extended over about 350,000 km2, about the size of Germany; about 14 million people in Turkey were affected.",
+   "Many buildings collapsed, including 13,517 in Hatay Province and 6,369 in Antakya.",
+   "The AFAD rescue effort was hampered by damaged roads and winter storms; more than 141,000 people from 94 countries joined after Turkey's appeal.",
+   "In Syria, weakened by civil war, most deaths were in rebel-held areas.",
+   "The confirmed death toll in Turkey was 53,537; estimates for Syria range from 5,951 to 8,476.",
+   "USGS (citing ReliefWeb): the death toll was over 57,000 as of the end of March 2023.",
+   "It was the deadliest natural disaster in Turkey's modern history and the deadliest earthquake worldwide since the 2010 Haiti earthquake.",
+   "UN experts estimated about 1.5 million homeless; damage was estimated at US$150 billion in Turkey and US$9 billion in Syria."
+  ],
+  "disagree": "The magnitude of the second earthquake is 7.5 in the USGS catalogue and 7.7 in Turkish and other reports (USGS explains that agencies use different magnitude scales). Death tolls differ with the date and the source: 53,537 confirmed in Turkey plus 5,951–8,476 in Syria in Wikipedia, over 57,000 by the end of March 2023 in the USGS summary.",
+  "checked": null
+ },
+ "Q202161": {
+  "title": "Gallic Wars",
+  "y": -58,
+  "place": "Gaul (modern France, Belgium and Switzerland), with campaigns into Germania and Britain",
+  "paras": [
+   "The Gallic Wars (58–50 BC) were the conquest of Gaul by the Roman proconsul Gaius Julius Caesar. His legions fought the Gallic tribes of what are now France, Belgium and Switzerland, Germanic peoples such as the Suebi, and the Britons; some Gauls, such as the Remi and for a long time the Aedui, sided with Rome. Caesar presented the war as defensive, but historians agree that he fought it chiefly to advance his political career and pay off his debts. Our main source is his own account, the Commentarii de Bello Gallico, which modern historians treat as propaganda.",
+   "The war began in 58 BC, when the Helvetii tried to migrate from what is now Switzerland across Roman-allied lands; Caesar defeated them near Bibracte, then drove the Suebian king Ariovistus back across the Rhine. In 57 BC he decided to conquer all of Gaul and campaigned against the Belgae, nearly losing a battle to the Nervii on the river Sabis. In 56 BC he crushed the Veneti of Brittany at sea. In 55 BC he bridged the Rhine and made the first Roman landing in Britain, returning in 54 BC with a larger army that crossed the Thames and forced the Briton leader Cassivellaunus to pay tribute.",
+   "Gaul then rose repeatedly. In the winter of 54–53 BC the Eburones under Ambiorix destroyed a Roman force of a legion and five cohorts, and Caesar answered with a pitiless campaign of reprisals. In 52 BC most of Gaul united under Vercingetorix. The Romans stormed Avaricum (Bourges) but were repulsed at Gergovia; at Alesia Caesar's army built a double ring of siege works, held off a huge Gallic relief army, and forced Vercingetorix to surrender. He was kept prisoner for six years and executed in Rome in 46 BC.",
+   "Only mopping-up operations followed in 51–50 BC. The war was exceptionally brutal: very many Gauls, civilians among them, were killed or enslaved, though Caesar's claim of over a million dead is not accepted at face value by modern historians. The conquest made Caesar rich and famous, gave Rome the Rhine frontier, and gave him the army and standing with which he won the Roman civil war that followed, leading to the end of the Republic. Gaul became a Roman province only in 27 BC."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Gallic_Wars",
+    "title": "Gallic Wars",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.livius.org/articles/person/caesar/caesar-04/",
+    "title": "Gaius Julius Caesar: Conquest of Gaul",
+    "publisher": "Livius.org (Jona Lendering)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.livius.org/articles/person/caesar/caesar-05/",
+    "title": "Gaius Julius Caesar: Reconquest",
+    "publisher": "Livius.org (Jona Lendering)",
+    "accessed": "2026-11-28",
+    "supports": [
+     10,
+     11,
+     12,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The Gallic Wars (58–50 BC) were waged by Caesar against the peoples of Gaul (France, Belgium, Switzerland), Britain and Germania.",
+   "Some Gauls (the Remi; the Aedui until 52 BC) sided with Rome.",
+   "Caesar portrayed the war as defensive; historians agree he fought primarily for his political career and debts.",
+   "Caesar's Commentarii de Bello Gallico is the primary source, considered propaganda by modern historians.",
+   "The war began with the migration of the Helvetii in 58 BC; Caesar defeated them (Battle of Bibracte) and then defeated Ariovistus of the Suebi.",
+   "In 57 BC Caesar resolved to conquer Gaul, campaigned against the Belgae and almost lost to the Nervii at the Sabis.",
+   "In 56 BC Caesar defeated the Veneti in a naval battle.",
+   "In 55 BC Caesar crossed the Rhine and the Channel; in 54 BC he returned to Britain with a larger army, crossed the Thames and received tribute after Cassivellaunus surrendered.",
+   "The Eburones under Ambiorix destroyed a force of a legion and five cohorts under Sabinus and Cotta; a brutal pacification followed in 53 BC.",
+   "In 52 BC Vercingetorix led a revolt uniting most of Gaul.",
+   "The Romans took Avaricum (Bourges) and failed at Gergovia; at Alesia double siege lines defeated the Gallic relief army and Vercingetorix surrendered.",
+   "Vercingetorix was held prisoner six years and executed in Rome in 46 BC.",
+   "In 51–50 BC Caesar's troops mainly conducted mop-up operations; Gaul became a Roman province in 27 BC.",
+   "The war was exceptionally brutal, with many Gauls killed or enslaved; Caesar's claim of over a million killed is considered implausible by modern historians (Livius gives one million killed and one million enslaved).",
+   "The wars made Caesar wealthy and famous, secured the Rhine frontier, and helped him win the civil war, leading to the end of the Republic."
+  ],
+  "disagree": "Livius.org states that of some six million people in Gaul, one million were killed and one million enslaved; Wikipedia calls Caesar's claim of over a million Gauls killed implausible and says modern historians think Gallic forces were far smaller than the Romans claimed. Wikipedia dates the conquest from 58 to 50 BC; Livius divides it into a conquest (58–54 BC) and a reconquest (54–51 BC).",
+  "checked": null
+ },
+ "Q194226": {
+  "title": "Battle of Yarmouk",
+  "y": 636,
+  "place": "Yarmouk River, on today's borders of Syria with Jordan and Israel",
+  "paras": [
+   "The Battle of the Yarmouk in August 636 was fought between the army of the Rashidun Caliphate, the early Muslim state led from Medina by Caliph Umar, and the army of the Byzantine Empire under Emperor Heraclius. The Muslim forces were nominally under Abu Ubayda ibn al-Jarrah, who handed field command to Khalid ibn al-Walid. The Byzantine army, drawn from many peoples including Armenians, Slavs and the Christian Arab Ghassanids of Jabala ibn al-Ayham, was led in the field by the Armenian general Vahan, with the treasurer Theodore Trithyrius as joint commander, while Heraclius stayed at Antioch.",
+   "After the Prophet Muhammad's death in 632, Arab armies had invaded Byzantine Syria and Palestine, taking Damascus and then Emesa (Homs); Wikipedia dates these to September 634 and early 636, EBSCO to September and November 635. Heraclius gathered a large new army at Antioch and sent it south in the summer of 636. Rather than be destroyed piecemeal, the Muslim forces withdrew from the towns they held and concentrated near the Yarmouk River, south-east of the Sea of Galilee, where reinforcements could reach them. The Byzantine army, troubled by desertions and quarrels between its commanders, camped opposite them.",
+   "The fighting lasted for several days, from about 15 to 20 August. In the first days the Byzantines attacked and at times drove back the Muslim wings. On the last day Khalid used his massed cavalry to drive the Byzantine horsemen off the field, cutting them off from their infantry, while his troops seized the bridge over the Wadi al-Ruqqad gorge, the main line of retreat. Trapped between the gorges, the Byzantine army was destroyed; many soldiers fell to their deaths in the ravines. Theodore was killed and Vahan probably died soon after. The size of the armies is uncertain: early accounts give the Byzantines 60,000 or more men, while many modern historians suggest far smaller and more nearly equal forces.",
+   "The battle ended Byzantine rule in Syria. Heraclius left for Constantinople, taking the relic of the True Cross from Jerusalem, and Byzantine defence was pulled back to Anatolia and Egypt. Within a few years Syria, Palestine and then Egypt (639–642) fell to the Muslims, and the victory became the basis of the later Umayyad caliphate's power in Damascus."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Yarmuk",
+    "title": "Battle of the Yarmuk",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/battle-yarmuk",
+    "title": "Battle of Yarmūk",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought in August 636 between the Rashidun Caliphate and the Byzantine Empire near the Yarmouk River.",
+   "Umar was caliph; Abu Ubayda was commander in Syria and transferred command to Khalid.",
+   "The Byzantine army included Armenians, Slavs and Jabala's Christian Arab Ghassanids; Vahan was field commander; Theodore Trithyrius was joint leader; Heraclius stayed at Antioch.",
+   "Damascus and Emesa fell to the Muslims before the battle (Wikipedia: Damascus September 634, Emesa early 636; EBSCO: September and November 635).",
+   "Heraclius assembled a large army at Antioch; it moved south in June 636.",
+   "The Muslims withdrew and concentrated their forces near the Yarmouk, where they were reinforced.",
+   "The Byzantine army suffered from desertions and command rivalries.",
+   "The battle lasted from 15 to 20 August 636 (Wikipedia: six days; EBSCO: four days of fighting).",
+   "On the second day the Byzantines attacked at dawn and drove back the Muslim wings.",
+   "On the final day Khalid's cavalry drove off the Byzantine cavalry, separating it from the infantry, and the bridge over the Wadi al-Ruqqad was seized; trapped Byzantines fell into the gorges.",
+   "Theodore Trithyrius was killed; Vahan was probably killed soon after (EBSCO: only Jabala escaped among the leaders).",
+   "Army sizes are uncertain: early accounts give the Byzantines 60,000–70,000; modern estimates are much lower (EBSCO: the armies were probably near equal).",
+   "The defeat ended Byzantine rule in Syria; Heraclius left for Constantinople with the True Cross; defence shifted to Anatolia and Egypt; Egypt fell in 639–642; Syria became the centre of later Umayyad expansion."
+  ],
+  "disagree": "Wikipedia describes a six-day battle; EBSCO's summary says four days of fighting but dates the battle 15–20 August 636. Wikipedia says Vahan probably died in the fighting near Damascus after the battle; EBSCO says only Jabala escaped among the Byzantine leaders. Army sizes vary widely between early accounts and modern estimates. Wikipedia dates the fall of Damascus to September 634 and of Emesa to early 636; EBSCO dates them to September and November 635.",
+  "checked": null
  }
 }
