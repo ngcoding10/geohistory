@@ -998,5 +998,119 @@
   ],
   "disagree": "Zhao Bing's age: seven in Wikipedia, eight in Lumen Learning. How he died: Wikipedia says Lu Xiufu jumped into the sea with him; OUP says he drowned, perhaps thrown into the water by a despairing official.",
   "checked": null
+ },
+ "Q431177": {
+  "title": "Mongol invasion of Khwarazmian Empire and Eastern Iran",
+  "y": 1219,
+  "place": "Khwarazmian Empire: Transoxiana (Otrar, Bukhara, Samarkand, Gurganj), Khorasan and Afghanistan",
+  "paras": [
+   "Between 1219 and 1221 the Mongols of Genghis Khan invaded the Khwarazmian Empire of Shah Muhammad II, a recently built power that stretched across Central Asia, Afghanistan and much of Iran. The two empires had become neighbours after a Mongol force hunted down Kuchlug, the Naiman prince who had seized the Qara Khitai realm. Relations soon broke down at Otrar on the Syr Darya, where the Khwarazmian governor Inalchuq seized a Mongol trade caravan and had its members executed as spies; Wikipedia dates this to 1218, an Encyclopedia.com survey of the Mongol conquests to 1219. The Shah refused to punish the governor and killed a Mongol envoy. Genghis Khan left his general Muqali to carry on the war against the Jin in northern China and set out from Mongolia in the spring of 1219.",
+   "Modern estimates of the Mongol army vary widely; Wikipedia gives between 90,000 and 200,000 men. The Shah, probably outnumbered, spread his troops as garrisons in his cities instead of risking a field battle. Genghis Khan reached Otrar in the autumn and left his sons Chagatai and Ögedei to besiege it; it fell after five months, when a traitor opened a gate, and Inalchuq was executed. Genghis Khan and his youngest son Tolui meanwhile crossed the Kyzyl Kum desert and appeared before Bukhara almost unnoticed. The city opened its gates, its citadel was stormed and most of it burned. Samarkand, the capital, surrendered within days of the assault in the spring of 1220 (the Encyclopedia of World Biography dates Bukhara's fall to March 1220 and Samarkand's a month later). The generals Jebe and Subutai were sent after the Shah, who fled across Iran and died on an island in the Caspian Sea in December 1220.",
+   "The trading city of Gurganj (Urgench) on the Amu Darya delta put up the hardest fight and was taken street by street; quarrels between Genghis Khan's sons Jochi and Chagatai led him to give the command to Ögedei. After it surrendered the Mongols broke the dams and flooded the city. Early in 1221 Genghis Khan destroyed Balkh and sent Tolui to subdue Khorasan, where Merv and Nishapur were sacked and their people massacred; Herat was spared after its first surrender except for the garrison, but was besieged again and sacked after a revolt in 1222. The chroniclers' death tolls, such as 700,000 at Merv according to Ibn al-Athir and 1.3 million according to Juvayni, are considered exaggerated by modern historians, but the region was devastated.",
+   "The Shah's son Jalal al-Din gathered an army in Afghanistan and defeated a Mongol force at Parwan, near Kabul, in September 1221. Genghis Khan then marched south and crushed him on the Indus; Jalal al-Din escaped by swimming across the river and fled to India. Wikipedia gives estimates of between two and fifteen million dead in the whole war. Genghis Khan kept only the lands north of the Amu Darya and returned slowly to Mongolia, which he reached in the spring of 1225, while Jebe and Subutai rode on through the Caucasus and defeated an army of Rus' princes and Kipchaks. Jalal al-Din later returned to rule parts of western Iran until his death in 1231, and the conquered lands became the base for the later Mongol advance into Iran and beyond."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Mongol_invasion_of_the_Khwarazmian_Empire",
+    "title": "Mongol invasion of the Khwarazmian Empire (rev 1387583933)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     24,
+     25,
+     26
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/people/history/chinese-and-taiwanese-history-biographies/genghis-khan",
+    "title": "Genghis Khan (Encyclopedia of World Biography, via Encyclopedia.com)",
+    "publisher": "Gale / Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     9,
+     10,
+     11,
+     12,
+     16,
+     19,
+     20,
+     23,
+     24
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/mongol-conquests-1200-1400",
+    "title": "Mongol Conquests (1200–1400) (Encyclopedia.com)",
+    "publisher": "Gale / Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     20,
+     22,
+     24,
+     25
+    ]
+   }
+  ],
+  "claims": [
+   "Mongol forces under Genghis Khan invaded the Khwarazmian Empire between 1219 and 1221 (Wikipedia; Gale 'Mongol Conquests': war lasted 1219-1222; EWB: set out spring 1219, Indus battle in 1221).",
+   "The Khwarazmian Empire under Muhammad II had expanded recently (Wikipedia); EWB: Sultan Muhammad had annexed the whole of central Asia as well as Afghanistan and the greater part of Persia; Gale 'Mongol Conquests': much of modern Uzbekistan, Turkmenistan, Iran, Afghanistan and Tajikistan.",
+   "Kuchlug, a Naiman prince, usurped the Qara Khitai; a Mongol force hunted him down, which gave the Mongols a common frontier with the Shah (EWB; Wikipedia: Kuchlug usurped the Qara-Khitai in 1211, Jebe hunted him down).",
+   "Inalchuq, governor of Otrar, seized a Mongol caravan's goods and executed its members on charges of espionage (Wikipedia, in 1218); Gale 'Mongol Conquests': in 1219 a caravan under Genghis Khan's protection was massacred in Otrar; EWB: execution of ambassadors and merchants at Otrar on the Syr Darya.",
+   "The Shah rejected demands to punish Inalchuq and killed one Mongol envoy (Wikipedia; Gale 'Mongol Conquests': Genghis Khan's diplomacy failed).",
+   "Genghis Khan left Muqali to continue the war against the Jin (Wikipedia; Gale 'Mongol Conquests') and set out from Mongolia in spring 1219 (EWB).",
+   "Wikipedia: the Mongol army is estimated at between 90,000 and 200,000 men; figures are heavily disputed.",
+   "The Shah was probably outnumbered and distributed his forces as garrisons in his towns (Wikipedia).",
+   "Genghis Khan reached Otrar by the autumn and left a detachment to besiege it (EWB); Wikipedia: Chagatai and Ögedei besieged Otrar, which fell after five months when a traitor opened the gates; Inalchuq executed.",
+   "Genghis and Tolui crossed the Kyzyl Kum desert and arrived at Bukhara virtually unnoticed; the city's leaders opened the gates, the citadel was taken, and a fire razed most of the city (Wikipedia; EWB: advanced on Bukhara).",
+   "Samarkand, the Khwarazmian capital, fell after Bukhara; Wikipedia: Genghis arrived in March 1220 and all but a handful surrendered on the fifth day; EWB: Bukhara fell in March 1220 and Samarkand capitulated a month later.",
+   "Jebe and Subutai pursued the Shah (Wikipedia; EWB: his two best generals), who fled across Persia (EWB) and died on an island in the Caspian Sea (EWB; Wikipedia: in December 1220).",
+   "Gurganj on the Amu Darya delta was the most difficult battle of the invasion, defended block by block (Wikipedia).",
+   "Tensions between Jochi and Chagatai led Genghis to appoint Ögedei commander at Gurganj (Wikipedia).",
+   "Upon its surrender the Mongols broke the dams and flooded the city (Wikipedia).",
+   "Early in 1221 Genghis Khan destroyed Balkh and sent his youngest son Tolui to subjugate Khorasan, which was devastated (EWB; Wikipedia: after capturing Balkh in early 1221, Tolui sent to Khorasan).",
+   "Merv and Nishapur were sacked and their populations massacred; at Herat only the garrison was killed after the first surrender, but the town rebelled and was besieged and sacked again in June 1222 (Wikipedia).",
+   "Ibn al-Athir estimated 700,000 deaths at Merv and Juvayni 1,300,000; modern historians consider the death tolls of Tolui's campaign exaggerated (Wikipedia).",
+   "Jalal al-Din assembled an army in Afghanistan and defeated a Mongol force at Parwan in September 1221 (Wikipedia); EWB: at Parvan near Kabul.",
+   "Genghis Khan defeated Jalal al-Din on the Indus (Wikipedia; EWB); he escaped by swimming across the river (EWB) and fled to India (Wikipedia; Gale 'Mongol Conquests': fled to India after Genghis Khan defeated him in 1221).",
+   "Wikipedia: total casualties estimated between two and fifteen million.",
+   "Genghis Khan kept only the territories north of the Amu Darya (Gale 'Mongol Conquests').",
+   "Genghis Khan returned to Mongolia by slow stages, reaching it in spring 1225 (EWB).",
+   "Jebe and Subutai continued through the Caucasus (Wikipedia; EWB) and defeated an army of Russians and Kipchak Turks (EWB; Gale 'Mongol Conquests': battle of the Kalka River).",
+   "Jalal al-Din later retook areas of western Iran and died in 1231 (Wikipedia; Gale 'Mongol Conquests': killed while fleeing the Mongols in 1231).",
+   "The conquered lands were a base for later Mongol assaults on Persia and beyond (Wikipedia)."
+  ],
+  "disagree": "Date of the Otrar caravan massacre: 1218 in Wikipedia, 1219 in Encyclopedia.com's 'Mongol Conquests'. Length of the war: 1219-1221 in Wikipedia, 1219-1222 in 'Mongol Conquests'. Army sizes and death tolls are disputed; figures are given with their sources.",
+  "checked": null
  }
 }
