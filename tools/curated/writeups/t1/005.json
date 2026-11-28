@@ -394,8 +394,12 @@
    "Lendering: with only Pompey and Caesar left, civil war between them was bound to come.",
    "Livius.org: Rome sought revenge in the east and the eagle standards were eventually received back by Tiberius."
   ],
-  "disagree": "Plutarch blames the guide Ariamnes for leading the Romans into waterless desert; Wikipedia cites Gregory Hospodor and Livius.org (Lendering) argues that the Balikh valley route had water. Wikipedia describes Surena's force (about 10,000) as heavily outnumbered, while Lendering holds that the Parthians were superior in numbers and quality, so no judgement on relative numbers is given in the text. Plutarch says Publius had his shield-bearer kill him; Wikipedia says Publius and his officers fell on their swords.",
-  "checked": null
+  "disagree": "Plutarch blames the guide Ariamnes for leading the Romans into waterless desert; Wikipedia cites Gregory Hospodor and Livius.org (Lendering) argues that the Balikh valley route had water. Wikipedia describes Surena's force (about 10,000) as heavily outnumbered, while Lendering holds that the Parthians were superior in numbers and quality, so no judgement on relative numbers is given in the text. Plutarch says Publius had his shield-bearer kill him; Wikipedia says Publius and his officers fell on their swords. Cassius Dio names Abgarus of Osroene as the guide who betrayed the Romans; Plutarch names an Arab chieftain, Ariamnes.",
+  "checked": {
+   "by": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/40*.html",
+   "result": "Cassius Dio 40 (LacusCurtius): Crassus sought glory and profit; Orodes sent Surenas against him while going himself against Armenia; retreat to Carrhae leaving wounded behind; Crassus forced onto a horse at the parley and killed; Cassius took charge of Syria and drove off Parthian raids all match. Dio names Abgarus of Osroene, not Ariamnes, as the traitor (noted under 'disagree'). 5 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q1455917": {
   "title": "Umayyad conquest of Hispania",
@@ -1197,7 +1201,11 @@
    "Sedan Day (2 September) was celebrated in Germany until it was officially ended in 1919."
   ],
   "disagree": "The number of prisoners is given as 104,000 by Wikipedia and EBSCO (21,000 taken in the battle and 83,000 at the surrender) and as about 100,000 by the Deutsches Historisches Museum; German casualties as about 9,000 (EBSCO) or 9,860 (Wikipedia). The siege of Paris began on 19 September according to Wikipedia and on 13 September according to the Deutsches Historisches Museum, so no date is given.",
-  "checked": null
+  "checked": {
+   "by": "https://www.history.com/this-day-in-history/may-10/treaty-of-frankfurt-am-main-ends-franco-prussian-war",
+   "result": "HISTORY.com: France declared war on 19 July 1870; Sedan the crucial battle with Napoleon III captured; Paris then declared a republic all match. 3 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q158021": {
   "title": "Treaty of Frankfurt",
@@ -1410,7 +1418,11 @@
    "Ethiopia remained one of the few independent African states and Adwa became a symbol for Africans; Italians saw it as a humiliation to avenge, a motive for the 1935 invasion (Mussolini)."
   ],
   "disagree": "Italian losses are given by Wikipedia as over 6,000 killed and about 3,800 captured (Berkeley's figures), by EBSCO's 'Battle of Adowa' as about 7,000 dead, 1,500 wounded and some 3,000 prisoners, and by EBSCO's 'Ethiopia Repels Italian Invasion' as over 7,000 dead, 10,000 wounded and about 2,000 prisoners. The size of the Italian army at Adwa is estimated at 14,519 (Marcus) or 17,770 (Lewis) in Wikipedia and about 20,000 by EBSCO.",
-  "checked": null
+  "checked": {
+   "by": "https://www.history.com/articles/battle-adwa-ethiopia-africa-colonization",
+   "result": "HISTORY.com: attack on 1 March 1896 near Adwa; Italian column annihilated at Amba Alagi in December 1895; Baratieri considered retreat but was pressed by Crispi and his generals and advanced three brigades; Crispi's government fell and Italy recognised Ethiopian independence; Mussolini's later invasion all match. 5 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q164771": {
   "title": "Agadir Crisis",
@@ -1690,7 +1702,11 @@
    "Critics saw the treaties as turning German ambitions eastward; Germany under Hitler eventually violated them (EBSCO)."
   ],
   "disagree": "The Foreign Office historians say the agreements were initialled at Locarno on 16 October 1925 and formally signed in London on 1 December; EBSCO says seven treaties were signed on 16 October. EBSCO's exact dates for the opening of the conference (5 October) and Germany's entry into the League (8 September 1926) were not confirmed elsewhere, so they are not given. EBSCO says the Nobel Peace Prize went to all three ministers without giving years; the Foreign Office historians give 1925 for Chamberlain and 1926 for Stresemann and Briand.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Locarno_Treaties",
+   "result": "Wikipedia extract (rev 1384870149, local CirrusSearch dump): meeting at Locarno 5-16 October 1925, formal signing in London on 1 December, Nobel prizes to Chamberlain (1925) and Briand and Stresemann (1926), Germany's League entry in 1926, arbitration treaties with Poland and Czechoslovakia without an eastern guarantee all match. 5 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q153376": {
   "title": "Second Battle of El Alamein",
@@ -1907,6 +1923,10 @@
    "Hérodote: the liberation restored French confidence; de Gaulle established himself as head of the provisional government in Paris."
   ],
   "disagree": "HISTORY.com says Choltitz was arrested at his headquarters and then signed the surrender; Hérodote places the capitulation in front of the Gare Montparnasse at 15:30, received by Leclerc. The German garrison is given as about 20,000 (HISTORY.com) or 16,000 (Hérodote), and the barricades as nearly 600 (Musée de la Libération) or more than 400 (Hérodote). HISTORY.com states that Hitler ordered Paris destroyed; Hérodote reports the order as something Choltitz is said to have received.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Liberation_of_Paris",
+   "result": "Wikipedia extract (rev 1375254748, local CirrusSearch dump): uprising began 19 August; Rol-Tanguy's call to mobilise; Nordling truce never fully observed; Choltitz signed the surrender and then went to Leclerc's command post at the Gare Montparnasse; U.S. 4th Infantry Division took part; de Gaulle's march on 26 August all match. 6 claims, 0 errors.",
+   "errors": 0
+  }
  }
 }
