@@ -1748,7 +1748,11 @@
    "At the 1234 kurultai Ogedei announced plans for the conquest of the Southern Song, among others (Wikipedia, Ogedei)."
   ],
   "disagree": "Date of the fall: 9 February 1234 (Wikipedia) against May 1234 (Howorth, 1876). Wanyan Chenglin: died in the fighting (Wikipedia) or killed soon after by his own soldiers (Howorth). Both stated in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kublai_Khan",
+   "result": "1 claim re-checked: the Jin were completely subjugated in 1234. Confirmed.",
+   "errors": 0
+  }
  },
  "Q1981024": {
   "title": "Siege of Ryazan",
@@ -2048,7 +2052,11 @@
    "Kublai concentrated on China and proclaimed the Yuan dynasty in 1271 (Wikipedia, Kublai; Howorth: in 1271 Khubilai gave his dynasty the Chinese name of Yuen)."
   ],
   "disagree": "Whether Ariq Boke's kurultai at Karakorum came before Kublai's election (Wikipedia, Kublai Khan) or a month after it (Wikipedia, Toluid Civil War; Howorth). Who attended Kublai's kurultai: all lines except Jochi's (Wikipedia, Kublai Khan) or without the Jochi and Chagatai lines (Howorth). The order of the kurultais is stated in the text, Howorth's list of attendees is attributed.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kublai_Khan",
+   "result": "3 claims re-checked against H. Yule's 1911 Britannica article: Kublai a son of Tolui; Mongke died in 1259 during the Sichuan campaign; the succession disputed by Ariq Boke. All confirmed.",
+   "errors": 0
+  }
  },
  "Q1319855": {
   "title": "Battle of Kirina",
@@ -2286,7 +2294,11 @@
    "The Yuan lasted until 1368, when the last emperor fled from Khanbaliq to Shangdu before the Ming; the remnants carried on the name Great Yuan in Mongolia as the Northern Yuan (Wikipedia, Yuan)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kublai_Khan",
+   "result": "3 claims re-checked: the Song resistance ended in 1279 with the last emperor drowned; the new capital Kaan-baligh (Ta-tu) near the old Jin city; Kublai founder of the Mongol dynasty in China. All confirmed (Britannica dates the founding of the capital to 1264, finished 1267; the write-up gives 1264 for the move and 1266 for building, from Wikipedia).",
+   "errors": 0
+  }
  },
  "Q531916": {
   "title": "First Mongol invasion of Burma",
@@ -2362,7 +2374,11 @@
    "The invasions toppled the 250-year-old Pagan Empire; the Mongols held northern Burma to Tagaung as Zhengmian; 250 years of fragmentation and the rise of Tai-Shan states followed (Wikipedia; Harvey: Shan dominion 1287-1531)."
   ],
   "disagree": "Army sizes at Ngasaunggyan 1277: Marco Polo 60,000 Burmese and 2,000 elephants against 12,000 Mongol horsemen; Yuan chronicle 40,000-50,000 Burmese against 700. The Mongol commander in Polo's account: Nasr al-Din (Harvey quoting Yule's Polo) or Huthukh (Wikipedia). Whether the 1287 Mongol army reached Pagan: traditional scholarship yes, recent research probably not (Wikipedia). All stated and attributed in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kublai_Khan",
+   "result": "2 claims re-checked: Kublai's capture of Dali (Tali Fu); the older view that the Mongols overran Burma and destroyed Pagan (given in the write-up as the traditional view). Both consistent.",
+   "errors": 0
+  }
  },
  "Q1369379": {
   "title": "Battle of Bạch Đằng (1288)",
@@ -2437,7 +2453,11 @@
    "Relations foundered; Temür Khan settled for a nominal tributary relationship (Wikipedia)."
   ],
   "disagree": "Date: 9 April 1288 (Wikipedia) or the third lunar month of 1288 (Trần Trọng Kim). Fan Yi: killed in the river (Wikipedia) or captured and later died of illness (Trần Trọng Kim). Both stated in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kublai_Khan",
+   "result": "1 claim re-checked: the war in Tongking went badly for the Mongols. Confirmed.",
+   "errors": 0
+  }
  },
  "cp03-22": {
   "title": "Second Mongol invasion of Japan",
@@ -2531,7 +2551,11 @@
    "There was no newly acquired land, so the shogunate could not reward the gokenin and its authority declined (Wikipedia)."
   ],
   "disagree": "Date of the typhoon: 15 August (Wikipedia), 14-15 August (Murdoch), 23 August (Kawai, Nippon.com). Size of the invasion force: 142,000 or 140,000 in the traditional figures; modern estimates from about 14,000 (Conlan) to 70,000 (Rossabi). Height and length of the Hakata wall from different sources. All stated and attributed in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kublai_Khan",
+   "result": "2 claims re-checked: the 1281 expedition on an immense scale failed; preparations for revenge were abandoned because of discontent. Both confirmed.",
+   "errors": 0
+  }
  },
  "Q2672432": {
   "title": "Mongol invasion of Java",
@@ -2604,7 +2628,11 @@
    "It was the last expedition of Kublai's reign; a 100,000-strong invasion planned with Liu Guojie was cancelled after his death; Majapahit became the most powerful state of its era in the region (Wikipedia)."
   ],
   "disagree": "Size of the expedition: 20,000-30,000 men and 500-1,000 ships (History of Yuan, via Wikipedia) or 30,000 soldiers and 1,000 ships (Howorth). Yuan losses: more than 3,000 (Wikipedia, Howorth) or about 60 per cent of the army in a modern estimate (Nugroho, via Wikipedia). Both stated in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kublai_Khan",
+   "result": "1 claim re-checked: the Java expedition came in the last years of Kublai's reign. Confirmed.",
+   "errors": 0
+  }
  },
  "cp03-23": {
   "title": "Death of Kublai Khan",
@@ -2674,7 +2702,11 @@
    "After the Toluid Civil War the four khanates were functionally independent; Kaidu's insurrection from 1269; some still asked Kublai to confirm their regional khans; the Ilkhanate and Yuan had close relations (Wikipedia, Toluid Civil War)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kublai_Khan",
+   "result": "3 claims re-checked: Kublai died in 1294 aged 78; Kaidu disputed his rule; the Ilkhans (Hulagu's family) acknowledged him. All confirmed.",
+   "errors": 0
+  }
  },
  "cp18-024": {
   "title": "Tenochtitlan founded",
@@ -2924,7 +2956,7 @@
    "Ceuta, on the African shore of the Strait of Gibraltar, was a rich Marinid port, an outlet of the Saharan gold trade and a haven for Barbary corsairs, although by the 15th century it had declined and Morocco was weakened by civil war. King John I of Portugal planned to attack it in secret. C. R. Beazley's life of Prince Henry the Navigator says the idea came up when John's three eldest sons, Edward (Duarte), Peter and Henry, asked to be knighted, and the royal treasurer suggested a crusade in Africa in place of a year of tournaments. John sent an embassy to Sicily that stopped to spy out Ceuta's defences, and staged a quarrel with the Count of Holland so that Europe would think the fleet was meant for Holland. Queen Philippa died of plague just before the fleet sailed; according to Beazley she gave each of her sons a sword on her deathbed.",
    "The fleet left Lisbon on 25 July 1415. Wikipedia counts about 200 ships carrying up to 50,000 men, about 19,295 of them soldiers, including English, French and German volunteers; Beazley gives 50,000 soldiers and 30,000 sailors. Only at Lagos was the target announced. Wikipedia describes how the governor, Salah ben Salah, gathered many tribesmen to defend the city when the first galleys appeared, but sent them home when storms scattered the Portuguese fleet and the attack seemed to have been abandoned.",
    "The assault came on 21 August, the date Wikipedia gives; Beazley's account puts the fleet before Ceuta on the night of the 15th and the landing at the next dawn. Ruy Gonçalves was the first ashore, followed by Henry and Edward, who drove the defenders back through the gate of the landing place; resistance in the streets broke when a very large African warrior who had been hurling stones was killed. Henry and Peter were cut off in the town and for a time reported dead, but by evening the lower town was taken. That night Salah ben Salah abandoned the citadel, and when the Portuguese began to hack down its gates, two men left inside opened them. The flag of Lisbon was raised on the highest tower.",
-   "The main mosque was consecrated as a cathedral, and there the three princes were knighted in order of birth. The city was thoroughly plundered. Against the wishes of many of his men John decided to keep it, with Pedro de Meneses as governor and a garrison of 2,700 men. The capture is seen as the beginning of the Portuguese Empire, and Beazley argues that what Henry learned at Ceuta about the gold trade of the interior encouraged his voyages along the African coast. Ceuta stayed Portuguese until it passed to Spain in 1668."
+   "The main mosque was consecrated as a cathedral, and there the three princes were knighted in order of birth. The city was thoroughly plundered. Against the wishes of many of his men John decided to keep it, with Pedro de Meneses as governor and a garrison of 2,700 men. The capture is seen as the beginning of the Portuguese Empire, and Beazley argues that what Henry learned at Ceuta about the gold trade of the interior encouraged his voyages along the African coast. Wikipedia says Ceuta remained under Portuguese control until it was transferred to Spain in 1668; the 1911 Encyclopaedia Britannica says it passed to Spain when Philip II took the Portuguese crown in 1580 and was definitively assigned to the Spanish crown by the treaty of Lisbon."
   ],
   "sources": [
    {
@@ -2947,6 +2979,16 @@
      13,
      14,
      15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Ceuta",
+    "title": "\"Ceuta\", Encyclopaedia Britannica, 11th edition (1911), vol. 5",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     14,
      16
     ]
    },
@@ -2990,11 +3032,15 @@
    "Salah ben Salah fled the citadel after sunset; the Portuguese hewed at the gates; two Muslims opened them; the flag of Lisbon (St Vincent) was hoisted (Wikipedia; Beazley).",
    "The main mosque was consecrated as cathedral; the princes were knighted in order of birth there; the city was looted (Wikipedia; Beazley).",
    "John decided to keep the city against the wishes of many; Pedro de Meneses governor; garrison of 2,700 (Wikipedia; Beazley: Pedro de Menezes was left in command).",
-   "The capture marked the beginning of the Portuguese Empire; Ceuta was transferred to Spain in 1668 (Wikipedia).",
+   "The capture marked the beginning of the Portuguese Empire; Ceuta remained under Portuguese control until transferred to Spain in 1668 (Wikipedia); EB1911: passed to Spain in 1580 on the subjugation of Portugal by Philip II, definitively assigned by the treaty of Lisbon (attributed).",
    "Beazley: Henry gained in Ceuta a knowledge of inland Africa, its trade routes and the Gold Coast, encouraging his coasting voyages (attributed)."
   ],
-  "disagree": "Date of the assault: 21 August 1415 (Wikipedia) or the dawn after the night of 15 August (Beazley, whose account omits the scattering of the fleet). Size of the force: about 200 ships and up to 50,000 men, about 19,295 of them soldiers (Wikipedia) or 50,000 soldiers and 30,000 sailors (Beazley). Both stated in the text.",
-  "checked": null
+  "disagree": "Date of the assault: 21 August 1415 (Wikipedia) or the dawn after the night of 15 August (Beazley, whose account omits the scattering of the fleet). Size of the force: about 200 ships and up to 50,000 men, about 19,295 of them soldiers (Wikipedia) or 50,000 soldiers and 30,000 sailors (Beazley). When Ceuta passed to Spain: 1668 (Wikipedia) or 1580, confirmed by the treaty of Lisbon (1911 Britannica, which prints the treaty year as 1688; the treaty is dated 1668 in Wikipedia). All stated in the text, the treaty year left out.",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Ceuta",
+   "result": "3 claims re-checked: captured by the Portuguese under John I in 1415; Henry and two brothers knighted in the mosque, made a church; the mosque became the cathedral. Confirmed. The article also says Ceuta passed to Spain with Portugal in 1580 and was assigned definitively by the treaty of Lisbon (printed as 1688); this framing was added to the text as a stated disagreement with Wikipedia's 1668 transfer.",
+   "errors": 0
+  }
  },
  "Q24945556": {
   "title": "Siege of Angkor",
@@ -3052,6 +3098,10 @@
    "Other factors: burden of monuments and Hinayana (Theravada) Buddhism (Briggs); collapse of the hydraulic system (Wikipedia)."
   ],
   "disagree": "Whether Angkor was taken before 1431 (1352 and 1393 in the Cambodian chronicle traditions used by Wikipedia; only once, in 1431, according to Briggs). Ponhea Yat: crowned at Angkor after killing the Siamese puppet king (Briggs) or forced to flee the indefensible capital (Wikipedia). Both stated in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Cambodia",
+   "result": "2 claims re-checked: Thai offensives captured Angkor Thom (repeatedly, per the Cambodian royal chronicles, which the write-up attributes to Wikipedia's chronicle-based account); the capital was abandoned in the 15th century. Both consistent.",
+   "errors": 0
+  }
  }
 }
