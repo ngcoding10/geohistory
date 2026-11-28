@@ -936,7 +936,8 @@ def main():
                 m_ = re.match(r'^List of (.+?)s$', x[3])
                 if m_:
                     x[3] = m_.group(1)[0].upper() + m_.group(1)[1:]
-            lst = sorted({tuple(x) for x in lst}, key=lambda x: (x[1], x[0]))
+            # the whole entry breaks ties, so the order never depends on set iteration (stable rebuilds)
+            lst = sorted({tuple(x) for x in lst}, key=lambda x: (x[1], x[0], json.dumps(x, ensure_ascii=False)))
             lst = [list(x) for x in lst]
             # a term without an end: the next holder of the same office within 80 years ends it ("i" = inferred)
             for i_, x in enumerate(lst):
@@ -954,7 +955,7 @@ def main():
                    and not is_ruler_title(e_['l'].split(' becomes ', 1)[1])]:
             del events[k_]
             stats['rulerEventsLeftOutAsNotRulers'] += 1
-        write_json(os.path.join(rdir, 'terms.json'), rulers_doc)
+        write_json(os.path.join(rdir, 'terms.json'), {j: rulers_doc[j] for j in sorted(rulers_doc)})   # sorted keys: no churn
         log(f'{n_terms} terms in {len(rulers_doc)} jurisdictions')
 
     # ---------- people (optional filter) and foundings ----------
