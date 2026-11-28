@@ -1853,5 +1853,76 @@
   ],
   "disagree": "How firing resumed at the surrender: the Spanish fired on the approaching French (Histoire pour tous) or French soldiers fired (Champs de bataille). Losses: 6,000 Spanish infantry dead and 6,000 prisoners (Histoire pour tous) against about 1,000 survivors out of 8,000 tercio veterans and about 2,000 French killed and wounded (Champs de bataille). Army sizes: 26,000 Spanish (both); about 25,000 on each side (Histoire pour tous). Wikipedia could not be fetched (429); the local Wikipedia extract was used only to confirm points as noted in the claims.",
   "checked": null
+ },
+ "Q1463941": {
+  "title": "Estates General of 1789",
+  "y": 1789,
+  "place": "Versailles: hall of the Menus-Plaisirs",
+  "paras": [
+   "The Estates General of 1789 was the assembly of the three estates of the French kingdom, the clergy, the nobility and the commoners (the Third Estate), which King Louis XVI summoned to Versailles in the spring of 1789 to deal with the severe financial crisis of his government. Only this body could approve new taxes, and it had not met since 1614. About 1,200 deputies came from all over France; the Third Estate had the most, and its deputies hoped for reforms.",
+   "On 4 May the deputies walked in procession through Versailles, from the church of Notre-Dame to the church of Saint-Louis, where the Bishop of Nancy, La Fare, preached against the luxury of the court. The session opened on 5 May in a temporary hall built behind the Menus-Plaisirs building. The King spoke, followed by the Keeper of the Seals, Barentin, and the finance minister, Jacques Necker, who described a deficit of 56 million and said that new taxes would cover it. The deputies of the Third Estate found this far from what the country expected.",
+   "The Third Estate refused to sit and vote separately by estate. On 17 June, holding that they represented almost the whole nation, its deputies, joined by some clergy and nobles, declared themselves the National Assembly on the proposal of Sieyès; on 19 June the clergy voted to join them. When they found their hall closed and guarded on 20 June, they met in the nearby real tennis hall and swore not to separate until the kingdom had a constitution. On 23 June, after a royal session, they refused to leave, Mirabeau declaring that only bayonets would remove them. On 27 June Louis XVI accepted a single assembly, and on 9 July it proclaimed itself the Constituent Assembly. The Estates General had become the start of the French Revolution: absolute monarchy was over, and in August 1789 the new assembly abolished feudalism and voted the Declaration of the Rights of Man and of the Citizen."
+  ],
+  "sources": [
+   {
+    "url": "https://en.chateauversailles.fr/discover/history/key-dates/summoning-estates-general-1789",
+    "title": "Summoning of the Estates General, 1789",
+    "publisher": "Château de Versailles",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     13
+    ]
+   },
+   {
+    "url": "https://en.chateauversailles.fr/discover/history/key-dates/jeu-paume-oath-1789",
+    "title": "Jeu de Paume Oath, 1789",
+    "publisher": "Château de Versailles",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     8,
+     9,
+     10,
+     13
+    ]
+   },
+   {
+    "url": "https://www2.assemblee-nationale.fr/15/evenements/2019/la-revolution-s-affiche/des-etats-generaux-a-l-assemblee-nationale-juin-1789-octobre-1791",
+    "title": "Des États généraux à l'Assemblée nationale, juin 1789 – octobre 1791",
+    "publisher": "Assemblée nationale",
+    "accessed": "2026-11-28",
+    "supports": [
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Assembly of three estates, clergy, nobility and commoners, with the power to decide on new taxes and reforms (Versailles).",
+   "Louis XVI summoned the Estates General in spring 1789 to resolve the severe financial crisis (Versailles, both pages).",
+   "First meeting since 1614 (Versailles; the local Wikipedia extract, rev 1385499219, confirms).",
+   "About 1,200 deputies arrived; the Third Estate's deputies were the most numerous (Versailles); they expected reforms (Versailles, Jeu de Paume page).",
+   "Procession on 4 May from Notre-Dame across the Place d'Armes to the church of Saint-Louis; Bishop de La Fare of Nancy preached against the luxury of the court (Versailles).",
+   "Solemn opening on 5 May 1789 (Versailles; local Wikipedia extract confirms) in a temporary hall behind the Menus-Plaisirs building on the Avenue de Paris (Versailles).",
+   "Speeches by the King, Barentin (Keeper of the Seals) and Necker (finance); deficit of 56 million; Necker said new taxes would cover it; the Commoners were dissatisfied (Versailles).",
+   "The Commoners refused to sit by estate (Versailles, Jeu de Paume page).",
+   "17 June: the Third Estate, considering that it represented the essential part of the nation, constituted itself the National Assembly on Sieyès's initiative (Assemblée nationale); with a few members of the clergy and nobility (Versailles); 19 June: the clergy decided to join (Assemblée nationale).",
+   "20 June: hall closed and guarded by soldiers; the deputies met in the nearby real tennis room and swore not to separate until the constitution was established (Assemblée nationale; Versailles).",
+   "23 June: after the King's speech they refused to end the session; Mirabeau: only by the power of bayonets (Assemblée nationale).",
+   "27 June: Louis XVI accepted a single assembly; 9 July: the Assembly proclaimed itself constituent; absolute monarchy ended (Assemblée nationale).",
+   "The opening marked the start of the French Revolution (Versailles); in August 1789 the Constituent Assembly voted the abolition of feudalism and the Declaration of the Rights of Man and of the Citizen (Versailles, Jeu de Paume page)."
+  ],
+  "disagree": "Wikipedia could not be fetched (429); the local Wikipedia extract was used only to confirm 1614 and 5 May. The event record dates the event 24 January 1789 (the royal convocation); no fetched source here gives that date, and the record was not changed.",
+  "checked": null
  }
 }
