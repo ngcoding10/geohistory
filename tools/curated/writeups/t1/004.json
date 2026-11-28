@@ -2724,7 +2724,7 @@
    "The Paris Commune was the revolutionary government that held Paris for 72 days, from 18 March to 28 May 1871, in defiance of the French national government of Adolphe Thiers, which sat at Versailles. Its supporters, the Communards, were mostly Parisian workers and artisans organised in the city's National Guard, some 180,000 strong, led by republicans, Jacobins, Blanquists, followers of Proudhon and members of the First International. Against them stood the National Assembly elected in February 1871, which had a monarchist majority, and the regular army.",
    "The revolt grew out of France's defeat in the Franco-Prussian War. Paris had held out through a four-month German siege and resented the armistice signed by Jules Favre with Bismarck in January 1871 and the peace terms Thiers accepted, including a German victory parade on the Champs-Élysées on 1 March. The new Assembly, mainly provincial and monarchist, moved from Bordeaux to Versailles rather than Paris, ended the National Guard's pay and the wartime moratorium on rents and debts, which threatened many Parisians with ruin.",
    "On the night of 17–18 March Thiers sent troops to take back the cannons, 227 by the City of Paris's count, that the National Guard had moved to Montmartre and Belleville. Crowds, many of them women, and guardsmen surrounded the soldiers, who fraternised with them; generals Lecomte and Thomas were shot. The attempt to disarm Paris had failed, and the insurrection had begun. Elections on 26 March produced the Commune's council. Divided between a Jacobin majority and a socialist minority, it introduced measures including secular education, the separation of church and state and steps towards equal pay for women, but it did not take the offensive against Versailles. Short-lived communes in Lyon, Marseille, Saint-Étienne and other towns were quickly suppressed.",
-   "Thiers's army, now much stronger, entered Paris and during the 'Bloody Week' of 21–28 May crushed the Commune; many Communards were shot after surrendering. The number killed is uncertain: about 20,000 according to the City of Paris, and possibly as many as 30,000 according to scholars cited by EBSCO. Karl Marx wrote a defence of the Commune soon after its fall, and its memory has remained powerful in France and abroad."
+   "Thiers's army, now much stronger, entered Paris and during the 'Bloody Week' of 21–28 May crushed the Commune; many Communards were shot after surrendering. The number killed is uncertain: Wikipedia cites estimates of 10,000 to 15,000, the City of Paris gives about 20,000, and scholars cited by EBSCO put it as high as 30,000. Karl Marx wrote a defence of the Commune soon after its fall, and its memory has remained powerful in France and abroad."
   ],
   "sources": [
    {
@@ -2765,6 +2765,15 @@
      12,
      13
     ]
+   },
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Paris_Commune",
+    "title": "Paris Commune",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     14
+    ]
    }
   ],
   "claims": [
@@ -2780,10 +2789,15 @@
    "The Commune introduced secular education, separation of church and state, steps towards women's professional equality (paris.fr); social experimentation (EBSCO).",
    "Communes in Lyon, Marseille and Saint-Étienne were quickly suppressed.",
    "Bloody Week 21–28 May: about 20,000 Communards killed (paris.fr).",
-   "EBSCO: scholars estimate up to 30,000 killed, many summarily executed after surrender; Marx wrote a defence of the Commune (EBSCO bibliography: The Civil War in France); paris.fr: it still marks memories in France and abroad."
+   "EBSCO: scholars estimate up to 30,000 killed, many summarily executed after surrender; Marx wrote a defence of the Commune (EBSCO bibliography: The Civil War in France); paris.fr: it still marks memories in France and abroad.",
+   "Wikipedia: an estimated 10,000 to 15,000 Communards were killed in battle or executed (one unconfirmed 1876 estimate: 20,000)."
   ],
-  "disagree": "Deaths in the Bloody Week: about 20,000 Communards according to the City of Paris; scholars cited by EBSCO estimate as many as 30,000.",
-  "checked": null
+  "disagree": "Deaths in the Bloody Week: an estimated 10,000 to 15,000 (Wikipedia), about 20,000 (City of Paris), or as many as 30,000 (scholars cited by EBSCO).",
+  "checked": {
+   "by": "https://en.wikipedia.org/api/rest_v1/page/html/Paris_Commune",
+   "result": "Claims 1, 7, 8, 9 and 12 checked against Wikipedia, which was not used for writing them: Commune from 18 March to 28 May 1871; failed attempt to seize the National Guard's cannons at Montmartre on 18 March; generals Lecomte and Clément-Thomas shot; elections of 26 March; Bloody Week from 21 May. Consistent. Wikipedia's lower death-toll estimate (10,000–15,000) was then added to the text and cited for that point only.",
+   "errors": 0
+  }
  },
  "Q153858": {
   "title": "Battle of Tannenberg (1914)",
@@ -2850,7 +2864,11 @@
    "The diversion of German units east may have aided the French at the Marne (EBSCO)."
   ],
   "disagree": "Russian losses: about 95,000 captured and 78,000 killed or wounded (History Hit) against 122,000 prisoners and 500 guns (EBSCO). EBSCO's overview dates the battle 23–26 August 1914, while its narrative and History Hit put the main fighting from 26 August to the completion of the encirclement on 29 August.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Tannenberg",
+   "result": "Claims 3, 7, 8, 9 and 12 checked: Gumbinnen on 20 August; Samsonov's uncoded radio messages; François's attack from 26 August and the closing of the pocket on 29 August (Wikipedia dates the battle 26–30 August); Samsonov's suicide; the name recalling the 1410 battle. Consistent. Wikipedia gives German casualties of about 12,000 against EBSCO's 15,000, which the text attributes to EBSCO.",
+   "errors": 0
+  }
  },
  "Q152120": {
   "title": "Wannsee Conference",
@@ -3087,6 +3105,83 @@
    "EBSCO: Germany secured ore and bases but kept about 300,000 occupation troops; Chamberlain was replaced by Churchill."
   ],
   "disagree": null,
+  "checked": null
+ },
+ "Q242099": {
+  "title": "Mukden incident",
+  "y": 1931,
+  "place": "China",
+  "paras": [
+   "On the evening of 18 September 1931 an explosion damaged a section of the Japanese-owned South Manchuria Railway near the city of Mukden (Shenyang) in north-east China. Japan's Kwantung Army, stationed in Manchuria, blamed Chinese nationalists and used the incident as a pretext to invade the region. According to EBSCO the explosion was staged by the Kwantung Army itself; the U.S. Office of the Historian's account notes that it was suspected that mid-level Japanese officers had planted the bomb to provide a pretext.",
+   "Japan had long claimed 'special interests' in Manchuria, with its railways, ports and resources, and three years earlier the Kwantung Army had assassinated the Manchurian warlord Zhang Zuolin. After 18 September its troops drove the Chinese forces out of the region, meeting little resistance, and by early 1932 they controlled all of Manchuria; the Japanese government could not rein them in. In March 1932 Japan set up the puppet state of Manchukuo, with the last Qing emperor, Puyi, as its nominal head, while the real power lay with the Kwantung Army. Japanese forces also attacked Shanghai in 1932.",
+   "The League of Nations sent a commission under Lord Lytton, whose 1932 report found that Chinese territory had been seized by force and refused to recognise Manchukuo. The United States, under the Stimson Doctrine of early 1932, declared that it would not recognise agreements that violated its treaty rights. Neither had any effect. After the Japanese delegate Yōsuke Matsuoka made an impassioned speech against the report in Geneva on 24 February 1933, Japan announced its withdrawal from the League on 27 March 1933. Some historians have argued that the crisis marked the beginning of the Second World War."
+  ],
+  "sources": [
+   {
+    "url": "https://history.state.gov/milestones/1921-1936/mukden-incident",
+    "title": "The Mukden Incident of 1931 and the Stimson Doctrine",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/japan-withdraws-league-nations/",
+    "title": "Japan Withdraws from the League of Nations",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/manchuria-occupation/",
+    "title": "Manchuria occupation",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     6,
+     7,
+     8,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "On 18 September 1931 an explosion damaged the Japanese-owned railway near Mukden (Shenyang).",
+   "The Kwantung Army blamed the Chinese and used it as a pretext to invade Manchuria.",
+   "EBSCO: the explosion was staged by the Kwantung Army; the Office of the Historian says others speculated that mid-level Japanese officers planted it.",
+   "Japan claimed special interests in Manchuria; the Kwantung Army had assassinated Zhang Zuolin three years earlier (EBSCO).",
+   "Japanese troops met little resistance and drove out Chinese forces; Tokyo could not control the army.",
+   "By early 1932 Japan controlled Manchuria.",
+   "In March 1932 Manchukuo was established with Puyi as nominal ruler, controlled by the Kwantung Army.",
+   "The League sent the Lytton Commission, whose 1932 report found Chinese territory had been seized and did not recognise Manchukuo.",
+   "The Stimson Doctrine (January/early 1932) refused recognition of changes violating U.S. treaty rights; it had little effect.",
+   "Japan attacked Shanghai in 1932 (Office of the Historian).",
+   "Matsuoka addressed the League on 24 February 1933; Japan announced its withdrawal on 27 March 1933.",
+   "Some historians see these events as the beginning of the Second World War (EBSCO)."
+  ],
+  "disagree": "The Office of the Historian says the Lytton report divided blame between Chinese nationalism and Japanese militarism while refusing to recognise Manchukuo; EBSCO stresses its finding that Chinese territory had been seized by force. The Office of the Historian presents Japanese responsibility for the explosion as speculation; EBSCO states that it was staged by the Kwantung Army.",
   "checked": null
  }
 }
