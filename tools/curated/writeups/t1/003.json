@@ -2386,5 +2386,316 @@
    "result": "6 claims checked: the 17 November 1989 march broken up by police, Civic Forum under Havel and Public Against Violence in Slovakia, the two-hour general strike on 27 November, Husák's resignation after appointing a new government on 10 December, Havel's election on 29 December (Dubček speaker on 28 December) and the June 1990 elections agree; none contradicted",
    "errors": 0
   }
+ },
+ "Q179848": {
+  "title": "Scramble for Africa",
+  "y": 1885,
+  "place": "Africa",
+  "paras": [
+   "The Scramble for Africa was the invasion, conquest and division of almost the whole African continent by seven Western European states, Belgium, France, Germany, Italy, Portugal, Spain and the United Kingdom, from about 1880 to the First World War. In the 1870s Europeans held only around a tenth of Africa, mostly on the coasts: Portuguese Angola and Mozambique, the British Cape Colony and French Algeria. By 1914 only Ethiopia and Liberia were still independent.",
+   "The opening moves came at the start of the 1880s. Henry Morton Stanley made treaties with rulers in the Congo basin for King Leopold II of Belgium, while the explorer Pierre de Brazza raised the French flag at the new settlement of Brazzaville in 1881. In 1882 Britain occupied Egypt after the Urabi revolt. To keep these rivalries from turning into war, the German chancellor Otto von Bismarck hosted a conference in Berlin from 15 November 1884 to 26 February 1885. Fourteen states took part and no African ruler was present; a request from the Sultan of Zanzibar to attend was refused. The conference agreed on free trade and navigation on the Congo and Niger rivers, recognised Leopold's huge Congo state, and set the rule that a power claiming new coastal territory must notify the others and actually occupy it ('effective occupation').",
+   "Conquest and bargaining followed for three decades. Britain and Germany divided the East African coast, and in 1890 Zanzibar became a British protectorate. Britain sought a line of territory from Cairo to the Cape and France one from Dakar to the Red Sea; the two met in 1898 at Fashoda in Sudan, where a French force under Jean-Baptiste Marchand withdrew in the face of Kitchener's army. Ethiopia defeated Italy at Adwa and had its independence recognised in 1896. Britain absorbed the Boer republics after the Second Boer War (1899–1902), and German challenges to France in Morocco in 1905 and 1911 ended with a French and Spanish protectorate there in 1912.",
+   "Africans resisted throughout, and conquest was often brutal. The Somali Dervish movement held out against Britain and Italy from 1899 to 1920. In German South West Africa the suppression of the Herero and Nama rising of 1904–1908 became a genocide in which, by the estimates Wikipedia cites, up to about 65,000 Herero and 10,000 Nama died, and forced rubber collection in Leopold's Congo Free State (1885–1908) killed people in their millions.",
+   "Historians disagree about how much the Berlin Conference itself decided: many borders were fixed later in bilateral treaties and after the First World War, and the partition was already under way when it met. Most African colonies became independent during the Cold War, and in 1964 the Organisation of African Unity agreed to keep the colonial borders to avoid wars between the new states."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Scramble_for_Africa",
+    "title": "Scramble for Africa",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://www.aljazeera.com/news/2025/2/26/colonising-africa-what-happened-at-the-berlin-conference-of-1884-1885",
+    "title": "Colonising Africa: What happened at the Berlin Conference of 1884-1885?",
+    "publisher": "Al Jazeera",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     7,
+     8,
+     9,
+     10,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://ebsco.com/research-starters/history/berlin-conference-and-partition-africa",
+    "title": "Berlin Conference and the Partition of Africa",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     7,
+     8,
+     10,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "The Scramble for Africa was the colonisation of most of Africa by seven Western European powers (Belgium, France, Germany, Italy, Portugal, Spain, UK) in the late 19th and early 20th centuries.",
+   "In the 1870s Europeans controlled about 10% of Africa, near the coasts (Portuguese Angola and Mozambique, British Cape Colony, French Algeria).",
+   "By 1914 only Ethiopia and Liberia remained outside European control.",
+   "Stanley made treaties with African rulers in the Congo for Leopold II.",
+   "Brazza raised the French flag over newly founded Brazzaville in 1881.",
+   "Britain took over Egypt in 1882 after the Urabi revolt.",
+   "Bismarck convened the Berlin Conference to prevent war among the European powers; it ran from 15 November 1884 to 26 February 1885.",
+   "Fourteen states were represented at the Berlin Conference.",
+   "No African leader was present; the Sultan of Zanzibar's request to attend was dismissed.",
+   "The conference dealt with free commerce and navigation on the Congo and Niger, recognised Leopold's Congo state, and required notification and 'effective occupation' for new claims.",
+   "The Swahili coast was partitioned between Germany and Britain; Zanzibar became a British protectorate in 1890 (Heligoland–Zanzibar Treaty).",
+   "British Cape-to-Cairo and French Dakar-to-Red-Sea ambitions met at Fashoda in 1898, where Marchand's French force withdrew after a standoff with Kitchener's force.",
+   "Ethiopia's independence from Italy was recognised after the Battle of Adwa, in the Treaty of Addis Ababa of 1896.",
+   "The Boer republics were defeated and absorbed in the Second Boer War (1899–1902); the Moroccan crises of 1905 and 1911 were followed by a French and Spanish protectorate over Morocco on 30 March 1912.",
+   "The Dervish movement resisted Britain and Italy from 1899 to 1920; the Herero and Nama rising of 1904–1908 was suppressed in a genocide in which as many as 65,000 Herero and 10,000 Nama died.",
+   "Atrocities in the Congo Free State (1885–1908) caused deaths in the millions (Wikipedia: up to 8 million); many borders were finalised in later bilateral agreements and after the First World War, and some historians doubt the conference was decisive since the scramble had already begun.",
+   "Most African colonies gained independence during the Cold War; the OAU decided in 1964 to keep colonial borders."
+  ],
+  "disagree": "Al Jazeera puts European-held territory at about 20 percent of Africa just before the Berlin Conference, against Wikipedia's 'approximately 10%' in the 1870s; EBSCO lists Morocco with Ethiopia and Liberia as still independent in the early 20th century, which fits Morocco's loss of independence only in 1912. Al Jazeera quotes researcher Jack Paine, and EBSCO says the conference did not formally partition Africa, against the common view of Berlin as the moment of partition.",
+  "checked": null
+ },
+ "Q215112": {
+  "title": "Second Boer War",
+  "y": 1899,
+  "place": "South Africa (Transvaal, Orange Free State, Cape Colony and Natal)",
+  "paras": [
+   "The Second Boer War (1899–1902), also called the South African War or Anglo-Boer War, was fought between the British Empire and the two Boer (Afrikaner) republics, the South African Republic (Transvaal) under President Paul Kruger and the Orange Free State. Britain drew on troops from its colonies in southern Africa and from Canada, Australia, New Zealand and India, as well as on growing numbers of Black African recruits; the Boers were joined by rebels from the Cape and by foreign volunteers.",
+   "The roots lay in gold. After gold was found on the Witwatersrand in 1886, thousands of foreign prospectors and miners, the 'Uitlanders', many of them British, poured into the Transvaal, which allowed them to vote only after 14 years' residence. Britain took up their complaints; the Jameson Raid, a failed attempt by Cecil Rhodes's allies to overthrow Kruger's government at the turn of 1895–1896, deepened the distrust, and talks at Bloemfontein in June 1899 broke down. On 9 October 1899 Kruger gave Britain 48 hours to pull its troops back from the border, and war began on 11 October.",
+   "The Boers struck first, invading Natal and the Cape Colony and besieging British garrisons in Ladysmith, Kimberley and Mafeking. In 'Black Week' (10–15 December 1899) they defeated the British at Stormberg, Magersfontein and Colenso. Lord Roberts replaced Redvers Buller in overall command, with Lord Kitchener as his chief of staff, and turned the war with a much larger army: Piet Cronjé's force surrendered at Paardeberg in February 1900, the sieges were lifted, Bloemfontein was taken on 13 March and Pretoria on 5 June 1900, and Britain annexed both republics.",
+   "The Boers did not give up but turned to guerrilla raids on railways and supply lines. Britain answered by burning farms (some 30,000 homesteads, by the historian Fransjohan Pretorius's count) and moving Boer women and children, and separately Black Africans, into concentration camps. Disease and poor rations killed about 26,000–28,000 Boer civilians, mostly women and children, and some 20,000 Black Africans in the camps. The last commandos surrendered and the Treaty of Vereeniging was signed on 31 May 1902.",
+   "The republics became the British colonies of the Transvaal and Orange River Colony, and in 1910 they were joined with the Cape and Natal in the self-governing Union of South Africa. The war's length and cost, and the camps exposed by the campaigner Emily Hobhouse, damaged Britain's standing abroad and stirred strong opposition at home."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Second_Boer_War",
+    "title": "Second Boer War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.sahistory.org.za/article/second-anglo-boer-war-1899-1902",
+    "title": "Second Anglo-Boer War - 1899 - 1902",
+    "publisher": "South African History Online",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "url": "https://sahistory.org.za/archive/concentration-camps-south-african-war-here-are-real-facts-fransjohan-pretorius-conversation",
+    "title": "Concentration camps in the South African War? Here are the real facts (Fransjohan Pretorius, The Conversation, 2019)",
+    "publisher": "South African History Online (republished from The Conversation)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     9,
+     10,
+     11,
+     12,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The Second Boer War (1899–1902) was fought between the British Empire and the South African Republic and Orange Free State.",
+   "British forces included colonial troops from southern Africa, Canada, Australia, New Zealand and India, and Native African recruits; Cape Boers and foreign volunteers fought with the Boers.",
+   "Gold was discovered on the Witwatersrand in 1886, bringing an influx of Uitlanders.",
+   "Uitlanders could vote only after 14 years' residence.",
+   "The Jameson Raid (from 29 December 1895) failed; it was backed by Rhodes and aimed at overthrowing the Transvaal government.",
+   "Negotiations failed at the Bloemfontein Conference in June 1899.",
+   "On 9 October 1899 Kruger issued a 48-hour ultimatum to withdraw British troops from the border; war was declared on 11 October.",
+   "The Boers invaded Natal and the Cape Colony and besieged Ladysmith, Kimberley and Mafeking; in Black Week (10–15 December 1899) the British were defeated at Stormberg, Magersfontein and Colenso.",
+   "Roberts replaced Buller as commander-in-chief, with Kitchener as chief of staff, and relieved the besieged towns; Cronjé surrendered at Paardeberg (February 1900).",
+   "Roberts took Bloemfontein on 13 March 1900 and Pretoria on 5 June 1900; Britain annexed both republics in 1900.",
+   "The Boers turned to guerrilla warfare against railways and supply lines; Britain responded with scorched earth (about 30,000 homesteads burnt, per Pretorius).",
+   "Boer civilians and Black Africans were held in separate concentration camps; about 26,000 (Wikipedia) or 28,000 (Pretorius) Boer civilians and about 20,000 Black Africans died.",
+   "Most Boer commanders accepted the Treaty of Vereeniging, signed on 31 May 1902.",
+   "The republics became the Transvaal and Orange River colonies and in 1910 joined the Cape and Natal in the Union of South Africa.",
+   "Emily Hobhouse exposed camp conditions; international opinion was hostile to Britain and there was significant opposition in the UK."
+  ],
+  "disagree": "Wikipedia gives 26,000 deaths in the Boer camps (26,370 in its infobox); Fransjohan Pretorius gives 28,000 white and 20,000 black deaths. Wikipedia dates the relief of Mafeking to 18 May 1900, against the 17 May often given, so the text gives no day for it.",
+  "checked": null
+ },
+ "Q170314": {
+  "title": "Second Sino-Japanese War",
+  "y": 1937,
+  "place": "China",
+  "paras": [
+   "The Second Sino-Japanese War (1937–1945) was fought between the Republic of China and the Empire of Japan with its puppet states. On the Chinese side were the Nationalist government of Chiang Kai-shek and the Chinese Communist Party under Mao Zedong, rivals in a civil war since 1927 who had agreed to a United Front against Japan after the Xi'an Incident of December 1936, when two Nationalist generals detained Chiang. Conflict had begun earlier: after the staged Mukden Incident of 18 September 1931 Japan seized Manchuria and set up the puppet state of Manchukuo.",
+   "Full-scale war began on 7 July 1937, when shots were exchanged between Chinese troops and a Japanese unit on exercise at the Marco Polo Bridge near Beijing. Japan took Beijing and Tianjin, and the Battle of Shanghai broke out on 13 August. After a long fight for Shanghai, Japanese troops captured the capital, Nanjing, and from 13 December 1937 massacred and raped civilians there for weeks; estimates of the dead range from 100,000 to more than 300,000. In June 1938 Nationalist forces breached the Yellow River dykes in Henan to slow the Japanese advance, causing a vast, deliberate flood. Wuhan fell in October 1938 and the government withdrew to Chongqing in the interior.",
+   "From 1939 the war settled into a stalemate. Japan held the cities, railways and coast but could not finish off the Nationalists or the Communist guerrillas in the north, and answered the Communist Hundred Regiments Offensive of 1940 with scorched-earth campaigns that killed millions of civilians. After Japan attacked Pearl Harbor in December 1941 the war became part of the Second World War: the United States became China's main supplier, flying supplies over the Himalayas once the Burma Road was cut. Japan's last great offensive, Operation Ichi-Go, came in 1944.",
+   "Japan surrendered on 2 September 1945, after the atomic bombings and the Soviet invasion of Manchuria; its army in China formally surrendered at Nanjing on 9 September. Around 20 million people died, most of them Chinese civilians, and Japan also used biological and chemical weapons. China regained Taiwan and became a permanent member of the UN Security Council, but the civil war resumed in 1946 and ended with the Communist victory of 1949."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "title": "Second Sino-Japanese War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.historyhit.com/facts-about-the-second-sino-japanese-war/",
+    "title": "10 Facts About the Second Sino-Japanese War",
+    "publisher": "History Hit",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     7,
+     8,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The war was fought between the Republic of China and the Empire of Japan and its puppet states, 1937–1945.",
+   "Nationalist and Communist forces (Chiang and Mao) had fought each other since 1927 and formed a United Front against Japan, hastened by the Xi'an Incident of December 1936 in which two Nationalist generals kidnapped Chiang.",
+   "The Mukden Incident of 18 September 1931 was used to justify Japan's invasion of Manchuria and the creation of Manchukuo.",
+   "The war began on 7 July 1937 with the Marco Polo Bridge incident near Beijing, an exchange of fire involving a Japanese exercise.",
+   "Japan took Beijing and Tianjin; the Battle of Shanghai erupted on 13 August 1937.",
+   "Nanjing was captured and the Nanjing Massacre began after 13 December 1937; estimates of the dead range from 100,000 to more than 300,000.",
+   "Mass rape accompanied the massacre in Nanjing.",
+   "In June 1938 Nationalist forces deliberately breached the Yellow River levees in Henan to stop the Japanese.",
+   "Wuhan fell by October 1938 and the Nationalist government moved to Chongqing.",
+   "Japan could not defeat the Communists' guerrilla campaign; after the 1940 Hundred Regiments Offensive Japan's scorched-earth policies killed millions of civilians.",
+   "By 1939 the war had reached a stalemate.",
+   "After Pearl Harbor (December 1941) the US became China's main supporter; supplies were airlifted over the Himalayas after the Burma Road was cut.",
+   "Japan launched Operation Ichi-Go in 1944.",
+   "Japan surrendered on 2 September 1945 after the atomic bombings and the Soviet invasion of Manchuria; the surrender in China took place at Nanjing on 9 September 1945.",
+   "About 20 million died, mostly Chinese civilians; Japan used biological and chemical weapons; China regained Taiwan and became a permanent UN Security Council member; the civil war resumed in 1946 and ended in Communist victory in 1949."
+  ],
+  "disagree": "Wikipedia gives around 20 million deaths in the war, mostly Chinese civilians; History Hit says estimates of Chinese civilian and military dead reach up to 15 million. History Hit says the Communists kidnapped Chiang Kai-shek in December 1936; Wikipedia says two Nationalist generals did, and the text follows Wikipedia.",
+  "checked": null
+ },
+ "Q189266": {
+  "title": "Eastern Front",
+  "y": 1941,
+  "place": "Soviet Union and Eastern and Central Europe",
+  "paras": [
+   "The Eastern Front of the Second World War, called the Great Patriotic War in Russia, was the war between Nazi Germany and its allies and the Soviet Union from 22 June 1941 to May 1945. Germany was joined by Romania, Hungary, Italy, Slovakia and Croatia, by Finland in the north, and by volunteers such as Spain's Blue Division; the Soviet Union fought alongside Polish forces and received large shipments of Western aid under Lend-Lease. It was the largest land war in history, and Germany waged it as a war of annihilation aimed at conquering 'living space' in the east.",
+   "Phase one was the German onslaught. Operation Barbarossa began on 22 June 1941 with over three million German troops and several hundred thousand allied troops; the unprepared Red Army lost millions of men taken prisoner in the first months. Leningrad was besieged from September 1941 until January 1944, and about 1.2 million of its civilians died. German troops came within about 30 km of the Kremlin, but the attack on Moscow failed and a Soviet counter-offensive from 5 December 1941 pushed them back. In 1942 Germany turned south towards the Caucasus oil fields with Case Blue, launched on 28 June.",
+   "The turning points came in 1942–1943. At Stalingrad a Soviet counter-offensive from 19 November 1942 trapped the German 6th Army, whose 90,000 or so survivors surrendered from 31 January 1943. In July 1943 Germany's last great offensive in the east, against the Kursk salient, failed against deep Soviet defences, and from then on the Red Army held the initiative.",
+   "In the final phase the Soviets drove west. Operation Bagration, launched on 22 June 1944, destroyed Germany's Army Group Centre, and Romania and Bulgaria changed sides. The Vistula–Oder offensive of January 1945 carried the Red Army into Germany, and the Berlin operation (16 April–2 May 1945) ended with the capture of the capital. Germany's surrender was signed on 8 May, celebrated in Moscow on 9 May.",
+   "About 30 million people died on the Eastern Front, most of them civilians. Soviet losses alone are put at about 27 million by the Australian War Memorial (26.5 million in Vadim Erlikman's estimate cited by Wikipedia), around two-thirds of them civilians killed by massacres, starvation and deportation. The front was decisive for the defeat of Nazi Germany."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_II)",
+    "title": "Eastern Front (World War II)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://awm.gov.au/articles/blog/nazi-soviet-war",
+    "title": "The Nazi-Soviet War, 1941–1945",
+    "publisher": "Australian War Memorial",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The Eastern Front (Great Patriotic War) was fought between the European Axis and the Soviet Union and its allies from 22 June 1941 to May 1945.",
+   "Germany's allies included Romania, Hungary, Italy, Slovakia, Croatia and Finland, plus Spain's Blue Division; the US and UK gave the USSR Lend-Lease aid.",
+   "It was the largest military confrontation in history; Germany waged a war of annihilation for Lebensraum.",
+   "Operation Barbarossa began on 22 June 1941 with over three million German troops (plus allied troops; AWM: 600,000); the Soviets were caught unprepared.",
+   "In the first months the Red Army lost millions of prisoners (AWM: 3.8 million in less than six months).",
+   "Leningrad was besieged from September 1941 to January 1944; about 1.2 million civilians died in the siege.",
+   "German forces got within 30 km of the Kremlin (27 November 1941); the attack was suspended and the Soviet counter-offensive ran from 5 December 1941.",
+   "Case Blue towards the Caucasus began on 28 June 1942.",
+   "Operation Uranus began on 19 November 1942 and trapped the 6th Army; its 90,000 survivors surrendered on 31 January 1943.",
+   "The German offensive at Kursk in July 1943 failed and was the last major German offensive on the Eastern Front.",
+   "Operation Bagration began on 22 June 1944 and destroyed Army Group Centre; Romania and Bulgaria defected.",
+   "The Vistula–Oder offensive began in January 1945.",
+   "The Berlin operation ran from 16 April to 2 May 1945; the German Instrument of Surrender was signed on 8 May; the Eastern Front is dated to 9 May.",
+   "About 30 million died on the Eastern Front; AWM: about 27 million Soviet citizens died, two-thirds civilians; Erlikman (cited by Wikipedia): 26.5 million Soviet deaths, 15.9 million civilians.",
+   "The Eastern Front was decisive for the outcome of the war in Europe."
+  ],
+  "disagree": "Soviet death tolls differ by source: the Australian War Memorial gives about 27 million, Vadim Erlikman's breakdown cited by Wikipedia 26.5 million.",
+  "checked": null
  }
 }
