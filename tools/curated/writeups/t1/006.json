@@ -3481,5 +3481,77 @@
   ],
   "disagree": "Date of the Xi'an Incident, when Chiang Kai-shek was seized by his generals: late 1936 (Wikipedia) or 1937 (US Office of the Historian).",
   "checked": null
+ },
+ "Q167634": {
+  "title": "Perestroika",
+  "y": 1985,
+  "place": "Soviet Union",
+  "paras": [
+   "Perestroika ('restructuring') was the reform programme that Mikhail Gorbachev pursued as general secretary of the Communist Party of the Soviet Union from 1985 until 1991, together with glasnost ('openness'). Neither word was new to Soviet rhetoric, but in a speech of December 1984, a few months before he took power, Gorbachev named them as key themes alongside uskorenie ('acceleration'). The aim was not to abandon the planned economy but to make socialism work better and end the economic stagnation, political sclerosis and public discontent of the early 1980s.",
+   "In the first years, 1985–87, Gorbachev spoke of modifying central planning but changed little, and 'acceleration' soon fell by the wayside. More basic reforms followed. A Law on Individual Labour Activity of November 1986 allowed some private work by individuals and families. The Law on State Enterprise of July 1987 let state firms sell output beyond their state orders as they chose, made them cover their costs from their own revenue, and moved control from ministries to elected workers' collectives. Joint ventures with foreign investors were allowed from June 1987. The Law on Cooperatives of 26 May 1988 permitted privately run businesses for the first time since Lenin's New Economic Policy was abolished in 1928, and cooperative restaurants, hairdressers and repair shops soon flourished in the cities. Their higher prices and use of scarce state supplies made 'cooperative owner' a term of abuse.",
+   "Politically, Gorbachev came to call perestroika a 'revolution'. From January 1987 he appealed over the heads of the party for democratisation, with contested elections for the soviets and a new Congress of People's Deputies. In its election of March 1989, Soviet voters chose a national legislature for the first time and crossed many unopposed party officials off the ballot. Glasnost, meant to support reform, grew into a freedom of speech asserted from below. Lewis Siegelbaum, writing for the Seventeen Moments in Soviet History project, argues that its flood of revelations about crime and past state crimes undermined public confidence in the state.",
+   "The economic reforms did little to revive the economy. Price controls, the inconvertible rouble and most state control of production remained, and shortages deepened while the republics pressed for sovereignty. By the party congress of July 1990 it was clear that the reforms had sweeping unintended consequences. Perestroika is often counted among the main causes of the collapse of the Eastern Bloc and of the dissolution of the Soviet Union in 1991."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Perestroika",
+    "title": "Perestroika (rev 1388199165)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://soviethistory.msu.edu/1985/perestroika-and-glasnost/",
+    "title": "Perestroika and Glasnost (Lewis Siegelbaum)",
+    "publisher": "Seventeen Moments in Soviet History, Michigan State University",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://soviethistory.msu.edu/1985/cooperatives/",
+    "title": "Cooperatives (Lewis Siegelbaum)",
+    "publisher": "Seventeen Moments in Soviet History, Michigan State University",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "Perestroika (restructuring) and glasnost (openness) were Gorbachev's reform watchwords as general secretary from 1985 to 1991 (Siegelbaum; Wikipedia: era 1985-1991).",
+   "Neither term was new; in a speech of December 1984 (Wikipedia: 10 December 1984) Gorbachev named perestroika, glasnost and uskorenie as key themes (Siegelbaum; Wikipedia).",
+   "Uskorenie fell by the wayside (Siegelbaum); 1985-87 talk of modifying planning without fundamental change, then more fundamental reforms (Wikipedia).",
+   "The goal was not to end the planned economy but to make socialism work more efficiently; motivated by stagnation, political sclerosis and dissatisfaction (Wikipedia).",
+   "Law on Individual Labor Activity of 19 November 1986 (Siegelbaum, Cooperatives); Law on Cooperatives of 26 May 1988 (Siegelbaum; Wikipedia: May 1988) permitted private ownership of businesses for the first time since NEP was abolished in 1928 (Wikipedia); cooperative restaurants, hairdressers, repair booths flourished (Siegelbaum; Wikipedia).",
+   "Law on State Enterprise of July 1987: output beyond state orders at enterprises' discretion; self-financing; control from ministries to elected workers' collectives (Wikipedia).",
+   "Joint Venture Law in effect from June 1987 (Wikipedia).",
+   "Cooperatives' higher prices and reliance on state supplies caused resentment; 'kooperativshchiki' a term of abuse (Siegelbaum, Cooperatives).",
+   "By 1987 Gorbachev called perestroika a 'revolution'; contested elections for new institutions such as the Congress of People's Deputies (Siegelbaum); January 1987 appeal over the party's heads for democratisation (Wikipedia).",
+   "March 1989 election of the Congress of People's Deputies, the first time voters chose a national legislature; voters crossed unopposed Communist candidates off the ballot (Wikipedia); glasnost became a right asserted from below and undermined public confidence (Siegelbaum).",
+   "The reforms did little for the economy; price controls, ruble inconvertibility and state control of production remained; shortages; nationalist pressure in the republics; by the July 1990 party congress the unintended consequences were clear (Wikipedia).",
+   "Perestroika is often argued to be a significant cause of the collapse of the Eastern Bloc and the dissolution of the USSR (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
