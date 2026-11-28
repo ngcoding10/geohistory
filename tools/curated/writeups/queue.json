@@ -262514,7 +262514,8 @@
     "Q18578267",
     "Q12820",
     "Q22169",
-    "Q122962941"
+    "Q122962941",
+    "Q4156"
    ],
    "broad topics left for later (periods, movements, companies)": [
     "Q12199",
@@ -262534,7 +262535,8 @@
     "Q130253",
     "Q80113",
     "Q34636",
-    "Q151622"
+    "Q151622",
+    "Q18817"
    ],
    "awaiting owner decision on title and framing": [
     "Q124086054"
@@ -262650,6 +262652,16 @@
    "Wikipedia REST API returned 429 for some requests in the 2026-11-28 eleventh batch",
    "Wikipedia REST API returned 429 for most requests in the 2026-11-28 twelfth batch",
    "en.wikisource API search (empty response once; prefix search worked)"
-  ]
+  ],
+  "deferred": {
+   "Q826083": "Battle of the Trench: needs a second open source",
+   "Q1647162": "Treaty of Hudaybiyyah: needs a second open source",
+   "Q47721": "Prambanan: needs a second open source",
+   "Q289492": "Battle of the Zab: needs a second open source",
+   "cp02-06": "Conquest of Mecca: needs a second open source",
+   "nQ6382635": "Kedukan Bukit inscription: Wikipedia thin, Coedes 1930 PDF 403",
+   "cp18-053": "Jayavarman VII: Briggs OCR lacks pp. 204-237",
+   "Q1014253": "Mongol conquest of the Jin: Howorth OCR lacks pp. 68-71"
+  }
  }
 }
