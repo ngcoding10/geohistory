@@ -3300,5 +3300,617 @@
    "result": "Wikipedia extract (rev 1383616436, local CirrusSearch dump): 20 September 1792, Brunswick's Prussians marching on Paris, stopped by Kellermann and Dumouriez near Valmy, an outsized psychological victory for the Revolution all match. 3 claims, 0 errors.",
    "errors": 0
   }
+ },
+ "Q1417059": {
+  "title": "First Fitna",
+  "y": 656,
+  "place": "Arabia, Iraq, Syria and Egypt",
+  "paras": [
+   "The First Fitna (656-661) was the first civil war within the Muslim community. It was fought between the supporters of Ali ibn Abi Talib, the Prophet Muhammad's cousin and son-in-law, who became the fourth caliph; the partisans of the murdered caliph Uthman, first led by Muhammad's widow Aisha with Talha and Zubayr and then by Mu'awiya, the Umayyad governor of Syria; and, from 657, the Kharijites, who broke away from Ali. It ended the Rashidun Caliphate and brought the Umayyads to power.",
+   "Uthman had been accused of favouring his Umayyad relatives, and discontent over provincial revenues and his appointments grew into open revolt: rebels from Egypt and Iraq marched on Medina and killed him in June 656. Ali was then recognised as caliph, but his accession was clouded by the unpunished murder. Aisha, Talha and Zubayr demanded vengeance and a new election, took Basra and were defeated by Ali outside the city on 8 December 656 in the Battle of the Camel, named after the camel of Aisha around which her forces rallied; Talha and Zubayr were killed.",
+   "Mu'awiya, Uthman's kinsman, refused to recognise Ali and went to war in the name of revenge for Uthman. The two armies met at Siffin on the Euphrates in 657 (Wikipedia: fighting from 26 July; EBSCO: August). When the battle turned in Ali's favour, the Syrians raised copies of the Quran on their lances to call for arbitration, and Ali, under pressure from his own troops, agreed. The arbitrators, Abu Musa al-Ash'ari for Ali and Amr ibn al-As for Mu'awiya, reached no lasting settlement, but their proceedings strengthened Mu'awiya, whom the Syrians then accepted as caliph. Those of Ali's followers who rejected arbitration, saying judgment belonged to God alone, became the Kharijites; Ali crushed them at Nahrawan, while in 658 Amr took Egypt for Mu'awiya.",
+   "In January 661 the Kharijite Ibn Muljam assassinated Ali in the Great Mosque of Kufa. His eldest son Hasan was proclaimed caliph in Kufa, but as Mu'awiya marched on Kufa and Hasan's forces suffered widespread defections, Hasan made peace and recognised Mu'awiya, beginning the Umayyad Caliphate. EBSCO's account notes that the war temporarily held back the Arab conquests and laid the basis for the lasting rift between Sunni and Shia Muslims."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/First_Fitna",
+    "title": "First Fitna (rev 1386435013)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/muslim-civil-war-657-661",
+    "title": "Muslim Civil War of 657-661 (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The First Fitna was the first civil war in the Islamic community; it ended the Rashidun Caliphate and led to the establishment of the Umayyad Caliphate.",
+   "Factions: supporters of Ali, the fourth caliph; the Uthmaniyya (Aisha's faction in Basra and Mu'awiya's Umayyad partisans in Syria); from 657 the Kharijites, who seceded from Ali's camp after the arbitration at Siffin.",
+   "Uthman was accused of nepotism; opposition over revenues and appointments became revolt; dissidents from Egypt and Iraq killed him in Medina in June 656.",
+   "Ali, Muhammad's cousin and son-in-law, was then recognised as caliph; his accession was clouded by the unresolved murder.",
+   "Aisha, Talha and Zubayr demanded vengeance and a new election, captured Basra, and were defeated outside Basra in the Battle of the Camel, which began on 8 December 656 (EBSCO: December 656); Talha and Zubayr were killed; the battle is named after Aisha's camel around which her forces rallied.",
+   "Mu'awiya, governor of Syria and Uthman's kinsman, refused to recognise Ali and went to war demanding revenge for Uthman.",
+   "The armies met at Siffin on the Euphrates in 657; Wikipedia: fighting began on Wednesday 26 July 657; EBSCO: battle joined in August 657.",
+   "As the balance shifted to Ali, Syrians raised copies of the Quran on their lances calling for arbitration; Ali accepted under pressure from his army (EBSCO: a truce was declared and Ali agreed to arbitration).",
+   "Abu Musa al-Ash'ari represented Ali and Amr ibn al-As Mu'awiya; the arbitration settled nothing (EBSCO: continued without resolution) but strengthened the Syrians' support for Mu'awiya, whom they pledged allegiance to as caliph.",
+   "Opponents of arbitration, declaring that judgment belonged to God alone, became the Kharijites; Ali defeated them at Nahrawan.",
+   "Amr ibn al-As took Egypt for Mu'awiya in 658 (EBSCO: Ali's position was undermined by the defection of Egypt).",
+   "In January 661 the Kharijite Ibn Muljam assassinated Ali at the Great Mosque of Kufa (EBSCO: in 661, in the mosque at Kufa); Hasan was proclaimed caliph in Kufa, faced defections as Mu'awiya marched on Kufa, and made peace recognising Mu'awiya, beginning the Umayyad Caliphate (EBSCO: Hasan abandoned his claim, leaving Mu'awiya to found the Umayyad dynasty).",
+   "EBSCO: the war temporarily delayed the Arab conquests and created the lasting rift between Sunni and Shia Muslims."
+  ],
+  "disagree": "Siffin: Wikipedia dates the main fighting from 26 July 657, EBSCO to August 657. EBSCO names 'Abd Allah ibn az-Zubayr as leader of the revolt ending at the Camel, where Wikipedia names Zubayr (ibn al-Awwam), Talha and Aisha; EBSCO was not used for that point.",
+  "checked": null
+ },
+ "Q167259": {
+  "title": "Battle of Lützen",
+  "y": 1632,
+  "place": "Lützen, south-west of Leipzig (Electorate of Saxony)",
+  "paras": [
+   "The Battle of Lützen was fought on 16 November 1632 (6 November in the Julian calendar then used in Sweden and Protestant Germany) near the small town of Lützen, south-west of Leipzig in Saxony, during the Thirty Years' War. A Swedish army under King Gustavus II Adolphus, with German Protestant allies from Saxony and Hesse-Kassel, attacked the Imperial (Catholic Habsburg) army of Albrecht von Wallenstein. Gustavus had landed in northern Germany in June 1630 and won a run of victories, but in 1632 Wallenstein had checked him outside Fürth and then invaded Saxony to force its elector out of the war.",
+   "In mid-November Wallenstein began to send his troops into winter quarters and detached Pappenheim's corps to Halle. Learning of this, Gustavus advanced to attack; Wallenstein recalled his scattered forces and drew up a defensive line along the Lützen-Leipzig road, his right anchored on the town. Wikipedia puts Gustavus's army at about 19,000 against 13,000 to 15,000 Imperial troops before Pappenheim returned; EBSCO's Research Starter gives the Swedes 18,000. Fog delayed the Swedish attack, which Wikipedia says began at 11:00 and EBSCO at 8 a.m.",
+   "The Swedish infantry crossed the road and began to turn the Imperial left, but Pappenheim arrived with his cavalry around midday, drove them back and was himself mortally wounded. Leading an attempt to rally his men in the fog and smoke, Gustavus rode into an Imperial cavalry unit and was killed. The Swedes, under Bernhard of Saxe-Weimar and their other commanders, renewed the attack, took Lützen and the Imperial batteries, and at dusk Wallenstein withdrew, leaving guns and baggage; he then fell back into Bohemia. Casualty figures differ widely: Wikipedia gives about 6,000 Swedish and 5,160 Imperial killed or wounded, EBSCO about 10,000 Swedish and 12,000 Imperial, and the historian Peter H. Wilson writes that over a quarter of all the combatants were killed or seriously wounded in nine hours of fighting.",
+   "Most historians count Lützen as a Swedish victory, but the death of the king left the Protestant side without its leader. His six-year-old daughter Christina succeeded him and the chancellor Axel Oxenstierna kept Sweden in the war, while France took an ever larger part in the anti-Habsburg alliance. Wilson notes that the battle did not end the war or even mark a significant turning point, yet it is among its best-remembered battles because of Gustavus's death, which Swedish propaganda presented as a Protestant martyrdom; a stone marks the spot where he fell, and Sweden still commemorates him every 6 November."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_L%C3%BCtzen_(1632)",
+    "title": "Battle of Lützen (1632) (rev 1386043286)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/battle-lutzen",
+    "title": "Battle of Lützen (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://blog.oup.com/?p=137201",
+    "title": "Lützen and the birth of modern warfare (Peter H. Wilson)",
+    "publisher": "OUPblog (Oxford University Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     10,
+     11,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought on 16 November 1632 at Lützen in Saxony (Wilson: about 19 km south-west of Leipzig, on Tuesday 16 November 1632; EBSCO: November 16, 1632) during the Thirty Years' War between the Swedish army under Gustavus II Adolphus and the Imperial army under Wallenstein.",
+   "Wikipedia: 16 November Gregorian = 6 November Julian, then used in Sweden; Wilson: the Julian calendar used by European Protestants until around 1700; annual services at Lützen on 6 November.",
+   "Gustavus landed in northern Germany / Pomerania in June 1630 and won a string of victories (Wikipedia, Wilson).",
+   "The Swedish army included troops from Saxony and Hesse-Kassel; in 1632 Wallenstein repulsed Gustavus at Fürth and then attacked Saxony to force its elector out of the war.",
+   "Wallenstein was going into winter quarters (EBSCO: had already sent his army into winter quarters; Wikipedia: decided on 14 November to winter at Leipzig) and had detached Pappenheim's corps to Halle; Gustavus advanced to attack; Wallenstein recalled his forces and prepared a defensive line along the Lützen-Leipzig road with his right on the town (EBSCO; Wikipedia: right anchored on a low hill by windmills).",
+   "Army sizes: Wikipedia, Gustavus about 19,000 against Wallenstein's 13,000-15,000 before Pappenheim returned; EBSCO, Swedish army of 18,000.",
+   "Fog/mist delayed the attack; start: Wikipedia 11:00 am; EBSCO 8 a.m.",
+   "The Swedish (right) pushed the Imperial left back; Pappenheim arrived about midday with cavalry, drove the Swedish infantry back, and was fatally wounded (Wikipedia; EBSCO: recalled Imperialists stabilised that flank).",
+   "Gustavus, trying to rally his men, rode into an Imperial cavalry unit and was killed (EBSCO: killed when he rode into an enemy formation).",
+   "The Swedes renewed the attack (Bernhard of Saxe-Weimar), took Lützen and the Imperial batteries; Wallenstein withdrew at dusk abandoning guns and baggage, and then into Bohemia (EBSCO: Wallenstein was driven from the field).",
+   "Casualties: Wikipedia, Imperial 5,160 killed or wounded, Swedish about 6,000; EBSCO, Swedish about 10,000, Imperial about 12,000; Wilson, over a quarter of combatants killed or seriously wounded during nine hours of fighting.",
+   "Most historians regard Lützen as a Swedish victory (Wikipedia; EBSCO: a Swedish victory); EBSCO: Gustavus's death left the Protestants without dynamic leadership and led to direct French intervention; Wikipedia: Christina, aged six, succeeded and Oxenstierna directed the war; Gustavus's death cemented French leadership of the anti-Habsburg alliance.",
+   "Wilson: Lützen did not end the war or mark a significant turning point but is the best remembered battle of the war; Swedish propaganda presented the king's sacrifice for the Protestant cause.",
+   "A stone (the Schwedenstein) marks where Gustavus fell; Swedes commemorate Gustavus Adolphus Day on 6 November (Wikipedia; Wilson: services at Lützen every 6 November since 1832)."
+  ],
+  "disagree": "Army sizes: Wikipedia about 19,000 Swedes and 13,000-15,000 Imperialists before Pappenheim's return; EBSCO 18,000 Swedes. Start of the attack: Wikipedia 11:00, EBSCO 8 a.m. Casualties: Wikipedia about 6,000 Swedish and 5,160 Imperial killed or wounded; EBSCO about 10,000 Swedish and 12,000 Imperial; Wilson over a quarter of the combatants killed or seriously wounded.",
+  "checked": null
+ },
+ "Q168556": {
+  "title": "Schmalkaldic War",
+  "y": 1546,
+  "place": "Holy Roman Empire (Swabia, Saxony and Bohemia)",
+  "paras": [
+   "The Schmalkaldic War of 1546-1547 was fought in the Holy Roman Empire between the Emperor Charles V, with his commander the Duke of Alba and the Lutheran Duke Maurice of Saxony as allies, and the Schmalkaldic League, the defensive alliance of Lutheran princes and cities led by Elector John Frederick I of Saxony and Landgrave Philip I of Hesse. Wikipedia dates it from July 1546 to May 1547; EBSCO's Research Starter gives June 1546 to June 1547. The bpb, Germany's Federal Agency for Civic Education, calls it the first German war of religion.",
+   "The League had been formed at Schmalkalden after the Diet of Augsburg of 1530 rejected the Protestant position (Wikipedia: in 1531). For years Charles was held back by his wars elsewhere, but peace with France in 1544 freed him to turn to Germany. With papal money and troops, he gathered an army from Spain, Italy, Germany and the Netherlands, secured the backing of Bavaria (EBSCO; Wikipedia says its duke declared himself neutral) and won over Maurice, John Frederick's ambitious cousin, who hoped to gain his cousin's lands and electoral vote. Publicly Charles said he was punishing disobedient rebels, and on 20 July 1546 he put John Frederick and Philip under the imperial ban; the bpb notes that privately he called it a matter of religion.",
+   "The League mobilised first, but its divided leaders failed to strike at the emperor or at his Tyrolean and Bohemian lands, and in the autumn the armies manoeuvred inconclusively in southern Germany. When Maurice invaded Electoral Saxony (Wikipedia: in October; EBSCO: in November), John Frederick hurried home, the League's army in the south broke up, and the southern Protestant cities and princes submitted to Charles. In spring 1547 Charles marched into Saxony with his Spanish veterans and on 24 April 1547 surprised and routed John Frederick's army at Mühlberg on the Elbe, taking him prisoner.",
+   "On 19 May 1547, in the Capitulation of Wittenberg, John Frederick gave up his electoral title and much of his land to Maurice; in June Philip of Hesse surrendered, trusting in promises of leniency, and was imprisoned. Charles then tried to impose a religious settlement close to Catholic doctrine, the Augsburg Interim of 1548, but it was widely resisted, and his treatment of Philip and his push for imperial power turned princes of both faiths against him. In 1552 Maurice led a new princes' revolt, and the Peace of Augsburg of 1555 gave Lutheranism legal recognition, showing the limits of the emperor's power."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Schmalkaldic_War",
+    "title": "Schmalkaldic War (rev 1374728834)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/schmalkaldic-war",
+    "title": "Schmalkaldic War (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.bpb.de/themen/zeit-kulturgeschichte/reformation/235574/schlaglicht-1546-der-erste-deutsche-konfessionskrieg/",
+    "title": "Schlaglicht 1546: der erste deutsche Konfessionskrieg",
+    "publisher": "Bundeszentrale für politische Bildung (bpb)",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     6,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The war was fought in the Holy Roman Empire between Charles V, with the Duke of Alba commanding and Maurice of Saxony as ally, and the Lutheran Schmalkaldic League led by Elector John Frederick I of Saxony and Landgrave Philip I of Hesse.",
+   "Dates: Wikipedia, July 1546 - May 1547; EBSCO, June 1546 - June 1547.",
+   "bpb calls it the first German war of religion (Konfessionskrieg), the German prototype; Charles struck in summer 1546.",
+   "The League was formed at Schmalkalden (Wikipedia: 1531) after the Diet of Augsburg of 1530 (EBSCO: which outlawed Protestantism; Wikipedia: the Confutatio answered the Augsburg Confession).",
+   "Peace with France in 1544 (Treaty of Crépy) freed Charles to turn to Germany.",
+   "Charles legitimised the war as punishment of disobedience (bpb, quoting the ban); John Frederick and Philip were placed under the imperial ban on 20 July 1546 (Wikipedia); internally Charles said the matter concerned religion above all (bpb).",
+   "EBSCO: the pope offered money and troops; Charles mobilised troops from Spain, Italy, Germany and the Netherlands, secured Bavaria's support and Maurice's alliance (Wikipedia: Bavaria declared itself neutral; the army of about 52,000 came from Germany, Italy, Spain and the Netherlands).",
+   "The League mobilised first but its divided leaders did not attack the emperor or invade Tyrol (EBSCO: or Bohemia); the armies manoeuvred inconclusively in southern Germany in the autumn (EBSCO).",
+   "Maurice invaded Electoral (Ernestine) Saxony (Wikipedia: October 1546; EBSCO: November, hoping to gain his cousin's territory and electoral vote); John Frederick turned back; the rest of the Protestant force dispersed and the southern German cities and princes submitted to Charles.",
+   "In spring 1547 Charles marched into Saxony; on 24 April 1547 his forces (EBSCO: with Spanish veterans) defeated John Frederick's army at Mühlberg and captured him.",
+   "On 19 May 1547 John Frederick signed the Capitulation of Wittenberg, giving up the electoral dignity and territory to Maurice; Philip of Hesse surrendered (EBSCO: in June, on Maurice's promise of leniency) and was imprisoned (all three sources).",
+   "Charles imposed the Augsburg Interim (1548), which was resisted by Protestants (bpb: in doctrine and liturgy one-sidedly Catholic; Catholic estates said it did not bind them); princes of both confessions were alienated by his treatment of Philip and his push for imperial power (EBSCO, bpb).",
+   "War broke out again in 1552 (Wikipedia: led by Maurice, backed by Henry II of France); the Peace of Augsburg (1555) recognised the Protestant religion and showed the limits of imperial power (EBSCO)."
+  ],
+  "disagree": "Dates of the war: Wikipedia July 1546 - May 1547, EBSCO June 1546 - June 1547; neither gives the event record's start of 10 July 1546, which is left unchanged. Maurice's invasion of Electoral Saxony: Wikipedia October 1546, EBSCO November. EBSCO says Bavaria supported Charles; Wikipedia says Duke William IV of Bavaria declared himself neutral (both are given in the text). The founding year of the League (1531) is from Wikipedia only.",
+  "checked": null
+ },
+ "Q172077": {
+  "title": "Dome of the Rock built",
+  "y": 691,
+  "place": "Jerusalem (Temple Mount / al-Haram al-Sharif)",
+  "paras": [
+   "The Dome of the Rock, an octagonal shrine on the Temple Mount (al-Haram al-Sharif) in Jerusalem, was built for the Umayyad caliph Abd al-Malik and is the oldest surviving major monument of Islamic architecture. A dedicatory inscription inside gives the year 72 AH, 691/2 CE, which most historians take as the year the original building was completed; later Muslim writers dated the start of work to 685/6 or 688. It stands over a rock outcrop, the Foundation Stone, near the centre of the esplanade where the Jewish Temple once stood.",
+   "Abd al-Malik had the work supervised by Raja ibn Haywa, a Muslim theologian, and by Yazid ibn Sallam and his son Baha, and employed skilled workers from Syria and Egypt, who were presumably Christians. The building is a low octagon whose arcades form two ambulatories around a central space about 20 metres across, covered by a high wooden dome. Its plan and its mosaics of trees, plants, jewels and vases follow late antique and Byzantine models, and it resembles in plan and dome size the nearby Church of the Holy Sepulchre, which is also raised over a rock; but its Arabic inscriptions and lack of human figures marked it out from contemporary Christian buildings.",
+   "Why Abd al-Malik built it is debated. He was at war with the Byzantines and with the rival caliph Abd Allah ibn al-Zubayr, who held Mecca. One medieval explanation, current by the ninth century, was that he meant to draw pilgrims away from the Kaaba while it was in enemy hands; both sources note that this view is widely doubted. The building's own inscriptions, the only contemporary evidence, do not mention Muhammad's Night Journey, later linked to the rock, but set out the nature of Islam and reject the divinity of Christ, which suggests it was meant to proclaim Islam as the successor to Judaism and Christianity.",
+   "The shrine was repaired many times. The Abbasid caliph al-Ma'mun's name was put in place of Abd al-Malik's in the inscription, though the original date was left. After the dome collapsed in an earthquake (Wikipedia: 1015; the Encyclopedia of Islam and the Muslim World: 1016) the Fatimids rebuilt it. The Crusaders made it a church, the Templum Domini, and Saladin restored it to Muslim use after retaking Jerusalem in 1187; the Ottoman sultan Suleiman the Magnificent replaced the outer mosaics with tiles in the sixteenth century."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Dome_of_the_Rock",
+    "title": "Dome of the Rock (rev 1386438333)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/dome-rock",
+    "title": "Dome of the Rock (Encyclopedia of Islam and the Muslim World, by Jonathan M. Bloom)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The Dome of the Rock is an octagonal Islamic shrine in Jerusalem on the Temple Mount / al-Haram al-Sharif, built for the Umayyad caliph Abd al-Malik; it is the oldest surviving (major) work of Islamic architecture.",
+   "A dedicatory Kufic inscription inside gives 72 AH (691/2 CE), the year most historians believe the original building was completed; Sibt ibn al-Jawzi put the start of construction in 685/6 and al-Suyuti in 688 (Wikipedia). Encyclopedia of Islam and the Muslim World: commissioned in 692 CE.",
+   "It is built over the Foundation Stone, a rocky outcrop near the centre of the esplanade, the site of the Jewish Temple.",
+   "The supervisors were Raja ibn Haywa, a Muslim theologian, and Yazid ibn Sallam and his son Baha; the caliph employed expert workers from Syria and Egypt, presumably Christians.",
+   "The building is a large low octagon divided by an arcade into two ambulatories around a central space about 20 m in diameter under a high wooden dome.",
+   "Its form and mosaic decoration (trees, plants, jewels, vases) follow late antique/Byzantine traditions; it is similar in plan and dome size to the nearby Holy Sepulchre, also raised over a rock (Encyclopedia of Islam and the Muslim World; Wikipedia: plan and mosaics patterned after Byzantine churches and palaces).",
+   "Its Arabic inscriptions and lack of figural representation distinguish it from contemporary Christian buildings.",
+   "When it was built, Abd al-Malik was at war with Byzantium and with the rival caliph Abd Allah ibn al-Zubayr, who controlled Mecca (Wikipedia; Encyclopedia: the Kaaba had fallen into enemy hands).",
+   "An explanation current from the ninth century was that the building was meant to replace the Kaaba / divert pilgrims from it; Wikipedia says most modern historians dismiss it as anti-Umayyad propaganda; the Encyclopedia calls it simplistic.",
+   "The original inscriptions do not mention the Night Journey; they deal with the nature of Islam and reject the divinity of Christ (Wikipedia: explicit rejection of the divinity of Christ; Encyclopedia: refute the tenets of Christianity); the Encyclopedia says they suggest the building symbolised Islam as successor to Judaism and Christianity.",
+   "The name of Abd al-Malik in the inscription was replaced by that of the Abbasid caliph al-Ma'mun, the date being left (Encyclopedia: in the ninth century).",
+   "The dome collapsed in an earthquake (Wikipedia: 1015, rebuilt 1022-23 under the Fatimid al-Zahir; Encyclopedia: 1016, restored by the Fatimids in the eleventh century).",
+   "The Crusaders called it Templum Domini and (Wikipedia) gave it to the Augustinians as a church; Saladin, who retook Jerusalem in 1187, had it rededicated; the Ottoman sultan Suleiman replaced the exterior mosaics with tiles in the sixteenth century."
+  ],
+  "disagree": "Date: the inscription's 72 AH (691/2 CE) is read by most historians as the completion year (Wikipedia); the Encyclopedia of Islam and the Muslim World says it was commissioned in 692; later Muslim authors date the start to 685/6 or 688. The dome's collapse: Wikipedia 1015, the Encyclopedia 1016.",
+  "checked": null
+ },
+ "Q465627": {
+  "title": "Sack of Rome, 1527",
+  "y": 1527,
+  "place": "Rome (Papal States)",
+  "paras": [
+   "On 6 May 1527 troops of the Holy Roman Emperor Charles V, who was also king of Spain, stormed Rome and began a sack that lasted, in waves, until February 1528. The victims were the city and Pope Clement VII, who in 1526 had joined France, Milan, Venice and Florence in the League of Cognac to limit the emperor's power in Italy. The imperial army that had invaded northern Italy, Spaniards under Charles, Duke of Bourbon and German Landsknechte under Georg von Frundsberg, many of them Lutherans, along with Italian troops, had gone unpaid for a long time and was close to mutiny.",
+   "In March 1527 the pope agreed a truce with the imperial viceroy of Naples, Charles de Lannoy, but Bourbon's men refused to honour it, and the duke, who could not pay them, led them south against Rome and its riches; whether Charles V approved the attack is disputed. The army reached the walls on 5 May. Rome was weakly held: Wikipedia counts about 5,000 militiamen and 189 Swiss Guards. Bourbon was killed in the first assault on 6 May, by his own account by the goldsmith Benvenuto Cellini, but by evening the attackers had taken almost the whole city. The Swiss Guard was nearly wiped out covering the pope's escape along the raised passage to the Castel Sant'Angelo.",
+   "Bourbon's successor, Philibert, Prince of Orange, could not control the troops. For days they killed, raped, tortured citizens to make them reveal or pay money, and held people of every allegiance for ransom; churches, monasteries and palaces were plundered, relics were profaned, and German soldiers staged mock Catholic ceremonies, seating a prostitute in priestly robes on the throne of St Peter. Clement surrendered in June (Wikipedia: 6 June; the Encyclopedia of the Early Modern World: 5 June), agreeing to pay a large ransom, and was held in the Castel Sant'Angelo until December. Plague, hunger and the approach of a French-led League army finally made the occupiers leave in February 1528.",
+   "Wikipedia gives an estimated 6,000 to 12,000 people murdered and Rome's population falling from about 55,000 to 10,000; the EHNE encyclopedia counts at least 12,000 deaths, rising with hunger and disease. The sack is often seen as the end of the High Renaissance in Rome: artists and scholars left, spreading Roman culture elsewhere. Clement, without the means to resist, came to terms with the emperor and crowned him in Bologna in 1530. Across Europe the sack was read in religious terms, by Lutherans as the punishment of the papal 'Antichrist' and by many Catholics as a judgment on a corrupt Church."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Sack_of_Rome_(1527)",
+    "title": "Sack of Rome (1527) (rev 1388102470)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/rome-sack",
+    "title": "Rome, Sack of (Europe, 1450 to 1789: Encyclopedia of the Early Modern World)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     7,
+     8,
+     10,
+     11,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://ehne.fr/en/encyclopedia/themes/european-humanism/europe-wars-religion/a-prelude-wars-religion-sack-rome-1527",
+    "title": "A Prelude to the Wars of Religion: The Sack of Rome (1527)",
+    "publisher": "EHNE, Encyclopédie d'histoire numérique de l'Europe (Sorbonne Université)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     9,
+     10,
+     12,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Rome was captured on 6 May 1527 by troops of Charles V, Holy Roman Emperor (EHNE: also king of Spain; in May 1527; Encyclopedia: conquest of Rome on 6 May 1527); the occupying army left in February 1528 (Wikipedia, Encyclopedia).",
+   "Clement VII had joined France, Milan, Venice and Florence in the League of Cognac (Encyclopedia: 22 May 1526) to limit Charles V's power in Italy.",
+   "The army included Spaniards under the Duke of Bourbon and German Landsknechte under Georg von Frundsberg (EHNE: Spaniards, Flemings, Italians and Germans; Wikipedia: many Landsknechte were Lutheran), largely unpaid and mutinous (EHNE: deprived of pay for over a year).",
+   "In March 1527 the pope agreed a truce with Charles de Lannoy, viceroy of Naples (EHNE: 25 March 1527), which Bourbon's men refused to honour (Encyclopedia); historians disagree whether Charles V authorised the attack (Encyclopedia; Wikipedia: Charles only intended to threaten and denied responsibility).",
+   "The army reached the walls of Rome on 5 May 1527 (Wikipedia, EHNE).",
+   "Wikipedia: the defenders were about 5,000 militiamen under Renzo da Ceri and 189 Swiss Guards.",
+   "Bourbon was killed (fatally wounded) in the first assault on 6 May; Cellini claimed in his own account to have shot him; by sunset virtually all of Rome had fallen (Encyclopedia).",
+   "The Swiss Guard was almost annihilated; survivors covered the pope's flight along the Passetto di Borgo to Castel Sant'Angelo.",
+   "Philibert of Orange-Chalon succeeded Bourbon but could not control the troops (all three sources).",
+   "Looting, killing, rape, torture and ransoming of people regardless of allegiance; churches, monasteries and palaces looted; relics profaned; mock rites including a prostitute in priestly vestments on the throne/chair of St Peter (Wikipedia, EHNE; Encyclopedia: desecrating sacred objects, torturing citizens to extract ransoms).",
+   "Clement surrendered in June (Wikipedia: 6 June, ransom of 400,000 ducats; Encyclopedia: formally capitulated on 5 June) and remained a captive in Castel Sant'Angelo until early December (Encyclopedia).",
+   "Plague, food shortage and the approach of League forces under Odet de Foix made the army withdraw in February 1528 (Wikipedia).",
+   "Deaths: Wikipedia an estimated 6,000 to 12,000 murdered and population from over 55,000 to 10,000; EHNE at least 12,000 deaths, a number that grew with hunger and epidemics.",
+   "The sack is often cited as the end of the Italian High Renaissance; artists left Rome (Encyclopedia: Rosso Fiorentino, Serlio, diffusing Roman culture); Clement made peace with Charles V (Encyclopedia: in 1529) and crowned him in Bologna in February 1530; Luther and Protestants saw it as punishment of the papal Antichrist and many Catholics as punishment for the Church's corruption (EHNE)."
+  ],
+  "disagree": "Clement VII's capitulation: Wikipedia 6 June 1527, the Encyclopedia of the Early Modern World 5 June. Deaths: Wikipedia an estimated 6,000 to 12,000 murdered; EHNE at least 12,000. Wikipedia's figures for the imperial army are themselves inconsistent (14,000 Germans and 6,000 Spaniards plus Italians, and elsewhere 34,000), so no total is given.",
+  "checked": null
+ },
+ "Q51649": {
+  "title": "First Crusade",
+  "y": 1096,
+  "place": "From western Europe across Anatolia and Syria to Jerusalem",
+  "paras": [
+   "The First Crusade (1096-1099) was the first of the religious wars launched by the Latin Church to bring Jerusalem and the Holy Land under Christian rule. Its starting point was a request for help from the Byzantine emperor Alexios I Komnenos, whose empire had lost much of Anatolia to the Seljuk Turks after their victory at Manzikert in 1071; his envoys appealed to Pope Urban II at the Council of Piacenza in 1095. At the Council of Clermont in France that November (EBSCO: on Tuesday 27 November 1095), Urban called on Christians to take up arms, and his hearers answered with the cry 'God wills it'. EBSCO's account adds that Urban hoped to heal the 1054 schism with the Eastern Church and to strengthen papal leadership of Christendom.",
+   "The first to respond were crowds of mostly poor people led by the preacher Peter the Hermit and the knight Walter Sans Avoir. On its way through Germany this People's Crusade attacked Jewish communities in the Rhineland massacres, and after crossing into Anatolia it was destroyed by the Turks at Civetot (Wikipedia: October 1096; EBSCO: August 1096). The main armies of nobles, the Princes' Crusade, set out in late summer 1096 under leaders including Godfrey of Bouillon, Raymond of Toulouse with the papal legate Adhemar of Le Puy, Bohemond of Taranto, and northern French and Flemish lords; no king took part. Wikipedia says the whole host, with non-combatants, may have numbered as many as 100,000.",
+   "At Constantinople most of the leaders swore to hand back to the Byzantines any former imperial lands they recovered. The crusaders and the Byzantines took Nicaea in June 1097 (EBSCO: on 19 June, the city being handed to the emperor), and the crusaders beat the Turks at Dorylaeum in July. After a hard march across Anatolia they besieged Antioch, which fell in June 1098 (EBSCO: 3 June) and was kept by Bohemond; they then defeated the relief army of Kerbogha, the atabeg of Mosul, outside the city. In June 1099 they reached Jerusalem, which the Fatimids of Egypt had recently retaken from the Seljuks, and stormed it on 15 July 1099, killing a large part of the population.",
+   "Godfrey of Bouillon was chosen to lead in Jerusalem with the title Defender of the Holy Sepulchre, and a Fatimid counter-attack was beaten off at Ascalon later in 1099, which ended the crusade; most crusaders then went home. Urban II died on 29 July 1099, two weeks after the capture of Jerusalem. Four crusader states were set up, the Kingdom of Jerusalem, the County of Edessa, the Principality of Antioch and the County of Tripoli. EBSCO notes that the crusaders' success owed much to the political divisions of the Muslim world, and that once these were overcome new crusades were needed; the crusaders kept a presence in the region until the fall of Acre in 1291."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/First_Crusade",
+    "title": "First Crusade (rev 1386464478)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/pope-urban-ii-calls-first-crusade",
+    "title": "Pope Urban II Calls the First Crusade (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The First Crusade (1096-1099) was the first of the Crusades launched by the Latin Church to bring the Holy Land / Jerusalem under Christian control (EBSCO: to recapture the Holy Land from the Muslims).",
+   "Byzantine emperor Alexios I Komnenos asked for military help against the Seljuk Turks, sending ambassadors to the Council of Piacenza in 1095; EBSCO: the Seljuks had defeated the emperor at Manzikert in August 1071 and advanced across Anatolia.",
+   "Urban II preached at the Council of Clermont later in 1095 (EBSCO: Tuesday 27 November 1095); the crowd answered 'God wills it' (Deus vult / Deus lo volt).",
+   "EBSCO: Urban's motives included reunifying Christendom after the 1054 schism and a universal papacy.",
+   "The People's Crusade was led by Peter the Hermit with Walter Sans Avoir (Walter the Penniless); it took part in the Rhineland massacres of Jews; it was destroyed at Civetot (Wikipedia: October 1096, by Kilij Arslan's Turks; EBSCO: August 1096).",
+   "The Princes' Crusade set out in late summer 1096 (EBSCO: in August); leaders included Godfrey of Bouillon, Raymond of Toulouse with the legate Adhemar of Le Puy, Bohemond of Taranto, and northern French and Flemish contingents; EBSCO: no kings took the cross.",
+   "Wikipedia: the forces, including non-combatants, are estimated at as many as 100,000.",
+   "At Constantinople most leaders swore to return to the Byzantine Empire any land recovered from the Turks.",
+   "Nicaea was taken in June 1097 (EBSCO: 19 June 1097, and surrendered to the Byzantine emperor; Wikipedia: Frankish attack and Byzantine naval assault); the crusaders won at Dorylaeum in July 1097 (Wikipedia).",
+   "Antioch was captured in June 1098 (EBSCO: 3 June 1098) and kept by Bohemond; Kerbogha's army was then defeated outside the city (Wikipedia: 28 June 1098).",
+   "Jerusalem, held by the Fatimids who had recently recaptured it from the Seljuks, was reached in June 1099 and stormed on 15 July 1099, with a massacre of a large part of the residents (EBSCO: 'with much bloodshed').",
+   "Godfrey was chosen as ruler with the title Defender of the Holy Sepulchre; a Fatimid counter-attack was repulsed at Ascalon later in 1099, ending the crusade; most crusaders went home.",
+   "Urban II died on 29 July 1099, fourteen days after the capture of Jerusalem.",
+   "Four crusader states were established: Kingdom of Jerusalem, County of Edessa, Principality of Antioch, County of Tripoli (EBSCO: a series of Latin principalities along the Levantine coast).",
+   "EBSCO: crusader victories owed much to the fragmentation of power in the Muslim East, and the Second and Third Crusades soon became necessary; Wikipedia: crusader presence lasted until the fall of Acre in 1291."
+  ],
+  "disagree": "The defeat of the People's Crusade at Civetot: Wikipedia October 1096, EBSCO August 1096. EBSCO calls one leader 'Robert II of Jerusalem' (Wikipedia: Robert II of Flanders); that name is not used here.",
+  "checked": null
+ },
+ "Q735876": {
+  "title": "Battle of Siffin",
+  "y": 657,
+  "place": "Siffin, on the Euphrates near Raqqa (Syria)",
+  "paras": [
+   "The Battle of Siffin was fought in 657 between the army of Ali ibn Abi Talib, the fourth caliph, drawn mainly from Iraq, and the Syrian army of Mu'awiya ibn Abi Sufyan, the Umayyad governor of Syria. It took place at Siffin, a ruined village on the right bank of the Euphrates near Raqqa in present-day Syria, and was the central battle of the First Fitna, the first Muslim civil war.",
+   "The war followed the murder of the third caliph, Uthman, by rebels in Medina in 656 and the election of Ali in his place. Mu'awiya, Uthman's kinsman and the head of the Umayyad clan, refused to pledge allegiance to Ali and demanded that Uthman's killers be punished first; some of Ali's supporters had been among the rebels, and Ali refused. In Syria, Uthman's bloodstained shirt was carried from town to town to rouse the people to revenge.",
+   "Ali's army reached Siffin early in the summer of 657 and found the Syrians holding the watering place; the Iraqis drove them off but let the Syrians use the water. For about three months the two armies, reluctant to shed Muslim blood, faced each other with skirmishes and negotiations. Wikipedia says the main battle can be dated with some certainty to Wednesday 26 July 657 and lasted until the Friday or Saturday morning, with fighting through a night remembered as laylat al-harir; EBSCO's Research Starter gives August 657. Among the dead on Ali's side was Ammar ibn Yasir, an elderly companion of the Prophet. As the battle turned in Ali's favour, Syrian soldiers raised pages of the Quran on their lances, calling for the Book of God to judge between the sides, and the fighting stopped.",
+   "Under pressure from most of his troops, Ali reluctantly accepted arbitration. An agreement signed on 2 August 657 named Abu Musa al-Ash'ari for Ali and Amr ibn al-As for Mu'awiya; their meetings in 658-659 settled nothing, but they strengthened Mu'awiya and weakened Ali. A minority of Ali's followers, who held that only God could judge, broke away and became known as the Kharijites. In January 661 a Kharijite killed Ali in the mosque at Kufa; his son Hasan gave up the caliphate to Mu'awiya, who founded the Umayyad dynasty. The battle is seen as a major step towards Umayyad rule, and EBSCO's account dates the lasting division between Sunni and Shia Muslims from this civil war."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Siffin",
+    "title": "Battle of Siffin (rev 1378650664)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/muslim-civil-war-657-661",
+    "title": "Muslim Civil War of 657-661 (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     9,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The Battle of Siffin was fought in 657 between the forces of Ali ibn Abi Talib, the fourth caliph, and those of Mu'awiya, Umayyad governor of Syria; it was part of the First Fitna (first Muslim civil war).",
+   "Siffin was a ruined Byzantine-era village on the right bank of the Euphrates near Raqqa in present-day Syria.",
+   "Uthman was assassinated by rebels in Medina in 656 (Wikipedia: June 656) and Ali was elected caliph.",
+   "Mu'awiya, Uthman's kinsman and leader of the Umayyad clan, refused to swear allegiance to Ali and demanded that Uthman's killers be punished; some of Ali's supporters were implicated and Ali refused (EBSCO; Wikipedia: Mu'awiya publicly charged Ali with complicity).",
+   "In Syria, Uthman's bloodstained shirt was taken from town to town to incite revenge.",
+   "Ali's army reached Siffin early in the summer of 657; the Syrians held the watering place; the Iraqis drove them off and Ali let the Syrians use the water; skirmishes and negotiations went on for about three months (EBSCO: the armies stayed encamped for three months, neither willing to fight other Muslims).",
+   "Date of the main battle: Wikipedia, began with some certainty on Wednesday 26 July 657 and continued to Friday or Saturday morning, fighting through laylat al-harir ('night of rumble'); EBSCO: battle was joined in August 657.",
+   "Ammar ibn Yasir, an octogenarian companion of Muhammad, was killed fighting for Ali.",
+   "As the balance moved in Ali's favour, Syrians raised pages of the Quran on their lances calling for the Book of God to judge, and the fighting stopped (EBSCO: Ali's army initially gained the upper hand; Mu'awiya's soldiers tied Quran pages to their lances calling for arbitration; a truce was declared).",
+   "Ali reluctantly agreed under pressure from the majority of his troops; the agreement was signed on 2 August 657 (15 Safar 37 AH) with Abu Musa representing Ali and Amr ibn al-As representing Mu'awiya.",
+   "The arbitration (meetings at Dumat al-Jandal and Udhruh, 658-659) ended inconclusively but strengthened Mu'awiya and weakened Ali (EBSCO: it continued without resolution).",
+   "Opponents of arbitration among Ali's followers, holding God the only arbitrator, withdrew and became the Kharijites (Khawarij); a Kharijite murdered Ali in the mosque at Kufa in 661 (Wikipedia: January 661, Ibn Muljam, Great Mosque of Kufa).",
+   "Ali's son Hasan abdicated to Mu'awiya, who founded the Umayyad dynasty; Siffin is considered a major step towards the Umayyad Caliphate (Wikipedia); EBSCO: the civil war began the sustained Sunni-Shia division."
+  ],
+  "disagree": "Date of the main battle: Wikipedia, from Wednesday 26 July 657 (negotiations failing possibly on 18 July, with single combats in the week before); EBSCO, August 657. The event record's 21 July 657 is not given by either source and is left unchanged because the two fetched sources do not agree on a replacement. EBSCO's text also names 'Abd Allah ibn az-Zubayr as leader of the revolt ending at the Camel (Wikipedia's articles name Zubayr ibn al-Awwam), so it was not used for that.",
+  "checked": null
+ },
+ "Q836844": {
+  "title": "Battle of al-Qadisiyyah",
+  "y": 636,
+  "place": "al-Qadisiyyah, south-west of Kufa (Iraq)",
+  "paras": [
+   "The Battle of al-Qadisiyyah was fought between the army of the Rashidun Caliphate, sent by the caliph Umar under Sa'd ibn Abi Waqqas, and the army of the Sasanian Empire of Persia under its commander Rustam Farrokhzad, at the small town of al-Qadisiyyah where the Mesopotamian floodplain meets the desert, in what is now south-western Iraq. Its date is uncertain: Wikipedia gives November 636, with the fighting widely held to have begun on 16 November and to have lasted about three days and a night; the 2025 Antiquity study of the site gives AD 636/637 in its text and about 637/8 in its summary, and Archaeology magazine gives 636 or 637.",
+   "Arab Muslim forces under Khalid ibn al-Walid had overrun much of Sasanian Iraq in 633, but after Khalid was sent to Syria the Persians, recovering from years of civil war under the young emperor Yazdegerd III, struck back and defeated the Muslims at the Battle of the Bridge. Umar raised a new volunteer army from across Arabia and gave Sa'd the command. The Arabs camped at al-Qadisiyyah from July 636, and months of embassies, in which the Muslim envoys offered conversion to Islam, payment of the jizya tax or war, came to nothing. After the Byzantine defeat at the Yarmuk in August 636, veterans of that battle were sent on to Iraq; Wikipedia says 5,000 of them arrived on the second day of the fighting. Its article reports modern estimates of about 30,000 men on each side, while noting that most scholars think the Sasanian army was considerably larger.",
+   "Sa'd, ill with sciatica and boils, directed the battle from the old palace at al-Qadisiyyah through a deputy, Khalid ibn Urfuta. The Persians crossed to the west bank of the Ateeq, a branch of the Euphrates, and their war elephants led attack after attack, repeatedly throwing the Arab cavalry into disorder; the Muslims answered by shooting the elephants' riders and cutting their saddle girths, and on the third day by blinding the animals and cutting their trunks until they fled. The third day's fighting went on through the night, remembered in Muslim chronicles as the 'Night of Rumbling Noises'. On the last day Rustam was killed, in circumstances that the accounts tell differently, and the Sasanian front collapsed; the commander Jalinus got much of the army back across the bridge while Muslim cavalry pursued the rest.",
+   "The victory opened the way to the Sasanian capital, Ctesiphon, which Wikipedia says fell in March 637 after a two-month siege; a Persian counter-attack was later defeated at Nahavand, and the last Sasanian emperor, Yazdegerd III, was killed in 651. The Antiquity study calls the battle decisive for the Islamic conquest of Mesopotamia, Persia and beyond, and of great cultural significance in the Arab world. In 2024 researchers from Durham University and the University of al-Qadisiyah identified the likely site from declassified 1970s US spy-satellite images and from historical texts on the Darb Zubaydah pilgrimage road, though the study says further archaeological work is needed to confirm the date of the remains."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_al-Qadisiyyah",
+    "title": "Battle of al-Qadisiyyah (rev 1386589572)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.cambridge.org/core/journals/antiquity/article/locating-alqadisiyyah-mapping-iraqs-most-famous-early-islamic-conquest-site/21B9442A0AF8C5AF41F67D7F270B0E34",
+    "title": "Locating al-Qadisiyyah: mapping Iraq's most famous early Islamic conquest site (Deadman et al., Antiquity 2025, CC BY)",
+    "publisher": "Antiquity / Cambridge University Press",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://archaeology.org/news/2024/11/13/ancient-battlefield-identified-in-iraq/",
+    "title": "Ancient Battlefield Identified in Iraq",
+    "publisher": "Archaeology Magazine (Archaeological Institute of America)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought between the Rashidun Caliphate's army under Sa'd ibn Abi Waqqas, sent by Umar, and the Sasanian army under Rustam Farrokhzad, at al-Qadisiyyah between the Mesopotamian floodplain and the desert in south-western Iraq; it was an Arab Muslim victory (Wikipedia, Antiquity, Archaeology).",
+   "Date: Wikipedia, November 636, the advance widely believed to have begun on 16 November and continued for three days (with fighting through the third night); Antiquity: AD 636/637 in the text, c. AD 637/8 in the abstract; Archaeology magazine: A.D. 636 or 637.",
+   "Khalid ibn al-Walid conquered much of Iraq in 633; after he left for Syria the Sasanians, under Yazdegerd III after the civil war of 628-632, counter-attacked and defeated the Muslims at the Battle of the Bridge.",
+   "Umar raised a volunteer army from across Arabia under Sa'd; the Arabs camped at al-Qadisiyyah from July 636; negotiations over three months failed, the envoys insisting on Islam, jizya or war.",
+   "After the Byzantine defeat at Yarmouk in August 636, 5,000 Yarmouk veterans were sent to Qadisiyyah and arrived on the second day of the battle (Wikipedia).",
+   "Wikipedia: modern estimates suggest about 30,000 Sasanians and around 30,000 Muslims after reinforcement; most scholars agree the Sasanian army outnumbered the Muslims by a sizable margin.",
+   "Sa'd had sciatica and boils, directed operations from the old royal palace at Qadisiyyah, and appointed Khalid ibn Urfuta as deputy.",
+   "The Sasanian army crossed to the west bank of the Ateeq, a branch of the Euphrates; elephants led the Persian charges and unnerved the Muslim cavalry; on day 1 Asim had archers kill the men on the elephants and infantry cut the saddle girths; on day 3 the elephants were blinded and their trunks severed and they fled.",
+   "The third day's fighting raged through the night, known in Muslim chronicles as Lailat-ul-Harir, the 'Night of Rumbling Noises'.",
+   "On the final day Rustam was killed; several differing accounts of his death exist; the Sasanian front collapsed; Jalinus took command and got the bulk of the army across the bridge; Muslim cavalry pursued.",
+   "Wikipedia: the Siege of Ctesiphon lasted two months and the city was taken in March 637; a Persian counter-attack was repulsed at Nahavand; Yazdegerd III was killed in 651, ending the Sasanian Empire.",
+   "Antiquity: the battle proved decisive for the Islamic conquest of Mesopotamia, Persia and beyond and holds huge cultural significance in the Arab world; in 2024 Durham University and University of al-Qadisiyyah researchers identified the likely site using declassified 1970s US satellite imagery (KH9, 1973; Archaeology: 1970s spy satellites) and historical texts on the Darb Zubaydah; further archaeological investigation is needed to confirm the date of the sites."
+  ],
+  "disagree": "Date: Wikipedia November 636 (from 16 November); Antiquity AD 636/637 in its text and c. 637/8 in its abstract; Archaeology magazine 636 or 637; The Past (also fetched) AD 637/638. Army sizes: Wikipedia reports modern estimates of about 30,000 a side but says most scholars think the Sasanians were considerably more numerous (its article elsewhere gives about 60,000 Sasanians). The event record keeps 16 November 636 (Wikipedia).",
+  "checked": null
  }
 }
