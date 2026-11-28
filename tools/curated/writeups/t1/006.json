@@ -1924,5 +1924,85 @@
   ],
   "disagree": "Wikipedia could not be fetched (429); the local Wikipedia extract was used only to confirm 1614 and 5 May. The event record dates the event 24 January 1789 (the royal convocation); no fetched source here gives that date, and the record was not changed.",
   "checked": null
+ },
+ "Q943277": {
+  "title": "Battle of Shiloh",
+  "y": 1862,
+  "place": "Pittsburg Landing and Shiloh Church, Hardin County, Tennessee",
+  "paras": [
+   "The Battle of Shiloh, also called the Battle of Pittsburg Landing, was fought on 6 and 7 April 1862 in south-western Tennessee during the American Civil War. After Union victories at Forts Henry and Donelson in February 1862, the Confederate commander in the West, General Albert Sidney Johnston, gave up Kentucky and Middle Tennessee and gathered his forces at Corinth, Mississippi, where two important railroads crossed. Major General Ulysses S. Grant brought his Union Army of the Tennessee up the Tennessee River by steamboat to Pittsburg Landing, 22 miles north-east of Corinth, with forward camps around a log church called Shiloh Meeting House. He was under orders to wait for Major General Don Carlos Buell's Army of the Ohio, marching from Nashville, before advancing on Corinth.",
+   "Johnston, with about 44,000 men, set out on 3 April to destroy Grant before Buell arrived; rain and mud delayed him, but by the evening of 5 April his army was deployed four miles from Pittsburg Landing. At daybreak on Sunday 6 April the Confederates burst out of the woods into the Union camps and took Grant's troops, nearly 40,000 men, by surprise; Union officers including William T. Sherman had dismissed warnings of an attack. The Federals fell back fighting through a series of stands at Shiloh Church, the Peach Orchard, Water Oaks Pond and an oak thicket that survivors named the Hornets' Nest. In the afternoon Johnston was hit in the leg while directing an attack on the Union left and bled to death, and General P. G. T. Beauregard took command. By nightfall Grant's army held a strong line near the landing.",
+   "Overnight Buell's troops arrived. On 7 April Grant attacked with the combined armies, over 54,000 men, against a Confederate army reduced to about 30,000 (American Battlefield Trust) or 34,000 (National Park Service). After counterattacks failed, Beauregard withdrew to Corinth in the afternoon, and the Federals did not press the pursuit. The two days cost 23,746 killed, wounded and missing: 13,047 Union and 10,669 Confederate, according to the American Battlefield Trust.",
+   "Shiloh was the bloodiest battle fought in America up to that time, and it ended hopes on both sides that the war would be short; Grant later wrote that after it he gave up the idea of saving the Union except by complete conquest. Grant was attacked in the press for having been surprised, but Lincoln kept him. Johnston's death was a heavy blow to the Confederacy, and by the end of May Union forces under Henry Halleck had forced Beauregard to abandon Corinth, opening the way for the later Union campaign down the Mississippi."
+  ],
+  "sources": [
+   {
+    "url": "https://www.nps.gov/shil/learn/historyculture/shiloh-history.htm",
+    "title": "Battle of Shiloh (Shiloh National Military Park)",
+    "publisher": "U.S. National Park Service",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://www.battlefields.org/learn/civil-war/battles/shiloh",
+    "title": "Shiloh Battle Facts and Summary",
+    "publisher": "American Battlefield Trust",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "Battle of Shiloh, or Pittsburg Landing (both), 6-7 April 1862 (both), in the Civil War.",
+   "After Union victories at Forts Henry and Donelson in February 1862, Johnston abandoned Kentucky and Middle Tennessee and concentrated at Corinth, Mississippi, crossroads of the Memphis & Charleston and Mobile & Ohio railroads (both).",
+   "Grant took his Army of the Tennessee up the Tennessee River by steamboat to Pittsburg Landing, 22 miles northeast of Corinth; forward camps around the log church Shiloh Meeting House (NPS; ABT: 22 miles northeast of Corinth).",
+   "Grant was ordered not to engage until reinforced by Buell's Army of the Ohio, marching overland from Nashville (both).",
+   "Johnston's army of nearly 44,000 (NPS; ABT: 44,000-man Army of Mississippi) moved on 3 April; rain delayed the attack; by nightfall on 5 April deployed four miles southwest of Pittsburg Landing (both).",
+   "At daybreak on Sunday 6 April the Confederates stormed out of the woods into the Union camps, surprising Grant's nearly 40,000 men (NPS; ABT: catching Grant's men unprepared).",
+   "ABT: Sherman dismissed warnings and intelligence about Confederate forces nearby.",
+   "Defensive stands at Shiloh Church, the Peach Orchard, Water Oaks Pond and the Hornets' Nest (both).",
+   "Johnston was shot in the (right) leg/knee in the afternoon while directing an attack on the Union left and bled to death; Beauregard took command (both).",
+   "Grant's divisions retired to a strong position near Pittsburg Landing; fighting ended at nightfall (NPS).",
+   "Buell's reinforcements arrived overnight (both); on 7 April Grant attacked (both) with combined armies of over 54,500 (NPS; ABT: nearly 54,000) against barely 34,000 (NPS) or around 30,000 (ABT).",
+   "Beauregard withdrew to Corinth (both; ABT: about 3 p.m.); the Federals did not press the pursuit (NPS).",
+   "Combined casualties 23,746 (both); ABT: Union 13,047, Confederate 10,669.",
+   "ABT: the human toll was the greatest of any war on the American continent up to that date; the public notion of a short war ended; Grant's memoirs: after Shiloh he gave up all idea of saving the Union except by complete conquest.",
+   "ABT: Grant was vilified in the press; Lincoln defended him.",
+   "ABT: Johnston's death a damaging blow to Confederate morale; by late May Halleck's armies stood before Corinth and Beauregard withdrew to Tupelo (NPS; ABT: Corinth fell by the end of May).",
+   "NPS: Federal efforts later led to Grant's campaign for Vicksburg and the Mississippi River (ABT: allowing Grant to focus on gaining control of the Mississippi)."
+  ],
+  "disagree": "Confederate strength on 7 April: about 30,000 (American Battlefield Trust) or barely 34,000 (National Park Service); Union strength nearly 54,000 (ABT) or over 54,500 (NPS).",
+  "checked": null
  }
 }
