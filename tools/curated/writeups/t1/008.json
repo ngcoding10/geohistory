@@ -1427,7 +1427,11 @@
    "A decree of 1627 (EB Bohemia, attributed) made the crown hereditary in the Habsburg house and gave German equal rights (EB Bohemia; Wikipedia Bohemian Revolt: elective monarchy abolished in favour of hereditary succession); Frederick placed under the imperial ban, his electoral title given to Maximilian (Wikipedia Bohemian Revolt; EB Thirty Years' War; EB Frederick V; CE); the revolt began the Thirty Years' War (Wikipedia; EB Thirty Years' War: the war arose in Bohemia)."
   ],
   "disagree": "Date of Ferdinand's deposition: 31 July 1619 in the 1911 Britannica's Bohemia article; August 1619 in Wikipedia (which dates the forming of the confederation to 31 July) and in the Britannica's Frederick V article. Stated in the text. The height of the fall is given variously in Wikipedia's articles (17 m; 16-20 m; 21 m) and is left out.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+   "result": "3 claims re-checked against Wikipedia's Thirty Years' War (secretary Fabricius thrown out with the two regents; all three survived) and the Catholic Encyclopedia's Bohemia article (1618, Bohemia the starting point of the war): no errors",
+   "errors": 0
+  }
  },
  "cp06-02": {
   "title": "Bohemian estates elect Frederick V king",
@@ -1553,7 +1557,11 @@
    "'Winter King', called in derision (EB Frederick V; CE: on account of the brief duration of his rule; Wikipedia: nickname appeared shortly after the beginning of his reign); died at Mainz 29 November 1632 (EB Frederick V; Wikipedia lead: 29 November 1632)."
   ],
   "disagree": "Date of the imperial decree against Frederick: 21 January 1621 (Wikipedia) or 22 January 1621 for the ban (Catholic Encyclopedia). Stated in the text. The 1911 Britannica's Frederick V article puts the battle of the White Mountain 'four days after his coronation', which conflates 4 November 1619 with 8 November 1620; the year-apart dates of Wikipedia and the Britannica's Bohemia article are followed.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Defenestrations_of_Prague",
+   "result": "5 claims re-checked against Wikipedia's Defenestrations of Prague (defenestration in May 1618; Ferdinand deposed and replaced by Frederick in 1619; White Mountain 8 November 1620) and Thirty Years' War (Frederick fled after the White Mountain; his electoral title transferred to Maximilian in February 1623): no errors",
+   "errors": 0
+  }
  },
  "Q629302": {
   "title": "Battle of Lutter",
@@ -1668,7 +1676,11 @@
    "Sea power and an alliance with Sweden sustained Denmark; peace at Lübeck in 1629, without loss of territory, but giving up interference in imperial affairs (EB Christian IV: May 1629, no diminution of territory; Wikipedia Treaty of Lübeck: pre-war territory restored, not to interfere in imperial affairs)."
   ],
   "disagree": "Losses: Wikipedia gives 3,000 Danish dead or wounded plus 2,500 who surrendered, and about 700 on Tilly's side; Bodart (1908), cited by Wikipedia, gives 7,000 and 2,000. Both stated and attributed.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Bohemian_Revolt",
+   "result": "1 claim re-checked (the Catholic victory in Bohemia alarmed Denmark and drew it into the war): no errors",
+   "errors": 0
+  }
  },
  "Q703097": {
   "title": "Edict of Restitution",
@@ -1778,7 +1790,11 @@
    "The edict was effectively revoked by the terms of the Peace of Prague (1635) (Wikipedia, Edict of Restitution; Wikipedia, Thirty Years' War)."
   ],
   "disagree": "Scale of the edict: Wikipedia gives the archbishoprics of Bremen and Magdeburg, 12 bishoprics and over 100 religious houses (if fully carried out); the 1911 Britannica says it gave back 150 northern ecclesiastical foundations. Both attributed in the text. Date of Wallenstein's dismissal: August 1630 (Wikipedia; the Catholic Encyclopedia gives 13 August for its announcement), while the Britannica's Wallenstein article says envoys were sent in September; the text says August.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Christian_IV.",
+   "result": "1 claim re-checked (Denmark beaten by 1628: Jutland occupied in 1627): no errors",
+   "errors": 0
+  }
  },
  "Q708862": {
   "title": "Treaty of Lübeck",
@@ -2008,7 +2024,11 @@
    "Sweden fought on until the Peace of Westphalia in 1648 and obtained Western Pomerania (Wikipedia Swedish intervention); Sweden as France's ally (Wikipedia Thirty Years' War: March 1636 France joined the war as an ally of Sweden)."
   ],
   "disagree": "Month of the landing in Pomerania in 1630: June (Catholic Encyclopedia, 1911 Britannica, Wikipedia's Thirty Years' War article) or July (Wikipedia's Swedish intervention article); stated in the text. Battle dates in the 1911 Britannica are given in both Old and New Style; the text uses the New Style dates, which agree with the Catholic Encyclopedia (Breitenfeld 17 September 1631, Lützen 16 November 1632, Nördlingen 6 September 1634). The crossing of the Lech is dated 14 April (Britannica, New Style) or 15 April 1632 (Catholic Encyclopedia), so the text says April. The League of Heilbronn is dated April 1633 (Wikipedia, Britannica) or March 1633 (Catholic Encyclopedia); the text says 1633.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Breitenfeld",
+   "result": "8 claims re-checked against the 1911 Britannica's Breitenfeld (17 September 1631; Swedes and Saxons under Gustavus against Tilly; Tilly's army routed) and Lützen articles (16 November 1632; Gustavus killed; a Swedish victory), its Christian IV article (peace of Lübeck 1629) and its Magdeburg article (stormed by Tilly in May 1631): no errors",
+   "errors": 0
+  }
  },
  "Q698045": {
   "title": "Sack of Magdeburg",
@@ -2235,7 +2255,11 @@
    "Date: 25 February 1634 (EB Wallenstein; EB Thirty Years' War: 15/25 February; CE Thirty Years' War: 25 February 1634; Wikipedia Thirty Years' War: Cheb on the 25th); CE Wallenstein: died at Eger 24 February 1634 (attributed); no direct orders, deed welcome at court, murderers handsomely rewarded (EB Wallenstein, attributed); command under the king of Hungary, Ferdinand's heir, really Gallas (EB Thirty Years' War; CE Thirty Years' War: Ferdinand's son assumed command); reliance on Spain, Nördlingen September 1634 (Wikipedia Thirty Years' War; CE Thirty Years' War: 6 September 1634; EB Thirty Years' War)."
   ],
   "disagree": "Date of death: 25 February 1634 (1911 Britannica, Catholic Encyclopedia's Thirty Years War article, Wikipedia) or 24 February (Catholic Encyclopedia's biography of Wallenstein); stated in the text. His aims: a 'just peace' in the interests of a united Germany (1911 Britannica, followed by Wikipedia) or treason driven by revenge (Catholic Encyclopedia); both attributed. Wikipedia's account of 1633-1634 follows the Britannica's wording closely, so the Catholic Encyclopedia is the independent check.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/L%C3%BCtzen",
+   "result": "2 claims re-checked (Wallenstein commanded at Lützen; Gustavus killed there): no errors",
+   "errors": 0
+  }
  },
  "Q312212": {
   "title": "Battle of Nördlingen",
@@ -2801,7 +2825,11 @@
    "Louis XVI executed 21 January 1793; wars with Europe, Vendée; Terror; Directory (Wikipedia First Republic; CE: Vendée insurrections, Reign of Terror, Directory 1795; EB French Revolution); the First Republic lasted until the declaration of the First Empire on 18 May 1804 (Wikipedia First Republic)."
   ],
   "disagree": "Day the Convention first met: 20 September 1792 (1911 Britannica; Wikipedia's article on the abolition) or 21 September (Catholic Encyclopedia). Proclamation of the republic: at the first session by Grégoire (Catholic Encyclopedia), 22 September (Britannica, calendar section), or never formally proclaimed, with acts dated from Year I from 22 September and the Republic declared 'one and indivisible' on 25 September (Wikipedia). All stated and attributed. The abolition of the monarchy on 21 September is agreed by all.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Marie_Antoinette",
+   "result": "2 claims re-checked (10 August 1792; royal family taken to the Temple): no errors",
+   "errors": 0
+  }
  },
  "Q3062714": {
   "title": "Execution of Louis XVI",
@@ -2894,6 +2922,10 @@
    "Marie Antoinette guillotined at the same location nine months later (Wikipedia); 16 October 1793 (CE); Louis Charles 'Louis XVII' (EB Louis XVI); Bourbon Restoration by 1814 (Wikipedia)."
   ],
   "disagree": "Vote on the appeal to the people: 424 to 287 (Wikipedia) or 424 to 283 (1911 Britannica); both stated. The Catholic Encyclopedia's French Revolution article misprints the date of execution as '2 January, 1799' and is not used for it.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Marie_Antoinette",
+   "result": "2 claims re-checked (royal family removed to the Temple after 10 August 1792; Marie Antoinette guillotined on 16 October 1793): no errors",
+   "errors": 0
+  }
  }
 }

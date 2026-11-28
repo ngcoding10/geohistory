@@ -293,7 +293,7 @@ is in `tools/cache/context/coverage.json` when built; thin before 1000 (populati
 parties before 1900.
 
 Event write-ups (`data/writeups/*.json.gz`, gzipped per event block, about 19 MB, loaded when an event is
-opened): 375 hand-written ones (`tools/curated/writeups/t1/`, 2 to 5 paragraphs from two or more fetched
+opened): 390 hand-written ones (`tools/curated/writeups/t1/`, 2 to 5 paragraphs from two or more fetched
 sources each, marked "AI-written", with their sources and the points where sources disagree), and lead
 excerpts of the event's English Wikipedia article for the rest (labelled "From Wikipedia", with a link and the
 CC BY-SA licence; from the CirrusSearch dump of 22 November 2026). Events with neither say "No detailed source
