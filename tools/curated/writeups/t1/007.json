@@ -1,0 +1,160 @@
+{
+ "cp01-03": {
+  "title": "Gaius Marius is consul for the first time",
+  "y": -107,
+  "place": "Rome; the war in Numidia (Algeria and Tunisia)",
+  "paras": [
+   "Gaius Marius came from Arpinum in Latium and was a 'new man' (novus homo), the first of his family in Roman high office. Plutarch says his parents were poor labourers, but Wikipedia judges this almost certainly false, as his family was locally important. Rome was then at war with Jugurtha, king of Numidia, whose bribes and early victories had shaken trust in the aristocracy's handling of the war. From 109 BC Marius served in Numidia as the senior officer of the consul Quintus Caecilius Metellus, his old patron. He fell out with Metellus, who mocked his wish to stand for consul, and won over the soldiers and the Italian traders in Africa by promising to end the war quickly.",
+   "Marius was elected consul for 107 BC. The Senate had extended Metellus's command, but a friendly tribune had the people's assembly transfer the Numidian war to Marius, and Metellus left Africa without meeting him. To fill his army Marius took volunteers, including men without property who had normally been kept out of the legions; Plutarch says this was against law and custom. His quaestor, who brought the cavalry, was Lucius Cornelius Sulla.",
+   "Jugurtha fought a guerrilla war, and the fighting lasted longer than Marius had promised. In 107 BC he won a battle near Cirta and took Capsa after a desert march. The war ended when King Bocchus of Mauretania, Jugurtha's father-in-law, handed Jugurtha over to Sulla. Jugurtha was led in Marius's triumph in 104 BC and died in prison. The quarrel over who deserved the credit began the enmity between Marius and Sulla. Marius went on to hold six more consulships, five of them in a row from 104 to 100 BC against the invading Cimbri and Teutones."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Gaius_Marius",
+    "title": "Gaius Marius (rev 1382591054)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Marius*.html",
+    "title": "Plutarch, Life of Marius (Loeb Classical Library, trans. B. Perrin, 1920)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Marius came from (Cereatae near) Arpinum in Latium; a 'new man' (novus homo) (Wikipedia).",
+   "Plutarch says his parents were poor and lived by their own labour; Wikipedia says this is almost certainly false and his family was locally important (stated).",
+   "Jugurthine War from 112 BC; Jugurtha's bribery and Roman defeats eroded trust in the aristocracy (Wikipedia).",
+   "From 109 BC Marius served as senior legate under the consul Quintus Caecilius Metellus (Wikipedia; Plutarch: Metellus took him to Africa as legate; the Metelli as hereditary patrons).",
+   "Enmity with Metellus, who mocked his wish to stand for consul (suggesting he wait for Metellus's young son) (Wikipedia; Plutarch).",
+   "He won over the soldiers and Italian traders by promising a quick end to the war (Wikipedia); Plutarch on his growing popularity with the soldiers.",
+   "Elected consul for 107 BC (Wikipedia).",
+   "The Senate prorogued Metellus; the tribune Titus Manlius Mancinus had the concilium plebis give Marius the command (Wikipedia).",
+   "Metellus refused to hand over command personally and left (Wikipedia; Plutarch: would not meet him, privately left the country).",
+   "Marius recruited volunteers including men without property, capite censi (Wikipedia; Plutarch: enlisted poor men contrary to law and custom).",
+   "Sulla was his quaestor, left in charge of the cavalry (Wikipedia).",
+   "Guerrilla war; Marius won a battle near Cirta in 107 BC and took Capsa after a desert march (Wikipedia).",
+   "Bocchus of Mauretania, Jugurtha's father-in-law, handed Jugurtha to Sulla (Wikipedia; Plutarch); Jugurtha died in prison after Marius's triumph in 104 BC (Wikipedia).",
+   "The affair began the hatred between Marius and Sulla (Plutarch; Wikipedia).",
+   "Marius held seven consulships in all, every year from 104 to 100 BC against the Cimbri and Teutones (Wikipedia; Plutarch: consul a second time in his absence)."
+  ],
+  "disagree": "Marius's origins: Plutarch says his parents were poor labourers; Wikipedia calls this almost certainly false. Stated in the text.",
+  "checked": null
+ },
+ "cp01-06": {
+  "title": "Sulla becomes dictator",
+  "y": -82,
+  "place": "Rome",
+  "paras": [
+   "Lucius Cornelius Sulla won the civil war against the followers of Marius and Cinna at the Colline Gate outside Rome in November 82 BC. The next day, while he addressed the Senate in the temple of Bellona, thousands of captured Samnites were being butchered nearby. He then began the proscriptions: published lists of men who could be killed without trial, with rewards for their killers and informers, their property seized and sold, and their descendants barred from office. Appian says the first list named about 40 senators and 1,600 knights; Wikipedia says it had some 80 names, with hundreds more added in the following days. Many were listed so that Sulla's partisans could settle scores or buy their property cheaply at auction.",
+   "Both consuls of 82 BC were dead, Carbo executed and the younger Marius a suicide at Praeneste. Sulla had the Senate choose an interrex, the aged Lucius Valerius Flaccus, who put a law to the people (the lex Valeria) making Sulla dictator 'for writing laws and setting the state in order'. Unlike the old emergency dictatorship, an office unused since the Second Punic War, the appointment had no time limit, and it covered everything Sulla had done or would do. Appian calls the result a kingship or tyranny in all but name.",
+   "As dictator Sulla tried to secure the Senate's rule. Tribunes of the plebs lost the right to propose laws and were barred from higher office. He increased the numbers of praetors and quaestors, made former quaestors members of the Senate, and added about 300 knights to the thinned Senate. He expanded the permanent criminal courts and staffed them with senators, and required ten years before a man could hold the same office again. He freed more than 10,000 slaves of the proscribed, who took his family name of Cornelius, and settled his veterans on land taken from his opponents.",
+   "He gave up the dictatorship around the turn of 81-80 BC (the Wikipedia articles differ on whether at the end of 81 or the start of 80), served as consul in 80 BC with Metellus Pius, and then retired to private life, dying in 78 BC. Many of his laws on the courts, the Senate and governors lasted long after him, but his march on Rome and dictatorship set an example that Pompey and Julius Caesar followed."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Sulla",
+    "title": "Sulla (rev 1386993001)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Sulla%27s_first_civil_war",
+    "title": "Sulla's civil war (rev 1385267691; 'Sulla's first civil war' redirects here)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     14
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/1*.html",
+    "title": "Appian, The Civil Wars, book I (Loeb Classical Library, trans. H. White, 1913)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Sulla's victory at the Colline Gate in 82 BC ended the civil war (Wikipedia; Appian).",
+   "The next day (2 November 82 BC), during his speech to the Senate in the temple of Bellona, Samnite prisoners were butchered (Wikipedia: three or four thousand).",
+   "Proscriptions: death without trial, immunity and rewards for killers and informers, property forfeit, descendants barred from office (Wikipedia; Appian on rewards and confiscations).",
+   "First list: Appian, about forty senators and 1600 knights; Wikipedia, some 80 names on the first list (3 November), hundreds more later (stated as each source's figure).",
+   "Many added for revenge or property; auctions at far below market prices to Sulla's friends (Wikipedia).",
+   "Both consuls of 82 were dead: Carbo executed, the younger Marius a suicide at Praeneste (Wikipedia; Appian: Carbo lost his life in Sicily, Marius in Praeneste).",
+   "The Senate elected an interrex, the aged princeps senatus Lucius Valerius Flaccus, who proposed the law making Sulla dictator (lex Valeria) (Wikipedia; Appian).",
+   "Dictator legibus scribundis et rei publicae constituendae, without time limit, indemnified for all acts (Wikipedia; Appian: not for a fixed period; for the enactment of laws and regulation of the commonwealth).",
+   "The dictatorship had been dormant since the Second Punic War, over a century (Wikipedia).",
+   "Appian: Sulla became king or tyrant de facto (Appian, attributed).",
+   "Tribunes banned from introducing legislation and barred from further office (Wikipedia; Appian on curbing the tribunes).",
+   "More praetors and quaestors (twenty); ex-quaestors enrolled in the Senate; about 300 knights added to the Senate (Wikipedia; Appian: about 300 members from the best of the knights).",
+   "Permanent courts expanded, senatorial juries; ten years before holding the same office again (Wikipedia; Appian on the re-election interval).",
+   "More than 10,000 slaves of the proscribed freed, called Cornelii; veterans settled on confiscated land (Appian; Wikipedia: some ten thousand slaves freed; veterans settled).",
+   "He resigned the dictatorship at the start of 80 BC (Wikipedia, Sulla) / near the end of 81 BC (Wikipedia, Sulla's civil war); consul in 80 BC with Metellus Pius (Wikipedia; Appian: consul a second time with Metellus Pius); retired and died in 78 BC (Wikipedia).",
+   "Many laws (courts, Senate qualification, governorships) remained long in force; his example inspired Pompey and Caesar (Wikipedia)."
+  ],
+  "disagree": "First proscription list: about 40 senators and 1,600 knights in Appian, some 80 names in Wikipedia. Resignation of the dictatorship: at the start of 80 BC in Wikipedia's article on Sulla, near the end of 81 BC in its article on the civil war. Both stated in the text.",
+  "checked": null
+ }
+}

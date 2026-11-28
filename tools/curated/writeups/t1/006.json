@@ -4129,5 +4129,373 @@
   ],
   "disagree": "Qutayba's death: Gibb (1923) says he was killed in a mutiny of his army in Ferghana after al-Walid's death in 715; Wikipedia says the new caliph Sulayman most likely had him executed. Hostages taken by Sa'id ibn Uthman in 676: 50 in Gibb, 40, 50 or 80 in Wikipedia. Arab settlers under Ziyad: 50,000 warriors with families (Wikipedia) or 50,000 families (Gibb). All stated in the text with their sources. The event record dates the conquest from 673, the year Ubayd Allah ibn Ziyad reached Merv before his crossing of 674; the sources date the first raids from 651.",
   "checked": null
+ },
+ "Q2734925": {
+  "title": "Sulla's First Civil War",
+  "y": -88,
+  "place": "Rome and Italy (Sulla's army at Nola and Capua in the south; Marius and Cinna's blockade of Rome from Etruria, Ostia and the Tiber)",
+  "paras": [
+   "Sulla's first civil war was the fighting of 88-87 BC in which Roman armies seized Rome itself for the first time. Lucius Cornelius Sulla, consul for 88 BC, had been given the command against Mithridates of Pontus. The tribune Publius Sulpicius, who wanted the newly enfranchised Italians spread across all the voting tribes, made a deal with the old general Gaius Marius: Marius would back his law, and Sulpicius would have the eastern command transferred to Marius. In street violence Sulpicius's men killed the son of Sulla's fellow consul, Quintus Pompeius Rufus, and the consuls had to lift the suspension of public business they had declared. Sulpicius's laws were passed, and Sulla left Rome to join his army in southern Italy.",
+   "Sulla's soldiers, afraid of losing the plunder of the East to men Marius would recruit, agreed to follow him to Rome, but all his officers except one quaestor deserted him. The troops killed the officers Marius sent to take over the army. Asked by envoys why he was marching on his country, Sulla said he was freeing it from tyrants. Appian says he brought six legions; Plutarch speaks of at least 35,000 legionaries. Sulla seized the Esquiline Gate and Pompeius the Colline Gate. Marius and Sulpicius met them near the Esquiline with hastily armed men, in what Appian calls the first battle fought inside Rome in full military fashion, but they fled after their call for slaves to join them failed. Twelve men, Marius, his son and Sulpicius among them, were declared enemies of the state. Sulpicius was betrayed and killed, Marius escaped to Africa, and Sulla had Sulpicius's laws annulled.",
+   "Sulla then lost the elections: his enemy Lucius Cornelius Cinna became consul for 87 BC, and Sulla left to fight Mithridates in Greece. Cinna took up the voting plan again, but his colleague Gnaeus Octavius drove him from Rome after a fight in the Forum, and the Senate deposed him and chose Lucius Merula in his place. Cinna won over a Roman army and the Italian towns, and Marius landed in Etruria and raised more men. Together they blockaded Rome; Marius took Ostia and cut off the city's grain, the towns that stored its food were captured, and the Senate opened talks.",
+   "Late in 87 BC Cinna and Marius entered Rome. Octavius was killed and his head was hung in the Forum, the first consul's head shown there, according to Appian. Their followers then hunted down opponents, among them the orator Marcus Antonius and Crassus, while Merula and Lutatius Catulus took their own lives before trial; Wikipedia puts the dead at some 100 nobles. Sulla was declared a public enemy, his house was destroyed and his laws were repealed. Cinna and Marius had themselves made consuls for 86 BC, Marius for the seventh time, but he died soon after: 17 days into his consulship in Plutarch, in its first month in Appian. Cinna's regime held Rome until Sulla came back from the East and won a second civil war in 83-82 BC."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Sulla",
+    "title": "Sulla (rev 1386993001)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     22,
+     23
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Sulla%27s_first_civil_war",
+    "title": "Sulla's civil war (rev 1385267691; 'Sulla's first civil war' redirects here)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     20,
+     21,
+     22,
+     23
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/1*.html",
+    "title": "Appian, The Civil Wars, book I (Loeb Classical Library, trans. H. White, 1913)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Marius*.html",
+    "title": "Plutarch, Life of Marius (Loeb Classical Library, trans. B. Perrin, 1920)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     8,
+     10,
+     12,
+     14,
+     16,
+     17,
+     18,
+     19,
+     21,
+     23
+    ]
+   }
+  ],
+  "claims": [
+   "Sulla was consul for 88 BC (Wikipedia).",
+   "Sulla had been allotted / awarded the command against Mithridates (Wikipedia; Appian: chosen by lot to the command of Asia and the Mithridatic war).",
+   "The tribune Sulpicius proposed distributing the new Italian citizens among all the tribes and made a deal with Marius to transfer Sulla's command to him (Wikipedia; Appian; Plutarch: Sulpicius proposed Marius as commander against Mithridates).",
+   "Sulpicius's armed followers attacked the consuls; the son of the consul Pompeius (Sulla's son-in-law) was killed (Appian; Plutarch: Sulpicius seized the consul's son and butchered him).",
+   "The consuls had declared a suspension of public business (iustitium), which Sulla then lifted; Sulpicius's laws passed; Sulla left for his army (Wikipedia: near Nola in southern Italy; Appian: at Capua; Plutarch: came in haste to his camp).",
+   "The soldiers feared Marius would enlist others and they would miss the plunder; they told Sulla to lead them to Rome (Appian; Wikipedia).",
+   "All his officers except one quaestor deserted (Appian; Wikipedia: except his quaestor, almost certainly Lucullus).",
+   "The soldiers killed the officers sent by Marius to take over the army (Plutarch: two military tribunes; Wikipedia: Marcus Gratidius).",
+   "To the envoys Sulla answered that he marched 'to deliver her from tyrants' (Appian; Wikipedia).",
+   "Army size: Appian, six legions; Plutarch, no fewer than 35,000 legionaries (stated as each source's figure).",
+   "Sulla took the Esquiline gate, Pompeius the Colline gate; battle near the Esquiline forum, the first fought in Rome with bugle and standards in full military fashion (Appian, attributed); Sulla's men pelted from rooftops and nearly broke before Marius's makeshift forces (Wikipedia).",
+   "Marius and Sulpicius proclaimed freedom to slaves who would join them; none (Appian) or only three (Plutarch) came; they fled the city (Appian; Plutarch; Wikipedia).",
+   "Twelve outlawed, including Marius, his son and Sulpicius (Wikipedia; Appian: about twelve, named).",
+   "Sulpicius was betrayed and killed; Marius and his son escaped to Africa (Wikipedia; Appian; Plutarch).",
+   "Sulla had Sulpicius's legislation annulled (Wikipedia; Appian).",
+   "Cinna, Sulla's enemy, was elected consul for 87 BC; Sulla left for the war against Mithridates in Greece (Wikipedia; Appian: Cinna Sulla's successor in the consulship; Sulla went to Asia; Plutarch: Sulla waging war in Boeotia).",
+   "Cinna revived the scheme of distributing new citizens; Octavius drove Cinna out after fighting in the Forum; the Senate deposed Cinna and elected Lucius Merula (Appian; Plutarch: Octavius won, cast out Cinna, put Merula in his place; Wikipedia: Octavius induced the senate to outlaw Cinna).",
+   "Cinna won over an army and the Italian towns; Marius landed in Etruria and raised men (Appian; Plutarch: landed at Telamon in Tyrrhenia; Wikipedia: Cinna suborned the army besieging Nola, Marius offered his services).",
+   "They blockaded Rome; Marius took Ostia and cut off the grain supply; he captured the towns where grain was stored; the Senate sent envoys to treat (Appian; Plutarch).",
+   "Late 87 BC Cinna and Marius took Rome; Octavius killed and his head displayed before the rostra, the first consul's head so exposed (Appian, attributed; Wikipedia: they killed Octavius, heads exhibited in the Forum).",
+   "Victims included Marcus Antonius the orator and Crassus; Merula opened his veins and Catulus suffocated himself before trial (Appian; Plutarch on Antonius and Catulus); some 100 Roman nobles murdered (Wikipedia, 'Sulla's civil war').",
+   "Sulla declared a public enemy, his house razed, his laws repealed (Appian; Wikipedia: declared Sulla an outlaw / Sulla's reforms declared invalid).",
+   "Cinna and Marius consuls for 86 BC, Marius for the seventh time; Marius died 17 days after entering office (Plutarch) / in the first month (Appian) / a fortnight after (Wikipedia, 'Sulla's civil war'); Cinna's regime controlled Rome until Sulla's return; the second civil war of 83-82 BC (Wikipedia)."
+  ],
+  "disagree": "The event record, 88-86 BC, is the conflict of Sulla's first consulship and the Cinna-Marius takeover; Wikipedia's 'Sulla's first civil war' now redirects to an article on the war of 83-82 BC, so the text is built from the Wikipedia article on Sulla, Appian's Civil Wars book I and Plutarch's Marius. Marius's death: 17 days into his seventh consulship (Plutarch), in its first month (Appian), a fortnight after (Wikipedia); Plutarch's figure is given with Appian's. Sulla's army: six legions (Appian), at least 35,000 legionaries (Plutarch). Slaves answering Marius's call in 88 BC: none (Appian), only three (Plutarch).",
+  "checked": null
+ },
+ "Q3950956": {
+  "title": "Battle of Qatwan",
+  "y": 1141,
+  "place": "Qatwan steppe, north of Samarkand (Uzbekistan)",
+  "paras": [
+   "The Battle of Qatwan was fought on 9 September 1141 on the Qatwan steppe north of Samarkand. On one side were the Qara Khitai (the Western Liao) under their ruler, the gurkhan Yelü Dashi; on the other the Seljuk sultan Ahmad Sanjar and his Karakhanid vassals. The Qara Khitai were Khitans who had moved west after the Jin destroyed their Liao dynasty in northern China in 1125. They took Balasagun, the Eastern Karakhanid capital, and in 1137 defeated Mahmud, the Western Karakhanid khan of Samarkand, near Khujand. Mahmud called on his Seljuk overlord Sanjar, who was also his uncle according to Barthold.",
+   "In 1141 Sanjar came to Samarkand with his army. The Qara Khitai were drawn in by the quarrel of the Karluk Turks with the Karakhanids and Seljuks, and Wikipedia adds that the Khwarazmians, themselves Seljuk vassals, invited them too. The size of the armies is uncertain: Wikipedia reports figures from 20,000 to 700,000 for the Qara Khitai and 100,000 for the Seljuks, while some contemporaries said the two sides were equal. The Qara Khitai attacked from all sides, surrounded the Seljuks and forced their centre into a valley called Dargham, about 12 km from Samarkand. The Seljuk army was destroyed and Sanjar barely escaped. The chronicler al-Husayni says Sanjar's emirs were divided and fell back early, and that a common soldier took the sultan's place so that he could get away. Wikipedia gives the dead as 11,000 to 100,000, while Barthold notes the report that the Muslims lost up to 30,000 men. Sanjar's wife was among the captives.",
+   "Yelü Dashi spent ninety days in Samarkand and made Mahmud's brother Ibrahim its ruler under Qara Khitai overlordship, while Mahmud fled with Sanjar. Bukhara was left to its local Burhan family, and Khwarazm became a vassal; after a raid in 1142 its ruler Atsiz agreed to pay 30,000 dinars a year. Barthold stresses that the Qara Khitai did not seek wide conquests and were content to rule the nearest Muslim states, while Tirmidh on the Amu Darya stayed Seljuk. Even so, the defeat marked the beginning of the end of the Great Seljuk Empire. News that the greatest Muslim sultan had been beaten by non-Muslims reached the Crusaders and gave rise to the legend of the Christian king Prester John."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Qatwan",
+    "title": "Battle of Qatwan (rev 1388086865)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://archive.org/download/in.ernet.dli.2015.57651/2015.57651.Four-Studies-On-The-History-Of-Central-Asia-Vol1_text.pdf",
+    "title": "V. V. Barthold, Four Studies on the History of Central Asia, vol. 1 (trans. V. and T. Minorsky, 1956): A Short History of Turkestan; History of the Semirechye",
+    "publisher": "Internet Archive (Digital Library of India scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     11,
+     13,
+     15,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "Fought on 9 September 1141 on the Qatwan steppe north of Samarkand (Wikipedia; Barthold: 9 September 1141, Qatvan steppe, north of Samarqand).",
+   "Between the Qara Khitai (Western Liao) and the Seljuk Empire with its Karakhanid vassals; ruler Yelü Dashi, title gurkhan; Sanjar (Wikipedia; Barthold: gurkhan, 'Western Liao', Sultan Sanjar).",
+   "The Khitans moved west after the Jin destroyed the Liao in 1125 (Wikipedia; Barthold: the Khitay left their native country, Western Liao).",
+   "They took Balasagun (Wikipedia; Barthold: seized Balasaghun).",
+   "In 1137 they defeated Mahmud, khan of Samarkand, near Khujand (Wikipedia; Barthold).",
+   "Mahmud appealed to his overlord Sanjar (Wikipedia); Barthold: his uncle Sultan Sanjar.",
+   "In 1141 Sanjar arrived in Samarkand; the Qara Khitai responded to an appeal by the Karluks in conflict with the Karakhanids and Seljuks, and were invited by the Khwarazmians (Wikipedia; Barthold: the gurkhan intervened in the feuds of Mawarannahr on the side of the Turkish aristocracy).",
+   "Figures of 20,000 to 300,000 and 700,000 for the Qara Khitai, 100,000 for the Seljuks; some contemporaries said the forces were equal (Wikipedia).",
+   "Encirclement; Seljuk centre forced into the wadi Dargham about 12 km from Samarkand; army destroyed; Sanjar barely escaped (Wikipedia).",
+   "Al-Husayni: no unanimity among the emirs, early retreat, an ordinary soldier put in the sultan's place (Wikipedia, citing al-Husayni's chronicle).",
+   "Dead: 11,000 to 100,000 (Wikipedia); 'it was said that the Muslims lost up to 30,000 men' (Barthold) (stated as each source's figure).",
+   "Sanjar's wife captured (Wikipedia).",
+   "Yelü Dashi spent ninety days in Samarkand and appointed Mahmud's brother Ibrahim (Wikipedia); Mahmud fled with the sultan and was succeeded by his brother as the gurkhan's vassal (Barthold).",
+   "Bukhara left to the Burhan family; Khwarazm a vassal; in 1142 Erbuz raided Khwarazm and Atsiz agreed to 30,000 dinars a year (Wikipedia).",
+   "Barthold: the Qara Khitai were not ambitious of extensive conquests, subjected the nearest Muslim states including Bukhara and Khwarazm; Tirmidh remained Seljuk (Barthold); the battle signalled the beginning of the end of the Great Seljuk Empire (Wikipedia).",
+   "News of the defeat reached the Crusaders and gave rise to the legend of Prester John (Wikipedia; Barthold)."
+  ],
+  "disagree": "Losses: Wikipedia gives figures from 11,000 to 100,000 dead; Barthold reports that the Muslims were said to have lost up to 30,000 men. Army sizes vary widely between sources (Wikipedia). Both stated in the text with their sources.",
+  "checked": null
+ },
+ "cp01-01": {
+  "title": "Tiberius Gracchus is tribune and is killed",
+  "y": -133,
+  "place": "Rome: the assembly and the Capitol",
+  "paras": [
+   "Tiberius Sempronius Gracchus, from one of Rome's leading families and a grandson of Scipio Africanus through his mother Cornelia, was tribune of the plebs in 133 BC. He proposed a land law that would enforce an old limit on how much public land one person could hold, 500 jugera (about 120 hectares), with an allowance for sons in Appian's account, and hand the surplus to poor citizens. It was meant to help the rural poor, many of them displaced by large slave-worked estates, and to increase the number of men with enough property to serve in the army.",
+   "The wealthy holders of public land opposed him, and the Senate persuaded his fellow tribune Marcus Octavius to veto the bill. Tiberius had the people vote Octavius out of office, an unprecedented step, and the law passed, with a commission of three to divide the land: Tiberius, his father-in-law Appius Claudius and his brother Gaius. When the Senate gave the commission almost no money, Tiberius proposed using the treasure that King Attalus III of Pergamum had left to Rome, intruding on the Senate's control of finance and foreign affairs. His enemies accused him of aiming at kingship.",
+   "Tiberius then stood for a second tribunate in a row, which broke Roman norms. On election day his supporters occupied the Capitol, where the vote was held. In the Senate the chief priest, Scipio Nasica, Tiberius's cousin, failed to persuade the consul to act and led senators and their followers up to the Capitol. Armed with clubs and the broken legs of benches, they killed Tiberius and many of his supporters, more than three hundred according to Plutarch, and threw the bodies into the Tiber.",
+   "His land law survived: the commission went on working, and Wikipedia says it distributed some 3,268 square kilometres to between 70,000 and 130,000 settlers. Plutarch calls his death the first civil strife at Rome since the end of the kings to end in bloodshed, and ancient and modern writers alike treat it as the start of a new age of political violence. Ten years later his brother Gaius took up his cause as tribune."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Tiberius_Gracchus",
+    "title": "Tiberius Gracchus (rev 1379009988)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/1*.html",
+    "title": "Appian, The Civil Wars, book I (Loeb Classical Library, trans. H. White, 1913)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     5,
+     6,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Tiberius_Gracchus*.html",
+    "title": "Plutarch, Life of Tiberius Gracchus (Loeb Classical Library, trans. B. Perrin, 1921)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Tiberius Sempronius Gracchus, of a leading family; his mother Cornelia was a daughter of Scipio Africanus (Wikipedia; Plutarch on Cornelia and his father).",
+   "Plebeian tribune in 133 BC (Wikipedia).",
+   "His law enforced an earlier limit on public land, 500 jugera (Appian; Wikipedia: about 120 hectares), with half as much again for each son (Appian, attributed), surplus to poor citizens (Wikipedia; Appian).",
+   "Aims: help the rural poor displaced by slave-worked latifundia; more men qualifying for army service (Wikipedia; Plutarch on the poor driven out by the rich).",
+   "Rich holders opposed; the Senate induced the tribune Marcus Octavius to veto (Wikipedia; Appian: Octavius induced by the possessors; Plutarch).",
+   "Tiberius had Octavius deposed by vote of the tribes, an unprecedented/illegal step (Wikipedia; Appian; Plutarch: 'illegal and unseemly').",
+   "Law passed; three commissioners: Tiberius, Appius Claudius his father-in-law, and Gaius Gracchus (Plutarch; Wikipedia: Appius Claudius Pulcher his father-in-law).",
+   "Senate allotted very little money; Tiberius proposed using the bequest of Attalus III of Pergamum, usurping senatorial prerogatives over finance and foreign policy (Wikipedia; Plutarch: Attalus Philometor's will made the Roman people his heir).",
+   "Accused of regal ambitions (Wikipedia; Plutarch).",
+   "He stood for re-election to the tribunate, violating norms; his supporters seized the Capitol where the voting was held (Wikipedia; Appian; Plutarch).",
+   "Scipio Nasica, pontifex maximus and his first cousin, after the consul Scaevola refused to act, led senators to the Capitol; they killed Tiberius and supporters with clubs and broken benches; bodies thrown into the Tiber (Wikipedia; Appian; Plutarch).",
+   "More than three hundred killed by sticks and stones (Plutarch, attributed).",
+   "The agrarian law was not repealed; the commission continued; some 3,268 sq km to between 70,000 and 130,000 settlers (Wikipedia, attributed); Plutarch: the senate no longer opposed the distribution.",
+   "Plutarch: the first sedition at Rome since the kings to end in bloodshed; Cicero and modern historians see 133 BC as the start of polarised, violent politics (Wikipedia; Plutarch); Gaius tribune a decade later (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp01-02": {
+  "title": "Gaius Gracchus is tribune",
+  "y": -123,
+  "place": "Rome; the colony on the site of Carthage; the Aventine Hill",
+  "paras": [
+   "Gaius Sempronius Gracchus, the younger brother of the murdered tribune Tiberius Gracchus, was tribune of the plebs in 123 BC and again in 122 BC. He had served on his brother's land commission, and he was a powerful speaker. In his first year he passed a grain law: Wikipedia describes a fixed, subsidised price of six and a third asses per modius, while Appian speaks of a monthly distribution to each citizen at public expense. He also renewed his brother's land law, made rules for army service, and had the Senate assign the consuls' provinces before the elections.",
+   "In his second term he moved the juries of the extortion court from senators to the equestrians (knights), and he and his ally, the tribune Rubrius, founded a colony on the site of Carthage, which Gaius went to Africa to set up. He also proposed giving full citizenship to the Latins and voting rights to the other Italian allies. The Senate set another tribune, Livius Drusus, against him: Drusus vetoed the citizenship bills and won the people over with a rival plan for twelve colonies. Gaius lost popularity and failed to win a third term.",
+   "In 121 BC his opponents moved to repeal the Carthage colony law. During a sacrifice on the Capitol a man was stabbed to death by Gaius's followers, and the consul Lucius Opimius called the Senate, which passed its first 'final decree' (senatus consultum ultimum), urging him to defend the state by any means. Gaius and his ally Marcus Fulvius Flaccus armed their followers and occupied the temple of Diana on the Aventine Hill. Opimius sent armed men against them; Flaccus and his sons were killed, and Gaius fled across the Tiber, where, according to Appian, he had a slave kill him as he was about to be taken. Their heads were paid for with their weight in gold, many followers were executed, and Opimius purified the city and built a temple of Concord. Most of Gaius's laws remained in force."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Gaius_Gracchus",
+    "title": "Gaius Gracchus (rev 1378035155)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/1*.html",
+    "title": "Appian, The Civil Wars, book I (Loeb Classical Library, trans. H. White, 1913)",
+    "publisher": "LacusCurtius (Bill Thayer), University of Chicago",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "Gaius Gracchus, younger brother of Tiberius (Wikipedia; Appian).",
+   "Tribune of the plebs in 123 and 122 BC (Wikipedia; Appian: tribune a second time).",
+   "He served on the land commission (Wikipedia on boundary stones naming him; Appian: agreeable to them as a triumvir); a great orator (Wikipedia).",
+   "Grain law: Wikipedia, a maximum price of six and a third asses per modius, subsidised; Appian, a monthly distribution of corn to each citizen at public expense (stated as each source's account).",
+   "Re-enacted his brother's land law; a military law; consular provinces to be assigned before elections (Wikipedia).",
+   "Jury pool of the extortion court transferred to the equestrians (Wikipedia; Appian: courts transferred from the Senate to the knights).",
+   "Colony at Carthage carried by his ally Rubrius; Gaius went to Africa to found it (Wikipedia; Appian: Gracchus sailed for Africa, colony where Carthage had stood).",
+   "Proposed citizenship for the Latins and rights for Italian allies (Wikipedia; Appian).",
+   "The Senate set up Livius Drusus, who vetoed and proposed twelve colonies (Wikipedia; Appian).",
+   "He lost popularity and was defeated for a third tribunate (Wikipedia; Appian: lost the favour of the rabble).",
+   "In 121 BC the tribune Minucius Rufus sought to repeal the Carthage colony law (Wikipedia).",
+   "An attendant/plebeian (Antyllus in Appian) was stabbed to death by Gaius's partisans during a sacrifice (Wikipedia; Appian).",
+   "Opimius convened the Senate, which passed the first senatus consultum ultimum (Wikipedia; Appian: Opimius convoked the Senate and armed force).",
+   "Gaius and Fulvius Flaccus armed followers and occupied the temple of Diana on the Aventine (Wikipedia; Appian).",
+   "Opimius sent armed men; Flaccus and his sons killed; Gaius fled across the Tiber and was killed or committed suicide (Wikipedia); Appian: he presented his throat to a slave as he was about to be arrested (attributed).",
+   "The heads of Gracchus and Flaccus were paid for with their weight in gold; followers imprisoned and strangled / many executed (Appian; Wikipedia: many executed without trial).",
+   "Opimius performed a lustration and built a temple of Concord; most of Gaius's legislation remained undisturbed (Wikipedia; Appian)."
+  ],
+  "disagree": "Grain law: Wikipedia describes a subsidised maximum price of six and a third asses per modius; Appian a monthly distribution to each citizen at public expense. Gaius's death: Wikipedia says he was killed or took his own life; Appian that he had a slave kill him. Both stated in the text with their sources.",
+  "checked": null
  }
 }
