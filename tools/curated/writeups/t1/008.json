@@ -3954,5 +3954,285 @@
   ],
   "disagree": "Date of the proclamation: 5 July 1811 (Wikipedia; the date on the signed act) or 14 July 1811 (1911 Britannica); both stated.",
   "checked": null
+ },
+ "Q3248484": {
+  "title": "Argentine Declaration of Independence",
+  "y": 1816,
+  "place": "San Miguel de Tucumán, Argentina",
+  "paras": [
+   "The May Revolution of 1810 in Buenos Aires had removed the Spanish viceroy of the Río de la Plata and put a governing junta in his place, but for six years the provinces did not formally break with Spain. By 1815 their position was dangerous: Ferdinand VII, restored to the Spanish throne in 1814, was determined to recover the colonies, royalist armies from Peru had defeated the patriots in Upper Peru (now Bolivia) and threatened the north, and the provinces were divided among themselves. After a revolt in April 1815 removed the Supreme Director Carlos María de Alvear, a general congress was summoned.",
+   "The congress opened in March 1816 at San Miguel de Tucumán, in the north-west, with 33 deputies (Wikipedia gives 24 March as the opening date, the 1911 Encyclopaedia Britannica 25 March). The provinces of José Gervasio Artigas's Federal League, among them the Banda Oriental (now Uruguay), Santa Fe and Entre Ríos, were not represented, and Paraguay had already gone its own way, while several provinces of Upper Peru did send deputies. The congress named Juan Martín de Pueyrredón Supreme Director, and on 9 July 1816, under the presidency of Francisco Narciso de Laprida, deputy for San Juan, it declared the independence of the United Provinces of South America.",
+   "According to Wikipedia, the declaration rested on the argument used by other Spanish American declarations, such as Venezuela's: that when Ferdinand VII was deposed by Napoleon in 1808, sovereignty had returned to the peoples of Spanish America, dissolving their union with Spain. The name United Provinces of South America was chosen in the hope of drawing in other independence movements that were not represented. The declaration was also translated into Quechua and Aymara.",
+   "Independence did not end the provinces' divisions. The congress moved to Buenos Aires in 1817 and drew up a centralist constitution in 1819, but it was rejected, and the congress was dissolved in 1820 after the Federal League provinces defeated the national army at Cepeda, beginning years of conflict between centralists (Unitarians) and federalists. The war against Spain continued: San Martín's army, crossing from the Argentine provinces, won the battles of Chacabuco in 1817 and Maipú in 1818 in Chile. Spain recognised Argentine independence only much later: in 1857 according to Wikipedia, in 1842 according to the Britannica."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Argentine_Declaration_of_Independence",
+    "title": "Argentine Declaration of Independence (rev 1367580681, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Congress_of_Tucum%C3%A1n",
+    "title": "Congress of Tucumán (rev 1361962523, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     8,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Argentina",
+    "title": "Argentina, Encyclopaedia Britannica (11th ed., 1911), history section",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     6,
+     7,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Chacabuco",
+    "title": "Battle of Chacabuco (rev 1381888891, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Maip%C3%BA",
+    "title": "Battle of Maipú (rev 1382835483, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "1810 May Revolution ended the authority of the viceroy Cisneros, replaced by the Primera Junta (Wikipedia; Congress of Tucuman; EB: junta, ex-viceroy Cisneros retired to Montevideo).",
+   "Spanish monarchy resumed its functions in 1814 and was determined to recover its colonies (Wikipedia Declaration).",
+   "Royalists from Peru victorious in Upper Peru, threatening the north (Wikipedia Declaration; Congress of Tucuman).",
+   "15 April 1815 revolution ended Alvear's mandate as Supreme Director and demanded a General Congress (Wikipedia; Congress of Tucuman); EB: state of disorder, almost of anarchy, in the provinces.",
+   "Sessions started 24 March 1816 (Wikipedia, both articles); 33 deputies (Wikipedia, both articles); EB: congress assembled at Tucuman on 25 March 1816 - both dates stated.",
+   "Congress named Pueyrredon supreme director (EB, attributed to EB in claims; not in the fetched Wikipedia texts).",
+   "Federal League provinces not represented (Wikipedia Declaration: Santa Fe, Entre Rios, Corrientes, Misiones and the Eastern Province; Congress of Tucuman: Banda Oriental and other Liga Federal provinces of Artigas rejected; Paraguay had already proclaimed independence); Upper Peru provinces represented (both). 9 July 1816 declaration (Wikipedia; Congress of Tucuman; EB: on the 9th of July the separation of the united provinces was formally proclaimed).",
+   "President of Congress Laprida, delegate from San Juan (Wikipedia, both articles); independence of the United Provinces of South America (both).",
+   "Wikipedia (attributed): the Declaration claimed Spanish America recovered its sovereignty in 1808 when Ferdinand VII was deposed, dissolving the union; same legal concept as Venezuela's declaration.",
+   "Name chosen to appeal to and incorporate other regions not represented (Congress of Tucuman).",
+   "Translated into Quechua and Aymara (Wikipedia Declaration).",
+   "Congress moved to Buenos Aires 1817, Constitution 1819 rejected, dissolved 1820 after Cepeda; Unitarian vs Federal conflict (Wikipedia; Congress of Tucuman).",
+   "Chacabuco 1817, Maipu 1818 by the combined forces of Buenos Aires and Chile under San Martin (EB; Wikipedia Battle of Chacabuco: 12 February 1817, Army of the Andes from the United Provinces under San Martin; Wikipedia Battle of Maipu: 5 April 1818, San Martin).",
+   "Spain's recognition: 29 April 1857 (Wikipedia Declaration recognition list) vs 1842 (EB) - both stated."
+  ],
+  "disagree": "Opening of the congress: 24 March 1816 (Wikipedia) or 25 March (1911 Britannica). Spain's recognition of independence: 1857 (Wikipedia) or 1842 (Britannica). Both stated. The text of the act itself could not be fetched (Wikimedia API rate limit; guessed Spanish Wikisource title 404), so its contents are attributed to Wikipedia's summary.",
+  "checked": null
+ },
+ "Q1425658": {
+  "title": "Battle of Chacabuco",
+  "y": 1817,
+  "place": "Chacabuco, north of Santiago, Chile",
+  "paras": [
+   "Chile's first bid for self-government, begun in 1810, ended in 1814 when a royalist army sent by the viceroy of Peru crushed the patriots at Rancagua, and many of them, including Bernardo O'Higgins, fled across the Andes to Mendoza in Argentina. There the Argentine general José de San Martín, governor of the province of Cuyo, was preparing a larger plan: to defeat Spanish power at its centre in Lima by first freeing Chile and then attacking Peru by sea. With O'Higgins he spent about two years raising and training the Army of the Andes from Argentines and Chilean exiles, while the people of Mendoza made gunpowder, ammunition and even cannon for it.",
+   "In January 1817 the army set out across the Andes in two main columns, through the Los Patos and Uspallata passes, crossing passes 13,000 feet high according to the 1911 Encyclopaedia Britannica. Wikipedia's article on the crossing and the Britannica both put the fighting force at about 4,000 men (the Britannica: some 3,000 infantry and 1,000 cavalry). San Martín's feints misled the royalist governor, Casimiro Marcó del Pont, about where the blow would fall, so the crossing was not opposed, though many men and more than half the horses were lost on the way.",
+   "To delay the patriots, a royalist force of about 1,500 men under Brigadier Rafael Maroto took position at Chacabuco, a valley north of Santiago. San Martín attacked on 12 February 1817, dividing his army in two: one division under O'Higgins was to strike from the front while Miguel Estanislao Soler's division came round the royalist flank and rear. O'Higgins attacked before Soler was in place and was hard pressed, but when Soler arrived and took a royalist artillery position, the royalists were surrounded around the Chacabuco ranch and destroyed. Wikipedia gives royalist losses as 500 killed and 600 captured, against 12 patriots killed in battle and 120 who later died of wounds; Maroto escaped.",
+   "The patriots entered Santiago, and when San Martín declined the leadership, O'Higgins was made Supreme Director of Chile. The royalists still held the south, and a new army under Mariano Osorio defeated San Martín at Cancha Rayada, but his victory at Maipú in April 1818 secured Chilean independence and opened the way for his expedition to Peru."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Chacabuco",
+    "title": "Battle of Chacabuco (rev 1381888891, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Crossing_of_the_Andes",
+    "title": "Crossing of the Andes (rev 1374600996, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Maip%C3%BA",
+    "title": "Battle of Maipú (rev 1382835483, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/San_Martin,_Jos%C3%A9_de",
+    "title": "San Martin, José de, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Chile",
+    "title": "Chile, Encyclopaedia Britannica (11th ed., 1911), history section",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     6,
+     8,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "1810 junta in Santiago; patriots defeated at Rancagua in 1814 by forces sent by the viceroy of Peru (EB Chile; Wikipedia Crossing: First Government Junta 1810, defeated at Rancagua 1814).",
+   "O'Higgins and other Chileans fled to Mendoza (Wikipedia Crossing; EB San Martin: Chilean patriots who had fled across the mountains after Rancagua; EB Chile: force organized at Mendoza by San Martin and O'Higgins).",
+   "San Martin's strategy: defeat the royalists at Lima, first freeing Chile, then invading Peru (Wikipedia Crossing; Wikipedia Chacabuco: first step drive them out of Chile; EB San Martin: governor of Cuyo, prepared the invasion of Chile, then Peru; EB Chile).",
+   "About two years raising an army of Argentines and Chileans (EB San Martin: after two years raised a well-trained army of Chileans and Argentines; Wikipedia Chacabuco: in under two years); Mendoza made gunpowder, ammunition, cannons (Wikipedia Crossing).",
+   "January 1817 departure (all); two divisions via Los Patos and Uspallata (Wikipedia Crossing); passes 13,000 ft (EB San Martin, attributed).",
+   "Force: 4,000 men (Wikipedia Crossing) and about 3,000 infantry and 1,000 cavalry (EB San Martin) - attributed; Wikipedia Chacabuco's 6,000 noted in disagree.",
+   "Feints misled the royalists, crossing unopposed (Wikipedia Chacabuco; EB San Martin: by a clever feint he evaded opposition); losses up to a third of men and more than half the horses (Wikipedia Chacabuco; Wikipedia Crossing: lost one-third); royal governor Marco del Pont (Wikipedia Chacabuco).",
+   "About 1,500 royalists under Maroto at Chacabuco, a valley near Santiago (Wikipedia Chacabuco; Wikipedia Crossing); battle 12 February 1817 (Wikipedia; EB San Martin: Feb. 12, 1817; EB Chile: spring 1817).",
+   "Two divisions: Soler on the flank and rear, O'Higgins; O'Higgins charged prematurely; Soler took a royalist artillery position; royalists surrounded at the ranch (Wikipedia Chacabuco).",
+   "Losses: 500 royalists killed, 600 prisoners; 12 patriots killed, 120 died of wounds; Maroto escaped (Wikipedia Chacabuco, attributed).",
+   "Patriots entered Santiago; San Martin declined; O'Higgins Supreme Director (Wikipedia Chacabuco; EB San Martin: nationalist government under O'Higgins; EB Chile: O'Higgins named director-general).",
+   "Royalists in the south (Wikipedia Chacabuco); Osorio defeated San Martin at Cancha Rayada (Wikipedia Maipu; EB Chile: army under Osorio); Maipu April 1818 secured independence (Wikipedia Maipu 5 April 1818; EB San Martin April 1818; EB Chile: 3 April 1818); opened the way to Peru (EB San Martin)."
+  ],
+  "disagree": "Size of the Army of the Andes: about 6,000 men with 1,200 horses (Wikipedia, Battle of Chacabuco), 4,000 men plus 1,200 auxiliaries (Wikipedia, Crossing of the Andes), about 3,000 infantry and 1,000 cavalry (1911 Britannica); the text gives the 4,000 figures with attribution. Date of departure: 17 January (Wikipedia, Chacabuco) or 19 January 1817 (Wikipedia, Crossing); the text says January. Date of Maipu: 5 April 1818 (Wikipedia) or 3 April (1911 Britannica, Chile); the text says April 1818.",
+  "checked": null
+ },
+ "Q1073849": {
+  "title": "Battle of Maipú",
+  "y": 1818,
+  "place": "Maipú, near Santiago, Chile",
+  "paras": [
+   "After the patriot victory at Chacabuco in February 1817, José de San Martín's Army of the Andes held Santiago, and Bernardo O'Higgins governed Chile as Supreme Director; according to the 1911 Encyclopaedia Britannica, he formally proclaimed Chile's independence in February 1818. The viceroy of Peru made one more attempt to recover the country, sending an army under General Mariano Osorio, the victor of Rancagua in 1814. Osorio surprised San Martín's army at Cancha Rayada and defeated it, but the patriots regrouped within days, collected weapons in Santiago and trained new recruits at the Ochagavía camp south of the city.",
+   "The two armies met on the plain of Maipú, just south of Santiago, with about 5,000 men each according to Wikipedia. Osorio's royalists were drawn up on a ridge near the Lo Espejo farm. The battle began with an artillery duel around 11:30 in the morning, after which San Martín sent the divisions of Las Heras and Alvarado forward against the royalist wings, while patriot cavalry drove off the royalist horse. When the royalist centre under Ordóñez pushed the patriot line back, San Martín sent in his reserve, which broke two royalist battalions. Osorio left the field; Ordóñez made a last stand in the buildings of Lo Espejo, which were shelled by the patriot artillery until he surrendered.",
+   "Wikipedia gives royalist losses as about 1,500 killed and 2,289 captured, and patriot losses as 800 killed and 1,000 wounded. The battle is dated 5 April 1818 by Wikipedia (and by Chile's yearly commemoration) and 3 April 1818 in the Britannica's article on Chile. O'Higgins arrived with militia, who rounded up scattered royalist soldiers, and his embrace with San Martín, the 'Abrazo de Maipú', is commemorated in both Chile and Argentina.",
+   "Maipú ended major Spanish operations in Chile and secured its independence. It left San Martín free to organise, with O'Higgins and the Argentine government, a fleet and army for the invasion of Peru, which, the Britannica says, set out in August 1820."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Maip%C3%BA",
+    "title": "Battle of Maipú (rev 1382835483, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Chacabuco",
+    "title": "Battle of Chacabuco (rev 1381888891, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Chile",
+    "title": "Chile, Encyclopaedia Britannica (11th ed., 1911), history section",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/San_Martin,_Jos%C3%A9_de",
+    "title": "San Martin, José de, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     10,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "After Chacabuco (February 1817) patriots held Santiago; O'Higgins head of government (Wikipedia Chacabuco: Supreme Director; EB Chile: director-general; EB San Martin: government at Santiago under O'Higgins; Wikipedia Maipu: captured Santiago).",
+   "O'Higgins formally proclaimed independence in February 1818 (EB Chile, attributed in the text).",
+   "Viceroy sent army under Osorio, victor of Rancagua (EB Chile; Wikipedia Maipu: Spanish viceroyalty sent an army under Osorio).",
+   "Osorio defeated San Martin at Cancha Rayada; patriots regrouped in less than two days; weapons collected; training camp at Ochagavia (Wikipedia Maipu).",
+   "About 5,000 men each (Wikipedia Maipu order of battle totals, attributed); Lo Espejo; Osorio on a triangular ridge (Wikipedia Maipu).",
+   "Artillery opened about 11:30 AM; Las Heras and Alvarado advanced; cavalry dispersed royalist cavalry (Wikipedia Maipu).",
+   "Ordonez division pushed patriot line back; reserve/three battalions split Burgos battalion, Arequipa disbanded (Wikipedia Maipu).",
+   "Osorio deserted the field; Ordonez last stand at Lo Espejo, shelled, surrendered (Wikipedia Maipu).",
+   "Losses: about 1,500 Spaniards dead, 2,289 captured; patriots 800 killed, 1,000 wounded (Wikipedia, attributed).",
+   "Date: 5 April 1818 (Wikipedia; commemorated every 5 April) vs 3 April 1818 (EB Chile); EB San Martin: April 1818.",
+   "O'Higgins brought militias who captured dispersed soldiers; Abrazo de Maipu commemorated in Argentina and Chile (Wikipedia Maipu).",
+   "Ended major Spanish operations in Chile (Wikipedia Maipu); secured independence of Chile (EB Chile; EB San Martin; Wikipedia Maipu: completed the independence of the core area of Chile).",
+   "Left San Martin free to organise the expedition against Peru with O'Higgins and the Argentine government; set out in August 1820 (EB San Martin, attributed in the text)."
+  ],
+  "disagree": "Date of the battle: 5 April 1818 (Wikipedia) or 3 April 1818 (1911 Britannica, Chile); both stated. The February 1818 proclamation of independence and the August 1820 sailing of the Peru expedition come from the 1911 Britannica alone and are attributed.",
+  "checked": null
  }
 }
