@@ -2,7 +2,7 @@
 sections most write-ups need), from the CirrusSearch dump extract (tools/cache/context/cirrus/enwiki).
 
 Usage: writeup_prep.py [--chars N] id [id ...]   or   writeup_prep.py --next N   (the next N tier-1 events
-of tools/curated/writeups/queue.json that have no write-up yet)
+of tools/curated/writeups/queue.json that have no write-up yet and are not in resume.skipped)
 """
 import glob
 import json
@@ -93,7 +93,8 @@ def main():
     if args[:1] == ['--next']:
         q = read_json(os.path.join(TOOLS, 'curated', 'writeups', 'queue.json'))
         done = done_ids()
-        ids = [i for i in q['order'] if q['tier'][i] == 1 and i not in done][:int(args[1])]
+        skip = {i for v in q.get('resume', {}).get('skipped', {}).values() for i in v}
+        ids = [i for i in q['order'] if q['tier'][i] == 1 and i not in done and i not in skip][:int(args[1])]
     else:
         ids = args
     for i in ids:
