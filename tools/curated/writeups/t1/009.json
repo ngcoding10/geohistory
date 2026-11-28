@@ -910,7 +910,7 @@
    "Vicksburg, a fortress city on high bluffs above the Mississippi, was the last major Confederate stronghold on the river. In the spring of 1863 the Union general Ulysses S. Grant, with the Army of the Tennessee, set out to take it from the Confederate army of Lieutenant-General John C. Pemberton. Attempts to reach the high ground north of the city through the swamps and waterways had failed.",
    "Grant then marched his troops overland, through a network of lakes and streams, to a point south of Vicksburg, while on 16 April Admiral David Porter's gunboats and the transports ran past the city's batteries. At the end of April the army crossed to the east bank below Grand Gulf, drove off the Confederates at Port Gibson and, in early May, cut loose from its base of supplies. Grant struck east, fought at Raymond on 12 May and took Jackson, keeping Pemberton apart from the relief force of General Joseph E. Johnston. On 16 May he defeated Pemberton at Champion Hill and drove him back into Vicksburg's lines.",
    "By 19 May the city was invested by land and water. Assaults on 19 and 22 May were thrown back with heavy losses, and Grant settled into a siege, digging approaches and mines towards the Confederate works while Johnston's force was held off to the east. Under heavy bombardment from the gunboats and the army's artillery, the townspeople sheltered in caves dug into the clay hills.",
-   "With supplies nearly gone, Pemberton opened talks. Grant at first demanded unconditional surrender, then agreed to parole the prisoners rather than ship them north, and the garrison surrendered on 4 July 1863, the day after the Union victory at Gettysburg. The 1911 Encyclopaedia Britannica puts the surrendered garrison at 37,000; Wikipedia gives 29,495 surrendered out of 32,697 Confederate casualties, against 4,835 Union casualties for the battle and siege.",
+   "With supplies nearly gone, Pemberton opened talks. Grant at first demanded unconditional surrender, then agreed to parole the prisoners rather than ship them north, and the garrison surrendered on 4 July 1863, the day after the Union victory at Gettysburg. The 1911 Encyclopaedia Britannica's articles on Vicksburg and on the war put the surrendered garrison at 37,000, its article on Grant at 29,491; Wikipedia gives 29,495 surrendered out of 32,697 Confederate casualties, against 4,835 Union casualties for the battle and siege.",
    "Port Hudson, downriver, surrendered to General Nathaniel Banks a few days later, giving the Union control of the whole Mississippi and cutting off Arkansas, Texas and part of Louisiana from the rest of the Confederacy. Lincoln, as Wikipedia quotes him, said that 'the Father of Waters again goes unvexed to the sea'. The Britannica calls the capture perhaps the greatest Union success of the war."
   ],
   "sources": [
@@ -960,6 +960,15 @@
      12,
      15
     ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Grant,_Ulysses_Simpson",
+    "title": "Grant, Ulysses Simpson, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     12
+    ]
    }
   ],
   "claims": [
@@ -974,13 +983,17 @@
    "Siege begun, approaches and mines dug (Wikipedia: Special Orders No. 140, regular approaches, mines, crater); Johnston held off (EB Vicksburg: covering corps under Blair, then Sherman).",
    "Heavy bombardment by gunboats and artillery; townspeople sheltered in more than 500 caves dug into the clay hills; supplies nearly gone (Wikipedia; EB Vicksburg: resistance almost at an end).",
    "Grant first demanded unconditional surrender, then offered parole rather than shipping prisoners north (Wikipedia); surrender 4 July 1863, the day after Gettysburg (EB Vicksburg, EB ACW, Wikipedia).",
-   "Garrison 37,000 (EB Vicksburg and EB ACW) vs 29,495 surrendered of 32,697 Confederate casualties and 4,835 Union casualties (Wikipedia) - stated with sources.",
+   "Garrison 37,000 (EB Vicksburg and EB ACW), 29,491 (EB Grant) vs 29,495 surrendered of 32,697 Confederate casualties and 4,835 Union casualties (Wikipedia) - stated with sources (re-check correction).",
    "Port Hudson surrendered to Banks days later (EB ACW: four days after; Wikipedia: July 9), giving the Union the Mississippi (Wikipedia; EB ACW: last serious fight on the river).",
    "Cut off Arkansas, Texas and part of Louisiana (Trans-Mississippi) from the rest of the Confederacy; Lincoln's 'Father of Waters' words (Wikipedia, attributed).",
    "Perhaps the greatest success of the war (EB ACW, attributed)."
   ],
-  "disagree": "Size of the surrendered garrison: 37,000 (1911 Britannica) or 29,495 surrendered out of 32,697 Confederate casualties (Wikipedia).",
-  "checked": null
+  "disagree": "Size of the surrendered garrison: 37,000 (1911 Britannica, Vicksburg and American Civil War), 29,491 (1911 Britannica, Grant) or 29,495 surrendered out of 32,697 Confederate casualties (Wikipedia).",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Grant,_Ulysses_Simpson",
+   "result": "5 claims checked against the Britannica's Grant article and Wikipedia's Vicksburg campaign article: Porter's run past the batteries 16 April, Raymond 12 May, Champion Hill 16 May and the surrender on 4 July confirmed; 1 error: the garrison was given as the Britannica's 37,000 without noting that its Grant article gives 29,491 (now stated).",
+   "errors": 1
+  }
  },
  "Q756118": {
   "title": "Atlanta campaign",
@@ -1159,7 +1172,7 @@
   "y": 1865,
   "place": "Appomattox Court House, Virginia",
   "paras": [
-   "Through the winter of 1864-65 General Robert E. Lee's Confederate Army of Northern Virginia held the trenches around Petersburg and Richmond against the Union armies of Ulysses S. Grant. At the start of April 1865 Philip Sheridan's victory at Five Forks turned Lee's flank and the Union infantry broke through the Petersburg lines. Lee abandoned Petersburg and Richmond and retreated west, hoping to join General Joseph E. Johnston's army in North Carolina.",
+   "From June 1864 General Robert E. Lee's Confederate Army of Northern Virginia held the trenches around Petersburg and Richmond against the Union armies of Ulysses S. Grant. At the start of April 1865 Philip Sheridan's victory at Five Forks turned Lee's flank and the Union infantry broke through the Petersburg lines. Lee abandoned Petersburg and Richmond and retreated west, hoping to join General Joseph E. Johnston's army in North Carolina.",
    "The retreat went badly. Lee's starving men found no rations waiting at Amelia Court House, and at Sailor's Creek a large part of the army, including Richard Ewell's corps, was cut off and captured. Grant wrote to Lee suggesting surrender, and Lee asked what terms he had in mind. Sheridan's cavalry got ahead of the Confederates at Appomattox Station, seized the supply trains waiting there and blocked the road west, while Union infantry hurried up behind.",
    "At dawn on 9 April John B. Gordon's corps attacked Sheridan's cavalry and pushed it back, but from the ridge his men saw two Union infantry corps drawn up in front of them. With his way out closed, Lee asked for a truce and rode to meet Grant. That afternoon, in the parlour of Wilmer McLean's house in the village of Appomattox Court House, he surrendered his army.",
    "Under the terms the Confederates gave up their arms and military stores and signed paroles not to fight again; Wikipedia adds that they could keep their horses and officers their sidearms. At a formal ceremony three days later (12 April, according to Wikipedia) the army stacked its arms and was disbanded, and Wikipedia gives nearly 28,000 officers and men paroled. The 1911 Encyclopaedia Britannica notes that the victors made no show of triumph and made the lot of the vanquished as easy as possible.",
@@ -1229,7 +1242,11 @@
    "Johnston surrendered to Sherman at Durham on 26 April (EB ACW: Durham Station on the 26th; Wikipedia: Bennett Place, Durham, April 26, 1865); remaining forces followed (EB ACW; Wikipedia); EB: the Confederacy came to an end at Appomattox; general amnesty of 29 May the formal ending (EB ACW, attributed)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Lee,_Robert_Edward",
+   "result": "2 claims checked against the Britannica's Lee and Sherman articles: surrender at Appomattox Court House on 9 April and Johnston's surrender after Lee's confirmed; 0 errors.",
+   "errors": 0
+  }
  },
  "cp10-07": {
   "title": "Bismarck becomes Minister President of Prussia",
@@ -1317,7 +1334,11 @@
    "Minister President 1862-1890 (Wikipedia lead), office separated in 1873 when Roon held it until he resigned at the end of the year (Wikipedia); first chancellor of the German Empire 1871 (Wikipedia; EB Bismarck)."
   ],
   "disagree": "Bismarck's posting to Paris in 1862: May (Wikipedia) or June (1911 Britannica). The day of his appointment, 23 September 1862, is from Wikipedia; the Britannica gives September.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikipedia.org/wiki/Blood_and_Iron_(speech)",
+   "result": "3 claims checked against Wikipedia's Blood and Iron article: appointment in September 1862, speech of 30 September and its wording confirmed; 0 errors.",
+   "errors": 0
+  }
  },
  "cp10-11": {
   "title": "North German Confederation formed",
@@ -1383,7 +1404,11 @@
    "Southern states fought with the confederation against France and joined by treaties of November 1870; the German Empire in 1871 (Wikipedia; EB: proclamation 18 January 1871)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bismarck,_Otto_Eduard_Leopold_von",
+   "result": "2 claims checked against the Britannica's Bismarck article: parliament elected by universal suffrage and the bill of indemnity confirmed; 0 errors.",
+   "errors": 0
+  }
  },
  "Q2604547": {
   "title": "Capture of Rome",
@@ -1457,14 +1482,18 @@
    "Capital: officially 3 February 1871 (Wikipedia, given as February) or declared at the king's solemn entry in July 1872 (EB) - both stated; end of the Papal States and temporal power, completion of unification (Wikipedia; EB: unity of Italy accomplished)."
   ],
   "disagree": "Forces: about 50,000 Italians against 13,157 papal troops (Wikipedia) or 60,000 against 10,000 (1911 Britannica). Rome as capital: officially from 3 February 1871 (Wikipedia) or declared on the king's entry in July 1872 (Britannica). The Leonine City: excluded from the capitulation (Wikipedia), occupied the next day at the pope's request (Britannica).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rome",
+   "result": "1 claim checked against the Britannica's Rome article: Italian occupation on 20 September 1870 confirmed; 0 errors.",
+   "errors": 0
+  }
  },
  "Q4497452": {
   "title": "Russian conquest of Khiva (1873)",
   "y": 1873,
   "place": "Khanate of Khiva (Khorezm), on the lower Amu Darya",
   "paras": [
-   "Russia had twice failed to subdue the Khanate of Khiva, an oasis state on the lower Oxus (Amu Darya) surrounded by desert: in 1717 the force of Prince Bekovich-Cherkassky was destroyed, and in 1839 Count Perovsky's march from Orenburg was turned back by a cold winter. By 1868 Russia had taken Tashkent and Samarkand and controlled Kokand and Bukhara, and in 1869 it founded Krasnovodsk on the eastern shore of the Caspian. In 1871 and 1872 the desert routes to Khiva were explored and surveyed.",
+   "Russia had twice failed to subdue the Khanate of Khiva, an oasis state on the lower Oxus (Amu Darya) surrounded by desert: in 1717 the force of Prince Bekovich-Cherkassky was destroyed, and in 1839 Count Perovsky's march from Orenburg was turned back by a cold winter. By 1868 Russia had taken Tashkent and Samarkand and controlled Kokand and Bukhara, and in 1869 it founded Krasnovodsk on the eastern shore of the Caspian. In 1871 and 1872, the 1911 Encyclopaedia Britannica says, the desert routes to Khiva were explored and surveyed.",
    "In 1873 a carefully organized expedition under the governor-general of Turkestan, General Konstantin von Kaufmann, set out from several bases at once: from Tashkent and Fort Aralsk in the east, from Orenburg in the north, and from the Caspian shore in the west. The 1911 Encyclopaedia Britannica puts the army at 10,000 men, and Wikipedia's article on the khanate at 13,000. The marches in spring through waterless desert cost many camels; the column from the south-eastern Caspian shore ran out of water and had to turn back.",
    "Kaufmann reached the Oxus in late May and crossed it, while the Orenburg and Caspian columns joined in the north of the oasis and advanced on the capital. The khan fled and Khiva was occupied with little resistance: Wikipedia dates the city's fall to 10 June 1873, after a bombardment by the northern column, when Kaufmann entered peacefully.",
    "Under the peace treaty of August 1873 (on the 12th, according to one Wikipedia article, the 24th according to another) the khan, restored to his throne, became a Russian protectorate: he gave up independent foreign relations, abolished slavery and the slave trade, and agreed to pay a heavy war indemnity. The Britannica says that all the khanate's land on the right bank of the Oxus was annexed to Russia, and that many thousands of slaves, mostly Persians, were set free. Khiva remained under Russian protection until the revolution of 1917."
@@ -1532,7 +1561,11 @@
    "Protectorate until the revolution (Wikipedia campaign; Khanate of Khiva: until 1917, replaced 1920)."
   ],
   "disagree": "Size of the Russian force: 10,000 (1911 Britannica) or 13,000 (Wikipedia, Khanate of Khiva). Date of the peace treaty: 12 August 1873 (Wikipedia, Khanate of Khiva) or 24 August (Wikipedia, Khivan campaign of 1873).",
-  "checked": null
+  "checked": {
+   "by": "https://archive.org/download/turkistannotes02schu/turkistannotes02schu_djvu.txt",
+   "result": "5 claims checked against Schuyler, Turkistan vol. 2: fall of Khiva on 10 June with Kaufmann's peaceful entry while the northern column fought at the north gate, treaty of 24 August (one of the two dates given), its terms and the annexation of the right bank confirmed; 0 errors.",
+   "errors": 0
+  }
  },
  "cp18-102": {
   "title": "Russian Turkestan created",
@@ -1608,7 +1641,7 @@
   "y": 1876,
   "place": "Kokand, Fergana Valley",
   "paras": [
-   "By the 1870s the Khanate of Kokand, in the Fergana Valley, had lost Tashkent and its northern lands to Russia, and its ruler Khudayar Khan was dependent on the Russians, with whom he had made a commercial treaty in 1868. Khudayar was unpopular at home: Wikipedia and the traveller Eugene Schuyler both point to his oppressive rule and taxes. In 1875 a revolt against him and against Russian influence spread through the khanate; his eldest son Nasreddin and much of his army went over to the rebels, led by Abdurrahman Aftobatcha. Khudayar fled with Russian envoys to Hodjent (Khujand) in Russian territory.",
+   "By 1875 the Khanate of Kokand, in the Fergana Valley, had lost Tashkent and its northern lands to Russia, and its ruler Khudayar Khan was dependent on the Russians, with whom he had made a commercial treaty in 1868. Khudayar was unpopular at home: Wikipedia and the traveller Eugene Schuyler both point to his oppressive rule and taxes. In 1875 a revolt against him and against Russian influence spread through the khanate; his eldest son Nasreddin and much of his army went over to the rebels, led by Abdurrahman Aftobatcha. Khudayar fled with Russian envoys to Hodjent (Khujand) in Russian territory.",
    "The rebels raised a holy war against Russia, and the governor-general of Turkestan, Konstantin von Kaufmann, invaded. He stormed the frontier fortress of Makhram and occupied the city of Kokand. The new khan, Nasreddin, made peace: according to Schuyler he agreed to pay an indemnity of 3,000,000 rubles over six years and ceded the part of the khanate north of the Syr Darya, around Namangan (the 1911 Encyclopaedia Britannica says the land north of the Naryn).",
    "The peace did not hold. The people of Kokand drove out Nasreddin, a pretender calling himself Pulat Bek was proclaimed khan, and fighting went on through the winter, with heavy destruction at Andijan and in the countryside, led on the Russian side by Mikhail Skobelev. In early 1876 Andijan was taken, Abdurrahman surrendered and Skobelev occupied Kokand.",
    "In February 1876 (the Britannica's date) the khanate came to an end: the emperor ordered its annexation, and it became the Russian province of Fergana, the land's ancient name, under Skobelev as its first governor, according to Schuyler. Nasreddin and other leaders were sent as prisoners to Tashkent, and Pulat Bek was later captured and hanged."
@@ -1766,10 +1799,10 @@
   "y": 1881,
   "place": "Ksar Saïd palace, Le Bardo, near Tunis",
   "paras": [
-   "Tunisia, ruled by its own beys under nominal Ottoman suzerainty, went bankrupt in 1869 and its finances were put under British, French and Italian controllers. At the Congress of Berlin in 1878 the British foreign secretary, Lord Salisbury, agreed to give France a free hand in Tunisia in return for French acceptance of Britain's lease of Cyprus. France held back until Italian activity in Tunisia, such as the purchase of the British-owned railway from Tunis to Goletta (La Goulette) in 1880, pushed it to act.",
+   "Tunisia, ruled by its own beys under nominal Ottoman suzerainty, went bankrupt, according to the 1911 Encyclopaedia Britannica, in 1869 and its finances were put under British, French and Italian controllers. At the Congress of Berlin, in the Britannica's account, the British foreign secretary, Lord Salisbury, agreed to give France a free hand in Tunisia in return for French acceptance of Britain's lease of Cyprus. France held back until Italian activity in Tunisia, such as the purchase of the British-owned railway from Tunis to Goletta (La Goulette) in 1880, pushed it to act.",
    "In April 1881 a French force crossed the frontier from Algeria, with raids by the Khroumir (Kroumir) tribes into Algeria as the pretext. Wikipedia puts the expedition at about 36,000 men. Meeting little resistance, the French advanced on Tunis, and on 12 May 1881 the bey, Muhammad as-Sadiq, signed the treaty at his Ksar Saïd palace at Le Bardo.",
    "The treaty made Tunisia a French protectorate. France took charge of its foreign relations and could occupy points in the country, presented as a temporary measure to restore order and protect the bey. The conquest was not completed without a serious struggle, the 1911 Encyclopaedia Britannica notes, especially at Sfax. The Conventions of La Marsa of 8 June 1883 extended French control to internal affairs, under a French resident-general.",
-   "For Italy, which had taken a deep interest in Tunisia's future, the affair began a long period of tension with France. The Ottoman Empire, which still claimed Tunisia, refused to recognize the protectorate, but its protests were ignored. Britain gave up its consular courts in Tunisia in 1883, and the other powers followed, Italy only in 1896."
+   "For Italy, which had taken a deep interest in Tunisia's future, the affair began a long period of tension with France. The Ottoman Empire, which still claimed Tunisia, refused to recognize the protectorate, but its protests were ignored. Britain gave up its consular courts in Tunisia in 1883, and the other powers followed, Italy, the Britannica says, only in 1896."
   ],
   "sources": [
    {
@@ -1826,7 +1859,7 @@
   "y": 1882,
   "place": "Tel el-Kebir, between Ismailia and Cairo, Egypt",
   "paras": [
-   "In 1881 an army movement led by Ahmed Urabi (Arabi Pasha) forced the khedive Tawfiq to enlarge the army, change his prime minister and summon an assembly of notables. In 1882 Urabi became minister of war, and the new government clashed with the European controllers of Egypt's debts. British and French warships came to Alexandria, and in June riots there cost many European lives. When Urabi went on arming the harbour forts and France refused to take part, the British fleet bombarded Alexandria on 11 July 1882, and British troops landed and occupied the city.",
+   "In September 1881, the 1911 Encyclopaedia Britannica records, an army movement led by Ahmed Urabi (Arabi Pasha) forced the khedive Tawfiq to enlarge the army, change his prime minister and summon an assembly of notables. In 1882 Urabi became minister of war, and the new government clashed with the European controllers of Egypt's debts. British and French warships came to Alexandria, and in June riots there cost many European lives. When Urabi went on arming the harbour forts and France refused to take part, the British fleet bombarded Alexandria on 11 July 1882, and British troops landed and occupied the city.",
    "Sir Garnet Wolseley was given command of an expedition to crush Urabi's government and restore the khedive's authority; Wikipedia gives 24,000 British troops and 7,000 from India. Urabi's lines at Kafr el-Dawwar blocked the direct road from Alexandria to Cairo, so Wolseley moved his army through the Suez Canal, which Urabi had not blocked, and occupied Ismailia in August. Advancing west along the railway and the Sweet Water Canal, his troops beat off Egyptian attacks at Kassassin.",
    "Urabi's main army had dug in at Tel el-Kebir. Wolseley found that the Egyptians kept no outposts at night, and on the night of 12 September his infantry marched across the flat desert to make a frontal attack at dawn. On 13 September 1882, as day broke, they were close to the entrenchments before being seen, and stormed them with the bayonet; Wikipedia says the fighting was over within an hour. Official British figures gave 57 British dead; Wikipedia gives about two thousand Egyptian dead.",
    "British cavalry rode on to Cairo, which was undefended, and Urabi surrendered there. He was tried for rebellion, pleaded guilty and was exiled to Ceylon, as the 1911 Encyclopaedia Britannica records, until 1901. The khedive's power was restored, but under British occupation: most of the army went home from November, leaving an army of occupation behind. Wolseley was made a peer as Baron Wolseley of Cairo."
@@ -1980,17 +2013,21 @@
    "Mahdi established the Mahdiyah and died June 1885 (Wikipedia); Omdurman 1898 (Wikipedia: 2 September 1898, Kitchener; EB Mahdi: battle of Omdurman in 1898); expedition withdrawn (EB Wolseley); Gordon seen as a martyr and hero by the British public (Wikipedia)."
   ],
   "disagree": "Start of the siege: 13 March 1884 (Wikipedia) or 18 March (1911 Britannica, Gordon).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Khartum",
+   "result": "3 claims checked against the Britannica's Khartum article: Gordon sent to arrange the evacuation, fall and Gordon's death on 26 January 1885 two days before the relief arrived, Omdurman taken in 1898 confirmed; 0 errors.",
+   "errors": 0
+  }
  },
  "Q2993585": {
   "title": "Panjdeh incident",
   "y": 1885,
   "place": "Panjdeh, on the Kushk and Murghab rivers (Afghan-Turkmen border)",
   "paras": [
-   "After taking Geok Tepe in 1881 and annexing Merv in 1884, Russia held most of what is now Turkmenistan, and its frontier with Afghanistan south of Merv was undefined. Britain, which saw the route from Merv through Herat and Kandahar as a road to India, agreed with Russia in 1884 to send a joint commission to mark the northern border of Afghanistan. Before it could start work, both sides pushed forward: Russian troops under General Komarov occupied posts to the south, while the Afghans garrisoned Panjdeh, an oasis of the Sarik Turkmens on the Murghab river, whose people said they were subjects of the Amir of Kabul.",
+   "After taking Geok Tepe in 1881 and Merv (annexed in March 1884, according to Wikipedia; the 1911 Encyclopaedia Britannica's Merv article says the Russians occupied the oasis in 1883), Russia held most of what is now Turkmenistan, and its frontier with Afghanistan south of Merv was undefined. Britain, which saw the route from Merv through Herat and Kandahar as a road to India, agreed with Russia in 1884 to send a joint commission to mark the northern border of Afghanistan. Before it could start work, both sides pushed forward: Russian troops under General Komarov occupied posts to the south, while the Afghans garrisoned Panjdeh, an oasis of the Sarik Turkmens on the Murghab river, whose people said they were subjects of the Amir of Kabul.",
    "In March 1885, at Panjdeh, the Russians attacked the Afghan troops and drove them out with heavy loss, taking their guns. Wikipedia dates the clash to 30 March (18 March in the Russian calendar) and quotes Komarov's report claiming that the Afghans had provoked him and lost more than 500 men. British officers on the spot had tried in vain to calm the situation.",
    "The news caused a war scare in Britain. Wikipedia says that Gladstone asked parliament for a war credit of £11 million, partly for the Sudan, where Khartoum had fallen a few months earlier. The amir, Abdur Rahman, was at Rawalpindi meeting the viceroy of India, Lord Dufferin, when he heard of it; he chose to treat it as a border skirmish, which helped to calm the crisis.",
-   "The affair was settled diplomatically, as both the 1911 Encyclopaedia Britannica and Wikipedia say: Russia kept Panjdeh and gave up Zulfikar, and the commission went on to mark the frontier up to the Oxus. A final protocol was signed in 1887. The incident largely ended Russia's southward advance in Central Asia, apart from the Pamirs, and fixed Afghanistan's north-western border."
+   "The affair was settled diplomatically, as both the 1911 Encyclopaedia Britannica and Wikipedia say: Russia kept Panjdeh and gave up Zulfikar, and the commission went on to mark the frontier up to the Oxus. Wikipedia dates the final protocol to 1887. The incident largely ended Russia's southward advance in Central Asia, apart from the Pamirs, and fixed Afghanistan's north-western border."
   ],
   "sources": [
    {
@@ -2024,10 +2061,19 @@
      9,
      10
     ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Merv",
+    "title": "Merv, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1
+    ]
    }
   ],
   "claims": [
-   "Geok Tepe January 1881, annexation of Merv March 1884; most of Turkmenistan Russian; border south of Merv undefined (Wikipedia).",
+   "Geok Tepe January 1881; annexation of Merv March 1884 (Wikipedia) or occupation of the oasis in 1883 (EB Merv) - both stated (re-check correction); most of Turkmenistan Russian; border south of Merv undefined (Wikipedia).",
    "Merv-Herat-Kandahar-Quetta line a natural invasion route to India, British concern (Wikipedia).",
    "Joint Anglo-Russian commission to demarcate the northern boundary of Afghanistan, 1884 (EB; Wikipedia: summer 1884 Afghan Boundary Commission).",
    "Russians pushed the border south (Komarov occupied Pul-i-Khatun, Zulfikar); Afghans garrisoned Panjdeh; Sarik Turkomans of Panjdeh said they were subjects of the Amir of Kabul (Wikipedia); Panjdeh a disputed place held by the Afghans (EB).",
@@ -2039,8 +2085,12 @@
    "Arranged diplomatically; demarcation proceeded to near the Oxus (EB; Wikipedia: settled diplomatically, line run to the Oxus in 1886).",
    "Russia kept Panjdeh, gave up Zulfikar; final protocol 22 July 1887 (given as 1887); halted Russian expansion except the Pamirs; north-western border defined (Wikipedia)."
   ],
-  "disagree": null,
-  "checked": null
+  "disagree": "Russian annexation of Merv: March 1884 (Wikipedia) or occupation in 1883 (1911 Britannica, Merv).",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Merv",
+   "result": "1 claim checked against the Britannica's Merv article: 1 error, Merv given as annexed in 1884 (Wikipedia) where the Britannica says occupied in 1883 (now stated).",
+   "errors": 1
+  }
  },
  "cp11-07": {
   "title": "Congo Free State established",
@@ -2105,9 +2155,9 @@
   "y": 1886,
   "place": "Witwatersrand, South African Republic (Transvaal)",
   "paras": [
-   "Gold had been found in the Transvaal (the South African Republic) before, in small amounts on the Witwatersrand in the 1850s and in the eastern goldfields of Barberton and Pilgrim's Rest, which attracted attention from 1884. In 1886 the main gold reef of the Witwatersrand was found. Wikipedia credits the discovery of the main reef to George Harrison on the farm Langlaagte in July 1886, while noting that the prospector Jan Bantjes had found a reef in 1884; after Harrison registered his claim the government declared the area open to diggers.",
+   "Gold had been found in the Transvaal (the South African Republic) before, in small amounts on the Witwatersrand in the 1850s, according to Wikipedia, and in the eastern goldfields of Barberton and Pilgrim's Rest, which attracted attention from 1884. In 1886 the main gold reef of the Witwatersrand was found. Wikipedia credits the discovery of the main reef to George Harrison on the farm Langlaagte in July 1886, while noting that the prospector Jan Bantjes had found a reef in 1884; after Harrison registered his claim the government declared the area open to diggers.",
    "Prospectors and fortune-seekers poured in from abroad. A mining camp grew on the reef, and in September 1886 the town of Johannesburg was founded. The 1911 Encyclopaedia Britannica says it was named after Johannes Rissik, the Transvaal surveyor-general; Wikipedia notes that the origin of the name is disputed. In December 1886 the Boer government marked out the town, and plots were handed to their buyers on 1 January 1887.",
-   "The main reef could be traced for about 62 miles, but the gold lay in tiny particles, in many places deep underground. After a slump in 1890, when the surface ore ran out, better machinery and cheaper coal brought a revival. According to the Britannica the yield rose from 23,000 ounces in 1887 to 1,210,000 in 1892 and 4,295,000 in 1898, and the republic's revenue, about £150,000 before the discovery, passed two million pounds in 1894. Railways linked the Rand to the coast in 1892-1895, and Johannesburg became the largest town in South Africa within ten years.",
+   "The main reef could be traced, the Britannica says, for about 62 miles, but the gold lay in tiny particles, in many places deep underground. After a slump in 1890, when the surface ore ran out, better machinery and cheaper coal brought a revival. According to the Britannica the yield rose from 23,000 ounces in 1887 to 1,210,000 in 1892 and 4,295,000 in 1898, and the republic's revenue, about £150,000 before the discovery, passed two million pounds in 1894. Railways linked the Rand to the coast in 1892-1895, and Johannesburg became the largest town in South Africa within ten years.",
    "Most of the newcomers were foreigners, called Uitlanders, and their grievances against the Boer government of President Paul Kruger grew. They were followed by the failed Jameson Raid and Uitlander rising of 1895-96 and, a few years later, by the South African War of 1899-1902."
   ],
   "sources": [
@@ -2323,8 +2373,8 @@
   "place": "From Mafeking, on the Bechuanaland border, to Doornkop, near Johannesburg",
   "paras": [
    "After the gold discoveries of 1886 thousands of foreigners, the Uitlanders, came to the Transvaal (the South African Republic). They complained of their treatment by President Paul Kruger's Boer government. Cecil Rhodes, prime minister of Cape Colony and head of the British South Africa Company, backed a plan by Uitlander leaders in Johannesburg to rise in revolt, while a mounted force under Leander Starr Jameson, a colonial administrator in Rhodes's employ, waited on the border to ride in to their support.",
-   "The plot faltered. The Johannesburg leaders lacked arms, and they were divided, among other things over a hint from Cape Town that Rhodes wanted the revolt made under the British flag; on 25 December they decided to postpone it. Jameson nevertheless crossed into the Transvaal on 29 December 1895 with about 600 men, most of them from the Matabeleland Mounted Police, and cut the telegraph wires so he could not be recalled. In Johannesburg a reform committee hurriedly took charge, but no rising took place.",
-   "Boer forces shadowed the column and stopped it at Doornkop, near Johannesburg, where Jameson surrendered on the promise that his men's lives would be spared; Wikipedia dates the surrender to 2 January 1896 (the 1911 Encyclopaedia Britannica's Transvaal article says the end of January, but its Jameson article puts the surrender before Johannesburg laid down its arms on 7 January). Kruger handed the raiders to the British government, and in London Jameson was sentenced to fifteen months in prison. The reform leaders were tried in Pretoria; four were condemned to death, the sentences later commuted to fines of £25,000 each.",
+   "The plot faltered. The Johannesburg leaders lacked arms, and they were divided, among other things over a hint from Cape Town that Rhodes wanted the revolt made under the British flag; at a meeting on 25 December, the Britannica says, they decided to postpone it. Jameson nevertheless crossed into the Transvaal on 29 December 1895 with about 600 men according to Wikipedia and the Britannica's Jameson article, most of them from the Matabeleland Mounted Police (the Britannica's article on Rhodes says some 500), and cut the telegraph wires so he could not be recalled. In Johannesburg a reform committee hurriedly took charge, but no rising took place.",
+   "Boer forces shadowed the column and stopped it at Doornkop, near Johannesburg, where Jameson surrendered on the promise that his men's lives would be spared; Wikipedia dates the surrender to 2 January 1896 (the 1911 Encyclopaedia Britannica's Transvaal article says the end of January, but its Jameson article puts the surrender before Johannesburg laid down its arms on 7 January). Kruger handed the raiders to the British government, and in London Jameson was sentenced to fifteen months in prison. The reform leaders were tried in Pretoria; four were condemned to death, the sentences later commuted, according to the Britannica, to fines of £25,000 each.",
    "The raid had wide consequences. The German emperor William II sent Kruger a telegram congratulating him on repelling the raiders without the help of friendly powers, which angered Britain. Rhodes had to resign as prime minister of the Cape. With much of its police away, Rhodesia was left exposed, and the Ndebele rose in March 1896. Relations between Britain and the Transvaal grew worse, and Wikipedia counts the raid among the causes of the South African (Second Boer) War of 1899-1902."
   ],
   "sources": [
@@ -2376,6 +2426,15 @@
      8,
      9
     ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodes,_Cecil_John",
+    "title": "Rhodes, Cecil John, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5
+    ]
    }
   ],
   "claims": [
@@ -2383,7 +2442,7 @@
    "Rhodes Prime Minister of the Cape and head of the BSAC; Jameson employed by Rhodes (Wikipedia).",
    "Projected rising in Johannesburg connived at by Rhodes; Jameson's force in support (EB Jameson; Wikipedia: Reform Committee's invitation, plan to seize the armoury).",
    "Delay: difficulty obtaining arms; flag question; meeting 25 December, decision to postpone (EB Transvaal); differences within the Reform Committee (Wikipedia).",
-   "29 December 1895 crossed into the Transvaal (Wikipedia; EB Transvaal: on the 29th of December Jameson started; EB Jameson: last day of the year news, from Mafeking); about 600 men, about 400 from the Matabeleland Mounted Police (Wikipedia; EB Jameson: force of 600 men).",
+   "29 December 1895 crossed into the Transvaal (Wikipedia; EB Transvaal: on the 29th of December Jameson started; EB Jameson: last day of the year news, from Mafeking); about 600 men, about 400 from the Matabeleland Mounted Police (Wikipedia; EB Jameson: force of 600 men). EB Rhodes: some 500 men - stated (re-check correction).",
    "Telegraph wires cut, no way of recalling him (Wikipedia).",
    "Reform committee formed in Johannesburg, Phillips chairman; arms distributed (EB Transvaal); no rising (Wikipedia: waited for the insurrection).",
    "Boers tracked him; stopped at Doornkop; surrender with guarantee of lives (EB Jameson; EB Transvaal; Wikipedia); 2 January (Wikipedia) vs 'end of January 1896' (EB Transvaal), EB Jameson: surrender of Johannesburg 7 January after Jameson's surrender - stated.",
@@ -2393,7 +2452,11 @@
    "Rhodes forced to resign as Prime Minister of the Cape in 1896 (Wikipedia).",
    "Withdrawal left Rhodesia vulnerable; Ndebele revolt March 1896 (Wikipedia); contributory cause of the Second Boer War (Wikipedia, attributed)."
   ],
-  "disagree": "Date of Jameson's surrender at Doornkop: 2 January 1896 (Wikipedia) or 'the end of January' (1911 Britannica, Transvaal; its Jameson article puts the surrender before 7 January).",
-  "checked": null
+  "disagree": "Date of Jameson's surrender at Doornkop: 2 January 1896 (Wikipedia) or 'the end of January' (1911 Britannica, Transvaal; its Jameson article puts the surrender before 7 January). Size of Jameson's force: about 600 (Wikipedia; 1911 Britannica, Jameson) or some 500 (1911 Britannica, Rhodes).",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodes,_Cecil_John",
+   "result": "3 claims checked against the Britannica's Rhodes article: Rhodes's resignation and the Ndebele rising of March 1896 confirmed; 1 error, Jameson's force given as about 600 where this article says some 500 (now stated).",
+   "errors": 1
+  }
  }
 }
