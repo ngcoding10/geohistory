@@ -2855,5 +2855,102 @@
   ],
   "disagree": "Size of Jackson's flanking force: about 28,000 (Oxford Companion) or nearly 30,000 (American Battlefield Trust); the men left with Lee, 14,000 or about 15,000.",
   "checked": null
+ },
+ "Q154942": {
+  "title": "Battle of Königgrätz",
+  "y": 1866,
+  "place": "German Confederation",
+  "paras": [
+   "The Battle of Königgrätz, also called Sadowa after a nearby village, was fought on 3 July 1866 in Bohemia, near the fortress town of Königgrätz (Hradec Králové) on the Elbe, and decided the Austro-Prussian or Seven Weeks' War over leadership of the German states. Prussia, whose army was directed by its chief of staff Helmuth von Moltke, faced Austria's North Army under General Ludwig von Benedek, together with Saxon troops. After a run of defeats in Bohemia, Benedek withdrew to a position between the Bistritz river and the Elbe, with his back to the Elbe.",
+   "Moltke had sent three widely separated armies into Bohemia to converge on the Austrians. His plan for the battle was for the First Army to pin Benedek in front, for the Army of the Elbe to turn the Austrian left, held by the Saxons, and for the Second Army under Crown Prince Frederick William to strike the exposed Austrian right. EBSCO's account puts Benedek's force at about 195,000 Austrians and 25,000 Saxons, and the Prussian armies at about 140,000 and 115,000. According to the same account, the Second Army was still some twenty miles away when the fighting began on the morning of 3 July.",
+   "The Prussian First Army's advance across the Bistritz suffered badly from the more accurate Austrian rifled artillery, while the Austrians, attacking in dense columns, were cut down by the Prussian breech-loading 'needle guns', which fired much faster than their muzzle-loaders. In the Swiepwald wood a single Prussian division under Eduard von Fransecky held off much larger Austrian forces all day. Benedek did not launch a general attack while he had the chance, and around midday the Second Army began to arrive on his right flank, taking the key villages of Lipa and Chlum, while the Saxons on the left were outflanked. Austrian counter-attacks on Chlum failed, and in the afternoon the Austrian army began to break up and flee towards the Elbe bridges; only a fighting retreat covered by the Austrian artillery kept the defeat from becoming a complete rout.",
+   "EBSCO's two accounts put Prussian losses at about 9,000 and Austrian losses at about 25,000 killed and wounded and 20,000 prisoners, or about 43,000 in all with about half captured, plus some 1,500 Saxons. Emperor Franz Joseph gave up the war, which was ended by the Peace of Prague later that summer. Austria was excluded from German affairs and from the new North German Confederation led by Prussia, a decisive step towards German unification under Prussia in 1871. The battle also showed the power of breech-loading rifles and of Moltke's method of fast-converging separate armies, which Prussia used again against France in 1870."
+  ],
+  "sources": [
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/battle-koniggratz/",
+    "title": "Battle of Königgrätz (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/battle-konnigratz",
+    "title": "Battle of Könnigrätz (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     7,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://www.historynet.com/birth-modern-war/",
+    "title": "The Birth of Modern War",
+    "publisher": "HistoryNet",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     7,
+     8,
+     9,
+     12
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/reference/encyclopedias-almanacs-transcripts-and-maps/sadova",
+    "title": "Sadová (The Columbia Encyclopedia, 6th ed.)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1
+    ]
+   }
+  ],
+  "claims": [
+   "The Battle of Königgrätz (Sadowa), near Hradec Králové in Bohemia, was a decisive Prussian victory over Austria in 1866 in the Austro-Prussian (Seven Weeks') War.",
+   "It was fought on 3 July 1866 between Prussian forces directed by Moltke and Benedek's Austrian North Army with Saxon troops.",
+   "After defeats in Bohemia (EBSCO: three battles, Nachod, Trautenau and Gitschin, lost in three days at the end of June), Benedek took position between the Bistritz and the Elbe, with his back to the Elbe.",
+   "Moltke sent three widely separated armies into Bohemia to converge on the Austrians.",
+   "Moltke planned a frontal holding attack by the First Army, an attack on the Austrian left (the Saxons) by the Army of the Elbe, and a blow on the exposed Austrian right by the Second Army under Crown Prince Frederick William.",
+   "EBSCO: about 195,000 Austrians and 25,000 Saxons; Prussian First Army and Army of the Elbe about 140,000, Second Army about 115,000; when the battle began the Second Army was some twenty miles away.",
+   "Austrian rifled artillery punished the Prussian advance, while Prussian breech-loading needle guns, firing much faster than Austrian muzzle-loaders, devastated Austrian columns.",
+   "In the Swiepwald wood a Prussian division under Fransecky held out all day against superior Austrian numbers.",
+   "Benedek did not launch a general attack while he could have.",
+   "Around midday the Prussian Second Army arrived on the Austrian right; the Prussians held Lipa and Chlum, and the Saxons were outflanked on the left.",
+   "Austrian attacks on Lipa and Chlum failed, and in the afternoon (EBSCO: by about 3 p.m.) the Austrian army began to disintegrate and flee towards the Elbe bridges.",
+   "A skilful retreat covered by artillery kept the defeat from becoming a complete rout (EBSCO, Könnigrätz entry); HistoryNet describes the collapse of the outflanked army.",
+   "EBSCO: the Prussians lost about 9,000; Austrian losses about 25,000 killed and wounded plus 20,000 prisoners, or about 43,000 (about half captured) plus about 1,500 Saxons.",
+   "Franz Joseph judged his situation hopeless, and the war was ended by the Treaty (Peace) of Prague.",
+   "Austria was excluded from the North German Confederation and German affairs, contributing to German unification under Prussia by 1871.",
+   "The battle demonstrated breech-loading rifles and Moltke's strategy of converging armies, used again against France in 1870."
+  ],
+  "disagree": "Austrian losses: about 25,000 killed and wounded plus 20,000 prisoners (EBSCO, Königgrätz) or about 43,000 including about half captured, with 1,500 Saxon losses besides (EBSCO, Könnigrätz). Army sizes are EBSCO's; the Wikipedia article (local extract) gives the Austrians 215,000 and the Prussian Army of the Elbe and First Army 39,000 and 85,000. The date of the Peace of Prague is left out: EBSCO gives 23 August 1866, which could not be confirmed in a second source.",
+  "checked": null
  }
 }
