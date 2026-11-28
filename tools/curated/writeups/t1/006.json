@@ -2141,5 +2141,65 @@
   ],
   "disagree": "British strength and losses: about 1,700 troops, most killed (National Army Museum); 1,762 soldiers and camp followers with 55 European and 350 African survivors (History Hit). Zulu strength: over 20,000 (National Army Museum); a scout's report of 25-30,000 (History Hit).",
   "checked": null
+ },
+ "Q287422": {
+  "title": "Anti-Ballistic Missile Treaty",
+  "y": 1972,
+  "place": "Moscow (signing)",
+  "paras": [
+   "The Anti-Ballistic Missile (ABM) Treaty was signed in Moscow on 26 May 1972 by US President Richard Nixon and Soviet leader Leonid Brezhnev, together with an interim agreement limiting offensive missiles; the two formed the first Strategic Arms Limitation agreement (SALT I). In the late 1960s the Soviet Union was building up its intercontinental missiles and had begun a limited missile defence around Moscow. A missile defence could let one side strike first and then shoot down the other's retaliation, and both sides reasoned that limiting defences would reduce the need to build more weapons to overcome them. Lyndon Johnson proposed talks, and formal negotiations began in Helsinki on 17 November 1969.",
+   "The treaty barred both countries from building nationwide defences against strategic ballistic missiles. Each could have two fixed, land-based defence sites with 100 interceptors each, one around the capital and one guarding an ICBM field; a protocol of 1974 cut this to one site each. It also banned sea-, air-, space-based and mobile ABM systems and limited early-warning radars to the edges of each country, facing outwards. The idea was that, without real defences, each superpower stayed vulnerable to retaliation, which deterred both from attacking first. The treaty entered into force on 3 October 1972.",
+   "The Soviet Union kept its defence system around Moscow, while the United States built its permitted site at an ICBM base near Grand Forks, North Dakota, and, according to the Arms Control Association, shut it down within months of activating it in October 1975 because of its cost (the Office of the Historian says the United States stopped construction by the end of the decade for financial and strategic reasons). The Office of the Historian calls SALT I the crowning achievement of the détente policy of Nixon and Kissinger. The treaty lasted until President George W. Bush announced on 13 December 2001 that the United States would withdraw, arguing that it blocked defences against attacks by terrorists or 'rogue states'; the withdrawal took effect on 13 June 2002."
+  ],
+  "sources": [
+   {
+    "url": "https://www.armscontrol.org/factsheets/abmtreaty",
+    "title": "The Anti-Ballistic Missile (ABM) Treaty at a Glance",
+    "publisher": "Arms Control Association",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1969-1976/salt",
+    "title": "Strategic Arms Limitations Talks/Treaty (SALT) I and II (Milestones, retired)",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Signed on 26 May 1972 (both) in Moscow by Nixon and Brezhnev, with the interim SALT agreement (Office of the Historian); negotiated as part of the Strategic Arms Limitation Talks (Arms Control Association).",
+   "In the late 1960s the Soviet Union had begun a massive ICBM build-up; in January 1967 Johnson announced that the Soviets were building a limited ABM system around Moscow (Office of the Historian).",
+   "An ABM system could allow one side to strike first and then shoot down the retaliation (Office of the Historian); limiting defences would reduce the need for more offensive weapons to overcome them (Arms Control Association).",
+   "Johnson called for strategic arms limitation talks; formal SALT talks began in Helsinki on 17 November 1969 (Office of the Historian).",
+   "The treaty barred nationwide defences against strategic ballistic missiles (Arms Control Association).",
+   "Two fixed ground-based sites of 100 interceptors each, one protecting the capital and one an ICBM field (Arms Control Association; Office of the Historian: 200 interceptors each, two sites); a protocol of 3 July 1974 halved the permitted defences (Arms Control Association).",
+   "Bans on sea-, air-, space-based or mobile land-based ABM systems; early-warning radars only on the periphery and oriented outward (Arms Control Association).",
+   "Without national defences each superpower remained vulnerable to retaliation, deterring a first strike (Arms Control Association).",
+   "Entered into force on 3 October 1972 (Arms Control Association).",
+   "The Soviet Union kept its Moscow system; the US fielded its 100 interceptors at an ICBM base near Grand Forks, North Dakota, and shut it down months after activating it in October 1975 because of cost (Arms Control Association; Office of the Historian: for financial and strategic reasons the US stopped construction by the end of the decade).",
+   "SALT I is considered the crowning achievement of the Nixon-Kissinger strategy of détente (Office of the Historian).",
+   "On 13 December 2001 George W. Bush announced US withdrawal, claiming the treaty prevented defences against terrorist or rogue-state missile attacks; the withdrawal took effect on 13 June 2002 (Arms Control Association)."
+  ],
+  "disagree": "Fate of the US defence site: shut down months after activation in October 1975 (Arms Control Association); construction stopped by the end of the decade (Office of the Historian).",
+  "checked": null
  }
 }
