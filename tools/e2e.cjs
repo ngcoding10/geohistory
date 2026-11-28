@@ -573,8 +573,8 @@ async function waitEvents(page) {
       const mk = document.querySelector('.warwrap:not(.minor) .warmk');
       return {
         casing: ids.filter((id) => /^(fcase|glow)/.test(id)),
-        fline: [m.getPaintProperty('fline' + sid, 'line-color'), m.getPaintProperty('fline' + sid, 'line-opacity'), m.getLayoutProperty('fline' + sid, 'line-join')],
-        line: m.getPaintProperty('line0' + sid, 'line-color'),
+        bord: [m.getPaintProperty('bord' + sid, 'line-color'), JSON.stringify(m.getPaintProperty('bord' + sid, 'line-opacity')).includes('"pa"'), m.getLayoutProperty('bord' + sid, 'line-join')],
+        old: ids.filter((id) => /^(fline|line\d)/.test(id)),
         halo: lbl.map((l) => m.getPaintProperty(l, 'text-halo-width')),
         color: [...new Set(lbl.map((l) => JSON.stringify(m.getPaintProperty(l, 'text-color'))))],
         tones: m.queryRenderedFeatures({ layers: lbl }).map((f) => [f.properties.n, f.properties.lc]),
@@ -586,12 +586,13 @@ async function waitEvents(page) {
         eras: getComputedStyle(document.querySelector('.eras > span') || document.body).fontVariantCaps,
       };
     });
-    ok(look.casing.length === 0 && look.fline[0] === '#111111' && look.fline[1] === 1 && look.fline[2] === 'round' && look.line === '#111111',
-      `borders are one solid black line, no casing or rim layers (${look.casing.length} casing layers; flag border ${look.fline.join(' ')}; plain ${look.line})`);
+    ok(look.casing.length === 0 && look.bord[0] === '#111111' && look.bord[1] && look.bord[2] === 'round' && look.old.length === 0,
+      `borders are one solid black line, no casing or rim layers (${look.casing.length} casing layers; border ${look.bord.join(' ')}; old border layers ${look.old.length})`);
     ok(look.halo.every((w) => w === 0) && look.peoples === 0 && look.color.length === 1 && look.color[0] === JSON.stringify(['match', ['get', 'lc'], 'dark', '#ffffff', 'light', '#111111', '#111111']) && look.font.length === 1 && look.font[0] === 'Atlas Sans Bold',
       `state and empire names are bold with halo width 0 (${look.font.join()}, halos ${[...new Set(look.halo)].join()})`);
     const darkL = look.tones.filter((t) => t[1] === 'dark').map((t) => t[0]), lightL = look.tones.filter((t) => t[1] === 'light').map((t) => t[0]);
-    ok(darkL.length && lightL.length, `names are white over dark land and black over light land (white: ${[...new Set(darkL)].slice(0, 4).join(', ')}; black: ${[...new Set(lightL)].slice(0, 4).join(', ')})`);
+    // round 15: the flags are faded, so nearly every name is black; white stays for the few names over dark land
+    ok(lightL.length && darkL.length <= lightL.length / 3, `names are black over the (faded) land and white only over dark land (white: ${[...new Set(darkL)].slice(0, 4).join(', ') || 'none'}; black: ${[...new Set(lightL)].slice(0, 4).join(', ')})`);
     ok(look.mk && look.mk[0] <= 18 && /^#(d9261c|e0261b)$/.test(look.mk[1]) && look.mk[2], `war markers are small red discs with a sword through them (${look.mk && look.mk.join(' ')})`);
     ok(look.top === 'rgb(255, 255, 255)' && look.bar === 'rgb(255, 255, 255)' && look.go === 'rgb(29, 111, 224)' && /Source Sans 3/.test(look.yearFont) && look.eras === 'normal',
       `white top and time bars, a blue Go button, sans text in normal case (${look.top}, ${look.bar}, ${look.go}, ${look.yearFont.split(',')[0]}, caps ${look.eras})`);
@@ -962,6 +963,153 @@ async function waitEvents(page) {
         await p.page.screenshot({ path: path.join(SHOTS, 'phone-390-open.png') });
       }
       ok(p.errors.length === 0, `no console errors at ${vp.width}px${p.errors.length ? ': ' + p.errors.slice(0, 5).join(' | ') : ''}`);
+      await p.ctx.close();
+    }
+
+    // ---------------- round 15: one rule for every line, faded flags, larger framed badges (1776 on a phone) ----------------
+    {
+      const p = await newPage(browser, { width: 390, height: 844 });
+      const pg = p.page;
+      await pg.goto(BASE + '?y=1776');
+      await waitH1(pg, 'The world in 1776');
+      await pg.waitForFunction(() => window.__geo?.state.snapDoc && window.__geo.map?.ready && window.__geo.map.fillDiag().on, null, { timeout: 60000 }).catch(() => {});
+      await pg.waitForTimeout(2000);
+      // every line layer, in every stack and in both fill modes
+      const lines = await pg.evaluate(async () => {
+        const M = window.__geo.map, m = M.map, ids = m.getStyle().layers.map((l) => l.id);
+        const P = (id, k) => JSON.stringify(m.getPaintProperty(id, k));
+        const black = m.getStyle().layers.filter((l) => l.type === 'line' && /^#(111111|000000)$/.test(String(m.getPaintProperty(l.id, 'line-color')))).map((l) => l.id);
+        const src = m.getSource('t' + M.active);
+        const flag = { w: ['A', 'B', 'C'].map((s) => P('bord' + s, 'line-width')), op: P('bord' + M.active, 'line-opacity'), open: P('open' + M.active, 'line-width'), coast: P('coast', 'line-width'), ocol: m.getPaintProperty('open' + M.active, 'line-color'), ccol: m.getPaintProperty('coast', 'line-color') };
+        M.setFillMode('plain');
+        await new Promise((r) => setTimeout(r, 500));
+        const plain = { w: P('bord' + M.active, 'line-width'), op: P('bord' + M.active, 'line-opacity') };
+        M.setFillMode('flag');
+        await new Promise((r) => setTimeout(r, 1500));
+        const d = window.__geo.state.snapDoc, c = { b: 0, i: 0, o: 0 };
+        for (const f of d.outlines || []) c[f.properties.e]++;
+        return { black, flag, plain, leave: P('leave-line', 'line-width'), tol: src.workerOptions?.geojsonVtOptions?.tolerance, old: ids.filter((id) => /^(fline|line\d)/.test(id)), c,
+          inner: [m.getLayer('inner' + M.active).minzoom, m.getPaintProperty('inner' + M.active, 'line-color')], uline: m.getPaintProperty('uline' + M.active, 'line-color'), udash: m.getPaintProperty('uline' + M.active, 'line-dasharray') };
+      });
+      const w0 = lines.flag.w[0];
+      ok(lines.flag.w.every((w) => w === w0) && lines.plain.w === w0 && lines.leave === w0 && !/"get"/.test(w0) && lines.flag.op === lines.plain.op && lines.old.length === 0
+        && lines.black.every((id) => /^(bord[ABC]|leave-line)$/.test(id)),
+        `every state border is one black line layer of one width per zoom, in flag and plain mode alike (${w0}; black line layers: ${lines.black.join(', ')})`);
+      ok(lines.flag.open === lines.flag.coast && lines.flag.ocol === lines.flag.ccol && lines.c.b > 50 && lines.c.o > 50 && lines.c.i > 5,
+        `a state's edge towards the sea or land of no state is the same thin dark line as the coast (${lines.flag.ocol}); 1776 outlines: ${lines.c.b} border, ${lines.c.o} open, ${lines.c.i} inner`);
+      ok(lines.inner[0] >= 2.5 && /^#[3-5]/.test(lines.inner[1]), `lines between the parts of an empire are thin grey and shown only when zoomed in (from zoom ${lines.inner[0]}, ${lines.inner[1]})`);
+      ok(lines.tol === 0.9 * 16 && lines.uline !== '#111111' && lines.udash == null, `borders are simplified to 0.9 screen pixels by zoom (tolerance ${lines.tol} tile units); peoples get a light hairline (${lines.uline})`);
+      // the pixels: black next to beige land (peoples, no state) in the South America and Sahel views
+      const beige = async (c, z) => {
+        await pg.evaluate(([c, z]) => { const m = window.__geo.map.map; m.jumpTo({ center: c, zoom: z });
+          for (const l of m.getStyle().layers) if (l.type === 'symbol' || l.type === 'circle') m.setLayoutProperty(l.id, 'visibility', 'none');
+          document.querySelectorAll('.warwrap,.maplibregl-marker').forEach((e) => { e.style.visibility = 'hidden'; }); }, [c, z]);
+        await pg.waitForTimeout(5000);
+        const shot = (await pg.screenshot({ clip: { x: 0, y: 150, width: 390, height: 500 } })).toString('base64');
+        return pg.evaluate(async (b64) => {
+          const im = new Image(); im.src = 'data:image/png;base64,' + b64; await im.decode();
+          const cv = document.createElement('canvas'); cv.width = im.width; cv.height = im.height;
+          const cx = cv.getContext('2d'); cx.drawImage(im, 0, 0);
+          const { data: d, width: W, height: H } = cx.getImageData(0, 0, cv.width, cv.height);
+          const at = (x, y) => (y * W + x) * 4;
+          const pale = (o) => { const l = (0.299 * d[o] + 0.587 * d[o + 1] + 0.114 * d[o + 2]) / 255, ch = Math.max(d[o], d[o + 1], d[o + 2]) - Math.min(d[o], d[o + 1], d[o + 2]); return l >= 0.82 && l <= 0.95 && ch < 40; };
+          let edge = 0, blk = 0;
+          for (let y = 3; y < H - 3; y++) for (let x = 3; x < W - 3; x++) {
+            const o = at(x, y);
+            if (pale(o)) { if (!pale(at(x + 1, y)) || !pale(at(x, y + 1)) || !pale(at(x - 1, y)) || !pale(at(x, y - 1))) edge++; continue; }
+            if (!(d[o] < 60 && d[o + 1] < 60 && d[o + 2] < 60)) continue;
+            if ([[2, 0], [-2, 0], [0, 2], [0, -2], [3, 0], [-3, 0], [0, 3], [0, -3]].some(([dx, dy]) => pale(at(x + dx, y + dy)))) blk++;
+          }
+          return { edge, blk, ratio: blk / Math.max(1, edge) };
+        }, shot);
+      };
+      const bSA = await beige([-62, -10], 2.6), bAF = await beige([5, 12], 2.6);
+      ok(bSA.edge > 500 && bAF.edge > 500 && bSA.ratio < 0.06 && bAF.ratio < 0.06,
+        `beige land of peoples or no state has no black outline (black pixels by its edge: Amazon ${bSA.blk} of ${bSA.edge}, Sahel ${bAF.blk} of ${bAF.edge}; before round 15 about 60%)`);
+      await pg.evaluate(() => { const m = window.__geo.map.map; for (const l of m.getStyle().layers) if (l.type === 'symbol' || l.type === 'circle') m.setLayoutProperty(l.id, 'visibility', 'visible'); });
+      // flags: every piece of a state with a flag shows it; the flag is faded; the badges are not
+      const fl = await pg.evaluate(async () => {
+        const M = window.__geo.map, m = M.map;
+        let tested = 0, missing = [];
+        for (const [c, z] of [[[-60, -18], 2.5], [[10, 20], 0.6]]) {
+        m.jumpTo({ center: c, zoom: z });
+        await new Promise((r) => setTimeout(r, 6000));
+        const f = M._fc[M.active], ext = f.ext, doc = f.doc;
+        const mx = (lon) => (lon + 180) / 360, my = (lat) => { const l = Math.max(-85.05, Math.min(85.05, lat)) * Math.PI / 180; return 0.5 - Math.log(Math.tan(Math.PI / 4 + l / 2)) / (2 * Math.PI); };
+        const sx = ext.W / (ext.x1 - ext.x0), sy = ext.H / (ext.y1 - ext.y0);
+        const cx = f.cv.getContext('2d');
+        for (const [i, fill] of f.fills) {
+          const g = doc.features[i].geometry;
+          for (const poly of (g.type === 'Polygon' ? [g.coordinates] : g.coordinates)) {
+            const pts = poly[0].map((p) => [(mx(p[0]) - ext.x0) * sx, (my(p[1]) - ext.y0) * sy]);
+            const ys = pts.map((p) => p[1]), xs = pts.map((p) => p[0]);
+            const y0 = Math.min(...ys), y1 = Math.max(...ys), x0 = Math.min(...xs), x1 = Math.max(...xs);
+            if ((x1 - x0) * (y1 - y0) < 150 || x1 < 2 || y1 < 2 || x0 > ext.W - 2 || y0 > ext.H - 2) continue;
+            // the middle of the widest stretch inside the piece on its middle row
+            const y = (y0 + y1) / 2, xsx = [];
+            for (const ring of poly) {
+              const q = ring.map((p) => [(mx(p[0]) - ext.x0) * sx, (my(p[1]) - ext.y0) * sy]);
+              for (let j = 0; j < q.length - 1; j++) { const [ax, ay] = q[j], [bx, by] = q[j + 1]; if ((ay > y) !== (by > y)) xsx.push(ax + ((y - ay) * (bx - ax)) / (by - ay)); }
+            }
+            xsx.sort((a, b) => a - b);
+            let best = null;
+            for (let j = 0; j + 1 < xsx.length; j += 2) if (!best || xsx[j + 1] - xsx[j] > best[1] - best[0]) best = [xsx[j], xsx[j + 1]];
+            if (!best || best[1] - best[0] < 6) continue;
+            const x = Math.round((best[0] + best[1]) / 2), yy = Math.round(y);
+            if (x < 0 || yy < 0 || x >= ext.W || yy >= ext.H) continue;
+            tested++;
+            if (cx.getImageData(x, yy, 1, 1).data[3] < 200) missing.push(doc.polities[doc.features[i].properties.k]?.n + ' ' + fill.key);
+          }
+        }
+        }
+        const f = M._fc[M.active], ext = f.ext, cx = f.cv.getContext('2d');
+        // saturation of the drawn flags (HSV), on a grid over the canvas
+        const { data } = cx.getImageData(0, 0, ext.W, ext.H);
+        let maxS = 0, n = 0;
+        for (let o = 0; o < data.length; o += 4 * 7) {
+          if (data[o + 3] < 250) continue;
+          const mxv = Math.max(data[o], data[o + 1], data[o + 2]), mnv = Math.min(data[o], data[o + 1], data[o + 2]);
+          if (mxv > 0) { maxS = Math.max(maxS, (mxv - mnv) / mxv); n++; }
+        }
+        // the same flags at full colour, for comparison: Spain's yellow
+        const es = M._fc[M.active].fills && [...f.fills.values()].find((v) => v.key === 'm:ES');
+        // badges: the images on the map are the flags of the time at full colour, in a dark frame
+        const bs = [];
+        for (const [c, z] of [[[0, 0], 0.43], [[60, 48], 1.9], [[-60, -18], 2.5], [[12, 48], 3.6]]) {
+          m.jumpTo({ center: c, zoom: z });
+          await new Promise((r) => setTimeout(r, 3000));
+          // each layer on its own, again if MapLibre throws while it places symbols
+          for (let t = 0; t < 10; t++) {
+            try { bs.push(...['badge-lo', 'badge-hi'].flatMap((l) => m.queryRenderedFeatures({ layers: [l] })).map((b) => b.properties.id)); break; } catch { await new Promise((r) => setTimeout(r, 300)); }
+          }
+        }
+        const bsat = [...new Set(bs)].map((id) => {
+          const im = m.style.getImage(id)?.data;
+          if (!im) return null;
+          let s2 = 0;
+          for (let y = 3; y < im.height - 3; y++) for (let x = 3; x < im.width - 3; x++) {
+            const o = (y * im.width + x) * 4, a = im.data[o], b = im.data[o + 1], c = im.data[o + 2], mv = Math.max(a, b, c);
+            if (mv > 40) s2 = Math.max(s2, (mv - Math.min(a, b, c)) / mv);
+          }
+          const fr = im.data.slice(0, 3);
+          return { id, s: s2, frame: Math.max(...fr) < 60, w: im.width };
+        }).filter(Boolean);
+        return { tested, missing, maxS, n, es: !!es, bsat, size: JSON.stringify(m.getLayoutProperty('badge-lo', 'icon-size')) };
+      });
+      ok(fl.tested > 40 && fl.missing.length === 0, `flag mode: every piece of a state with a flag shows the flag, none the plain colour (${fl.tested} pieces tested in South America and the world${fl.missing.length ? '; plain: ' + fl.missing.slice(0, 5).join(', ') : ''})`);
+      ok(fl.n > 1000 && fl.maxS < 0.66 && fl.es, `the flags on the land are faded: highest saturation on the canvas ${fl.maxS.toFixed(2)} (full-colour flags reach 1.0)`);
+      ok(fl.bsat.length >= 3 && fl.bsat.some((b) => b.s > 0.85) && fl.bsat.every((b) => b.frame) && /"zoom"\],1,1,/.test(fl.size),
+        `badges stay at full colour in a thin dark frame and are larger (${fl.bsat.length} badges; highest saturation ${Math.max(...fl.bsat.map((b) => b.s)).toFixed(2)}; size ${fl.size})`);
+      const tones = await pg.evaluate(async () => {
+        const m = window.__geo.map.map;
+        m.jumpTo({ center: [20, 45], zoom: 2.2 });
+        await new Promise((r) => setTimeout(r, 4000));
+        const t = m.queryRenderedFeatures({ layers: ['lbl-m', 'lbl-l', 'lbl-l-fb', 'lbl-l-line', 'lbl-emp', 'lbl-emp-fb', 'lbl-emp-line', 'lbl-s'] }).map((f) => f.properties.lc);
+        return { light: t.filter((x) => x === 'light').length, dark: t.filter((x) => x === 'dark').length };
+      });
+      ok(tones.light >= 3 * tones.dark && tones.light > 5, `over the faded flags most names are black (${tones.light} black, ${tones.dark} white)`);
+      ok(/faded so the names stay readable/.test(await pg.locator('#key').textContent()), 'the key says that the flags are shown faded');
+      ok(p.errors.length === 0, `no console errors in the line and flag checks${p.errors.length ? ': ' + p.errors.slice(0, 3).join(' | ') : ''}`);
       await p.ctx.close();
     }
 

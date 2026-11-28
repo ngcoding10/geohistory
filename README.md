@@ -118,8 +118,22 @@ then its flag's second colour, then the same two in the other lightness band, an
 24 colours of round 8 that is clear of every such neighbour. Neighbours always differ, and the result depends
 only on the map, not on the year shown before. Powers with no country (none of the sample points fell on land
 today's countries hold) keep their round-8 palette colour. Peoples and sketch-map regions stay pale with italic
-names. Borders are a dark line with a flat rim, no blur. No flag stripes are drawn inside states (tried on paper,
-left out: it would cost legibility and frame time).
+names.
+
+**Lines: one rule for the whole map** (`js/outline.js`, round 15). Each edge of each state's outline is classed by
+what lies just beyond it (a point a little outside the middle of the edge): another state gets the border, one
+solid black line of the same width everywhere (1.7 px at world zoom to 3.2 px zoomed in), over flags and plain
+colours alike; land of no state (the sea, peoples, unclaimed land) gets a thin dark line, the same line as the
+coast; another part of the same empire gets a thin grey line that shows only when zoomed in; peoples get a light
+hairline when zoomed in, never a black one. Before, the borders came from drawing order (a double-width line half
+hidden under each fill), which drew coasts in black only where a state's outline fell short of the coastline, and
+ringed the beige land of peoples inside states with a line three pixels wide. The outlines are simplified by
+MapLibre per zoom to 0.9 screen pixels (was 0.2): about 2,200 instead of 9,900 vertices of state outlines at world
+zoom and 2,200 instead of 4,600 over South America at zoom 2.5, and the same as before from zoom 5. Neighbours
+are simplified one by one (MapLibre has no shared topology), so they can part by up to about a pixel: the land
+showing between them at world zoom grew by about 1% of the land colour's pixels, all of it under the border line.
+Pieces under about one square pixel are left out at each zoom, and the outline of a piece under 20 square pixels
+is not drawn, so specks are not blots of black.
 
 **Badge = the flag at the time.** A small flag beside each state's name (below it), from sprite sheets of
 15-pixel-high badges, one sheet per era, loaded when a year of that era is first shown (`js/flags.js`). A badge
@@ -130,6 +144,16 @@ marker; one that would is not drawn. An empire shows its ruling state's flag at 
 flags (colonies) when zoomed in. Badges hide while the years run and come back when the map rests. The panel of
 a territory or empire shows the flag larger, with its name, the years it is shown for, notes, its licence and
 links to Commons and Wikidata.
+
+**Flag fill, faded** (`js/flagfill.js`, round 15). The flags drawn over the land are faded once per flag when it is
+first needed, in pixel code (not `ctx.filter`, which older Safari lacks): each colour keeps 55% of its saturation
+(45% less) and is then mixed 26% of the way towards the paper colour, so a flag reads as a tinted ground and the
+black names over it stay readable (in 1776 nearly every state name is now black). The badges keep full colour
+and have a thin dark frame; they are about a fifth larger than before. A piece much wider or taller than its flag,
+or taller than a quarter of the world map, gets the flag several times side by side or one above the other, and a
+piece that lies on a larger piece of the same empire under the same flag uses that piece's grid, so a viceroyalty
+and its empire read as one flag (in 1776 the Spanish Empire's one outline from California to Chile showed only the
+red bottom stripe of one huge flag over the Río de la Plata, which read as a plain dark-red patch).
 
 Which flag: Wikidata's flag image (P41) with its start and end time, in force on 1 July of the year shown,
 asked of a curated regime, then of the Wikidata era of the map's item that covers the year (Nazi Germany within
@@ -206,8 +230,8 @@ before the first map: 1776 6.37 to 4.39 MB, 1942 7.41 to 5.71 MB, 300 BC 5.47 to
 At world zoom an empire is drawn as one power: one colour, one name, no inner borders. Zoom in (past
 zoom 3.2) and its parts appear, each with its own name and its own tone of the empire's colour. A click at
 world zoom opens the empire with the list of its parts for that year; a click on a part when zoomed in opens
-the part, which says "Part of ...". No outline is merged or changed: the inner borders are hidden by the
-order in which the map draws them (`js/groups.js`, `js/map.js`).
+the part, which says "Part of ...". No outline is merged or changed: the edges between the parts are classed as
+inner lines (`js/outline.js`) and drawn thin and grey only when zoomed in (`js/groups.js`, `js/map.js`).
 
 A part belongs to an empire only in the years a source says so (`tools/build_empires.py`,
 `data/empires.json`): 418 dated memberships, of which 231 are confirmed by Wikidata (the part's item names

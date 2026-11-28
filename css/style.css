@@ -539,7 +539,7 @@ h2.context { margin-top: 22px; }
 .kseg button { border: 0; background: none; padding: 3px 9px; font-size: 12px; color: var(--ink-2); }
 .kseg button + button { border-left: 1px solid var(--line-2); }
 .kseg button[aria-checked="true"] { background: var(--ink-2); color: var(--paper); }
-.kffill { width: 26px; height: 16px; border: 1px solid #2a2219; background: linear-gradient(#fff 0 33%, #1c3f94 33% 66%, #d52b1e 66%); }
+.kffill { width: 26px; height: 16px; border: 1px solid #2a2219; background: linear-gradient(#fdfbf8 0 33%, #606d8c 33% 66%, #b56f66 66%); }
 .kflash { background: color-mix(in srgb, var(--card) 45%, #7fa0c4); box-shadow: inset 0 0 0 1.5px #3d5f84; border-radius: 1px; }
 .kcluster { background: var(--ink-2); }
 

@@ -33,11 +33,11 @@ export function renderKey(el, { doc, year, dark, wars = [], warOn = true, onWar,
     h('ul', null,
       fill === 'flag'
         ? row(h('span.kffill', { 'aria-hidden': 'true' }),
-          'Fill = the flag of the state\'s present-day successor (the Russian Empire and the Soviet Union take Russia\'s; colonies take their ruler\'s). Where there is no obvious successor, its own flag of the time; with no flag, a plain colour.')
+          'Fill = the flag of the state\'s present-day successor (the Russian Empire and the Soviet Union take Russia\'s; colonies take their ruler\'s). Where there is no obvious successor, its own flag of the time; with no flag, a plain colour. Flags on the land are shown faded so the names stay readable.')
         : row(h('span.ktrio', null, fills.map((t) => sw(t.fill, t.edge))),
           'Colour = today\'s country\'s flag (the Russian Empire and the Soviet Union take Russia\'s). Neighbours with alike flags take a second colour.'),
       row(h('span.kflag', { 'aria-hidden': 'true' }, h('i'), h('i'), h('i')),
-        'Badge = the flag at the time, beside the name (more as you zoom in). Click the land for it, larger, with its dates.'),
+        'Badge = the flag at the time, in full colour, beside the name (more as you zoom in). Click the land for it, larger, with its dates.'),
       row(h('span.ksw.kemp', { style: `--p1:${p1};--p2:${p2};border-color:${empT.edge}` }),
         'An empire. Zoom in to see its parts.'),
       row(h('span.ksw.kunder', { style: `background:${under}` }, h('i', null, 'Aa')),

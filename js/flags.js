@@ -40,6 +40,17 @@ const loadImage = (url) => new Promise((res, rej) => {
   if (new URL(url, location.href).origin !== location.origin) im.crossOrigin = 'anonymous';
   im.onload = () => res(im); im.onerror = rej; im.src = url;
 });
+// a badge is the flag at full colour in a thin dark frame (1 CSS pixel: 2 pixels of the sheet, which is drawn at
+// pixel ratio 2), so that it stands out from the faded flags of the land under it
+export const BADGE_FRAME = [28, 26, 22, 235];
+function framed(src) {
+  const b = 2, w = src.width + 2 * b, hh = src.height + 2 * b;
+  const out = new ImageData(w, hh);
+  const d = out.data, sd = src.data;
+  for (let o = 0; o < d.length; o += 4) { d[o] = BADGE_FRAME[0]; d[o + 1] = BADGE_FRAME[1]; d[o + 2] = BADGE_FRAME[2]; d[o + 3] = BADGE_FRAME[3]; }
+  for (let y = 0; y < src.height; y++) d.set(sd.subarray(y * src.width * 4, (y + 1) * src.width * 4), ((y + b) * w + b) * 4);
+  return out;
+}
 /** Add the badge images of the era of `year` to the map (once per era). */
 export function ensureSheet(map, year) {
   const sh = idx?.sheets?.find(([a, b]) => a <= year && year <= b);
@@ -53,7 +64,7 @@ export function ensureSheet(map, year) {
       cx.drawImage(img, 0, 0);
       for (const [id, [x, y, w, hh]] of Object.entries(pos)) {
         const nm = 'flag-' + id;
-        if (!map.hasImage(nm)) map.addImage(nm, cx.getImageData(x, y, w, hh), { pixelRatio: 2 });
+        if (!map.hasImage(nm)) map.addImage(nm, framed(cx.getImageData(x, y, w, hh)), { pixelRatio: 2 });
       }
       cv.width = cv.height = 0;   // released at once: iOS counts canvas memory until a canvas is collected
     });

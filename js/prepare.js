@@ -8,6 +8,7 @@ export function setFlagColors(fc) { FC = fc; }
 /** The present-day country a power's fill comes from (ISO code), or null. */
 export const modernOf = (pk) => FC?.p?.[pk] || null;
 import { makeAreaTest } from './geo.js';
+import { buildOutlines } from './outline.js';
 
 const REGION_HUES = ['#d9c08c', '#b4cf9c', '#dab4a0', '#a9cfc6', '#dccb8e', '#c9c0e0', '#bcd3a0', '#e0b7b9', '#a8c6dc', '#d6c4a2'];
 const hash = (s) => { let hsh = 0; for (let i = 0; i < s.length; i++) hsh = (hsh * 31 + s.charCodeAt(i)) >>> 0; return hsh; };
@@ -197,6 +198,13 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
   doc.labelLines = { type: 'FeatureCollection', features: lines };
   doc._lbl = placed;
   doc.sig = sig + '|' + dark;
+  // the lines of the map (js/outline.js): they depend on the groups only
+  if (doc._olSig !== sig) {
+    const t0 = performance.now();
+    doc.outlines = buildOutlines(doc);
+    doc._olSig = sig;
+    doc._olMs = Math.round(performance.now() - t0);
+  }
   return doc.sig;
 }
 

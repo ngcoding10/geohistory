@@ -15,6 +15,65 @@ import { flagFor, loadFlags } from './flags.js';
 let FF = null;
 let atlas = null;
 const hist = new Map();       // flag id -> Promise<HTMLImageElement|null>
+
+// Flags on the land are shown faded, so that the names over them stay readable: each flag is processed once,
+// when first needed, in pixel code (ctx.filter is missing in older Safari): its colours keep FADE.keep of their
+// saturation and are then mixed FADE.paper of the way towards the paper colour. The badges (js/flags.js) are
+// not touched: they are the flag at the time and stay at full colour.
+export const FADE = { keep: 0.55, paper: 0.26 };
+let PAPER = [246, 241, 228];
+const faded = new Map();      // fill key -> {img (canvas or ImageBitmap), w, h}
+const fading = new Map();     // fill key -> Promise
+/** The paper colour the flags are lightened towards (the map's land colour family); set once by the map. */
+export function setFlagPaper(dark) {
+  const p = dark ? [58, 53, 44] : [246, 241, 228];
+  if (p.join() !== PAPER.join()) { PAPER = p; faded.clear(); fading.clear(); }
+}
+/** Fade the pixels of an RGBA buffer in place (exported for the checks). */
+export function fadePixels(d) {
+  const k = FADE.keep, m = FADE.paper, [pr, pg, pb] = PAPER;
+  for (let o = 0; o < d.length; o += 4) {
+    const r = d[o], g = d[o + 1], b = d[o + 2];
+    const l = 0.299 * r + 0.587 * g + 0.114 * b;
+    const r2 = l + (r - l) * k, g2 = l + (g - l) * k, b2 = l + (b - l) * k;
+    d[o] = r2 + (pr - r2) * m; d[o + 1] = g2 + (pg - g2) * m; d[o + 2] = b2 + (pb - b2) * m;
+  }
+  return d;
+}
+function fadeOne(key, img, r) {
+  if (faded.has(key)) return Promise.resolve(faded.get(key));
+  if (fading.has(key)) return fading.get(key);
+  const p = (async () => {
+    const w = Math.max(1, Math.round(r[2])), h = Math.max(1, Math.round(r[3]));
+    const cv = document.createElement('canvas');
+    cv.width = w; cv.height = h;
+    const cx = cv.getContext('2d', { willReadFrequently: true });
+    if (!cx) return null;
+    cx.drawImage(img, r[0], r[1], r[2], r[3], 0, 0, w, h);
+    let data;
+    try { data = cx.getImageData(0, 0, w, h); } catch { return null; }
+    fadePixels(data.data);
+    cx.putImageData(data, 0, 0);
+    let out = cv;
+    // an ImageBitmap does not count towards the memory iOS allows the canvases of a page
+    if (typeof createImageBitmap === 'function') {
+      try { out = await createImageBitmap(cv); cv.width = cv.height = 0; } catch { out = cv; }
+    }
+    const v = { img: out, w, h };
+    faded.set(key, v);
+    return v;
+  })().catch(() => null).finally(() => fading.delete(key));
+  fading.set(key, p);
+  return p;
+}
+/** The faded image of a fill: {img, r: [0, 0, w, h]}, or null when it is not ready (then the raw flag). */
+function fadedOf(fl, imgs) {
+  const v = faded.get(fl.key);
+  if (v) return { img: v.img, r: [0, 0, v.w, v.h] };
+  const img = fl.src === 'atlas' ? atlas : imgs?.get(fl.id);
+  if (!img) return null;
+  return { img, r: fl.src === 'atlas' ? fl.r : [0, 0, img.naturalWidth, img.naturalHeight] };
+}
 // same-origin images need no CORS request (and Safari has cached a plain and a CORS copy of one file differently)
 const loadImage = (url) => new Promise((res, rej) => {
   const im = new Image();
@@ -95,6 +154,12 @@ export async function ensureImages(fills) {
   }));
   const ready = new Map();
   for (const id of ids) ready.set(id, await hist.get(id));
+  const keys = new Map();
+  for (const fl of fills.values()) if (!keys.has(fl.key)) keys.set(fl.key, fl);
+  await Promise.all([...keys.values()].map((fl) => {
+    const img = fl.src === 'atlas' ? atlas : ready.get(fl.id);
+    return img ? fadeOne(fl.key, img, fl.src === 'atlas' ? fl.r : [0, 0, img.naturalWidth, img.naturalHeight]) : null;
+  }));
   return ready;
 }
 
@@ -145,11 +210,78 @@ function rings(geom) {
   return geom.type === 'Polygon' ? [geom.coordinates] : geom.type === 'MultiPolygon' ? geom.coordinates : [];
 }
 
-/** Draw one piece (a polygon) filled with its flag. */
-function drawPiece(cx, poly, ext, img, r) {
+/** The flag grid of a box (Mercator 0..1) for a flag of proportions fa: the flag over the box, stretched to it
+ *  but never more than 1.6 times off its own proportions. A box much wider or taller than the flag gets the flag
+ *  several times side by side (or one above the other), so that every part of a large state shows the flag and
+ *  not one stripe of a flag blown up over a continent. {x0, y0, cw, ch (cell), dw, dh (flag drawn in a cell)} */
+const CELL_MAX = 0.25;   // Mercator 0..1: 90 degrees of longitude
+function gridOf([w, n, e, s], fa) {
+  const bw = e - w, bh = Math.max(s - n, 1e-12), ba = bw / bh;
+  let cols = ba > fa * 1.6 ? Math.min(8, Math.round(ba / fa)) : 1;
+  let rows = ba < fa / 1.6 ? Math.min(8, Math.round(fa / ba)) : 1;
+  // and no flag taller than CELL_MAX (a sub-continent): its stripes would read as plain colours
+  if (bh / rows > CELL_MAX) { rows = Math.min(8, Math.ceil(bh / CELL_MAX)); cols = Math.max(1, Math.min(8, Math.round(bw / ((bh / rows) * fa)))); }
+  const cw = bw / cols, ch = bh / rows, ca = cw / ch;
+  const ta = Math.max(fa / 1.6, Math.min(fa * 1.6, ca));
+  let dw, dh;
+  if (ca > ta) { dw = cw; dh = cw / ta; } else { dh = ch; dw = ch * ta; }
+  return { x0: w, y0: n, cw, ch, dw, dh };
+}
+
+function inPiece(poly, x, y) {   // lon, lat
+  let c = false;
+  for (const ring of poly) {
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const xi = ring[i][0], yi = ring[i][1], xj = ring[j][0], yj = ring[j][1];
+      if ((yi > y) !== (yj > y) && x < xi + ((y - yi) * (xj - xi)) / (yj - yi)) c = !c;
+    }
+  }
+  return c;
+}
+
+/** Where each piece's flag goes: feature index -> [{poly, box, grid}]. A piece that lies on a larger piece of
+ *  the same state or empire under the same flag (a viceroyalty that the empire's outline also covers) takes
+ *  that piece's grid, so the two read as one flag and not as two flags cut across each other. */
+const layouts = new WeakMap();   // fills -> layout (the same map and year: only the view changes)
+function layoutOf(doc, fills, imgs) {
+  const known = layouts.get(fills);
+  if (known && known.doc === doc) return known.out;
+  const out = new Map();
+  const all = [];
+  for (const [i, fl] of fills) {
+    const f = doc.features[i];
+    if (!f) continue;
+    const fd = fadedOf(fl, imgs);
+    if (!fd) continue;
+    const fa = fd.r[2] / fd.r[3];
+    const list = [];
+    for (const poly of rings(f.geometry)) {
+      let w = Infinity, e = -Infinity, n = -Infinity, s = Infinity;
+      for (const p of poly[0]) { if (p[0] < w) w = p[0]; if (p[0] > e) e = p[0]; if (p[1] > n) n = p[1]; if (p[1] < s) s = p[1]; }
+      const box = [mx(w), my(n), mx(e), my(s)];
+      const pc = { poly, box, ll: [w, s, e, n], size: (box[2] - box[0]) * (box[3] - box[1]), grid: gridOf(box, fa), g: f.properties.g, key: fl.key };
+      list.push(pc); all.push(pc);
+    }
+    out.set(i, list);
+  }
+  const hosts = all.filter((pc) => pc.size > 1e-6).sort((a, b) => b.size - a.size).slice(0, 40);
+  for (const pc of all) {
+    const cx = (pc.ll[0] + pc.ll[2]) / 2, cy = (pc.ll[1] + pc.ll[3]) / 2;
+    for (const h of hosts) {
+      if (h.size < pc.size * 3) break;
+      if (h.key !== pc.key || h.g !== pc.g || cx < h.ll[0] || cx > h.ll[2] || cy < h.ll[1] || cy > h.ll[3]) continue;
+      if (inPiece(h.poly, cx, cy)) { pc.grid = h.grid; break; }
+    }
+  }
+  layouts.set(fills, { doc, out });
+  return out;
+}
+
+/** Draw one piece (a polygon) filled with its flag, on its grid. */
+function drawPiece(cx, pc, ext, img, r) {
+  const { poly, box, grid } = pc;
   const sx = ext.W / (ext.x1 - ext.x0), sy = ext.H / (ext.y1 - ext.y0);
-  let w = Infinity, e = -Infinity, n = Infinity, s = -Infinity;
-  for (const p of poly[0]) { const x = mx(p[0]); const y = my(p[1]); if (x < w) w = x; if (x > e) e = x; if (y < n) n = y; if (y > s) s = y; }
+  const [w, n, e, s] = box;
   const bx = (w - ext.x0) * sx, by = (n - ext.y0) * sy, bw = (e - w) * sx, bh = (s - n) * sy;
   if (bx > ext.W || by > ext.H || bx + bw < 0 || by + bh < 0 || bw * bh < 3) return;
   cx.save();
@@ -165,13 +297,19 @@ function drawPiece(cx, poly, ext, img, r) {
     cx.closePath();
   }
   cx.clip('evenodd');
-  // the flag over the piece's box: stretched to it, but never more than twice off its own proportions (a long
-  // thin piece then shows the middle of the flag)
-  const fa = r[2] / r[3], ba = bw / Math.max(bh, 1e-6);
-  const ta = Math.max(fa / 2, Math.min(fa * 2, ba));
-  let dw, dh;
-  if (ba > ta) { dw = bw; dh = bw / ta; } else { dh = bh; dw = bh * ta; }
-  cx.drawImage(img, r[0], r[1], r[2], r[3], bx + (bw - dw) / 2, by + (bh - dh) / 2, dw, dh);
+  // the cells of the grid that the piece (and the canvas) cover
+  const vx0 = Math.max(w, ext.x0), vx1 = Math.min(e, ext.x1), vy0 = Math.max(n, ext.y0), vy1 = Math.min(s, ext.y1);
+  const i0 = Math.floor((vx0 - grid.x0) / grid.cw), i1 = Math.floor((vx1 - grid.x0) / grid.cw);
+  const j0 = Math.floor((vy0 - grid.y0) / grid.ch), j1 = Math.floor((vy1 - grid.y0) / grid.ch);
+  if (i1 - i0 < 64 && j1 - j0 < 64) {
+    const dw = grid.dw * sx, dh = grid.dh * sy, cw = grid.cw * sx, ch = grid.ch * sy;
+    for (let i = i0; i <= i1; i++) {
+      for (let j = j0; j <= j1; j++) {
+        const x = (grid.x0 - ext.x0) * sx + i * cw, y = (grid.y0 - ext.y0) * sy + j * ch;
+        cx.drawImage(img, r[0], r[1], r[2], r[3], x + (cw - dw) / 2, y + (ch - dh) / 2, dw, dh);
+      }
+    }
+  }
   cx.restore();
   return bw * bh >= 64 ? [Math.max(0, bx), Math.max(0, by), Math.min(bw, ext.W - Math.max(0, bx)), Math.min(bh, ext.H - Math.max(0, by))] : null;
 }
@@ -190,6 +328,7 @@ export function paint(canvas, doc, fills, imgs, ext, { which = null, alpha = nul
   cx.imageSmoothingEnabled = true;
   cx.imageSmoothingQuality = 'high';
   const list = which || [...fills.keys()];
+  const lay = layoutOf(doc, fills, imgs);
   for (const i of list) {
     const f = doc.features[i];
     if (!f) continue;
@@ -197,10 +336,9 @@ export function paint(canvas, doc, fills, imgs, ext, { which = null, alpha = nul
     if (a <= 0.001) continue;
     cx.globalAlpha = a;
     const fl = fills.get(i);
-    const img = fl ? (fl.src === 'atlas' ? atlas : imgs.get(fl.id)) : null;
-    if (img) {
-      const r = fl.src === 'atlas' ? fl.r : [0, 0, img.naturalWidth, img.naturalHeight];
-      for (const poly of rings(f.geometry)) { const b = drawPiece(cx, poly, ext, img, r); if (b && boxes) boxes.push(b); }
+    const fd = fl ? fadedOf(fl, imgs) : null;
+    if (fd) {
+      for (const pc of lay.get(i) || []) { const b = drawPiece(cx, pc, ext, fd.img, fd.r); if (b && boxes) boxes.push(b); }
     } else if (plain?.get(i)) {
       cx.fillStyle = plain.get(i);
       const sx = ext.W / (ext.x1 - ext.x0), sy = ext.H / (ext.y1 - ext.y0);
@@ -227,9 +365,9 @@ export function paint(canvas, doc, fills, imgs, ext, { which = null, alpha = nul
 /** One flag as a small tile for the fallback fill (MapLibre fill-pattern, tiled from the screen origin): ImageData
  *  of w x h, or null. */
 export function flagTile(fl, imgs, w = 48, h = 32) {
-  const img = fl.src === 'atlas' ? atlas : imgs.get(fl.id);
-  if (!img) return null;
-  const r = fl.src === 'atlas' ? fl.r : [0, 0, img.naturalWidth, img.naturalHeight];
+  const fd = fadedOf(fl, imgs);
+  if (!fd) return null;
+  const { img, r } = fd;
   const cv = document.createElement('canvas');
   cv.width = w; cv.height = h;
   const cx = cv.getContext('2d');
