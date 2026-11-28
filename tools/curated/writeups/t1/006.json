@@ -906,5 +906,97 @@
   ],
   "disagree": "Sasanian numbers: Wikipedia 50,000-150,000; TheCollector up to 150,000, noting that sources vary. Wikipedia gives more than one version of the battle.",
   "checked": null
+ },
+ "Q1078359": {
+  "title": "Battle of Yamen",
+  "y": 1279,
+  "place": "Bay of Yamen, Pearl River Delta (today Xinhui, Jiangmen, Guangdong, China)",
+  "paras": [
+   "The Battle of Yamen, also called the Battle of Yashan, was a naval battle fought on 19 March 1279 in the bay of Yamen on the Pearl River Delta in southern China, today in Xinhui, Jiangmen, Guangdong. It was the last stand of the Song dynasty against the Mongol-led Yuan dynasty of Kublai Khan. The Mongols had attacked Song territory from 1267; after taking Xiangyang in 1273 they could push down the Yangzi, and by 1276 most of the Song lands were in Yuan hands.",
+   "In 1276 the Song court fled its capital Lin'an and left the young Emperor Gong to be captured. Loyalists declared one of his two young brothers, the boy Zhao Shi, emperor and moved south by sea: when Fuzhou fell in 1277 they went on to Quanzhou, where the merchant Pu Shougeng refused them ships and went over to the Yuan, and then on to Guangdong. Zhao Shi died after a shipwreck and illness and was followed by his younger brother Zhao Bing, aged seven according to Wikipedia (eight in a Lumen Learning text). The general Zhang Shijie took the new emperor to Yamen; in 1278 the Song commander Wen Tianxiang was captured on land.",
+   "In 1279 the Yuan commander Zhang Hongfan, reinforced by Li Heng, attacked the Song fleet at Yamen. Zhang Shijie chained about 1,000 ships together in a long line in the bay, with the emperor's ship in the centre, and burned the buildings on shore so that no one could flee. Yuan fire ships failed because the Song hulls were coated with fire-resistant mud, so the Yuan blockaded the bay and cut off fresh water and firewood on land; the Song crews, crowded with non-combatants, were reduced to dry food and sea water. On 19 March Zhang Hongfan split his fleet into four. An attack from the north was beaten off; then the Yuan played festive music as if holding a banquet, and at noon attacked from the front with soldiers hidden under cloth. The chained Song ships could neither help each other nor retreat.",
+   "Zhang Shijie cut about a dozen ships loose and broke out. Seeing no way of escape, the chief minister Lu Xiufu took the boy emperor and jumped into the sea, where both drowned, and many officials followed; an OUP account puts it more cautiously, saying the last Song prince drowned, perhaps thrown into the water by a despairing official. Zhang Shijie is thought to have died in a storm soon afterwards. The battle ended the Song dynasty and left Kublai Khan's Yuan in control of the whole of China, which, as OUP notes, was then for the first time entirely under foreign rule; the Yuan held it until the rise of the Ming."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Yamen",
+    "title": "Battle of Yamen (rev 1370277114)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     18,
+     19
+    ]
+   },
+   {
+    "url": "https://blog.oup.com/?p=22598",
+    "title": "Song Dynasty falls as Mongols complete conquest of China (This Day in World History, 19 March 2012)",
+    "publisher": "OUPblog, Oxford University Press",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     7,
+     17,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://courses.lumenlearning.com/suny-worldhistory/chapter/the-southern-song-era/",
+    "title": "The Southern Song Era (World History, SUNY)",
+    "publisher": "Lumen Learning",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     8,
+     10,
+     16,
+     19
+    ]
+   }
+  ],
+  "claims": [
+   "Battle of Yamen, also Battle of Yashan, naval battle on 19 March 1279 in southern China (Wikipedia; OUP: March 19, 1279, a Mongol fleet defeated a Song fleet).",
+   "Lumen: the Battle of Yamen was on the Pearl River Delta; Wikipedia: the site is today in Yamen, Xinhui, Jiangmen, Guangdong.",
+   "Last stand of the Song dynasty against the Mongol-led Yuan dynasty (Wikipedia; OUP: Mongols completed the conquest of China; Kublai Khan named in Wikipedia, OUP and Lumen).",
+   "OUP: assault on Song territory from 1267; after obtaining Xiangyang in 1273 the Mongols gained access to the Yangzi (Lumen: Xiangyang besieged 1268-1273).",
+   "Lumen: by 1276 most Song territory had been captured by Yuan forces.",
+   "In 1276 the Song court fled Lin'an and left Emperor Gong behind to be captured (Wikipedia).",
+   "Zhao Shi, the older of Gong's two young brothers (Wikipedia: 'two young princes, Gong's brothers'), was declared emperor; Fuzhou fell in 1277 and the court went to Quanzhou, where Pu Shougeng refused boats and surrendered to the Yuan; the court sailed to Guangdong (Wikipedia; OUP: the government moved further south and fled the mainland by boat).",
+   "Zhao Shi fell ill after his boat capsized and died; he was succeeded by his younger brother Zhao Bing, aged seven (Wikipedia); Lumen gives the last emperor's age as 8.",
+   "Zhang Shijie brought the new emperor to Yamen; in 1278 Wen Tianxiang was captured in Haifeng County (Wikipedia).",
+   "In 1279 Zhang Hongfan of the Yuan attacked the Song navy at Yamen, reinforced by Li Heng (Wikipedia; Lumen: Yuan army led by General Zhang Hongfan).",
+   "About 1,000 ships chained together in a long string in the bay, the emperor's boat in the centre; palaces, houses and forts on land burned to prevent flight (Wikipedia).",
+   "Yuan fire ships failed because the Song ships were painted with fire-resistant mud; the Yuan blockaded the bay and cut off fresh water and wood; the Song, with many non-combatants, ate dry food and drank sea water (Wikipedia).",
+   "On 19 March (the day after preparations on 18 March) Zhang Hongfan split his fleet into four; the northern attack was repulsed; the Yuan played festive music suggesting a banquet, then attacked at noon from the front with soldiers hidden under cloth (Wikipedia).",
+   "The chained Song ships could neither support the middle nor retreat (Wikipedia).",
+   "Zhang Shijie cut about a dozen ships from the formation in a breakout (Wikipedia).",
+   "Lu Xiufu took the boy emperor and jumped into the sea, both drowned; many officials followed (Wikipedia; Lumen: the emperor and Prime Minister Lu Xiufu committed suicide).",
+   "OUP: the last Song prince drowned in the battle, perhaps thrown into the water by a despairing Song official.",
+   "Zhang Shijie was assumed to have drowned in a storm soon afterwards (Wikipedia).",
+   "The death of Zhao Bing ended the Song dynasty, leaving the Yuan under Kublai Khan in control of all China until the rise of the Ming (Wikipedia; Lumen: finally crushed the Song resistance; OUP: Mongols quickly ended remaining resistance).",
+   "OUP: China for the first time in its history was entirely in foreign hands."
+  ],
+  "disagree": "Zhao Bing's age: seven in Wikipedia, eight in Lumen Learning. How he died: Wikipedia says Lu Xiufu jumped into the sea with him; OUP says he drowned, perhaps thrown into the water by a despairing official.",
+  "checked": null
  }
 }
