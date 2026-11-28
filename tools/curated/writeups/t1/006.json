@@ -2260,5 +2260,706 @@
   ],
   "disagree": "Forces involved: 30,000 Wehrmacht soldiers (LeMO); 19 infantry battalions and 13 artillery detachments with 30,000 state police, of which about 3,000 men crossed to the west bank (LVR portal).",
   "checked": null
+ },
+ "Q1443926": {
+  "title": "Treaty on the Creation of the USSR",
+  "y": 1922,
+  "place": "Moscow",
+  "paras": [
+   "The Declaration and Treaty on the Formation of the Union of Soviet Socialist Republics created the Soviet Union. It joined four Soviet republics: the Russian SFSR, the Ukrainian SSR, the Byelorussian SSR and the Transcaucasian SFSR, which covered Georgia, Armenia and Azerbaijan. Their delegations concluded the treaty, and the First Congress of Soviets of the USSR, meeting in Moscow, approved the declaration and treaty on 30 December 1922, the date treated as the founding day of the USSR. The documents were signed by members of the four delegations, headed by Mikhail Kalinin, Grigory Petrovsky, Mikhail Tskhakaya and Alexander Chervyakov.",
+   "The republics had been bound together in a political union since 1919, and the treaty gave this union a legal form. Wikipedia describes the treaty as the outcome of conflicts inside the Bolshevik party. After Lenin's first stroke in the spring of 1922, Joseph Stalin, People's Commissar for Nationalities and now General Secretary of the party, pressed to bring the separate Soviet governments under Moscow's supreme rule. This met resistance, above all in Ukraine and in Georgia (the 'Georgian Affair'), and the federal treaty was a compromise between these camps. The declaration itself gave three reasons for union: economies ruined by the war, the danger of new attacks from the capitalist world, and the internationalist nature of Soviet power. It declared the union a voluntary association of equal peoples, open to other Soviet republics, with each republic free to leave.",
+   "The treaty's 26 articles gave the union authorities control of foreign affairs and trade, war and peace, the armed forces, the general economic plan, the budget and currency, and transport and posts. They set up a Congress of Soviets, a Central Executive Committee and a Council of People's Commissars, a union supreme court and the OGPU secret police, created a single citizenship, and made Moscow the capital. Article 26 kept each republic's right to secede. The congress approved the texts only 'in principle' and sent them to the republics for comments, leaving final approval to the second congress. In January 1924 that congress adopted the first Soviet constitution, which took over the declaration and expanded the treaty.",
+   "Under the treaty the union grew to 16 republics by 1940, and from 1956 it had 15. In December 1991 the three surviving founding republics renounced it. After the Belovezha Accords of 8 December 1991, the Supreme Soviets of Ukraine and Belarus denounced the 1922 treaty on 10 December, and the Russian parliament followed on 12 December. The Soviet Union was dissolved on 26 December 1991."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Treaty_on_the_Creation_of_the_Union_of_Soviet_Socialist_Republics",
+    "title": "Treaty on the Creation of the Union of Soviet Socialist Republics (rev 1376214267)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://ru.wikisource.org/wiki/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_I_%D1%81%D1%8A%D0%B5%D0%B7%D0%B4%D0%B0_%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D0%BE%D0%B2_%D0%A1%D0%A1%D0%A1%D0%A0_%D0%BE%D1%82_30.12.1922_%D0%BE%D0%B1_%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8_%D0%B4%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%86%D0%B8%D0%B8_%D0%B8_%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B0_%D0%BE%D0%B1_%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8_%D0%A1%D0%A1%D0%A1%D0%A0",
+    "title": "Постановление I съезда Советов СССР от 30 декабря 1922 года «Об утверждении декларации и договора об образовании СССР» (with the declaration and treaty)",
+    "publisher": "Wikisource (text from Postanovleniya pervogo s'ezda Sovetov SSSR, TsIK SSSR, 1923)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.calend.ru/events/4837/",
+    "title": "Образован Союз Советских Социалистических Республик (СССР)",
+    "publisher": "Calend.ru",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://tass.com/society/1372631",
+    "title": "Soviet Union ceased to exist 30 years ago today",
+    "publisher": "TASS",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     7,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The RSFSR, Ukrainian SSR, Byelorussian SSR and Transcaucasian SFSR (Georgia, Azerbaijan, Armenia) formed the USSR (Wikipedia; treaty text; Calend.ru).",
+   "The First Congress of Soviets of the USSR approved the declaration and treaty on 30 December 1922 in Moscow (congress resolution dated Moscow, 30 December 1922; Calend.ru: considered the day the USSR was formed; TASS: approved by the 1st congress on 30 December 1922; Wikipedia).",
+   "Signed by members of the plenipotentiary delegations, headed by Kalinin, Petrovsky, Tskhakaya and Chervyakov (Wikipedia; treaty text: signatures of Kalinin, Petrovsky, Tskhakaya, Chervyakov).",
+   "The treaty legalised a union of Soviet republics that had existed since 1919 and centralised key functions in Moscow (Wikipedia).",
+   "The treaty resulted from internal conflicts in the Bolshevik party; after Lenin's first stroke in spring 1922 Stalin, Commissar for Nationalities and General Secretary, pushed to liquidate separate Soviet governments and restore supreme rule to Moscow; opposition in Ukraine (Rakovsky) and Georgia (Georgian Affair); the treaty was a compromise (Wikipedia).",
+   "The declaration gave three reasons: economies ruined by war, the danger of new attacks, the internationalist nature of Soviet power (declaration text; Wikipedia).",
+   "The union was declared voluntary, of equal peoples, open to all Soviet republics, with each republic free to leave (declaration text; Wikipedia; TASS: Soviet constitutions proclaimed the right of free secession).",
+   "26 articles; union competence over foreign affairs, war and peace, foreign trade, economic plan, armed forces, budget and currency, transport and posts; Congress of Soviets, Central Executive Committee, Council of People's Commissars; Supreme Court and OGPU; single citizenship; Moscow capital (art. 23); right of secession (art. 26) (treaty text; Wikipedia).",
+   "The congress approved the declaration and treaty 'in principle' ('в основном'), sent them to the republics' central executive committees for comment, and left final approval to the second congress (congress resolution).",
+   "In January 1924 the Second Congress of Soviets ratified the first Soviet constitution, which contained the same declaration and expanded the treaty (Wikipedia).",
+   "By 1940 the Union had grown to 16 republics (Wikipedia); from 1956 it had 15 (Calend.ru; TASS).",
+   "Belovezha Accords of 8 December 1991; Ukraine and Belarus denounced the treaty on 10 December (TASS; Wikipedia: ratified the accord on 10 December); the Russian parliament on 12 December (Wikipedia); the USSR dissolved on 26 December 1991 (Wikipedia; Calend.ru)."
+  ],
+  "disagree": "The event record dates the treaty 29 December 1922; the fetched sources date the congress's approval and the signed documents 30 December 1922 (Wikipedia, the congress resolution, Calend.ru, TASS). No fetched source gives 29 December, so the record is left unchanged and the text uses 30 December.",
+  "checked": null
+ },
+ "Q168268": {
+  "title": "Peace of Prague (1866)",
+  "y": 1866,
+  "place": "Prague, Bohemia (Austrian Empire)",
+  "paras": [
+   "The Peace of Prague of 23 August 1866 ended the German War of that summer between Prussia and Austria. The war grew out of the long rivalry between the two powers in the German Confederation and came to a head over the joint administration of Schleswig and Holstein, won from Denmark in 1864. In June 1866 Prussian troops marched into Holstein. On 14 June the Federal Diet in Frankfurt voted, on Austria's motion, to mobilise the federal army against Prussia, and Prussia declared the Confederation dissolved and left it. Austria fought alongside Bavaria, Württemberg, Saxony, Hanover, Hesse-Kassel and other states, while Prussia had the support of most of the small northern states and of Italy. The war was decided within weeks by the Prussian victory at Königgrätz on 3 July 1866.",
+   "France's Napoleon III watched Prussia's rapid success with suspicion. Knowing he needed French acquiescence, the Prussian minister-president Otto von Bismarck agreed the main points of a peace with Napoleon on 14 July and imposed them on Austria in the preliminary Peace of Nikolsburg of 26 July. According to the German Historical Museum, King Wilhelm I and leading generals wanted to humiliate Austria with large cessions of territory, and Bismarck won the king's consent only by threatening to resign and with the support of Crown Prince Friedrich. The treaty signed at Prague confirmed the Nikolsburg terms.",
+   "The German Historical Museum calls the outcome comparatively mild for Austria: apart from Venetia, which went to Italy, it kept its territory. But the German Confederation, which had existed since 1815, was dissolved and Austria was pushed out of German affairs. Prussia was free to annex Hanover, Hesse-Kassel, Nassau and Frankfurt, closing the gap between its eastern and western lands, and to found a North German Confederation under its leadership north of the Main; the southern German states could form a union of their own. Napoleon III saw this three-way division and the limit of Prussian expansion at the Main as protecting French interests.",
+   "The day after the treaty was signed, on 24 August 1866, the remaining envoys of the Federal Diet, which had moved from Frankfurt to Augsburg in July, held a final session and ended their work, since the Confederation now had to be considered dissolved. Prussia now held unchallenged supremacy in Germany."
+  ],
+  "sources": [
+   {
+    "url": "https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/prager-frieden-1866.html",
+    "title": "Prager Frieden 1866 (LeMO)",
+    "publisher": "Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://www.dhm.de/lemo/kapitel/reaktionszeit/deutscher-bund-und-nationale-frage/deutscher-krieg-1866.html",
+    "title": "Deutscher Krieg 1866 (LeMO)",
+    "publisher": "Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     10,
+     11,
+     14
+    ]
+   },
+   {
+    "url": "https://www.bpb.de/shop/zeitschriften/apuz/archiv/527511/das-ende-des-deutschen-bundes/",
+    "title": "Das Ende des Deutschen Bundes (Aus Politik und Zeitgeschichte)",
+    "publisher": "Bundeszentrale für politische Bildung",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     7,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The Peace of Prague of 23 August 1866 ended the German War between Prussia and Austria (both LeMO pages; local Wikipedia extract: signed at Prague on 23 August 1866).",
+   "The war came from the Austro-Prussian dualism in the Confederation and escalated over the administration of Holstein and Schleswig after their joint victory over Denmark in 1864 (LeMO war page).",
+   "Prussian troops entered Holstein in June 1866 (LeMO war page: 7 June; bpb: occupation under way by 8 June).",
+   "The Diet approved Austria's motion to mobilise the federal army against Prussia (LeMO war page; bpb: on 14 June, nine votes to five); Prussia declared the Confederation dissolved and left it (LeMO war page; bpb: Prussia's exit began the dissolution).",
+   "Austria's side included Bavaria, Württemberg, Hanover, Saxony, Baden, Hesse-Kassel, Hesse-Darmstadt, Nassau and others; Prussia was supported by Oldenburg, both Mecklenburgs, Brunswick, the small central and northern states, the Hanseatic cities and Italy (LeMO war page).",
+   "The war was decided at Königgrätz on 3 July 1866 (both LeMO pages).",
+   "Napoleon III viewed the victory with suspicion; Bismarck agreed the main points of a peace with him on 14 July (LeMO treaty page); the preliminary peace of Nikolsburg of 26 July (LeMO treaty page; bpb).",
+   "Wilhelm I, backed by senior military men, favoured humiliating Austria with large cessions; Bismarck obtained the king's consent only with resignation threats and the backing of Crown Prince Friedrich (LeMO treaty page; local Wikipedia extract: Bismarck persuaded Wilhelm I that lenient terms were better).",
+   "The Peace of Prague confirmed the results of Nikolsburg (LeMO treaty page).",
+   "Terms: Prussian annexations in northern Germany; dissolution of the Confederation; a Prussian-led North German Confederation; the right of the southern states to form a southern union; Venetia to Italy (LeMO treaty page; LeMO war page: comparatively mild for Austria, territorial integrity apart from Venetia).",
+   "Hanover, Hesse-Kassel, Nassau and Frankfurt were annexed by Prussia, closing the gap in its territory between the Memel and the Rhine; the Confederation in existence since 1815 ended and Austria was pushed out of Germany (LeMO war page; bpb: the Confederation no longer existed in autumn 1866).",
+   "Napoleon III saw the three-way division and the Main line as securing French interests (LeMO treaty page; LeMO war page: France insisted annexations must not go beyond the Main).",
+   "The Diet moved from Frankfurt to Augsburg (left Frankfurt on 14 July, sessions from 18 July) and on 24 August 1866 held its final session, resolving to end its activity because the Confederation had to be considered dissolved (bpb).",
+   "Prussia now held unrestricted supremacy and founded the North German Confederation (LeMO war page)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q181146": {
+  "title": "Dos de Mayo Uprising",
+  "y": 1808,
+  "place": "Madrid: Royal Palace, Puerta del Sol, Monteleón artillery park",
+  "paras": [
+   "The Dos de Mayo (Second of May) was the rising of the people of Madrid against the French troops occupying their city on 2 May 1808, followed by mass executions on 3 May. The fighters were mostly ordinary townspeople, joined by a handful of Spanish artillery officers; against them stood the French forces of Marshal Joachim Murat, which had held Madrid since 23 March. Spain was then France's ally but its crown was in crisis: in March the Tumult of Aranjuez had forced King Charles IV to abdicate in favour of his son Ferdinand VII, and Napoleon had drawn both of them to Bayonne in France, where each hoped for his backing.",
+   "Early on 2 May a crowd gathered in front of the Royal Palace to stop the French from taking the youngest prince, Francisco de Paula, and the last members of the royal family still in Madrid to France. Murat sent Imperial Guard troops with artillery, which fired on the crowd, and the unrest spread across the city as people fought the French with whatever weapons they could find; Wikipedia notes heavy fighting around the Puerta del Sol, the scene of Goya's later painting of the charge of the Mamelukes, and the Puerta de Toledo. The Spanish garrison was ordered to stay in its barracks, but at the Monteleón artillery park Captains Luis Daoíz and Pedro Velarde, with Lieutenant Jacinto Ruiz, armed the crowd and held the park. The French took it by assault: Velarde was shot, Daoíz killed by bayonets and Ruiz badly wounded. The Army Museum names General Lefranc as commander of the attacking column and says the fighting ended at two in the afternoon.",
+   "Murat answered with harsh repression. That evening he set up a military commission under General Grouchy that condemned to death anyone captured carrying arms of any kind, and hundreds of prisoners were shot the next day, among them men executed on the hill of Príncipe Pío, the scene Goya painted in The Third of May 1808. According to Wikipedia, the news led the mayors of nearby Móstoles to sign a proclamation calling on all Spaniards to rise against the invaders.",
+   "Days later at Bayonne, Charles and Ferdinand gave up the crown, which Napoleon passed to his brother Joseph. Instead of cowing Spain, the crushing of the rising and the new king set the country in revolt, ended the Franco-Spanish alliance and opened the Peninsular War (in Spain, the War of Independence), which ended with the defeat of the French in 1814. The second of May is now the public holiday of the Community of Madrid, and the site of the Monteleón park is the Plaza del Dos de Mayo."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Dos_de_Mayo_Uprising",
+    "title": "Dos de Mayo Uprising (rev 1370615812)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://ejercito.defensa.gob.es/museo/HECHOS_HISTORICOS/HECHOS_HISTORICOS/05.02_mayo_LEVANTAMIENTO_DEL_2_DE_MAYO_DE_1808_EN_MADRID_CONTRA_LOS_FRANCESES.html",
+    "title": "2 de mayo de 1808 en Madrid: Levantamiento popular y comienzo de la Guerra de la Independencia Española",
+    "publisher": "Museo del Ejército (Spanish Army Museum)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.enciclopedia.cat/EC-GEC-0022857",
+    "title": "el Dos de Maig",
+    "publisher": "Enciclopèdia Catalana",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/histoire-des-2-empires/iconographie/dos-de-mayo-1808-la-charge-des-mamelouks/",
+    "title": "Dos de Mayo 1808 (La charge des Mamelouks)",
+    "publisher": "Fondation Napoléon",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The uprising took place in Madrid on 2-3 May 1808, mainly by civilians with some junior officers, against the French occupation, and was violently repressed with hundreds of executions (Wikipedia; Army Museum: spontaneous popular rebellion, brutally repressed).",
+   "Madrid had been occupied by Murat's army since 23 March 1808 (Wikipedia; Army Museum).",
+   "The Tumult of Aranjuez forced Charles IV to abdicate in favour of Ferdinand VII (Army Museum: on 19 March); both were in Bayonne at Napoleon's invitation/insistence, each seeking his support (Wikipedia; Army Museum).",
+   "On the morning of 2 May a crowd gathered before the Royal Palace to prevent the removal of the infante Francisco de Paula (Wikipedia; Army Museum); Enciclopèdia Catalana: secret orders for the queen of Etruria, Infante Antonio and Infante Francisco de Paula to leave, the last of the royal family in Madrid.",
+   "Murat sent Imperial Guard troops with artillery, which fired on the crowd, and the revolt spread (Wikipedia; Army Museum; Enciclopèdia Catalana: crowd repelled by Murat's forces).",
+   "Street fighting with improvised weapons in all parts of the city (Wikipedia, Army Museum, Enciclopèdia Catalana); heavy fighting at the Puerta del Sol and Puerta de Toledo; Goya's Charge of the Mamelukes shows the street fighting at the Puerta del Sol (Wikipedia; Fondation Napoléon: attack on the Mamelukes at the Puerta del Sol on 2 May).",
+   "Spanish troops were confined to barracks (Wikipedia; Enciclopèdia Catalana: Captain General Negrete ordered the troops kept in barracks); the artillery at Monteleón joined the rising (Wikipedia; Enciclopèdia Catalana).",
+   "Daoíz and Velarde, with infantry lieutenant (Jacinto) Ruiz, organised the defence of the Monteleón artillery park (Enciclopèdia Catalana; Army Museum: Daoíz opened the gate to Velarde and Lieutenant Ruiz with a company; Wikipedia: Daoíz and Velarde).",
+   "The French took the park; Velarde was shot, Daoíz run through by bayonets, Ruiz badly wounded; the Army Museum names General Lefranc's column and says fighting ended at 2 p.m. (Army Museum; Wikipedia: both died in the French assault; Enciclopèdia Catalana: the French seized the park).",
+   "On the evening of 2 May Murat created a military commission under General Grouchy that sentenced to death all captured bearing arms of any kind (Wikipedia; Army Museum).",
+   "Hundreds of prisoners were executed the next day, 3 May, shown in Goya's painting (Wikipedia; Army Museum); executions at the Príncipe Pío hill (Enciclopèdia Catalana; Fondation Napoléon).",
+   "News of the repression led the mayors of Móstoles to sign a declaration calling on all Spaniards to rise against the invaders (Wikipedia).",
+   "At Bayonne the throne was ceded to Napoleon, who gave it to his brother Joseph (Army Museum; Wikipedia: proclamation of Joseph as king).",
+   "The uprising and Joseph's proclamation led to a rebellion against French rule, the Peninsular War, and ended the Franco-Spanish alliance (Wikipedia); it triggered the War of Independence, ending with the French defeat in 1814 (Army Museum).",
+   "2 May is the holiday of the Community of Madrid (Wikipedia; Army Museum); the site of the Monteleón barracks is the Plaza del Dos de Mayo (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q228284": {
+  "title": "Expedition of the Thousand",
+  "y": 1860,
+  "place": "Quarto near Genoa to Marsala, Sicily, and on to Naples and the Volturno",
+  "paras": [
+   "The Expedition of the Thousand was Giuseppe Garibaldi's 1860 campaign with a corps of volunteers, the Redshirts, against the Bourbon Kingdom of the Two Sicilies (Sicily and southern Italy) under King Francis II. The idea came from the Sicilian exile Francesco Crispi; Garibaldi agreed to lead it on condition that a revolt in Sicily prepared the ground, and a rising broke out in Palermo on 4 April 1860. Officially the Kingdom of Sardinia (Piedmont) had no part in it, but in practice it backed and helped pay for the venture, while Prime Minister Cavour wanted to keep the volunteers away from Rome, which was protected by France.",
+   "In the night of 5 to 6 May 1860 the volunteers sailed from Quarto near Genoa on two steamers of the Rubattino company, the Piemonte and the Lombardo. Treccani counts exactly 1,084 of them, Wikipedia 1,089. After picking up ammunition at Talamone in Tuscany they landed at Marsala in western Sicily on 11 May; two British warships lay in the harbour, and Wikipedia says their presence kept the Bourbon ships from interfering. At Salemi on 14 May Garibaldi took the dictatorship of Sicily in the name of Victor Emmanuel II. On 15 May the Thousand, with Sicilian insurgents, beat a larger royal force at Calatafimi, and thousands of Sicilians joined them. They reached Palermo on 27 May and took the city in street fighting, helped by a rising of its people, despite bombardment from the Bourbon ships and forts; the garrison capitulated in June. Victory at Milazzo on 20 July left the Bourbons with only a few strongholds on the island.",
+   "Reinforced by volunteers from all over Italy, and now called the Southern Army, Garibaldi's force crossed to Calabria on 19 August against Cavour's wishes. Much of the south rose before it arrived and the Bourbon army fell apart, so that Francis II left Naples for the fortress of Gaeta and Garibaldi entered the capital on 7 September. The decisive battle came on the Volturno north of Naples at the beginning of October. Wikipedia, quoting the historian Frederick Schneid, calls it a narrow win for Garibaldi; Geopop calls it a clear victory. Meanwhile Cavour, fearing that Garibaldi would march on Rome and bring in France and that the volunteers would win the credit for unification, sent the Piedmontese army through the Papal Marche and Umbria into the kingdom.",
+   "On 21 October a plebiscite approved the union of the Two Sicilies with the Kingdom of Sardinia. On 26 October Garibaldi met Victor Emmanuel II at Teano, entered Naples with him and handed over his dictatorship, then withdrew to the island of Caprera. Francis II held out in Gaeta until the Piedmontese army took it in February 1861, and on 17 March 1861 the Kingdom of Italy was proclaimed."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Expedition_of_the_Thousand",
+    "title": "Expedition of the Thousand (rev 1383152430)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://www.treccani.it/enciclopedia/spedizione-dei-mille/",
+    "title": "Mille, Spedizione dei",
+    "publisher": "Enciclopedia Treccani",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.geopop.it/la-storia-della-spedizione-dei-mille-la-campagna-di-garibaldi-per-lunificazione-italiana/",
+    "title": "La storia della Spedizione dei Mille",
+    "publisher": "Geopop",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "The expedition of Garibaldi's volunteers overthrew the Bourbon Kingdom of the Two Sicilies under Francis II (Wikipedia; Treccani; Geopop: Francis II, King of the Two Sicilies).",
+   "Francesco Crispi conceived/instigated it (Treccani; Wikipedia); Garibaldi accepted on condition that a Sicilian revolt prepared the ground (Treccani; Wikipedia: Garibaldi was against it at first but agreed); the Palermo rising of 4 April 1860 (Treccani; Wikipedia).",
+   "The Kingdom of Sardinia was not officially involved but supported and financed it (Geopop; Wikipedia: Piedmont secretly paid the rent of the ships); Cavour wanted to avoid the conquest of Rome and conflict with France, which protected the pope (Wikipedia; Geopop).",
+   "Departure in the night of 5-6 May 1860 from Quarto near Genoa on the Rubattino steamers Piemonte and Lombardo (Wikipedia; Geopop; Treccani: 5 May).",
+   "Numbers: exactly 1,084 (Treccani); 1,089 volunteers (Wikipedia); about a thousand (Geopop).",
+   "Ammunition from Talamone (Treccani; Wikipedia: 7 May, Talamone); landing at Marsala on 11 May (all three).",
+   "Two British warships were in the harbour at Marsala (Geopop; Wikipedia: HMS Argus and HMS Intrepid, which deterred the Bourbon ships; Geopop: their role was never clarified).",
+   "At Salemi (14 May, Wikipedia) Garibaldi assumed the dictatorship in the name of Victor Emmanuel II (Treccani; Wikipedia; Geopop: three days after the landing).",
+   "15 May: battle of Calatafimi; the Thousand with Sicilian insurgents beat about 3,000 royal troops (Wikipedia; Treccani; Geopop: 15 May); thousands of Sicilians joined (Geopop; Wikipedia: 3,200 Sicilians joined on the way to Palermo).",
+   "Arrival at Palermo on 27 May; city taken in street fighting with the help of an insurrection, despite bombardment; Bourbon troops capitulated on 6 June (Wikipedia; Treccani: Palermo occupied 27-29 May).",
+   "Milazzo, 20 July (Treccani; Wikipedia; Geopop: July); by the end of July almost all Sicily was taken (Geopop; Treccani; Wikipedia: only Syracuse, Augusta, Milazzo and Messina remained in royal hands).",
+   "The force, joined by volunteers and renamed the Southern Army, landed in Calabria on 19 August (Wikipedia; Geopop); against Cavour's wishes (Wikipedia: Cavour urged him not to cross).",
+   "Insurrections ahead of the Garibaldians; the Bourbon army dissolved (Treccani; Geopop); Francis II fled to Gaeta on 6 September (Wikipedia; Geopop: Gaeta); Garibaldi entered Naples on 7 September (all three).",
+   "Battle of the Volturno at the end of September and start of October (Wikipedia; Geopop; Treccani: the decisive battle); Wikipedia quotes Schneid: Garibaldi narrowly won; Geopop: a clear victory.",
+   "Cavour/Victor Emmanuel, fearing an attack on Rome and French intervention and the prestige of the monarchy, sent the Piedmontese army through the Marche and Umbria into the kingdom (Treccani; Geopop; Wikipedia: Piedmontese army crossed the frontier).",
+   "Plebiscite of 21 October (Wikipedia); Teano meeting on 26 October, Garibaldi entered Naples with the king and laid down his dictatorship (Treccani; Wikipedia; Geopop: Garibaldi then withdrew to Caprera); Gaeta fell in February 1861 (Geopop; Wikipedia: 13 February 1861); Kingdom of Italy proclaimed 17 March 1861 (Wikipedia; Geopop)."
+  ],
+  "disagree": "Number of volunteers: 1,084 (Treccani) or 1,089 (Wikipedia). Volturno: a narrow win for Garibaldi (Wikipedia, quoting Frederick Schneid) or a clear victory (Geopop).",
+  "checked": null
+ },
+ "Q690989": {
+  "title": "Treaty of Fontainebleau (1814)",
+  "y": 1814,
+  "place": "Paris (signed) and Fontainebleau (ratified), France",
+  "paras": [
+   "The Treaty of Fontainebleau of 11 April 1814 set the terms of Napoleon's fall at the end of the War of the Sixth Coalition. On one side stood Napoleon, represented by his foreign minister Caulaincourt and Marshals Ney and Macdonald; on the other the emperors of Austria and Russia and the king of Prussia, represented by Metternich, Nesselrode and Hardenberg and acting also for their allies. The treaty ended Napoleon's rule over France and Italy and sent him to the island of Elba.",
+   "The allies took Paris after its capitulation in the early hours of 31 March 1814, and Tsar Alexander I declared that they would no longer deal with Napoleon or his family. In the first days of April the Senate, strongly influenced by Talleyrand, declared Napoleon deposed while he stayed at the palace of Fontainebleau. Napoleon first offered to step down in favour of his young son with Empress Marie-Louise as regent and sent Caulaincourt, Ney and Macdonald to Paris with this offer, but in the night of 4 to 5 April Marshal Marmont's corps went over to the allies, leaving Napoleon without a military threat to bargain with. Alexander now demanded an unconditional abdication. On 6 April Napoleon signed a text renouncing the thrones of France and Italy for himself and his heirs, to be handed over only once a treaty settling his own fate was signed.",
+   "That treaty was negotiated in Paris from 7 to 10 April, mainly between Caulaincourt and Nesselrode, and signed there at Talleyrand's house on 11 April, in the tsar's presence; the historian Thierry Lentz notes that it should really be called the Treaty of Paris. Its 21 articles let Napoleon and Marie-Louise keep their imperial titles, made Elba a principality that Napoleon would hold for life with a guard of 400 volunteers, gave Marie-Louise the duchies of Parma, Piacenza and Guastalla, set incomes for members of the Bonaparte family, and returned Napoleon's estates in France and the crown jewels to the French crown. Britain did not sign: Castlereagh would not recognise Napoleon as a legitimate emperor and feared that Elba, so close to France and Italy, would lead to further conflict.",
+   "Napoleon ratified the treaty at Fontainebleau after a suicide attempt in the night of 12 to 13 April; Wikipedia gives 13 April, while the ratification formula quoted by Lentz is dated 12 April. On 20 April he said farewell to his guard at Fontainebleau and set off for Elba, which he reached on 4 and 5 May. The Bourbon Louis XVIII, brother of the last king, was called to the French throne, and peace with France was signed in the Treaty of Paris of 30 May 1814; Castlereagh's fears proved right when Napoleon left Elba and returned to France in 1815."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Treaty_of_Fontainebleau_(1814)",
+    "title": "Treaty of Fontainebleau (1814) (rev 1360747609)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/histoire-des-2-empires/articles/le-role-de-caulaincourt-dans-labdication-de-napoleon-ier-et-la-negociation-du-traite-de-fontainebleau-en-avril-1814/",
+    "title": "Le rôle de Caulaincourt dans l'abdication de Napoléon Ier et la négociation du traité de Fontainebleau en avril 1814 (Thierry Lentz)",
+    "publisher": "Fondation Napoléon",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.napoleon.org/histoire-des-2-empires/chronologies/mars-avril-mai-1814-de-la-capitulation-au-traite-de-paris",
+    "title": "Mars-avril-mai 1814 : de la capitulation au traité de Paris",
+    "publisher": "Fondation Napoléon",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     7,
+     8,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.napoleon-empire.org/en/official-texts/treaty-of-fontainebleau-1814.php",
+    "title": "Treaty of Fontainebleau, April 11, 1814 - Official text",
+    "publisher": "Napoléon & Empire",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The treaty of 11 April 1814 was between Napoleon (plenipotentiaries Caulaincourt, Ney, Macdonald) and the emperors of Austria and Russia and the king of Prussia (Metternich, Nesselrode, Hardenberg), also on behalf of all the allies (treaty text; Wikipedia; Lentz).",
+   "Paris capitulated at 2 a.m. on 31 March 1814 (Fondation Napoléon chronology); after the Battle of Paris the coalition negotiated for Napoleon's abdication (Wikipedia).",
+   "On 31 March the coalition (Alexander) declared it would no longer treat with Napoleon or his family (Wikipedia; Lentz: the tsar would no longer treat with Napoleon 'ni aucun membre de sa famille').",
+   "The Senate dethroned Napoleon: on 2 April, Acte de déchéance (Wikipedia); on 1 April, greatly influenced by Talleyrand (Fondation Napoléon chronology); Napoleon was at Fontainebleau (both).",
+   "Napoleon offered to abdicate in favour of his son with Marie-Louise as regent (Wikipedia; Lentz: abdication in favour of the King of Rome, regency for Marie-Louise); Caulaincourt, Ney and Macdonald took the offer to Paris (Lentz; Wikipedia: three plenipotentiaries).",
+   "Marmont's corps defected in the night of 4-5 April 1814, depriving Napoleon's envoys of a major argument (Lentz; Wikipedia: Marmont's corps surrender inevitable).",
+   "The tsar then demanded unconditional abdication (Lentz; Wikipedia: sovereigns rejected the conditional offer).",
+   "Napoleon's abdication text renouncing the thrones of France and Italy for himself and his heirs is dated 6 April (Lentz; Fondation Napoléon chronology: written in the night of 5-6 April), to be handed over only after a treaty was signed (Lentz; chronology).",
+   "The treaty was negotiated in Paris from 7 to 10 April, mainly between Caulaincourt and Nesselrode (Lentz); signed by the plenipotentiaries in Paris on 11 April (Wikipedia; Lentz: at Talleyrand's house, about 11.30 a.m., the tsar attending; Lentz says it should be called the Treaty of Paris).",
+   "21 articles; Napoleon and Marie-Louise kept their titles; Elba a separate principality held by Napoleon for life; 400-man guard; Parma, Piacenza and Guastalla to Marie-Louise; incomes for family members; Napoleon's estates in France to the crown; crown jewels to France (treaty text; Wikipedia; Lentz: 21 articles).",
+   "Britain did not sign; Castlereagh would not recognise Napoleon's legitimacy and feared exile to Elba near France and Italy could lead to further conflict (Wikipedia; Lentz: Castlereagh handed over a protocol explaining Britain's position).",
+   "Ratification: 13 April (Wikipedia); Lentz quotes the ratification formula 'Fait à Fontainebleau, le 12 avril 1814' and places the signing after the suicide attempt of the night of 12-13 April (Lentz; Fondation Napoléon chronology: suicide attempt night of 12-13 April).",
+   "On 20 April 1814 Napoleon made his farewells at Fontainebleau and left for Elba, arriving on 4-5 May (Fondation Napoléon chronology).",
+   "Louis Stanislas Xavier, brother of the last king, was called to the throne (Fondation Napoléon chronology; Lentz: the call to Louis XVIII as the alternative to a regency); Talleyrand signed the Treaty of Paris on 30 May 1814; Napoleon later returned from Elba (chronology: 'à son retour de l'île d'Elbe', '1815 allait prouver le contraire'); Castlereagh's fear of further conflict (Wikipedia)."
+  ],
+  "disagree": "Date the Senate deposed Napoleon: 2 April 1814 (Wikipedia) or 1 April (Fondation Napoléon chronology), given in the text only as 'the first days of April'. Ratification: 13 April (Wikipedia); the ratification formula quoted by Thierry Lentz is dated 12 April, signed after the night of 12-13 April.",
+  "checked": null
+ },
+ "Q698842": {
+  "title": "1860 United States presidential election",
+  "y": 1860,
+  "place": "United States",
+  "paras": [
+   "The presidential election of 6 November 1860 was fought over slavery and was won by the Republican Abraham Lincoln of Illinois, with Hannibal Hamlin of Maine as his running mate. The Democratic president James Buchanan did not run again. The Republican platform promised not to interfere with slavery in the states where it existed but opposed its spread into the western territories, and also called for protective tariffs, free homesteads for settlers in the West and a railroad to the Pacific.",
+   "The parties split along sectional lines. At the Republican convention in Chicago in May, the front-runner was Senator William H. Seward of New York. Seward led on the first ballot, Lincoln's managers won over delegates (the Miller Center says with offers of cabinet posts to Indiana and Pennsylvania), and Lincoln won on the third ballot on 18 May. The Democratic convention in Charleston broke up when Southern delegates walked out over the party's slavery platform. When the party met again in Baltimore in June, Southern delegates walked out once more. The remaining Northern Democrats nominated Senator Stephen A. Douglas of Illinois, who wanted the settlers of each territory to decide on slavery. The bolters nominated Vice President John C. Breckinridge of Kentucky on a platform calling for federal protection of slavery in the territories. Former Whigs and Know Nothings formed the Constitutional Union Party and nominated John Bell of Tennessee, hoping to save the Union by avoiding the slavery question.",
+   "Following custom, Lincoln stayed at home in Springfield while Republican 'Wide Awake' clubs marched for him; only Douglas toured the country in person. Turnout was 81.2 percent, then the highest in American history. Lincoln carried the free states of the North and the Pacific coast and won 180 electoral votes, a clear majority, with about 39.7 percent of the popular vote. He received votes in only one of the eleven states that would later form the Confederacy, Virginia; the Miller Center says he was not on the ballot in any Southern state. Breckinridge won 72 electoral votes and eleven slave states, Bell 39 and three states of the upper South (Virginia, Kentucky and Tennessee), and Douglas, second in the popular vote, only 12 electoral votes, from Missouri and part of New Jersey.",
+   "Lincoln's victory without a single slave state ended the South's long hold over the federal government and became the main trigger of secession. Seven Southern states, all of which had voted for Breckinridge, left the Union before his inauguration on 4 March 1861. The Civil War began less than two months later with the attack on Fort Sumter, after which four more slave states seceded."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/1860_United_States_presidential_election",
+    "title": "1860 United States presidential election (rev 1388329060)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://millercenter.org/president/lincoln/campaigns-and-elections",
+    "title": "Abraham Lincoln: Campaigns and Elections",
+    "publisher": "Miller Center, University of Virginia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The election was held on 6 November 1860 and won by the Republican ticket of Lincoln and Hamlin (Wikipedia); slavery had heated the nation to the boiling point (Miller Center; Wikipedia: the country was divided over slavery).",
+   "Incumbent Democrat James Buchanan did not seek re-election (Wikipedia).",
+   "The Republican platform: no interference with slavery in the states, opposition to slavery in the territories; protective tariffs, a Homestead Act and a transcontinental railroad (Wikipedia).",
+   "The Republican convention met in Chicago in mid-May (Wikipedia; Miller Center: at the Wigwam on 16 May); Seward was the front-runner (Wikipedia; Miller Center).",
+   "Seward led on the first ballot (Miller Center: 173 1/2 to 102; Wikipedia); Lincoln's managers won over Indiana and Pennsylvania by offering cabinet posts (Miller Center; Wikipedia: political maneuvering by Lincoln's delegates); Lincoln won on the third ballot (both), on 18 May (Wikipedia).",
+   "At the Charleston convention (April 1860) Southern delegates walked out over the platform (Wikipedia; Miller Center: showdown over the slave code plank) and the convention adjourned without a nominee (Wikipedia).",
+   "At Baltimore in June Southern delegates walked out or boycotted again; the remaining Democrats nominated Douglas (Wikipedia; Miller Center).",
+   "Douglas supported popular sovereignty, letting settlers decide on slavery in each territory (Wikipedia; Miller Center: his middle way on slavery in the territories).",
+   "The bolters nominated Vice President Breckinridge (with Joseph Lane) on a platform supporting a federal slave code in the territories (Miller Center; Wikipedia: the pro-slavery platform rejected at Charleston).",
+   "Former Whigs and Know Nothings formed the Constitutional Union Party and nominated John Bell of Tennessee, seeking to avoid disunion by avoiding/compromising over slavery (Wikipedia; Miller Center).",
+   "Turnout was 81.2%, the highest in American history up to that time (Wikipedia).",
+   "Lincoln stayed at home in Springfield; Douglas campaigned across the country; Wide Awake parades (Miller Center; Wikipedia: Wide Awakes).",
+   "Lincoln won 180 electoral votes, 18 free states, 39.7% of the popular vote; Breckinridge 72 and eleven slave states; Bell 39 (Miller Center) and Virginia, Kentucky and Tennessee; Douglas 12, second in the popular vote (both); Douglas's electoral votes came from Missouri and New Jersey (Wikipedia; Miller Center: Douglas carried only Missouri).",
+   "Among the eleven states that later formed the Confederacy, Lincoln received votes only in Virginia (Wikipedia); Miller Center: Lincoln was not on the ballot in any Southern state; a Republican win would end the South's political dominance of the Union (Miller Center).",
+   "Lincoln's election was the main catalyst of secession; seven Southern states, all of which voted for Breckinridge, seceded before his inauguration on 4 March 1861; the Civil War began less than two months later at Fort Sumter, after which four more slave states seceded (Wikipedia)."
+  ],
+  "disagree": "Douglas's electoral votes: Missouri and part of New Jersey (Wikipedia); the Miller Center says he carried only Missouri. Lincoln in the South: votes only in Virginia among the future Confederate states (Wikipedia); 'not on the ballot in any Southern state' (Miller Center).",
+  "checked": null
+ },
+ "Q931982": {
+  "title": "Treaty of Fes",
+  "y": 1912,
+  "place": "Fes, Morocco",
+  "paras": [
+   "The Treaty of Fes, signed on 30 March 1912 by Sultan Abd al-Hafid of Morocco and the French envoy Eugène Regnault, made Morocco a French protectorate. It ended more than half a century in which France, Britain, Spain and Germany competed for influence over the country, while debts, foreign loans and revolts weakened the sultan's government. By the Franco-British agreements of 1904 Britain left France a free hand in Morocco, and the Act of Algeciras of 1906 gave France and Spain control of Moroccan ports and police. Abd al-Hafid took the throne from his brother Abd al-Aziz in 1907–1908, but his authority kept collapsing.",
+   "Tribal forces in revolt then marched on Fes against the sultan, giving France the excuse to occupy Fes and Meknes. Germany's protest, a show of naval force off the Atlantic coast during the Agadir Crisis, was settled when it accepted France's position in Morocco in return for territory in the French Congo. That left the way open to a protectorate. Regnault, France's minister in Tangier, arrived in Fes on 24 March 1912 with the treaty text. On 29 March, with French troops around the city, he and the sultan negotiated for six hours at the royal palace, and the treaty was signed the next day. Wikipedia describes the sultan as signing under duress.",
+   "The treaty, modelled on the 1881 Treaty of Bardo for Tunisia, spoke of a 'new regime' of administrative, judicial, educational, financial and military reforms that France judged necessary, while promising to safeguard the sultan's traditional prestige and the practice of Islam. In practice a French resident-general held power over Morocco's foreign and internal affairs and alone could represent it abroad, while the sultan kept only the formal right to sign the decrees put before him.",
+   "The treaty was kept secret. When the people of Fes learned of it, and of the sultan's planned move to Rabat, the city rose on 17–19 April 1912; the French diplomatic archives estimate more than 700 victims, and Wikipedia records that the Jewish quarter was shelled by French artillery and then sacked. The resident-general Hubert Lyautey made Rabat the capital, and Abd al-Hafid soon abdicated in favour of his brother Yusuf. A Franco-Spanish treaty of 27 November 1912 created a Spanish zone in the north. Resistance went on in the Zaian and Rif wars, and the protectorate lasted until the Franco-Moroccan declaration of 2 March 1956 restored Morocco's independence."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Treaty_of_Fes",
+    "title": "Treaty of Fes (rev 1361628067)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/fes-treaty-1912",
+    "title": "Fes, Treaty of (1912) (Encyclopedia of the Modern Middle East and North Africa)",
+    "publisher": "Encyclopedia.com (Gale)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://archivesdiplomatiques.diplomatie.gouv.fr/media/1788cd59-586d-4687-bea8-05b75fcac2f9.pdf",
+    "title": "Protectorat français au Maroc, Région de Fès 1913-1956: répertoire numérique détaillé (12MA)",
+    "publisher": "Centre des Archives diplomatiques de Nantes, French Ministry of Foreign Affairs",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The treaty of 30 March 1912 was signed by Sultan Abd al-Hafid and Eugène Regnault and established the French protectorate (Wikipedia; Encyclopedia of the Modern Middle East; French diplomatic archives: the treaty of 30 March 1912 instituted the protectorate).",
+   "The treaty culminated at least half a century of manoeuvring by France, Britain, Spain and Germany (Encyclopedia); loans, debts and insurrections weakened the Makhzen (Wikipedia).",
+   "The Franco-British agreement of 1904 gave France a free hand in Morocco (Encyclopedia; Wikipedia: Entente Cordiale gave France Morocco); the Act of Algeciras of 1906 gave France and Spain control over ports and police (Encyclopedia; Wikipedia: French pre-eminence, customs revenue).",
+   "Abd al-Hafid ousted his brother Abd al-Aziz (Hafidiya, 1907-1908) (Wikipedia; Encyclopedia).",
+   "Tribal forces marched on Fez against Abd al-Hafid, giving the French an excuse to seize Meknes and Fez (Encyclopedia); German opposition, with a show of force off the Atlantic coast in 1911 (Agadir Crisis), was settled by ceding parts of the French Congo to Germany (Encyclopedia; Wikipedia).",
+   "Regnault, France's minister plenipotentiary in Tangier, arrived in Fes on 24 March with the treaty (Wikipedia; Encyclopedia: France's representative in Tangier negotiated it).",
+   "Negotiations on 29 March at the royal palace, with French troops surrounding the city, lasted six hours; the treaty was signed on 30 March; Wikipedia says the sultan signed under duress (Wikipedia).",
+   "Modelled on the Treaty of Bardo of 1881 (Wikipedia); spoke of a 'new regime' based on administrative, judicial, educational, financial and military reforms judged necessary by France, and safeguarded the sultan's traditional prestige and the exercise of the Muslim faith (Encyclopedia).",
+   "The resident-general held absolute powers in external and internal affairs and alone represented Morocco abroad; the sultan kept the right to sign the dahirs submitted to him (Wikipedia).",
+   "The treaty was kept secret; when the people of Fes learned of it (and of the sultan's imminent departure for Rabat) riots broke out on 17-19 April 1912 (Wikipedia: on 17 April; French diplomatic archives: 17, 18 and 19 April, more than 700 victims estimated); the Mellah was bombarded by French artillery and sacked (Wikipedia).",
+   "Lyautey made Rabat the capital (Wikipedia; diplomatic archives: Rabat, the new capital); Abd al-Hafid abdicated in favour of his brother Yusuf (Wikipedia; Encyclopedia: a few weeks later, forced by Lyautey).",
+   "The Franco-Spanish treaty of 27 November 1912 established the Spanish protectorate (Wikipedia).",
+   "Resistance continued in the Zaian and Rif wars; the treaty remained in effect until the Franco-Moroccan Joint Declaration of 2 March 1956 (Wikipedia; Encyclopedia: independence declared in 1956)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q934157": {
+  "title": "Battle of Ayacucho",
+  "y": 1824,
+  "place": "Pampa de Ayacucho (La Quinua), near Ayacucho (then Huamanga), Peru",
+  "paras": [
+   "The Battle of Ayacucho, fought on 9 December 1824 on the Pampa de Ayacucho near the village of Quinua in the Peruvian Andes, was the decisive battle of the Peruvian War of Independence. The United Liberating Army, led by Simón Bolívar's lieutenant General Antonio José de Sucre and made up of Colombian and Peruvian units with Argentine and foreign volunteers, faced the royalist army of the Viceroy of Peru, José de la Serna, with General José de Canterac as his second in command. At the end of 1824 the royalists still held most of southern Peru and the fortress of Callao.",
+   "The Spanish side had been weakened from within. After the liberal revolution of 1820 Spain could send no reinforcements, and in early 1824 the royalist army of Upper Peru under Pedro Antonio Olañeta rebelled against the liberal viceroy after the restoration of absolute monarchy in Spain, tying down part of La Serna's forces. Bolívar beat Canterac at Junín in August, then left Sucre in command and went to Lima. On 3 December the royalists mauled Sucre's army at Corpahuaico (Matará), but Sucre kept it together. Short of food, the royalists took up a strong position on the heights of Condorcunca above the plain.",
+   "On the morning of the battle Canterac's plan was for the vanguard under Jerónimo Valdés to turn Sucre's left while the rest of the army came straight down the hillside. The descending units could not form up on the exposed slope, and José María Córdova's division, backed by William Miller's cavalry, broke them one after another; the royalist cavalry and the reserve, largely raw recruits, were also routed. By about one in the afternoon the wounded viceroy was a prisoner with many of his officers, and Valdés's men, who had been fighting La Mar's and Lara's divisions, fell back. The numbers differ by source. Wikipedia estimates about 5,780 patriots against 6,906 royalists on the day, while Sucre's letter to Bolívar, quoted by El Peruano, speaks of 6,000 men destroying 9,000. Wikipedia gives Sucre's figures of 370 patriots killed and 609 wounded and about 1,800 royalists dead and 700 wounded. The Encyclopedia of Latin American History and Culture gives 1,400 royalist dead and 700 wounded and about 900 patriot casualties.",
+   "Canterac, standing in for the captured viceroy, signed a capitulation with Sucre that same day. Under its terms the Spanish army handed over the territory it held in Peru up to the Desaguadero, together with Callao, and every Spanish soldier was free to go home at Peru's expense. Peru's official newspaper El Peruano calls the document Peru's real act of independence. Ayacucho ended Spanish power in South America, although Olañeta fought on in Upper Peru until April 1825 and the fortress of Callao held out until January 1826. Sucre went on to Upper Peru, which declared independence in August 1825 as the republic later named Bolivia, and he became its first president."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Ayacucho",
+    "title": "Battle of Ayacucho (rev 1386730555)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/ayacucho-battle",
+    "title": "Ayacucho, Battle of (Encyclopedia of Latin American History and Culture)",
+    "publisher": "Encyclopedia.com (Gale)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     9,
+     11,
+     14
+    ]
+   },
+   {
+    "url": "https://elperuano.pe/noticia/259458-que-establece-la-capitulacion-de-ayacucho-el-documento-que-puso-fin-al-poder-de-espana-en-el-peru",
+    "title": "¿Qué establece la Capitulación de Ayacucho, el documento que puso fin al poder de España en el Perú?",
+    "publisher": "El Peruano (official gazette of Peru)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://es.wikisource.org/wiki/Capitulaci%C3%B3n_de_Ayacucho",
+    "title": "Capitulación de Ayacucho (text)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     9,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought on 9 December 1824 (Wikipedia; Encyclopedia of Latin American History; El Peruano) on the Pampa de Ayacucho or Quinua near Ayacucho (Wikipedia; Encyclopedia: near the city of Huamanga, later renamed Ayacucho) and was decisive for Peru's independence (Wikipedia; El Peruano).",
+   "The independentists were led by Bolívar's lieutenant Sucre; the royalists by Viceroy La Serna with Canterac second in command; the United Army included Colombian and Peruvian divisions, Río de la Plata (Buenos Ayres) grenadiers and foreign volunteers such as Miller (Wikipedia).",
+   "At the end of 1824 the royalists still controlled most of southern Peru and the Real Felipe fortress at Callao (Wikipedia).",
+   "The 1820 revolt in Spain meant Spain could no longer send reinforcements (Wikipedia).",
+   "Early in 1824 the royalist army of Upper Peru under Olañeta revolted against the liberal viceroy after news that the constitutional government in Spain had fallen; La Serna sent Valdés against him (Wikipedia).",
+   "Bolívar faced Canterac at Junín on 6 August 1824; on 7 October he gave Sucre command and withdrew to Lima (Wikipedia).",
+   "On 3 December the royalists inflicted more than 500 casualties on the liberating army at Corpahuaico or Matará, but Sucre kept his army organised (Wikipedia).",
+   "The royalists, with food for less than five days, held the heights of Kunturkunka/Condorcunca (Wikipedia).",
+   "Canterac's plan: the vanguard (Valdés) would flank Sucre's left while the rest descended frontally from Condorcunca; the descending troops could not form up; Córdova's division with Miller's cavalry broke them; the royalist cavalry under Ferraz and the reserve (Gerona, raw recruits) were routed; by one o'clock the viceroy was wounded and captured with many officers; Valdés's division had fought La Mar's and Lara's divisions, then retreated (Wikipedia; Encyclopedia: La Serna captured; Wikisource capitulation: the viceroy wounded and prisoner).",
+   "Wikipedia: initially 8,500 independents vs 9,310 royalists, perhaps 5,780 vs 6,906 on the day; El Peruano quotes Sucre's letter to Bolívar: 6,000 men of the liberating army destroyed 9,000 royalists.",
+   "Casualties: Wikipedia, per Sucre, 370 independentists killed and 609 wounded, royalists about 1,800 dead and 700 wounded; Encyclopedia of Latin American History: royalists 1,400 dead and 700 wounded, patriot casualties 900; El Peruano: 2,000 dead.",
+   "The capitulation was signed on 9 December 1824 by Canterac, in charge because the viceroy was wounded and captured, and by Sucre (El Peruano; Wikisource text; Wikipedia).",
+   "Terms: territory garrisoned by Spanish troops in Peru handed over up to the Desaguadero; Callao to be handed over; every member of the Spanish army free to return home with passage paid by Peru (Wikisource text; El Peruano: Peru pays passages home); El Peruano calls the capitulation Peru's act of independence.",
+   "Ayacucho ended Spanish power in South America (Encyclopedia; El Peruano; Wikipedia: considered the end of the Spanish American wars of independence); Callao held out until January 1826 (Encyclopedia; Wikipedia: siege of Callao ended in 1826).",
+   "Olañeta was killed at Tumusla on 2 April 1825 and Valdez surrendered on 7 April 1825; Sucre entered Upper Peru on 25 February 1825; the independence act of Upper Peru is dated 6 August 1825; the state was named República Bolívar (later Bolivia) and Sucre was sworn in as its first president (Wikipedia)."
+  ],
+  "disagree": "Army sizes: about 5,780 patriots and 6,906 royalists on the day (Wikipedia); 6,000 against 9,000 in Sucre's letter to Bolívar (El Peruano); the Encyclopedia of Latin American History says the royalists outnumbered the patriots more than two to one. Casualties: royalists about 1,800 dead and 700 wounded, patriots 370 killed and 609 wounded per Sucre (Wikipedia); royalists 1,400 dead and 700 wounded, patriots 900 (Encyclopedia of Latin American History); 2,000 dead (El Peruano).",
+  "checked": null
  }
 }
