@@ -4252,7 +4252,11 @@
    "The victors, the Thermidorians, freed suspects and ended the Terror (Hérodote); the Thermidorian reaction followed (Larousse); Hérodote: a new constitution in 1795 and the Directory; EBSCO: the Terror ended with Robespierre's execution."
   ],
   "disagree": "Executions: Larousse 22 on 10 Thermidor and 71 on 11 Thermidor; Hérodote 'about twenty' with Robespierre and some 80 the next day. The jaw wound: Larousse says Robespierre had tried to kill himself; Hérodote says only that he was wounded by a pistol shot. Hérodote names Cambon as the deputy who first accused Robespierre; Larousse names Tallien and Billaud-Varenne. Date: the event record's 26 July 1794 (8 Thermidor, the day of Robespierre's last speech) is corrected to 27 July (9 Thermidor), the date given by Larousse and Hérodote. Wikipedia (Fall of Maximilien Robespierre) refused automated requests (429) during this batch and was not used.",
-  "checked": null
+  "checked": {
+   "by": "https://courses.lumenlearning.com/atd-herkimer-worldhistory2/chapter/the-thermidorian-reaction/",
+   "result": "Lumen Learning, History of Western Civilization II ('The Thermidorian Reaction'): 9 Thermidor = 27 July; Robespierre's speech to the Convention railing against enemies united his opponents; the Montagnards swayed the deputies of the right; Robespierre and the leaders of the Paris city government were arrested. 4 claims, 0 errors.",
+   "errors": 0
+  }
  },
  "Q750567": {
   "title": "Spring Offensive",

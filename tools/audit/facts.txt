@@ -148,6 +148,10 @@ E|Berlin Blockade|1948
 ED|Berlin Blockade|1948-06-24
 ED|Assassination of Archduke Franz Ferdinand|1914-06-28
 ED|Second Battle of Ypres|1915-04-22
+ED|First Battle of the Marne|1914-09-05
+ED|Brusilov Offensive|1916-06-04
+ED|Coup of 9 Thermidor|1794-07-27
+ED|Reign of Terror|1793-09-05
 E|Korean War|1950
 E|Battle of Dien Bien Phu|1954
 E|Hungarian Revolution of 1956|1956
