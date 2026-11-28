@@ -1083,5 +1083,216 @@
   ],
   "disagree": "Death tolls differ: Wikipedia gives about 2,000 (2,000–3,000 in its infobox) Hungarian dead, EBSCO about 3,000. The end of the fighting is dated variously from 7 to 11 November.",
   "checked": null
+ },
+ "Q163891": {
+  "title": "St Bartholomew's Day massacre",
+  "y": 1572,
+  "place": "Paris, then a dozen other French cities (Kingdom of France)",
+  "paras": [
+   "The St Bartholomew's Day massacre was the killing of Huguenots (French Calvinist Protestants) by Catholics in Paris and other French cities in August to October 1572, during the French Wars of Religion. On one side were King Charles IX, his mother Catherine de' Medici, his brother Henry of Anjou, the Catholic Guise family, royal troops and the Paris crowd; on the other the Huguenot nobles led by Admiral Gaspard de Coligny, and ordinary Protestants.",
+   "The Peace of Saint-Germain of August 1570 had ended the third war of religion, and to seal the peace the king's sister Margaret of Valois married the Protestant Henry of Navarre at Notre-Dame on 18 August 1572. Many leading Huguenots came to Paris, a largely Catholic city, for the wedding. Coligny had won influence over Charles IX and was urging war against Spain in the Netherlands, which Catholics feared. On 22 August a gunman, probably Maurevert, shot and wounded Coligny from a window; who ordered the shooting is still disputed, with the Guises the most often suspected. On the evening of 23 August an emergency royal council decided to kill the Huguenot leaders. Before dawn on 24 August, St Bartholomew's Day, men under the Duke of Guise murdered Coligny and threw his body from a window, and the killing of the leaders turned into a general massacre that went on for about three days despite the king's orders to stop it. Navarre and the Prince of Condé were spared on promising to become Catholic.",
+   "Massacres followed in about twelve other cities, among them Orléans, Lyon, Rouen, Bordeaux and Toulouse, into October. Nobody knows how many died. Wikipedia reports historians' estimates of about 2,000 to 3,000 in Paris and 5,000 to 30,000 in France as a whole; the Christian History Institute gives some 3,000 in Paris and perhaps 8,000 in the provinces. The only hard figure is a payment by the city of Paris for burying 1,100 bodies from the Seine in one week.",
+   "Catholic Rome celebrated: Pope Gregory XIII ordered a Te Deum and had a medal struck. The Huguenots lost many of their leaders, thousands of Protestants abjured their faith, and the survivors grew more radical. A fourth war of religion began within months, and the wars continued until the Edict of Nantes of 1598. Historians still debate how far the massacre was planned and who bore most responsibility: the traditional view blames Catherine de' Medici, while others point to Anjou and other royal advisers, to the king himself, or to pressure from Paris and the Guises."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/St._Bartholomew%27s_Day_massacre",
+    "title": "St. Bartholomew's Day massacre",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://christianhistoryinstitute.org/magazine/article/the-saint-bartholomewandrsquos-day-massacre",
+    "title": "The Saint Bartholomew's Day Massacre (Scott M. Manetsch)",
+    "publisher": "Christian History Institute",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The massacre was targeted assassinations and Catholic mob violence against the Huguenots during the French Wars of Religion, in 1572.",
+   "The Peace of Saint-Germain (8 August 1570) ended the third war of religion.",
+   "Margaret of Valois married the Protestant Henry of Navarre on 18 August 1572 (Notre-Dame); many prominent Huguenots came to Paris for the wedding.",
+   "On 22 August 1572 Coligny was shot and wounded from a window, probably by Maurevert; who ordered it is disputed (Guises, Alba, Catherine de' Medici suspected).",
+   "Coligny urged Charles IX to send a force against the Spanish in the Netherlands, which Catholics feared would bring war with Spain.",
+   "On 23 August the royal council decided to kill the Huguenot leaders (Wikipedia: Charles IX ordered the deaths of a group of leaders).",
+   "Early on 24 August men led by the Duke of Guise killed Coligny and threw his body from a window.",
+   "The killings in Paris lasted about three days despite the king's attempts to stop them; Navarre and Condé were spared after pledging to convert.",
+   "Massacres occurred in about twelve other cities between August and October 1572, including Toulouse, Bordeaux, Lyon, Rouen and Orléans.",
+   "Death toll: Wikipedia, historians' figures of about 2,000–3,000 in Paris and 5,000–30,000 in France; Christian History Institute, some 3,000 in Paris and perhaps 8,000 in the provinces; the city paid for burial of 1,100 bodies from the Seine in one week.",
+   "Pope Gregory XIII ordered a Te Deum and struck a commemorative medal.",
+   "The Huguenot movement lost leaders and its survivors radicalised; many Protestants recanted; a fourth war began before the end of 1572; the wars continued until the Edict of Nantes (1598).",
+   "Historians debate responsibility: traditionally Catherine de' Medici; others Anjou and advisers (Holt), Charles IX (Crouzet), or Paris and the Guises (Bourgeon)."
+  ],
+  "disagree": "Death tolls are uncertain and estimates differ widely (Wikipedia: 5,000–30,000 in France; Christian History Institute: about 3,000 in Paris and perhaps 8,000 elsewhere). Historians disagree on who ordered the attempt on Coligny and who was most responsible for the massacre.",
+  "checked": null
+ },
+ "Q134114": {
+  "title": "Battle of Austerlitz",
+  "y": 1805,
+  "place": "Near Austerlitz (Slavkov u Brna), Moravia, Austrian Empire; today Czech Republic",
+  "paras": [
+   "The Battle of Austerlitz, fought on 2 December 1805 near the town of Austerlitz (now Slavkov u Brna in the Czech Republic), was the decisive battle of the War of the Third Coalition. Napoleon's Grande Armée defeated a combined Russian and Austrian army under Tsar Alexander I, General Mikhail Kutuzov and Emperor Francis II; with three emperors on the field it was also called the Battle of the Three Emperors. Estimates of strength vary: roughly 65,000–75,000 French against 73,000–89,000 allies in Wikipedia's ranges, about 73,000 against 85,000 according to HistoryOfWar.org.",
+   "Earlier that autumn Napoleon had forced an Austrian army to surrender at Ulm on 20 October and then occupied Vienna, while the Russians and the remaining Austrians gathered at Olmütz. To draw them into attacking, he made a show of weakness and of wanting peace, gave up the commanding Pratzen Heights and left his right flank thin, while Marshal Davout's corps force-marched up from Vienna, by Wikipedia's account about 110 km in 48 hours, to hold that flank. On the morning of 2 December the allies, as Napoleon had hoped, sent much of their army from the heights against his right. Around 9 a.m. Marshal Soult's corps, hidden by fog in the valley, stormed up the Pratzen and split the allied centre; a counter-attack by the Russian Imperial Guard was beaten off in a cavalry fight, and Napoleon then turned south against the allied left, where thousands surrendered.",
+   "The allies lost about 27,000 men killed, wounded or captured, about a third of their army, including some 12,000 prisoners; the French lost about 9,000. The 30th Bulletin of the Grande Armée claimed that 20,000 allied soldiers drowned in frozen ponds, but HistoryOfWar.org notes that when the ponds were later drained only two bodies were found.",
+   "Francis met Napoleon on 4 December and agreed an armistice, and the Russians withdrew. By the Treaty of Pressburg of 26 December 1805 Austria left the war, gave up territory in Italy and Germany to France and its allies Bavaria and Württemberg, and paid an indemnity. Napoleon then created the Confederation of the Rhine, Francis dissolved the Holy Roman Empire in 1806, and Prussia, alarmed, went to war with France and was defeated at Jena–Auerstedt in October 1806."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Austerlitz",
+    "title": "Battle of Austerlitz",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.historyofwar.org/articles/battles_austerlitz.html",
+    "title": "Battle of Austerlitz, 2 December 1805",
+    "publisher": "HistoryOfWar.org",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Austerlitz was fought on 2 December 1805 and was the decisive engagement of the War of the Third Coalition; Napoleon defeated the Russo-Austrian army under Alexander I, Kutuzov and Francis II; it was called the Battle of the Three Emperors.",
+   "Strengths: Wikipedia French 65,000–75,000, allies 73,000–89,000; HistoryOfWar.org French about 73,000, allies about 85,000.",
+   "The Austrians surrendered at Ulm on 20 October 1805; the French occupied Vienna; Kutuzov joined Alexander and Francis at Olmütz.",
+   "Napoleon feigned weakness and a desire for peace, abandoned the Pratzen Heights and weakened his right flank to lure the allies into attacking it.",
+   "Davout's III Corps force-marched about 110 km in 48 hours to hold the right flank.",
+   "Soult's corps attacked the allied centre on the Pratzen Heights, concealed by fog/mist; the centre collapsed.",
+   "Soult took the heights around 9 a.m.; the Russian Guard's counter-attack was defeated in a cavalry fight; Napoleon turned south against the allied left; many allied units surrendered (about 4,000 prisoners near Sokolnitz).",
+   "Allied losses about 27,000 including about 12,000 prisoners (about a third of the army); French about 9,000.",
+   "The 30th Bulletin claimed 20,000 drowned on the frozen ponds; when the ponds were drained only two bodies and 38 guns were found.",
+   "Napoleon and Francis met on 4 December; an armistice followed; the Russians did not continue the war in Austria.",
+   "By the Treaty of Pressburg (26 December 1805) Austria left the war, lost lands in Italy and Germany (to Bavaria, Württemberg and France) and paid an indemnity.",
+   "The Confederation of the Rhine followed; Francis dissolved the Holy Roman Empire in 1806; Prussia went to war (Fourth Coalition) and was defeated at Jena–Auerstedt on 14 October 1806."
+  ],
+  "disagree": "Army sizes differ by source (see text). Wikipedia gives allied losses as 27,000–36,000 and French losses as 8,569–9,288; HistoryOfWar.org gives about 27,000 and about 9,000.",
+  "checked": null
+ },
+ "Q13582": {
+  "title": "Berlin Conference",
+  "y": 1884,
+  "place": "Berlin (Reich Chancellery, Wilhelmstraße 77), German Empire",
+  "paras": [
+   "The Berlin Conference of 1884–1885, also called the Berlin West Africa or Congo Conference, was a meeting of fourteen states that set rules for European colonisation and trade in Africa. Germany's chancellor Otto von Bismarck hosted it in his official residence on the Wilhelmstraße, at the request of King Leopold II of Belgium. The participants were Germany, Austria-Hungary, Belgium, Denmark, France, Britain, Italy, the Netherlands, Portugal, Russia, Spain, Sweden-Norway, the Ottoman Empire and the United States; Leopold's International Association of the Congo also sought recognition. No African state or ruler took part, and a request from the Sultan of Zanzibar to attend was turned down.",
+   "The powers were competing for African territory and wanted to avoid war among themselves. The conference met from 15 November 1884 to 26 February 1885 and ended with the General Act of Berlin, which Al Jazeera describes as having 38 clauses. It declared freedom of trade in the Congo basin and freedom of navigation on the Congo and Niger rivers, required the basin to be neutral, and committed the signatories to suppress the slave trade. Under Articles 34 and 35, a power taking African coastal territory had to notify the others, and claims would be recognised only if backed by 'effective occupation', an administration able to exercise authority, not just a raised flag. Leopold's association was recognised alongside the Act as his private holding, which became the Congo Free State in August 1885.",
+   "The conference did not itself draw most of Africa's borders, which were settled later in many bilateral agreements, and historians caution against seeing it as the moment Africa was divided; the German Foreign Office describes it as speeding up a process already under way. But it gave the 'Scramble for Africa' a set of shared rules. Al Jazeera puts the share of Africa claimed by Europeans before the conference at about 20%; by 1914, Wikipedia notes, about 90% of the continent was under European control, with only Ethiopia and Liberia independent. Leopold's Congo Free State became notorious for forced labour and atrocities in the rubber trade."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Berlin_Conference",
+    "title": "Berlin Conference",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://archiv.diplo.de/arc-en/the-political-archive/general-act-2684414",
+    "title": "General Act of the Berlin West Africa Conference, 26 February 1885",
+    "publisher": "German Federal Foreign Office, Political Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://www.aljazeera.com/news/2025/2/26/colonising-africa-what-happened-at-the-berlin-conference-of-1884-1885",
+    "title": "Colonising Africa: What happened at the Berlin Conference of 1884-1885?",
+    "publisher": "Al Jazeera",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     9,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The conference (1884–1885) was hosted by Bismarck in Berlin at Wilhelmstraße 77 and produced the General Act regulating colonisation and trade in Africa.",
+   "Fourteen states took part: Germany, the US, the Ottoman Empire, Austria-Hungary, Belgium, Denmark, France, the UK, Italy, the Netherlands, Portugal, Russia, Spain and Sweden-Norway.",
+   "Bismarck organised it at Leopold II's request; Leopold sought recognition of his International Congo Society/Association; the aim was to avoid conflict between the rival European powers.",
+   "No Africans were represented; Zanzibar's request to attend was rejected.",
+   "The conference ran from 15 November 1884 to 26 February 1885.",
+   "The Act declared free trade in the Congo basin and free navigation of the Congo and Niger, required neutrality of the basin and prohibited the slave trade.",
+   "Articles 34 and 35: notification of coastal acquisitions and 'effective occupation' (structures of authority, not a flag).",
+   "Leopold's holding was recognised separately from the Act as his private property; the name Congo Free State appeared in August 1885.",
+   "Al Jazeera: the General Act had 38 clauses.",
+   "The conference did not draw most borders, which were set later by bilateral agreements; it accelerated a process already under way; historians caution against overstating its role.",
+   "Al Jazeera: about 20% of Africa had been claimed by Europeans before the conference.",
+   "Wikipedia: about 90% of Africa was under European control by 1914; Ethiopia and Liberia remained independent.",
+   "The Congo Free State saw severe brutality, with people worked to death or mutilated in the rubber trade."
+  ],
+  "disagree": "Al Jazeera says about 90% of Africa was colonised by 1890; Wikipedia gives about 90% by 1914, which is the figure used here.",
+  "checked": null
  }
 }
