@@ -3296,5 +3296,156 @@
   ],
   "disagree": "Historians disagree on how many wars there were and when they ended: some end them with the Edict of Nantes and the Peace of Vervins in 1598, others with the Peace of Alès in 1629 after the Huguenot rebellions of the 1620s.",
   "checked": null
+ },
+ "Q689128": {
+  "title": "Haitian Revolution",
+  "y": 1791,
+  "place": "Saint-Domingue (now Haiti)",
+  "paras": [
+   "The Haitian Revolution (1791–1804) was the uprising of enslaved Africans in the French colony of Saint-Domingue, the richest colony in the Americas, which ended slavery there and created the independent state of Haiti. Almost half a million enslaved people worked its sugar, coffee and indigo plantations, ruled over by some 40,000 white colonists, with a large class of free people of colour in between. Over thirteen years the rebels fought French planters and governments, invading British and Spanish forces, and finally the army of Napoleon Bonaparte. Their leaders included Toussaint Louverture and Jean-Jacques Dessalines.",
+   "The French Revolution set off the crisis. In 1790 the free men of colour Vincent Ogé and Jean-Baptiste Chavannes rose to demand civil rights and were executed. On the night of 14 August 1791 a vodou ceremony at Bois Caïman, led by Dutty Boukman, gave the signal, and about a week later the enslaved people of the northern plain rose, killing planters and burning hundreds of plantations; within weeks some 100,000 had joined. Amid war with Britain and Spain, the French commissioner Léger-Félicité Sonthonax proclaimed the end of slavery in 1793, and in 1794 the National Convention in Paris abolished slavery in all French colonies. Toussaint's army then fought for the French Republic, drove out the British and Spanish, defeated his rivals, and by 1801 he ruled the colony under a constitution that made him governor-general for life.",
+   "Napoleon decided to retake the colony and restore slavery. An expedition under his brother-in-law Charles Leclerc landed in early 1802; Toussaint was tricked, arrested and deported to France, where he died in prison in 1803. But yellow fever destroyed the French army, and when it became clear that slavery was coming back, Toussaint's former officers rose again. After brutal fighting, with massacres on both sides, Dessalines's army defeated the French under Rochambeau at Vertières on 18 November 1803, and the remaining French troops left at the end of the month.",
+   "Dessalines declared Haiti independent on 1 January 1804; in the following months several thousand remaining white inhabitants were killed. It was one of the very few slave revolts in history to found a state, and it inspired the enslaved and frightened slaveholders across the Atlantic world. Other nations were slow to recognise it: France did so only in 1825, in return for an indemnity of 150 million francs that weighed on Haiti for generations."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+    "title": "Haitian Revolution",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/haitian-revolution",
+    "title": "Haitian Revolution",
+    "publisher": "Encyclopedia.com (Encyclopedia of Latin American History and Culture)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The Haitian Revolution (1791–1804) was a revolt of enslaved Africans against French rule in Saint-Domingue that ended slavery and founded Haiti.",
+   "Saint-Domingue was the richest colony; almost half a million enslaved people worked its plantations.",
+   "There were about 40,000 white colonists.",
+   "The rebels fought planters, French governments, British and Spanish invaders and Napoleon's army; Toussaint Louverture and Dessalines were leading figures.",
+   "In 1790 Vincent Ogé and Jean-Baptiste Chavannes led a revolt of free men of colour and were executed.",
+   "Boukman gave the signal at a vodou ceremony at Bois Caïman on the night of 14 August 1791; the revolt began on the night of 21 August.",
+   "The rebels burned hundreds of plantations; within weeks about 100,000 joined the revolt.",
+   "Sonthonax proclaimed the end of slavery in 1793; the National Convention abolished slavery in all French colonies (1794).",
+   "Toussaint's forces became part of the French army, fought British and Spanish forces and rivals, and by 1801 he controlled the colony with a constitution making him governor-general for life.",
+   "Napoleon sent Leclerc to retake the colony and restore slavery (Wikipedia: arrived 2 February 1802; Encyclopedia.com: sent in 1801).",
+   "Toussaint was seized, sent to France and died in prison in 1803.",
+   "Yellow fever devastated the French; fearing the return of slavery, Toussaint's officers rebelled again; massacres were committed on both sides.",
+   "Dessalines defeated Rochambeau's French army at Vertières on 18 November 1803; the French evacuated by the end of November 1803.",
+   "Haiti declared independence on 1 January 1804; 3,000–5,000 whites were killed by the end of April 1804.",
+   "France recognised Haiti only in 1825, requiring a 150 million franc indemnity; the revolution had wide effects on slavery in the Americas."
+  ],
+  "disagree": "Wikipedia dates the start of the uprising to the night of 21 August 1791; Encyclopedia.com says the fourth week of August, and other accounts give 22 August. Encyclopedia.com says Leclerc's army was sent in 1801; Wikipedia says it arrived at Le Cap on 2 February 1802. Wikipedia gives Sonthonax's proclamation as 29 August 1793 in one place and 29 August 1792 in another, so the text gives only the year 1793, which Encyclopedia.com confirms.",
+  "checked": null
+ },
+ "Q26013": {
+  "title": "War of 1812",
+  "y": 1812,
+  "place": "United States, British North America (Canada), the Great Lakes and the Atlantic",
+  "paras": [
+   "The War of 1812 was fought between the United States and the United Kingdom, with its British North American colonies (the future Canada) and many Indigenous nations as allies, during the last years of the Napoleonic Wars. The United States declared war on 18 June 1812. It objected to British restrictions on its trade with Napoleonic France and to the Royal Navy's impressment of sailors from American ships, and resented British ties to the Indigenous peoples resisting American expansion in the Old Northwest. Congress was split along party lines, and New England largely opposed the war.",
+   "The Americans tried repeatedly to conquer Upper and Lower Canada and failed. In 1812 General William Hull surrendered Detroit on 16 August to Isaac Brock and the Shawnee leader Tecumseh, and another invasion was defeated at Queenston Heights on 13 October, where Brock was killed. In 1813 American forces raided York (Toronto), burning its public buildings; Oliver Hazard Perry's victory on Lake Erie on 10 September gave the United States control of the lake, and on 5 October William Henry Harrison won the Battle of the Thames, where Tecumseh was killed. The 1814 Niagara campaign peaked in the bloody, indecisive Battle of Lundy's Lane on 25 July.",
+   "After Napoleon's abdication in April 1814 Britain sent more troops. In August a British force routed the militia at Bladensburg and burned Washington, but it failed at Baltimore, where the defence of Fort McHenry inspired 'The Star-Spangled Banner', and a British invasion of New York turned back after its fleet was beaten at Plattsburgh on 11 September 1814. At sea the Royal Navy blockaded the American coast, while American frigates and privateers won notable single-ship actions.",
+   "Peace was signed at Ghent in December 1814 and restored the pre-war borders, leaving the maritime disputes unresolved. News travelled slowly: Andrew Jackson defeated a British attack on New Orleans in January 1815, after the treaty was signed, and the war officially ended when the US Senate ratified it on 17 February 1815. The Indigenous nations allied with Britain were the clear losers; British attempts at Ghent to secure a protected Indigenous territory failed, and they could no longer halt American westward expansion."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/War_of_1812",
+    "title": "War of 1812",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.thecanadianencyclopedia.ca/en/article/war-of-1812",
+    "title": "War of 1812",
+    "publisher": "The Canadian Encyclopedia (Historica Canada)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The War of 1812 was fought between the United States and the United Kingdom (with British North America and Indigenous allies) during the Napoleonic Wars.",
+   "The United States declared war on 18 June 1812.",
+   "US grievances were British trade restrictions, impressment of sailors and British relations with Indigenous peoples resisting US expansion.",
+   "The war vote divided along party lines (Democratic-Republicans for, Federalists against); New England opposed the war.",
+   "Repeated US invasions of Upper and Lower Canada failed.",
+   "Hull surrendered Detroit on 16 August 1812 to Brock, with Tecumseh at his side.",
+   "The Americans were defeated at Queenston Heights on 13 October 1812, where Brock was killed.",
+   "In 1813 the Americans occupied York and burned its public buildings.",
+   "Perry won the Battle of Lake Erie on 10 September 1813; Harrison won the Battle of the Thames on 5 October 1813, where Tecumseh was killed.",
+   "Lundy's Lane (25 July 1814) was the bloodiest battle of the Niagara campaign.",
+   "After Napoleon's exile in April 1814 Britain reinforced North America; the British won at Bladensburg and burned Washington in August 1814.",
+   "The British failed at Baltimore (Fort McHenry, 'The Star-Spangled Banner'); the British invasion of New York was called off after the naval defeat at Plattsburgh on 11 September 1814.",
+   "The Royal Navy blockaded the US coast; American privateers and naval victories inflicted limited damage on British commerce.",
+   "The Treaty of Ghent (December 1814) restored the pre-war status quo and did not settle the maritime issues; Jackson repulsed the British at New Orleans in January 1815; the war officially ended with Senate ratification on 17 February 1815.",
+   "British attempts at Ghent to secure a protected region for Indigenous allies failed; Indigenous peoples lost hope of halting US expansion."
+  ],
+  "disagree": "The Canadian Encyclopedia dates the war 1812–1814, by the signing of the Treaty of Ghent; Wikipedia counts it until the US Senate ratified the treaty on 17 February 1815, after the Battle of New Orleans. The Canadian Encyclopedia calls Lundy's Lane the bloodiest battle of the war.",
+  "checked": null
  }
 }
