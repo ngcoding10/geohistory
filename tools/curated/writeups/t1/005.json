@@ -2628,5 +2628,156 @@
   ],
   "disagree": "Length of the bombardment: 34 hours (National Archives) or nearly 36 hours (American Battlefield Trust). The date of the surrender demand is given as 10 April (National Archives) or as the day after a Confederate cabinet decision of 9 April (American Battlefield Trust).",
   "checked": null
+ },
+ "Q221469": {
+  "title": "First Battle of Bull Run",
+  "y": 1861,
+  "place": "Confederate States of America",
+  "paras": [
+   "The First Battle of Bull Run (also called First Manassas), fought on 21 July 1861 along the Bull Run creek near Manassas, Virginia, about 25 miles from Washington, was the first major land battle of the American Civil War. Under public pressure to take the Confederate capital, Richmond, quickly, Lincoln pressed the Union commander Brigadier General Irvin McDowell to advance. McDowell's army of 90-day volunteers, enthusiastic but barely trained, left Washington on 16 July. Facing it behind Bull Run was a Confederate army under Brigadier General P. G. T. Beauregard, as green as its opponents, guarding the railway junction at Manassas, which linked the Shenandoah Valley with the Virginia interior.",
+   "McDowell hoped to beat Beauregard before a second Confederate army under General Joseph E. Johnston could come from the Shenandoah Valley. But Johnston slipped away from the Union force watching him, and his men travelled to Manassas by train, arriving on 20 July; the Oxford Companion to American Military History calls this the first operational use of railways in war. On the morning of 21 July McDowell made a feint at the stone bridge over Bull Run while two divisions crossed upstream at Sudley Ford to turn the Confederate left. The Federals drove the Confederates back from Matthews Hill, but the defenders rallied on Henry Hill around a brigade of Virginians under Brigadier General Thomas J. Jackson. Brigadier General Barnard Bee, rallying his own men, pointed to Jackson 'standing like a stone wall', and Jackson was known as 'Stonewall' from then on.",
+   "For about two hours the Federals made piecemeal attacks on Henry Hill without breaking through. Around 4 p.m. fresh Confederate troops under Colonel Jubal Early and Brigadier General E. Kirby Smith struck the Union right; the Union line gave way and the withdrawal turned into a panicky retreat to Washington, slowed by civilian spectators who had come out from the capital to watch. The Confederates were too disorganised to pursue. According to the Oxford Companion, the Union lost 2,896 men and the Confederates 1,982.",
+   "The defeat ended Northern hopes of a short war. McDowell was relieved and replaced by Major General George B. McClellan, who reorganised and trained the force that became the Army of the Potomac. Northerners learned that enthusiasm alone would not win the war, while the victory strengthened Southern belief in their own fighting superiority."
+  ],
+  "sources": [
+   {
+    "url": "https://www.battlefields.org/learn/civil-war/battles/bull-run",
+    "title": "Bull Run Battle Facts and Summary",
+    "publisher": "American Battlefield Trust",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/bull-run-first-battle",
+    "title": "Bull Run, First Battle of (The Oxford Companion to American Military History)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "The First Battle of Bull Run was fought on 21 July 1861 at Bull Run near Manassas, Virginia (about 25 miles from Washington, American Battlefield Trust); it was the first full-scale/major land battle of the Civil War.",
+   "Under public pressure, Lincoln pushed McDowell to advance on Richmond; McDowell's 90-day volunteers, enthusiastic and poorly trained, set out on 16 July.",
+   "Beauregard's equally inexperienced Confederates held Bull Run to protect the railway junction at Manassas, which linked the Shenandoah Valley with the Virginia interior.",
+   "McDowell aimed to defeat Beauregard before Johnston's army from the Shenandoah Valley could join him; Johnston's men came by rail and arrived on 20 July (Oxford Companion: the first operational use of railways by the Confederates; ordered on 18 July and moved over the next two days).",
+   "On the morning of 21 July the Federals attacked at the stone bridge as a feint while two divisions crossed at Sudley Ford against the Confederate left.",
+   "The Federals drove the Confederates back from Matthews Hill; the Confederates rallied on Henry Hill around Jackson's brigade of Virginians.",
+   "Bee rallied his brigade by pointing to Jackson standing 'like a stone wall', which gave Jackson the name 'Stonewall'.",
+   "Union attacks on Henry Hill continued for about two hours without decisive result.",
+   "Around 4 p.m. fresh troops under Jubal Early and E. Kirby Smith attacked the Union right, and the Union army retreated in confusion to Washington.",
+   "The retreat was hampered by civilian spectators who had come from Washington; the Confederates were too disorganised to pursue.",
+   "McDowell was relieved and replaced by McClellan, who reorganised the army into what became the Army of the Potomac.",
+   "Oxford Companion: Union casualties 2,896, Confederate 1,982.",
+   "The battle showed both sides the war would be long; Northerners realised enthusiasm was not enough, and the victory reinforced Southern views of their martial superiority."
+  ],
+  "disagree": "Size of McDowell's army: about 35,000 (American Battlefield Trust) or 30,000 (Oxford Companion).",
+  "checked": null
+ },
+ "Q719252": {
+  "title": "Battle of Antietam",
+  "y": 1862,
+  "place": "United States of America",
+  "paras": [
+   "The Battle of Antietam, fought on 17 September 1862 near Sharpsburg, Maryland, between General Robert E. Lee's Confederate Army of Northern Virginia and Major General George B. McClellan's Union Army of the Potomac, was the deadliest single day in American history. After a summer of victories that had pushed the fighting in Virginia back from Richmond to the outskirts of Washington, Lee crossed the Potomac into Maryland in early September 1862, the first Confederate invasion of Union territory. He hoped for a victory that might bring British and French recognition of the Confederacy, help Northern opponents of the war in the coming congressional elections and push the Lincoln administration towards peace. Lincoln, for his part, had decided in July to proclaim the freeing of slaves in the rebel states and was waiting for a Union victory to announce it.",
+   "Lee divided his army, sending three parts under Stonewall Jackson to capture the Union garrison at Harpers Ferry. On 13 September Union soldiers at Frederick found a lost copy of Lee's orders, but McClellan moved slowly: he forced the South Mountain passes on 14 September but could not save Harpers Ferry, which surrendered to Jackson on 15 September. Lee gathered most of his army on high ground near Sharpsburg behind Antietam Creek. McClellan had about 80,000 men to Lee's 45,000, according to the Oxford Companion to American Military History, yet believed himself outnumbered.",
+   "At dawn on 17 September Joseph Hooker's corps attacked Lee's left, and the fighting surged back and forth through the Cornfield, the West Woods and around the Dunker Church, where Jackson's men held. Around midday two Union divisions broke through the Confederate centre along a sunken farm road, later called Bloody Lane, but McClellan did not follow up. In the afternoon Ambrose Burnside's corps finally forced its way across a stone bridge over the creek and advanced towards Sharpsburg, threatening Lee's line of retreat, until A. P. Hill's division arrived after a forced march from Harpers Ferry and struck its flank. Because the Union attacks came one after another rather than together, Lee could shift troops to each threatened point, and McClellan never committed his whole army.",
+   "Some 6,000 men were dead or dying and about 16,000 wounded, more than 22,000 casualties in all. Lee withdrew across the Potomac into Virginia after 18 September, and McClellan did not pursue him effectively; Lincoln later replaced him with Burnside. Although the battle was tactically a draw, it ended Lee's invasion. Five days later, on 22 September, Lincoln issued the preliminary Emancipation Proclamation, declaring free the slaves of all states still in rebellion on 1 January 1863. Britain and France did not recognise the Confederacy, and the Republicans kept control of the House of Representatives in November."
+  ],
+  "sources": [
+   {
+    "url": "https://www.battlefields.org/learn/civil-war/battles/antietam",
+    "title": "Antietam Battle Facts and Summary",
+    "publisher": "American Battlefield Trust",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/antietam-battle",
+    "title": "Antietam, Battle of (The Oxford Companion to American Military History)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "The Battle of Antietam was fought on 17 September 1862 near Sharpsburg, Maryland, between Lee's Army of Northern Virginia and McClellan's Army of the Potomac; it was the deadliest single day in American history.",
+   "Lee invaded Maryland in September 1862 (Oxford Companion: began crossing the Potomac on 4 September), the first Confederate invasion of Union-held territory.",
+   "Lee hoped a victory would influence Northern congressional elections and European recognition of the Confederacy and pressure the Lincoln administration.",
+   "Lee's earlier victories had shifted the war from the gates of Richmond to the environs of Washington; Lincoln had decided in July to issue an emancipation proclamation and awaited a victory.",
+   "Lee divided his army, sending three parts under Jackson to capture Harpers Ferry; on 13 September Union soldiers at Frederick found a copy of Lee's orders.",
+   "McClellan moved slowly; Union troops took the South Mountain passes on 14 September (a Union victory), but Harpers Ferry surrendered to Jackson on 15 September.",
+   "Lee positioned his army near Sharpsburg behind Antietam Creek.",
+   "Oxford Companion: McClellan had about 80,000 men to Lee's 45,000 but assumed he was outnumbered.",
+   "At dawn on 17 September Hooker's corps attacked Lee's left; fighting swept the Cornfield, the West Woods and the Dunker Church, where Jackson's forces held.",
+   "Union divisions broke through the Confederate centre at the Sunken Road (Bloody Lane) but the success was not exploited.",
+   "In the afternoon Burnside's corps crossed the stone bridge and threatened Lee's right and retreat; A. P. Hill's division arrived from Harpers Ferry after a forced march and drove it back.",
+   "The Union attacks were uncoordinated, letting Lee shift troops; McClellan committed less than three-quarters of his force.",
+   "About 6,000 dead or dying and 16,000 wounded; more than 22,000 casualties.",
+   "Lee withdrew to Virginia (American Battlefield Trust: late on 18 September and on 19 September); McClellan failed to follow up, and Lincoln later replaced him with Burnside.",
+   "The battle was a tactical draw but Lincoln claimed a strategic victory.",
+   "Lincoln issued the preliminary Emancipation Proclamation on 22 September, five days after the battle, declaring free the slaves in states still in rebellion on 1 January 1863.",
+   "Britain and France did not recognise the Confederacy; the Republicans kept control of the House in November."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
