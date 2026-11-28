@@ -2079,5 +2079,67 @@
   ],
   "disagree": "Casualties: Union about 12,600 and Confederate 5,300 (National Park Service) or more than 12,500 and about 6,000 (American Battlefield Trust).",
   "checked": null
+ },
+ "Q747589": {
+  "title": "Battle of Isandlwana",
+  "y": 1879,
+  "place": "Isandlwana hill, Zululand (today KwaZulu-Natal, South Africa)",
+  "paras": [
+   "The Battle of Isandlwana was fought on 22 January 1879 at the foot of Isandlwana hill in Zululand, in the first weeks of Britain's war against the Zulu Kingdom. Lord Carnarvon, the Colonial Secretary, and his High Commissioner Sir Bartle Frere wanted to bring the British colonies and Boer republics of southern Africa into a federation, which required control of the independent Zulu kingdom. King Cetshwayo rejected Frere's demands and refused to disband his army, and Lord Chelmsford invaded Zululand in three columns, aiming at the royal capital, Ulundi.",
+   "Chelmsford's central column camped near Isandlwana without drawing its wagons into a defensive ring. Early on 22 January, after reports that part of the Zulu army was close, he led part of his force out to find it, leaving the camp under Lieutenant-Colonel Henry Pulleine; Colonel Anthony Durnford arrived later that morning with mounted reinforcements (History Hit gives 1,241 men under Pulleine and 526 with Durnford). Scouts then ran into the main Zulu army, over 20,000 strong according to the National Army Museum, which attacked the camp. The British formed a long firing line far out from the tents, and for a time their rifles and guns held the Zulu centre. But the line was over-extended and too far from its ammunition, and as fire slackened the Zulu 'horns' outflanked and encircled the camp. Pulleine and Durnford were killed, and survivors fled towards the Buffalo River.",
+   "Most of the British force was killed: the National Army Museum says the majority of about 1,700 troops, and History Hit that only 55 Europeans and 350 Africans survived out of 1,762 soldiers and camp followers. It was the greatest Zulu victory of the war and shocked the Victorian public. About 4,000 Zulus went on to attack the small garrison at Rorke's Drift, which held out. Chelmsford retreated and Britain sent reinforcements; he invaded again at the end of May 1879, defeated the Zulu army at Ulundi on 4 July, and Cetshwayo was captured and exiled while Zululand was divided up."
+  ],
+  "sources": [
+   {
+    "url": "https://www.nam.ac.uk/explore/zulu-war",
+    "title": "Zulu War",
+    "publisher": "National Army Museum, London",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.historyhit.com/how-did-the-battle-of-isandlwana-unfold/",
+    "title": "How Did the Battle of Isandlwana Unfold?",
+    "publisher": "History Hit",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Battle of Isandlwana, 22 January 1879, in the war of 1879 between Britain and the Zulu Kingdom (National Army Museum; History Hit).",
+   "Carnarvon, Colonial Secretary, and Frere, High Commissioner, sought a federation of British colonies and Boer republics, requiring control over Zululand (National Army Museum).",
+   "Cetshwayo rejected Frere's demands and refused to disband his army; Chelmsford split his invasion force into three columns aiming at the royal capital Ulundi (National Army Museum).",
+   "Chelmsford established a camp near Isandlwana without encircling his wagons; after intelligence reports he led part of his force out to find the Zulus (National Army Museum; History Hit: Pulleine left in command; no laager).",
+   "History Hit: Pulleine had 1,241 troops; Durnford arrived just after 10 am with 526 mounted reinforcements.",
+   "Over 20,000 Zulus, the main part of Cetshwayo's army, attacked the camp (National Army Museum; History Hit: scouts discovered the main Zulu army; Trooper Adams reported 25-30,000).",
+   "The British formed a defensive line on a wide perimeter east of the camp; artillery and rifle fire held the Zulu centre for a time (History Hit); fighting in an over-extended line, too far from their ammunition, they were swamped (National Army Museum; History Hit: ammunition ran low and resupply was slow).",
+   "The Zulu horns outflanked and encircled the camp; Pulleine and Durnford were killed; survivors fled to the Buffalo River (History Hit).",
+   "The majority of the 1,700 British troops were killed (National Army Museum); History Hit: only 55 Europeans and 350 Africans survived out of 1,762.",
+   "Greatest Zulu victory of the war; the Victorian public was shocked; Chelmsford retreated (National Army Museum).",
+   "About 4,000 Zulus pressed on to Rorke's Drift, where a small garrison held them back (National Army Museum; History Hit: fires seen from Rorke's Drift).",
+   "Reinforcements were dispatched; Chelmsford invaded again at the end of May 1879; victory at Ulundi on 4 July; Cetshwayo captured and exiled; Zululand divided (National Army Museum)."
+  ],
+  "disagree": "British strength and losses: about 1,700 troops, most killed (National Army Museum); 1,762 soldiers and camp followers with 55 European and 350 African survivors (History Hit). Zulu strength: over 20,000 (National Army Museum); a scout's report of 25-30,000 (History Hit).",
+  "checked": null
  }
 }
