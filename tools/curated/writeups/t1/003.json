@@ -3149,5 +3149,152 @@
   ],
   "disagree": "Wikipedia describes a six-day battle; EBSCO's summary says four days of fighting but dates the battle 15–20 August 636. Wikipedia says Vahan probably died in the fighting near Damascus after the battle; EBSCO says only Jabala escaped among the Byzantine leaders. Army sizes vary widely between early accounts and modern estimates. Wikipedia dates the fall of Damascus to September 634 and of Emesa to early 636; EBSCO dates them to September and November 635.",
   "checked": null
+ },
+ "Q626058": {
+  "title": "Battle of Karbala",
+  "y": 680,
+  "place": "Karbala, in present-day southern Iraq",
+  "paras": [
+   "The Battle of Karbala was fought on 10 October 680 (10 Muharram 61 AH) between the forces of the second Umayyad caliph, Yazid I, and a small band led by Husayn ibn Ali, son of the fourth caliph Ali and grandson of the Prophet Muhammad. The Umayyad troops came from Kufa and were sent by its governor, Ubayd Allah ibn Ziyad, under the command of Umar ibn Sa'd, with Shimr ibn Dhi al-Jawshan among his commanders. With Husayn were members of his family and a few dozen companions; tradition counts 72 fighting men.",
+   "The quarrel was over the leadership of the Muslim community. The caliph Mu'awiya had named his son Yazid as his successor, making the caliphate hereditary, and when Mu'awiya died in 680, Husayn refused to swear allegiance to Yazid and went to Mecca. The people of Kufa, Ali's former capital, wrote inviting him to lead them against the Umayyads. Husayn sent his cousin Muslim ibn Aqil ahead, then set out for Kufa in September 680 with his family. Ibn Ziyad meanwhile suppressed support for him in the city.",
+   "On the road Husayn's party was stopped by a vanguard of about 1,000 Umayyad horsemen under al-Hurr ibn Yazid and forced to camp on the plain of Karbala on 2 October; an army of about 4,000 under Umar ibn Sa'd arrived the next day and cut Husayn off from the Euphrates, leaving his camp short of water. Negotiations failed because Ibn Ziyad demanded that Husayn submit, which he refused. On 10 October the Umayyad force attacked. Al-Hurr went over to Husayn's side; Husayn and nearly all the men with him, including his half-brother Abbas, were killed, and Husayn was beheaded. The women and Husayn's sick son Ali, later called Zayn al-Abidin, were taken captive to Kufa and then to Yazid in Damascus.",
+   "Husayn's death helped spark the Second Fitna, the civil war in which Kufan movements, first the Tawwabin and then Mukhtar al-Thaqafi, sought to avenge him. It gave the supporters of Ali's family a distinct religious identity and became central to Shi'a Islam. Shi'a Muslims mourn Husayn each year in the first ten days of Muharram, culminating on the day of Ashura, and his shrine at Karbala draws millions of pilgrims."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Karbala",
+    "title": "Battle of Karbala",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/martyrdom-prophets-grandson-husayn",
+    "title": "Martyrdom of Prophet's Grandson Ḥusayn",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought on 10 October 680 (10 Muharram 61 AH) between Yazid I's forces and Husayn ibn Ali, grandson of Muhammad, at Karbala.",
+   "The Umayyad force from Kufa was sent by Ubayd Allah ibn Ziyad under Umar ibn Sa'd; Shimr was among its commanders.",
+   "Husayn had a small force; tradition gives 72 men.",
+   "Mu'awiya named Yazid his successor; after Mu'awiya's death in 680 Husayn refused allegiance and went to Mecca.",
+   "The Kufans invited Husayn; he sent Muslim ibn Aqil and then set out for Kufa (Wikipedia: left Mecca on 9 September 680).",
+   "Ibn Ziyad suppressed Husayn's support in Kufa.",
+   "Husayn's party was intercepted by about 1,000 men under al-Hurr and camped at Karbala on 2 October (2 Muharram).",
+   "About 4,000 men under Umar ibn Sa'd arrived the next day and cut off access to the Euphrates.",
+   "Negotiations failed because Ibn Ziyad demanded submission, which Husayn refused.",
+   "On 10 October the Umayyads attacked; al-Hurr defected to Husayn; Husayn and most of his men were killed and Husayn was beheaded.",
+   "Husayn's half-brother Abbas was among the dead.",
+   "The women and Ali Zayn al-Abidin, who had not fought because of illness, were taken captive to Kufa and Damascus.",
+   "The killing sparked the Second Fitna, including the Tawwabin and Mukhtar al-Thaqafi's revenge campaigns, and gave the pro-Alid party a distinct religious identity.",
+   "Shi'a Muslims commemorate Husayn in the first ten days of Muharram, culminating on Ashura; his shrine at Karbala draws millions of pilgrims."
+  ],
+  "disagree": "Sources differ on the size of the Umayyad army: Wikipedia's narrative has a vanguard of about 1,000 followed by 4,000 men, but its infobox cites estimates from 4,000 to 30,000. EBSCO, following tradition, adds details such as Husayn's infant son being killed by an arrow, which the text does not repeat.",
+  "checked": null
+ },
+ "Q673175": {
+  "title": "French Wars of Religion",
+  "y": 1562,
+  "place": "Kingdom of France",
+  "paras": [
+   "The French Wars of Religion were a series of eight civil wars fought between French Catholics and Protestants, known as Huguenots, from 1562 to 1598. Calvinism had spread quickly in France in the 1550s, winning perhaps a tenth of the population and many nobles. Religious division merged with a struggle for power after King Henry II died in 1559, leaving his widow Catherine de' Medici and their young sons Francis II, Charles IX and Henry III on the throne. The ultra-Catholic Guise family led one side; the Protestant princes of the House of Bourbon, Condé and the Navarre royal family, with Admiral Gaspard de Coligny, led the other. Spain and Savoy backed the Catholics, England and the Dutch the Protestants.",
+   "The wars began after Catherine's Edict of Saint-Germain of January 1562 gave the Huguenots limited freedom of worship. On 1 March 1562 the Duke of Guise's men attacked a Protestant service at Vassy in Champagne, killing many worshippers, and on 2 April Condé seized Orléans. Fighting alternated with short-lived peace edicts that granted the Huguenots some rights and were then withdrawn. The worst bloodshed came in August 1572: days after the Protestant Henry of Navarre married the king's sister Margaret in Paris, Coligny was murdered on 24 August, St Bartholomew's Day, and Catholic mobs killed thousands of Protestants in Paris and other towns; estimates for France as a whole run from 5,000 to 30,000.",
+   "In 1576 Catholic hardliners formed the Catholic League under Henry, Duke of Guise, backed by Philip II of Spain, to keep the Protestant Henry of Navarre, who became heir to the throne in 1584, from becoming king. In the final 'War of the Three Henrys' Henry III fled Paris after the Day of the Barricades in May 1588, had Guise and his brother killed at Blois in December, and was himself stabbed by the friar Jacques Clément in 1589. Henry of Navarre, now Henry IV, fought the League for years, converted to Catholicism in 1593 and was then accepted by Paris.",
+   "In 1598 the Peace of Vervins was signed and Henry issued the Edict of Nantes (13 April), which kept Catholicism as the state religion but gave the Huguenots freedom of worship in many places and civil rights. Between two and four million people are estimated to have died from the fighting, famine and disease. Louis XIV revoked the Edict of Nantes in 1685."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/French_Wars_of_Religion",
+    "title": "French Wars of Religion",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://ebsco.com/research-starters/religion-and-philosophy/french-wars-religion",
+    "title": "French Wars of Religion",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The French Wars of Religion were eight civil wars between Catholics and Huguenots from 1562 to 1598.",
+   "Calvinism spread in France in the 1550s; about 10 percent of the population became Huguenots.",
+   "After Henry II's death in 1559 Catherine de' Medici and her sons Francis II, Charles IX and Henry III held the throne amid a power struggle.",
+   "The Guise led the Catholic faction; Condé, the Navarre royal family and Coligny led the Protestants; Spain and Savoy backed the Catholics, England and the Dutch the Protestants.",
+   "Catherine's Edict of Saint-Germain of January 1562 was followed by fighting.",
+   "On 1 March 1562 Guise retainers attacked a Calvinist service at Vassy (several hundred killed or wounded per EBSCO).",
+   "Condé seized Orléans on 2 April 1562; truces and edicts granting rights alternated with renewed war.",
+   "Henry of Navarre married Margaret of Valois in Paris in August 1572; Coligny was killed on 24 August; Catholic mobs killed 5,000–30,000 Protestants across France.",
+   "The Catholic League was formed under Henry, Duke of Guise, and supported by Philip II, to keep Henry of Navarre from the throne.",
+   "Henry III fled Paris after the Day of the Barricades (12 May 1588) and had Guise and his brother killed at Blois on 23 December 1588.",
+   "Henry III was stabbed by Jacques Clément in 1589; Henry of Navarre became Henry IV.",
+   "Henry IV converted to Catholicism in 1593 and Paris accepted him.",
+   "In 1598 the Peace of Vervins was made and the Edict of Nantes issued (13 April 1598), granting Huguenots rights.",
+   "Two to four million people died from violence, famine or disease.",
+   "Louis XIV revoked the Edict of Nantes in 1685; the League was formed in 1576 and Navarre became heir after Anjou's death in 1584."
+  ],
+  "disagree": "Historians disagree on how many wars there were and when they ended: some end them with the Edict of Nantes and the Peace of Vervins in 1598, others with the Peace of Alès in 1629 after the Huguenot rebellions of the 1620s.",
+  "checked": null
  }
 }
