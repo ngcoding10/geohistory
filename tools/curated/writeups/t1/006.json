@@ -2429,7 +2429,7 @@
   "place": "Madrid: Royal Palace, Puerta del Sol, Monteleón artillery park",
   "paras": [
    "The Dos de Mayo (Second of May) was the rising of the people of Madrid against the French troops occupying their city on 2 May 1808, followed by mass executions on 3 May. The fighters were mostly ordinary townspeople, joined by a handful of Spanish artillery officers; against them stood the French forces of Marshal Joachim Murat, which had held Madrid since 23 March. Spain was then France's ally but its crown was in crisis: in March the Tumult of Aranjuez had forced King Charles IV to abdicate in favour of his son Ferdinand VII, and Napoleon had drawn both of them to Bayonne in France, where each hoped for his backing.",
-   "Early on 2 May a crowd gathered in front of the Royal Palace to stop the French from taking the youngest prince, Francisco de Paula, and the last members of the royal family still in Madrid to France. Murat sent Imperial Guard troops with artillery, which fired on the crowd, and the unrest spread across the city as people fought the French with whatever weapons they could find; Wikipedia notes heavy fighting around the Puerta del Sol, the scene of Goya's later painting of the charge of the Mamelukes, and the Puerta de Toledo. The Spanish garrison was ordered to stay in its barracks, but at the Monteleón artillery park Captains Luis Daoíz and Pedro Velarde, with Lieutenant Jacinto Ruiz, armed the crowd and held the park. The French took it by assault: Velarde was shot, Daoíz killed by bayonets and Ruiz badly wounded. The Army Museum names General Lefranc as commander of the attacking column and says the fighting ended at two in the afternoon.",
+   "Early on 2 May a crowd gathered in front of the Royal Palace to stop the French from taking the youngest prince, Francisco de Paula, and the last members of the royal family still in Madrid to France. Murat sent Imperial Guard troops with artillery, which fired on the crowd, and the unrest spread across the city as people fought the French with whatever weapons they could find; Wikipedia notes heavy fighting around the Puerta del Sol, the scene of Goya's later painting of the charge of the Mamelukes, and the Puerta de Toledo. The Spanish garrison was ordered to stay in its barracks, but at the Monteleón artillery park Captains Luis Daoíz and Pedro Velarde, with Lieutenant Jacinto Ruiz, armed the crowd and held the park. The French took it by assault: Velarde was shot, Daoíz killed by bayonets and Ruiz badly wounded. The Army Museum names General Lefranc as commander of the attacking column and says the fighting ended at two in the afternoon; the Army's annual eulogy of Daoíz and Velarde gives the final assault to General Lagrange.",
    "Murat answered with harsh repression. That evening he set up a military commission under General Grouchy that condemned to death anyone captured carrying arms of any kind, and hundreds of prisoners were shot the next day, among them men executed on the hill of Príncipe Pío, the scene Goya painted in The Third of May 1808. According to Wikipedia, the news led the mayors of nearby Móstoles to sign a proclamation calling on all Spaniards to rise against the invaders.",
    "Days later at Bayonne, Charles and Ferdinand gave up the crown, which Napoleon passed to his brother Joseph. Instead of cowing Spain, the crushing of the rising and the new king set the country in revolt, ended the Franco-Spanish alliance and opened the Peninsular War (in Spain, the War of Independence), which ended with the defeat of the French in 1814. The second of May is now the public holiday of the Community of Madrid, and the site of the Monteleón park is the Plaza del Dos de Mayo."
   ],
@@ -2502,6 +2502,18 @@
      6,
      11
     ]
+   },
+   {
+    "url": "https://ejercito.defensa.gob.es/Galerias/Descarga_pdf/Unidades/Segovia/acart/elogio_2_de_mayo_2023.pdf",
+    "title": "Elogio de los Capitanes Don Luis Daoíz y Don Pedro Velarde (2 de mayo de 2023)",
+    "publisher": "Academia de Artillería, Spanish Army (Segovia)",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     8,
+     9
+    ]
    }
   ],
   "claims": [
@@ -2513,7 +2525,7 @@
    "Street fighting with improvised weapons in all parts of the city (Wikipedia, Army Museum, Enciclopèdia Catalana); heavy fighting at the Puerta del Sol and Puerta de Toledo; Goya's Charge of the Mamelukes shows the street fighting at the Puerta del Sol (Wikipedia; Fondation Napoléon: attack on the Mamelukes at the Puerta del Sol on 2 May).",
    "Spanish troops were confined to barracks (Wikipedia; Enciclopèdia Catalana: Captain General Negrete ordered the troops kept in barracks); the artillery at Monteleón joined the rising (Wikipedia; Enciclopèdia Catalana).",
    "Daoíz and Velarde, with infantry lieutenant (Jacinto) Ruiz, organised the defence of the Monteleón artillery park (Enciclopèdia Catalana; Army Museum: Daoíz opened the gate to Velarde and Lieutenant Ruiz with a company; Wikipedia: Daoíz and Velarde).",
-   "The French took the park; Velarde was shot, Daoíz run through by bayonets, Ruiz badly wounded; the Army Museum names General Lefranc's column and says fighting ended at 2 p.m. (Army Museum; Wikipedia: both died in the French assault; Enciclopèdia Catalana: the French seized the park).",
+   "The French took the park; Velarde was shot, Daoíz run through by bayonets, Ruiz badly wounded; the Army Museum names General Lefranc's column and says fighting ended at 2 p.m. (Army Museum; Army eulogy 2023: final assault under General Lagrange, Velarde shot in the heart; Wikipedia: both died in the French assault; Enciclopèdia Catalana: the French seized the park).",
    "On the evening of 2 May Murat created a military commission under General Grouchy that sentenced to death all captured bearing arms of any kind (Wikipedia; Army Museum).",
    "Hundreds of prisoners were executed the next day, 3 May, shown in Goya's painting (Wikipedia; Army Museum); executions at the Príncipe Pío hill (Enciclopèdia Catalana; Fondation Napoléon).",
    "News of the repression led the mayors of Móstoles to sign a declaration calling on all Spaniards to rise against the invaders (Wikipedia).",
@@ -2521,8 +2533,12 @@
    "The uprising and Joseph's proclamation led to a rebellion against French rule, the Peninsular War, and ended the Franco-Spanish alliance (Wikipedia); it triggered the War of Independence, ending with the French defeat in 1814 (Army Museum).",
    "2 May is the holiday of the Community of Madrid (Wikipedia; Army Museum); the site of the Monteleón barracks is the Plaza del Dos de Mayo (Wikipedia)."
   ],
-  "disagree": null,
-  "checked": null
+  "disagree": "Commander of the French attack on the Monteleón park: General Lefranc (Army Museum page) or General Lagrange for the final assault (Academia de Artillería eulogy, 2023).",
+  "checked": {
+   "by": "https://ejercito.defensa.gob.es/Galerias/Descarga_pdf/Unidades/Segovia/acart/elogio_2_de_mayo_2023.pdf",
+   "result": "5 claims checked (crowd at the palace to stop the removal of Francisco de Paula; Murat's detachment with artillery fired on it; Daoíz in command at Monteleón, joined by Velarde and Lieutenant Jacinto Ruiz; arms handed to the people; Velarde shot): all confirmed. The eulogy names General Lagrange for the final assault where the Army Museum page names Lefranc; the text now states both, and the eulogy is added as a source.",
+   "errors": 0
+  }
  },
  "Q228284": {
   "title": "Expedition of the Thousand",
@@ -2724,7 +2740,7 @@
   "paras": [
    "The presidential election of 6 November 1860 was fought over slavery and was won by the Republican Abraham Lincoln of Illinois, with Hannibal Hamlin of Maine as his running mate. The Democratic president James Buchanan did not run again. The Republican platform promised not to interfere with slavery in the states where it existed but opposed its spread into the western territories, and also called for protective tariffs, free homesteads for settlers in the West and a railroad to the Pacific.",
    "The parties split along sectional lines. At the Republican convention in Chicago in May, the front-runner was Senator William H. Seward of New York. Seward led on the first ballot, Lincoln's managers won over delegates (the Miller Center says with offers of cabinet posts to Indiana and Pennsylvania), and Lincoln won on the third ballot on 18 May. The Democratic convention in Charleston broke up when Southern delegates walked out over the party's slavery platform. When the party met again in Baltimore in June, Southern delegates walked out once more. The remaining Northern Democrats nominated Senator Stephen A. Douglas of Illinois, who wanted the settlers of each territory to decide on slavery. The bolters nominated Vice President John C. Breckinridge of Kentucky on a platform calling for federal protection of slavery in the territories. Former Whigs and Know Nothings formed the Constitutional Union Party and nominated John Bell of Tennessee, hoping to save the Union by avoiding the slavery question.",
-   "Following custom, Lincoln stayed at home in Springfield while Republican 'Wide Awake' clubs marched for him; only Douglas toured the country in person. Turnout was 81.2 percent, then the highest in American history. Lincoln carried the free states of the North and the Pacific coast and won 180 electoral votes, a clear majority, with about 39.7 percent of the popular vote. He received votes in only one of the eleven states that would later form the Confederacy, Virginia; the Miller Center says he was not on the ballot in any Southern state. Breckinridge won 72 electoral votes and eleven slave states, Bell 39 and three states of the upper South (Virginia, Kentucky and Tennessee), and Douglas, second in the popular vote, only 12 electoral votes, from Missouri and part of New Jersey.",
+   "Following custom, Lincoln stayed at home in Springfield while Republican 'Wide Awake' clubs marched for him; only Douglas toured the country in person. Turnout was 81.2 percent, then the highest in American history. Lincoln carried the free states of the North and the Pacific coast and won 180 electoral votes, a clear majority, with just under 40 percent of the popular vote (39.7 percent according to Wikipedia, 39.8 according to the American Presidency Project). He received votes in only one of the eleven states that would later form the Confederacy, Virginia; the Miller Center says he was not on the ballot in any Southern state. Breckinridge won 72 electoral votes and eleven slave states, Bell 39 and three states of the upper South (Virginia, Kentucky and Tennessee), and Douglas, second in the popular vote, only 12 electoral votes, from Missouri and part of New Jersey.",
    "Lincoln's victory without a single slave state ended the South's long hold over the federal government and became the main trigger of secession. Seven Southern states, all of which had voted for Breckinridge, left the Union before his inauguration on 4 March 1861. The Civil War began less than two months later with the attack on Fort Sumter, after which four more slave states seceded."
   ],
   "sources": [
@@ -2769,6 +2785,15 @@
      13,
      14
     ]
+   },
+   {
+    "url": "https://www.presidency.ucsb.edu/statistics/elections/1860",
+    "title": "Election of 1860",
+    "publisher": "The American Presidency Project, UC Santa Barbara",
+    "accessed": "2026-11-28",
+    "supports": [
+     13
+    ]
    }
   ],
   "claims": [
@@ -2784,12 +2809,16 @@
    "Former Whigs and Know Nothings formed the Constitutional Union Party and nominated John Bell of Tennessee, seeking to avoid disunion by avoiding/compromising over slavery (Wikipedia; Miller Center).",
    "Turnout was 81.2%, the highest in American history up to that time (Wikipedia).",
    "Lincoln stayed at home in Springfield; Douglas campaigned across the country; Wide Awake parades (Miller Center; Wikipedia: Wide Awakes).",
-   "Lincoln won 180 electoral votes, 18 free states, 39.7% of the popular vote; Breckinridge 72 and eleven slave states; Bell 39 (Miller Center) and Virginia, Kentucky and Tennessee; Douglas 12, second in the popular vote (both); Douglas's electoral votes came from Missouri and New Jersey (Wikipedia; Miller Center: Douglas carried only Missouri).",
+   "Lincoln won 180 electoral votes, 18 free states, 39.7% of the popular vote (Wikipedia; American Presidency Project: 39.8%); Breckinridge 72 and eleven slave states; Bell 39 (Miller Center) and Virginia, Kentucky and Tennessee; Douglas 12, second in the popular vote (both); Douglas's electoral votes came from Missouri and New Jersey (Wikipedia; Miller Center: Douglas carried only Missouri).",
    "Among the eleven states that later formed the Confederacy, Lincoln received votes only in Virginia (Wikipedia); Miller Center: Lincoln was not on the ballot in any Southern state; a Republican win would end the South's political dominance of the Union (Miller Center).",
    "Lincoln's election was the main catalyst of secession; seven Southern states, all of which voted for Breckinridge, seceded before his inauguration on 4 March 1861; the Civil War began less than two months later at Fort Sumter, after which four more slave states seceded (Wikipedia)."
   ],
-  "disagree": "Douglas's electoral votes: Missouri and part of New Jersey (Wikipedia); the Miller Center says he carried only Missouri. Lincoln in the South: votes only in Virginia among the future Confederate states (Wikipedia); 'not on the ballot in any Southern state' (Miller Center).",
-  "checked": null
+  "disagree": "Douglas's electoral votes: Missouri and part of New Jersey (Wikipedia); the Miller Center says he carried only Missouri. Lincoln in the South: votes only in Virginia among the future Confederate states (Wikipedia); 'not on the ballot in any Southern state' (Miller Center). Lincoln's share of the popular vote: 39.7 percent (Wikipedia) or 39.8 percent (American Presidency Project).",
+  "checked": {
+   "by": "https://www.presidency.ucsb.edu/statistics/elections/1860",
+   "result": "7 claims checked (Lincoln and Hamlin; 180, 72, 39 and 12 electoral votes; Douglas second in the popular vote; Lane as Breckinridge's running mate): all confirmed. Lincoln's popular share is 39.8 percent there against Wikipedia's 39.7; the text now gives both, and the page is added as a source.",
+   "errors": 0
+  }
  },
  "Q931982": {
   "title": "Treaty of Fes",
@@ -2960,6 +2989,354 @@
    "Olañeta was killed at Tumusla on 2 April 1825 and Valdez surrendered on 7 April 1825; Sucre entered Upper Peru on 25 February 1825; the independence act of Upper Peru is dated 6 August 1825; the state was named República Bolívar (later Bolivia) and Sucre was sworn in as its first president (Wikipedia)."
   ],
   "disagree": "Army sizes: about 5,780 patriots and 6,906 royalists on the day (Wikipedia); 6,000 against 9,000 in Sucre's letter to Bolívar (El Peruano); the Encyclopedia of Latin American History says the royalists outnumbered the patriots more than two to one. Casualties: royalists about 1,800 dead and 700 wounded, patriots 370 killed and 609 wounded per Sucre (Wikipedia); royalists 1,400 dead and 700 wounded, patriots 900 (Encyclopedia of Latin American History); 2,000 dead (El Peruano).",
+  "checked": null
+ },
+ "Q196502": {
+  "title": "Armistice of Cassibile",
+  "y": 1943,
+  "place": "Cassibile, near Syracuse, Sicily",
+  "paras": [
+   "The Armistice of Cassibile was Italy's surrender to the Allies in the Second World War, signed on 3 September 1943 at Cassibile near Syracuse in Allied-occupied Sicily. General Walter Bedell Smith, Eisenhower's chief of staff, signed for the Allies and Brigadier General Giuseppe Castellano for Italy, on behalf of Marshal Pietro Badoglio, head of the Italian government. King Victor Emmanuel III and Badoglio had approved it, but the signing was kept secret for five days.",
+   "By the summer of 1943 Italy was close to collapse. It had lost its African colonies, the Allies were bombing its cities, and Allied troops had landed in Sicily on 10 July. On 25 July the Fascist Grand Council adopted Dino Grandi's motion against Mussolini, the king dismissed him and had him arrested, and Badoglio became prime minister. Italy formally stayed Germany's ally while Hitler moved divisions south of the Alps, but Castellano made contact with the Allies in Lisbon. He then negotiated at Cassibile from 31 August, trying in vain to make the surrender depend on Allied landings strong enough to protect Rome from the Germans. On 1 September the king decided to accept the Allied terms.",
+   "The 'short armistice' that Castellano and Smith signed had twelve points. Italian forces were to stop all hostilities at once and deny the Germans anything that could be used against the Allies. Allied prisoners were to be handed over, and the fleet and aircraft sent where the Allies directed. Corsica and all Italian territory were to be put at the Allies' disposal as bases, and Italian forces were to withdraw from the war everywhere. Political, economic and financial conditions would follow later; this 'long armistice' was signed at Malta at the end of September. The date of the announcement was left to the Allies and tied to their landings. On 7 September Badoglio asked for a delay, saying his army could not support a planned American airborne landing at Rome, but Eisenhower kept to the date.",
+   "The armistice was broadcast on 8 September, by Eisenhower on Radio Algiers and by Badoglio on Italian radio; Il Post and the Liberation Route Europe portal put Eisenhower first, while Wikipedia has Badoglio speak first. Germany, which had expected the surrender, at once launched Operation Achse. Most Italian units had no orders and fell apart, and the Germans captured hundreds of thousands of Italian soldiers and occupied northern and central Italy and Rome. Early on 9 September the king, the royal family and Badoglio fled Rome for Brindisi, and the Allies landed at Salerno. Italian garrisons in Greece and the Balkans were overwhelmed, and on Cephalonia the Acqui Division was massacred after resisting. The fleet sailed to surrender to the Allies, losing the battleship Roma to German bombs on the way. On 12 September the Germans freed Mussolini, who set up the Italian Social Republic in the north, while an Italian resistance movement grew in occupied Italy."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Armistice_of_Cassibile",
+    "title": "Armistice of Cassibile (rev 1377853144)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.ilpost.it/2023/09/03/larmistizio-di-cassibile-che-divise-litalia-in-due/",
+    "title": "L'armistizio di Cassibile, che divise l'Italia in due",
+    "publisher": "Il Post",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.liberationroute.com/stories/416",
+    "title": "The armistice of Cassibile",
+    "publisher": "Liberation Route Europe",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     8,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The armistice was signed on 3 September 1943 at Cassibile near Syracuse by Bedell Smith (Eisenhower's chief of staff) for the Allies and Castellano for Italy (Wikipedia; Il Post; Liberation Route).",
+   "Approved by Victor Emmanuel III and Badoglio; Castellano signed on Badoglio's behalf; kept secret until 8 September (Wikipedia; Il Post: Badoglio named as accepting the conditions, signed by Castellano and Smith).",
+   "Italy's situation: loss of African colonies, Allied bombing, Sicily landing on 9-10 July (Il Post; Wikipedia: Sicily invaded on 10 July).",
+   "25 July: the Grand Council adopted Grandi's order of the day; Mussolini dismissed and arrested; Badoglio became prime minister (Wikipedia; Il Post).",
+   "Italy remained Germany's ally; Hitler sent divisions south of the Alps; Castellano contacted the Allies in Lisbon (Wikipedia).",
+   "Castellano reached Cassibile on 31 August and pressed for protection against the German reaction, receiving vague promises; Badoglio wanted surrender conditional on mainland landings; on 1 September the king decided to accept (Wikipedia).",
+   "The short armistice terms: immediate cessation of hostilities; deny facilities to the Germans; prisoners handed over; fleet and aircraft transferred; Corsica and all Italian territory surrendered for use as bases; withdrawal of Italian forces from the war; later political, economic and financial conditions (Wikipedia; Il Post: 12 points).",
+   "Twelve points (Il Post; Liberation Route: 12 articles); the long armistice signed at Malta at the end of September (Il Post).",
+   "The date of the armistice was left to the Allies and linked to a planned landing (Wikipedia); on 7 September Badoglio asked for a deferral, the airborne landing at Rome was cancelled, but Eisenhower confirmed the date (Wikipedia; Il Post: Eisenhower refused).",
+   "Announcement on 8 September by Eisenhower on Radio Algiers and by Badoglio on the EIAR: Eisenhower first (Il Post: half an hour before Badoglio's 19:45 broadcast; Liberation Route); Wikipedia says Badoglio announced it, later Eisenhower.",
+   "Germany had anticipated the armistice and launched Operation Achse; the Italian army, without orders, dissolved (Wikipedia; Il Post; Liberation Route).",
+   "The Germans captured Italian soldiers (Il Post: 22,000 officers and more than 650,000 soldiers; Liberation Route: German plan to capture Italian soldiers) and occupied the territory not under Allied control including Rome (Wikipedia; Il Post: Rome occupied on 10 September).",
+   "The king, the royal family and Badoglio fled Rome early on 9 September for Brindisi; Allied landings at Salerno on 9 September (Wikipedia; Il Post).",
+   "Italian garrisons abroad were overwhelmed; the Acqui Division massacred on Cephalonia; the battleship Roma sunk by German bombers on its way to surrender (Wikipedia: nearly 1,400 dead; Il Post: 1,529 sailors).",
+   "Mussolini freed on 12 September; Italian Social Republic established; Italian resistance movement (Wikipedia; Il Post: RSI proclaimed 23 September)."
+  ],
+  "disagree": "Order of the broadcasts on 8 September: Eisenhower on Radio Algiers first, then Badoglio (Il Post; Liberation Route Europe), or Badoglio first (Wikipedia). Deaths on the battleship Roma: nearly 1,400 (Wikipedia) or 1,529 (Il Post); the text gives no figure.",
+  "checked": {
+   "by": "https://www.fondazionemicheletti.eu/public/contents/26-lezioni-novecento/allegati/file/09_16_Cassibile.pdf",
+   "result": "8 claims checked (signed on 3 September 1943 at Cassibile near Syracuse by Castellano and Bedell Smith, Eisenhower's chief of staff; kept secret and announced on 8 September; Mussolini deposed by the Grand Council on 25 July and replaced by Badoglio; contacts through Lisbon; Castellano at Cassibile from 31 August pressing for landings first; twelve-point short armistice with immediate end of hostilities and handover of the fleet; long armistice signed at Malta at the end of September): all confirmed.",
+   "errors": 0
+  }
+ },
+ "Q1471139": {
+  "title": "Évian Accords",
+  "y": 1962,
+  "place": "Évian-les-Bains, Haute-Savoie, France",
+  "paras": [
+   "The Évian Accords, concluded on 18 March 1962 at Évian-les-Bains on Lake Geneva, ended the Algerian War between France and the Algerian nationalists of the National Liberation Front (FLN), which had begun with the FLN's call for independence on 1 November 1954. The two sides were the French government of President Charles de Gaulle and the Provisional Government of the Algerian Republic (GPRA). The official French text names the FLN as the other party, as Paris never recognised the GPRA, while the Algerian text published in El Moudjahid names the GPRA.",
+   "De Gaulle, in power since 1958, accepted the principle of self-determination for Algeria in September 1959, and a referendum in January 1961 opened the way to talks. After talks at Melun near Paris failed in June 1960, Switzerland acted as go-between at the request of both sides: the Swiss diplomat Olivier Long passed on the first contacts, the Algerian delegates stayed in Switzerland, and the two sides met at Lucerne and Neuchâtel and then just across the border at Évian, Lugrin and Les Rousses. The Swiss Historical Dictionary calls this the most remarkable chapter of Swiss 'good offices' diplomacy. The final round at Évian ran from 7 to 18 March 1962.",
+   "The accords had two parts. A ceasefire ended all military operations and armed action throughout Algeria at noon on 19 March 1962. Government declarations then set out the transition. A provisional executive and a French high commissioner would govern until a referendum on self-determination, to be held within three to six months. Prisoners were to be released within 20 days and an amnesty declared. If Algeria chose independence, there were guarantees for people keeping French civil status, French troops would withdraw in stages, France kept the naval base of Mers el-Kébir on a 15-year lease along with other military facilities, and French companies kept their rights in Saharan oil and mining in return for French technical and financial aid.",
+   "French voters approved the accords in a referendum on 8 April 1962, by 17,866,423 votes to 1,809,074 according to Wikipedia. In Algeria the referendum of 1 July 1962 approved independence, which France recognised on 3 July; Algerians celebrated it on 5 July, ending 132 years of French rule. But peace did not come at once. The OAS, a secret army of opponents of independence, carried on its bombing campaign, and several hundred thousand Europeans left Algeria. Hundreds of Europeans were killed or abducted in Oran on 5 July, and thousands of harkis, Algerians who had served with the French army, were massacred despite the amnesty."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/%C3%89vian_Accords",
+    "title": "Évian Accords (rev 1372137587)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://hls-dhs-dss.ch/fr/articles/017347",
+    "title": "Evian, accords d' (Antoine Fleury)",
+    "publisher": "Dictionnaire historique de la Suisse",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     5
+    ]
+   },
+   {
+    "url": "https://www.axl.cefan.ulaval.ca/afrique/algerie-accords_d%27Evian.htm",
+    "title": "Accords d'Évian (textes complets)",
+    "publisher": "L'aménagement linguistique dans le monde (CEFAN, Université Laval)",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://musee-armee.fr/ExpositionAlgerie/independent-algeria-1962.html",
+    "title": "Algérie 1830-1962: Independent Algeria (1962)",
+    "publisher": "Musée de l'Armée",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     6,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "On 18 March 1962 the French government and the GPRA concluded the accords at Évian, ending the war begun in November 1954 (Swiss Historical Dictionary; Wikipedia; Musée de l'Armée: signed 18 March 1962).",
+   "The FLN called for independence in its declaration of 1 November 1954 (Wikipedia; Swiss Historical Dictionary: conflict started in November 1954 by Algerian nationalists).",
+   "The French text names the FLN, the Algerian text in El Moudjahid the GPRA; the French government dealt with the FLN and denied the GPRA's representativeness (CEFAN; Wikipedia: Provisional Government of the Algerian Republic).",
+   "De Gaulle came to power in 1958 and accepted the principle of self-determination on 16 September 1959; referendum on self-determination on 8 January 1961 (Wikipedia).",
+   "After talks at Melun failed in June 1960, Switzerland's good offices were sought; Olivier Long passed on contacts from January 1961; Algerian delegates stayed in Switzerland; meetings at Lucerne, Neuchâtel, Évian, Lugrin and Les Rousses; the most remarkable chapter of Swiss good-offices diplomacy (Swiss Historical Dictionary).",
+   "Negotiations at Évian from 7 to 18 March 1962 (Wikipedia; Musée de l'Armée: negotiations at Évian began in May 1961 and ended on 18 March 1962).",
+   "Ceasefire: end of military operations and all armed action throughout Algeria on 19 March 1962 at noon (accord text, art. 1; Wikipedia: ceasefire declared 19 March).",
+   "Government declarations: provisional executive and a high commissioner for the transition; release of prisoners within 20 days and general amnesty; self-determination referendum within three to six months; guarantees for persons keeping French civil status; scheduled withdrawal of French forces (CEFAN summary of the texts; Wikipedia: prisoner releases, no sanctions for acts before the ceasefire, withdrawal of forces).",
+   "Mers el-Kébir leased to France for 15 years plus airfields; French mining titles and Saharan hydrocarbons interests guaranteed in exchange for technical, cultural, social and economic aid (Wikipedia).",
+   "Referendum of 8 April 1962 in France: 17,866,423 for and 1,809,074 against (Wikipedia).",
+   "Algerian referendum on 1 July 1962; France recognised independence on 3 July; Algerians celebrated it on 5 July; end of 132 years of French rule (Musée de l'Armée; Wikipedia: referendum 1 July, independence pronounced 3 July).",
+   "Peace was not restored: OAS attacks continued; several hundred thousand Europeans left; hundreds of Europeans killed or abducted in Oran on 5 July; thousands of harkis massacred (Musée de l'Armée; Wikipedia: OAS rejected the ceasefire and continued attacks; Horne: exodus of the European community, killings of harkis contrary to the amnesty)."
+  ],
+  "disagree": "Results of the Algerian referendum of 1 July 1962: Wikipedia gives 5,975,581 votes for independence and 16,534 against; the Musée de l'Armée says over 91% of voters endorsed independence. The text gives neither figure. Start of the talks at Évian: Wikipedia dates the final negotiations 7-18 March 1962; the Musée de l'Armée says negotiations at Évian began in May 1961.",
+  "checked": {
+   "by": "https://eduscol.education.fr/document/44164/download",
+   "result": "5 claims checked (signed 18 March 1962 between France and the GPRA; ceasefire the next day; self-determination referendum within three to six months; violence continued, including the Oran massacre; 5 July as independence day): all confirmed.",
+   "errors": 0
+  }
+ },
+ "Q862054": {
+  "title": "Nixon's visit to China (1972)",
+  "y": 1972,
+  "place": "Beijing, Hangzhou and Shanghai, China",
+  "paras": [
+   "From 21 to 28 February 1972 President Richard Nixon visited the People's Republic of China, the first American president to visit mainland China while in office. He came at the invitation of Premier Zhou Enlai, accompanied by his wife Pat Nixon, Secretary of State William Rogers and National Security Adviser Henry Kissinger. Since the Communist victory of 1949 the United States had recognised only the Republic of China on Taiwan, and the two countries had no official relations.",
+   "Both sides had reasons to change this. The US Office of the Historian says that the Vietnam War led American officials to seek better relations with Communist governments in Asia, to isolate North Vietnam and gain leverage over the Soviet Union, while the Sino-Soviet split made Beijing look for a counterweight. Nixon eased travel and trade restrictions and opened a secret channel through Pakistan's President Yahya Khan, and China's foreign ministry notes that messages also passed through Romania. Beijing answered through the writer Edgar Snow and by inviting the American table tennis team in April 1971 ('ping-pong diplomacy'). Kissinger made a secret trip to Beijing in July 1971, and on 15 July Nixon announced on television that he would go to China.",
+   "Soon after his arrival in Beijing on 21 February, Nixon met Chairman Mao Zedong, the only meeting between the two during the visit, and he held long talks with Zhou Enlai. The party saw the Great Wall, Hangzhou and Shanghai, while Pat Nixon toured schools, hospitals and a commune before a large American press corps. The visit ended with the Shanghai Communiqué. The US text is dated 27 February, while China's foreign ministry dates the communiqué 28 February. In it both sides set out their differences openly. Both agreed to base their relations on peaceful coexistence and that neither would seek hegemony in the Asia-Pacific region. China called Taiwan the crucial obstacle to normal relations and a province of China. The United States 'acknowledged' that Chinese on both sides of the Taiwan Strait held that there was but one China, did not challenge that position, and promised to reduce its forces on Taiwan as tension eased.",
+   "Nixon called it 'the week that changed the world'. The visit shifted the Cold War balance and widened the rift between Moscow and Beijing. Taiwan saw it as a betrayal, and Japan and South Korea were shocked not to have been consulted. Within a year Japan, Australia and West Germany had broken relations with Taiwan in favour of Beijing. The principles of the Shanghai Communiqué became the basis for full diplomatic relations between the United States and the People's Republic, established in 1979."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/1972_visit_by_Richard_Nixon_to_China",
+    "title": "1972 visit by Richard Nixon to China (rev 1384885358)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1969-1976/rapprochement-china",
+    "title": "Rapprochement with China, 1972",
+    "publisher": "Office of the Historian, US Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     13
+    ]
+   },
+   {
+    "url": "https://www.presidency.ucsb.edu/documents/joint-statement-following-discussions-with-leaders-the-peoples-republic-china",
+    "title": "Joint Statement Following Discussions With Leaders of the People's Republic of China (Shanghai Communiqué), February 27, 1972",
+    "publisher": "The American Presidency Project, UC Santa Barbara",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.mfa.gov.cn/eng/zy/wjls/3604_665547/202405/t20240531_11367541.html",
+    "title": "The Joint Communiqué (Shanghai Communiqué) and Sino-U.S. relations",
+    "publisher": "Ministry of Foreign Affairs of the People's Republic of China",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Nixon visited the PRC from 21 to 28 February 1972, the first US president to visit mainland China in office (Wikipedia; Office of the Historian; communiqué).",
+   "At Zhou Enlai's invitation, accompanied by Mrs Nixon, Secretary of State Rogers and Kissinger (communiqué; Wikipedia).",
+   "After 1949 the US recognised the Republic of China on Taiwan and had no official relations with the PRC (Office of the Historian; Wikipedia).",
+   "Motives: the Vietnam War, isolating North Vietnam, leverage against the Soviet Union; Sino-Soviet tension pushed China toward rapprochement (Office of the Historian; Wikipedia).",
+   "Nixon eased travel and trade restrictions and opened a secret channel through Yahya Khan of Pakistan (Office of the Historian; Wikipedia: Pakistan facilitated Kissinger's trip; messages via Romania and Pakistan; Chinese foreign ministry: Pakistan and Romania).",
+   "China signalled through Edgar Snow and the invitation to the US table tennis team in April 1971 (Office of the Historian; Chinese foreign ministry).",
+   "Kissinger's secret trip to Beijing in July 1971 (Wikipedia; Office of the Historian: first trip in great secrecy); Nixon's television announcement on 15 July 1971 (Wikipedia).",
+   "Nixon met Mao on 21 February (communiqué; Wikipedia: soon after arrival; Chinese foreign ministry); only one meeting with Mao (Wikipedia; communiqué); talks with Zhou Enlai (all).",
+   "Visits to Beijing, the Great Wall, Hangzhou and Shanghai; Pat Nixon toured schools, factories, hospitals and a commune with the press corps (Wikipedia; communiqué: Peking, Hangchow, Shanghai).",
+   "Shanghai Communiqué dated 27 February in the US text (American Presidency Project; Wikipedia: February 27) and 28 February by the Chinese foreign ministry; peaceful coexistence and no hegemony in the Asia-Pacific; China's position on Taiwan; US 'acknowledges' one China, does not challenge it, will progressively reduce forces on Taiwan (communiqué text; Chinese foreign ministry; Office of the Historian).",
+   "Nixon called it 'the week that changed the world' (Wikipedia).",
+   "Shift in the Cold War balance; Taiwan saw a betrayal; Japan and South Korea were shocked; within a year Japan, Australia and West Germany broke relations with Taiwan (Wikipedia).",
+   "The Shanghai Communiqué principles became the basis of formal relations in 1979 (Office of the Historian; Wikipedia: full relations in 1979)."
+  ],
+  "disagree": "Date of the Shanghai Communiqué: 27 February 1972 (US text in the American Presidency Project; Wikipedia) or 28 February 1972 (Chinese Ministry of Foreign Affairs).",
+  "checked": null
+ },
+ "Q4142069": {
+  "title": "Kazakh famine of 1930–1933",
+  "y": 1930,
+  "place": "Kazakh ASSR (Soviet Kazakhstan)",
+  "paras": [
+   "The Kazakh famine of 1930–1933, in Kazakh Asharshylyq, was a man-made famine in Soviet Kazakhstan caused by Stalin's collectivisation of agriculture. Most of its victims were Kazakhs, a Muslim, Turkic-speaking people who made up roughly 60 percent of the republic's population and of whom many lived as pastoral nomads. They moved their sheep, horses and camels along seasonal routes across the steppe. In 1928 a grain shortage led Stalin to launch the first Five-Year Plan, and Soviet planners came to see nomadism as an obstacle to rapid industrialisation. Some argued that settling the Kazakhs would free large areas of the steppe for growing grain.",
+   "The 'war on nomadism' began in 1928 with the confiscation of the property of rich Kazakhs. It became full forced collectivisation in the winter of 1929–30 under the republic's party chief, Filipp Goloshchekin. Moscow declared that nomads were to be settled permanently and driven into collective farms, which had to deliver meat and grain to the state, and it left Kazakh activists in the auls (nomad camps) to decide who counted as an exploiter and how much to confiscate. According to the historian Sarah Cameron, many local cadres used the campaign to settle old scores, which made the violence worse. Herds collapsed: animals were slaughtered for food or sold to meet grain quotas, and those penned in collective farms died of disease and lack of fodder. Cameron says the republic lost about 90 percent of its livestock. Revolts broke out across the steppe, and by the winter of 1932–33 there was mass starvation, with epidemics and even cannibalism.",
+   "Hundreds of thousands fled to neighbouring Soviet republics and to China; Cameron puts the refugees at more than a million, about a fifth of the republic's population. The Soviet authorities closed the borders, and thousands were shot trying to cross into China. The toll is still disputed. Cameron estimates 1.5 million dead, about 1.3 million of them Kazakhs, roughly a third of all Kazakhs. The historian Nazira Nurtazina lists Kazakh and foreign estimates ranging from 1 million (Conquest) through 1.75 million, the figure most often cited, to over 2.1 million (the Kazakh demographer M. Tatimov).",
+   "The famine made Kazakhs a minority in their own republic; they regained a majority only after the Soviet collapse in 1991. Survivors were forced into a settled life, and Cameron argues that the catastrophe both created Soviet Kazakhstan as a fixed territory and replaced the old identity built on nomadism with a Kazakh national one. Kazakh researchers have called the famine 'Goloshchekin's genocide' or an 'ethnocide'. Cameron finds no evidence that Stalin planned it or meant to destroy all Kazakhs, but says it fits a broader definition of genocide. On 31 May Kazakhstan remembers the victims of political repression and of the famine."
+  ],
+  "sources": [
+   {
+    "url": "https://www.wilsoncenter.org/publication/the-kazakh-famine-1930-33-and-the-politics-history-the-post-soviet-space",
+    "title": "The Kazakh Famine of 1930-33 and the Politics of History in the Post-Soviet Space (summary of a lecture by Sarah Cameron)",
+    "publisher": "Wilson Center, Kennan Institute",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://daviscenter.fas.harvard.edu/insights/remembering-kazakh-famine",
+    "title": "Remembering the Kazakh Famine (Sarah Cameron on The Hungry Steppe)",
+    "publisher": "Davis Center for Russian and Eurasian Studies, Harvard University",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://src-h.slav.hokudai.ac.jp/publictn/acta/32/06Nurtazina.pdf",
+    "title": "Nazira Nurtazina, 'Great Famine of 1931-1933 in Kazakhstan: A Survivor's Memoir', Acta Slavica Iaponica 32",
+    "publisher": "Slavic-Eurasian Research Center, Hokkaido University",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     9,
+     10,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "A famine in Soviet Kazakhstan in 1930-1933 (Asharshylyq) caused by collectivisation (Wilson Center; Davis Center; Nurtazina: meat procurement, collectivisation and forced sedentarisation; period defined as 1930-1933; local Wikipedia extract: man-made famine).",
+   "Kazakhs were Muslim, Turkic-speaking, about 60% of the pre-famine population; many were pastoral nomads (Wilson Center; Davis Center: seasonal migrations with sheep, horses, camels).",
+   "The first Five-Year Plan (1929 per Wilson Center) aimed at rapid industrialisation; collectivisation was central to it (Wilson Center; Davis Center).",
+   "A severe grain shortage in 1928 triggered a policy shift; experts argued settling Kazakhs would free land for grain (Davis Center).",
+   "The war on nomadism began in 1928 (Davis Center; Nurtazina: confiscation campaign against the rich started in 1928) and escalated with forced collectivisation in winter 1929-30 led by Goloshchekin (Davis Center; Wilson Center: party secretary during the heart of the famine).",
+   "Moscow declared sedentarisation on the basis of full collectivisation; nomads were to be permanently settled in collective farms delivering meat and grain (Wilson Center); Kazakhs empowered to decide who was an exploiter and how much to confiscate (Davis Center); local cadres settled old scores (Wilson Center).",
+   "Livestock numbers plummeted as animals were slaughtered for food or sold to meet grain quotas (Wilson Center); penned animals contracted diseases, no fodder (Davis Center); the republic lost 90% of its herds (Davis Center, Cameron).",
+   "Wide-ranging revolts; the worst of the famine in winter 1932-33; epidemics and cannibalism (Davis Center; Wilson Center: disease outbreaks, cannibalism).",
+   "Refugees fled to neighbouring republics and China (Wilson Center: hundreds of thousands; Davis Center: about 20% of the population, more than a million; Nurtazina: estimates and migration to Xinjiang); borders closed and thousands shot at the Sino-Kazakh border (Davis Center; Nurtazina: border guards ordered to shoot refugees).",
+   "Death toll: 1.5 million, about 1.3 million Kazakhs (Wilson Center, Cameron), roughly a third of all Kazakhs (Davis Center); Nurtazina: estimates of 1,000,000 (Conquest), 1,750,000 (most often), 2,000,000 (Olcott), 2,137,500 (Tatimov); local Wikipedia extract: 1.3 to 2.3 million.",
+   "Kazakhs became a minority and regained a majority only after 1991 (Wilson Center; Davis Center).",
+   "Cameron: the famine created Soviet Kazakhstan as a stable territory and a new Kazakh national identity; no evidence Stalin planned it or sought to destroy all Kazakhs, but it fits an expanded definition of genocide; 31 May day of remembrance (Davis Center); Kazakh researchers call it 'Goloshchekin's genocide', 'ethnocide' (Nurtazina)."
+  ],
+  "disagree": "Death toll: 1.5 million (Sarah Cameron); estimates from 1 million (Conquest) to over 2.1 million (Tatimov), most often 1.75 million (listed by Nurtazina); 1.3 to 2.3 million (local Wikipedia extract). Refugees: more than a million (Cameron) against Kazakh estimates of about 616,000 leaving permanently (Tatimov, cited by Nurtazina).",
   "checked": null
  }
 }
