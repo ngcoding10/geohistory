@@ -2192,5 +2192,171 @@
   ],
   "disagree": "Entry into force of the Two Plus Four Treaty: 15 March 1991 (deutschland.de; Wikipedia lead) or 3 October 1990 (CVCE). PDS share in March 1990: 16.3 per cent (LeMO) or 16 per cent (bpb). Kohl's ten-point plan: bpb says it was not coordinated with his coalition partner or the Western allies; LeMO says he had informed only President Bush beforehand.",
   "checked": null
+ },
+ "Q677316": {
+  "title": "Social War",
+  "y": -91,
+  "place": "Roman Republic",
+  "paras": [
+   "The Social War (Latin bellum sociale, 'war of the allies'), which Romans of the time called the Marsic or Italian War, was fought in Italy, mainly from 91 to 88 BC, between the Roman Republic and many of its Italian allies (socii). The main rebels were the Marsi, Samnites, Hirpini, Frentani, Vestini, Marrucini, Paeligni and Picentines. Under separate treaties the allied cities kept self-government but had to send men to Rome's wars, and they did not have the rights of Roman citizens. Why they rebelled is debated: the main ancient account, by Appian, centres on a demand for Roman citizenship, while some modern historians, notably Henrik Mouritsen, see a revolt against Roman dominance and encroachment on allied land.",
+   "In 91 BC the tribune Marcus Livius Drusus proposed laws granting citizenship to the allies and was murdered. The war began at Asculum, in late 91 BC or early 90 BC, where the townspeople killed a Roman praetor, Quintus Servilius, and all the Romans in the town; other Italian peoples then rose too. The rebels made Corfinium their capital, renamed Italia, with a senate of 500 members and two consuls: Quintus Poppaedius Silo, who led in the north, and Gaius Papius Mutilus in the south.",
+   "In 90 BC the rebels did well at first. Mutilus took Nola, Herculaneum and Salernum in Campania, while in Picenum Gnaeus Pompeius Strabo was defeated and shut up in Firmum. On 11 June the consul Publius Rutilius Lupus was killed by the Marsi at the Tolenus river, but Gaius Marius, helped by Lucius Cornelius Sulla, then beat the Marsi near the Fucine Lake and split the rebel territory in two. Late that year a law of the consul Lucius Julius Caesar, the lex Julia, offered Roman citizenship to communities that had not revolted or that laid down their arms, which drained support from the rebellion.",
+   "In 89 BC the consul Lucius Porcius Cato was killed fighting the Marsi, but Strabo besieged Asculum, which surrendered in November. In the south Sulla took Pompeii, Stabiae and Herculaneum, subdued the Hirpini and captured Bovianum, which won him the consulship for 88 BC; a further law, the lex Plautia Papiria, extended citizenship again. By 88 BC the war was largely over, and the last Samnite and Lucanian rebels reached a settlement in 87 BC. Wikipedia dates the war 91-87 BC; EBSCO and the Columbia Encyclopedia give 91-88 BC.",
+   "The war ended with Roman citizenship extended to the peoples of Italy. How the new citizens were to be enrolled in the Roman voting tribes remained a bitter question and played a part in Sulla's march on Rome in 88 BC. Because it also put large armies under ambitious generals inside Italy, some historians see the war as an important step towards the fall of the Roman Republic."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Social_War_(91–87_BC)",
+    "title": "Social War (91–87 BC) (rev 1381410859)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/social-war",
+    "title": "Social War (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     7,
+     8,
+     11,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/reference/encyclopedias-almanacs-transcripts-and-maps/social-war",
+    "title": "Social War (The Columbia Encyclopedia, 6th ed.)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     7,
+     11,
+     14,
+     15,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "The Social War (bellum sociale), also called the Marsic or Italian War, was fought in Italy between the Roman Republic and its Italian allies, mainly from 91 to 88 BC.",
+   "The main rebels were the Marsi, Samnites, Hirpini, Frentani, Vestini, Marrucini, Paeligni and Picentines.",
+   "The allies were bound to Rome by bilateral treaties that left them self-government in return for soldiers, but they did not have the rights of Roman citizens.",
+   "The causes are debated: Appian's account centres on demands for citizenship; Henrik Mouritsen and others see a revolt against Roman hegemony and encroachment on allied lands (EBSCO: the allies sought citizenship or independence).",
+   "In 91 BC the tribune Marcus Livius Drusus proposed granting citizenship to the allies and was murdered, after which the allies rebelled.",
+   "The war began with the rising of Asculum (late 91 BC; Wikipedia: late 91 or early 90 BC), where the inhabitants killed the praetor Quintus Servilius and the Romans in the town; other towns followed.",
+   "The rebels made Corfinium their capital (EBSCO: renamed Italia), with a senate of 500 and two consuls, Quintus Poppaedius Silo (north) and Gaius Papius Mutilus (south).",
+   "The rebels had considerable success in the first year of the war.",
+   "Mutilus took Nola, Herculaneum and Salernum; Pompeius Strabo was defeated in Picenum and took refuge at Firmum.",
+   "The consul Publius Rutilius Lupus fell fighting the Marsi at the Tolenus river on 11 June 90 BC.",
+   "Marius, helped by a flanking move by Sulla, defeated the Marsi near the Fucine Lake, splitting the Italians in two.",
+   "Around October 90 BC the consul Lucius Julius Caesar carried the lex Julia, giving citizenship to communities that had not revolted or that promptly laid down their arms; this helped turn the war in Rome's favour.",
+   "In 89 BC the consul Lucius Porcius Cato was killed in battle with the Marsi; Strabo besieged Asculum, which surrendered in November 89 BC.",
+   "Sulla took Pompeii, Stabiae and Herculaneum, subjugated the Hirpini and took Bovianum, and won the consulship of 88 BC; the lex Plautia Papiria extended citizenship further.",
+   "By 88 BC the conflict was largely over; the last Samnite and Lucanian rebels gave up in 87 BC (Wikipedia: by a negotiated settlement).",
+   "Citizenship was afterwards extended to the peoples of Italy.",
+   "The enrolment of the new citizens in the tribes played a role in Sulla's march on Rome in 88 BC; the presence of large armies in Italy gave generals opportunities to seize power, and some historians believe the war helped set up the collapse of the republic."
+  ],
+  "disagree": "End date: Wikipedia 87 BC (with holdouts), EBSCO and the Columbia Encyclopedia 88 BC. Outbreak: Appian has Asculum rioting in late 91 BC in response to the murder of Drusus; Wikipedia also reports a different sequence, beginning with a rumour (late 91 or early 90 BC) that Asculum was exchanging hostages with another city and the threats of a Roman praetor, Quintus Servilius. Causes: citizenship (Appian) or independence from Roman hegemony (Mouritsen); EBSCO gives both aims.",
+  "checked": null
+ },
+ "Q335330": {
+  "title": "Battle of Philippi",
+  "y": -42,
+  "place": "Roman Republic",
+  "paras": [
+   "The Battle of Philippi, in Macedonia in 42 BC, was in fact two battles between the armies of Julius Caesar's assassins and of his avengers. After the murder of Caesar in 44 BC, Brutus took control of Macedonia and was joined there by Cassius, who held Syria. Caesar's friend Mark Antony and his heir Octavian, the future emperor Augustus, settled their quarrel in 43 BC and with Marcus Aemilius Lepidus formed the Second Triumvirate; in 42 BC Antony and Octavian marched east to retake the eastern provinces. Brutus and Cassius held two hills west of Philippi on the Via Egnatia, supplied from Neapolis, while the triumvirs drew their supplies from more distant Amphipolis. The ancient historian Appian gives each side nineteen legions, the republicans' not quite full; EBSCO's account gives the triumvirs twenty-eight legions to the republicans' nineteen.",
+   "In the first battle Antony tried to cut his enemies' communications by building a causeway through the marshes south of the town, and Cassius answered with a dam across its path. Antony then suddenly stormed Cassius's camp and took it. At the same time Brutus's men routed Octavian's army and captured the triumvirs' camp, though Octavian escaped. Cassius, believing all was lost and not knowing of Brutus's success, killed himself. Each side had won one victory and suffered one defeat.",
+   "The triumvirs were soon short of food: Thessaly could no longer feed them, the republicans controlled the sea, the triumvirs had just suffered a naval disaster in the Adriatic, and winter was coming. Brutus wanted to wait until hunger wore them down, but his soldiers and officers demanded battle, and he gave way. In the second battle, on 23 October, the armies fought at close quarters until Octavian's troops forced Brutus's line back; it broke, the fugitives were cut off from their camp, and Antony's cavalry hunted down those who escaped. Brutus spent the night in the hills with fewer than four legions; the next day his officers refused to fight on, and he took his own life.",
+   "Philippi ended the cause of Caesar's assassins and confirmed the power of the triumvirs. Eleven years later Octavian defeated Antony at Actium and became sole ruler of the Roman world as Augustus, so that the battle came to mark a step in the Roman Republic's turn into a monarchy."
+  ],
+  "sources": [
+   {
+    "url": "https://www.ebsco.com/research-starters/history/battle-philippi",
+    "title": "Battle of Philippi (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://www.livius.org/articles/battle/philippi-42-bce/",
+    "title": "Philippi (42 BCE), with Appian, Civil Wars 4.105-138",
+    "publisher": "Livius.org (Jona Lendering)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "The Battle of Philippi in 42 BC was a double battle near Philippi in Macedonia between the forces of Caesar's assassins Brutus and Cassius and those of the triumvirs Antony and Octavian.",
+   "After Caesar's murder in 44 BC Brutus took Macedonia and was joined by Cassius, who commanded Syria.",
+   "Antony and Octavian reconciled in 43 BC and formed the Second Triumvirate with Lepidus; in 42 BC they set out to recover the eastern provinces.",
+   "Brutus and Cassius held two hills west of Philippi and were supplied from Neapolis; the triumvirs used Amphipolis, which was more distant.",
+   "Army sizes: Appian gives nineteen legions on each side, the republicans' not full; EBSCO gives the triumvirs twenty-eight legions and Brutus and Cassius nineteen.",
+   "Antony tried to outflank the republicans with a causeway through the marshes south of Philippi; Cassius built a transverse dam; Antony then stormed and took Cassius's camp.",
+   "At the same time Brutus defeated Octavian's army and took the triumvirs' camp; Octavian avoided capture.",
+   "Cassius, believing all was lost and not knowing of Brutus's success, committed suicide.",
+   "The first battle was a stalemate: each side won a victory and suffered a defeat. EBSCO dates it to September 42 BC; Livius says the armies approached each other in October (the Wikipedia article, local extract, places it in the first week of October).",
+   "The second battle was fought on 23 October 42 BC, about three weeks after the first (date also in the Wikipedia article, local extract).",
+   "Before the second battle the triumvirs faced famine: Thessaly could not supply them, the enemy commanded the sea, they had suffered a naval disaster in the Adriatic, and winter was approaching.",
+   "Brutus preferred to wait, but his soldiers and officers pressed for battle and he yielded.",
+   "In the second battle the fighting was at close quarters; Octavian's soldiers pushed Brutus's line back until it broke, seized the gates of the camp, and Antony and his cavalry pursued the fugitives.",
+   "Brutus spent the night in the mountains with fewer than four legions; the next day his officers refused to break through, and he had himself killed.",
+   "The outcome confirmed the power of the triumvirs and ended the influence of Caesar's assassins.",
+   "Eleven years later Octavian defeated Antony at Actium and became sole ruler as Augustus; the battle concerned the future of the republic, which became a monarchy."
+  ],
+  "disagree": "Date of the first battle: September 42 BC (EBSCO) or early October (Livius; Wikipedia, first week of October). Army sizes: nineteen legions on each side (Appian, via Livius) or twenty-eight against nineteen (EBSCO).",
+  "checked": null
  }
 }
