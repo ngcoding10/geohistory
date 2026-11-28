@@ -155,7 +155,7 @@ export function prepareDoc(doc, { emp, powers, year, dark, prev = null }) {
       const pxAt = (z) => (ll.len * 512 * 2 ** z) / 360;
       const font = 13;
       zf = Math.log2((chars * font * 0.72) / (0.62 * pxAt(0)));
-      for (let z = 1; z <= 8; z++) props['s' + z] = Math.max(0.06, Math.min(0.9, (0.62 * pxAt(z) - chars * font * 0.62) / (chars * font)));
+      for (let z = 1; z <= 8; z++) props['s' + z] = Math.max(0.06, Math.min(0.45, (0.62 * pxAt(z) - chars * font * 0.62) / (chars * font)));
       props.zf = Math.max(0, Math.round(zf * 10) / 10);
       lines.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: ll.line }, properties: props });
     }

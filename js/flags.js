@@ -35,7 +35,11 @@ export function emblemFor(name) {
 
 // ---- badges on the map
 const sheets = new Map();
-const loadImage = (url) => new Promise((res, rej) => { const im = new Image(); im.crossOrigin = 'anonymous'; im.onload = () => res(im); im.onerror = rej; im.src = url; });
+const loadImage = (url) => new Promise((res, rej) => {
+  const im = new Image();
+  if (new URL(url, location.href).origin !== location.origin) im.crossOrigin = 'anonymous';
+  im.onload = () => res(im); im.onerror = rej; im.src = url;
+});
 /** Add the badge images of the era of `year` to the map (once per era). */
 export function ensureSheet(map, year) {
   const sh = idx?.sheets?.find(([a, b]) => a <= year && year <= b);
@@ -51,6 +55,7 @@ export function ensureSheet(map, year) {
         const nm = 'flag-' + id;
         if (!map.hasImage(nm)) map.addImage(nm, cx.getImageData(x, y, w, hh), { pixelRatio: 2 });
       }
+      cv.width = cv.height = 0;   // released at once: iOS counts canvas memory until a canvas is collected
     });
     p.catch(() => sheets.delete(n));
     sheets.set(n, p);

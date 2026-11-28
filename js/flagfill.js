@@ -15,11 +15,29 @@ import { flagFor, loadFlags } from './flags.js';
 let FF = null;
 let atlas = null;
 const hist = new Map();       // flag id -> Promise<HTMLImageElement|null>
-const loadImage = (url) => new Promise((res, rej) => { const im = new Image(); im.crossOrigin = 'anonymous'; im.onload = () => res(im); im.onerror = rej; im.src = url; });
+// same-origin images need no CORS request (and Safari has cached a plain and a CORS copy of one file differently)
+const loadImage = (url) => new Promise((res, rej) => {
+  const im = new Image();
+  if (new URL(url, location.href).origin !== location.origin) im.crossOrigin = 'anonymous';
+  im.onload = () => (im.decode ? im.decode().catch(() => {}) : Promise.resolve()).then(() => res(im));
+  im.onerror = rej;
+  im.src = url;
+});
+
+/** The largest side of a flag canvas: at most 2048 pixels, 1536 on a phone (iOS caps the memory of all canvases
+ *  of a page together), never above what the GPU takes as a texture. Set by the map once it has a GL context. */
+let CAP = 2048;
+export function setCanvasCap(maxTexture) {
+  const phone = Math.min(screen.width || 9999, screen.height || 9999) < 600 || matchMedia?.('(pointer: coarse)').matches;
+  CAP = Math.max(256, Math.min(phone ? 1536 : 2048, maxTexture || 2048));
+  return CAP;
+}
+export const canvasCap = () => CAP;
 
 let loading = null;
 export function loadFills() {
-  loading ||= Promise.all([getJSON('flags/fill.json'), loadImage(dataUrl('flags/fill.png')), loadFlags()])
+  // the flag atlas is a large image: a failed load is tried once more before giving up
+  loading ||= Promise.all([getJSON('flags/fill.json'), loadImage(dataUrl('flags/fill.png')).catch(() => loadImage(dataUrl('flags/fill.png') + '&r=1')), loadFlags()])
     .then(([d, im]) => { FF = d; atlas = im; return d; })
     .catch((e) => { loading = null; throw e; });
   return loading;
@@ -106,7 +124,7 @@ export function extentFor(map) {
   }
   const scale = world * dpr;
   let W = Math.round((x1 - x0) * scale), H = Math.round((y1 - y0) * scale);
-  const cap = 2048 / Math.max(W, H, 1);
+  const cap = CAP / Math.max(W, H, 1);
   if (cap < 1) { W = Math.round(W * cap); H = Math.round(H * cap); }
   W = Math.max(16, W); H = Math.max(16, H);
   const lon = (x) => x * 360 - 180;
@@ -155,13 +173,19 @@ function drawPiece(cx, poly, ext, img, r) {
   if (ba > ta) { dw = bw; dh = bw / ta; } else { dh = bh; dw = bh * ta; }
   cx.drawImage(img, r[0], r[1], r[2], r[3], bx + (bw - dw) / 2, by + (bh - dh) / 2, dw, dh);
   cx.restore();
+  return bw * bh >= 64 ? [Math.max(0, bx), Math.max(0, by), Math.min(bw, ext.W - Math.max(0, bx)), Math.min(bh, ext.H - Math.max(0, by))] : null;
 }
 
 /** Paint features of a document into a canvas covering `ext`. `which`: feature indices to draw (all with a
- *  fill when null); `alpha`: index -> opacity; `plain`: index -> colour for features without a flag. */
-export function paint(canvas, doc, fills, imgs, ext, { which = null, alpha = null, plain = null, clear = true } = {}) {
+ *  fill when null); `alpha`: index -> opacity; `plain`: index -> colour for features without a flag.
+ *  With `probe`, returns a canvas pixel that came out opaque, {x, y, rgba}, for the map's check that the GPU got
+ *  the picture (null if none was found). Throws when the browser gives no 2D context (iOS does so once the
+ *  page's canvases take too much memory). */
+export function paint(canvas, doc, fills, imgs, ext, { which = null, alpha = null, plain = null, clear = true, probe = false } = {}) {
   if (canvas.width !== ext.W || canvas.height !== ext.H) { canvas.width = ext.W; canvas.height = ext.H; }
   const cx = canvas.getContext('2d');
+  if (!cx || canvas.width !== ext.W) throw new Error(`no 2D canvas of ${ext.W} x ${ext.H}`);
+  const boxes = probe ? [] : null;
   if (clear) cx.clearRect(0, 0, ext.W, ext.H);
   cx.imageSmoothingEnabled = true;
   cx.imageSmoothingQuality = 'high';
@@ -176,7 +200,7 @@ export function paint(canvas, doc, fills, imgs, ext, { which = null, alpha = nul
     const img = fl ? (fl.src === 'atlas' ? atlas : imgs.get(fl.id)) : null;
     if (img) {
       const r = fl.src === 'atlas' ? fl.r : [0, 0, img.naturalWidth, img.naturalHeight];
-      for (const poly of rings(f.geometry)) drawPiece(cx, poly, ext, img, r);
+      for (const poly of rings(f.geometry)) { const b = drawPiece(cx, poly, ext, img, r); if (b && boxes) boxes.push(b); }
     } else if (plain?.get(i)) {
       cx.fillStyle = plain.get(i);
       const sx = ext.W / (ext.x1 - ext.x0), sy = ext.H / (ext.y1 - ext.y0);
@@ -189,6 +213,37 @@ export function paint(canvas, doc, fills, imgs, ext, { which = null, alpha = nul
     }
   }
   cx.globalAlpha = 1;
+  if (!boxes) return null;
+  // the middle of the largest pieces drawn: the first opaque one
+  boxes.sort((a, b) => b[2] * b[3] - a[2] * a[3]);
+  for (const [bx, by, bw, bh] of boxes.slice(0, 6)) {
+    const x = Math.round(Math.max(0, Math.min(ext.W - 1, bx + bw / 2))), y = Math.round(Math.max(0, Math.min(ext.H - 1, by + bh / 2)));
+    const d = cx.getImageData(x, y, 1, 1).data;
+    if (d[3] >= 250) return { x, y, rgba: [d[0], d[1], d[2], d[3]] };
+  }
+  return null;
+}
+
+/** One flag as a small tile for the fallback fill (MapLibre fill-pattern, tiled from the screen origin): ImageData
+ *  of w x h, or null. */
+export function flagTile(fl, imgs, w = 48, h = 32) {
+  const img = fl.src === 'atlas' ? atlas : imgs.get(fl.id);
+  if (!img) return null;
+  const r = fl.src === 'atlas' ? fl.r : [0, 0, img.naturalWidth, img.naturalHeight];
+  const cv = document.createElement('canvas');
+  cv.width = w; cv.height = h;
+  const cx = cv.getContext('2d');
+  if (!cx) return null;
+  cx.imageSmoothingEnabled = true;
+  cx.imageSmoothingQuality = 'high';
+  cx.drawImage(img, r[0], r[1], r[2], r[3], 0, 0, w, h);
+  // a hairline at the tile's edge so the repeats read as flags, not as stripes running on
+  cx.strokeStyle = 'rgba(30,24,16,0.45)';
+  cx.lineWidth = 1;
+  cx.strokeRect(0.5, 0.5, w - 1, h - 1);
+  const d = cx.getImageData(0, 0, w, h);
+  cv.width = cv.height = 0;   // released at once (iOS counts canvas memory until a canvas is collected)
+  return d;
 }
 
 /** For the panel: how a power's land is filled on the map, in words. */

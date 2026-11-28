@@ -259,13 +259,16 @@ Written from general knowledge, conservatively, and checked by `tools/build_cura
 
 ## Software and fonts
 - **MapLibre GL JS** 5.23.0, BSD 3-Clause licence, `vendor/maplibre/LICENSE.txt`. https://maplibre.org/
-- **Noto Sans** (Regular, Italic) map label glyphs, SIL Open Font License 1.1, `fonts/LICENSE-OFL.txt`.
+- **Noto Sans** (Regular, Italic) glyphs for the small map numbers and marks, SIL Open Font License 1.1, `fonts/LICENSE-OFL.txt`.
   https://notofonts.github.io/
 - **Alegreya** and **Alegreya SC** by Juan Pablo del Peral (Huerta Tipográfica), SIL Open Font License 1.1,
   `fonts/LICENSE-Alegreya-OFL.txt`; files from the `@fontsource/alegreya` and `@fontsource/alegreya-sc` packages.
-  Used for headings (`fonts/web/`) and, drawn into MapLibre's glyph format by `tools/make_glyphs.cjs`, for the
-  map labels: "Atlas Serif Regular" is Alegreya SC Medium (lower case as small capitals), "Atlas Serif Italic"
-  is Alegreya Italic. https://github.com/huertatipografica/Alegreya
+  Used for the interface headings (`fonts/web/`). https://github.com/huertatipografica/Alegreya
+- **Source Sans 3** by Paul D. Hunt for Adobe, SIL Open Font License 1.1, `fonts/LICENSE-SourceSans3-OFL.txt`;
+  files from the `@fontsource/source-sans-3` package (`fonts/src/`). Drawn into MapLibre's glyph format by
+  `tools/make_glyphs.cjs` for the map labels: "Atlas Sans Semibold" (empires and major powers, in capitals),
+  "Atlas Sans Medium" (states), "Atlas Sans Italic" (peoples, regions) and "Atlas Sans Light Italic" (seas).
+  https://github.com/adobe-fonts/source-sans
 - **fuzzy.js**, the shared typo-tolerant search from `ngcoding10/backend-combination`, copied unchanged.
 
 ## Not used, and why
