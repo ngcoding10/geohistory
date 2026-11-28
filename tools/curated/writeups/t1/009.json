@@ -378,5 +378,225 @@
   ],
   "disagree": "Olaneta's death: March 1825 in an action with his own revolted troops (1911 Britannica) or the Battle of Tumusla, 1 or 2 April 1825, with some sources saying he shot himself (Wikipedia). Number of deputies: 54 (Britannica) or 48 by Wikipedia's count of signatories by province.",
   "checked": null
+ },
+ "Q288251": {
+  "title": "Cisplatine War",
+  "y": 1825,
+  "place": "Banda Oriental (Uruguay) and the Río de la Plata",
+  "paras": [
+   "In 1816 Portuguese forces from Brazil invaded the Banda Oriental, the land east of the Uruguay River, defeated José Gervasio Artigas and annexed it as the province of Cisplatina, which stayed with Brazil after Brazil's independence in 1822. The United Provinces of the Río de la Plata wanted it back, and a mission to Brazil in 1823 failed. On 19 April 1825 the 'Thirty-Three Orientals' under Juan Antonio Lavalleja crossed from Buenos Aires and began a rising, and on 25 August a congress at Florida declared the province independent of Brazil and united with the United Provinces. After rebel victories at Rincón and Sarandí, the Argentine congress declared the province reincorporated on 25 October, and Brazil declared war on the United Provinces on 10 December 1825.",
+   "Brazil blockaded the River Plate. On land, the Argentine army and the Oriental insurgents held the Uruguayan countryside but never took Montevideo or Colonia or got far into Brazil, while Brazil could neither win back the countryside nor gain a decisive victory. The largest battle was fought at Ituzaingó; the 1911 Encyclopaedia Britannica counts it as a Brazilian defeat, while Wikipedia describes the war on land as a stalemate. At sea the Brazilian navy had the better of it and destroyed most of the small Argentine fleet of the Irish-born admiral William Brown, although the Argentines beat a Brazilian flotilla on the Uruguay River at Juncal. The blockade weighed heavily on Buenos Aires, and Brazil's seizures of foreign merchant ships led to disputes with the United States, France and Britain that Brazil later settled by paying compensation.",
+   "The cost of the war strained both countries. In 1827 the Argentine envoy Manuel José García, exceeding his instructions, signed a treaty giving up the province; President Bernardino Rivadavia rejected it, but the outcry helped bring about his resignation, and Manuel Dorrego, as governor of Buenos Aires, carried on the war. Under British mediation, and pressure on the emperor according to the Britannica, the two sides signed a Preliminary Peace Convention on 27 August 1828, by which the province became an independent state, the future Eastern Republic of Uruguay, formally constituted in 1830. (The Britannica's article on Argentina dates Uruguay's independence to 1827; its articles on Brazil and Uruguay give 1828.) In Buenos Aires the peace was followed by civil war: the Unitarian general Juan Lavalle overthrew Dorrego and had him shot in December 1828."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Cisplatine_War",
+    "title": "Cisplatine War (rev 1386002608, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Brazil",
+    "title": "Brazil, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     10,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Argentina",
+    "title": "Argentina, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     7,
+     11,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Uruguay",
+    "title": "Uruguay, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "1816 invasion by the United Kingdom of Portugal, Brazil and the Algarves, Artigas defeated, annexed as Cisplatina; remained with Brazil after 1822 (Wikipedia).",
+   "Diplomatic mission to Brazil in 1823 failed (Wikipedia).",
+   "19 April 1825, 33 men under Lavalleja left Buenos Aires, crossed the Uruguay River, began the rising (Wikipedia).",
+   "25 August 1825 Congress of Florida declared independence from Brazil and union with the United Provinces (Wikipedia).",
+   "Rincon and Sarandi (12 October) victories; Argentine Congress proclaimed reintegration 25 October; Brazil declared war 10 December 1825 (Wikipedia; EB Brazil: rebellion of the Banda Oriental followed by a declaration of war with Buenos Aires, which had supported it).",
+   "Naval blockade of the River Plate; United Provinces occupied the countryside, never took Montevideo, Colonia, or penetrated Brazil; Brazilians could not regain the countryside or win decisively (Wikipedia).",
+   "Ituzaingo the largest battle (Wikipedia); EB Argentina: Brazilians defeated notably at Ituzaingo; Wikipedia: impasse on land (both attributed).",
+   "Brazilian navy better results; Brown's small fleet mostly destroyed (Wikipedia).",
+   "Battle of Juncal, Brazilian flotilla on the Uruguay River defeated (Wikipedia).",
+   "Severe economic consequences of the blockade of Buenos Aires (Wikipedia); disputes with the United States, France and England over merchant vessels captured by the blockading squadron, compensated by money payments by Brazil (EB Brazil).",
+   "1827 Garcia exceeded his instructions, treaty renouncing claims; rejected by Rivadavia; backlash contributed to his resignation; Dorrego governor of Buenos Aires continued the war (Wikipedia; EB Argentina: Rivadavia resigned, Dorrego 1827).",
+   "British mediation (Wikipedia; EB Uruguay); EB Brazil: emperor compelled by the British government to make peace and renounce the Banda Oriental (attributed).",
+   "Preliminary Peace Convention 27 August 1828, Cisplatina independent (Wikipedia); EB Uruguay: concluded 1828, free and independent state, constituted 1830; EB Argentina: 1827 (disagreement stated).",
+   "Lavalle (Unitarian) deposed and executed Dorrego (Wikipedia); shot 9 December 1828 by Lavalle's order (EB Argentina)."
+  ],
+  "disagree": "Ituzaingo: a Brazilian defeat (1911 Britannica, Argentina) or part of a stalemate on land (Wikipedia). Year of Uruguay's independence: 1828 (Wikipedia; Britannica, Brazil and Uruguay) or 1827 (Britannica, Argentina).",
+  "checked": null
+ },
+ "cp10-02": {
+  "title": "Frankfurt Parliament opens",
+  "y": 1848,
+  "place": "St Paul's Church (Paulskirche), Frankfurt am Main",
+  "paras": [
+   "The revolutions of March 1848 shook every government in the German Confederation. Liberal deputies from several state assemblies, meeting at Heidelberg, invited present and former members of the German diets to Frankfurt, and on 30 March the federal diet itself, according to the 1911 Encyclopaedia Britannica, authorized a national parliament. The resulting Pre-Parliament sat in St Paul's Church in Frankfurt from 31 March to 3 April. Its moderate liberal majority chose to work with the federal diet, left a Committee of Fifty to represent it until a national assembly met, and fixed one deputy for every 50,000 inhabitants. Some radicals who wanted more left it, and a republican rising they called in Baden was put down.",
+   "The elections were held under each state's own rules. They were limited to 'independent' adult men, which Wikipedia estimates still let about 85% of men vote, and Czech-majority districts in Bohemia and Moravia boycotted them. The National Assembly opened in St Paul's Church on 18 May 1848, the first freely elected parliament for all the German states, including the German-speaking lands of the Austrian Empire, and the next day it chose Heinrich von Gagern as its president. Late in June it created a Provisional Central Power and elected Archduke John of Austria as imperial regent (Reichsverweser); on 12 July the old federal diet handed its responsibilities over to him.",
+   "The assembly then set out to write a constitution, and its debates dragged on through the crises of 1848: the war over Schleswig-Holstein, the question of whether Austria belonged in the new Germany, and the recovery of the princes' power. The Britannica blames 'learned professors and talkative journalists' and their endless speeches for the lost time. In 1849 the assembly adopted a constitution for a German Empire with a hereditary emperor and offered the crown to King Frederick William IV of Prussia, who refused it; the Britannica quotes him as refusing 'to pick up a crown out of the gutter'. Austria and Prussia recalled their deputies, most of the rest resigned on 21 May 1849, and a radical rump that moved to Stuttgart was dispersed on 18 June 1849 by order of the Württemberg government."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Frankfurt_National_Assembly",
+    "title": "Frankfurt National Assembly (rev 1385823906, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Germany/History",
+    "title": "Germany: History, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Deputies who had met at Heidelberg invited members and former members of diets to Frankfort; on 30 March the federal diet authorized the national parliament (EB, attributed).",
+   "Pre-Parliament in the Paulskirche 31 March to 3 April (Wikipedia).",
+   "Cooperation with the Federal Diet; Committee of Fifty for the interval (Wikipedia; EB: committee of 50); one deputy per 50,000 inhabitants (Wikipedia; EB).",
+   "Some discontented members retired, republicans called Upper Baden to arms, rising put down (EB; Wikipedia: radical democrats opposed).",
+   "Elections by state law; voters 'independent' adult males; about 85% of men could vote (Wikipedia, attributed); Czech-majority areas boycotted (Wikipedia); EB: great hindrances to the elections.",
+   "Opened 18 May 1848 in the Paulskirche (Wikipedia; EB: met at Frankfort on the 18th May); first freely elected parliament for all German states including the German-populated areas of the Austrian Empire (Wikipedia); Gagern president from 19 May 1848 (Wikipedia).",
+   "Provisional Central Power voted 28 June, regent elected 29 June: Archduke John (Wikipedia; EB: imperial vicar, archduke John chosen on Gagern's motion); 12 July sworn in, diet delegated its responsibilities to him (Wikipedia; EB: the old diet broke up without being formally dissolved).",
+   "Debates on fundamental laws; Schleswig-Holstein question; defining Germany and Austria (Wikipedia sections; EB: Schleswig-Holstein, reactionary forces gathered strength).",
+   "'learned professors and talkative journalists ... interminable speeches' (EB, quoted and attributed).",
+   "Constitution with hereditary imperial title; crown offered to Frederick William IV, who refused (EB; Wikipedia: refused the office of Emperor of the Germans); 'to pick up a crown out of the gutter' (EB, quoted and attributed).",
+   "Austria and Prussia recalled their representatives; most deputies resigned 21 May 1849; rump transferred to Stuttgart, dispersed 18 June 1849 by order of the Wurttemberg ministry (EB; Wikipedia: Paulskirche sessions to 30 May 1849, Stuttgart rump to 18 June 1849)."
+  ],
+  "disagree": "Suffrage: the 1911 Britannica says the Pre-Parliament decided on universal suffrage; Wikipedia says the guidelines admitted only 'independent' adult men, about 85% of men, with rules varying by state. The text follows Wikipedia's fuller account.",
+  "checked": null
+ },
+ "Q837787": {
+  "title": "Battle of Novara",
+  "y": 1849,
+  "place": "Novara (La Bicocca), Piedmont",
+  "paras": [
+   "In 1848 King Charles Albert of Sardinia-Piedmont had gone to war with Austria in support of the risings in Lombardy and Venetia, but after his defeat at Custoza he accepted an armistice. By early 1849 the revolutionary movement elsewhere in Italy was breaking down, yet the king felt he could not abandon the Lombards and Venetians, and on 12 March 1849 he denounced the armistice. Lacking confidence in his own generals after 1848, he gave the chief command to the Polish general Chrzanowski. The 1911 Encyclopaedia Britannica puts his forces at 80,000 men, including Lombard and other volunteers, and says their discipline and morale had been shaken.",
+   "The Austrian commander, Field Marshal Joseph Radetzky, took the initiative at once. General Girolamo Ramorino, commanding the Lombard division, failed, against his instructions according to the Britannica, to stop the Austrians from crossing the Ticino and seizing the fortress town of Mortara, and the armies met at Novara, about 45 km west of Milan. The Austrians thoroughly routed the Piedmontese; Wikipedia cites estimates of 41,000 to 70,000 Austrians and 45,000 to 59,000 Piedmontese. The Britannica dates the battle to 23 March 1849 and says the king sought death in vain all day; Wikipedia says the fighting lasted through 22 March and ended at dawn on the 23rd. Ramorino was later court-martialled and shot.",
+   "Radetzky's terms included the occupation of part of Piedmont and the heir to the throne as a hostage. Thinking that his son might obtain better terms, Charles Albert abdicated in favour of Victor Emmanuel II and left at once for Portugal; he died in a monastery at Oporto on 28 July 1849. Victor Emmanuel met Radetzky on 24 March. According to the Britannica, the marshal offered to waive his territorial demands if the new king abolished the constitution, and Victor Emmanuel refused, accepting a temporary Austrian occupation of territory between the Po, the Ticino and the Sesia instead. Peace was signed on 9 August 1849, with an indemnity of 65 million francs, Wikipedia says. Novara left Austria free to restore the old rulers elsewhere in Italy, but Piedmont kept its constitution."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Novara_%281849%29",
+    "title": "Battle of Novara (1849) (rev 1382463444, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Italy",
+    "title": "Italy, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Charles_Albert",
+    "title": "Charles Albert, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "1848 armistice after Custoza (Wikipedia: routed as at Custoza the previous year; armistice of 1848; EB Charles Albert: defeated army, armistice).",
+   "Revolutionary movement breaking down; could not abandon Lombards and Venetians; denounced the armistice 12 March 1849 (EB Charles Albert and EB Italy; Wikipedia: 12 March 1849).",
+   "Chief command to the Polish general Chrzanowski, owing to want of confidence in Piedmontese strategy (EB Italy; EB Charles Albert); 80,000 men including Lombard and other volunteers, discipline and morale shaken (EB, attributed).",
+   "Radetzky took the initiative, seized Mortara (Wikipedia; EB Italy); Ramorino commanding the Lombard division failed to prevent the crossing of the Ticino/the seizure of Mortara, disobeying instructions (EB Charles Albert and EB Italy, attributed); Wikipedia: accused of disobeying orders.",
+   "Novara 28 miles (45 km) west of Milan; Piedmontese thoroughly routed; estimates 41,000-70,000 Austrians, 45,000-59,000 Piedmontese (Wikipedia, attributed).",
+   "Date: 23 March 1849 (EB Italy and EB Charles Albert; king sought death in vain, attributed) or all day 22 March ending at dawn 23 March (Wikipedia) - disagreement stated.",
+   "Ramorino court-martialled and shot (EB Italy); executed the same year (Wikipedia).",
+   "Radetzky demanded occupation of part of Piedmont and the heir as hostage; Charles Albert abdicated in favour of Victor Emmanuel, thinking his son might obtain better terms, departed for Portugal, died in a monastery at Oporto 28 July 1849 (EB Charles Albert; EB Italy; Wikipedia: abdicated, exiled himself to Porto).",
+   "Victor Emmanuel treated with Radetzky 24 March; offer to waive territorial demand if the constitution were abolished; refused; Austrian occupation between the Po, Ticino and Sesia (EB Italy, attributed).",
+   "Peace treaty 9 August 1849; indemnity 65 million francs (Wikipedia, attributed).",
+   "Novara set Austria free to reinstate the Italian despots (EB Italy); constitution kept (EB Italy: king determined to abide by his father's oath)."
+  ],
+  "disagree": "Date of the battle: 23 March 1849 (1911 Britannica, Italy and Charles Albert) or all day on 22 March, ending at dawn on 23 March (Wikipedia). The Britannica's Charles Albert article misprints the Austrian crossing of the Ticino as '20th of April'.",
+  "checked": null
  }
 }
