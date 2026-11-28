@@ -71,7 +71,11 @@
    "Trump was impeached a second time over the 6 January attack; he was the first president to lose re-election since George H. W. Bush in 1992."
   ],
   "disagree": "The exact popular-vote totals differ slightly between sources (Wikipedia gives Biden 81,283,501, the CFR 81,283,098; turnout 66.6% or 66.7%); the text uses rounded figures.",
-  "checked": null
+  "checked": {
+   "by": "https://www.270towin.com/2020_Election/index.html",
+   "result": "2 claims checked: 306 electoral votes to 232 and Biden's more than 81 million votes (270toWin: 81,268,867) agree; none contradicted",
+   "errors": 0
+  }
  },
  "Q101110072": {
   "title": "2024 United States presidential election",
@@ -336,7 +340,11 @@
    "On 27 June 1989 Mock and Horn cut the Austro-Hungarian border fence; communism fell in Eastern Europe in 1989; Germany reunited 3 October 1990; the USSR dissolved in December 1991."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://teachingamericanhistory.org/document/sinews-of-peace-iron-curtain/",
+   "result": "4 claims checked against the speech text at Teaching American History: the date 5 March 1946 at Westminster College, the Stettin–Trieste 'iron curtain' sentence, the 'special relationship' phrase, and Churchill's introduction by the US President agree; none contradicted",
+   "errors": 0
+  }
  },
  "Q486124": {
   "title": "Battle of Badr",
@@ -409,7 +417,11 @@
    "Knowledge of the battle comes from traditional Islamic accounts compiled after the event."
   ],
   "disagree": "The date is given as 13 March 624 (Wikipedia) or 17 March 624 (HistoryOfWar.org), both from 17 Ramadan 2 AH. Wikipedia's own figures for the Meccan army vary from 600–1,000 to about 1,300; HistoryOfWar.org says the Meccans outnumbered the Muslims three to one, and puts the Meccan dead at 50–70.",
-  "checked": null
+  "checked": {
+   "by": "https://themuslimpost.org/features-perspectives/battle-of-badr-date-location-timeline-sources",
+   "result": "6 claims checked: 17 Ramadan 2 AH (March 624), about 313 Muslims, Abu Sufyan's caravan changing course and escaping, Abu Jahl among the dead, about 70 Meccans killed and 70 captured against 14 Muslims, and opening duels agree (given there as traditional figures); none contradicted",
+   "errors": 0
+  }
  },
  "Q51648": {
   "title": "East–West Schism",
@@ -759,7 +771,11 @@
    "Sèvres was later revised by the Treaty of Lausanne (24 July 1923)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://avalon.law.yale.edu/imt/partviii.asp",
+   "result": "2 claims checked against the treaty text in the Avalon Project (Yale Law School; also https://avalon.law.yale.edu/imt/partiii.asp): the Versailles treaty date 28 June 1919 and Article 231's assignment of responsibility to Germany and her allies agree; none contradicted",
+   "errors": 0
+  }
  },
  "Q165058": {
   "title": "Holodomor",
@@ -825,7 +841,11 @@
    "Ukraine recognised it as genocide in 2006; Wikipedia: 33 other UN member states and the European Parliament have also recognised it."
   ],
   "disagree": "Death-toll estimates differ widely: demographic reconstructions give just under four million (Encyclopedia of Ukraine) or 3.5–5 million (Wikipedia's summary of recent scholarship), while some statements have cited 7–10 million. Historians also disagree over whether the famine was intended and whether it was genocide.",
-  "checked": null
+  "checked": {
+   "by": "https://historyofcommunism.org/ukrainian-holodomor-1932-1933/",
+   "result": "5 claims checked: the 7 August 1932 law, the 22 January 1933 directive against peasants leaving Ukraine and the Kuban, about 3.9 million excess deaths 1932–1934 with most in 1933, Soviet denial until 1987, and Ukraine's recognition as genocide in 2006 agree; none contradicted",
+   "errors": 0
+  }
  },
  "Q154681": {
   "title": "Anschluss",
@@ -891,7 +911,11 @@
    "No outside power intervened; Britain and France had largely accepted union as inevitable; it was an early example of appeasement, followed by the Munich agreement in September 1938."
   ],
   "disagree": "Wikipedia gives about 360,000 people excluded from the April 1938 vote; the USHMM gives 300,000 to 400,000. Historians disagree on how far the reported 99% approval reflected real support.",
-  "checked": null
+  "checked": {
+   "by": "https://www.jta.org/1938/03/13/archive/schuschnigg-resigns-plebiscite-abandoned-seyss-inquart-asks-german-troops",
+   "result": "2 claims checked against the Jewish Telegraphic Agency bulletin of 13 March 1938: the independence plebiscite set for that Sunday and Schuschnigg's resignation in the face of a Reich ultimatum agree; none contradicted (the bulletin, written that night, could not yet confirm the troop entry)",
+   "errors": 0
+  }
  },
  "Q150812": {
   "title": "Invasion of Poland",
@@ -1214,7 +1238,11 @@
    "The Confederation of the Rhine followed; Francis dissolved the Holy Roman Empire in 1806; Prussia went to war (Fourth Coalition) and was defeated at Jena–Auerstedt on 14 October 1806."
   ],
   "disagree": "Army sizes differ by source (see text). Wikipedia gives allied losses as 27,000–36,000 and French losses as 8,569–9,288; HistoryOfWar.org gives about 27,000 and about 9,000.",
-  "checked": null
+  "checked": {
+   "by": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/austerlitz",
+   "result": "4 claims checked: the date 2 December 1805, Napoleon's withdrawal from the Pratzen to lure the allies, allied losses of about a third of their army, and the Treaty of Pressburg on 26 December agree; none contradicted",
+   "errors": 0
+  }
  },
  "Q13582": {
   "title": "Berlin Conference",
