@@ -1928,5 +1928,269 @@
    "result": "Wikipedia extract (rev 1375254748, local CirrusSearch dump): uprising began 19 August; Rol-Tanguy's call to mobilise; Nordling truce never fully observed; Choltitz signed the surrender and then went to Leclerc's command post at the Gare Montparnasse; U.S. 4th Infantry Division took part; de Gaulle's march on 26 August all match. 6 claims, 0 errors.",
    "errors": 0
   }
+ },
+ "Q482407": {
+  "title": "Geneva Conference of 1954",
+  "y": 1954,
+  "place": "Switzerland",
+  "paras": [
+   "The Geneva Conference met at the Palace of Nations in Geneva from 26 April to 21 July 1954 to settle questions left open by two wars: the Korean War, ended by an armistice the year before, and the First Indochina War between France and the communist-led Viet Minh. At the Berlin Conference in February 1954 the participants had agreed that peace in Indochina would also be discussed at the planned conference on Korea. Korea came first on the agenda.",
+   "The Korean talks, from 26 April to 15 June, brought together South Korea, North Korea, China, the Soviet Union and the United States, along with other allied delegations such as those of Britain and Belgium. South Korea held that its government was the only legal one in Korea and wanted UN-supervised elections in the North and the withdrawal of Chinese troops. North Korea proposed all-Korean elections after all foreign forces had left, run by a commission drawn equally from North and South; China suggested supervision by neutral nations, which the North accepted, while the United States backed the South. On 15 June, the last day of the Korean talks, the Soviet Union and China put forward declarations in favour of a unified Korea, but the participants agreed on no declaration, and the Korean part of the conference ended without result.",
+   "The Indochina talks began on 8 May, the day after the French garrison at Dien Bien Phu fell to the Viet Minh. Taking part were France, Britain, the United States, the Soviet Union, China, the Viet Minh's Democratic Republic of Vietnam, the rival State of Vietnam, Laos and Cambodia. The United States had considered air strikes to save Dien Bien Phu but could not win support from allies such as Britain; Secretary of State John Foster Dulles refused any contact with the Chinese delegation led by Zhou Enlai and left Geneva on 3 May. In June a new French prime minister, Pierre Mendès France, pledged to resign if he did not reach a ceasefire within 30 days, and Zhou, meeting Ho Chi Minh in early July, urged the Viet Minh to accept a compromise to keep the United States from intervening.",
+   "The agreements were dated 20 July but signed on the morning of 21 July. They ended the fighting in Vietnam, Laos and Cambodia and divided Vietnam along a military demarcation line near the 17th parallel: Viet Minh forces were to regroup to the north and French and State of Vietnam forces to the south, and for 300 days people could move freely between the zones. A commission of India, Canada and Poland was to supervise the ceasefire. A Final Declaration stated that the line was provisional and not a political or territorial boundary, and that general elections would be held in July 1956 under international supervision. The United States and the State of Vietnam did not accept the declaration. Wikipedia counts three ceasefire agreements plus the declaration; the U.S. State Department's summary speaks of two agreements.",
+   "Historians generally see the conference as having failed to bring lasting peace to Indochina. France withdrew from the region, the United States became ever more committed to opposing communism there, and the growing hostility between the communist North and the anti-communist South led to the Vietnam War."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/1954_Geneva_Conference",
+    "title": "1954 Geneva Conference (rev 1387373295)",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   },
+   {
+    "url": "https://history.state.gov/historicaldocuments/frus1952-54v16/comp1",
+    "title": "Foreign Relations of the United States, 1952-1954, The Geneva Conference, Volume XVI: The Geneva Conference on Korea, April 26-June 15, 1954 (contents)",
+    "publisher": "U.S. Department of State, Office of the Historian",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3
+    ]
+   },
+   {
+    "url": "https://history.state.gov/historicaldocuments/frus1952-54v16/comp2",
+    "title": "Foreign Relations of the United States, 1952-1954, The Geneva Conference, Volume XVI: The Geneva Conference on Indochina, May 8-July 21, 1954 (contents)",
+    "publisher": "U.S. Department of State, Office of the Historian",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     7
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1953-1960/dien-bien-phu",
+    "title": "Dien Bien Phu & the Fall of French Indochina, 1954 (Milestones)",
+    "publisher": "U.S. Department of State, Office of the Historian",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     7,
+     9,
+     13,
+     15,
+     17,
+     18,
+     19,
+     21
+    ]
+   },
+   {
+    "url": "https://avalon.law.yale.edu/20th_century/inch005.asp",
+    "title": "Final Declaration of the Geneva Conference on the Problem of Restoring Peace in Indo-China, July 21, 1954",
+    "publisher": "The Avalon Project, Yale Law School",
+    "accessed": "2026-11-28",
+    "supports": [
+     8,
+     13,
+     14,
+     16,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "The Geneva Conference was held in Geneva from 26 April to 21 July 1954 to settle issues from the Korean War (armistice 1953) and the First Indochina War.",
+   "At the Berlin Conference (18 February 1954) the participants agreed that peace in Indochina would also be discussed at the conference on Korea; the Korean question came first on the agenda.",
+   "The Korean part of the conference ran from 26 April to 15 June 1954, with South Korea, North Korea, China, the Soviet Union and the United States and allied delegations, including the British and Belgian, taking part.",
+   "South Korea claimed to be the only legal government and wanted UN-supervised elections in the North and the withdrawal of Chinese forces; North Korea proposed all-Korean elections after foreign forces left, run by an all-Korean commission of equal parts from North and South.",
+   "China proposed supervision by neutral nations, which the North accepted; the United States supported the South Korean position.",
+   "On 15 June the Soviet Union and China submitted declarations for a unified Korea, but the participants did not agree on any declaration; the Korean part ended without adopting any declarations or proposals.",
+   "The Indochina talks began on 8 May 1954 and ended on 21 July.",
+   "The Indochina talks involved France, China, the Soviet Union, the United States, the United Kingdom, the Democratic Republic of Vietnam, the State of Vietnam, Laos and Cambodia.",
+   "Dien Bien Phu fell to the Viet Minh on 7 May 1954, the day before the Indochina talks began.",
+   "The United States considered air strikes to support the French at Dien Bien Phu but could not obtain the commitment of key allies such as Britain.",
+   "Dulles forbade contact with the Chinese delegation led by Zhou Enlai and left Geneva on 3 May.",
+   "Pierre Mendès France became French prime minister in June 1954 and pledged to resign if he did not achieve a ceasefire within 30 days; Zhou Enlai met Ho Chi Minh on 3-5 July and pressed for a compromise to prevent U.S. intervention.",
+   "The agreements were dated 20 July but signed on the morning of 21 July 1954; the Final Declaration is dated 21 July.",
+   "The agreements ended hostilities in Vietnam, Laos and Cambodia.",
+   "Vietnam was divided at a military demarcation line along the 17th parallel, with Viet Minh forces regrouping to the north and French and State of Vietnam forces to the south.",
+   "People could move freely between the zones for 300 days.",
+   "An International Control Commission of India (chair), Canada and Poland supervised the ceasefire.",
+   "The Final Declaration said the demarcation line was provisional and not a political or territorial boundary, and that general elections would be held in July 1956 under international supervision.",
+   "The United States and the State of Vietnam did not accept the Final Declaration (the State Department summary: the United States did not sign the second agreement).",
+   "Wikipedia counts three ceasefire agreements and the Final Declaration; the State Department summary describes two agreements.",
+   "Historians generally regard the conference as failing to secure lasting peace in Indochina; France withdrew, the United States became increasingly committed in the region, and worsening relations between North and South led to the Vietnam War."
+  ],
+  "disagree": "Wikipedia describes three ceasefire agreements (Vietnam, Laos, Cambodia) and an unsigned Final Declaration; the State Department's Milestones summary describes two agreements, a ceasefire with partition and a second agreement on alliances and elections.",
+  "checked": null
+ },
+ "Q56039": {
+  "title": "German reunification",
+  "y": 1989,
+  "place": "East Germany",
+  "paras": [
+   "German reunification was the process, from the opening of the Berlin Wall in November 1989 to 3 October 1990, by which the German Democratic Republic (East Germany) joined the Federal Republic of Germany. In 1989 a continuing stream of East Germans leaving for the West and mass protests for democratic freedoms put the ruling party, the SED, under growing pressure; after Erich Honecker stepped down, it tried to keep power through concessions. On 9 November 1989 the Politburo member Günter Schabowski unexpectedly announced at a press conference that East Germans could travel out at once and without preconditions. Thousands gathered at the crossings to West Berlin, and that night border guards opened them without clear orders.",
+   "On 28 November 1989 the West German chancellor Helmut Kohl surprised his coalition partner and the Western allies with a ten-point programme in the Bundestag that put unity on the agenda: confederal structures between the two states were to lead to a federation, within wider European integration. The Soviet Union, Britain and France reacted with scepticism, fearing a powerful Germany in the middle of Europe. In East Germany, demonstrators now began to call for unity, chanting 'We are one people' instead of 'We are the people'.",
+   "The first free election to East Germany's parliament, the Volkskammer, on 18 March 1990, became a vote on unity. The 'Alliance for Germany', led by the eastern CDU and backing quick unification, won about 48 per cent, the SPD 21.9 per cent and the PDS, the renamed SED, about 16 per cent. Lothar de Maizière (CDU) formed a grand coalition to prepare East Germany's accession under Article 23 of West Germany's Basic Law, rather than a new constitution under Article 146. A treaty on monetary, economic and social union took effect on 1 July 1990: the Deutsche Mark became East Germany's only currency, and wages, rents and pensions were converted one to one.",
+   "On 23 August 1990 the Volkskammer voted for accession. The Unification Treaty was signed on 31 August by Wolfgang Schäuble for West Germany and Günther Krause for East Germany and approved by both parliaments on 20 September. On 3 October 1990 East Germany joined the Federal Republic as five new states (Brandenburg, Mecklenburg-Vorpommern, Saxony, Saxony-Anhalt and Thuringia), Berlin became the capital again, and 3 October became a national holiday.",
+   "The external side was settled in 'Two Plus Four' talks between the two German states and the four victors of 1945 (the United States, the Soviet Union, Britain and France) held by their foreign ministers from May 1990. The United States backed unity on condition that Germany stay in NATO, and Mikhail Gorbachev accepted that a united Germany could choose its alliance. The treaty signed in Moscow on 12 September 1990 kept Germany in NATO, capped its armed forces at 370,000, renewed its renunciation of nuclear, biological and chemical weapons, made its borders, above all with Poland, final, and gave it full sovereignty. Sources differ on when the treaty took effect: deutschland.de gives 15 March 1991, the CVCE 3 October 1990."
+  ],
+  "sources": [
+   {
+    "url": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/friedliche-revolution/fall-der-mauer.html",
+    "title": "Fall der Mauer (LeMO)",
+    "publisher": "Stiftung Haus der Geschichte der Bundesrepublik Deutschland / Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4
+    ]
+   },
+   {
+    "url": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/weg-zur-einheit/zehn-punkte-programm.html",
+    "title": "Zehn-Punkte-Programm (LeMO)",
+    "publisher": "Stiftung Haus der Geschichte der Bundesrepublik Deutschland / Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7
+    ]
+   },
+   {
+    "url": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/weg-zur-einheit/freie-volkskammerwahl.html",
+    "title": "Freie Volkskammerwahl (LeMO)",
+    "publisher": "Stiftung Haus der Geschichte der Bundesrepublik Deutschland / Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/weg-zur-einheit/wirtschafts-waehrungs-und-sozialunion.html",
+    "title": "Währungs-, Wirtschafts- und Sozialunion (LeMO)",
+    "publisher": "Stiftung Haus der Geschichte der Bundesrepublik Deutschland / Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     11
+    ]
+   },
+   {
+    "url": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/weg-zur-einheit/einigungsvertrag.html",
+    "title": "Einigungsvertrag (LeMO)",
+    "publisher": "Stiftung Haus der Geschichte der Bundesrepublik Deutschland / Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/weg-zur-einheit/zwei-plus-vier-vertrag.html",
+    "title": "Zwei-plus-Vier-Vertrag (LeMO)",
+    "publisher": "Stiftung Haus der Geschichte der Bundesrepublik Deutschland / Deutsches Historisches Museum",
+    "accessed": "2026-11-28",
+    "supports": [
+     15,
+     16,
+     17,
+     18
+    ]
+   },
+   {
+    "url": "https://www.bpb.de/themen/deutsche-einheit/lange-wege-der-deutschen-einheit/47043/der-aeussere-weg-zur-einheit/",
+    "title": "Der äußere Weg zur Einheit (Lange Wege der Deutschen Einheit)",
+    "publisher": "Bundeszentrale für politische Bildung",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://www.deutschland.de/en/topic/politics/germany-europe/two-plus-four-treaty",
+    "title": "Two Plus Four Treaty",
+    "publisher": "deutschland.de (Frankfurter Societäts-Medien for the German Federal Foreign Office)",
+    "accessed": "2026-11-28",
+    "supports": [
+     15,
+     17,
+     18,
+     19
+    ]
+   },
+   {
+    "url": "https://www.cvce.eu/en/education/unit-content/-/unit/02bb76df-d066-4c08-a58a-d4686a3e68ff/9d00ed70-e306-4082-bb91-a35bf335b8d9",
+    "title": "Resources for The 2 + 4 Treaty on the Final Settlement with respect to Germany",
+    "publisher": "CVCE (University of Luxembourg)",
+    "accessed": "2026-11-28",
+    "supports": [
+     15,
+     17,
+     19
+    ]
+   }
+  ],
+  "claims": [
+   "German reunification culminated on 3 October 1990, when East Germany acceded to the Federal Republic (date of 3 October also in the Wikipedia lead, local extract rev 1386403395, which dates the start to 9 November 1989).",
+   "A continuing stream of emigrants and mass protests for democratic freedoms put the SED regime under pressure in 1989.",
+   "After Honecker's resignation the SED tried to secure its power through reforms and concessions; on 9 November 1989 Günter Schabowski unexpectedly announced at a press conference that East Germans could leave immediately and without preconditions.",
+   "Thousands went to the border crossings to West Berlin, and border guards opened many crossings that night without a clear order.",
+   "On 28 November 1989 Kohl presented a ten-point programme in the Bundestag without having coordinated it with his coalition partner or the Western allies (LeMO: he had informed only President George H. W. Bush beforehand).",
+   "The programme aimed at confederal structures leading to a federal order and German unity, embedded in further European integration; the Soviet Union, Britain and France were sceptical or opposed, fearing a strong Germany in the centre of Europe.",
+   "East German demonstrators began to chant 'Wir sind ein Volk' ('We are one people') instead of 'Wir sind das Volk' ('We are the people').",
+   "The first free Volkskammer election, on 18 March 1990, became a decision on unity (date also in the Wikipedia lead, local extract).",
+   "The Alliance for Germany (CDU, Demokratischer Aufbruch, DSU) won about 48 per cent, the SPD 21.9 per cent and the PDS (the former SED) 16.3 per cent (LeMO) or 16 per cent (bpb).",
+   "Lothar de Maizière (CDU) led a grand coalition that prepared accession under Article 23 of the Basic Law; the alternative was a new constitution under Article 146.",
+   "The treaty on monetary, economic and social union took effect on 1 July 1990, making the Deutsche Mark the sole currency in East Germany, with wages, rents and pensions converted 1:1.",
+   "The Volkskammer voted on 23 August 1990 for accession under Article 23, effective 3 October.",
+   "The Unification Treaty was signed on 31 August 1990 (bpb: by Wolfgang Schäuble and Günther Krause) and ratified by the Bundestag and the Volkskammer on 20 September 1990.",
+   "On 3 October 1990 the states of Brandenburg, Mecklenburg-Vorpommern, Saxony, Saxony-Anhalt and Thuringia were formed in the east; Berlin became the capital again, and 3 October was made a public holiday, the Day of German Unity.",
+   "The external aspects were negotiated by the foreign ministers of the two German states, the Soviet Union, the United States, France and Britain from May to September 1990.",
+   "The United States supported unity on condition that united Germany belong to NATO; Gorbachev agreed to Germany's free choice of alliance.",
+   "The Two Plus Four Treaty was signed in Moscow on 12 September 1990.",
+   "Under it Germany stayed in NATO, cut the Bundeswehr to 370,000, renounced nuclear, biological and chemical weapons, guaranteed its existing borders, especially with Poland, and received full sovereignty.",
+   "deutschland.de says the Two Plus Four Treaty entered into force on 15 March 1991 (the Wikipedia lead, local extract, also gives 15 March 1991 for full sovereignty); the CVCE says it came into force on 3 October 1990."
+  ],
+  "disagree": "Entry into force of the Two Plus Four Treaty: 15 March 1991 (deutschland.de; Wikipedia lead) or 3 October 1990 (CVCE). PDS share in March 1990: 16.3 per cent (LeMO) or 16 per cent (bpb). Kohl's ten-point plan: bpb says it was not coordinated with his coalition partner or the Western allies; LeMO says he had informed only President Bush beforehand.",
+  "checked": null
  }
 }
