@@ -3037,5 +3037,75 @@
   ],
   "disagree": "Quantity of chlorine released on 22 April: about 160 tons (Veterans Affairs Canada, Parks Canada) or over 400 tons (EBSCO). Canadian casualties: 6,035 (Veterans Affairs Canada) or about 6,000 (Parks Canada).",
   "checked": null
+ },
+ "Q324916": {
+  "title": "Battle of Solferino",
+  "y": 1859,
+  "place": "Austrian Empire",
+  "paras": [
+   "The Battle of Solferino, fought on 24 June 1859 near the Mincio river in northern Italy, was the decisive battle of the Second Italian War of Independence between the Austrian Empire and the allied armies of France and Piedmont-Sardinia. Piedmont's prime minister Count Cavour had won French support for a war to drive Austria out of northern Italy; France's price was Nice and Savoy. When Austria sent Piedmont an ultimatum in April 1859, France came in on Piedmont's side. After their defeat at Magenta, the Austrians abandoned Lombardy and fell back towards their fortresses on the Mincio, and Emperor Franz Joseph took personal command of his army.",
+   "Three monarchs led their armies in person, which is why the battle was also called the Battle of the Three Sovereigns: Napoleon III and King Victor Emmanuel II on the allied side and Franz Joseph on the Austrian. Each side had roughly 100,000 to 120,000 men. Poor scouting on both sides made it a chance encounter: Napoleon III believed the Austrians were still retreating and ordered an attack, while the Austrians, who had no reserves, were surprised by the allied advance.",
+   "The allies advanced early in the morning, and through the long day the French made repeated, poorly coordinated attacks on the hills held by the Austrians, often carrying positions only with the bayonet, while the Austrians replied with costly counter-attacks. The French slowly pushed the Austrian centre and south back. In the north the Piedmontese attacked the corps of Ludwig von Benedek again and again but could not break it. In the late afternoon Franz Joseph ordered a retreat across the Mincio, covered by Benedek's corps.",
+   "Losses were heavy: about 22,000 on the Austrian side and about 17,000 for the allies, some 5,500 of them Piedmontese, though the breakdown differs between sources. Napoleon III, shaken by the carnage, sought a separate peace, and at Villafranca in July he agreed to a settlement under which Austria ceded Lombardy, passed through France to Piedmont, but kept Venetia, to the anger of Cavour and other Italian patriots; France gained Nice and Savoy. A Swiss businessman, Henri Dunant, who saw the wounded after the battle and organised local people to help them, wrote 'A Memory of Solferino', which led to the founding of the International Committee of the Red Cross in Geneva in 1863 and the first Geneva Convention."
+  ],
+  "sources": [
+   {
+    "url": "https://www.ebsco.com/research-starters/history/battle-solferino/",
+    "title": "Battle of Solferino (Research Starters)",
+    "publisher": "EBSCO (Salem Press)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.historynet.com/austro-sardinian-war/",
+    "title": "Austro-Sardinian War",
+    "publisher": "HistoryNet",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     8,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The Battle of Solferino was fought on 24 June 1859 between Austria and the allied armies of France and Piedmont-Sardinia, in the Second Italian War of Independence; the Austrians held hills near Solferino in front of the Mincio.",
+   "Cavour sought French help against Austria; Napoleon III secretly demanded Nice and Savoy; Austria's ultimatum to Piedmont in April 1859 brought France into the war.",
+   "Franz Joseph took personal command of his army before the battle.",
+   "After Magenta the Austrians abandoned Lombardy and fell back towards the Quadrilateral fortresses.",
+   "Napoleon III, Victor Emmanuel II and Franz Joseph led their armies in person, hence the name Battle of the Three Sovereigns (HistoryNet).",
+   "Army sizes: allies some 118,600 men (EBSCO); Austrians about 120,000 (EBSCO) or 100,000 (HistoryNet).",
+   "Poor reconnaissance: Napoleon III believed the Austrians were retreating; the Austrians, without reserves, were surprised.",
+   "The French made repeated, poorly coordinated attacks, often succeeding only with the bayonet, and pushed the Austrians back in the south and centre.",
+   "In the north the Piedmontese failed to break Benedek's corps.",
+   "By late afternoon Franz Joseph ordered a retreat (HistoryNet: across the Mincio), covered by Benedek's corps.",
+   "Losses: Austrians 2,292 killed, 8,638 wounded, 10,807 missing or prisoners, and allies 2,313 killed, 12,102 wounded, 2,776 missing (EBSCO); HistoryNet gives about 3,000 Austrian dead and an allied total of 17,295; both give 5,521 Piedmontese casualties.",
+   "Napoleon III, sickened by the carnage, sought a separate peace; at Villafranca Austria ceded Lombardy, which went via France to Piedmont, while keeping Venetia (HistoryNet: truce on 8 July); France gained Nice and Savoy.",
+   "Henri Dunant, a Swiss businessman, organised help for the wounded and wrote 'A Memory of Solferino', proposing societies of trained volunteers.",
+   "The International Committee of the Red Cross was founded in Geneva in 1863, followed by the first Geneva Convention."
+  ],
+  "disagree": "Casualty breakdowns differ: EBSCO gives the Austrians 2,292 killed, 8,638 wounded and 10,807 missing or captured, HistoryNet some 3,000 killed, 10,897 wounded and 8,638 missing or captured; the allied totals are about 17,200-17,300 in both. Austrian strength: about 120,000 (EBSCO) or 100,000 (HistoryNet). EBSCO's text calls the earlier battle of 4 June 'Mantua'; HistoryNet names it Magenta.",
+  "checked": null
  }
 }
