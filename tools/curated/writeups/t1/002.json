@@ -186,7 +186,7 @@
   "place": "Crimea, the Danube and the Black Sea",
   "paras": [
    "The Crimean War, from October 1853 to February 1856, was fought between the Russian Empire and an alliance of the Ottoman Empire, France and Britain, joined in 1855 by the Kingdom of Sardinia. It is remembered for the Charge of the Light Brigade, for Florence Nightingale's nursing, and as one of the first wars fought with modern technology and reported in photographs.",
-   "It grew out of a quarrel between Catholic and Orthodox Christians over the holy places of Jerusalem and Bethlehem under Ottoman rule. Tsar Nicholas I demanded that the sultan recognise him as protector of all the Orthodox subjects of the Ottoman Empire, and when the sultan refused, Russia occupied the Danubian principalities of Moldavia and Wallachia. The Ottomans declared war in October 1853. In November a Russian fleet destroyed an Ottoman squadron at Sinop on the Black Sea, killing nearly 2,000 Ottoman sailors, and the outcry, together with fear of Russian expansion towards the Mediterranean and India, brought Britain and France into the war in March 1854.",
+   "It grew out of a quarrel between Catholic and Orthodox Christians over the holy places of Jerusalem and Bethlehem under Ottoman rule. Tsar Nicholas I demanded that the sultan recognise him as protector of all the Orthodox subjects of the Ottoman Empire, and when the sultan refused, Russia occupied the Danubian principalities of Moldavia and Wallachia. The Ottomans declared war in October 1853. In November a Russian fleet destroyed an Ottoman squadron at Sinop on the Black Sea, killing nearly 2,000 Ottoman sailors by one historian's count, and the outcry, together with fear of Russian expansion towards the Mediterranean and India, brought Britain and France into the war in March 1854.",
    "In September 1854 the allies landed in Crimea to take Sevastopol, the base of Russia's Black Sea fleet, and routed the Russians at the Alma. The expected short siege lasted eleven months. At Balaklava in October 1854 the 93rd Highlanders' 'thin red line' held off Russian cavalry, but a misunderstood order sent the Light Brigade charging into a valley ringed by Russian guns; of about 670 men, 110 were killed and 160 wounded. The Russians were beaten again at Inkerman in November, fought in thick fog. The armies suffered terribly through the winter of 1854-55 from cold, storms and diseases such as cholera, and the reports of the conditions prompted Nightingale's work in the military hospitals.",
    "In September 1855 French troops stormed the Malakoff redoubt, and the Russians abandoned Sevastopol. Isolated and threatened by Austria, Russia sued for peace, and the Treaty of Paris of 30 March 1856 ended the war; Russia gave up its conquests and was forbidden to keep warships on the Black Sea. The war saw rifles made in factories, railways, the telegraph and explosive naval shells, and was among the first to be documented by war correspondents and photographers."
   ],
@@ -228,6 +228,15 @@
      12,
      13
     ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Sinop",
+    "title": "Battle of Sinop",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     5
+    ]
    }
   ],
   "claims": [
@@ -235,7 +244,7 @@
    "Remembered for the Charge of the Light Brigade and Florence Nightingale's pioneering nursing.",
    "The spark was a dispute between Catholics and Orthodox over holy places; Nicholas I demanded to be protector of the Ottomans' Orthodox subjects.",
    "After the sultan refused, Russia occupied Moldavia and Wallachia; Turkey declared war in October 1853.",
-   "At Sinop Russian ships destroyed an Ottoman squadron, killing nearly 2,000 Ottoman sailors.",
+   "At Sinop (30 November 1853) Russian ships destroyed an Ottoman squadron; nearly 2,000 Ottoman sailors killed (HISTORY.com after Candan Badem); Wikipedia's Sinop article gives nearly 3,000 Turks killed including the bombardment of the town.",
    "Britain and France, fearing Russian influence and outraged by Sinop, joined in March 1854 (concern for India and trade).",
    "In September 1854 the allies landed in Crimea to take Sevastopol, Russia's Black Sea base; the Russians were routed at the Alma; the siege lasted 11 months.",
    "At Balaklava (October 1854) the 93rd Highlanders' thin red line held; the Light Brigade attacked the wrong battery; of 670, 110 killed and 160 wounded.",
@@ -245,7 +254,7 @@
    "Facing Austria, Russia sued for peace; Treaty of Paris (30 March 1856); Russia returned territory and could not base warships in the Black Sea.",
    "Modern technologies: mass-produced rifles, railways, telegraph, explosive shells; documented in reports and photographs."
   ],
-  "disagree": null,
+  "disagree": "Deaths at Sinop: HISTORY.com, citing the historian Candan Badem, gives nearly 2,000 Ottoman sailors and officers; Wikipedia's article on the battle gives nearly 3,000 Turks killed, counting the bombardment of the town.",
   "checked": null
  },
  "Q33143": {
@@ -612,6 +621,1624 @@
    "The UK and US declared war on Japan on 8 December; on 11 December Germany and Italy declared war on the US."
   ],
   "disagree": "Japanese dead: Wikipedia counts 64 (55 airmen and nine submariners; 130 personnel lost in all), HISTORY.com 129. HISTORY.com says six ships were sunk or destroyed and lists the target ship USS Utah among the battleships; Wikipedia says four of the eight battleships present were sunk. American deaths agree at 2,403.",
+  "checked": null
+ },
+ "Q171416": {
+  "title": "Battle of Trafalgar",
+  "y": 1805,
+  "place": "Off Cape Trafalgar, southwestern Spain",
+  "paras": [
+   "The Battle of Trafalgar was fought on 21 October 1805 off Cape Trafalgar on the Atlantic coast of southern Spain, between a British fleet of 27 ships of the line under Vice-Admiral Horatio Nelson and a combined French and Spanish fleet of 33 under the French Vice-Admiral Pierre-Charles Villeneuve. It was the decisive sea battle of the Napoleonic Wars.",
+   "Napoleon planned to invade Britain and needed to control the English Channel long enough to ship his army across. His squadrons were to break out of the British blockades, join up with the Spanish in the West Indies and return to take the Channel. Villeneuve slipped out in March 1805 and crossed the Atlantic with Nelson in pursuit, but came back alone, fought an indecisive action with Admiral Robert Calder off Cape Finisterre and took refuge in Cádiz. By then Napoleon had given up the invasion and marched his army east against Austria and Russia. Ordered into the Mediterranean, Villeneuve sailed from Cádiz on 18 October, and three days later Nelson caught him.",
+   "Before the battle Nelson signalled from HMS Victory, 'England expects that every man will do his duty.' Instead of fighting line against line, he attacked in two columns, one led by himself and the other by Admiral Cuthbert Collingwood, driving through the enemy line to cut it into pieces. The British crews were better trained and their guns fired faster, while the French and Spanish crews were inexperienced and low in morale. During the fighting Nelson, conspicuous on deck in his dress uniform, was shot by a French marksman; he was carried below and died about three hours later, knowing that he had won.",
+   "Eighteen French and Spanish ships were captured or destroyed and the British lost none, though many of the prizes sank in a storm the next day. Villeneuve himself was captured. The Royal Museums Greenwich figures, cited by HISTORY.com, are 449 British killed and 1,217 wounded against 4,408 French and Spanish killed, 2,545 wounded and some 20,000 taken prisoner. The victory ended any real attempt by Napoleon to invade Britain and secured British command of the sea for more than a century."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Trafalgar",
+    "title": "Battle of Trafalgar",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-trafalgar",
+    "title": "Battle of Trafalgar",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Fought on 21 October 1805 off Cape Trafalgar between Nelson's 27 ships and Villeneuve's combined fleet of 33.",
+   "Napoleon planned to invade Britain and needed to control the Channel.",
+   "French squadrons were to break the blockade, rendezvous in the West Indies and return; Villeneuve evaded the blockade in March 1805, Nelson pursued, Villeneuve returned and fought Calder off Cape Finisterre.",
+   "Napoleon abandoned the invasion and marched east against Austria and Russia.",
+   "Villeneuve sailed from Cádiz on 18 October and met Nelson three days later.",
+   "Nelson's signal 'England expects that every man will do his duty' from HMS Victory.",
+   "Nelson attacked in two columns to break the line; Collingwood fought in the battle; British crews better trained and faster-firing; French and Spanish crews inexperienced with low morale.",
+   "Nelson was shot by a French marksman and died about three hours later, knowing of the victory.",
+   "18 enemy ships captured or destroyed, the British lost none; many sank in a storm; Villeneuve captured.",
+   "Battle confirmed British naval supremacy and ended Napoleon's invasion plans; command of the sea untested for over a century.",
+   "449 British killed and 1,217 wounded; 4,408 French and Spanish killed, 2,545 wounded and 20,000 prisoners (Royal Museums Greenwich via HISTORY.com)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q16470": {
+  "title": "Normandy landings (D-Day)",
+  "y": 1944,
+  "place": "Normandy coast, France",
+  "paras": [
+   "On 6 June 1944, D-Day, the Western Allies landed in German-occupied Normandy, opening the invasion of northwestern Europe, Operation Overlord. More than 156,000 American, British and Canadian troops came ashore on the first day along some 50 miles (80 km) of coast divided into five beaches, Utah, Omaha, Gold, Juno and Sword. It remains the largest seaborne invasion in history.",
+   "The Allies had planned a cross-Channel invasion since 1942, with General Dwight D. Eisenhower in supreme command. The Germans expected an attack at the Pas-de-Calais, the narrowest crossing, where their defences were strongest, and a large deception operation encouraged that belief. Hitler had put Field Marshal Erwin Rommel in charge of strengthening the Atlantic Wall of bunkers, mines and beach obstacles. Normandy had no large port, so the Allies built the artificial 'Mulberry' harbours to supply the landings. Bad weather forced Eisenhower to postpone the invasion from 5 June by 24 hours; a longer delay would have meant waiting at least two weeks for suitable tides and moonlight.",
+   "Shortly after midnight on 6 June some 24,000 American, British and Canadian airborne troops landed behind the beaches, and an air and naval bombardment began; more than 5,000 ships and landing craft crossed the Channel, with more than 11,000 aircraft in support. Strong winds pushed landing craft off course, especially at Utah and Omaha, and Omaha, under high bluffs, cost the most lives. At Gold, Juno and Sword the troops cleared fortified villages house by house. The German response was slowed by confusion, by Rommel's absence on leave, and by Hitler's belief that the landing was a feint.",
+   "Allied casualties on D-Day were at least 10,000, with 4,414 confirmed dead; German losses are estimated at 4,000 to 9,000. Only two beaches were joined up on the first day and all five by 12 June, and by 11 June more than 326,000 men had landed. The Allies took Cherbourg by the end of June, but Caen, a first-day objective, held out until July. By the end of August Paris was liberated and the Germans had been driven out of northwestern France; less than a year later, on 8 May 1945, Germany surrendered."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Normandy_landings",
+    "title": "Normandy landings",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/d-day",
+    "title": "D-Day: Normandy Invasion, Facts & Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     6,
+     7,
+     9,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "On 6 June 1944 Allied troops landed in Normandy in Operation Overlord; more than 156,000 American, British and Canadian troops; 50 miles of coast; five beaches Utah, Omaha, Gold, Juno and Sword.",
+   "It is the largest seaborne invasion in history.",
+   "Eisenhower commanded; the Germans considered the Pas-de-Calais the most likely landing site and fortified it most; deception (Operation Bodyguard).",
+   "Rommel was put in charge of the Atlantic Wall.",
+   "Normandy's lack of ports was overcome by the Mulberry harbours.",
+   "Bad weather delayed the invasion by 24 hours from 5 June; a further delay would have meant at least two weeks because of moon and tides.",
+   "Shortly after midnight 24,000 airborne troops landed, with air and naval bombardment.",
+   "Winds pushed landing craft east, especially at Utah and Omaha; Omaha had the most casualties; house-to-house fighting at Gold, Juno and Sword.",
+   "More than 5,000 ships and landing craft and 11,000 aircraft; German confusion, Rommel on leave, Hitler thought it a feint.",
+   "Allied casualties at least 10,000 with 4,414 confirmed dead; German casualties 4,000-9,000.",
+   "Only Juno and Gold linked on day one, all five by 12 June; Caen captured only on 21 July.",
+   "By 11 June over 326,000 troops had landed; Cherbourg taken by end of June; Paris liberated by end of August.",
+   "Germany surrendered on 8 May 1945."
+  ],
+  "disagree": "HISTORY.com gives some 4,000 Allied troops killed on D-Day; Wikipedia gives 4,414 confirmed dead among at least 10,000 casualties.",
+  "checked": null
+ },
+ "Q151018": {
+  "title": "Battle of the Bulge",
+  "y": 1944,
+  "place": "The Ardennes, Belgium and Luxembourg",
+  "paras": [
+   "The Battle of the Bulge, the Ardennes Offensive, was Germany's last major offensive in the west in the Second World War, fought from 16 December 1944 to 25 January 1945 in the forested hills of eastern Belgium and northern Luxembourg. It was the largest and bloodiest single battle the United States fought in the war, and is named for the bulge the German advance pushed into the Allied front.",
+   "Hitler aimed to break through the thinly held American line, reach the Meuse and retake the port of Antwerp, splitting the Allied armies and forcing the Western powers to negotiate. The Allies, overconfident and misled by faulty intelligence, were using the Ardennes as a quiet sector to rest tired troops, and bad weather grounded their reconnaissance aircraft. On the morning of 16 December some 30 German divisions attacked across about 85 miles of front after a heavy artillery barrage and achieved total surprise. Fog, snow and record cold kept Allied aircraft on the ground, and German soldiers in American uniforms spread confusion behind the lines, so that GIs quizzed strangers on American trivia to unmask them.",
+   "American units held firm on the northern shoulder at Elsenborn Ridge and at St. Vith, and in the south at the road junction of Bastogne, where the 101st Airborne Division was surrounded. When the Germans demanded its surrender on 22 December, its commander, Brigadier General Anthony McAuliffe, answered with one word: 'Nuts!' The German spearhead was stopped on 24 December short of the Meuse near Dinant, the weather cleared and Allied aircraft struck German columns and supply lines, and on 26 December units of General George S. Patton's Third Army broke through to Bastogne from the south.",
+   "By 25 January 1945 the bulge had been eliminated. More than 700,000 Allied soldiers took part; American losses, estimated at 77,000 to more than 83,000 casualties with at least 8,600 killed (HISTORY.com gives over 100,000), were the heaviest of any U.S. battle. The offensive used up Germany's last reserves in the west, and less than four months later Germany surrendered."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Bulge",
+    "title": "Battle of the Bulge",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-the-bulge",
+    "title": "Battle of the Bulge: Facts & Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The offensive ran from 16 December 1944 to 25 January 1945 in the Ardennes of Belgium and Luxembourg; Hitler's last major offensive in the west.",
+   "It was the largest and bloodiest single battle fought by the US in WWII (costliest for the US Army).",
+   "Aims: stop Allied use of Antwerp, split the Allied lines, force a negotiated peace; reach the Meuse.",
+   "Total surprise on 16 December due to overconfidence, faulty intelligence, bad weather; the Ardennes was held thinly as a rest area.",
+   "Some 30 German divisions attacked across 85 miles after an artillery barrage; freezing weather grounded Allied air support; infiltrators in US uniforms; trivia questions.",
+   "American resistance at Elsenborn Ridge and Bastogne blocked German access to key roads; St. Vith; the 101st Airborne at Bastogne.",
+   "On 22 December McAuliffe replied 'Nuts!' to a surrender demand.",
+   "Patton's Third Army relieved Bastogne the day after Christmas.",
+   "The German advance was stopped near Dinant on 24 December; better weather from 24 December allowed air attacks (HISTORY.com: Christmas Day).",
+   "Allied forces over 700,000; casualties 77,000 to over 83,000 including at least 8,600 killed (HISTORY.com: over 100,000 US casualties); Germany surrendered in May 1945."
+  ],
+  "disagree": "U.S. casualties: Wikipedia gives 77,000 to more than 83,000 Allied casualties; HISTORY.com says the U.S. Army suffered over 100,000. HISTORY.com dates the clearing of the weather to Christmas Day; Wikipedia to 24 December.",
+  "checked": null
+ },
+ "Q173034": {
+  "title": "Battle of Midway",
+  "y": 1942,
+  "place": "Midway Atoll, central Pacific",
+  "paras": [
+   "The Battle of Midway, fought from 4 to 7 June 1942 around the American base on Midway Atoll in the central Pacific, six months after Pearl Harbor and a month after the Battle of the Coral Sea, was a decisive American naval victory over Japan. In it Japan lost all four of the fleet carriers it sent, and it is widely seen as the turning point of the Pacific War.",
+   "Admiral Isoroku Yamamoto wanted to extend Japan's defensive perimeter, especially after American bombers had raided Tokyo in the Doolittle Raid of April 1942, and to draw the U.S. Pacific Fleet into a battle where it could be destroyed. His plan combined a diversionary strike on the Aleutian Islands, an air attack on Midway by the carriers Akagi, Kaga, Sōryū and Hiryū under Vice Admiral Chūichi Nagumo, and an invasion force. But American codebreakers had been reading Japanese naval signals: they confirmed that the target 'AF' was Midway by having the base send a false report that it was short of fresh water, and worked out the timing. Admiral Chester Nimitz sent his carriers to lie in wait, including the Yorktown, damaged at the Coral Sea and repaired at Pearl Harbor in two days.",
+   "On the morning of 4 June 108 Japanese aircraft bombed Midway. Attacks by aircraft from the island and then by unescorted American torpedo bombers failed, and most of the torpedo planes were shot down. But while Nagumo was rearming and refuelling his planes, American dive-bombers from the Enterprise and Yorktown struck and set Akagi, Kaga and Sōryū ablaze within minutes. Planes from the surviving Hiryū crippled the Yorktown, and that afternoon American dive-bombers set Hiryū on fire too.",
+   "On 6 June Yamamoto ordered a retreat; that day a Japanese submarine torpedoed the Yorktown and the destroyer Hammann, which sank, and the Yorktown went down the next morning. Japan lost four carriers, the heavy cruiser Mikuma, nearly 300 aircraft and as many as 3,000 men, among them many experienced pilots; the United States lost about 145 aircraft and some 360 men. Together with the Guadalcanal campaign that followed, Midway is widely regarded as the turning point of the war in the Pacific."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Midway",
+    "title": "Battle of Midway",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-midway",
+    "title": "Battle of Midway: Facts & Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The battle took place on 4-7 June 1942, six months after Pearl Harbor and one month after the Coral Sea.",
+   "All four Japanese fleet carriers (Akagi, Kaga, Soryu, Hiryu) were sunk, as was the cruiser Mikuma; widely considered a turning point of the Pacific War.",
+   "Japan wanted to extend its perimeter after the Doolittle Raid of April 1942.",
+   "US codebreakers determined the date and location; Nimitz sent forces to Midway before the Japanese arrived.",
+   "Yamamoto's plan: diversion to the Aleutians, Nagumo's carrier strike, an invasion force; the 'AF' water-shortage ruse; Yorktown repaired in two days.",
+   "108 Japanese planes attacked Midway on the morning of 4 June; attacks from Midway failed.",
+   "Unescorted Devastator torpedo bombers were nearly all shot down; then dive bombers (McClusky's group from Enterprise, Leslie's VB-3 from Yorktown) hit Akagi, Kaga and Soryu while the Japanese rearmed and refuelled.",
+   "Hiryu's planes attacked Yorktown, which was abandoned; US dive-bombers set Hiryu ablaze.",
+   "On 6 June Yamamoto ordered a retreat; a Japanese submarine torpedoed Yorktown and Hammann; Hammann sank, Yorktown sank the next day.",
+   "Japan lost up to 3,000 men, nearly 300 aircraft, a heavy cruiser and four carriers; the US lost Yorktown, Hammann, about 145 aircraft and about 360 men.",
+   "Experienced pilots lost: more than 200 of Japan's most experienced."
+  ],
+  "disagree": "HISTORY.com dates the battle 3-6 June 1942, counting the first American air attacks of 3 June; Wikipedia dates it 4-7 June.",
+  "checked": null
+ },
+ "Q154720": {
+  "title": "Battle of Britain",
+  "y": 1940,
+  "place": "The skies over southern England and the Channel",
+  "paras": [
+   "The Battle of Britain was the air campaign of the summer and autumn of 1940 in which the Royal Air Force defended Britain against the German Luftwaffe. The British date it from 10 July to 31 October 1940. It was the first major military campaign fought entirely by air forces, and Germany's failure to win control of the air was its first major defeat of the Second World War.",
+   "After the fall of France in June 1940 Britain fought on alone. Hitler, who appealed publicly on 19 July for Britain to make peace, was rebuffed by the new prime minister, Winston Churchill; on 16 July he had ordered preparations for Operation Sea Lion, a landing in England that would only be possible once the Luftwaffe had air superiority over the Channel. The name of the battle comes from Churchill's speech to the House of Commons on 18 June: 'The Battle of France is over. I expect that the Battle of Britain is about to begin.' RAF Fighter Command was led by Air Chief Marshal Hugh Dowding, who had long argued that radar, which could detect raids early, and fast monoplane fighters such as the Hurricane and Spitfire could stop the bomber.",
+   "The Luftwaffe under Hermann Göring began by attacking shipping in the Channel and coastal targets, then in August turned on RAF airfields and infrastructure in an effort to destroy Fighter Command, which was short of trained pilots and aircraft. Slow Stuka dive-bombers suffered heavy losses. After the RAF bombed Berlin, Hitler and Göring switched to bombing London and other cities from 7 September, the start of the Blitz. On 15 September massive German raids on London were beaten off.",
+   "Unable to defeat the RAF, and with British bombers attacking the invasion barges in the Channel ports, Hitler postponed and eventually cancelled Operation Sea Lion. The night bombing of British cities went on until May 1941, but the threat of invasion had passed."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
+    "title": "Battle of Britain",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-britain",
+    "title": "Battle of Britain: Definition & Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The British date the battle from 10 July to 31 October 1940.",
+   "It was the first major campaign fought entirely by air forces; Germany's failure was its first major defeat of WWII.",
+   "Hitler appealed for peace on 19 July 1940; Churchill rejected it.",
+   "On 16 July Hitler ordered preparations for Operation Sea Lion, to follow once the Luftwaffe had air superiority.",
+   "Dowding argued radar and fast monoplane fighters could stop bombers.",
+   "Churchill's 18 June 1940 speech: 'the Battle of France is over. I expect the Battle of Britain is about to begin.'",
+   "From 10 July the Luftwaffe attacked coastal defences and shipping; in August it shifted to RAF airfields and infrastructure; Fighter Command was short of pilots and aircraft; Hurricanes and Spitfires.",
+   "Stukas suffered heavy losses.",
+   "After the RAF bombed Berlin, Germany switched to bombing London and other cities (the Blitz from 7 September 1940 to 11 May 1941); large raids on London on 15 September failed.",
+   "RAF bombing of invasion barges and the Luftwaffe's failure forced Hitler to postpone and cancel Sea Lion."
+  ],
+  "disagree": "HISTORY.com says Hitler called off the invasion at the end of October 1940; Wikipedia says it was postponed in September and later cancelled.",
+  "checked": null
+ },
+ "Q36756": {
+  "title": "Kristallnacht",
+  "y": 1938,
+  "place": "Germany, Austria and the Sudetenland",
+  "paras": [
+   "Kristallnacht, the 'Night of Broken Glass', also called the November pogrom, was a wave of violence against Jews across Nazi Germany, annexed Austria and the Sudetenland on 9-10 November 1938. It was carried out by the Nazi Party's SA and SS, with members of the Hitler Youth and ordinary Germans, and takes its name from the shattered glass of Jewish shop windows that littered the streets.",
+   "Since Hitler came to power in 1933 German Jews had been boycotted, driven from public employment and, by the Nuremberg Laws of 1935, stripped of full citizenship, but the persecution had been largely non-violent. In late October 1938 Germany expelled more than 12,000 Polish Jews, among them the family of Herschel Grynszpan, a 17-year-old living in Paris. On 7 November Grynszpan shot the German diplomat Ernst vom Rath at the embassy there, and vom Rath died on 9 November. That evening the propaganda minister Joseph Goebbels told party leaders that 'spontaneous' demonstrations were not to be hindered, a message understood as an order to organise a pogrom.",
+   "Through the night and the next day mobs burned or wrecked more than 1,400 synagogues and prayer rooms, damaged or destroyed over 7,000 Jewish businesses and ransacked homes, schools, hospitals and cemeteries, while police and firemen stood by, acting only to protect non-Jewish property. About 30,000 Jewish men were arrested and sent to the concentration camps of Dachau, Buchenwald and Sachsenhausen. Early reports counted 91 Jews murdered; including deaths from maltreatment after arrest and suicides, modern estimates run into the hundreds or more.",
+   "The regime then made the Jewish community pay a collective fine for the damage and, by the end of 1938, barred Jews from schools and most public places. President Franklin D. Roosevelt condemned the violence and recalled the American ambassador, but the United States did not ease its immigration limits. Kristallnacht marked a turning point from discrimination to open violence against Jews, and many Jews now sought to flee; it foreshadowed the Holocaust."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Kristallnacht",
+    "title": "Kristallnacht",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/kristallnacht",
+    "title": "Kristallnacht: Definition, Facts & Night of Broken Glass",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "A pogrom by the SA and SS with Hitler Youth and civilians throughout Nazi Germany on 9-10 November 1938.",
+   "It extended to Austria and the Sudetenland.",
+   "From 1933 Jews were boycotted and dismissed from civil service; the Nuremberg Laws (September 1935); persecution was mostly non-violent before Kristallnacht; the name comes from broken glass.",
+   "More than 12,000 Polish Jews, including the Grynszpan family, were expelled on 28 October 1938.",
+   "Grynszpan, 17, shot vom Rath in Paris on 7 November; vom Rath died on 9 November.",
+   "Goebbels's speech that demonstrations were not to be hampered was understood as an order to organise a pogrom.",
+   "Over 1,400 synagogues and prayer rooms destroyed; over 7,000 businesses; homes, schools, hospitals, cemeteries vandalised; police and firemen told not to intervene except to protect Aryan property.",
+   "30,000 Jewish men arrested and sent to Dachau, Buchenwald and Sachsenhausen.",
+   "Early reports: 91 Jews murdered; modern estimates in the hundreds or more including suicides and maltreatment.",
+   "A collective fine was imposed on the Jewish community; by end of 1938 Jews were barred from schools and most public places.",
+   "Roosevelt denounced the violence on 15 November 1938 and recalled the ambassador; the US did not ease immigration restrictions.",
+   "A turning point toward violent persecution; many Jews planned to flee; the Holocaust followed."
+  ],
+  "disagree": "HISTORY.com says hundreds of synagogues were torched and nearly 100 Jews murdered; Wikipedia gives over 1,400 synagogues and prayer rooms and early reports of 91 dead, with modern estimates far higher.",
+  "checked": null
+ },
+ "Q99717": {
+  "title": "Tiananmen Square protests and massacre",
+  "y": 1989,
+  "place": "Beijing, China",
+  "paras": [
+   "From 15 April to 4 June 1989 students, later joined by workers, occupied Tiananmen Square in the centre of Beijing to demand political freedom and an end to corruption. On the night of 3-4 June the Chinese government sent the army to clear the square and the surrounding streets by force, killing several hundred to several thousand people. The events are known in China as the June Fourth Incident and remain one of the most heavily censored subjects there.",
+   "The protests began with the death in April of Hu Yaobang, a former Communist Party general secretary seen as a reformer. Under Deng Xiaoping China had introduced market reforms in the 1980s, but political power stayed with the party, and inflation, unemployment and the loss of the old job guarantees angered workers. In May students began a hunger strike that won support across the country, and protests spread to some 400 cities; the visit of the Soviet leader Mikhail Gorbachev from 15 May was disrupted, and his welcome ceremony had to be moved away from the square. By the end of May more than a million people had gathered in and around it.",
+   "On 20 May the government declared martial law and moved as many as 250,000 to 300,000 troops towards Beijing, but crowds of residents blocked them. On the night of 3 June soldiers and armoured vehicles advanced on the square, firing live rounds; most of the killing took place in the streets along Chang'an Avenue to the west. Some protesters fought back, burning military vehicles. On 5 June an unidentified man, the 'Tank Man', stood alone in front of a column of tanks, an image seen around the world.",
+   "Thousands were wounded and as many as 10,000 arrested. The government suppressed protests elsewhere, purged officials who had sympathised with the students, and halted political reform, though market reforms continued and accelerated after 1992. Western governments condemned the crackdown, and the U.S. Congress voted economic sanctions against China."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre",
+    "title": "1989 Tiananmen Square protests and massacre",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/tiananmen-square",
+    "title": "Tiananmen Square Protests: 1989, Massacre & Tank Man",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Protests led by students and workers in Tiananmen Square from 15 April to 4 June 1989; known in China as the June Fourth Incident.",
+   "Death toll estimates range from several hundred to the low thousands, with thousands wounded; the subject is censored in China.",
+   "The protests began after the death of Hu Yaobang in April 1989.",
+   "Market reforms of the 1980s; frustration with lack of political freedom and economic problems; workers protested over inflation and Deng's reforms.",
+   "A hunger strike in May spread support; protests reached some 400 cities.",
+   "Gorbachev's visit of 15 May was disrupted; his welcome ceremony moved to the airport; by end of May over a million people gathered.",
+   "Martial law was declared on 20 May; 250,000 (HISTORY.com) to 300,000 (Wikipedia) troops; troops halted by residents.",
+   "On the night of 3-4 June troops occupied the square, firing live rounds; most killings along Chang'an Avenue; some protesters fought back and burned vehicles.",
+   "On 5 June the unidentified 'Tank Man' blocked a column of tanks.",
+   "The government suppressed protests, made mass arrests (up to 10,000 per HISTORY.com) and purged sympathetic officials; political reform halted; market reforms resumed and accelerated after 1992.",
+   "World leaders condemned the crackdown; the US Congress voted sanctions."
+  ],
+  "disagree": "The number killed is unknown: estimates range from several hundred to the low thousands (Wikipedia) or from hundreds to thousands (HISTORY.com).",
+  "checked": null
+ },
+ "Q181026": {
+  "title": "Monroe Doctrine",
+  "y": 1823,
+  "place": "Washington, D.C.",
+  "paras": [
+   "The Monroe Doctrine was the statement of American foreign policy that President James Monroe set out in his annual message to Congress on 2 December 1823. It declared that the American continents were 'henceforth not to be considered as subjects for colonization by any European powers', that any European attempt to extend its power in the Western Hemisphere would be seen as a threat to the United States, and that the United States in turn would stay out of Europe's affairs and leave existing European colonies alone.",
+   "By the early 1820s most of Spain's and Portugal's American colonies had won independence, and in 1822 the United States recognised the new republics of Argentina, Chile, Peru, Colombia and Mexico. Washington and London both feared that the monarchies of continental Europe would try to restore Spanish rule, and Russia had claimed the Pacific Northwest coast in 1821. Britain proposed a joint declaration, but Secretary of State John Quincy Adams persuaded Monroe to act alone, so as not to tie America's hands, and drafted most of the message himself.",
+   "At first the United States lacked the power to enforce it, and for years it was the British Royal Navy that in practice kept other European powers out; the policy was not even named after Monroe until 1850. The United States did not invoke it when Britain occupied the Falkland Islands in 1833. As American strength grew, it was used more forcefully: against the French-installed Emperor Maximilian in Mexico in the 1860s, and against Britain in the Venezuela boundary crisis of 1895.",
+   "In 1904 President Theodore Roosevelt added the 'Roosevelt Corollary', claiming a right to act as an 'international police power' in the hemisphere, which justified American interventions in the Dominican Republic, Nicaragua, Haiti and Cuba. Franklin D. Roosevelt's Good Neighbor policy later softened this, but the doctrine remained a basis of American policy toward Latin America."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Monroe_Doctrine",
+    "title": "Monroe Doctrine",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     8
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/monroe-doctrine",
+    "title": "Monroe Doctrine: Definition, Purpose & Corollary",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Monroe set out the doctrine in his message to Congress on 2 December 1823: no further European colonisation of the Americas; European interference a threat; the US would not interfere in Europe or with existing colonies.",
+   "Latin American countries had won independence; in 1822 the US recognised Argentina, Chile, Peru, Colombia and Mexico.",
+   "Britain and the US feared European attempts to restore colonial rule; Russia's Alexander I claimed Pacific Northwest territory in 1821.",
+   "Adams convinced Monroe to make a unilateral statement rather than a joint one with Britain.",
+   "Adams wrote most of the message.",
+   "For many years the Royal Navy was the sole enforcer; it was named after Monroe only in 1850.",
+   "The US did not invoke it against the British occupation of the Falklands in 1833; it supported Juárez against Maximilian (1867).",
+   "Cleveland invoked it against Britain in the 1895 Venezuela crisis.",
+   "The 1904 Roosevelt Corollary claimed an 'international police power', justifying interventions in the Dominican Republic, Nicaragua, Haiti and Cuba; FDR's Good Neighbor policy softened it; it continued to be used."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://history.state.gov/milestones/1801-1829/monroe",
+   "result": "5 claims checked: the message of 2 December 1823, the non-colonisation principle and separate spheres, Russian expansion from Alaska, Britain's proposal of a joint declaration and Adams's insistence on a unilateral statement agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q214524": {
+  "title": "Gettysburg Address",
+  "y": 1863,
+  "place": "Gettysburg, Pennsylvania",
+  "paras": [
+   "On 19 November 1863 President Abraham Lincoln gave a short speech at the dedication of the Soldiers' National Cemetery at Gettysburg, Pennsylvania, four and a half months after the Union victory there. In 271 words and less than two minutes, beginning 'Four score and seven years ago', it became one of the most famous speeches in American history.",
+   "At Gettysburg, in three days of fighting that July, the Union army had defeated Robert E. Lee's Confederates in the deadliest battle of the Civil War, leaving thousands of soldiers hastily buried. A local attorney, David Wills, led the effort to create a national cemetery. The main speaker was the celebrated orator Edward Everett, for whom the ceremony was delayed from October; Wills asked Lincoln only to give 'a few appropriate remarks' after the oration. Lincoln travelled from Washington on 18 November and spent the night in Wills's house; he felt unwell and was soon afterwards found to have a mild case of smallpox.",
+   "Before a crowd of about 15,000 Everett spoke for two hours, some 13,600 words. Lincoln then spoke ten sentences. He went back to the Declaration of Independence, not the Constitution, to define the nation as 'dedicated to the proposition that all men are created equal', presented the war as a test of whether such a nation could endure, and called on the living to finish the work of the dead, so that 'this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.'",
+   "Newspapers reprinted the speech the next day; Republican papers praised it and Democratic ones derided it. Everett wrote to Lincoln that he wished he had come as near to the central idea of the occasion in two hours as Lincoln had in two minutes. By recasting the war as a struggle for human equality as well as for the Union, the address became a defining statement of American ideals."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Gettysburg_Address",
+    "title": "Gettysburg Address",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/gettysburg-address",
+    "title": "Gettysburg Address: Lincoln's Speech, Text & Analysis",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "On 19 November 1863 Lincoln delivered the address at the dedication of the National Cemetery at Gettysburg.",
+   "It has 271 words and was read in less than two minutes.",
+   "The battle four months earlier was the deadliest of the war; soldiers were hastily buried; Lee retreated on 4 July; the battle lasted three days.",
+   "David Wills led the cemetery effort and invited Lincoln to give 'a few appropriate remarks' after the oration; Everett was the main speaker and the date was delayed from October 23.",
+   "Lincoln left Washington on 18 November, stayed at Wills's house, felt weak and was diagnosed with a mild case of smallpox.",
+   "About 15,000 people; Everett spoke for two hours (13,607 words); Lincoln's speech was ten sentences.",
+   "Lincoln invoked the Declaration of Independence: 'all men are created equal'; the war tested whether the nation could endure; 'a new birth of freedom'; 'government of the people, by the people, for the people'.",
+   "The speech opens 'Four score and seven years ago'.",
+   "Newspapers reprinted it; Republican papers praised it and Democratic ones derided it.",
+   "Everett wrote that he wished he had come as near the central idea in two hours as Lincoln did in two minutes; the address redefined the war as a struggle for equality."
+  ],
+  "disagree": "HISTORY.com says the speech was fewer than 275 words long; Wikipedia counts 271 words.",
+  "checked": null
+ },
+ "Q4576": {
+  "title": "Marshall Plan",
+  "y": 1948,
+  "place": "Western Europe and Washington",
+  "paras": [
+   "The Marshall Plan, officially the European Recovery Program, was the American programme of aid to rebuild the economies of Western Europe after the Second World War. President Harry Truman signed it into law on 3 April 1948, and over the four years it ran the United States transferred some $13.3 billion to 17 European countries (other counts give about $17 billion), mostly as grants.",
+   "Europe in 1947 was in ruins. Cities such as London, Berlin, Hamburg, Cologne and Dresden had been partly or wholly destroyed, railways, ports, bridges and power plants wrecked, and some regions were close to famine. The United States was the one great power whose territory had not been damaged. In a speech at Harvard University in June 1947, Secretary of State George C. Marshall called for urgent help for Europe's recovery, provided the Europeans drew up a joint plan. The participating countries met in the second half of 1947. The Soviet Union and its satellites were invited too, but refused, fearing American involvement in their affairs, and Moscow answered with its own Molotov Plan.",
+   "The aid was distributed roughly in proportion to population, with large shares going to the major industrial countries, Britain, France and West Germany, whose revival was seen as the key to Europe's; Britain received about a quarter of the total. A stated aim was to halt the spread of communism in Western Europe by restoring prosperity.",
+   "Economists still debate how much the plan itself contributed: the aid amounted to about 3 percent of the recipients' combined national income, and recovery was already under way. But by its last year, 1951-52, the recipients' economies had grown beyond their pre-war levels. Politically, the plan deepened the division of Europe between East and West, marked the onset of the Cold War, and helped pave the way for NATO in 1949. At the end of 1951 it was replaced by the Mutual Security programme."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Marshall_Plan",
+    "title": "Marshall Plan",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/marshall-plan-1",
+    "title": "Marshall Plan: Definition, Purpose & Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Truman signed the Marshall Plan on 3 April 1948; it ran for four years.",
+   "The US transferred $13.3 billion to 17 countries (also counted as $17 billion).",
+   "Many cities (London, Dresden, Berlin, Cologne, Hamburg) destroyed; transport infrastructure wrecked; some regions near famine; the US was the only power not structurally damaged.",
+   "Marshall spoke at Harvard in June 1947 of an urgent need to help European recovery.",
+   "Participating states met in the latter half of 1947; the Soviet Union and its satellites were invited but refused; the USSR developed the Molotov Plan.",
+   "Aid was distributed roughly per capita, with larger amounts to West Germany, France and Britain; Britain received about a quarter.",
+   "A stated goal was to halt the spread of communism.",
+   "Aid was about 3% of recipients' combined national income; its economic benefit is debated; recovery was already under way; by 1952 growth exceeded pre-war levels.",
+   "The plan reinforced East-West divisions, is cited as the beginning of the Cold War and a catalyst for NATO (1949).",
+   "It was replaced by the Mutual Security programme at the end of 1951."
+  ],
+  "disagree": "Totals differ by how they are counted: Wikipedia gives $13.3 billion to 17 countries and, elsewhere, $17 billion over four years; the U.S. Office of the Historian says funding eventually rose to over $12 billion; HISTORY.com says aid went to 16 nations.",
+  "checked": {
+   "by": "https://history.state.gov/milestones/1945-1952/marshall-plan",
+   "result": "5 claims checked: Marshall's Harvard speech of June 1947, the aim of halting communism, the Soviet refusal out of concern over U.S. involvement, aid confined to Western Europe and the scale of funding (over $12 billion, a different count from the $13.3 billion given) agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q49101": {
+  "title": "Suez Crisis",
+  "y": 1956,
+  "place": "Egypt: the Suez Canal and Sinai",
+  "paras": [
+   "The Suez Crisis of 1956 was the invasion of Egypt by Israel, Britain and France after President Gamal Abdel Nasser nationalised the Suez Canal. It ended in a political defeat for the invaders under pressure from the United States and the Soviet Union, and is remembered as the moment Britain and France lost their standing as great powers.",
+   "The canal, opened in 1869 and run by an Anglo-French company, was the vital shipping link between Europe and Asia, and British troops had long been stationed in the canal zone. Nasser, who had begun receiving Soviet-bloc arms in 1955, was angered when the United States withdrew its promise to help finance the Aswan High Dam, and in a speech in Alexandria on 26 July 1956 he announced that he was nationalising the canal, whose tolls would pay for the dam. Britain's prime minister Anthony Eden was determined to remove him; France blamed Nasser for aiding the rebels in Algeria, and Israel wanted to strike Egypt's army and open the Straits of Tiran. The three planned the attack in secret.",
+   "Israel invaded Sinai on 29 October 1956. Britain and France, claiming to separate the two sides, issued an ultimatum and on 31 October joined the attack, bombing Egypt and landing troops at Port Said and Port Fuad to seize the canal zone. The canal was closed and remained so until March 1957. The Soviet leader Nikita Khrushchev, then crushing the revolt in Hungary, threatened Western Europe with missiles, while President Dwight Eisenhower, furious at not being told, threatened Britain, France and Israel with economic sanctions unless they withdrew.",
+   "The invaders gave way. A United Nations Emergency Force, the first UN peacekeeping force, proposed by the Canadian diplomat Lester Pearson, who won the Nobel Peace Prize for it, took over; British and French troops left by December, and Israel withdrew from Sinai and Gaza in early 1957 after an occupation of four months, gaining the right to sail through the Straits of Tiran. Eden resigned in January 1957. Nasser emerged as the hero of Arab nationalism, and the United States and Soviet Union as the arbiters of the Middle East."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+    "title": "Suez Crisis",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/suez-crisis",
+    "title": "Suez Crisis: Definition, Conflict & Cause",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "A British-French-Israeli invasion of Egypt in 1956 after Nasser nationalised the canal; Britain and France were weakened as world powers.",
+   "The canal opened in 1869, was run by a British-French organisation; British forces in the canal zone under the 1936 treaty.",
+   "Nasser announced nationalisation in Alexandria on 26 July 1956; Soviet-bloc arms from 1955; the US had reneged on funding the Aswan Dam; tolls were to pay for it.",
+   "Eden was committed to Nasser's removal; France believed Nasser supported Algerian rebels; Israel wanted to hit Egypt's army and navigate Tiran; secret talks.",
+   "Israel struck first on 29 October 1956; after an ultimatum Britain and France joined on 31 October; troops landed at Port Said and Port Fuad.",
+   "The canal was closed from October 1956 to March 1957.",
+   "Khrushchev, facing Hungary, threatened nuclear missiles on Western Europe; Eisenhower, upset at not being informed, threatened economic sanctions.",
+   "UNEF was the first UN peacekeeping force; British and French forces withdrew by December.",
+   "Pearson received the Nobel Peace Prize; Israel's four-month occupation; it gained navigation of the Straits of Tiran.",
+   "Eden resigned two months after the withdrawal; Nasser became a hero of Arab nationalism; the US and USSR took a more powerful role."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q132568": {
+  "title": "Battle of the Somme",
+  "y": 1916,
+  "place": "The river Somme, northern France",
+  "paras": [
+   "The Battle of the Somme was a joint British and French offensive against the German army on the Western Front, fought on both sides of the upper Somme from 1 July to 18 November 1916. More than three million men took part and more than a million were killed or wounded, making it one of the deadliest battles in history; its first day is still the bloodiest in the history of the British Army.",
+   "The Allied commanders, Joseph Joffre and the British commander-in-chief Sir Douglas Haig, planned the offensive for 1916 as a mainly French effort. But when the Germans attacked the French at Verdun in February, many French divisions were diverted there, and the British, including many volunteers of the new 'Pals' battalions raised from the same towns and workplaces, took the main part. The attack was also meant to relieve the pressure on Verdun.",
+   "After a five-day artillery bombardment, eleven divisions of the British Fourth Army went over the top on the morning of 1 July along a front of about 15 miles north of the river, with French divisions advancing to the south. The shelling had failed to cut the barbed wire or destroy the deep German dugouts, and German machine guns cut down the advancing lines. By nightfall the British had 57,470 casualties, 19,240 of them killed; the French, facing weaker defences, did better. The Accrington Pals lost 584 of some 720 men.",
+   "Haig pressed on in a battle of attrition. A surprise attack on Bazentin Ridge on 15 July gained ground; on 15 September at Flers-Courcelette the British used tanks for the first time in history, though many broke down. Autumn rain turned the ground to mud, and the offensive ended in mid-November with an advance of about seven miles. German losses were comparable to the Allies'; worn down on the Somme and at Verdun, the Germans withdrew in March 1917 to the shorter, fortified Hindenburg Line."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Somme",
+    "title": "Battle of the Somme",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-the-somme",
+    "title": "Battle of the Somme: Facts & Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "Fought between 1 July and 18 November 1916 on the Somme by British and French against Germany.",
+   "More than three million men; more than one million killed or wounded; one of the deadliest battles.",
+   "Haig commanded the BEF; Joffre's strategy; Verdun (from 21 February 1916) diverted French divisions and the British attack became the main effort.",
+   "Many British soldiers were volunteers in Pals battalions; the offensive diverted German forces from Verdun.",
+   "After a five-day bombardment, 11 divisions of the Fourth Army advanced on a 15-mile front north of the river with French divisions to the south.",
+   "Barbed wire remained intact and deep German positions survived; machine guns cut down the British; 57,470 British casualties including 19,240 killed, the worst in British Army history.",
+   "The Accrington Pals: of about 720 men, 584 killed or wounded.",
+   "Bazentin Ridge attack of 15 July; first use of tanks on 15 September at Flers-Courcelette; many broke down.",
+   "Autumn mud; the offensive ended on 18 November with an advance of about seven miles.",
+   "German losses probably exceeded British (about 450,000 vs 420,000 per HISTORY.com); the Germans retreated to the Hindenburg Line in March 1917."
+  ],
+  "disagree": "Losses are disputed: HISTORY.com estimates about 450,000 German and 420,000 British losses; Wikipedia gives over a million killed and wounded on all sides.",
+  "checked": null
+ },
+ "Q36749": {
+  "title": "Beer Hall Putsch",
+  "y": 1923,
+  "place": "Munich, Bavaria",
+  "paras": [
+   "The Beer Hall Putsch, or Munich Putsch, was a failed attempt by Adolf Hitler, leader of the small Nazi Party, together with the First World War general Erich Ludendorff and other nationalist leaders, to seize power in Bavaria on 8-9 November 1923, as the first step towards a march on Berlin to overthrow the Weimar Republic.",
+   "1923 was a year of crisis in Germany: reparations under the Treaty of Versailles had fed runaway inflation that destroyed people's savings, and from January French and Belgian troops occupied the Ruhr. Bavaria was ruled under a state of emergency by a triumvirate led by the state commissioner Gustav von Kahr, who had his own plans for a nationalist dictatorship. Hitler, inspired by Mussolini's March on Rome a year earlier, decided to force Kahr's hand.",
+   "On the evening of 8 November, while Kahr was speaking at the Bürgerbräukeller, one of Munich's biggest beer halls, Hitler and some 600 SA men surrounded the building. Hitler burst in, fired a shot into the ceiling and proclaimed a 'national revolution', and Kahr and two colleagues were held in a back room until they appeared to agree. But after Hitler left, Ludendorff let them go, and the putschists failed to take most government buildings. The next day Hitler and Ludendorff led some 2,000 supporters towards the city centre; at the Feldherrnhalle a police cordon blocked them and shots were exchanged. Four policemen were killed, along with 15 or 16 Nazis and a bystander. Hitler, who dislocated his shoulder, fled and was arrested two days later.",
+   "Tried for high treason in early 1924, Hitler used the courtroom as a platform and became known across Germany. He was sentenced to five years in Landsberg Prison, where he dictated Mein Kampf with the help of Rudolf Hess, but was released after nine months, on 20 December 1924. He concluded that the Nazis should win power by legal means, and ten years after the putsch he became chancellor; the dead marchers were later honoured as Nazi martyrs."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Beer_Hall_Putsch",
+    "title": "Beer Hall Putsch",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     5,
+     7,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/beer-hall-putsch",
+    "title": "Beer Hall Putsch: Definition, Hitler & Facts",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "A failed coup led by Hitler, Ludendorff and other leaders in Munich on 8-9 November 1923 aiming at a march on Berlin against the Weimar Republic.",
+   "Reparations caused runaway inflation; French and Belgian forces occupied the Ruhr from January 1923.",
+   "Bavaria was under a state of emergency; Kahr was state commissioner with dictatorial powers; the triumvirate had its own plans for a nationalist dictatorship.",
+   "Hitler was inspired by Mussolini's march on Rome.",
+   "On the evening of 8 November Hitler and about 600 SA men surrounded the Bürgerbräukeller where Kahr was speaking.",
+   "Hitler fired a shot into the ceiling and declared a national revolution; Kahr and two colleagues were held in a back room; after Hitler left Ludendorff let them go; attempts to take government buildings failed.",
+   "The next day about 2,000 (HISTORY.com: 2,500-3,000) marched on the city centre and were stopped by police at the Feldherrnhalle; four police officers were killed, with 15 Nazis and a bystander (HISTORY.com: 16 Nazis).",
+   "Hitler was convicted of treason and sentenced to five years in Landsberg, where he dictated Mein Kampf with Hess; he was released on 20 December 1924 after nine months.",
+   "Hitler dislocated his shoulder, fled, and was arrested on 11 November 1923; the trial made him a national figure.",
+   "Afterwards he sought power by legal means; he became chancellor in 1933.",
+   "The 16 dead Nazis became martyrs of the party."
+  ],
+  "disagree": "Numbers differ: Wikipedia gives about 2,000 marchers and 15 Nazis and one bystander killed; HISTORY.com gives 2,500 to 3,000 marchers and 16 Nazis killed (the Nazis counted 16 'martyrs').",
+  "checked": null
+ },
+ "Q161227": {
+  "title": "Yalta Conference",
+  "y": 1945,
+  "place": "Yalta, Crimea, Soviet Union",
+  "paras": [
+   "The Yalta Conference, held from 4 to 11 February 1945 in the palaces of Livadia and others near Yalta in Crimea, brought together the 'Big Three' Allied leaders, President Franklin D. Roosevelt, Prime Minister Winston Churchill and Marshal Joseph Stalin, to settle the shape of Germany and Europe after the coming victory over Nazi Germany. It followed their first meeting at Tehran in November 1943 and was followed by the Potsdam Conference in July 1945.",
+   "Victory in Europe was in sight: the Western Allies had liberated France and Belgium and reached the German border, and Soviet forces, having driven the Germans out of Poland, Romania and Bulgaria, stood about 40 miles from Berlin. That gave Stalin a strong hand, and he had insisted on meeting on Soviet soil. Roosevelt wanted the Soviet Union to join the war against Japan and to take part in a new United Nations; Churchill pressed for free elections and democratic governments in Eastern Europe, above all in Poland.",
+   "The leaders agreed that defeated Germany would be demilitarised, 'denazified' and divided, like Berlin, into four occupation zones, with a French zone carved out of the American and British ones, although France's leader Charles de Gaulle was not invited. Stalin promised to enter the war against Japan two or three months after Germany's surrender, in return for southern Sakhalin and the Kuril Islands. He accepted the plan for the United Nations once the permanent members of the Security Council were given a veto. On Poland, which Stalin called a question of honour and security, the Soviet Union kept the territory it had taken in 1939; Stalin agreed to broaden the communist-led provisional government and to hold free elections, and signed a Declaration on Liberated Europe promising the same across Eastern Europe.",
+   "The Red Army already held Poland and much of Eastern Europe, and the Declaration did little to change the spheres of influence that had in effect been agreed. Within a few years, as the Cold War divided the continent, Yalta became the subject of intense controversy, and many Poles felt betrayed by their wartime allies."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Yalta_Conference",
+    "title": "Yalta Conference",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/yalta-conference",
+    "title": "Yalta Conference: Definition, Date & Summary",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Held 4-11 February 1945 near Yalta in Crimea in the Livadia, Yusupov and Vorontsov palaces; heads of government of the US, UK and USSR on postwar Germany and Europe.",
+   "Preceded by Tehran (November 1943), followed by Potsdam (July 1945).",
+   "France and Belgium liberated; Soviet forces 40 miles from Berlin, having pushed the Germans from Poland, Romania and Bulgaria; Stalin proposed the Black Sea resort.",
+   "Roosevelt wanted Soviet support against Japan and participation in the UN; Churchill pressed for free elections in Eastern Europe, especially Poland.",
+   "Germany to be divided into four zones, as was Berlin; demilitarised and denazified; the French zone from the US and British zones; de Gaulle not invited.",
+   "Stalin agreed to join the war against Japan within two or three months after Germany's surrender, in return for South Sakhalin and the Kurils.",
+   "Stalin agreed to Soviet participation in the UN after agreement on a Security Council veto for permanent members.",
+   "Poland was a question of honour and security for Stalin; the USSR would keep territory annexed in 1939; other parties admitted to the provisional government and free elections promised; Declaration of Liberated Europe.",
+   "The Red Army already occupied Poland and much of Eastern Europe; the Declaration of Liberated Europe did little to dispel sphere-of-influence agreements.",
+   "With the Cold War the conference became a subject of intense controversy; many Poles felt betrayed."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://history.state.gov/milestones/1937-1945/yalta-conf",
+   "result": "4 claims checked: the dates 4-11 February 1945, Soviet entry into the war against Japan in return for territory, the declaration on Poland's provisional government and the agreement on Security Council voting agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q83055": {
+  "title": "Operation Barbarossa",
+  "y": 1941,
+  "place": "The western Soviet Union, from the Baltic to the Black Sea",
+  "paras": [
+   "Operation Barbarossa was the invasion of the Soviet Union by Nazi Germany and its European Axis allies, launched on Sunday 22 June 1941. More than three million troops attacked along a front of some 1,800 miles (2,900 km), aiming to destroy the Red Army and seize the country up to a line from Arkhangelsk to Astrakhan. It was the largest and costliest military offensive in history.",
+   "Hitler had signed a non-aggression pact with Stalin in August 1939, but conquering 'living space' in the east, colonising the western Soviet Union with Germans and ridding it of communism and of its Slavic and Jewish inhabitants had always been his central goal. With France defeated and only Britain still fighting, he ordered the invasion in Directive 21 at the end of 1940, naming it after the medieval emperor Frederick Barbarossa. Stalin ignored repeated warnings, and the attack took the Red Army by surprise.",
+   "Three army groups drove towards Leningrad, Moscow and Ukraine. The Luftwaffe destroyed hundreds of Soviet aircraft on the first day, and huge encirclements took millions of Red Army soldiers prisoner; of the five million Soviet soldiers the Axis captured over the course of the war, 3.3 million were starved or otherwise killed. Behind the front, SS death squads, the Einsatzgruppen, and their collaborators shot civilians in mass killings that murdered over a million Soviet Jews, the start of the Holocaust's mass murder. Army Group Centre took Smolensk in late July, but in August Hitler, over his generals' objections, diverted forces south to Ukraine; Kiev fell on 19 September, and Leningrad was cut off and besieged.",
+   "The drive on Moscow, Operation Typhoon, began on 2 October, but autumn mud, stretched supply lines, the onset of a winter for which the Germans were not equipped, and stiffening resistance by reinforced Soviet armies halted it at the outskirts of the city. On 5 December the Red Army launched a counter-offensive that drove the Germans back. Barbarossa had won vast territory but failed in its aim of forcing the Soviet Union to capitulate, condemning Germany to a long war on the Eastern Front that it would lose."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
+    "title": "Operation Barbarossa",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/operation-barbarossa",
+    "title": "Operation Barbarossa: Definition, Hitler & Facts",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The invasion of the Soviet Union by Germany and Axis allies began on Sunday 22 June 1941.",
+   "More than 3 million (Wikipedia: 3.8 million) Axis troops on an 1,800-mile front; the goal was the Arkhangelsk-Astrakhan line.",
+   "The largest and costliest military offensive in history.",
+   "Ideological goals: eradicating communism and colonising the western Soviet Union with Germans (Generalplan Ost), removing Slavic peoples; named after Frederick Barbarossa.",
+   "The non-aggression pact of August 1939; with France defeated Hitler turned east; Directive 21 at the end of 1940.",
+   "Stalin refused to believe warnings; the Red Army was caught unprepared.",
+   "Three-pronged attack toward Leningrad, Moscow and Ukraine; the Luftwaffe shot down many Soviet aircraft on day one; millions taken prisoner.",
+   "The Axis captured five million Soviet soldiers and killed 3.3 million POWs; Einsatzgruppen murdered over a million Soviet Jews.",
+   "Smolensk captured in late July; Hitler delayed the Moscow drive in favour of Ukraine over his generals' protests; Kiev fell on 19 September; Leningrad besieged.",
+   "The Moscow drive (Operation Typhoon) began on 2 October; stalled by mud, supply problems, winter and Soviet resistance.",
+   "The offensive stalled by 5 December, when the Soviets began a major counteroffensive.",
+   "Barbarossa failed to force the Soviet Union to capitulate."
+  ],
+  "disagree": "Troop numbers differ: HISTORY.com gives more than 3 million German and Axis troops, Wikipedia more than 3.8 million. HISTORY.com says more than 1,000 Soviet aircraft were shot down on the first day.",
+  "checked": null
+ },
+ "Q159950": {
+  "title": "Russo-Japanese War",
+  "y": 1904,
+  "place": "Manchuria, Korea and the Yellow Sea and Sea of Japan",
+  "paras": [
+   "The Russo-Japanese War, from February 1904 to September 1905, was fought between the Russian Empire and the Empire of Japan over their rival ambitions in Manchuria and Korea. The complete victory of an Asian nation over a European power surprised the world, made Japan a great power and damaged Russia's prestige.",
+   "After Japan defeated China in 1895 it had been forced by Russia, Germany and France to give up the Liaodong Peninsula and Port Arthur, which Russia then leased from China in 1898 as the warm-water Pacific port it badly wanted, since Vladivostok froze in winter. As Russia built the Trans-Siberian Railway and pushed into Korea, Japan, allied with Britain from 1902, offered to recognise Russian dominance in Manchuria in return for a free hand in Korea. Talks broke down, and on the night of 8-9 February 1904 Japanese torpedo boats under Admiral Tōgō Heihachirō made a surprise attack on the Russian Pacific Fleet at Port Arthur; Japan declared war the same day.",
+   "Japanese troops landed in Korea, took Seoul, crossed the Yalu River into Manchuria in May 1904 and besieged Port Arthur from August. After costly assaults the fortress surrendered in January 1905. In February and March Japanese armies defeated the Russians in the great battle of Mukden. Meanwhile Russia's Baltic Fleet sailed some 18,000 nautical miles around the world to relieve the Pacific, only to be intercepted and destroyed by Tōgō's fleet in the Strait of Tsushima on 27-28 May 1905; Russia lost eight battleships and more than 5,000 men.",
+   "U.S. President Theodore Roosevelt mediated the peace, and the Treaty of Portsmouth, signed on 5 September 1905, recognised Japan's interests in Korea and gave it Russia's lease on the Liaodong Peninsula, the South Manchuria Railway and the southern half of Sakhalin; Roosevelt received the Nobel Peace Prize. Both sides together suffered more than 150,000 casualties, and some 20,000 Chinese civilians were killed. In Russia, the humiliating defeat fed the unrest of the 1905 Revolution, which forced the autocracy to make concessions."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Russo-Japanese_War",
+    "title": "Russo-Japanese War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/russo-japanese-war",
+    "title": "Russo-Japanese War: Causes, Timeline & Treaty",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The war (8 February 1904 - 5 September 1905) was fought over rival imperial ambitions in Manchuria and Korea.",
+   "Russia needed a warm-water Pacific port as Vladivostok closed in winter.",
+   "The Triple Intervention forced Japan to give up Liaodong and Port Arthur; Russia leased them in 1898; the Trans-Siberian railway; inroads in Korea; the Anglo-Japanese Alliance of 1902; Japan offered recognition of Russian dominance in Manchuria for Korea.",
+   "Negotiations broke down; Japan made a surprise attack on Port Arthur (8/9 February 1904) under Togo; Japan declared war the same day.",
+   "Japanese troops landed in Korea and took Seoul; crossed the Yalu in May 1904; siege of Port Arthur from August.",
+   "Port Arthur surrendered in January 1905.",
+   "The Japanese defeated the Russians at Mukden (February-March 1905).",
+   "The Baltic Fleet sailed about 18,000 (HISTORY.com: nearly 20,000) nautical miles and was destroyed at Tsushima on 27-28 May 1905; Russia lost eight battleships and over 5,000 men.",
+   "The Treaty of Portsmouth (5 September 1905), mediated by Theodore Roosevelt, gave Japan recognition in Korea, the Liaodong lease, the South Manchuria Railway and southern Sakhalin.",
+   "Roosevelt won the Nobel Peace Prize.",
+   "Combined casualties of more than 150,000 and some 20,000 Chinese civilians killed.",
+   "The victory of an Asian nation over a European power surprised observers; Japan became a great power and Russia lost prestige; defeat contributed to the 1905 Russian Revolution."
+  ],
+  "disagree": "HISTORY.com dates the surprise attack on Port Arthur to 8 February 1904; Wikipedia to 9 February (27 January in the Russian calendar), the attack having begun on the night of 8-9 February.",
+  "checked": null
+ },
+ "Q899": {
+  "title": "Suez Canal opened",
+  "y": 1869,
+  "place": "Isthmus of Suez, Egypt",
+  "paras": [
+   "The Suez Canal, a waterway of about 120 miles (193 km) across the Isthmus of Suez from Port Said on the Mediterranean to Suez on the Red Sea, was opened on 17 November 1869 after ten years of construction. It gave ships a direct route between Europe and Asia without sailing around Africa, and remains one of the world's most important trade routes.",
+   "Canals linking the Nile to the Red Sea had existed in antiquity, but a direct cut was long thought impossible because the Red Sea was believed to lie several metres higher than the Mediterranean. Surveys by the French engineer Linant de Bellefonds showed the two seas were at the same level, so a canal without locks was possible. In 1854 and 1856 the French diplomat Ferdinand de Lesseps obtained concessions from Sa'id Pasha, the khedive who governed Egypt under the Ottomans, to form a company to build a canal open to ships of all nations; an international commission of 13 experts, among them the engineer Alois Negrelli, drew up the plans, and the Suez Canal Company was founded in 1858 with a 99-year concession. Its shares sold well in France but Britain, Austria and Russia bought few.",
+   "Work began at the site of Port Said on 25 April 1859. For the first years the digging was done largely by forced labour, the Egyptian corvée, which was used until 1864; many workers died, though estimates vary enormously. Costs rose to more than double the original estimate. Khedive Isma'il Pasha opened the canal with great ceremony on 17 November 1869; the French Empress Eugénie's yacht L'Aigle led the official procession.",
+   "Traffic grew more slowly than expected, and in 1875 Egypt's debts forced the khedive to sell his shares to Britain. The Convention of Constantinople of 1888 declared the canal a neutral zone open to all, under British protection. The canal had a profound effect on world trade and played a part in the European colonisation of Africa, and its control remained a source of conflict until Egypt nationalised it in 1956."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Suez_Canal",
+    "title": "Suez Canal",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/suez-canal",
+    "title": "Suez Canal: Definition, Location & Map",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "The canal is about 120 miles (193 km) long, from Port Said to Suez; it took ten years to build and opened on 17 November 1869.",
+   "It is a key trade route between Europe and Asia.",
+   "Earlier canals linked the Nile and the Red Sea; a direct canal was thought impossible because of an assumed difference in sea levels; Linant de Bellefonds showed the levels were the same; a canal without locks.",
+   "In 1854 and 1856 de Lesseps obtained concessions from Sa'id Pasha to form a company to build a canal open to all nations.",
+   "An International Commission of 13 experts from seven countries including Negrelli; the company was formed in 1858.",
+   "Shares sold well in France but Britain, Austria and Russia bought few.",
+   "Work began at Port Said on 25 April 1859; forced labour (corvée) was used until 1864; death estimates vary widely.",
+   "Isma'il Pasha formally opened the canal on 17 November 1869.",
+   "The company had a 99-year lease; costs rose to more than double the estimate.",
+   "Empress Eugénie's yacht L'Aigle was officially the first ship through.",
+   "Ismail sold his shares to Britain in 1875 because of financial troubles; the canal had a profound impact on trade and the colonisation of Africa.",
+   "The 1888 Convention of Constantinople made the canal a neutral zone under British protection; Egypt nationalised it in 1956 (see the Suez Crisis)."
+  ],
+  "disagree": "Estimates of deaths among the canal's workers range from tens of thousands (HISTORY.com) or 120,000 (Nasser, 1956) to a low rate reported by the company's chief medical officer (Wikipedia). HISTORY.com says some 1.5 million people worked on the project.",
+  "checked": null
+ },
+ "Q130861": {
+  "title": "Battle of Kursk",
+  "y": 1943,
+  "place": "The Kursk salient, western Russia",
+  "paras": [
+   "The Battle of Kursk, fought from 5 July to 23 August 1943 on the Eastern Front, began with Germany's last great offensive in the east, Operation Citadel, against a huge Soviet-held bulge in the front line around the city of Kursk, and ended with powerful Soviet counter-offensives. Germany's heavy losses in men and tanks left the Red Army with the strategic initiative for the rest of the war.",
+   "After the disaster at Stalingrad, Field Marshal Erich von Manstein's counter-attack in early 1943 retook Kharkov and Belgorod and left a salient about 150 miles from north to south projecting into the German line. Hitler planned to pinch it off with simultaneous attacks from the north, by the 9th Army, and the south, by the 4th Panzer Army, encircling the Soviet forces inside and showing that Germany still held the upper hand. But he delayed the attack for weeks to wait for better weather and new Panther and Tiger tanks. Forewarned by intelligence, the Soviets used the time to build deep belts of defences, with trenches, anti-tank ditches and minefields, and to gather large reserves.",
+   "The offensive opened on 5 July; the first day was the costliest in the history of air warfare in aircraft shot down. In the north the 9th Army barely dented the Soviet defences and was halted by 10 July. In the south the Germans pushed further, towards the village of Prokhorovka, where on 12 July Soviet armour of the 5th Guards Tank Army met the II SS Panzer Corps in one of the largest tank battles in history. The same day the Red Army opened its counter-offensive, Operation Kutuzov, against the German rear on the northern side. With the Allies landing in Sicily from 10 July, Hitler called off Citadel after about a week, partly to send forces to Italy.",
+   "From 3 August a second Soviet offensive, Operation Polkovodets Rumyantsev, struck the southern side of the salient, reaching the outskirts of Kharkov by 12 August; the battle ended on 23 August. After Kursk the Germans were largely on the defensive on the Eastern Front for the rest of the war."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kursk",
+    "title": "Battle of Kursk",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-kursk",
+    "title": "Battle of Kursk: Facts, Map & Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Fought between 5 July and 23 August 1943; Operation Citadel against Soviet forces around Kursk; Soviet counter-offensives followed.",
+   "Germany's heavy losses ensured the Red Army held the strategic initiative for the rest of the war.",
+   "Manstein retook Kharkov (15 March) and Belgorod (18 March) in early 1943; the salient was about 150 miles north to south.",
+   "The plan was to pinch off the salient from north (9th Army) and south (4th Panzer Army) simultaneously; Hitler wanted to show Germany still held the upper hand.",
+   "Hitler delayed the attack for better weather and new Panther and Tiger tanks; the Soviets, forewarned, built deep defensive belts with mines and trenches and large reserves.",
+   "5 July was the single costliest day in aerial warfare in aircraft shot down.",
+   "The northern advance was halted by 10 July; in the south the Germans reached Prokhorovka, where on 12 July the 5th Guards Tank Army met the II SS Panzer Corps.",
+   "Prokhorovka is often called one of the largest tank battles in history.",
+   "On 12 July the Soviets launched Operation Kutuzov on the northern side.",
+   "Allied landings in Sicily (10 July) led Hitler to cancel Citadel after about a week, partly to divert forces to Italy.",
+   "On 3 August the Soviets began Operation Polkovodets Rumyantsev on the southern side; the outskirts of Kharkov were reached by 12 August.",
+   "After Kursk Germany was largely on the defensive in the East."
+  ],
+  "disagree": "Whether Prokhorovka was the largest tank battle in history is disputed: HISTORY.com notes that some Russian historians give the title to the Battle of Brody in 1941.",
+  "checked": null
+ },
+ "Q164983": {
+  "title": "Gallipoli campaign",
+  "y": 1915,
+  "place": "The Gallipoli peninsula and the Dardanelles, Ottoman Empire",
+  "paras": [
+   "The Gallipoli campaign, from 19 February 1915 to 9 January 1916, was the attempt by the Allies, chiefly Britain and France with troops from Australia, New Zealand and the French colonies, to force the Dardanelles strait, knock the Ottoman Empire out of the First World War and open a sea route to Russia. It ended in an Ottoman victory after eight months of fighting, with about 250,000 casualties on each side.",
+   "With the Western Front deadlocked and Russia appealing for help against an Ottoman offensive in the Caucasus, the First Lord of the Admiralty, Winston Churchill, pressed for a naval attack on the straits, over the objections of the First Sea Lord, Admiral John Fisher. British and French battleships began bombarding the outer forts on 19 February 1915, and on 18 March eighteen battleships tried to force the narrows; mines and Turkish guns sank three and badly damaged three more, and the fleet withdrew.",
+   "The Allies turned to a landing. General Sir Ian Hamilton assembled an army on the Greek island of Lemnos, while the German general Liman von Sanders strengthened the Ottoman defences. On 25 April 1915 the Allies landed at Cape Helles at the tip of the peninsula and at what became known as Anzac Cove on its Aegean coast, but despite heavy losses they could not advance far beyond the beaches, as Ottoman reinforcements arrived; Mustafa Kemal, the future founder of the Turkish Republic, made his name as a commander there. A new landing at Suvla Bay on 6 August, with attacks on the Sari Bair heights, was lost through delay and indecision.",
+   "Hamilton was replaced in October by Sir Charles Monro, who recommended withdrawal. The evacuation of the remaining 105,000 troops was authorised on 7 December; Anzac and Suvla were evacuated on 19-20 December under cover of a careful deception, with very few casualties, and the last troops left Helles on 9 January 1916. It was the most successful operation of the campaign. Of some 480,000 Allied troops engaged, more than 250,000 became casualties, around 46,000 of them dead; Ottoman losses were similar. The failure cost Fisher and Churchill their posts at the Admiralty. In Australia and New Zealand the anniversary of the landings, 25 April, is commemorated as Anzac Day."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Gallipoli_campaign",
+    "title": "Gallipoli campaign",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     8,
+     11
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-gallipoli",
+    "title": "Battle of Gallipoli: Facts & Significance",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.awm.gov.au/articles/encyclopedia/gallipoli",
+    "title": "Gallipoli",
+    "publisher": "Australian War Memorial",
+    "accessed": "2026-11-27",
+    "supports": [
+     6,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "The campaign ran from 19 February 1915 to 9 January 1916 on the Gallipoli peninsula; Allies (Britain, France, Australia, New Zealand, French colonies).",
+   "Aim: control of the straits and opening a route to Russia; Ottoman victory after eight months with about 250,000 casualties on each side.",
+   "With the Western Front stalled, Russia appealed for help against the Ottomans in the Caucasus; Churchill spearheaded the naval attack over Fisher's opposition.",
+   "Bombardment began on 19 February 1915; on 18 March 18 battleships entered the straits; mines and gunfire sank three and badly damaged three.",
+   "Hamilton commanded; troops assembled on Lemnos; Liman von Sanders strengthened the Turkish defences.",
+   "On 25 April 1915 landings at Helles and at Gaba Tepe (Anzac Cove); little progress as Turkish reinforcements arrived.",
+   "A new landing at Suvla Bay on 6 August with an advance on Sari Bair stalled through indecision and delay.",
+   "Mustafa Kemal rose to prominence as a commander at Gallipoli and became founder of the Turkish Republic.",
+   "Hamilton was replaced by Monro, who recommended evacuation of the remaining 105,000 troops; it was authorised on 7 December; Anzac and Suvla were evacuated on 19-20 December with few casualties, the most successful operation of the campaign; the last troops left Helles on 9 January 1916.",
+   "480,000 Allied troops took part; more than 250,000 casualties including 46,000 dead; Turkish losses about 250,000 including 65,000 killed.",
+   "Fisher resigned and Churchill lost his post; 25 April is Anzac Day in Australia and New Zealand."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://www.awm.gov.au/articles/encyclopedia/gallipoli",
+   "result": "5 claims checked: the aim of forcing the Dardanelles, the landing at Anzac Cove on 25 April 1915, the stalemate, and the evacuation agree; 1 claim was wrong and is corrected: the text said the evacuation began at Suvla on 7 December (the date it was authorised, after HISTORY.com); the AWM dates the evacuation of Anzac and Suvla to 19-20 December. The AWM page is now also cited for that claim.",
+   "errors": 1
+  }
+ },
+ "Q151005": {
+  "title": "Battle of Leipzig (Battle of the Nations)",
+  "y": 1813,
+  "place": "Leipzig, Kingdom of Saxony",
+  "paras": [
+   "The Battle of Leipzig, also called the Battle of the Nations, was fought around Leipzig in Saxony from 16 to 19 October 1813. The armies of the Sixth Coalition, Russia, Prussia, Austria and Sweden, led by Tsar Alexander I, Prince Karl von Schwarzenberg, Gebhard von Blücher and the Swedish Crown Prince Charles John (the former French marshal Bernadotte), decisively defeated Napoleon. With about 560,000 soldiers involved and some 133,000 casualties, it was the largest battle of the Napoleonic Wars and the largest in Europe before the First World War.",
+   "After the destruction of his army in Russia in 1812, Napoleon raised new forces and fought on in Germany in 1813. The Coalition, joined by Austria in August, followed a strategy drawn up with Charles John, the Trachenberg Plan, and its victories at Grossbeeren and Dennewitz set Napoleon's German allies wavering: Saxon units defected and Bavaria declared neutrality. Napoleon concentrated his army of roughly 180,000 to 200,000 men, among them Poles, Italians and Germans of the Confederation of the Rhine, at Leipzig, where the Coalition armies, far larger, converged on him.",
+   "Fighting began on 16 October; the first day ended roughly even, as Napoleon held his ground. Fresh Coalition armies arrived, and by 18 October the French were nearly surrounded and began to fall back. On 19 October, as the retreat crossed the Elster, a bridge was blown too early on the orders of one of Napoleon's generals, trapping the rearguard; thousands of French soldiers died and some 30,000 were captured.",
+   "Napoleon retreated to France with the remains of his army. The Confederation of the Rhine collapsed, the Coalition invaded France early in 1814, and after Paris fell Napoleon was forced to abdicate and was exiled to Elba in May 1814. Leipzig ended French rule east of the Rhine."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Leipzig",
+    "title": "Battle of Leipzig",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/battle-of-leipzig",
+    "title": "Battle of Leipzig",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     6,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Fought from 16 to 19 October 1813 at Leipzig, Saxony; also called the Battle of the Nations.",
+   "The coalition of Austria, Prussia, Sweden and Russia, led by Alexander I, Schwarzenberg, Blücher and Charles John (Bernadotte), decisively defeated Napoleon.",
+   "About 560,000 soldiers and 133,000 casualties; the largest battle of the Napoleonic Wars and of Europe before WWI.",
+   "Austria joined the Coalition on 12 August 1813; the Trachenberg Plan; Charles John was a former French marshal.",
+   "Victories at Grossbeeren and Dennewitz; Saxon units defected; Bavaria proclaimed neutrality.",
+   "Napoleon's army included Poles, Italians and Germans of the Confederation of the Rhine; about 180,000 (HISTORY.com) to 198,000 (Wikipedia) troops.",
+   "The 1812 Russian campaign preceded the German campaign of 1813.",
+   "On 16 October coalition forces attacked; the first day was considered a draw; new coalition troops arrived.",
+   "By 18 October the coalition surrounded the French, forcing a retreat.",
+   "A bridge over the Elster was destroyed prematurely during the retreat, leading to thousands of French deaths and some 30,000 captured; it ended French rule east of the Rhine.",
+   "Napoleon returned to France; the Coalition dissolved the Confederation of the Rhine and invaded France; Napoleon abdicated and was exiled to Elba in May 1814 after Paris fell."
+  ],
+  "disagree": "Casualty figures differ: Wikipedia gives some 133,000 casualties in all; HISTORY.com gives about 38,000 French and 55,000 Coalition casualties.",
+  "checked": null
+ },
+ "Q126065": {
+  "title": "Iranian Revolution",
+  "y": 1978,
+  "place": "Iran",
+  "paras": [
+   "The Iranian Revolution of 1978-79 overthrew Mohammad Reza Pahlavi, the Western-backed shah of Iran who had reigned since 1941, and replaced the monarchy with an Islamic Republic led by the Shia cleric Ayatollah Ruhollah Khomeini. It ended Iran's long history of monarchy and transformed a nation of some 38 million.",
+   "Resentment ran deep. Britain had helped bring the shah's father to power in 1921, and Britain and the Soviet Union forced the father to abdicate in favour of his son in 1941; in 1953 a CIA-assisted coup restored the young shah's power over a nationalist prime minister. From 1963 the shah's 'White Revolution' of land reform and modernisation went with growing autocracy, and opponents faced the SAVAK secret police. Khomeini, a senior cleric in Qom, was exiled in 1964 after denouncing the shah, and from abroad preached that Muslims should reject both Western capitalism and communism and be governed by Islamic jurists.",
+   "Through 1978 protests, crackdowns and fresh protests followed each other across the country, from Qom in January to Tabriz and Tehran; the opposition ranged from leftists and liberal democrats to Khomeini's Islamists. On 19 August arsonists set fire to the Cinema Rex in Abadan, killing about 400 people; Khomeini blamed the regime. In September troops fired on a vast demonstration in Tehran, and strikes spread. The shah appointed a military government and offered concessions, but Khomeini, then in exile in France, refused any compromise.",
+   "On 16 January 1979 the shah left Iran, never to return. On 1 February Khomeini flew back to Tehran, greeted by millions, and by 11 February the monarchy had fallen as rebel fighters and mutinous troops overcame the shah's loyalists. In a referendum in March 1979, 98 percent approved an Islamic republic, and a new constitution made Khomeini supreme leader in December. Over the following months he and his allies sidelined the secular and leftist parties that had joined the revolution. The hostage crisis at the U.S. embassy in Tehran from 1979 and the war with Iraq from 1980 helped cement the new regime."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Iranian_Revolution",
+    "title": "Iranian Revolution",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     4,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/1979-iranian-revolution-causes",
+    "title": "What Led to the 1979 Iranian Revolution?",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The revolution replaced the monarchy of Shah Mohammad Reza Pahlavi with the Islamic Republic under Khomeini, who became supreme leader; it ended Iran's monarchy.",
+   "The shah had reigned since 1941; Iran had 38 million people.",
+   "Britain helped install the shah's father in 1921 and with the Soviets forced his abdication in 1941; a CIA-assisted coup in 1953; the White Revolution from 1963; SAVAK persecuted opponents.",
+   "Khomeini preached rejection of both capitalism and communism and developed the doctrine of guardianship of the jurist.",
+   "Khomeini, a cleric in Qom, was exiled in 1964 after denouncing the shah.",
+   "Protests through 1978 (Qom in January, Tabriz, Tehran); a diverse opposition; the Cinema Rex fire of 19 August 1978 killed about 400.",
+   "In September troops fired on a Tehran demonstration; strikes; the shah appointed a military government and offered concessions; Khomeini in France rejected them.",
+   "The shah left on 16 January 1979; Khomeini returned on 1 February, greeted by millions; by 11 February the monarchy had fallen.",
+   "The March 1979 referendum approved an Islamic republic with 98%; Khomeini became supreme leader in December 1979.",
+   "Khomeini and his allies sidelined other elements of the resistance during 1979.",
+   "The hostage crisis (1979-1981) and the war with Iraq cemented the revolution."
+  ],
+  "disagree": "HISTORY.com says Khomeini blamed the shah and SAVAK for the Cinema Rex fire and that its perpetrators remain disputed; Wikipedia attributes the fire to Islamic militants.",
+  "checked": null
+ },
+ "Q80330": {
+  "title": "English Civil War",
+  "y": 1642,
+  "place": "England, Scotland and Ireland",
+  "paras": [
+   "The English Civil Wars of 1642 to 1651 were fought between the supporters of King Charles I, the Royalists or 'Cavaliers', and those of Parliament, the 'Roundheads'. They ended with the king's execution in 1649, the abolition of the monarchy and a republic, the Commonwealth, until the monarchy was restored in 1660.",
+   "Charles I, king from 1625, believed in his divine right to rule; his marriage to a Catholic princess, Henrietta Maria of France, alarmed Puritans, and in 1629 he dismissed Parliament and ruled without it for eleven years, raising money by such means as ship money. His attempt to impose English-style worship on Presbyterian Scotland led to war with the Scots, and defeat forced him to recall Parliament in 1640, which set about curbing his powers and had his minister Strafford executed. A Catholic rising in Ireland in October 1641 deepened the crisis. On 4 January 1642 Charles entered the House of Commons with soldiers to arrest five members, and failed; he left London, and on 22 August raised his standard at Nottingham.",
+   "The first pitched battle, at Edgehill on 23 October 1642, was indecisive. The Royalists held most of the north and west, Parliament London, the south-east and the ports. Parliament's alliance with the Scots brought a Scottish army into England in January 1644, and on 2 July 1644 they won the largest battle of the war at Marston Moor, near York, gaining the north. In 1645 Parliament formed the professional New Model Army under Sir Thomas Fairfax and Oliver Cromwell, which crushed the king's army at Naseby in June 1645.",
+   "Charles, defeated but unwilling to yield, made a pact with the Scots and stirred up Royalist risings in 1648; the New Model Army crushed them in the Second Civil War. A purged Parliament set up a court that tried the king for treason, and he was beheaded at Whitehall on 30 January 1649. Cromwell then reconquered Ireland, with massacres such as Drogheda, and defeated the Scots, who had crowned Charles's son, at Dunbar in 1650 and Charles II himself at Worcester on 3 September 1651. HISTORY.com estimates that some 200,000 English soldiers and civilians died in the wars, from fighting and disease. Cromwell ruled as Lord Protector from 1653 until his death in 1658, and in May 1660 Charles II returned as king."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/English_Civil_War",
+    "title": "English Civil War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/english-civil-wars",
+    "title": "English Civil Wars - Causes, Timeline & Results",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Civil wars between Royalists (Cavaliers) and Parliamentarians (Roundheads), 1642-1651; Charles I executed in January 1649 and the Commonwealth established.",
+   "Charles I succeeded in 1625; married Henrietta Maria; believed in divine right; dismissed Parliament in 1629 for 11 years.",
+   "Ship money tax 1634-36.",
+   "Attempted to impose English-style religion in Scotland; the Scots defeated him and he recalled Parliament in 1640; Strafford executed; Irish rebellion October 1641.",
+   "On 4 January 1642 Charles tried to arrest five members; he left London; raised his standard at Nottingham on 22 August 1642.",
+   "Edgehill (23 October 1642) was inconclusive; Royalists held the north and west, Parliament the south and east and ports.",
+   "The Scottish alliance brought an army in January 1644; Marston Moor (2 July 1644), the largest battle, gave Parliament the north.",
+   "The New Model Army (1645) under Fairfax and Cromwell won decisively at Naseby in June 1645.",
+   "Charles allied with the Scots and Royalist risings in 1648 were crushed; a smaller Parliament set up a high court; Charles was tried for treason and beheaded at Whitehall on 30 January 1649.",
+   "Cromwell reconquered Ireland (Drogheda massacre), won at Dunbar (September 1650) and Worcester (3 September 1651).",
+   "About 200,000 English soldiers and civilians died from fighting and disease.",
+   "Cromwell was Lord Protector from 1653 until his death in 1658; Charles II returned in May 1660."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://www.nam.ac.uk/explore/british-civil-wars",
+   "result": "10 claims checked: the wars of 1642-51, rule without Parliament 1629-40, the Irish rising of October 1641, the failed arrest of five members in January 1642, the standard at Nottingham, Marston Moor 1644, Naseby in June 1645 as decisive, the trial and execution at Whitehall on 30 January 1649, Dunbar (September 1650) and Worcester (3 September 1651) agree; none contradicted",
+   "errors": 0
+  }
+ },
+ "Q78994": {
+  "title": "Napoleonic Wars",
+  "y": 1803,
+  "place": "Europe, from Portugal to Moscow, and the seas",
+  "paras": [
+   "The Napoleonic Wars, from 1803 to 1815, were a series of conflicts fought by changing coalitions of European powers, with Britain constant among them, against France under Napoleon Bonaparte, First Consul and from 1804 Emperor of the French. They are usually counted as seven: the wars of the Third to the Seventh Coalitions, the Peninsular War and the invasion of Russia.",
+   "The peace with Britain made at Amiens in 1802 broke down, and Britain declared war on France on 18 May 1803; to help pay for the war Napoleon sold Louisiana to the United States. In 1805 Britain, Austria and Russia formed the Third Coalition. Nelson destroyed the French and Spanish fleets at Trafalgar in October, but on land Napoleon defeated the Austrians at Ulm and the Austrians and Russians at Austerlitz in December 1805, after which the Holy Roman Empire was dissolved. He went on to crush Prussia at Jena-Auerstedt in 1806 and the Russians at Friedland in 1807, imposing peace on the continent at Tilsit.",
+   "Unable to reach Britain, Napoleon tried to strangle its trade with the Continental System, a ban on British goods across his empire. Enforcing it led him into Portugal and Spain, where from 1808 the Peninsular War, with British help, tied down large French armies for six years. Austria rose again in 1809 and was beaten at Wagram. When Russia broke with the Continental System, Napoleon invaded in June 1812; he took Moscow after the bloody, indecisive battle of Borodino, but the retreat through the Russian winter destroyed his Grande Armée.",
+   "A Sixth Coalition defeated him at Leipzig in October 1813, took Paris in March 1814 and forced him to abdicate and go into exile on Elba. He escaped in February 1815 and ruled again for the Hundred Days, until the Seventh Coalition defeated him at Waterloo in June 1815; he died in exile on Saint Helena in 1821. The Congress of Vienna redrew the map of Europe, which then saw no war between the great powers until the Crimean War in 1853. The wars spread the Napoleonic Code, nationalism and liberalism, and set off the independence movements of Spanish and Portuguese America."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Napoleonic_Wars",
+    "title": "Napoleonic Wars",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/napoleon",
+    "title": "Napoleon Bonaparte: Facts, Battles & Death",
+    "publisher": "HISTORY.com (A&E Television Networks)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The wars of 1803-1815 were fought by European coalitions against France under Napoleon, First Consul and Emperor from 1804.",
+   "They are categorised as seven conflicts: the Third to Seventh Coalitions, the Peninsular War and the invasion of Russia.",
+   "Britain declared war on France on 18 May 1803; the Treaty of Amiens (1802) had briefly made peace.",
+   "Napoleon sold Louisiana to the US in 1803 partly to raise funds for war.",
+   "The Third Coalition (1805); Trafalgar (October 1805); Ulm and Austerlitz (December 1805) led to the dissolution of the Holy Roman Empire.",
+   "Jena-Auerstedt (1806) and Friedland (1807); peace by July 1807 (Treaty of Tilsit).",
+   "The Continental System against British trade; the invasion of Portugal; the Peninsular War from 1808 with Britain; Austria defeated at Wagram (1809).",
+   "Russia violated the Continental System and Napoleon invaded in June 1812; the indecisive Borodino; Moscow; disastrous retreat in winter.",
+   "The Sixth Coalition won at Leipzig (October 1813), took Paris (March 1814); Napoleon abdicated and was exiled to Elba.",
+   "Napoleon escaped Elba in February 1815 (the Hundred Days); defeated at Waterloo in June 1815; exiled to Saint Helena, where he died in 1821.",
+   "The Congress of Vienna redrew borders; no great-power war until the Crimean War (1853).",
+   "The wars spread the Napoleonic Code, nationalism and liberalism, and triggered independence movements in Spanish and Portuguese America."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q46083": {
+  "title": "Franco-Prussian War",
+  "y": 1870,
+  "place": "Eastern and northern France",
+  "paras": [
+   "The Franco-Prussian War, from 19 July 1870 to 28 January 1871, was fought between the French Second Empire of Napoleon III and Prussia with the North German Confederation and the south German states of Baden, Württemberg and Bavaria. Germany's swift victory completed the unification of Germany and made the new German Empire the dominant land power in Europe.",
+   "Since Prussia's quick victory over Austria in 1866, France had sought to reassert its leading position, while Otto von Bismarck worked to draw the south German states to Prussia. The spark was the offer of the vacant Spanish throne to Prince Leopold of Hohenzollern-Sigmaringen, of the Prussian royal house. Under French pressure he withdrew, but France then demanded that King Wilhelm I promise never to renew the candidacy. Wilhelm refused at Ems, and on 13 July Bismarck published an edited version of the king's report, the Ems Dispatch, worded to provoke France. Historians still debate how far Bismarck intended war. France declared war, and the south German states joined Prussia.",
+   "Under the chief of staff Helmuth von Moltke the German armies mobilised and moved faster than the disorganised French, and their artillery and outflanking attacks won battle after battle, although the French chassepot rifle inflicted heavy losses. In mid-August the main French army was driven into the fortress of Metz and besieged after battles from 16 to 18 August. A relief army, accompanied by Napoleon III, was surrounded at Sedan on 1 September and surrendered the next day, with the emperor taken prisoner.",
+   "The Second Empire collapsed, and a Government of National Defence proclaimed in Paris on 4 September fought on with newly raised armies, but Paris was besieged for more than four months and fell on 28 January 1871. In the last days of the war the German states proclaimed their union as the German Empire under Wilhelm I. The Treaty of Frankfurt of 10 May 1871 gave Germany most of Alsace and part of Lorraine and a large indemnity. Anger at the defeat helped spark the Paris Commune, while France brooded over its losses; these consequences fed into the far more destructive war that came less than half a century later."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Franco-Prussian_War",
+    "title": "Franco-Prussian War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/modern-europe/wars-and-battles/franco-prussian-war",
+    "title": "Franco-Prussian War (Encyclopedia of Modern Europe: Europe 1789-1914)",
+    "publisher": "Encyclopedia.com (Gale)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "The war lasted from 19 July 1870 to 28 January 1871, between the French Second Empire and Prussia with its German allies (North German Confederation, Baden, Württemberg, Bavaria).",
+   "It completed German unification and altered the balance of power; Germany supplanted France as dominant land power.",
+   "France sought to reassert its position after Prussia's 1866 victory; Bismarck sought closer ties with the south German states.",
+   "Leopold of Hohenzollern-Sigmaringen was offered the Spanish throne and withdrew; France demanded a guarantee; Wilhelm refused at Ems; Bismarck published an altered version (13 July).",
+   "Historians debate Bismarck's intentions (Encyclopedia.com: candidacy designed to provoke a crisis while leaving the initiative to Paris).",
+   "Moltke's strategy; German speed and system vs disorganised French mobilisation; the chassepot rifle inflicted heavy losses; Prussian artillery and envelopment won battles.",
+   "By mid-August the French army retreated to Metz; battles of 16-18 August; besieged.",
+   "Napoleon III's relief army was surrounded at Sedan on 1 September and surrendered the next day; the emperor was captured.",
+   "A Government of National Defence formed on 4 September and continued the war; Paris was besieged for over four months and fell on 28 January 1871.",
+   "The German states proclaimed the German Empire under Wilhelm I in the final days of the war.",
+   "The Treaty of Frankfurt (10 May 1871) gave Germany most of Alsace and part of Lorraine and an indemnity; the Paris Commune followed; France brooded over its losses, which with other consequences led to a far more destructive conflict within half a century."
+  ],
+  "disagree": "Contemporaries blamed Napoleon III for forcing the war; from the 1890s blame shifted to Bismarck; recent scholarship (as summarised by Encyclopedia.com) stresses that Bismarck kept his options open and left the final choice to Paris.",
+  "checked": null
+ },
+ "Q83085": {
+  "title": "Soviet–Afghan War",
+  "y": 1979,
+  "place": "Afghanistan",
+  "paras": [
+   "The Soviet-Afghan War began at the end of December 1979, when the Soviet Union sent tens of thousands of troops into Afghanistan to prop up its communist government, and lasted until the last Soviet troops left in February 1989. Soviet forces and the Afghan army fought the mujahideen, Islamic guerrillas backed above all by Pakistan and the United States, in a war that killed between one and three million Afghans and drove millions more abroad as refugees.",
+   "Afghanistan had long received Soviet military aid, and in April 1978 the Marxist People's Democratic Party of Afghanistan (PDPA) seized power in a coup in which President Mohammed Daoud was killed. The new regime, split between its Khalq and Parcham factions, pushed through radical reforms that conservatives saw as an attack on Islam, and faced a growing Islamic insurgency; the United States began to send the rebels non-lethal aid. In September 1979 Hafizullah Amin seized power and had the party leader Nur Muhammad Taraki killed. Fearing the collapse of a socialist ally, the Soviet leadership under Leonid Brezhnev decided to intervene.",
+   "The invasion began on 24-25 December 1979, and Soviet troops flew into Kabul on 27 December. Soviet troops took control of Kabul, killed Amin and installed Babrak Karmal of the Parcham faction. They held the cities and main roads, but the mujahideen waged guerrilla war across the mountainous countryside, which made up some 80 percent of the country. The Soviets, whose forces grew to about 115,000 by the mid-1980s, used air power and scorched-earth tactics against villages and laid millions of landmines. The United States answered the invasion with sanctions, trade embargoes and a boycott of the 1980 Moscow Olympics, and with Pakistan, Britain, China and the Gulf Arab states, among others, backed the rebels, whom foreign Muslim volunteers also joined.",
+   "The war ended the détente of the 1970s. In 1987 the reforming Soviet leader Mikhail Gorbachev announced that the Soviet army would withdraw, and on 15 February 1989 the last Soviet column crossed back into the Soviet Union. The war marked the beginning of a conflict in Afghanistan that went on for decades."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Afghan_War",
+    "title": "Soviet–Afghan War",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1977-1980/soviet-invasion-afghanistan",
+    "title": "The Soviet Invasion of Afghanistan and the U.S. Response, 1978–1980",
+    "publisher": "U.S. Department of State, Office of the Historian",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "At the end of December 1979 the Soviet Union sent thousands of troops into Afghanistan; Soviet and Afghan forces fought the mujahideen; the last Soviet troops left on 15 February 1989.",
+   "The mujahideen were backed mainly by Pakistan and the US (also the UK, China, Iran, Gulf states, foreign Afghan Arabs); 1-3 million Afghans died and millions became refugees.",
+   "Moscow had provided military aid since 1955; the PDPA (Khalq and Parcham factions) took power on 28 April 1978, killing Daoud.",
+   "The PDPA's reforms were seen as opposing Islam; an Islamic insurgency grew; the US began supplying non-lethal aid to the mujahideen.",
+   "Amin seized power in September 1979 and killed Taraki; the Soviets under Brezhnev intervened (Brezhnev Doctrine).",
+   "The invasion began on Christmas Eve 1979 (Office of the Historian) or 25 December (Wikipedia); troops reached Kabul airport on 27 December; Soviet troops killed Amin and installed Karmal.",
+   "Soviet troops held the cities and main roads; the mujahideen fought guerrilla war in the 80% of the countryside; aerial attacks, scorched earth, landmines; about 115,000 Soviet troops by the mid-1980s.",
+   "Foreign fighters (Afghan Arabs) joined; Western support re-escalated the Cold War, ending détente.",
+   "The US responded with sanctions and trade embargoes, a boycott of the 1980 Moscow Olympics and increased aid to the insurgents.",
+   "Gorbachev announced withdrawal in 1987; the last Soviet column left on 15 February 1989; ten years of insurgency at a cost of millions of lives."
+  ],
+  "disagree": "Start of the invasion: the U.S. Office of the Historian says Christmas Eve, 24 December 1979; Wikipedia says the 40th Army crossed the border on 25 December, on an order for 15:00 that day.",
+  "checked": null
+ },
+ "Q46611": {
+  "title": "Apollo program",
+  "y": 1961,
+  "place": "United States (Cape Kennedy, Houston) and the Moon",
+  "paras": [
+   "The Apollo program was NASA's human spaceflight programme that landed the first people on the Moon. Conceived under President Eisenhower in early 1960 as the successor to Project Mercury, it became a national goal when President John F. Kennedy told Congress on 25 May 1961 that the United States should commit itself, 'before this decade is out, of landing a man on the Moon and returning him safely to the Earth'. It ran until 1972.",
+   "NASA chose lunar-orbit rendezvous as the way to reach the Moon in 1962. Each mission used a three-part spacecraft: a command module for the crew, a service module with the engine and supplies, and a lunar module to carry two astronauts down to the surface and back. The Saturn IB rocket served for flights in Earth orbit and the giant three-stage Saturn V for flights to the Moon, while Project Gemini tested the techniques needed in the meantime.",
+   "On 27 January 1967 a fire in the cabin during a ground test on the launch pad at Cape Kennedy killed the crew of Apollo 1, Gus Grissom, Ed White and Roger Chaffee. After uncrewed tests of the Saturn V and the lunar module, Apollo 7 carried the first crew into Earth orbit in October 1968, and in December 1968 Frank Borman, James Lovell and William Anders on Apollo 8 became the first people to travel to the vicinity of the Moon. Apollo 9 and 10 tested the full spacecraft, and on 20 July 1969 Neil Armstrong and Buzz Aldrin of Apollo 11 landed and walked on the Moon while Michael Collins orbited above; all three returned safely on 24 July.",
+   "Five more crews landed, the last, Apollo 17, in December 1972; in all twelve astronauts walked on the Moon. Apollo 13 had to abort its landing after an oxygen tank exploded on the way, but its crew returned safely. The missions brought back 382 kg (842 lb) of lunar rock and soil, transforming knowledge of the Moon's composition and history. Saturn rockets and Apollo spacecraft were later used for the Skylab space station in 1973-74 and the joint American-Soviet Apollo-Soyuz mission in 1975."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Apollo_program",
+    "title": "Apollo program",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-27",
+    "supports": [
+     1,
+     2,
+     3,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://www.nasa.gov/the-apollo-program/",
+    "title": "The Apollo Program",
+    "publisher": "NASA",
+    "accessed": "2026-11-27",
+    "supports": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Apollo was conceived under Eisenhower in early 1960 as a follow-up to Project Mercury; Gemini tested techniques in between.",
+   "Kennedy's national goal of landing a man on the Moon before the decade was out, in his address to Congress on 25 May 1961.",
+   "Apollo ran from 1961 to 1972.",
+   "Lunar orbit rendezvous was selected in 1962; the spacecraft had command, service and lunar modules.",
+   "The Saturn IB was used for Earth orbit and the Saturn V for lunar flights.",
+   "On 27 January 1967 a fire during a preflight test at Cape Kennedy killed Grissom, White and Chaffee (Apollo 1/204).",
+   "Uncrewed Apollo 4, 5 and 6 tests; the first crewed mission launched on 11 October 1968; Borman, Lovell and Anders reached the vicinity of the Moon in December 1968; Apollo 9 and 10 tests in 1969.",
+   "Armstrong and Aldrin landed on 20 July 1969 while Collins orbited; all returned on 24 July (Apollo 11).",
+   "Five subsequent missions landed, the last Apollo 17 in December 1972; twelve people walked on the Moon (six pairs).",
+   "Apollo 13's landing was aborted after an oxygen tank explosion; the crew returned safely.",
+   "842 pounds (382 kg) of lunar samples; Skylab (1973-74) and Apollo-Soyuz (1975) used Apollo hardware."
+  ],
+  "disagree": null,
   "checked": null
  }
 }
