@@ -1668,5 +1668,386 @@
   ],
   "disagree": "Ogedei's reluctance: forty days of hesitation in Howorth, a ritual refusal three times in Wikipedia. Both stated in the text.",
   "checked": null
+ },
+ "cp03-11": {
+  "title": "Jin dynasty falls: siege of Caizhou",
+  "y": 1234,
+  "place": "Caizhou (Runan, Henan), China",
+  "paras": [
+   "The siege of Caizhou was the last major battle of the Mongol war against the Jin, the Jurchen-led dynasty that ruled northern China. The war had begun with Genghis Khan's invasion in 1211; the Mongols took the Jin capital Zhongdu (Beijing) in 1215, and the Jin moved their capital south to Bianjing (Kaifeng). Genghis's successor Ogedei renewed the war in 1230, and when the Mongols besieged Kaifeng the Jin emperor, Aizong, left the city. He reached Guide on 26 February 1233 and moved on to Caizhou, in southern Henan, on 3 August. According to H. H. Howorth's history, Kaifeng was then handed over to the Mongol general Subutai by a rebel commander, who also sent him the empresses and some 500 members of the imperial family.",
+   "Howorth says Aizong arrived at Caizhou with an escort of only 300 men, made his kinsman Wanyan Hushahu commander, and gathered about 10,000 horsemen, while crowds of refugees filled the town. He asked the Southern Song for supplies, warning them that they would be the Mongols' next target, but the Song rebuffed him and joined the Mongols instead. The Mongols arrived before Caizhou in December 1233. Howorth names their commander as Tachar and says the Song sent 20,000 troops under Meng Gong and 300,000 sacks of rice. Meng Gong drained a lake beside the town and stormed a fortified tower in it, and the allies then took the outer wall. Inside, the defenders boiled leather for food and, Howorth writes, were reduced to cannibalism.",
+   "Seeing no way to escape, Aizong abdicated on 9 February 1234, the date Wikipedia gives, in favour of Wanyan Chenglin, a general of the imperial clan, telling him (in Howorth's account) that he himself was too stout to ride. Mongol and Song troops broke into the city that same day, while the new emperor was still being installed. Aizong killed himself; Howorth says he hanged himself in a house he had ordered to be set on fire, and that Hushahu drowned himself with about 500 soldiers rather than surrender. Chenglin, whose reign lasted less than a day, died in the fighting according to Wikipedia, while Howorth says his own soldiers killed him soon afterwards. Howorth also dates the fall to May 1234, not February.",
+   "The fall of Caizhou ended the Jin dynasty, and Howorth records that the Mongols and the Song divided Aizong's remains. The alliance did not last: a Song commander murdered a Mongol envoy, and Song armies moved into Henan and took back the old capitals of Kaifeng, Luoyang and Chang'an, but the Mongols drove them out. In 1234 Ogedei announced the conquest of the Southern Song as one of his next aims."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Siege_of_Caizhou",
+    "title": "Siege of Caizhou (rev 1373532208)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     9,
+     10,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/%C3%96gedei_Khan",
+    "title": "Ögedei Khan (rev 1382028068)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://archive.org/download/dli.ministry.02845/23639.EO%2520950.2%2520H%2520845_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapter on Ogotai Khan, OCR text",
+    "publisher": "Internet Archive (Digital Library of India scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The siege of Caizhou (1233-1234) was the last major battle of the Mongol conquest of the Jurchen-led Jin dynasty (Wikipedia, Caizhou).",
+   "The Mongols first invaded in 1211 under Genghis Khan; Zhongdu (Beijing) was captured in 1215; the Jin moved the capital to Bianjing (Kaifeng) (Wikipedia, Caizhou).",
+   "Ogedei renewed the war in 1230; Aizong fled when the Mongols besieged Bianjing; reached Guide 26 February 1233 and Caizhou (Runan, Henan) 3 August (Wikipedia, Caizhou; Ogedei article: Jin emperor besieged in Kaifeng by 1232; Howorth: Ninkiassu left the capital with some troops).",
+   "Howorth: the rebel commander Tsuili negotiated with Subutai and sent him the two empresses and the princes and princesses, to the number of 500 (attributed).",
+   "Howorth: the emperor set out for Tsai-chau escorted by only 300 men; named Wanian Huchahu commander-in-chief; Huchahu collected 10,000 cavalry; a vast crowd of fugitives (attributed).",
+   "Aizong asked the Song for help/provisions and warned they would be the Mongols' next target; the Song rebuffed him and joined the Mongols (Wikipedia, Caizhou; Howorth: letter to the Sung emperor asking for provisions, warning their turn would follow).",
+   "The Mongols arrived at Caizhou in December 1233 (Wikipedia, Caizhou).",
+   "Howorth: the Mongols under Tachar invested Tsai-chau with 20,000 Chinese sent by the Sung emperor and 300,000 sacks of rice; Mong-kong, the Sung commander, drained the lake and stormed the Chaitan tower; the exterior fortification was then captured; leather boiled; cannibalism (citing De Mailla and D'Ohsson; attributed).",
+   "Aizong abdicated to Wanyan Chenglin, a general and descendant of the imperial clan, when escape was no longer possible (Wikipedia, Caizhou; Howorth: abdicated to Wanien Chinglin, saying his stoutness prevented him riding on horseback).",
+   "On 9 February 1234 Caizhou was breached by Mongol and Song forces the same day; Aizong committed suicide (Wikipedia, Caizhou; Howorth: the Mongols and Chinese were on the walls during the inauguration).",
+   "Howorth: Ninkiassu hanged himself in a house surrounded by straw that he ordered to be fired; Huchahu drowned himself, followed by four generals and 500 soldiers (attributed).",
+   "Chenglin died in the melee, a reign of less than a day (Wikipedia, Caizhou); Howorth: Chinglin was soon after assassinated by his soldiers; Howorth: the fall took place in May 1234 (both attributed).",
+   "The fall of Caizhou ended the Jin dynasty (Wikipedia, Caizhou; Howorth: thus ended the dynasty of the Kins).",
+   "Howorth: the bones and imperial ornaments were divided between the conquerors (attributed).",
+   "A Song viceroy murdered a Mongol ambassador; Song armies recaptured Kaifeng, Luoyang and Chang'an (Wikipedia, Ogedei); the Song tried to annex Henan and were repelled by the Mongols (Wikipedia, Caizhou).",
+   "At the 1234 kurultai Ogedei announced plans for the conquest of the Southern Song, among others (Wikipedia, Ogedei)."
+  ],
+  "disagree": "Date of the fall: 9 February 1234 (Wikipedia) against May 1234 (Howorth, 1876). Wanyan Chenglin: died in the fighting (Wikipedia) or killed soon after by his own soldiers (Howorth). Both stated in the text.",
+  "checked": null
+ },
+ "Q1981024": {
+  "title": "Siege of Ryazan",
+  "y": 1237,
+  "place": "Ryazan (Old Ryazan), Russia",
+  "paras": [
+   "In the autumn of 1237 a Mongol army under Batu Khan, a grandson of Genghis Khan, invaded the Rus' principality of Ryazan, the first Rus' state it attacked. According to the Novgorod Chronicle, the invaders first camped on a river at the edge of the principality and sent a sorceress and two men to demand a tenth of everything: of people, princes and horses. The princes of Ryazan, with those of Murom and Pronsk, rode out to meet them at the Voronezh and answered that the Mongols could have everything only when none of them was left alive. Prince Yuri Igorevich of Ryazan asked the Grand Prince of Vladimir, Yuri Vsevolodovich, for help, but none came; the chronicle says Yuri of Vladimir preferred to fight on his own.",
+   "The Mongols defeated the Ryazan vanguard on the Voronezh River and on 16 December 1237 laid siege to the capital, the town now called Old Ryazan, some 50 km from the modern city. They surrounded it with a stockade; H. H. Howorth's history adds that they mounted siege engines on it. The townspeople beat off the first attacks, but the catapults broke down the defences, and on 21 December the Mongols stormed the walls. They killed Prince Yuri and his wife and nearly all the people, men, women, children, monks and priests alike, and burned the town; the bishop escaped, having left, the chronicle says, at the moment the town was surrounded. Excavations in 1915 and 1979 found 97 severed heads at the site of a church and 143 bodies in mass graves. Another prince of Ryazan, Roman, who had kept his men in the field, was killed with a commander sent from Vladimir in a battle at Kolomna.",
+   "Old Ryazan never recovered its place: in the 14th century, worn down by repeated Tatar raids, the princes moved their capital to Pereyaslavl-Ryazansky, which was renamed Ryazan in 1778. From Ryazan Batu's army marched into the principality of Vladimir-Suzdal. It took Moscow, then still a small town, stormed and burned Vladimir, where the Grand Prince's family died in the burning cathedral, and caught Yuri Vsevolodovich himself on the River Sit, where he was killed."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Ryazan",
+    "title": "Siege of Ryazan (rev 1370744874, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://archive.org/download/chronicleofnovgo00michrich/chronicleofnovgo00michrich_djvu.txt",
+    "title": "The Chronicle of Novgorod, 1016-1471, transl. R. Michell and N. Forbes (1914), entry for A.D. 1238, OCR text",
+    "publisher": "Internet Archive (University of California Libraries scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://archive.org/download/dli.ministry.02845/23639.EO%2520950.2%2520H%2520845_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapter on Ogotai Khan, OCR text",
+    "publisher": "Internet Archive (Digital Library of India scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     11,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "In the autumn of 1237 the Mongols under Batu Khan, grandson of Genghis Khan, invaded the principality of Ryazan; Ryazan was the first Rus' city besieged (Wikipedia; Howorth: the Mongols appeared on the frontiers of Riazan; Novgorod Chronicle under A.D. 1238).",
+   "The Tartars halted at a river (the Nukhla), sent a sorceress and two men demanding one-tenth of everything, of men, Knyazes and horses (Novgorod Chronicle; Howorth: Batu sent a sorceress with two officers demanding a tenth).",
+   "The Knyazes of Ryazan, with those of Murom and Pronsk, went out to meet them at Voronazh and answered 'Only when none of us remain then all will be yours' (Novgorod Chronicle; Howorth: when they no longer lived the Mongols might take what they would).",
+   "Yuri Igorevich asked Yuri Vsevolodovich of Vladimir for help and received none (Wikipedia; Novgorod: Yuri neither went himself nor listened, wishing to make war separately).",
+   "The Mongols defeated the vanguard at the Voronezh River and on 16 December 1237 besieged the capital, now Old Ryazan, about 50 km from the modern city (Wikipedia; Novgorod: they advanced against it on the 16th).",
+   "The town was surrounded with a stockade (Novgorod); Howorth: a breastwork of palisades on which balistas were fixed (attributed).",
+   "The townspeople repelled the first attacks; catapults destroyed the fortifications; on 21 December the walls were stormed (Wikipedia; Novgorod: took the town on December 21; Howorth: fell on 21 December 1237).",
+   "Prince Yuri and his wife were killed, nearly all the inhabitants executed, the city burned (Wikipedia; Novgorod: killed the Knyaz and Knyaginya, men, women, children, monks, nuns and priests, by fire and sword).",
+   "God saved the bishop, who had departed when the troops invested the town (Novgorod; quoted in Wikipedia).",
+   "Excavations in 1915 and 1979 found 97 severed heads at the former church and 143 bodies in mass graves (Wikipedia).",
+   "Roman Ingvarevich fought with his own men, was joined by Yeremei sent from Vladimir, and both were killed at Kolomna (Novgorod; Howorth: Roman Igorovitch, who had gone to relieve Kolomna, was defeated and killed).",
+   "In the 14th century the capital moved, among other reasons because of repeated Tatar raids, to Pereyaslavl-Ryazansky, renamed Ryazan in 1778 (Wikipedia).",
+   "After Ryazan, Batu's horde pushed on into Vladimir-Suzdal (Wikipedia; Novgorod: having taken Ryazan they went to Volodimir).",
+   "Moscow, as yet an unimportant town, was taken (Howorth; Novgorod: took Moscow); Vladimir was taken and fired, the prince's family perishing in the burning church (Novgorod); Grand Prince Yuri was overtaken on the river Sit and killed (Novgorod; Howorth: posted his army on the Sitti)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp18-054": {
+  "title": "Sukhothai Kingdom founded",
+  "y": 1238,
+  "place": "Sukhothai, Thailand",
+  "paras": [
+   "In the early 13th century Sukhothai, in the north of the central plain of present-day Thailand, was a town under the Khmer Empire of Angkor; Wikipedia describes it as a trading centre of Lavo, itself under Khmer overlordship, and W. A. R. Wood's History of Siam (preface dated 1924) as the northern capital of the Khmer empire. A Khmer-style town had stood there since about 1200. Tai-speaking peoples had been settling in the region for centuries and had already formed small states further north.",
+   "In 1238, according to tradition, Tai led by Pho Khun Bang Klang Hao, a local chief, rose against the Khmer governor with the help of an ally, Pho Khun Pha Mueang. Wood says the Khmer king sent a general, Khlon Lamphong, to restore order, but the two chiefs defeated him in a pitched battle and entered Sukhothai. Bang Klang Hao was consecrated king under the name Si Inthrathit, a title the Khmer king had originally given to Pha Mueang, and became the first ruler of the Phra Ruang dynasty.",
+   "Si Inthrathit spent his reign extending his lands at the expense of the Khmer and his western neighbours. Wood suggests he was helped by a wave of Tai refugees from Yunnan after Kublai Khan conquered the kingdom of Nanzhao in 1254. One of his sons, Ram Khamhaeng, won fame by defeating the ruler of Chot in single combat on elephants. Wikipedia says that by Si Inthrathit's death in 1270 Sukhothai held the whole upper valley of the Chao Phraya; Wood says the year of his death is not known. He was followed by his son Ban Mueang and then by Ram Khamhaeng, under whom the kingdom reached its greatest extent.",
+   "Thai tradition calls Sukhothai the first Thai kingdom, although historians now agree that Tai history began earlier. In 1349 it was invaded by the neighbouring Thai kingdom of Ayutthaya, and after decades as its tributary it was annexed in 1438. The ruins of its capital are now the Sukhothai Historical Park, a UNESCO World Heritage Site."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Sukhothai_Kingdom",
+    "title": "Sukhothai Kingdom (rev 1381706020, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historyofsiam035038mbp/historyofsiam035038mbp_djvu.txt",
+    "title": "W. A. R. Wood, A History of Siam (London: Fisher Unwin; preface dated 1924), chapter on the Tai kingdoms and the founding of Sukhothai, OCR text",
+    "publisher": "Internet Archive (Digital Library of India scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Sukhothai was originally a trade centre in Lavo, under the suzerainty of the Khmer Empire (Wikipedia); Wood: Sukhothai, then the northern capital of the Cambodian Empire (attributed).",
+   "A Khmer-style town first appeared at Sukhothai around 1200 (Wikipedia).",
+   "Tai-speaking peoples had migrated gradually (8th-10th centuries) and other Tai kingdoms existed in the northern highlands before Sukhothai (Wikipedia; Wood: Tai states formed at Muang Fang and P'ayao).",
+   "According to legend, in 1238 Central Thai people led by the local chief Pho Khun Bang Klang Hao rebelled against the governor, assisted by Pho Khun Pha Mueang (Wikipedia; Wood: about 1238, two Tai chiefs K'un Bang Klang T'ao and K'un P'a Muang).",
+   "Wood: a Cambodian general, Khlon Lamphong, sent to restore order was defeated in a pitched battle by the two chiefs, who entered Sukhothai (attributed).",
+   "Bang Klang Hao took the regnal name Si Inthrathit and founded the Phra Ruang dynasty (Wikipedia; Wood: consecrated as King Sri Int'arat'itya, a title originally conferred on K'un P'a Muang by the King of Cambodia).",
+   "Wood: the reign was spent extending his dominions at the expense of the King of Cambodia and his western neighbours; Tai immigrants fled from Yunnan after Kublai Khan's conquest of Nanchao in 1254 (attributed).",
+   "Wood: Prince Ramk'amheng defeated the Prince of Chot in single combat on elephants (attributed).",
+   "By the end of his reign in 1270 Sukhothai covered the upper Chao Phraya valley; Si Inthrathit died in 1270 (Wikipedia); Wood: the date of his death is not known (both attributed).",
+   "He was succeeded by his son Ban Mueang and then by Ram Khamhaeng; the kingdom reached its greatest extent under Ram Khamhaeng (Wikipedia; Wood: succeeded by his second son Ban Muang, then by Ramk'amheng, who raised Sukhothai to a powerful kingdom).",
+   "Sukhothai is traditionally the first Thai kingdom, though historical consensus holds that Thai history began earlier (Wikipedia; Wood: 'one might say, first King of Siam').",
+   "Independent until 1349, when Ayutthaya invaded; tributary of Ayutthaya until annexed in 1438 (Wikipedia).",
+   "The ruins are the Sukhothai Historical Park, a UNESCO World Heritage Site (Wikipedia)."
+  ],
+  "disagree": "Si Inthrathit's death: 1270 in Wikipedia, unknown in Wood. Sukhothai before 1238: a trade centre of Lavo under Khmer suzerainty (Wikipedia) or the northern capital of the Khmer empire (Wood). Both stated in the text.",
+  "checked": null
+ },
+ "Q815162": {
+  "title": "Siege of Kyiv (1240)",
+  "y": 1240,
+  "place": "Kyiv, Ukraine",
+  "paras": [
+   "After destroying Ryazan and Vladimir in 1237 and 1238, the Mongol army of Batu Khan turned south-west. In 1239 it took Pereyaslav and Chernigov, and Batu's cousin Mongke, who later became Great Khan, came before Kyiv and demanded its surrender. Kyiv, with its white walls and gilded church domes, had long been the chief city of the Rus' and the seat of their metropolitan, though it had been badly damaged in earlier wars between the princes. The Mongol envoys were killed. Grand Prince Michael of Chernigov then fled to Hungary, Rostislav of Smolensk seized the city and was in turn driven out by Daniel of Galicia-Volhynia. When the Mongols returned in November 1240, under the tactical command of the general Subutai, Daniel was in Hungary seeking allies and the defence was led by his commander, Dmytro.",
+   "Batu destroyed a force of Black Hood auxiliaries coming to relieve the city, and his whole army camped before its gates. According to the dates compared by the historian Alexander Maiorov, the siege lasted nine days. On 28 November the Mongols set up catapults near a gate where woods came almost up to the walls and bombarded the city for several days; H. H. Howorth's history says the din of the Mongols' carts, camels and horses drowned the voices of the people inside. On 6 December the walls were breached and fighting went on in the streets until nightfall. Dmytro was wounded by an arrow, and the defenders fell back to the centre of the city, where crowds took refuge in the Church of the Tithes. When the Mongols made their final assault, part of the church collapsed under the weight of the people on it, crushing many.",
+   "The Mongols plundered the city and killed most of its people: Wikipedia gives a figure of about 2,000 survivors out of 50,000 inhabitants, and says only six of forty major buildings were left standing. Dmytro was spared for his courage. Howorth notes that the Church of the Tithes, the tomb of Olga and the Pechersk monastery were wrecked or looted. The chronicles of the Rus' disagree widely over details and dates; a Pskov account of a ten-week siege is now considered invented.",
+   "The fall of Kyiv forced Galicia and Volhynia to accept Mongol overlordship and opened the way for Batu's invasion of Poland and Hungary, which stopped only in 1242, after news came of Ogedei Khan's death. Within a few years the Golden Horde was collecting tribute in Kyiv through its own officials, and the Rus' princes had to travel to Batu's capital at Sarai to be confirmed in their lands."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Kiev_%281240%29",
+    "title": "Siege of Kiev (1240) (rev 1370742471, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://archive.org/download/dli.ministry.02845/23639.EO%2520950.2%2520H%2520845_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapter on Ogotai Khan, OCR text",
+    "publisher": "Internet Archive (Digital Library of India scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Batu began the invasion in late 1237 with Ryazan; in 1238 destroyed Vladimir and Kozelsk; in 1239 captured Pereyaslav and Chernigov (Wikipedia; Howorth: Pereslavl laid in ashes, Chernigof shared the same fate).",
+   "Mongke, Batu's cousin and later Great Khan, came near the city and offered terms; the envoys were killed (Wikipedia: envoys executed by Michael of Chernigov; Howorth: Batu sent his cousin Mangu, afterwards Grand Khan, who summoned the city; his envoys were slaughtered).",
+   "Howorth: Kief, with its white walls and gilded cupolas, was the metropolitan city of the old Russian princes; it had suffered from internal broils (in 1204) (attributed in substance).",
+   "Michael of Chernigov fled to Hungary; Rostislav of Smolensk claimed Kiev and was driven out by Daniel of Galicia-Volhynia (Wikipedia; Howorth: its prince lost heart and escaped towards Hungary).",
+   "In November 1240 Batu's army under the tactical command of Subutai reached Kiev; Daniel was in Hungary seeking allies; the commander was Voivode Dmytro (Wikipedia).",
+   "Batu destroyed the Chorni Klobuky (Black Hoods) relieving force; the army camped outside the gates (Wikipedia).",
+   "Maiorov (2016): the siege lasted nine days, 28 November to 6 December 1240; on 28 November catapults set up near a gate where tree cover reached the walls; bombardment for several days (Wikipedia).",
+   "Howorth: the noise of their carts, camels, oxen and horses drowned the voices of the inhabitants; attack night and day; walls breached (attributed).",
+   "On 6 December the walls were breached; street fighting; Dmytro wounded by an arrow; at nightfall the Kievans retreated to the centre; many crowded into the Church of the Tithes; part of the church collapsed under the people's weight (Wikipedia; Howorth: defenders retired to the churches; the roof of the metropolitan church gave way under the weight and overwhelmed a vast number).",
+   "Kiev was plundered and most of the population massacred; about 2,000 of 50,000 survived; six of forty major buildings remained; Dmytro was shown mercy for his bravery (Wikipedia; Howorth: slaughtered without mercy).",
+   "Howorth: the church of the Tithe, the tomb of Olga and the Petchersky monastery were destroyed or plundered (attributed).",
+   "The chronicles vary widely in details and dates; the Pskov ten-week siege is judged 'entirely fictitious' by Maiorov (Wikipedia).",
+   "Galicia and Volhynia were forced to submit; the Mongols advanced into Hungary and Poland; the advance halted in 1242 on news of Ogedei's death (Wikipedia; Howorth: the Mongols advanced against Hungary through Volhynia and Galicia).",
+   "Tribute was soon collected through a darughachi in Kiev; the Rus' princes travelled to Sarai, capital of Batu's Golden Horde, to submit and be confirmed (Wikipedia)."
+  ],
+  "disagree": "The Rus' chronicles disagree on the details and dates of the siege; Wikipedia follows Maiorov's nine-day siege of 28 November to 6 December 1240, and the ten-week siege in the Pskov chronicles is considered invented. Stated in the text.",
+  "checked": null
+ },
+ "cp03-18": {
+  "title": "Kublai is proclaimed Great Khan",
+  "y": 1260,
+  "place": "Kaiping (Shangdu), Inner Mongolia, China",
+  "paras": [
+   "Kublai was a grandson of Genghis Khan and the second son of Tolui and Sorghaghtani Beki. His elder brother Mongke, Great Khan from 1251, made him viceroy of northern China, where he surrounded himself with Chinese advisers and Buddhist monks, and in 1256 he built himself a new residence north of the Great Wall at Kaiping, also known as Shangdu. In 1259 Mongke died while campaigning against the Song in Sichuan without naming a successor. He had left their youngest brother, Ariq Boke, in charge of the Mongol capital Karakorum, while Kublai was besieging Wuchang on the Yangtze and another brother, Hulagu, was fighting in the Middle East.",
+   "Kublai at first kept the news secret and continued the siege. The Song minister Jia Sidao offered him a yearly tribute of silver and silk and the Yangtze as the frontier; Kublai refused at first, but when word came that Ariq Boke was raising troops to take the throne, he accepted terms and hurried north. Ariq Boke had the support of most of Mongke's family and of the Ogedei, Chagatai and Jochi lines. In 1260 Kublai held his own kurultai at Kaiping, attended by fewer princes; H. H. Howorth's history lists among them his brother Mukeh, Ogedei's son Kadan and Togatshar, and says the descendants of Jochi and Chagatai and the absent Hulagu were not summoned. The assembly elected Kublai Great Khan; Howorth gives his age as 44. It was the first kurultai to proclaim a Great Khan outside the Mongol homeland. Ariq Boke was proclaimed Great Khan at Karakorum by his own kurultai; the Toluid Civil War article and Howorth place this after Kublai's election, the Kublai Khan article before it.",
+   "The two claimants went to war. Kublai held the farmland of northern China, cut most of the routes that fed Karakorum and courted his Chinese subjects with lower taxes and Chinese-style institutions. His armies defeated Ariq Boke's generals in the west, and Kublai beat him in 1261 at Shimultai. Abandoned by his ally Alghu of the Chagatai Khanate, Ariq Boke surrendered at Shangdu in 1264 and died in captivity in 1266. The victory did not reunite the empire: the khans of the west did not attend the kurultai Kublai called to confirm his title, Ogedei's grandson Kaidu rose against him from 1269, and the Golden Horde, the Chagatai Khanate and the Ilkhanate became in practice independent states, while Kublai concentrated on China, where in 1271 he proclaimed the Yuan dynasty."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Kublai_Khan",
+    "title": "Kublai Khan (rev 1380829269, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     8,
+     9,
+     11,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Toluid_Civil_War",
+    "title": "Toluid Civil War (rev 1382115757, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+    "title": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, part I (1876), chapter on Khubilai Khan, OCR text",
+    "publisher": "Internet Archive (Google Books scan, Harvard University Library copy)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     8,
+     9,
+     11,
+     13,
+     14,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "Kublai was the son of Tolui and Sorghaghtani Beki and a grandson of Genghis Khan (Wikipedia, Kublai; Howorth: son of Tului).",
+   "In 1251 Mongke became khan; Kublai received the viceroyalty over northern China; he engaged Chinese advisers and Buddhist monks (Wikipedia, Kublai).",
+   "Howorth: Mangu assigned Khubilai a district north of the Great Wall, where in 1256 he built a palace at what became known as Shangtu or Kai ping fu (attributed in substance; Wikipedia: summer capital Shangdu).",
+   "Mongke died in 1259 without appointing a successor; he had made Ariq Boke commander of Karakorum in 1258 (Wikipedia, Toluid Civil War; Howorth: Arikbuka in command of Karakorum, Khulagu busy in Syria, Khubilai prosecuting his campaign in China).",
+   "Kublai kept the death secret and continued the attack on Wuchang (Wikipedia, Kublai; Howorth: he determined to advance and laid siege to Wu chang).",
+   "Jia Sidao offered an annual tribute of silver and silk and the Yangtze as the frontier; Kublai declined at first but agreed after learning that Ariq Boke was raising troops, and returned north (Wikipedia, Kublai; Howorth: Kia-se-tao's offer, at first refused, accepted after news of intrigues at Karakorum).",
+   "Most of Mongke's immediate family supported Ariq Boke, including members of the Ogedei, Chagatai and Jochi lines (Wikipedia, Toluid Civil War).",
+   "Kublai summoned a kurultai at Kaiping and was elected Great Khan; fewer members of the royal family attended (Wikipedia, Toluid Civil War and Kublai; Howorth: a special Kuriltai at Shangtu).",
+   "Howorth: present were his brother Mukeh, Kadan son of Ogotai, Togatshar and others; Khulagu and the descendants of Juji and Jagatai were not summoned; he was forty-four (attributed). (Wikipedia, Kublai, differs: attendees included representatives of all the Borjigin lines except Jochi's.)",
+   "This was the first kurultai to proclaim a Great Khan outside the Mongol homeland or Central Asia (Wikipedia, Toluid Civil War).",
+   "Ariq Boke's kurultai at Karakorum proclaimed him a month after Kublai (Wikipedia, Toluid Civil War; Howorth: when Arikbuka heard Khubilai had been proclaimed he had himself proclaimed); the Kublai Khan article says Kublai learned of Ariq Boke's kurultai before he arrived (both stated).",
+   "Kublai had the supplies of northern China, controlled three of four supply lines to Karakorum, and won Chinese support by reducing taxes and modelling institutions on Chinese dynasties (Wikipedia, Toluid Civil War).",
+   "Kadan and Lian Xixian defeated Ariq Boke's generals in the west; in 1261 Kublai and Ariq Boke fought at Shimultai and Ariq Boke lost (Wikipedia, Toluid Civil War; Howorth: Kuntukai and Alemdar defeated and killed; Arikbuka defeated near the lake Simultai).",
+   "Alghu turned against Ariq Boke; Ariq Boke surrendered at Shangdu in 1264 and died in 1266 while imprisoned (Wikipedia, Toluid Civil War; Howorth: Algu quarrelled with him; submitted in 1264; died 1266).",
+   "None of the three other khans attended Kublai's confirming kurultai; Kaidu rebelled from 1269; the khanates became functionally independent (Wikipedia, Toluid Civil War).",
+   "Kublai concentrated on China and proclaimed the Yuan dynasty in 1271 (Wikipedia, Kublai; Howorth: in 1271 Khubilai gave his dynasty the Chinese name of Yuen)."
+  ],
+  "disagree": "Whether Ariq Boke's kurultai at Karakorum came before Kublai's election (Wikipedia, Kublai Khan) or a month after it (Wikipedia, Toluid Civil War; Howorth). Who attended Kublai's kurultai: all lines except Jochi's (Wikipedia, Kublai Khan) or without the Jochi and Chagatai lines (Howorth). The order of the kurultais is stated in the text, Howorth's list of attendees is attributed.",
+  "checked": null
  }
 }
