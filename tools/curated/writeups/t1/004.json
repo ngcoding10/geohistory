@@ -2851,5 +2851,242 @@
   ],
   "disagree": "Russian losses: about 95,000 captured and 78,000 killed or wounded (History Hit) against 122,000 prisoners and 500 guns (EBSCO). EBSCO's overview dates the battle 23–26 August 1914, while its narrative and History Hit put the main fighting from 26 August to the completion of the encirclement on 29 August.",
   "checked": null
+ },
+ "Q152120": {
+  "title": "Wannsee Conference",
+  "y": 1942,
+  "place": "Germany",
+  "paras": [
+   "On 20 January 1942, at noon, Reinhard Heydrich, head of the Security Police and SD and of the Reich Security Main Office, held a meeting of about 90 minutes in an SS guesthouse, a villa on the Großer Wannsee lake in Berlin. Fifteen senior officials attended: state secretaries and other officials of Reich ministries, among them Josef Bühler of Hans Frank's General Government in occupied Poland, and representatives of the Nazi Party and the SS, including the Gestapo chief Heinrich Müller and Adolf Eichmann, who kept the minutes. The subject was the so-called 'Final Solution of the Jewish Question'.",
+   "The mass murder of Europe's Jews was already under way. It had begun with the invasion of the Soviet Union in June 1941, where SS mobile units carried out mass shootings, killing more than 33,000 people at Babyn Yar near Kyiv in September 1941 alone, and from late 1941 gas vans were used; deportations from the Reich had started in October 1941. According to the Federal Agency for Civic Education (bpb), at least half a million people had been murdered by the time of the conference. In July 1941 Göring had commissioned Heydrich to prepare an overall plan for the 'Final Solution'.",
+   "Heydrich used the meeting to assert his leading role and to secure the cooperation of the ministries and party offices whose help he needed for deportations across Europe. The minutes, written by Eichmann in bureaucratic euphemism, counted some eleven million Jews, including those in countries Germany did not control such as Britain, Ireland, Sweden and Switzerland, who were to be 'evacuated to the East'. Those able to work would be used in labour columns building roads, where many would die, and any survivors would be 'treated accordingly'. The participants raised no objection; they offered proposals and discussed the fate of people of mixed descent and in mixed marriages, and Bühler asked that the General Government be dealt with first.",
+   "The decision to murder the Jews of Europe had been taken at a higher political level before the meeting, and the conference itself did not decide it. Its importance lies in the coordination that extended the genocide to almost the whole of Europe and in the complicity of the German state administration. Soon afterwards gas chambers were built at Auschwitz, where large transports of Jews began arriving in March 1942; by the war's end more than six million Jews had been murdered. A copy of the minutes was found in 1947 among German Foreign Office files, and since 1992 the villa has been a memorial and education centre."
+  ],
+  "sources": [
+   {
+    "url": "https://ghwk.de/en/conference",
+    "title": "The Meeting on January 20, 1942",
+    "publisher": "Memorial and Educational Site House of the Wannsee Conference",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     8,
+     11,
+     14
+    ]
+   },
+   {
+    "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/240926/die-wannseekonferenz/",
+    "title": "Die Wannseekonferenz (Hintergrund aktuell)",
+    "publisher": "Bundeszentrale für politische Bildung (bpb), CC BY-NC-ND 4.0",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     11,
+     12,
+     14
+    ]
+   },
+   {
+    "url": "https://www.jhi.pl/en/articles/conference-in-wannsee-20011942,90",
+    "title": "Conference in Wannsee — 20.01.1942",
+    "publisher": "Jewish Historical Institute (Żydowski Instytut Historyczny), Warsaw",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     10,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "On 20 January 1942 at noon Heydrich held a meeting of about 90 minutes at an SS guesthouse villa at Wannsee in Berlin.",
+   "Heydrich was head of the Security Police and SD / RSHA.",
+   "Fifteen representatives of ministries, the NSDAP and the SS attended; Eichmann kept the minutes; participants included Bühler and Müller (JHI).",
+   "The genocide had begun with the invasion of the USSR in June 1941 with mass shootings by SS mobile units; Babyn Yar: over 33,000 killed in September 1941.",
+   "Gas vans were used from late 1941; deportations from the Reich began in October 1941.",
+   "bpb: at least half a million people had been murdered by the time of the conference.",
+   "In July 1941 Göring commissioned Heydrich to prepare an overall plan for the 'Final Solution'.",
+   "Heydrich aimed to assert his leading role and involve ministries and party offices; the meeting resolved conflicts between the civil administration and the SS (ghwk).",
+   "The minutes counted about eleven million Jews, including in countries not controlled by Germany (England, Ireland, Sweden, Switzerland etc.).",
+   "The minutes describe evacuation to the East, labour columns building roads with many dying, and survivors to be 'treated accordingly'.",
+   "Participants raised no objections and made proposals; they discussed people of mixed descent and mixed marriages.",
+   "Bühler asked that the General Government be dealt with first (JHI); Auschwitz gas chambers and transports from March 1942; over six million Jews murdered (bpb).",
+   "A copy of the minutes was found in 1947 in Foreign Office documents (JHI: copy no. 16, found by Robert Kempner).",
+   "The killing had been decided at a higher level beforehand; the conference coordinated the genocide across Europe and implicated the state administration; the villa has been a memorial since 1992."
+  ],
+  "disagree": "Interpretation: the House of the Wannsee Conference and the bpb stress that the murder of Europe's Jews had already been decided at a higher level and was under way, so the meeting coordinated rather than decided it; the Jewish Historical Institute's account describes Heydrich announcing Hitler's authorisation and only technical details remaining to be settled.",
+  "checked": null
+ },
+ "Q253224": {
+  "title": "Armistice of 11 November 1918",
+  "y": 1918,
+  "place": "France",
+  "paras": [
+   "The armistice that ended the fighting of the First World War on the Western Front was signed at about 5 a.m. on 11 November 1918 in the railway carriage that served as Marshal Ferdinand Foch's office, on a siding in the forest of Compiègne, north of Paris. Foch, Supreme Commander of the Allied armies, and Admiral Rosslyn Wemyss, the British First Sea Lord, signed for the Allies. For Germany signed the Centre Party politician Matthias Erzberger, who led the delegation, the diplomat Count Alfred von Oberndorff, Major-General Detlof von Winterfeldt for the army command and Captain Ernst Vanselow of the navy. Hostilities stopped at 11 a.m. Paris time.",
+   "In November 1918 the chancellor, Prince Max of Baden, appointed Erzberger to the armistice commission, so that, unusually, politicians rather than soldiers led the talks. When the delegates met Foch, he made them state that they were asking for an armistice and then had the Allied conditions read out; the Germans were given 72 hours to reply and had little room to negotiate. Meanwhile revolution swept Germany: Prince Max was forced out, Emperor William II abdicated and a republic was proclaimed under a socialist provisional government led by Friedrich Ebert. On the evening of 10 November the new chancellor telegraphed his acceptance, and in a final session the Germans obtained only minor changes before signing.",
+   "The 34 articles were designed to leave Germany unable to resume the war. Germany had to evacuate Belgium, France, Luxembourg and Alsace-Lorraine and withdraw from the left bank of the Rhine, which Allied armies would occupy; to hand over 5,000 guns, 25,000 machine guns, 1,700 aircraft, all its submarines, and to have designated surface warships disarmed and interned; to renounce the treaties of Brest-Litovsk and Bucharest; and to accept that the Allied blockade would continue. The armistice was set for 36 days and was extended three times, in December 1918, January and February 1919, until the Treaty of Versailles was signed on 28 June 1919. Erzberger, who also urged acceptance of the Versailles treaty, was blamed by nationalists for the defeat and was assassinated in 1921."
+  ],
+  "sources": [
+   {
+    "url": "https://actualites.musee-armee.fr/expositions-en/1918-armistices-episode-12/?lang=en",
+    "title": "« 1918, armistice(s) », episode 12",
+    "publisher": "Musée de l'Armée, Paris",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     7,
+     8,
+     10,
+     13
+    ]
+   },
+   {
+    "url": "https://actualites.musee-armee.fr/expositions-en/1918-armistices-episode-11/?lang=en",
+    "title": "« 1918, armistice(s) », episode 11",
+    "publisher": "Musée de l'Armée, Paris",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6
+    ]
+   },
+   {
+    "url": "https://germanhistorydocs.org/en/weimar-germany-1918-1933/ghdi:document-4011",
+    "title": "Conditions of the Armistice with Germany (November 11, 1918)",
+    "publisher": "German History in Documents and Images, German Historical Institute Washington",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/history/matthias-erzberger/",
+    "title": "Matthias Erzberger",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     5,
+     9,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "The armistice was signed around 5 a.m. on 11 November 1918 in Foch's carriage (2419D) in the forest of Compiègne.",
+   "Foch and Admiral Wemyss (First Sea Lord) signed for the Allies.",
+   "Erzberger (head of delegation), Oberndorff, Winterfeldt and Vanselow signed for Germany.",
+   "Hostilities stopped at 11 a.m. Paris time.",
+   "Prince Max of Baden appointed Erzberger to the Armistice Commission.",
+   "The German delegation was unusually led by politicians rather than soldiers (Musée de l'Armée).",
+   "Foch made the Germans request an armistice, had the conditions read, and gave 72 hours; little room to negotiate.",
+   "On 10 November the German chancellor telegraphed acceptance of the conditions; the Germans obtained slight changes.",
+   "Before the signing Prince Max was forced out, William II abdicated and a republic under Ebert's socialist provisional government was declared.",
+   "The agreement had 34 articles.",
+   "Terms: evacuation of Belgium, France, Luxembourg, Alsace-Lorraine and the left bank of the Rhine (Allied occupation); surrender of 5,000 guns, 25,000 machine guns, 1,700 aircraft, all submarines; designated surface warships interned.",
+   "Terms: annulment of Brest-Litovsk and Bucharest; blockade to remain; duration 36 days with option to extend.",
+   "Extended three times (13 December 1918, 16 January 1919, 16 February 1919) until the Treaty of Versailles of 28 June 1919.",
+   "Erzberger supported accepting Versailles, was attacked by nationalists (stab-in-the-back) and was assassinated in 1921."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q150939": {
+  "title": "Operation Weserübung",
+  "y": 1940,
+  "place": "Norway",
+  "paras": [
+   "Operation Weserübung was Germany's surprise attack on neutral Denmark and Norway at dawn on 9 April 1940. Under General Nikolaus von Falkenhorst, German forces landed from warships at the main Norwegian ports from Oslo to Narvik and dropped paratroopers on the airfields at Fornebu near Oslo and Sola near Stavanger, while Denmark was attacked and occupied the same day. Norway resisted, under King Haakon VII and its government, with help from Britain and France; it was the first large operation in which German land, sea and air forces fought under a single command.",
+   "Both sides saw Norway's strategic value. Germany's arms industry depended on Swedish iron ore, which in winter was shipped from Narvik down the Norwegian coast, and Grand Admiral Erich Raeder wanted naval bases in Norway. The Allies planned to land at Narvik on the pretext of helping Finland in the Winter War and later to mine Norwegian waters to stop the ore traffic. After meeting the Norwegian Nazi Vidkun Quisling in December 1939, Hitler ordered a study of an invasion; the 'Altmark' incident in February 1940, when a British destroyer freed British prisoners from a German ship in Norwegian waters, sped up the planning. Britain began laying mines off Norway on 8 April, as the German fleets were already at sea.",
+   "Most Norwegian towns fell quickly on 9 April. But in the Oslofjord the old fortress of Oscarsborg opened fire on the heavy cruiser Blücher, which was carrying troops to take the capital, and sank it at 06:22. The delay let the king, the government and parliament escape from Oslo together with the national gold reserves, and they refused German demands to appoint Quisling as prime minister. Oslo was taken that day by troops flown in to Fornebu.",
+   "Allied troops landed around Narvik and at Åndalsnes and Namsos in mid-April, but they were too few and lacked air cover. Fighting in southern Norway ended around the turn of April and May. The Allies took Narvik on 28 May, but the German offensive in France forced them to withdraw; an Allied evacuation on 5–8 June took the king and government into exile in Britain, and Norwegian forces in the north surrendered on 10 June. Germany secured the ore route and bases for its navy and air force, but tied down a large occupation army, some 300,000 men according to EBSCO, until 1945. In Britain the failure of the campaign led to Chamberlain's replacement by Churchill."
+  ],
+  "sources": [
+   {
+    "url": "https://snl.no/Weser%C3%BCbung_-_Tysklands_angrep_p%C3%A5_Norge_i_1940",
+    "title": "Weserübung – Tysklands angrep på Norge i 1940",
+    "publisher": "Store norske leksikon",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13
+    ]
+   },
+   {
+    "url": "https://www.ebsco.com/research-starters/military-history-and-science/germany-invades-norway/",
+    "title": "Germany Invades Norway",
+    "publisher": "EBSCO Research Starters",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "On 9 April 1940 Germany attacked Norway and Denmark by surprise at dawn under Falkenhorst.",
+   "Landings at ports from Oslo to Narvik; paratroopers at Fornebu and Sola; Denmark occupied the same day.",
+   "It was the first major combined operation of German land, sea and air forces under one command.",
+   "Germany depended on Swedish iron ore shipped via Narvik; Raeder wanted Norwegian bases.",
+   "The Allies planned landings at Narvik linked to helping Finland, and to mine Norwegian waters (Operation Wilfred).",
+   "Quisling met Hitler in December 1939; Hitler ordered a study; the Altmark incident (February 1940) accelerated planning.",
+   "Britain began mining Norwegian waters on 8 April while German forces were at sea.",
+   "Most towns fell quickly; Oscarsborg sank the Blücher (SNL: at 06:22).",
+   "The delay let the king, government and Storting escape (EBSCO: with the gold reserves); attempts to make Quisling prime minister failed.",
+   "Oslo was occupied on 9 April after paratroopers/airborne troops seized Fornebu.",
+   "Allied landings near Narvik, Åndalsnes and Namsos in mid-April failed; fighting in southern Norway ended around late April/early May (SNL).",
+   "The Allies took Narvik on 28 May; the evacuation of 5–8 June carried the king and government into exile in Britain (EBSCO).",
+   "Norwegian forces surrendered / fighting in north Norway ended on 10 June 1940.",
+   "EBSCO: Germany secured ore and bases but kept about 300,000 occupation troops; Chamberlain was replaced by Churchill."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
