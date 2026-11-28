@@ -9,6 +9,7 @@ import {
   loadPowers, loadEntities, getJSON, loadUS, loadModern, loadSea, loadMeta, countFor, findEvent, loadEmpires, loadSuccession, loadOccupations, loadShape, decodeGeom,
   storedYears,
 } from './data.js';
+import { DATA_VERSION } from './data-version.js';
 import { parseYear, formatYear, formatDate, addYears, yearToFrac, fracToYear, ERAS, MIN_YEAR, MAX_YEAR } from './year.js';
 import { renderKey } from './key.js';
 import { TYPES, TYPE_KEYS } from './types.js';
@@ -81,6 +82,7 @@ async function init() {
   state.modern = p.get('mb') === '1';
   const want = { c: p.get('c'), s: p.get('s'), mc: p.get('mc'), e: p.get('e'), col: p.get('col'), em: p.get('em') };
 
+  watchBuild();
   setupTimebar();
   setupPanel();
   setupTools();
@@ -126,6 +128,7 @@ async function init() {
   drawTicks();
   await mapReady;
   if (mapOk) { setupTravel(); map.setWarVisible(state.warOn); map.flagEmp = empires; map.setFillMode(fillMode()); }
+  if (p.get('debug') === '1') showDiag();
   drawKey();
   await goToYear(state.year, { month: state.month, day: state.day, keepSel: false });
   if (state.modern) toggleModern(true);
@@ -612,12 +615,14 @@ async function updateFlags() {
   map.refreshFlags();
 }
 
-const fillMode = () => (getPref('fill', 'flag') === 'plain' ? 'plain' : 'flag');
+// 'fill2': a choice made since round 12. An older 'fill' ("Plain colours" picked before the flag fill was
+// finished) is not carried over: flag fill is the default again.
+const fillMode = () => (getPref('fill2', 'flag') === 'plain' ? 'plain' : 'flag');
 
 function drawKey() {
   renderKey(els.key, {
     fill: fillMode(),
-    onFill: (mode) => { setPref('fill', mode); if (mapOk) map.setFillMode(mode); drawKey(); },
+    onFill: (mode) => { setPref('fill2', mode); if (mapOk) map.setFillMode(mode); drawKey(); },
     doc: state.snapDoc, year: state.year, dark: isDark(), wars: state.wars, warOn: state.warOn,
     onWar: (on) => { state.warOn = on; setPref('wars', on); if (mapOk) map.setWarVisible(on); updateWar(state.year); if (state.view === 'year' && !state.sel) render(); },
     onOpenWar: (id) => openEvent(id, { fly: true, stay: true }),
@@ -1637,25 +1642,165 @@ function globalKeys(e) {
   }
 }
 
+// ---------------------------------------------------------------- fresh code, diagnostics
+/** After a deploy, phones get the new code: every script and stylesheet URL is versioned (tools/build_assets.py),
+ *  and index.html carries a build id. A tab restored from memory, or a home-screen app reopened, never asks for
+ *  the page again; so when the page comes back to the front (and once after loading) the live index.html is
+ *  fetched past every cache, and if its build differs the page reloads, once per build. */
+function watchBuild() {
+  const mine = document.querySelector('meta[name="build"]')?.content;
+  if (!mine || !/^https?:$/.test(location.protocol)) return;
+  let last = 0;
+  const check = async () => {
+    if (Date.now() - last < 60000) return;
+    last = Date.now();
+    try {
+      const r = await fetch(new URL('./?build=' + Date.now(), location.href), { cache: 'no-store' });
+      if (!r.ok) return;
+      const live = (await r.text()).match(/<meta name="build" content="([0-9a-f]+)">/)?.[1];
+      if (!live || live === mine) return;
+      const k = 'geohistory.reloadedFor';
+      try { if (sessionStorage.getItem(k) === live) return; sessionStorage.setItem(k, live); } catch { return; }
+      if (travel?.running) return;
+      location.reload();
+    } catch { /* offline: keep what we have */ }
+  };
+  setTimeout(check, 3000);
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') check(); });
+  window.addEventListener('pageshow', (e) => { if (e.persisted) { last = 0; check(); } });
+}
+
+/** ?debug=1: a small box with what the owner can screenshot if the flags do not show on a device. */
+function showDiag() {
+  const box = h('pre.diag', { 'aria-hidden': 'true' });
+  document.body.append(box);
+  const build = document.querySelector('meta[name="build"]')?.content || 'dev';
+  const tick = () => {
+    const d = mapOk ? map.fillDiag() : null;
+    box.textContent = d ? [`build ${build} · data ${DATA_VERSION}`, `fill ${d.mode} via ${d.impl}${d.why ? ' (' + d.why + ')' : ''} · shown ${d.on ? 'yes' : 'no'}`,
+      `GPU ${d.renderer}`, `max texture ${d.maxTex} · canvas cap ${d.cap} · dpr ${d.dpr}`, `${d.canvases} canvases, ${d.canvasMB} MB: ${d.sizes}`, `check ${d.check || '-'}`].join('\n')
+      : `build ${build} · no WebGL map`;
+  };
+  tick();
+  setInterval(tick, 1500);
+}
+
 // ---------------------------------------------------------------- panel, tools, url
+// On phones the panel is a bottom sheet with three heights: 'collapsed' (the handle and a one-line title, so the
+// map has nearly the whole screen), 'half' and 'full'. Drag the bar (or pull the panel down from the top of its
+// text) to resize it; a quick swipe down collapses it, up goes one step; a tap on the bar switches between collapsed and half; the
+// chevron button steps collapsed -> half -> full -> collapsed. The last height chosen is kept (full comes back as
+// half). It starts collapsed.
+function isPhone() { return window.innerWidth < 900; }
 function setupPanel() {
-  els.handle.addEventListener('click', () => {
-    const order = ['peek', 'half', 'full'];
-    const next = order[(order.indexOf(els.panel.dataset.size) + 1) % order.length];
-    setSheet(next);
+  const SHEET = ['collapsed', 'half', 'full'];
+  const bar = $('#sheetBar'), chev = $('#sheetChev'), title = $('#sheetTitle');
+  // narrow screens: the play speeds in short (the select then fits the one row of controls)
+  if (window.innerWidth < 600) for (const o of els.speed.options) o.textContent = `${o.value} yrs/s`;
+  const saved = getPref('sheet', 'collapsed');
+  setSheet(saved === 'half' || saved === 'full' ? 'half' : 'collapsed');
+  // the one-line title: the panel's own heading
+  const syncTitle = () => { const t = els.body.querySelector('h1')?.textContent?.trim(); if (t && title.textContent !== t) title.textContent = t; };
+  new MutationObserver(syncTitle).observe(els.body, { childList: true, subtree: true, characterData: true });
+
+  let drag = null, justDragged = false;
+  const snapH = () => {
+    const avail = els.panel.getBoundingClientRect().bottom - (document.querySelector('.top')?.getBoundingClientRect().bottom || 56) - 8;
+    return { collapsed: bar.offsetHeight, half: Math.min(avail, Math.round(window.innerHeight * 0.46)), full: avail };
+  };
+  const start = (y, id) => {
+    drag = { y0: y, h0: els.panel.offsetHeight, y, t: performance.now(), v: 0, id, moved: false, snaps: snapH() };
+  };
+  const move = (y) => {
+    if (!drag) return false;
+    const dy = y - drag.y0;
+    if (!drag.moved && Math.abs(dy) < 6) return false;
+    if (!drag.moved) { drag.moved = true; els.panel.classList.add('dragging'); }
+    const now = performance.now();
+    drag.v = 0.7 * drag.v + 0.3 * ((y - drag.y) / Math.max(1, now - drag.t));   // px per ms, + is downwards
+    drag.y = y; drag.t = now;
+    const hgt = Math.max(drag.snaps.collapsed, Math.min(drag.snaps.full, drag.h0 - dy));
+    els.panel.style.height = hgt + 'px';
+    return true;
+  };
+  const end = () => {
+    if (!drag) return;
+    const d = drag;
+    drag = null;
+    if (!d.moved) return;
+    justDragged = true;
+    setTimeout(() => { justDragged = false; }, 0);
+    const hgt = els.panel.offsetHeight;
+    els.panel.classList.remove('dragging');
+    els.panel.style.height = '';
+    let size;
+    const cur = SHEET.reduce((best, k) => (Math.abs(d.snaps[k] - hgt) < Math.abs(d.snaps[best] - hgt) ? k : best), 'collapsed');
+    if (Math.abs(d.v) > 0.45) {
+      // a swipe: down collapses the sheet; up goes one step (all the way when it was long)
+      const from = SHEET.reduce((best, k) => (Math.abs(d.snaps[k] - d.h0) < Math.abs(d.snaps[best] - d.h0) ? k : best), 'collapsed');
+      if (d.v > 0) size = 'collapsed';
+      else size = hgt > (d.snaps.half + d.snaps.full) / 2 ? 'full' : SHEET[Math.min(2, SHEET.indexOf(from) + 1)];
+    } else size = cur;
+    setSheet(size, true);
+  };
+  // the bar: pointer events (mouse, pen and touch), with touch-action: none so the page never scrolls instead
+  bar.addEventListener('pointerdown', (e) => {
+    if (!isPhone() || (e.pointerType === 'mouse' && e.button !== 0)) return;
+    start(e.clientY, e.pointerId);
   });
-  new ResizeObserver(() => applyPadding()).observe(els.panel);
+  // the pointer is captured only once it moves: a plain tap stays a click on the button under it
+  bar.addEventListener('pointermove', (e) => {
+    if (!drag || e.pointerId !== drag.id) return;
+    const was = drag.moved;
+    if (move(e.clientY) && !was) { try { bar.setPointerCapture(e.pointerId); } catch { /* not capturable */ } }
+  });
+  bar.addEventListener('pointerup', end);
+  bar.addEventListener('pointercancel', end);
+  // the text: pulled down from its top, the sheet follows (a swipe down collapses it); otherwise it scrolls
+  let pull = null;
+  els.body.addEventListener('touchstart', (e) => {
+    pull = isPhone() && e.touches.length === 1 && els.body.scrollTop <= 0 ? { y: e.touches[0].clientY, on: false } : null;
+  }, { passive: true });
+  els.body.addEventListener('touchmove', (e) => {
+    if (!pull) return;
+    const y = e.touches[0].clientY;
+    if (!pull.on) {
+      if (y - pull.y > 8 && els.body.scrollTop <= 0) { pull.on = true; start(pull.y, 'touch'); } else if (y < pull.y - 4) { pull = null; return; } else return;
+    }
+    if (e.cancelable) e.preventDefault();
+    move(y);
+  }, { passive: false });
+  const pullEnd = () => { if (pull?.on) end(); pull = null; };
+  els.body.addEventListener('touchend', pullEnd);
+  els.body.addEventListener('touchcancel', pullEnd);
+
+  els.handle.addEventListener('click', () => {
+    if (justDragged) return;
+    setSheet(els.panel.dataset.size === 'collapsed' ? 'half' : 'collapsed', true);
+  });
+  chev.addEventListener('click', () => {
+    const next = SHEET[(SHEET.indexOf(els.panel.dataset.size) + 1) % SHEET.length];
+    setSheet(next, true);
+  });
+  new ResizeObserver(() => { if (!els.panel.classList.contains('dragging')) applyPadding(); }).observe(els.panel);
   window.addEventListener('resize', applyPadding);
 }
 
-function setSheet(size) {
+/** `byUser`: chosen by the reader (remembered), not opened by the app. */
+function setSheet(size, byUser = false) {
+  const SHEET = ['collapsed', 'half', 'full'];
+  if (!SHEET.includes(size)) size = 'collapsed';
   els.panel.dataset.size = size;
-  els.handle.setAttribute('aria-expanded', size === 'peek' ? 'false' : 'true');
-  els.handle.setAttribute('aria-label', size === 'full' ? 'Shrink panel' : 'Expand panel');
+  els.handle.setAttribute('aria-expanded', size === 'collapsed' ? 'false' : 'true');
+  els.handle.setAttribute('aria-label', size === 'collapsed' ? 'Show the panel' : 'Hide the panel');
+  const chev = $('#sheetChev');
+  chev.setAttribute('aria-label', { collapsed: 'Show more of the panel', half: 'Show the whole panel', full: 'Hide the panel' }[size]);
+  chev.dataset.dir = size === 'full' ? 'down' : 'up';
+  if (byUser) setPref('sheet', size);
 }
 
 function expandSheet() {
-  if (window.innerWidth < 900 && els.panel.dataset.size === 'peek') setSheet('half');
+  if (isPhone() && els.panel.dataset.size === 'collapsed') setSheet('half');
 }
 
 function applyPadding() {
@@ -1745,7 +1890,7 @@ function sourcesContent(meta, audit) {
       h('li', null, h('a', { href: 'https://www.naturalearthdata.com/', target: '_blank', rel: 'noopener' }, 'Natural Earth'), ': coastlines and today\'s countries (public domain).'),
       h('li', null, h('a', { href: 'https://www.wikidata.org/', target: '_blank', rel: 'noopener' }, 'Wikidata'), ': events and descriptions (CC0). Links go to Wikipedia.'),
       h('li', null, h('a', { href: 'https://en.wikipedia.org/wiki/List_of_years', target: '_blank', rel: 'noopener' }, 'English Wikipedia year articles'), ': one-sentence descriptions of events, © Wikipedia contributors, ', h('a', { href: 'https://creativecommons.org/licenses/by-sa/4.0/', target: '_blank', rel: 'noopener' }, 'CC BY-SA 4.0'), '. The sentences are shortened and stripped of links; the same licence applies to them here.'),
-      h('li', null, h('a', { href: 'https://maplibre.org/', target: '_blank', rel: 'noopener' }, 'MapLibre GL JS'), ' (BSD licence) draws the map; labels use Noto Sans (SIL Open Font License).')),
+      h('li', null, h('a', { href: 'https://maplibre.org/', target: '_blank', rel: 'noopener' }, 'MapLibre GL JS'), ' (BSD licence) draws the map; map labels use Source Sans 3 and Noto Sans, headings Alegreya (all SIL Open Font License).')),
     h('p', null, 'Full credits and licences: ', h('a', { href: 'https://github.com/ngcoding10/geohistory/blob/main/CREDITS.md', target: '_blank', rel: 'noopener' }, 'CREDITS.md'),
       '. Data built on ', meta?.built || '?', '.'),
     h('p', null, h('a', { href: 'privacy.html' }, 'Privacy'), ' · ', h('a', { href: 'terms.html' }, 'Terms'), ' · ',

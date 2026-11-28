@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="build" content="273372193b">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>GeoHistory · a world history map you can scroll through time</title>
   <meta name="description" content="Pick any year from 3000 BC to today and see who ruled where, the largest empires, and the wars, treaties and revolutions of that year on an interactive map.">
@@ -26,9 +27,33 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/web/alegreya-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="modulepreload" href="js/main.js">
-  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+{
+ "imports": {
+  "./js/context.js": "./js/context.js?v=e25f9f1548",
+  "./js/data-version.js": "./js/data-version.js?v=39df9fb950",
+  "./js/data.js": "./js/data.js?v=2aeec11306",
+  "./js/flagfill.js": "./js/flagfill.js?v=a7fd037979",
+  "./js/flags.js": "./js/flags.js?v=af2176a628",
+  "./js/fuzzy.js": "./js/fuzzy.js?v=1aa6d4655d",
+  "./js/geo.js": "./js/geo.js?v=f016475afd",
+  "./js/groups.js": "./js/groups.js?v=3d2cf08998",
+  "./js/key.js": "./js/key.js?v=4e173ffd37",
+  "./js/main.js": "./js/main.js?v=05b412be13",
+  "./js/map.js": "./js/map.js?v=b68bb58c28",
+  "./js/prepare.js": "./js/prepare.js?v=e5e27d2fa7",
+  "./js/search.js": "./js/search.js?v=cfe92c2124",
+  "./js/store.js": "./js/store.js?v=7581abfcbe",
+  "./js/travel.js": "./js/travel.js?v=26f966973c",
+  "./js/types.js": "./js/types.js?v=cbfdcca893",
+  "./js/ui.js": "./js/ui.js?v=6f04cca640",
+  "./js/year.js": "./js/year.js?v=5484306e43"
+ }
+}
+  </script>
+  <link rel="modulepreload" href="js/main.js?v=05b412be13">
+  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css?v=ab1e70d59e">
+  <link rel="stylesheet" href="css/style.css?v=01ec5be71a">
 </head>
 <body>
   <a class="skip" href="#panel">Skip to the year panel</a>
@@ -61,8 +86,13 @@
     </div>
   </main>
 
-  <aside id="panel" class="panel" aria-label="Details" tabindex="-1" data-size="peek">
-    <button id="sheetHandle" class="sheet-handle" type="button" aria-label="Expand panel" aria-expanded="false"><span></span></button>
+  <aside id="panel" class="panel" aria-label="Details" tabindex="-1" data-size="collapsed">
+    <div id="sheetBar" class="sheet-bar">
+      <button id="sheetHandle" class="sheet-handle" type="button" aria-label="Show the panel" aria-expanded="false" aria-controls="panelBody">
+        <span class="grip" aria-hidden="true"></span><span id="sheetTitle" class="sheet-title">GeoHistory</span></button>
+      <button id="sheetChev" class="sheet-chev" type="button" aria-label="Show more of the panel" aria-controls="panelBody">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6.4 15.4 12 9.8l5.6 5.6 1.4-1.4-7-7-7 7z"/></svg></button>
+    </div>
     <div id="panelBody" class="panel-body">
       <p class="muted">Loading the year…</p>
     </div>
@@ -114,7 +144,7 @@
   </dialog>
 
   <noscript><p class="noscript">GeoHistory needs JavaScript and WebGL to draw the map.</p></noscript>
-  <script src="vendor/maplibre/maplibre-gl.js"></script>
-  <script type="module" src="js/main.js"></script>
+  <script src="vendor/maplibre/maplibre-gl.js?v=e5b398823a"></script>
+  <script type="module" src="js/main.js?v=05b412be13"></script>
 </body>
 </html>

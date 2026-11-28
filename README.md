@@ -37,8 +37,14 @@ against Wikidata; place every event and write the event files, search index and 
 timelines (after the context steps: per-state population, government, parties, religion, leaders, movements and
 placed discoveries, which become map events of the type "invention", and the event write-ups; see "State
 context and event write-ups"); run the audit; write `js/data-version.js` (a hash of `data/`, used to version data URLs).
-The map label glyphs in `fonts/Atlas Serif */` are not part of that run: `tools/make_glyphs.cjs` draws them
-from the Alegreya fonts in `fonts/src/` with headless Chromium.
+That last step also runs `tools/build_assets.py`, which versions every script and stylesheet URL in `index.html`
+by its content (an import map versions the ES modules) and stamps a build id; run it on its own after changing
+anything in `js/` or `css/`, or the end-to-end check reports the stale URLs. The page compares its build id with
+the live `index.html` when it comes back to the front and reloads once for a newer build, so phones (and
+home-screen web apps) pick up a deploy. Add `?debug=1` to the address to see how the device draws the flag fill
+(`?fill=pattern` forces the tiled-flag fallback).
+The map label glyphs in `fonts/Atlas Sans */` are not part of that run: `tools/make_glyphs.cjs` draws them
+from the Source Sans 3 fonts in `fonts/src/` with headless Chromium.
 
 Curated text lives in `tools/curated/`: period supplements (`events/*.json`), decade summaries, state
 descriptions, dated border changes and a few hand corrections. Every entry names the Wikipedia article it
