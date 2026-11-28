@@ -3207,7 +3207,11 @@
    "Longest-ruling Vietnamese dynasty, 1428–1789 with an interregnum 1527–1533 (Mạc usurpation) (Wikipedia)."
   ],
   "disagree": "Size of the 1427 Ming relief: 110,000 men in two columns (Wikipedia) or 100,000 men and 20,000 horses in Liu Sheng's column alone (Trần Trọng Kim). Ming losses at Tốt Động: over 50,000 dead in the Vietnamese chronicles, a figure Trần Trọng Kim doubted. Both stated in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Annam",
+   "result": "2 claims re-checked: Annam fell under Chinese rule about 1407; in 1428 Le Loi freed the country and founded a dynasty that lasted till the end of the 18th century. Both consistent.",
+   "errors": 0
+  }
  },
  "cp18-025": {
   "title": "Pachacuti begins the Inca expansion",
@@ -3424,7 +3428,11 @@
    "Later a major stop of the Atlantic slave trade; Dutch seized it in 1637 and took the rest of the Portuguese Gold Coast in 1642; Dutch headquarters (EB 1911); passed to the United Kingdom in 1872 (Wikipedia; Ellis: capture July 1637, Portuguese occupation 1482-1642)."
   ],
   "disagree": "First Portuguese visit: 1471 under Fernão Gomes (Wikipedia) or 1470, by Santarém and Escobar (Ellis). Size of the 1481 fleet: ten caravels and two transports with provisions for 600 (Wikipedia) or eight caravels and two transports with 500 soldiers and 200 workmen (Ellis). Sailing date 11 (Ellis) or 12 (Wikipedia) December 1481. Outcome of the quarry clash: settled with presents (Ellis) or Portuguese deaths and a burnt village (Wikipedia). All stated in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Elmina",
+   "result": "4 claims re-checked: Elmina was the earliest European settlement on the Gold Coast; Columbus is believed to have taken part in the voyage; the Portuguese began building at once; the Dutch captured it in 1637. All consistent. The Britannica adds that the castle was not completed until eighty years later and that Elmina was ceded to the Dutch by treaty in 1640 (the text gives 1642 for the rest of the Portuguese Gold Coast, as Wikipedia, Ellis and the Britannica's Gold Coast article do).",
+   "errors": 0
+  }
  },
  "Q18578423": {
   "title": "The voyages of Christopher Columbus",
@@ -3704,7 +3712,11 @@
    "Babur fled to Kabul, turned to India and founded the Mughal Empire (Wikipedia, Khanate of Bukhara; EB)."
   ],
   "disagree": "Babur's recapture of Samarkand: late autumn of 1500 in the Baburnama (the year 906 AH ran from July 1500 to July 1501); 'early 1501' for the Uzbek expulsion in Wikipedia's Sar-e-Pul article. The text follows Babur's own account and attributes it.",
-  "checked": null
+  "checked": {
+   "by": "https://archive.org/download/tarikhirashidia00rossgoog/tarikhirashidia00rossgoog_djvu.txt",
+   "result": "2 claims re-checked in the Tarikh-i-Rashidi: Shahi Beg (Shaybani) Khan took Samarkand and Bukhara; Babur's sister Khanzada Begum passed to Shaybani at the siege of Samarkand (Haidar says Babur gave her as ransom for his own life; Babur says she fell into Shaybani's hands; the text's wording covers both). Consistent.",
+   "errors": 0
+  }
  },
  "cp04-09": {
   "title": "The Waldseemüller map names America",
@@ -3861,7 +3873,11 @@
    "Portuguese control until 1961 (Wikipedia); EB: became the most flourishing Portuguese settlement in India."
   ],
   "disagree": "Date of the first occupation (17 February 1510 in Wikipedia and Barros; 1 or 3 March in Correa and the Commentaries); date of the Bijapur reoccupation (11 or 17 May); length of the sack (four or three days); casualties (Albuquerque's estimate of some 6,800 enemy dead and 50 Portuguese dead in Wikipedia; at least 2,000 garrison dead and 40 Portuguese dead in Stephens). All stated in the text.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Goa",
+   "result": "8 claims re-checked: Goa belonged to Bijapur; the city surrendered without a struggle at the first attack; the garrison were Ottoman (Turkish) mercenaries; the Portuguese were blockaded in their ships from May to August until the monsoon ended; Albuquerque returned in November and retook the city; three days' plunder (as Stephens; Wikipedia's four days is stated in the text); the Muslim population was massacred; the entry was on St Catherine's day 1510. All consistent. The Britannica dates the first attack to 10 February 1510 (the text gives the occupation date, 17 February, with the 1 and 3 March variants).",
+   "errors": 0
+  }
  },
  "Q4110453": {
   "title": "Portuguese capture of Malacca",
@@ -3870,7 +3886,7 @@
   "paras": [
    "Malacca, ruled by Sultan Mahmud Shah, controlled the narrow strait through which the sea trade between India and China passed, and its harbour was crowded with merchants from Gujarat, Java, China and many other lands. In 1509 a Portuguese squadron under Diogo Lopes de Sequeira came to open trade. The powerful Gujarati and Javanese merchant communities, fearing Portuguese competition, persuaded the sultan to turn on the visitors: the ships were attacked, and the factor Rui de Araújo and some twenty men ashore were taken prisoner. Sequeira sailed away without them.",
    "Afonso de Albuquerque, governor of Portuguese India, sailed from Cochin in April 1511 with 18 ships. Wikipedia gives about 1,000 men (the Italian Giovanni da Empoli, who sailed with the fleet, counted 1,500 Portuguese and 800 allies); H. Morse Stephens, in his Albuquerque (1892), gives 1,400 men. At Pedir in Sumatra he picked up nine prisoners who had escaped from Malacca. Before Malacca he demanded the captives' release while the sultan stalled; after Albuquerque had ships and waterfront houses set on fire, the prisoners were handed over. Convinced that Mahmud was playing for time until the monsoon would trap the fleet, Albuquerque attacked.",
-   "The first assault, on 25 July (St James's day) according to Stephens, was aimed at the bridge that joined the two halves of the city. The Portuguese took it and beat off a charge of the sultan's war elephants, but exhausted by counter-attacks they set fire to part of the city and withdrew to the ships. Albuquerque then persuaded his captains that Malacca must be held with a fortress, to cut off the spice trade that ran through it to Cairo and Mecca. A second landing retook the bridge, and after days of bombardment and street fighting Albuquerque took full control of the city on 24 August. The city was sacked for three days, but the property of the Chinese, Hindus and Peguans, who had sided with the Portuguese, was spared. Wikipedia reports 28 Portuguese killed in the operation.",
+   "The first assault, on 25 July (St James's day) according to Stephens, was aimed at the bridge that joined the two halves of the city. The Portuguese took it and beat off a charge of the sultan's war elephants, but exhausted by counter-attacks they set fire to part of the city and withdrew to the ships. Albuquerque then persuaded his captains that Malacca must be held with a fortress, to cut off the spice trade that ran through it to Cairo and Mecca. A second landing retook the bridge, and after days of bombardment and street fighting Albuquerque took full control of the city on 24 August, according to Wikipedia; the 1911 Encyclopaedia Britannica dates the decisive second assault to 4 August. The city was sacked for three days, but the property of the Chinese, Hindus and Peguans, who had sided with the Portuguese, was spared. Wikipedia reports 28 Portuguese killed in the operation.",
    "Albuquerque built the fortress later known as A Famosa, put the Hindu merchant Nina Chatu, who had helped the captives, at the head of the Hindu community, and sent envoys to Ayutthaya and other neighbours. Mahmud Shah fled and ruled in exile from Kampar in Sumatra until his death in 1527; his son founded the Sultanate of Johor."
   ],
   "sources": [
@@ -3937,7 +3953,11 @@
    "Fortress A Famosa built (Wikipedia; Stephens: began building a fortress); Nina Chatu made head of the Hindus (Stephens; Wikipedia: Nina Chatu interceded for the Portuguese); envoys to Ayutthaya (Wikipedia).",
    "Mahmud Shah retreated to Kampar, Sumatra, government in exile until his death in 1527; his son Alauddin founded the Sultanate of Johor (Wikipedia)."
   ],
-  "disagree": "Size of Albuquerque's force: about 1,000 men (Wikipedia), 1,500 Portuguese and 800 allies (Giovanni da Empoli, cited by Wikipedia), 1,400 men (Stephens). Stated in the text.",
-  "checked": null
+  "disagree": "Size of Albuquerque's force: about 1,000 men (Wikipedia), 1,500 Portuguese and 800 allies (Giovanni da Empoli, cited by Wikipedia), 1,400 men (Stephens). Stated in the text. Fall of the city: full control on 24 August (Wikipedia) or the second assault on 4 August, when 'the place finally fell' (Britannica 1911, found in the re-check). Stated in the text.",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Malacca",
+   "result": "5 claims re-checked: Sequeira's 1509 voyage; Rui de Araújo and twenty men seized; Sequeira sailed away; first attack on 25 July 1511 (confirms the date the text attributes to Stephens); first attack only partly successful. All consistent. The Britannica dates the second, decisive assault to 4 August against Wikipedia's 24 August for full control; this disagreement was added to the text.",
+   "errors": 0
+  }
  }
 }
