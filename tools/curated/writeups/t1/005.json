@@ -2779,5 +2779,81 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q745979": {
+  "title": "Battle of Chancellorsville",
+  "y": 1863,
+  "place": "Confederate States of America",
+  "paras": [
+   "The Battle of Chancellorsville, fought from 30 April to 6 May 1863 in the Wilderness of central Virginia, is considered General Robert E. Lee's greatest victory. After the Union defeat at Fredericksburg, Lincoln gave command of the Army of the Potomac to Major General Joseph Hooker, who rebuilt its morale and planned a spring campaign to turn the left flank of Lee's Army of Northern Virginia at Fredericksburg. Hooker had about 130,000 men; Lee, with James Longstreet's corps away on a supply mission, had about 60,000. At the end of April Hooker left John Sedgwick with some 40,000 men opposite Fredericksburg and led the rest across the Rappahannock River into the dense woods of the Wilderness, around the Chancellorsville crossroads.",
+   "Lee did not retreat. Leaving Jubal Early's division to watch Sedgwick, he moved the rest of his army west against Hooker. On 1 May the two sides clashed in the woods, and Hooker halted his advance and pulled back to a defensive position at Chancellorsville. That evening Lee and Stonewall Jackson planned a bold stroke: on 2 May Jackson led about 28,000-30,000 men on a long march across the front of the Union army to its open right flank, while Lee held Hooker's attention with some 15,000. Warnings of the flank march were ignored at Hooker's headquarters, where it was taken as a sign that Lee was retreating.",
+   "At about 5 p.m. Jackson's men burst out of the thickets, overran Oliver O. Howard's XI Corps and rolled the Union line back more than two miles. That night, riding ahead of his lines in the dark, Jackson was mistaken for Union cavalry and shot by men of a North Carolina regiment; he was mortally wounded, and J. E. B. Stuart took over his corps. On 3 May the Confederates renewed the attack in heavy fighting around the crossroads; Hooker gave up key ground and was knocked senseless when a shell struck a pillar he was leaning on. The same day Sedgwick broke through Early at Fredericksburg, but Lee divided his army yet again, stopped Sedgwick at Salem Church and forced him back across the river on 4 May.",
+   "Although Hooker, after some 17,000 casualties, still outnumbered Lee two to one, he decided to retreat, and the Army of the Potomac recrossed the Rappahannock on 5-6 May. The victory was costly for the South, above all in the loss of Jackson. Buoyed by it, Lee invaded Pennsylvania, leading to the Battle of Gettysburg in July 1863."
+  ],
+  "sources": [
+   {
+    "url": "https://www.battlefields.org/learn/civil-war/battles/chancellorsville",
+    "title": "Chancellorsville Battle Facts and Summary",
+    "publisher": "American Battlefield Trust",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/chancellorsville-battle",
+    "title": "Chancellorsville, Battle of (The Oxford Companion to American Military History)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Chancellorsville is considered Lee's greatest victory.",
+   "After Fredericksburg Lincoln appointed Hooker to command the Army of the Potomac; Hooker planned to turn Lee's left flank at Fredericksburg.",
+   "Hooker had about 130,000 men (Oxford Companion: 40,000 under Sedgwick and 90,000 with Hooker); Lee had about 60,000, Longstreet being absent (American Battlefield Trust).",
+   "Hooker left Sedgwick at Fredericksburg and crossed the Rappahannock into the Wilderness by 29 April; on 30 April he reached the Chancellorsville crossroads.",
+   "Lee left Early at Fredericksburg and moved against Hooker.",
+   "On 1 May the armies clashed in the woods and Hooker halted and fell back to Chancellorsville.",
+   "On 2 May Jackson led about 28,000 (Oxford Companion) or nearly 30,000 (American Battlefield Trust) men around the Union front to its right flank, leaving Lee about 14,000-15,000 men.",
+   "Warnings of a flank attack were ignored at Hooker's headquarters, which believed Lee was retreating (Oxford Companion).",
+   "Jackson attacked at about 5 p.m. (Oxford Companion: 5:15 p.m.), routed the XI Corps under Howard and drove the Union army back more than two miles (American Battlefield Trust).",
+   "Jackson, riding ahead of his lines at night, was fired on by a North Carolina regiment that took his party for Union cavalry; he was mortally wounded, and Stuart took command.",
+   "On 3 May heavy fighting continued around Chancellorsville; Hooker abandoned key ground and was knocked unconscious when a shell struck a pillar he leaned on.",
+   "Sedgwick broke through Early at Fredericksburg on 3 May; Lee sent troops that stopped him at Salem Church, and Sedgwick recrossed the Rappahannock on 4 May.",
+   "With about 17,000 casualties Hooker still outnumbered Lee two to one but retreated across the Rappahannock (5 May, Oxford Companion; completed on 6 May, American Battlefield Trust).",
+   "Jackson's mortal wounding made this his last battle.",
+   "Buoyed by the victory, Lee launched an offensive into Pennsylvania, leading to Gettysburg in July 1863."
+  ],
+  "disagree": "Size of Jackson's flanking force: about 28,000 (Oxford Companion) or nearly 30,000 (American Battlefield Trust); the men left with Lee, 14,000 or about 15,000.",
+  "checked": null
  }
 }
