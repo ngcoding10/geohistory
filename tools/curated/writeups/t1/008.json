@@ -4234,5 +4234,191 @@
   ],
   "disagree": "Date of the battle: 5 April 1818 (Wikipedia) or 3 April 1818 (1911 Britannica, Chile); both stated. The February 1818 proclamation of independence and the August 1820 sailing of the Peru expedition come from the 1911 Britannica alone and are attributed.",
   "checked": null
+ },
+ "Q1150410": {
+  "title": "Battle of Boyacá",
+  "y": 1819,
+  "place": "Boyacá Bridge, near Tunja, Colombia",
+  "paras": [
+   "By 1819 Simón Bolívar, recognised as commander-in-chief of the Venezuelan patriots, held the Orinoco region with his headquarters at Angostura, but the Spanish general Pablo Morillo still controlled most of Venezuela and the viceroyalty of New Granada. Instead of attacking Morillo directly, Bolívar set out from Angostura to cross the Andes and join forces with Francisco de Paula Santander, who commanded the patriot troops in New Granada. In early July 1819 his army, made up of Venezuelans, New Granadans and a British Legion, came over the high Páramo de Pisba into the province of Boyacá, surprising the royalists but weakened by the march.",
+   "The royalist commander in New Granada, Colonel José María Barreiro, was ordered by the viceroy, Juan de Sámano, to stop Bolívar reaching the capital, Santa Fe (Bogotá). After a narrow patriot victory at the Pantano de Vargas on 25 July, Bolívar outmanoeuvred Barreiro with a night march and occupied Tunja (on 4 August according to Wikipedia; the 1911 Encyclopaedia Britannica puts his entry into Tunja in July, after a sharp action), putting himself between the royalists and the capital. Barreiro tried to march round him, and on 7 August his army was caught near the bridge over the Teatinos River at Boyacá, about 150 km from Bogotá. Santander's vanguard division and José Antonio Anzoátegui's rearguard division attacked; in about two hours the royalist force was destroyed and Barreiro and his second in command, Francisco Jiménez, were captured.",
+   "The victory gave Bolívar immediate possession of Bogotá and most of New Granada: the viceroy Sámano fled the capital as soon as the news arrived. In December 1819 the Congress of Angostura united Venezuela and New Granada as the Republic of Colombia (Gran Colombia), and Boyacá opened the way to the later patriot victories at Carabobo, Pichincha, Junín and Ayacucho. The 7th of August is a national holiday in Colombia, and the day on which Colombian presidents take office."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Boyac%C3%A1",
+    "title": "Battle of Boyacá (rev 1379060649, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bolivar,_Simon",
+    "title": "Bolivar, Simon, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     8,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Bolivar recognized as commander-in-chief, headquarters at Angostura on the Orinoco by the end of 1817 (EB); Morillo the Spanish commander (EB).",
+   "Set out from Angostura to cross the Cordilleras and join Santander, commander of the republican force in New Granada (EB).",
+   "Crossed the Andes through the Paramo de Pisba into Boyaca in early July 1819, surprising the Spanish, army weakened (Wikipedia); army of Venezuelans, New Granadans and a British Legion (Wikipedia); EB: July 1819 entered Tunja after a sharp action.",
+   "Viceroy Juan de Samano ordered Colonel Barreiro to intercept Bolivar and prevent him reaching Santa Fe (Wikipedia).",
+   "Pantano de Vargas, narrow victory, 25 July (Wikipedia).",
+   "Night countermarch; Tunja occupied 4 August (Wikipedia); EB: in July 1819 he entered Tunja after a sharp action on the adjoining heights - see disagree.",
+   "Barreiro's march round Tunja; 7 August battle near the bridge over the Teatinos River, 150 km from Bogota (Wikipedia; EB: 7 August victory of Boyaca).",
+   "Santander's vanguard and Anzoategui's rearguard divisions; about two hours; Barreiro and Jimenez captured (Wikipedia).",
+   "Immediate possession of Bogota and all New Granada (EB); Samano fled the capital (Wikipedia).",
+   "December 1819 union of Venezuela and New Granada as the Republic of Colombia (Wikipedia; EB: fundamental law of 17 December 1819); opened the way to Carabobo, Pichincha, Junin and Ayacucho (Wikipedia).",
+   "7 August national holiday; presidential inauguration day every four years (Wikipedia)."
+  ],
+  "disagree": "Entry into Tunja: 4 August 1819 (Wikipedia) or July 1819 after a sharp action on the adjoining heights (1911 Britannica); both stated.",
+  "checked": null
+ },
+ "cp08-12": {
+  "title": "Gran Colombia created",
+  "y": 1819,
+  "place": "Angostura (now Ciudad Bolívar), Venezuela",
+  "paras": [
+   "In February 1819 Simón Bolívar opened a congress at Angostura, on the Orinoco, then the base of the Venezuelan patriots. Because most of the country was still in Spanish hands, its delegates came only from the areas the patriots held, with exiles representing New Granada. In his famous Address at Angostura Bolívar laid out his ideas on government and offered to give up his authority, but the congress required him to keep it until independence was secured.",
+   "Bolívar then crossed the Andes into New Granada and, with Francisco de Paula Santander, won the battle of Boyacá on 7 August 1819, which gave him Bogotá and most of New Granada. Returning to Angostura in triumph, he obtained from the congress the Fundamental Law of 17 December 1819, which united Venezuela and New Granada in a single republic, the Republic of Colombia, under his presidency. Historians call it Gran Colombia to distinguish it from the present-day country.",
+   "According to Wikipedia, the law of fourteen articles declared that the two countries, though closely bound, could not stand if divided, and so must be joined out of necessity and mutual interest; it merged their territories and their debts, provided for a president and vice-president appointed provisionally by the congress, and divided the republic into three departments, Venezuela, Cundinamarca (formerly New Granada) and Quito, with capitals at Caracas, Bogotá and Quito. Quito was still under Spanish rule. The congress elected Bolívar president and Francisco Antonio Zea vice-president.",
+   "The new state came fully into being only when the Congress of Cúcuta adopted its constitution in 1821, the year Bolívar's victory at Carabobo freed Venezuela. Gran Colombia, a centralised state, was torn by conflict between supporters of a strong central government and federalists, and it lasted only until 1831."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Congress_of_Angostura",
+    "title": "Congress of Angostura (rev 1384749890, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gran_Colombia",
+    "title": "Gran Colombia (rev 1375026848, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bolivar,_Simon",
+    "title": "Bolivar, Simon, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Congress opened at Angostura in February 1819 (EB: 15 February 1819; Wikipedia: started 15 February, installed 16 February).",
+   "Delegates only from patriot-held areas; New Granada represented by exiles (Wikipedia).",
+   "Address at Angostura; Bolivar surrendered his authority; congress required him to keep it until independence (EB; Wikipedia: Address at Angostura).",
+   "Crossed the Andes, joined Santander, Boyaca 7 August 1819, possession of Bogota and New Granada (EB).",
+   "Return to Angostura; Fundamental Law of 17 December 1819 united Venezuela and New Granada as the Republic of Colombia under his presidency (EB; Wikipedia Angostura; Wikipedia Gran Colombia); 'Gran Colombia' a historians' name (Wikipedia).",
+   "Wikipedia (attributed): fourteen articles; provinces united in a single republic that could not stand divided; by necessity and mutual interest; territories combined; debts consolidated in solidum; president and vice-president provisionally appointed by the congress.",
+   "Three departments Venezuela, Quito, Cundinamarca (formerly New Granada) with capitals Caracas, Quito, Bogota (Wikipedia Angostura). Quito still under Spanish rule (EB: Spaniards still held Ecuador until Pichincha 1822).",
+   "Bolivar elected president, Zea vice-president (Wikipedia Angostura).",
+   "Came into being with the Constitution of Cucuta 1821 (Wikipedia Gran Colombia; Wikipedia Angostura: constitution at the Congress of Cucuta in August 1821; EB: constitution of Colombia adopted 30 August 1821); Carabobo 1821 (EB).",
+   "Unitary centralist state; struggle between centralists and federalists (Wikipedia Gran Colombia); existed 1819-1831 (Wikipedia Gran Colombia: from 1819 to 1831)."
+  ],
+  "disagree": "Opening of the congress: 15 February (1911 Britannica; Wikipedia's 'started'), with Wikipedia also giving 16 February for its installation and 19 February for Bolivar's address; the text says February 1819.",
+  "checked": null
+ },
+ "Q388210": {
+  "title": "Battle of Carabobo",
+  "y": 1821,
+  "place": "Carabobo, near Valencia, Venezuela",
+  "paras": [
+   "After Boyacá (1819) and the creation of the Republic of Colombia, Simón Bolívar turned to the liberation of Venezuela, where the Spanish still held Caracas and the centre of the country. In November 1820 he agreed a six-month armistice with the Spanish commander Pablo Morillo at Trujillo. Morillo was then recalled to Spain and replaced by General Miguel de la Torre, and when the armistice expired in 1821 the war resumed.",
+   "La Torre's royalist army held the road from Valencia to Puerto Cabello on the plain of Carabobo. Bolívar's army, which Wikipedia gives as 6,500 or 8,000 men including some 340 to 350 men of the British Legion, approached on 24 June 1821. While Bolívar pressed in the centre, he sent a large part of his force under José Antonio Páez round the royalist right flank through difficult, wooded hills. The first patriot attack there was driven back, but the British battalion under Colonel Thomas Ilderton Ferrier held and then took the hills, losing, according to Wikipedia, 119 dead, Ferrier among them. Reinforced, the patriots drove the royalists off, and their cavalry broke through the royalist centre into its rear. Some Spanish infantry fought on in squares, but the royalist army was routed, and only a remnant reached Puerto Cabello.",
+   "Carabobo effectively ended the war in Venezuela. Bolívar entered Caracas on 29 June 1821, the 1911 Encyclopaedia Britannica says, and in August the constitution of Colombia was adopted, with Bolívar as president and Santander as vice-president. The last royalists held out in Puerto Cabello until Páez took it in November 1823. The patriots also lost two of their division commanders, Ambrosio Plaza and Manuel Cedeño. 24 June is celebrated in Venezuela as the Day of the Battle of Carabobo and Army Day."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Carabobo",
+    "title": "Battle of Carabobo (rev 1386730318, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bolivar,_Simon",
+    "title": "Bolivar, Simon, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     7,
+     8,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "After the creation of Colombia Bolivar moved on to liberate Venezuela (Wikipedia; EB: took the field again).",
+   "Armistice of six months concluded at Truxillo 25 November 1820 with Morillo (EB; Wikipedia: in 1820 an armistice between Morillo and Bolivar).",
+   "Morillo recalled, Torre took command, armistice expired, war renewed (EB; Wikipedia: commander Miguel de la Torre).",
+   "Royalists occupied the road from Valencia to Puerto Cabello (Wikipedia).",
+   "Bolivar's force 6,500 or 8,000 including 340 or 350 British Rangers/British Legion (Wikipedia, attributed); battle 24 June 1821 (Wikipedia).",
+   "Bolivar in the centre, Paez round the right flank through rough terrain (Wikipedia); Venezuelan infantry attack failed; British battalion under Col. Thomas Ilderton Ferrier took the hills; 119 deaths including Ferrier (Wikipedia, attributed).",
+   "Reinforced, pushed the enemy off; patriot cavalry broke through the centre to the rear; squares; rout; remnant reached Puerto Cabello (Wikipedia: only some 400 of one regiment reached Puerto Cabello; EB: shattered remains took refuge in Puerto Cabello).",
+   "Put an end to the war in Venezuela (EB; Wikipedia: independence ensured).",
+   "Bolivar entered Caracas on 29 June 1821 (EB, attributed); constitution of Colombia adopted 30 August 1821, Bolivar president, Santander vice-president (EB; Wikipedia Gran Colombia/Angostura: constitution at Cucuta, August 1821).",
+   "Puerto Cabello surrendered to Paez (EB: two years after; Wikipedia: November 1823 Paez occupied Puerto Cabello).",
+   "Ambrosio Plaza and Manuel Cedeno, commanders of the 2nd and 3rd Divisions, killed (Wikipedia).",
+   "24 June Battle of Carabobo Day and Army Day (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
