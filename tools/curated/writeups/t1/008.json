@@ -3129,15 +3129,19 @@
    "Over 700 over the Pali (Wikipedia, attributed; Kamehameha I article also over 700). Date: May 1795 (Wikipedia) vs about the end of April 1795 (Alexander narrative) - stated.",
    "Kalanikupule escaped, later captured and sacrificed (Wikipedia: later captured; Kamehameha I: captured and sacrificed to Kukailimoku; Alexander: wandered several months in the Koolau mountains, captured, offered in sacrifice to the war-god); lands divided among his followers (Alexander); master of all islands except Kauai and Niihau (Wikipedia; Alexander); 1796 attempt on Kauai lost canoes to wind and seas in the channel (Kamehameha I article: spring 1796; Alexander chapter XX: proposed invasion of Kauai); Kaumualii of Kauai and Niihau submitted (Wikipedia; Alexander: Cession of Kauai, 1810). 1810: Kamehameha I article: April 1810 peaceful unification negotiated with Kaumualii."
   ],
-  "disagree": "Date: May 1795 (Wikipedia) or about the end of April 1795 (Alexander's narrative, though his chronology lists May). Size of Kamehameha's army: about 12,000 men and 1,200 canoes (Wikipedia, Battle of Nuuanu), 10,000 soldiers and 960 canoes (Wikipedia, Kamehameha I), a tradition of 16,000 men (Alexander). Wikipedia says Brown was killed after a dispute over payment; Alexander says Kalanikupule had kept his promise to pay 400 hogs and gives no motive for the seizure (the motive is left out of the text). Wikipedia dates Kalanikupule's sailing to 4 January 1795, Alexander his embarkation to the 11th (left out). All figures given are attributed.",
-  "checked": null
+  "disagree": "Date: May 1795 (Wikipedia) or about the end of April 1795 (Alexander's narrative, though his chronology lists May). Size of Kamehameha's army: about 12,000 men and 1,200 canoes (Wikipedia, Battle of Nuuanu), 10,000 soldiers and 960 canoes (Wikipedia, Kamehameha I), a tradition of 16,000 men (Alexander). Wikipedia says Brown was killed after a dispute over payment; Alexander says Kalanikupule had kept his promise to pay 400 hogs and gives no motive for the seizure (the motive is left out of the text). Wikipedia dates Kalanikupule's sailing to 4 January 1795, Alexander his embarkation to the 11th (left out). All figures given are attributed. The 1911 Britannica (Hawaii) says Kamehameha became 'undisputed master of the whole group' in 1795; Wikipedia and Alexander both except Kauai and Niihau, which the text follows.",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Hawaii",
+   "result": "2 claims checked: John Young in Kamehameha's service (confirmed; the Britannica calls him an adviser); mastery after 1795 (the Britannica says of the whole group, against Wikipedia and Alexander, who except Kauai and Niihau; recorded as a disagreement, not an error in the text).",
+   "errors": 0
+  }
  },
  "Q219817": {
   "title": "The French Directory takes power",
   "y": 1795,
   "place": "Paris, France",
   "paras": [
-   "After the fall of Robespierre in July 1794 the National Convention, now led by moderate republicans, set out to give France a stable government that would prevent both a return of the Terror and the restoration of the monarchy. The result was the Constitution of the Year III, largely the work of Pierre Daunou and Boissy d'Anglas. It created a legislature of two houses: a Council of Five Hundred, which proposed laws, and a Council of Ancients of 250 members aged at least forty, which approved or rejected them. Executive power went to a Directory of five men, chosen by the Ancients from a list drawn up by the Five Hundred, with one director retiring each year. The directors had no voice in legislation, and deputies were chosen by indirect election, with a property qualification for electors in place of universal suffrage. Boissy d'Anglas argued that five members were strong enough to act firmly but too divided for any one of them to become a tyrant.",
+   "After the fall of Robespierre in July 1794 the National Convention, now led by moderate republicans, set out to give France a stable government that would prevent both a return of the Terror and the restoration of the monarchy. The result was the Constitution of the Year III, largely the work of Pierre Daunou and Boissy d'Anglas. It created a legislature of two houses: a Council of Five Hundred, which proposed laws, and a Council of Ancients of 250 members aged at least forty, which approved or rejected them. Executive power went to a Directory of five men, chosen by the Ancients from a list drawn up by the Five Hundred, with one director retiring each year. The directors had no voice in legislation, and deputies were chosen by indirect election, with a property qualification for electors in place of universal suffrage. In a passage quoted by Wikipedia, Boissy d'Anglas argued that five members were strong enough to act firmly but too divided for any one of them to become a tyrant.",
    "Unpopular, and fearing for their own safety and their work if the voters turned them out, the members of the Convention decreed that two-thirds of the first legislature must come from their own ranks. The constitution was put to the voters, with few taking part: Wikipedia gives 1,057,390 votes in favour and 49,978 against, out of about five million eligible, while the 1911 Encyclopaedia Britannica gives 1,050,000 for and only 5,000 against. It was proclaimed in force on 23 September 1795. The two-thirds rule angered royalists and other opponents in Paris, who rose in arms; on 13 Vendémiaire (5 October 1795) troops commanded for the government by the young General Napoleon Bonaparte, under Paul Barras, crushed the insurrection.",
    "The elections for the new councils followed in October. The Convention held its last session at the end of the month (Wikipedia dates it to 25 October, the Britannica to the 26th), and Wikipedia dates the Directory's government from 26 October. To protect the Revolution, the deputies required that all five directors be former members of the Convention who had voted for the execution of Louis XVI. On 31 October the Ancients chose the directors from the Five Hundred's list; the Abbé Sieyès refused the post, and Lazare Carnot was elected in his place. The first Directory thus consisted of Barras, Jean-François Rewbell, Louis-Marie de La Révellière-Lépeaux, Étienne-François Le Tourneur and Carnot. According to Wikipedia they moved into the Luxembourg Palace, where nothing had been prepared for them, and divided the work: Rewbell took foreign affairs, Carnot and Le Tourneur military matters, La Révellière religion and education, and Barras internal affairs.",
    "The new government began with an empty treasury and worthless paper money, and from the start it was split: the Britannica describes Rewbell, Barras and La Révellière as sharing the Jacobin spirit, while Carnot and Le Tourneur favoured more moderate policies. The Directory fought on against the European coalitions, and its general Bonaparte conquered much of Italy. After four years of war, financial crisis and political coups, Bonaparte, back from Egypt, overthrew it in the coup of 18 Brumaire (9 November 1799) and replaced it with the Consulate."
@@ -3232,7 +3236,11 @@
    "Continued war with coalitions, Bonaparte conquered much of Italy; Bonaparte returned from Egypt and overthrew it in the coup of 18 Brumaire, 9 November 1799, replaced by the Consulate (Wikipedia; EB: 18th Brumaire (November 9))."
   ],
   "disagree": "Referendum figures: 1,057,390 for and 49,978 against (Wikipedia) or 1,050,000 for and 5,000 against (1911 Britannica); both given. End of the Convention: last meeting 25 October (Wikipedia) or dissolved itself 26 October 1795 (Britannica). Start of the Directory: 26 October (Wikipedia lead), 27 October (Catholic Encyclopedia), the directors chosen 31 October and installed the next day (Wikipedia), while the event record has 2 November; the text gives Wikipedia's dates with attribution and no override is made. Wikipedia says that a majority of the new legislature were ardent republicans; the Britannica that the Jacobins had a weak majority (not used in the text).",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Napoleon_I.",
+   "result": "3 claims checked: the two-thirds decree provoked a rising in Paris; the Convention entrusted its defence to Barras; Bonaparte's part on 13 Vendemiaire (5 October 1795). All confirmed.",
+   "errors": 0
+  }
  },
  "Q974166": {
   "title": "Battle of Montenotte",
@@ -3240,7 +3248,7 @@
   "place": "Montenotte, Liguria, Italy",
   "paras": [
    "In the spring of 1796 the French Directory gave General Napoleon Bonaparte his first army command, the Army of Italy, stationed on the Ligurian coast of the Mediterranean. His troops were hungry, unpaid and poorly equipped. Facing them in the Apennine mountains were two allied armies: an Austrian army under Johann Peter Beaulieu, and the army of the Kingdom of Sardinia (Piedmont) under Michelangelo Alessandro Colli, an Austrian general on loan to Sardinia. The two allies distrusted each other and did not agree on a joint plan. Bonaparte intended to drive a wedge between them and defeat each in turn.",
-   "Beaulieu moved first. Believing that the main French force was near Genoa, he attacked an isolated French brigade under Jean-Baptiste Cervoni at Voltri on 10 April; it escaped along the coast to Savona. Meanwhile the Austrian right wing under Eugène-Guillaume Argenteau advanced against the French outposts in the hills above Savona. On 11 April, a day later than planned, it attacked the redoubt on Monte Negino (also called Monte Legino), held by a few French battalions under Colonel Antoine-Guillaume Rampon, who made his men vow to win or die there; the Austrian attacks failed.",
+   "Beaulieu moved first. Believing that the main French force was near Genoa, he attacked an isolated French brigade under Jean-Baptiste Cervoni at Voltri on 10 April; it escaped along the coast to Savona. Meanwhile the Austrian right wing under Eugène-Guillaume Argenteau advanced against the French outposts in the hills above Savona. On 11 April, a day later than planned, it attacked the redoubt on Monte Negino (also called Monte Legino), held by a few French battalions under Colonel Antoine-Guillaume Rampon; the Austrian attacks failed. Wikipedia and the 1911 Encyclopaedia Britannica have Rampon rallying the defenders with a vow to win or die, but the historian J. Holland Rose, citing the documents, says the words were spoken by Colonel Fornésy, who commanded the redoubt.",
    "Bonaparte at once concentrated superior numbers against Argenteau. Marching through the night and in rain and mist, Amédée Laharpe's division joined Rampon on the mountain, while André Masséna swung round the weak Austrian right towards Montenotte, and Pierre Augereau's division moved towards the Austrians' line of retreat. On 12 April Masséna's attack broke the Austrian right, and Argenteau ordered a retreat towards Dego; his units were badly cut up and scattered, and the next morning he reported only 700 men with the colours. Losses are disputed: according to Wikipedia the Austrians admitted 696 killed, wounded and missing, while several modern historians give about 2,500. The 1911 Encyclopaedia Britannica notes that the French at first believed they had beaten Beaulieu's main army, when in fact only part of Argenteau's force had been defeated.",
    "Montenotte was the opening victory of Bonaparte's Italian campaign. It opened a gap between the Austrian and Sardinian armies, and in the following days he fought at Millesimo and Dego and pushed the Sardinians back to Mondovì. Sardinia then signed the Armistice of Cherasco (on 28 April according to Wikipedia, the 27th according to the Britannica), leaving Bonaparte free to turn on the Austrians, whom he drove out of Lombardy. The campaign in Italy ended the War of the First Coalition the following year."
   ],
@@ -3306,6 +3314,15 @@
      1,
      14
     ]
+   },
+   {
+    "url": "https://archive.org/download/lifeofnapoleonii01roseuoft/lifeofnapoleonii01roseuoft_djvu.txt",
+    "title": "J. Holland Rose, The Life of Napoleon I, vol. 1 (London, 1910 printing of the 1902 2nd ed.), chapter V, pp. 83-85, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     8
+    ]
    }
   ],
   "claims": [
@@ -3316,7 +3333,7 @@
    "Bonaparte's plan: wedge between them, defeat each in turn (Wikipedia; EB Wars: overwhelm the Sardinians first, then turn on Beaulieu; widen the breach between the allied armies).",
    "Beaulieu believed the French bulk lay east of Savona / intended to seize Genoa (EB Wars; Wikipedia); attacked Cervoni at Voltri on 10 April, Cervoni escaped to Savona (Wikipedia; EB Wars).",
    "Argenteau's right wing attacked on 11 April, a day behind time (EB Wars; Wikipedia: due to poor staff work the attack did not begin until 11 April), against the redoubt on Monte Negino/Legino (Wikipedia: Boycott-Brown calls it Monte Negino, others Monte Legino).",
-   "Rampon held an old redoubt and made his men swear to win or die (EB Wars: 'We must win or die here'; Wikipedia: swear to 'conquer or die'); Austrian attacks failed (Wikipedia; EB: redoubt stood the trial).",
+   "Rampon commanded the redoubt's defenders; Austrian attacks failed (Wikipedia: Fornesy held the redoubt, Rampon assumed overall command; EB). The 'win or die' words: Rampon (Wikipedia, one eyewitness; EB) or Fornesy (Rose, Life of Napoleon I, vol. 1, p. 84 note, citing Massena's memoirs) - stated as a disagreement after the re-check.",
    "Bonaparte concentrated superior numbers against Argenteau (EB Wars: superior numbers at the decisive point; Wikipedia: concentrated large forces); troops marched from 2 AM in rain (Wikipedia: rain storm; EB: rain and mist); Laharpe joined Rampon; Masséna swung round Argenteau's right toward Montenotte; Augereau toward the line of retreat (EB Wars; Wikipedia: Masséna attacked weakly held right flank, Augereau near Cadibona Pass).",
    "12 April: Masséna's attack overwhelmed the Austrian right, Argenteau ordered a retreat; retired on Dego (EB Wars; Wikipedia: Argenteau pulled back to cover Acqui while Rukavina held Dego); units badly cut up (Wikipedia).",
    "Next morning Argenteau reported only 700 men with the colours (Wikipedia, attributed). Losses: Austrians admitted 696 (Wikipedia) vs 2,500 (Smith, Rothenberg, Chandler as reported by Wikipedia) - both attributed to Wikipedia.",
@@ -3324,8 +3341,12 @@
    "Following actions: Millesimo, Dego, Mondovi (Wikipedia campaign and battle articles; EB Wars: Cossaria/Millesimo, Dego, Mondovi); Armistice of Cherasco 28 April (Wikipedia) or 27 April (EB) - both stated.",
    "After Cherasco Bonaparte turned on Beaulieu, drove the Austrians from Lombardy (EB Wars: first object to drive out Beaulieu, who had fallen back into Lombardy; EB Napoleon I: entry into Milan 15 May 1796, Austrian rule in Italy collapsed); the Italian campaign ended the War of the First Coalition a year later (Wikipedia campaign; EB Wars: campaign of 1797 ended the war of the First Coalition)."
   ],
-  "disagree": "Losses: the Austrians admitted 696 killed, wounded and missing; Digby Smith, Rothenberg and Chandler give about 2,500 (all as reported by Wikipedia); both stated. Date of the Armistice of Cherasco: 28 April (Wikipedia) or 27 April (1911 Britannica); both stated. Timing of the fighting on 12 April differs (Wikipedia: over by 9:30 AM; Britannica: mists cleared about 9 and heavy fighting began); left out of the text.",
-  "checked": null
+  "disagree": "Losses: the Austrians admitted 696 killed, wounded and missing; Digby Smith, Rothenberg and Chandler give about 2,500 (all as reported by Wikipedia); both stated. Date of the Armistice of Cherasco: 28 April (Wikipedia) or 27 April (1911 Britannica); both stated. Timing of the fighting on 12 April differs (Wikipedia: over by 9:30 AM; Britannica: mists cleared about 9 and heavy fighting began); left out of the text. Who spoke the 'win or die' words at the Monte Negino redoubt: Rampon (Wikipedia, citing one eyewitness; 1911 Britannica) or Colonel Fornesy (Rose, citing the documents); found in the re-check and now stated in the text.",
+  "checked": {
+   "by": "https://archive.org/download/lifeofnapoleonii01roseuoft/lifeofnapoleonii01roseuoft_djvu.txt",
+   "result": "6 claims checked against Rose vol. 1 pp. 83-85 (Beaulieu's attack on Voltri, the French withdrawal there, the check of Argenteau before the Monte Legino redoubt, the attack of 12 April, Massena's turning of the Austrian right, the retreat); 5 confirmed; 1 error: the 'win or die' vow was stated as Rampon's without attribution, while Rose says it was Fornesy's - fixed by stating the disagreement.",
+   "errors": 1
+  }
  },
  "Q17502440": {
   "title": "Haitian Declaration of Independence",
@@ -3674,7 +3695,11 @@
    "Cortes demanded Brazil's return to colonial status (Wikipedia); Pedro sided with Brazilians and declared independence 7 September 1822, emperor (Wikipedia; EB: 7 September 1822 declared independent, 12 October proclaimed constitutional emperor)."
   ],
   "disagree": "Date of the decree creating the United Kingdom of Portugal, Brazil and the Algarves: 16 December 1815 (Wikipedia) or 16 January 1815 (1911 Britannica); both stated. Size of the departing court: nearly 10,000 and 15,000 in different parts of the Wikipedia article (the event record has nearly 15,000); both stated. Date of the French invasion: 19 November or 1 December 1807 in different parts of the Wikipedia article; the text gives only the Britannica's 'end of November' for Junot's entry into Lisbon.",
-  "checked": null
+  "checked": {
+   "by": "https://archive.org/download/lifeofnapoleonii02rose/lifeofnapoleonii02rose_djvu.txt",
+   "result": "4 claims checked against Rose vol. 2 pp. 150-152: Junot's march across Spain, his entry into Lisbon at the end of November (Rose: 30 November), the British naval escort, the Prince Regent acting for his mentally ill mother. All confirmed.",
+   "errors": 0
+  }
  },
  "Q1145411": {
   "title": "Grito de Dolores",
@@ -3953,7 +3978,11 @@
    "War continued under Bolivar (EB: Bolivar the leading spirit of the revolt; Wikipedia Battle of Carabobo: 24 June 1821, Bolivar's decisive victory led to the independence of Venezuela); Spain recognized independence by the treaty of Madrid, 30 March 1845 (EB, attributed)."
   ],
   "disagree": "Date of the proclamation: 5 July 1811 (Wikipedia; the date on the signed act) or 14 July 1811 (1911 Britannica); both stated.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bolivar,_Simon",
+   "result": "4 claims checked: the Caracas rising of April 1810; independence declared on 5 July 1811 (the Britannica's Bolivar article agrees with Wikipedia against its own Venezuela article's 14 July); Monteverde's advance in 1812; the loss of the republic under Miranda. All confirmed.",
+   "errors": 0
+  }
  },
  "Q3248484": {
   "title": "Argentine Declaration of Independence",
@@ -4061,7 +4090,7 @@
   "paras": [
    "Chile's first bid for self-government, begun in 1810, ended in 1814 when a royalist army sent by the viceroy of Peru crushed the patriots at Rancagua, and many of them, including Bernardo O'Higgins, fled across the Andes to Mendoza in Argentina. There the Argentine general José de San Martín, governor of the province of Cuyo, was preparing a larger plan: to defeat Spanish power at its centre in Lima by first freeing Chile and then attacking Peru by sea. With O'Higgins he spent about two years raising and training the Army of the Andes from Argentines and Chilean exiles, while the people of Mendoza made gunpowder, ammunition and even cannon for it.",
    "In January 1817 the army set out across the Andes in two main columns, through the Los Patos and Uspallata passes, crossing passes 13,000 feet high according to the 1911 Encyclopaedia Britannica. Wikipedia's article on the crossing and the Britannica both put the fighting force at about 4,000 men (the Britannica: some 3,000 infantry and 1,000 cavalry). San Martín's feints misled the royalist governor, Casimiro Marcó del Pont, about where the blow would fall, so the crossing was not opposed, though many men and more than half the horses were lost on the way.",
-   "To delay the patriots, a royalist force of about 1,500 men under Brigadier Rafael Maroto took position at Chacabuco, a valley north of Santiago. San Martín attacked on 12 February 1817, dividing his army in two: one division under O'Higgins was to strike from the front while Miguel Estanislao Soler's division came round the royalist flank and rear. O'Higgins attacked before Soler was in place and was hard pressed, but when Soler arrived and took a royalist artillery position, the royalists were surrounded around the Chacabuco ranch and destroyed. Wikipedia gives royalist losses as 500 killed and 600 captured, against 12 patriots killed in battle and 120 who later died of wounds; Maroto escaped.",
+   "To delay the patriots, a royalist force of about 1,500 men under Brigadier Rafael Maroto took position at Chacabuco, a valley north of Santiago. San Martín attacked on 12 February 1817, dividing his army in two: one division under O'Higgins was to strike from the front while Miguel Estanislao Soler's division came round the royalist flank and rear. According to Wikipedia, which notes that this part of the battle is fiercely debated, O'Higgins attacked before Soler was in place and was hard pressed; when Soler arrived and took a royalist artillery position, the royalists were surrounded around the Chacabuco ranch and destroyed. Wikipedia gives royalist losses as 500 killed and 600 captured, against 12 patriots killed in battle and 120 who later died of wounds; Maroto escaped.",
    "The patriots entered Santiago, and when San Martín declined the leadership, O'Higgins was made Supreme Director of Chile. The royalists still held the south, and a new army under Mariano Osorio defeated San Martín at Cancha Rayada, but his victory at Maipú in April 1818 secured Chilean independence and opened the way for his expedition to Peru."
   ],
   "sources": [
@@ -4150,7 +4179,11 @@
    "Royalists in the south (Wikipedia Chacabuco); Osorio defeated San Martin at Cancha Rayada (Wikipedia Maipu; EB Chile: army under Osorio); Maipu April 1818 secured independence (Wikipedia Maipu 5 April 1818; EB San Martin April 1818; EB Chile: 3 April 1818); opened the way to Peru (EB San Martin)."
   ],
   "disagree": "Size of the Army of the Andes: about 6,000 men with 1,200 horses (Wikipedia, Battle of Chacabuco), 4,000 men plus 1,200 auxiliaries (Wikipedia, Crossing of the Andes), about 3,000 infantry and 1,000 cavalry (1911 Britannica); the text gives the 4,000 figures with attribution. Date of departure: 17 January (Wikipedia, Chacabuco) or 19 January 1817 (Wikipedia, Crossing); the text says January. Date of Maipu: 5 April 1818 (Wikipedia) or 3 April (1911 Britannica, Chile); the text says April 1818.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/O%27Higgins,_Bernardo",
+   "result": "4 claims checked: defeat at Rancagua in 1814 and flight to Mendoza; San Martin preparing the army at Mendoza; Chacabuco 1817; O'Higgins given the government of Chile afterwards. All confirmed.",
+   "errors": 0
+  }
  },
  "Q1073849": {
   "title": "Battle of Maipú",
@@ -4233,7 +4266,11 @@
    "Left San Martin free to organise the expedition against Peru with O'Higgins and the Argentine government; set out in August 1820 (EB San Martin, attributed in the text)."
   ],
   "disagree": "Date of the battle: 5 April 1818 (Wikipedia) or 3 April 1818 (1911 Britannica, Chile); both stated. The February 1818 proclamation of independence and the August 1820 sailing of the Peru expedition come from the 1911 Britannica alone and are attributed.",
-  "checked": null
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Argentina",
+   "result": "1 claim checked: Chacabuco 1817 and Maipu 1818 won by the combined forces of Buenos Aires and Chile. Confirmed.",
+   "errors": 0
+  }
  },
  "Q1150410": {
   "title": "Battle of Boyacá",
