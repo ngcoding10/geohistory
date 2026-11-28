@@ -1833,5 +1833,120 @@
   ],
   "disagree": "Figures differ: the Meccan cavalry is 100 in Wikipedia and 200 in Sirah Atlas; Meccan dead are put at 22–35 (Wikipedia) or 22 to 37 (Sirah Atlas); Muslim dead at 62–75, traditionally about 70.",
   "checked": null
+ },
+ "Q173077": {
+  "title": "Battle of Tours",
+  "y": 732,
+  "place": "Between Tours and Poitiers, Aquitaine (Frankish realm; today western France)",
+  "paras": [
+   "The Battle of Tours, also called the Battle of Poitiers, was fought on 10 October 732 somewhere between Tours and Poitiers in western France; the exact site is not known. A Frankish army under Charles Martel, together with the Aquitanians of Duke Odo (Eudes), defeated an Umayyad army from al-Andalus led by its governor, Abd al-Rahman al-Ghafiqi.",
+   "Muslim armies had conquered most of the Iberian Peninsula from 711 and then raided across the Pyrenees into Gaul. In 732 Abd al-Rahman invaded Aquitaine, defeated Odo at Bordeaux and on the Garonne and burned Bordeaux; Odo fled north to seek Charles's help, and the Umayyad army moved north towards Tours. Charles brought his army to meet it, and the two sides watched each other for about a week. On the seventh day the battle was fought: the Franks, mostly on foot, held a dense defensive formation on high ground, and the Umayyad cavalry charges failed to break it. Abd al-Rahman was killed, and during the night his army withdrew south, leaving its camp. The sizes of both armies are unknown; estimates range from about 15,000 to 30,000 Franks and from about 20,000 to 80,000 on the Umayyad side.",
+   "The Umayyads retreated over the Pyrenees, though they raided again in 735–739 and held Narbonne until Pepin the Short took it in 759. The victory strengthened Charles's power and that of his family, the Carolingians, whose line led to Charles's grandson Charlemagne. Edward Gibbon and many 18th- and 19th-century historians saw Tours as the battle that saved Western Europe from Islamic conquest; many modern historians think its importance has been exaggerated, though others still consider it significant."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+    "title": "Battle of Tours",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://www.historyhit.com/day-battle-tours/",
+    "title": "Battle of Tours: Its Significance and Historical Implications",
+    "publisher": "History Hit",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "The battle was fought on 10 October 732 between Tours and Poitiers; the exact site is uncertain.",
+   "Frankish and Aquitanian forces under Charles Martel and Odo (Eudes) defeated the Umayyad army of Abd al-Rahman al-Ghafiqi, governor of al-Andalus.",
+   "The Umayyads conquered most of Iberia from 711 and raided into Gaul.",
+   "In 732 Odo was defeated at Bordeaux and on the Garonne (History Hit: Bordeaux burned); Odo fled north to seek Charles's help.",
+   "The armies faced each other for about a week; the battle was fought on the seventh day; the Franks, mostly infantry, held a dense formation on high ground against cavalry charges.",
+   "Abd al-Rahman was killed and the Umayyad army withdrew at night.",
+   "Army sizes: Franks about 15,000–30,000; Umayyads about 20,000–80,000.",
+   "The Umayyads retreated over the Pyrenees, raided again in 735–739 and held Narbonne until Pepin the Short took it in 759.",
+   "The victory helped establish Carolingian power; Charlemagne was Charles Martel's grandson.",
+   "Gibbon and many 18th–19th-century historians saw the battle as decisive in stopping Islamic expansion; modern historians are divided, some saying its importance has been overstated."
+  ],
+  "disagree": "Army sizes and casualties are unknown and estimates vary widely; later claims of enormous Umayyad losses are considered unreliable.",
+  "checked": null
+ },
+ "Q180897": {
+  "title": "Treaty of Tordesillas",
+  "y": 1494,
+  "place": "Tordesillas, Crown of Castile (Spain)",
+  "paras": [
+   "The Treaty of Tordesillas, concluded on 7 June 1494 in the Castilian town of Tordesillas, divided the lands newly found and still to be found outside Europe between the Spanish crowns of Ferdinand and Isabella (Castile and Aragon) and the Portugal of King John II.",
+   "Columbus's voyage of 1492 set off a dispute over who owned the lands he had reached. A papal bull of 1493, Inter caetera, had drawn a line 100 leagues west of the Azores and Cape Verde islands, giving Castile what lay beyond it; Portugal thought the line too far west and negotiated with the Spanish monarchs. The treaty moved the line to a meridian 'from pole to pole' 370 leagues west of the Cape Verde Islands. Everything east of it was to belong to Portugal and everything west to Castile, and Spanish ships were not to sail into the Portuguese half to explore or trade. Spain ratified the treaty on 2 July and Portugal on 5 September 1494, and Pope Julius II sanctioned it in 1506.",
+   "The new line gave Portugal the eastern bulge of South America: when Pedro Álvares Cabral landed there in 1500, the coast of present-day Brazil fell on the Portuguese side. In Asia the two powers later quarrelled over where the line ran on the far side of the world, and the Treaty of Zaragoza of 1529 set an antimeridian to settle the dispute over the Moluccas. Other powers, both Protestant states and Catholic France, never recognised the division. The Treaty of Madrid of 1750 treated the Tordesillas line as superseded."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Tordesillas",
+    "title": "Treaty of Tordesillas",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://avalon.law.yale.edu/15th_century/mod001.asp",
+    "title": "Treaty between Spain and Portugal concluded at Tordesillas; June 7, 1494",
+    "publisher": "The Avalon Project, Yale Law School",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6
+    ]
+   }
+  ],
+  "claims": [
+   "The treaty was signed on 7 June 1494 at Tordesillas by Ferdinand and Isabella (Castile and Aragon) and John II of Portugal.",
+   "Columbus's 1492 voyage led Portugal to dispute Castile's claims.",
+   "The 1493 bull Inter caetera set a line 100 leagues west of the Azores and Cape Verde, which Portugal considered too far west.",
+   "The treaty's line ran pole to pole 370 leagues west of the Cape Verde Islands.",
+   "Lands east of the line belonged to Portugal and west to Castile; Spanish ships were not to enter the Portuguese side for discovery or trade.",
+   "Spain ratified on 2 July 1494 and Portugal on 5 September 1494.",
+   "Pope Julius II sanctioned the treaty in 1506.",
+   "Cabral's landing in 1500 gave Portugal the eastern part of present-day Brazil.",
+   "The Treaty of Zaragoza (1529) set an antimeridian dividing the Moluccas; Protestant maritime powers and France did not recognise the division.",
+   "The 1750 Treaty of Madrid superseded the Tordesillas line."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
