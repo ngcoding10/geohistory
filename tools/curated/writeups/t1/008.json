@@ -3597,5 +3597,182 @@
   ],
   "disagree": "Date of the founding act of the Confederation of the Rhine: 12 July 1806 (Wikipedia) or 17 July (Rose, signed at Paris); both stated. Number of founding princes: Wikipedia three states and thirteen minor princes, Rose 'the fifteen Princes'; no number given in the text.",
   "checked": null
+ },
+ "Q2670007": {
+  "title": "Portuguese court moves to Brazil",
+  "y": 1807,
+  "place": "Lisbon, Portugal",
+  "paras": [
+   "By his Berlin Decree of November 1806 Napoleon ordered all continental states to close their ports to British ships. Portugal, Britain's old ally, was ruled by the Prince Regent John (the future King John VI) on behalf of his mentally ill mother, Queen Maria I, and refused to comply. France and Spain then agreed to partition Portugal, by a secret treaty signed at Fontainebleau on 27 October 1807 according to the 1911 Encyclopaedia Britannica, and General Junot marched across Spain with a French army (30,000 men, by the Britannica's figure) and Spanish auxiliaries, moving so fast that no effective resistance could be organised.",
+   "Rather than be deposed, John decided to move the court to Brazil, Portugal's largest colony. He appointed a council of regency to govern Portugal in his absence. On 27 November the royal family, the court and senior officials boarded the ships (Wikipedia's article gives their number as nearly 10,000 in one place and 15,000 in another), and on 29 November the fleet sailed from the Tagus, escorted by a British squadron under Sir Sidney Smith. Junot entered Lisbon at the end of November.",
+   "The court reached Salvador in January 1808, where John opened Brazil's ports to the trade of friendly nations, ending Portugal's monopoly of the colony's commerce, and then settled at Rio de Janeiro, which became the capital of the Portuguese monarchy. The court founded schools, a printing press, a botanical garden and the Bank of Brazil. In 1815 John raised Brazil to a kingdom equal in rank to Portugal, in a United Kingdom of Portugal, Brazil and the Algarves (by a decree of 16 December 1815 according to Wikipedia; the Britannica dates it to 16 January 1815), and on Queen Maria's death in 1816 he became king of the united realm.",
+   "In Portugal, meanwhile, discontent grew at the king's absence and at British influence, and after the liberal revolution that began at Oporto in 1820, John was obliged to return. He left his son Pedro to govern Brazil and sailed in April 1821, landing in Portugal in July. When the Portuguese Cortes tried to restore Brazil's former colonial status, Pedro sided with the Brazilians and declared independence on 7 September 1822, becoming Emperor of Brazil."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Transfer_of_the_Portuguese_court_to_Brazil",
+    "title": "Transfer of the Portuguese court to Brazil (rev 1379937334, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Portugal",
+    "title": "Portugal, Encyclopaedia Britannica (11th ed., 1911), history section",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Berlin_Decree",
+    "title": "Berlin Decree (rev 1382892832, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1
+    ]
+   }
+  ],
+  "claims": [
+   "Berlin decree of 21 November 1806 required continental states to close their ports to British ships (EB; Wikipedia Berlin Decree: issued 21 November 1806, forbade commerce with Great Britain); Portugal refused (EB).",
+   "John prince regent for his mentally unstable mother Maria I (Wikipedia); Portugal one of Britain's last allies (Wikipedia); EB: D. John as regent ('regency representing D. John'), Queen Maria I died March 1816.",
+   "27 October 1807 secret Franco-Spanish treaty of Fontainebleau providing for the partition of Portugal (EB, attributed in the text).",
+   "Junot hastened across Spain with 30,000 French (EB, attributed) and Spanish auxiliaries; no time for resistance (EB); Wikipedia: French and Spanish forces invaded Portugal.",
+   "John ordered the court transferred to Brazil before he could be deposed (Wikipedia).",
+   "Council of regency appointed (EB: appointed a council of regency and sailed for Brazil).",
+   "27 November embarkation, 29 November sailing (Wikipedia; EB: on the 29th of November ... sailed for Brazil, convoyed by Sir Sidney Smith's squadron; Wikipedia: Anglo-Portuguese fleet, Royal Navy contingent under Rear-Admiral Sir Sidney Smith).",
+   "Numbers: nearly 10,000 (Wikipedia lead) and 15,000 people (Wikipedia, later section) - both attributed.",
+   "Junot entered Lisbon at the end of November 1807 (EB); Wikipedia: Napoleonic forces invaded days after the departure.",
+   "22 January 1808 arrival at Salvador; decree opening Brazil's ports to friendly nations, breaking the colonial pact (Wikipedia); Rio de Janeiro functioned as the capital (Wikipedia).",
+   "Institutions: printing press (Imprensa Regia), medical schools, military academies, Bank of Brazil, botanical garden (Wikipedia). United Kingdom of Portugal, Brazil and the Algarves: 16 December 1815 (Wikipedia) vs 16 January 1815 (EB) - both stated.",
+   "1816 Maria died, John king (Wikipedia; EB: Queen Maria I died March 1816, John succeeded as John VI).",
+   "Discontent in Portugal (EB: 'Portugal for the Portuguese', British autocracy; Wikipedia: severe political crisis); 1820 rising at Oporto (EB: 16 August 1820 at Oporto; Wikipedia: Liberal Revolution of 1820); John returned, leaving Pedro (EB: entrusted the government of Brazil to D. Pedro; Wikipedia: heir Pedro remained); left April 1821 (Wikipedia: 25/26 April 1821), landed in Portugal 3 July 1821 (EB).",
+   "Cortes demanded Brazil's return to colonial status (Wikipedia); Pedro sided with Brazilians and declared independence 7 September 1822, emperor (Wikipedia; EB: 7 September 1822 declared independent, 12 October proclaimed constitutional emperor)."
+  ],
+  "disagree": "Date of the decree creating the United Kingdom of Portugal, Brazil and the Algarves: 16 December 1815 (Wikipedia) or 16 January 1815 (1911 Britannica); both stated. Size of the departing court: nearly 10,000 and 15,000 in different parts of the Wikipedia article (the event record has nearly 15,000); both stated. Date of the French invasion: 19 November or 1 December 1807 in different parts of the Wikipedia article; the text gives only the Britannica's 'end of November' for Junot's entry into Lisbon.",
+  "checked": null
+ },
+ "Q1145411": {
+  "title": "Grito de Dolores",
+  "y": 1810,
+  "place": "Dolores (now Dolores Hidalgo), Guanajuato, Mexico",
+  "paras": [
+   "When Napoleon overthrew the Spanish Bourbons in 1808 and made his brother Joseph king of Spain, the colony of New Spain (Mexico) refused to accept the French ruler. Its American-born (criollo) leaders sought self-government in the name of the deposed Ferdinand VII, but the European-born Spaniards, fearing the loss of their privileges, overthrew the viceroy in a coup. Creole conspiracies followed, among them one at Querétaro, organised by the corregidor (magistrate) Miguel Domínguez and his wife Josefa Ortiz de Domínguez and joined by militia officers such as Ignacio Allende, Juan Aldama and Mariano Abasolo. Miguel Hidalgo y Costilla, the parish priest of the small town of Dolores in Guanajuato, known for promoting new crafts and industries among his parishioners, became part of it.",
+   "In September 1810 the plot was discovered and Domínguez was arrested, but Hidalgo was warned in time and the conspirators decided to rise at once. On the night of 15–16 September Hidalgo sent armed men, among them Allende and Abasolo, to free the prisoners in the Dolores jail, rang the church bell, and early on 16 September called on the crowd gathered before his church to rise against the Spanish authorities. His exact words are not known; according to one participant, Juan Aldama, the cry was 'Long live America! Long live religion, and death to bad government!'",
+   "Hidalgo and Allende left Dolores with about 800 men, according to Wikipedia, and a great mass of followers, mostly poor and many of them Indians, soon gathered round them. At the shrine of Atotonilco Hidalgo took an image of the Virgin of Guadalupe as his banner. The insurgents took San Miguel, Celaya and Guanajuato, where they stormed the fortified granary of the Alhóndiga de Granaditas and killed many of those who had taken refuge there, and advanced towards Mexico City, but Hidalgo turned back.",
+   "Defeated at Aculco in November 1810 and decisively at the Bridge of Calderón near Guadalajara on 17 January 1811 by the royalist general Félix Calleja, Hidalgo fled north, was captured, tried at Chihuahua, stripped of his priesthood and shot (on 30 July 1811 according to Wikipedia; the 1911 Encyclopaedia Britannica gives 31 July or 1 August). The war was continued by José María Morelos and others, and Mexico won its independence in 1821. The 16th of September became Mexico's Independence Day, and every year on its eve the president repeats the cry from the balcony of the National Palace in Mexico City, ringing the bell Hidalgo used in 1810."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Grito_de_Dolores",
+    "title": "Grito de Dolores (rev 1375078065, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     8,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Miguel_Hidalgo_y_Costilla",
+    "title": "Miguel Hidalgo y Costilla (rev 1384319641, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Hidalgo_y_Costilla,_Miguel",
+    "title": "Hidalgo y Costilla, Miguel, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     10,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Mexico",
+    "title": "Mexico, Encyclopaedia Britannica (11th ed., 1911), history section",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     11,
+     12,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "1808 Napoleon's overthrow of the Spanish Bourbons; refusal to accept Joseph Bonaparte (Wikipedia Grito; EB Hidalgo: colonists indisposed to accept a French ruler, proclaimed Ferdinand VII; EB Mexico: rule of Fernando VII succeeded by Joseph Bonaparte).",
+   "Criollo leaders sought autonomy in the name of Ferdinand VII; peninsular elite carried out a coup (Wikipedia Grito; EB Mexico: municipality invited the viceroy Iturrigaray to declare independence; he was overthrown by a conspiracy of Spaniards who feared losing their privileged position).",
+   "Creole conspiracies including Queretaro (Wikipedia Grito; EB Mexico: Creole conspiracies in Queretaro and Guanajuato); organised by mayor/corregidor Miguel Dominguez and Josefa Ortiz de Dominguez with Allende, Aldama, Abasolo (Wikipedia Hidalgo; EB Hidalgo: Miguel Dominguez, mayor of Queretaro).",
+   "Hidalgo parish priest of Dolores (all); promoted industries among parishioners (EB Hidalgo: cultivation of silk and various forms of industry; Wikipedia Hidalgo: practical economic improvements).",
+   "Plot discovered September 1810 (Wikipedia Grito: early September; EB Mexico: discovery in 1810); Dominguez arrested, Hidalgo warned in time (EB Hidalgo); conspirators decided to proceed (Wikipedia Grito).",
+   "Night of 15-16 September: armed men including Allende and Abasolo freed the prisoners at Dolores (Wikipedia Hidalgo: eighty set free; EB Hidalgo: seized the prison at Dolores on 16 September); rang the church bells (Wikipedia Grito and Hidalgo); 16 September called to arms in front of the church (Wikipedia; EB: grito or cry of Dolores).",
+   "Exact words unknown (Wikipedia Grito; Wikipedia Hidalgo). Aldama's version: 'Viva America!, viva la religion y muera el mal gobierno!' (Wikipedia Hidalgo, attributed to Aldama).",
+   "Left Dolores with about 800 men (Wikipedia Hidalgo, attributed); multitude gathered (EB Hidalgo); followers mostly poor (Wikipedia Hidalgo); EB Mexico: forces consisting largely of Indians.",
+   "Atotonilco: image of the Virgin of Guadalupe as banner (Wikipedia Hidalgo; EB Hidalgo: a wonder-working picture of the Virgin from a popular shrine as his banner).",
+   "Took San Miguel, Celaya, Guanajuato (Wikipedia Hidalgo); Alhondiga de Granaditas stormed, 400-600 killed (Wikipedia Hidalgo - text says 'many'); EB Mexico: captured a stronghold at Guanajuato.",
+   "Advanced towards Mexico City, turned back (EB Hidalgo: moved on the city of Mexico, lost heart and retreated; EB Mexico: threatened the capital; Wikipedia Hidalgo: Monte de las Cruces, came close to capturing Mexico City).",
+   "Aculco, 7 November 1810, Calleja (EB Hidalgo); Calderon Bridge near Guadalajara, 17 January 1811 (EB Hidalgo; Wikipedia Hidalgo: January 1811; EB Mexico: defeated in 1811 at Calderon).",
+   "Fled north, captured, tried at Chihuahua, defrocked, shot: 30 July 1811 (Wikipedia) vs 31 July or 1 August 1811 (EB) - both stated.",
+   "Morelos continued the movement (EB Mexico; Wikipedia Hidalgo); independence 1821 (Wikipedia Grito: 28 September 1821 declaration; EB Mexico: Iturbide 1820-1821 [not specific]).",
+   "16 September national holiday; president re-enacts the cry on the eve of Independence Day from the National Palace balcony ringing Hidalgo's bell (Wikipedia Grito)."
+  ],
+  "disagree": "Date of Hidalgo's execution: 30 July 1811 (Wikipedia) or 31 July or 1 August 1811 (1911 Britannica); both stated. The exact words of the Grito are unknown; the text quotes only Aldama's version as given by Wikipedia.",
+  "checked": null
  }
 }
