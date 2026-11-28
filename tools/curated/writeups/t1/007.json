@@ -1308,5 +1308,157 @@
    "result": "3 claims re-checked against H. H. Howorth, History of the Mongols, part I (1876): a garrison of 110,000 (60,000 Turks, 50,000 Tajiks) with twenty elephants (the figure the text attributes to Juvaini); 30,000 artisans given to Genghis's sons, as many taken for military work, and a ransom of 200,000 pieces of gold; the Turkish troops who went over to the Mongols massacred with their chiefs, among them Togai Khan. 0 errors.",
    "errors": 0
   }
+ },
+ "Q3269760": {
+  "title": "Battle of Indus",
+  "y": 1221,
+  "place": "West bank of the Indus",
+  "paras": [
+   "After Genghis Khan's armies had taken Bukhara, Samarkand and the other cities of the Khwarazmian Empire, the shah Muhammad II fled west and died on an island in the Caspian Sea in December 1220. His eldest son, Jalal al-Din, took up the fight. He gathered an army at Ghazni and in the autumn of 1221 beat a Mongol force under Shigi Qutuqu at Parwan. But his allies then quarrelled over the spoils, and many of his troops, mostly Afghans under Sayf al-Din Ighrak, left him. Unable to face Genghis, who was marching against him with the main Mongol army, Jalal al-Din fell back to the Indus, meaning to cross into India.",
+   "The Mongols caught him on the west bank before he could get across; Barthold notes that only one boat had arrived, and it was broken by the waves. Nasawi, Jalal al-Din's biographer, dates the battle to Wednesday 24 November 1221, the date Wikipedia gives; other sources give the month of Rajab, which Barthold, following Raverty, thought improbable. Jalal al-Din held the centre himself, with his uncle Amin Malik on the right wing; Wikipedia says his army numbered about 30,000 and Genghis's at least 50,000. Jalal al-Din's centre at first threw the Mongols into confusion; Nasawi even claims Genghis took to flight. But a reserve of 10,000 picked Mongol warriors fell on the right wing, and Wikipedia adds that an elite force climbed a ridge to take the Khwarazmian left in the flank; the line broke and Amin Malik was killed as he fled.",
+   "Seeing the battle lost, Jalal al-Din rode his horse into the river and crossed to the far bank. Wikipedia repeats the story that Genghis forbade his archers to shoot and praised the courage of his enemy. About 4,000 of his soldiers reached the far bank with him, and Barthold says 300 horsemen carried far downstream joined him three days later; many others were killed in the water. His son of seven or eight was captured and killed, and Barthold says that Jalal al-Din had his mother, his wife and the other women of his family thrown into the river so that they would not fall into Mongol hands.",
+   "Genghis did not cross the Indus at once. A Mongol force of 20,000 sent after Jalal al-Din the next year got as far as Multan and turned back in the summer heat, and the Mongols spent 1222 taking the mountain fortresses of the region. Jalal al-Din stayed in India for about three years, then returned west to rebuild Khwarazmian rule in Iran; the battle ended Genghis's campaign against the Khwarazmian Empire, and Genghis was back in Mongolia in 1224 or 1225."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_the_Indus",
+    "title": "Battle of the Indus (rev 1383918428)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     18,
+     19
+    ]
+   },
+   {
+    "url": "https://archive.org/download/turkestan-down-to-the-mongol-invasion/Barthold%201928%20Turkestan%20down%20to%20the%20Mongol%20Invasion_djvu.txt",
+    "title": "W. Barthold, Turkestan down to the Mongol Invasion (E. J. W. Gibb Memorial series, 1928), chapter IV, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10,
+     12,
+     14,
+     15,
+     16,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "Muhammad II died on an island in the Caspian Sea in December 1220 (Wikipedia; Barthold: the Shah's flight).",
+   "Jalal al-Din, his eldest son, assembled an army at Ghazni and defeated Shigi Qutuqu at Parwan in the autumn of 1221 (Wikipedia; Barthold: defeat at Parwan, Shiki-Qutuqu).",
+   "Afterwards a large part of his force, mostly Afghans under Saif al-Din Ighrak, deserted over a dispute over spoils (Wikipedia; Barthold: Sayf ad-Din Aghraq, A'zam-malik and Muzaffar-malik abandoned him after dissensions).",
+   "Genghis marched against him with all his forces; Jalal al-Din retreated to the Indus to cross into India (Barthold; Wikipedia).",
+   "The Mongols reached the Indus before the boats were ready; only one boat arrived and it was broken by the waves (Barthold).",
+   "Nasawi dates the battle to Wednesday 24 November 1221; other sources give Rajab, the improbability of which Raverty pointed out (Barthold); Wikipedia: 24 November 1221.",
+   "Jalal al-Din commanded the centre; Amin Malik the right wing (Wikipedia; Barthold: right wing commanded by Amin al-Mulk).",
+   "Wikipedia: the Shah's army about 30,000; Genghis gathered at least 50,000 (attributed).",
+   "Nasawi: the centre under Jalal al-Din spread confusion among the Mongols and Genghis turned in flight (Barthold, attributed; Wikipedia: al-Nasawi has him put Genghis to flight).",
+   "The battle was decided by the attack of the 10,000 Mongol bahadurs on the right wing (Barthold); Wikipedia: Bela Noyan's elite bahadur tumen climbed the ridge to outflank the left; the right also broke (attributed).",
+   "Amin Malik was killed while fleeing (Wikipedia).",
+   "Jalal al-Din crossed the river on his horse (Barthold; Wikipedia: rode off the cliff into the Indus and reached the opposite bank).",
+   "Genghis forbade his archers to shoot and praised him (Wikipedia, attributed).",
+   "Four thousand soldiers reached the bank with him; three days later 300 cavalry carried down by the current joined him (Barthold; Wikipedia: around four thousand, many shot in the water).",
+   "His son aged seven or eight was taken prisoner and killed (Barthold; Wikipedia: seven-year-old and infant sons killed).",
+   "Barthold: his mother, wife and other women were thrown into the water by his own order (attributed).",
+   "Genghis did not cross immediately; next year a division of 20,000 pursued as far as Multan and returned because of the heat; 1222 was spent on mountain fortresses (Barthold).",
+   "Jalal al-Din stayed about three years in India, then returned west to Persia (Wikipedia).",
+   "The battle concluded the Mongol invasion of the Khwarazmian Empire; Genghis returned to Mongolia by 1224-25 (Wikipedia)."
+  ],
+  "disagree": "Date: Nasawi's 24 November 1221 (followed by Wikipedia and Barthold) against the month of Rajab in other sources. The decisive Mongol move: Barthold (from Nasawi) has 10,000 picked warriors strike the right wing; Wikipedia describes an elite force climbing the ridge against the left. Both stated with attribution.",
+  "checked": {
+   "by": "https://archive.org/download/historymongolsm01howogoog/historymongolsm01howogoog_djvu.txt",
+   "result": "5 claims re-checked against H. H. Howorth, History of the Mongols, part I (1876): Jalal al-Din crossed the Indus on horseback; Genghis admired the feat and pointed it out to his sons; his sons were killed; the pursuers sent after him turned back from Multan for fear of the summer heat; other sources' month of Rajab (Howorth gives Rajab 618, August-September 1221, the dating the text reports as doubted). 0 errors.",
+   "errors": 0
+  }
+ },
+ "cp18-049": {
+  "title": "Lý dynasty founded",
+  "y": 1009,
+  "place": "Hoa Lư and Thăng Long (Hanoi)",
+  "paras": [
+   "In 1009 Lê Long Đĩnh, the unpopular last ruler of the Early Lê dynasty of Đại Cồ Việt, died, leaving a crown prince too young to rule. Members of the court, among them the official Đào Cam Mộc and the Buddhist monk Vạn Hạnh, decided instead to put the general Lý Công Uẩn on the throne. Born in 974 in the Cổ Pháp area, Lý Công Uẩn had been adopted at the age of three by Lý Khánh Văn, a monk of the Cổ Pháp pagoda, whose surname he took; the Zen master Vạn Hạnh had noticed him as a gifted child. He joined the palace guard and rose to command it. His accession founded the Lý dynasty; he reigned as Lý Thái Tổ.",
+   "The capital was then at Hoa Lư, in hilly country, where the Đinh dynasty's founder had placed it for safety and the Lê had kept it. In 1010 the new king issued an edict announcing that he would move the capital to Đại La, the site of the citadel built under Chinese rule. Citing Chinese dynasties that had moved their capitals for the good of the state, he blamed the Đinh and Lê for clinging to Hoa Lư, saying their dynasties had been short-lived and the people ruined. Đại La, he wrote, lay at the heart of the country, shaped like 'a coiled-up dragon, a squatting tiger', on broad, level and well-raised ground safe from floods, a fit capital for ten thousand generations. He renamed it Thăng Long, 'Soaring Dragon'.",
+   "The Lý dynasty ruled until 1225, from 1054 under the state name Đại Việt. Its move of the capital had a lasting effect: Thăng Long, the later Hanoi, remained the capital under the Trần, Lê and Mạc dynasties, and after the Nguyễn moved the court to Huế it became the capital again in 1945. Wikipedia's article dates the edict to 1009 in a caption but to 1010 in its text; the Vietnamese government's Hanoi portal gives 1010."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/L%C3%BD_dynasty",
+    "title": "Lý dynasty (rev 1387012168)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     11,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://thanglong.chinhphu.vn/english/the-royal-edict-on-the-transfer-of-the-capital-of-thang-long-in-the-year-1010-110109.htm",
+    "title": "The royal edict on the transfer of the capital of Thăng Long in the year 1010 (translation and commentary, 15 January 2010)",
+    "publisher": "Viet Nam Government Portal, Hà Nội capital site (thanglong.chinhphu.vn)",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Lê Long Đĩnh, unpopular last emperor of the Anterior Lê dynasty, died in 1009; his crown prince son was very young (Wikipedia).",
+   "Court members including Đào Cam Mộc and the monk Vạn Hạnh installed general Lý Công Uẩn as emperor of Đại Cồ Việt (Wikipedia).",
+   "Lý Công Uẩn was born in 974 in Cổ Pháp; adopted at three by Lý Khánh Văn, a monk of Cổ Pháp pagoda, whose surname he inherited; noticed by Zen master Vạn Hạnh (Wikipedia).",
+   "He joined the palace guard and rose to commandership (Wikipedia).",
+   "In 1009 he founded the Lý dynasty; he is Lý Thái Tổ (Wikipedia; Hanoi portal: King Lý Thái Tổ, founder of the Lý dynasty).",
+   "Đinh Tiên Hoàng installed the capital at Hoa Lư in a hilly region for better defence; the following dynasty stayed there (Hanoi portal).",
+   "In 1010 Lý Thái Tổ decided to move the capital from Hoa Lư to Đại La and issued an edict (Wikipedia; Hanoi portal).",
+   "Đại La was the citadel built under Chinese rule in the 9th century (Hanoi portal: proconsuls built the citadel of Đại La; 'former capital of His Highness Kao').",
+   "The edict cites the Shang and Zhou moving their capitals; reproaches the Đinh and Lê for staying, their dynasties short-lived and the people ruined (Hanoi portal, translation).",
+   "Đại La in the heartland, 'a coiled-up dragon, a squatting tiger', vast and level, raised ground, protected against floods, a capital for ten thousand generations (Hanoi portal, translation).",
+   "He renamed the city Thăng Long, 'Soaring Dragon' (Hanoi portal; Wikipedia: renamed it Thang Long).",
+   "The Lý dynasty lasted from 1009 to 1225; officially Đại Việt from 1054 (Wikipedia).",
+   "Later dynasties (Trần, Lê, Mạc) and the present state kept Hà Nội as capital (Wikipedia).",
+   "The Nguyễn fixed their capital in Huế; Hà Nội became capital again after the Revolution of 1945 (Hanoi portal).",
+   "Wikipedia's caption dates the edict 1009, its text 1010; the Hanoi portal gives 1010 (both)."
+  ],
+  "disagree": "Date of the edict on moving the capital: 1009 in a Wikipedia caption, 1010 in Wikipedia's text and on the Vietnamese government's Hanoi portal. Stated in the text.",
+  "checked": null
  }
 }
