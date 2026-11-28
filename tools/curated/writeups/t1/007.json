@@ -452,8 +452,12 @@
    "Augustus was the first Roman emperor from 27 BC; the honorific augustus became the main title of later emperors (Wikipedia).",
    "By the summer of 27 BC he left Rome for Gaul; from 26 to 24 BC he governed from Tarraco, overseeing campaigns in the Iberian peninsula (Wikipedia)."
   ],
-  "disagree": "Why the name Romulus was dropped: Cassius Dio says Octavian himself wanted it and gave it up because it suggested kingship; Wikipedia says only that it was too closely tied to monarchy. Stated with Dio's name in the text.",
-  "checked": null
+  "disagree": "Why the name Romulus was dropped: Cassius Dio says Octavian himself wanted it and gave it up because it suggested kingship; Suetonius (Augustus 7, used for the re-check) says some senators proposed it and Munatius Plancus carried the name Augustus instead; Wikipedia says only that it was too closely tied to monarchy. Dio's account is stated with his name in the text.",
+  "checked": {
+   "by": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Augustus*.html",
+   "result": "3 claims re-checked against Suetonius, Augustus 7: the surname Augustus was conferred by the Senate on the motion of Munatius Plancus; sacred places are called augusta; the name Romulus, as second founder of the city, had been proposed. 0 errors; Suetonius says others proposed Romulus where Dio says Octavian wanted it, added to 'disagree'.",
+   "errors": 0
+  }
  },
  "cp02-13": {
   "title": "Uthman becomes caliph",
@@ -550,7 +554,11 @@
    "Discontent grew; in 656 rebels besieged Uthman in his residence in Medina and killed him (Wikipedia: Revolt, Siege of Uthman's residence, Assassination; Ameer Ali: besiegers scaled the wall)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://archive.org/download/arabkingdomandit029490mbp/arabkingdomandit029490mbp_djvu.txt",
+   "result": "4 claims re-checked against Julius Wellhausen, The Arab Kingdom and its Fall (English translation of the 1902 German original), chapter I: the electors were the six surviving oldest Companions, to appoint one of themselves; they passed over Ali and chose Uthman of the house of Umayya; Uthman was already aged; his weakness benefited his own house. 0 errors.",
+   "errors": 0
+  }
  },
  "cp02-23": {
   "title": "Abbasid Caliphate founded",
@@ -652,7 +660,11 @@
    "The Abbasids ruled from Iraq, with Baghdad as capital for most of their history, until the Mongol sack of 1258 (Wikipedia)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://archive.org/download/shorthistoryofsa00amra/shorthistoryofsa00amra_djvu.txt",
+   "result": "3 claims re-checked against Ameer Ali, A Short History of the Saracens, ch. XV: Baghdad founded by al-Mansur on the west bank of the Tigris; a circular city with the palace at the centre and the great mosque beside it; the title al-Saffah linked to his later executions (consistent with Muir's note). 0 errors.",
+   "errors": 0
+  }
  },
  "cp18-047": {
   "title": "Khmer Empire founded",
@@ -822,7 +834,11 @@
    "The Samanid Empire is part of the Iranian Intermezzo (Wikipedia)."
   ],
   "disagree": null,
-  "checked": null
+  "checked": {
+   "by": "https://archive.org/download/in.ernet.dli.2015.57651/2015.57651.Four-Studies-On-The-History-Of-Central-Asia-Vol1_text.pdf",
+   "result": "3 claims re-checked against Barthold, A Short History of Turkestan (Four Studies, vol. 1): Saman-khudat, ancestor of the Samanids, a native of Balkh province who rose under the governor Asad; Ismail resided at Bukhara rather than Samarqand. 0 errors.",
+   "errors": 0
+  }
  },
  "cp18-090": {
   "title": "Karakhanids take Bukhara; the Samanid state ends",
@@ -899,6 +915,115 @@
    "Turkic dynasties ruled Transoxiana thereafter (Wikipedia: Karakhanids received Transoxiana; Barthold: Qara-Khanid rule in Transoxania)."
   ],
   "disagree": null,
+  "checked": {
+   "by": "https://archive.org/download/in.ernet.dli.2015.57651/2015.57651.Four-Studies-On-The-History-Of-Central-Asia-Vol1_text.pdf",
+   "result": "4 claims re-checked against Barthold, A Short History of Turkestan (Four Studies, vol. 1): the Turkish conquest came from the north-east; Turkish forces entered Bukhara in 992 and withdrew the same year; Bukhara and Samarqand annexed by the khan in 999; the last Samanid pretender perished in 1005. 0 errors.",
+   "errors": 0
+  }
+ },
+ "cp18-051": {
+  "title": "Anawrahta becomes king of Pagan",
+  "y": 1044,
+  "place": "Pagan (Bagan), Upper Burma",
+  "paras": [
+   "In the early eleventh century Pagan was a small kingdom in the dry zone of Upper Burma. Anawrahta's father, Kunhsaw Kyaunghpyu, had taken its throne from King Nyaung-u Sawrahan, but he was overthrown in turn by Nyaung-u Sawrahan's two sons, Kyiso and Sokkate, who forced him to become a monk. The young prince, called Min Saw, lived near the monastery with his parents and kept his rank at court. Kyiso died, according to G. E. Harvey's history in a hunting accident, and Sokkate became king.",
+   "In 1044 Min Saw raised a following at Mount Popa, challenged Sokkate to single combat and killed him at Myinkaba near Pagan. Wikipedia says he first offered the throne to his father, who had long been a monk and refused it, and then took it himself under the name Anawrahta, a Burmese form of the Sanskrit Aniruddha. Harvey wrote that with his reign Burmese history begins to be less a matter of guesswork; his is the first reign whose events can be checked against stone inscriptions. The Burmese chronicles do not agree on his dates: Arthur Phayre's History of Burma of 1883, following an older chronicle reckoning, placed the whole reign earlier, ending it around the middle of the eleventh century, while Harvey and modern historians give 1044.",
+   "As king, Anawrahta built weirs and canals around Kyaukse that turned the dry country near Pagan into the rice granary of Upper Burma. He was converted to Theravada Buddhism by Shin Arahan, a monk from the Mon city of Thaton, and drove out the priests of the older Ari sect. In 1057 his armies took Thaton after a three-month siege; the chronicles say the cause was its king Manuha's refusal to give him the Buddhist scriptures, while Wikipedia reports historians who see it as a demand for submission. Manuha and his family were carried off to Pagan with artisans, relics and scriptures, though the historian Michael Aung-Thwin has argued that Thaton's influence on Pagan is largely a later legend. Anawrahta also took tribute from the Shan hills and northern Arakan and marched to the Dali kingdom in Yunnan.",
+   "Anawrahta died in 1077. He was the first ruler to unite the whole Irrawaddy valley, and the dynasty he founded ruled Pagan until 1287. The Shwezigon pagoda, which he began and which his son Kyanzittha finished, still draws worshippers to its relics, and he is regarded as the father of the Burmese nation and the king who established Theravada Buddhism in Burma."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Anawrahta",
+    "title": "Anawrahta (rev 1385224843)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   },
+   {
+    "url": "https://archive.org/download/historyofburmafr00harv/historyofburmafr00harv_djvu.txt",
+    "title": "G. E. Harvey, History of Burma from the Earliest Times to 10 March 1824 (1925), OCR text",
+    "publisher": "Internet Archive (public-domain scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     7,
+     10,
+     11,
+     14,
+     18,
+     20,
+     21
+    ]
+   },
+   {
+    "url": "https://archive.org/download/cu31924023498763/cu31924023498763_djvu.txt",
+    "title": "Arthur P. Phayre, History of Burma (1883), chapters III-IV, OCR text",
+    "publisher": "Internet Archive (Cornell University Library scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     8,
+     9,
+     12,
+     13,
+     14,
+     15,
+     16,
+     18,
+     21,
+     22
+    ]
+   }
+  ],
+  "claims": [
+   "Anawrahta turned a small principality in the dry zone of Upper Burma into the first Burmese Empire (Wikipedia).",
+   "His father Kunhsaw Kyaunghpyu had usurped the throne from Nyaung-u Sawrahan and was overthrown by Nyaung-u Sawrahan's sons Kyiso and Sokkate, who forced him into a monastery (Harvey; Wikipedia).",
+   "Anawrahta was born Min Saw; he lived near the monastery with his parents and kept his princely status at court (Wikipedia; Harvey: he lived in the monastery with his wife and their son Anawrahta).",
+   "Kyiso died (Wikipedia: in 1038); Harvey: accidentally killed with an arrow while hunting (attributed); Sokkate succeeded (Wikipedia; Harvey: surviving brother).",
+   "In 1044 he raised a following at Mount Popa, challenged Sokkate to single combat, slew him at Myinkaba near Pagan, and seized the throne (Harvey; Wikipedia).",
+   "He first offered the throne to his father, a monk, who refused; he took the title Anawrahta, a Burmanized form of Sanskrit Aniruddha (Wikipedia).",
+   "'Burmese history now begins to be less conjectural' (Harvey; Wikipedia repeats); Anawrahta is the first king whose reign's events can be verified by stone inscriptions (Wikipedia).",
+   "The chronicles do not agree on his dates (Wikipedia; Phayre: copies of chronicles not in accord as to his accession).",
+   "Phayre places his accession early in the eleventh century (OCR of his margin date reads 'loio', i.e. 1010, not used in the text) and says his reign ended about the middle of the eleventh century (Phayre, attributed).",
+   "1044 is the accession date in Harvey and Wikipedia (Harvey: seized the throne in 1044; Wikipedia: accession in 1044).",
+   "He built weirs and canals that made the arid lands around Pagan, the Kyaukse district (Ledwin), the rice granary of Upper Burma (Wikipedia; Harvey: founded villages in the Kyaukse rice land, built Kyaukse canals).",
+   "He was converted to Theravada Buddhism by Shin Arahan, a monk from Thaton (Wikipedia; Phayre: a great teacher from Thahtun).",
+   "He expelled the Ari priests (Phayre: the false Aris expelled and stripped of their robes; Wikipedia: converted from his native Ari Buddhism).",
+   "In 1057, after a three-month siege, his forces took Thaton (Wikipedia; Harvey: 1057 campaign; Phayre: long siege, city reduced by famine).",
+   "Traditional reason: King Manuha refused to give him the Buddhist scriptures (Wikipedia; Phayre); Wikipedia: in reality a demand for submission (attributed).",
+   "Manuha and his family were carried captive to Pagan with nobles, artificers, relics and sacred books (Phayre; Wikipedia: brought back artisans and craftsmen).",
+   "Michael Aung-Thwin argues that Thaton's contributions are a post-Pagan legend (Wikipedia, attributed).",
+   "He received tribute from the Shan Hills and reduced north Arakan, and marched to the Dali Kingdom in Yunnan (Wikipedia; Phayre: invaded Arakan, went to Yunnan; Harvey chronology: reduces North Arakan, visits Yunnan).",
+   "He died in 1077 (Wikipedia).",
+   "He unified the entire Irrawaddy valley for the first time; later Pagan kings ruled until the dynasty's fall in 1287 (Wikipedia; Harvey: Kingdom of Pagan 1044-1287).",
+   "The Shwezigon pagoda was begun by Anawrahta and completed by Kyanzittha; it houses relics (Harvey; Phayre: relics for the Shwezigon; Wikipedia: Kyansittha was his son).",
+   "He is considered the father of the Burmese nation and established Theravada Buddhism (Wikipedia; Phayre: the great hero of the Burmese people, reformer who established Buddhism)."
+  ],
+  "disagree": "Accession date: Harvey (1925) and Wikipedia give 1044; Phayre (1883) placed the reign earlier, ending it about the middle of the eleventh century; Wikipedia says the chronicles disagree and scholars follow Zatadawbon Yazawin. Thaton: the chronicles' scripture story versus Wikipedia's 'demand for submission' and Aung-Thwin's view that Thaton's influence is a later legend. All stated in the text.",
   "checked": null
  }
 }
