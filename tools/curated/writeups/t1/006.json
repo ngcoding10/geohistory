@@ -1227,5 +1227,161 @@
   ],
   "disagree": "Crew size: about 270 in Wikipedia, roughly 200 in the Mariners' Museum. Reaching the Pacific: 28 November 1520 in Wikipedia, 8 November in the Mariners' Museum. The date of Magellan's death, 27 April 1521, is the Mariners' Museum's; Wikipedia gives April 1521.",
   "checked": null
+ },
+ "Q536822": {
+  "title": "Diet of Worms",
+  "y": 1521,
+  "place": "Worms, Holy Roman Empire (today Rhineland-Palatinate, Germany): the bishop's palace and town hall",
+  "paras": [
+   "The Diet of Worms was the assembly of the estates of the Holy Roman Empire that Emperor Charles V held in the imperial city of Worms from January to May 1521. It is remembered for the hearing of Martin Luther. Luther's attacks on indulgences and on papal authority since 1517, and his pamphlets of 1520, had led Pope Leo X to excommunicate him in January 1521. By medieval precedent an imperial ban should have followed, but Luther's prince, Elector Frederick the Wise of Saxony, and other princes insisted that he be heard first; the electoral agreement Charles had signed promised that no one would be outlawed unheard. Charles summoned Luther in March 1521 and promised him safe conduct.",
+   "Luther entered Worms to a crowd on 16 April. The next day, in the bishop's palace where Charles was staying, an official of the Archbishop of Trier, Johann von der Ecken, showed him a pile of his books and asked whether he had written them and whether he would recant. Luther asked for time and was given a day. On the evening of 18 April he answered that he could not recant unless he were proved wrong by Scripture or by clear reason, because his conscience was bound by the word of God. The famous words 'Here I stand, I can do no other' are, according to the historian Axel Gotthard, a printer's later addition.",
+   "On 19 April Charles had a declaration read: a single friar who set himself against a thousand years of Christian teaching must be in error, and he would proceed against Luther as a notorious heretic. Luther left Worms on 26 April; on the way home Frederick had him seized in a staged attack and hidden at the Wartburg castle, where he stayed until March 1522. The Edict of Worms put Luther under the imperial ban: no one was to shelter or feed him, he was to be arrested and handed over, and his writings were not to be bought, read, copied or printed. The edict is dated 8 May 1521 but was proclaimed only on 26 May, after the diet had closed (the City of Worms, the Deutsche Nationalbibliothek and Lex.dk give 8 May; the City of Worms, Lex.dk and the Christian History Institute give 26 May for its publication by a rump session; Wikipedia says it was issued on 25 May, the day the diet ended).",
+   "The edict was never enforced in Germany, because many Germans supported Luther and princes protected him; in the Habsburg Netherlands, under Charles's direct rule, it was applied, and two Augustinian friars were burned in Brussels on 1 July 1523. Even so, the ban hung over the Lutheran movement until the religious peace of 1555, and Luther's travel was limited for the rest of his life. At the same diet Charles also arranged the government of his lands, making his brother Ferdinand his representative in Germany and ruler of the Austrian hereditary lands."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Diet_of_Worms",
+    "title": "Diet of Worms (rev 1373282753)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14,
+     17,
+     18,
+     19,
+     21,
+     22
+    ]
+   },
+   {
+    "url": "https://www.worms-erleben.de/en/web/luther/Worms_1521/Reichstag/",
+    "title": "The 1521 Diet of Worms (Luther Worms)",
+    "publisher": "City of Worms (worms-erleben.de)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://www.bpb.de/themen/zeit-kulturgeschichte/reformation/235570/schlaglicht-1521-luther-und-karl-v-in-worms/",
+    "title": "Schlaglicht 1521: Luther und Karl V. in Worms (Axel Gotthard)",
+    "publisher": "Bundeszentrale für politische Bildung",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     9,
+     11,
+     12,
+     13,
+     15,
+     18,
+     20
+    ]
+   },
+   {
+    "url": "https://germanhistorydocs.org/de/von-den-reformationen-bis-zum-dreissigjaehrigen-krieg-1500-1648/luther-und-kaiser-karl-v-auf-dem-reichstag-zu-worms-1521",
+    "title": "Luther und Kaiser Karl V. auf dem Reichstag zu Worms (1521), with the text of the Edict of Worms",
+    "publisher": "German History in Documents and Images (GHI Washington)",
+    "accessed": "2026-11-28",
+    "supports": [
+     13,
+     15,
+     18,
+     21
+    ]
+   },
+   {
+    "url": "https://mediengeschichte.dnb.de/DBSMZBN/Content/EN/Censorship/06-wormser-edikt-en.html",
+    "title": "Censorship: Edict of Worms",
+    "publisher": "Deutsches Buch- und Schriftmuseum, Deutsche Nationalbibliothek",
+    "accessed": "2026-11-28",
+    "supports": [
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://lex.dk/Worms-ediktet",
+    "title": "Worms-ediktet (Thorkild C. Lyby)",
+    "publisher": "Lex.dk (Den Store Danske)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://christianhistoryinstitute.org/magazine/article/diet-of-worms",
+    "title": "1521 The Diet of Worms",
+    "publisher": "Christian History Institute",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     5,
+     9,
+     10,
+     11,
+     13,
+     17
+    ]
+   }
+  ],
+  "claims": [
+   "Imperial diet of the Holy Roman Empire called by Charles V at the imperial free city of Worms (Wikipedia; City of Worms; bpb), meeting from January 1521 (City of Worms: visitors since January 1521; Wikipedia: 28 January) to May (Wikipedia: 25 May; Lex.dk: the edict proclaimed after the diet ended).",
+   "Luther attacked indulgences from 1517 (Wikipedia; City of Worms: 95 theses of 31 October 1517) and published three pamphlets in 1520 (City of Worms; bpb: flood of pamphlets from about 1520).",
+   "Pope Leo X excommunicated Luther in January 1521 (Wikipedia; bpb; Christian History Institute; City of Worms: 3 January 1521).",
+   "Medieval precedent said the imperial ban should follow excommunication (bpb; City of Worms: normally followed by the imperial ban).",
+   "The princes insisted on hearing Luther (City of Worms: imperial potentates and noblemen; Christian History Institute: under pressure from Elector Frederick and other princes); Frederick was Luther's prince (Christian History Institute; Wikipedia).",
+   "bpb: Charles's electoral capitulation (Wahlkapitulation) stated that no one could be outlawed unheard.",
+   "Summoned in March 1521 (bpb; City of Worms: letter of 6 March) with a promise of safe conduct (City of Worms; Wikipedia).",
+   "Luther arrived in Worms on 16 April, greeted by a crowd (City of Worms; Wikipedia: arrived 16 April).",
+   "Hearing on 17 April in the bishop's palace where Charles was residing (City of Worms; Wikipedia: Bischofshof); Johann von Eck/von der Ecken, assistant of the Archbishop of Trier, asked whether the books were his and whether he would revoke them (Wikipedia; City of Worms; Christian History Institute; bpb: books stacked before him).",
+   "Luther asked for time and was given until the next day (Wikipedia; City of Worms; Christian History Institute: twenty-four hours).",
+   "On 18 April (City of Worms: collected about 4 pm, waited two hours; Christian History Institute: 6 pm) Luther refused to recant unless convinced by Scripture or clear reason, his conscience being captive to the word of God (Wikipedia; City of Worms; bpb; Christian History Institute).",
+   "bpb (Gotthard): 'Here I stand, I can do no other' is not authentic, added by a printer's editors (City of Worms: added retrospectively; Wikipedia: according to tradition).",
+   "On 19 April Charles had a declaration read saying a single brother who opposed all Christendom's teaching of more than a thousand years must err, and that he would act against Luther as a notorious heretic (bpb; City of Worms; GHDI text dated 19 April 1521; Christian History Institute: 'a notorious heretic').",
+   "Luther left Worms on 26 April and was taken in a staged attack arranged by Frederick and hidden at the Wartburg (City of Worms; Wikipedia), until early March 1522 (Wikipedia).",
+   "Edict of Worms: imperial ban (Reichsacht) on Luther; forbade sheltering or feeding him, required his arrest and delivery; forbade buying, selling, reading, keeping, copying or printing his writings (GHDI edict text; City of Worms; DNB; bpb: imperial ban and burning of his books).",
+   "The edict is dated 8 May 1521 (City of Worms: issued 8 May; DNB: imperial decree of May 8, 1521; Lex.dk: dated 8.5.1521).",
+   "Published/proclaimed on 26 May after the diet ended (City of Worms: published on 26 May; Lex.dk: proclaimed as imperial law 26 May after the diet's close; Christian History Institute: a rump session of the diet approved a condemnation edict on May 26); Wikipedia: issued on 25 May 1521, the last day of the diet.",
+   "Never enforced in Germany, because of public support and the protection of German princes (Wikipedia; GHDI and bpb: the movement spread nonetheless).",
+   "Enforced in the Habsburg Netherlands under Charles's direct rule; Jan van Essen and Hendrik Vos, Augustinians, burned at the stake in Brussels on 1 July 1523 (Wikipedia).",
+   "bpb: the ban hung over the new movement until the religious peace of 1555.",
+   "Luther's travel was restricted for the rest of his life (Wikipedia; GHDI: the decree forced Luther to change his whereabouts for the rest of the decade).",
+   "At Worms Charles made his brother Ferdinand imperial lieutenant, regent of the Austrian hereditary lands and his representative in Germany (Wikipedia)."
+  ],
+  "disagree": "Date of the Edict of Worms: dated 8 May 1521 (City of Worms, Deutsche Nationalbibliothek, Lex.dk) and proclaimed on 26 May (City of Worms, Lex.dk, Christian History Institute); Wikipedia says issued on 25 May. Opening of the diet: Wikipedia gives 28 January in its lead and 23 January in its background section; the event record has 27 January; not changed, as no two sources agree on the day.",
+  "checked": null
  }
 }
