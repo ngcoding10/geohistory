@@ -805,5 +805,76 @@
   ],
   "disagree": "End of the wars: TheCollector, by March 633; Wikipedia's lead, June 633 (its body places the end within AH 11, before 16 March 633).",
   "checked": null
+ },
+ "Q603549": {
+  "title": "Battle of Nahavand",
+  "y": 642,
+  "place": "Nahavand, near Hamadan (western Iran)",
+  "paras": [
+   "The Battle of Nahavand (Nihawand) was fought in 642 in the Zagros region of western Iran between the army of the Rashidun Caliphate, commanded by al-Nu'man ibn Muqarrin, and an army raised by the Sasanian king Yazdegerd III under the general Firuzan. Since their defeat at al-Qadisiyya in 636 the Sasanians had lost Iraq and their capital Ctesiphon, and Yazdegerd had withdrawn to the Iranian plateau, where he assembled a new army.",
+   "The sizes of the armies are uncertain. Both sources give the caliphate's army about 30,000 men; Wikipedia gives the Sasanian army as 50,000 to 150,000, mostly farmers and villagers, while TheCollector says sources vary but that up to 150,000 assembled. Firuzan took up a strong defensive position in the hills. Nu'man, unwilling to attack it head on, drew the Persians out by skirmishing and then an orderly withdrawal; when they pursued him onto broken ground, his troops turned and struck them, and the Sasanian army was destroyed. Both Nu'man and Firuzan were killed. Wikipedia notes that the early accounts of the battle differ.",
+   "Nahavand ended organised Sasanian resistance and opened the Iranian plateau to the Muslim conquest. According to TheCollector, the victors called it the 'victory of victories' (fath al-futuh). Yazdegerd fled east and tried in vain to raise new forces; he was murdered near Merv in 651, while nobles in Tabaristan, south of the Caspian Sea, held out for about another century."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Battle_of_Nahavand",
+    "title": "Battle of Nahavand (rev 1380331186)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.thecollector.com/battle-of-nahavand-victory-of-victories/",
+    "title": "Why Was the 642 CE Battle of Nahavand Called the 'Victory of Victories?'",
+    "publisher": "TheCollector",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Fought in 642 between Rashidun forces under al-Nu'man ibn Muqarrin and a Sasanian army of Yazdegerd III (Wikipedia; TheCollector), commanded by Firuzan (Wikipedia; TheCollector).",
+   "Nahavand lies in the Zagros region of western Iran (TheCollector: near modern Hamadan, controlling access to the Zagros foothills; Wikipedia: Sasanian homeland on the southern plateau of Iran).",
+   "The Sasanians had been defeated at Qadisiyya (Wikipedia: November 636) and lost Iraq and Ctesiphon (Wikipedia; TheCollector).",
+   "Yazdegerd withdrew to the Iranian plateau and by 642 assembled a new army (Wikipedia; TheCollector: he called up his army).",
+   "About 30,000 in the caliphate's army (Wikipedia: estimated 30,000; TheCollector: approximately 30,000).",
+   "Sasanian army: Wikipedia, around 50,000–150,000, mostly farmers and villagers; TheCollector, sources vary, upwards of 150,000, a mixed force of professionals, militia and farmers.",
+   "Firuzan held a strong defensive position in the hills (Wikipedia; TheCollector).",
+   "Nu'man drew the Persians out by skirmishing and an orderly withdrawal; during the pursuit over unfavourable ground his troops turned and inflicted heavy losses; the Sasanian defeat was total (Wikipedia, second version; TheCollector).",
+   "Both Nu'man and Firuzan were killed (Wikipedia; TheCollector).",
+   "Wikipedia: various accounts are told of the battle.",
+   "The battle ended organised Sasanian resistance and opened the path to Islamic expansion into Persia (Wikipedia; TheCollector: effective Sassanid resistance ended).",
+   "TheCollector: the Rashidun Caliphate named it Fath al-Futuh, 'Victory of Victories'.",
+   "Yazdegerd fled east, failed to raise support, and was assassinated (Wikipedia: by a local miller in Merv) in 651 (Wikipedia; TheCollector: assassinated in 651).",
+   "Wikipedia: resistance in Tabaristan south of the Caspian lasted about a century."
+  ],
+  "disagree": "Sasanian numbers: Wikipedia 50,000-150,000; TheCollector up to 150,000, noting that sources vary. Wikipedia gives more than one version of the battle.",
+  "checked": null
  }
 }
