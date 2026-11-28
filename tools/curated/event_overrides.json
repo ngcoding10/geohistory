@@ -157,6 +157,25 @@
    "note": "Filed under the Shaybanids: Samarkand was taken by Muhammad Shaybani's Uzbeks, whose dynasty founded the Khanate of Bukhara, not by the Kazakh Khanate (which the map for 1500 draws over the city).",
    "source": "https://en.wikipedia.org/wiki/Khanate_of_Bukhara",
    "verified": true
+  },
+  {
+   "q": "Q593267",
+   "set": {
+    "m": 8,
+    "dd": 13
+   },
+   "note": "Wikidata dates this 10 May 1521; the siege began in May and the city surrendered on 13 August 1521 (Wikipedia; 1911 Encyclopaedia Britannica).",
+   "source": "https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan",
+   "verified": true
+  },
+  {
+   "q": "Q2091449",
+   "set": {
+    "l": "Battle of Mactan"
+   },
+   "note": "Name corrected: the Wikidata item's English label (\"Battle of Six Seven\") is not the battle's name; Wikipedia and the 1911 Encyclopaedia Britannica call it the fight at Mactan.",
+   "source": "https://en.wikipedia.org/wiki/Battle_of_Mactan",
+   "verified": true
   }
  ]
 }

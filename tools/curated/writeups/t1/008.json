@@ -1,0 +1,1270 @@
+{
+ "Q1259987": {
+  "title": "Exsurge Domine",
+  "y": 1520,
+  "place": "Rome, Papal States",
+  "paras": [
+   "Pope Leo X had authorised a large sale of indulgences, partly to pay for the rebuilding of St Peter's in Rome, and Martin Luther's Ninety-five Theses against its abuses in 1517 had set off a revolt across Germany. Neither the papal legate Cardinal Cajetan at Augsburg in 1518 nor a papal bull on indulgences had made Luther retract, and at the Leipzig Debate of 1519 Johann Eck had drawn him into open rejection of papal authority. In January 1520 a commission met in Rome to examine Luther's teachings. Eck joined it halfway through, bringing the condemnations of Luther issued by the universities of Cologne and Leuven, and he pressed it towards a quick and sweeping verdict.",
+   "The commission, of some forty cardinals, theologians and canon lawyers, was divided: some feared that condemning so popular a figure was politically dangerous, the theologians wanted immediate condemnation, and the canon lawyers wanted Luther to be heard first. The compromise gave him no hearing but sixty days to recant. Instead of answering each point, the text simply listed forty-one propositions from Luther's writings, more than half from the Ninety-five Theses and their defence and much of the rest from the Leipzig Debate, and condemned them all together as heretical, scandalous, false, offensive to pious ears or misleading to simple minds. Leo X added a preface, which opens with the words Exsurge Domine ('Arise, O Lord') and calls on God to rise against a wild boar ravaging his vineyard, and issued the bull on 15 June 1520.",
+   "According to its text as Wikipedia quotes it, the bull ordered Luther's books to be burned and threatened him and his supporters, among them Andreas Karlstadt, with excommunication unless they recanted within sixty days of its publication in Saxony and the neighbouring lands. Eck took it to Germany as papal nuncio and published it with two papal legates, but bishops, universities and humanists alike denounced it; the 1911 Encyclopaedia Britannica says Eck was lucky to escape from Saxony unharmed. Luther refused to recant, attacked the papacy in new pamphlets and on 10 December 1520 publicly burned a copy of the bull at the Elster Gate in Wittenberg. On 3 January 1521 Leo X excommunicated him with the bull Decet Romanum Pontificem."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Exsurge_Domine",
+    "title": "Exsurge Domine (rev 1379624773, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Leo_(popes)/Leo_X",
+    "title": "Leo X, in Leo (popes), Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     8,
+     10,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Eck,_Johann_Maier",
+    "title": "Eck, Johann Maier, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     6,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Leo X authorised an extensive grant of indulgences, to secure funds for the crusade and the rebuilding of St Peter's (EB Leo X).",
+   "Luther's ninety-five theses (31 October 1517) against the abuses were the signal for widespread revolt (EB Leo X; Wikipedia: bull written in response to the 95 Theses, which criticised practices of the Church).",
+   "Neither Cardinal Cajetan at Augsburg (October 1518) nor the papal bull of 9 November on indulgences moved Luther to retract (EB Leo X).",
+   "Eck had confronted Luther a year earlier in the Leipzig disputation (Wikipedia; EB Eck: made Luther declare himself against the pope).",
+   "Beginning in January 1520 a papal consistory/commission examined Luther's teachings (Wikipedia; EB Eck: Eck went to Rome in January 1520).",
+   "Eck joined the committee halfway through its deliberations, bringing condemnations by the universities of Cologne and Leuven/Louvain; bulldozed a speedy decision (Wikipedia; EB Eck: induced Cologne and Louvain to condemn Luther's writings).",
+   "Committee of some forty members including cardinals, theologians and canon lawyers; some argued a bull was politically risky; theologians for immediate condemnation; canon lawyers for a hearing; compromise: no hearing but sixty days to repent (Wikipedia).",
+   "Forty-one propositions listed, condemned in globo as heretical, scandalous, false, offensive to pious ears, or seductive of simple minds (Wikipedia; EB Leo X: condemned forty-one propositions).",
+   "More than half of the 41 from the 95 Theses or the Resolutiones; larger part of the remainder from the Leipzig debate (Wikipedia).",
+   "Leo X appended a preface and conclusion and issued the bull on 15 June 1520 (Wikipedia; EB Leo X: bull of the 15th of June 1520).",
+   "Incipit Exsurge Domine, 'Arise, O Lord'; preface calls on the Lord to arise against foxes and the wild boar destroying the vineyard (Wikipedia).",
+   "Bull decreed Luther's books be burned; threatened Luther and colleagues including Karlstadt with excommunication unless they recanted within sixty days of publication in Saxony and neighbouring regions (Wikipedia).",
+   "Taken to Germany by Eck as apostolic nuncio, published by him and the legates Alexander (Aleander) and Caracciola (EB Leo X; EB Eck: returned to Germany as papal nuncio with the bull).",
+   "Hostile reception; Eck glad to escape from Saxony with a whole skin (EB Eck, attributed).",
+   "Luther refused to recant, wrote polemical tracts, publicly burned a copy on 10 December 1520 at the Elster Gate in Wittenberg (Wikipedia; EB Leo X: burned by Luther on the 10th of December at Wittenberg).",
+   "Decet Romanum Pontificem, 3 January 1521, excommunication (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Johann_Eck",
+   "result": "2 claims re-checked (41 condemned propositions; Eck sent to Germany with two legates to execute the bull): no errors",
+   "errors": 0
+  }
+ },
+ "Q1425362": {
+  "title": "Battle of Cajamarca",
+  "y": 1532,
+  "place": "Cajamarca, Peru",
+  "paras": [
+   "Francisco Pizarro, licensed by Charles V in 1529 to conquer the coast he had explored, sailed from Panama in January 1531 with three ships, 180 men and 27 horses, according to the 1911 Encyclopaedia Britannica. He reached the Inca Empire just as Atahualpa had won a civil war against his half-brother Huáscar, whom his commanders had just captured. Atahualpa was camped outside the highland town of Cajamarca with an army that Wikipedia puts at nearly 80,000 veterans, and he let the small Spanish force come inland, apparently confident that it could do him no harm. The Spaniards entered the half-empty town on 15 November 1532. Unable either to attack such an army or to retreat safely, Pizarro planned to seize the emperor himself, as Cortés had seized Moctezuma.",
+   "On the afternoon of 16 November Atahualpa came into the town's great square, carried on a litter lined with parrot feathers and plated with gold and silver, with thousands of richly dressed attendants who were unarmed or carried only ceremonial weapons; his main army stayed outside the town. The Spaniards were hidden in the buildings round the square, with horsemen in the alleys and guns in a central stone building. The friar Vicente de Valverde came out with an interpreter and called on Atahualpa to accept the Christian faith. Pizarro's secretary Francisco de Xerez, an eyewitness, says the Inca threw down the book he was handed and complained of how the Spaniards had treated his people on their march; Spanish sources differ on exactly what set off the fighting.",
+   "At the signal the guns fired and the horsemen and infantry charged out. The attendants offered almost no resistance; many died shielding the litter, and the crowd fleeing the square broke down part of its wall. Pizarro reached the litter and seized Atahualpa, receiving a cut on the hand while protecting him from his own men. The Inca army outside the town scattered. Thousands of Atahualpa's nobles, counsellors and attendants were killed; most sources say no Spaniard died.",
+   "The capture began the Spanish conquest of the Inca Empire. To buy his freedom Atahualpa promised, Xerez records, to fill a room 22 feet long and 17 wide with gold up to a line half way up the wall, and twice with silver. The ransom was gathered and shared out among the conquerors, but Atahualpa was not freed: sentenced to death on a charge of treason, which the 19th-century translator Clements Markham calls a false pretext, he was baptised and then strangled at Cajamarca in 1533."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Cajamarca",
+    "title": "Battle of Cajamarca (rev 1379997957, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Atahualpa",
+    "title": "Atahualpa (rev 1385589856, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     18
+    ]
+   },
+   {
+    "url": "https://archive.org/download/reportsondiscove00markrich/reportsondiscove00markrich_djvu.txt",
+    "title": "Report of Francisco de Xeres, secretary to Francisco Pizarro, in C. R. Markham (tr.), Reports on the Discovery of Peru (Hakluyt Society, 1872), with Markham's notes, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15,
+     17,
+     18
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Pizarro,_Francisco",
+    "title": "Pizarro, Francisco, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1
+    ]
+   }
+  ],
+  "claims": [
+   "Capitulacion of 1529 licensed Pizarro (EB); expedition left Panama in January 1531 (EB: January of the following year after sailing from San Lucar in January 1530) with three ships, 180 men and 27 horses (EB, attributed); Wikipedia: Spanish force of 180 men; Wikipedia, Atahualpa: expedition of January 1531.",
+   "Atahualpa fresh from victory in the civil war against his half-brother Huáscar; his commanders had just captured Huáscar (Wikipedia).",
+   "Encamped outside Cajamarca with nearly 80,000 troops (Wikipedia, attributed); felt they had little to fear; lured the Spaniards inland (Wikipedia).",
+   "Pizarro and his men arrived on Friday 15 November 1532; town largely emptied (Wikipedia).",
+   "Neither assault nor retreat possible; plan to capture the emperor recalling Cortés (Wikipedia).",
+   "On 16 November in the afternoon Atahualpa entered the plaza; litter lined with parrot/macaw feathers and adorned with gold and silver plates (Wikipedia; Xerez).",
+   "Immediate party unarmed except small ceremonial axes; main army camped outside the walls (Wikipedia; Xerez/Pedro Pizarro: troops entered; Hernando: no arms raised).",
+   "Spaniards hidden in buildings around the square; horsemen in alleys; guns in a stone building at the centre (Wikipedia; Xerez: artillery posted in the fortress near the open space).",
+   "Friar Vicente de Valverde with an interpreter called on Atahualpa to accept the faith (Wikipedia; Xerez).",
+   "Atahualpa threw the book away; complained of how the Spaniards had treated his chiefs and storehouses on the road (Xerez, attributed); Spanish sources differ on the specific event that began combat (Wikipedia).",
+   "Signal; guns fired, horse and foot sallied out (Xerez; Wikipedia).",
+   "Little resistance; attendants killed holding up the litter; fleeing Indians broke down part of the wall (Wikipedia; Xerez).",
+   "Pizarro seized Atahualpa and received a wound in the hand protecting him (Xerez; Wikipedia).",
+   "Main Inca force outside scattered (Wikipedia).",
+   "Spanish killed thousands of counsellors, commanders and attendants (Wikipedia; Xerez: litter-bearers and lords killed, too many to count); most sources state no conquistadors killed (Wikipedia).",
+   "Capture marked the opening stage of the conquest of Peru (Wikipedia).",
+   "Ransom offer: fill a room twenty-two feet long and seventeen wide with gold up to a white line half way up the wall, silver twice over (Xerez, attributed).",
+   "Ransom distributed among the conquerors (Xerez/Markham: report on the distribution of the ransom); Sentenced to death for treason, baptised, strangled at a pole in the square (Xerez); Markham's note: the pretext was false (attributed); executed (garroted after baptism) in July 1533 (Wikipedia, Atahualpa)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q2091449": {
+  "title": "Battle of Mactan",
+  "y": 1521,
+  "place": "Mactan Island, Cebu, Philippines",
+  "paras": [
+   "Ferdinand Magellan, a Portuguese navigator in the service of Spain, had left Spain in 1519 to find a western route to the Spice Islands. After crossing the Pacific his fleet sighted Samar on 16 March 1521 and on 7 April reached Cebu. There Rajah Humabon accepted baptism, taking the name Carlos after the Spanish king, and became Magellan's ally; at Magellan's urging the neighbouring chiefs were told to supply the ships and to accept Christianity. On the small island of Mactan, beside the harbour where the fleet lay, the chief Lapulapu (Cilapulapu in the account of the voyage's chronicler, Antonio Pigafetta) refused to submit to Humabon or to the king of Spain. Mactan's other chief, Zula, sent Magellan a son with two goats and asked for a boatload of men to help him against Lapulapu.",
+   "Against the pleas of his officers, Magellan decided to lead the attack himself. Pigafetta writes that sixty men in corselets and helmets set out at midnight in three boats, with Humabon and twenty or thirty local boats, and reached Mactan three hours before dawn on Saturday, 27 April. Magellan offered friendship if the islanders would obey the king of Spain, recognise Humabon as their sovereign and pay tribute; they answered that they had lances of bamboo and stakes hardened in fire. Rocks kept the boats far from the shore, so at daybreak 49 men waded in up to their thighs while 11 guarded the boats. Magellan had told Humabon to stay in his boat and watch.",
+   "On the beach, Pigafetta says, more than 1,500 warriors in three divisions attacked the landing party from the front and both flanks. The musketeers and crossbowmen fired uselessly from too far off for about half an hour, and when Magellan had houses set on fire the defenders grew only more furious. Shot in the right leg with a poisoned arrow, he ordered a slow withdrawal, but most of his men fled, leaving six or eight with him; aiming at their bare legs, the islanders drove them back into knee-deep water, where they fought for more than an hour. Wounded in the arm by a bamboo spear so that he could not draw his sword, and then cut in the left leg by a large sword (probably a kampilan, according to Wikipedia), Magellan fell and was killed. Pigafetta counts eight Europeans killed with him, four Christian islanders killed by the boats' own guns, and fifteen of the enemy dead.",
+   "Lapulapu's people refused to give up Magellan's body for any amount of goods. Days later Humabon turned on his allies: Wikipedia says survivors were poisoned at a feast he gave, and the 1911 Encyclopaedia Britannica that he seized and murdered several leaders, among them Juan Serrano, one of the two commanders chosen to replace Magellan. The survivors burned one of their three ships and left the Philippines; the Victoria, under Juan Sebastián Elcano, reached Spain in 1522, completing the first voyage around the world. In the Philippines the battle is remembered as the first victory of a native Filipino over Spanish forces, and Lapulapu as the country's first national hero; in 2017, 27 April was declared Lapulapu Day."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Mactan",
+    "title": "Battle of Mactan (rev 1376643878, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     19,
+     20,
+     21,
+     22
+    ]
+   },
+   {
+    "url": "https://archive.org/download/thephilippineisl42884gut/42884-0.txt",
+    "title": "Antonio Pigafetta, Primo viaggio intorno al mondo, English translation in E. H. Blair and J. A. Robertson, The Philippine Islands, 1493-1898, vol. 33 (Cleveland, 1906), Project Gutenberg text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Magellan,_Ferdinand",
+    "title": "Magellan, Ferdinand, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     9,
+     20,
+     21
+    ]
+   }
+  ],
+  "claims": [
+   "Magellan, a Portuguese-born commander serving Spain; the expedition left Spain in 1519 (Wikipedia: August 1519; EB: left Seville 10 August 1519) to find a western route to the Moluccas/Spice Islands (Wikipedia; EB).",
+   "Samar sighted 16 March 1521 (Wikipedia; EB: 16th of March); entered the port of Cebu (Zubu) on Sunday 7 April (EB; Pigafetta: April seven); Pigafetta also: Saturday March sixteen 1521.",
+   "Rajah Humabon baptised as Carlos in honour of King Charles I; alliance; order to nearby chiefs to provide food and convert (Wikipedia; EB: close friendship and alliance with the native sovereign, who professed Christianity).",
+   "Mactan near Cebu, forming the port where the fleet was anchored; chiefs Zula and Cilapulapu (Pigafetta; Wikipedia: Lapulapu one of two chiefs on Mactan).",
+   "Lapulapu refused to accept Humabon's authority and refused to swear fealty to Spain (Wikipedia; Pigafetta: refused to obey the king of Spain).",
+   "Zula sent one of his sons with two goats and asked for one boatload of men to help him fight the other chief (Pigafetta; Wikipedia: Zula sent a son with gifts).",
+   "Magellan went himself despite pleas (Pigafetta: we begged him repeatedly not to go); to strengthen the alliance (Wikipedia).",
+   "At midnight sixty men with corselets and helmets set out in three boatloads with the Christian king and twenty or thirty balanguais; reached Matan three hours before dawn (Pigafetta).",
+   "Battle on Saturday 27 April 1521 (Pigafetta; Wikipedia: 27 April 1521; EB: April 27, 1521).",
+   "Message offering friendship if they obeyed the king of Spain, recognised the Christian king and paid tribute; reply: lances of bamboo and stakes hardened with fire (Pigafetta).",
+   "Boats could not approach because of rocks; forty-nine waded up to their thighs; eleven guarded the boats (Pigafetta; Wikipedia: reef between ship and beach).",
+   "Magellan told the Christian king to stay in his balanghai to watch (Pigafetta; Wikipedia: Humabon and Zula did not take part at Magellan's bidding and watched from a distance).",
+   "More than 1,500 persons in three divisions attacked on both flanks and front (Pigafetta; Wikipedia: attacked from the front and both flanks).",
+   "Musketeers and crossbowmen fired uselessly from a distance for about half an hour (Pigafetta; Wikipedia).",
+   "Houses set on fire enraged the natives (Pigafetta; Wikipedia).",
+   "Captain shot through the right leg with a poisoned arrow; ordered slow retreat; men fled except six or eight; natives shot at bare legs; fought up to knees in water for more than an hour (Pigafetta; Wikipedia: poisoned arrow, battle over an hour).",
+   "Wounded in the arm by a bamboo spear, could draw his sword only halfway; wounded in the left leg by a large cutlass; fell and was killed (Pigafetta; Wikipedia: large native sword, likely a kampilan).",
+   "Eight killed with him, four Christian Indians killed by the boats' mortars, fifteen of the enemy killed (Pigafetta; attributed).",
+   "Mactan people refused to give up the body for merchandise (Pigafetta; Wikipedia).",
+   "Survivors poisoned at a feast given by Humabon (Wikipedia); the king of Cebu got several leading men into his power, including Juan Serrano, one of the two admirals elected to replace Magellan, and murdered them (EB); Pigafetta: commanders Duarte Barboza and Johan Seranno chosen.",
+   "Survivors burned one of the three ships and left the Philippines; the Vittoria under del Cano reached Spain; Elcano completed the first circumnavigation in 1522 (EB; Wikipedia).",
+   "Remembered as the first battle won by a native Filipino against Spanish forces; Lapulapu the first national hero; 27 April declared Lapulapu Day in 2017 (Wikipedia)."
+  ],
+  "disagree": "Fate of the survivors at Cebu: Wikipedia says they were poisoned at a feast given by Humabon; the 1911 Britannica says he seized and murdered several leaders. Both stated in the text. The figures for the size of each side and the dead are Pigafetta's, the only eyewitness account.",
+  "checked": null
+ },
+ "Q2558706": {
+  "title": "Francis Drake's circumnavigation",
+  "y": 1577,
+  "place": "Plymouth, England, and around the world",
+  "paras": [
+   "Francis Drake was an English seaman who had sailed with his kinsman John Hawkins against the Spanish at San Juan de Ulúa in the Caribbean and had raided Spanish Panama in 1572–1573, when he first saw the Pacific. Protestant England did not accept the Spanish and Portuguese division of the world under the Treaty of Tordesillas, and relations between Queen Elizabeth I and Philip II of Spain were deteriorating. With the queen's backing Drake proposed a voyage through the Strait of Magellan into the Pacific, where no Englishman had yet sailed. Officially a voyage of discovery, it was in effect a covert raiding expedition against Spain's Pacific coast.",
+   "Five small ships with about 164 men (166 according to the 1911 Encyclopaedia Britannica) left Plymouth in November 1577 but were driven back by a storm, and sailed again on 13 December. At Port St Julian in Patagonia Drake had Thomas Doughty, one of his company, tried and beheaded for plotting against him. He renamed his flagship, the Pelican, the Golden Hind and entered the Strait of Magellan in August 1578, but storms in the Pacific scattered the fleet: the Marigold was lost, presumably with all hands, and the Elizabeth under John Wynter returned to England, leaving the Golden Hind alone.",
+   "Drake sailed up the coast of Chile and Peru, plundering Spanish towns and ships, and on 1 March 1579 captured the treasure ship Nuestra Señora de la Concepción, laden with silver. To avoid the Spanish, who were now hunting him, he sailed north in search of a passage back to the Atlantic, then landed in what is now northern California to repair his ship; he named the land New Albion and claimed it for Elizabeth. In late July 1579 he set out across the Pacific, reached the Moluccas, where the sultan of Ternate received him well and he traded for about ten tonnes of spices, mostly cloves; after the ship struck a rock off Celebes and was got off again, he went on to Java, rounded the Cape of Good Hope in June 1580 and reached Plymouth on 26 September 1580 with 59 men and a rich cargo of spices and Spanish treasure.",
+   "Drake was the first Englishman to sail round the world and the first captain since Magellan's expedition to complete a circumnavigation in his own ship. After some hesitation, for fear of trouble with Spain, the queen knighted him aboard the Golden Hind at Deptford on 4 April 1581, to the anger of Philip II, who regarded him as a pirate. The voyage was one of the causes of the Anglo-Spanish War of 1585–1604, and Spain answered Drake's entry into the Pacific by trying to colonise the Strait of Magellan to close it."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Francis_Drake%27s_circumnavigation",
+    "title": "Francis Drake's circumnavigation (rev 1381715729, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Drake,_Sir_Francis",
+    "title": "Drake, Sir Francis, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ]
+   }
+  ],
+  "claims": [
+   "Drake cousin/kinsman of Hawkins; at San Juan de Ulúa with Hawkins (Wikipedia; EB).",
+   "Raids on Spanish Panama 1572-1573; saw the Pacific (Wikipedia: 1572, saw the Pacific, captured Nombre de Dios; EB: sailed 1572, Nombre de Dios, first view of the Pacific, returned 9 August 1573).",
+   "Protestant nations rejected Tordesillas; relations between Elizabeth and Philip II deteriorated (Wikipedia).",
+   "Proposal to sail through the Straits of Magellan into the South Seas, which no Englishman had attempted; queen furnished means (EB; Wikipedia: authorised by Elizabeth I).",
+   "Termed a voyage of discovery but in effect a covert raiding voyage (Wikipedia).",
+   "Five ships (Wikipedia; EB); about 164 men (Wikipedia) or 166 (EB) (attributed).",
+   "Left Plymouth 15 November 1577, storm, refuge in Falmouth, returned to Plymouth; left again on 13 December (Wikipedia; EB: starting on 13 December 1577).",
+   "At Port St Julian Doughty tried and executed for plotting (EB; Wikipedia: beheaded on 2 July).",
+   "Pelican renamed Golden Hind on 20 August 1578; entered the Strait of Magellan in August 1578 (Wikipedia; EB: entered the straits on 21 August).",
+   "Storms in the Pacific; Marigold never seen again, presumably lost with all hands; Elizabeth under Wynter returned home; lone Golden Hind (Wikipedia; EB: Wynter's vessels separated and returned to England).",
+   "Plundered along the coasts of Chile and Peru (EB; Wikipedia).",
+   "1 March 1579 sighted/captured the Nuestra Señora de la Concepción, a treasure galleon carrying silver (Wikipedia).",
+   "Sailed north seeking a passage to the Atlantic; landed in northern California; New Albion claimed for the queen (Wikipedia; EB).",
+   "Left New Albion in late July 1579 for the Moluccas (Wikipedia: 23 July; EB: 26 July 1579).",
+   "Ternate: well received by the sultan (EB; Wikipedia); traded for around ten tonnes of spices, mostly cloves (Wikipedia).",
+   "Struck a rock off Celebes and got off (EB); Java (Wikipedia; EB: 11 March).",
+   "Doubled the Cape of Good Hope 15 June 1580 (EB); entered Plymouth on 26 September 1580 (Wikipedia; EB); 59 crew and rich cargo of spices and treasure (Wikipedia, attributed).",
+   "First Englishman to circumnavigate; second to lead a circumnavigation with a ship intact (Wikipedia; EB: first accomplished by an Englishman).",
+   "Queen hesitated for fear of complications with Spain, then knighted him aboard the Golden Hind at Deptford (EB; Wikipedia: on 4 April 1581, to the chagrin of Philip II who considered him a pirate).",
+   "Voyage one of the precursors of the Anglo-Spanish War (1585-1604); triggered a Spanish colonisation attempt of the Strait of Magellan (Wikipedia)."
+  ],
+  "disagree": "Crew at the start: about 164 men (Wikipedia) or 166 (1911 Britannica), stated. Departure from New Albion: 23 July (Wikipedia) or 26 July 1579 (Britannica), given as late July.",
+  "checked": null
+ },
+ "Q371558": {
+  "title": "Institutes of the Christian Religion",
+  "y": 1536,
+  "place": "Basel, Switzerland",
+  "paras": [
+   "John Calvin, a young French scholar trained in law and classics, became a Protestant around 1533, at a time when the reform movement was persecuted in France, and had to go into hiding. He began the studies that led to his great book while staying at Angoulême in 1534, and in 1535 took refuge in Basel, then a centre of Protestant learning. King Francis I, who was persecuting Protestants at home but wanted to stay on good terms with the Lutheran princes of Germany against Charles V, had his envoys explain that he was punishing only Anabaptists and other enemies of all civil government. Calvin was indignant at this slur on the French reformers and rushed his work into print.",
+   "The Institutes of the Christian Religion (Institutio Christianae Religionis) was published in Latin at Basel in March 1536, so that it could reach educated readers in every country. It opened with a letter to Francis I asking him to give the Protestants a hearing instead of persecuting them, and presenting the book as their confession of faith. The first edition was a short manual in six chapters, following the traditional order of religious teaching: the Law (the Ten Commandments), faith (the Apostles' Creed), prayer and the sacraments, followed by chapters on the 'false sacraments' and on Christian liberty, church power and civil government. It drew on Luther for faith and the sacraments and on Martin Bucer of Strasbourg for predestination. The 1911 Encyclopaedia Britannica notes that Calvin was only twenty-six when it appeared.",
+   "The book was an immediate success, and Calvin, who soon afterwards began his ministry in Geneva, kept enlarging it. A much larger Latin edition appeared in 1539 and further ones in 1543 and 1550, and he also translated it into French: Wikipedia dates the first French edition to 1541, while the Britannica says the earliest known one is of 1540. The final Latin edition of 1559, which scholars treat as the authoritative text, is 80% larger than the one before it, yet Calvin's essential ideas did not change. The Institutes became the core statement of the doctrine of the Reformed churches, usually called Calvinism, and one of the most influential works of Protestant theology."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Institutes_of_the_Christian_Religion",
+    "title": "Institutes of the Christian Religion (rev 1384745929, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Calvin,_John",
+    "title": "Calvin, John, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Calvin studied law and then classics in Paris; converted around 1533; reform movement persecuted in France; forced into hiding (Wikipedia).",
+   "Began the studies for the Institutes at Angoulême, in du Tillet's library, after New Year 1534 (EB, attributed).",
+   "Moved to Basel for safety in 1535 (Wikipedia); Basel welcomed him as the Athens of Switzerland (EB).",
+   "Francis I, persecuting Protestants but not wishing to break with the German Protestant princes because of his strife with Charles V, told them his severities were only against Anabaptists and those who questioned all civil magistracy (EB; Wikipedia: opponents sought to tie them to radical Anabaptists).",
+   "Calvin, indignant at the calumny, hastily prepared the Institutes for the press (EB; Wikipedia: adapted the work to defend persecuted Protestants).",
+   "Published in Latin in Basel in March 1536 (Wikipedia); written in Latin to reach the learned in all lands (EB).",
+   "Preface to Francis I entreating a hearing for the Protestants; presented as a confession of faith (Wikipedia; EB: dedicated to the king).",
+   "First edition six chapters: Law, Faith (Apostles' Creed), Prayer, Sacraments, False Sacraments, Christian liberty, ecclesiastical power and civil administration (EB; Wikipedia: Ten Commandments, Apostles' Creed, Lord's Prayer, sacraments, Christian liberty and political theology).",
+   "Indebted to Luther on faith and sacraments and to Bucer on predestination (Wikipedia; EB: indebtedness to Luther and kinship with Bucer of Strassburg).",
+   "Calvin twenty-six years of age (EB, attributed).",
+   "Instantly popular; Calvin began his ministry in Geneva soon after (Wikipedia).",
+   "Editions of 1539 (much larger), 1543, 1550; final edition 1559 in Geneva, authoritative, 80% larger; ideas did not change (Wikipedia; EB: perfected the Institutes in 1558-1559, never changed his views on any essential point).",
+   "French translation: Wikipedia 1541; EB: begun in 1536, earliest known French edition 1540 (attributed).",
+   "Core reference for the Reformed churches (Calvinism); one of the most influential works of Protestant theology (Wikipedia)."
+  ],
+  "disagree": "First French edition: 1541 (Wikipedia) or 1540 at the earliest (1911 Britannica, which notes Calvin was translating it by October 1536). Stated in the text.",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/John_Calvin",
+   "result": "5 claims re-checked (Latin first edition of March 1536, second edition 1539, first French translation 1541, final Latin edition 1559, standard of the Reformed churches): no errors",
+   "errors": 0
+  }
+ },
+ "Q593267": {
+  "title": "Fall of Tenochtitlan",
+  "y": 1521,
+  "place": "Tenochtitlan (Mexico City), Mexico",
+  "paras": [
+   "Tenochtitlan, the island capital of the Mexica (Aztecs) in Lake Texcoco, fell after a two-year struggle with the Spanish conquistador Hernán Cortés. Cortés had landed on the Gulf coast in April 1519 with 508 soldiers, 100 sailors and 14 small cannon, and won allies among peoples who resented Aztec rule, above all the Tlaxcalans. Received in Tenochtitlan, he made the emperor Moctezuma his prisoner. When he left the city to defeat a Spanish force sent from Cuba to arrest him, his lieutenant Pedro de Alvarado provoked a rising. Moctezuma died, and the Spaniards fought their way out of the city at night, an escape remembered as La Noche Triste; by the time they reached Tlaxcala, Wikipedia says, they had lost more than 860 Spanish soldiers and over a thousand Tlaxcalans. On the way they beat a large Aztec army at Otumba, on 7 July 1520 according to the 1911 Encyclopaedia Britannica.",
+   "While Cortés rebuilt his forces, a smallpox epidemic, to which the Spaniards were largely immune, swept the Valley of Mexico and killed many Aztec leaders; Cuauhtémoc became emperor in February 1521. Cortés had thirteen brigantines built in pieces at Tlaxcala and launched on the lake from Texcoco, gathered reinforcements and tens of thousands of native warriors, and won over the lakeside towns. On 22 May 1521 three columns under Alvarado, Cristóbal de Olid and Gonzalo de Sandoval took up positions at the heads of the causeways, cut the aqueduct from Chapultepec that brought much of the city's water, and the brigantines scattered the Aztec canoe fleet.",
+   "The siege lasted about three months. The Aztecs fought street by street; in one counter-attack Cortés was wounded and almost captured, and sixty-five Spaniards were taken alive and sacrificed in sight of their comrades. Cortés answered by razing each district he took and using the rubble to fill the canals, so that his cavalry and infantry could advance in formation, while the blockade starved the city: its people ate wood and leather and drank brackish water, and disease spread. The attackers finally reached the market square of Tlatelolco. Cuauhtémoc tried to escape by canoe but was captured by Sandoval's brigantines, and the Aztecs surrendered on 13 August 1521, the date also given by the Britannica.",
+   "The fall of the city destroyed the Aztec state and was a critical stage in Spain's colonisation of the Americas. Wikipedia gives estimates of 100,000 to 240,000 killed in the campaign as a whole, warriors and civilians together; almost all the Aztec nobility died, and Spain's native allies, mainly the Tlaxcalans, went on killing and looting after the surrender."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Fall_of_Tenochtitlan",
+    "title": "Fall of Tenochtitlan (rev 1386660113)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Cortes,_Hernan",
+    "title": "Cortes, Hernan, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     8,
+     13,
+     19
+    ]
+   }
+  ],
+  "claims": [
+   "Tenochtitlan, Aztec/Mexica capital on Lake Texcoco (Wikipedia).",
+   "Cortés landed in April 1519 at San Juan de Ulúa with 508 soldiers, 100 sailors and 14 small cannons (Wikipedia).",
+   "Allies among polities who resented Aztec rule; Tlaxcaltec warriors (Wikipedia; EB: assembled an auxiliary army of natives at Tlaxcala).",
+   "Cortés made Montezuma his prisoner (EB: master of the person of the monarch; Wikipedia).",
+   "Narváez's army sent by Velázquez to take Cortés into custody; Cortés left men under Alvarado and defeated Narváez (EB; Wikipedia).",
+   "Revolt in the city linked to Alvarado at the Toxcatl festival; Moctezuma died; the Spaniards retreated, La Noche Triste (Wikipedia; EB: Mexicans revolted, Montezuma perished, Spaniards forced to retire).",
+   "Lost over 860 Spanish soldiers and over a thousand Tlaxcalans by reaching Tlaxcala (Wikipedia).",
+   "Battle of Otumba; EB dates the victory 7 July 1520 (attributed; Wikipedia: Otumba).",
+   "Smallpox epidemic killed much of the leadership; Spaniards affected relatively little (Wikipedia).",
+   "Cuauhtémoc placed on the throne in February 1521 (Wikipedia).",
+   "Thirteen sloops/brigantines built at Tlaxcala by Martín López, launched from Texcoco; reinforcements; tens of thousands of native warriors (20,000 at Chimaluacan; 20,000 from Tlaxcala, Huexotzinco and Cholula) (Wikipedia).",
+   "Positions taken on May 22 by Alvarado (Tacuba), Olid (Coyohuacan) and Sandoval (Ixtlapalapan); cut Chapultepec springs/aqueduct; first battle on the lake against more than a thousand canoes (Wikipedia).",
+   "Siege of several months (EB: gallant defence of several months; Wikipedia: positions taken 22 May, surrender 13 August).",
+   "Cortés wounded and almost captured; sixty-five Spaniards captured and sacrificed (Wikipedia).",
+   "Cortés razed every neighbourhood he captured, filling canals and gaps to advance in formation (Wikipedia).",
+   "Famine: ate wood, leather and bricks; brackish water, dysentery (Wikipedia).",
+   "Advance to the Tlatelolco marketplace (Wikipedia).",
+   "Cuauhtémoc tried to flee in fifty pirogues, captured by Sandoval's launches (Wikipedia).",
+   "Aztecs surrendered on 13 August 1521 (Wikipedia; EB: retaken on the 13th of August 1521).",
+   "Siege led directly to the fall of the Aztec civilization; conquest a critical stage in the Spanish colonization of the Americas (Wikipedia).",
+   "100,000 to 240,000 killed overall (Wikipedia, attributed); almost all nobility dead; Tlaxcalans continued to attack after the surrender, slaughtering and looting (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q645920": {
+  "title": "Protestation at Speyer",
+  "y": 1529,
+  "place": "Speyer, Palatinate, Germany",
+  "paras": [
+   "Martin Luther had been placed under the ban of the Holy Roman Empire by the Edict of Worms in 1521, but the edict was not enforced everywhere. In 1526 the first Diet of Speyer resolved that, until a church council met, each state should conduct its religious affairs as it hoped to answer for them to God and the emperor, and the Lutheran princes took this as licence to organise their own territorial churches. In 1529 Emperor Charles V, at war with France, called a second diet at Speyer and was represented by his brother Ferdinand. Ferdinand announced that the emperor annulled the 1526 decision; according to Wikipedia's account of his declarations, further innovations were forbidden until a council, the Mass was to be refused to no one, and neither those who rejected the real presence of Christ in the sacrament nor the Anabaptists were to be tolerated.",
+   "The Catholic majority of the diet accepted the revocation on 19 April 1529 and told the evangelical estates to yield to it. The evangelical princes left the hall, and when they returned Ferdinand refused to hear them, so their objection was read out: they would keep to the decision of 1526 and would not be bound by the majority in matters of faith. On 20 April they presented a formal Letter of Protestation, which Ferdinand refused to accept; it was printed and published instead. Its signers were Elector John of Saxony, Margrave George of Brandenburg-Ansbach, Duke Ernest of Brunswick-Lüneburg, Landgrave Philip of Hesse and Prince Wolfgang of Anhalt, joined by representatives of 14 imperial free cities, among them Strasbourg and Ulm.",
+   "When the diet's decree was read again at its last sitting on 24 April without mention of the protest, the princes' councillors and the cities' agents drew up a formal appeal on 25 April and sent it to the emperor by an embassy. From this protest the reformers took the name Protestants, and the event is often counted as the birth of Protestantism. As the 1911 Encyclopaedia Britannica observes, a minority could hold to such a protest only if it was ready to defend itself by force, and three days after the protest was read many of the protesting cities and states made a secret treaty, while Philip of Hesse began to work for a general union of the evangelical states."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Protestation_at_Speyer",
+    "title": "Protestation at Speyer (rev 1358780460, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Luther,_Martin",
+    "title": "Luther, Martin, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     6,
+     7,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Spires",
+    "title": "Spires, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Luther banned by the Holy Roman Empire at the Diet of Worms of 1521 (Wikipedia; EB Luther: edict of Worms).",
+   "1526 Diet of Speyer: each state to live religiously as it hoped to answer for its conduct to God and the emperor; Lutherans relied on this to organise territorial churches (EB Luther; Wikipedia: every prince should hold whichever beliefs he could justify before his King and God; Edict of Worms suspended).",
+   "Charles V announced the second Diet; represented by his brother Ferdinand because of the war with France (Wikipedia).",
+   "Emperor abolished the 1526 clause by imperial authority (EB Luther; Wikipedia: annulment of the 1526 decision announced by Ferdinand).",
+   "No further new developments until a council; no one refused Mass; sects contradicting the sacrament of the true body and blood and Anabaptists not tolerated (Wikipedia).",
+   "On 19 April the majority accepted the revocation; evangelicals told to yield to the majority (Wikipedia; EB Luther: compact Roman Catholic majority supported the emperor).",
+   "Evangelical princes left the hall; Ferdinand refused to listen; objection read out; protested against undoing the 1526 decision; refused to be bound in matters of faith (Wikipedia; EB Luther: declared they meant to abide by the decision of 1526 and refused to be bound by that of 1529).",
+   "20 April Letter of Protestation, refused by Ferdinand, printed and made public (Wikipedia).",
+   "Signers: Johann of Saxony, Georg of Brandenburg, Ernst of Braunschweig-Lüneburg, Philipp of Hesse, Wolfgang of Anhalt (Wikipedia).",
+   "Six princes and representatives of 14 Imperial Free Cities; cities included Strassburg and Ulm (Wikipedia).",
+   "24 April final sitting; 25 April Instrumentum Appellationis; taken to the emperor by an embassy (Wikipedia).",
+   "Name Protestants from this protest; seen as birth of Protestantism (Wikipedia; EB Luther: from this protest came the name Protestant; EB Spires: the Reformers first received the name of Protestants at the Diet of Spires in 1529).",
+   "A minority could only maintain the protest if prepared to defend each other by force (EB Luther, attributed).",
+   "Three days after the protest many protesting cities and states concluded a secret treaty; Philip of Hesse saw the need for a general union of evangelicals (EB Luther, attributed)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q661327": {
+  "title": "Battle of Mühlberg",
+  "y": 1547,
+  "place": "Mühlberg on the Elbe, Saxony, Germany",
+  "paras": [
+   "The battle was the decisive clash of the Schmalkaldic War between Emperor Charles V and the Schmalkaldic League, the defensive alliance of Lutheran princes and cities led by Elector John Frederick of Saxony and Landgrave Philip of Hesse. For years Charles had tolerated the league while he fought France and the Ottomans, but the Treaty of Crépy with France in 1544 freed his hands. The war began in 1546 when Maurice of Saxony, a Protestant cousin and rival of John Frederick who had refused to join the league, invaded the elector's lands with the help of Charles's brother Ferdinand. John Frederick drove him back, but the emperor joined the war, occupied Ulm and Württemberg, forced the Elector Palatine to submit, and in spring 1547 marched into Saxony.",
+   "John Frederick had sent much of his army to Bohemia, hoping for a Protestant rising there, and was withdrawing north towards his fortress of Wittenberg. He camped at Mühlberg, leaving only a few guards on the Elbe, which he thought too wide for the imperial army to cross quickly. Charles, so ill with gout that he was carried in a litter, reached the river on the evening of 23 April and, against his generals' advice, decided to attack. At dawn on 24 April, under cover of fog, Spanish and Italian veterans swam the river and overcame the Saxon guards; a local farmer showed the Duke of Alba's men a ford, and the cavalry crossed by a pontoon bridge that the Saxons had failed to destroy.",
+   "Taken by surprise, the elector drew up his army along the edge of a forest. The imperial cavalry under Alba and Maurice broke the Saxon wings, and the infantry tercios in the centre drove the Protestants back into the forest. John Frederick fought bravely but was wounded in the face and captured. Wikipedia puts the Saxon losses at 2,000 to 3,000 men, with nearly all their artillery and banners taken, against about fifty imperial dead.",
+   "The victory decided the war in the emperor's favour, and the league was dissolved. Charles spared John Frederick's life in exchange for the surrender of Wittenberg, but kept him prisoner and transferred his electoral title to Maurice; Philip of Hesse submitted soon afterwards. The success did not last: within a few years a new conflict broke out, and the Peace of Augsburg of 1555 allowed each ruler to choose between Catholicism and Lutheranism."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_M%C3%BChlberg",
+    "title": "Battle of Mühlberg (rev 1370270406, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Smalkaldic_League",
+    "title": "Smalkaldic League, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     9,
+     11,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Mühlberg",
+    "title": "Mühlberg, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     9
+    ]
+   }
+  ],
+  "claims": [
+   "Battle of the Schmalkaldic War; Charles V defeated the Schmalkaldic League under John Frederick I of Saxony and Philip I of Hesse (Wikipedia; EB: victory of Charles V over the elector of Saxony, John Frederick; CE).",
+   "Charles tolerated the League while fighting France and the Turks; Treaty of Crépy in 1544 ended the French support (Wikipedia).",
+   "Maurice, cousin and rival of John Frederick, had refused to join the League in 1542; in 1546 with Ferdinand's help invaded John Frederick's territory; repelled (Wikipedia; CE: Maurice of Saxony defended the imperial cause).",
+   "Charles joined the war, occupied Ulm and Württemberg, defeated the Palatine Elector, marched toward Saxony in spring (Wikipedia; CE: princes and cities in Southern Germany submitted).",
+   "John Frederick split his forces sending a large portion to Bohemia hoping for an uprising; marched north for Wittenberg; camped at Mühlberg leaving few guards on the Elbe, thought too wide (Wikipedia).",
+   "Charles suffering from gout, carried in a litter (Wikipedia).",
+   "Charles reached the Elbe on the evening of 23 April; against his generals' opinion decided to attack (Wikipedia).",
+   "Dawn 24 April; fog; Spanish and Italian veterans swam the river and eliminated the Saxon guards; local farmer helped spot a ford following Alba's plan; pontoon bridge saved from demolition used by cavalry (Wikipedia).",
+   "Date 24 April 1547 (EB; CE; Wikipedia).",
+   "Saxons deployed along the edge of a forest; Alba's right wing and Maurice's left; wings defeated; tercios broke resistance; retreat through the forest (Wikipedia).",
+   "John Frederick wounded in the face and captured (Wikipedia; CE: captured).",
+   "Saxon losses estimated at 2000-3000; artillery, ammunition and banners almost all captured; around fifty imperial soldiers killed (Wikipedia, attributed).",
+   "Battle decided the issue for the emperor; dissolution of the League followed (CE; Wikipedia).",
+   "Life spared in exchange for the capitulation of Wittenberg; imprisoned; electoral privilege to Maurice (Wikipedia; CE: transfer of the electoral dignity to his cousin Maurice).",
+   "Philip of Hesse forced to submit shortly after (CE; Wikipedia).",
+   "Success temporary; a few years later another conflict (CE); Peace of Augsburg 1555 allowed each ruler to choose between Catholicism and Lutheranism (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q688998": {
+  "title": "Leipzig Debate",
+  "y": 1519,
+  "place": "Pleissenburg castle, Leipzig, Saxony, Germany",
+  "paras": [
+   "Two years after Martin Luther's Ninety-five Theses against the sale of indulgences, the quarrel had become a contest between named champions. Johann Eck, professor of theology at Ingolstadt and a famous debater, had in 1518 circulated a privately written attack, the Obelisci, branding Luther a Hussite, a follower of Jan Hus, whose teachings the Council of Constance had condemned. Andreas Karlstadt, dean of the theology faculty at Wittenberg, took up Luther's defence, answered Eck in a long series of theses and challenged him to a public debate. Eck accepted, and the debate was held in June and July 1519 in the Pleissenburg castle at Leipzig, in the presence of Duke George of Saxony, himself an opponent of Luther.",
+   "According to the 1911 Encyclopaedia Britannica, Eck first debated Karlstadt on 27 and 28 June and 1 and 3 July on grace, free will and good works. From 4 to 14 July he faced Luther, and the subject widened to purgatory, indulgences, penance and, above all, the authority of the pope. Eck's aim was to push Luther into a statement that would let his opponents identify him with Hus, and he succeeded: Luther conceded that some of Hus's opinions were true and declared himself against the papacy.",
+   "The judges gave no verdict, but the general impression, says the Britannica, was that Eck had won, and Luther went back to Wittenberg depressed. Yet the debate made Luther see that his protest struck at the centre of the church's system, not at an abuse on its edge. His published account rallied support in Germany, and in 1520 he wrote his three great reforming treatises. Eck, meanwhile, went to Rome, and the papal bull Exsurge Domine of June 1520, which he helped to prepare, followed the line of his charges at Leipzig and threatened Luther with excommunication."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Leipzig_Debate",
+    "title": "Leipzig Debate (rev 1368357730, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     13
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Eck,_Johann_Maier",
+    "title": "Eck, Johann Maier, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Luther,_Martin",
+    "title": "Luther, Martin, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Eck had criticised the 95 Theses (Wikipedia: Eck's critical commentary on the 95 Theses; EB Eck: Luther sent him the 95 theses in 1517).",
+   "Eck, professor of theology at Ingolstadt (Wikipedia; EB Eck: theological chair at Ingolstadt), considered the master debater (Wikipedia; EB Eck: won laurels in public disputations).",
+   "In 1518 Eck circulated, privately at first, his Obelisci, branding Luther a Hussite (EB Eck; attributed by naming it).",
+   "Karlstadt, dean of the Wittenberg theological faculty, defended Luther and challenged Eck to a public debate (Wikipedia; EB Eck: Carlstadt answered in 400 theses and declared readiness to dispute).",
+   "The debate took place in June and July 1519 at Pleissenburg Castle in Leipzig in the presence of George, Duke of Saxony, an opponent of Luther (Wikipedia; EB Eck: Leipzig, June and July 1519).",
+   "27 and 28 June and 1 and 3 July: Eck v. Carlstadt on grace, free will and good works (EB Eck, attributed; Wikipedia: Karlstadt challenged Eck on free will and grace).",
+   "4 to 14 July: Eck v. Luther on papal supremacy, purgatory, penance (EB Eck, attributed; Wikipedia: Luther arrived in July and terms expanded to purgatory, sale of indulgences, penance, legitimacy of papal authority).",
+   "Hus condemned by the Council of Constance (EB Luther). Eck's intention to force Luther into an admission justifying accusation of holding Huss's opinions; successful (EB Luther; EB Eck: made Luther admit some truth in the Hussite opinions and declare himself against the pope).",
+   "Arbitrators declined to give a verdict; general impression that Eck had won (EB Eck, attributed); Eck left triumphant, Luther returned to Wittenberg depressed (EB Luther).",
+   "The disputation made Luther see his protest was an attack on the centre of the medieval system; his published account rallied the people (EB Luther).",
+   "1520: his three primary treatises (EB Luther).",
+   "Eck went to Rome in January 1520 (EB Eck); Exsurge Domine prepared by Eck and Prierias followed the line of Eck's charges at Leipzig (EB Luther).",
+   "The debate led Pope Leo X to threaten Luther with excommunication in the June 1520 bull Exsurge Domine (Wikipedia)."
+  ],
+  "disagree": null,
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Johann_Eck",
+   "result": "5 claims re-checked (debate in June and July 1519, Eck's Obelisci, Karlstadt's part, Eck's journey to Rome in 1520, Eck carrying Exsurge Domine to Germany): no errors (the Catholic Encyclopedia ends the debate on 15 July, the Britannica's Luther sessions on 14 July)",
+   "errors": 0
+  }
+ },
+ "Q691882": {
+  "title": "Münster rebellion",
+  "y": 1534,
+  "place": "Münster, Westphalia, Germany",
+  "paras": [
+   "The Anabaptists rejected infant baptism and baptised adult believers again, and some of them expected the end of the world to be near. After the Peasants' War of 1524–1525 their most radical wing made a new attempt to set up a kingdom of the saints at Münster in Westphalia, a city of the prince-bishopric of Münster in the Holy Roman Empire. There the Lutheran preacher Bernhard Rothmann, backed by the wealthy wool merchant Bernhard Knipperdolling, moved from attacking Catholicism to preaching the equality of all believers, including in property. Followers of Jan Matthys, a baker from Haarlem, among them the tailor Jan Bockelson (John of Leiden), declared Münster the New Jerusalem; from 5 January 1534 adult baptism spread quickly, and in February the Anabaptists won control of the city council and made Knipperdolling mayor.",
+   "Many Lutherans left and Anabaptists arrived from outside. Rebaptism was made compulsory, churches and monasteries were stripped of images, and property was declared common. The expelled bishop, Franz von Waldeck, laid siege to the city. At Easter 1534 Matthys, who had prophesied God's judgement for that day and saw himself as a second Gideon, went out against the besiegers with a handful of men and was killed with all of them: twelve followers according to Wikipedia, thirty according to the 1911 Encyclopaedia Britannica.",
+   "John of Leiden took his place, claimed visions from heaven, proclaimed himself the successor of King David with royal honours and absolute power, and made polygamy legal. Wikipedia says he took sixteen wives, the Britannica four; both report that he beheaded one of them in the market place, though Wikipedia notes that this may have been attributed to him falsely. As the siege dragged on, most of the people starved. After a long resistance the besiegers took the city on 24 June 1535. In January 1536 John of Leiden, Knipperdolling and Bernhard Krechting were tortured and executed in the market place, and their bodies were hung in cages from the tower of St Lambert's Church, where the cages still hang.",
+   "Münster was the turning point of the Anabaptist movement: after it, Catholic and Lutheran rulers alike suppressed the Anabaptists harshly, and they never again had political weight. The peaceful Anabaptists who followed Menno Simons, the Mennonites, rejected the doctrines of the Münster radicals."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/M%C3%BCnster_rebellion",
+    "title": "Münster rebellion (rev 1382656834, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Anabaptists",
+    "title": "Anabaptists, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     7,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15,
+     16,
+     17,
+     18
+    ]
+   }
+  ],
+  "claims": [
+   "Anabaptists denied the validity of infant baptism and baptised adults (EB).",
+   "After the Peasants' War (1524-1525) a more determined attempt to establish a theocracy was made at Münster in Westphalia (Wikipedia; EB).",
+   "Münster under the Prince-Bishopric of Münster in the Holy Roman Empire (Wikipedia).",
+   "Rothmann, Lutheran pastor; Knipperdolling wealthy wool merchant published his pamphlets; pamphlets moved from radical Lutheran anti-Catholicism to absolute equality including distribution of wealth (Wikipedia; EB: adhesion of Rothmann, the Lutheran pastor).",
+   "Jan Matthys, a baker from Haarlem; John of Leiden (Bockelson), a tailor from Leiden (Wikipedia; EB).",
+   "Matthys identified Münster as the New Jerusalem; on 5 January 1534 his disciples entered and introduced adult baptism (Wikipedia).",
+   "City hall seized in February 1534 and Knipperdolling installed as mayor at the elections (Wikipedia; EB: obtained possession of the town and deposed the magistrates).",
+   "Lutherans left, outnumbered by arriving Anabaptists; iconoclasm; rebaptism compulsory; property held in common (Wikipedia).",
+   "Besieged by Franz von Waldeck, the expelled bishop (Wikipedia; EB: Francis of Waldeck, April 1534).",
+   "Easter Sunday April 1534 Matthys, who prophesied judgement that day and believed himself a second Gideon, sallied out and was cut off and killed (Wikipedia; EB).",
+   "Twelve followers (Wikipedia) vs thirty (EB) (attributed).",
+   "John of Leiden successor; visions from heaven; successor of David; royal honours and absolute power in the new Zion; polygamy (Wikipedia; EB).",
+   "Wives: sixteen (Wikipedia) vs four (EB); beheaded one in the market-place (EB; Wikipedia: Elisabeth Wandscherer, possibly falsely attributed) (attributed).",
+   "Most residents starving in the year-long siege (Wikipedia).",
+   "Town taken on 24 June 1535 after obstinate/lengthy resistance (Wikipedia; EB).",
+   "January 1536 John of Leiden, Knipperdolling and Krechting tortured and executed in the marketplace; cages hung from the steeple of St Lambert's Church and still hang there (Wikipedia; EB: tortured and executed in the market-place in January 1536).",
+   "Turning point/crisis of the movement; never again politically important; stringent measures by Catholic and Lutheran powers (Wikipedia; EB).",
+   "Menno Simons and his followers repudiated the doctrines of the Münster Anabaptists (EB; Wikipedia: nonresistant Anabaptists found leaders in Menno Simons)."
+  ],
+  "disagree": "Matthys's sortie: twelve men (Wikipedia) or thirty (1911 Britannica). John of Leiden's wives: sixteen (Wikipedia) or four (Britannica); Wikipedia adds that the beheading may have been attributed to him falsely. All stated in the text.",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/M%C3%BCnster_(Westphalia)",
+   "result": "3 claims re-checked (bodies of John of Leiden and two followers exposed in cages on St Lambert's tower in 1536; the bishop's armed suppression in 1535): no errors",
+   "errors": 0
+  }
+ },
+ "cp04-16": {
+  "title": "First circumnavigation completed (Magellan–Elcano expedition)",
+  "y": 1522,
+  "place": "Sanlúcar de Barrameda, Spain",
+  "paras": [
+   "The expedition was a Spanish venture, paid for mostly by King Charles I, to reach the Moluccas, the Spice Islands, by sailing west, since the eastern route around Africa belonged to Portugal under the Treaty of Tordesillas. Its commander, the Portuguese navigator Ferdinand Magellan, left Sanlúcar de Barrameda on 20 September 1519 with five ships and about 270 men. The fleet passed through the strait at the tip of South America that now bears his name late in 1520 and crossed the Pacific in 98 days, the crews eating ox-hides, sawdust and rats as scurvy spread.",
+   "Magellan was killed in a fight on Mactan in the Philippines on 27 April 1521, and soon afterwards many of his officers were murdered on Cebu. The survivors burned one ship and reached Tidore in the Moluccas in November 1521, where they loaded cloves. The flagship Trinidad was found to be leaking and stayed behind (it was later captured by the Portuguese), so on 21 December 1521 the Victoria, commanded by the Spanish navigator Juan Sebastián Elcano, set out for Spain alone by the Portuguese route across the Indian Ocean.",
+   "The homeward voyage was a race against hunger. With only rice to eat, the Victoria rounded the Cape of Good Hope on 6 May 1522 after weeks of storms. By 9 July, when Elcano put into the Portuguese Cape Verde Islands for food, twenty men had died according to Wikipedia (twenty-one, counting Europeans and Moluccans, according to the voyage's chronicler Antonio Pigafetta). There the crew discovered that their carefully kept log was a day behind the islanders' calendar, the day gained by sailing round the world westward. When the Portuguese learned where the ship had been, they seized thirteen men ashore and the Victoria fled.",
+   "On Saturday 6 September 1522 the Victoria entered the bay of Sanlúcar with 18 men, most of them sick, almost three years after setting out; two days later they anchored at Seville and went barefoot with candles to give thanks at its shrines. The 1911 Encyclopaedia Britannica gives 31 men as returning with Elcano. The men held in Cape Verde were later released, and a few survivors of the Trinidad came home years later. The voyage was the first circumnavigation of the Earth and the first European crossing of the Pacific, and it showed both the vastness of that ocean and that the world could be sailed round by a western sea route."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Magellan_expedition",
+    "title": "Magellan expedition (rev 1386674003, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     19,
+     20
+    ]
+   },
+   {
+    "url": "https://archive.org/download/thephilippineisl47927gut/47927-0.txt",
+    "title": "Antonio Pigafetta's account, English translation in E. H. Blair and J. A. Robertson, The Philippine Islands, 1493-1898, vol. 34 (Cleveland, 1906), Project Gutenberg text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     19
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Magellan,_Ferdinand",
+    "title": "Magellan, Ferdinand, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     12,
+     15,
+     18,
+     19,
+     20
+    ]
+   }
+  ],
+  "claims": [
+   "Spanish expedition funded mostly by King Charles I, to find a western route to the Moluccas/Spice Islands, the eastern route being controlled by Portugal under the 1494 Treaty of Tordesillas (Wikipedia; EB: Magellan proposed to reach the Spice Islands by the west, three-quarters of cost defrayed by the Spanish Crown).",
+   "Magellan, Portuguese; left Sanlúcar on 20 September 1519 with five ships and about 270 men (Wikipedia; EB: five vessels, put to sea on the 20th of September, crew about 270-280; Pigafetta's narrative: left San Lucar in September).",
+   "Passed through the Strait of Magellan late in 1520 (Wikipedia: entered 1 November 1520; EB: cape of the Eleven Thousand Virgins 21 October, Cabo Deseado rounded 28 November).",
+   "Pacific crossed in 98 days (Wikipedia; EB: ninety-eight days); ox-hides, sawdust and rats eaten; scurvy (EB; Wikipedia: starvation, scurvy).",
+   "Magellan killed at Mactan on 27 April 1521 (EB; Wikipedia: died in battle in the Philippines in April 1521).",
+   "Leading men murdered at Cebu; survivors burned one of three remaining vessels (EB; Wikipedia: Cebu massacre on 1 May 1521).",
+   "Reached Tidore in the Moluccas in November 1521 and bought cloves (Wikipedia: 8 November; EB: Moluccas Nov. 6, cargo of cloves at Tidor).",
+   "Trinidad leaking, stayed behind; later captured by the Portuguese (Wikipedia; EB: Trinidad, becoming leaky, stayed behind).",
+   "Victoria under Elcano left for Spain on 21 December 1521 via the Indian Ocean (Wikipedia; EB: Dec. 21, 1521).",
+   "Elcano a Spanish navigator (Wikipedia).",
+   "Only rice for rations; rounded Cape of Good Hope on 6 May 1522 (Wikipedia; Pigafetta: doubled that cape on May six, nine weeks near the cape, only rice and water).",
+   "Put into Cape Verde 9 July 1522 for provisions (Wikipedia; Pigafetta: Wednesday July nine; EB: Cape Verde July 9-15).",
+   "Deaths by then: twenty (Wikipedia); twenty-one in two months (Pigafetta; B&R summary: counting Europeans and Malays) (attributed).",
+   "Crew found the date was a day later than their records; due to sailing west round the world (Wikipedia; Pigafetta).",
+   "Portuguese detained 13 men after discovering the ship came from the East Indies; Victoria escaped (Wikipedia; Pigafetta: thirteen men detained; EB: thirteen detained prisoners).",
+   "Saturday 6 September 1522 entered the bay of San Lucar with eighteen men, most sick (Pigafetta; Wikipedia: 6 September 1522, 18 men out of 270), almost three years after departure (Wikipedia).",
+   "Monday 8 September anchored at Seville; next day went in shirts and barefoot with candles to the shrines (Pigafetta).",
+   "EB 1911: only thirty-one men returned with del Cano to Seville (attributed).",
+   "The 12/13 men held at Cape Verde were released and returned (Wikipedia: 12 eventually returned; B&R note citing Guillemard: shortly released); survivors of the Trinidad released 1525-26, five survived (Wikipedia; EB: 4 survivors of the Trinidad reappeared later).",
+   "First circumnavigation; first crossing of the Pacific by a European expedition; revealed the vast scale of the ocean; proved ships could sail round the world on a western sea route (Wikipedia; EB: first vessel that had ever made the tour of the earth)."
+  ],
+  "disagree": "Men who returned on the Victoria: 18 (Wikipedia, Pigafetta) against 31 in the 1911 Britannica. Deaths before Cape Verde: twenty (Wikipedia) or twenty-one (Pigafetta). Both stated in the text.",
+  "checked": null
+ },
+ "cp04-18": {
+  "title": "Jacques Cartier explores the Gulf of St. Lawrence",
+  "y": 1534,
+  "place": "Gulf of St. Lawrence (Newfoundland, Gaspé), Canada",
+  "paras": [
+   "Jacques Cartier was a navigator from Saint-Malo in Brittany. Introduced to King Francis I by the bishop of Saint-Malo, Jean Le Veneur, he was commissioned to look for a western passage to the riches of Asia and for lands said to hold gold. France had already sent Giovanni da Verrazzano to explore the North American coast in 1524. Cartier sailed from Saint-Malo on 20 April 1534 with two ships and, according to the 1911 Encyclopaedia Britannica, sixty-one men.",
+   "He reached Newfoundland on 10 May after twenty days at sea and entered the Strait of Belle Isle. Turning south, he followed the west coast of Newfoundland into the Gulf of St. Lawrence, passed the Bird Rocks, where his crew killed about 1,000 birds, most of them great auks, and named Brion Island after Admiral Chabot. He took the Magdalen Islands and Prince Edward Island for the mainland, and was disappointed to find that Chaleur Bay was not a strait. On its north shore he met and traded briefly with local people, probably Mi'kmaq.",
+   "In Gaspé Bay he met a party of St. Lawrence Iroquoians from the Quebec region. There, on 24 July, he set up a tall cross inscribed 'Long live the King of France', claiming the land for Francis I, and he took two sons of their chief Donnacona back with him; Wikipedia describes this as a kidnapping to which the chief at last consented on condition that they return with goods to trade. He then coasted round Anticosti Island, mistaking the channel to the north of it for a bay, and on finding it a council decided to leave its exploration to the next year. He left the Gulf through the Strait of Belle Isle on 15 August and reached Saint-Malo on 5 September 1534, convinced that he had reached an Asian land.",
+   "The voyage opened the way for French claims in North America. In 1535 Cartier returned with three ships, 110 men and his two captives, who guided him up the St. Lawrence to Donnacona's town of Stadacona and on to Hochelaga, the site of Montreal, which he reached on 2 October 1535. The captives' word for a village, kanata, gave Canada its name."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Jacques_Cartier",
+    "title": "Jacques Cartier (rev 1384038643, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     8,
+     10,
+     11,
+     12,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Cartier,_Jacques",
+    "title": "Cartier, Jacques, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   }
+  ],
+  "claims": [
+   "Cartier from Saint-Malo, Brittany (Wikipedia; EB: born at St Malo in Brittany).",
+   "Introduced to Francis I by Jean Le Veneur, bishop of Saint-Malo (Wikipedia).",
+   "Commissioned to discover a western/north-west passage to the East and lands with gold (Wikipedia; EB: to look for a north-west passage to the East).",
+   "Verrazzano explored the eastern coast of North America for France in 1524 (Wikipedia).",
+   "Sailed on 20 April 1534 from St Malo (Wikipedia; EB) with two ships and sixty-one men (EB, attributed).",
+   "Reached Newfoundland on 10 May (EB; Wikipedia: twenty days to cross; from 10 May explored Newfoundland and the Strait of Belle Isle).",
+   "Followed the west coast of Newfoundland, Bird Rocks, Brion Island named after Chabot (EB).",
+   "Crew slaughtered around 1000 birds, most of them great auks, at the Islands of the Birds (Wikipedia, attributed).",
+   "Mistook Magdalen and Prince Edward Islands for the mainland; disappointed that Chaleur Bay was not a strait (EB).",
+   "First encounters on the north side of Chaleur Bay, most likely the Mi'kmaq; some trading (Wikipedia).",
+   "Gaspé: St Lawrence Iroquoians (Wikipedia; EB: Huron-Iroquois from Quebec); 24 July cross bearing 'Long Live the King of France' claimed the land (Wikipedia, attributed).",
+   "Took the two sons of Donnacona; chief agreed on condition they return with European goods (Wikipedia; EB: carried off two of them).",
+   "Coasted Anticosti; mirage made the passage seem a bay; council decided to postpone exploration to the following year (EB).",
+   "Entered the Atlantic 15 August; reached St Malo 5 September (EB; Wikipedia: returned to France in September 1534, sure he had reached an Asian land).",
+   "Second voyage 1535: three ships, 110 men and the two captives; Stadacona, Donnacona; Hochelaga (Montreal) reached on 2 October 1535 (Wikipedia; EB: reached Hochelaga on the 2nd of October, site of Montreal).",
+   "Canada from the Huron-Iroquois word for village (EB; Wikipedia, see Legacy/name)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp05-09": {
+  "title": "Schmalkaldic League formed",
+  "y": 1531,
+  "place": "Schmalkalden, Thuringia, Germany",
+  "paras": [
+   "Soon after the start of the Reformation, the Lutheran princes and cities of the Holy Roman Empire looked for protection against their Catholic emperor, Charles V. At the town of Schmalkalden they formally concluded a defensive alliance on 27 February 1531, pledging to defend one another if the emperor attacked their lands. Its leaders were Landgrave Philip of Hesse and the house of Saxony: the Catholic Encyclopedia of 1913 lists Elector John of Saxony and his son John Frederick among the parties, while Wikipedia names John Frederick as co-founder with Philip. Other founding members included Prince Wolfgang of Anhalt, dukes of Brunswick, the counts of Mansfeld and cities such as Strasbourg, Ulm, Constance, Magdeburg and Bremen. At Saxony's insistence, members had to accept the Lutheran Augsburg Confession or the Reformed Tetrapolitan Confession.",
+   "According to the Catholic Encyclopedia, the members bound themselves for six years to treat an attack on any one of them, on account of religion or on any other pretext, as an attack on all. Saxony and Hesse were made its military commanders, and the league's forces were fixed at 10,000 infantry and 2,000 cavalry. It sought foreign allies, among them France, and later Denmark. In December 1535 it was renewed for ten years and opened to all who accepted the Augsburg Confession; Württemberg, Pomerania, Anhalt and cities such as Augsburg and Frankfurt joined.",
+   "Charles V was tied down for years by wars with France and the Ottoman Empire, and the threat from the Ottomans led his brother Ferdinand to grant the Protestants a religious peace at Nuremberg in July 1532. Under the league's protection its members spread Lutheranism across northern Germany, confiscating church lands and expelling bishops; in 1542 they drove the Catholic Duke Henry out of Brunswick-Wolfenbüttel. Once Charles had made peace with France he turned on the league. In the Schmalkaldic War of 1546–1547 his forces routed the league's army at Mühlberg on 24 April 1547 and captured John Frederick, and the league was dissolved. The defeat proved temporary: a Protestant victory in 1552 led to the Peace of Passau and three years later to the Peace of Augsburg, which gave Lutheranism official status in the Empire."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Schmalkaldic_League",
+    "title": "Schmalkaldic League (rev 1383423338, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Smalkaldic_League",
+    "title": "Smalkaldic League, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "League concluded at Schmalkalden on 27 February 1531 (Wikipedia; CE: 27 Feb. 1531 at Smalkalden in Hesse-Nassau); defensive alliance against attack by Charles V (Wikipedia; CE: for mutual defence).",
+   "Founders: Wikipedia names Philip I of Hesse and John Frederick I, Elector of Saxony; CE lists Philip of Hesse and the Elector John of Saxony and his son John Frederick (attributed).",
+   "Other parties: Wolfgang of Anhalt, dukes of Brunswick, counts of Mansfeld, Strasburg, Ulm, Constance, Magdeburg, Bremen and others (CE).",
+   "Membership conditional on the Augsburg Confession or the Tetrapolitan Confession at the insistence of the Elector of Saxony (Wikipedia).",
+   "Compact for six years; attack on one on account of religion or any other pretext to be resisted in common (CE).",
+   "Princes of Saxony and Hesse military commanders; 10,000 infantry and 2,000 cavalry (CE; Wikipedia).",
+   "Foreign allies sought: France (CE: alliance secured 1532; Wikipedia: Francis I supported the princes from 1535); Denmark in 1538 (CE; Wikipedia).",
+   "December 1535 renewed for ten years (CE); admitted anyone who subscribed to the Augsburg Confession; Anhalt, Württemberg, Pomerania, Augsburg, Frankfurt joined (Wikipedia; CE: April 1536 Würtemberg, Pomerania, Frankfort, Augsburg).",
+   "Charles busy with wars with France and the Ottomans (Wikipedia); Suleiman's threat caused Ferdinand to grant the religious peace concluded at Nuremberg on 23 July 1532 (Wikipedia).",
+   "Members confiscated church land, expelled bishops and helped spread Lutheranism in northern Germany (Wikipedia; CE: suppressed bishoprics, confiscated church property).",
+   "Duke Henry expelled from Brunswick-Wolfenbüttel in 1542 (CE).",
+   "After peace with France Charles focused on suppressing the Protestants; Schmalkaldic War 1546-1547 (Wikipedia; CE: War of Smalkalden 1546).",
+   "Mühlberg 24 April 1547; John Frederick captured (Wikipedia; CE); dissolution of the League followed (CE).",
+   "Imperial success temporary (CE); Protestant victory in 1552, Peace of Passau; Peace of Augsburg three years later granted Lutheranism official status (Wikipedia)."
+  ],
+  "disagree": "Founders: Wikipedia names Philip of Hesse and John Frederick, Elector of Saxony; the Catholic Encyclopedia (1913) lists Elector John of Saxony and his son John Frederick among the parties of 1531. Stated in the text.",
+  "checked": null
+ },
+ "cp05-13": {
+  "title": "Society of Jesus approved",
+  "y": 1540,
+  "place": "Rome, Papal States",
+  "paras": [
+   "The Society of Jesus grew from a group of students at the University of Paris around Ignatius of Loyola, a Basque from Spain and a former soldier. On 15 August 1534 Ignatius and six companions, among them Francis Xavier, Peter Faber, Diego Laínez and Simão Rodrigues, met in a crypt at Montmartre and vowed themselves to poverty and chastity (Wikipedia adds obedience; the Catholic Encyclopedia of 1913 names only poverty and chastity, and the 1911 Encyclopaedia Britannica dates their vow to obey an elected superior to 1539). They hoped to go to the Holy Land, but war made the journey impossible. In 1537 they went to Italy, where Pope Paul III allowed them to be ordained priests, and they gave themselves to preaching and charitable work. When the hope of Jerusalem was finally given up, they agreed on a common rule and the name Company of Jesus.",
+   "Ignatius, Faber and Laínez then offered their services to the pope in Rome. Paul III received them well, but their plan met strong opposition: a commission of cardinals had just reported that the existing religious orders had decayed so badly that they should all be abolished, and Cardinal Guidiccioni, who examined the draft, wanted no new orders. Ignatius's idea of priests who would live in the world, with no distinctive habit or enclosure, also broke with tradition. In 1539 the companions bound themselves to obey a superior elected from among them and added a special vow of obedience to the pope for missions. The 1911 Encyclopaedia Britannica credits King John III of Portugal, who wanted Jesuits for Portugal and its Indian possessions, with helping to change Guidiccioni's mind.",
+   "On 27 September 1540 Paul III confirmed the new society with the bull Regimini militantis ecclesiae, which, as the Britannica quotes it, set out Ignatius's formula: the society existed to spread the faith by preaching, the Spiritual Exercises, works of charity and the teaching of children and the uneducated, and all its members served under obedience to the pope. The bull limited the society to sixty members, a restriction removed, according to Wikipedia, by Julius III in 1550, but according to the Britannica by Paul III himself in 1543. Ignatius was chosen as the first superior general.",
+   "The Jesuits became an important force in the Counter-Reformation and in Catholic missions. Francis Xavier, sent to Portugal in March 1540, left Europe for the Indian mission the next year, and the society went on to found colleges and missions across Europe, Asia and the Americas."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Jesuits",
+    "title": "Jesuits (rev 1384459939, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     10,
+     11,
+     12,
+     13,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Society_of_Jesus",
+    "title": "Society of Jesus, Catholic Encyclopedia (1913); consulted for the re-check",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     2
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Jesuits",
+    "title": "Jesuits, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Ignatius of Loyola, a Spaniard from the Basque city of Loyola, and six companions, students at the University of Paris (Wikipedia; EB: separate Loyola article tells of his first gathering of companions); Ignatius' background as captain in the Spanish army (Wikipedia).",
+   "15 August 1534, crypt in Montmartre, companions included Xavier, Faber, Laínez, Rodrigues (Wikipedia); promises of poverty, chastity and obedience (Wikipedia) against vows of poverty and chastity (Catholic Encyclopedia, used in the re-check) and the 1539 vow of obedience to an elected superior (EB) (attributed).",
+   "Journey to Jerusalem impossible due to war (Wikipedia; EB: all hope of going to the Holy Land given up in November 1537).",
+   "1537 to Italy; Paul III permitted ordination; preaching and charitable work (Wikipedia).",
+   "Common rule and the name Company of Jesus adopted at Vicenza (EB; Wikipedia: called themselves Compañía de Jesús).",
+   "Ignatius, Laynez and Faber sent to the pope; favourably received by Paul III (EB).",
+   "Opposition: 1538 commission of cardinals recommended abolishing the conventual orders; Guidiccioni favoured abolition of most orders; Ignatius's plan for members mixing freely in the world ran counter to tradition (EB, attributed).",
+   "15 April 1539 bound themselves to obey a superior chosen from their body; 4 May vow of special allegiance to the pope for missions (EB, attributed).",
+   "Guidiccioni's change of mind attributed to John III of Portugal, who wanted priests for Portugal and its Indian possessions (EB, attributed).",
+   "Bull Regimini militantis ecclesiae of 27 September 1540 by Paul III confirmed the society (Wikipedia; EB).",
+   "The bull gives Ignatius's formula: propagation of the faith by preaching, spiritual exercises, works of charity, instruction of children and ignorant people; obedience to the pope (EB; Wikipedia: Formula of the Institute contained in the bulls).",
+   "Membership limited to sixty (Wikipedia; EB); limit removed by Exposcit debitum of Julius III in 1550 (Wikipedia) or by Paul III's Injunctum nobis of 14 March 1543 (EB) (attributed).",
+   "Ignatius chosen first Superior General (Wikipedia).",
+   "Francis Xavier sent to the king of Portugal in March 1540; quitted Europe in 1541; Indian mission (EB).",
+   "Important force in the Counter-Reformation and the Catholic missions; colleges and missions in Europe, Asia and the Americas (Wikipedia; EB)."
+  ],
+  "disagree": "The vows at Montmartre: poverty, chastity and obedience (Wikipedia) or poverty and chastity (Catholic Encyclopedia, 1913), with obedience to an elected superior vowed in 1539 (1911 Britannica); found in the re-check and stated in the text. Removal of the limit of sixty members: by Julius III's bull Exposcit debitum of 1550 (Wikipedia) or by Paul III's Injunctum nobis of 14 March 1543 (1911 Britannica). Stated in the text.",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/Society_of_Jesus",
+   "result": "5 claims re-checked (15 August 1534 at Montmartre, the companions, the bull Regimini militantis ecclesiae of 27 September 1540, the bull Injunctum nobis of 14 March 1543): 1 error, the content of the Montmartre vows (the text had followed Wikipedia's poverty, chastity and obedience; the Catholic Encyclopedia names poverty and chastity); corrected to a stated disagreement",
+   "errors": 1
+  }
+ },
+ "cp18-098": {
+  "title": "Khanate of Khiva founded",
+  "y": 1511,
+  "place": "Khwarazm (Vazir, Urgench and Khiva), Uzbekistan and Turkmenistan",
+  "paras": [
+   "At the start of the 16th century Khwarazm (Khorezm), the irrigated oasis of the lower Amu Darya south of the Aral Sea, changed hands several times. It had been nominally subject to the Timurid sultan Husayn Bayqara of Khorasan until 1505, when it was taken by Muhammad Shaybani, the leader of the Uzbeks, who had overthrown Timurid rule in Transoxiana. In 1510 Shaybani was defeated and killed near Merv by Shah Ismail I, the founder of Shia Safavid Persia, and Khwarazm passed to the shah. According to the 19th-century historian Henry Howorth, who followed the chronicle of the later Khivan khan Abu'l-Ghazi, Ismail put three Persian governors over its towns: one at Urgench, the capital, one over Khiva and Hazarasp, and one at Vazir.",
+   "The Sunni townspeople and tribes resented the Shia governors. Howorth relates that the people of Vazir, urged on by a holy man named Husamuddin Katal, secretly invited Ilbars, the son of the Uzbek chief Bereke Sultan, to become their khan. The conspirators seized the town gates and massacred the Persians inside; only one escaped. Ilbars was proclaimed khan at a feast of Uzbeks and Sarts and made Vazir his residence. Three months later he defeated the Persian governor of Urgench, Sultan Kuli, outside that town and took it, and he called in kinsmen and their tribes from the Kipchak steppe, whose raids made the Persian garrisons give up Khiva and Hazarasp. Wikipedia dates the expulsion of the shah's garrison and Ilbars's accession to 1511, and the 1911 Encyclopaedia Britannica dates the start of Uzbek rule in Khiva to 1512. Abu'l-Ghazi gives the year 911 of the Hijra, which Howorth rejects because the rising came after Shaybani's death; he suggests it may have been 921.",
+   "Ilbars and his kin were themselves Shaybanids, but of a rival line. Their dynasty, the Arabshahids or Yadigarids, was named after Arabshah and his descendant Yadigar, who had been proclaimed khan north of the Aral Sea in about 1458 (Wikipedia); Howorth adds that Ilbars's father Bereke Sultan had been hunted down and killed by Muhammad Shaybani himself. The new state was therefore a second Uzbek khanate and a rival of the Shaybanid khanate of Bukhara up the river.",
+   "From Khwarazm the Uzbeks raided Khorasan and the Turkmens, especially after Shah Ismail's death. The capital stayed at Urgench until about 1600, when a branch of the Amu Darya dried up and Arab Muhammad Khan (1602–1623) moved it to Khiva, which gave the state its later name. The khanate fought repeated wars with Bukhara, was occupied by Nader Shah of Persia in 1740–1746, came under the Qongrat dynasty and became a Russian protectorate in 1873. It lasted until 1920, when it was replaced by the Khorezm People's Soviet Republic."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva",
+    "title": "Khanate of Khiva (rev 1386650488, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     10,
+     12,
+     14,
+     16,
+     17
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Khiva_(khanate)",
+    "title": "Khiva (khanate), Encyclopaedia Britannica (11th ed., 1911); consulted for the re-check",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     10
+    ]
+   },
+   {
+    "url": "https://archive.org/download/p2historyofmongo02howouoft/p2historyofmongo02howouoft_djvu.txt",
+    "title": "Henry H. Howorth, History of the Mongols, part II, division II (London, 1880), chapter X, Khuarezm or Khiva, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Khwarazm/Khorezm is the irrigated oasis of the lower Amu Darya (Oxus) south of the Aral Sea (Wikipedia; Howorth: oasis formed by the Lower Oxus, bounded on the north by the Sea of Aral).",
+   "Before 1505 Khorezm was nominally dependent on the Timurid Sultan Husayn Mirza Bayqara based in Khorasan; Muhammad Shaybani took Khorezm in 1505 (Wikipedia).",
+   "Shaybani, leader of the Uzbeks, overthrew the later Timurids; the Uzbeks also conquered Khuarezm (Howorth; Wikipedia: Shaybani built a large empire in southern Central Asia).",
+   "In 1510 Shaybani clashed with Shah Ismail I near Merv and was killed; Khorezm was occupied (Wikipedia; Howorth: defeated and killed by Shah Ismael, after which the shah acquired authority in Khuarezm).",
+   "Ismail appointed three Persian governors: over Khiva and Hazarasp, over Urgenj the capital, and over Vesir (Howorth, citing Abulghazi; attributed).",
+   "The Persians were Shias, resented by the Sunni population; the shah's religion provoked resistance (Wikipedia; Howorth: kadhi Omar warned that the heretic Shias would persecute the Sunnis).",
+   "People of Vesir persuaded by Husamuddin Katal to raise Ilbars, son of Bereke Sultan, an Uzbeg chief, to be khan; conspirators seized the gates and massacred the Persians, only one escaping; proclaimed khan at a feast of Uzbegs and Sarts; residence fixed at Vezir (Howorth; attributed).",
+   "Three months later Ilbars advanced on Urgenj, defeated the governor Sultan Kuli outside the town and took it (Howorth).",
+   "Ilbars sent for relatives from the Desht Kipchak; their raids led Khiva and Hazarasp (and Kat) to be abandoned by their defenders (Howorth).",
+   "In 1511 the shah's garrison was expelled and power passed to Ilbars (Wikipedia); EB 1911 Khiva (khanate), added after the re-check: Khiva fell under the rule of the Uzbegs in 1512 (attributed).",
+   "Abulghazi dates it 911 Hijra; Howorth: clearly a mistake, it happened after Sheibani's death in 1510, the date ought possibly to be 921 (Howorth; attributed).",
+   "Ilbars founded the Arabshahid dynasty; the Arabshahids or Yadigarids were Shaybanids; named after Yadigar, proclaimed khan north of the Aral Sea about 1458, and his great-grandfather Arabshah (Wikipedia; Howorth: Arabshah, brother of Abulkhair's grandfather; Yadigar raised to khan; Ilbars grandson of Yadigar through Bereke).",
+   "Bereke Sultan was surprised in his camp, pursued and put to death by Sheibani (Howorth; attributed).",
+   "A second Uzbeg state, rival to that of Bukhara (Howorth; Wikipedia: many wars with the Khanate of Bukhara further up the river).",
+   "The Uzbeks of Khwarazm plundered Khorasan and the Turkomans, after Shah Ismail's death (Howorth).",
+   "Around 1600 the Daryaliq branch dried up and the capital moved from Urgench to Khiva; Arap Muhammad (1602–23) moved the capital to Khiva; the name Khanate of Khiva comes from the capital (Wikipedia).",
+   "Wars with Bukhara; Afsharid occupation by Nader Shah 1740–1746; Qongrat dynasty; Russian protectorate 1873; replaced in 1920 by the Khorezm People's Soviet Republic (Wikipedia)."
+  ],
+  "disagree": "Date of Ilbars's rising: 1511 in Wikipedia; 1512 for the start of Uzbek rule in the 1911 Britannica (found in the re-check); Abu'l-Ghazi gives 911 of the Hijra, which Howorth (1880) calls a mistake because it came after Shaybani's death in 1510, suggesting 921. Both stated in the text.",
+  "checked": {
+   "by": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Khiva_(khanate)",
+   "result": "3 claims re-checked (start of Uzbek rule, Urgench as the chief town, Russian capture of Khiva in 1873): no errors; the Britannica's 1512 for the start of Uzbek rule was added to the text as a stated disagreement",
+   "errors": 0
+  }
+ }
+}

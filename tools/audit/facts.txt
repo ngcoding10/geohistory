@@ -153,6 +153,8 @@ ED|Brusilov Offensive|1916-06-04
 ED|Coup of 9 Thermidor|1794-07-27
 ED|Reign of Terror|1793-09-05
 ED|Treaty on the Creation of the Union of Soviet Socialist Republics|1922-12-30
+ED|Fall of Tenochtitlan|1521-08-13
+ED|Battle of Mactan|1521-04-27
 E|Korean War|1950
 E|Battle of Dien Bien Phu|1954
 E|Hungarian Revolution of 1956|1956
