@@ -2927,5 +2927,404 @@
    "result": "2 claims re-checked (royal family removed to the Temple after 10 August 1792; Marie Antoinette guillotined on 16 October 1793): no errors",
    "errors": 0
   }
+ },
+ "cp18-101": {
+  "title": "Emirate of Bukhara founded",
+  "y": 1785,
+  "place": "Bukhara, Uzbekistan",
+  "paras": [
+   "In the 17th and 18th centuries the Uzbek Khanate of Bukhara was ruled by the Janid (Ashtarkhanid) dynasty, the last line descended from Genghis Khan to hold the throne. Real power passed step by step to the ataliqs, chief ministers drawn from the Manghit tribe of Uzbeks. In 1740 the khan Abu'l-Faiz submitted to Nadir Shah of Persia, and after Nadir Shah's death in 1747 the ataliq Muhammad Rahim Bi had Abu'l-Faiz killed. Wikipedia says the Manghits then ruled through puppet khans; the 19th-century historian Henry Howorth says Muhammad Rahim first set up puppets and then took the throne himself.",
+   "According to Howorth, Muhammad Rahim's successor as ataliq, Daniyal Bi, refused the title of khan and put a Janid prince, Abu'l-Ghazi, on the throne, though the khan was a mere figurehead. Daniyal's eldest son Shah Murad, called Beg-i Jan as a boy and later Amir Ma'sum, was devoted to Sufism and religious law. Howorth relates that, offended by the luxury and vice around his father, he had the powerful vizier Devlet Bi put to death and imposed strict religious discipline on the city. Wikipedia dates Daniyal's time as ataliq to 1758–1785; Howorth puts his death, with some doubt, in 1770.",
+   "Wikipedia dates the founding of the Emirate to 1785, when Shah Murad took power after his father's death and, in the words of that article, assumed the throne openly after the death of the khan Abu'l-Ghazi, formalising the rule of the Manghit dynasty. Because the Manghits did not descend from Genghis Khan, they based their right to rule on Islam and used the title of emir instead of khan. The 1911 Encyclopaedia Britannica also says the Manghit family seized the throne in 1785, in the person of Mir Ma'sum. Howorth reads the evidence differently: Abu'l-Ghazi remained the nominal khan, coins were struck in his name as late as AH 1200 (1785–86), the Friday prayer was probably still said in his name until he died, and the year of his death is unknown. No coins of Shah Murad are known, and in Howorth's account he called himself only naib (deputy) and never took the title of khan.",
+   "Shah Murad, a religious zealot who also proved an able commander, turned against the Shia-ruled oasis of Merv. In 1785 he killed its Qajar governor, Bayram Ali Khan, and Wikipedia says he completed its conquest in 1788; Howorth says he had the weir that watered Merv cut and carried a large part of the population off to Bukhara, 17,000 families by his account. Shah Murad died in December 1799, according to Wikipedia (Howorth gives Rajab 1214, that is 1799, and the 1911 Britannica 1802). His dynasty ruled until 1920: after Russian troops entered Samarkand in May 1868 the emir submitted to Russia, Bukhara became a Russian protectorate in 1873, and in September 1920 the Red Army overthrew the emir and the Bukharan People's Soviet Republic replaced the Emirate."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara",
+    "title": "Emirate of Bukhara (rev 1380576696, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     9,
+     10,
+     11,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Bukhara",
+    "title": "Khanate of Bukhara (rev 1384702415, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Shahmurad",
+    "title": "Shah Murad (Shahmurad, rev 1380079858)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     7,
+     8,
+     9,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Bokhara_(state)",
+    "title": "Bokhara (state), Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     9,
+     12,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://archive.org/download/p2historyofmongo02howouoft/p2historyofmongo02howouoft_djvu.txt",
+    "title": "Henry H. Howorth, History of the Mongols, part II, division II (London, 1880), pp. 765-775, OCR text",
+    "publisher": "Internet Archive (University of Toronto scan)",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "17th-18th centuries: Khanate of Bukhara ruled by the Janid (Ashtarkhanid) dynasty, the last Chinggisid dynasty to rule Bukhara (Wikipedia Khanate of Bukhara; EB: time of the Ashtarkhanides).",
+   "Over the 18th century the Manghit ataliqs gained effective control (Wikipedia Emirate); Howorth: Muhammad Rahim bi, chief of the Mangut tribe, the famous Atalik. Wikipedia Khanate: control through the prime ministerial position of ataliq.",
+   "1740: Abu'l-Faiz paid homage to Nadir Shah of Persia (EB); Khanate conquered by Nader Shah in 1740 (Wikipedia Khanate).",
+   "1747, after Nadir Shah's death, ataliq Muhammad Rahim Bi had Abu'l-Faiz killed (Wikipedia Emirate: murdered Abulfayz and his son; Howorth: Abulfaiz was killed in 1747; EB: murdered and supplanted by his vizier).",
+   "Disagreement, attributed: Wikipedia - emirs allowed puppet khans to rule; Howorth - Muhammad Rahim put puppets (Abdul Mumin, Ubeidulla) on the throne and then mounted the throne himself.",
+   "Howorth (attributed): after Rahim Khan's death Danial bi would not take the title of Khan, contenting himself with Atalik, and put Abulghazi of the Janid family on the throne; Abulghazi a mere puppet.",
+   "Shah Murad eldest son of Daniyal (Howorth: Danial bi's eldest son Amir Maasum, styled Beggi Jan, afterwards entitled Shah Murad; Wikipedia Shahmurad: eldest of eleven siblings, father called him Beg-i Jan, people called him Amir Ma'sum).",
+   "Devoted to Sufism and religious law (Wikipedia Shahmurad: inclined towards Sufism, introduced Islamic laws; Howorth: disciple of Sheikh Sefer, devoted his time to the Ulemas, fanatical Mussulman).",
+   "1785: Shah Murad took power after Daniyal's death; Emirate officially created in 1785 (Wikipedia Emirate, Khanate, Shahmurad; Howorth: Shah Murad succeeded his father as Atalik; EB: throne seized by the Manghit family in 1785 in the person of Mir Ma'sum).",
+   "Manghits non-Chingissid; legitimacy on Islamic principles; title emir instead of khan (Wikipedia Emirate and Khanate). Howorth's contrary account given in claim 12.",
+   "Howorth (attributed): Shah Murad offended by vice under his father (kalian smoking, house of ill fame), had the vizier Devlet bi (Kushbegi) put to death, repressed the houses of ill fame.",
+   "Howorth (attributed): Abulghazi a nominal ruler; coins struck by him as late as 1200 hej. (1785-6); Khutbeh probably said in his name until his death; year of his death unknown; no coins of Shah Murad known; Shah Murad contented himself with the style of Naib and never took the title of Khan. Stated as a disagreement with Wikipedia's 'following the death of Abu l-Ghazi Khan, Shah Murad assumed the throne openly'.",
+   "Daniyal Biy ataliq 1758-1785 (Wikipedia Shahmurad, attributed); Howorth: his death apparently took place in 1770 (attributed).",
+   "Merv: Howorth - Shah Murad determined to capture Merv, a stronghold of the Shias governed by the Kajars; Bairam Ali killed, 'This happened in 1785'; Wikipedia Shahmurad: 1785 campaign against the Qajar principality of Merv, killed the governor Bayram 'Ali Khan Qajar, conquered the region fully in 1788 (attributed). Howorth (attributed): the weir cut, 17,000 families transported. EB: proved by his military career he had no small ability. Death: Wikipedia December 1799; Howorth rejeb 1214 (1799); EB dying in 1802 (all stated).",
+   "May 1868: Russians entered Samarkand (May 14) and the emir submitted (EB); 1868 lost war with Russia, Samarkand annexed (Wikipedia Emirate).",
+   "1873 Russian protectorate; Red Army assault succeeded in September 1920; replaced by the Bukharan People's Soviet Republic (Wikipedia Emirate)."
+  ],
+  "disagree": "How and when the Manghits became rulers in name: Wikipedia (Emirate of Bukhara, Shahmurad) and the 1911 Britannica date it to 1785, when Shah Murad took power and the title of emir; Howorth (History of the Mongols, 1880) says the Janid Abu'l-Ghazi remained nominal khan, with coins to AH 1200 (1785-86) and probably the khutba in his name until an unknown year of death, and that Shah Murad called himself only naib and never took the title of khan. Also: Daniyal's death 1785 (Wikipedia) or apparently 1770 (Howorth); Muhammad Rahim ruled through puppets (Wikipedia) or took the throne himself (Howorth); Shah Murad's death December 1799 (Wikipedia; Howorth Rajab 1214) or 1802 (1911 Britannica). All stated in the text.",
+  "checked": null
+ },
+ "Q4871927": {
+  "title": "Battle of Nuʻuanu",
+  "y": 1795,
+  "place": "Nuʻuanu Valley, Oʻahu, Hawaii",
+  "paras": [
+   "The Battle of Nuʻuanu, fought on Oʻahu in the spring of 1795, was the decisive battle in the wars of Kamehameha I, ruler of the island of Hawaiʻi, to bring the Hawaiian Islands under one rule. His opponent was Kalanikūpule, son of Kahekili II, who had ruled Oʻahu and Maui. Kahekili died at Waikīkī in 1794 (in July, according to the historian W. D. Alexander), and his realm was divided: Kalanikūpule held Oʻahu, while Kahekili's brother Kaʻeokūlani (Kaeo) ruled Maui and the neighbouring islands.",
+   "The two soon fought each other. In November 1794 Kaʻeokūlani set out for Kauaʻi by way of Oʻahu; after a skirmish with Kalanikūpule's warriors and a reconciliation, he learned of a plot among his own men to throw him overboard on the voyage, and turned instead to march overland against his nephew. Kalanikūpule was helped by the British trader Captain William Brown, whose ships Jackal and Prince Lee Boo lay in Honolulu harbour, and by some of his seamen, and in December 1794 Kaʻeokūlani was defeated and killed. Soon afterwards Kalanikūpule's men seized Brown's two ships and killed Brown (on 1 January 1795, according to Alexander), and Kalanikūpule set out to attack Kamehameha with the ships. The crews, however, rose at night while the ships lay off Waikīkī, put the king ashore, and sailed to Hawaiʻi, where they told Kamehameha what had happened.",
+   "Kamehameha now gathered the largest army the islands had seen. The figures differ: Wikipedia's article on the battle gives about 12,000 men and 1,200 war canoes, its article on Kamehameha 10,000 soldiers and 960 canoes, and Alexander mentions a tradition of 16,000 men. Foreigners in his service, among them John Young, handled his cannon. In February 1795 he took Maui and then Molokaʻi. On the way to Oʻahu one of his leading chiefs, Kaʻiana, who believed that his rivals at Kamehameha's court were plotting against him, deserted with his followers and joined Kalanikūpule.",
+   "Kamehameha landed near Waiʻalae and Waikīkī and advanced up the Nuʻuanu Valley, where Kalanikūpule had prepared his positions. At Laʻimi the Oʻahu army resisted until Kaʻiana was killed (by a cannon-ball, according to Alexander) and then gave way. Pursued up the valley, many of the defenders were driven over the Nuʻuanu Pali, the cliff at its head; Wikipedia puts the number who fell or jumped at over 700. Wikipedia dates the battle to May 1795; Alexander's narrative places it about the end of April.",
+   "Kalanikūpule escaped, but after months in the mountains he was captured and sacrificed to Kamehameha's war god. Kamehameha divided the lands of Oʻahu among his followers and was now master of all the islands except Kauaʻi and Niʻihau. A first attempt to invade Kauaʻi failed in 1796, when he lost many canoes to strong winds and rough seas in the channel, and in 1810 Kaumualiʻi, king of Kauaʻi and Niʻihau, submitted to him, completing the unification of the islands under Kamehameha's rule."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Nu%CA%BBuanu",
+    "title": "Battle of Nuʻuanu (rev 1381556303, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Kamehameha_I",
+    "title": "Kamehameha I (rev 1386783389, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     7,
+     8,
+     9,
+     11,
+     12,
+     15
+    ]
+   },
+   {
+    "url": "https://archive.org/download/briefhistoryofha1891alex/briefhistoryofha1891alex_djvu.txt",
+    "title": "W. D. Alexander, A Brief History of the Hawaiian People (New York, 1891), pp. 140-145 and 155-156, OCR text",
+    "publisher": "Internet Archive",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Battle on Oʻahu in 1795, decisive in Kamehameha I's wars to conquer the Hawaiian Islands (Wikipedia: May 1795, key battle; Alexander: battle made Kamehameha master of all the islands except Kauai and Niihau).",
+   "Kalanikupule, son of Kahekili II (Wikipedia; Alexander: Kahekili's son); Kahekili died in 1794 (Wikipedia: mid-1794; Alexander: July 1794 at Waikiki, attributed).",
+   "Kalanikupule held Oahu; Kaeo (Kaʻeokulani) held Maui and adjacent islands (Wikipedia; Alexander: his brother Kaeo continued to rule over Maui and the adjacent islands; Kalanikupule his nephew).",
+   "November 1794 Kaeo set out for Kauai via Oahu; skirmish, conference/reconciliation with Kalanikupule; plot to throw him overboard; he turned to march overland against Kalanikupule (Wikipedia; Alexander).",
+   "Kalanikupule aided by Captain William Brown (Wikipedia gives William Brown; Alexander Captain Brown) with the Jackal and Prince Lee Boo in Honolulu harbour, and by seamen (Alexander: the mate Lamport and eight others); Kaeo defeated and killed in December 1794 (Wikipedia: war to December 12, Kaeo's army destroyed; Alexander: battle 12 December at Kalauao, Kaeo slain; Kamehameha I article: Kalanikupule killed Kaeo).",
+   "Brown killed and ships seized (Wikipedia; Alexander: 1 January 1795, Kamohomoho boarded the vessels and killed the two captains - date attributed); Kalanikupule sailed with fleet and ships intending war on Kamehameha (Wikipedia; Alexander).",
+   "Crews recaptured the ships while at anchor off Waikiki, put the king ashore, sailed to Hawaii and told Kamehameha (Wikipedia; Alexander).",
+   "Largest army the islands had seen (Wikipedia; Alexander). Figures attributed: about 12,000 men and 1,200 war canoes (Wikipedia battle article), 960 war canoes and 10,000 soldiers (Wikipedia Kamehameha I), tradition of 16,000 men (Alexander, citing Broughton).",
+   "Foreigners including John Young handled/trained in cannon (Wikipedia: training under John Young; Alexander: Young, Davis and Peter Anderson had charge of his cannons).",
+   "February 1795: Maui then Molokai taken (Wikipedia: February 1795 assembled army, conquered Maui and Molokai in early spring; Alexander: February 1795 sailed to Lahaina, West Maui laid waste, then Kaunakakai, Molokai; Kamehameha I: Maui and Molokai secured).",
+   "Kaiana defected to Kalanikupule during the voyage to Oahu, fearing a plot against him (Wikipedia; Alexander; Kamehameha I).",
+   "Kamehameha landed at Waialae and Waikiki and advanced into Nuuanu Valley (Wikipedia; Kamehameha I; Alexander: landed at Waialae Bay, marched up Nuuanu Valley).",
+   "Fighting at Laimi; Kaiana killed (Wikipedia: fatally wounded; Alexander: killed by a cannon-ball, attributed); the Oahu troops gave way and were pursued up the valley and driven over the Pali (Wikipedia; Alexander).",
+   "Over 700 over the Pali (Wikipedia, attributed; Kamehameha I article also over 700). Date: May 1795 (Wikipedia) vs about the end of April 1795 (Alexander narrative) - stated.",
+   "Kalanikupule escaped, later captured and sacrificed (Wikipedia: later captured; Kamehameha I: captured and sacrificed to Kukailimoku; Alexander: wandered several months in the Koolau mountains, captured, offered in sacrifice to the war-god); lands divided among his followers (Alexander); master of all islands except Kauai and Niihau (Wikipedia; Alexander); 1796 attempt on Kauai lost canoes to wind and seas in the channel (Kamehameha I article: spring 1796; Alexander chapter XX: proposed invasion of Kauai); Kaumualii of Kauai and Niihau submitted (Wikipedia; Alexander: Cession of Kauai, 1810). 1810: Kamehameha I article: April 1810 peaceful unification negotiated with Kaumualii."
+  ],
+  "disagree": "Date: May 1795 (Wikipedia) or about the end of April 1795 (Alexander's narrative, though his chronology lists May). Size of Kamehameha's army: about 12,000 men and 1,200 canoes (Wikipedia, Battle of Nuuanu), 10,000 soldiers and 960 canoes (Wikipedia, Kamehameha I), a tradition of 16,000 men (Alexander). Wikipedia says Brown was killed after a dispute over payment; Alexander says Kalanikupule had kept his promise to pay 400 hogs and gives no motive for the seizure (the motive is left out of the text). Wikipedia dates Kalanikupule's sailing to 4 January 1795, Alexander his embarkation to the 11th (left out). All figures given are attributed.",
+  "checked": null
+ },
+ "Q219817": {
+  "title": "The French Directory takes power",
+  "y": 1795,
+  "place": "Paris, France",
+  "paras": [
+   "After the fall of Robespierre in July 1794 the National Convention, now led by moderate republicans, set out to give France a stable government that would prevent both a return of the Terror and the restoration of the monarchy. The result was the Constitution of the Year III, largely the work of Pierre Daunou and Boissy d'Anglas. It created a legislature of two houses: a Council of Five Hundred, which proposed laws, and a Council of Ancients of 250 members aged at least forty, which approved or rejected them. Executive power went to a Directory of five men, chosen by the Ancients from a list drawn up by the Five Hundred, with one director retiring each year. The directors had no voice in legislation, and deputies were chosen by indirect election, with a property qualification for electors in place of universal suffrage. Boissy d'Anglas argued that five members were strong enough to act firmly but too divided for any one of them to become a tyrant.",
+   "Unpopular, and fearing for their own safety and their work if the voters turned them out, the members of the Convention decreed that two-thirds of the first legislature must come from their own ranks. The constitution was put to the voters, with few taking part: Wikipedia gives 1,057,390 votes in favour and 49,978 against, out of about five million eligible, while the 1911 Encyclopaedia Britannica gives 1,050,000 for and only 5,000 against. It was proclaimed in force on 23 September 1795. The two-thirds rule angered royalists and other opponents in Paris, who rose in arms; on 13 Vendémiaire (5 October 1795) troops commanded for the government by the young General Napoleon Bonaparte, under Paul Barras, crushed the insurrection.",
+   "The elections for the new councils followed in October. The Convention held its last session at the end of the month (Wikipedia dates it to 25 October, the Britannica to the 26th), and Wikipedia dates the Directory's government from 26 October. To protect the Revolution, the deputies required that all five directors be former members of the Convention who had voted for the execution of Louis XVI. On 31 October the Ancients chose the directors from the Five Hundred's list; the Abbé Sieyès refused the post, and Lazare Carnot was elected in his place. The first Directory thus consisted of Barras, Jean-François Rewbell, Louis-Marie de La Révellière-Lépeaux, Étienne-François Le Tourneur and Carnot. According to Wikipedia they moved into the Luxembourg Palace, where nothing had been prepared for them, and divided the work: Rewbell took foreign affairs, Carnot and Le Tourneur military matters, La Révellière religion and education, and Barras internal affairs.",
+   "The new government began with an empty treasury and worthless paper money, and from the start it was split: the Britannica describes Rewbell, Barras and La Révellière as sharing the Jacobin spirit, while Carnot and Le Tourneur favoured more moderate policies. The Directory fought on against the European coalitions, and its general Bonaparte conquered much of Italy. After four years of war, financial crisis and political coups, Bonaparte, back from Egypt, overthrew it in the coup of 18 Brumaire (9 November 1799) and replaced it with the Consulate."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/French_Directory",
+    "title": "French Directory (rev 1377747720, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Constitution_of_the_Year_III",
+    "title": "Constitution of the Year III (rev 1381773420, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     6,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/French_Revolution,_The",
+    "title": "French Revolution, The, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     15,
+     16
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/Catholic_Encyclopedia_(1913)/French_Revolution",
+    "title": "French Revolution, Catholic Encyclopedia (1913)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     8,
+     9,
+     13,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Robespierre fell in July 1794 (Wikipedia: arrested 27 July, executed the next day).",
+   "Constitution of the Year III largely designed by Pierre Daunou and Boissy d'Anglas (Wikipedia, attributed in claims; Wikipedia-only).",
+   "Two houses: Council of Five Hundred and Council of Ancients, 250, at least forty (EB; Wikipedia: Ancients 250 men over 40); Five Hundred proposed legislation, Ancients approved (Wikipedia; EB: Ancients had a suspensory veto but no initiative); CE: Councils of Five Hundred and of the Ancients the legislative power.",
+   "Five directors chosen by the Ancients out of a list elected by the Five Hundred; one director to retire every year (EB; Wikipedia: list from lower house, renewed with one new member each year, d'Anglas).",
+   "Directors had no voice in legislation (EB); indirect election maintained, universal suffrage abandoned, qualification for electors (EB; Wikipedia: indirect election, stringent property qualification).",
+   "Boissy d'Anglas: five members, swift and firm but divided enough that none could become a tyrant (Wikipedia quotation, paraphrased).",
+   "Two-thirds decree: two-thirds of the first legislature from the Convention (EB; Wikipedia: 500 old members to remain; Constitution of the Year III: two-thirds decree); motive: fear of losing (EB: Convention so unpopular its members would not have been safe).",
+   "Referendum: low turnout (Wikipedia; EB: most electors held aloof). Figures attributed: Wikipedia 1,057,390 for, 49,978 against, of five million eligible; EB 1,050,000 for, 5,000 against.",
+   "Proclaimed in force on 23 September 1795 (Wikipedia; EB: on the 23rd of September declared to be law; CE: promulgated 23 Sept 1795; Constitution of the Year III: decree of 1 Vendemiaire IV, September 23, 1795).",
+   "Paris insurrection of 13 Vendemiaire (5 October 1795) against the two-thirds rule, crushed by Bonaparte; Barras entrusted with defence (EB; Wikipedia; Constitution of Year III; CE: put down by Bonaparte). Wikipedia describes the rebels as royalists and constitutional monarchists; EB 'all the parties which resented the limit upon freedom of election'.",
+   "Elections October 1795 (Wikipedia: 12-21 October); Convention's last meeting 25 October (Wikipedia) or dissolved itself 26 October (EB) - both stated; Directory governed from 26 October 1795 (Wikipedia, attributed).",
+   "All five directors to be former Convention members and regicides (EB: the Left resolved; Wikipedia: the Council required).",
+   "31 October: Ancients chose the Directory from the Five Hundred's list; Sieyes refused, Carnot elected in his place (Wikipedia); members Barras, Rewbell, La Revelliere-Lepeaux, Le Tourneur, Carnot (Wikipedia; EB; CE).",
+   "Moved into the Luxembourg Palace, nothing prepared; division of work: Rewbell diplomacy, Carnot and Le Tourneur military, La Revelliere religion and public instruction, Barras internal affairs (Wikipedia, attributed).",
+   "Empty treasury, assignat fallen (Wikipedia; CE: public treasuries were empty); EB (attributed): Rewbell, Barras and La Revelliere had the Jacobin spirit, Carnot and Letourneur favoured a more temperate policy.",
+   "Continued war with coalitions, Bonaparte conquered much of Italy; Bonaparte returned from Egypt and overthrew it in the coup of 18 Brumaire, 9 November 1799, replaced by the Consulate (Wikipedia; EB: 18th Brumaire (November 9))."
+  ],
+  "disagree": "Referendum figures: 1,057,390 for and 49,978 against (Wikipedia) or 1,050,000 for and 5,000 against (1911 Britannica); both given. End of the Convention: last meeting 25 October (Wikipedia) or dissolved itself 26 October 1795 (Britannica). Start of the Directory: 26 October (Wikipedia lead), 27 October (Catholic Encyclopedia), the directors chosen 31 October and installed the next day (Wikipedia), while the event record has 2 November; the text gives Wikipedia's dates with attribution and no override is made. Wikipedia says that a majority of the new legislature were ardent republicans; the Britannica that the Jacobins had a weak majority (not used in the text).",
+  "checked": null
+ },
+ "Q974166": {
+  "title": "Battle of Montenotte",
+  "y": 1796,
+  "place": "Montenotte, Liguria, Italy",
+  "paras": [
+   "In the spring of 1796 the French Directory gave General Napoleon Bonaparte his first army command, the Army of Italy, stationed on the Ligurian coast of the Mediterranean. His troops were hungry, unpaid and poorly equipped. Facing them in the Apennine mountains were two allied armies: an Austrian army under Johann Peter Beaulieu, and the army of the Kingdom of Sardinia (Piedmont) under Michelangelo Alessandro Colli, an Austrian general on loan to Sardinia. The two allies distrusted each other and did not agree on a joint plan. Bonaparte intended to drive a wedge between them and defeat each in turn.",
+   "Beaulieu moved first. Believing that the main French force was near Genoa, he attacked an isolated French brigade under Jean-Baptiste Cervoni at Voltri on 10 April; it escaped along the coast to Savona. Meanwhile the Austrian right wing under Eugène-Guillaume Argenteau advanced against the French outposts in the hills above Savona. On 11 April, a day later than planned, it attacked the redoubt on Monte Negino (also called Monte Legino), held by a few French battalions under Colonel Antoine-Guillaume Rampon, who made his men vow to win or die there; the Austrian attacks failed.",
+   "Bonaparte at once concentrated superior numbers against Argenteau. Marching through the night and in rain and mist, Amédée Laharpe's division joined Rampon on the mountain, while André Masséna swung round the weak Austrian right towards Montenotte, and Pierre Augereau's division moved towards the Austrians' line of retreat. On 12 April Masséna's attack broke the Austrian right, and Argenteau ordered a retreat towards Dego; his units were badly cut up and scattered, and the next morning he reported only 700 men with the colours. Losses are disputed: according to Wikipedia the Austrians admitted 696 killed, wounded and missing, while several modern historians give about 2,500. The 1911 Encyclopaedia Britannica notes that the French at first believed they had beaten Beaulieu's main army, when in fact only part of Argenteau's force had been defeated.",
+   "Montenotte was the opening victory of Bonaparte's Italian campaign. It opened a gap between the Austrian and Sardinian armies, and in the following days he fought at Millesimo and Dego and pushed the Sardinians back to Mondovì. Sardinia then signed the Armistice of Cherasco (on 28 April according to Wikipedia, the 27th according to the Britannica), leaving Bonaparte free to turn on the Austrians, whom he drove out of Lombardy. The campaign in Italy ended the War of the First Coalition the following year."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Montenotte",
+    "title": "Battle of Montenotte (rev 1383426087, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Montenotte_campaign",
+    "title": "Montenotte campaign (rev 1384826258, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/French_Revolutionary_Wars",
+    "title": "French Revolutionary Wars, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Napoleon_I.",
+    "title": "Napoleon I., Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     14
+    ]
+   }
+  ],
+  "claims": [
+   "Spring 1796: Bonaparte's first army command, the Army of Italy (Wikipedia: arrived in Nice 27 March 1796 to take over the Army of Italy, his first army command; EB Napoleon I: promise of the command of the army of Italy; EB Wars: young general thrust upon the army).",
+   "Troops badly fed, behind in pay, poorly equipped (Wikipedia; EB Wars: half-starved, barefooted, without arms).",
+   "Austrian army under Beaulieu; Sardinian-Piedmontese army under Colli (Wikipedia; EB Wars); Colli an Austrian on loan to the Sardinian army (Wikipedia).",
+   "Allies distrusted each other, no joint strategy (Wikipedia: Austrian government warned Beaulieu not to trust his ally; EB Wars: Colli and Beaulieu acted separately, Beaulieu moved towards Genoa instead of towards his allies).",
+   "Bonaparte's plan: wedge between them, defeat each in turn (Wikipedia; EB Wars: overwhelm the Sardinians first, then turn on Beaulieu; widen the breach between the allied armies).",
+   "Beaulieu believed the French bulk lay east of Savona / intended to seize Genoa (EB Wars; Wikipedia); attacked Cervoni at Voltri on 10 April, Cervoni escaped to Savona (Wikipedia; EB Wars).",
+   "Argenteau's right wing attacked on 11 April, a day behind time (EB Wars; Wikipedia: due to poor staff work the attack did not begin until 11 April), against the redoubt on Monte Negino/Legino (Wikipedia: Boycott-Brown calls it Monte Negino, others Monte Legino).",
+   "Rampon held an old redoubt and made his men swear to win or die (EB Wars: 'We must win or die here'; Wikipedia: swear to 'conquer or die'); Austrian attacks failed (Wikipedia; EB: redoubt stood the trial).",
+   "Bonaparte concentrated superior numbers against Argenteau (EB Wars: superior numbers at the decisive point; Wikipedia: concentrated large forces); troops marched from 2 AM in rain (Wikipedia: rain storm; EB: rain and mist); Laharpe joined Rampon; Masséna swung round Argenteau's right toward Montenotte; Augereau toward the line of retreat (EB Wars; Wikipedia: Masséna attacked weakly held right flank, Augereau near Cadibona Pass).",
+   "12 April: Masséna's attack overwhelmed the Austrian right, Argenteau ordered a retreat; retired on Dego (EB Wars; Wikipedia: Argenteau pulled back to cover Acqui while Rukavina held Dego); units badly cut up (Wikipedia).",
+   "Next morning Argenteau reported only 700 men with the colours (Wikipedia, attributed). Losses: Austrians admitted 696 (Wikipedia) vs 2,500 (Smith, Rothenberg, Chandler as reported by Wikipedia) - both attributed to Wikipedia.",
+   "EB Wars (attributed): all imagined Beaulieu's main body had been defeated; only two-thirds of Argenteau's force had been beaten. Montenotte opened a gap between the allied armies (Wikipedia; EB: French spent the night midway between the allied wings).",
+   "Following actions: Millesimo, Dego, Mondovi (Wikipedia campaign and battle articles; EB Wars: Cossaria/Millesimo, Dego, Mondovi); Armistice of Cherasco 28 April (Wikipedia) or 27 April (EB) - both stated.",
+   "After Cherasco Bonaparte turned on Beaulieu, drove the Austrians from Lombardy (EB Wars: first object to drive out Beaulieu, who had fallen back into Lombardy; EB Napoleon I: entry into Milan 15 May 1796, Austrian rule in Italy collapsed); the Italian campaign ended the War of the First Coalition a year later (Wikipedia campaign; EB Wars: campaign of 1797 ended the war of the First Coalition)."
+  ],
+  "disagree": "Losses: the Austrians admitted 696 killed, wounded and missing; Digby Smith, Rothenberg and Chandler give about 2,500 (all as reported by Wikipedia); both stated. Date of the Armistice of Cherasco: 28 April (Wikipedia) or 27 April (1911 Britannica); both stated. Timing of the fighting on 12 April differs (Wikipedia: over by 9:30 AM; Britannica: mists cleared about 9 and heavy fighting began); left out of the text.",
+  "checked": null
  }
 }
