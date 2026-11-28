@@ -832,6 +832,7 @@ async function waitEvents(page) {
       // the hidden door: "lavafoundry" three times in the search box, then a triple-click on "The"
       await sp.goto(BASE + '?y=1776');
       await waitH1(sp, 'The world in 1776');
+      await sp.waitForSelector('#panelBody > details.suggest', { timeout: 60000 });   // the panel's last render, so the heading stays put
       await sp.locator('#panelBody h1 .the').click({ clickCount: 3 });
       await sp.waitForTimeout(800);
       ok(!/admin\.html/.test(sp.url()), 'a triple-click on "The" does nothing until the search box has been given the word');
@@ -842,6 +843,7 @@ async function waitEvents(page) {
       ok(/admin\.html$/.test(sp.url()), 'three separate "lavafoundry" entries, then a triple-click on "The", open admin.html');
       await sp.goto(BASE + '?y=1914');
       await waitH1(sp, 'The world in 1914');
+      await sp.waitForSelector('#panelBody > details.suggest', { timeout: 60000 });
       await sp.fill('#q', 'lavafoundrylavafoundrylavafoundry');
       await sp.locator('#panelBody h1 .the').click({ clickCount: 3 });
       await sp.waitForURL(/admin\.html$/, { timeout: 15000 }).catch(() => {});
