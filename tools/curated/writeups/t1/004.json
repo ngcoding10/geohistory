@@ -3183,5 +3183,677 @@
   ],
   "disagree": "The Office of the Historian says the Lytton report divided blame between Chinese nationalism and Japanese militarism while refusing to recognise Manchukuo; EBSCO stresses its finding that Chinese territory had been seized by force. The Office of the Historian presents Japanese responsibility for the explosion as speculation; EBSCO states that it was staged by the Kwantung Army.",
   "checked": null
+ },
+ "Q153992": {
+  "title": "Reichstag fire",
+  "y": 1933,
+  "place": "Germany",
+  "paras": [
+   "On the night of 27 February 1933, four weeks after Adolf Hitler had been sworn in as Chancellor of Germany, the Reichstag building in Berlin, home of the German parliament, was set on fire. A Berlin fire station received the alarm shortly after 9 p.m.; by the time firefighters arrived the building was in flames, and much of it, including the main chamber, was gutted. Police found and arrested Marinus van der Lubbe, a young unemployed Dutchman with communist views, inside the building. He said he had acted alone, to rouse the workers against the state.",
+   "A new election had been called for 5 March. Hitler and Hermann Göring, the Prussian interior minister, at once declared the fire the signal for a communist uprising. The next day, at Hitler's request, President Paul von Hindenburg used the emergency powers of Article 48 of the Weimar Constitution to sign the Reichstag Fire Decree. It suspended freedom of speech, of the press and of assembly and the secrecy of post and telephone, and removed limits on police arrests. Thousands of communists, among them the party's leaders and Reichstag deputies, were imprisoned in the following days.",
+   "With the Communist Party crushed, the Nazis raised their share of the vote on 5 March from 33 to 44 per cent according to Wikipedia, and with their allies of the German National People's Party they held a majority. On 23 March the Reichstag, now meeting in the Kroll Opera House, passed the Enabling Act, which let Hitler's government make laws without parliament. The decree's suspension of civil rights was never lifted under Nazi rule.",
+   "Van der Lubbe was tried before the Reich Supreme Court in Leipzig from September to December 1933, together with the German communist Ernst Torgler and three Bulgarian Comintern members, among them Georgi Dimitrov. Only van der Lubbe was convicted; he was beheaded on 10 January 1934, and in 2008 Germany posthumously pardoned him. Who was behind the fire has been argued over ever since: communists at the time accused the Nazis of starting it themselves, and while most historians since the 1960s have accepted that van der Lubbe acted alone, some, such as Benjamin Hett in 2013, have argued that he cannot have done so."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Reichstag_fire",
+    "title": "Reichstag fire",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.history.com/articles/reichstag-fire",
+    "title": "Reichstag Fire",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     3,
+     4,
+     6,
+     7,
+     8,
+     10,
+     11,
+     12,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "The Reichstag in Berlin was set on fire on 27 February 1933, four weeks after Hitler became Chancellor.",
+   "The alarm reached a Berlin fire station shortly after 9 p.m.; the building was in flames when firefighters arrived and was largely gutted.",
+   "The main chamber was destroyed (HISTORY).",
+   "Marinus van der Lubbe, an unemployed Dutchman with communist views, was arrested at the scene and said he acted alone to encourage a workers' uprising.",
+   "Elections had been called for 5 March 1933.",
+   "Hitler and Göring declared the fire the start of a communist revolt.",
+   "The next day, at Hitler's request, Hindenburg used Article 48 to sign the Reichstag Fire Decree, suspending freedoms of speech, press and assembly and the secrecy of post and telephone, and removing limits on police arrests.",
+   "Thousands of communists, including party leaders and Reichstag deputies, were imprisoned in the days after the fire.",
+   "Wikipedia: the Nazi vote rose from 33% to 44% on 5 March and, with the DNVP, gave a majority.",
+   "On 23 March 1933 the Reichstag, meeting at the Kroll Opera House, passed the Enabling Act.",
+   "The rights suspended by the decree were not restored under Nazi rule (Wikipedia); the decree's powers were used to jail opponents (HISTORY).",
+   "Van der Lubbe was tried in Leipzig (September-December 1933) with Torgler and three Bulgarian Comintern members including Dimitrov; only he was convicted.",
+   "He was beheaded on 10 January 1934 (Wikipedia; HISTORY: January 1934) and posthumously pardoned in 2008.",
+   "Communists at the time accused the Nazis of starting the fire; the question of sole responsibility is still debated.",
+   "Most historians after the 1960s accepted that van der Lubbe acted alone; Benjamin Hett (2013) argued he could not have."
+  ],
+  "disagree": "Wikipedia reports the historians' consensus that van der Lubbe set the fire and quotes Richard J. Evans calling the Nazi-plot view a conspiracy theory; HISTORY.com gives more weight to Benjamin Hett's 2013 argument that van der Lubbe could not have acted alone.",
+  "checked": null
+ },
+ "Q204213": {
+  "title": "Romanian Revolution (1989)",
+  "y": 1989,
+  "place": "Romania",
+  "paras": [
+   "In 1989, while Poland, Hungary, East Germany and Czechoslovakia began to open up, Romania's communist dictator Nicolae Ceaușescu refused any reform. His regime rested on a personality cult and the Securitate secret police, and to pay off foreign debt it exported food while rationing food and energy at home. The spark came in the western city of Timișoara, where the authorities tried to move László Tőkés, a dissident pastor of the Hungarian Reformed Church, to a remote parish. His supporters blockaded his house on 15 December, and from 16 December the protest grew into a mass uprising joined by thousands of residents.",
+   "The army, the Securitate and the police opened fire; dozens were shot dead on 17 December, but the protests went on, factories and the university struck, and the army withdrew to its barracks. On 20 December Timișoara became the first Romanian city free of communist rule. On 21 December Ceaușescu spoke to a crowd of about 100,000 from the Central Committee building in Bucharest; the crowd turned against him, and fighting broke out that day in Bucharest and other cities.",
+   "On 22 December, with the building besieged by huge crowds, Ceaușescu and his wife Elena fled by helicopter from its roof and were arrested the same afternoon in the town of Târgoviște. Ion Iliescu, a former communist official, announced on television the formation of the National Salvation Front to take over the government. On 25 December a military tribunal sentenced the Ceaușescus to death in a summary trial, and they were shot at once.",
+   "More than 1,100 people were killed in the revolution, most of them after Ceaușescu's fall, in street fighting blamed at the time on unidentified 'terrorists' loyal to the old regime. The official figure cited by Germany's Federal Agency for Civic Education is 1,165 dead; the organisers of the 2019 commemoration in Bucharest gave 1,142. Iliescu won the presidential election of May 1990, and whether December 1989 was a popular revolution or a coup by his circle is still disputed: in 2019 he was put on trial, accused of having stoked the bloodshed to legitimise his own power, which he denied."
+  ],
+  "sources": [
+   {
+    "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/301988/vor-30-jahren-revolution-in-rumaenien/",
+    "title": "Vor 30 Jahren: Revolution in Rumänien",
+    "publisher": "Bundeszentrale für politische Bildung (bpb)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.rri.ro/en/news-and-current-affairs/today-in-the-news/the-1989-revolution-started-in-timisoara-id962980.html",
+    "title": "The 1989 Revolution started in Timişoara",
+    "publisher": "Radio Romania International",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     8,
+     10,
+     12,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.aljazeera.com/news/2019/12/25/on-this-day-30-years-since-nicolae-ceausescu-was-executed",
+    "title": "On this day: 30 years since Nicolae Ceausescu was executed",
+    "publisher": "Al Jazeera",
+    "accessed": "2026-11-28",
+    "supports": [
+     4,
+     8,
+     10,
+     12,
+     13,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "In 1989 Ceaușescu refused reform while Poland, Hungary, the GDR and Czechoslovakia began democratising.",
+   "His regime relied on a personality cult and the Securitate; food was exported to earn foreign currency while food and energy were rationed at home.",
+   "The uprising was triggered by the attempt to move the Hungarian Reformed pastor László Tőkés from Timișoara to a remote parish.",
+   "Protests began around Tőkés's home (blockade on 15 December, bpb) and grew into an uprising from 16 December.",
+   "Security forces fired on demonstrators; dozens were shot on 17 December (bpb).",
+   "Strikes followed, the army withdrew to barracks, and on 20 December Timișoara became the first city free of communist rule (RRI).",
+   "On 21 December Ceaușescu addressed about 100,000 people in Bucharest; the crowd turned and fighting broke out (bpb).",
+   "On 22 December Ceaușescu fled the besieged Central Committee building.",
+   "The Ceaușescus left by helicopter and were arrested in Târgoviște the same afternoon (bpb).",
+   "Ion Iliescu proclaimed the National Salvation Front on television.",
+   "On 25 December the couple were sentenced to death by a military tribunal in a summary trial and shot immediately.",
+   "More than 1,100 people died, most after Ceaușescu's fall; deaths were blamed on unidentified 'terrorists' (RRI).",
+   "Death tolls: 1,165 (official figure, bpb); 1,142 (commemoration organisers, Al Jazeera).",
+   "Iliescu won the May 1990 presidential election (RRI); whether the events were a revolution or a coup is disputed.",
+   "In 2019 Iliescu was put on trial accused of fomenting the bloodshed to legitimise his power; he denied it."
+  ],
+  "disagree": "Death tolls differ slightly: the official figure given by the bpb is 1,165 dead (895 of them after 22 December); the 2019 commemoration organisers cited by Al Jazeera gave 1,142; Radio Romania International says over 1,100. Whether December 1989 was a popular revolution or a coup is still debated.",
+  "checked": null
+ },
+ "Q208191": {
+  "title": "Asian–African Conference",
+  "y": 1955,
+  "place": "Indonesia",
+  "paras": [
+   "From 18 to 24 April 1955 representatives of 29 Asian and African governments met in Bandung, Indonesia, for the first large conference of its kind. Most of the participants had only recently won independence from colonial rule. The meeting was organised by Indonesia, Burma, India, Ceylon (Sri Lanka) and Pakistan, which had agreed on it at a planning meeting in Bogor in December 1954; Indonesia's President Sukarno and India's Prime Minister Jawaharlal Nehru were among its leading figures, and the People's Republic of China sent its premier, Zhou Enlai.",
+   "The aims were to promote economic and cultural co-operation, to oppose colonialism and racism, and to give the new nations a voice in a world divided by the Cold War. The main debate was over whether Soviet rule in Eastern Europe and Central Asia should be condemned alongside Western colonialism; the delegates compromised by condemning 'colonialism in all of its manifestations'. Zhou Enlai, who had escaped an assassination attempt on his way to the meeting, struck a moderate, conciliatory tone that eased the fears of anti-communist delegates.",
+   "On 24 April the delegates adopted a final communiqué calling for economic and cultural co-operation, human rights and self-determination, an end to racial discrimination and peaceful coexistence. It included a ten-point declaration on world peace, building on the United Nations Charter and the Five Principles of Peaceful Coexistence agreed between India and China in 1954, which stressed respect for sovereignty and territorial integrity, the equality of races and nations, and non-interference in other countries' internal affairs.",
+   "The United States had watched the conference warily, fearing that it would turn against the West, but the participants held a wide range of views and no general denunciation of the West followed. Bandung showed that the newly independent states could act together in world politics, and its principles helped lay the foundations of the Non-Aligned Movement, although the 'spirit of Bandung' had faded by the end of the 1960s."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Asian%E2%80%93African%20Conference",
+    "title": "Asian–African Conference",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1953-1960/bandung-conf",
+    "title": "Bandung Conference (Asian-African Conference), 1955",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.cvce.eu/obj/final_communique_of_the_asian_african_conference_of_bandung_24_april_1955-en-676237bd-72f7-471f-949a-88b6ae513585.html",
+    "title": "Final Communiqué of the Asian-African conference of Bandung (24 April 1955)",
+    "publisher": "CVCE.eu, University of Luxembourg",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     8
+    ]
+   }
+  ],
+  "claims": [
+   "The conference of 29 Asian and African countries met in Bandung, Indonesia, in April 1955 (18-24 April, Wikipedia).",
+   "Most participants were newly independent.",
+   "It was co-sponsored by Indonesia, Burma, India, Ceylon and Pakistan.",
+   "The organisers decided on the conference at Bogor in December 1954; Sukarno and Nehru were key organisers (Wikipedia).",
+   "China's premier Zhou Enlai attended.",
+   "The aims included economic and cultural co-operation and opposition to colonialism.",
+   "Debate centred on whether Soviet policies should be censured; the consensus condemned 'colonialism in all of its manifestations'; Zhou survived an assassination attempt and was conciliatory (Wikipedia).",
+   "On 24 April 1955 a final communiqué was adopted.",
+   "It called for economic and cultural co-operation, human rights and self-determination, an end to racial discrimination and peaceful coexistence.",
+   "A ten-point declaration built on the UN Charter and the Five Principles of Peaceful Coexistence (worked out by India and China in 1954), including sovereignty, territorial integrity, racial equality and non-interference.",
+   "The US viewed the conference with caution, but no general denunciation of the West followed; participants displayed a wide range of views (Office of the Historian).",
+   "Bandung laid the foundations of the Non-Aligned Movement.",
+   "The 'spirit of Bandung' had weakened by the end of the 1960s (Office of the Historian)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q217981": {
+  "title": "Allied invasion of Sicily",
+  "y": 1943,
+  "place": "Italy",
+  "paras": [
+   "After Axis forces in North Africa surrendered in May 1943, the United States and Britain decided to keep up the pressure in the Mediterranean rather than wait for the invasion of France. Meeting at Casablanca, Allied leaders chose Sicily as the next target: taking it could knock Fascist Italy out of the war, secure the sea lanes of the central Mediterranean and draw German divisions away from other fronts. To hide the target, British intelligence carried out Operation Mincemeat, planting false invasion plans on a corpse washed ashore in Spain, which led Hitler to reinforce Sardinia and Corsica instead.",
+   "Operation Husky, under the overall command of General Dwight D. Eisenhower, began on the night of 9-10 July 1943. A storm scattered the American paratroopers and British glider troops, but the seaborne landings that followed at dawn, after heavy naval and air bombardment, succeeded. The U.S. Seventh Army under General George S. Patton came ashore on the left and the British Eighth Army under General Bernard Montgomery on the right, along the south-eastern coast of the island. The figures for the armada differ: the Oxford Companion to American Military History gives 2,500 ships and 180,000 men landed on the first day, HISTORY.com about 3,000 ships and 150,000 troops.",
+   "Italian defenders offered little resistance at first, but German armour counter-attacked the next morning and nearly drove the Americans back into the sea at Gela; within two days the beachheads were secure. Over the following weeks Montgomery pushed up the east coast while Patton swung north-west and then east along the north coast towards Messina. The invasion shook the Fascist regime: in late July 1943 Mussolini was deposed and arrested, and the new government under Marshal Pietro Badoglio began secret armistice talks with the Allies.",
+   "When American troops entered Messina on 17 August 1943 the campaign was over, but most of the German forces, with much of their equipment, had already escaped across the Strait of Messina to the mainland (HISTORY.com puts the number of Germans and Italians who crossed at 100,000). The capture of Sicily and its airfields opened the way for the Allied landings on the Italian mainland in September 1943."
+  ],
+  "sources": [
+   {
+    "url": "https://www.history.com/articles/invasion-of-sicily",
+    "title": "Invasion of Sicily",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/sicily-invasion",
+    "title": "Sicily, Invasion of (The Oxford Companion to American Military History)",
+    "publisher": "Encyclopedia.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.nps.gov/places/sicily.htm",
+    "title": "Sicily",
+    "publisher": "U.S. National Park Service",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     7
+    ]
+   }
+  ],
+  "claims": [
+   "Axis forces in North Africa were defeated in May 1943.",
+   "The Allies, meeting at Casablanca, chose to invade Sicily, to knock Italy out of the war, secure the Mediterranean and divert German forces.",
+   "Operation Mincemeat planted false plans on a body found off Spain; Hitler reinforced Sardinia and Corsica (HISTORY).",
+   "Eisenhower held overall command (Oxford Companion).",
+   "The invasion began on the night of 9-10 July / at dawn on 10 July 1943.",
+   "Airborne troops were scattered by high winds; the amphibious landings after naval and air bombardment succeeded.",
+   "Patton's U.S. Seventh Army landed on the left and Montgomery's British Eighth Army on the right, on Sicily's south-east coast.",
+   "Oxford Companion: 2,500 ships and 180,000 troops landed on the first day; HISTORY: 3,000 ships and 150,000 troops.",
+   "Resistance was light at first; a German armoured counter-attack nearly drove the Americans back at Gela; the beachheads were secured within 48 hours (Oxford Companion).",
+   "Patton moved west then east towards Messina while Montgomery advanced up the east coast (HISTORY).",
+   "Mussolini was deposed and arrested in late July 1943 (HISTORY: 24 July); Badoglio's government opened secret armistice talks (HISTORY).",
+   "US troops entered Messina on 17 August 1943; most German forces escaped to the mainland (HISTORY: 100,000 men evacuated).",
+   "The capture of Sicily led to the invasion of the Italian mainland in September 1943."
+  ],
+  "disagree": "The size of the invasion force differs: the Oxford Companion to American Military History gives 2,500 ships and 180,000 troops landed on the first day; HISTORY.com gives 3,000 ships and 150,000 troops.",
+  "checked": null
+ },
+ "Q219230": {
+  "title": "Marco Polo Bridge incident",
+  "y": 1937,
+  "place": "China",
+  "paras": [
+   "On the night of 7 July 1937 Japanese and Chinese troops clashed near the Marco Polo Bridge (Lugou Bridge), an old stone bridge by the small walled town of Wanping, about a dozen miles south-west of Beiping (Beijing). Japan's China Garrison Army was stationed in the area, and one of its companies was holding night exercises near the bridge, while Wanping was held by the Chinese 29th Army.",
+   "According to a study by Japan's National Institute for Defense Studies, based on Japanese and Chinese records, shots were heard from the Chinese side at about 22:40, and at roll call one Japanese private was found missing. The regimental commander, Colonel Mutaguchi, sent a battalion to demand an explanation at Wanping. The soldier soon turned up, but the case had already turned a shooting into a dispute. After more shots in the early hours the Japanese battalion advanced, the Chinese opened fire, and at dawn on 8 July both sides went into action.",
+   "Local commanders agreed a ceasefire on 11 July, and neither high command at first wanted a full war: in Tokyo a group around Major General Ishiwara Kanji tried to keep the fighting local. But mutual mistrust drove both sides on. Chiang Kai-shek ordered Wanping held at any cost and sent troops north, and the Japanese army leadership came to favour a decisive blow. Japan used the incident to seize the nearby railway and occupied Beiping and Tianjin by the end of July; in August the fighting spread to Shanghai, and by the end of the year the Chinese capital, Nanjing, had fallen.",
+   "The clash grew into the Second Sino-Japanese War, which lasted until 1945. To limit the risk of Western involvement Japan did not formally declare war until late 1941 and called the conflict the 'China Incident'. Although the Second World War is usually dated from September 1939, historians such as Christopher Reed argue that its roots reach back to this clash."
+  ],
+  "sources": [
+   {
+    "url": "https://www.nids.mod.go.jp/publication/senshi/pdf/201603/10.pdf",
+    "title": "From Marco Polo Bridge to Shanghai: Initial Phase of the Sino-Japanese War Revisited (Iwatani Nobu)",
+    "publisher": "National Institute for Defense Studies, Japan",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "url": "https://origins.osu.edu/read/marco-polo-bridge-incident-1937",
+    "title": "The Marco Polo Bridge Incident (1937) (Christopher A. Reed)",
+    "publisher": "Origins, Ohio State University",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.jacar.go.jp/english/shuhou-english/timeline/nenpyo19370707.html",
+    "title": "Timeline - A Window into the Early Showa Period: Marco Polo Bridge Incident",
+    "publisher": "Japan Center for Asian Historical Records (JACAR)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     7,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "On 7 July 1937 Japanese and Chinese troops clashed near the Marco Polo Bridge on the outskirts of Beiping (Beijing).",
+   "The bridge stands by the walled town of Wanping, about a dozen miles south-west of central Beijing; Japanese night manoeuvres led to the clash (Origins).",
+   "A company of the China Garrison Army under Captain Shimizu held night exercises near the bridge; Wanping was held by the Chinese 29th Army (NIDS).",
+   "NIDS: shots were heard from the Chinese side at 22:40 and a private was missing at roll call.",
+   "Colonel Mutaguchi ordered Major Ichiki to negotiate at Wanping (NIDS).",
+   "The private was found soon afterwards, but the disappearance complicated the shooting incident (NIDS).",
+   "After more gunfire around 3:00 the Japanese advanced, the 29th Army fired, and at 5:30 on 8 July both sides went into action (NIDS).",
+   "A formal local ceasefire was signed on 11 July (NIDS); JACAR says the conflict was temporarily resolved locally.",
+   "Neither high command initially wanted full war; Ishiwara Kanji led the 'non-expansionist' view (NIDS).",
+   "Chiang Kai-shek ordered Wanping held at any cost and sent troops north; Japanese leaders came to favour a decisive victory (NIDS).",
+   "Japan used the incident to seize the railway and occupied Beijing and Tianjin by the end of July; fighting moved to Shanghai in August and Nanjing fell by the end of the year (Origins).",
+   "The incident led to continuous war between Japan and China until 1945 (the Second Sino-Japanese War).",
+   "Japan avoided a formal declaration of war until late 1941 to limit Western involvement and called the conflict the 'China Incident' (Origins).",
+   "Origins argues that the roots of the Second World War reach back to the Marco Polo Bridge incident."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q223732": {
+  "title": "Declaration of the Establishment of the State of Israel",
+  "y": 1948,
+  "place": "West Bank",
+  "paras": [
+   "Britain governed Palestine under a mandate from the League of Nations that was due to end in May 1948. On 29 November 1947 the United Nations General Assembly adopted Resolution 181, which proposed dividing the mandate into a Jewish state and an Arab state when British rule ended in May 1948, with Jerusalem and its surroundings under international administration. The Palestinian Arabs rejected the plan as unfair, and fighting broke out at once between Arab irregulars and the Jewish forces of the Haganah and the smaller Irgun and LEHI groups.",
+   "On 14 May 1948, the day the British Mandate ended, David Ben-Gurion, head of the Jewish Agency, proclaimed in Tel Aviv, at a session of the People's Council, 'the establishment of a Jewish State in Eretz-Israel, to be known as the State of Israel', with effect from the end of the mandate that night. The text based the claim on the Jewish people's historic bond with the land, the Balfour Declaration of 1917, the League of Nations mandate, the murder of millions of Jews in Europe and the UN resolution.",
+   "The declaration promised a state open to Jewish immigration, based on 'freedom, justice and peace' and guaranteeing equal social and political rights to all inhabitants regardless of religion, race or sex. It made the People's Council a provisional council of state until an elected constituent assembly adopted a constitution, appealed to the Arab inhabitants to take part in building the state as equal citizens, and offered peace to neighbouring states. U.S. President Harry S. Truman recognised the new state the same day, against the advice of his State Department.",
+   "War followed immediately. Arab aircraft attacked Tel Aviv, and the armies of Egypt, Syria, Lebanon and Iraq invaded the former mandate, with Transjordan's forces fighting in the areas assigned to the Arab state and in Jerusalem. Israeli forces went on to the offensive, and armistice agreements signed in 1949 left Israel with more territory than the UN plan had allotted it, while Egypt held the Gaza Strip and Jordan the West Bank."
+  ],
+  "sources": [
+   {
+    "url": "https://avalon.law.yale.edu/20th_century/israel.asp",
+    "title": "Declaration of Establishment of State of Israel, 14 May 1948",
+    "publisher": "The Avalon Project, Yale Law School",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1945-1952/creation-israel",
+    "title": "Creation of Israel, 1948",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     10
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1945-1952/arab-israeli-war",
+    "title": "The Arab-Israeli War of 1948",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     11,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Britain held a mandate for Palestine until May 1948.",
+   "On 29 November 1947 the UN General Assembly adopted Resolution 181, partitioning the mandate into Jewish and Arab states in May 1948, with Jerusalem under international control.",
+   "The Palestinian Arabs rejected the plan; fighting began between Arab irregulars and the Haganah, Irgun and LEHI.",
+   "On 14 May 1948 Ben-Gurion, head of the Jewish Agency, proclaimed the State of Israel; the declaration was signed in Tel Aviv by the People's Council on the day the mandate ended.",
+   "The declaration took effect from the termination of the mandate that night.",
+   "It cited the historic connection to the land, the Balfour Declaration, the League of Nations mandate, the Holocaust and the UN resolution.",
+   "It promised a state open to Jewish immigration, based on freedom, justice and peace, with equal rights for all inhabitants irrespective of religion, race or sex.",
+   "The People's Council was to act as a provisional council of state until an elected constituent assembly adopted a constitution.",
+   "It appealed to Arab inhabitants to participate as equal citizens and offered peace to neighbouring states.",
+   "Truman recognised Israel the same day, although the State Department had recommended a trusteeship instead.",
+   "Arab aircraft attacked Tel Aviv; Egypt, Syria, Lebanon and Iraq invaded; Transjordan intervened in the areas designated for the Arab state and Jerusalem.",
+   "Israel took the offensive; 1949 armistice agreements left Israel with more territory than allotted, Egypt with Gaza and Jordan with the West Bank."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "Q2305266": {
+  "title": "Soviet invasion of Poland",
+  "y": 1939,
+  "place": "Poland",
+  "paras": [
+   "On 17 September 1939, sixteen days after Nazi Germany had invaded Poland from the west, the Soviet Red Army crossed Poland's eastern border. The attack followed from the Molotov–Ribbentrop Pact of August 1939, whose secret protocol had divided Poland between Germany and the Soviet Union. In the early hours the Polish ambassador in Moscow, Wacław Grzybowski, was handed a note justifying the attack; he refused to accept it. Moscow claimed that the Polish state had ceased to exist and that it was protecting the Ukrainians and Belarusians of eastern Poland.",
+   "The Polish army, already broken by the German offensive, was retreating east and south-east. Facing a second enemy, the commander-in-chief, Marshal Edward Rydz-Śmigły, ordered his troops not to fight the Red Army except in self-defence and to withdraw towards Romania and Hungary. Border guards and scattered units still resisted at places such as Grodno, Wilno (Vilnius) and Szack. According to Poland's Institute of National Remembrance (IPN), the Soviets committed more than 600,000 soldiers, 4,700 tanks and 3,300 aircraft. Where Soviet and German forces met, the Germans pulled back and handed over their Polish prisoners.",
+   "On 28 September Germany and the Soviet Union signed a treaty in Moscow fixing their new border. The Soviet Union took about three-fifths of Poland's territory and some 13 million of its people; the Vilnius region was handed to Lithuania, and the rest was annexed in November 1939 as 'Western Belarus' and 'Western Ukraine'.",
+   "Soviet troops shot prisoners from the start: the IPN cites historians' estimates of some 2,500 prisoners and several hundred civilians murdered in September 1939 alone. Nearly two years of occupation followed, with arrests, deportations to the interior of the Soviet Union and the Katyn massacre, until Germany attacked the Soviet Union in June 1941."
+  ],
+  "sources": [
+   {
+    "url": "https://eng.ipn.gov.pl/en/news/4592,Soviet-aggression-on-Poland-from-17-September-1939.html",
+    "title": "Anniversary of the Soviet aggression on Poland from 17 September 1939",
+    "publisher": "Institute of National Remembrance (IPN), Poland",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     10,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://www.history.com/this-day-in-history/september-17/soviet-union-invades-poland",
+    "title": "Soviet Union invades Poland",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     9,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "On 17 September 1939 the Red Army invaded Poland from the east, about two weeks after the German invasion of 1 September.",
+   "The invasion followed the Molotov–Ribbentrop Pact, whose secret protocol gave the USSR part of eastern Poland.",
+   "During the night of 16-17 September the Polish ambassador Wacław Grzybowski was handed a note justifying the attack and refused to accept it (IPN).",
+   "Moscow said it was protecting national minorities (Ukrainians and Belarusians); Molotov declared that the Polish government had ceased to exist (HISTORY).",
+   "The Polish army was retreating east after the German offensive.",
+   "Rydz-Śmigły ordered no engagement with the Red Army except in self-defence and withdrawal towards Romania and Hungary.",
+   "Polish units resisted at Grodno, Wilno and Szack, among other places (IPN).",
+   "IPN figures: more than 600,000 Soviet soldiers, 4,700 tanks and 3,300 combat aircraft.",
+   "Where Soviet and German troops met, the Germans withdrew and handed over Polish prisoners (HISTORY).",
+   "On 28 September 1939 Germany and the USSR signed a border and friendship treaty in Moscow.",
+   "The USSR gained about three-fifths of Poland and 13 million people (HISTORY).",
+   "The Vilnius region went to Lithuania (treaty of 10 October 1939); the rest was annexed in November 1939 as Western Belarus and Western Ukraine (IPN).",
+   "IPN: historians estimate 2,500 prisoners and several hundred civilians were murdered in September 1939.",
+   "The occupation lasted almost two years and included arrests, deportations and the Katyn massacre."
+  ],
+  "disagree": "HISTORY.com gives about 13 million people in the Soviet zone; Wikipedia (local extract, used for checking) gives some 13.5 million Polish citizens.",
+  "checked": null
+ },
+ "Q318161": {
+  "title": "Helsinki Accords",
+  "y": 1975,
+  "place": "Finland",
+  "paras": [
+   "The Helsinki Final Act was signed on 1 August 1975 in Helsinki, Finland, at the close of the Conference on Security and Co-operation in Europe (CSCE). Its 35 signatories were the United States, Canada and the states of Europe on both sides of the Cold War divide, including the Soviet Union, East and West Germany and the Holy See; only Albania, under Enver Hoxha, refused to take part (Wikipedia also lists tiny Andorra as absent).",
+   "The idea went back to the 1950s, when the Soviet Union first proposed a European security conference in the hope of winning formal recognition of the borders drawn in Eastern Europe after the Second World War. The West held back for years, but détente in the early 1970s changed its mind: preliminary consultations began in Helsinki in 1972, the conference opened in July 1973, and two years of negotiation, mostly in Geneva, followed before the leaders met in Helsinki for the signing.",
+   "The Act was a political commitment, not a treaty requiring ratification. It was arranged in four 'baskets'. The first set out ten principles for relations between states, among them sovereign equality, refraining from force, the inviolability of frontiers, territorial integrity, non-intervention and respect for human rights. The second covered economic, scientific and technical co-operation; the third human contacts, such as family reunification, travel, information and culture; and the fourth follow-up meetings.",
+   "At first the Act was widely seen in the West as a gain for Moscow, since it seemed to confirm Soviet domination of Eastern Europe and the annexation of the Baltic states, and President Gerald Ford was attacked at home for signing it; the United States insisted that it still did not recognise the annexation, and the text allowed frontiers to change by peaceful means. Over time, however, its human-rights provisions became a tool for dissidents: Helsinki monitoring groups in the Soviet Union and across Europe reported violations, and follow-up meetings in Belgrade, Madrid and Vienna kept up the pressure. The process contributed to the end of the Cold War and was the basis of today's OSCE."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/api/rest_v1/page/html/Helsinki_Final_Act",
+    "title": "Helsinki Final Act",
+    "publisher": "Wikipedia (CC BY-SA 4.0)",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1969-1976/helsinki",
+    "title": "Helsinki Final Act, 1975",
+    "publisher": "Office of the Historian, U.S. Department of State",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13
+    ]
+   },
+   {
+    "url": "https://www.osce.org/helsinki-final-act",
+    "title": "Helsinki Final Act",
+    "publisher": "Organization for Security and Co-operation in Europe",
+    "accessed": "2026-11-28",
+    "supports": [
+     1
+    ]
+   }
+  ],
+  "claims": [
+   "The Helsinki Final Act was signed in Helsinki on 1 August 1975 at the close of the CSCE.",
+   "It was signed by 35 states: the US, Canada and the European states.",
+   "Albania refused to take part; Wikipedia also lists Andorra as not signing, while the Office of the Historian says every European country except Albania signed.",
+   "The Soviet Union first sought a European security conference in 1954, hoping for recognition of the post-war borders in Eastern Europe (Office of the Historian).",
+   "Détente in the early 1970s led to the Helsinki Consultations of 1972, the opening of the CSCE in July 1973 and negotiations in Geneva from 1973 to 1975 (Office of the Historian).",
+   "The Act was not binding and had no treaty status requiring ratification (Wikipedia).",
+   "The Act was organised in four baskets.",
+   "Basket one listed ten principles including sovereign equality, non-use of force, inviolability of frontiers, territorial integrity, non-intervention and human rights.",
+   "Basket two covered economic, scientific and technological co-operation; basket three human contacts, family reunification, travel, information and culture; basket four follow-up.",
+   "The Act was seen as a diplomatic gain for the USSR, consolidating post-war borders; Ford faced domestic criticism (Wikipedia).",
+   "The US maintained its non-recognition of the Baltic states' incorporation; frontiers could change by peaceful means.",
+   "Helsinki monitoring groups tracked violations; follow-up meetings took place in Belgrade (1977-78), Madrid (1980-83) and Vienna (1986-89).",
+   "The Helsinki process contributed to the end of the Cold War and was the groundwork for the OSCE."
+  ],
+  "disagree": "The Office of the Historian says every European country except Albania signed; Wikipedia says Andorra did not sign either.",
+  "checked": null
+ },
+ "Q911972": {
+  "title": "Dunkirk evacuation",
+  "y": 1940,
+  "place": "France",
+  "paras": [
+   "On 10 May 1940 Germany attacked in the west. While one German army drew the Allies north into Belgium, the main force broke through the French lines at Sedan and drove across northern France to the Channel coast, cutting the Allied armies in two. The British Expeditionary Force (BEF), along with French and Belgian troops, was trapped in a shrinking pocket. After the Germans took Boulogne and Calais, the port of Dunkirk was the only way out.",
+   "From 19 May Vice Admiral Bertram Ramsay and his staff, working in the tunnels beneath Dover Castle, were planning an evacuation by sea. On 24 May Hitler halted his tanks short of Dunkirk, partly because his generals feared a counter-attack and Hermann Göring promised that the Luftwaffe could stop any evacuation; the advance resumed on 26 May, but the Allies had gained time. That evening the Royal Navy began Operation Dynamo. Popular accounts say the name came from a room in the Dover tunnels that once held a dynamo, but English Heritage says there is no evidence of this.",
+   "The harbour docks were wrecked and the beaches shelved so gently that large ships could not come close, so troops were taken off from the long eastern breakwater (the mole) or ferried out from the beaches in small craft, all under German air attack and shellfire. Progress was slow at first, with only some 7,500 to 8,000 men lifted on the first day, but hundreds of civilian 'little ships', from fishing boats to pleasure craft, answered the navy's call and began arriving from 28 May. Even so, according to English Heritage over two-thirds of the men left from the mole, mostly aboard destroyers and other larger vessels.",
+   "British commanders had expected to save about 45,000 men at most. By 4 June, when the last defenders surrendered and the Germans occupied the town, about 338,000 troops had been evacuated, by HISTORY.com's count some 198,000 of them British and 140,000 French. The BEF had abandoned nearly all its heavy equipment, and France surrendered later that month. Churchill warned that 'wars are not won by evacuations', but the rescue of Britain's trained army allowed it to fight on, and 'the miracle of Dunkirk' became a lasting symbol of national resolve."
+  ],
+  "sources": [
+   {
+    "url": "https://www.history.com/articles/dunkirk",
+    "title": "Battle of Dunkirk",
+    "publisher": "HISTORY.com",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   {
+    "url": "https://www.english-heritage.org.uk/visit/places/dover-castle/history-and-stories/operation-dynamo-things-you-need-to-know/",
+    "title": "Operation Dynamo: Things you need to know",
+    "publisher": "English Heritage",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  ],
+  "claims": [
+   "Germany attacked in the west on 10 May 1940.",
+   "German forces broke through (via the Ardennes / at Sedan) and drove to the Channel, cutting off the Allied armies in the north.",
+   "The BEF and French and Belgian troops were trapped around Dunkirk, the only remaining port after Boulogne and Calais fell (EH).",
+   "From 19 May Ramsay's staff in the Dover Castle tunnels planned an evacuation by sea (EH; HISTORY says Gort considered evacuation by 19 May).",
+   "On 24 May Hitler halted the panzers, partly from fear of a counter-attack and Göring's promise that the Luftwaffe could prevent an evacuation; they resumed on 26 May (HISTORY).",
+   "Operation Dynamo began on 26 May under Vice Admiral Ramsay.",
+   "HISTORY says the name came from a dynamo in the Dover tunnels; English Heritage says there is no evidence of this.",
+   "Troops left from the mole or from the beaches, where shallow water kept large ships away, under air attack.",
+   "Progress was slow at first: about 7,500 on the first full day (HISTORY), 8,000 on the first day (EH).",
+   "Over two-thirds left from the mole (239,465) and 98,761 from the beaches; the navy's large ships were paramount (EH).",
+   "Hundreds of small civilian craft ('little ships') joined, the first arriving on 28 May (HISTORY).",
+   "Commanders had expected to rescue about 45,000 men at most (HISTORY); about 338,000 were evacuated by 4 June (HISTORY; EH figures sum to 338,226).",
+   "HISTORY.com: some 198,000 British and 140,000 French troops were rescued; the BEF left behind most of its heavy equipment.",
+   "France surrendered later in June 1940; Churchill said 'wars are not won by evacuations' (EH).",
+   "The rescue preserved Britain's trained army and became known as 'the miracle of Dunkirk'."
+  ],
+  "disagree": "HISTORY.com says Operation Dynamo was named after a room in the Dover tunnels that had held a dynamo; English Heritage says there is no evidence for this. HISTORY.com gives about 7,500 men lifted on the first full day, English Heritage 8,000 on the first day.",
+  "checked": null
  }
 }
