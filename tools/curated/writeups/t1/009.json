@@ -598,5 +598,257 @@
   ],
   "disagree": "Date of the battle: 23 March 1849 (1911 Britannica, Italy and Charles Albert) or all day on 22 March, ending at dawn on 23 March (Wikipedia). The Britannica's Charles Albert article misprints the Austrian crossing of the Ticino as '20th of April'.",
   "checked": null
+ },
+ "Q2914928": {
+  "title": "Australian gold rushes",
+  "y": 1851,
+  "place": "New South Wales and Victoria, Australia",
+  "paras": [
+   "Gold had been found in New South Wales several times before 1851, but the colonial government kept the news quiet for fear of losing its workforce and unsettling the economy. When the California gold rush began in 1848 and drew people away from Australia, the government sought the Colonial Office's approval to exploit minerals and offered rewards for finding gold. Edward Hargraves, who had worked the Californian goldfields and learned panning and cradling there, found specks of alluvial gold with John Lister at Ophir, near Orange, in February 1851. After he claimed the discovery of payable gold, Australia's first gold rush began there in May 1851.",
+   "Victoria became a separate colony in 1851, and gold was found there a few weeks later. A rush to Clunes began in July 1851, and the fields of Ballarat and Bendigo followed from September. Who found gold first at each field was long disputed, and claimants such as the journalist Henry Frencham were later examined by a parliamentary select committee. Diggers came first from the neighbouring colonies, some of which, the 1911 Encyclopaedia Britannica says, were almost emptied of able-bodied men and women, and then from Europe and America. Victoria's population, 77,435 at separation according to the Britannica, was 236,778 at the 1854 census.",
+   "The miners resented the licence fee charged for the right to dig and their lack of any representation in the colony's legislature. At Ballarat in December 1854 the discontent ended in fighting with troops, with considerable loss of life on both sides; the licence fee was later replaced by an export duty on gold and a miner's right that also gave a small plot to live on. Over the longer run the rushes turned convict colonies into societies of free immigrants: Australia's total population rose nearly fourfold, from 430,000 in 1851 to 1.7 million in 1871, and by the end of 1905 Victoria's gold had been worth over £273 million, according to the Britannica."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Australian_gold_rushes",
+    "title": "Australian gold rushes (rev 1385756370, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     11
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Victoria_(Australia)",
+    "title": "Victoria (Australia), Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     5,
+     8,
+     9,
+     10,
+     12
+    ]
+   }
+  ],
+  "claims": [
+   "Gold found several times before; NSW government suppressed the news fearing loss of workforce and economic destabilization (Wikipedia).",
+   "After the California gold rush of 1848 drew people from Australia, the government sought Colonial Office approval and offered rewards (Wikipedia).",
+   "Hargraves had been to the California goldfields, learned panning and cradling; with John Lister found five specks of alluvial gold at Ophir near Orange in February 1851 (Wikipedia).",
+   "First gold rush in Australia began May 1851 after Hargraves claimed payable gold at Ophir; officially proclaimed 14 May 1851 (Wikipedia).",
+   "Victoria formed into a separate colony in 1851; gold discovered a few weeks later (EB); Clunes rush July 1851 (Wikipedia).",
+   "Ballarat rush begun by early September 1851; Bendigo September 1851 or soon after (Wikipedia).",
+   "Rival claims of first discovery; Frencham's claims; Select Committee of the Victorian Legislative Assembly (Wikipedia).",
+   "Miners came first from neighbouring colonies, some almost denuded of able-bodied men and women, then from Europe and America (EB, attributed).",
+   "Population 77,435 at separation (EB, attributed); 236,778 at the 1854 census (EB).",
+   "Miners dissatisfied with the charge for permission to mine and lack of representation; Ballarat December 1854 riots, considerable loss of life among miners and troops; export duty on gold substituted for the licence fee, miner's right (EB).",
+   "Convict colonies made more progressive by free immigrants (Wikipedia); population nearly fourfold, 430,000 in 1851 to 1.7 million in 1871 (Wikipedia).",
+   "Gold won to the close of 1905 worth £273,236,500 (EB, attributed)."
+  ],
+  "disagree": null,
+  "checked": null
+ },
+ "cp09-03": {
+  "title": "Confederate States of America formed",
+  "y": 1861,
+  "place": "Montgomery, Alabama",
+  "paras": [
+   "Abraham Lincoln's election as president in 1860 led seven slave states of the Deep South (South Carolina, Mississippi, Florida, Alabama, Georgia, Louisiana and Texas) to declare their secession from the United States over the winter of 1860–1861. Their principal aim, Wikipedia says, was to safeguard slavery: they feared northern abolitionist influence and federal interference with slave property, and expected that Lincoln's refusal to let slavery spread into the western territories would bring in more free states and eventually end it.",
+   "Southern leaders met at Montgomery, Alabama, in February 1861, and on 8 February the seven states formed the Confederate States of America under a provisional constitution describing a confederation of 'sovereign and independent states'. Jefferson Davis of Mississippi, a former army officer, congressman and federal cabinet member, was chosen provisional president, and Alexander H. Stephens became vice-president. A permanent constitution followed in March 1861. Much of it copied the United States Constitution, but it stressed the rights of the states, explicitly protected slavery, let the president veto single items in appropriation bills, forbade bounties or taxes for the benefit of particular industries, and limited the president to one term: six years according to Wikipedia, seven according to the 1911 Encyclopaedia Britannica.",
+   "The war began in April 1861, when Confederate forces attacked and took Fort Sumter in Charleston harbour. After Lincoln called up 75,000 militia, four states of the Upper South (Virginia, Arkansas, Tennessee and North Carolina) seceded and joined the Confederacy. No foreign government recognized it. Over four years of war its government at Richmond grew more centralized, provoking bitter states'-rights opposition, Stephens among the critics. The Confederacy collapsed in 1865: Robert E. Lee surrendered on 9 April, and most Confederate forces had ceased fighting by May."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Confederate_States_of_America",
+    "title": "Confederate States of America (rev 1386777836, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     8,
+     9,
+     10,
+     12
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Confederate_States_of_America",
+    "title": "Confederate States of America, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     5,
+     6,
+     7,
+     11
+    ]
+   }
+  ],
+  "claims": [
+   "Lincoln's 1860 election prompted secession of seven slave states of the Deep South: SC, MS, FL, AL, GA, LA, TX (Wikipedia); EB: formed by the seceding Southern states in the winter of 1860-1861.",
+   "Principal aim safeguarding slavery, fears of abolitionist influence and federal interference; Lincoln's insistence that slavery not expand into the territories (Wikipedia, attributed).",
+   "Southern leaders met in Montgomery, Alabama in February 1861; formed 8 February 1861 by seven states; first constitution: confederation of 'sovereign and independent states' (Wikipedia).",
+   "Davis elected provisional president (Wikipedia).",
+   "Davis of Mississippi chosen president, trained in the Federal army, Congress and the National administration; Stephens vice-president (EB).",
+   "Second (permanent) constitution March 1861, much replicated the US Constitution, explicit protections of slavery (Wikipedia); states' rights emphasized (EB; Wikipedia).",
+   "Item veto of appropriations (EB; Wikipedia: line item veto); no bounty or taxes for the benefit of any branch of industry (EB); single term: six years (Wikipedia) or seven (EB) - disagreement stated.",
+   "Confederate attack and capture of Fort Sumter, April 12, 1861 (Wikipedia).",
+   "Lincoln called up 75,000 militia; four more states seceded: VA, AR, TN, NC (Wikipedia).",
+   "Unrecognized by foreign governments (Wikipedia).",
+   "Centralized war powers of the Richmond government, bitter states'-rights opposition, Stephens opposed (EB).",
+   "Lee's surrender 9 April 1865; most forces ceased hostilities by May 1865 (Wikipedia)."
+  ],
+  "disagree": "Presidential term under the permanent constitution: six years (Wikipedia) or seven years (1911 Britannica).",
+  "checked": null
+ },
+ "cp10-06": {
+  "title": "Kingdom of Italy proclaimed",
+  "y": 1861,
+  "place": "Turin",
+  "paras": [
+   "In 1859 the Kingdom of Sardinia (Piedmont), allied with France, fought Austria in the Second Italian War of Independence and won Lombardy; under the secret Plombières agreement it ceded Savoy and Nice to France. In 1860 Giuseppe Garibaldi's Expedition of the Thousand overthrew Bourbon rule in Sicily and Naples, while Piedmontese troops occupied central Italy and part of the Papal States, though not Rome.",
+   "Garibaldi met King Victor Emmanuel II in late October 1860 (on the 26th, at Teano, according to Wikipedia; the 1911 Encyclopaedia Britannica gives the 29th) and hailed him as King of Italy, setting aside republican hopes for the sake of unity under the monarchy. The two entered Naples together on 7 November; Garibaldi then handed his authority to the king, refused the title and honours offered to him, and retired to his island of Caprera. The last Bourbon strongholds fell early in 1861: Gaeta surrendered on 13 February and Civitella del Tronto on 21 March.",
+   "The first Italian parliament met at Turin on 18 February 1861, and Victor Emmanuel, King of Sardinia since March 1849, became King of Italy, 'by the grace of God and by the will of the nation', under the law of 17 March 1861. (The Britannica's account places his proclamation at the parliament's opening.) The title had not been used since Napoleon gave it up in 1814. Britain recognized the new kingdom within a fortnight and France three months later. It covered the whole peninsula except Venetia and Rome, which, the Britannica says, the government and nation were determined to annex sooner or later. Venetia followed after the war of 1866 and Rome in 1870."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Italy",
+    "title": "Kingdom of Italy (rev 1383507905, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     7,
+     8,
+     10
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Italy",
+    "title": "Italy, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     9,
+     10
+    ]
+   }
+  ],
+  "claims": [
+   "1859 Second Italian War of Independence with French aid, Lombardy liberated; Plombieres Agreement, Savoy and Nice ceded to France (Wikipedia).",
+   "1860-1861 Expedition of the Thousand in Naples and Sicily; House of Savoy troops occupied central territories except Rome and part of the Papal States (Wikipedia).",
+   "Meeting of Garibaldi and Victor Emmanuel: 26 October 1860 at Teano (Wikipedia) or the 29th (EB) - disagreement stated; Garibaldi hailed him King of Italy, sacrificing republican hopes (Wikipedia).",
+   "Entered Naples together 7 November; Garibaldi resigned his authority, refused title and honours, retired to Caprera (EB; Wikipedia: agreed to include Southern Italy in the union).",
+   "Gaeta surrendered 13 February 1861; Civitella del Tronto, last Bourbon stronghold, 21 March (EB).",
+   "First Italian parliament met at Turin 18 February 1861 (EB, attributed); EB: Victor Emmanuel proclaimed king of Italy then.",
+   "Law of 17 March 1861, title 'By the grace of God and by the will of the nation, King of Italy'; Victor Emmanuel King of Sardinia since March 1849 (Wikipedia).",
+   "Title out of use since Napoleon's abdication 6 April 1814 (Wikipedia).",
+   "Recognized by Great Britain within a fortnight, by France three months later; included the whole peninsula except Venetia and Rome, which they were determined to annex (EB, attributed).",
+   "Veneto annexed after the 1866 war (Wikipedia; EB: Venetia ceded after the war of 1866); Rome captured 1870 (Wikipedia)."
+  ],
+  "disagree": "Garibaldi's meeting with Victor Emmanuel: 26 October 1860 (Wikipedia) or the 29th (1911 Britannica). The proclamation: law of 17 March 1861 (Wikipedia); the Britannica puts it at the first parliament's meeting on 18 February 1861.",
+  "checked": null
+ },
+ "Q868481": {
+  "title": "Battle of Hampton Roads",
+  "y": 1862,
+  "place": "Hampton Roads, Virginia",
+  "paras": [
+   "When Union forces abandoned the Gosport navy yard near Norfolk, Virginia, in the spring of 1861, they set fire to the warships there. The Confederates raised one of them, the steam frigate Merrimack, and rebuilt her as an ironclad ram renamed CSS Virginia: cut down to the waterline and topped with a sloping casemate of heavy timber covered with iron, armed with ten guns and an iron ram, but slow and hard to turn. The aim was to break the Union blockade that had cut Norfolk and Richmond off from overseas trade. The Union's answer was John Ericsson's USS Monitor, a low-lying ironclad carrying two heavy guns in a revolving turret, launched on 30 January 1862; the 1911 Encyclopaedia Britannica records that she was mocked as a 'Yankee cheese-box on a raft'.",
+   "On 8 March 1862 the Virginia, commanded by Franklin Buchanan, steamed down the Elizabeth River with supporting gunboats to attack the wooden Union ships in Hampton Roads. She rammed and sank the sloop Cumberland, and the frigate Congress, which had run aground, was forced to surrender and was set on fire. Buchanan was wounded, and Lieutenant Catesby ap Roger Jones took command. The steam frigate Minnesota had also run aground, in water too shallow for the Virginia to reach her, so as evening came the Confederates drew off, meaning to finish her the next day.",
+   "That night the Monitor, under Lieutenant John L. Worden, arrived from New York after a dangerous voyage and took up position beside the Minnesota. On the morning of 9 March she came out to meet the Virginia, and the first fight between ironclad warships lasted some three hours. Neither ship could seriously damage the other; according to the Britannica, not one shot pierced either's armour. After a shot struck the Monitor's pilot house and blinded Worden, the Monitor drew off, and the Virginia returned to Norfolk. The battle was indecisive, but the blockade stayed in place.",
+   "The two ships never met again. When the Confederates evacuated Norfolk in May 1862 they scuttled the Virginia, which could not be taken up the James River, and the Monitor sank in a gale off Cape Hatteras on 31 December 1862. The battle drew attention around the world. Britain and France stopped building wooden-hulled warships, turreted 'monitors' were built on the Monitor's model, and the Britannica calls the battle the opening of the era of the armoured warship."
+  ],
+  "sources": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Hampton_Roads",
+    "title": "Battle of Hampton Roads (rev 1380472818, CirrusSearch dump text)",
+    "publisher": "Wikipedia",
+    "accessed": "2026-11-28",
+    "supports": [
+     2,
+     3,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Hampton_Roads",
+    "title": "Hampton Roads, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ]
+   },
+   {
+    "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Ericsson,_John",
+    "title": "Ericsson, John, Encyclopaedia Britannica (11th ed., 1911)",
+    "publisher": "Wikisource",
+    "accessed": "2026-11-28",
+    "supports": [
+     4
+    ]
+   }
+  ],
+  "claims": [
+   "Federals set fire to war vessels in the Gosport navy yard in spring 1861 and abandoned it; Confederates raised the Merrimac from June and rebuilt it as an ironclad, renamed Virginia (EB).",
+   "Cut down to the water-line, timber casemate covered with iron, ten guns, ram, slow and unwieldy (EB); Virginia built from remnants of the burned USS Merrimack (Wikipedia).",
+   "Effort to break the Union blockade cutting Norfolk and Richmond off from international trade (Wikipedia).",
+   "Ericsson's Monitor, low freeboard, revolving turret, two 11-in. guns, launched 30 January 1862 (EB Hampton Roads; EB Ericsson); 'Yankee cheese-box on a raft' (EB, attributed).",
+   "8 March 1862, Merrimac under Buchanan came down the Elizabeth with gunboats against the wooden Federal fleet (EB; Wikipedia: 8 March, wooden-hulled ships).",
+   "Cumberland rammed and sank; Congress ran aground, surrendered, fired with hot shot (EB); Wikipedia: Congress and Cumberland destroyed.",
+   "Buchanan wounded, succeeded by Lieut. Catesby ap Roger Jones (EB; Wikipedia).",
+   "Minnesota aground in shallow water; action halted, capture postponed to the next day (EB; Wikipedia: darkness and falling tide).",
+   "Monitor under Worden arrived during the night of the 8th after a dangerous passage from New York, anchored near Minnesota (EB; Wikipedia: arrived during the night, defended Minnesota).",
+   "9 March ironclads fought about three hours (Wikipedia; EB: from about 9 a.m. to a little after noon); first combat between ironclads (Wikipedia; EB).",
+   "Neither able to inflict significant damage (Wikipedia; EB); not a single shot penetrated the armour (EB, attributed); shot struck the pilot house sight-hole, Worden blinded, Monitor withdrew; Merrimac returned to Norfolk (EB; Wikipedia: Virginia returned to Gosport).",
+   "Indecisive; blockade remained (Wikipedia; EB).",
+   "Ships did not fight again (Wikipedia); Merrimac sunk by Tattnall after the evacuation of Norfolk in May 1862, unable to go up the James; Monitor lost in a gale off Cape Hatteras 31 December 1862 (EB).",
+   "Worldwide attention; Britain and France halted construction of wooden-hulled ships; monitor type produced (Wikipedia); EB: opening of the era of the armoured warship."
+  ],
+  "disagree": null,
+  "checked": null
  }
 }
