@@ -589,5 +589,70 @@
   ],
   "disagree": null,
   "checked": null
+ },
+ "Q76986": {
+  "title": "Belovezh Accords",
+  "y": 1991,
+  "place": "Viskuli, Belovezhskaya Pushcha (Belarus)",
+  "paras": [
+   "The Belovezh (Belavezha) Accords were signed on 8 December 1991 at the Viskuli retreat in the Belovezhskaya Pushcha forest in Belarus by the leaders of three Soviet republics: President Boris Yeltsin of Russia, President Leonid Kravchuk of Ukraine and Stanislav Shushkevich, chairman of Belarus's parliament. Their agreement founded a Commonwealth of Independent States (CIS), and its preamble stated that the Soviet Union had ceased to exist 'as a subject of international law and a geopolitical reality'.",
+   "The Soviet Union had been weakening for several years. Under Mikhail Gorbachev's reforms the Communist Party's hold loosened, and nationalist movements grew in the republics; the Baltic republics moved towards independence from 1988, and by the end of 1990 all the union republics had declared their sovereignty. Gorbachev negotiated a new Union Treaty with nine republics in 1991, which would have turned the USSR into a looser union of sovereign states, but its signing was prevented by the failed coup of hard-line officials in August 1991. After the coup Ukraine declared independence on 24 August, and other republics followed; by early December most of them had proclaimed independence, and Ukraine opposed Gorbachev's plan for a confederation.",
+   "On 10 December the parliaments of Ukraine and Belarus ratified the agreement and denounced the 1922 treaty that had created the USSR; Russia's parliament did the same on 12 December. On 21 December the leaders of eleven former Soviet republics met in Almaty to confirm the Belovezh agreements and the end of the USSR. Gorbachev resigned as Soviet president on 25 December 1991, and the Soviet flag over the Kremlin was replaced by the Russian tricolour; the next day a chamber of the USSR Supreme Soviet declared that the Soviet Union had ceased to exist as a state. The United States then recognised all twelve of the newly independent republics."
+  ],
+  "sources": [
+   {
+    "url": "https://tass.com/society/1372631",
+    "title": "Soviet Union ceased to exist 30 years ago today",
+    "publisher": "TASS",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ]
+   },
+   {
+    "url": "https://history.state.gov/milestones/1989-1992/collapse-soviet-union",
+    "title": "The Collapse of the Soviet Union (Milestones in the History of U.S. Foreign Relations)",
+    "publisher": "U.S. Department of State, Office of the Historian",
+    "accessed": "2026-11-28",
+    "supports": [
+     1,
+     2,
+     3,
+     4,
+     6,
+     7,
+     11,
+     13
+    ]
+   }
+  ],
+  "claims": [
+   "Signed on 8 December 1991 by Yeltsin (Russia), Kravchuk (Ukraine) and Shushkevich (speaker/chairman of the Belarusian parliament) at the Viskuli retreat in Belovezhskaya Pushcha, Belarus (TASS; State Dept: in early December Yeltsin and the leaders of Ukraine and Belarus met in Brest to form the CIS; confirmed in the Wikipedia extract of tools/context/writeup_prep.py: state dacha near Viskuli, 8 December 1991).",
+   "The agreement established the CIS and its preamble said the Soviet Union had ceased to exist as a subject of international law and a geopolitical reality (TASS; State Dept: forming the CIS effectively declared the demise of the Soviet Union).",
+   "Gorbachev's reforms loosened Communist control and nationalist movements/separatism grew in the republics (TASS; State Dept).",
+   "TASS: Baltic independence movement from 1988; by the end of 1990 all union republics had passed sovereignty acts (State Dept: the Baltic States and the Caucasus demanded independence).",
+   "TASS: Novo-Ogaryovo negotiations with nine republics (April–July 1991) on a Union of Sovereign States.",
+   "The August 1991 coup by hard-line officials failed and upset the Union Treaty (TASS; State Dept: unsuccessful August 1991 coup planned by hard-line Communists sealed the fate of the Soviet Union).",
+   "Ukraine's parliament voted for independence on 24 August 1991 (TASS; State Dept: a few days after the coup Ukraine and Belarus declared independence); other republics followed.",
+   "TASS: by early December most union republics had proclaimed independence; Ukraine and Azerbaijan opposed the confederation idea.",
+   "TASS: on 10 December the Supreme Soviets of Ukraine and Belarus denounced the 1922 Treaty on the Establishment of the USSR; on 12 December the RSFSR Supreme Soviet ratified the CIS agreement and denounced the 1922 treaty (ratification by Ukraine and Belarus on 10 December also in the Wikipedia extract).",
+   "TASS: on 21 December leaders of eleven former union republics in Almaty confirmed the Belovezh agreements and the end of the USSR.",
+   "Gorbachev resigned as Soviet president on 25 December 1991 and the Soviet flag over the Kremlin was replaced by the Russian flag (State Dept; TASS).",
+   "TASS: on 26 December the Soviet of Republics of the USSR Supreme Soviet declared that the USSR had ceased to exist as a state and subject of international law.",
+   "State Dept: the United States recognised all 12 independent republics."
+  ],
+  "disagree": "Place: TASS and Wikipedia place the signing at Viskuli in the Belovezhskaya Pushcha; the State Department's history says the leaders 'met in Brest'. Wikipedia could not be fetched (429); its local dump extract was used only to confirm the date, place and 10 December ratification.",
+  "checked": null
  }
 }
